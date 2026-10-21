@@ -1,0 +1,26 @@
+name: NBA EDGE Daily Model Evaluation
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 13 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: nba-edge-model-evaluation
+  cancel-in-progress: false
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Evaluate historical predictions
+        run: python scripts/evaluate_model.py
+      - name: Publish evaluation
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/model_evaluation.json
+          git diff --cached --quiet || (git commit -m 'Update daily model evaluation' && git push)
