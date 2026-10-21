@@ -1,3 +1,1 @@
-NBA EDGE v19 — Unified Dashboard
-Replace index.html and service-worker.js in repository root. Existing data files and GitHub workflows remain unchanged.
-Public consensus is headline evidence, NOT actual ownership. Refresh uses available published JSON snapshots.
+NBA EDGE v19.1: Replace index.html, service-worker.js, and scripts/update_consensus.py. Commit to main, manually run update-consensus.yml. Public expert picks only; no paywall bypass or claims about actual ownership.
