@@ -1,0 +1,406 @@
+{
+  "updated_at": "2026-10-21T20:59:42.391764+00:00",
+  "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
+  "injuries": [
+    {
+      "name": "Mouhamed Gueye",
+      "team": "ATL",
+      "status": "OUT"
+    },
+    {
+      "name": "Henri Veesaar",
+      "team": "ATL",
+      "status": "OUT"
+    },
+    {
+      "name": "Devin Carter",
+      "team": "BOS",
+      "status": "OUT"
+    },
+    {
+      "name": "Tyler Bilodeau",
+      "team": "BKN",
+      "status": "OUT"
+    },
+    {
+      "name": "Kylan Boswell",
+      "team": "CHA",
+      "status": "OUT"
+    },
+    {
+      "name": "Kon Knueppel",
+      "team": "CHA",
+      "status": "OUT"
+    },
+    {
+      "name": "Grant Williams",
+      "team": "CHA",
+      "status": "OUT"
+    },
+    {
+      "name": "Coby White",
+      "team": "CHA",
+      "status": "OUT"
+    },
+    {
+      "name": "Dailyn Swain",
+      "team": "CHI",
+      "status": "OUT"
+    },
+    {
+      "name": "Jordan Hawkins",
+      "team": "CHI",
+      "status": "OUT"
+    },
+    {
+      "name": "Leonard Miller",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Isaac Okoro",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Zach Collins",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tobe Awaka",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Nic Claxton",
+      "team": "CHI",
+      "status": "OUT"
+    },
+    {
+      "name": "Sam Merrill",
+      "team": "CLE",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Nae'Qwan Tomlin",
+      "team": "CLE",
+      "status": "OUT"
+    },
+    {
+      "name": "Khalifa Diop",
+      "team": "CLE",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jett Howard",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Caleb Martin",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Tarik Biberovic",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Dereck Lively II",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Santi Aldama",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Spencer Jones",
+      "team": "DEN",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Julian Strawther",
+      "team": "DEN",
+      "status": "OUT"
+    },
+    {
+      "name": "Taurean Prince",
+      "team": "DET",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Kristaps Porzingis",
+      "team": "GSW",
+      "status": "OUT"
+    },
+    {
+      "name": "Charles Bassey",
+      "team": "GSW",
+      "status": "OUT"
+    },
+    {
+      "name": "Stephen Curry",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Brandin Podziemski",
+      "team": "GSW",
+      "status": "OUT"
+    },
+    {
+      "name": "Moses Moody",
+      "team": "GSW",
+      "status": "OUT"
+    },
+    {
+      "name": "Jimmy Butler III",
+      "team": "GSW",
+      "status": "OUT"
+    },
+    {
+      "name": "Julian Phillips",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Steven Adams",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "T.J. McConnell",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Johnny Furphy",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Bradley Beal",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Max Strus",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Yanic Konan Niederhauser",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Brandon Ingram",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Jordan Miller",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Collin Sexton",
+      "team": "LAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Cameron Carr",
+      "team": "LAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Adou Thiero",
+      "team": "LAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Isaiah Stewart",
+      "team": "MEM",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Vladislav Goldin",
+      "team": "MIA",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Nate Ament",
+      "team": "MIL",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Donte DiVincenzo",
+      "team": "MIN",
+      "status": "OUT"
+    },
+    {
+      "name": "Thomas Sorber",
+      "team": "OKC",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Nikola Topic",
+      "team": "OKC",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Otega Oweh",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
+      "name": "Jonathan Isaac",
+      "team": "ORL",
+      "status": "OUT"
+    },
+    {
+      "name": "Anthony Black",
+      "team": "ORL",
+      "status": "OUT"
+    },
+    {
+      "name": "Noah Penda",
+      "team": "ORL",
+      "status": "OUT"
+    },
+    {
+      "name": "Izaiyah Nelson",
+      "team": "ORL",
+      "status": "OUT"
+    },
+    {
+      "name": "Tacko Fall",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Dean Wade",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Dominick Barlow",
+      "team": "PHI",
+      "status": "OUT"
+    },
+    {
+      "name": "Ariel Hukporti",
+      "team": "PHI",
+      "status": "OUT"
+    },
+    {
+      "name": "Luke Kennard",
+      "team": "PHX",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Mark Williams",
+      "team": "PHX",
+      "status": "OUT"
+    },
+    {
+      "name": "Micah Potter",
+      "team": "POR",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Branden Carlson",
+      "team": "POR",
+      "status": "OUT"
+    },
+    {
+      "name": "Chris Youngblood",
+      "team": "POR",
+      "status": "OUT"
+    },
+    {
+      "name": "Deni Avdija",
+      "team": "POR",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Shaedon Sharpe",
+      "team": "POR",
+      "status": "OUT"
+    },
+    {
+      "name": "Ben Simmons",
+      "team": "SAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Malik Monk",
+      "team": "SAC",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Dylan Cardwell",
+      "team": "SAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Maxime Raynaud",
+      "team": "SAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Tobias Harris",
+      "team": "SAS",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jayden Quaintance",
+      "team": "SAS",
+      "status": "OUT"
+    },
+    {
+      "name": "Nate Bittle",
+      "team": "TOR",
+      "status": "OUT"
+    },
+    {
+      "name": "Tony Bradley",
+      "team": "UTA",
+      "status": "OUT"
+    },
+    {
+      "name": "Trey Alexander",
+      "team": "UTA",
+      "status": "OUT"
+    },
+    {
+      "name": "Jusuf Nurkic",
+      "team": "UTA",
+      "status": "OUT"
+    },
+    {
+      "name": "AJ Dybantsa",
+      "team": "WAS",
+      "status": "OUT"
+    },
+    {
+      "name": "Tristan Vukcevic",
+      "team": "WAS",
+      "status": "OUT"
+    },
+    {
+      "name": "Jamir Watkins",
+      "team": "WAS",
+      "status": "OUT"
+    }
+  ]
+}
