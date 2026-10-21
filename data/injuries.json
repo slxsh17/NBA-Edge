@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T20:59:42.391764+00:00",
+  "updated_at": "2026-10-21T21:09:24.410354+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -78,6 +78,16 @@
       "status": "OUT"
     },
     {
+      "name": "Khalifa Diop",
+      "team": "CLE",
+      "status": "OUT"
+    },
+    {
+      "name": "Jarrett Allen",
+      "team": "CLE",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Sam Merrill",
       "team": "CLE",
       "status": "DAY-TO-DAY"
@@ -86,11 +96,6 @@
       "name": "Nae'Qwan Tomlin",
       "team": "CLE",
       "status": "OUT"
-    },
-    {
-      "name": "Khalifa Diop",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jett Howard",
@@ -283,12 +288,12 @@
       "status": "OUT"
     },
     {
-      "name": "Tacko Fall",
+      "name": "Dean Wade",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Dean Wade",
+      "name": "Tacko Fall",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
