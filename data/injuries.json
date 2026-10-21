@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T21:46:47.113072+00:00",
+  "updated_at": "2026-10-21T22:51:50.475353+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -51,26 +51,6 @@
       "name": "Jordan Hawkins",
       "team": "CHI",
       "status": "OUT"
-    },
-    {
-      "name": "Leonard Miller",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Isaac Okoro",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Zach Collins",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Tobe Awaka",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nic Claxton",
@@ -238,14 +218,14 @@
       "status": "OUT"
     },
     {
-      "name": "Thomas Sorber",
-      "team": "OKC",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Nikola Topic",
       "team": "OKC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Thomas Sorber",
+      "team": "OKC",
+      "status": "OUT"
     },
     {
       "name": "Otega Oweh",
