@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T22:51:50.475353+00:00",
+  "updated_at": "2026-10-21T23:23:00.286216+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -75,7 +75,7 @@
     {
       "name": "Jett Howard",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Caleb Martin",
@@ -210,7 +210,7 @@
     {
       "name": "Isaiah Stewart",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Donte DiVincenzo",
