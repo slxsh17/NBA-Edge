@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T21:09:24.410354+00:00",
+  "updated_at": "2026-10-21T21:46:47.113072+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -84,11 +84,6 @@
     },
     {
       "name": "Jarrett Allen",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Sam Merrill",
       "team": "CLE",
       "status": "DAY-TO-DAY"
     },
@@ -238,16 +233,6 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Vladislav Goldin",
-      "team": "MIA",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Nate Ament",
-      "team": "MIL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Donte DiVincenzo",
       "team": "MIN",
       "status": "OUT"
@@ -288,12 +273,12 @@
       "status": "OUT"
     },
     {
-      "name": "Dean Wade",
+      "name": "Tacko Fall",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Tacko Fall",
+      "name": "Dean Wade",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
