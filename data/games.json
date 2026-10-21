@@ -1,0 +1,73 @@
+{
+  "date": "20261021",
+  "updated_at": "2026-10-21T13:28:58.714642-04:00",
+  "source": "ESPN unofficial scoreboard",
+  "games": [
+    {
+      "away": "Atlanta Hawks",
+      "home": "Orlando Magic",
+      "time": "2026-10-21T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Milwaukee Bucks",
+      "home": "Washington Wizards",
+      "time": "2026-10-21T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Minnesota Timberwolves",
+      "home": "Miami Heat",
+      "time": "2026-10-21T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Charlotte Hornets",
+      "home": "Brooklyn Nets",
+      "time": "2026-10-21T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Chicago Bulls",
+      "home": "Toronto Raptors",
+      "time": "2026-10-21T23:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Utah Jazz",
+      "home": "Memphis Grizzlies",
+      "time": "2026-10-22T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Indiana Pacers",
+      "home": "New Orleans Pelicans",
+      "time": "2026-10-22T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Dallas Mavericks",
+      "home": "Houston Rockets",
+      "time": "2026-10-22T00:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Golden State Warriors",
+      "home": "Los Angeles Lakers",
+      "time": "2026-10-22T02:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Phoenix Suns",
+      "home": "Portland Trail Blazers",
+      "time": "2026-10-22T02:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Sacramento Kings",
+      "home": "LA Clippers",
+      "time": "2026-10-22T02:30Z",
+      "status": "Scheduled"
+    }
+  ]
+}
