@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T23:23:00.286216+00:00",
+  "updated_at": "2026-10-21T23:55:24.078768+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -143,14 +143,9 @@
       "status": "OUT"
     },
     {
-      "name": "Julian Phillips",
-      "team": "HOU",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Steven Adams",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "T.J. McConnell",
