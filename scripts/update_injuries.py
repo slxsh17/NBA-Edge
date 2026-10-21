@@ -30,6 +30,10 @@ def status(v):
 def main():
     req=Request(URL,headers={'User-Agent':'Mozilla/5.0 (compatible; NBAEdgeResearch/1.0)','Accept':'application/json'})
     with urlopen(req, timeout=35) as response:data=json.load(response)
+           print("Response type:", type(data).__name__)
+    print("Top-level keys:", list(data.keys()) if isinstance(data, dict) else "Not a dictionary")
+    print("First injury group:", str(data.get("injuries", [])[:1])[:1500] if isinstance(data, dict) and isinstance(data.get("injuries"), list) else "No injuries list found")
+
     groups=data.get('injuries',[]) if isinstance(data,dict) else []
     if not isinstance(groups,list):raise RuntimeError('unexpected injuries format')
     records=[]
