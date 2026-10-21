@@ -1,0 +1,250 @@
+{
+  "updated_at": "2026-10-21T21:52:47.692486+00:00",
+  "window_hours": 48,
+  "method": "Player names in recent public article HEADLINES only; one source per provider. Mentions are not endorsements or ownership percentages.",
+  "sources_checked": [
+    "RotoGrinders",
+    "Stokastic",
+    "FantasyLabs",
+    "NumberFire",
+    "RotoWire",
+    "FantasyPros",
+    "SportsLine"
+  ],
+  "source_errors": {},
+  "players": [
+    {
+      "name": "Dru Smith",
+      "source_count": 2,
+      "mention_count": 3,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Dru Smith Injury: Able to practice Monday - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbFc2TVkyZ0JNXzRoQy1OZEwwN0Q3ZjBER1MxZndRN2tUQTRSQ2RhVGtwNFp0N1dJYV9qTWhtaUhlWDJpUTZCQ0FGLUF0eTlvb1ZEY2J0Z2wwdEVEWmZ0M0dySi1kSllwOFBEaGZyTWxQOVB3dThJQ0pmb2sycWhrNkVGVjBDR1ZwS1lCeVRydFB0MWE1LWhlOA?oc=5",
+          "published_at": "2026-10-19T23:17:13+00:00"
+        },
+        {
+          "provider": "RotoWire",
+          "title": "Dru Smith News: Available for Wednesday - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQ1dKTE9ybExwS1o3enF5c211ZkFfN3Z5QWoxaUI3aERtMlo3Y2Z5UTc3LTlOMXNla3B3UkF2QTQ0T21wNHNYSExWbGxDWk5jcVJNU2tkNzlVamE1TDJPb0ktMDJNQ3E1SHRsVFJxbW5KeHVpNXlOSU9obkR1bWxReWI4blZ2UzNFelU5MEVLdHVLR0dnY2c?oc=5",
+          "published_at": "2026-10-20T19:50:51+00:00"
+        },
+        {
+          "provider": "FantasyPros",
+          "title": "Dru Smith (calf) practices Monday - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWnE5QmI5OWJWdXZOSi1jSGxocS1fLWs1dTVpNUpuMjhvRUV2M09Pc2IwRVRIa3Atc09LS29NMDJfeERxLUtScmRNcUdIZWQ0MEtvRFRHbGF2ektfYmItNHdMeTVSc3RqeVllLUpIQnh1WlkwS2M1dmdNNmlaLWZYMi05OW82Z9IBiwFBVV95cUxPYmV0cHJsWFVVX2xxejJrTVk5b1pUX0c2NU9RRW9qTXN5cVZORjJQTnJ0VzF0VTk3OWtOSkhCNkNNTUJfUHFSN3IzX3lyZDhBc1J4dGR6YU42ZVRYaGhxNEMzWjJEU1hhMTZyYkdydTlydTZRSUxud2FJSWJOVHJVZTF2aXJic3VYSHRJ?oc=5",
+          "published_at": "2026-10-20T06:31:24+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Jase Richardson",
+      "source_count": 1,
+      "mention_count": 2,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Jase Richardson News: Omitted from injury report - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPV2NqNGhUVVNZaXVXbWV5bDFXR3piLWlOSE1UaUlIZFZ4d3FuUzFXUDlaQ3FlOEJMcVpEVnBrRmtRd0NFNmxRTGszOUx2YWZDNEhZNDUtREQ1WnZQM1M3T0l3Q3hIczRrS0NrTi1WajFVVWZNRmNLeVhlaUg3TEE0U0xybGFjZkVSMUNTUGNjd3BqNTlkWHhnaWExT2xlcERGaUE?oc=5",
+          "published_at": "2026-10-20T20:50:52+00:00"
+        },
+        {
+          "provider": "RotoWire",
+          "title": "Jase Richardson News: Team option picked up - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb21vZ0dJeXNNQV83Q3JXaXRvekNXd2pHM1N4WWlhbzFNZGpBN0xWTnpJZm5HcHVFWE1lV05xV3JnNlQ2cE12WWRtWVN0VGlzTDk0ZWtaRmVQdFhUZWdNclJCeEh2cG9VOEwwN1d0eHFpeF82bXRvbzZ3ZmpOUW5obU5GbGtKTWtQZWxaTnM3R0x5a21WV2h0LXAyQQ?oc=5",
+          "published_at": "2026-10-21T17:14:48+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Jett Howard",
+      "source_count": 1,
+      "mention_count": 2,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Jett Howard News: Moving past illness - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQTNnUVFxNFlGVVZJaXhsQ3ZmemE2NGR3VzhSMm5NYzZ4Ulk4WTd2T0h1UnhPSGJjb1VWd3BDVlhqZmU4MVRZUW5Ib1hWUTc2eWstLWNrM1FFZHBHSGNqNVJfQVVSS0o3YnZEWEd4aEg0aERibUhsYnZ3YUhTaHNuSkZDV1NGekRRUlk0YlRPSDdmS2s?oc=5",
+          "published_at": "2026-10-20T22:12:29+00:00"
+        },
+        {
+          "provider": "RotoWire",
+          "title": "Jett Howard Injury: Downgraded to doubtful - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQekI3NHN3SThTTTZma29lMDN0X0kydTNBSGs3cndSbGtvdG1PLU5SdFNWRnljLWR4NjNLNEVkaFhhaGJ6d0F6enR1UDIxVjRIM0lBX2JQS3VOT19ucVppcjFMa1JlWGozcXdfTHNBSFRzdndvc0h4QW5UbWlCM2R4aW5nYWVqMzBkeDljbDU2SVR0bWxIV3BpWElB?oc=5",
+          "published_at": "2026-10-21T17:18:43+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Adou Thiero",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Adou Thiero Injury: Doesn't practice Tuesday - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNVNTb1FGVm5yRHRkZ3ItT1RTaDZLSnZVNTFpbTRCTHhyeWpvSms1OW5ZNjNCTXZtZzJKMHpVRGpvUjVHM0tYMkFnSXhobzlSOWFJMWNrQ0FtU2E0TTZjTW9nQjZZaTFMTktYRXZWcHY4U21yb3JQZEl1S3BRdklRODV5WHpsWlp3Qzl3bWg0eGt6LWxjeVFhZFRjRQ?oc=5",
+          "published_at": "2026-10-20T19:18:19+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Blake Hinson",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "FantasyPros",
+          "title": "Blake Hinson to be waived by Jazz - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPandZNFo4b3RfYm85OTg1MDM5M1I4WDMtdXRoZDJOZzRhNEpScnNIU0J3VG5Yd19ROFdYQzduTkotWUl6dUMtV2xTaWJjWXdjZFl6ZW5aTjNDZHZaNE9QeTNuUzZTTm1lVUtISzgyMEtocTMwaEFEVFpiTGNJSW1YSEw5Ym84VDdW0gGOAUFVX3lxTFBGZ0YtSHJlQ19STEotNnk1T1U4Mkt1YWxKVnBtNlE2NzdVbWtiUFRqRndJVG1KeFk1ZlZRMHhVVVFmU05ESnJrNDBNUEdjT2Z6OVBYUTZLU3lvcHJxN2ZXVXRfUzdEREVObmFDLUNvSl9jNWNsWFJlMVYyNS1SeF9IMkFCcEJGNTNjNVNFeGc?oc=5",
+          "published_at": "2026-10-21T15:49:18+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Branden Carlson",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Branden Carlson Injury: Out for Wednesday - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRzZKcFFMQi1wRHpkbmh1SzJST1p1UDdyS280ZjNtLVJSZDNSSVgwR2pTLVdZa25NWGJyUVR4dzRNa18zek1UMkt1OU5nTXhZMkZTbUZBRk1MOXVVNGhTZWZIUUUyZW5mVkdab0otUkxaeGFZMjF4WEVEX21QRWpWYkZDYzNpRjdkQ2VmRUZld1V5UE1neXVyMA?oc=5",
+          "published_at": "2026-10-20T23:41:34+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Bronny James",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Bronny James News: Left off injury report - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYWxEQVFwWGdWZlpXN0RobUZ2ZURyd2VTdUozdTFfRjdtZzhSYmlONndJS2dHY0cyaFpuQUJzSzR5ak56cmhMTnNOay1PREdPSklDU01INVFrNUxpVHhCNzd3RXQ2c2xsMzlncjl4OFkyS1pKQjllY0UtLXcyYVBEN0UtNmp1TVpvajJnS2l2TUk3MEptaDM2VA?oc=5",
+          "published_at": "2026-10-21T00:08:33+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Dailyn Swain",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "FantasyPros",
+          "title": "Dailyn Swain (illness) not traveling to Toronto - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORkIta3J1akJjMEpUaFJvemFkSmJoZHdoLWhVbl9pam1MX3ExMFAzN1JCN1JERDZwckpydVE1ak92YUl6ZTNCQWNSSEtWa2VLcEhZTVBsMEdxNEdvVTJDZTVTeGZQZU5nOFQ4U3Fhbmk4ZjRyS01rckdfcmdxN3ZwUEU0V3dVNE1pV2ktQVBlaTZCeUJaaFYyOdIBngFBVV95cUxNV2FFVnRTUFZSQlNQenlTMjAxYk5WeTJva2JYT05DRm1qRmpaZjlvbmN5TGRndW1RV2tVcXd6cFpDaU1oYS04WXFTd0JQbncwbFdHUkp4RkJLZFZmLVlzMFVWQ0dxV2J5UTVxR1VQMGJOZE1LLVpDSjk2YWQ3RWx1RDBRbWlaWURFd0Q0WWNicHY0WXA2aDB0X011eno2UQ?oc=5",
+          "published_at": "2026-10-21T15:41:56+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Isaac Okoro",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Isaac Okoro Injury: Probable for Wednesday - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZENVRE42OFpVRWVpUWRXNkJrSXpYVHdDTzhNVGlOTWtpT3d6VXBEd3RQOWpqMDh1elR0SkRJdFBCbm9YTWxqNWRrLW1yNUQ5OUt3VWFNQmQ5WHVFYlM2UGhxMVphS2REaDhFMm9ZRTdzVmUtOXd1VzhvVDdKM01hVmtFRVFNLVlJU2ZuZDJPcm9ZWTlHY2d1amNB?oc=5",
+          "published_at": "2026-10-20T18:45:06+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Jaden McDaniels",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "FantasyPros",
+          "title": "Jaden McDaniels signs one-year extension with Minnesota - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRjZZZkRLRmxrY2FyOEdPNGFadFVrNFpFSzRBY3hIN01hZTNVVmQ4ZEVTUDdhTVlUSEpOWms2R1dZS0ZvS3VPSkpZY1ZldmkyRjltUGE0UVoxZUlBMDduZHRsaXhpWTFEZ0stOVd5MFVlbU1FMklnVUFlS3hNQ3Z6OEo3OWVILU5VRVZiYlFCYnRqcS1tbjJhbnZSLTdrQWFWcFNUMjR30gGrAUFVX3lxTFBrRHloR1hmVGhqNVJyUDZpNGhlZGZSUHhWRG1GTjRLeDFleUtTaFFDY0x2SmpTSklzZkV2b19WNVRoRHFLOUN4cWtUUVdNOER1VlFtNWlSWXFlTHp6aXZjdzdORDM1cFRubV94aWIwamdEaVNNVnJIN0xGdkNkemIzZ3czTlllVHZ3YWRLMDZ0WFQtN1F2MWdKOVFGakNXVzZmNzg4UnZZSC1haw?oc=5",
+          "published_at": "2026-10-20T06:06:57+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Jarred Vanderbilt",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Jarred Vanderbilt News: Not listed on injury report - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQUwyR3Y0ZFhtWlV5LTRWT2FyNHpUNEZTdUVnOFNiTVRWYXlmSUhVMmdGTkxRNUNKcDdmY0ZjNG92M19WY3N1b3BLV0wtR1lrbDVoZVhCZGpKZnNLOV85M3BwRmhrdmExTkNyRnh4R1JjMF9IcFFScFRIVlJsOG5RR0NXaHduMGdGd3h5UnFhNTkzckpQa3J3V2pFZjlOTy1ONmprRnV3?oc=5",
+          "published_at": "2026-10-21T00:08:28+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Jeremiah Fears",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "FantasyPros",
+          "title": "Jeremiah Fears has option exercised by Pelicans - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSVhicnRTRVpneTBjaUdraERETjN6WDlxWkRMc0MwSThnMlVZbEg1bmJ0Y29Oc0IzLUl3eEQ0aHZPR2ZkeDVUamZZc1N3a2R6TW5Fcm9pLXYtZVJWMUxlZ0FDaHBidzF1RnNXMzBZVER1MVBOdnNpZFVjSzA1VUl3R0pxVUs4WkhxNkhhLUgySEdxSWFkdEJ1OWY2MNIBoAFBVV95cUxPNlNuUk9ldGNSbnE5SVN2OFZ1LVpXZ2ozZlJBaUF5REtwbHhHcjZTcS1OYU5ob1JUWEotUThtVWh2RlR6OC0waktmVm4xSkpvdG1DbDV2bmR6bFJxN3hHeVRRU2FMemRfREh1OGRXUHV5MHZtSWJTRzloOFZqbWRaQTRYeXlOMXRfYXNuS3V1RC1tSFFLeWpNWlo2blpTem1C?oc=5",
+          "published_at": "2026-10-21T15:31:09+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Isaac",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Jonathan Isaac Injury: Out for Wednesday - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZTJXSENKQnFFS3BSQnFJbjNWX2ZhY2g3TVBCNkFETVY0YWVuU1AtUmw5VE9weFNscXl3clFINFhIbTR1Zm03R3JGYXozZllaYzF1MW43a3dQM3RMcnplWHZoMmNIUUctR0MxeGZCeVlCWUdOMTM5U1ZqdUZjcjhzUzNKNW1qMUdLWUM4NU9sR1dwQ3VneXVV?oc=5",
+          "published_at": "2026-10-20T20:57:46+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Julian Phillips",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Julian Phillips News: Questionable with illness - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQS0tZVmZFaU9neWZfRUZ0NHgzMnBnX3I2RFdhbUlGcjNxRzBPaWlpNXZCcFJ1Zk90OHZUQ09pZW9STE5tM3R5cVNndEh3UW5mY1ZMOExRRjQ5M2d4aVZLeU5pYWdmRWVHbVpnQ2syWFp1dW81VnI0UDRHRTJBOW12b1JjYTBHZTVZbHNrOXRBWk1uWC0wNFQ2WUxIV1lWeUhp?oc=5",
+          "published_at": "2026-10-20T19:03:55+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Matas Buzelis",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "FantasyPros",
+          "title": "Matas Buzelis has team option declined by Bulls - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOGs2OEhBYkN3dkRBMGxrSWtDMUlkUW1TclEweXNNcUc1OUx4SkVjRjNLd1F1UUJQcjNfcmhGWnRIYl9wcUtxaWFWLUtpd0ZOTDVIZm5MdU1UemQ4ZHJnSEtfTEd5YndpMl83YWlib2NRM3hJSGlIQndFc1dCa09tMnQtY1dLZGtTN1QxMzZORGFuSll4MUU3aHlnTdIBoAFBVV95cUxPTHV3Tld1aGVSLWRCMkRGaE52dXJFN01JSGEzVVdyX083ZG5JMWE3dUhQeGNNNElBWEp0Wm5IcVBrX3FfZXVwMWFNdDN4UXV1UDBzOWpDY1BhNDN0amUyblB2Snd3UnJPUFN3Yk82Y3g0TVc2YlV2TUV2azlIWVdYVWw5UVBwWDg2eUpqYkJWWjEtaTU1Zkl2TzZ5Y0trMF9F?oc=5",
+          "published_at": "2026-10-21T15:36:39+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Noa Essengue",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "FantasyPros",
+          "title": "Noa Essengue has team option exercised by Bulls - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcG4zbjgwTmU5SnRZenlWUVZZSjZuVXJEVjFiOE1jblhrY2JWcHJ5TkQxYzB0TkVIbXRaN2Yyc1hOZzdFbzIxc3ZEYkdtYmJaeXRVOFRyNzVRSkhQZ3JFc1dWaW0tN0hBMG5JMENOM3A0eGlYUE1lbDQxdkxEU3llcDVndmFuWExHam9jT2NwaHAwR04xODYxUFh30gGfAUFVX3lxTE1uREJqTmo1VDM2eDZtVlNkSzRQZVFiMDVFY25GS25TZEtCMTV2c1B5Q3hDelZmcHlCOHRObU5ac25PMzJjYUltRzEzMkpmTzJyVWJCOGhrVDE4MVJQdkZHMUUzUExkdXg2WEl6SEpjVFc1SzhTcE81VlVic0RDdXl4bHlpUUhiLWpVZmJDSGh4clE1UEpueVZNTl9GenY5aw?oc=5",
+          "published_at": "2026-10-21T15:39:09+00:00"
+        }
+      ]
+    }
+  ],
+  "article_count": 20
+}
