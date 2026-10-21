@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T21:52:47.692486+00:00",
+  "updated_at": "2026-10-21T22:43:35.770989+00:00",
   "window_hours": 48,
   "method": "Player names in recent public article HEADLINES only; one source per provider. Mentions are not endorsements or ownership percentages.",
   "sources_checked": [
@@ -39,6 +39,31 @@
       ]
     },
     {
+      "name": "Jett Howard",
+      "source_count": 1,
+      "mention_count": 3,
+      "articles": [
+        {
+          "provider": "RotoWire",
+          "title": "Jett Howard News: Moving past illness - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQTNnUVFxNFlGVVZJaXhsQ3ZmemE2NGR3VzhSMm5NYzZ4Ulk4WTd2T0h1UnhPSGJjb1VWd3BDVlhqZmU4MVRZUW5Ib1hWUTc2eWstLWNrM1FFZHBHSGNqNVJfQVVSS0o3YnZEWEd4aEg0aERibUhsYnZ3YUhTaHNuSkZDV1NGekRRUlk0YlRPSDdmS2s?oc=5",
+          "published_at": "2026-10-20T22:12:29+00:00"
+        },
+        {
+          "provider": "RotoWire",
+          "title": "Jett Howard Injury: Downgraded to doubtful - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQekI3NHN3SThTTTZma29lMDN0X0kydTNBSGs3cndSbGtvdG1PLU5SdFNWRnljLWR4NjNLNEVkaFhhaGJ6d0F6enR1UDIxVjRIM0lBX2JQS3VOT19ucVppcjFMa1JlWGozcXdfTHNBSFRzdndvc0h4QW5UbWlCM2R4aW5nYWVqMzBkeDljbDU2SVR0bWxIV3BpWElB?oc=5",
+          "published_at": "2026-10-21T17:18:43+00:00"
+        },
+        {
+          "provider": "RotoWire",
+          "title": "Jett Howard Injury: Questionable to face Houston - RotoWire",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNXpsaWJUZGZBZmZCVm5lcDZhUVFka3BqLUtldUJVbm1fM0VIMXZaQWc0aUdJOEZJX1Q3RGRjNTZ0dzQ4ZWFUbmJyaTJCczNOeWxTQWIzTHhYckpLYWNYMkpPRU5USzkzWmg1SDgtSGpHSGU2WjRrbW9MRG9QYkV1NXd4VVdhZVZnNDhKNWl0ZWRsZGE2RTZGNXJEUEFYaUZWY2c?oc=5",
+          "published_at": "2026-10-21T00:37:12+00:00"
+        }
+      ]
+    },
+    {
       "name": "Jase Richardson",
       "source_count": 1,
       "mention_count": 2,
@@ -54,25 +79,6 @@
           "title": "Jase Richardson News: Team option picked up - RotoWire",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb21vZ0dJeXNNQV83Q3JXaXRvekNXd2pHM1N4WWlhbzFNZGpBN0xWTnpJZm5HcHVFWE1lV05xV3JnNlQ2cE12WWRtWVN0VGlzTDk0ZWtaRmVQdFhUZWdNclJCeEh2cG9VOEwwN1d0eHFpeF82bXRvbzZ3ZmpOUW5obU5GbGtKTWtQZWxaTnM3R0x5a21WV2h0LXAyQQ?oc=5",
           "published_at": "2026-10-21T17:14:48+00:00"
-        }
-      ]
-    },
-    {
-      "name": "Jett Howard",
-      "source_count": 1,
-      "mention_count": 2,
-      "articles": [
-        {
-          "provider": "RotoWire",
-          "title": "Jett Howard News: Moving past illness - RotoWire",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQTNnUVFxNFlGVVZJaXhsQ3ZmemE2NGR3VzhSMm5NYzZ4Ulk4WTd2T0h1UnhPSGJjb1VWd3BDVlhqZmU4MVRZUW5Ib1hWUTc2eWstLWNrM1FFZHBHSGNqNVJfQVVSS0o3YnZEWEd4aEg0aERibUhsYnZ3YUhTaHNuSkZDV1NGekRRUlk0YlRPSDdmS2s?oc=5",
-          "published_at": "2026-10-20T22:12:29+00:00"
-        },
-        {
-          "provider": "RotoWire",
-          "title": "Jett Howard Injury: Downgraded to doubtful - RotoWire",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQekI3NHN3SThTTTZma29lMDN0X0kydTNBSGs3cndSbGtvdG1PLU5SdFNWRnljLWR4NjNLNEVkaFhhaGJ6d0F6enR1UDIxVjRIM0lBX2JQS3VOT19ucVppcjFMa1JlWGozcXdfTHNBSFRzdndvc0h4QW5UbWlCM2R4aW5nYWVqMzBkeDljbDU2SVR0bWxIV3BpWElB?oc=5",
-          "published_at": "2026-10-21T17:18:43+00:00"
         }
       ]
     },
@@ -233,6 +239,19 @@
       ]
     },
     {
+      "name": "Nate Ament",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "FantasyPros",
+          "title": "Nate Ament (ankle) available Wednesday - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdzBxMDBKMzVhX0JyMGp0b2x6bjdqa0VDekF1SnRUWDlOV0JVbExua2c1OFlKaGVPOWRlalA1cTJqd091dk5UZG9pMDZzR3VEYWhiR3A4YmdXZGt1NkV6dWRIME0yVWVrcEtkUmE2VzdMZlExMGEzaFNFZmtndzJlQWY4WnFTRzkwS0ExeNIBkgFBVV95cUxNMFJ1X01hZkU0b1E3Z1c3d204NkM0U1p3dklhRld4TzRPaV9pcTJHa3kxMkFNU1Ffc1lqY29BalUzRFV6eVd6VXRKS1MwVGszM05HYmNBbFVncVlVMmFEVXl4ZW41WWE1VEZNREc1cXd5aG55SHl5dWlZZVBpV3RzMzZaUmN5NFV6VHJhRmdacUlyUQ?oc=5",
+          "published_at": "2026-10-21T22:13:35+00:00"
+        }
+      ]
+    },
+    {
       "name": "Noa Essengue",
       "source_count": 1,
       "mention_count": 1,
@@ -244,7 +263,20 @@
           "published_at": "2026-10-21T15:39:09+00:00"
         }
       ]
+    },
+    {
+      "name": "Vladislav Goldin",
+      "source_count": 1,
+      "mention_count": 1,
+      "articles": [
+        {
+          "provider": "FantasyPros",
+          "title": "Vladislav Goldin (ankle) available Wednesday - FantasyPros",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcXU2VVN2bHRzNG5XcTVhRkhrWDJ6RW1mTXk5WTRzSm9fVGVpNXFhWmQ0MG1rdVJVZVpaV01SZ1ZhaURxTEg3bmVfS0thWkJDdzVzZklOc2xRYVpQZHVFZm1OUERFOF9BSU54S09ZaUpUcDRrdEtNZklYaGtwTmhacENreTFRWXQ4Z1RFeHZJY0hOWWty0gGaAUFVX3lxTFBDcU5nQU1HTHgyZHlEcF9TTTVaM2ZIc28xRkFZVksyUVlOVXpRYnlrRzhtMmVicjlZcU9ncjVaT3RYR1RTNi1nSVhIZWxDMGtCUkNnVjNDQ2drcUJZWTc1MEI1V19JNXNBZm1EaGRud09jcExHLUdOQy0xMTBzeWF3RWplc0ZTaGF2SjlFNGhuMlowMlFhNHVCNkE?oc=5",
+          "published_at": "2026-10-21T22:12:19+00:00"
+        }
+      ]
     }
   ],
-  "article_count": 20
+  "article_count": 23
 }
