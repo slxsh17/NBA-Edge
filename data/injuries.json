@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T14:08:11.134677+00:00",
+  "updated_at": "2026-10-22T14:45:57.557028+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -23,22 +23,22 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Grant Williams",
+      "team": "CHA",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Coby White",
+      "team": "CHA",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Kon Knueppel",
       "team": "CHA",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Kylan Boswell",
-      "team": "CHA",
-      "status": "OUT"
-    },
-    {
-      "name": "Grant Williams",
-      "team": "CHA",
-      "status": "OUT"
-    },
-    {
-      "name": "Coby White",
       "team": "CHA",
       "status": "OUT"
     },
@@ -73,6 +73,11 @@
       "status": "OUT"
     },
     {
+      "name": "Dereck Lively II",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Caleb Martin",
       "team": "DAL",
       "status": "DAY-TO-DAY"
@@ -91,11 +96,6 @@
       "name": "Santi Aldama",
       "team": "DAL",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Dereck Lively II",
-      "team": "DAL",
-      "status": "OUT"
     },
     {
       "name": "Spencer Jones",
@@ -278,14 +278,14 @@
       "status": "OUT"
     },
     {
-      "name": "Chris Youngblood",
+      "name": "Branden Carlson",
       "team": "POR",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Branden Carlson",
+      "name": "Chris Youngblood",
       "team": "POR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Shaedon Sharpe",
