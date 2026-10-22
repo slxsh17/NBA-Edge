@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T17:16:41.172626+00:00",
+  "updated_at": "2026-10-22T17:51:50.009339+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -181,6 +181,11 @@
       "name": "Jordan Miller",
       "team": "LAC",
       "status": "OUT"
+    },
+    {
+      "name": "Jake LaRavia",
+      "team": "LAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Adou Thiero",
