@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T15:21:02.953138+00:00",
+  "updated_at": "2026-10-22T16:04:31.313805+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -243,14 +243,14 @@
       "status": "OUT"
     },
     {
-      "name": "Tacko Fall",
-      "team": "PHI",
-      "status": "OUT"
-    },
-    {
       "name": "Dean Wade",
       "team": "PHI",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tacko Fall",
+      "team": "PHI",
+      "status": "OUT"
     },
     {
       "name": "Dominick Barlow",
