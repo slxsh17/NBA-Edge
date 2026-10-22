@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T04:56:38.175824+00:00",
+  "updated_at": "2026-10-22T05:30:55.209792+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -113,17 +113,17 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Kristaps Porzingis",
+      "name": "Brandin Podziemski",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Charles Bassey",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Brandin Podziemski",
+      "name": "Kristaps Porzingis",
       "team": "GSW",
       "status": "OUT"
     },
@@ -185,17 +185,17 @@
     {
       "name": "Adou Thiero",
       "team": "LAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Collin Sexton",
       "team": "LAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cameron Carr",
       "team": "LAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Isaiah Stewart",
@@ -265,7 +265,7 @@
     {
       "name": "Luke Kennard",
       "team": "PHX",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Oso Ighodaro",
@@ -278,12 +278,12 @@
       "status": "OUT"
     },
     {
-      "name": "Branden Carlson",
+      "name": "Chris Youngblood",
       "team": "POR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Chris Youngblood",
+      "name": "Branden Carlson",
       "team": "POR",
       "status": "OUT"
     },
@@ -295,7 +295,7 @@
     {
       "name": "Malik Monk",
       "team": "SAC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ben Simmons",
