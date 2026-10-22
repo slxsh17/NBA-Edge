@@ -1,51 +1,33 @@
-NBA EDGE v22 - Starter & Minutes News + Optional External Projection Blend
+NBA EDGE v23 — one-upload automatic analytics
 
-WHAT TO UPLOAD TO GITHUB (keep the folders/paths intact):
-  index.html                                  replace repo root file
-  service-worker.js                          replace repo root file
-  scripts/update_lineup_news.py              create or replace
-  .github/workflows/update-lineup-news.yml   create or replace
+ONLY VISIBLE INPUT: Today's FanDuel salary/position CSV. Raw FanDuel exports work.
 
-Do NOT overwrite your existing injury, historical statistics, DvP/usage,
-consensus, or other updater workflows.
+INSTALL: Upload index.html and service-worker.js to repository root.
+Upload scripts/build_automatic_projections.py and
+.github/workflows/update-auto-projections.yml at those exact paths.
+Keep your other GitHub workflows for NBA historical stats, injuries, lineup
+news, public recommendations and matchup/usage data. They publish the data
+files needed by the automatic webpage coordinator.
 
-ACTIVATE:
-  1. Commit files on the main branch.
-  2. GitHub > Actions > NBA EDGE Starters & Minutes News > Run workflow > main.
-  3. On a successful run, check data/lineup_news.json in GitHub.
-  4. Open https://slxsh17.github.io/NBA-Edge/?v=22 (refresh browser cache).
-  5. Find "Starting Lineups & Minutes News" near the top; check timestamps,
-     confirmed versus projected teams, and the linked news sources.
+INITIALIZE: Run GitHub Actions > NBA EDGE Automatic Projection Baselines once.
+A published same-day data/slate_YYYY-MM-DD.csv is necessary for server-side
+projection snapshots. If you only import the slate in your browser, the
+website uses its existing automatic historical baseline from published NBA
+box-score JSON files instead. Manual uploads beyond the FanDuel slate are
+not required. To sync the slate between devices, publish the same daily slate
+CSV as data/slate_YYYY-MM-DD.csv in GitHub.
 
-UPDATES:
-  GitHub scheduled workflow attempts to collect public lineups/headlines every
-  30 minutes. While open, the page checks the snapshot every 3 minutes.
-  These are not instantaneous updates and GitHub schedules can be delayed.
+MODEL: Projection = sample-shrunk previous/current NBA completed regular-
+season minutes x fantasy-points per minute. The browser then applies its
+bounded matchup/DvP, verified injury and starter rules; ownership is an
+uncalibrated simulated field estimate. Missing historical data are excluded,
+not assigned 30 invented minutes. DvP and usage lack complete coverage and
+remain neutral where observations are insufficient.
 
-PROJECTION RULES:
-  CONFIRMED lineups only: if all 5 names uniquely match imported teammates,
-  at most +2 minutes for a starter with 3+ observed games and a historical
-  baseline of 8-27.9 minutes. Historical regular starters stay unchanged.
-  Projected lineups and news headlines do NOT change projected minutes.
-  Stale or missing feeds cause no role adjustments. No athlete is marked OUT
-  from starters alone; the separate injury feed handles injury statuses.
+EXTERNAL PROJECTIONS: BlueCollarDFS is NOT free for automated API access.
+If your repository already has the approved licensed bridge with publication
+rights, the website automatically uses its dated snapshots. This package
+does not download or redistribute paywalled projections.
 
-X/TWITTER:
-  This free edition does NOT have an authenticated X/Twitter API and does NOT
-  monitor every public post. The dashboard links to direct X search for
-  manual verification. Automated news uses public RSS headlines only.
-
-BLUECOLLARDFS / OTHER PROJECTIONS:
-  The site accepts manually supplied/authorized fantasy-point projection CSVs
-  in the new Optional Outside Projections control. File example:
-     name,projection
-     Tyrese Maxey,47.0
-  Match against THIS slate; default weight 25%, adjustable 0-50%.
-  No premium BlueCollar content is scraped or accessed automatically.
-
-TESTED:
-  JS syntax (all five inline scripts); Python compilation; 4 parser
-  unit tests; Chromium DOM smoke test with 68 imported Oct 22 players;
-  confirmed and projected statuses; role change only when 5 names match.
-  Actual GitHub workflow and public RotoWire/Google News responses remain to
-  be verified on the user's GitHub runner.
+The GitHub schedule is best-effort, not real time. Always verify late news
+and the slate lock status. No wagers or contest entries are submitted.
