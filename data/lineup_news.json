@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-22",
-  "checked_at": "2026-10-22T22:54:26.098044+00:00",
+  "checked_at": "2026-10-22T23:16:49.014010+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -15,14 +15,6 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Cavs 2026-27 season preview, record predictions, starting lineup, TV info - Akron Beacon Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYldIS213YUZMVDlzaWctVVBZV3NteUk1OUFfUjMtV0N6dXc0LXpteFdkMHVUM1VNM21aa2hyeE00VnFaeTFzSDlLQ1p1UEFFSVVMWEhVd1FrcDVveEQxZjJ0V2FaYlQ3UFIwU0NhTlVIal9mcjFiX29tZkxDR3VmRGdLaXhSWnBnNDJzREloZUxLeDR3aGMwR1lMbVFRU2JKYy1hb29Sa3BkcmRtbnRCY3lHN1pTUW9YdU9LRTA4YVl4NU5RRHRCNi1TNWRuczdKeWRpTExn?oc=5",
-      "published_at": "2026-10-22T19:34:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
       "headline": "Updated Cavaliers Starting Lineup vs. 76ers: Is Jarrett Allen Making the Lineup? - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPYkxDQm5kQ016bjc2NHcwYjVsci1yQU9ibURrNUJhNzJxYU9fWGpfekJLVzk1NTdKQmtaVWNtZkhDdjFEakVsTVMxeF9JVGlBbzB1Y05uaUJmajA0b1pMdjlxb01fSlAxREg4Y2tuSWY0SHJsU1FPcGF2SUlsWkxPbEJ4SXpvNlZ1TWp1MGJadm9lYjZKQkpIQnE4UlByYnpHY0FMT2ROZzRHeUk1eUN2MGlYT2JpcmxoeC02aDltVW9JVVZvN2c4?oc=5",
       "published_at": "2026-10-22T20:00:01+00:00",
@@ -31,9 +23,25 @@
       "scope_date": "2026-10-22"
     },
     {
+      "headline": "Cavs 2026-27 season preview, record predictions, starting lineup, TV info - Akron Beacon Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYldIS213YUZMVDlzaWctVVBZV3NteUk1OUFfUjMtV0N6dXc0LXpteFdkMHVUM1VNM21aa2hyeE00VnFaeTFzSDlLQ1p1UEFFSVVMWEhVd1FrcDVveEQxZjJ0V2FaYlQ3UFIwU0NhTlVIal9mcjFiX29tZkxDR3VmRGdLaXhSWnBnNDJzREloZUxLeDR3aGMwR1lMbVFRU2JKYy1hb29Sa3BkcmRtbnRCY3lHN1pTUW9YdU9LRTA4YVl4NU5RRHRCNi1TNWRuczdKeWRpTExn?oc=5",
+      "published_at": "2026-10-22T19:34:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
       "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
       "published_at": "2026-10-22T20:39:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
+      "headline": "Gary Trent News: Left out of rotation - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUTJOTFZKdDE2NWFQOXhLTDdIQ1NXYTdPczhKYVotZ3pETmFjak8xRnhwM3FtMm9ma0k1OEVXUmhUQ2J3NG9pTkVMWUJNZE9FcG9HZGN2aTJTY1IxdXhaTVFwRWxSMGFLMktfSnNMMzB5QUN5U2VpbEl0NjZLbXVzSlBHREUtaDM3WEVKSmNieDVhR0E?oc=5",
+      "published_at": "2026-10-22T16:17:38+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -50,14 +58,6 @@
       "headline": "Spurs to 'Figure Out' Promising Rotation After Loss to Thunder - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQclNDeVF3MlI3ajBNeEhiVTAwdzBtc3oxWlE1cWRrZjRGMXpjQk03U3daZHd6T0l1N2ljR3lTTFBNTC1GMjFVaE1TQm1RUzd0ZlZRZnViYUdlMjJRV2RwbGJjVVhMbVlZT2YxalRxODAzcDlScDlZekNjendKSGJFa19MM0ZkdE5hTVEzbDl3?oc=5",
       "published_at": "2026-10-22T17:03:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Suns reveal first starting lineup of the season with Khaman Maluach at center - Arizona Sports 98.7",
-      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWVVzb056YkRWVDg4eERSOWdXYnRpMEVBTTRXZHJyMmVrUDdVcHBydmpveFFJMFFjMlFmTUpDZUc3N01pMEhmeUdHVjB2d3Q3OXRSQ3ZNbDE0T2xWa3l1QzJtcGVqVXZQR0k0Sk5rT09Tb21HY2ktMVVBWmt0aVhPWDNFdw?oc=5",
-      "published_at": "2026-10-22T01:38:14+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -87,9 +87,9 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Warriors Announce Starting Lineup for Season Opener vs. Lakers - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTU80dVZLdDlITEZrbEpLZ24yV0YyWXZWeXdLTWktVm1VcjVBUmhnWXByb1hZZGFZZlI0OVhVWlNyS2hpcFd0eEJob0Noa0libW5nWGRodURyQ2JHb3RVdVZfN1k1bmF3a1Znd09yVC1mMUxBdGQtenhFVTVFMXpwcllWSF9pWHltQnpRbnB6aDRVcWtGemNIZ0JNc2lCajVaRWNreDZINGNIdS1VREZHcg?oc=5",
-      "published_at": "2026-10-22T01:38:28+00:00",
+      "headline": "Lakers announce starting lineup for first game in post-LeBron era - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNXAycWVkeVprek9OLTlpcXFBSEdKNzNBMllrRF9TWWVJOERQZ1BBb2xCZUxEalFVazRSalVzbFJ5LURDTzZJbnA4Zm4zQVNPT3ZkRDVCek9NenVDNFVMZjMyeGsxenpqaVROZGVGeTJWb0lBQ1AzYUpaTkJQb0VuQUxkX0ZzaGJFNFBJRFlHMA?oc=5",
+      "published_at": "2026-10-22T01:57:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -103,14 +103,6 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Lakers announce starting lineup for first game in post-LeBron era - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNXAycWVkeVprek9OLTlpcXFBSEdKNzNBMllrRF9TWWVJOERQZ1BBb2xCZUxEalFVazRSalVzbFJ5LURDTzZJbnA4Zm4zQVNPT3ZkRDVCek9NenVDNFVMZjMyeGsxenpqaVROZGVGeTJWb0lBQ1AzYUpaTkJQb0VuQUxkX0ZzaGJFNFBJRFlHMA?oc=5",
-      "published_at": "2026-10-22T01:57:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
       "headline": "Kings Announce New Opening Night Starting Lineup vs. Clippers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ0hFb0xlYjNRd09ISWJ0eHBxU3hMeUVidVh2c05mSGFndjBQMUdkczFKQzZjZDRyT1pBQmlSS0pmTExYUU9IamV5WXpDRUlfZEt4Rm5UT05Pc0gxQ09TUk1udkxRZWpNc3pvaWFaaHdlUF9sM1RzSGgtXzlWbG1ub2IwdzBrelVlOG5oM3RfWQ?oc=5",
       "published_at": "2026-10-22T02:09:24+00:00",
@@ -119,9 +111,17 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "What's Mavs' Starting Lineup? How to Watch, Odds & Notebook For Opener at Rockets - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUUVSMzhVZU1SQnA1VkZkYVVLMkNOeUxVUVd3ZmpvU3RnbjQyTFJpLVJJWlg4OVhodzBiQi1lT3NwbWNFVjRsamVCRzg5eXhsNWJtMzVkMDh2ei1mT2twVXl0V2hpdTlvNndmUktZaVVsZEtDVlc4RE0zTzZFR1o0bnlKYkI0M1RLSGpoUTdGNk9DVUstRkM1NzBra1M3OExyMTdWUWlFU1czeXJMMDRabmxTNnZVbjJyWVN4OHVQdXpXdEQ3V3c?oc=5",
-      "published_at": "2026-10-21T23:14:42+00:00",
+      "headline": "Warriors Announce Starting Lineup for Season Opener vs. Lakers - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTU80dVZLdDlITEZrbEpLZ24yV0YyWXZWeXdLTWktVm1VcjVBUmhnWXByb1hZZGFZZlI0OVhVWlNyS2hpcFd0eEJob0Noa0libW5nWGRodURyQ2JHb3RVdVZfN1k1bmF3a1Znd09yVC1mMUxBdGQtenhFVTVFMXpwcllWSF9pWHltQnpRbnB6aDRVcWtGemNIZ0JNc2lCajVaRWNreDZINGNIdS1VREZHcg?oc=5",
+      "published_at": "2026-10-22T01:38:28+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
+      "headline": "Suns reveal first starting lineup of the season with Khaman Maluach at center - Arizona Sports 98.7",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWVVzb056YkRWVDg4eERSOWdXYnRpMEVBTTRXZHJyMmVrUDdVcHBydmpveFFJMFFjMlFmTUpDZUc3N01pMEhmeUdHVjB2d3Q3OXRSQ3ZNbDE0T2xWa3l1QzJtcGVqVXZQR0k0Sk5rT09Tb21HY2ktMVVBWmt0aVhPWDNFdw?oc=5",
+      "published_at": "2026-10-22T01:38:14+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
