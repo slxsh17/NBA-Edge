@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T21:03:13.675075+00:00",
+  "updated_at": "2026-10-22T21:36:51.014147+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -25,17 +25,17 @@
     {
       "name": "Grant Williams",
       "team": "CHA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Coby White",
       "team": "CHA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Kon Knueppel",
       "team": "CHA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Kylan Boswell",
@@ -158,14 +158,24 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "T.J. McConnell",
+      "name": "Reed Sheppard",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Ben Sheppard",
       "team": "IND",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Aaron Nesmith",
       "team": "IND",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "T.J. McConnell",
+      "team": "IND",
+      "status": "OUT"
     },
     {
       "name": "Johnny Furphy",
