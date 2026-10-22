@@ -1,73 +1,19 @@
 {
-  "date": "20261021",
-  "updated_at": "2026-10-21T23:24:34.094815-04:00",
+  "date": "20261022",
+  "updated_at": "2026-10-22T00:00:34.063068-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
-      "away": "Atlanta Hawks",
-      "home": "Orlando Magic",
-      "time": "2026-10-21T23:00Z",
-      "status": "Final"
+      "away": "Cleveland Cavaliers",
+      "home": "Philadelphia 76ers",
+      "time": "2026-10-22T23:00Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Milwaukee Bucks",
-      "home": "Washington Wizards",
-      "time": "2026-10-21T23:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Minnesota Timberwolves",
-      "home": "Miami Heat",
-      "time": "2026-10-21T23:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Charlotte Hornets",
-      "home": "Brooklyn Nets",
-      "time": "2026-10-21T23:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Chicago Bulls",
-      "home": "Toronto Raptors",
-      "time": "2026-10-21T23:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Utah Jazz",
-      "home": "Memphis Grizzlies",
-      "time": "2026-10-22T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Indiana Pacers",
-      "home": "New Orleans Pelicans",
-      "time": "2026-10-22T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Dallas Mavericks",
-      "home": "Houston Rockets",
-      "time": "2026-10-22T00:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Golden State Warriors",
-      "home": "Los Angeles Lakers",
-      "time": "2026-10-22T02:00Z",
-      "status": "Halftime"
-    },
-    {
-      "away": "Phoenix Suns",
-      "home": "Portland Trail Blazers",
-      "time": "2026-10-22T02:00Z",
-      "status": "Halftime"
-    },
-    {
-      "away": "Sacramento Kings",
-      "home": "LA Clippers",
-      "time": "2026-10-22T02:30Z",
-      "status": "In Progress"
+      "away": "Denver Nuggets",
+      "home": "Oklahoma City Thunder",
+      "time": "2026-10-23T01:30Z",
+      "status": "Scheduled"
     }
   ]
 }
