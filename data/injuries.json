@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T14:45:57.557028+00:00",
+  "updated_at": "2026-10-22T15:21:02.953138+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -58,14 +58,14 @@
       "status": "OUT"
     },
     {
-      "name": "Khalifa Diop",
-      "team": "CLE",
-      "status": "OUT"
-    },
-    {
       "name": "Jarrett Allen",
       "team": "CLE",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Khalifa Diop",
+      "team": "CLE",
+      "status": "OUT"
     },
     {
       "name": "Nae'Qwan Tomlin",
