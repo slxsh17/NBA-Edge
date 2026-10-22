@@ -1,0 +1,335 @@
+{
+  "schema": 1,
+  "historical_only": true,
+  "contests": [
+    {
+      "date": "2026-10-21",
+      "site": "FanDuel",
+      "contest_entries": 245,
+      "slots": 9,
+      "slate_id": "135636",
+      "source_description": "Aggregated from user-provided 245-entry contest standings, not all FanDuel contests.",
+      "ownership_sum_pct": 900.06,
+      "observed_players": 129,
+      "top_players": [
+        {
+          "name": "Ivica Zubac",
+          "position": "C",
+          "salary": 6100,
+          "count": 151,
+          "ownership_pct": 61.63
+        },
+        {
+          "name": "Trae Young",
+          "position": "PG",
+          "salary": 7300,
+          "count": 128,
+          "ownership_pct": 52.24
+        },
+        {
+          "name": "Isaiah Jackson",
+          "position": "PF",
+          "salary": 4300,
+          "count": 123,
+          "ownership_pct": 50.2
+        },
+        {
+          "name": "Yaxel Lendeborg",
+          "position": "SF",
+          "salary": 5100,
+          "count": 115,
+          "ownership_pct": 46.94
+        },
+        {
+          "name": "Darius Garland",
+          "position": "PG",
+          "salary": 7400,
+          "count": 113,
+          "ownership_pct": 46.12
+        },
+        {
+          "name": "Cameron Boozer",
+          "position": "PF",
+          "salary": 6200,
+          "count": 103,
+          "ownership_pct": 42.04
+        },
+        {
+          "name": "Giannis Antetokounmpo",
+          "position": "PF",
+          "salary": 11200,
+          "count": 100,
+          "ownership_pct": 40.82
+        },
+        {
+          "name": "Rui Hachimura",
+          "position": "SF",
+          "salary": 4800,
+          "count": 93,
+          "ownership_pct": 37.96
+        },
+        {
+          "name": "Ty Jerome",
+          "position": "SG",
+          "salary": 6800,
+          "count": 84,
+          "ownership_pct": 34.29
+        },
+        {
+          "name": "Naz Reid",
+          "position": "PF",
+          "salary": 5900,
+          "count": 84,
+          "ownership_pct": 34.29
+        },
+        {
+          "name": "Luka Dončić",
+          "position": "PG",
+          "salary": 11700,
+          "count": 77,
+          "ownership_pct": 31.43
+        },
+        {
+          "name": "Franz Wagner",
+          "position": "SF",
+          "salary": 6900,
+          "count": 54,
+          "ownership_pct": 22.04
+        },
+        {
+          "name": "Austin Reaves",
+          "position": "SG",
+          "salary": 7700,
+          "count": 51,
+          "ownership_pct": 20.82
+        },
+        {
+          "name": "Anthony Edwards",
+          "position": "SG",
+          "salary": 8500,
+          "count": 48,
+          "ownership_pct": 19.59
+        },
+        {
+          "name": "Domantas Sabonis",
+          "position": "C",
+          "salary": 8100,
+          "count": 48,
+          "ownership_pct": 19.59
+        },
+        {
+          "name": "De'Anthony Melton",
+          "position": "PG",
+          "salary": 4400,
+          "count": 47,
+          "ownership_pct": 19.18
+        },
+        {
+          "name": "Jaren Jackson",
+          "position": "PF",
+          "salary": 7000,
+          "count": 45,
+          "ownership_pct": 18.37
+        },
+        {
+          "name": "Jalen Smith",
+          "position": "C",
+          "salary": 4500,
+          "count": 38,
+          "ownership_pct": 15.51
+        },
+        {
+          "name": "Darius Acuff",
+          "position": "PG",
+          "salary": 5800,
+          "count": 33,
+          "ownership_pct": 13.47
+        },
+        {
+          "name": "Dennis Schröder",
+          "position": "PG",
+          "salary": 4300,
+          "count": 32,
+          "ownership_pct": 13.06
+        },
+        {
+          "name": "Caleb Wilson",
+          "position": "PF",
+          "salary": 5700,
+          "count": 32,
+          "ownership_pct": 13.06
+        },
+        {
+          "name": "Gui Santos",
+          "position": "SF",
+          "salary": 4600,
+          "count": 29,
+          "ownership_pct": 11.84
+        },
+        {
+          "name": "Cedric Coward",
+          "position": "SG",
+          "salary": 5400,
+          "count": 27,
+          "ownership_pct": 11.02
+        },
+        {
+          "name": "Khaman Maluach",
+          "position": "C",
+          "salary": 4300,
+          "count": 23,
+          "ownership_pct": 9.39
+        },
+        {
+          "name": "Dyson Daniels",
+          "position": "SF",
+          "salary": 6200,
+          "count": 22,
+          "ownership_pct": 8.98
+        },
+        {
+          "name": "Paolo Banchero",
+          "position": "PF",
+          "salary": 8400,
+          "count": 20,
+          "ownership_pct": 8.16
+        },
+        {
+          "name": "Brandon Miller",
+          "position": "SF",
+          "salary": 7600,
+          "count": 20,
+          "ownership_pct": 8.16
+        },
+        {
+          "name": "Tyrese Haliburton",
+          "position": "PG",
+          "salary": 8300,
+          "count": 19,
+          "ownership_pct": 7.76
+        },
+        {
+          "name": "Lauri Markkanen",
+          "position": "PF",
+          "salary": 7700,
+          "count": 17,
+          "ownership_pct": 6.94
+        },
+        {
+          "name": "Darryn Peterson",
+          "position": "SG",
+          "salary": 5300,
+          "count": 16,
+          "ownership_pct": 6.53
+        },
+        {
+          "name": "Alperen Şengün",
+          "position": "C",
+          "salary": 8900,
+          "count": 15,
+          "ownership_pct": 6.12
+        },
+        {
+          "name": "Keyonte George",
+          "position": "PG",
+          "salary": 6900,
+          "count": 15,
+          "ownership_pct": 6.12
+        },
+        {
+          "name": "Day'Ron Sharpe",
+          "position": "C",
+          "salary": 5300,
+          "count": 15,
+          "ownership_pct": 6.12
+        },
+        {
+          "name": "Collin Murray-Boyles",
+          "position": "PF",
+          "salary": 4900,
+          "count": 15,
+          "ownership_pct": 6.12
+        },
+        {
+          "name": "Anthony Davis",
+          "position": "PF",
+          "salary": 10000,
+          "count": 14,
+          "ownership_pct": 5.71
+        },
+        {
+          "name": "LaMelo Ball",
+          "position": "PG",
+          "salary": 8600,
+          "count": 13,
+          "ownership_pct": 5.31
+        },
+        {
+          "name": "Jalen Johnson",
+          "position": "PF",
+          "salary": 9700,
+          "count": 12,
+          "ownership_pct": 4.9
+        },
+        {
+          "name": "Immanuel Quickley",
+          "position": "PG",
+          "salary": 6100,
+          "count": 10,
+          "ownership_pct": 4.08
+        },
+        {
+          "name": "Rudy Gobert",
+          "position": "C",
+          "salary": 6100,
+          "count": 10,
+          "ownership_pct": 4.08
+        },
+        {
+          "name": "Pascal Siakam",
+          "position": "PF",
+          "salary": 7800,
+          "count": 9,
+          "ownership_pct": 3.67
+        }
+      ],
+      "salary_bins": [
+        {
+          "label": "Under $4.5K",
+          "min_salary": 0,
+          "max_salary": 4499,
+          "available_players": 212,
+          "mean_actual_ownership_pct": 0.526
+        },
+        {
+          "label": "$4.5K–$5.9K",
+          "min_salary": 4500,
+          "max_salary": 5999,
+          "available_players": 61,
+          "mean_actual_ownership_pct": 3.928
+        },
+        {
+          "label": "$6K–$7.4K",
+          "min_salary": 6000,
+          "max_salary": 7499,
+          "available_players": 26,
+          "mean_actual_ownership_pct": 12.244
+        },
+        {
+          "label": "$7.5K–$9.4K",
+          "min_salary": 7500,
+          "max_salary": 9499,
+          "available_players": 28,
+          "mean_actual_ownership_pct": 5.263
+        },
+        {
+          "label": "$9.5K+",
+          "min_salary": 9500,
+          "max_salary": 99999,
+          "available_players": 5,
+          "mean_actual_ownership_pct": 16.654
+        }
+      ]
+    }
+  ]
+}
