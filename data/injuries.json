@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T19:53:32.502292+00:00",
+  "updated_at": "2026-10-22T20:26:14.699910+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -43,12 +43,27 @@
       "status": "OUT"
     },
     {
-      "name": "Dailyn Swain",
+      "name": "Jordan Hawkins",
       "team": "CHI",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Jordan Hawkins",
+      "name": "Zach Collins",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tobe Awaka",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Josh Giddey",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Dailyn Swain",
       "team": "CHI",
       "status": "DAY-TO-DAY"
     },
@@ -73,22 +88,22 @@
       "status": "OUT"
     },
     {
-      "name": "Dereck Lively II",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Caleb Martin",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jett Howard",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Tarik Biberovic",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Dereck Lively II",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Jett Howard",
       "team": "DAL",
       "status": "DAY-TO-DAY"
     },
