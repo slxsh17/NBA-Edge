@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T22:10:45.912641+00:00",
+  "updated_at": "2026-10-22T22:51:12.260588+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -71,11 +71,6 @@
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
-    },
-    {
-      "name": "Jarrett Allen",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Khalifa Diop",
@@ -275,7 +270,7 @@
     {
       "name": "Dean Wade",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Tacko Fall",
@@ -343,9 +338,19 @@
       "status": "OUT"
     },
     {
-      "name": "Tobias Harris",
+      "name": "De'Aaron Fox",
       "team": "SAS",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Keldon Johnson",
+      "team": "SAS",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tobias Harris",
+      "team": "SAS",
+      "status": "OUT"
     },
     {
       "name": "Jayden Quaintance",
