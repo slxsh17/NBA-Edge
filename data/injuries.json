@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T16:04:31.313805+00:00",
+  "updated_at": "2026-10-22T16:40:51.034414+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -345,7 +345,7 @@
     {
       "name": "AJ Dybantsa",
       "team": "WAS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Tristan Vukcevic",
