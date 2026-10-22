@@ -1,6 +1,6 @@
 {
   "date": "20261021",
-  "updated_at": "2026-10-21T22:23:13.797003-04:00",
+  "updated_at": "2026-10-21T22:58:18.379068-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -31,19 +31,19 @@
       "away": "Chicago Bulls",
       "home": "Toronto Raptors",
       "time": "2026-10-21T23:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Utah Jazz",
       "home": "Memphis Grizzlies",
       "time": "2026-10-22T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Indiana Pacers",
       "home": "New Orleans Pelicans",
       "time": "2026-10-22T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Dallas Mavericks",
@@ -67,7 +67,7 @@
       "away": "Sacramento Kings",
       "home": "LA Clippers",
       "time": "2026-10-22T02:30Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     }
   ]
 }
