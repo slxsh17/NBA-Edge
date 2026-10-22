@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T22:51:12.260588+00:00",
+  "updated_at": "2026-10-22T23:25:09.505739+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -70,16 +70,6 @@
     {
       "name": "Nic Claxton",
       "team": "CHI",
-      "status": "OUT"
-    },
-    {
-      "name": "Khalifa Diop",
-      "team": "CLE",
-      "status": "OUT"
-    },
-    {
-      "name": "Nae'Qwan Tomlin",
-      "team": "CLE",
       "status": "OUT"
     },
     {
@@ -363,12 +353,12 @@
       "status": "OUT"
     },
     {
-      "name": "Tony Bradley",
+      "name": "Trey Alexander",
       "team": "UTA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Trey Alexander",
+      "name": "Tony Bradley",
       "team": "UTA",
       "status": "DAY-TO-DAY"
     },
