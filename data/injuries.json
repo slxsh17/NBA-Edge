@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T00:33:45.441307+00:00",
+  "updated_at": "2026-10-22T01:16:09.109795+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -123,11 +123,6 @@
       "status": "OUT"
     },
     {
-      "name": "Stephen Curry",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Brandin Podziemski",
       "team": "GSW",
       "status": "OUT"
@@ -188,17 +183,17 @@
       "status": "OUT"
     },
     {
+      "name": "Adou Thiero",
+      "team": "LAL",
+      "status": "OUT"
+    },
+    {
       "name": "Collin Sexton",
       "team": "LAL",
       "status": "OUT"
     },
     {
       "name": "Cameron Carr",
-      "team": "LAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Adou Thiero",
       "team": "LAL",
       "status": "OUT"
     },
@@ -270,7 +265,7 @@
     {
       "name": "Luke Kennard",
       "team": "PHX",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Mark Williams",
@@ -293,24 +288,19 @@
       "status": "OUT"
     },
     {
-      "name": "Deni Avdija",
-      "team": "POR",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Shaedon Sharpe",
       "team": "POR",
-      "status": "OUT"
-    },
-    {
-      "name": "Ben Simmons",
-      "team": "SAC",
       "status": "OUT"
     },
     {
       "name": "Malik Monk",
       "team": "SAC",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Ben Simmons",
+      "team": "SAC",
+      "status": "OUT"
     },
     {
       "name": "Dylan Cardwell",
