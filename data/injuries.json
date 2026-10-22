@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:26:14.699910+00:00",
+  "updated_at": "2026-10-22T21:03:13.675075+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -43,6 +43,11 @@
       "status": "OUT"
     },
     {
+      "name": "Dailyn Swain",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jordan Hawkins",
       "team": "CHI",
       "status": "DAY-TO-DAY"
@@ -59,11 +64,6 @@
     },
     {
       "name": "Josh Giddey",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Dailyn Swain",
       "team": "CHI",
       "status": "DAY-TO-DAY"
     },
@@ -88,7 +88,17 @@
       "status": "OUT"
     },
     {
+      "name": "Jett Howard",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Caleb Martin",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Santi Aldama",
       "team": "DAL",
       "status": "OUT"
     },
@@ -101,16 +111,6 @@
       "name": "Dereck Lively II",
       "team": "DAL",
       "status": "OUT"
-    },
-    {
-      "name": "Jett Howard",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Santi Aldama",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Spencer Jones",
@@ -158,12 +158,12 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Aaron Nesmith",
+      "name": "T.J. McConnell",
       "team": "IND",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "T.J. McConnell",
+      "name": "Aaron Nesmith",
       "team": "IND",
       "status": "DAY-TO-DAY"
     },
@@ -243,14 +243,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jonathan Isaac",
-      "team": "ORL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Anthony Black",
       "team": "ORL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Jonathan Isaac",
+      "team": "ORL",
+      "status": "OUT"
     },
     {
       "name": "Noah Penda",
@@ -361,6 +361,11 @@
       "name": "Jusuf Nurkic",
       "team": "UTA",
       "status": "OUT"
+    },
+    {
+      "name": "Felix Okpara",
+      "team": "WAS",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "AJ Dybantsa",
