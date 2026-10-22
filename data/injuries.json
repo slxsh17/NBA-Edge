@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T01:16:09.109795+00:00",
+  "updated_at": "2026-10-22T01:54:36.721934+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -273,11 +273,6 @@
       "status": "OUT"
     },
     {
-      "name": "Micah Potter",
-      "team": "POR",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Branden Carlson",
       "team": "POR",
       "status": "OUT"
@@ -295,7 +290,7 @@
     {
       "name": "Malik Monk",
       "team": "SAC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Ben Simmons",
