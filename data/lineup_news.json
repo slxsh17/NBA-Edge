@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-23T17:54:07.822411+00:00",
+  "checked_at": "2026-10-23T18:16:14.416990+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -102,6 +102,14 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
+      "published_at": "2026-10-23T18:00:04+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
       "published_at": "2026-10-23T14:00:00+00:00",
@@ -142,14 +150,6 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Should The Detroit Pistons ALREADY Make A Rotation CHANGE After Javonte Green's Game 1 Performance? - WHAS11",
-      "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQc0lKeU1vVnZoUm9jaG1sMXZjakF0dnI3ZUNpMnZBRDZPTndCWXdfVzE0OTVEckFzMGtlUmlkSE1fb0htUENONnpTR1ZHQjJJNE1XNDFJa3ZLVHZQc0RWeW1wX1BUWmtKT0pDTUpCN0c1alFBSXhsSDBsR2Z6cEk5MkFUMU5aV1doZW9Uc0pnSnVoS29PQnUzLWZpUHotUWpLNWJIN25tRzZjUEtUNERxV2VaS0VlTnZOSGVrZ1Y0N2lORHhNcXBQN1p4YjhpM1hMQUotOTlQdGE2R2dMU2Z6N0oya2xjb0F6STNQVU14U0xzeWx0YnYtV0hyNU5pMHRGNGJmSkFRREJXYXpyY1N0N0xiVUNGV18wWjVQZFI1MUxjbEVWeVJFbi1LMmlMT0pwSjdF?oc=5",
-      "published_at": "2026-10-22T19:14:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
       "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
       "published_at": "2026-10-22T20:39:51+00:00",
@@ -169,6 +169,14 @@
       "headline": "Yves Missi passes Jamahl Mosley’s first big starting lineup test vs. Pacers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSW5ieFBnWFVlVU1NN2k2eWxNMEVLSXhLWS1ZYTI0SDQ5ZHVqMUtsY19fMGdZXzBmYTJFZ2dGdWhmVEwwR3VBMWp5QlRWLURZRGpGVnBobUowMWdxbTZsM2xhVV9OUkRVM3RvLWRINzQ0ekQ1Zm5QcHJKOV9lNkQ4ZFdQTVRKalE?oc=5",
       "published_at": "2026-10-22T23:04:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Should The Detroit Pistons ALREADY Make A Rotation CHANGE After Javonte Green's Game 1 Performance? - WHAS11",
+      "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQc0lKeU1vVnZoUm9jaG1sMXZjakF0dnI3ZUNpMnZBRDZPTndCWXdfVzE0OTVEckFzMGtlUmlkSE1fb0htUENONnpTR1ZHQjJJNE1XNDFJa3ZLVHZQc0RWeW1wX1BUWmtKT0pDTUpCN0c1alFBSXhsSDBsR2Z6cEk5MkFUMU5aV1doZW9Uc0pnSnVoS29PQnUzLWZpUHotUWpLNWJIN25tRzZjUEtUNERxV2VaS0VlTnZOSGVrZ1Y0N2lORHhNcXBQN1p4YjhpM1hMQUotOTlQdGE2R2dMU2Z6N0oya2xjb0F6STNQVU14U0xzeWx0YnYtV0hyNU5pMHRGNGJmSkFRREJXYXpyY1N0N0xiVUNGV18wWjVQZFI1MUxjbEVWeVJFbi1LMmlMT0pwSjdF?oc=5",
+      "published_at": "2026-10-22T19:14:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
