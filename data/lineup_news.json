@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-23T20:55:05.235176+00:00",
+  "checked_at": "2026-10-23T21:18:05.734769+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -166,6 +166,14 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
+      "published_at": "2026-10-23T02:50:17+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Yves Missi passes Jamahl Mosley’s first big starting lineup test vs. Pacers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSW5ieFBnWFVlVU1NN2k2eWxNMEVLSXhLWS1ZYTI0SDQ5ZHVqMUtsY19fMGdZXzBmYTJFZ2dGdWhmVEwwR3VBMWp5QlRWLURZRGpGVnBobUowMWdxbTZsM2xhVV9OUkRVM3RvLWRINzQ0ekQ1Zm5QcHJKOV9lNkQ4ZFdQTVRKalE?oc=5",
       "published_at": "2026-10-22T23:04:23+00:00",
@@ -174,9 +182,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
-      "published_at": "2026-10-23T02:50:17+00:00",
+      "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - ClutchPoints",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY3A1RFJadGpkYjlzQ3VqOUVSSUM2aW96Qkdjb3N4WjlZUTRhNU1CeEhnZTZPeXFIcndKb25iRWg0Y2VxRzFLVmdDQTFGMl82allMM2pzdENxNnRkVVJzSndFa2lNMkdkb0p3Nm9weGs4UWEyNmZHRndTaGpRVGQtZEYzaEFnNFVrQ2dRTE1DbUl6YU55elpsWjUzc2FWX0hDNlpVRXJaNk4?oc=5",
+      "published_at": "2026-10-23T21:16:37+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
