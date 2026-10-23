@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T13:46:30.048293+00:00",
+  "updated_at": "2026-10-23T14:23:57.648341+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -261,6 +261,11 @@
       "name": "Izaiyah Nelson",
       "team": "ORL",
       "status": "OUT"
+    },
+    {
+      "name": "Joel Embiid",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tacko Fall",
