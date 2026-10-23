@@ -1,15 +1,23 @@
 {
   "schema": 1,
   "slate_date": "2026-10-22",
-  "checked_at": "2026-10-22T23:50:08.075400+00:00",
+  "checked_at": "2026-10-23T00:13:50.964778+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
     {
-      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWXVLWlZqRk9hVFptRTl3TVhfcFhGT0xNNzh2aHBKaTZ6cEFlNzFZeEFNZHN1VDQ2aWF0NlNhdTRteGlzNW1OaC1Gdm5vYTdiTkdHLVptOFk0OEs0dm5XQ3BnVWdBbUtqbzQ5c3lnZmNybUhkb3MwNV8wbzhqY2VlYkdid3k2U3hEMUM0?oc=5",
-      "published_at": "2026-10-22T22:06:05+00:00",
+      "headline": "LeBron James introduced in the starting lineup in Philadelphia before signature pregame chalk toss - NBA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNaFVfV0laN0txRzV1R1JZZm9BajdVWm5Bb2h6Q2RwWGltMUJnWU1lZS1qZGN4QklWY1R6MnRtY1ZSdTJzcWdVUElLTGtHWVpyY1dycU5nRkRaajZrdHFpdTBCSkNUVlQ4bnFnNUJHYzBjbzJTN1VaT21WSlF2UWl4UGpweWJQbGxaQVRucEhFZmZyQ05FVmdUN09VUmlnZDJQaFZwSEhqaVlhMGpuanBBVlpjN014Uy00ZU1EMi03N25tYkNmV3pPdGhDTlFoTVQ1aEUtSnF4WW1mNzFUVjlaQlJRWWYyaWFuOFp1TVpla08yN0VGdnhJeHNhUmtCRU1u?oc=5",
+      "published_at": "2026-10-23T00:01:22+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
+      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMjBuc2MzajlDb21VeE1FbHVKVDlCczZwNGVhaExNR1ZSdkZpMWVSYVVWZzctRXUyMWY2cUlwbFN2VXdhYlcxeVRRbkcwbDRwSmFLbF9wR19WQXB5U0tPWDNTZ1VHREM5NzBIYjRGWjZ1LVVlbVA3Z3lvOVJ3eERoX2xKUkhpY3AtcExPWGxLeEFnaC1fNXJkcg?oc=5",
+      "published_at": "2026-10-22T23:39:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -31,14 +39,6 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
-      "published_at": "2026-10-22T20:39:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
       "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
       "published_at": "2026-10-22T22:51:17+00:00",
@@ -55,9 +55,9 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Spurs to 'Figure Out' Promising Rotation After Loss to Thunder - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQclNDeVF3MlI3ajBNeEhiVTAwdzBtc3oxWlE1cWRrZjRGMXpjQk03U3daZHd6T0l1N2ljR3lTTFBNTC1GMjFVaE1TQm1RUzd0ZlZRZnViYUdlMjJRV2RwbGJjVVhMbVlZT2YxalRxODAzcDlScDlZekNjendKSGJFa19MM0ZkdE5hTVEzbDl3?oc=5",
-      "published_at": "2026-10-22T17:03:05+00:00",
+      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWXVLWlZqRk9hVFptRTl3TVhfcFhGT0xNNzh2aHBKaTZ6cEFlNzFZeEFNZHN1VDQ2aWF0NlNhdTRteGlzNW1OaC1Gdm5vYTdiTkdHLVptOFk0OEs0dm5XQ3BnVWdBbUtqbzQ5c3lnZmNybUhkb3MwNV8wbzhqY2VlYkdid3k2U3hEMUM0?oc=5",
+      "published_at": "2026-10-22T22:06:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -71,9 +71,17 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "What We Learned From Kings Opening Night Rotation - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYmI4Z3AtODBsazBmaTVZbGg3LW0tV2V6cXVDalVVVWZlZTR5MUpUbkgzVC12VnVvNjJqRzBYR0tnUmJ0cTVSd3l6azlNTnB5dk9IMEhVRVdNNGZ0U1M3bWhxV3RWRV9DQVNKbUhzLVFEZTVCM2pQaWV3SDRHQTFqUnlvYmhSRlNsejlN?oc=5",
-      "published_at": "2026-10-22T16:19:10+00:00",
+      "headline": "Yves Missi passes Jamahl Mosley’s first big starting lineup test vs. Pacers - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSW5ieFBnWFVlVU1NN2k2eWxNMEVLSXhLWS1ZYTI0SDQ5ZHVqMUtsY19fMGdZXzBmYTJFZ2dGdWhmVEwwR3VBMWp5QlRWLURZRGpGVnBobUowMWdxbTZsM2xhVV9OUkRVM3RvLWRINzQ0ekQ1Zm5QcHJKOV9lNkQ4ZFdQTVRKalE?oc=5",
+      "published_at": "2026-10-22T23:04:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
+      "headline": "Spurs to 'Figure Out' Promising Rotation After Loss to Thunder - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQclNDeVF3MlI3ajBNeEhiVTAwdzBtc3oxWlE1cWRrZjRGMXpjQk03U3daZHd6T0l1N2ljR3lTTFBNTC1GMjFVaE1TQm1RUzd0ZlZRZnViYUdlMjJRV2RwbGJjVVhMbVlZT2YxalRxODAzcDlScDlZekNjendKSGJFa19MM0ZkdE5hTVEzbDl3?oc=5",
+      "published_at": "2026-10-22T17:03:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -167,17 +175,9 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Bucks' Gary Trent: Left out of rotation - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX1FvXzdab2dkR1g5LTBnQ003bWt6MExsWWZCUEJpUTlCdkZTQlMtamJuNEozT1hYSk9JU3RQVzViWFJ2UEtvTHRKSzBncUdmUmpJNFFoQzdXTnJ3Slo5c0JXTURScjNqWFpHT2FUZ2tqR0FqTWJJcmlaOWNCRHoySVViNEswZmxGc1NGUWcyb1B1dw?oc=5",
-      "published_at": "2026-10-22T16:17:38+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Hawks' Corey Kispert: Currently outside rotation - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOclVrQzc2WlRiSHlqb1lmdWkwclVFUnpOWWZCTGY0b2Z4cmRXV0JFZkkxLU9LOUVVR2xmdk5DcFNveEtGdmQwTmJmZTV0ZUpadDRfZjJzdHhnWnVpLVJCMVJoTWd4M3JiM0FORGdVbXpCc3VfTVVaTVQzUm5vN0piRFZBSGpQMWFURWFjT1puUXBobUwtNEJmNXJkZ0RWdw?oc=5",
-      "published_at": "2026-10-22T16:01:13+00:00",
+      "headline": "What We Learned From Kings Opening Night Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYmI4Z3AtODBsazBmaTVZbGg3LW0tV2V6cXVDalVVVWZlZTR5MUpUbkgzVC12VnVvNjJqRzBYR0tnUmJ0cTVSd3l6azlNTnB5dk9IMEhVRVdNNGZ0U1M3bWhxV3RWRV9DQVNKbUhzLVFEZTVCM2pQaWV3SDRHQTFqUnlvYmhSRlNsejlN?oc=5",
+      "published_at": "2026-10-22T16:19:10+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -202,14 +202,6 @@
       "headline": "Kyrie Irving Details Nerves, Minutes Restriction In First Mavericks Game After 597-Day Absence - Yardbarker",
       "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPVWIxamlBRkhEV3Bvc0JldGpQYXdTdlJpZmxCSDRlTExCX1ptVHZJOFVWYUswY3REOE5NSHMtSFl5VUphS1dZeVZfSi1mMlhQbXR5MUVBMmxINXBUd3NPS051Z3VBbjh0dy14M3JFVUszN2RLbGVPQWIxWUptc1ZpeXROazRHazVZUEVQQl9mYy1qcnBfWEtsV2EyWENuQW9ZZTFjem1xNkxSU2JjRHFFblBRRmlQM3hyUHBxMXpUekRZLTlScVdWS1dlSW1pSlNlaEVScW1HMlBGQW83SF9kb2diemZCQQ?oc=5",
       "published_at": "2026-10-22T15:06:16+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Kings Announce New Opening Night Starting Lineup vs. Clippers - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdVJ3bDRlbFh1WWFsLU42ODc3OGVEMmNrU2xYT1BDeTJNaDdQeTNyZXJKZC1fS1JvYXRQczJ4UUZBemdaRHFrd3BUZVdHSkRHWVJJX1VHZ3VZOWJTSnJ3alRoQlpSV0hmWVYyYlZ5X1FVblpqZktEYTExcmxIMDRyQzlMLUZrYnZQalNWb1pCR2E3MDBsMF9KYmR3?oc=5",
-      "published_at": "2026-10-22T02:09:23+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
