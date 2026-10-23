@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-23T23:13:58.736338+00:00",
+  "checked_at": "2026-10-23T23:49:18.145726+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -35,7 +35,7 @@
     },
     {
       "team": "DET",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "C. Cunningham",
         "D. Robinson",
@@ -49,7 +49,7 @@
     },
     {
       "team": "MIA",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "D. Mitchell",
         "Klay Thompson",
@@ -78,17 +78,17 @@
   ],
   "headlines": [
     {
-      "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTGtFaHFFMXlWcnNhQlZNSDFhU3RXakhSb2ZhZHZCQWlNZmpOczEwR0NibWxDLW5uNE1TM3ZfazBhZFh3VG10ZHNoSGJ1ZGRkbnFOam9UdUVTbEdGbklTMWpPR0ktRkNQclNPZWNEQkVLRWV2YXRCLVl1eWZBckdOemEzOFlKYVE?oc=5",
-      "published_at": "2026-10-23T21:36:58+00:00",
+      "headline": "Power Ranking Every NBA Team's Starting Lineup - Bleacher Report",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY0hTZHhVdk1UMzFQZDZzNEI5MENab1lfVHlQMXZpN1BNekQtc2VJUlhXd3kydm1kMkw3WTdfeXkybzR1MW00NHd1eHd5QlhrZ2V1Y3NUQk9fUFhnYmp0dHE1dElNbVFRTENEUUpZdEJ2M2t1OGVFczFXOEtkRDFyZ2YwWW96aU9PcEI0RXE0dDJXSEFt?oc=5",
+      "published_at": "2026-10-23T11:09:14+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Power Ranking Every NBA Team's Starting Lineup - Bleacher Report",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY0hTZHhVdk1UMzFQZDZzNEI5MENab1lfVHlQMXZpN1BNekQtc2VJUlhXd3kydm1kMkw3WTdfeXkybzR1MW00NHd1eHd5QlhrZ2V1Y3NUQk9fUFhnYmp0dHE1dElNbVFRTENEUUpZdEJ2M2t1OGVFczFXOEtkRDFyZ2YwWW96aU9PcEI0RXE0dDJXSEFt?oc=5",
-      "published_at": "2026-10-23T11:09:14+00:00",
+      "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTGtFaHFFMXlWcnNhQlZNSDFhU3RXakhSb2ZhZHZCQWlNZmpOczEwR0NibWxDLW5uNE1TM3ZfazBhZFh3VG10ZHNoSGJ1ZGRkbnFOam9UdUVTbEdGbklTMWpPR0ktRkNQclNPZWNEQkVLRWV2YXRCLVl1eWZBckdOemEzOFlKYVE?oc=5",
+      "published_at": "2026-10-23T21:36:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -112,7 +112,7 @@
     {
       "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
-      "published_at": "2026-10-23T22:11:08+00:00",
+      "published_at": "2026-10-23T22:57:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -121,14 +121,6 @@
       "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ2w0Q2Zyakk1VkYza0l1TUg5WjlpWmFBNkpZV2tFYWozZGZOVk90aTlyaTA5QWpyeHczVDdwbUlBY2dWZzVoMDRNZm5pczRQQThCblQ0RUx6bzc0LWtTb3Y3eG0wdWUyTjE0enM5R2ZHTmNBazV6aVUwVnhuZzcweXI1ZUVNTjBVTUlaWWlaMUdnUk8wajAyTnAwbw?oc=5",
       "published_at": "2026-10-23T23:00:01+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
-      "published_at": "2026-10-23T19:00:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -166,17 +158,17 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "LeBron James introduced in the starting lineup in Philadelphia before signature pregame chalk toss - NBA.com",
-      "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNaFVfV0laN0txRzV1R1JZZm9BajdVWm5Bb2h6Q2RwWGltMUJnWU1lZS1qZGN4QklWY1R6MnRtY1ZSdTJzcWdVUElLTGtHWVpyY1dycU5nRkRaajZrdHFpdTBCSkNUVlQ4bnFnNUJHYzBjbzJTN1VaT21WSlF2UWl4UGpweWJQbGxaQVRucEhFZmZyQ05FVmdUN09VUmlnZDJQaFZwSEhqaVlhMGpuanBBVlpjN014Uy00ZU1EMi03N25tYkNmV3pPdGhDTlFoTVQ1aEUtSnF4WW1mNzFUVjlaQlJRWWYyaWFuOFp1TVpla08yN0VGdnhJeHNhUmtCRU1u?oc=5",
-      "published_at": "2026-10-23T00:01:22+00:00",
+      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMjBuc2MzajlDb21VeE1FbHVKVDlCczZwNGVhaExNR1ZSdkZpMWVSYVVWZzctRXUyMWY2cUlwbFN2VXdhYlcxeVRRbkcwbDRwSmFLbF9wR19WQXB5U0tPWDNTZ1VHREM5NzBIYjRGWjZ1LVVlbVA3Z3lvOVJ3eERoX2xKUkhpY3AtcExPWGxLeEFnaC1fNXJkcg?oc=5",
-      "published_at": "2026-10-22T23:39:51+00:00",
+      "headline": "LeBron James introduced in the starting lineup in Philadelphia before signature pregame chalk toss - NBA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNaFVfV0laN0txRzV1R1JZZm9BajdVWm5Bb2h6Q2RwWGltMUJnWU1lZS1qZGN4QklWY1R6MnRtY1ZSdTJzcWdVUElLTGtHWVpyY1dycU5nRkRaajZrdHFpdTBCSkNUVlQ4bnFnNUJHYzBjbzJTN1VaT21WSlF2UWl4UGpweWJQbGxaQVRucEhFZmZyQ05FVmdUN09VUmlnZDJQaFZwSEhqaVlhMGpuanBBVlpjN014Uy00ZU1EMi03N25tYkNmV3pPdGhDTlFoTVQ1aEUtSnF4WW1mNzFUVjlaQlJRWWYyaWFuOFp1TVpla08yN0VGdnhJeHNhUmtCRU1u?oc=5",
+      "published_at": "2026-10-23T00:01:22+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
