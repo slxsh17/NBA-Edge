@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T17:05:24.102319+00:00",
+  "updated_at": "2026-10-23T17:37:15.759244+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -41,31 +41,6 @@
       "name": "Kylan Boswell",
       "team": "CHA",
       "status": "OUT"
-    },
-    {
-      "name": "Jordan Hawkins",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Dailyn Swain",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Zach Collins",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Tobe Awaka",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Josh Giddey",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nic Claxton",
@@ -111,11 +86,6 @@
       "name": "Julian Strawther",
       "team": "DEN",
       "status": "OUT"
-    },
-    {
-      "name": "Taurean Prince",
-      "team": "DET",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Charles Bassey",
