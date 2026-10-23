@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T20:29:57.422509+00:00",
+  "updated_at": "2026-10-23T21:04:57.591778+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -265,7 +265,7 @@
     {
       "name": "Oso Ighodaro",
       "team": "PHX",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Mark Williams",
