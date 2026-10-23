@@ -1,1081 +1,1161 @@
 {
-  "updated_at": "2026-10-22T21:09:12.893353-04:00",
+  "updated_at": "2026-10-23T03:09:59.610738-04:00",
   "source": "ESPN unofficial completed NBA box scores and local FanDuel positional mapping",
   "dvp_method": "Mean fantasy points allowed per player-game by nominal position; not pace or role adjusted",
   "usage_method": "Box-score estimated possession share, current-season sample only; projected_usage equals historical_usage until separately verified change",
   "opponents": [
     {
-      "team": "CLE",
-      "opponent": "PHI"
+      "team": "CHI",
+      "opponent": "MIL"
     },
     {
-      "team": "PHI",
-      "opponent": "CLE"
+      "team": "MIL",
+      "opponent": "CHI"
     },
     {
-      "team": "DEN",
-      "opponent": "OKC"
+      "team": "NYK",
+      "opponent": "BOS"
     },
     {
-      "team": "OKC",
-      "opponent": "DEN"
+      "team": "BOS",
+      "opponent": "NYK"
+    },
+    {
+      "team": "ATL",
+      "opponent": "CHA"
+    },
+    {
+      "team": "CHA",
+      "opponent": "ATL"
+    },
+    {
+      "team": "DAL",
+      "opponent": "IND"
+    },
+    {
+      "team": "IND",
+      "opponent": "DAL"
+    },
+    {
+      "team": "MIN",
+      "opponent": "ORL"
+    },
+    {
+      "team": "ORL",
+      "opponent": "MIN"
+    },
+    {
+      "team": "TOR",
+      "opponent": "WAS"
+    },
+    {
+      "team": "WAS",
+      "opponent": "TOR"
+    },
+    {
+      "team": "DET",
+      "opponent": "MIA"
+    },
+    {
+      "team": "MIA",
+      "opponent": "DET"
+    },
+    {
+      "team": "HOU",
+      "opponent": "SAS"
+    },
+    {
+      "team": "SAS",
+      "opponent": "HOU"
+    },
+    {
+      "team": "NOP",
+      "opponent": "UTA"
+    },
+    {
+      "team": "UTA",
+      "opponent": "NOP"
+    },
+    {
+      "team": "MEM",
+      "opponent": "GSW"
+    },
+    {
+      "team": "GSW",
+      "opponent": "MEM"
+    },
+    {
+      "team": "LAC",
+      "opponent": "LAL"
+    },
+    {
+      "team": "LAL",
+      "opponent": "LAC"
+    },
+    {
+      "team": "POR",
+      "opponent": "SAC"
+    },
+    {
+      "team": "SAC",
+      "opponent": "POR"
     }
   ],
   "dvp": [
     {
       "opponent": "ATL",
       "position": "C",
-      "fp_allowed": 19.21,
-      "league_avg": 21.77,
-      "games": 30
-    },
-    {
-      "opponent": "ATL",
-      "position": "PF",
-      "fp_allowed": 24.96,
-      "league_avg": 23.71,
-      "games": 26
-    },
-    {
-      "opponent": "ATL",
-      "position": "PG",
-      "fp_allowed": 22.24,
-      "league_avg": 24.54,
-      "games": 31
-    },
-    {
-      "opponent": "ATL",
-      "position": "SF",
-      "fp_allowed": 20.84,
-      "league_avg": 19.49,
-      "games": 41
-    },
-    {
-      "opponent": "ATL",
-      "position": "SG",
-      "fp_allowed": 22.15,
-      "league_avg": 21.08,
-      "games": 26
-    },
-    {
-      "opponent": "BKN",
-      "position": "C",
-      "fp_allowed": 21.49,
-      "league_avg": 21.77,
-      "games": 14
-    },
-    {
-      "opponent": "BKN",
-      "position": "PF",
-      "fp_allowed": 27.14,
-      "league_avg": 23.71,
-      "games": 26
-    },
-    {
-      "opponent": "BKN",
-      "position": "PG",
-      "fp_allowed": 19.94,
-      "league_avg": 24.54,
-      "games": 14
-    },
-    {
-      "opponent": "BKN",
-      "position": "SF",
-      "fp_allowed": 20.85,
-      "league_avg": 19.49,
-      "games": 21
-    },
-    {
-      "opponent": "BKN",
-      "position": "SG",
-      "fp_allowed": 23.67,
-      "league_avg": 21.08,
-      "games": 25
-    },
-    {
-      "opponent": "BOS",
-      "position": "C",
-      "fp_allowed": 25.13,
-      "league_avg": 21.77,
-      "games": 19
-    },
-    {
-      "opponent": "BOS",
-      "position": "PF",
-      "fp_allowed": 15.15,
-      "league_avg": 23.71,
-      "games": 21
-    },
-    {
-      "opponent": "BOS",
-      "position": "PG",
-      "fp_allowed": 22.88,
-      "league_avg": 24.54,
-      "games": 13
-    },
-    {
-      "opponent": "BOS",
-      "position": "SF",
-      "fp_allowed": 19.35,
-      "league_avg": 19.49,
-      "games": 24
-    },
-    {
-      "opponent": "BOS",
-      "position": "SG",
-      "fp_allowed": 19.12,
-      "league_avg": 21.08,
-      "games": 23
-    },
-    {
-      "opponent": "CHA",
-      "position": "C",
-      "fp_allowed": 21.36,
-      "league_avg": 21.77,
-      "games": 31
-    },
-    {
-      "opponent": "CHA",
-      "position": "PF",
-      "fp_allowed": 22.56,
-      "league_avg": 23.71,
-      "games": 37
-    },
-    {
-      "opponent": "CHA",
-      "position": "PG",
-      "fp_allowed": 23.49,
-      "league_avg": 24.54,
-      "games": 24
-    },
-    {
-      "opponent": "CHA",
-      "position": "SF",
-      "fp_allowed": 17.12,
-      "league_avg": 19.49,
-      "games": 30
-    },
-    {
-      "opponent": "CHA",
-      "position": "SG",
-      "fp_allowed": 21.46,
-      "league_avg": 21.08,
-      "games": 34
-    },
-    {
-      "opponent": "CHI",
-      "position": "C",
-      "fp_allowed": 28.58,
-      "league_avg": 21.77,
-      "games": 18
-    },
-    {
-      "opponent": "CHI",
-      "position": "PF",
-      "fp_allowed": 33.61,
-      "league_avg": 23.71,
-      "games": 20
-    },
-    {
-      "opponent": "CHI",
-      "position": "PG",
-      "fp_allowed": 26.96,
-      "league_avg": 24.54,
-      "games": 15
-    },
-    {
-      "opponent": "CHI",
-      "position": "SF",
-      "fp_allowed": 20.97,
-      "league_avg": 19.49,
-      "games": 23
-    },
-    {
-      "opponent": "CHI",
-      "position": "SG",
-      "fp_allowed": 25.33,
-      "league_avg": 21.08,
-      "games": 22
-    },
-    {
-      "opponent": "CLE",
-      "position": "C",
-      "fp_allowed": 25.25,
-      "league_avg": 21.77,
-      "games": 29
-    },
-    {
-      "opponent": "CLE",
-      "position": "PF",
-      "fp_allowed": 26.31,
-      "league_avg": 23.71,
-      "games": 24
-    },
-    {
-      "opponent": "CLE",
-      "position": "PG",
-      "fp_allowed": 22.2,
-      "league_avg": 24.54,
-      "games": 20
-    },
-    {
-      "opponent": "CLE",
-      "position": "SF",
-      "fp_allowed": 21.22,
-      "league_avg": 19.49,
-      "games": 26
-    },
-    {
-      "opponent": "CLE",
-      "position": "SG",
-      "fp_allowed": 20.52,
-      "league_avg": 21.08,
-      "games": 34
-    },
-    {
-      "opponent": "DAL",
-      "position": "C",
-      "fp_allowed": 25.32,
-      "league_avg": 21.77,
-      "games": 31
-    },
-    {
-      "opponent": "DAL",
-      "position": "PF",
-      "fp_allowed": 26.7,
-      "league_avg": 23.71,
-      "games": 31
-    },
-    {
-      "opponent": "DAL",
-      "position": "PG",
-      "fp_allowed": 23.81,
-      "league_avg": 24.54,
-      "games": 20
-    },
-    {
-      "opponent": "DAL",
-      "position": "SF",
-      "fp_allowed": 18.06,
-      "league_avg": 19.49,
-      "games": 35
-    },
-    {
-      "opponent": "DAL",
-      "position": "SG",
-      "fp_allowed": 24.09,
-      "league_avg": 21.08,
-      "games": 35
-    },
-    {
-      "opponent": "DEN",
-      "position": "C",
-      "fp_allowed": 20.17,
-      "league_avg": 21.77,
+      "fp_allowed": 19.59,
+      "league_avg": 22.26,
       "games": 33
     },
     {
+      "opponent": "ATL",
+      "position": "PF",
+      "fp_allowed": 24.28,
+      "league_avg": 23.86,
+      "games": 28
+    },
+    {
+      "opponent": "ATL",
+      "position": "PG",
+      "fp_allowed": 22.71,
+      "league_avg": 24.74,
+      "games": 34
+    },
+    {
+      "opponent": "ATL",
+      "position": "SF",
+      "fp_allowed": 21.36,
+      "league_avg": 19.97,
+      "games": 46
+    },
+    {
+      "opponent": "ATL",
+      "position": "SG",
+      "fp_allowed": 22.33,
+      "league_avg": 21.06,
+      "games": 34
+    },
+    {
+      "opponent": "BKN",
+      "position": "C",
+      "fp_allowed": 21.69,
+      "league_avg": 22.26,
+      "games": 21
+    },
+    {
+      "opponent": "BKN",
+      "position": "PF",
+      "fp_allowed": 26.13,
+      "league_avg": 23.86,
+      "games": 36
+    },
+    {
+      "opponent": "BKN",
+      "position": "PG",
+      "fp_allowed": 23.37,
+      "league_avg": 24.74,
+      "games": 22
+    },
+    {
+      "opponent": "BKN",
+      "position": "SF",
+      "fp_allowed": 19.52,
+      "league_avg": 19.97,
+      "games": 29
+    },
+    {
+      "opponent": "BKN",
+      "position": "SG",
+      "fp_allowed": 23.62,
+      "league_avg": 21.06,
+      "games": 33
+    },
+    {
+      "opponent": "BOS",
+      "position": "C",
+      "fp_allowed": 24.16,
+      "league_avg": 22.26,
+      "games": 24
+    },
+    {
+      "opponent": "BOS",
+      "position": "PF",
+      "fp_allowed": 15.83,
+      "league_avg": 23.86,
+      "games": 31
+    },
+    {
+      "opponent": "BOS",
+      "position": "PG",
+      "fp_allowed": 21.9,
+      "league_avg": 24.74,
+      "games": 18
+    },
+    {
+      "opponent": "BOS",
+      "position": "SF",
+      "fp_allowed": 19.46,
+      "league_avg": 19.97,
+      "games": 31
+    },
+    {
+      "opponent": "BOS",
+      "position": "SG",
+      "fp_allowed": 19.39,
+      "league_avg": 21.06,
+      "games": 34
+    },
+    {
+      "opponent": "CHA",
+      "position": "C",
+      "fp_allowed": 21.85,
+      "league_avg": 22.26,
+      "games": 39
+    },
+    {
+      "opponent": "CHA",
+      "position": "PF",
+      "fp_allowed": 22.24,
+      "league_avg": 23.86,
+      "games": 45
+    },
+    {
+      "opponent": "CHA",
+      "position": "PG",
+      "fp_allowed": 24.88,
+      "league_avg": 24.74,
+      "games": 33
+    },
+    {
+      "opponent": "CHA",
+      "position": "SF",
+      "fp_allowed": 16.61,
+      "league_avg": 19.97,
+      "games": 36
+    },
+    {
+      "opponent": "CHA",
+      "position": "SG",
+      "fp_allowed": 20.35,
+      "league_avg": 21.06,
+      "games": 42
+    },
+    {
+      "opponent": "CHI",
+      "position": "C",
+      "fp_allowed": 30.33,
+      "league_avg": 22.26,
+      "games": 24
+    },
+    {
+      "opponent": "CHI",
+      "position": "PF",
+      "fp_allowed": 29.49,
+      "league_avg": 23.86,
+      "games": 34
+    },
+    {
+      "opponent": "CHI",
+      "position": "PG",
+      "fp_allowed": 26.33,
+      "league_avg": 24.74,
+      "games": 24
+    },
+    {
+      "opponent": "CHI",
+      "position": "SF",
+      "fp_allowed": 19.89,
+      "league_avg": 19.97,
+      "games": 31
+    },
+    {
+      "opponent": "CHI",
+      "position": "SG",
+      "fp_allowed": 25.29,
+      "league_avg": 21.06,
+      "games": 38
+    },
+    {
+      "opponent": "CLE",
+      "position": "C",
+      "fp_allowed": 24.75,
+      "league_avg": 22.26,
+      "games": 34
+    },
+    {
+      "opponent": "CLE",
+      "position": "PF",
+      "fp_allowed": 27.56,
+      "league_avg": 23.86,
+      "games": 34
+    },
+    {
+      "opponent": "CLE",
+      "position": "PG",
+      "fp_allowed": 22.27,
+      "league_avg": 24.74,
+      "games": 22
+    },
+    {
+      "opponent": "CLE",
+      "position": "SF",
+      "fp_allowed": 21.62,
+      "league_avg": 19.97,
+      "games": 33
+    },
+    {
+      "opponent": "CLE",
+      "position": "SG",
+      "fp_allowed": 20.85,
+      "league_avg": 21.06,
+      "games": 45
+    },
+    {
+      "opponent": "DAL",
+      "position": "C",
+      "fp_allowed": 26.49,
+      "league_avg": 22.26,
+      "games": 37
+    },
+    {
+      "opponent": "DAL",
+      "position": "PF",
+      "fp_allowed": 25.43,
+      "league_avg": 23.86,
+      "games": 34
+    },
+    {
+      "opponent": "DAL",
+      "position": "PG",
+      "fp_allowed": 24.74,
+      "league_avg": 24.74,
+      "games": 24
+    },
+    {
+      "opponent": "DAL",
+      "position": "SF",
+      "fp_allowed": 18.1,
+      "league_avg": 19.97,
+      "games": 46
+    },
+    {
+      "opponent": "DAL",
+      "position": "SG",
+      "fp_allowed": 23.51,
+      "league_avg": 21.06,
+      "games": 42
+    },
+    {
+      "opponent": "DEN",
+      "position": "C",
+      "fp_allowed": 19.28,
+      "league_avg": 22.26,
+      "games": 39
+    },
+    {
       "opponent": "DEN",
       "position": "PF",
-      "fp_allowed": 22.93,
-      "league_avg": 23.71,
-      "games": 32
+      "fp_allowed": 24.52,
+      "league_avg": 23.86,
+      "games": 44
     },
     {
       "opponent": "DEN",
       "position": "PG",
-      "fp_allowed": 23.3,
-      "league_avg": 24.54,
-      "games": 19
-    },
-    {
-      "opponent": "DEN",
-      "position": "SF",
-      "fp_allowed": 21.1,
-      "league_avg": 19.49,
+      "fp_allowed": 23.51,
+      "league_avg": 24.74,
       "games": 24
     },
     {
       "opponent": "DEN",
+      "position": "SF",
+      "fp_allowed": 22.89,
+      "league_avg": 19.97,
+      "games": 31
+    },
+    {
+      "opponent": "DEN",
       "position": "SG",
-      "fp_allowed": 18.61,
-      "league_avg": 21.08,
-      "games": 43
+      "fp_allowed": 18.75,
+      "league_avg": 21.06,
+      "games": 57
     },
     {
       "opponent": "DET",
       "position": "C",
-      "fp_allowed": 24.89,
-      "league_avg": 21.77,
+      "fp_allowed": 24.68,
+      "league_avg": 22.26,
+      "games": 33
+    },
+    {
+      "opponent": "DET",
+      "position": "PF",
+      "fp_allowed": 23.02,
+      "league_avg": 23.86,
+      "games": 33
+    },
+    {
+      "opponent": "DET",
+      "position": "PG",
+      "fp_allowed": 26.99,
+      "league_avg": 24.74,
       "games": 22
     },
     {
       "opponent": "DET",
-      "position": "PF",
-      "fp_allowed": 22.18,
-      "league_avg": 23.71,
-      "games": 26
-    },
-    {
-      "opponent": "DET",
-      "position": "PG",
-      "fp_allowed": 25.21,
-      "league_avg": 24.54,
-      "games": 16
-    },
-    {
-      "opponent": "DET",
       "position": "SF",
-      "fp_allowed": 20.86,
-      "league_avg": 19.49,
-      "games": 23
+      "fp_allowed": 21.56,
+      "league_avg": 19.97,
+      "games": 34
     },
     {
       "opponent": "DET",
       "position": "SG",
-      "fp_allowed": 21.18,
-      "league_avg": 21.08,
-      "games": 30
+      "fp_allowed": 23.12,
+      "league_avg": 21.06,
+      "games": 39
     },
     {
       "opponent": "GSW",
       "position": "C",
-      "fp_allowed": 19.56,
-      "league_avg": 21.77,
-      "games": 31
+      "fp_allowed": 19.49,
+      "league_avg": 22.26,
+      "games": 38
     },
     {
       "opponent": "GSW",
       "position": "PF",
-      "fp_allowed": 21.31,
-      "league_avg": 23.71,
-      "games": 25
-    },
-    {
-      "opponent": "GSW",
-      "position": "PG",
-      "fp_allowed": 26.51,
-      "league_avg": 24.54,
-      "games": 23
-    },
-    {
-      "opponent": "GSW",
-      "position": "SF",
-      "fp_allowed": 20.45,
-      "league_avg": 19.49,
+      "fp_allowed": 21.14,
+      "league_avg": 23.86,
       "games": 28
     },
     {
       "opponent": "GSW",
+      "position": "PG",
+      "fp_allowed": 26.5,
+      "league_avg": 24.74,
+      "games": 28
+    },
+    {
+      "opponent": "GSW",
+      "position": "SF",
+      "fp_allowed": 20.08,
+      "league_avg": 19.97,
+      "games": 35
+    },
+    {
+      "opponent": "GSW",
       "position": "SG",
-      "fp_allowed": 21.24,
-      "league_avg": 21.08,
-      "games": 31
+      "fp_allowed": 22.43,
+      "league_avg": 21.06,
+      "games": 36
     },
     {
       "opponent": "HOU",
       "position": "C",
-      "fp_allowed": 17.32,
-      "league_avg": 21.77,
-      "games": 20
+      "fp_allowed": 18.84,
+      "league_avg": 22.26,
+      "games": 31
     },
     {
       "opponent": "HOU",
       "position": "PF",
-      "fp_allowed": 20.17,
-      "league_avg": 23.71,
-      "games": 17
+      "fp_allowed": 23.13,
+      "league_avg": 23.86,
+      "games": 27
     },
     {
       "opponent": "HOU",
       "position": "PG",
-      "fp_allowed": 18.38,
-      "league_avg": 24.54,
-      "games": 16
+      "fp_allowed": 18.76,
+      "league_avg": 24.74,
+      "games": 27
     },
     {
       "opponent": "HOU",
       "position": "SF",
-      "fp_allowed": 21.63,
-      "league_avg": 19.49,
-      "games": 23
+      "fp_allowed": 21.95,
+      "league_avg": 19.97,
+      "games": 32
     },
     {
       "opponent": "HOU",
       "position": "SG",
-      "fp_allowed": 20.94,
-      "league_avg": 21.08,
-      "games": 19
+      "fp_allowed": 17.97,
+      "league_avg": 21.06,
+      "games": 32
     },
     {
       "opponent": "IND",
       "position": "C",
-      "fp_allowed": 23.35,
-      "league_avg": 21.77,
-      "games": 25
+      "fp_allowed": 23.42,
+      "league_avg": 22.26,
+      "games": 32
     },
     {
       "opponent": "IND",
       "position": "PF",
-      "fp_allowed": 23.21,
-      "league_avg": 23.71,
-      "games": 31
+      "fp_allowed": 22.22,
+      "league_avg": 23.86,
+      "games": 35
     },
     {
       "opponent": "IND",
       "position": "PG",
-      "fp_allowed": 25.03,
-      "league_avg": 24.54,
-      "games": 21
+      "fp_allowed": 24.49,
+      "league_avg": 24.74,
+      "games": 30
     },
     {
       "opponent": "IND",
       "position": "SF",
-      "fp_allowed": 20.17,
-      "league_avg": 19.49,
-      "games": 24
+      "fp_allowed": 20.47,
+      "league_avg": 19.97,
+      "games": 34
     },
     {
       "opponent": "IND",
       "position": "SG",
-      "fp_allowed": 19.77,
-      "league_avg": 21.08,
+      "fp_allowed": 18.81,
+      "league_avg": 21.06,
+      "games": 46
+    },
+    {
+      "opponent": "LAC",
+      "position": "C",
+      "fp_allowed": 20.77,
+      "league_avg": 22.26,
+      "games": 37
+    },
+    {
+      "opponent": "LAC",
+      "position": "PF",
+      "fp_allowed": 20.04,
+      "league_avg": 23.86,
       "games": 39
     },
     {
       "opponent": "LAC",
-      "position": "C",
-      "fp_allowed": 19.73,
-      "league_avg": 21.77,
-      "games": 28
-    },
-    {
-      "opponent": "LAC",
-      "position": "PF",
-      "fp_allowed": 19.67,
-      "league_avg": 23.71,
-      "games": 30
-    },
-    {
-      "opponent": "LAC",
       "position": "PG",
-      "fp_allowed": 28.49,
-      "league_avg": 24.54,
-      "games": 23
+      "fp_allowed": 28.79,
+      "league_avg": 24.74,
+      "games": 26
     },
     {
       "opponent": "LAC",
       "position": "SF",
-      "fp_allowed": 16.91,
-      "league_avg": 19.49,
-      "games": 35
+      "fp_allowed": 18.98,
+      "league_avg": 19.97,
+      "games": 43
     },
     {
       "opponent": "LAC",
       "position": "SG",
-      "fp_allowed": 20.98,
-      "league_avg": 21.08,
-      "games": 32
+      "fp_allowed": 21.17,
+      "league_avg": 21.06,
+      "games": 50
     },
     {
       "opponent": "LAL",
       "position": "C",
-      "fp_allowed": 18.31,
-      "league_avg": 21.77,
-      "games": 29
+      "fp_allowed": 17.96,
+      "league_avg": 22.26,
+      "games": 36
     },
     {
       "opponent": "LAL",
       "position": "PF",
-      "fp_allowed": 27.43,
-      "league_avg": 23.71,
-      "games": 30
-    },
-    {
-      "opponent": "LAL",
-      "position": "PG",
-      "fp_allowed": 24.9,
-      "league_avg": 24.54,
-      "games": 21
-    },
-    {
-      "opponent": "LAL",
-      "position": "SF",
-      "fp_allowed": 17.6,
-      "league_avg": 19.49,
-      "games": 26
-    },
-    {
-      "opponent": "LAL",
-      "position": "SG",
-      "fp_allowed": 23.07,
-      "league_avg": 21.08,
-      "games": 27
-    },
-    {
-      "opponent": "MEM",
-      "position": "C",
-      "fp_allowed": 18.5,
-      "league_avg": 21.77,
-      "games": 20
-    },
-    {
-      "opponent": "MEM",
-      "position": "PF",
-      "fp_allowed": 26.9,
-      "league_avg": 23.71,
-      "games": 29
-    },
-    {
-      "opponent": "MEM",
-      "position": "PG",
-      "fp_allowed": 23.66,
-      "league_avg": 24.54,
-      "games": 21
-    },
-    {
-      "opponent": "MEM",
-      "position": "SF",
-      "fp_allowed": 20.39,
-      "league_avg": 19.49,
-      "games": 27
-    },
-    {
-      "opponent": "MEM",
-      "position": "SG",
-      "fp_allowed": 18.71,
-      "league_avg": 21.08,
-      "games": 32
-    },
-    {
-      "opponent": "MIA",
-      "position": "C",
-      "fp_allowed": 19.38,
-      "league_avg": 21.77,
-      "games": 18
-    },
-    {
-      "opponent": "MIA",
-      "position": "PF",
-      "fp_allowed": 25.94,
-      "league_avg": 23.71,
-      "games": 22
-    },
-    {
-      "opponent": "MIA",
-      "position": "PG",
-      "fp_allowed": 25.43,
-      "league_avg": 24.54,
-      "games": 22
-    },
-    {
-      "opponent": "MIA",
-      "position": "SF",
-      "fp_allowed": 21.32,
-      "league_avg": 19.49,
-      "games": 25
-    },
-    {
-      "opponent": "MIA",
-      "position": "SG",
-      "fp_allowed": 24.39,
-      "league_avg": 21.08,
-      "games": 28
-    },
-    {
-      "opponent": "MIL",
-      "position": "C",
-      "fp_allowed": 19.95,
-      "league_avg": 21.77,
-      "games": 28
-    },
-    {
-      "opponent": "MIL",
-      "position": "PF",
-      "fp_allowed": 25.35,
-      "league_avg": 23.71,
-      "games": 28
-    },
-    {
-      "opponent": "MIL",
-      "position": "PG",
-      "fp_allowed": 29.35,
-      "league_avg": 24.54,
-      "games": 20
-    },
-    {
-      "opponent": "MIL",
-      "position": "SF",
-      "fp_allowed": 20.52,
-      "league_avg": 19.49,
-      "games": 30
-    },
-    {
-      "opponent": "MIL",
-      "position": "SG",
-      "fp_allowed": 21.24,
-      "league_avg": 21.08,
-      "games": 40
-    },
-    {
-      "opponent": "MIN",
-      "position": "C",
-      "fp_allowed": 20.74,
-      "league_avg": 21.77,
-      "games": 26
-    },
-    {
-      "opponent": "MIN",
-      "position": "PF",
-      "fp_allowed": 24.32,
-      "league_avg": 23.71,
-      "games": 32
-    },
-    {
-      "opponent": "MIN",
-      "position": "PG",
-      "fp_allowed": 21.5,
-      "league_avg": 24.54,
-      "games": 26
-    },
-    {
-      "opponent": "MIN",
-      "position": "SF",
-      "fp_allowed": 18.28,
-      "league_avg": 19.49,
-      "games": 26
-    },
-    {
-      "opponent": "MIN",
-      "position": "SG",
-      "fp_allowed": 18.71,
-      "league_avg": 21.08,
+      "fp_allowed": 27.64,
+      "league_avg": 23.86,
       "games": 38
     },
     {
-      "opponent": "NOP",
-      "position": "C",
-      "fp_allowed": 20.23,
-      "league_avg": 21.77,
-      "games": 25
-    },
-    {
-      "opponent": "NOP",
-      "position": "PF",
-      "fp_allowed": 23.6,
-      "league_avg": 23.71,
-      "games": 23
-    },
-    {
-      "opponent": "NOP",
+      "opponent": "LAL",
       "position": "PG",
-      "fp_allowed": 24.32,
-      "league_avg": 24.54,
-      "games": 20
+      "fp_allowed": 25.02,
+      "league_avg": 24.74,
+      "games": 28
     },
     {
-      "opponent": "NOP",
+      "opponent": "LAL",
       "position": "SF",
-      "fp_allowed": 20.64,
-      "league_avg": 19.49,
-      "games": 29
+      "fp_allowed": 20.77,
+      "league_avg": 19.97,
+      "games": 34
     },
     {
-      "opponent": "NOP",
+      "opponent": "LAL",
       "position": "SG",
-      "fp_allowed": 22.03,
-      "league_avg": 21.08,
-      "games": 35
+      "fp_allowed": 21.34,
+      "league_avg": 21.06,
+      "games": 37
     },
     {
-      "opponent": "NYK",
+      "opponent": "MEM",
       "position": "C",
-      "fp_allowed": 24.1,
-      "league_avg": 21.77,
-      "games": 24
-    },
-    {
-      "opponent": "NYK",
-      "position": "PF",
-      "fp_allowed": 20.84,
-      "league_avg": 23.71,
+      "fp_allowed": 19.15,
+      "league_avg": 22.26,
       "games": 26
     },
     {
-      "opponent": "NYK",
-      "position": "PG",
-      "fp_allowed": 22.59,
-      "league_avg": 24.54,
-      "games": 25
-    },
-    {
-      "opponent": "NYK",
-      "position": "SF",
-      "fp_allowed": 16.16,
-      "league_avg": 19.49,
-      "games": 29
-    },
-    {
-      "opponent": "NYK",
-      "position": "SG",
-      "fp_allowed": 22.92,
-      "league_avg": 21.08,
-      "games": 31
-    },
-    {
-      "opponent": "OKC",
-      "position": "C",
-      "fp_allowed": 21.08,
-      "league_avg": 21.77,
-      "games": 30
-    },
-    {
-      "opponent": "OKC",
+      "opponent": "MEM",
       "position": "PF",
-      "fp_allowed": 22.46,
-      "league_avg": 23.71,
+      "fp_allowed": 27.95,
+      "league_avg": 23.86,
       "games": 35
     },
     {
+      "opponent": "MEM",
+      "position": "PG",
+      "fp_allowed": 23.36,
+      "league_avg": 24.74,
+      "games": 24
+    },
+    {
+      "opponent": "MEM",
+      "position": "SF",
+      "fp_allowed": 22.19,
+      "league_avg": 19.97,
+      "games": 35
+    },
+    {
+      "opponent": "MEM",
+      "position": "SG",
+      "fp_allowed": 18.45,
+      "league_avg": 21.06,
+      "games": 42
+    },
+    {
+      "opponent": "MIA",
+      "position": "C",
+      "fp_allowed": 20.2,
+      "league_avg": 22.26,
+      "games": 26
+    },
+    {
+      "opponent": "MIA",
+      "position": "PF",
+      "fp_allowed": 26.53,
+      "league_avg": 23.86,
+      "games": 27
+    },
+    {
+      "opponent": "MIA",
+      "position": "PG",
+      "fp_allowed": 25.47,
+      "league_avg": 24.74,
+      "games": 28
+    },
+    {
+      "opponent": "MIA",
+      "position": "SF",
+      "fp_allowed": 23.47,
+      "league_avg": 19.97,
+      "games": 33
+    },
+    {
+      "opponent": "MIA",
+      "position": "SG",
+      "fp_allowed": 22.76,
+      "league_avg": 21.06,
+      "games": 39
+    },
+    {
+      "opponent": "MIL",
+      "position": "C",
+      "fp_allowed": 20.72,
+      "league_avg": 22.26,
+      "games": 33
+    },
+    {
+      "opponent": "MIL",
+      "position": "PF",
+      "fp_allowed": 24.16,
+      "league_avg": 23.86,
+      "games": 34
+    },
+    {
+      "opponent": "MIL",
+      "position": "PG",
+      "fp_allowed": 26.59,
+      "league_avg": 24.74,
+      "games": 25
+    },
+    {
+      "opponent": "MIL",
+      "position": "SF",
+      "fp_allowed": 21.11,
+      "league_avg": 19.97,
+      "games": 35
+    },
+    {
+      "opponent": "MIL",
+      "position": "SG",
+      "fp_allowed": 21.69,
+      "league_avg": 21.06,
+      "games": 50
+    },
+    {
+      "opponent": "MIN",
+      "position": "C",
+      "fp_allowed": 20.07,
+      "league_avg": 22.26,
+      "games": 29
+    },
+    {
+      "opponent": "MIN",
+      "position": "PF",
+      "fp_allowed": 24.68,
+      "league_avg": 23.86,
+      "games": 35
+    },
+    {
+      "opponent": "MIN",
+      "position": "PG",
+      "fp_allowed": 22.79,
+      "league_avg": 24.74,
+      "games": 29
+    },
+    {
+      "opponent": "MIN",
+      "position": "SF",
+      "fp_allowed": 19.03,
+      "league_avg": 19.97,
+      "games": 32
+    },
+    {
+      "opponent": "MIN",
+      "position": "SG",
+      "fp_allowed": 17.51,
+      "league_avg": 21.06,
+      "games": 45
+    },
+    {
+      "opponent": "NOP",
+      "position": "C",
+      "fp_allowed": 24.35,
+      "league_avg": 22.26,
+      "games": 33
+    },
+    {
+      "opponent": "NOP",
+      "position": "PF",
+      "fp_allowed": 24.21,
+      "league_avg": 23.86,
+      "games": 36
+    },
+    {
+      "opponent": "NOP",
+      "position": "PG",
+      "fp_allowed": 24.8,
+      "league_avg": 24.74,
+      "games": 23
+    },
+    {
+      "opponent": "NOP",
+      "position": "SF",
+      "fp_allowed": 20.58,
+      "league_avg": 19.97,
+      "games": 34
+    },
+    {
+      "opponent": "NOP",
+      "position": "SG",
+      "fp_allowed": 23.08,
+      "league_avg": 21.06,
+      "games": 51
+    },
+    {
+      "opponent": "NYK",
+      "position": "C",
+      "fp_allowed": 23.01,
+      "league_avg": 22.26,
+      "games": 31
+    },
+    {
+      "opponent": "NYK",
+      "position": "PF",
+      "fp_allowed": 20.64,
+      "league_avg": 23.86,
+      "games": 36
+    },
+    {
+      "opponent": "NYK",
+      "position": "PG",
+      "fp_allowed": 24.31,
+      "league_avg": 24.74,
+      "games": 34
+    },
+    {
+      "opponent": "NYK",
+      "position": "SF",
+      "fp_allowed": 15.89,
+      "league_avg": 19.97,
+      "games": 40
+    },
+    {
+      "opponent": "NYK",
+      "position": "SG",
+      "fp_allowed": 22.0,
+      "league_avg": 21.06,
+      "games": 38
+    },
+    {
+      "opponent": "OKC",
+      "position": "C",
+      "fp_allowed": 20.69,
+      "league_avg": 22.26,
+      "games": 37
+    },
+    {
+      "opponent": "OKC",
+      "position": "PF",
+      "fp_allowed": 23.96,
+      "league_avg": 23.86,
+      "games": 43
+    },
+    {
       "opponent": "OKC",
       "position": "PG",
-      "fp_allowed": 18.42,
-      "league_avg": 24.54,
-      "games": 23
+      "fp_allowed": 19.96,
+      "league_avg": 24.74,
+      "games": 27
     },
     {
       "opponent": "OKC",
       "position": "SF",
-      "fp_allowed": 14.86,
-      "league_avg": 19.49,
-      "games": 33
+      "fp_allowed": 16.17,
+      "league_avg": 19.97,
+      "games": 38
     },
     {
       "opponent": "OKC",
       "position": "SG",
-      "fp_allowed": 17.81,
-      "league_avg": 21.08,
-      "games": 47
+      "fp_allowed": 17.48,
+      "league_avg": 21.06,
+      "games": 58
     },
     {
       "opponent": "ORL",
       "position": "C",
-      "fp_allowed": 22.77,
-      "league_avg": 21.77,
-      "games": 25
+      "fp_allowed": 24.41,
+      "league_avg": 22.26,
+      "games": 28
     },
     {
       "opponent": "ORL",
       "position": "PF",
-      "fp_allowed": 19.33,
-      "league_avg": 23.71,
-      "games": 23
+      "fp_allowed": 18.52,
+      "league_avg": 23.86,
+      "games": 26
     },
     {
       "opponent": "ORL",
       "position": "PG",
-      "fp_allowed": 27.88,
-      "league_avg": 24.54,
-      "games": 13
+      "fp_allowed": 25.87,
+      "league_avg": 24.74,
+      "games": 18
     },
     {
       "opponent": "ORL",
       "position": "SF",
-      "fp_allowed": 18.96,
-      "league_avg": 19.49,
-      "games": 30
+      "fp_allowed": 20.13,
+      "league_avg": 19.97,
+      "games": 33
     },
     {
       "opponent": "ORL",
       "position": "SG",
-      "fp_allowed": 18.24,
-      "league_avg": 21.08,
+      "fp_allowed": 18.55,
+      "league_avg": 21.06,
+      "games": 40
+    },
+    {
+      "opponent": "PHI",
+      "position": "C",
+      "fp_allowed": 25.75,
+      "league_avg": 22.26,
+      "games": 28
+    },
+    {
+      "opponent": "PHI",
+      "position": "PF",
+      "fp_allowed": 20.57,
+      "league_avg": 23.86,
+      "games": 23
+    },
+    {
+      "opponent": "PHI",
+      "position": "PG",
+      "fp_allowed": 30.25,
+      "league_avg": 24.74,
+      "games": 25
+    },
+    {
+      "opponent": "PHI",
+      "position": "SF",
+      "fp_allowed": 18.36,
+      "league_avg": 19.97,
       "games": 36
     },
     {
       "opponent": "PHI",
-      "position": "C",
-      "fp_allowed": 27.67,
-      "league_avg": 21.77,
-      "games": 18
-    },
-    {
-      "opponent": "PHI",
-      "position": "PF",
-      "fp_allowed": 23.27,
-      "league_avg": 23.71,
-      "games": 12
-    },
-    {
-      "opponent": "PHI",
-      "position": "PG",
-      "fp_allowed": 28.82,
-      "league_avg": 24.54,
-      "games": 20
-    },
-    {
-      "opponent": "PHI",
-      "position": "SF",
-      "fp_allowed": 17.63,
-      "league_avg": 19.49,
-      "games": 25
-    },
-    {
-      "opponent": "PHI",
       "position": "SG",
-      "fp_allowed": 22.55,
-      "league_avg": 21.08,
-      "games": 24
+      "fp_allowed": 22.92,
+      "league_avg": 21.06,
+      "games": 38
     },
     {
       "opponent": "PHX",
       "position": "C",
-      "fp_allowed": 20.41,
-      "league_avg": 21.77,
-      "games": 34
+      "fp_allowed": 20.43,
+      "league_avg": 22.26,
+      "games": 38
     },
     {
       "opponent": "PHX",
       "position": "PF",
-      "fp_allowed": 23.06,
-      "league_avg": 23.71,
-      "games": 27
-    },
-    {
-      "opponent": "PHX",
-      "position": "PG",
-      "fp_allowed": 24.2,
-      "league_avg": 24.54,
-      "games": 21
-    },
-    {
-      "opponent": "PHX",
-      "position": "SF",
-      "fp_allowed": 16.54,
-      "league_avg": 19.49,
+      "fp_allowed": 22.71,
+      "league_avg": 23.86,
       "games": 31
     },
     {
       "opponent": "PHX",
+      "position": "PG",
+      "fp_allowed": 24.28,
+      "league_avg": 24.74,
+      "games": 23
+    },
+    {
+      "opponent": "PHX",
+      "position": "SF",
+      "fp_allowed": 16.6,
+      "league_avg": 19.97,
+      "games": 37
+    },
+    {
+      "opponent": "PHX",
       "position": "SG",
-      "fp_allowed": 20.02,
-      "league_avg": 21.08,
-      "games": 39
+      "fp_allowed": 19.71,
+      "league_avg": 21.06,
+      "games": 47
     },
     {
       "opponent": "POR",
       "position": "C",
       "fp_allowed": 24.04,
-      "league_avg": 21.77,
-      "games": 36
+      "league_avg": 22.26,
+      "games": 40
     },
     {
       "opponent": "POR",
       "position": "PF",
-      "fp_allowed": 20.63,
-      "league_avg": 23.71,
-      "games": 30
-    },
-    {
-      "opponent": "POR",
-      "position": "PG",
-      "fp_allowed": 24.11,
-      "league_avg": 24.54,
-      "games": 29
-    },
-    {
-      "opponent": "POR",
-      "position": "SF",
-      "fp_allowed": 22.74,
-      "league_avg": 19.49,
+      "fp_allowed": 21.52,
+      "league_avg": 23.86,
       "games": 35
     },
     {
       "opponent": "POR",
+      "position": "PG",
+      "fp_allowed": 24.38,
+      "league_avg": 24.74,
+      "games": 32
+    },
+    {
+      "opponent": "POR",
+      "position": "SF",
+      "fp_allowed": 22.89,
+      "league_avg": 19.97,
+      "games": 40
+    },
+    {
+      "opponent": "POR",
       "position": "SG",
-      "fp_allowed": 19.91,
-      "league_avg": 21.08,
-      "games": 30
+      "fp_allowed": 19.28,
+      "league_avg": 21.06,
+      "games": 36
     },
     {
       "opponent": "SAC",
       "position": "C",
-      "fp_allowed": 22.46,
-      "league_avg": 21.77,
-      "games": 23
+      "fp_allowed": 24.95,
+      "league_avg": 22.26,
+      "games": 35
     },
     {
       "opponent": "SAC",
       "position": "PF",
-      "fp_allowed": 25.31,
-      "league_avg": 23.71,
-      "games": 27
+      "fp_allowed": 25.8,
+      "league_avg": 23.86,
+      "games": 32
     },
     {
       "opponent": "SAC",
       "position": "PG",
-      "fp_allowed": 26.41,
-      "league_avg": 24.54,
-      "games": 12
+      "fp_allowed": 26.69,
+      "league_avg": 24.74,
+      "games": 19
     },
     {
       "opponent": "SAC",
       "position": "SF",
-      "fp_allowed": 22.26,
-      "league_avg": 19.49,
-      "games": 22
+      "fp_allowed": 21.25,
+      "league_avg": 19.97,
+      "games": 31
     },
     {
       "opponent": "SAC",
       "position": "SG",
-      "fp_allowed": 24.42,
-      "league_avg": 21.08,
-      "games": 32
-    },
-    {
-      "opponent": "SAS",
-      "position": "C",
-      "fp_allowed": 21.75,
-      "league_avg": 21.77,
-      "games": 30
-    },
-    {
-      "opponent": "SAS",
-      "position": "PF",
-      "fp_allowed": 19.31,
-      "league_avg": 23.71,
-      "games": 32
-    },
-    {
-      "opponent": "SAS",
-      "position": "PG",
-      "fp_allowed": 32.35,
-      "league_avg": 24.54,
-      "games": 22
-    },
-    {
-      "opponent": "SAS",
-      "position": "SF",
-      "fp_allowed": 16.97,
-      "league_avg": 19.49,
-      "games": 23
-    },
-    {
-      "opponent": "SAS",
-      "position": "SG",
-      "fp_allowed": 17.87,
-      "league_avg": 21.08,
+      "fp_allowed": 24.85,
+      "league_avg": 21.06,
       "games": 38
     },
     {
+      "opponent": "SAS",
+      "position": "C",
+      "fp_allowed": 21.13,
+      "league_avg": 22.26,
+      "games": 37
+    },
+    {
+      "opponent": "SAS",
+      "position": "PF",
+      "fp_allowed": 20.21,
+      "league_avg": 23.86,
+      "games": 41
+    },
+    {
+      "opponent": "SAS",
+      "position": "PG",
+      "fp_allowed": 30.55,
+      "league_avg": 24.74,
+      "games": 26
+    },
+    {
+      "opponent": "SAS",
+      "position": "SF",
+      "fp_allowed": 17.64,
+      "league_avg": 19.97,
+      "games": 31
+    },
+    {
+      "opponent": "SAS",
+      "position": "SG",
+      "fp_allowed": 18.76,
+      "league_avg": 21.06,
+      "games": 45
+    },
+    {
       "opponent": "TOR",
       "position": "C",
-      "fp_allowed": 21.54,
-      "league_avg": 21.77,
-      "games": 20
+      "fp_allowed": 22.64,
+      "league_avg": 22.26,
+      "games": 25
     },
     {
       "opponent": "TOR",
       "position": "PF",
-      "fp_allowed": 26.68,
-      "league_avg": 23.71,
-      "games": 30
+      "fp_allowed": 26.95,
+      "league_avg": 23.86,
+      "games": 42
     },
     {
       "opponent": "TOR",
       "position": "PG",
-      "fp_allowed": 16.08,
-      "league_avg": 24.54,
-      "games": 13
+      "fp_allowed": 16.71,
+      "league_avg": 24.74,
+      "games": 17
     },
     {
       "opponent": "TOR",
       "position": "SF",
-      "fp_allowed": 20.76,
-      "league_avg": 19.49,
-      "games": 23
+      "fp_allowed": 19.46,
+      "league_avg": 19.97,
+      "games": 33
     },
     {
       "opponent": "TOR",
       "position": "SG",
-      "fp_allowed": 18.78,
-      "league_avg": 21.08,
+      "fp_allowed": 21.38,
+      "league_avg": 21.06,
+      "games": 43
+    },
+    {
+      "opponent": "UTAH",
+      "position": "C",
+      "fp_allowed": 24.41,
+      "league_avg": 22.26,
+      "games": 37
+    },
+    {
+      "opponent": "UTAH",
+      "position": "PF",
+      "fp_allowed": 24.99,
+      "league_avg": 23.86,
+      "games": 41
+    },
+    {
+      "opponent": "UTAH",
+      "position": "PG",
+      "fp_allowed": 30.01,
+      "league_avg": 24.74,
+      "games": 23
+    },
+    {
+      "opponent": "UTAH",
+      "position": "SF",
+      "fp_allowed": 19.77,
+      "league_avg": 19.97,
       "games": 33
     },
     {
       "opponent": "UTAH",
+      "position": "SG",
+      "fp_allowed": 24.98,
+      "league_avg": 21.06,
+      "games": 50
+    },
+    {
+      "opponent": "WAS",
       "position": "C",
-      "fp_allowed": 22.09,
-      "league_avg": 21.77,
-      "games": 28
+      "fp_allowed": 21.41,
+      "league_avg": 22.26,
+      "games": 30
     },
     {
-      "opponent": "UTAH",
+      "opponent": "WAS",
       "position": "PF",
-      "fp_allowed": 24.35,
-      "league_avg": 23.71,
-      "games": 36
+      "fp_allowed": 26.96,
+      "league_avg": 23.86,
+      "games": 34
     },
     {
-      "opponent": "UTAH",
+      "opponent": "WAS",
       "position": "PG",
-      "fp_allowed": 30.27,
-      "league_avg": 24.54,
+      "fp_allowed": 24.99,
+      "league_avg": 24.74,
       "games": 22
     },
     {
-      "opponent": "UTAH",
-      "position": "SF",
-      "fp_allowed": 18.16,
-      "league_avg": 19.49,
-      "games": 24
-    },
-    {
-      "opponent": "UTAH",
-      "position": "SG",
-      "fp_allowed": 26.68,
-      "league_avg": 21.08,
-      "games": 39
-    },
-    {
-      "opponent": "WAS",
-      "position": "C",
-      "fp_allowed": 20.18,
-      "league_avg": 21.77,
-      "games": 25
-    },
-    {
-      "opponent": "WAS",
-      "position": "PF",
-      "fp_allowed": 26.54,
-      "league_avg": 23.71,
-      "games": 26
-    },
-    {
-      "opponent": "WAS",
-      "position": "PG",
-      "fp_allowed": 25.58,
-      "league_avg": 24.54,
-      "games": 19
-    },
-    {
       "opponent": "WAS",
       "position": "SF",
-      "fp_allowed": 24.06,
-      "league_avg": 19.49,
-      "games": 28
+      "fp_allowed": 23.41,
+      "league_avg": 19.97,
+      "games": 32
     },
     {
       "opponent": "WAS",
       "position": "SG",
-      "fp_allowed": 21.23,
-      "league_avg": 21.08,
-      "games": 34
+      "fp_allowed": 22.19,
+      "league_avg": 21.06,
+      "games": 40
     }
   ],
   "usage": [],
   "source_dates": {
-    "schedule": "20261022",
+    "schedule": "20261023",
     "historical_coverage": "partial"
   },
   "errors": []
