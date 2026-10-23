@@ -1,19 +1,79 @@
 {
-  "date": "20261022",
-  "updated_at": "2026-10-22T23:59:30.409270-04:00",
+  "date": "20261023",
+  "updated_at": "2026-10-23T00:26:49.945171-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
-      "away": "Cleveland Cavaliers",
-      "home": "Philadelphia 76ers",
-      "time": "2026-10-22T23:00Z",
-      "status": "Final"
+      "away": "Chicago Bulls",
+      "home": "Milwaukee Bucks",
+      "time": "2026-10-23T20:00Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Denver Nuggets",
-      "home": "Oklahoma City Thunder",
-      "time": "2026-10-23T01:30Z",
-      "status": "In Progress"
+      "away": "New York Knicks",
+      "home": "Boston Celtics",
+      "time": "2026-10-23T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Atlanta Hawks",
+      "home": "Charlotte Hornets",
+      "time": "2026-10-23T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Dallas Mavericks",
+      "home": "Indiana Pacers",
+      "time": "2026-10-23T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Minnesota Timberwolves",
+      "home": "Orlando Magic",
+      "time": "2026-10-23T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Toronto Raptors",
+      "home": "Washington Wizards",
+      "time": "2026-10-23T23:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Detroit Pistons",
+      "home": "Miami Heat",
+      "time": "2026-10-24T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Houston Rockets",
+      "home": "San Antonio Spurs",
+      "time": "2026-10-24T01:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "New Orleans Pelicans",
+      "home": "Utah Jazz",
+      "time": "2026-10-24T01:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Memphis Grizzlies",
+      "home": "Golden State Warriors",
+      "time": "2026-10-24T02:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "LA Clippers",
+      "home": "Los Angeles Lakers",
+      "time": "2026-10-24T02:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Portland Trail Blazers",
+      "home": "Sacramento Kings",
+      "time": "2026-10-24T02:00Z",
+      "status": "Scheduled"
     }
   ]
 }
