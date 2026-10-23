@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-23T21:54:36.168205+00:00",
+  "checked_at": "2026-10-23T22:17:31.653326+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -110,6 +110,14 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
+      "published_at": "2026-10-23T22:11:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd0FkOVUyUUZhVFB5VGNXcHZ3alRlLWhTeE1SOTRHX0ZMUmdzRS1GdWdwdFZRWkN0YWMtSzJRcWpUT20yT3dnUThBMExEY1VrTS10MTBqU2dfNjFRTVJXc3g5SW5rY2JjR3pyOE12LTVTbEJTN2hvUUw1dWZwZHVsNWQybzA5Z3laeTAxVTZDNkw0bXJSWjV6eUZWM3ptVWk0Rk96bUlB?oc=5",
       "published_at": "2026-10-23T18:36:58+00:00",
@@ -121,14 +129,6 @@
       "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
       "published_at": "2026-10-23T18:00:04+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
-      "published_at": "2026-10-23T19:00:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -174,14 +174,6 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWXVLWlZqRk9hVFptRTl3TVhfcFhGT0xNNzh2aHBKaTZ6cEFlNzFZeEFNZHN1VDQ2aWF0NlNhdTRteGlzNW1OaC1Gdm5vYTdiTkdHLVptOFk0OEs0dm5XQ3BnVWdBbUtqbzQ5c3lnZmNybUhkb3MwNV8wbzhqY2VlYkdid3k2U3hEMUM0?oc=5",
-      "published_at": "2026-10-22T22:06:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
       "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
       "published_at": "2026-10-23T02:50:17+00:00",
@@ -193,6 +185,22 @@
       "headline": "Yves Missi passes Jamahl Mosley’s first big starting lineup test vs. Pacers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSW5ieFBnWFVlVU1NN2k2eWxNMEVLSXhLWS1ZYTI0SDQ5ZHVqMUtsY19fMGdZXzBmYTJFZ2dGdWhmVEwwR3VBMWp5QlRWLURZRGpGVnBobUowMWdxbTZsM2xhVV9OUkRVM3RvLWRINzQ0ekQ1Zm5QcHJKOV9lNkQ4ZFdQTVRKalE?oc=5",
       "published_at": "2026-10-22T23:04:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzJWYzhsd0xPZ09zaTllWkZFLS1aMkx4Nm5HeUYtNkFmTW5BR1NfUWRZdk5sMXo5T1pxU0Z4THpGZHo5ZlVGcXI1UHlFVmRUdG05Rl9XdzlmOXB2Z2ZaNFhfUkZmYlpjb1htLUdOaThyVVl3cWtOOXhiVW11VWxHMloybk9CcEFfdzlTX0ZiNWJJXzNLd2V3OUZWYkRlQWV0MG1udXVTeEFCUWVDc0pCdDB3Qjd3emFYX202MDNzVGJzTWdpNjh6NUtn?oc=5",
+      "published_at": "2026-10-23T22:07:42+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNktfZFJtTUR6V0JBZW9jMjVzcW5wNUpnc0ZKeHVEQUVZcnplS3NBcTF2aW5tVklOcWNPS3Vmc3htdUlZQjNYN1RtMXJiLV9xU1FDU3ZMMjFaZjNUM1hyU19wQ3JCMEZscWtldGtmVVEzU0MxZklWVkJsTGY0MjRKbmV6eU9jSzNpajlmZENBUDY2UGprMXllbGtrM1laMGJzSF9Jc093?oc=5",
+      "published_at": "2026-10-22T22:40:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
