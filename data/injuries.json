@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T22:11:21.643645+00:00",
+  "updated_at": "2026-10-23T22:50:38.720688+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -50,7 +50,7 @@
     {
       "name": "Jett Howard",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Caleb Martin",
