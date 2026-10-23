@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T03:14:24.104621+00:00",
+  "updated_at": "2026-10-23T03:55:55.952958+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -96,6 +96,11 @@
       "name": "Dereck Lively II",
       "team": "DAL",
       "status": "OUT"
+    },
+    {
+      "name": "Cameron Johnson",
+      "team": "DEN",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Spencer Jones",
