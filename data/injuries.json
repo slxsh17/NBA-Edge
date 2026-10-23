@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T21:04:57.591778+00:00",
+  "updated_at": "2026-10-23T21:38:00.554337+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -20,7 +20,7 @@
     {
       "name": "Tyler Bilodeau",
       "team": "BKN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Grant Williams",
@@ -125,12 +125,7 @@
     {
       "name": "Ben Sheppard",
       "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Aaron Nesmith",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "T.J. McConnell",
@@ -233,17 +228,17 @@
       "status": "OUT"
     },
     {
-      "name": "Joel Embiid",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Tacko Fall",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Dean Wade",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "LeBron James",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
@@ -336,11 +331,6 @@
       "name": "Jusuf Nurkic",
       "team": "UTA",
       "status": "OUT"
-    },
-    {
-      "name": "Felix Okpara",
-      "team": "WAS",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "AJ Dybantsa",
