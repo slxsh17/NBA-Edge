@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T23:55:12.874087+00:00",
+  "updated_at": "2026-10-23T00:35:15.279668+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -100,7 +100,7 @@
     {
       "name": "Spencer Jones",
       "team": "DEN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Julian Strawther",
@@ -113,12 +113,12 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Brandin Podziemski",
+      "name": "Charles Bassey",
       "team": "GSW",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Charles Bassey",
+      "name": "Brandin Podziemski",
       "team": "GSW",
       "status": "DAY-TO-DAY"
     },
@@ -193,23 +193,23 @@
       "status": "OUT"
     },
     {
+      "name": "Adou Thiero",
+      "team": "LAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Cameron Carr",
+      "team": "LAL",
+      "status": "OUT"
+    },
+    {
       "name": "Jake LaRavia",
       "team": "LAL",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Adou Thiero",
-      "team": "LAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Collin Sexton",
-      "team": "LAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Cameron Carr",
-      "team": "LAL",
+      "name": "Cedric Coward",
+      "team": "MEM",
       "status": "DAY-TO-DAY"
     },
     {
@@ -295,12 +295,12 @@
     {
       "name": "Branden Carlson",
       "team": "POR",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Chris Youngblood",
       "team": "POR",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Shaedon Sharpe",
