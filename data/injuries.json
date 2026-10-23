@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T22:50:38.720688+00:00",
+  "updated_at": "2026-10-23T23:23:03.830573+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -73,12 +73,17 @@
       "status": "OUT"
     },
     {
-      "name": "Spencer Jones",
+      "name": "Cameron Johnson",
+      "team": "DEN",
+      "status": "OUT"
+    },
+    {
+      "name": "Alpha Diallo",
       "team": "DEN",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Cameron Johnson",
+      "name": "Spencer Jones",
       "team": "DEN",
       "status": "DAY-TO-DAY"
     },
