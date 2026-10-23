@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T19:57:41.171348+00:00",
+  "updated_at": "2026-10-23T20:29:57.422509+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -90,7 +90,7 @@
     {
       "name": "Charles Bassey",
       "team": "GSW",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Brandin Podziemski",
@@ -168,6 +168,11 @@
       "status": "OUT"
     },
     {
+      "name": "Jake LaRavia",
+      "team": "LAL",
+      "status": "OUT"
+    },
+    {
       "name": "Adou Thiero",
       "team": "LAL",
       "status": "OUT"
@@ -176,11 +181,6 @@
       "name": "Cameron Carr",
       "team": "LAL",
       "status": "OUT"
-    },
-    {
-      "name": "Jake LaRavia",
-      "team": "LAL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cedric Coward",
