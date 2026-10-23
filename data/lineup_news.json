@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-23T19:04:44.778325+00:00",
+  "checked_at": "2026-10-23T19:52:48.628358+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
     {
       "team": "MIL",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "Ryan Rollins",
         "Tyler Herro",
@@ -86,6 +86,22 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - New York Daily News",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTC01VEVLNWVNenN3WGhuVE5HUTE1b2IxZWhwR20zWE5uWUFNSkdnUGNHbXFxay1yczk0bEpyQ1YwUlJNRVNVbTBjNXJqZ1M3SXU5TGROY0JOYm1YV25ZenlLSEMxYmFGdF9NMlBKc2dOdHZ2NTktSFlpbmdXc3AxRTd4ZzBUV3VXbjVReWxIckxwRV8zMTF0YWEtVQ?oc=5",
+      "published_at": "2026-10-23T19:25:37+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Thomas Bryant News: Outside rotation in opener - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRWNvdGY3d0JEbnBRM0t6X2dDUEVoTUZVa3Y5dmVGZFRSUmJIYUFWN0tCemg0Sjh6Z2ZrLXpZQ0lYUFEwVUhDZDM4YjJGbVE3d3hwZW1tY0tqa09BRDZBTGlvZDNscGRKSWhUcHF0bHN6THZLanAxbXNacU04ZGo4UFluQTJJMnQ0ck1RdzltcC1rOUFVR2Zxcl9TMjlBaTQ?oc=5",
       "published_at": "2026-10-23T15:00:18+00:00",
@@ -110,14 +126,6 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "LeBron James introduced in the starting lineup in Philadelphia before signature pregame chalk toss - NBA.com",
-      "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNaFVfV0laN0txRzV1R1JZZm9BajdVWm5Bb2h6Q2RwWGltMUJnWU1lZS1qZGN4QklWY1R6MnRtY1ZSdTJzcWdVUElLTGtHWVpyY1dycU5nRkRaajZrdHFpdTBCSkNUVlQ4bnFnNUJHYzBjbzJTN1VaT21WSlF2UWl4UGpweWJQbGxaQVRucEhFZmZyQ05FVmdUN09VUmlnZDJQaFZwSEhqaVlhMGpuanBBVlpjN014Uy00ZU1EMi03N25tYkNmV3pPdGhDTlFoTVQ1aEUtSnF4WW1mNzFUVjlaQlJRWWYyaWFuOFp1TVpla08yN0VGdnhJeHNhUmtCRU1u?oc=5",
-      "published_at": "2026-10-23T00:01:22+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
       "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
       "published_at": "2026-10-23T14:00:00+00:00",
@@ -126,9 +134,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
-      "published_at": "2026-10-23T02:50:17+00:00",
+      "headline": "LeBron James introduced in the starting lineup in Philadelphia before signature pregame chalk toss - NBA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNaFVfV0laN0txRzV1R1JZZm9BajdVWm5Bb2h6Q2RwWGltMUJnWU1lZS1qZGN4QklWY1R6MnRtY1ZSdTJzcWdVUElLTGtHWVpyY1dycU5nRkRaajZrdHFpdTBCSkNUVlQ4bnFnNUJHYzBjbzJTN1VaT21WSlF2UWl4UGpweWJQbGxaQVRucEhFZmZyQ05FVmdUN09VUmlnZDJQaFZwSEhqaVlhMGpuanBBVlpjN014Uy00ZU1EMi03N25tYkNmV3pPdGhDTlFoTVQ1aEUtSnF4WW1mNzFUVjlaQlJRWWYyaWFuOFp1TVpla08yN0VGdnhJeHNhUmtCRU1u?oc=5",
+      "published_at": "2026-10-23T00:01:22+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -136,7 +144,7 @@
     {
       "headline": "Cavs 2026-27 season preview, record predictions, starting lineup, TV info - Akron Beacon Journal",
       "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYldIS213YUZMVDlzaWctVVBZV3NteUk1OUFfUjMtV0N6dXc0LXpteFdkMHVUM1VNM21aa2hyeE00VnFaeTFzSDlLQ1p1UEFFSVVMWEhVd1FrcDVveEQxZjJ0V2FaYlQ3UFIwU0NhTlVIal9mcjFiX29tZkxDR3VmRGdLaXhSWnBnNDJzREloZUxLeDR3aGMwR1lMbVFRU2JKYy1hb29Sa3BkcmRtbnRCY3lHN1pTUW9YdU9LRTA4YVl4NU5RRHRCNi1TNWRuczdKeWRpTExn?oc=5",
-      "published_at": "2026-10-22T19:34:00+00:00",
+      "published_at": "2026-10-22T22:45:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -166,25 +174,17 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
+      "published_at": "2026-10-23T02:50:17+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
       "published_at": "2026-10-22T20:39:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Should The Detroit Pistons ALREADY Make A Rotation CHANGE After Javonte Green's Game 1 Performance? - WHAS11",
-      "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQc0lKeU1vVnZoUm9jaG1sMXZjakF0dnI3ZUNpMnZBRDZPTndCWXdfVzE0OTVEckFzMGtlUmlkSE1fb0htUENONnpTR1ZHQjJJNE1XNDFJa3ZLVHZQc0RWeW1wX1BUWmtKT0pDTUpCN0c1alFBSXhsSDBsR2Z6cEk5MkFUMU5aV1doZW9Uc0pnSnVoS29PQnUzLWZpUHotUWpLNWJIN25tRzZjUEtUNERxV2VaS0VlTnZOSGVrZ1Y0N2lORHhNcXBQN1p4YjhpM1hMQUotOTlQdGE2R2dMU2Z6N0oya2xjb0F6STNQVU14U0xzeWx0YnYtV0hyNU5pMHRGNGJmSkFRREJXYXpyY1N0N0xiVUNGV18wWjVQZFI1MUxjbEVWeVJFbi1LMmlMT0pwSjdF?oc=5",
-      "published_at": "2026-10-22T19:14:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Lillard a 'big part' of Trail Blazers' rotation - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc1RrVGVGcGU1SFUyaU1ZTF9STkp3NUxWZjZ2c2trRmYtNUhqUWVRbFBaUThCb2RSRldFYUlPc2tLOW01OC1mb2hOS29hQVp1QVVCdWZaQ3NlZ3V2YWpzd3E0VGdJci16S29WcjFZUjFJZ3dTRV9ObDV5d0RkRzFDcnBoSjZaTXd0c3Y0MDJuQjY3X2ZETkY0VURLSTRZV3lFMXltRTN3?oc=5",
-      "published_at": "2026-10-22T19:28:38+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
