@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T19:24:08.624842+00:00",
+  "updated_at": "2026-10-23T19:57:41.171348+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -286,11 +286,6 @@
       "name": "Shaedon Sharpe",
       "team": "POR",
       "status": "OUT"
-    },
-    {
-      "name": "Malik Monk",
-      "team": "SAC",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ben Simmons",
