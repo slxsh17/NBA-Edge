@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T05:06:20.847300+00:00",
+  "updated_at": "2026-10-23T05:39:27.112906+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -98,14 +98,14 @@
       "status": "OUT"
     },
     {
-      "name": "Cameron Johnson",
+      "name": "Spencer Jones",
       "team": "DEN",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Spencer Jones",
+      "name": "Cameron Johnson",
       "team": "DEN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Julian Strawther",
@@ -263,14 +263,14 @@
       "status": "OUT"
     },
     {
-      "name": "Dean Wade",
-      "team": "PHI",
-      "status": "OUT"
-    },
-    {
       "name": "Tacko Fall",
       "team": "PHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Dean Wade",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dominick Barlow",
