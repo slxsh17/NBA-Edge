@@ -1,19 +1,19 @@
 {
   "date": "20261022",
-  "updated_at": "2026-10-22T21:12:10.436627-04:00",
+  "updated_at": "2026-10-22T21:59:10.666606-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
       "away": "Cleveland Cavaliers",
       "home": "Philadelphia 76ers",
       "time": "2026-10-22T23:00Z",
-      "status": "End of Period"
+      "status": "Final"
     },
     {
       "away": "Denver Nuggets",
       "home": "Oklahoma City Thunder",
       "time": "2026-10-23T01:30Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     }
   ]
 }
