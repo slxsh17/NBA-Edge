@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-23T22:17:31.653326+00:00",
+  "checked_at": "2026-10-23T22:53:04.886009+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,7 +21,7 @@
     },
     {
       "team": "NYK",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "Jalen Brunson",
         "Mikal Bridges",
@@ -86,9 +86,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
-      "published_at": "2026-10-23T19:00:05+00:00",
+      "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTGtFaHFFMXlWcnNhQlZNSDFhU3RXakhSb2ZhZHZCQWlNZmpOczEwR0NibWxDLW5uNE1TM3ZfazBhZFh3VG10ZHNoSGJ1ZGRkbnFOam9UdUVTbEdGbklTMWpPR0ktRkNQclNPZWNEQkVLRWV2YXRCLVl1eWZBckdOemEzOFlKYVE?oc=5",
+      "published_at": "2026-10-23T21:36:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -118,17 +118,25 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd0FkOVUyUUZhVFB5VGNXcHZ3alRlLWhTeE1SOTRHX0ZMUmdzRS1GdWdwdFZRWkN0YWMtSzJRcWpUT20yT3dnUThBMExEY1VrTS10MTBqU2dfNjFRTVJXc3g5SW5rY2JjR3pyOE12LTVTbEJTN2hvUUw1dWZwZHVsNWQybzA5Z3laeTAxVTZDNkw0bXJSWjV6eUZWM3ptVWk0Rk96bUlB?oc=5",
-      "published_at": "2026-10-23T18:36:58+00:00",
+      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
+      "published_at": "2026-10-23T18:00:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
-      "published_at": "2026-10-23T18:00:04+00:00",
+      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -166,14 +174,6 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Cavs 2026-27 season preview, record predictions, starting lineup, TV info - Akron Beacon Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYldIS213YUZMVDlzaWctVVBZV3NteUk1OUFfUjMtV0N6dXc0LXpteFdkMHVUM1VNM21aa2hyeE00VnFaeTFzSDlLQ1p1UEFFSVVMWEhVd1FrcDVveEQxZjJ0V2FaYlQ3UFIwU0NhTlVIal9mcjFiX29tZkxDR3VmRGdLaXhSWnBnNDJzREloZUxLeDR3aGMwR1lMbVFRU2JKYy1hb29Sa3BkcmRtbnRCY3lHN1pTUW9YdU9LRTA4YVl4NU5RRHRCNi1TNWRuczdKeWRpTExn?oc=5",
-      "published_at": "2026-10-22T22:45:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
       "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
       "published_at": "2026-10-23T02:50:17+00:00",
@@ -193,14 +193,6 @@
       "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzJWYzhsd0xPZ09zaTllWkZFLS1aMkx4Nm5HeUYtNkFmTW5BR1NfUWRZdk5sMXo5T1pxU0Z4THpGZHo5ZlVGcXI1UHlFVmRUdG05Rl9XdzlmOXB2Z2ZaNFhfUkZmYlpjb1htLUdOaThyVVl3cWtOOXhiVW11VWxHMloybk9CcEFfdzlTX0ZiNWJJXzNLd2V3OUZWYkRlQWV0MG1udXVTeEFCUWVDc0pCdDB3Qjd3emFYX202MDNzVGJzTWdpNjh6NUtn?oc=5",
       "published_at": "2026-10-23T22:07:42+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNktfZFJtTUR6V0JBZW9jMjVzcW5wNUpnc0ZKeHVEQUVZcnplS3NBcTF2aW5tVklOcWNPS3Vmc3htdUlZQjNYN1RtMXJiLV9xU1FDU3ZMMjFaZjNUM1hyU19wQ3JCMEZscWtldGtmVVEzU0MxZklWVkJsTGY0MjRKbmV6eU9jSzNpajlmZENBUDY2UGprMXllbGtrM1laMGJzSF9Jc093?oc=5",
-      "published_at": "2026-10-22T22:40:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
