@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T23:23:03.830573+00:00",
+  "updated_at": "2026-10-23T23:54:40.390015+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -73,17 +73,17 @@
       "status": "OUT"
     },
     {
+      "name": "Spencer Jones",
+      "team": "DEN",
+      "status": "OUT"
+    },
+    {
       "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
     },
     {
       "name": "Alpha Diallo",
-      "team": "DEN",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Spencer Jones",
       "team": "DEN",
       "status": "DAY-TO-DAY"
     },
@@ -301,16 +301,6 @@
       "name": "Maxime Raynaud",
       "team": "SAC",
       "status": "OUT"
-    },
-    {
-      "name": "Keldon Johnson",
-      "team": "SAS",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "De'Aaron Fox",
-      "team": "SAS",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tobias Harris",
