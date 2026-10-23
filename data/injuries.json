@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T18:49:34.431272+00:00",
+  "updated_at": "2026-10-23T19:24:08.624842+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -198,17 +198,17 @@
       "status": "OUT"
     },
     {
+      "name": "Otega Oweh",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
       "name": "Nikola Topic",
       "team": "OKC",
       "status": "OUT"
     },
     {
       "name": "Thomas Sorber",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Otega Oweh",
       "team": "OKC",
       "status": "OUT"
     },
