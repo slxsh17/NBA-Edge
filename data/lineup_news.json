@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-23T17:24:07.489285+00:00",
+  "checked_at": "2026-10-23T17:54:07.822411+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -86,9 +86,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
-      "published_at": "2026-10-23T14:00:00+00:00",
+      "headline": "Thomas Bryant News: Outside rotation in opener - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRWNvdGY3d0JEbnBRM0t6X2dDUEVoTUZVa3Y5dmVGZFRSUmJIYUFWN0tCemg0Sjh6Z2ZrLXpZQ0lYUFEwVUhDZDM4YjJGbVE3d3hwZW1tY0tqa09BRDZBTGlvZDNscGRKSWhUcHF0bHN6THZLanAxbXNacU04ZGo4UFluQTJJMnQ0ck1RdzltcC1rOUFVR2Zxcl9TMjlBaTQ?oc=5",
+      "published_at": "2026-10-23T15:00:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -102,25 +102,17 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
+      "published_at": "2026-10-23T14:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWXVLWlZqRk9hVFptRTl3TVhfcFhGT0xNNzh2aHBKaTZ6cEFlNzFZeEFNZHN1VDQ2aWF0NlNhdTRteGlzNW1OaC1Gdm5vYTdiTkdHLVptOFk0OEs0dm5XQ3BnVWdBbUtqbzQ5c3lnZmNybUhkb3MwNV8wbzhqY2VlYkdid3k2U3hEMUM0?oc=5",
       "published_at": "2026-10-22T22:06:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Updated Cavaliers Starting Lineup vs. 76ers: Is Jarrett Allen Making the Lineup? - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPYkxDQm5kQ016bjc2NHcwYjVsci1yQU9ibURrNUJhNzJxYU9fWGpfekJLVzk1NTdKQmtaVWNtZkhDdjFEakVsTVMxeF9JVGlBbzB1Y05uaUJmajA0b1pMdjlxb01fSlAxREg4Y2tuSWY0SHJsU1FPcGF2SUlsWkxPbEJ4SXpvNlZ1TWp1MGJadm9lYjZKQkpIQnE4UlByYnpHY0FMT2ROZzRHeUk1eUN2MGlYT2JpcmxoeC02aDltVW9JVVZvN2c4?oc=5",
-      "published_at": "2026-10-22T20:00:01+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Cavs 2026-27 season preview, record predictions, starting lineup, TV info - Akron Beacon Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYldIS213YUZMVDlzaWctVVBZV3NteUk1OUFfUjMtV0N6dXc0LXpteFdkMHVUM1VNM21aa2hyeE00VnFaeTFzSDlLQ1p1UEFFSVVMWEhVd1FrcDVveEQxZjJ0V2FaYlQ3UFIwU0NhTlVIal9mcjFiX29tZkxDR3VmRGdLaXhSWnBnNDJzREloZUxLeDR3aGMwR1lMbVFRU2JKYy1hb29Sa3BkcmRtbnRCY3lHN1pTUW9YdU9LRTA4YVl4NU5RRHRCNi1TNWRuczdKeWRpTExn?oc=5",
-      "published_at": "2026-10-22T19:34:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -134,33 +126,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
-      "published_at": "2026-10-22T20:39:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Should The Detroit Pistons ALREADY Make A Rotation CHANGE After Javonte Green's Game 1 Performance? - WHAS11",
-      "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQc0lKeU1vVnZoUm9jaG1sMXZjakF0dnI3ZUNpMnZBRDZPTndCWXdfVzE0OTVEckFzMGtlUmlkSE1fb0htUENONnpTR1ZHQjJJNE1XNDFJa3ZLVHZQc0RWeW1wX1BUWmtKT0pDTUpCN0c1alFBSXhsSDBsR2Z6cEk5MkFUMU5aV1doZW9Uc0pnSnVoS29PQnUzLWZpUHotUWpLNWJIN25tRzZjUEtUNERxV2VaS0VlTnZOSGVrZ1Y0N2lORHhNcXBQN1p4YjhpM1hMQUotOTlQdGE2R2dMU2Z6N0oya2xjb0F6STNQVU14U0xzeWx0YnYtV0hyNU5pMHRGNGJmSkFRREJXYXpyY1N0N0xiVUNGV18wWjVQZFI1MUxjbEVWeVJFbi1LMmlMT0pwSjdF?oc=5",
-      "published_at": "2026-10-22T19:14:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Lillard a 'big part' of Trail Blazers' rotation - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc1RrVGVGcGU1SFUyaU1ZTF9STkp3NUxWZjZ2c2trRmYtNUhqUWVRbFBaUThCb2RSRldFYUlPc2tLOW01OC1mb2hOS29hQVp1QVVCdWZaQ3NlZ3V2YWpzd3E0VGdJci16S29WcjFZUjFJZ3dTRV9ObDV5d0RkRzFDcnBoSjZaTXd0c3Y0MDJuQjY3X2ZETkY0VURLSTRZV3lFMXltRTN3?oc=5",
-      "published_at": "2026-10-22T19:28:38+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Yves Missi passes Jamahl Mosley’s first big starting lineup test vs. Pacers - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSW5ieFBnWFVlVU1NN2k2eWxNMEVLSXhLWS1ZYTI0SDQ5ZHVqMUtsY19fMGdZXzBmYTJFZ2dGdWhmVEwwR3VBMWp5QlRWLURZRGpGVnBobUowMWdxbTZsM2xhVV9OUkRVM3RvLWRINzQ0ekQ1Zm5QcHJKOV9lNkQ4ZFdQTVRKalE?oc=5",
-      "published_at": "2026-10-22T23:04:23+00:00",
+      "headline": "Cavs 2026-27 season preview, record predictions, starting lineup, TV info - Akron Beacon Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYldIS213YUZMVDlzaWctVVBZV3NteUk1OUFfUjMtV0N6dXc0LXpteFdkMHVUM1VNM21aa2hyeE00VnFaeTFzSDlLQ1p1UEFFSVVMWEhVd1FrcDVveEQxZjJ0V2FaYlQ3UFIwU0NhTlVIal9mcjFiX29tZkxDR3VmRGdLaXhSWnBnNDJzREloZUxLeDR3aGMwR1lMbVFRU2JKYy1hb29Sa3BkcmRtbnRCY3lHN1pTUW9YdU9LRTA4YVl4NU5RRHRCNi1TNWRuczdKeWRpTExn?oc=5",
+      "published_at": "2026-10-22T19:34:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -174,9 +142,41 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Spurs to 'Figure Out' Promising Rotation After Loss to Thunder - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQ0txc0JObzNDR1lYVkpvZFhiWmdGdkd6TGVvR1NYRF9CWjdMTUEyTHNZTWkxX20waUd2Z3NDbjdPVXYtRHVhWW16YjZ5M3Y1bkFkRldSQ01lb1NyR2Ztc3l1MU4xRURKM0gzTExRU2tTUmZzTDNsTlhtS1FEVEF4QzE0d2E0Yi00UXdhaUxLZ3lsS2Z3Z3NHcEpaZ1hyNjdZampoMVpmTQ?oc=5",
-      "published_at": "2026-10-22T17:39:32+00:00",
+      "headline": "Should The Detroit Pistons ALREADY Make A Rotation CHANGE After Javonte Green's Game 1 Performance? - WHAS11",
+      "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQc0lKeU1vVnZoUm9jaG1sMXZjakF0dnI3ZUNpMnZBRDZPTndCWXdfVzE0OTVEckFzMGtlUmlkSE1fb0htUENONnpTR1ZHQjJJNE1XNDFJa3ZLVHZQc0RWeW1wX1BUWmtKT0pDTUpCN0c1alFBSXhsSDBsR2Z6cEk5MkFUMU5aV1doZW9Uc0pnSnVoS29PQnUzLWZpUHotUWpLNWJIN25tRzZjUEtUNERxV2VaS0VlTnZOSGVrZ1Y0N2lORHhNcXBQN1p4YjhpM1hMQUotOTlQdGE2R2dMU2Z6N0oya2xjb0F6STNQVU14U0xzeWx0YnYtV0hyNU5pMHRGNGJmSkFRREJXYXpyY1N0N0xiVUNGV18wWjVQZFI1MUxjbEVWeVJFbi1LMmlMT0pwSjdF?oc=5",
+      "published_at": "2026-10-22T19:14:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
+      "published_at": "2026-10-22T20:39:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Updated Cavaliers Starting Lineup vs. 76ers: Is Jarrett Allen Making the Lineup? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTGYzUDFRN1ljel82Wl9MSXF5WVFQUHhDaFp0U25pT1VJaUo2dkh6bDVqcmpPNjluWklrTVhpLXNfZ0I5YUxlVTg5RDNRbFY1ZkpLU0w2TFpNbTlBTUY2VUN0cXo4ZG9FMUdadkdKczJ6YWRURzUzZXlvWURtS1FPQ2Z6WUJsNXJFeDd3OWlR?oc=5",
+      "published_at": "2026-10-22T20:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Yves Missi passes Jamahl Mosley’s first big starting lineup test vs. Pacers - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSW5ieFBnWFVlVU1NN2k2eWxNMEVLSXhLWS1ZYTI0SDQ5ZHVqMUtsY19fMGdZXzBmYTJFZ2dGdWhmVEwwR3VBMWp5QlRWLURZRGpGVnBobUowMWdxbTZsM2xhVV9OUkRVM3RvLWRINzQ0ekQ1Zm5QcHJKOV9lNkQ4ZFdQTVRKalE?oc=5",
+      "published_at": "2026-10-22T23:04:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Lillard a 'big part' of Trail Blazers' rotation - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc1RrVGVGcGU1SFUyaU1ZTF9STkp3NUxWZjZ2c2trRmYtNUhqUWVRbFBaUThCb2RSRldFYUlPc2tLOW01OC1mb2hOS29hQVp1QVVCdWZaQ3NlZ3V2YWpzd3E0VGdJci16S29WcjFZUjFJZ3dTRV9ObDV5d0RkRzFDcnBoSjZaTXd0c3Y0MDJuQjY3X2ZETkY0VURLSTRZV3lFMXltRTN3?oc=5",
+      "published_at": "2026-10-22T19:28:38+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
