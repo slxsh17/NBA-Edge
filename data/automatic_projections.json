@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-22",
-  "created_at": "2026-10-23T02:33:20.918391+00:00",
+  "created_at": "2026-10-23T03:34:05.262109+00:00",
   "source": "Completed NBA box scores published via ESPN unofficial NBA data feed; not a third-party proprietary forecast",
   "model": "Sample-shrunk historical minutes x observed FanDuel fantasy points per minute; DvP, usage, starter and injury effects applied separately in browser",
   "eligible_history": 51,
