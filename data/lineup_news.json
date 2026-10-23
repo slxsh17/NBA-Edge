@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-22",
-  "checked_at": "2026-10-23T01:11:46.125986+00:00",
+  "checked_at": "2026-10-23T01:58:22.263410+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -15,9 +15,9 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMjBuc2MzajlDb21VeE1FbHVKVDlCczZwNGVhaExNR1ZSdkZpMWVSYVVWZzctRXUyMWY2cUlwbFN2VXdhYlcxeVRRbkcwbDRwSmFLbF9wR19WQXB5U0tPWDNTZ1VHREM5NzBIYjRGWjZ1LVVlbVA3Z3lvOVJ3eERoX2xKUkhpY3AtcExPWGxLeEFnaC1fNXJkcg?oc=5",
-      "published_at": "2026-10-22T23:39:51+00:00",
+      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWXVLWlZqRk9hVFptRTl3TVhfcFhGT0xNNzh2aHBKaTZ6cEFlNzFZeEFNZHN1VDQ2aWF0NlNhdTRteGlzNW1OaC1Gdm5vYTdiTkdHLVptOFk0OEs0dm5XQ3BnVWdBbUtqbzQ5c3lnZmNybUhkb3MwNV8wbzhqY2VlYkdid3k2U3hEMUM0?oc=5",
+      "published_at": "2026-10-22T22:06:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -47,6 +47,14 @@
       "scope_date": "2026-10-22"
     },
     {
+      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
+      "published_at": "2026-10-22T20:39:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
       "headline": "Gary Trent News: Left out of rotation - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUTJOTFZKdDE2NWFQOXhLTDdIQ1NXYTdPczhKYVotZ3pETmFjak8xRnhwM3FtMm9ma0k1OEVXUmhUQ2J3NG9pTkVMWUJNZE9FcG9HZGN2aTJTY1IxdXhaTVFwRWxSMGFLMktfSnNMMzB5QUN5U2VpbEl0NjZLbXVzSlBHREUtaDM3WEVKSmNieDVhR0E?oc=5",
       "published_at": "2026-10-22T16:17:38+00:00",
@@ -55,17 +63,9 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWXVLWlZqRk9hVFptRTl3TVhfcFhGT0xNNzh2aHBKaTZ6cEFlNzFZeEFNZHN1VDQ2aWF0NlNhdTRteGlzNW1OaC1Gdm5vYTdiTkdHLVptOFk0OEs0dm5XQ3BnVWdBbUtqbzQ5c3lnZmNybUhkb3MwNV8wbzhqY2VlYkdid3k2U3hEMUM0?oc=5",
-      "published_at": "2026-10-22T22:06:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Lillard a 'big part' of Trail Blazers' rotation - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc1RrVGVGcGU1SFUyaU1ZTF9STkp3NUxWZjZ2c2trRmYtNUhqUWVRbFBaUThCb2RSRldFYUlPc2tLOW01OC1mb2hOS29hQVp1QVVCdWZaQ3NlZ3V2YWpzd3E0VGdJci16S29WcjFZUjFJZ3dTRV9ObDV5d0RkRzFDcnBoSjZaTXd0c3Y0MDJuQjY3X2ZETkY0VURLSTRZV3lFMXltRTN3?oc=5",
-      "published_at": "2026-10-22T19:28:38+00:00",
+      "headline": "Gary Trent Jr.'s absence from Bucks' rotation is devastating slap in the face - Behind the Buck Pass",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc3dPWGxtbHQ2MnZkMm9Kb3FWbzRzbUVURDNWUXM3MDFZdnM3dzJKcnZsVGhTRzdQZzJkM0g1WEhIYWd6UHVueDUtUGtXdGlybzFXdXZiZXQ3R1JrYldGc3ZQU1ZJb09MUlpwSzJuTVNOdkFWdHIyYU5TV1lNaTJvRVJYdGFsaFpXM005SHhHVTh6OEE?oc=5",
+      "published_at": "2026-10-22T17:15:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -79,9 +79,17 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Warriors Announce Starting Lineup for Season Opener vs. Lakers - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTU80dVZLdDlITEZrbEpLZ24yV0YyWXZWeXdLTWktVm1VcjVBUmhnWXByb1hZZGFZZlI0OVhVWlNyS2hpcFd0eEJob0Noa0libW5nWGRodURyQ2JHb3RVdVZfN1k1bmF3a1Znd09yVC1mMUxBdGQtenhFVTVFMXpwcllWSF9pWHltQnpRbnB6aDRVcWtGemNIZ0JNc2lCajVaRWNreDZINGNIdS1VREZHcg?oc=5",
-      "published_at": "2026-10-22T01:38:28+00:00",
+      "headline": "Lillard a 'big part' of Trail Blazers' rotation - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc1RrVGVGcGU1SFUyaU1ZTF9STkp3NUxWZjZ2c2trRmYtNUhqUWVRbFBaUThCb2RSRldFYUlPc2tLOW01OC1mb2hOS29hQVp1QVVCdWZaQ3NlZ3V2YWpzd3E0VGdJci16S29WcjFZUjFJZ3dTRV9ObDV5d0RkRzFDcnBoSjZaTXd0c3Y0MDJuQjY3X2ZETkY0VURLSTRZV3lFMXltRTN3?oc=5",
+      "published_at": "2026-10-22T19:28:38+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
+      "headline": "What We Learned From Kings Opening Night Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYmI4Z3AtODBsazBmaTVZbGg3LW0tV2V6cXVDalVVVWZlZTR5MUpUbkgzVC12VnVvNjJqRzBYR0tnUmJ0cTVSd3l6azlNTnB5dk9IMEhVRVdNNGZ0U1M3bWhxV3RWRV9DQVNKbUhzLVFEZTVCM2pQaWV3SDRHQTFqUnlvYmhSRlNsejlN?oc=5",
+      "published_at": "2026-10-22T16:19:10+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -103,22 +111,6 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Clippers announce starting lineup vs. Kings in season opener - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNDEwREV3MlJSUFRKWkxXc3JuVndRbjdmMFoxVG9nRzVOb1pHbVcwLWQzTzdqVVMwdFVmczJhcW5sa2RYcGFqTnhEZlBldnR6ckJ5WkZiNjJyTUM1MUdhTG9ucWpnX3h6bmRadDRoUHQzdXhNVzgxRnhPaEs1MUNRRlp5U0VKWE5lazBoRnBR?oc=5",
-      "published_at": "2026-10-22T01:44:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Lakers announce starting lineup for first game in post-LeBron era - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNXAycWVkeVprek9OLTlpcXFBSEdKNzNBMllrRF9TWWVJOERQZ1BBb2xCZUxEalFVazRSalVzbFJ5LURDTzZJbnA4Zm4zQVNPT3ZkRDVCek9NenVDNFVMZjMyeGsxenpqaVROZGVGeTJWb0lBQ1AzYUpaTkJQb0VuQUxkX0ZzaGJFNFBJRFlHMA?oc=5",
-      "published_at": "2026-10-22T01:57:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
       "headline": "Kings Announce New Opening Night Starting Lineup vs. Clippers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ0hFb0xlYjNRd09ISWJ0eHBxU3hMeUVidVh2c05mSGFndjBQMUdkczFKQzZjZDRyT1pBQmlSS0pmTExYUU9IamV5WXpDRUlfZEt4Rm5UT05Pc0gxQ09TUk1udkxRZWpNc3pvaWFaaHdlUF9sM1RzSGgtXzlWbG1ub2IwdzBrelVlOG5oM3RfWQ?oc=5",
       "published_at": "2026-10-22T02:09:24+00:00",
@@ -127,25 +119,9 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Suns reveal first starting lineup of the season with Khaman Maluach at center - Arizona Sports 98.7",
-      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWVVzb056YkRWVDg4eERSOWdXYnRpMEVBTTRXZHJyMmVrUDdVcHBydmpveFFJMFFjMlFmTUpDZUc3N01pMEhmeUdHVjB2d3Q3OXRSQ3ZNbDE0T2xWa3l1QzJtcGVqVXZQR0k0Sk5rT09Tb21HY2ktMVVBWmt0aVhPWDNFdw?oc=5",
-      "published_at": "2026-10-22T01:38:14+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Suns' Wing Rotation Is Being Dangerously Overlooked - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRnFPSjdUemdtRGlDZS1FQnQzS3NISXowQUNCLXpPTXpkMEV1ellEemRVY1MtWmZNRTIxcE5GR0laWWI1SWc0UE9nd2JpR1hkYV9ZNGVPMkJ1NElQTmwxYzctX1BlY2JkVDc5UjloWXdiQjBJNjJYSE9USDJHeDJXSkcxWk5pY0Zid1VpNXRvSGE0UmhabWtvODBJM00?oc=5",
-      "published_at": "2026-10-22T01:37:24+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Warriors Announce Starting Lineup Decision Vs Lakers After Stephen Curry Update - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNUlMMHlpQ2xRd0FzZVJ5eFFFWnE4WHA3UUQxMm1Mc3JDYnVmdTBjUHdseXJIMDRTQm5odm94VnI2UjF0UEZVdldBdVFtenNPanRxeUpSU3p3T21KVEhKMkhFUWk1X3BpRGdDa3N2UlNIajM1VVFmbk9WdmxZSUtfU3lXNG1pU3dxTkctRFhXejdlR1NLektmRWNmOXh4VEZrSGstTkNXb3ZKY3Ju?oc=5",
-      "published_at": "2026-10-22T01:40:00+00:00",
+      "headline": "Clippers announce starting lineup vs. Kings in season opener - USA Today",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaklKSTdmOGY2Tkw0RWxWSVRKYTc4Q3BLcUFmOENIa1dPSjJscnR5YmE2ZEhTSE9MWllMZzJzZXVEQkdodUlyV1FnUlZ2SU1RQzFPTmRxZzE5X0FIOXNuV0lMWmhqbkhmWDJCb0ZReVRPRkFwMjN2RjB5SkpUTmZaSG5ielg2NlpycnZLb25OLXVXZk1OY0Zod2dWczU1RzdYUnkxUFJ0RW9NRG8xdHZzRnpzeEFYX0VNdUQ0?oc=5",
+      "published_at": "2026-10-22T07:06:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -159,6 +135,22 @@
       "scope_date": "2026-10-22"
     },
     {
+      "headline": "Bulls' Patrick Williams: Outside initial rotation - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSUtCUXRKc0pINTcxLUl1VkpSajlYOEdWdEQtT1Q2X2Nmd29jZ1BhS3hkRmo0X3l0dUJ0UklZdTdTa0hhNHJJVmd4UjRuell1Y2lsRUdvOWlKLXgxd0lCREZZV2Vub0s2UDFheFZReFZPSlV6QTRFT1B4eVZkcUkta2Y0bW01WVVUN1FlSnVZQWh2cEhvem16WnRQTDllNzg?oc=5",
+      "published_at": "2026-10-22T16:31:35+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
+      "headline": "Magic's Jevon Carter: Out of early rotation - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUnRrdXBtdW9XeUFrcm5GWndkMDB0OC1WZE54SXNRMm5aazktTTladDBMN2VsMlVqa2pzcExEaVhRWi14VnlEYkJuQXd2Qm5JU3k0WlRvbHh6N3Y0bEhLSEVFV3lqZGZBTkFmd1J0M3ZudFMzcGVuRXhOQ0cyOVhrTUhpamJhTU5KOHMwNTRvQjcxQmlzSm93?oc=5",
+      "published_at": "2026-10-22T16:16:44+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
       "headline": "Is LeBron James starting tonight? Sixers projected lineup vs Cavaliers - The News Journal",
       "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPYWlwaGs4NENHa0d5UFNKbExEWTRaMlFJVHFGdWtzb0FDYl8tQnVjMlgxSWJYdkl0ZUswbXVsOXMyTkhNWXNlWFpnTi1VNzVlbXZZTmhxaEpFbjNPVV9jY0F0YzRXczlCQjdCLThpV2xyaXlEOVhqS2VueTcwY2Vzd1ZBcDZHd1dzTHpZelAwU2twcUlPR1JiRnNKVWhYM1huTVloNVNhLWZqX2dzbzl1bV90WXlaa0luaWROdnUxYnVmSzIycDFYTWpUdmhHcXpqOFB6UVdlRUw0XzJYOS1ic3JHOGNVUQ?oc=5",
       "published_at": "2026-10-22T13:15:00+00:00",
@@ -167,9 +159,17 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "What We Learned From Kings Opening Night Rotation - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYmI4Z3AtODBsazBmaTVZbGg3LW0tV2V6cXVDalVVVWZlZTR5MUpUbkgzVC12VnVvNjJqRzBYR0tnUmJ0cTVSd3l6azlNTnB5dk9IMEhVRVdNNGZ0U1M3bWhxV3RWRV9DQVNKbUhzLVFEZTVCM2pQaWV3SDRHQTFqUnlvYmhSRlNsejlN?oc=5",
-      "published_at": "2026-10-22T16:19:10+00:00",
+      "headline": "Bucks' Gary Trent: Left out of rotation - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNX1FvXzdab2dkR1g5LTBnQ003bWt6MExsWWZCUEJpUTlCdkZTQlMtamJuNEozT1hYSk9JU3RQVzViWFJ2UEtvTHRKSzBncUdmUmpJNFFoQzdXTnJ3Slo5c0JXTURScjNqWFpHT2FUZ2tqR0FqTWJJcmlaOWNCRHoySVViNEswZmxGc1NGUWcyb1B1dw?oc=5",
+      "published_at": "2026-10-22T16:17:38+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
+      "headline": "Hawks' Corey Kispert: Currently outside rotation - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOclVrQzc2WlRiSHlqb1lmdWkwclVFUnpOWWZCTGY0b2Z4cmRXV0JFZkkxLU9LOUVVR2xmdk5DcFNveEtGdmQwTmJmZTV0ZUpadDRfZjJzdHhnWnVpLVJCMVJoTWd4M3JiM0FORGdVbXpCc3VfTVVaTVQzUm5vN0piRFZBSGpQMWFURWFjT1puUXBobUwtNEJmNXJkZ0RWdw?oc=5",
+      "published_at": "2026-10-22T16:01:13+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -178,14 +178,6 @@
       "headline": "Tiago Splitter's Bulls Rotation Sent a Clear Early Message to One Player - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLWdBSjczaml1VHJjUXZKNUttOGwtSXRHc0piRjhheXRwZGdOUEJjcVRQVk5LdmUzalY5QWJzdW1qemhNMThXTTVab1dQOWFDdjN1MEx6Q1VJRHNSa1F0bWo2WVJ3c2oyQXR5TEpyVnRQWGxJVENaRzd0Z2d0YjZtSDVrcjJnaDlyMkxFc1BNUk5uVnpDVF9NMlpZNG1SeFdXUTkxNHdpN1Y1dFNkTUE?oc=5",
       "published_at": "2026-10-22T15:45:09+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Gary Trent Jr.'s absence from Bucks' rotation is devastating slap in the face - Behind the Buck Pass",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc3dPWGxtbHQ2MnZkMm9Kb3FWbzRzbUVURDNWUXM3MDFZdnM3dzJKcnZsVGhTRzdQZzJkM0g1WEhIYWd6UHVueDUtUGtXdGlybzFXdXZiZXQ3R1JrYldGc3ZQU1ZJb09MUlpwSzJuTVNOdkFWdHIyYU5TV1lNaTJvRVJYdGFsaFpXM005SHhHVTh6OEE?oc=5",
-      "published_at": "2026-10-22T17:15:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
