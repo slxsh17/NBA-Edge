@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-22",
-  "checked_at": "2026-10-23T02:22:35.716019+00:00",
+  "checked_at": "2026-10-23T02:58:29.300378+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -47,14 +47,6 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
-      "published_at": "2026-10-22T20:39:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
       "headline": "Gary Trent News: Left out of rotation - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUTJOTFZKdDE2NWFQOXhLTDdIQ1NXYTdPczhKYVotZ3pETmFjak8xRnhwM3FtMm9ma0k1OEVXUmhUQ2J3NG9pTkVMWUJNZE9FcG9HZGN2aTJTY1IxdXhaTVFwRWxSMGFLMktfSnNMMzB5QUN5U2VpbEl0NjZLbXVzSlBHREUtaDM3WEVKSmNieDVhR0E?oc=5",
       "published_at": "2026-10-22T16:17:38+00:00",
@@ -63,9 +55,25 @@
       "scope_date": "2026-10-22"
     },
     {
+      "headline": "Gary Trent Jr.'s absence from Bucks' rotation is devastating slap in the face - Behind the Buck Pass",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc3dPWGxtbHQ2MnZkMm9Kb3FWbzRzbUVURDNWUXM3MDFZdnM3dzJKcnZsVGhTRzdQZzJkM0g1WEhIYWd6UHVueDUtUGtXdGlybzFXdXZiZXQ3R1JrYldGc3ZQU1ZJb09MUlpwSzJuTVNOdkFWdHIyYU5TV1lNaTJvRVJYdGFsaFpXM005SHhHVTh6OEE?oc=5",
+      "published_at": "2026-10-22T17:15:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
       "headline": "Yves Missi passes Jamahl Mosley’s first big starting lineup test vs. Pacers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSW5ieFBnWFVlVU1NN2k2eWxNMEVLSXhLWS1ZYTI0SDQ5ZHVqMUtsY19fMGdZXzBmYTJFZ2dGdWhmVEwwR3VBMWp5QlRWLURZRGpGVnBobUowMWdxbTZsM2xhVV9OUkRVM3RvLWRINzQ0ekQ1Zm5QcHJKOV9lNkQ4ZFdQTVRKalE?oc=5",
       "published_at": "2026-10-22T23:04:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-22"
+    },
+    {
+      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
+      "published_at": "2026-10-22T20:39:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -111,9 +119,9 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Gary Trent Jr.'s absence from Bucks' rotation is devastating slap in the face - Behind the Buck Pass",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc3dPWGxtbHQ2MnZkMm9Kb3FWbzRzbUVURDNWUXM3MDFZdnM3dzJKcnZsVGhTRzdQZzJkM0g1WEhIYWd6UHVueDUtUGtXdGlybzFXdXZiZXQ3R1JrYldGc3ZQU1ZJb09MUlpwSzJuTVNOdkFWdHIyYU5TV1lNaTJvRVJYdGFsaFpXM005SHhHVTh6OEE?oc=5",
-      "published_at": "2026-10-22T17:15:00+00:00",
+      "headline": "Tiago Splitter's Bulls Rotation Sent a Clear Early Message to One Player - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLWdBSjczaml1VHJjUXZKNUttOGwtSXRHc0piRjhheXRwZGdOUEJjcVRQVk5LdmUzalY5QWJzdW1qemhNMThXTTVab1dQOWFDdjN1MEx6Q1VJRHNSa1F0bWo2WVJ3c2oyQXR5TEpyVnRQWGxJVENaRzd0Z2d0YjZtSDVrcjJnaDlyMkxFc1BNUk5uVnpDVF9NMlpZNG1SeFdXUTkxNHdpN1Y1dFNkTUE?oc=5",
+      "published_at": "2026-10-22T15:45:09+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
@@ -175,25 +183,9 @@
       "scope_date": "2026-10-22"
     },
     {
-      "headline": "Tiago Splitter's Bulls Rotation Sent a Clear Early Message to One Player - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLWdBSjczaml1VHJjUXZKNUttOGwtSXRHc0piRjhheXRwZGdOUEJjcVRQVk5LdmUzalY5QWJzdW1qemhNMThXTTVab1dQOWFDdjN1MEx6Q1VJRHNSa1F0bWo2WVJ3c2oyQXR5TEpyVnRQWGxJVENaRzd0Z2d0YjZtSDVrcjJnaDlyMkxFc1BNUk5uVnpDVF9NMlpZNG1SeFdXUTkxNHdpN1Y1dFNkTUE?oc=5",
-      "published_at": "2026-10-22T15:45:09+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
       "headline": "Video - Spurs to 'Figure Out' Promising Rotation After Loss to Thunder - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVEl0UkU2RnZ1ODRRdXJiRUM1QXZSQVY0akpKbEVDcFphMnB1ZnAta0tvS1k0dExZbDdONEowZFBHVHJ2enFEWjZzLWlVT05WNDhMX080TkJIbElGZTRlNDBDdE0wNGFaa0IxcTlmaldzdXdnU1VhcVI3dDBiMkRERUJDQmcwM0N1ZVlMSTBpU3lCRTI2UHRFakh4RjJla1ZaaUNqZFE4eTg?oc=5",
       "published_at": "2026-10-22T17:03:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-22"
-    },
-    {
-      "headline": "Lakers Announce Starting Five for Preseason Finale Against Nuggets - SSBCrack",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdHZ5akpveHZ5Ung3ZU9ka2ItdUZIOGp1TmpTUm96V3JoNTdrTk85TzF4SUwzSXVIUFZFbGo1NGYtNjVCdkxWVFk2eUo4ek80TE50bVAyVUxnZllEbno3SVpsNThpUGFSZld2Wlc0YnZuR0FoT0JRWU15d19aczRUQ3Z6M3dITTR1cWU3dERRTmN6aEhKUE9DYg?oc=5",
-      "published_at": "2026-10-22T02:43:11+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-22"
