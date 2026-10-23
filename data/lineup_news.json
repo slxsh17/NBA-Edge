@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-23T16:59:03.279541+00:00",
+  "checked_at": "2026-10-23T17:24:07.489285+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -28,6 +28,20 @@
         "Josh Hart",
         "OG Anunoby",
         "K. Towns"
+      ],
+      "source": "RotoWire NBA Daily Lineups",
+      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
+      "date": "2026-10-23"
+    },
+    {
+      "team": "DET",
+      "status": "projected",
+      "players": [
+        "C. Cunningham",
+        "D. Robinson",
+        "A. Thompson",
+        "John Collins",
+        "Jalen Duren"
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
@@ -88,9 +102,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Cavs 2026-27 season preview, record predictions, starting lineup, TV info - Akron Beacon Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYldIS213YUZMVDlzaWctVVBZV3NteUk1OUFfUjMtV0N6dXc0LXpteFdkMHVUM1VNM21aa2hyeE00VnFaeTFzSDlLQ1p1UEFFSVVMWEhVd1FrcDVveEQxZjJ0V2FaYlQ3UFIwU0NhTlVIal9mcjFiX29tZkxDR3VmRGdLaXhSWnBnNDJzREloZUxLeDR3aGMwR1lMbVFRU2JKYy1hb29Sa3BkcmRtbnRCY3lHN1pTUW9YdU9LRTA4YVl4NU5RRHRCNi1TNWRuczdKeWRpTExn?oc=5",
-      "published_at": "2026-10-22T19:34:00+00:00",
+      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWXVLWlZqRk9hVFptRTl3TVhfcFhGT0xNNzh2aHBKaTZ6cEFlNzFZeEFNZHN1VDQ2aWF0NlNhdTRteGlzNW1OaC1Gdm5vYTdiTkdHLVptOFk0OEs0dm5XQ3BnVWdBbUtqbzQ5c3lnZmNybUhkb3MwNV8wbzhqY2VlYkdid3k2U3hEMUM0?oc=5",
+      "published_at": "2026-10-22T22:06:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -104,6 +118,14 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Cavs 2026-27 season preview, record predictions, starting lineup, TV info - Akron Beacon Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYldIS213YUZMVDlzaWctVVBZV3NteUk1OUFfUjMtV0N6dXc0LXpteFdkMHVUM1VNM21aa2hyeE00VnFaeTFzSDlLQ1p1UEFFSVVMWEhVd1FrcDVveEQxZjJ0V2FaYlQ3UFIwU0NhTlVIal9mcjFiX29tZkxDR3VmRGdLaXhSWnBnNDJzREloZUxLeDR3aGMwR1lMbVFRU2JKYy1hb29Sa3BkcmRtbnRCY3lHN1pTUW9YdU9LRTA4YVl4NU5RRHRCNi1TNWRuczdKeWRpTExn?oc=5",
+      "published_at": "2026-10-22T19:34:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
       "published_at": "2026-10-23T02:50:17+00:00",
@@ -112,17 +134,17 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Will Achiuwa Take Hunter’s Spot in Kings' Starting Lineup? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWXVLWlZqRk9hVFptRTl3TVhfcFhGT0xNNzh2aHBKaTZ6cEFlNzFZeEFNZHN1VDQ2aWF0NlNhdTRteGlzNW1OaC1Gdm5vYTdiTkdHLVptOFk0OEs0dm5XQ3BnVWdBbUtqbzQ5c3lnZmNybUhkb3MwNV8wbzhqY2VlYkdid3k2U3hEMUM0?oc=5",
-      "published_at": "2026-10-22T22:06:05+00:00",
+      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
+      "published_at": "2026-10-22T20:39:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Cavaliers’ Anticipated Starting Lineup for Season-Opener vs. 76ers - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcVd4cVhPOGdLR2UtcS1aMlJUbUI3NmVSWjF4WmVzUFNnZ1BxNklLT2t0NnZsMEpadjhNR0RTd2tvQmRzc0tIR1oxRHg2RlpxZ0xsaWkya29RSzR1Y2tOWGdmblM3eFR3eEZiT0NoaWtHTW1PUU5tSFlsRXBpWXpHS0pwMlNIZzViWm9INWRR?oc=5",
-      "published_at": "2026-10-22T20:39:51+00:00",
+      "headline": "Should The Detroit Pistons ALREADY Make A Rotation CHANGE After Javonte Green's Game 1 Performance? - WHAS11",
+      "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQc0lKeU1vVnZoUm9jaG1sMXZjakF0dnI3ZUNpMnZBRDZPTndCWXdfVzE0OTVEckFzMGtlUmlkSE1fb0htUENONnpTR1ZHQjJJNE1XNDFJa3ZLVHZQc0RWeW1wX1BUWmtKT0pDTUpCN0c1alFBSXhsSDBsR2Z6cEk5MkFUMU5aV1doZW9Uc0pnSnVoS29PQnUzLWZpUHotUWpLNWJIN25tRzZjUEtUNERxV2VaS0VlTnZOSGVrZ1Y0N2lORHhNcXBQN1p4YjhpM1hMQUotOTlQdGE2R2dMU2Z6N0oya2xjb0F6STNQVU14U0xzeWx0YnYtV0hyNU5pMHRGNGJmSkFRREJXYXpyY1N0N0xiVUNGV18wWjVQZFI1MUxjbEVWeVJFbi1LMmlMT0pwSjdF?oc=5",
+      "published_at": "2026-10-22T19:14:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -144,14 +166,6 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Spurs to 'Figure Out' Promising Rotation After Loss to Thunder - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQclNDeVF3MlI3ajBNeEhiVTAwdzBtc3oxWlE1cWRrZjRGMXpjQk03U3daZHd6T0l1N2ljR3lTTFBNTC1GMjFVaE1TQm1RUzd0ZlZRZnViYUdlMjJRV2RwbGJjVVhMbVlZT2YxalRxODAzcDlScDlZekNjendKSGJFa19MM0ZkdE5hTVEzbDl3?oc=5",
-      "published_at": "2026-10-22T17:03:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
       "headline": "Why Hannes Steinbach Was Left Out of the Hornets' Opening-Night Rotation - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQX0FJMFRzT3BGQnV1cXd0TEpKcWZic2RLb3FjWEJLX0tpRWJYUi03SGdsTFRQYllOMmFHREF1NzVxNjAtd25RcW1razIyeU1rejRONXNySU9sa2N1eUtHdWVzRl92LWF1aUliUXQtTnRiaXdVZmdwWnZmVWpTYk9YVkNGUVduUWNETUdySWFUdmd3VGtUZWkwanJtci0ySEJCNmFncnZkZTZ3eGM?oc=5",
       "published_at": "2026-10-22T18:31:14+00:00",
@@ -160,25 +174,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Gary Trent Jr.'s absence from Bucks' rotation is devastating slap in the face - Behind the Buck Pass",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPc3dPWGxtbHQ2MnZkMm9Kb3FWbzRzbUVURDNWUXM3MDFZdnM3dzJKcnZsVGhTRzdQZzJkM0g1WEhIYWd6UHVueDUtUGtXdGlybzFXdXZiZXQ3R1JrYldGc3ZQU1ZJb09MUlpwSzJuTVNOdkFWdHIyYU5TV1lNaTJvRVJYdGFsaFpXM005SHhHVTh6OEE?oc=5",
-      "published_at": "2026-10-22T17:15:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Should The Detroit Pistons ALREADY Make A Rotation CHANGE After Javonte Green's Game 1 Performance? - WHAS11",
-      "source_url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQc0lKeU1vVnZoUm9jaG1sMXZjakF0dnI3ZUNpMnZBRDZPTndCWXdfVzE0OTVEckFzMGtlUmlkSE1fb0htUENONnpTR1ZHQjJJNE1XNDFJa3ZLVHZQc0RWeW1wX1BUWmtKT0pDTUpCN0c1alFBSXhsSDBsR2Z6cEk5MkFUMU5aV1doZW9Uc0pnSnVoS29PQnUzLWZpUHotUWpLNWJIN25tRzZjUEtUNERxV2VaS0VlTnZOSGVrZ1Y0N2lORHhNcXBQN1p4YjhpM1hMQUotOTlQdGE2R2dMU2Z6N0oya2xjb0F6STNQVU14U0xzeWx0YnYtV0hyNU5pMHRGNGJmSkFRREJXYXpyY1N0N0xiVUNGV18wWjVQZFI1MUxjbEVWeVJFbi1LMmlMT0pwSjdF?oc=5",
-      "published_at": "2026-10-22T19:14:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Video - Spurs to 'Figure Out' Promising Rotation After Loss to Thunder - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVEl0UkU2RnZ1ODRRdXJiRUM1QXZSQVY0akpKbEVDcFphMnB1ZnAta0tvS1k0dExZbDdONEowZFBHVHJ2enFEWjZzLWlVT05WNDhMX080TkJIbElGZTRlNDBDdE0wNGFaa0IxcTlmaldzdXdnU1VhcVI3dDBiMkRERUJDQmcwM0N1ZVlMSTBpU3lCRTI2UHRFakh4RjJla1ZaaUNqZFE4eTg?oc=5",
-      "published_at": "2026-10-22T17:03:05+00:00",
+      "headline": "Spurs to 'Figure Out' Promising Rotation After Loss to Thunder - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQ0txc0JObzNDR1lYVkpvZFhiWmdGdkd6TGVvR1NYRF9CWjdMTUEyTHNZTWkxX20waUd2Z3NDbjdPVXYtRHVhWW16YjZ5M3Y1bkFkRldSQ01lb1NyR2Ztc3l1MU4xRURKM0gzTExRU2tTUmZzTDNsTlhtS1FEVEF4QzE0d2E0Yi00UXdhaUxLZ3lsS2Z3Z3NHcEpaZ1hyNjdZampoMVpmTQ?oc=5",
+      "published_at": "2026-10-22T17:39:32+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
