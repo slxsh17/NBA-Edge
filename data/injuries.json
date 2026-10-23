@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T17:37:15.759244+00:00",
+  "updated_at": "2026-10-23T18:07:42.204161+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -308,12 +308,12 @@
       "status": "OUT"
     },
     {
-      "name": "De'Aaron Fox",
+      "name": "Keldon Johnson",
       "team": "SAS",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Keldon Johnson",
+      "name": "De'Aaron Fox",
       "team": "SAS",
       "status": "DAY-TO-DAY"
     },
@@ -336,11 +336,6 @@
       "name": "Trey Alexander",
       "team": "UTA",
       "status": "OUT"
-    },
-    {
-      "name": "Tony Bradley",
-      "team": "UTA",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jusuf Nurkic",
