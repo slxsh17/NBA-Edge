@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T01:24:00.837285+00:00",
+  "updated_at": "2026-10-24T02:06:10.861524+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -98,6 +98,11 @@
       "status": "OUT"
     },
     {
+      "name": "Ausar Thompson",
+      "team": "DET",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jalen Duren",
       "team": "DET",
       "status": "DAY-TO-DAY"
@@ -185,12 +190,7 @@
     {
       "name": "Cedric Coward",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Isaiah Stewart",
-      "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Donte DiVincenzo",
@@ -211,6 +211,11 @@
       "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
+    },
+    {
+      "name": "Paolo Banchero",
+      "team": "ORL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Black",
