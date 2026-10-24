@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T15:10:44.129183+00:00",
+  "updated_at": "2026-10-24T15:49:45.175833+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -143,12 +143,12 @@
       "status": "OUT"
     },
     {
-      "name": "Fred VanVleet",
+      "name": "Steven Adams",
       "team": "HOU",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Steven Adams",
+      "name": "Fred VanVleet",
       "team": "HOU",
       "status": "DAY-TO-DAY"
     },
