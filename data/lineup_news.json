@@ -1,24 +1,10 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T16:53:27.794839+00:00",
+  "checked_at": "2026-10-24T17:14:09.781874+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
-    {
-      "team": "MIA",
-      "status": "projected",
-      "players": [
-        "D. Mitchell",
-        "Klay Thompson",
-        "A. Wiggins",
-        "G. Antetokounmpo",
-        "Bam Adebayo"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-24"
-    },
     {
       "team": "MIL",
       "status": "projected",
@@ -98,17 +84,17 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
-      "published_at": "2026-10-23T21:56:33+00:00",
+      "headline": "Nikola Vucevic News: Barely in rotation Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZkliM3Uyd0IzZlZwN21kYnpwdExEVUVpUFEzUWpCYTBUVURzeTBUMEF6NU92ZWI3VWJtNmZpX3AzMkVBeWl2dTVHcFVZdnowN2NJOWxXc2hKX2JNSHhZU1YzVzBpcGZNVEtxT09HTXhKRHZ4dEZLOHZYRXNzMWh4bmZqRTNLcXhOM194WElIWkpRN3FfaHFmYXpDSUhvdzg?oc=5",
+      "published_at": "2026-10-24T02:54:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nikola Vucevic News: Barely in rotation Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZkliM3Uyd0IzZlZwN21kYnpwdExEVUVpUFEzUWpCYTBUVURzeTBUMEF6NU92ZWI3VWJtNmZpX3AzMkVBeWl2dTVHcFVZdnowN2NJOWxXc2hKX2JNSHhZU1YzVzBpcGZNVEtxT09HTXhKRHZ4dEZLOHZYRXNzMWh4bmZqRTNLcXhOM194WElIWkpRN3FfaHFmYXpDSUhvdzg?oc=5",
-      "published_at": "2026-10-24T02:54:00+00:00",
+      "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
+      "published_at": "2026-10-23T21:56:33+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
