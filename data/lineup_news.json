@@ -1,55 +1,13 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T06:15:50.678004+00:00",
+  "checked_at": "2026-10-24T07:08:01.754135+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
     {
-      "team": "MIL",
-      "status": "confirmed",
-      "players": [
-        "Ryan Rollins",
-        "Tyler Herro",
-        "Jaime Jaquez",
-        "Kyle Kuzma",
-        "Myles Turner"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-24"
-    },
-    {
-      "team": "NYK",
-      "status": "confirmed",
-      "players": [
-        "Jalen Brunson",
-        "Mikal Bridges",
-        "Josh Hart",
-        "OG Anunoby",
-        "K. Towns"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-24"
-    },
-    {
-      "team": "DET",
-      "status": "confirmed",
-      "players": [
-        "C. Cunningham",
-        "D. Robinson",
-        "A. Thompson",
-        "John Collins",
-        "J. Duren"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-24"
-    },
-    {
       "team": "MIA",
-      "status": "confirmed",
+      "status": "projected",
       "players": [
         "D. Mitchell",
         "Klay Thompson",
@@ -62,8 +20,22 @@
       "date": "2026-10-24"
     },
     {
+      "team": "MIL",
+      "status": "projected",
+      "players": [
+        "Ryan Rollins",
+        "Tyler Herro",
+        "Jaime Jaquez",
+        "Kyle Kuzma",
+        "Myles Turner"
+      ],
+      "source": "RotoWire NBA Daily Lineups",
+      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
+      "date": "2026-10-24"
+    },
+    {
       "team": "NOP",
-      "status": "confirmed",
+      "status": "projected",
       "players": [
         "D. Murray",
         "J. Fears",
@@ -81,6 +53,14 @@
       "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTG5GdVhvTUhxZGhDZklNSlhwV1ZseFI2cEFRSDJiRm9MbGxjSjc5YmptWWlfM29BaElNZ2U3OUQxLXE4TGpQSFVsX2draU9TQ2NiRjJsTkFzR2dOUzNMVEU2aENxQy1reEs4eUhwSnYxZFZDbWZRc3FTcTNPMWFiVXRSRVF3QlhDNG9HLWt2SnRqTERT?oc=5",
       "published_at": "2026-10-24T02:01:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Zach Collins News: Expected to be in rotation Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmt4ckwzZWdZUEZ6a2UwNWlMeFdTc3RRVWFEMTZscHNxOXNUVk84OTdRUEdqQnkzSWx2VmVSYkdPQ3VzOEdjU2ZDT013aVk5elhld20wTVhCWnc1d21HMTlMQ1lyWE5ISmYwVTRSQXBpSFEzTXh0eEpJcXlLZ0VoRkFwM2xrQVJSRF9zLTZ6Nk9HYXBENnpCcW1QYTVRRnBXaUdjQ1pSdGxmZw?oc=5",
+      "published_at": "2026-10-24T03:29:14+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -110,14 +90,6 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Kyrie Irving News: Will be on minutes restriction Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOGZJWFUwQ2pDZjc5OV96c21tdTRqR2xvSk9kcHhIczF4RHhub2pBblJvM1V6SGl3RUFzS2FfNlRIbm5ma0JFSGxjZ3ozaUE0Um9ISkhQN1pERm50SVIzdjhWcGFsd1JhSmxEemczcmxFYklKYXpoLTdyeEdTTmQwWnd0c0tMd1NzWmVWZTVmTFc4eWVxbHFMZ1F2NFEySVlLSnFDODRLek4ydnVB?oc=5",
-      "published_at": "2026-10-23T21:44:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - New York Daily News",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTC01VEVLNWVNenN3WGhuVE5HUTE1b2IxZWhwR20zWE5uWUFNSkdnUGNHbXFxay1yczk0bEpyQ1YwUlJNRVNVbTBjNXJqZ1M3SXU5TGROY0JOYm1YV25ZenlLSEMxYmFGdF9NMlBKc2dOdHZ2NTktSFlpbmdXc3AxRTd4ZzBUV3VXbjVReWxIckxwRV8zMTF0YWEtVQ?oc=5",
       "published_at": "2026-10-23T19:25:37+00:00",
@@ -129,6 +101,14 @@
       "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd0FkOVUyUUZhVFB5VGNXcHZ3alRlLWhTeE1SOTRHX0ZMUmdzRS1GdWdwdFZRWkN0YWMtSzJRcWpUT20yT3dnUThBMExEY1VrTS10MTBqU2dfNjFRTVJXc3g5SW5rY2JjR3pyOE12LTVTbEJTN2hvUUw1dWZwZHVsNWQybzA5Z3laeTAxVTZDNkw0bXJSWjV6eUZWM3ptVWk0Rk96bUlB?oc=5",
       "published_at": "2026-10-23T18:36:58+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Nikola Vucevic News: Barely in rotation Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZkliM3Uyd0IzZlZwN21kYnpwdExEVUVpUFEzUWpCYTBUVURzeTBUMEF6NU92ZWI3VWJtNmZpX3AzMkVBeWl2dTVHcFVZdnowN2NJOWxXc2hKX2JNSHhZU1YzVzBpcGZNVEtxT09HTXhKRHZ4dEZLOHZYRXNzMWh4bmZqRTNLcXhOM194WElIWkpRN3FfaHFmYXpDSUhvdzg?oc=5",
+      "published_at": "2026-10-24T02:54:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -150,22 +130,6 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
-      "published_at": "2026-10-23T14:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Thomas Bryant News: Outside rotation in opener - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRWNvdGY3d0JEbnBRM0t6X2dDUEVoTUZVa3Y5dmVGZFRSUmJIYUFWN0tCemg0Sjh6Z2ZrLXpZQ0lYUFEwVUhDZDM4YjJGbVE3d3hwZW1tY0tqa09BRDZBTGlvZDNscGRKSWhUcHF0bHN6THZLanAxbXNacU04ZGo4UFluQTJJMnQ0ck1RdzltcC1rOUFVR2Zxcl9TMjlBaTQ?oc=5",
-      "published_at": "2026-10-23T15:00:18+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
       "published_at": "2026-10-23T18:00:04+00:00",
@@ -177,6 +141,22 @@
       "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
       "published_at": "2026-10-23T19:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Kyrie Irving News: Will be on minutes restriction Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOGZJWFUwQ2pDZjc5OV96c21tdTRqR2xvSk9kcHhIczF4RHhub2pBblJvM1V6SGl3RUFzS2FfNlRIbm5ma0JFSGxjZ3ozaUE0Um9ISkhQN1pERm50SVIzdjhWcGFsd1JhSmxEemczcmxFYklKYXpoLTdyeEdTTmQwWnd0c0tMd1NzWmVWZTVmTFc4eWVxbHFMZ1F2NFEySVlLSnFDODRLek4ydnVB?oc=5",
+      "published_at": "2026-10-23T21:44:45+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Thomas Bryant News: Outside rotation in opener - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRWNvdGY3d0JEbnBRM0t6X2dDUEVoTUZVa3Y5dmVGZFRSUmJIYUFWN0tCemg0Sjh6Z2ZrLXpZQ0lYUFEwVUhDZDM4YjJGbVE3d3hwZW1tY0tqa09BRDZBTGlvZDNscGRKSWhUcHF0bHN6THZLanAxbXNacU04ZGo4UFluQTJJMnQ0ck1RdzltcC1rOUFVR2Zxcl9TMjlBaTQ?oc=5",
+      "published_at": "2026-10-23T15:00:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -217,6 +197,14 @@
       "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ2w0Q2Zyakk1VkYza0l1TUg5WjlpWmFBNkpZV2tFYWozZGZOVk90aTlyaTA5QWpyeHczVDdwbUlBY2dWZzVoMDRNZm5pczRQQThCblQ0RUx6bzc0LWtTb3Y3eG0wdWUyTjE0enM5R2ZHTmNBazV6aVUwVnhuZzcweXI1ZUVNTjBVTUlaWWlaMUdnUk8wajAyTnAwbw?oc=5",
       "published_at": "2026-10-23T23:00:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
+      "published_at": "2026-10-23T14:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
