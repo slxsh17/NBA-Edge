@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-24T00:13:31.025952+00:00",
+  "checked_at": "2026-10-24T01:15:00.448473+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -41,7 +41,7 @@
         "D. Robinson",
         "A. Thompson",
         "John Collins",
-        "Jalen Duren"
+        "J. Duren"
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
@@ -63,7 +63,7 @@
     },
     {
       "team": "NOP",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "D. Murray",
         "J. Fears",
@@ -78,9 +78,9 @@
   ],
   "headlines": [
     {
-      "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTGtFaHFFMXlWcnNhQlZNSDFhU3RXakhSb2ZhZHZCQWlNZmpOczEwR0NibWxDLW5uNE1TM3ZfazBhZFh3VG10ZHNoSGJ1ZGRkbnFOam9UdUVTbEdGbklTMWpPR0ktRkNQclNPZWNEQkVLRWV2YXRCLVl1eWZBckdOemEzOFlKYVE?oc=5",
-      "published_at": "2026-10-23T21:36:58+00:00",
+      "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
+      "published_at": "2026-10-23T21:56:33+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -112,7 +112,7 @@
     {
       "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
-      "published_at": "2026-10-23T22:57:01+00:00",
+      "published_at": "2026-10-24T00:29:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -126,17 +126,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
-      "published_at": "2026-10-23T19:00:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
-      "published_at": "2026-10-23T14:00:00+00:00",
+      "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd0FkOVUyUUZhVFB5VGNXcHZ3alRlLWhTeE1SOTRHX0ZMUmdzRS1GdWdwdFZRWkN0YWMtSzJRcWpUT20yT3dnUThBMExEY1VrTS10MTBqU2dfNjFRTVJXc3g5SW5rY2JjR3pyOE12LTVTbEJTN2hvUUw1dWZwZHVsNWQybzA5Z3laeTAxVTZDNkw0bXJSWjV6eUZWM3ptVWk0Rk96bUlB?oc=5",
+      "published_at": "2026-10-23T18:36:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -166,9 +158,25 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa2N5WHM0RGE1Z01GZ2d5djk3RllSMkluOGNzaW1CZzM0bWFIWVM4NEYwSWhTbWpiaC0tX1hMbHlhLXpUUXNIUk8yQmhUR3ozbnpLQzZ1R3REa0RyX181VXluYTdCVHBuYk1vRDN2RnJ5cXJHbG1OUnVCV0lIU09lM3RR?oc=5",
       "published_at": "2026-10-23T22:16:26+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
+      "published_at": "2026-10-23T14:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -185,14 +193,6 @@
       "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzJWYzhsd0xPZ09zaTllWkZFLS1aMkx4Nm5HeUYtNkFmTW5BR1NfUWRZdk5sMXo5T1pxU0Z4THpGZHo5ZlVGcXI1UHlFVmRUdG05Rl9XdzlmOXB2Z2ZaNFhfUkZmYlpjb1htLUdOaThyVVl3cWtOOXhiVW11VWxHMloybk9CcEFfdzlTX0ZiNWJJXzNLd2V3OUZWYkRlQWV0MG1udXVTeEFCUWVDc0pCdDB3Qjd3emFYX202MDNzVGJzTWdpNjh6NUtn?oc=5",
       "published_at": "2026-10-23T22:07:42+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Ahead of a must-win Game 4 in the WNBA Finals, the Golden State Valkyries need to answer these four rotation questions - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBjN3JCMnZORkZZeUZvWXlqaVhGS3BqVGVnb2V2UFpoNnFDNXoySFkwQkEwMUlVTEVCc0Z2a20tb005ZUhzSGNLNkNqRWtlQVkzY3o2NjFlZmVfbjRsNXZPSGd5Wmh1c0NGM0N3eV9wYUZLYUtzWGE1QlJB?oc=5",
-      "published_at": "2026-10-23T13:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
