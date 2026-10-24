@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T19:32:11.146097+00:00",
+  "updated_at": "2026-10-24T19:59:08.077391+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -166,6 +166,11 @@
       "name": "Jimmy Butler III",
       "team": "GSW",
       "status": "OUT"
+    },
+    {
+      "name": "Marcus Smart",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Steven Adams",
