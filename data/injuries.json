@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T22:53:46.605173+00:00",
+  "updated_at": "2026-10-24T23:19:10.592960+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -58,17 +58,17 @@
       "status": "OUT"
     },
     {
+      "name": "Jett Howard",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
       "name": "Kyrie Irving",
       "team": "DAL",
       "status": "OUT"
     },
     {
       "name": "Caleb Martin",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Jett Howard",
       "team": "DAL",
       "status": "OUT"
     },
@@ -178,11 +178,6 @@
       "status": "OUT"
     },
     {
-      "name": "Reed Sheppard",
-      "team": "HOU",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Fred VanVleet",
       "team": "HOU",
       "status": "OUT"
@@ -233,17 +228,17 @@
       "status": "OUT"
     },
     {
+      "name": "Cameron Carr",
+      "team": "LAL",
+      "status": "OUT"
+    },
+    {
       "name": "Adou Thiero",
       "team": "LAL",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Jake LaRavia",
-      "team": "LAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Cameron Carr",
       "team": "LAL",
       "status": "DAY-TO-DAY"
     },
@@ -316,11 +311,6 @@
       "name": "Tacko Fall",
       "team": "PHI",
       "status": "OUT"
-    },
-    {
-      "name": "Dean Wade",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dominick Barlow",
