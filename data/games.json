@@ -1,6 +1,6 @@
 {
   "date": "20261023",
-  "updated_at": "2026-10-23T19:49:38.489684-04:00",
+  "updated_at": "2026-10-23T20:15:30.936169-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -19,7 +19,7 @@
       "away": "Atlanta Hawks",
       "home": "Charlotte Hornets",
       "time": "2026-10-23T23:00Z",
-      "status": "In Progress"
+      "status": "Halftime"
     },
     {
       "away": "Dallas Mavericks",
@@ -31,7 +31,7 @@
       "away": "Minnesota Timberwolves",
       "home": "Orlando Magic",
       "time": "2026-10-23T23:00Z",
-      "status": "In Progress"
+      "status": "Halftime"
     },
     {
       "away": "Toronto Raptors",
@@ -43,7 +43,7 @@
       "away": "Detroit Pistons",
       "home": "Miami Heat",
       "time": "2026-10-24T00:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Houston Rockets",
