@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T22:48:38.999262+00:00",
+  "checked_at": "2026-10-24T23:10:21.776899+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,7 +21,7 @@
     },
     {
       "team": "MIL",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "Ryan Rollins",
         "Tyler Herro",
@@ -116,9 +116,17 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ2w0Q2Zyakk1VkYza0l1TUg5WjlpWmFBNkpZV2tFYWozZGZOVk90aTlyaTA5QWpyeHczVDdwbUlBY2dWZzVoMDRNZm5pczRQQThCblQ0RUx6bzc0LWtTb3Y3eG0wdWUyTjE0enM5R2ZHTmNBazV6aVUwVnhuZzcweXI1ZUVNTjBVTUlaWWlaMUdnUk8wajAyTnAwbw?oc=5",
-      "published_at": "2026-10-23T23:00:01+00:00",
+      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - Oneida Dispatch",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbG9VMDdyeG9YTXBIcmdqczYxejFNZ3BFMjRrQi1QeWR4dmN0T3k0XzhBM1VseWhkd0RBSUNUcE9ITkJ4YXM1R1lsMDNFR3gzVDZzWnM5WWI5eG1fdnRFZkpNVko3NlNFMXZEclRWc2N1Mm5NcU9BRGtPcjBWQkg4aDU3Y1NzTTdITUJaNTNVTG9UNFVWVFZCaUI1RDBEZE0?oc=5",
+      "published_at": "2026-10-24T02:31:07+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
+      "published_at": "2026-10-24T23:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -148,14 +156,6 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - Oneida Dispatch",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbG9VMDdyeG9YTXBIcmdqczYxejFNZ3BFMjRrQi1QeWR4dmN0T3k0XzhBM1VseWhkd0RBSUNUcE9ITkJ4YXM1R1lsMDNFR3gzVDZzWnM5WWI5eG1fdnRFZkpNVko3NlNFMXZEclRWc2N1Mm5NcU9BRGtPcjBWQkg4aDU3Y1NzTTdITUJaNTNVTG9UNFVWVFZCaUI1RDBEZE0?oc=5",
-      "published_at": "2026-10-24T02:31:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - AOL.com",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPXy1nX2pDa2VKM0p1SHdtR3czcWRVRHFkaENGbk4wRmFlZjg3LWJrV1pyX3A0YlB3NXRjYW1paEIwazN3b3JTWENzUHFTZlE2d1NfQm1sd0NoOUdKYzcwQm83TDY1NENMVVlxMHZ1SzJKcDJUQTU3T3k4Yzd6TktIcTRB?oc=5",
       "published_at": "2026-10-24T01:16:00+00:00",
@@ -175,14 +175,6 @@
       "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - ClutchPoints",
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY3A1RFJadGpkYjlzQ3VqOUVSSUM2aW96Qkdjb3N4WjlZUTRhNU1CeEhnZTZPeXFIcndKb25iRWg0Y2VxRzFLVmdDQTFGMl82allMM2pzdENxNnRkVVJzSndFa2lNMkdkb0p3Nm9weGs4UWEyNmZHRndTaGpRVGQtZEYzaEFnNFVrQ2dRTE1DbUl6YU55elpsWjUzc2FWX0hDNlpVRXJaNk4?oc=5",
       "published_at": "2026-10-23T23:29:33+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Ranking Every NBA Team’s Starting Lineup for the 2026-27 Season - SSBCrack",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdy16Y3JDQmd6eDFfYkw1QlZXNmVTQmVJTVpHVmI5MlNjZVkta1oyNWdxWk5tZEhMYjhiZm1faDZ3ejhNYjJrd2hDNTFaS1lMUHNkdUotSUtJWC1qTDVDTmxib2huNVp6RXNBSGNhQmxVMXhCTzdfRGc0aVVJb2Y0bEpLb0VjMmdQeE1JNVBBb25IVTQ?oc=5",
-      "published_at": "2026-10-23T23:03:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
