@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T20:56:55.200421+00:00",
+  "updated_at": "2026-10-24T21:25:33.908310+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -28,11 +28,6 @@
       "status": "OUT"
     },
     {
-      "name": "Christian Anderson",
-      "team": "CHA",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Coby White",
       "team": "CHA",
       "status": "OUT"
@@ -46,6 +41,11 @@
       "name": "Kylan Boswell",
       "team": "CHA",
       "status": "OUT"
+    },
+    {
+      "name": "Patrick Williams",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Noa Essengue",
@@ -198,9 +198,14 @@
       "status": "OUT"
     },
     {
-      "name": "T.J. McConnell",
+      "name": "Aaron Nesmith",
       "team": "IND",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "T.J. McConnell",
+      "team": "IND",
+      "status": "OUT"
     },
     {
       "name": "Ben Sheppard",
