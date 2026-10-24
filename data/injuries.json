@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T18:23:26.943315+00:00",
+  "updated_at": "2026-10-24T19:00:16.884902+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -58,7 +58,22 @@
       "status": "OUT"
     },
     {
-      "name": "Cooper Flagg",
+      "name": "Zaccharie Risacher",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Morez Johnson Jr.",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Caleb Martin",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Jett Howard",
       "team": "DAL",
       "status": "OUT"
     },
@@ -68,24 +83,24 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Caleb Martin",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jett Howard",
+      "name": "Max Christie",
       "team": "DAL",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Tarik Biberovic",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Santi Aldama",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "status": "OUT"
     },
     {
       "name": "Dereck Lively II",
@@ -355,7 +370,7 @@
     {
       "name": "Tobias Harris",
       "team": "SAS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jayden Quaintance",
