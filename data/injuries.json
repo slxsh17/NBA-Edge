@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T21:25:33.908310+00:00",
+  "updated_at": "2026-10-24T21:55:53.663034+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -43,12 +43,12 @@
       "status": "OUT"
     },
     {
-      "name": "Patrick Williams",
+      "name": "Noa Essengue",
       "team": "CHI",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Noa Essengue",
+      "name": "Patrick Williams",
       "team": "CHI",
       "status": "DAY-TO-DAY"
     },
@@ -263,11 +263,6 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Pelle Larsson",
-      "team": "MIA",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Donte DiVincenzo",
       "team": "MIN",
       "status": "OUT"
@@ -276,6 +271,11 @@
       "name": "Yves Missi",
       "team": "NOP",
       "status": "OUT"
+    },
+    {
+      "name": "Jose Alvarado",
+      "team": "NYK",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Otega Oweh",
