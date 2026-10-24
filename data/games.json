@@ -1,6 +1,6 @@
 {
   "date": "20261023",
-  "updated_at": "2026-10-23T21:58:25.141956-04:00",
+  "updated_at": "2026-10-23T22:21:21.004009-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -61,19 +61,19 @@
       "away": "Memphis Grizzlies",
       "home": "Golden State Warriors",
       "time": "2026-10-24T02:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "LA Clippers",
       "home": "Los Angeles Lakers",
       "time": "2026-10-24T02:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Portland Trail Blazers",
       "home": "Sacramento Kings",
       "time": "2026-10-24T02:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     }
   ]
 }
