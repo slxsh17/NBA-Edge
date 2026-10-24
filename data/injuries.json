@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T02:06:10.861524+00:00",
+  "updated_at": "2026-10-24T02:38:03.989321+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -50,7 +50,7 @@
     {
       "name": "Cooper Flagg",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jett Howard",
@@ -196,6 +196,11 @@
       "name": "Donte DiVincenzo",
       "team": "MIN",
       "status": "OUT"
+    },
+    {
+      "name": "Yves Missi",
+      "team": "NOP",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Otega Oweh",
