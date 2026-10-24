@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T03:10:52.407581+00:00",
+  "updated_at": "2026-10-24T03:54:30.143714+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -25,17 +25,17 @@
     {
       "name": "Grant Williams",
       "team": "CHA",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Coby White",
       "team": "CHA",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kon Knueppel",
       "team": "CHA",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kylan Boswell",
@@ -48,27 +48,27 @@
       "status": "OUT"
     },
     {
-      "name": "Cooper Flagg",
+      "name": "Caleb Martin",
       "team": "DAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jett Howard",
       "team": "DAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Caleb Martin",
+      "name": "Tarik Biberovic",
       "team": "DAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Santi Aldama",
       "team": "DAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Tarik Biberovic",
+      "name": "Cooper Flagg",
       "team": "DAL",
       "status": "OUT"
     },
@@ -98,12 +98,12 @@
       "status": "OUT"
     },
     {
-      "name": "Jalen Duren",
+      "name": "Ausar Thompson",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Ausar Thompson",
+      "name": "Jalen Duren",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
@@ -133,12 +133,12 @@
       "status": "OUT"
     },
     {
-      "name": "Ben Sheppard",
+      "name": "T.J. McConnell",
       "team": "IND",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "T.J. McConnell",
+      "name": "Ben Sheppard",
       "team": "IND",
       "status": "OUT"
     },
@@ -218,19 +218,19 @@
       "status": "OUT"
     },
     {
-      "name": "Paolo Banchero",
+      "name": "Jonathan Isaac",
       "team": "ORL",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Black",
       "team": "ORL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Jonathan Isaac",
+      "name": "Paolo Banchero",
       "team": "ORL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Noah Penda",
@@ -340,7 +340,7 @@
     {
       "name": "AJ Dybantsa",
       "team": "WAS",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tristan Vukcevic",
