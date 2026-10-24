@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T22:41:27.689598+00:00",
+  "updated_at": "2026-10-24T23:37:19.607374+00:00",
   "window_hours": 48,
   "method": "Conservative public DFS pick recognition in publicly accessible article headings/paragraphs; not direct ownership predictions. Unreadable articles excluded.",
   "sources_checked": [
@@ -13,17 +13,7 @@
     "NumberFire",
     "SportsLine"
   ],
-  "source_errors": {
-    "RotoBaller": "HTTP Error 503: Service Unavailable",
-    "RotoWire": "HTTP Error 503: Service Unavailable",
-    "FantasyLabs": "HTTP Error 503: Service Unavailable",
-    "RotoGrinders": "HTTP Error 503: Service Unavailable",
-    "Stokastic": "HTTP Error 503: Service Unavailable",
-    "DraftKings Network": "HTTP Error 503: Service Unavailable",
-    "FantasyPros": "HTTP Error 503: Service Unavailable",
-    "NumberFire": "HTTP Error 503: Service Unavailable",
-    "SportsLine": "HTTP Error 503: Service Unavailable"
-  },
+  "source_errors": {},
   "articles_checked": 0,
   "players": [],
   "article_count": 0
