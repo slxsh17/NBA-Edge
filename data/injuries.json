@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T23:54:40.390015+00:00",
+  "updated_at": "2026-10-24T00:37:48.047889+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -46,6 +46,11 @@
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
+    },
+    {
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jett Howard",
@@ -98,11 +103,6 @@
       "status": "OUT"
     },
     {
-      "name": "Brandin Podziemski",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Kristaps Porzingis",
       "team": "GSW",
       "status": "OUT"
@@ -118,12 +118,12 @@
       "status": "OUT"
     },
     {
-      "name": "Steven Adams",
+      "name": "Reed Sheppard",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Reed Sheppard",
+      "name": "Steven Adams",
       "team": "HOU",
       "status": "DAY-TO-DAY"
     },
@@ -265,7 +265,7 @@
     {
       "name": "Oso Ighodaro",
       "team": "PHX",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mark Williams",
