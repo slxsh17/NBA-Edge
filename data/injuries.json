@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T21:55:53.663034+00:00",
+  "updated_at": "2026-10-24T22:22:23.823912+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -58,12 +58,17 @@
       "status": "OUT"
     },
     {
+      "name": "Morez Johnson Jr.",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Zaccharie Risacher",
       "team": "DAL",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Morez Johnson Jr.",
+      "name": "Kyrie Irving",
       "team": "DAL",
       "status": "DAY-TO-DAY"
     },
@@ -76,11 +81,6 @@
       "name": "Jett Howard",
       "team": "DAL",
       "status": "OUT"
-    },
-    {
-      "name": "Kyrie Irving",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Max Christie",
