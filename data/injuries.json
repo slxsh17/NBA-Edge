@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T13:42:16.621078+00:00",
+  "updated_at": "2026-10-24T14:09:35.947307+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -108,9 +108,19 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Charles Bassey",
+      "name": "Brandin Podziemski",
       "team": "GSW",
       "status": "OUT"
+    },
+    {
+      "name": "Stephen Curry",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Charles Bassey",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kristaps Porzingis",
@@ -130,7 +140,7 @@
     {
       "name": "Reed Sheppard",
       "team": "HOU",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "T.J. McConnell",
@@ -173,24 +183,24 @@
       "status": "OUT"
     },
     {
-      "name": "Jake LaRavia",
-      "team": "LAL",
-      "status": "OUT"
-    },
-    {
       "name": "Adou Thiero",
       "team": "LAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jake LaRavia",
+      "team": "LAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cameron Carr",
       "team": "LAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cedric Coward",
       "team": "MEM",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Donte DiVincenzo",
@@ -283,14 +293,14 @@
       "status": "OUT"
     },
     {
-      "name": "Branden Carlson",
-      "team": "POR",
-      "status": "OUT"
-    },
-    {
       "name": "Chris Youngblood",
       "team": "POR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Branden Carlson",
+      "team": "POR",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Shaedon Sharpe",
@@ -315,7 +325,7 @@
     {
       "name": "Tobias Harris",
       "team": "SAS",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jayden Quaintance",
@@ -330,7 +340,7 @@
     {
       "name": "Trey Alexander",
       "team": "UTA",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jusuf Nurkic",
