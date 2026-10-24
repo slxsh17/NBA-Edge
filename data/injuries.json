@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T17:21:24.418248+00:00",
+  "updated_at": "2026-10-24T17:53:45.310699+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -28,14 +28,19 @@
       "status": "OUT"
     },
     {
-      "name": "Kon Knueppel",
+      "name": "Christian Anderson",
       "team": "CHA",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Coby White",
       "team": "CHA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Kon Knueppel",
+      "team": "CHA",
+      "status": "OUT"
     },
     {
       "name": "Kylan Boswell",
@@ -150,17 +155,17 @@
     {
       "name": "Steven Adams",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Fred VanVleet",
-      "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Reed Sheppard",
       "team": "HOU",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Fred VanVleet",
+      "team": "HOU",
+      "status": "OUT"
     },
     {
       "name": "T.J. McConnell",
@@ -253,19 +258,19 @@
       "status": "OUT"
     },
     {
-      "name": "Paolo Banchero",
-      "team": "ORL",
-      "status": "OUT"
-    },
-    {
       "name": "Jonathan Isaac",
       "team": "ORL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Anthony Black",
       "team": "ORL",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Paolo Banchero",
+      "team": "ORL",
+      "status": "OUT"
     },
     {
       "name": "Noah Penda",
