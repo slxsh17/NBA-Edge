@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T16:51:00.847449+00:00",
+  "updated_at": "2026-10-24T17:21:24.418248+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -25,7 +25,12 @@
     {
       "name": "Grant Williams",
       "team": "CHA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Kon Knueppel",
+      "team": "CHA",
+      "status": "OUT"
     },
     {
       "name": "Coby White",
@@ -33,14 +38,14 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Kon Knueppel",
-      "team": "CHA",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Kylan Boswell",
       "team": "CHA",
       "status": "OUT"
+    },
+    {
+      "name": "Noa Essengue",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nic Claxton",
@@ -218,6 +223,11 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Pelle Larsson",
+      "team": "MIA",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Donte DiVincenzo",
       "team": "MIN",
       "status": "OUT"
@@ -243,17 +253,17 @@
       "status": "OUT"
     },
     {
+      "name": "Paolo Banchero",
+      "team": "ORL",
+      "status": "OUT"
+    },
+    {
       "name": "Jonathan Isaac",
       "team": "ORL",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Black",
-      "team": "ORL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Paolo Banchero",
       "team": "ORL",
       "status": "DAY-TO-DAY"
     },
@@ -268,17 +278,17 @@
       "status": "OUT"
     },
     {
+      "name": "LeBron James",
+      "team": "PHI",
+      "status": "OUT"
+    },
+    {
       "name": "Tacko Fall",
       "team": "PHI",
       "status": "OUT"
     },
     {
       "name": "Dean Wade",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "LeBron James",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
