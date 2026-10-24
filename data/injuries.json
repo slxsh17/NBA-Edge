@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T00:37:48.047889+00:00",
+  "updated_at": "2026-10-24T01:24:00.837285+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -98,6 +98,11 @@
       "status": "OUT"
     },
     {
+      "name": "Jalen Duren",
+      "team": "DET",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Charles Bassey",
       "team": "GSW",
       "status": "OUT"
@@ -121,11 +126,6 @@
       "name": "Reed Sheppard",
       "team": "HOU",
       "status": "OUT"
-    },
-    {
-      "name": "Steven Adams",
-      "team": "HOU",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ben Sheppard",
