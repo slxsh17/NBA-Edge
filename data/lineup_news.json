@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T07:08:01.754135+00:00",
+  "checked_at": "2026-10-24T07:54:41.071866+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -114,14 +114,6 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
-      "published_at": "2026-10-23T19:00:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
       "published_at": "2026-10-23T21:56:33+00:00",
@@ -162,6 +154,14 @@
       "scope_date": "2026-10-24"
     },
     {
+      "headline": "What We Learned About the Nuggets Rotation in Season Opener - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOS3JEQnNRbW1ZZ0tKTUo1NF9ES1g5a3YzM3ltOUhNb2pWLUFNeVotVEVRSlg4SEZRY0xhS0J4Mm4zT1lwUjBWdWNtYUpsanRnWFQ2TUhxdjhyWlV0aDFRNVN5TXRCUHpQd19vSzBPdVNYdGRHeFRSYXBwbWZBVnZJTVUydDN1MmJPU0k5WDdBR3k?oc=5",
+      "published_at": "2026-10-23T23:00:02+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa2N5WHM0RGE1Z01GZ2d5djk3RllSMkluOGNzaW1CZzM0bWFIWVM4NEYwSWhTbWpiaC0tX1hMbHlhLXpUUXNIUk8yQmhUR3ozbnpLQzZ1R3REa0RyX181VXluYTdCVHBuYk1vRDN2RnJ5cXJHbG1OUnVCV0lIU09lM3RR?oc=5",
       "published_at": "2026-10-23T22:16:26+00:00",
@@ -170,9 +170,17 @@
       "scope_date": "2026-10-24"
     },
     {
+      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
-      "published_at": "2026-10-24T05:37:30+00:00",
+      "published_at": "2026-10-24T05:39:52+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -189,14 +197,6 @@
       "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - USA Today",
       "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNDQ5RWxBc2tROWpPRklKUndVYTJISjVHRERldEQtZVVzMFpVQmwycEFDVXZ6ei1zbXA4eXkxR3VfVnBrYXZSMTZWekJTNWFMR2tqTFRWWTd2QlFOUkZqcVJXZU5zY2VuWFlmbnV6WDBiRjdaYzEweWhfSkdiZGNwMnpScEZNUEhwdjRVUC0yVS1ob2hiSG95SDgtb09VbGhTd0tlSVpEaHhkemRtR0lrZ0NyU3pDbm9ncHpJ?oc=5",
       "published_at": "2026-10-24T02:01:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ2w0Q2Zyakk1VkYza0l1TUg5WjlpWmFBNkpZV2tFYWozZGZOVk90aTlyaTA5QWpyeHczVDdwbUlBY2dWZzVoMDRNZm5pczRQQThCblQ0RUx6bzc0LWtTb3Y3eG0wdWUyTjE0enM5R2ZHTmNBazV6aVUwVnhuZzcweXI1ZUVNTjBVTUlaWWlaMUdnUk8wajAyTnAwbw?oc=5",
-      "published_at": "2026-10-23T23:00:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
