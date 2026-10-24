@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "slate_date": "2026-10-23",
-  "checked_at": "2026-10-24T03:57:20.987022+00:00",
+  "slate_date": "2026-10-24",
+  "checked_at": "2026-10-24T04:19:18.165483+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -17,7 +17,7 @@
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-23"
+      "date": "2026-10-24"
     },
     {
       "team": "NYK",
@@ -31,7 +31,7 @@
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-23"
+      "date": "2026-10-24"
     },
     {
       "team": "DET",
@@ -45,7 +45,7 @@
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-23"
+      "date": "2026-10-24"
     },
     {
       "team": "MIA",
@@ -59,7 +59,7 @@
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-23"
+      "date": "2026-10-24"
     },
     {
       "team": "NOP",
@@ -73,7 +73,7 @@
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-23"
+      "date": "2026-10-24"
     }
   ],
   "headlines": [
@@ -83,23 +83,7 @@
       "published_at": "2026-10-24T02:01:00+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Warriors Announce Surprising Starting Lineup vs. Grizzlies - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUW9vMnJDTnVuaXk2NTBGbVRzRTctNG5EMU9Pa1lpSXlNNXVFZ042SWxETHBZdzZ4WHhDbk5YNDAwMG1jV0tWa0dMSk0yZmtTNUhxdW5TZ1RhWlVWRGhqR3Zyc3djOURxb3lZc0U3RHNOUHZLN2EwUjRhVmdaRmMyWVpJUmlsUmNCTGFXZXg0bk9NNHVDN2ZubEozUFZwdWxzeEdFbjVmM0tzSjA?oc=5",
-      "published_at": "2026-10-24T02:08:54+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Power Ranking Every NBA Team's Starting Lineup - Bleacher Report",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY0hTZHhVdk1UMzFQZDZzNEI5MENab1lfVHlQMXZpN1BNekQtc2VJUlhXd3kydm1kMkw3WTdfeXkybzR1MW00NHd1eHd5QlhrZ2V1Y3NUQk9fUFhnYmp0dHE1dElNbVFRTENEUUpZdEJ2M2t1OGVFczFXOEtkRDFyZ2YwWW96aU9PcEI0RXE0dDJXSEFt?oc=5",
-      "published_at": "2026-10-23T11:09:14+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - New York Post",
@@ -107,7 +91,23 @@
       "published_at": "2026-10-24T01:16:00+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Warriors Announce Surprising Starting Lineup vs. Grizzlies - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUW9vMnJDTnVuaXk2NTBGbVRzRTctNG5EMU9Pa1lpSXlNNXVFZ042SWxETHBZdzZ4WHhDbk5YNDAwMG1jV0tWa0dMSk0yZmtTNUhxdW5TZ1RhWlVWRGhqR3Zyc3djOURxb3lZc0U3RHNOUHZLN2EwUjRhVmdaRmMyWVpJUmlsUmNCTGFXZXg0bk9NNHVDN2ZubEozUFZwdWxzeEdFbjVmM0tzSjA?oc=5",
+      "published_at": "2026-10-24T02:08:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Power Ranking Every NBA Team's Starting Lineup - Bleacher Report",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY0hTZHhVdk1UMzFQZDZzNEI5MENab1lfVHlQMXZpN1BNekQtc2VJUlhXd3kydm1kMkw3WTdfeXkybzR1MW00NHd1eHd5QlhrZ2V1Y3NUQk9fUFhnYmp0dHE1dElNbVFRTENEUUpZdEJ2M2t1OGVFczFXOEtkRDFyZ2YwWW96aU9PcEI0RXE0dDJXSEFt?oc=5",
+      "published_at": "2026-10-23T11:09:14+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "Kyrie Irving News: Will be on minutes restriction Friday - RotoWire",
@@ -115,7 +115,7 @@
       "published_at": "2026-10-23T21:44:45+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - New York Daily News",
@@ -123,15 +123,7 @@
       "published_at": "2026-10-23T19:25:37+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
-      "published_at": "2026-10-24T00:29:04+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Yahoo Sports",
@@ -139,7 +131,7 @@
       "published_at": "2026-10-23T22:07:43+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Heavy.com",
@@ -147,7 +139,7 @@
       "published_at": "2026-10-23T18:36:58+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
@@ -155,47 +147,7 @@
       "published_at": "2026-10-23T19:00:05+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Thomas Bryant News: Outside rotation in opener - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRWNvdGY3d0JEbnBRM0t6X2dDUEVoTUZVa3Y5dmVGZFRSUmJIYUFWN0tCemg0Sjh6Z2ZrLXpZQ0lYUFEwVUhDZDM4YjJGbVE3d3hwZW1tY0tqa09BRDZBTGlvZDNscGRKSWhUcHF0bHN6THZLanAxbXNacU04ZGo4UFluQTJJMnQ0ck1RdzltcC1rOUFVR2Zxcl9TMjlBaTQ?oc=5",
-      "published_at": "2026-10-23T15:00:18+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
-      "published_at": "2026-10-23T18:00:04+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
-      "published_at": "2026-10-23T21:56:33+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
-      "published_at": "2026-10-23T19:00:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa2N5WHM0RGE1Z01GZ2d5djk3RllSMkluOGNzaW1CZzM0bWFIWVM4NEYwSWhTbWpiaC0tX1hMbHlhLXpUUXNIUk8yQmhUR3ozbnpLQzZ1R3REa0RyX181VXluYTdCVHBuYk1vRDN2RnJ5cXJHbG1OUnVCV0lIU09lM3RR?oc=5",
-      "published_at": "2026-10-23T22:16:26+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
@@ -203,7 +155,47 @@
       "published_at": "2026-10-23T14:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Thomas Bryant News: Outside rotation in opener - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRWNvdGY3d0JEbnBRM0t6X2dDUEVoTUZVa3Y5dmVGZFRSUmJIYUFWN0tCemg0Sjh6Z2ZrLXpZQ0lYUFEwVUhDZDM4YjJGbVE3d3hwZW1tY0tqa09BRDZBTGlvZDNscGRKSWhUcHF0bHN6THZLanAxbXNacU04ZGo4UFluQTJJMnQ0ck1RdzltcC1rOUFVR2Zxcl9TMjlBaTQ?oc=5",
+      "published_at": "2026-10-23T15:00:18+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
+      "published_at": "2026-10-23T18:00:04+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
+      "published_at": "2026-10-23T21:56:33+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa2N5WHM0RGE1Z01GZ2d5djk3RllSMkluOGNzaW1CZzM0bWFIWVM4NEYwSWhTbWpiaC0tX1hMbHlhLXpUUXNIUk8yQmhUR3ozbnpLQzZ1R3REa0RyX181VXluYTdCVHBuYk1vRDN2RnJ5cXJHbG1OUnVCV0lIU09lM3RR?oc=5",
+      "published_at": "2026-10-23T22:16:26+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - USA Today",
@@ -211,7 +203,15 @@
       "published_at": "2026-10-24T02:01:00+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
+      "published_at": "2026-10-24T00:29:04+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
@@ -219,7 +219,7 @@
       "published_at": "2026-10-23T23:00:01+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
     },
     {
       "headline": "Ranking Every NBA Team’s Starting Lineup for the 2026-27 Season - SSBCrack",
@@ -227,7 +227,7 @@
       "published_at": "2026-10-23T23:03:45+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-23"
+      "scope_date": "2026-10-24"
     }
   ],
   "source_errors": [],
