@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T15:52:21.133120+00:00",
+  "checked_at": "2026-10-24T16:13:37.911815+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -122,9 +122,9 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
-      "published_at": "2026-10-23T18:00:04+00:00",
+      "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ2w0Q2Zyakk1VkYza0l1TUg5WjlpWmFBNkpZV2tFYWozZGZOVk90aTlyaTA5QWpyeHczVDdwbUlBY2dWZzVoMDRNZm5pczRQQThCblQ0RUx6bzc0LWtTb3Y3eG0wdWUyTjE0enM5R2ZHTmNBazV6aVUwVnhuZzcweXI1ZUVNTjBVTUlaWWlaMUdnUk8wajAyTnAwbw?oc=5",
+      "published_at": "2026-10-23T23:00:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -133,6 +133,14 @@
       "headline": "Kyrie Irving News: Will be on minutes restriction Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOGZJWFUwQ2pDZjc5OV96c21tdTRqR2xvSk9kcHhIczF4RHhub2pBblJvM1V6SGl3RUFzS2FfNlRIbm5ma0JFSGxjZ3ozaUE0Um9ISkhQN1pERm50SVIzdjhWcGFsd1JhSmxEemczcmxFYklKYXpoLTdyeEdTTmQwWnd0c0tMd1NzWmVWZTVmTFc4eWVxbHFMZ1F2NFEySVlLSnFDODRLek4ydnVB?oc=5",
       "published_at": "2026-10-23T21:44:45+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
+      "published_at": "2026-10-23T18:00:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -165,14 +173,6 @@
       "headline": "Brandin Podziemski back in Warriors' starting lineup but shaken up vs. Grizzlies - USA Today",
       "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNDQ5RWxBc2tROWpPRklKUndVYTJISjVHRERldEQtZVVzMFpVQmwycEFDVXZ6ei1zbXA4eXkxR3VfVnBrYXZSMTZWekJTNWFMR2tqTFRWWTd2QlFOUkZqcVJXZU5zY2VuWFlmbnV6WDBiRjdaYzEweWhfSkdiZGNwMnpScEZNUEhwdjRVUC0yVS1ob2hiSG95SDgtb09VbGhTd0tlSVpEaHhkemRtR0lrZ0NyU3pDbm9ncHpJ?oc=5",
       "published_at": "2026-10-24T02:45:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ2w0Q2Zyakk1VkYza0l1TUg5WjlpWmFBNkpZV2tFYWozZGZOVk90aTlyaTA5QWpyeHczVDdwbUlBY2dWZzVoMDRNZm5pczRQQThCblQ0RUx6bzc0LWtTb3Y3eG0wdWUyTjE0enM5R2ZHTmNBazV6aVUwVnhuZzcweXI1ZUVNTjBVTUlaWWlaMUdnUk8wajAyTnAwbw?oc=5",
-      "published_at": "2026-10-23T23:00:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
