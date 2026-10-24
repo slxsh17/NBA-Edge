@@ -1,6 +1,6 @@
 {
   "date": "20261023",
-  "updated_at": "2026-10-23T20:15:30.936169-04:00",
+  "updated_at": "2026-10-23T21:58:25.141956-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -13,31 +13,31 @@
       "away": "New York Knicks",
       "home": "Boston Celtics",
       "time": "2026-10-23T23:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Atlanta Hawks",
       "home": "Charlotte Hornets",
       "time": "2026-10-23T23:00Z",
-      "status": "Halftime"
+      "status": "Final"
     },
     {
       "away": "Dallas Mavericks",
       "home": "Indiana Pacers",
       "time": "2026-10-23T23:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Minnesota Timberwolves",
       "home": "Orlando Magic",
       "time": "2026-10-23T23:00Z",
-      "status": "Halftime"
+      "status": "Final"
     },
     {
       "away": "Toronto Raptors",
       "home": "Washington Wizards",
       "time": "2026-10-23T23:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Detroit Pistons",
@@ -49,13 +49,13 @@
       "away": "Houston Rockets",
       "home": "San Antonio Spurs",
       "time": "2026-10-24T01:30Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "New Orleans Pelicans",
       "home": "Utah Jazz",
       "time": "2026-10-24T01:30Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Memphis Grizzlies",
