@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T18:10:25.738045+00:00",
+  "checked_at": "2026-10-24T18:55:39.036522+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -84,14 +84,6 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd0FkOVUyUUZhVFB5VGNXcHZ3alRlLWhTeE1SOTRHX0ZMUmdzRS1GdWdwdFZRWkN0YWMtSzJRcWpUT20yT3dnUThBMExEY1VrTS10MTBqU2dfNjFRTVJXc3g5SW5rY2JjR3pyOE12LTVTbEJTN2hvUUw1dWZwZHVsNWQybzA5Z3laeTAxVTZDNkw0bXJSWjV6eUZWM3ptVWk0Rk96bUlB?oc=5",
-      "published_at": "2026-10-23T18:36:58+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Nikola Vucevic News: Barely in rotation Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZkliM3Uyd0IzZlZwN21kYnpwdExEVUVpUFEzUWpCYTBUVURzeTBUMEF6NU92ZWI3VWJtNmZpX3AzMkVBeWl2dTVHcFVZdnowN2NJOWxXc2hKX2JNSHhZU1YzVzBpcGZNVEtxT09HTXhKRHZ4dEZLOHZYRXNzMWh4bmZqRTNLcXhOM194WElIWkpRN3FfaHFmYXpDSUhvdzg?oc=5",
       "published_at": "2026-10-24T02:54:00+00:00",
@@ -135,6 +127,14 @@
       "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
       "published_at": "2026-10-23T21:56:33+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Bucks’ Kyle Kuzma Trade Decision Impacting Starting Lineup - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTGtFaHFFMXlWcnNhQlZNSDFhU3RXakhSb2ZhZHZCQWlNZmpOczEwR0NibWxDLW5uNE1TM3ZfazBhZFh3VG10ZHNoSGJ1ZGRkbnFOam9UdUVTbEdGbklTMWpPR0ktRkNQclNPZWNEQkVLRWV2YXRCLVl1eWZBckdOemEzOFlKYVE?oc=5",
+      "published_at": "2026-10-23T21:36:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
