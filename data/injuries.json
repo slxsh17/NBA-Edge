@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T14:09:35.947307+00:00",
+  "updated_at": "2026-10-24T14:42:49.727053+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -46,6 +46,11 @@
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
+    },
+    {
+      "name": "Kyrie Irving",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Caleb Martin",
