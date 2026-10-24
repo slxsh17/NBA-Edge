@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-24T02:56:08.060010+00:00",
+  "checked_at": "2026-10-24T03:18:23.918037+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -86,17 +86,17 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Power Ranking Every NBA Team's Starting Lineup - Bleacher Report",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY0hTZHhVdk1UMzFQZDZzNEI5MENab1lfVHlQMXZpN1BNekQtc2VJUlhXd3kydm1kMkw3WTdfeXkybzR1MW00NHd1eHd5QlhrZ2V1Y3NUQk9fUFhnYmp0dHE1dElNbVFRTENEUUpZdEJ2M2t1OGVFczFXOEtkRDFyZ2YwWW96aU9PcEI0RXE0dDJXSEFt?oc=5",
-      "published_at": "2026-10-23T11:09:14+00:00",
+      "headline": "Warriors Announce Surprising Starting Lineup vs. Grizzlies - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUW9vMnJDTnVuaXk2NTBGbVRzRTctNG5EMU9Pa1lpSXlNNXVFZ042SWxETHBZdzZ4WHhDbk5YNDAwMG1jV0tWa0dMSk0yZmtTNUhxdW5TZ1RhWlVWRGhqR3Zyc3djOURxb3lZc0U3RHNOUHZLN2EwUjRhVmdaRmMyWVpJUmlsUmNCTGFXZXg0bk9NNHVDN2ZubEozUFZwdWxzeEdFbjVmM0tzSjA?oc=5",
+      "published_at": "2026-10-24T02:08:54+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Warriors Announce Surprising Starting Lineup vs. Grizzlies - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUW9vMnJDTnVuaXk2NTBGbVRzRTctNG5EMU9Pa1lpSXlNNXVFZ042SWxETHBZdzZ4WHhDbk5YNDAwMG1jV0tWa0dMSk0yZmtTNUhxdW5TZ1RhWlVWRGhqR3Zyc3djOURxb3lZc0U3RHNOUHZLN2EwUjRhVmdaRmMyWVpJUmlsUmNCTGFXZXg0bk9NNHVDN2ZubEozUFZwdWxzeEdFbjVmM0tzSjA?oc=5",
-      "published_at": "2026-10-24T02:08:54+00:00",
+      "headline": "Power Ranking Every NBA Team's Starting Lineup - Bleacher Report",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY0hTZHhVdk1UMzFQZDZzNEI5MENab1lfVHlQMXZpN1BNekQtc2VJUlhXd3kydm1kMkw3WTdfeXkybzR1MW00NHd1eHd5QlhrZ2V1Y3NUQk9fUFhnYmp0dHE1dElNbVFRTENEUUpZdEJ2M2t1OGVFczFXOEtkRDFyZ2YwWW96aU9PcEI0RXE0dDJXSEFt?oc=5",
+      "published_at": "2026-10-23T11:09:14+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -150,6 +150,14 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Thomas Bryant News: Outside rotation in opener - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRWNvdGY3d0JEbnBRM0t6X2dDUEVoTUZVa3Y5dmVGZFRSUmJIYUFWN0tCemg0Sjh6Z2ZrLXpZQ0lYUFEwVUhDZDM4YjJGbVE3d3hwZW1tY0tqa09BRDZBTGlvZDNscGRKSWhUcHF0bHN6THZLanAxbXNacU04ZGo4UFluQTJJMnQ0ck1RdzltcC1rOUFVR2Zxcl9TMjlBaTQ?oc=5",
       "published_at": "2026-10-23T15:00:18+00:00",
@@ -185,14 +193,6 @@
       "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa2N5WHM0RGE1Z01GZ2d5djk3RllSMkluOGNzaW1CZzM0bWFIWVM4NEYwSWhTbWpiaC0tX1hMbHlhLXpUUXNIUk8yQmhUR3ozbnpLQzZ1R3REa0RyX181VXluYTdCVHBuYk1vRDN2RnJ5cXJHbG1OUnVCV0lIU09lM3RR?oc=5",
       "published_at": "2026-10-23T22:16:26+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
-      "published_at": "2026-10-23T19:00:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
