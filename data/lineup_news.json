@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T23:10:21.776899+00:00",
+  "checked_at": "2026-10-24T23:44:03.674681+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -60,6 +60,14 @@
       "scope_date": "2026-10-24"
     },
     {
+      "headline": "Dallas Mavericks Announce Starting Lineup Without Cooper Flagg, Kyrie Irving - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb0R6ajlkNTYyajhEbl9TTFJTNXpSQUg5NzhEd2RfR3B6bUJWcmdjMnIyUHd3WmVaN2hqUFZXeFZfSG9jUnFid3dGbF9BZk1QWmJSM183OThfWDdvNExmeEVlUC1MLVluTzRvbXhuWXl3Ni15ZmNKRFdySDUxTzJ6T0Y1Ni1FSm1lbWdiN2Rqaw?oc=5",
+      "published_at": "2026-10-24T23:42:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "Zach Collins News: Expected to be in rotation Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmt4ckwzZWdZUEZ6a2UwNWlMeFdTc3RRVWFEMTZscHNxOXNUVk84OTdRUEdqQnkzSWx2VmVSYkdPQ3VzOEdjU2ZDT013aVk5elhld20wTVhCWnc1d21HMTlMQ1lyWE5ISmYwVTRSQXBpSFEzTXh0eEpJcXlLZ0VoRkFwM2xrQVJSRF9zLTZ6Nk9HYXBENnpCcW1QYTVRRnBXaUdjQ1pSdGxmZw?oc=5",
       "published_at": "2026-10-24T03:29:14+00:00",
@@ -71,14 +79,6 @@
       "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
       "published_at": "2026-10-24T05:39:52+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - New York Post",
-      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSDdrWU5NaFZBbHpHUlFmNXZTdlNRak1OSldPSG9Jc2ZMbXJ6anpnVUVHVFlRZzM1VXFGdjRmYnpSSVNBM0FLRk5iVjdfQ2hkTFFkMWdEZWl2NmUwcEZ0QjZQM1d1NkJEWW12Y3NhUWtUeWRrNTdVU2lteF9WNmNYVm5Ncy12UnpvRnFVM0hUUXlDLVFOY00yWmNlQjVXZFN6MHFNZFhzVE5lTGlEOG5V?oc=5",
-      "published_at": "2026-10-24T01:16:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -111,6 +111,14 @@
       "headline": "Warriors Announce Surprising Starting Lineup vs. Grizzlies - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUW9vMnJDTnVuaXk2NTBGbVRzRTctNG5EMU9Pa1lpSXlNNXVFZ042SWxETHBZdzZ4WHhDbk5YNDAwMG1jV0tWa0dMSk0yZmtTNUhxdW5TZ1RhWlVWRGhqR3Zyc3djOURxb3lZc0U3RHNOUHZLN2EwUjRhVmdaRmMyWVpJUmlsUmNCTGFXZXg0bk9NNHVDN2ZubEozUFZwdWxzeEdFbjVmM0tzSjA?oc=5",
       "published_at": "2026-10-24T02:08:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - New York Post",
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSDdrWU5NaFZBbHpHUlFmNXZTdlNRak1OSldPSG9Jc2ZMbXJ6anpnVUVHVFlRZzM1VXFGdjRmYnpSSVNBM0FLRk5iVjdfQ2hkTFFkMWdEZWl2NmUwcEZ0QjZQM1d1NkJEWW12Y3NhUWtUeWRrNTdVU2lteF9WNmNYVm5Ncy12UnpvRnFVM0hUUXlDLVFOY00yWmNlQjVXZFN6MHFNZFhzVE5lTGlEOG5V?oc=5",
+      "published_at": "2026-10-24T01:16:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -167,14 +175,6 @@
       "headline": "CALEB WILSON RESPONDS! Bulls Young Core FORCES Rotation Shakeup + AD & Trae NEXT - BVM Sports",
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTFpIakVSWXNwM2RneXlOUVBDd2tHd1Z3TVhERnFGSm5ISWdxUVJBTEFCdmNKMXlKQzVoSzVKNUxneTZxSklZbERmbDM0UlpmUHpBNzZpS1BTaVlHVE1UUGJULUJDTlhYdnFpb3lEdjZkRTVfakpvek5lLVUtaFhtbmJnNmdRX1FpOFFWRjAtMzJsckxxVGh6TXBFdnFhb05ITVlxYTJIakp1aGU1YlE?oc=5",
       "published_at": "2026-10-24T12:15:53+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY3A1RFJadGpkYjlzQ3VqOUVSSUM2aW96Qkdjb3N4WjlZUTRhNU1CeEhnZTZPeXFIcndKb25iRWg0Y2VxRzFLVmdDQTFGMl82allMM2pzdENxNnRkVVJzSndFa2lNMkdkb0p3Nm9weGs4UWEyNmZHRndTaGpRVGQtZEYzaEFnNFVrQ2dRTE1DbUl6YU55elpsWjUzc2FWX0hDNlpVRXJaNk4?oc=5",
-      "published_at": "2026-10-23T23:29:33+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
