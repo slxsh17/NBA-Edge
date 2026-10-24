@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-23",
-  "checked_at": "2026-10-24T02:20:19.835804+00:00",
+  "checked_at": "2026-10-24T02:56:08.060010+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -69,7 +69,7 @@
         "J. Fears",
         "Trey Murphy",
         "Z. Williamson",
-        "Yves Missi"
+        "Y. Missi"
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
@@ -78,9 +78,9 @@
   ],
   "headlines": [
     {
-      "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
-      "published_at": "2026-10-23T21:56:33+00:00",
+      "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTG5GdVhvTUhxZGhDZklNSlhwV1ZseFI2cEFRSDJiRm9MbGxjSjc5YmptWWlfM29BaElNZ2U3OUQxLXE4TGpQSFVsX2draU9TQ2NiRjJsTkFzR2dOUzNMVEU2aENxQy1reEs4eUhwSnYxZFZDbWZRc3FTcTNPMWFiVXRSRVF3QlhDNG9HLWt2SnRqTERT?oc=5",
+      "published_at": "2026-10-24T02:01:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -94,9 +94,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Kyrie Irving News: Will be on minutes restriction Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOGZJWFUwQ2pDZjc5OV96c21tdTRqR2xvSk9kcHhIczF4RHhub2pBblJvM1V6SGl3RUFzS2FfNlRIbm5ma0JFSGxjZ3ozaUE0Um9ISkhQN1pERm50SVIzdjhWcGFsd1JhSmxEemczcmxFYklKYXpoLTdyeEdTTmQwWnd0c0tMd1NzWmVWZTVmTFc4eWVxbHFMZ1F2NFEySVlLSnFDODRLek4ydnVB?oc=5",
-      "published_at": "2026-10-23T21:44:45+00:00",
+      "headline": "Warriors Announce Surprising Starting Lineup vs. Grizzlies - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUW9vMnJDTnVuaXk2NTBGbVRzRTctNG5EMU9Pa1lpSXlNNXVFZ042SWxETHBZdzZ4WHhDbk5YNDAwMG1jV0tWa0dMSk0yZmtTNUhxdW5TZ1RhWlVWRGhqR3Zyc3djOURxb3lZc0U3RHNOUHZLN2EwUjRhVmdaRmMyWVpJUmlsUmNCTGFXZXg0bk9NNHVDN2ZubEozUFZwdWxzeEdFbjVmM0tzSjA?oc=5",
+      "published_at": "2026-10-24T02:08:54+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -105,6 +105,14 @@
       "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - New York Post",
       "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSDdrWU5NaFZBbHpHUlFmNXZTdlNRak1OSldPSG9Jc2ZMbXJ6anpnVUVHVFlRZzM1VXFGdjRmYnpSSVNBM0FLRk5iVjdfQ2hkTFFkMWdEZWl2NmUwcEZ0QjZQM1d1NkJEWW12Y3NhUWtUeWRrNTdVU2lteF9WNmNYVm5Ncy12UnpvRnFVM0hUUXlDLVFOY00yWmNlQjVXZFN6MHFNZFhzVE5lTGlEOG5V?oc=5",
       "published_at": "2026-10-24T01:16:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
+      "headline": "Kyrie Irving News: Will be on minutes restriction Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOGZJWFUwQ2pDZjc5OV96c21tdTRqR2xvSk9kcHhIczF4RHhub2pBblJvM1V6SGl3RUFzS2FfNlRIbm5ma0JFSGxjZ3ozaUE0Um9ISkhQN1pERm50SVIzdjhWcGFsd1JhSmxEemczcmxFYklKYXpoLTdyeEdTTmQwWnd0c0tMd1NzWmVWZTVmTFc4eWVxbHFMZ1F2NFEySVlLSnFDODRLek4ydnVB?oc=5",
+      "published_at": "2026-10-23T21:44:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -126,9 +134,9 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ2w0Q2Zyakk1VkYza0l1TUg5WjlpWmFBNkpZV2tFYWozZGZOVk90aTlyaTA5QWpyeHczVDdwbUlBY2dWZzVoMDRNZm5pczRQQThCblQ0RUx6bzc0LWtTb3Y3eG0wdWUyTjE0enM5R2ZHTmNBazV6aVUwVnhuZzcweXI1ZUVNTjBVTUlaWWlaMUdnUk8wajAyTnAwbw?oc=5",
-      "published_at": "2026-10-23T23:00:01+00:00",
+      "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbXhpUEdVTUl0Q09YT3ctWHd1U1dqeC1DcFRpS2h4ekNqTmNteWREZjZsUHlENXhCcG9ld0w1SkZFc0ZLNG9aU3BmZzBuUXlDa1p4eFpNN2JGTDBtSHdXREdjZFcxaElfNHRXZno4d0E5OXBsWjJXdVVOaWtaVWR3eTJZYi13XzhBdFRndGRB?oc=5",
+      "published_at": "2026-10-23T22:07:43+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -158,6 +166,14 @@
       "scope_date": "2026-10-23"
     },
     {
+      "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
+      "published_at": "2026-10-23T21:56:33+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-23"
+    },
+    {
       "headline": "Do the Miami Heat Need to Make Rotation Changes Already? - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbmw5MkdlVDl6YTNIak5BR0U1bnloUlFhR2Y0VHZxYl9BVDZzMnV3bk5mcE8xZnMwWXFEXzg5MXdKRFB2TEktODFlc3VpWWVVYl82UDBpY1NxZFZOb3FydlI4RjVjSUxlTWJsMTVtM0NTMGplWElrTVVqVkZDX3RJUFF3T2daZE5BM2QzNA?oc=5",
       "published_at": "2026-10-23T19:00:05+00:00",
@@ -169,14 +185,6 @@
       "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa2N5WHM0RGE1Z01GZ2d5djk3RllSMkluOGNzaW1CZzM0bWFIWVM4NEYwSWhTbWpiaC0tX1hMbHlhLXpUUXNIUk8yQmhUR3ozbnpLQzZ1R3REa0RyX181VXluYTdCVHBuYk1vRDN2RnJ5cXJHbG1OUnVCV0lIU09lM3RR?oc=5",
       "published_at": "2026-10-23T22:16:26+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMGtyMXlnZzFDcGd5azhNaVAyTDgtX2hOUjZTWmViczhYZlBWaXdjdTZQLVdZQjVSMkNyMU5YQWtmeEV2Q1RHZ0VoWmhZckxTRW85Q1BDQzFEVXQzeHFWYzZhUjY4am5CUkR4VFZFdk9CQkJsQ1Y1cHNzSmE0UTNoNjBlNjlIaExTNkg3M1BoVWxnNEk?oc=5",
-      "published_at": "2026-10-24T02:01:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
@@ -198,25 +206,17 @@
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Nick Martinez will start Game 1 of World Series - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW9Hd3IzVFJkcTRjRm1hX1FoZnhRWU9YM1pkV1hWMDJ3eUU2VnVlTWYxZzVGX19vc3EyM0JvMFozOFl3V0VqeUpoNnZWaVdYdEptZ1JIbTAwb1Njd0FuRjhxaUJIMmQ4Mi1RYUR3RTZEcmYzVEdMbFg5Mjk2T1NuaVlQMEJVM1pmWVd1YVgxbGFzVkRZOWtOTkNOcnRQdkRPbjRZYjR4bkc2eGZxZHZGSHJJMA?oc=5",
-      "published_at": "2026-10-23T02:50:17+00:00",
+      "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - USA Today",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNDQ5RWxBc2tROWpPRklKUndVYTJISjVHRERldEQtZVVzMFpVQmwycEFDVXZ6ei1zbXA4eXkxR3VfVnBrYXZSMTZWekJTNWFMR2tqTFRWWTd2QlFOUkZqcVJXZU5zY2VuWFlmbnV6WDBiRjdaYzEweWhfSkdiZGNwMnpScEZNUEhwdjRVUC0yVS1ob2hiSG95SDgtb09VbGhTd0tlSVpEaHhkemRtR0lrZ0NyU3pDbm9ncHpJ?oc=5",
+      "published_at": "2026-10-24T02:01:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
     },
     {
-      "headline": "Warriors Announce Surprising Starting Lineup vs. Grizzlies - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUW9vMnJDTnVuaXk2NTBGbVRzRTctNG5EMU9Pa1lpSXlNNXVFZ042SWxETHBZdzZ4WHhDbk5YNDAwMG1jV0tWa0dMSk0yZmtTNUhxdW5TZ1RhWlVWRGhqR3Zyc3djOURxb3lZc0U3RHNOUHZLN2EwUjRhVmdaRmMyWVpJUmlsUmNCTGFXZXg0bk9NNHVDN2ZubEozUFZwdWxzeEdFbjVmM0tzSjA?oc=5",
-      "published_at": "2026-10-24T02:08:54+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-23"
-    },
-    {
-      "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzJWYzhsd0xPZ09zaTllWkZFLS1aMkx4Nm5HeUYtNkFmTW5BR1NfUWRZdk5sMXo5T1pxU0Z4THpGZHo5ZlVGcXI1UHlFVmRUdG05Rl9XdzlmOXB2Z2ZaNFhfUkZmYlpjb1htLUdOaThyVVl3cWtOOXhiVW11VWxHMloybk9CcEFfdzlTX0ZiNWJJXzNLd2V3OUZWYkRlQWV0MG1udXVTeEFCUWVDc0pCdDB3Qjd3emFYX202MDNzVGJzTWdpNjh6NUtn?oc=5",
-      "published_at": "2026-10-23T22:07:42+00:00",
+      "headline": "What We Learned About the Nuggets Rotation in Season Opener - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ2w0Q2Zyakk1VkYza0l1TUg5WjlpWmFBNkpZV2tFYWozZGZOVk90aTlyaTA5QWpyeHczVDdwbUlBY2dWZzVoMDRNZm5pczRQQThCblQ0RUx6bzc0LWtTb3Y3eG0wdWUyTjE0enM5R2ZHTmNBazV6aVUwVnhuZzcweXI1ZUVNTjBVTUlaWWlaMUdnUk8wajAyTnAwbw?oc=5",
+      "published_at": "2026-10-23T23:00:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-23"
