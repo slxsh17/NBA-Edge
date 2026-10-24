@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T12:14:13.046857+00:00",
+  "checked_at": "2026-10-24T13:03:06.788865+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -213,6 +213,14 @@
       "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - ClutchPoints",
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY3A1RFJadGpkYjlzQ3VqOUVSSUM2aW96Qkdjb3N4WjlZUTRhNU1CeEhnZTZPeXFIcndKb25iRWg0Y2VxRzFLVmdDQTFGMl82allMM2pzdENxNnRkVVJzSndFa2lNMkdkb0p3Nm9weGs4UWEyNmZHRndTaGpRVGQtZEYzaEFnNFVrQ2dRTE1DbUl6YU55elpsWjUzc2FWX0hDNlpVRXJaNk4?oc=5",
       "published_at": "2026-10-23T23:29:33+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "CALEB WILSON RESPONDS! Bulls Young Core FORCES Rotation Shakeup + AD & Trae NEXT - BVM Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTFpIakVSWXNwM2RneXlOUVBDd2tHd1Z3TVhERnFGSm5ISWdxUVJBTEFCdmNKMXlKQzVoSzVKNUxneTZxSklZbERmbDM0UlpmUHpBNzZpS1BTaVlHVE1UUGJULUJDTlhYdnFpb3lEdjZkRTVfakpvek5lLVUtaFhtbmJnNmdRX1FpOFFWRjAtMzJsckxxVGh6TXBFdnFhb05ITVlxYTJIakp1aGU1YlE?oc=5",
+      "published_at": "2026-10-24T12:15:53+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
