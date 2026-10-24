@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T21:50:40.981246+00:00",
+  "checked_at": "2026-10-24T22:11:28.760880+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -116,22 +116,6 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbXhpUEdVTUl0Q09YT3ctWHd1U1dqeC1DcFRpS2h4ekNqTmNteWREZjZsUHlENXhCcG9ld0w1SkZFc0ZLNG9aU3BmZzBuUXlDa1p4eFpNN2JGTDBtSHdXREdjZFcxaElfNHRXZno4d0E5OXBsWjJXdVVOaWtaVWR3eTJZYi13XzhBdFRndGRB?oc=5",
-      "published_at": "2026-10-23T22:07:43+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
-      "published_at": "2026-10-23T21:56:33+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Rockets shake up starting lineup for showdown at Atlanta Hawks: Preview, Injuries & Starters - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONzJPYXlRcTh6dFNPWV9vWWs2VjJnT1Q4emJnem5vZEVaemJ2Q3o5dWZXRnZkUGFIQTRlTzBaREEyWlhHTmxUWnhpLUIzUnJmVEJyVjcwQWtzb1hBNkNqWXBtbnNhdGlpZHB1Y04zSk9TRFYxczNVRmNZeThrdFlMWVBQMzhyTnJPTWpzdTR3NFFMekdnVkNZVEloeXlGNzVpU0JrU0c0anBLU1lvN3gtdUpwSDE1NWZkYzk4UjNDRnlCc0dVdEw4VE9zYVU5alJVZjJR?oc=5",
       "published_at": "2026-10-24T21:34:06+00:00",
@@ -164,6 +148,22 @@
       "scope_date": "2026-10-24"
     },
     {
+      "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - AOL.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPXy1nX2pDa2VKM0p1SHdtR3czcWRVRHFkaENGbk4wRmFlZjg3LWJrV1pyX3A0YlB3NXRjYW1paEIwazN3b3JTWENzUHFTZlE2d1NfQm1sd0NoOUdKYzcwQm83TDY1NENMVVlxMHZ1SzJKcDJUQTU3T3k4Yzd6TktIcTRB?oc=5",
+      "published_at": "2026-10-24T01:16:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "CALEB WILSON RESPONDS! Bulls Young Core FORCES Rotation Shakeup + AD & Trae NEXT - BVM Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTFpIakVSWXNwM2RneXlOUVBDd2tHd1Z3TVhERnFGSm5ISWdxUVJBTEFCdmNKMXlKQzVoSzVKNUxneTZxSklZbERmbDM0UlpmUHpBNzZpS1BTaVlHVE1UUGJULUJDTlhYdnFpb3lEdjZkRTVfakpvek5lLVUtaFhtbmJnNmdRX1FpOFFWRjAtMzJsckxxVGh6TXBFdnFhb05ITVlxYTJIakp1aGU1YlE?oc=5",
+      "published_at": "2026-10-24T12:15:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "Why Nets rookie Mikel Brown Jr.’s minutes restriction won’t change ‘anytime soon’ - ClutchPoints",
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY3A1RFJadGpkYjlzQ3VqOUVSSUM2aW96Qkdjb3N4WjlZUTRhNU1CeEhnZTZPeXFIcndKb25iRWg0Y2VxRzFLVmdDQTFGMl82allMM2pzdENxNnRkVVJzSndFa2lNMkdkb0p3Nm9weGs4UWEyNmZHRndTaGpRVGQtZEYzaEFnNFVrQ2dRTE1DbUl6YU55elpsWjUzc2FWX0hDNlpVRXJaNk4?oc=5",
       "published_at": "2026-10-23T23:29:33+00:00",
@@ -175,14 +175,6 @@
       "headline": "Ranking Every NBA Team’s Starting Lineup for the 2026-27 Season - SSBCrack",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdy16Y3JDQmd6eDFfYkw1QlZXNmVTQmVJTVpHVmI5MlNjZVkta1oyNWdxWk5tZEhMYjhiZm1faDZ3ejhNYjJrd2hDNTFaS1lMUHNkdUotSUtJWC1qTDVDTmxib2huNVp6RXNBSGNhQmxVMXhCTzdfRGc0aVVJb2Y0bEpLb0VjMmdQeE1JNVBBb25IVTQ?oc=5",
       "published_at": "2026-10-23T23:03:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "CALEB WILSON RESPONDS! Bulls Young Core FORCES Rotation Shakeup + AD & Trae NEXT - BVM Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTFpIakVSWXNwM2RneXlOUVBDd2tHd1Z3TVhERnFGSm5ISWdxUVJBTEFCdmNKMXlKQzVoSzVKNUxneTZxSklZbERmbDM0UlpmUHpBNzZpS1BTaVlHVE1UUGJULUJDTlhYdnFpb3lEdjZkRTVfakpvek5lLVUtaFhtbmJnNmdRX1FpOFFWRjAtMzJsckxxVGh6TXBFdnFhb05ITVlxYTJIakp1aGU1YlE?oc=5",
-      "published_at": "2026-10-24T12:15:53+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
