@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T02:38:03.989321+00:00",
+  "updated_at": "2026-10-24T03:10:52.407581+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -98,12 +98,12 @@
       "status": "OUT"
     },
     {
-      "name": "Ausar Thompson",
+      "name": "Jalen Duren",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Jalen Duren",
+      "name": "Ausar Thompson",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
