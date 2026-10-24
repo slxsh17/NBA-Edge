@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T00:54:41.470300-04:00",
+  "updated_at": "2026-10-24T01:16:33.394583-04:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 28,
@@ -146,16 +146,6 @@
       "avg_points": 26.5
     },
     {
-      "id": "4871144",
-      "name": "Alperen Sengun",
-      "team": "HOU",
-      "games": 2,
-      "avg_minutes": 33.0,
-      "avg_fantasy_points": 44.7,
-      "fantasy_points_per_minute": 1.355,
-      "avg_points": 26.0
-    },
-    {
       "id": "4278073",
       "name": "Shai Gilgeous-Alexander",
       "team": "OKC",
@@ -194,6 +184,16 @@
       "avg_fantasy_points": 43.2,
       "fantasy_points_per_minute": 1.348,
       "avg_points": 19.5
+    },
+    {
+      "id": "4871144",
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "games": 2,
+      "avg_minutes": 33.0,
+      "avg_fantasy_points": 43.2,
+      "fantasy_points_per_minute": 1.309,
+      "avg_points": 26.0
     },
     {
       "id": "4066457",
@@ -666,16 +666,6 @@
       "avg_points": 20.5
     },
     {
-      "id": "3975",
-      "name": "Stephen Curry",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 25.5,
-      "avg_fantasy_points": 32.2,
-      "fantasy_points_per_minute": 1.265,
-      "avg_points": 23.5
-    },
-    {
       "id": "4278594",
       "name": "Naji Marshall",
       "team": "DAL",
@@ -724,6 +714,16 @@
       "avg_fantasy_points": 31.8,
       "fantasy_points_per_minute": 0.882,
       "avg_points": 22.5
+    },
+    {
+      "id": "3975",
+      "name": "Stephen Curry",
+      "team": "GS",
+      "games": 2,
+      "avg_minutes": 25.5,
+      "avg_fantasy_points": 31.6,
+      "fantasy_points_per_minute": 1.241,
+      "avg_points": 23.5
     },
     {
       "id": "4433249",
@@ -1636,6 +1636,16 @@
       "avg_points": 9.0
     },
     {
+      "id": "6589",
+      "name": "Draymond Green",
+      "team": "GS",
+      "games": 2,
+      "avg_minutes": 26.0,
+      "avg_fantasy_points": 19.4,
+      "fantasy_points_per_minute": 0.746,
+      "avg_points": 3.5
+    },
+    {
       "id": "4997538",
       "name": "Karlo Matkovic",
       "team": "NO",
@@ -1694,16 +1704,6 @@
       "avg_fantasy_points": 18.9,
       "fantasy_points_per_minute": 0.769,
       "avg_points": 4.0
-    },
-    {
-      "id": "6589",
-      "name": "Draymond Green",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 26.0,
-      "avg_fantasy_points": 18.8,
-      "fantasy_points_per_minute": 0.723,
-      "avg_points": 3.5
     },
     {
       "id": "4432582",
@@ -2566,6 +2566,16 @@
       "avg_points": 2.5
     },
     {
+      "id": "2991235",
+      "name": "Steven Adams",
+      "team": "HOU",
+      "games": 1,
+      "avg_minutes": 9.0,
+      "avg_fantasy_points": 10.9,
+      "fantasy_points_per_minute": 1.211,
+      "avg_points": 4.0
+    },
+    {
       "id": "3064560",
       "name": "Luke Kornet",
       "team": "SA",
@@ -2813,16 +2823,6 @@
       "avg_minutes": 9.0,
       "avg_fantasy_points": 8.1,
       "fantasy_points_per_minute": 0.9,
-      "avg_points": 4.0
-    },
-    {
-      "id": "2991235",
-      "name": "Steven Adams",
-      "team": "HOU",
-      "games": 1,
-      "avg_minutes": 9.0,
-      "avg_fantasy_points": 7.9,
-      "fantasy_points_per_minute": 0.878,
       "avg_points": 4.0
     },
     {
@@ -4287,10 +4287,10 @@
       "pts": 4.0,
       "reb": 2.0,
       "ast": 1.0,
-      "stl": 0.0,
+      "stl": 1.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 7.9
+      "fantasy_points": 10.9
     },
     {
       "id": "4845367",
@@ -4315,12 +4315,12 @@
       "event_id": "401909850",
       "minutes": 30.0,
       "pts": 24.0,
-      "reb": 3.0,
+      "reb": 2.0,
       "ast": 4.0,
       "stl": 0.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 33.6
+      "fantasy_points": 32.4
     },
     {
       "id": "4602025",
@@ -6805,12 +6805,12 @@
       "event_id": "401909850",
       "minutes": 31.0,
       "pts": 5.0,
-      "reb": 4.0,
+      "reb": 5.0,
       "ast": 6.0,
       "stl": 0.0,
       "blk": 1.0,
       "tov": 5.0,
-      "fantasy_points": 16.8
+      "fantasy_points": 18.0
     },
     {
       "id": "2578185",
@@ -7752,10 +7752,10 @@
       "pts": 29.0,
       "reb": 7.0,
       "ast": 7.0,
-      "stl": 1.0,
+      "stl": 0.0,
       "blk": 1.0,
       "tov": 3.0,
-      "fantasy_points": 50.9
+      "fantasy_points": 47.9
     },
     {
       "id": "5149115",
