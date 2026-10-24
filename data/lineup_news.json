@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T05:15:47.598712+00:00",
+  "checked_at": "2026-10-24T05:54:20.610508+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -86,9 +86,9 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nikola Vucevic News: Barely in rotation Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZkliM3Uyd0IzZlZwN21kYnpwdExEVUVpUFEzUWpCYTBUVURzeTBUMEF6NU92ZWI3VWJtNmZpX3AzMkVBeWl2dTVHcFVZdnowN2NJOWxXc2hKX2JNSHhZU1YzVzBpcGZNVEtxT09HTXhKRHZ4dEZLOHZYRXNzMWh4bmZqRTNLcXhOM194WElIWkpRN3FfaHFmYXpDSUhvdzg?oc=5",
-      "published_at": "2026-10-24T02:54:00+00:00",
+      "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
+      "published_at": "2026-10-24T05:37:30+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -118,17 +118,17 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - New York Daily News",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTC01VEVLNWVNenN3WGhuVE5HUTE1b2IxZWhwR20zWE5uWUFNSkdnUGNHbXFxay1yczk0bEpyQ1YwUlJNRVNVbTBjNXJqZ1M3SXU5TGROY0JOYm1YV25ZenlLSEMxYmFGdF9NMlBKc2dOdHZ2NTktSFlpbmdXc3AxRTd4ZzBUV3VXbjVReWxIckxwRV8zMTF0YWEtVQ?oc=5",
-      "published_at": "2026-10-23T19:25:37+00:00",
+      "headline": "Kyrie Irving News: Will be on minutes restriction Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOGZJWFUwQ2pDZjc5OV96c21tdTRqR2xvSk9kcHhIczF4RHhub2pBblJvM1V6SGl3RUFzS2FfNlRIbm5ma0JFSGxjZ3ozaUE0Um9ISkhQN1pERm50SVIzdjhWcGFsd1JhSmxEemczcmxFYklKYXpoLTdyeEdTTmQwWnd0c0tMd1NzWmVWZTVmTFc4eWVxbHFMZ1F2NFEySVlLSnFDODRLek4ydnVB?oc=5",
+      "published_at": "2026-10-23T21:44:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbXhpUEdVTUl0Q09YT3ctWHd1U1dqeC1DcFRpS2h4ekNqTmNteWREZjZsUHlENXhCcG9ld0w1SkZFc0ZLNG9aU3BmZzBuUXlDa1p4eFpNN2JGTDBtSHdXREdjZFcxaElfNHRXZno4d0E5OXBsWjJXdVVOaWtaVWR3eTJZYi13XzhBdFRndGRB?oc=5",
-      "published_at": "2026-10-23T22:07:43+00:00",
+      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - New York Daily News",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTC01VEVLNWVNenN3WGhuVE5HUTE1b2IxZWhwR20zWE5uWUFNSkdnUGNHbXFxay1yczk0bEpyQ1YwUlJNRVNVbTBjNXJqZ1M3SXU5TGROY0JOYm1YV25ZenlLSEMxYmFGdF9NMlBKc2dOdHZ2NTktSFlpbmdXc3AxRTd4ZzBUV3VXbjVReWxIckxwRV8zMTF0YWEtVQ?oc=5",
+      "published_at": "2026-10-23T19:25:37+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -142,30 +142,6 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
-      "published_at": "2026-10-23T19:00:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Kyrie Irving News: Will be on minutes restriction Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOGZJWFUwQ2pDZjc5OV96c21tdTRqR2xvSk9kcHhIczF4RHhub2pBblJvM1V6SGl3RUFzS2FfNlRIbm5ma0JFSGxjZ3ozaUE0Um9ISkhQN1pERm50SVIzdjhWcGFsd1JhSmxEemczcmxFYklKYXpoLTdyeEdTTmQwWnd0c0tMd1NzWmVWZTVmTFc4eWVxbHFMZ1F2NFEySVlLSnFDODRLek4ydnVB?oc=5",
-      "published_at": "2026-10-23T21:44:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
-      "published_at": "2026-10-23T18:00:04+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Mavericks to Keep Kyrie Irving on Minutes Restriction for Pacers Game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHZSTWJRTWNqd2VKaWRURF9zaDVVWFYxLWpsS2dYYTFTaWlMU3lNWC1LZlRfTjcyQ3Roclk5WUd3bkVYNUFjaEZCcFJ0eU51aDdMTHFRT2NtSzJrWTlqTU8yWEw5ZWhHa1J0WlRsazFsZlhJNXMxeVM4Xy1oNkIzU2UwbWpMVEVwN242eQ?oc=5",
       "published_at": "2026-10-23T21:56:33+00:00",
@@ -174,9 +150,33 @@
       "scope_date": "2026-10-24"
     },
     {
+      "headline": "Video - Do the Miami Heat Need to Make Rotation Changes Already? - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGhJelBiMUNURFR0N1NSX3dXMTdzOTBpODZkQU45Z0xHNHdqTmtYbWIyVlhOdmxnX21CZFUwdnJFMDg3WVc4QjdzMVZadDdDNFRzbGx2RHRuXzFCdDhkOU54dDJPY0ZVSEl2LXhMQlZfUFdndEo5UHVwMnhLX3BmWF9ranJQY0d2NTB0eEdPNkVheGNORHZfY1lHOWVGbHFT?oc=5",
+      "published_at": "2026-10-23T19:00:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
+      "published_at": "2026-10-23T14:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "Thomas Bryant News: Outside rotation in opener - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRWNvdGY3d0JEbnBRM0t6X2dDUEVoTUZVa3Y5dmVGZFRSUmJIYUFWN0tCemg0Sjh6Z2ZrLXpZQ0lYUFEwVUhDZDM4YjJGbVE3d3hwZW1tY0tqa09BRDZBTGlvZDNscGRKSWhUcHF0bHN6THZLanAxbXNacU04ZGo4UFluQTJJMnQ0ck1RdzltcC1rOUFVR2Zxcl9TMjlBaTQ?oc=5",
       "published_at": "2026-10-23T15:00:18+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Craig Porter Just Made a Compelling Case to Change the Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdWh0MklVbjJraUJFdmwzeEZJSDVhVlNpREZFOW1lM1RWZGZJeUlfaUl3WHNseWtEaXMzZDF2MzEzMWppRTBjMmtJcTBBaXI0U2ZoZ0NvcTlYYy1qb3g4cm1ObWw1R0dlWEdadEFZeXBUalNqQkNPdld6enB2dTRLNXNNYkRxc1VPS1NyY1dUMWxXZE5uazg4YTRRNVduNGMzbHBVZ0ZBVVhSa3dxeVAxVUNYb0I?oc=5",
+      "published_at": "2026-10-23T18:00:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -198,9 +198,9 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Jason Kidd makes it clear who the number one option on the Philadelphia 76ers' starting lineup is - HITC",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbm5IZmpheVNkUGJvbjZoZ3B6LVhEQ3dFSHJJcnpQRWtKSUxsN04zVEMyakJyUl9fcGhqQUdOVWFvOW1JRGtrcW1UZEVlOWpZRDJwMi11MkVBLVZVQ3B3dy01M2FaVmVZR0VENDZFT1NnN1FRZG5mQ09rQ2hzRk1SSkVnNkhzVDUxR3p2MWdYRjBPUjA5NEdqb1hfd25WbkoxSGxRNnVKUVctU3BEeXNjaFJjcVUzenNDdWc?oc=5",
-      "published_at": "2026-10-23T14:00:00+00:00",
+      "headline": "What Warriors' Starting Lineup, Rotation Should Be vs. Grizzlies with Podz Probable - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRzJWYzhsd0xPZ09zaTllWkZFLS1aMkx4Nm5HeUYtNkFmTW5BR1NfUWRZdk5sMXo5T1pxU0Z4THpGZHo5ZlVGcXI1UHlFVmRUdG05Rl9XdzlmOXB2Z2ZaNFhfUkZmYlpjb1htLUdOaThyVVl3cWtOOXhiVW11VWxHMloybk9CcEFfdzlTX0ZiNWJJXzNLd2V3OUZWYkRlQWV0MG1udXVTeEFCUWVDc0pCdDB3Qjd3emFYX202MDNzVGJzTWdpNjh6NUtn?oc=5",
+      "published_at": "2026-10-23T22:07:42+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -209,14 +209,6 @@
       "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - USA Today",
       "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNDQ5RWxBc2tROWpPRklKUndVYTJISjVHRERldEQtZVVzMFpVQmwycEFDVXZ6ei1zbXA4eXkxR3VfVnBrYXZSMTZWekJTNWFMR2tqTFRWWTd2QlFOUkZqcVJXZU5zY2VuWFlmbnV6WDBiRjdaYzEweWhfSkdiZGNwMnpScEZNUEhwdjRVUC0yVS1ob2hiSG95SDgtb09VbGhTd0tlSVpEaHhkemRtR0lrZ0NyU3pDbm9ncHpJ?oc=5",
       "published_at": "2026-10-24T02:01:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
-      "published_at": "2026-10-24T00:29:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
