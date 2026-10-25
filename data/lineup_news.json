@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-25T00:09:11.354847+00:00",
+  "checked_at": "2026-10-25T01:03:58.321572+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -68,6 +68,14 @@
       "scope_date": "2026-10-24"
     },
     {
+      "headline": "Mavericks Make 2 Starting Lineup Changes With Kyrie Irving, Cooper Flagg Out vs. Spurs - Yardbarker",
+      "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcXhGemx0eW5zT01zYjJJOUMzWEIySVU3c3RFTHZ4WU5zeHVSdURuc1lLWXhzYmxfdWpqMnhxN2dVdlpWMmN3emI2c0VrZ1JYS0VKWG9TM2p2SmE4S2RiNHA2NjFiUGd6cE93UGNwQWQyM1JiaHBxa1RrNkVFbW54azdzSHc2YVpQLXNHSFQ0cXNwd3d2bV9Ld1VubHk4aVYtRWZjejVPUmE1SDhuNjJHblFOMURFR191X2QtaDVPUm02STV4WkNMeTZRVnotWW8zUVBZeFR0YlFQUQ?oc=5",
+      "published_at": "2026-10-25T00:35:50+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "Dallas Mavericks Announce Starting Lineup Without Cooper Flagg, Kyrie Irving - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb0R6ajlkNTYyajhEbl9TTFJTNXpSQUg5NzhEd2RfR3B6bUJWcmdjMnIyUHd3WmVaN2hqUFZXeFZfSG9jUnFid3dGbF9BZk1QWmJSM183OThfWDdvNExmeEVlUC1MLVluTzRvbXhuWXl3Ni15ZmNKRFdySDUxTzJ6T0Y1Ni1FSm1lbWdiN2Rqaw?oc=5",
       "published_at": "2026-10-24T23:42:01+00:00",
@@ -92,6 +100,14 @@
       "scope_date": "2026-10-24"
     },
     {
+      "headline": "Nuggets Announce New Starting Lineup vs. Pelicans Due to Injury - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZjVwZ0xVS0RNalJFSDlZTmlxdjFPanhvU3ZKdm5jOGRyZzNtWC1TS2JFMXFlb1IwbkVqOU9iTXZyTm5kZTFqbm94TmN0QWFDUUdPcm0tUTFXbmp4OWF2elBCa1ZBdzhIT3VDdVF1WmJ4SmRfTHZqQTNmeTcyR1ZCVnpFNXNzYWU2a0ROVmZZX2hvbFU2dUNyaTYxMDY2eWM?oc=5",
+      "published_at": "2026-10-25T00:59:32+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "Predicting 76ers' Starting Lineup on Saturday With LeBron James Out - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHZmcHZVSkkyUG5lR1RXQnBQRVZxMjVXZjRmdTY2Ym1zZFlqZUlMSGRMZ0Y3SUpEQ3ZlR0x6bnItc1ZGQ1hQMkZTSXJVMkJJRDRxejNIN0YxSHhpYi1aWDA4VU5zSl9uR2EtYmEwRVhUTnQ2VmdONy1mN1lINTIyVjhRQURLVmI0RjVCc0tkOFBDMmVUR2RDeUd6Mnh4QS1yQ01yeXhBWlQ?oc=5",
       "published_at": "2026-10-24T19:46:28+00:00",
@@ -100,25 +116,17 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nikola Vucevic News: Barely in rotation Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZkliM3Uyd0IzZlZwN21kYnpwdExEVUVpUFEzUWpCYTBUVURzeTBUMEF6NU92ZWI3VWJtNmZpX3AzMkVBeWl2dTVHcFVZdnowN2NJOWxXc2hKX2JNSHhZU1YzVzBpcGZNVEtxT09HTXhKRHZ4dEZLOHZYRXNzMWh4bmZqRTNLcXhOM194WElIWkpRN3FfaHFmYXpDSUhvdzg?oc=5",
-      "published_at": "2026-10-24T02:54:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
-      "published_at": "2026-10-24T23:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTG5GdVhvTUhxZGhDZklNSlhwV1ZseFI2cEFRSDJiRm9MbGxjSjc5YmptWWlfM29BaElNZ2U3OUQxLXE4TGpQSFVsX2draU9TQ2NiRjJsTkFzR2dOUzNMVEU2aENxQy1reEs4eUhwSnYxZFZDbWZRc3FTcTNPMWFiVXRSRVF3QlhDNG9HLWt2SnRqTERT?oc=5",
       "published_at": "2026-10-24T02:01:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Nikola Vucevic News: Barely in rotation Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZkliM3Uyd0IzZlZwN21kYnpwdExEVUVpUFEzUWpCYTBUVURzeTBUMEF6NU92ZWI3VWJtNmZpX3AzMkVBeWl2dTVHcFVZdnowN2NJOWxXc2hKX2JNSHhZU1YzVzBpcGZNVEtxT09HTXhKRHZ4dEZLOHZYRXNzMWh4bmZqRTNLcXhOM194WElIWkpRN3FfaHFmYXpDSUhvdzg?oc=5",
+      "published_at": "2026-10-24T02:54:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -135,6 +143,14 @@
       "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - New York Post",
       "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSDdrWU5NaFZBbHpHUlFmNXZTdlNRak1OSldPSG9Jc2ZMbXJ6anpnVUVHVFlRZzM1VXFGdjRmYnpSSVNBM0FLRk5iVjdfQ2hkTFFkMWdEZWl2NmUwcEZ0QjZQM1d1NkJEWW12Y3NhUWtUeWRrNTdVU2lteF9WNmNYVm5Ncy12UnpvRnFVM0hUUXlDLVFOY00yWmNlQjVXZFN6MHFNZFhzVE5lTGlEOG5V?oc=5",
       "published_at": "2026-10-24T01:16:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
+      "published_at": "2026-10-24T23:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
