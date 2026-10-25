@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T09:03:37.627765-04:00",
+  "updated_at": "2026-10-25T09:52:41.833457-04:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 36,
@@ -1076,6 +1076,16 @@
       "avg_points": 13.0
     },
     {
+      "id": "4591725",
+      "name": "Ryan Rollins",
+      "team": "MIL",
+      "games": 3,
+      "avg_minutes": 27.7,
+      "avg_fantasy_points": 27.0,
+      "fantasy_points_per_minute": 0.975,
+      "avg_points": 11.7
+    },
+    {
       "id": "4431736",
       "name": "Toumani Camara",
       "team": "POR",
@@ -1134,16 +1144,6 @@
       "avg_fantasy_points": 26.7,
       "fantasy_points_per_minute": 1.144,
       "avg_points": 9.0
-    },
-    {
-      "id": "4591725",
-      "name": "Ryan Rollins",
-      "team": "MIL",
-      "games": 3,
-      "avg_minutes": 27.7,
-      "avg_fantasy_points": 26.5,
-      "fantasy_points_per_minute": 0.957,
-      "avg_points": 11.7
     },
     {
       "id": "3936099",
@@ -1656,16 +1656,6 @@
       "avg_points": 8.7
     },
     {
-      "id": "4066320",
-      "name": "Desmond Bane",
-      "team": "ORL",
-      "games": 2,
-      "avg_minutes": 30.0,
-      "avg_fantasy_points": 20.7,
-      "fantasy_points_per_minute": 0.69,
-      "avg_points": 11.5
-    },
-    {
       "id": "2995706",
       "name": "Mario Hezonja",
       "team": "CLE",
@@ -1824,6 +1814,16 @@
       "avg_fantasy_points": 19.2,
       "fantasy_points_per_minute": 0.888,
       "avg_points": 8.3
+    },
+    {
+      "id": "4066320",
+      "name": "Desmond Bane",
+      "team": "ORL",
+      "games": 2,
+      "avg_minutes": 30.0,
+      "avg_fantasy_points": 19.2,
+      "fantasy_points_per_minute": 0.64,
+      "avg_points": 11.5
     },
     {
       "id": "4278402",
@@ -2446,6 +2446,16 @@
       "avg_points": 4.5
     },
     {
+      "id": "2528210",
+      "name": "Tim Hardaway Jr.",
+      "team": "MIA",
+      "games": 3,
+      "avg_minutes": 20.0,
+      "avg_fantasy_points": 12.5,
+      "fantasy_points_per_minute": 0.627,
+      "avg_points": 5.3
+    },
+    {
       "id": "4431893",
       "name": "Jamison Battle",
       "team": "TOR",
@@ -2576,16 +2586,6 @@
       "avg_points": 5.0
     },
     {
-      "id": "2528210",
-      "name": "Tim Hardaway Jr.",
-      "team": "MIA",
-      "games": 3,
-      "avg_minutes": 20.0,
-      "avg_fantasy_points": 11.5,
-      "fantasy_points_per_minute": 0.577,
-      "avg_points": 5.3
-    },
-    {
       "id": "4873153",
       "name": "Morez Johnson Jr.",
       "team": "DAL",
@@ -2636,26 +2636,6 @@
       "avg_points": 7.0
     },
     {
-      "id": "4397475",
-      "name": "AJ Green",
-      "team": "MIL",
-      "games": 3,
-      "avg_minutes": 17.0,
-      "avg_fantasy_points": 10.9,
-      "fantasy_points_per_minute": 0.643,
-      "avg_points": 9.3
-    },
-    {
-      "id": "2991235",
-      "name": "Steven Adams",
-      "team": "HOU",
-      "games": 1,
-      "avg_minutes": 9.0,
-      "avg_fantasy_points": 10.9,
-      "fantasy_points_per_minute": 1.211,
-      "avg_points": 4.0
-    },
-    {
       "id": "4397204",
       "name": "Colin Castleton",
       "team": "ORL",
@@ -2704,6 +2684,16 @@
       "avg_fantasy_points": 10.6,
       "fantasy_points_per_minute": 0.387,
       "avg_points": 2.0
+    },
+    {
+      "id": "4397475",
+      "name": "AJ Green",
+      "team": "MIL",
+      "games": 3,
+      "avg_minutes": 17.0,
+      "avg_fantasy_points": 10.4,
+      "fantasy_points_per_minute": 0.614,
+      "avg_points": 9.3
     },
     {
       "id": "5242496",
@@ -2924,6 +2914,16 @@
       "avg_fantasy_points": 7.9,
       "fantasy_points_per_minute": 0.397,
       "avg_points": 5.3
+    },
+    {
+      "id": "2991235",
+      "name": "Steven Adams",
+      "team": "HOU",
+      "games": 1,
+      "avg_minutes": 9.0,
+      "avg_fantasy_points": 7.9,
+      "fantasy_points_per_minute": 0.878,
+      "avg_points": 4.0
     },
     {
       "id": "4593016",
@@ -4183,9 +4183,9 @@
       "reb": 0.0,
       "ast": 0.0,
       "stl": 1.0,
-      "blk": 1.0,
+      "blk": 2.0,
       "tov": 0.0,
-      "fantasy_points": 11.0
+      "fantasy_points": 14.0
     },
     {
       "id": "5211176",
@@ -4316,11 +4316,11 @@
       "minutes": 25.0,
       "pts": 15.0,
       "reb": 4.0,
-      "ast": 3.0,
+      "ast": 4.0,
       "stl": 1.0,
       "blk": 1.0,
       "tov": 2.0,
-      "fantasy_points": 28.3
+      "fantasy_points": 29.8
     },
     {
       "id": "4576060",
@@ -5307,8 +5307,8 @@
       "pts": 21.0,
       "reb": 8.0,
       "ast": 0.0,
-      "stl": 2.0,
-      "blk": 1.0,
+      "stl": 1.0,
+      "blk": 2.0,
       "tov": 3.0,
       "fantasy_points": 36.6
     },
@@ -6431,11 +6431,11 @@
       "minutes": 19.0,
       "pts": 11.0,
       "reb": 3.0,
-      "ast": 1.0,
+      "ast": 0.0,
       "stl": 0.0,
       "blk": 0.0,
       "tov": 2.0,
-      "fantasy_points": 14.1
+      "fantasy_points": 12.6
     },
     {
       "id": "5106262",
@@ -6957,10 +6957,10 @@
       "pts": 4.0,
       "reb": 2.0,
       "ast": 1.0,
-      "stl": 1.0,
+      "stl": 0.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 10.9
+      "fantasy_points": 7.9
     },
     {
       "id": "4845367",
@@ -14097,10 +14097,10 @@
       "pts": 18.0,
       "reb": 5.0,
       "ast": 2.0,
-      "stl": 3.0,
+      "stl": 2.0,
       "blk": 0.0,
       "tov": 2.0,
-      "fantasy_points": 34.0
+      "fantasy_points": 31.0
     },
     {
       "id": "3936099",
