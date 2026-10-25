@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T22:10:46.299851+00:00",
+  "checked_at": "2026-10-25T22:47:08.437456+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -63,6 +63,14 @@
       "scope_date": "2026-10-25"
     },
     {
+      "headline": "Trevon Brazile sparks epic Nuggets comeback and cements his rotation spot - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLTBZMndtYVFnaFRSazFwRDZ6YVA4OVBlb0o1WXBZSVpUaHFWaUcxc2dwVmxVcWZ1QndPa29pRVhXcmFOMkNHTV85NzhyeVdRa25LYTdPWDhiT0FrNkVMN0t0SDA0UWllOFRNMmZOU2tMQ2JjcEdFeE84d2liVzU3b0NHRk45emJPYUVB?oc=5",
+      "published_at": "2026-10-25T04:33:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
       "headline": "Golden State Warriors Fans React To Depressing Starting Lineup - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRW8wcS1QcUJmd1A3aU0zMGViMFpaS3hqZVgwS3dqMzE4Z1d2LU1hZURLTmxkM3ZzaEhsSFpOdnhxR3FMeXpBMVR2NkJXNkxhNTFIY04yTVZxQ3pGZ0xWcUpYaktKa2t5REtWMDAzQk1kNnVLdWExWEp1VmxOS1N6ZkZCbjJKWk4zYXNHWUE0U3BqRzhqZDR0ZUt3a0pneFk?oc=5",
       "published_at": "2026-10-25T02:02:00+00:00",
@@ -79,25 +87,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Kyrie Irving Out vs. Spurs, Morez Johnson Jr. On Minutes Restriction - Dallas Hoops Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbndPUF9NVEVSLU1GMTAxRXlSQUZaWDd4MTVzOGlKTmpqZG5GRDVpOXJFRm0yR2xyMGtPSDNMeVNtWFdPbHZQNi1qUDVIcnlnSWNGaTVvTzFVZWJTNTA3YzdiQ2VyVXRjMmlrWGRJeS1Ia2JGYjR0WXV0MVNsSDNHM045SjdsQ0pYX09xMWJoWWdmT3JzMW9CVFMweGUtVXFZ?oc=5",
-      "published_at": "2026-10-24T22:25:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
       "headline": "Dean Wade (ankle) available Saturday, will start - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdVVkS1RIUVJDRUhCYjFQdTlZTG5Md0ZybmFwSV94VDJoX0lCUFRLZUdQTFMzaFBVZDN3azdzUS1VR29QbEpjVTBncUJobnV5c1BZZkdZcUU0U1h2bTBldnQwRmg5c05mdU5nd1NrejZ1dlFaTEFaX2FDa1dzcFd3Y21lYVVxaU9Xb1FRSzM4Q3oyUHBvYml2WEJZTmc2dTEwMjFDSnAtRmF1ejdFMnc?oc=5",
       "published_at": "2026-10-25T05:12:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
-      "headline": "Trevon Brazile sparks epic Nuggets comeback and cements his rotation spot - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLTBZMndtYVFnaFRSazFwRDZ6YVA4OVBlb0o1WXBZSVpUaHFWaUcxc2dwVmxVcWZ1QndPa29pRVhXcmFOMkNHTV85NzhyeVdRa25LYTdPWDhiT0FrNkVMN0t0SDA0UWllOFRNMmZOU2tMQ2JjcEdFeE84d2liVzU3b0NHRk45emJPYUVB?oc=5",
-      "published_at": "2026-10-25T04:33:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
