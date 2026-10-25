@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-24T23:44:03.674681+00:00",
+  "checked_at": "2026-10-25T00:09:11.354847+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -35,6 +35,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
+      "published_at": "2026-10-25T00:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
     {
       "headline": "Starting Lineup 1995 Kenner NBA Orlando Magic Horace Grant Basketball Card - khorasantimes.com",
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5DY2FKZGVJM1owWFRIV21yWEdxVmxidVk0ckIxMkp1VnBId19oMW5nbERpRnNFeFR6SDMxb01pM18wYzA0NVc3cHhjQzVLUQ?oc=5",
@@ -100,6 +108,14 @@
       "scope_date": "2026-10-24"
     },
     {
+      "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
+      "published_at": "2026-10-24T23:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTG5GdVhvTUhxZGhDZklNSlhwV1ZseFI2cEFRSDJiRm9MbGxjSjc5YmptWWlfM29BaElNZ2U3OUQxLXE4TGpQSFVsX2draU9TQ2NiRjJsTkFzR2dOUzNMVEU2aENxQy1reEs4eUhwSnYxZFZDbWZRc3FTcTNPMWFiVXRSRVF3QlhDNG9HLWt2SnRqTERT?oc=5",
       "published_at": "2026-10-24T02:01:00+00:00",
@@ -124,22 +140,6 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - Oneida Dispatch",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbG9VMDdyeG9YTXBIcmdqczYxejFNZ3BFMjRrQi1QeWR4dmN0T3k0XzhBM1VseWhkd0RBSUNUcE9ITkJ4YXM1R1lsMDNFR3gzVDZzWnM5WWI5eG1fdnRFZkpNVko3NlNFMXZEclRWc2N1Mm5NcU9BRGtPcjBWQkg4aDU3Y1NzTTdITUJaNTNVTG9UNFVWVFZCaUI1RDBEZE0?oc=5",
-      "published_at": "2026-10-24T02:31:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
-      "published_at": "2026-10-24T23:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
       "headline": "Mavericks Rule Out Kyrie Irving, Set Minutes Restriction for Morez Johnson Jr. vs. Spurs - Yardbarker",
       "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVmN0WFFCSGRLRTdrUzE2V29ORDJ0eG02aVpBbHg4WlRqc3VnYk8tMmF0UG5mQ1VzUG8xZ0dJNjEtM1JUY1FDcUV4RGtsVXB5eW9EdmY4eUdIYUNyZEpKWlJJejdIYzQ5SEdrOEVHZ2w2NkJSNUUyNmxpQl9UTEt2Ymp5X3YyMG1ndC1wREdKQWhXWU80bVpNS3gzR0l0bGJVckZoWTdVWV95dThTNXVFdm1rT0xERlh4c1Y3MUlUNTIwdWM4VWFqVndtRkp4MzJDbVZzeHpHejEyaTA?oc=5",
       "published_at": "2026-10-24T22:37:43+00:00",
@@ -156,9 +156,9 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Tyler Bilodeau (shoulder) ruled out Saturday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNjdXODBkVXZMMGtYSTRjdjVNRjhWU3p5N0ZhTkpMVFpybmpmbFdWbGZDWjZ4MTZYUmVmb3QzOVh1dFJEbjBhZXBkWEtJOUVxdkFrNGVrYnpPRjJlRnVud1B1X3B3WHRnWHlwWU5MOS1TSG5pa2NISXZTWGc2NkZxLWZ1aWZNUmRBRlVhVHpicjZxTFBl0gGaAUFVX3lxTFBWRDdpWjBfUTRQYjVEcm1tMmttZlNGVHZlSzI4TUg0azhCNjN5RHZ3a1J5OW1BdDJjamNSMERHN29hdjhNRTFNa2J5WUFra0tlYjlqb1VOYVg5cFNFcTJKOEtaV0Y1NUpMdmFQUU54WlZ3OEZ1YmNHOHZvaFpsVjFPZXNyLWRHUnV5TnhvamYxYUlQSFFONEswdmc?oc=5",
-      "published_at": "2026-10-24T08:02:19+00:00",
+      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - Oneida Dispatch",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbG9VMDdyeG9YTXBIcmdqczYxejFNZ3BFMjRrQi1QeWR4dmN0T3k0XzhBM1VseWhkd0RBSUNUcE9ITkJ4YXM1R1lsMDNFR3gzVDZzWnM5WWI5eG1fdnRFZkpNVko3NlNFMXZEclRWc2N1Mm5NcU9BRGtPcjBWQkg4aDU3Y1NzTTdITUJaNTNVTG9UNFVWVFZCaUI1RDBEZE0?oc=5",
+      "published_at": "2026-10-24T02:31:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
