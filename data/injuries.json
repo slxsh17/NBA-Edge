@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T13:00:43.279782+00:00",
+  "updated_at": "2026-10-25T13:36:36.731332+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -298,6 +298,11 @@
       "status": "OUT"
     },
     {
+      "name": "LeBron James",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Joel Embiid",
       "team": "PHI",
       "status": "DAY-TO-DAY"
@@ -306,11 +311,6 @@
       "name": "Jabari Walker",
       "team": "PHI",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "LeBron James",
-      "team": "PHI",
-      "status": "OUT"
     },
     {
       "name": "Tacko Fall",
