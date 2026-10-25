@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T18:12:08.601378+00:00",
+  "checked_at": "2026-10-25T18:57:22.158343+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -18,6 +18,14 @@
       "headline": "Morez Johnson Jr. (shin) on minutes restriction - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNejNXOUthX0VlRjNzV25oVUFwa1Q0V2pfZWtEb203c0VhWmY4MWxZZFhXd1dWLWNmMXVHR0NrQjduTHlEeGhXTUMwY1JScUxzZlowbTlYRUtwdVBRdzVWTl9qaF93NVFJdGtsbGNWWHU2RG93UVpONF9jdmV6V3l6b28zRGlrQU1wRjFzZmRsV2NMRmtsMFlucHBMOVM1NEFxZUFDM1p1QVk4d1BpRTFha1Bn?oc=5",
       "published_at": "2026-10-25T04:31:56+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Kyrie Irving Out vs. Spurs, Morez Johnson Jr. On Minutes Restriction - Dallas Hoops Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbndPUF9NVEVSLU1GMTAxRXlSQUZaWDd4MTVzOGlKTmpqZG5GRDVpOXJFRm0yR2xyMGtPSDNMeVNtWFdPbHZQNi1qUDVIcnlnSWNGaTVvTzFVZWJTNTA3YzdiQ2VyVXRjMmlrWGRJeS1Ia2JGYjR0WXV0MVNsSDNHM045SjdsQ0pYX09xMWJoWWdmT3JzMW9CVFMweGUtVXFZ?oc=5",
+      "published_at": "2026-10-24T22:25:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -103,17 +111,17 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Predicting 76ers' Starting Lineup on Saturday With LeBron James Out - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHZmcHZVSkkyUG5lR1RXQnBQRVZxMjVXZjRmdTY2Ym1zZFlqZUlMSGRMZ0Y3SUpEQ3ZlR0x6bnItc1ZGQ1hQMkZTSXJVMkJJRDRxejNIN0YxSHhpYi1aWDA4VU5zSl9uR2EtYmEwRVhUTnQ2VmdONy1mN1lINTIyVjhRQURLVmI0RjVCc0tkOFBDMmVUR2RDeUd6Mnh4QS1yQ01yeXhBWlQ?oc=5",
-      "published_at": "2026-10-24T19:46:28+00:00",
+      "headline": "Golden State Warriors Fans React To Depressing Starting Lineup - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRW8wcS1QcUJmd1A3aU0zMGViMFpaS3hqZVgwS3dqMzE4Z1d2LU1hZURLTmxkM3ZzaEhsSFpOdnhxR3FMeXpBMVR2NkJXNkxhNTFIY04yTVZxQ3pGZ0xWcUpYaktKa2t5REtWMDAzQk1kNnVLdWExWEp1VmxOS1N6ZkZCbjJKWk4zYXNHWUE0U3BqRzhqZDR0ZUt3a0pneFk?oc=5",
+      "published_at": "2026-10-25T02:02:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Golden State Warriors Fans React To Depressing Starting Lineup - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRW8wcS1QcUJmd1A3aU0zMGViMFpaS3hqZVgwS3dqMzE4Z1d2LU1hZURLTmxkM3ZzaEhsSFpOdnhxR3FMeXpBMVR2NkJXNkxhNTFIY04yTVZxQ3pGZ0xWcUpYaktKa2t5REtWMDAzQk1kNnVLdWExWEp1VmxOS1N6ZkZCbjJKWk4zYXNHWUE0U3BqRzhqZDR0ZUt3a0pneFk?oc=5",
-      "published_at": "2026-10-25T02:02:00+00:00",
+      "headline": "Predicting 76ers' Starting Lineup on Saturday With LeBron James Out - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHZmcHZVSkkyUG5lR1RXQnBQRVZxMjVXZjRmdTY2Ym1zZFlqZUlMSGRMZ0Y3SUpEQ3ZlR0x6bnItc1ZGQ1hQMkZTSXJVMkJJRDRxejNIN0YxSHhpYi1aWDA4VU5zSl9uR2EtYmEwRVhUTnQ2VmdONy1mN1lINTIyVjhRQURLVmI0RjVCc0tkOFBDMmVUR2RDeUd6Mnh4QS1yQ01yeXhBWlQ?oc=5",
+      "published_at": "2026-10-24T19:46:28+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -129,7 +137,7 @@
     {
       "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
-      "published_at": "2026-10-25T17:06:13+00:00",
+      "published_at": "2026-10-25T18:18:37+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -167,9 +175,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Mavericks Rule Out Kyrie Irving, Set Minutes Restriction for Morez Johnson Jr. vs. Spurs - Yardbarker",
-      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVmN0WFFCSGRLRTdrUzE2V29ORDJ0eG02aVpBbHg4WlRqc3VnYk8tMmF0UG5mQ1VzUG8xZ0dJNjEtM1JUY1FDcUV4RGtsVXB5eW9EdmY4eUdIYUNyZEpKWlJJejdIYzQ5SEdrOEVHZ2w2NkJSNUUyNmxpQl9UTEt2Ymp5X3YyMG1ndC1wREdKQWhXWU80bVpNS3gzR0l0bGJVckZoWTdVWV95dThTNXVFdm1rT0xERlh4c1Y3MUlUNTIwdWM4VWFqVndtRkp4MzJDbVZzeHpHejEyaTA?oc=5",
-      "published_at": "2026-10-24T22:37:43+00:00",
+      "headline": "Jalen Duren (hamstring) ruled out Sunday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeUdJSW9iSUEwaExEQ0d6c01pbk5hdFdhZFY1SGN3VDBTS01iMFJXaEN4czVVWk5rWEVRUnp3LXE1NVVyUmdrVTYyeTk4bUVqd0V3cGJSQzMycXRVOHZhNUFPTGxpSDBpYU8ydlBSMnZzMjFiR2ZwMlFBa3BPUTQyWlM0NTlKaFVvY0d6QzIxVdIBlAFBVV95cUxQR3dZVnZtaFVoNWlZZlVPT2c4d0FPQnU2MTJIS0pSaFkxVUNZUDl1VGlIdmRlZVNmVnpVSEVHTjlNVXZxMnRiT0MwYldoX3hPY0RwUHJvclFDbjA3OTBrYWIyckdTaEttcDUxOVZsOHZKWWUzU3h2YXJZa1lxR0tLeVFaamt5YWd2bHVfVjRZZzRuZXcw?oc=5",
+      "published_at": "2026-10-24T21:31:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
