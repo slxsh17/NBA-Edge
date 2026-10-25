@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-24",
-  "checked_at": "2026-10-25T01:03:58.321572+00:00",
+  "checked_at": "2026-10-25T01:54:07.936723+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -36,6 +36,14 @@
   ],
   "headlines": [
     {
+      "headline": "Rockets shake up starting lineup for showdown at Atlanta Hawks: Preview, Injuries & Starters - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSnY3dHFXRlNkRzZUYzJJSm83UGRpczYtbXI3ZzZNRUdaUlpSSzF0LWNvSUZXTjBWdjN5WlhDRWVKeVpjc015TkJ3eGF1TG1jblh3ZHJmU2ZndkdGV294RC1LMDVhZUtUWWREVnExOVJkdHZKZ3AteUNrRkVXd2U2YzNLSjZyT05nazhPU2hfbGs?oc=5",
+      "published_at": "2026-10-24T21:34:07+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
       "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
       "published_at": "2026-10-25T00:00:00+00:00",
@@ -47,14 +55,6 @@
       "headline": "Starting Lineup 1995 Kenner NBA Orlando Magic Horace Grant Basketball Card - khorasantimes.com",
       "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5DY2FKZGVJM1owWFRIV21yWEdxVmxidVk0ckIxMkp1VnBId19oMW5nbERpRnNFeFR6SDMxb01pM18wYzA0NVc3cHhjQzVLUQ?oc=5",
       "published_at": "2026-10-24T17:32:34+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Rockets shake up starting lineup for showdown at Atlanta Hawks: Preview, Injuries & Starters - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONzJPYXlRcTh6dFNPWV9vWWs2VjJnT1Q4emJnem5vZEVaemJ2Q3o5dWZXRnZkUGFIQTRlTzBaREEyWlhHTmxUWnhpLUIzUnJmVEJyVjcwQWtzb1hBNkNqWXBtbnNhdGlpZHB1Y04zSk9TRFYxczNVRmNZeThrdFlMWVBQMzhyTnJPTWpzdTR3NFFMekdnVkNZVEloeXlGNzVpU0JrU0c0anBLU1lvN3gtdUpwSDE1NWZkYzk4UjNDRnlCc0dVdEw4VE9zYVU5alJVZjJR?oc=5",
-      "published_at": "2026-10-24T21:34:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -84,17 +84,17 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Zach Collins News: Expected to be in rotation Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmt4ckwzZWdZUEZ6a2UwNWlMeFdTc3RRVWFEMTZscHNxOXNUVk84OTdRUEdqQnkzSWx2VmVSYkdPQ3VzOEdjU2ZDT013aVk5elhld20wTVhCWnc1d21HMTlMQ1lyWE5ISmYwVTRSQXBpSFEzTXh0eEpJcXlLZ0VoRkFwM2xrQVJSRF9zLTZ6Nk9HYXBENnpCcW1QYTVRRnBXaUdjQ1pSdGxmZw?oc=5",
-      "published_at": "2026-10-24T03:29:14+00:00",
+      "headline": "Predicting 76ers' Starting Lineup on Saturday With LeBron James Out - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHZmcHZVSkkyUG5lR1RXQnBQRVZxMjVXZjRmdTY2Ym1zZFlqZUlMSGRMZ0Y3SUpEQ3ZlR0x6bnItc1ZGQ1hQMkZTSXJVMkJJRDRxejNIN0YxSHhpYi1aWDA4VU5zSl9uR2EtYmEwRVhUTnQ2VmdONy1mN1lINTIyVjhRQURLVmI0RjVCc0tkOFBDMmVUR2RDeUd6Mnh4QS1yQ01yeXhBWlQ?oc=5",
+      "published_at": "2026-10-24T19:46:28+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
-      "published_at": "2026-10-24T05:39:52+00:00",
+      "headline": "Zach Collins News: Expected to be in rotation Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYmt4ckwzZWdZUEZ6a2UwNWlMeFdTc3RRVWFEMTZscHNxOXNUVk84OTdRUEdqQnkzSWx2VmVSYkdPQ3VzOEdjU2ZDT013aVk5elhld20wTVhCWnc1d21HMTlMQ1lyWE5ISmYwVTRSQXBpSFEzTXh0eEpJcXlLZ0VoRkFwM2xrQVJSRF9zLTZ6Nk9HYXBENnpCcW1QYTVRRnBXaUdjQ1pSdGxmZw?oc=5",
+      "published_at": "2026-10-24T03:29:14+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -108,17 +108,17 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Predicting 76ers' Starting Lineup on Saturday With LeBron James Out - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHZmcHZVSkkyUG5lR1RXQnBQRVZxMjVXZjRmdTY2Ym1zZFlqZUlMSGRMZ0Y3SUpEQ3ZlR0x6bnItc1ZGQ1hQMkZTSXJVMkJJRDRxejNIN0YxSHhpYi1aWDA4VU5zSl9uR2EtYmEwRVhUTnQ2VmdONy1mN1lINTIyVjhRQURLVmI0RjVCc0tkOFBDMmVUR2RDeUd6Mnh4QS1yQ01yeXhBWlQ?oc=5",
-      "published_at": "2026-10-24T19:46:28+00:00",
+      "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTG5GdVhvTUhxZGhDZklNSlhwV1ZseFI2cEFRSDJiRm9MbGxjSjc5YmptWWlfM29BaElNZ2U3OUQxLXE4TGpQSFVsX2draU9TQ2NiRjJsTkFzR2dOUzNMVEU2aENxQy1reEs4eUhwSnYxZFZDbWZRc3FTcTNPMWFiVXRSRVF3QlhDNG9HLWt2SnRqTERT?oc=5",
+      "published_at": "2026-10-24T02:01:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Brandin Podziemski back in Warriors' starting lineup for game vs. Grizzlies - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTG5GdVhvTUhxZGhDZklNSlhwV1ZseFI2cEFRSDJiRm9MbGxjSjc5YmptWWlfM29BaElNZ2U3OUQxLXE4TGpQSFVsX2draU9TQ2NiRjJsTkFzR2dOUzNMVEU2aENxQy1reEs4eUhwSnYxZFZDbWZRc3FTcTNPMWFiVXRSRVF3QlhDNG9HLWt2SnRqTERT?oc=5",
-      "published_at": "2026-10-24T02:01:00+00:00",
+      "headline": "Kyrie Irving to be under minutes limit Friday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcVFuRGFUSTJmQVN3WGlKTnh6R3FPSHdoY3BFYjR0WWNQU3VTRXBab0FJX1MxbWJLUnU1UG50c3V2blRycHlwcnM1QzFBYWFCZlo4bDMyVlJfLTU1TEZ4MTRVMFc5d1c2NFR2cW9ON1UyWWpwQjhyc1VsX05yUXV3dlI1U1ZUSW9PZUFrTXh5TmFLR1NFNUk0cnpYRjBxUnhzNUR6VmlfNEUtZzI1b3ZlUkZwaw?oc=5",
+      "published_at": "2026-10-24T05:39:52+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -140,9 +140,9 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - New York Post",
-      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSDdrWU5NaFZBbHpHUlFmNXZTdlNRak1OSldPSG9Jc2ZMbXJ6anpnVUVHVFlRZzM1VXFGdjRmYnpSSVNBM0FLRk5iVjdfQ2hkTFFkMWdEZWl2NmUwcEZ0QjZQM1d1NkJEWW12Y3NhUWtUeWRrNTdVU2lteF9WNmNYVm5Ncy12UnpvRnFVM0hUUXlDLVFOY00yWmNlQjVXZFN6MHFNZFhzVE5lTGlEOG5V?oc=5",
-      "published_at": "2026-10-24T01:16:00+00:00",
+      "headline": "Suns Reveal Starting Lineup vs Warriors - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWDlpeTVSZy1TUmRtQV9hRzByRExONTU5dU9XSlBUN0VjcTlEV0tUdWNESWItYzFHbVc3dThxOWxvekVpakNNRlREWlJmdnZBNlcwU3g3ZVlhRVpWMXhfRERiRVBfZ3QtYlV4cjZIcVBTRFhKcEc0MXBORXM2VXJCNTFOQ1N3TW1KYk5jUGJSOXNCM2RsV3FPMVgyOHBCQQ?oc=5",
+      "published_at": "2026-10-25T01:31:40+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -151,6 +151,14 @@
       "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
       "published_at": "2026-10-24T23:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-24"
+    },
+    {
+      "headline": "Jalen Duren (hamstring) ruled out Sunday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeUdJSW9iSUEwaExEQ0d6c01pbk5hdFdhZFY1SGN3VDBTS01iMFJXaEN4czVVWk5rWEVRUnp3LXE1NVVyUmdrVTYyeTk4bUVqd0V3cGJSQzMycXRVOHZhNUFPTGxpSDBpYU8ydlBSMnZzMjFiR2ZwMlFBa3BPUTQyWlM0NTlKaFVvY0d6QzIxVdIBlAFBVV95cUxQR3dZVnZtaFVoNWlZZlVPT2c4d0FPQnU2MTJIS0pSaFkxVUNZUDl1VGlIdmRlZVNmVnpVSEVHTjlNVXZxMnRiT0MwYldoX3hPY0RwUHJvclFDbjA3OTBrYWIyckdTaEttcDUxOVZsOHZKWWUzU3h2YXJZa1lxR0tLeVFaamt5YWd2bHVfVjRZZzRuZXcw?oc=5",
+      "published_at": "2026-10-24T21:31:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
@@ -172,17 +180,17 @@
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - Oneida Dispatch",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbG9VMDdyeG9YTXBIcmdqczYxejFNZ3BFMjRrQi1QeWR4dmN0T3k0XzhBM1VseWhkd0RBSUNUcE9ITkJ4YXM1R1lsMDNFR3gzVDZzWnM5WWI5eG1fdnRFZkpNVko3NlNFMXZEclRWc2N1Mm5NcU9BRGtPcjBWQkg4aDU3Y1NzTTdITUJaNTNVTG9UNFVWVFZCaUI1RDBEZE0?oc=5",
-      "published_at": "2026-10-24T02:31:07+00:00",
+      "headline": "Tyler Bilodeau (shoulder) ruled out Saturday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNjdXODBkVXZMMGtYSTRjdjVNRjhWU3p5N0ZhTkpMVFpybmpmbFdWbGZDWjZ4MTZYUmVmb3QzOVh1dFJEbjBhZXBkWEtJOUVxdkFrNGVrYnpPRjJlRnVud1B1X3B3WHRnWHlwWU5MOS1TSG5pa2NISXZTWGc2NkZxLWZ1aWZNUmRBRlVhVHpicjZxTFBl0gGaAUFVX3lxTFBWRDdpWjBfUTRQYjVEcm1tMmttZlNGVHZlSzI4TUg0azhCNjN5RHZ3a1J5OW1BdDJjamNSMERHN29hdjhNRTFNa2J5WUFra0tlYjlqb1VOYVg5cFNFcTJKOEtaV0Y1NUpMdmFQUU54WlZ3OEZ1YmNHOHZvaFpsVjFPZXNyLWRHUnV5TnhvamYxYUlQSFFONEswdmc?oc=5",
+      "published_at": "2026-10-24T08:02:19+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
     },
     {
-      "headline": "Nets’ young players facing uphill battle for minutes in new-look rotation - AOL.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPXy1nX2pDa2VKM0p1SHdtR3czcWRVRHFkaENGbk4wRmFlZjg3LWJrV1pyX3A0YlB3NXRjYW1paEIwazN3b3JTWENzUHFTZlE2d1NfQm1sd0NoOUdKYzcwQm83TDY1NENMVVlxMHZ1SzJKcDJUQTU3T3k4Yzd6TktIcTRB?oc=5",
-      "published_at": "2026-10-24T01:16:00+00:00",
+      "headline": "Nets’ crowded rotation leaves three sophomores waiting as Jordi Fernández stays patient - Oneida Dispatch",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbG9VMDdyeG9YTXBIcmdqczYxejFNZ3BFMjRrQi1QeWR4dmN0T3k0XzhBM1VseWhkd0RBSUNUcE9ITkJ4YXM1R1lsMDNFR3gzVDZzWnM5WWI5eG1fdnRFZkpNVko3NlNFMXZEclRWc2N1Mm5NcU9BRGtPcjBWQkg4aDU3Y1NzTTdITUJaNTNVTG9UNFVWVFZCaUI1RDBEZE0?oc=5",
+      "published_at": "2026-10-24T02:31:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-24"
