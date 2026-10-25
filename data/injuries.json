@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T17:12:14.722514+00:00",
+  "updated_at": "2026-10-25T17:46:47.176161+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -20,7 +20,7 @@
     {
       "name": "Tyler Bilodeau",
       "team": "BKN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Mikel Brown Jr.",
@@ -298,22 +298,17 @@
       "status": "OUT"
     },
     {
-      "name": "LeBron James",
+      "name": "Tacko Fall",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Joel Embiid",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jabari Walker",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Tacko Fall",
+      "name": "Joel Embiid",
       "team": "PHI",
       "status": "OUT"
     },
