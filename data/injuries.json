@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T21:03:50.908799+00:00",
+  "updated_at": "2026-10-25T21:35:14.219038+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -28,12 +28,12 @@
       "status": "OUT"
     },
     {
-      "name": "Grant Williams",
+      "name": "Coby White",
       "team": "CHA",
       "status": "OUT"
     },
     {
-      "name": "Coby White",
+      "name": "Grant Williams",
       "team": "CHA",
       "status": "OUT"
     },
@@ -123,22 +123,12 @@
       "status": "OUT"
     },
     {
-      "name": "Brandin Podziemski",
+      "name": "Brandon Williams",
       "team": "GSW",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Al Horford",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Draymond Green",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Stephen Curry",
+      "name": "Charles Bassey",
       "team": "GSW",
       "status": "DAY-TO-DAY"
     },
@@ -260,7 +250,7 @@
     {
       "name": "Jose Alvarado",
       "team": "NYK",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Otega Oweh",
@@ -301,6 +291,11 @@
       "name": "Izaiyah Nelson",
       "team": "ORL",
       "status": "OUT"
+    },
+    {
+      "name": "VJ Edgecombe",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tacko Fall",
