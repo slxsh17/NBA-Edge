@@ -1,6 +1,6 @@
 {
   "date": "20261024",
-  "updated_at": "2026-10-24T21:04:10.079735-04:00",
+  "updated_at": "2026-10-24T21:54:28.099839-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -13,7 +13,7 @@
       "away": "Brooklyn Nets",
       "home": "Cleveland Cavaliers",
       "time": "2026-10-24T23:30Z",
-      "status": "Halftime"
+      "status": "In Progress"
     },
     {
       "away": "Milwaukee Bucks",
@@ -37,13 +37,13 @@
       "away": "Houston Rockets",
       "home": "Atlanta Hawks",
       "time": "2026-10-25T00:30Z",
-      "status": "In Progress"
+      "status": "Halftime"
     },
     {
       "away": "New Orleans Pelicans",
       "home": "Denver Nuggets",
       "time": "2026-10-25T01:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Golden State Warriors",
