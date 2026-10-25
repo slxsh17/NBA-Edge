@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-25T00:25:05.027036-04:00",
+  "updated_at": "2026-10-25T00:58:27.340667-04:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
-  "games_processed": 35,
+  "games_processed": 36,
   "errors": [],
   "players": [
     {
@@ -84,6 +84,16 @@
       "avg_fantasy_points": 48.0,
       "fantasy_points_per_minute": 1.517,
       "avg_points": 20.0
+    },
+    {
+      "id": "3136193",
+      "name": "Devin Booker",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 32.5,
+      "avg_fantasy_points": 47.8,
+      "fantasy_points_per_minute": 1.472,
+      "avg_points": 33.0
     },
     {
       "id": "4433134",
@@ -396,6 +406,16 @@
       "avg_points": 19.0
     },
     {
+      "id": "5175737",
+      "name": "Yaxel Lendeborg",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 34.0,
+      "avg_fantasy_points": 37.5,
+      "fantasy_points_per_minute": 1.103,
+      "avg_points": 18.7
+    },
+    {
       "id": "3136195",
       "name": "Karl-Anthony Towns",
       "team": "NY",
@@ -546,16 +566,6 @@
       "avg_points": 19.5
     },
     {
-      "id": "3136193",
-      "name": "Devin Booker",
-      "team": "PHX",
-      "games": 1,
-      "avg_minutes": 29.0,
-      "avg_fantasy_points": 34.8,
-      "fantasy_points_per_minute": 1.2,
-      "avg_points": 23.0
-    },
-    {
       "id": "4397002",
       "name": "Ayo Dosunmu",
       "team": "MIN",
@@ -594,16 +604,6 @@
       "avg_fantasy_points": 33.8,
       "fantasy_points_per_minute": 1.298,
       "avg_points": 11.0
-    },
-    {
-      "id": "5175737",
-      "name": "Yaxel Lendeborg",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 33.0,
-      "avg_fantasy_points": 33.6,
-      "fantasy_points_per_minute": 1.018,
-      "avg_points": 15.0
     },
     {
       "id": "4279888",
@@ -1276,6 +1276,16 @@
       "avg_points": 7.5
     },
     {
+      "id": "4066383",
+      "name": "Miles Bridges",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 31.0,
+      "avg_fantasy_points": 24.9,
+      "fantasy_points_per_minute": 0.802,
+      "avg_points": 12.0
+    },
+    {
       "id": "3135045",
       "name": "Grayson Allen",
       "team": "CHA",
@@ -1304,6 +1314,16 @@
       "avg_fantasy_points": 24.8,
       "fantasy_points_per_minute": 0.941,
       "avg_points": 5.7
+    },
+    {
+      "id": "4397040",
+      "name": "Brandon Williams",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 17.0,
+      "avg_fantasy_points": 24.8,
+      "fantasy_points_per_minute": 1.457,
+      "avg_points": 12.7
     },
     {
       "id": "4397424",
@@ -1386,6 +1406,16 @@
       "avg_points": 10.3
     },
     {
+      "id": "4397886",
+      "name": "Charles Bassey",
+      "team": "GS",
+      "games": 1,
+      "avg_minutes": 13.0,
+      "avg_fantasy_points": 23.4,
+      "fantasy_points_per_minute": 1.8,
+      "avg_points": 10.0
+    },
+    {
       "id": "4873138",
       "name": "Ace Bailey",
       "team": "UTAH",
@@ -1466,6 +1496,16 @@
       "avg_points": 15.7
     },
     {
+      "id": "4278585",
+      "name": "Collin Gillespie",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 24.5,
+      "avg_fantasy_points": 22.8,
+      "fantasy_points_per_minute": 0.929,
+      "avg_points": 5.5
+    },
+    {
       "id": "4395626",
       "name": "Tre Jones",
       "team": "CHI",
@@ -1474,6 +1514,16 @@
       "avg_fantasy_points": 22.7,
       "fantasy_points_per_minute": 1.238,
       "avg_points": 11.3
+    },
+    {
+      "id": "4066436",
+      "name": "De'Anthony Melton",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 22.7,
+      "avg_fantasy_points": 22.7,
+      "fantasy_points_per_minute": 1.001,
+      "avg_points": 11.7
     },
     {
       "id": "5160992",
@@ -1504,6 +1554,16 @@
       "avg_fantasy_points": 22.4,
       "fantasy_points_per_minute": 0.711,
       "avg_points": 9.5
+    },
+    {
+      "id": "5203685",
+      "name": "Khaman Maluach",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 22.5,
+      "avg_fantasy_points": 22.0,
+      "fantasy_points_per_minute": 0.978,
+      "avg_points": 5.5
     },
     {
       "id": "4431785",
@@ -1554,6 +1614,16 @@
       "avg_fantasy_points": 21.4,
       "fantasy_points_per_minute": 0.764,
       "avg_points": 7.0
+    },
+    {
+      "id": "4703396",
+      "name": "Graham Ike",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 16.7,
+      "avg_fantasy_points": 21.3,
+      "fantasy_points_per_minute": 1.276,
+      "avg_points": 10.0
     },
     {
       "id": "4277956",
@@ -1646,6 +1716,16 @@
       "avg_points": 8.0
     },
     {
+      "id": "3913174",
+      "name": "Luke Kennard",
+      "team": "PHX",
+      "games": 1,
+      "avg_minutes": 18.0,
+      "avg_fantasy_points": 20.3,
+      "fantasy_points_per_minute": 1.128,
+      "avg_points": 11.0
+    },
+    {
       "id": "4576060",
       "name": "Ryan Kalkbrenner",
       "team": "CHA",
@@ -1676,16 +1756,6 @@
       "avg_points": 7.5
     },
     {
-      "id": "4997536",
-      "name": "Gui Santos",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 22.5,
-      "avg_fantasy_points": 19.9,
-      "fantasy_points_per_minute": 0.884,
-      "avg_points": 8.5
-    },
-    {
       "id": "2991070",
       "name": "Jerami Grant",
       "team": "MEM",
@@ -1704,16 +1774,6 @@
       "avg_fantasy_points": 19.6,
       "fantasy_points_per_minute": 0.836,
       "avg_points": 8.0
-    },
-    {
-      "id": "4397040",
-      "name": "Brandon Williams",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 13.5,
-      "avg_fantasy_points": 19.6,
-      "fantasy_points_per_minute": 1.452,
-      "avg_points": 9.0
     },
     {
       "id": "3133628",
@@ -1764,6 +1824,16 @@
       "avg_fantasy_points": 19.2,
       "fantasy_points_per_minute": 0.888,
       "avg_points": 8.3
+    },
+    {
+      "id": "4278402",
+      "name": "Jordan Goodwin",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 21.0,
+      "avg_fantasy_points": 19.1,
+      "fantasy_points_per_minute": 0.91,
+      "avg_points": 6.0
     },
     {
       "id": "4683692",
@@ -1826,6 +1896,16 @@
       "avg_points": 8.3
     },
     {
+      "id": "4997536",
+      "name": "Gui Santos",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 22.7,
+      "avg_fantasy_points": 18.4,
+      "fantasy_points_per_minute": 0.81,
+      "avg_points": 8.0
+    },
+    {
       "id": "5238230",
       "name": "Tre Johnson",
       "team": "WSH",
@@ -1856,24 +1936,14 @@
       "avg_points": 8.5
     },
     {
-      "id": "4437244",
-      "name": "Jalen Green",
+      "id": "3155526",
+      "name": "Dillon Brooks",
       "team": "PHX",
-      "games": 1,
-      "avg_minutes": 25.0,
+      "games": 2,
+      "avg_minutes": 30.5,
       "avg_fantasy_points": 17.9,
-      "fantasy_points_per_minute": 0.716,
-      "avg_points": 10.0
-    },
-    {
-      "id": "4066383",
-      "name": "Miles Bridges",
-      "team": "PHX",
-      "games": 1,
-      "avg_minutes": 29.0,
-      "avg_fantasy_points": 17.8,
-      "fantasy_points_per_minute": 0.614,
-      "avg_points": 8.0
+      "fantasy_points_per_minute": 0.585,
+      "avg_points": 12.5
     },
     {
       "id": "2596112",
@@ -1904,16 +1974,6 @@
       "avg_fantasy_points": 17.4,
       "fantasy_points_per_minute": 0.757,
       "avg_points": 6.0
-    },
-    {
-      "id": "4703396",
-      "name": "Graham Ike",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 12.0,
-      "avg_fantasy_points": 17.4,
-      "fantasy_points_per_minute": 1.45,
-      "avg_points": 9.0
     },
     {
       "id": "4592691",
@@ -2116,6 +2176,16 @@
       "avg_points": 6.0
     },
     {
+      "id": "4437244",
+      "name": "Jalen Green",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 25.5,
+      "avg_fantasy_points": 15.4,
+      "fantasy_points_per_minute": 0.604,
+      "avg_points": 11.0
+    },
+    {
       "id": "5106258",
       "name": "Gradey Dick",
       "team": "LAC",
@@ -2174,16 +2244,6 @@
       "avg_fantasy_points": 14.8,
       "fantasy_points_per_minute": 0.567,
       "avg_points": 12.5
-    },
-    {
-      "id": "4433149",
-      "name": "LJ Cryer",
-      "team": "GS",
-      "games": 1,
-      "avg_minutes": 9.0,
-      "avg_fantasy_points": 14.7,
-      "fantasy_points_per_minute": 1.633,
-      "avg_points": 9.0
     },
     {
       "id": "4065804",
@@ -2286,6 +2346,16 @@
       "avg_points": 4.0
     },
     {
+      "id": "4897262",
+      "name": "Will Richard",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 18.0,
+      "avg_fantasy_points": 13.7,
+      "fantasy_points_per_minute": 0.759,
+      "avg_points": 6.3
+    },
+    {
       "id": "3133603",
       "name": "Kelly Oubre Jr.",
       "team": "IND",
@@ -2346,16 +2416,6 @@
       "avg_points": 9.5
     },
     {
-      "id": "2990969",
-      "name": "Georges Niang",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 16.5,
-      "avg_fantasy_points": 13.0,
-      "fantasy_points_per_minute": 0.788,
-      "avg_points": 5.5
-    },
-    {
       "id": "5149077",
       "name": "Kingston Flemings",
       "team": "ATL",
@@ -2384,36 +2444,6 @@
       "avg_fantasy_points": 12.8,
       "fantasy_points_per_minute": 0.879,
       "avg_points": 4.5
-    },
-    {
-      "id": "4278402",
-      "name": "Jordan Goodwin",
-      "team": "PHX",
-      "games": 1,
-      "avg_minutes": 22.0,
-      "avg_fantasy_points": 12.8,
-      "fantasy_points_per_minute": 0.582,
-      "avg_points": 3.0
-    },
-    {
-      "id": "3155526",
-      "name": "Dillon Brooks",
-      "team": "PHX",
-      "games": 1,
-      "avg_minutes": 27.0,
-      "avg_fantasy_points": 12.8,
-      "fantasy_points_per_minute": 0.474,
-      "avg_points": 10.0
-    },
-    {
-      "id": "5203685",
-      "name": "Khaman Maluach",
-      "team": "PHX",
-      "games": 1,
-      "avg_minutes": 17.0,
-      "avg_fantasy_points": 12.7,
-      "fantasy_points_per_minute": 0.747,
-      "avg_points": 2.0
     },
     {
       "id": "4431893",
@@ -2456,6 +2486,16 @@
       "avg_points": 1.5
     },
     {
+      "id": "4888725",
+      "name": "Ryan Dunn",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 13.5,
+      "avg_fantasy_points": 12.2,
+      "fantasy_points_per_minute": 0.904,
+      "avg_points": 4.0
+    },
+    {
       "id": "4433083",
       "name": "Cam Spencer",
       "team": "MEM",
@@ -2464,16 +2504,6 @@
       "avg_fantasy_points": 12.2,
       "fantasy_points_per_minute": 0.742,
       "avg_points": 7.0
-    },
-    {
-      "id": "4278585",
-      "name": "Collin Gillespie",
-      "team": "PHX",
-      "games": 1,
-      "avg_minutes": 21.0,
-      "avg_fantasy_points": 12.2,
-      "fantasy_points_per_minute": 0.581,
-      "avg_points": 0.0
     },
     {
       "id": "2990984",
@@ -2526,16 +2556,6 @@
       "avg_points": 5.0
     },
     {
-      "id": "4066436",
-      "name": "De'Anthony Melton",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 20.5,
-      "avg_fantasy_points": 11.8,
-      "fantasy_points_per_minute": 0.576,
-      "avg_points": 5.0
-    },
-    {
       "id": "5174983",
       "name": "Aday Mara",
       "team": "OKC",
@@ -2544,6 +2564,16 @@
       "avg_fantasy_points": 11.8,
       "fantasy_points_per_minute": 0.94,
       "avg_points": 4.5
+    },
+    {
+      "id": "2990969",
+      "name": "Georges Niang",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 18.7,
+      "avg_fantasy_points": 11.6,
+      "fantasy_points_per_minute": 0.621,
+      "avg_points": 5.0
     },
     {
       "id": "2528210",
@@ -2646,16 +2676,6 @@
       "avg_points": 3.0
     },
     {
-      "id": "4897262",
-      "name": "Will Richard",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 11.5,
-      "avg_fantasy_points": 10.8,
-      "fantasy_points_per_minute": 0.935,
-      "avg_points": 4.0
-    },
-    {
       "id": "4997538",
       "name": "Karlo Matkovic",
       "team": "NO",
@@ -2726,6 +2746,16 @@
       "avg_points": 6.5
     },
     {
+      "id": "4433149",
+      "name": "LJ Cryer",
+      "team": "GS",
+      "games": 2,
+      "avg_minutes": 11.5,
+      "avg_fantasy_points": 9.7,
+      "fantasy_points_per_minute": 0.843,
+      "avg_points": 6.0
+    },
+    {
       "id": "4997526",
       "name": "Ousmane Dieng",
       "team": "MIL",
@@ -2774,16 +2804,6 @@
       "avg_fantasy_points": 8.9,
       "fantasy_points_per_minute": 0.809,
       "avg_points": 5.0
-    },
-    {
-      "id": "3134903",
-      "name": "Gary Payton II",
-      "team": "GS",
-      "games": 2,
-      "avg_minutes": 14.5,
-      "avg_fantasy_points": 8.8,
-      "fantasy_points_per_minute": 0.607,
-      "avg_points": 8.5
     },
     {
       "id": "5106058",
@@ -3016,6 +3036,16 @@
       "avg_points": 2.5
     },
     {
+      "id": "3134903",
+      "name": "Gary Payton II",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 15.3,
+      "avg_fantasy_points": 6.9,
+      "fantasy_points_per_minute": 0.452,
+      "avg_points": 6.3
+    },
+    {
       "id": "5105637",
       "name": "Adem Bona",
       "team": "PHI",
@@ -3166,16 +3196,6 @@
       "avg_points": 4.0
     },
     {
-      "id": "4888725",
-      "name": "Ryan Dunn",
-      "team": "PHX",
-      "games": 1,
-      "avg_minutes": 14.0,
-      "avg_fantasy_points": 5.4,
-      "fantasy_points_per_minute": 0.386,
-      "avg_points": 3.0
-    },
-    {
       "id": "5106040",
       "name": "Tobi Lawal",
       "team": "DAL",
@@ -3206,16 +3226,6 @@
       "avg_points": 4.0
     },
     {
-      "id": "4066268",
-      "name": "Duop Reath",
-      "team": "PHX",
-      "games": 1,
-      "avg_minutes": 9.0,
-      "avg_fantasy_points": 5.2,
-      "fantasy_points_per_minute": 0.578,
-      "avg_points": 5.0
-    },
-    {
       "id": "4431684",
       "name": "Trayce Jackson-Davis",
       "team": "TOR",
@@ -3244,6 +3254,16 @@
       "avg_fantasy_points": 4.8,
       "fantasy_points_per_minute": 1.617,
       "avg_points": 3.5
+    },
+    {
+      "id": "4897449",
+      "name": "Malevy Leons",
+      "team": "GS",
+      "games": 2,
+      "avg_minutes": 6.5,
+      "avg_fantasy_points": 4.6,
+      "fantasy_points_per_minute": 0.708,
+      "avg_points": 1.0
     },
     {
       "id": "5106262",
@@ -3304,16 +3324,6 @@
       "avg_fantasy_points": 4.2,
       "fantasy_points_per_minute": 0.525,
       "avg_points": 3.0
-    },
-    {
-      "id": "4897449",
-      "name": "Malevy Leons",
-      "team": "GS",
-      "games": 1,
-      "avg_minutes": 9.0,
-      "avg_fantasy_points": 4.2,
-      "fantasy_points_per_minute": 0.467,
-      "avg_points": 0.0
     },
     {
       "id": "4433076",
@@ -3464,6 +3474,16 @@
       "avg_fantasy_points": 2.7,
       "fantasy_points_per_minute": 1.35,
       "avg_points": 0.0
+    },
+    {
+      "id": "4066268",
+      "name": "Duop Reath",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 6.0,
+      "avg_fantasy_points": 2.6,
+      "fantasy_points_per_minute": 0.433,
+      "avg_points": 2.5
     },
     {
       "id": "5107968",
@@ -3913,6 +3933,21 @@
       "fantasy_points": 26.8
     },
     {
+      "id": "5175737",
+      "name": "Yaxel Lendeborg",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 36.0,
+      "pts": 26.0,
+      "reb": 9.0,
+      "ast": 5.0,
+      "stl": 0.0,
+      "blk": 1.0,
+      "tov": 2.0,
+      "fantasy_points": 45.3
+    },
+    {
       "id": "5144126",
       "name": "Will Riley",
       "team": "WSH",
@@ -3926,6 +3961,21 @@
       "blk": 0.0,
       "tov": 0.0,
       "fantasy_points": 2.0
+    },
+    {
+      "id": "4897262",
+      "name": "Will Richard",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 31.0,
+      "pts": 11.0,
+      "reb": 0.0,
+      "ast": 1.0,
+      "stl": 2.0,
+      "blk": 1.0,
+      "tov": 2.0,
+      "fantasy_points": 19.5
     },
     {
       "id": "4896372",
@@ -4288,6 +4338,21 @@
       "fantasy_points": 20.0
     },
     {
+      "id": "4888725",
+      "name": "Ryan Dunn",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 13.0,
+      "pts": 5.0,
+      "reb": 5.0,
+      "ast": 0.0,
+      "stl": 1.0,
+      "blk": 2.0,
+      "tov": 1.0,
+      "fantasy_points": 19.0
+    },
+    {
       "id": "5107157",
       "name": "Ryan Conwell",
       "team": "MIA",
@@ -4603,6 +4668,21 @@
       "fantasy_points": 9.2
     },
     {
+      "id": "4066383",
+      "name": "Miles Bridges",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 33.0,
+      "pts": 16.0,
+      "reb": 7.0,
+      "ast": 3.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 31.9
+    },
+    {
       "id": "5101761",
       "name": "Mikel Brown Jr.",
       "team": "BKN",
@@ -4708,6 +4788,21 @@
       "fantasy_points": 21.1
     },
     {
+      "id": "4897449",
+      "name": "Malevy Leons",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 4.0,
+      "pts": 2.0,
+      "reb": 0.0,
+      "ast": 0.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 5.0
+    },
+    {
       "id": "3064560",
       "name": "Luke Kornet",
       "team": "SA",
@@ -4721,6 +4816,21 @@
       "blk": 0.0,
       "tov": 2.0,
       "fantasy_points": 4.3
+    },
+    {
+      "id": "3913174",
+      "name": "Luke Kennard",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 18.0,
+      "pts": 11.0,
+      "reb": 4.0,
+      "ast": 1.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 20.3
     },
     {
       "id": "4397020",
@@ -4766,6 +4876,21 @@
       "blk": 0.0,
       "tov": 0.0,
       "fantasy_points": 0.0
+    },
+    {
+      "id": "4433149",
+      "name": "LJ Cryer",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 14.0,
+      "pts": 3.0,
+      "reb": 1.0,
+      "ast": 1.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 4.7
     },
     {
       "id": "5174563",
@@ -4826,6 +4951,21 @@
       "blk": 0.0,
       "tov": 2.0,
       "fantasy_points": 4.2
+    },
+    {
+      "id": "5203685",
+      "name": "Khaman Maluach",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 28.0,
+      "pts": 9.0,
+      "reb": 9.0,
+      "ast": 3.0,
+      "stl": 1.0,
+      "blk": 2.0,
+      "tov": 2.0,
+      "fantasy_points": 31.3
     },
     {
       "id": "3202",
@@ -5053,6 +5193,21 @@
       "fantasy_points": 1.2
     },
     {
+      "id": "4278402",
+      "name": "Jordan Goodwin",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 20.0,
+      "pts": 9.0,
+      "reb": 2.0,
+      "ast": 4.0,
+      "stl": 3.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 25.4
+    },
+    {
       "id": "3059318",
       "name": "Joel Embiid",
       "team": "PHI",
@@ -5218,6 +5373,21 @@
       "fantasy_points": 64.8
     },
     {
+      "id": "4437244",
+      "name": "Jalen Green",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 26.0,
+      "pts": 12.0,
+      "reb": 2.0,
+      "ast": 1.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 3.0,
+      "fantasy_points": 12.9
+    },
+    {
       "id": "4432848",
       "name": "Jaime Jaquez Jr.",
       "team": "MIL",
@@ -5353,6 +5523,21 @@
       "fantasy_points": 0.0
     },
     {
+      "id": "4997536",
+      "name": "Gui Santos",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 23.0,
+      "pts": 7.0,
+      "reb": 4.0,
+      "ast": 3.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 15.3
+    },
+    {
       "id": "3135045",
       "name": "Grayson Allen",
       "team": "CHA",
@@ -5368,6 +5553,21 @@
       "fantasy_points": 32.1
     },
     {
+      "id": "4703396",
+      "name": "Graham Ike",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 26.0,
+      "pts": 12.0,
+      "reb": 10.0,
+      "ast": 2.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 29.0
+    },
+    {
       "id": "3032977",
       "name": "Giannis Antetokounmpo",
       "team": "MIA",
@@ -5381,6 +5581,36 @@
       "blk": 0.0,
       "tov": 3.0,
       "fantasy_points": 25.7
+    },
+    {
+      "id": "2990969",
+      "name": "Georges Niang",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 23.0,
+      "pts": 4.0,
+      "reb": 4.0,
+      "ast": 2.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 3.0,
+      "fantasy_points": 8.8
+    },
+    {
+      "id": "3134903",
+      "name": "Gary Payton II",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 17.0,
+      "pts": 2.0,
+      "reb": 1.0,
+      "ast": 0.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 3.2
     },
     {
       "id": "4432158",
@@ -5443,6 +5673,21 @@
       "fantasy_points": 35.0
     },
     {
+      "id": "4066268",
+      "name": "Duop Reath",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 3.0,
+      "pts": 0.0,
+      "reb": 0.0,
+      "ast": 0.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 0.0
+    },
+    {
       "id": "3908809",
       "name": "Donovan Mitchell",
       "team": "CLE",
@@ -5458,6 +5703,21 @@
       "fantasy_points": 36.0
     },
     {
+      "id": "3155526",
+      "name": "Dillon Brooks",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 34.0,
+      "pts": 15.0,
+      "reb": 2.0,
+      "ast": 5.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 2.0,
+      "fantasy_points": 22.9
+    },
+    {
       "id": "4395630",
       "name": "Devin Vassell",
       "team": "SA",
@@ -5471,6 +5731,21 @@
       "blk": 0.0,
       "tov": 0.0,
       "fantasy_points": 30.8
+    },
+    {
+      "id": "3136193",
+      "name": "Devin Booker",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 36.0,
+      "pts": 43.0,
+      "reb": 7.0,
+      "ast": 7.0,
+      "stl": 0.0,
+      "blk": 1.0,
+      "tov": 4.0,
+      "fantasy_points": 60.9
     },
     {
       "id": "4869780",
@@ -5578,6 +5853,21 @@
       "fantasy_points": 25.8
     },
     {
+      "id": "4066436",
+      "name": "De'Anthony Melton",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 27.0,
+      "pts": 25.0,
+      "reb": 5.0,
+      "ast": 5.0,
+      "stl": 3.0,
+      "blk": 0.0,
+      "tov": 3.0,
+      "fantasy_points": 44.5
+    },
+    {
       "id": "4066259",
       "name": "De'Aaron Fox",
       "team": "SA",
@@ -5653,6 +5943,21 @@
       "fantasy_points": 6.7
     },
     {
+      "id": "4278585",
+      "name": "Collin Gillespie",
+      "team": "PHX",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 28.0,
+      "pts": 11.0,
+      "reb": 4.0,
+      "ast": 9.0,
+      "stl": 2.0,
+      "blk": 0.0,
+      "tov": 2.0,
+      "fantasy_points": 33.3
+    },
+    {
       "id": "3102529",
       "name": "Clint Capela",
       "team": "HOU",
@@ -5696,6 +6001,21 @@
       "blk": 0.0,
       "tov": 1.0,
       "fantasy_points": 0.2
+    },
+    {
+      "id": "4397886",
+      "name": "Charles Bassey",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 13.0,
+      "pts": 10.0,
+      "reb": 7.0,
+      "ast": 0.0,
+      "stl": 0.0,
+      "blk": 2.0,
+      "tov": 1.0,
+      "fantasy_points": 23.4
     },
     {
       "id": "5174655",
@@ -5861,6 +6181,21 @@
       "blk": 0.0,
       "tov": 0.0,
       "fantasy_points": 19.0
+    },
+    {
+      "id": "4397040",
+      "name": "Brandon Williams",
+      "team": "GS",
+      "date": "20261024",
+      "event_id": "401909860",
+      "minutes": 24.0,
+      "pts": 20.0,
+      "reb": 3.0,
+      "ast": 5.0,
+      "stl": 2.0,
+      "blk": 0.0,
+      "tov": 2.0,
+      "fantasy_points": 35.1
     },
     {
       "id": "4433287",
