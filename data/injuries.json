@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T23:00:28.648309+00:00",
+  "updated_at": "2026-10-25T23:31:35.801610+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -285,7 +285,7 @@
     {
       "name": "VJ Edgecombe",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Tacko Fall",
@@ -340,7 +340,7 @@
     {
       "name": "Keegan Murray",
       "team": "SAC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Ben Simmons",
