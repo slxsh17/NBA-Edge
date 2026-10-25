@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T20:05:23.245985+00:00",
+  "updated_at": "2026-10-25T20:34:06.702759+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -63,12 +63,17 @@
       "status": "OUT"
     },
     {
-      "name": "Kyrie Irving",
+      "name": "Caleb Martin",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Caleb Martin",
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Naji Marshall",
       "team": "DAL",
       "status": "OUT"
     },
@@ -79,11 +84,6 @@
     },
     {
       "name": "Santi Aldama",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Cooper Flagg",
       "team": "DAL",
       "status": "OUT"
     },
@@ -231,6 +231,11 @@
       "name": "Cameron Carr",
       "team": "LAL",
       "status": "OUT"
+    },
+    {
+      "name": "Karim Lopez",
+      "team": "MEM",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cedric Coward",
