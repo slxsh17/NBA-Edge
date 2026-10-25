@@ -1,15 +1,23 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T23:10:55.205527+00:00",
+  "checked_at": "2026-10-25T23:45:28.468857+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
     {
-      "headline": "Suns’ point guard rotation warrants patience after two games - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVm5fcVgxclc1R21EdFhCOUpnYmtyTHR6SlhubEJCbjBQcEdEVjVkNm9WakpGdFRzSy05c3o2TVZreTdfR2ZYU054SWtTSkg3UlU1Mk5PU2FYMWtDM3AzNk83SkxaTUdjaFJ6SVY1MnBZenp5Vzg4UFN1NllUS05vOE56azNpZ3ZIVHpF?oc=5",
-      "published_at": "2026-10-25T18:00:00+00:00",
+      "headline": "Has Sharp Surpassed Clifford in Kings’ Rotation? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOUpaSHhaTUdrd0FXYXcwNEtGM1pFT2Z3QmFiQjBhcUdIV0FpNm1ka3pGQ3JOaERwMTEwTkQtbE91bU9pR013OVFfRkxUZlNvb3ZONE5INm14SUlSUzlPNl9DcWNGcHYzNGdyQ0hjSl82QmJxN1lHb3B2NUx1b3lheGZlS1pJMEpvZDFCck1sLTYtQQ?oc=5",
+      "published_at": "2026-10-25T22:36:48+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Paul Reed News: Enters starting lineup - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbU5MRUQwR0J3cGRrZEpYeXBfUXZtaUtiaGpWdkExT3R3b0RWUHJ4Q2pkclFnVkVsN21rUTM5T1h0MHd1U1hGUlV6QjdHSVNEeVFMNi13ZEJMRVVueFlmQWxkSGRoblpvTnpJcnVNcVAwMEJrc0JsUTEzLWRSb1pQbU1pSEdrdEhzVG1KNGF0dEd6VnRI?oc=5",
+      "published_at": "2026-10-25T23:28:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -26,6 +34,14 @@
       "headline": "Los Angeles Lakers Big Man Named ‘Glaring Hole’ in Current Rotation - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNXduTXJyN1ZpWm9JenNpQkxzUEhQQjRWXzAzUGtiZkFPRVd3eW9aaTVxRV8tRmVlTDlqY3JZSkpVVy1LbzYzT0k4MDV3ZUhlX2h5SVYyUWE3enlLYWpacTdGZFNNNzNEdF9oTHg2QmZvdlJoS3dtejZBUHlNenpfUkJndHFyZk5KTHNlY184emdxb1BJTlE?oc=5",
       "published_at": "2026-10-25T19:08:14+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Suns’ point guard rotation warrants patience after two games - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVm5fcVgxclc1R21EdFhCOUpnYmtyTHR6SlhubEJCbjBQcEdEVjVkNm9WakpGdFRzSy05c3o2TVZreTdfR2ZYU054SWtTSkg3UlU1Mk5PU2FYMWtDM3AzNk83SkxaTUdjaFJ6SVY1MnBZenp5Vzg4UFN1NllUS05vOE56azNpZ3ZIVHpF?oc=5",
+      "published_at": "2026-10-25T18:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -111,25 +127,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
-      "published_at": "2026-10-25T00:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
       "headline": "Nuggets Announce New Starting Lineup vs. Pelicans Due to Injury - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZjVwZ0xVS0RNalJFSDlZTmlxdjFPanhvU3ZKdm5jOGRyZzNtWC1TS2JFMXFlb1IwbkVqOU9iTXZyTm5kZTFqbm94TmN0QWFDUUdPcm0tUTFXbmp4OWF2elBCa1ZBdzhIT3VDdVF1WmJ4SmRfTHZqQTNmeTcyR1ZCVnpFNXNzYWU2a0ROVmZZX2hvbFU2dUNyaTYxMDY2eWM?oc=5",
       "published_at": "2026-10-25T00:59:32+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
-      "headline": "Mavericks Make 2 Starting Lineup Changes With Kyrie Irving, Cooper Flagg Out vs. Spurs - Yardbarker",
-      "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcXhGemx0eW5zT01zYjJJOUMzWEIySVU3c3RFTHZ4WU5zeHVSdURuc1lLWXhzYmxfdWpqMnhxN2dVdlpWMmN3emI2c0VrZ1JYS0VKWG9TM2p2SmE4S2RiNHA2NjFiUGd6cE93UGNwQWQyM1JiaHBxa1RrNkVFbW54azdzSHc2YVpQLXNHSFQ0cXNwd3d2bV9Ld1VubHk4aVYtRWZjejVPUmE1SDhuNjJHblFOMURFR191X2QtaDVPUm02STV4WkNMeTZRVnotWW8zUVBZeFR0YlFQUQ?oc=5",
-      "published_at": "2026-10-25T00:35:50+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -151,17 +151,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Has Sharp Surpassed Clifford in Kings’ Rotation? - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUlRZYkVtXzVyWWNjeGNaOWJMamtReEhLZndBdHh0eHMwZ2E1ZTUtQkUwNjE5NUVIbVB2VHlsMXVOTDNaWGROVUJWdEZiZVNmSkdqT1E5cVpFNkVSWFFtMzdPRko5MlN4UThJdWFVSzFRc0xQa2thX2tNVTNBazVwVk81V3BHTDBwamVtQktibmE3STRXMW9udQ?oc=5",
-      "published_at": "2026-10-25T22:48:11+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
-      "headline": "Boston Red Sox Roster: A Way Too Early Look At 2027 Starting Rotation - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8zVmM0QWJrUG51Y2d2QlJwbzRua05vRXJEOVUyR3luak03ZXQxZnJWQzdkTmVxa2JHSWdoQXQwcFZFSFZNSDBiU3RPcXZaOERXMEZvcGR6TTRDU2dEUFN5SDRvczhIX2dwR24zdzBkYkZ4VUd2Q1o4WHM5bE4?oc=5",
-      "published_at": "2026-10-24T23:39:17+00:00",
+      "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
+      "published_at": "2026-10-25T00:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -170,14 +162,6 @@
       "headline": "NASCAR Predictions for YellaWood 500, Starting Lineup at Talladega – 10/25/26 - PrizePicks",
       "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlFFLVdWRHZwZHg1MG8tZ01jV2hCejF0VnpSc0NqV2xYZVZzbXhXSl9CMzl5akJBMEtrQUMtT2k1dTlBajFKR2xlWjhWV1RDMmVRWC1Wc1BqaWw5Q3E1ckJLTi1pTkZnV1FnQU1yMS1PM3lnWmY3ODl2TzlSOE1jNFM4MVR5OHluWkhJVENXSy1SV25PLXU1VnVOLU1SU1RHX3RzWTNMQU1CV0lUc2dHNUlMVWdwaXd2aDQ5Wg?oc=5",
       "published_at": "2026-10-25T13:39:03+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
-      "headline": "Chelsea boss Xabi Alonso confirms Mike Penders will start against Liverpool despite Tottenham nightmare - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdWYxdHdTdTBJTTV5cmM5bF9Sd3ZhX2d1UGFYUnVNZktlaHNuOXJ2aEVGT0lIcEp0dVB5dnd5LXFWcU0tT3NEdjZmaEltQ3Q3ZXBUdC1fZjN4aktRdW1zbFlBdVJCbDhNUmk0Tk5NRUFmS1lFX0gtQWt5VzN0TndoODhGd2MybWdW?oc=5",
-      "published_at": "2026-10-25T07:47:21+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
