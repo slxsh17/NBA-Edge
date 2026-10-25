@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T08:15:04.008843-04:00",
+  "updated_at": "2026-10-25T09:03:37.627765-04:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 36,
@@ -196,6 +196,16 @@
       "avg_points": 23.0
     },
     {
+      "id": "3064514",
+      "name": "Julius Randle",
+      "team": "BKN",
+      "games": 2,
+      "avg_minutes": 36.5,
+      "avg_fantasy_points": 42.9,
+      "fantasy_points_per_minute": 1.175,
+      "avg_points": 28.0
+    },
+    {
       "id": "4066457",
       "name": "Austin Reaves",
       "team": "LAL",
@@ -234,16 +244,6 @@
       "avg_fantasy_points": 42.5,
       "fantasy_points_per_minute": 1.27,
       "avg_points": 24.5
-    },
-    {
-      "id": "3064514",
-      "name": "Julius Randle",
-      "team": "BKN",
-      "games": 2,
-      "avg_minutes": 36.5,
-      "avg_fantasy_points": 42.4,
-      "fantasy_points_per_minute": 1.162,
-      "avg_points": 28.0
     },
     {
       "id": "4277905",
@@ -456,6 +456,16 @@
       "avg_points": 24.0
     },
     {
+      "id": "4277847",
+      "name": "Wendell Carter Jr.",
+      "team": "ORL",
+      "games": 2,
+      "avg_minutes": 30.0,
+      "avg_fantasy_points": 36.3,
+      "fantasy_points_per_minute": 1.212,
+      "avg_points": 21.0
+    },
+    {
       "id": "4395725",
       "name": "Tyler Herro",
       "team": "MIL",
@@ -544,16 +554,6 @@
       "avg_fantasy_points": 34.9,
       "fantasy_points_per_minute": 1.102,
       "avg_points": 20.0
-    },
-    {
-      "id": "4277847",
-      "name": "Wendell Carter Jr.",
-      "team": "ORL",
-      "games": 2,
-      "avg_minutes": 30.0,
-      "avg_fantasy_points": 34.8,
-      "fantasy_points_per_minute": 1.162,
-      "avg_points": 21.0
     },
     {
       "id": "3448",
@@ -766,6 +766,16 @@
       "avg_points": 23.5
     },
     {
+      "id": "4432639",
+      "name": "Jabari Smith Jr.",
+      "team": "HOU",
+      "games": 3,
+      "avg_minutes": 34.3,
+      "avg_fantasy_points": 31.5,
+      "fantasy_points_per_minute": 0.917,
+      "avg_points": 17.0
+    },
+    {
       "id": "4066336",
       "name": "Lauri Markkanen",
       "team": "UTAH",
@@ -814,16 +824,6 @@
       "avg_fantasy_points": 30.8,
       "fantasy_points_per_minute": 1.577,
       "avg_points": 9.5
-    },
-    {
-      "id": "4432639",
-      "name": "Jabari Smith Jr.",
-      "team": "HOU",
-      "games": 3,
-      "avg_minutes": 34.3,
-      "avg_fantasy_points": 30.5,
-      "fantasy_points_per_minute": 0.888,
-      "avg_points": 17.0
     },
     {
       "id": "4869780",
@@ -931,8 +931,8 @@
       "team": "CHA",
       "games": 3,
       "avg_minutes": 31.7,
-      "avg_fantasy_points": 28.6,
-      "fantasy_points_per_minute": 0.904,
+      "avg_fantasy_points": 28.7,
+      "fantasy_points_per_minute": 0.906,
       "avg_points": 19.3
     },
     {
@@ -1276,16 +1276,6 @@
       "avg_points": 7.5
     },
     {
-      "id": "4066383",
-      "name": "Miles Bridges",
-      "team": "PHX",
-      "games": 2,
-      "avg_minutes": 31.0,
-      "avg_fantasy_points": 24.9,
-      "fantasy_points_per_minute": 0.802,
-      "avg_points": 12.0
-    },
-    {
       "id": "3135045",
       "name": "Grayson Allen",
       "team": "CHA",
@@ -1404,6 +1394,16 @@
       "avg_fantasy_points": 23.8,
       "fantasy_points_per_minute": 0.979,
       "avg_points": 10.3
+    },
+    {
+      "id": "4066383",
+      "name": "Miles Bridges",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 31.0,
+      "avg_fantasy_points": 23.4,
+      "fantasy_points_per_minute": 0.753,
+      "avg_points": 12.0
     },
     {
       "id": "4397886",
@@ -2066,6 +2066,16 @@
       "avg_points": 8.0
     },
     {
+      "id": "4437244",
+      "name": "Jalen Green",
+      "team": "PHX",
+      "games": 2,
+      "avg_minutes": 25.5,
+      "avg_fantasy_points": 16.9,
+      "fantasy_points_per_minute": 0.663,
+      "avg_points": 11.0
+    },
+    {
       "id": "4222252",
       "name": "Isaiah Hartenstein",
       "team": "OKC",
@@ -2174,16 +2184,6 @@
       "avg_fantasy_points": 15.4,
       "fantasy_points_per_minute": 0.687,
       "avg_points": 6.0
-    },
-    {
-      "id": "4437244",
-      "name": "Jalen Green",
-      "team": "PHX",
-      "games": 2,
-      "avg_minutes": 25.5,
-      "avg_fantasy_points": 15.4,
-      "fantasy_points_per_minute": 0.604,
-      "avg_points": 11.0
     },
     {
       "id": "5106258",
@@ -4677,10 +4677,10 @@
       "pts": 16.0,
       "reb": 7.0,
       "ast": 3.0,
-      "stl": 1.0,
+      "stl": 0.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 31.9
+      "fantasy_points": 28.9
     },
     {
       "id": "5101761",
@@ -5114,8 +5114,8 @@
       "ast": 5.0,
       "stl": 0.0,
       "blk": 0.0,
-      "tov": 5.0,
-      "fantasy_points": 32.7
+      "tov": 4.0,
+      "fantasy_points": 33.7
     },
     {
       "id": "4592479",
@@ -5382,10 +5382,10 @@
       "pts": 12.0,
       "reb": 2.0,
       "ast": 1.0,
-      "stl": 0.0,
+      "stl": 1.0,
       "blk": 0.0,
       "tov": 3.0,
-      "fantasy_points": 12.9
+      "fantasy_points": 15.9
     },
     {
       "id": "4432848",
@@ -6205,12 +6205,12 @@
       "event_id": "401909853",
       "minutes": 36.0,
       "pts": 34.0,
-      "reb": 7.0,
+      "reb": 8.0,
       "ast": 4.0,
       "stl": 0.0,
       "blk": 1.0,
-      "tov": 4.0,
-      "fantasy_points": 47.4
+      "tov": 5.0,
+      "fantasy_points": 47.6
     },
     {
       "id": "3037789",
@@ -8997,10 +8997,10 @@
       "pts": 7.0,
       "reb": 5.0,
       "ast": 1.0,
-      "stl": 1.0,
+      "stl": 2.0,
       "blk": 2.0,
       "tov": 2.0,
-      "fantasy_points": 21.5
+      "fantasy_points": 24.5
     },
     {
       "id": "4684272",
@@ -11397,10 +11397,10 @@
       "pts": 22.0,
       "reb": 7.0,
       "ast": 0.0,
-      "stl": 1.0,
+      "stl": 2.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 33.4
+      "fantasy_points": 36.4
     },
     {
       "id": "4433136",
