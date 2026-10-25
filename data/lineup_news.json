@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "slate_date": "2026-10-24",
-  "checked_at": "2026-10-25T03:58:34.020016+00:00",
+  "slate_date": "2026-10-25",
+  "checked_at": "2026-10-25T04:23:43.921315+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -17,7 +17,7 @@
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-24"
+      "date": "2026-10-25"
     },
     {
       "team": "MIL",
@@ -31,7 +31,7 @@
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-10-24"
+      "date": "2026-10-25"
     }
   ],
   "headlines": [
@@ -41,7 +41,7 @@
       "published_at": "2026-10-25T02:42:00+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Dean Wade (ankle) available Saturday, will start - NBC Sports",
@@ -49,15 +49,7 @@
       "published_at": "2026-10-25T03:26:56+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
-      "published_at": "2026-10-25T00:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Starting Lineup 1995 Kenner NBA Orlando Magic Horace Grant Basketball Card - khorasantimes.com",
@@ -65,7 +57,7 @@
       "published_at": "2026-10-24T17:32:34+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Trevon Brazile is making a permanent place in Nuggets rotation hard to deny - Nugg Love",
@@ -73,7 +65,7 @@
       "published_at": "2026-10-24T21:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Mavericks Make 2 Starting Lineup Changes With Kyrie Irving, Cooper Flagg Out vs. Spurs - Yardbarker",
@@ -81,7 +73,7 @@
       "published_at": "2026-10-25T00:35:50+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Rockets shake up starting lineup for showdown at Atlanta Hawks: Preview, Injuries & Starters - Sports Illustrated",
@@ -89,7 +81,7 @@
       "published_at": "2026-10-24T21:34:06+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Morez Johnson Jr. (shin) on minutes restriction - NBC Sports",
@@ -97,15 +89,7 @@
       "published_at": "2026-10-24T23:26:12+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Suns Reveal Starting Lineup vs Warriors - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWDlpeTVSZy1TUmRtQV9hRzByRExONTU5dU9XSlBUN0VjcTlEV0tUdWNESWItYzFHbVc3dThxOWxvekVpakNNRlREWlJmdnZBNlcwU3g3ZVlhRVpWMXhfRERiRVBfZ3QtYlV4cjZIcVBTRFhKcEc0MXBORXM2VXJCNTFOQ1N3TW1KYk5jUGJSOXNCM2RsV3FPMVgyOHBCQQ?oc=5",
-      "published_at": "2026-10-25T01:31:40+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Golden State Warriors Fans React To Depressing Starting Lineup - Heavy.com",
@@ -113,7 +97,15 @@
       "published_at": "2026-10-25T02:02:00+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Suns Reveal Starting Lineup vs Warriors - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWDlpeTVSZy1TUmRtQV9hRzByRExONTU5dU9XSlBUN0VjcTlEV0tUdWNESWItYzFHbVc3dThxOWxvekVpakNNRlREWlJmdnZBNlcwU3g3ZVlhRVpWMXhfRERiRVBfZ3QtYlV4cjZIcVBTRFhKcEc0MXBORXM2VXJCNTFOQ1N3TW1KYk5jUGJSOXNCM2RsV3FPMVgyOHBCQQ?oc=5",
+      "published_at": "2026-10-25T01:31:40+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
@@ -121,15 +113,7 @@
       "published_at": "2026-10-24T23:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Predicting 76ers' Starting Lineup on Saturday With LeBron James Out - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHZmcHZVSkkyUG5lR1RXQnBQRVZxMjVXZjRmdTY2Ym1zZFlqZUlMSGRMZ0Y3SUpEQ3ZlR0x6bnItc1ZGQ1hQMkZTSXJVMkJJRDRxejNIN0YxSHhpYi1aWDA4VU5zSl9uR2EtYmEwRVhUTnQ2VmdONy1mN1lINTIyVjhRQURLVmI0RjVCc0tkOFBDMmVUR2RDeUd6Mnh4QS1yQ01yeXhBWlQ?oc=5",
-      "published_at": "2026-10-24T19:46:28+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Nuggets Announce New Starting Lineup vs. Pelicans Due to Injury - Sports Illustrated",
@@ -137,7 +121,23 @@
       "published_at": "2026-10-25T00:59:32+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Predicting 76ers' Starting Lineup on Saturday With LeBron James Out - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHZmcHZVSkkyUG5lR1RXQnBQRVZxMjVXZjRmdTY2Ym1zZFlqZUlMSGRMZ0Y3SUpEQ3ZlR0x6bnItc1ZGQ1hQMkZTSXJVMkJJRDRxejNIN0YxSHhpYi1aWDA4VU5zSl9uR2EtYmEwRVhUTnQ2VmdONy1mN1lINTIyVjhRQURLVmI0RjVCc0tkOFBDMmVUR2RDeUd6Mnh4QS1yQ01yeXhBWlQ?oc=5",
+      "published_at": "2026-10-24T19:46:28+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
+      "published_at": "2026-10-25T00:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Jalen Duren (hamstring) ruled out Sunday - FantasyPros",
@@ -145,7 +145,7 @@
       "published_at": "2026-10-24T21:31:07+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Mavericks Rule Out Kyrie Irving, Set Minutes Restriction for Morez Johnson Jr. vs. Spurs - Yardbarker",
@@ -153,7 +153,7 @@
       "published_at": "2026-10-24T22:37:43+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "Ravens rule out QB Jackson (ankle) vs. Bengals; Huntley will start for third straight week - TSN",
@@ -161,15 +161,7 @@
       "published_at": "2026-10-25T03:03:01+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
-    },
-    {
-      "headline": "Tyler Bilodeau (shoulder) ruled out Saturday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNjdXODBkVXZMMGtYSTRjdjVNRjhWU3p5N0ZhTkpMVFpybmpmbFdWbGZDWjZ4MTZYUmVmb3QzOVh1dFJEbjBhZXBkWEtJOUVxdkFrNGVrYnpPRjJlRnVud1B1X3B3WHRnWHlwWU5MOS1TSG5pa2NISXZTWGc2NkZxLWZ1aWZNUmRBRlVhVHpicjZxTFBl0gGaAUFVX3lxTFBWRDdpWjBfUTRQYjVEcm1tMmttZlNGVHZlSzI4TUg0azhCNjN5RHZ3a1J5OW1BdDJjamNSMERHN29hdjhNRTFNa2J5WUFra0tlYjlqb1VOYVg5cFNFcTJKOEtaV0Y1NUpMdmFQUU54WlZ3OEZ1YmNHOHZvaFpsVjFPZXNyLWRHUnV5TnhvamYxYUlQSFFONEswdmc?oc=5",
-      "published_at": "2026-10-24T08:02:19+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     },
     {
       "headline": "CALEB WILSON RESPONDS! Bulls Young Core FORCES Rotation Shakeup + AD & Trae NEXT - BVM Sports",
@@ -177,7 +169,7 @@
       "published_at": "2026-10-24T12:15:53+00:00",
       "type": "headline_only",
       "confirmed": false,
-      "scope_date": "2026-10-24"
+      "scope_date": "2026-10-25"
     }
   ],
   "source_errors": [],
