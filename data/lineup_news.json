@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T20:08:36.005505+00:00",
+  "checked_at": "2026-10-25T20:50:08.481671+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -15,9 +15,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "What is Joe Mazzulla’s rotation telling us after two games? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOXdxdkx3VDRydWZfbjJSWlZnd0R5RVR5aFZ2RzduTnhfMXQ2NjlhSC0zWVhmSmVBeXFBemdWaVBRQUpYR3dGUW9IVno3RWxSY3cwelJVVGVDS3JsbkJKME0tazB5SUVSR0xlekdwc2xfYkJxa3ZqeVl0RHV4LWJhMGZ6Q29oUnYz?oc=5",
-      "published_at": "2026-10-25T11:00:00+00:00",
+      "headline": "Suns’ point guard rotation warrants patience after two games - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVm5fcVgxclc1R21EdFhCOUpnYmtyTHR6SlhubEJCbjBQcEdEVjVkNm9WakpGdFRzSy05c3o2TVZreTdfR2ZYU054SWtTSkg3UlU1Mk5PU2FYMWtDM3AzNk83SkxaTUdjaFJ6SVY1MnBZenp5Vzg4UFN1NllUS05vOE56azNpZ3ZIVHpF?oc=5",
+      "published_at": "2026-10-25T18:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -47,9 +47,17 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "What Timberwolves' First 2 Games Have Revealed About Their Rotation So Far - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdmJXVWllZEQwUWxRZG5MaUdSRmZwV0dpZDA2VlRVbnJaenk1X2dMdjBOMnhPN3h3TDgyMi1vdU1NOGR4V3d0SGtvbzNuWlZ2T09TcTdxUDkxYkM3a0Z3T256bGI3Q2J1Mmx2Mm9uUmp3c2JrMW1lWk9VM2xya2pSNV9za1pKUUN2VElwQw?oc=5",
-      "published_at": "2026-10-25T15:00:04+00:00",
+      "headline": "What is Joe Mazzulla’s rotation telling us after two games? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOXdxdkx3VDRydWZfbjJSWlZnd0R5RVR5aFZ2RzduTnhfMXQ2NjlhSC0zWVhmSmVBeXFBemdWaVBRQUpYR3dGUW9IVno3RWxSY3cwelJVVGVDS3JsbkJKME0tazB5SUVSR0xlekdwc2xfYkJxa3ZqeVl0RHV4LWJhMGZ6Q29oUnYz?oc=5",
+      "published_at": "2026-10-25T11:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Kyrie Irving Out vs. Spurs, Morez Johnson Jr. On Minutes Restriction - Dallas Hoops Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbndPUF9NVEVSLU1GMTAxRXlSQUZaWDd4MTVzOGlKTmpqZG5GRDVpOXJFRm0yR2xyMGtPSDNMeVNtWFdPbHZQNi1qUDVIcnlnSWNGaTVvTzFVZWJTNTA3YzdiQ2VyVXRjMmlrWGRJeS1Ia2JGYjR0WXV0MVNsSDNHM045SjdsQ0pYX09xMWJoWWdmT3JzMW9CVFMweGUtVXFZ?oc=5",
+      "published_at": "2026-10-24T22:25:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -63,9 +71,25 @@
       "scope_date": "2026-10-25"
     },
     {
+      "headline": "What Timberwolves' First 2 Games Have Revealed About Their Rotation So Far - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdmJXVWllZEQwUWxRZG5MaUdSRmZwV0dpZDA2VlRVbnJaenk1X2dMdjBOMnhPN3h3TDgyMi1vdU1NOGR4V3d0SGtvbzNuWlZ2T09TcTdxUDkxYkM3a0Z3T256bGI3Q2J1Mmx2Mm9uUmp3c2JrMW1lWk9VM2xya2pSNV9za1pKUUN2VElwQw?oc=5",
+      "published_at": "2026-10-25T15:00:04+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
       "headline": "Trevon Brazile sparks epic Nuggets comeback and cements his rotation spot - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLTBZMndtYVFnaFRSazFwRDZ6YVA4OVBlb0o1WXBZSVpUaHFWaUcxc2dwVmxVcWZ1QndPa29pRVhXcmFOMkNHTV85NzhyeVdRa25LYTdPWDhiT0FrNkVMN0t0SDA0UWllOFRNMmZOU2tMQ2JjcEdFeE84d2liVzU3b0NHRk45emJPYUVB?oc=5",
       "published_at": "2026-10-25T04:33:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Suns Reveal Starting Lineup vs Warriors - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWDlpeTVSZy1TUmRtQV9hRzByRExONTU5dU9XSlBUN0VjcTlEV0tUdWNESWItYzFHbVc3dThxOWxvekVpakNNRlREWlJmdnZBNlcwU3g3ZVlhRVpWMXhfRERiRVBfZ3QtYlV4cjZIcVBTRFhKcEc0MXBORXM2VXJCNTFOQ1N3TW1KYk5jUGJSOXNCM2RsV3FPMVgyOHBCQQ?oc=5",
+      "published_at": "2026-10-25T01:31:40+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -79,9 +103,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Suns Reveal Starting Lineup vs Warriors - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWDlpeTVSZy1TUmRtQV9hRzByRExONTU5dU9XSlBUN0VjcTlEV0tUdWNESWItYzFHbVc3dThxOWxvekVpakNNRlREWlJmdnZBNlcwU3g3ZVlhRVpWMXhfRERiRVBfZ3QtYlV4cjZIcVBTRFhKcEc0MXBORXM2VXJCNTFOQ1N3TW1KYk5jUGJSOXNCM2RsV3FPMVgyOHBCQQ?oc=5",
-      "published_at": "2026-10-25T01:31:40+00:00",
+      "headline": "Nuggets Announce New Starting Lineup vs. Pelicans Due to Injury - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZjVwZ0xVS0RNalJFSDlZTmlxdjFPanhvU3ZKdm5jOGRyZzNtWC1TS2JFMXFlb1IwbkVqOU9iTXZyTm5kZTFqbm94TmN0QWFDUUdPcm0tUTFXbmp4OWF2elBCa1ZBdzhIT3VDdVF1WmJ4SmRfTHZqQTNmeTcyR1ZCVnpFNXNzYWU2a0ROVmZZX2hvbFU2dUNyaTYxMDY2eWM?oc=5",
+      "published_at": "2026-10-25T00:59:32+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -111,9 +135,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Nuggets Announce New Starting Lineup vs. Pelicans Due to Injury - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZjVwZ0xVS0RNalJFSDlZTmlxdjFPanhvU3ZKdm5jOGRyZzNtWC1TS2JFMXFlb1IwbkVqOU9iTXZyTm5kZTFqbm94TmN0QWFDUUdPcm0tUTFXbmp4OWF2elBCa1ZBdzhIT3VDdVF1WmJ4SmRfTHZqQTNmeTcyR1ZCVnpFNXNzYWU2a0ROVmZZX2hvbFU2dUNyaTYxMDY2eWM?oc=5",
-      "published_at": "2026-10-25T00:59:32+00:00",
+      "headline": "Mavericks Make 2 Starting Lineup Changes With Kyrie Irving, Cooper Flagg Out vs. Spurs - Yardbarker",
+      "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcXhGemx0eW5zT01zYjJJOUMzWEIySVU3c3RFTHZ4WU5zeHVSdURuc1lLWXhzYmxfdWpqMnhxN2dVdlpWMmN3emI2c0VrZ1JYS0VKWG9TM2p2SmE4S2RiNHA2NjFiUGd6cE93UGNwQWQyM1JiaHBxa1RrNkVFbW54azdzSHc2YVpQLXNHSFQ0cXNwd3d2bV9Ld1VubHk4aVYtRWZjejVPUmE1SDhuNjJHblFOMURFR191X2QtaDVPUm02STV4WkNMeTZRVnotWW8zUVBZeFR0YlFQUQ?oc=5",
+      "published_at": "2026-10-25T00:35:50+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -159,14 +183,6 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Jalen Duren (hamstring) ruled out Sunday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTDNRbHgtUnE1R1hGajE1cVg3aDZqQS1pME95azd6YnJReVBTcXFLbFZ4aGxCekNIbm5mY3dPcjB6VW1wZzdKTDFnUEFzajVBMnRhX1hSMm80UGVKanc2a1pyN3c3UGFYdU1QcUdpV3dTX2w4aWc4N1ptcFloUk9EUEZ0ZDZZN1p4SkI3SzQ2d1Vybk5OMXdlTlc3emt6dmFoVkRwbVQ3Y1ZpbVhNRXhpTmkxLXVDX093S2dBY2pETzVCSWJsUW1DN9IBlAFBVV95cUxQR3dZVnZtaFVoNWlZZlVPT2c4d0FPQnU2MTJIS0pSaFkxVUNZUDl1VGlIdmRlZVNmVnpVSEVHTjlNVXZxMnRiT0MwYldoX3hPY0RwUHJvclFDbjA3OTBrYWIyckdTaEttcDUxOVZsOHZKWWUzU3h2YXJZa1lxR0tLeVFaamt5YWd2bHVfVjRZZzRuZXcw?oc=5",
-      "published_at": "2026-10-24T21:31:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
       "headline": "Boston Red Sox Roster: A Way Too Early Look At 2027 Starting Rotation - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8zVmM0QWJrUG51Y2d2QlJwbzRua05vRXJEOVUyR3luak03ZXQxZnJWQzdkTmVxa2JHSWdoQXQwcFZFSFZNSDBiU3RPcXZaOERXMEZvcGR6TTRDU2dEUFN5SDRvczhIX2dwR24zdzBkYkZ4VUd2Q1o4WHM5bE4?oc=5",
       "published_at": "2026-10-24T23:39:17+00:00",
@@ -175,17 +191,17 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Mavericks Rule Out Kyrie Irving, Set Minutes Restriction for Morez Johnson Jr. vs. Spurs - Yardbarker",
-      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVmN0WFFCSGRLRTdrUzE2V29ORDJ0eG02aVpBbHg4WlRqc3VnYk8tMmF0UG5mQ1VzUG8xZ0dJNjEtM1JUY1FDcUV4RGtsVXB5eW9EdmY4eUdIYUNyZEpKWlJJejdIYzQ5SEdrOEVHZ2w2NkJSNUUyNmxpQl9UTEt2Ymp5X3YyMG1ndC1wREdKQWhXWU80bVpNS3gzR0l0bGJVckZoWTdVWV95dThTNXVFdm1rT0xERlh4c1Y3MUlUNTIwdWM4VWFqVndtRkp4MzJDbVZzeHpHejEyaTA?oc=5",
-      "published_at": "2026-10-24T22:37:43+00:00",
+      "headline": "Ravens rule out QB Jackson (ankle) vs. Bengals; Huntley will start for third straight week - TSN",
+      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSjNyWEh3WnQ4X2J6dmhqd0NERWV6Q1NYV0huYlJQUl9RbWR6MEw4eXVSV2VZWUVrOF9MUmxSZHdKNnVTOUpyVFJWTFB5WG0temJUaDZfWHhLX3oxMVdncG9BenhGWXNER0VKZE9JNEVXaDNTZjUxX0NudGU1SUg5bFBNOWRaajVoMDFaRWFBbG1qTVpmXzB0SDlycDlLNDZ3cnNQdzRKVjA1UzdNMEtLVDVtWEpvdFI5TnMzSnVYbnBuV1YwUFE?oc=5",
+      "published_at": "2026-10-25T15:03:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Ravens rule out QB Jackson (ankle) vs. Bengals; Huntley will start for third straight week - TSN",
-      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSjNyWEh3WnQ4X2J6dmhqd0NERWV6Q1NYV0huYlJQUl9RbWR6MEw4eXVSV2VZWUVrOF9MUmxSZHdKNnVTOUpyVFJWTFB5WG0temJUaDZfWHhLX3oxMVdncG9BenhGWXNER0VKZE9JNEVXaDNTZjUxX0NudGU1SUg5bFBNOWRaajVoMDFaRWFBbG1qTVpmXzB0SDlycDlLNDZ3cnNQdzRKVjA1UzdNMEtLVDVtWEpvdFI5TnMzSnVYbnBuV1YwUFE?oc=5",
-      "published_at": "2026-10-25T15:03:03+00:00",
+      "headline": "Jalen Duren (hamstring) ruled out Sunday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeUdJSW9iSUEwaExEQ0d6c01pbk5hdFdhZFY1SGN3VDBTS01iMFJXaEN4czVVWk5rWEVRUnp3LXE1NVVyUmdrVTYyeTk4bUVqd0V3cGJSQzMycXRVOHZhNUFPTGxpSDBpYU8ydlBSMnZzMjFiR2ZwMlFBa3BPUTQyWlM0NTlKaFVvY0d6QzIxVdIBlAFBVV95cUxQR3dZVnZtaFVoNWlZZlVPT2c4d0FPQnU2MTJIS0pSaFkxVUNZUDl1VGlIdmRlZVNmVnpVSEVHTjlNVXZxMnRiT0MwYldoX3hPY0RwUHJvclFDbjA3OTBrYWIyckdTaEttcDUxOVZsOHZKWWUzU3h2YXJZa1lxR0tLeVFaamt5YWd2bHVfVjRZZzRuZXcw?oc=5",
+      "published_at": "2026-10-24T21:31:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
