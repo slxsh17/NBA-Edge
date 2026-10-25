@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T13:03:20.157281+00:00",
+  "checked_at": "2026-10-25T13:52:24.999096+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
     {
-      "headline": "Trevon Brazile sparks epic Nuggets comeback and cements his rotation spot - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLTBZMndtYVFnaFRSazFwRDZ6YVA4OVBlb0o1WXBZSVpUaHFWaUcxc2dwVmxVcWZ1QndPa29pRVhXcmFOMkNHTV85NzhyeVdRa25LYTdPWDhiT0FrNkVMN0t0SDA0UWllOFRNMmZOU2tMQ2JjcEdFeE84d2liVzU3b0NHRk45emJPYUVB?oc=5",
-      "published_at": "2026-10-25T04:33:00+00:00",
+      "headline": "What is Joe Mazzulla’s rotation telling us after two games? - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOXdxdkx3VDRydWZfbjJSWlZnd0R5RVR5aFZ2RzduTnhfMXQ2NjlhSC0zWVhmSmVBeXFBemdWaVBRQUpYR3dGUW9IVno3RWxSY3cwelJVVGVDS3JsbkJKME0tazB5SUVSR0xlekdwc2xfYkJxa3ZqeVl0RHV4LWJhMGZ6Q29oUnYz?oc=5",
+      "published_at": "2026-10-25T11:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -55,9 +55,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "3 Takeaways from Warriors' Loss to Suns: Dubs Must Evolve Center Rotation - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOW1WZi1JQTFmWEFDYzZZX19mWk5JNXNOSXN1TnI4RDBTM08yUGdldVlFT0RzOFRRekltNS1sZTZUcFNxRkxhVGg4cE5MV1dHTTFOamtpU2JVU0d4eGJkUUotWUFFM1RJU0E4dVhpSkMtSzE1NWNYYUtJWnJsNjRudVlDNUFJQQ?oc=5",
-      "published_at": "2026-10-25T05:37:00+00:00",
+      "headline": "Trevon Brazile sparks epic Nuggets comeback and cements his rotation spot - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLTBZMndtYVFnaFRSazFwRDZ6YVA4OVBlb0o1WXBZSVpUaHFWaUcxc2dwVmxVcWZ1QndPa29pRVhXcmFOMkNHTV85NzhyeVdRa25LYTdPWDhiT0FrNkVMN0t0SDA0UWllOFRNMmZOU2tMQ2JjcEdFeE84d2liVzU3b0NHRk45emJPYUVB?oc=5",
+      "published_at": "2026-10-25T04:33:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -79,9 +79,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Rockets shake up starting lineup for showdown at Atlanta Hawks: Preview, Injuries & Starters - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSnY3dHFXRlNkRzZUYzJJSm83UGRpczYtbXI3ZzZNRUdaUlpSSzF0LWNvSUZXTjBWdjN5WlhDRWVKeVpjc015TkJ3eGF1TG1jblh3ZHJmU2ZndkdGV294RC1LMDVhZUtUWWREVnExOVJkdHZKZ3AteUNrRkVXd2U2YzNLSjZyT05nazhPU2hfbGs?oc=5",
-      "published_at": "2026-10-24T21:34:07+00:00",
+      "headline": "3 Takeaways from Warriors' Loss to Suns: Dubs Must Evolve Center Rotation - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOW1WZi1JQTFmWEFDYzZZX19mWk5JNXNOSXN1TnI4RDBTM08yUGdldVlFT0RzOFRRekltNS1sZTZUcFNxRkxhVGg4cE5MV1dHTTFOamtpU2JVU0d4eGJkUUotWUFFM1RJU0E4dVhpSkMtSzE1NWNYYUtJWnJsNjRudVlDNUFJQQ?oc=5",
+      "published_at": "2026-10-25T05:37:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -90,6 +90,14 @@
       "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
       "published_at": "2026-10-24T23:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Rockets shake up starting lineup for showdown at Atlanta Hawks: Preview, Injuries & Starters - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSnY3dHFXRlNkRzZUYzJJSm83UGRpczYtbXI3ZzZNRUdaUlpSSzF0LWNvSUZXTjBWdjN5WlhDRWVKeVpjc015TkJ3eGF1TG1jblh3ZHJmU2ZndkdGV294RC1LMDVhZUtUWWREVnExOVJkdHZKZ3AteUNrRkVXd2U2YzNLSjZyT05nazhPU2hfbGs?oc=5",
+      "published_at": "2026-10-24T21:34:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
