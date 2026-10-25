@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T13:36:36.731332+00:00",
+  "updated_at": "2026-10-25T14:05:45.492129+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -18,12 +18,12 @@
       "status": "OUT"
     },
     {
-      "name": "Mikel Brown Jr.",
+      "name": "Tyler Bilodeau",
       "team": "BKN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Tyler Bilodeau",
+      "name": "Mikel Brown Jr.",
       "team": "BKN",
       "status": "OUT"
     },
@@ -50,12 +50,12 @@
     {
       "name": "Patrick Williams",
       "team": "CHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Noa Essengue",
       "team": "CHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nic Claxton",
@@ -65,7 +65,7 @@
     {
       "name": "Kyrie Irving",
       "team": "DAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Caleb Martin",
@@ -93,19 +93,19 @@
       "status": "OUT"
     },
     {
-      "name": "Alpha Diallo",
+      "name": "Spencer Jones",
       "team": "DEN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cameron Johnson",
       "team": "DEN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Spencer Jones",
+      "name": "Alpha Diallo",
       "team": "DEN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Julian Strawther",
@@ -123,29 +123,29 @@
       "status": "OUT"
     },
     {
-      "name": "Gui Santos",
+      "name": "Brandin Podziemski",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Al Horford",
       "team": "GSW",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Draymond Green",
       "team": "GSW",
-      "status": "OUT"
-    },
-    {
-      "name": "Al Horford",
-      "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Stephen Curry",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Brandin Podziemski",
+      "name": "Gui Santos",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kristaps Porzingis",
@@ -163,19 +163,19 @@
       "status": "OUT"
     },
     {
+      "name": "Fred VanVleet",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Marcus Smart",
       "team": "HOU",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Steven Adams",
       "team": "HOU",
-      "status": "OUT"
-    },
-    {
-      "name": "Fred VanVleet",
-      "team": "HOU",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Aaron Nesmith",
@@ -330,7 +330,7 @@
     {
       "name": "Oso Ighodaro",
       "team": "PHX",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mark Williams",
