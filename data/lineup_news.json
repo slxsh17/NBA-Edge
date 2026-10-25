@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T15:13:37.384818+00:00",
+  "checked_at": "2026-10-25T15:52:44.572916+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -23,9 +23,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Starting Lineup 1995 Kenner NBA Orlando Magic Horace Grant Basketball Card - khorasantimes.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5DY2FKZGVJM1owWFRIV21yWEdxVmxidVk0ckIxMkp1VnBId19oMW5nbERpRnNFeFR6SDMxb01pM18wYzA0NVc3cHhjQzVLUQ?oc=5",
-      "published_at": "2026-10-24T17:32:34+00:00",
+      "headline": "Kyrie Irving Out vs. Spurs, Morez Johnson Jr. On Minutes Restriction - Dallas Hoops Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbndPUF9NVEVSLU1GMTAxRXlSQUZaWDd4MTVzOGlKTmpqZG5GRDVpOXJFRm0yR2xyMGtPSDNMeVNtWFdPbHZQNi1qUDVIcnlnSWNGaTVvTzFVZWJTNTA3YzdiQ2VyVXRjMmlrWGRJeS1Ia2JGYjR0WXV0MVNsSDNHM045SjdsQ0pYX09xMWJoWWdmT3JzMW9CVFMweGUtVXFZ?oc=5",
+      "published_at": "2026-10-24T22:25:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -34,6 +34,14 @@
       "headline": "Trevon Brazile is making a permanent place in Nuggets rotation hard to deny - Nugg Love",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbzFSZGQza3lGaEZNSDdCbkhyX2VHQTZnSzdQRjZHX04zRDYzbGl0OUp4NE9sakdTSndDV2JUWGJVdzdIekVTVXVLSWNjTzNlRnY0LTRfSXE2eXlUeW1BcFV1dnFyMnVaWlh1bmp0VUx5NkFDV296cnJhVEhJU2tGMWwxWllFSWowSWpvV3Fn?oc=5",
       "published_at": "2026-10-24T21:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Starting Lineup 1995 Kenner NBA Orlando Magic Horace Grant Basketball Card - khorasantimes.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5DY2FKZGVJM1owWFRIV21yWEdxVmxidVk0ckIxMkp1VnBId19oMW5nbERpRnNFeFR6SDMxb01pM18wYzA0NVc3cHhjQzVLUQ?oc=5",
+      "published_at": "2026-10-24T17:32:34+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -127,14 +135,6 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Lakers Deep Dive: How Kessler Helps Luka & Reaves, Rotation Questions, Where LA Ranks In NBA's West The Dodo (hpX7CtEZ1E) - Unisba Media",
-      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE91amZaT1JsaU1STVduSDBWanZNeEY2SGwzTkNyZFRJM2VZZ3J4WDZucnAtbkEzQVZ6Q3k5ZGw1VWxtbXRycHNPQVN4TnVjNXltSEt2bzNENnVpb3pOTTEwWGdralE1UQ?oc=5",
-      "published_at": "2026-10-24T21:22:52+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
       "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
       "published_at": "2026-10-25T00:00:00+00:00",
@@ -159,14 +159,6 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Mavericks Rule Out Kyrie Irving, Set Minutes Restriction for Morez Johnson Jr. vs. Spurs - Yardbarker",
-      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVmN0WFFCSGRLRTdrUzE2V29ORDJ0eG02aVpBbHg4WlRqc3VnYk8tMmF0UG5mQ1VzUG8xZ0dJNjEtM1JUY1FDcUV4RGtsVXB5eW9EdmY4eUdIYUNyZEpKWlJJejdIYzQ5SEdrOEVHZ2w2NkJSNUUyNmxpQl9UTEt2Ymp5X3YyMG1ndC1wREdKQWhXWU80bVpNS3gzR0l0bGJVckZoWTdVWV95dThTNXVFdm1rT0xERlh4c1Y3MUlUNTIwdWM4VWFqVndtRkp4MzJDbVZzeHpHejEyaTA?oc=5",
-      "published_at": "2026-10-24T22:37:43+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
       "headline": "Ravens rule out QB Jackson (ankle) vs. Bengals; Huntley will start for third straight week - TSN",
       "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSjNyWEh3WnQ4X2J6dmhqd0NERWV6Q1NYV0huYlJQUl9RbWR6MEw4eXVSV2VZWUVrOF9MUmxSZHdKNnVTOUpyVFJWTFB5WG0temJUaDZfWHhLX3oxMVdncG9BenhGWXNER0VKZE9JNEVXaDNTZjUxX0NudGU1SUg5bFBNOWRaajVoMDFaRWFBbG1qTVpmXzB0SDlycDlLNDZ3cnNQdzRKVjA1UzdNMEtLVDVtWEpvdFI5TnMzSnVYbnBuV1YwUFE?oc=5",
       "published_at": "2026-10-25T15:00:00+00:00",
@@ -183,9 +175,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Chelsea XI vs Tottenham: No Joao Pedro - starting lineup, confirmed team news and injury latest - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcDlTbzNXSGJpLWVTd2hSSGtZeWNJVXFCb1BkeUU4Z0NkbkI5b3dhVnZVX2ZlMHdYdWRYamRMQlJKY1oyUzlUb0ppSjVKd1BBZWgwQk1tMXhoLXZVSndwaE4zVnZlVlpfcDIxVU5vYWd1YUtObXFBRXBhVFNpOWd0WEkxQVI5MkJo?oc=5",
-      "published_at": "2026-10-24T15:50:38+00:00",
+      "headline": "Chelsea boss Xabi Alonso confirms Mike Penders will start against Liverpool despite Tottenham nightmare - Yahoo",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdWYxdHdTdTBJTTV5cmM5bF9Sd3ZhX2d1UGFYUnVNZktlaHNuOXJ2aEVGT0lIcEp0dVB5dnd5LXFWcU0tT3NEdjZmaEltQ3Q3ZXBUdC1fZjN4aktRdW1zbFlBdVJCbDhNUmk0Tk5NRUFmS1lFX0gtQWt5VzN0TndoODhGd2MybWdW?oc=5",
+      "published_at": "2026-10-25T07:47:21+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
