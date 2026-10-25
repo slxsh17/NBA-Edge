@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T17:49:38.164873+00:00",
+  "checked_at": "2026-10-25T18:12:08.601378+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -119,6 +119,14 @@
       "scope_date": "2026-10-25"
     },
     {
+      "headline": "Lakers Deep Dive: How Kessler Helps Luka & Reaves, Rotation Questions, Where LA Ranks In NBA's West The Dodo (hpX7CtEZ1E) - Unisba Media",
+      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE91amZaT1JsaU1STVduSDBWanZNeEY2SGwzTkNyZFRJM2VZZ3J4WDZucnAtbkEzQVZ6Q3k5ZGw1VWxtbXRycHNPQVN4TnVjNXltSEt2bzNENnVpb3pOTTEwWGdralE1UQ?oc=5",
+      "published_at": "2026-10-24T21:22:52+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
       "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
       "published_at": "2026-10-25T17:06:13+00:00",
@@ -143,9 +151,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Mavericks Rule Out Kyrie Irving, Set Minutes Restriction for Morez Johnson Jr. vs. Spurs - Yardbarker",
-      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVmN0WFFCSGRLRTdrUzE2V29ORDJ0eG02aVpBbHg4WlRqc3VnYk8tMmF0UG5mQ1VzUG8xZ0dJNjEtM1JUY1FDcUV4RGtsVXB5eW9EdmY4eUdIYUNyZEpKWlJJejdIYzQ5SEdrOEVHZ2w2NkJSNUUyNmxpQl9UTEt2Ymp5X3YyMG1ndC1wREdKQWhXWU80bVpNS3gzR0l0bGJVckZoWTdVWV95dThTNXVFdm1rT0xERlh4c1Y3MUlUNTIwdWM4VWFqVndtRkp4MzJDbVZzeHpHejEyaTA?oc=5",
-      "published_at": "2026-10-24T22:37:43+00:00",
+      "headline": "Boston Red Sox Roster: A Way Too Early Look At 2027 Starting Rotation - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8zVmM0QWJrUG51Y2d2QlJwbzRua05vRXJEOVUyR3luak03ZXQxZnJWQzdkTmVxa2JHSWdoQXQwcFZFSFZNSDBiU3RPcXZaOERXMEZvcGR6TTRDU2dEUFN5SDRvczhIX2dwR24zdzBkYkZ4VUd2Q1o4WHM5bE4?oc=5",
+      "published_at": "2026-10-24T23:39:17+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -159,17 +167,17 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "NASCAR Predictions for YellaWood 500, Starting Lineup at Talladega – 10/25/26 - PrizePicks",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlFFLVdWRHZwZHg1MG8tZ01jV2hCejF0VnpSc0NqV2xYZVZzbXhXSl9CMzl5akJBMEtrQUMtT2k1dTlBajFKR2xlWjhWV1RDMmVRWC1Wc1BqaWw5Q3E1ckJLTi1pTkZnV1FnQU1yMS1PM3lnWmY3ODl2TzlSOE1jNFM4MVR5OHluWkhJVENXSy1SV25PLXU1VnVOLU1SU1RHX3RzWTNMQU1CV0lUc2dHNUlMVWdwaXd2aDQ5Wg?oc=5",
-      "published_at": "2026-10-25T13:39:03+00:00",
+      "headline": "Mavericks Rule Out Kyrie Irving, Set Minutes Restriction for Morez Johnson Jr. vs. Spurs - Yardbarker",
+      "source_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVmN0WFFCSGRLRTdrUzE2V29ORDJ0eG02aVpBbHg4WlRqc3VnYk8tMmF0UG5mQ1VzUG8xZ0dJNjEtM1JUY1FDcUV4RGtsVXB5eW9EdmY4eUdIYUNyZEpKWlJJejdIYzQ5SEdrOEVHZ2w2NkJSNUUyNmxpQl9UTEt2Ymp5X3YyMG1ndC1wREdKQWhXWU80bVpNS3gzR0l0bGJVckZoWTdVWV95dThTNXVFdm1rT0xERlh4c1Y3MUlUNTIwdWM4VWFqVndtRkp4MzJDbVZzeHpHejEyaTA?oc=5",
+      "published_at": "2026-10-24T22:37:43+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Chelsea boss Xabi Alonso confirms Mike Penders will start against Liverpool despite Tottenham nightmare - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdWYxdHdTdTBJTTV5cmM5bF9Sd3ZhX2d1UGFYUnVNZktlaHNuOXJ2aEVGT0lIcEp0dVB5dnd5LXFWcU0tT3NEdjZmaEltQ3Q3ZXBUdC1fZjN4aktRdW1zbFlBdVJCbDhNUmk0Tk5NRUFmS1lFX0gtQWt5VzN0TndoODhGd2MybWdW?oc=5",
-      "published_at": "2026-10-25T07:47:21+00:00",
+      "headline": "NASCAR Predictions for YellaWood 500, Starting Lineup at Talladega – 10/25/26 - PrizePicks",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlFFLVdWRHZwZHg1MG8tZ01jV2hCejF0VnpSc0NqV2xYZVZzbXhXSl9CMzl5akJBMEtrQUMtT2k1dTlBajFKR2xlWjhWV1RDMmVRWC1Wc1BqaWw5Q3E1ckJLTi1pTkZnV1FnQU1yMS1PM3lnWmY3ODl2TzlSOE1jNFM4MVR5OHluWkhJVENXSy1SV25PLXU1VnVOLU1SU1RHX3RzWTNMQU1CV0lUc2dHNUlMVWdwaXd2aDQ5Wg?oc=5",
+      "published_at": "2026-10-25T13:39:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
