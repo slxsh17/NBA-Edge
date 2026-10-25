@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T05:21:29.974021+00:00",
+  "checked_at": "2026-10-25T05:53:54.464928+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -36,9 +36,9 @@
   ],
   "headlines": [
     {
-      "headline": "Dallas Mavericks Announce Starting Lineup Without Cooper Flagg, Kyrie Irving Playing - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQ0drbGZrc1hBZkNfd29tMG0zX1lUNzhUUzg4QVF3ZXItY3oyOTRaOVhac2Q3RlY1N09aODJDaDF4OGpHdXBFa3d5UlNCWElFSUE1SWZPMFVscG9uQVREY3F5VWlVSjVwa0pFaWlLSkNqbklSUzdyYjJlS0RvMmxrRnMwaFpkaUdGVjBwRjZqQWNHMHdP?oc=5",
-      "published_at": "2026-10-25T02:42:00+00:00",
+      "headline": "Golden State Warriors Fans React To Depressing Starting Lineup - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcHk2MWtWSFo0ZW1FZllrSjNJYTE2MHVuZ2RNVUF1cFJfUmNKaDZmd056MU5IY1lBRVYyeXZ4emt0R2R6aE1WU0lwUzJ6NlhOdjVESWI5eXVKMTdnRnJOX0VHMTB5WWtzWXoxaVZvYmJ4RkN0TXVOT1lhNnlzeWpwempNR2p6T2tp?oc=5",
+      "published_at": "2026-10-25T04:54:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -47,6 +47,14 @@
       "headline": "Morez Johnson Jr. (shin) on minutes restriction - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNejNXOUthX0VlRjNzV25oVUFwa1Q0V2pfZWtEb203c0VhWmY4MWxZZFhXd1dWLWNmMXVHR0NrQjduTHlEeGhXTUMwY1JScUxzZlowbTlYRUtwdVBRdzVWTl9qaF93NVFJdGtsbGNWWHU2RG93UVpONF9jdmV6V3l6b28zRGlrQU1wRjFzZmRsV2NMRmtsMFlucHBMOVM1NEFxZUFDM1p1QVk4d1BpRTFha1Bn?oc=5",
       "published_at": "2026-10-25T04:31:56+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
+      "published_at": "2026-10-25T00:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -76,6 +84,14 @@
       "scope_date": "2026-10-25"
     },
     {
+      "headline": "Dallas Mavericks Announce Starting Lineup Without Cooper Flagg, Kyrie Irving Playing - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb0R6ajlkNTYyajhEbl9TTFJTNXpSQUg5NzhEd2RfR3B6bUJWcmdjMnIyUHd3WmVaN2hqUFZXeFZfSG9jUnFid3dGbF9BZk1QWmJSM183OThfWDdvNExmeEVlUC1MLVluTzRvbXhuWXl3Ni15ZmNKRFdySDUxTzJ6T0Y1Ni1FSm1lbWdiN2Rqaw?oc=5",
+      "published_at": "2026-10-24T23:51:42+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
       "headline": "Dean Wade (ankle) available Saturday, will start - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdVVkS1RIUVJDRUhCYjFQdTlZTG5Md0ZybmFwSV94VDJoX0lCUFRLZUdQTFMzaFBVZDN3azdzUS1VR29QbEpjVTBncUJobnV5c1BZZkdZcUU0U1h2bTBldnQwRmg5c05mdU5nd1NrejZ1dlFaTEFaX2FDa1dzcFd3Y21lYVVxaU9Xb1FRSzM4Q3oyUHBvYml2WEJZTmc2dTEwMjFDSnAtRmF1ejdFMnc?oc=5",
       "published_at": "2026-10-25T04:30:07+00:00",
@@ -95,14 +111,6 @@
       "headline": "Suns Reveal Starting Lineup vs Warriors - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWDlpeTVSZy1TUmRtQV9hRzByRExONTU5dU9XSlBUN0VjcTlEV0tUdWNESWItYzFHbVc3dThxOWxvekVpakNNRlREWlJmdnZBNlcwU3g3ZVlhRVpWMXhfRERiRVBfZ3QtYlV4cjZIcVBTRFhKcEc0MXBORXM2VXJCNTFOQ1N3TW1KYk5jUGJSOXNCM2RsV3FPMVgyOHBCQQ?oc=5",
       "published_at": "2026-10-25T01:31:40+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
-      "headline": "Golden State Warriors Fans React To Depressing Starting Lineup - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRW8wcS1QcUJmd1A3aU0zMGViMFpaS3hqZVgwS3dqMzE4Z1d2LU1hZURLTmxkM3ZzaEhsSFpOdnhxR3FMeXpBMVR2NkJXNkxhNTFIY04yTVZxQ3pGZ0xWcUpYaktKa2t5REtWMDAzQk1kNnVLdWExWEp1VmxOS1N6ZkZCbjJKWk4zYXNHWUE0U3BqRzhqZDR0ZUt3a0pneFk?oc=5",
-      "published_at": "2026-10-25T02:02:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -132,9 +140,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "The complications of putting Jordan Walsh in the Celtics starting lineup - Hardwood Houdini",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdzZ1bTBiRjdKWFBfVmRDZkl5M2tPR0tQV1BHS0NLQmVPZ1Uxem1kMG9oclVTWGpRVGZ0Z2NhRjYyMC1WSEV4cm9Bb2xsanBkeTcyc1k1Z0xsUFdCd1VxSW9MbWhycmFUVF9iZU5XdTNfWVk1ZEJCZXNERmJidU05bEZDaWxRVklaaEI3WU80RQ?oc=5",
-      "published_at": "2026-10-25T00:00:00+00:00",
+      "headline": "3 Takeaways from Warriors' Loss to Suns: Dubs Must Evolve Center Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdVJUNGpZRXVFQzJ4U1QyazUtd0I2MUxRLVNHdzY5VUVOMWgwdlJGQVRxdUtKa1NvSTA1SjgtRkk4SHBUTFBYMDNCZ1liLXd6VG9YMllFYU1DLW1uTkN1bGNXUUpZSDhTOUxyVkphZ3JTeE1DaDJoaGJxNVBFQkZyaXVMRkw5c0hfSDdLMnJra3dZOWZvcHdkNHBGTm9yLWQ3ZnpPQ0dVT0tCbGFfMk5JbEFDcnJxNzl5Nll6akhn?oc=5",
+      "published_at": "2026-10-25T05:37:47+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -167,6 +175,14 @@
       "headline": "Tyler Bilodeau (shoulder) ruled out Saturday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNjdXODBkVXZMMGtYSTRjdjVNRjhWU3p5N0ZhTkpMVFpybmpmbFdWbGZDWjZ4MTZYUmVmb3QzOVh1dFJEbjBhZXBkWEtJOUVxdkFrNGVrYnpPRjJlRnVud1B1X3B3WHRnWHlwWU5MOS1TSG5pa2NISXZTWGc2NkZxLWZ1aWZNUmRBRlVhVHpicjZxTFBl0gGaAUFVX3lxTFBWRDdpWjBfUTRQYjVEcm1tMmttZlNGVHZlSzI4TUg0azhCNjN5RHZ3a1J5OW1BdDJjamNSMERHN29hdjhNRTFNa2J5WUFra0tlYjlqb1VOYVg5cFNFcTJKOEtaV0Y1NUpMdmFQUU54WlZ3OEZ1YmNHOHZvaFpsVjFPZXNyLWRHUnV5TnhvamYxYUlQSFFONEswdmc?oc=5",
       "published_at": "2026-10-24T08:02:19+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Chelsea XI vs Tottenham: No Joao Pedro - starting lineup, confirmed team news and injury latest - Yahoo",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcDlTbzNXSGJpLWVTd2hSSGtZeWNJVXFCb1BkeUU4Z0NkbkI5b3dhVnZVX2ZlMHdYdWRYamRMQlJKY1oyUzlUb0ppSjVKd1BBZWgwQk1tMXhoLXZVSndwaE4zVnZlVlpfcDIxVU5vYWd1YUtObXFBRXBhVFNpOWd0WEkxQVI5MkJo?oc=5",
+      "published_at": "2026-10-24T15:50:38+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
