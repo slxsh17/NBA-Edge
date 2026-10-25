@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T23:43:49.298176+00:00",
+  "updated_at": "2026-10-25T00:04:41.304546+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -88,12 +88,12 @@
       "status": "OUT"
     },
     {
-      "name": "Spencer Jones",
+      "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
     },
     {
-      "name": "Cameron Johnson",
+      "name": "Spencer Jones",
       "team": "DEN",
       "status": "OUT"
     },
@@ -286,6 +286,11 @@
       "name": "Izaiyah Nelson",
       "team": "ORL",
       "status": "OUT"
+    },
+    {
+      "name": "VJ Edgecombe",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "LeBron James",
