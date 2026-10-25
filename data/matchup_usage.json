@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T03:06:52.099886-04:00",
+  "updated_at": "2026-10-25T09:00:56.140676-04:00",
   "source": "ESPN unofficial completed NBA box scores and local FanDuel positional mapping",
   "dvp_method": "Mean fantasy points allowed per player-game by nominal position; not pace or role adjusted",
   "usage_method": "Box-score estimated possession share, current-season sample only; projected_usage equals historical_usage until separately verified change",
@@ -1176,56 +1176,56 @@
     },
     {
       "name": "Moussa Diabate",
-      "historical_usage": 11.56,
-      "projected_usage": 11.56,
+      "historical_usage": 11.52,
+      "projected_usage": 11.52,
       "games": 3
     },
     {
       "name": "Brandon Miller",
-      "historical_usage": 34.17,
-      "projected_usage": 34.17,
+      "historical_usage": 34.3,
+      "projected_usage": 34.3,
       "games": 3
     },
     {
       "name": "Naz Reid",
-      "historical_usage": 27.48,
-      "projected_usage": 27.48,
+      "historical_usage": 27.37,
+      "projected_usage": 27.37,
       "games": 3
     },
     {
       "name": "Dennis Schroder",
-      "historical_usage": 22.59,
-      "projected_usage": 22.59,
+      "historical_usage": 22.8,
+      "projected_usage": 22.8,
       "games": 3
     },
     {
       "name": "Sion James",
-      "historical_usage": 10.74,
-      "projected_usage": 10.74,
+      "historical_usage": 10.71,
+      "projected_usage": 10.71,
       "games": 3
     },
     {
       "name": "Royce O'Neale",
-      "historical_usage": 11.67,
-      "projected_usage": 11.67,
+      "historical_usage": 11.65,
+      "projected_usage": 11.65,
       "games": 3
     },
     {
       "name": "Ryan Kalkbrenner",
-      "historical_usage": 9.85,
-      "projected_usage": 9.85,
+      "historical_usage": 9.81,
+      "projected_usage": 9.81,
       "games": 3
     },
     {
       "name": "Grayson Allen",
-      "historical_usage": 21.07,
-      "projected_usage": 21.07,
+      "historical_usage": 20.95,
+      "projected_usage": 20.95,
       "games": 3
     },
     {
       "name": "Christian Anderson",
-      "historical_usage": 26.2,
-      "projected_usage": 26.2,
+      "historical_usage": 25.96,
+      "projected_usage": 25.96,
       "games": 3
     },
     {
