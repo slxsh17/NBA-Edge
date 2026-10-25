@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T22:32:50.002783+00:00",
+  "updated_at": "2026-10-25T23:00:28.648309+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -93,7 +93,7 @@
       "status": "OUT"
     },
     {
-      "name": "Spencer Jones",
+      "name": "Alpha Diallo",
       "team": "DEN",
       "status": "DAY-TO-DAY"
     },
@@ -103,9 +103,9 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Alpha Diallo",
+      "name": "Spencer Jones",
       "team": "DEN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Julian Strawther",
@@ -161,6 +161,11 @@
       "name": "Steven Adams",
       "team": "HOU",
       "status": "OUT"
+    },
+    {
+      "name": "Ivica Zubac",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "T.J. McConnell",
