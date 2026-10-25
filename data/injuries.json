@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T00:04:41.304546+00:00",
+  "updated_at": "2026-10-25T00:45:15.432425+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -88,6 +88,11 @@
       "status": "OUT"
     },
     {
+      "name": "Alpha Diallo",
+      "team": "DEN",
+      "status": "OUT"
+    },
+    {
       "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
@@ -96,11 +101,6 @@
       "name": "Spencer Jones",
       "team": "DEN",
       "status": "OUT"
-    },
-    {
-      "name": "Alpha Diallo",
-      "team": "DEN",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Julian Strawther",
@@ -118,6 +118,11 @@
       "status": "OUT"
     },
     {
+      "name": "Draymond Green",
+      "team": "GSW",
+      "status": "OUT"
+    },
+    {
       "name": "Charles Bassey",
       "team": "GSW",
       "status": "DAY-TO-DAY"
@@ -126,11 +131,6 @@
       "name": "Al Horford",
       "team": "GSW",
       "status": "OUT"
-    },
-    {
-      "name": "Draymond Green",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Stephen Curry",
@@ -233,6 +233,11 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Zach Edey",
+      "team": "MEM",
+      "status": "OUT"
+    },
+    {
       "name": "Donte DiVincenzo",
       "team": "MIN",
       "status": "OUT"
@@ -288,11 +293,6 @@
       "status": "OUT"
     },
     {
-      "name": "VJ Edgecombe",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "LeBron James",
       "team": "PHI",
       "status": "OUT"
@@ -311,11 +311,6 @@
       "name": "Ariel Hukporti",
       "team": "PHI",
       "status": "OUT"
-    },
-    {
-      "name": "Luke Kennard",
-      "team": "PHX",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Oso Ighodaro",
@@ -341,6 +336,11 @@
       "name": "Shaedon Sharpe",
       "team": "POR",
       "status": "OUT"
+    },
+    {
+      "name": "Keegan Murray",
+      "team": "SAC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ben Simmons",
