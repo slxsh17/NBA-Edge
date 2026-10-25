@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-25T19:47:24.130696+00:00",
+  "checked_at": "2026-10-25T20:08:36.005505+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -39,6 +39,14 @@
       "scope_date": "2026-10-25"
     },
     {
+      "headline": "Predicting 76ers' Starting Lineup on Sunday With Joel Embiid Out - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPazExNVVpZzJYdTlrYzh4aEROUWZZS1A4c3hmaEsxRmd3NktaazdLRUNWamY3dUs5aWZUUTRCaXRIMmZ2bGhHYWUxOVE0aFlCYjNmSG96RU1Ya0JvcllSRkZvSzk1OGJGNks3S3JiSkZKRVBHanpLVFFaSDJabWdpMUxwVEFVZm5JcllicUgtYzRVVjY5VDd4YTIyV2xMUVU0TWhCR2ZHbjZKR0IySUxj?oc=5",
+      "published_at": "2026-10-25T19:30:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
       "headline": "What Timberwolves' First 2 Games Have Revealed About Their Rotation So Far - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdmJXVWllZEQwUWxRZG5MaUdSRmZwV0dpZDA2VlRVbnJaenk1X2dMdjBOMnhPN3h3TDgyMi1vdU1NOGR4V3d0SGtvbzNuWlZ2T09TcTdxUDkxYkM3a0Z3T256bGI3Q2J1Mmx2Mm9uUmp3c2JrMW1lWk9VM2xya2pSNV9za1pKUUN2VElwQw?oc=5",
       "published_at": "2026-10-25T15:00:04+00:00",
@@ -63,14 +71,6 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Suns Reveal Starting Lineup vs Warriors - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWDlpeTVSZy1TUmRtQV9hRzByRExONTU5dU9XSlBUN0VjcTlEV0tUdWNESWItYzFHbVc3dThxOWxvekVpakNNRlREWlJmdnZBNlcwU3g3ZVlhRVpWMXhfRERiRVBfZ3QtYlV4cjZIcVBTRFhKcEc0MXBORXM2VXJCNTFOQ1N3TW1KYk5jUGJSOXNCM2RsV3FPMVgyOHBCQQ?oc=5",
-      "published_at": "2026-10-25T01:31:40+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
       "headline": "3 Takeaways from Warriors' Loss to Suns: Dubs Must Evolve Center Rotation - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOW1WZi1JQTFmWEFDYzZZX19mWk5JNXNOSXN1TnI4RDBTM08yUGdldVlFT0RzOFRRekltNS1sZTZUcFNxRkxhVGg4cE5MV1dHTTFOamtpU2JVU0d4eGJkUUotWUFFM1RJU0E4dVhpSkMtSzE1NWNYYUtJWnJsNjRudVlDNUFJQQ?oc=5",
       "published_at": "2026-10-25T05:37:00+00:00",
@@ -79,9 +79,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
-      "published_at": "2026-10-24T23:00:00+00:00",
+      "headline": "Suns Reveal Starting Lineup vs Warriors - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWDlpeTVSZy1TUmRtQV9hRzByRExONTU5dU9XSlBUN0VjcTlEV0tUdWNESWItYzFHbVc3dThxOWxvekVpakNNRlREWlJmdnZBNlcwU3g3ZVlhRVpWMXhfRERiRVBfZ3QtYlV4cjZIcVBTRFhKcEc0MXBORXM2VXJCNTFOQ1N3TW1KYk5jUGJSOXNCM2RsV3FPMVgyOHBCQQ?oc=5",
+      "published_at": "2026-10-25T01:31:40+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -95,9 +95,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Nuggets Announce New Starting Lineup vs. Pelicans Due to Injury - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZjVwZ0xVS0RNalJFSDlZTmlxdjFPanhvU3ZKdm5jOGRyZzNtWC1TS2JFMXFlb1IwbkVqOU9iTXZyTm5kZTFqbm94TmN0QWFDUUdPcm0tUTFXbmp4OWF2elBCa1ZBdzhIT3VDdVF1WmJ4SmRfTHZqQTNmeTcyR1ZCVnpFNXNzYWU2a0ROVmZZX2hvbFU2dUNyaTYxMDY2eWM?oc=5",
-      "published_at": "2026-10-25T00:59:32+00:00",
+      "headline": "Utah Jazz's Starting Lineup Decision Just Got More Complicated - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzJZaUJmZ0trc3VrWGVoaE1fRHVDWjhjc1NkejNpRlV0d09PX2NQejM5SjJXd3ItS2k5MGtxdkpJSGsxeEI1TUZXZ2J5TlM4ajM2THNHVDNIZUNMZmkxVnVpT2cwYlh4T1htVWxiNUItTGlqX1BDemo0ajQwYkhFSlkyZnNMUHZ2TVR5QVdrTkhZc0JtSGd4b0sxQQ?oc=5",
+      "published_at": "2026-10-24T23:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -106,6 +106,14 @@
       "headline": "Rockets shake up starting lineup for showdown at Atlanta Hawks: Preview, Injuries & Starters - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSnY3dHFXRlNkRzZUYzJJSm83UGRpczYtbXI3ZzZNRUdaUlpSSzF0LWNvSUZXTjBWdjN5WlhDRWVKeVpjc015TkJ3eGF1TG1jblh3ZHJmU2ZndkdGV294RC1LMDVhZUtUWWREVnExOVJkdHZKZ3AteUNrRkVXd2U2YzNLSjZyT05nazhPU2hfbGs?oc=5",
       "published_at": "2026-10-24T21:34:07+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
+      "headline": "Nuggets Announce New Starting Lineup vs. Pelicans Due to Injury - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZjVwZ0xVS0RNalJFSDlZTmlxdjFPanhvU3ZKdm5jOGRyZzNtWC1TS2JFMXFlb1IwbkVqOU9iTXZyTm5kZTFqbm94TmN0QWFDUUdPcm0tUTFXbmp4OWF2elBCa1ZBdzhIT3VDdVF1WmJ4SmRfTHZqQTNmeTcyR1ZCVnpFNXNzYWU2a0ROVmZZX2hvbFU2dUNyaTYxMDY2eWM?oc=5",
+      "published_at": "2026-10-25T00:59:32+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -137,7 +145,7 @@
     {
       "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
-      "published_at": "2026-10-25T18:18:37+00:00",
+      "published_at": "2026-10-25T19:29:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
