@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T23:31:35.801610+00:00",
+  "updated_at": "2026-10-25T23:58:15.928302+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -246,6 +246,11 @@
       "name": "Jose Alvarado",
       "team": "NYK",
       "status": "OUT"
+    },
+    {
+      "name": "Cason Wallace",
+      "team": "OKC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Otega Oweh",
