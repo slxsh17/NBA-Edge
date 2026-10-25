@@ -1,6 +1,6 @@
 {
   "date": "20261024",
-  "updated_at": "2026-10-24T22:56:43.977919-04:00",
+  "updated_at": "2026-10-24T23:19:59.501985-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -37,7 +37,7 @@
       "away": "Houston Rockets",
       "home": "Atlanta Hawks",
       "time": "2026-10-25T00:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "New Orleans Pelicans",
@@ -49,7 +49,7 @@
       "away": "Golden State Warriors",
       "home": "Phoenix Suns",
       "time": "2026-10-25T02:00Z",
-      "status": "In Progress"
+      "status": "Halftime"
     }
   ]
 }
