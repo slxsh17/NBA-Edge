@@ -1,13 +1,13 @@
 {
   "date": "20261025",
-  "updated_at": "2026-10-25T19:11:33.228345-04:00",
+  "updated_at": "2026-10-25T20:14:12.711136-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
       "away": "Los Angeles Lakers",
       "home": "Utah Jazz",
       "time": "2026-10-25T21:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Indiana Pacers",
@@ -19,25 +19,25 @@
       "away": "Orlando Magic",
       "home": "New York Knicks",
       "time": "2026-10-25T23:00Z",
-      "status": "In Progress"
+      "status": "Halftime"
     },
     {
       "away": "Toronto Raptors",
       "home": "Minnesota Timberwolves",
       "time": "2026-10-25T23:00Z",
-      "status": "Scheduled"
+      "status": "Halftime"
     },
     {
       "away": "LA Clippers",
       "home": "Oklahoma City Thunder",
       "time": "2026-10-25T23:00Z",
-      "status": "In Progress"
+      "status": "Halftime"
     },
     {
       "away": "Detroit Pistons",
       "home": "Philadelphia 76ers",
       "time": "2026-10-25T23:30Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Memphis Grizzlies",
