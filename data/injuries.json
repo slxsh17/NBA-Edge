@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T23:58:15.928302+00:00",
+  "updated_at": "2026-10-26T00:50:56.616136+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -113,6 +113,11 @@
       "status": "OUT"
     },
     {
+      "name": "Isaiah Joe",
+      "team": "DET",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Ausar Thompson",
       "team": "DET",
       "status": "OUT"
@@ -220,12 +225,7 @@
     {
       "name": "Karim Lopez",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Cedric Coward",
-      "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Zach Edey",
@@ -245,6 +245,11 @@
     {
       "name": "Jose Alvarado",
       "team": "NYK",
+      "status": "OUT"
+    },
+    {
+      "name": "Jaylin Williams",
+      "team": "OKC",
       "status": "OUT"
     },
     {
