@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T22:11:00.726705+00:00",
+  "updated_at": "2026-10-26T22:55:13.313724+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -28,17 +28,7 @@
       "status": "OUT"
     },
     {
-      "name": "Naz Reid",
-      "team": "CHA",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Kon Knueppel",
-      "team": "CHA",
-      "status": "OUT"
-    },
-    {
-      "name": "Coby White",
       "team": "CHA",
       "status": "OUT"
     },
@@ -48,13 +38,13 @@
       "status": "OUT"
     },
     {
-      "name": "Kylan Boswell",
+      "name": "Coby White",
       "team": "CHA",
       "status": "OUT"
     },
     {
-      "name": "Patrick Williams",
-      "team": "CHI",
+      "name": "Kylan Boswell",
+      "team": "CHA",
       "status": "OUT"
     },
     {
@@ -63,14 +53,14 @@
       "status": "OUT"
     },
     {
-      "name": "Caleb Martin",
-      "team": "DAL",
+      "name": "Patrick Williams",
+      "team": "CHI",
       "status": "OUT"
     },
     {
-      "name": "Cooper Flagg",
+      "name": "Caleb Martin",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Naji Marshall",
@@ -170,7 +160,7 @@
     {
       "name": "Andrew Nembhard",
       "team": "IND",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "T.J. McConnell",
@@ -368,22 +358,22 @@
       "status": "OUT"
     },
     {
-      "name": "Keegan Murray",
-      "team": "SAC",
-      "status": "OUT"
-    },
-    {
-      "name": "Ben Simmons",
-      "team": "SAC",
-      "status": "OUT"
-    },
-    {
       "name": "Dylan Cardwell",
       "team": "SAC",
       "status": "OUT"
     },
     {
       "name": "Maxime Raynaud",
+      "team": "SAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Keegan Murray",
+      "team": "SAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Ben Simmons",
       "team": "SAC",
       "status": "OUT"
     },
