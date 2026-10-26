@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-26T13:42:43.963635+00:00",
+  "checked_at": "2026-10-26T15:26:03.711519+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -44,9 +44,9 @@
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Paul Reed News: Enters starting lineup - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbU5MRUQwR0J3cGRrZEpYeXBfUXZtaUtiaGpWdkExT3R3b0RWUHJ4Q2pkclFnVkVsN21rUTM5T1h0MHd1U1hGUlV6QjdHSVNEeVFMNi13ZEJMRVVueFlmQWxkSGRoblpvTnpJcnVNcVAwMEJrc0JsUTEzLWRSb1pQbU1pSEdrdEhzVG1KNGF0dEd6VnRI?oc=5",
-      "published_at": "2026-10-25T23:28:18+00:00",
+      "headline": "Taylor Jenkins yanking Ousmane Dieng from Bucks' rotation is a reminder to all - Behind the Buck Pass",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNVpHaW5ZWEp4UV9FMVhvcXRlZy1JREdSNVZiNU9OMkxISTBFbTFRR3ZFVnZMNzc0bFozX1daaTVlNE9ZMFhjYV9iSWFiOFdGZVBWeWZuM05ZSWZPUTFna2FoNVRpYXltVFVrc1RINGRDRmVjeFhDUlVNYm1MR1lCdGR0MTNLdVQxeFRDanNMcE84aE94?oc=5",
+      "published_at": "2026-10-26T12:00:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -55,6 +55,14 @@
       "headline": "Warriors-Nuggets Injury Report Features 3 Dubs Rotation Players, 1 Denver Starter - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVTViZUxKOHRGejhhTExSbzlfYTd6STc3ZmpxTkxfdzY2bEJiUGRkcm50T1ZobzNuclVNM1JlWG5XNFNzX2t6Q2xyRzBhOUxMczktbzZwSEVFLUpMdFlPd21WOG9iV0tBQ05aYnlMTkwzaWpEbnhXaFZkQlhmZG5qeUFMX2FzOW9QMUhuS2tFV1Z2a05ERnRmVFV4akc3OXNuVllyZFFPRTlvUnVSVmtNOGxCem85V1dmQUszLXYwQk85c0RGM1JkR1hn?oc=5",
       "published_at": "2026-10-26T05:04:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Paul Reed News: Enters starting lineup - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbU5MRUQwR0J3cGRrZEpYeXBfUXZtaUtiaGpWdkExT3R3b0RWUHJ4Q2pkclFnVkVsN21rUTM5T1h0MHd1U1hGUlV6QjdHSVNEeVFMNi13ZEJMRVVueFlmQWxkSGRoblpvTnpJcnVNcVAwMEJrc0JsUTEzLWRSb1pQbU1pSEdrdEhzVG1KNGF0dEd6VnRI?oc=5",
+      "published_at": "2026-10-25T23:28:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -103,14 +111,6 @@
       "headline": "Suns’ point guard rotation warrants patience after two games - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVm5fcVgxclc1R21EdFhCOUpnYmtyTHR6SlhubEJCbjBQcEdEVjVkNm9WakpGdFRzSy05c3o2TVZreTdfR2ZYU054SWtTSkg3UlU1Mk5PU2FYMWtDM3AzNk83SkxaTUdjaFJ6SVY1MnBZenp5Vzg4UFN1NllUS05vOE56azNpZ3ZIVHpF?oc=5",
       "published_at": "2026-10-25T18:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "What Timberwolves' First 2 Games Have Revealed About Their Rotation So Far - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdmJXVWllZEQwUWxRZG5MaUdSRmZwV0dpZDA2VlRVbnJaenk1X2dMdjBOMnhPN3h3TDgyMi1vdU1NOGR4V3d0SGtvbzNuWlZ2T09TcTdxUDkxYkM3a0Z3T256bGI3Q2J1Mmx2Mm9uUmp3c2JrMW1lWk9VM2xya2pSNV9za1pKUUN2VElwQw?oc=5",
-      "published_at": "2026-10-25T15:00:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
