@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T18:07:03.712467+00:00",
+  "updated_at": "2026-10-26T18:55:06.459758+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -173,12 +173,22 @@
       "status": "OUT"
     },
     {
-      "name": "Ivica Zubac",
+      "name": "Andrew Nembhard",
       "team": "IND",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "T.J. McConnell",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Ivica Zubac",
       "team": "IND",
       "status": "OUT"
     },
@@ -258,32 +268,22 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Cason Wallace",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
+      "name": "Chet Holmgren",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
       "name": "Jalen Williams",
       "team": "OKC",
       "status": "OUT"
     },
     {
-      "name": "Jaylin Williams",
-      "team": "OKC",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Cason Wallace",
-      "team": "OKC",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Otega Oweh",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Nikola Topic",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
     },
@@ -345,7 +345,7 @@
     {
       "name": "Oso Ighodaro",
       "team": "PHX",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Mark Williams",
