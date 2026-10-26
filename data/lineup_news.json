@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-25",
-  "checked_at": "2026-10-26T02:03:08.513236+00:00",
+  "checked_at": "2026-10-26T03:00:49.494155+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -63,6 +63,14 @@
       "scope_date": "2026-10-25"
     },
     {
+      "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
+      "published_at": "2026-10-25T23:47:46+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-25"
+    },
+    {
       "headline": "What Timberwolves' First 2 Games Have Revealed About Their Rotation So Far - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdmJXVWllZEQwUWxRZG5MaUdSRmZwV0dpZDA2VlRVbnJaenk1X2dMdjBOMnhPN3h3TDgyMi1vdU1NOGR4V3d0SGtvbzNuWlZ2T09TcTdxUDkxYkM3a0Z3T256bGI3Q2J1Mmx2Mm9uUmp3c2JrMW1lWk9VM2xya2pSNV9za1pKUUN2VElwQw?oc=5",
       "published_at": "2026-10-25T15:00:04+00:00",
@@ -111,17 +119,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Dallas Mavericks Announce Starting Lineup Without Cooper Flagg, Kyrie Irving Playing - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQ0drbGZrc1hBZkNfd29tMG0zX1lUNzhUUzg4QVF3ZXItY3oyOTRaOVhac2Q3RlY1N09aODJDaDF4OGpHdXBFa3d5UlNCWElFSUE1SWZPMFVscG9uQVREY3F5VWlVSjVwa0pFaWlLSkNqbklSUzdyYjJlS0RvMmxrRnMwaFpkaUdGVjBwRjZqQWNHMHdP?oc=5",
-      "published_at": "2026-10-25T02:42:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
-      "headline": "Ravens rule out QB Jackson (ankle) vs. Bengals; Huntley will start for third straight week - TSN",
-      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSjNyWEh3WnQ4X2J6dmhqd0NERWV6Q1NYV0huYlJQUl9RbWR6MEw4eXVSV2VZWUVrOF9MUmxSZHdKNnVTOUpyVFJWTFB5WG0temJUaDZfWHhLX3oxMVdncG9BenhGWXNER0VKZE9JNEVXaDNTZjUxX0NudGU1SUg5bFBNOWRaajVoMDFaRWFBbG1qTVpmXzB0SDlycDlLNDZ3cnNQdzRKVjA1UzdNMEtLVDVtWEpvdFI5TnMzSnVYbnBuV1YwUFE?oc=5",
-      "published_at": "2026-10-25T02:59:00+00:00",
+      "headline": "NASCAR Predictions for YellaWood 500, Starting Lineup at Talladega – 10/25/26 - PrizePicks",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlFFLVdWRHZwZHg1MG8tZ01jV2hCejF0VnpSc0NqV2xYZVZzbXhXSl9CMzl5akJBMEtrQUMtT2k1dTlBajFKR2xlWjhWV1RDMmVRWC1Wc1BqaWw5Q3E1ckJLTi1pTkZnV1FnQU1yMS1PM3lnWmY3ODl2TzlSOE1jNFM4MVR5OHluWkhJVENXSy1SV25PLXU1VnVOLU1SU1RHX3RzWTNMQU1CV0lUc2dHNUlMVWdwaXd2aDQ5Wg?oc=5",
+      "published_at": "2026-10-25T13:39:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
@@ -135,33 +135,9 @@
       "scope_date": "2026-10-25"
     },
     {
-      "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
-      "published_at": "2026-10-25T23:47:46+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
-      "headline": "NASCAR Predictions for YellaWood 500, Starting Lineup at Talladega – 10/25/26 - PrizePicks",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlFFLVdWRHZwZHg1MG8tZ01jV2hCejF0VnpSc0NqV2xYZVZzbXhXSl9CMzl5akJBMEtrQUMtT2k1dTlBajFKR2xlWjhWV1RDMmVRWC1Wc1BqaWw5Q3E1ckJLTi1pTkZnV1FnQU1yMS1PM3lnWmY3ODl2TzlSOE1jNFM4MVR5OHluWkhJVENXSy1SV25PLXU1VnVOLU1SU1RHX3RzWTNMQU1CV0lUc2dHNUlMVWdwaXd2aDQ5Wg?oc=5",
-      "published_at": "2026-10-25T13:39:03+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
       "headline": "Chelsea boss Xabi Alonso confirms Mike Penders will start against Liverpool despite Tottenham nightmare - Yahoo",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdWYxdHdTdTBJTTV5cmM5bF9Sd3ZhX2d1UGFYUnVNZktlaHNuOXJ2aEVGT0lIcEp0dVB5dnd5LXFWcU0tT3NEdjZmaEltQ3Q3ZXBUdC1fZjN4aktRdW1zbFlBdVJCbDhNUmk0Tk5NRUFmS1lFX0gtQWt5VzN0TndoODhGd2MybWdW?oc=5",
       "published_at": "2026-10-25T07:47:21+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-25"
-    },
-    {
-      "headline": "Will Richard Faces Similar Fate as Trayce Jackson-Davis in Warriors Rotation - SSBCrack",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMTE0MFdGTVV6aEVVQU1TSXpBU1JZRFhnTkJ1SEEyNjM2RjQzbjJxZUdqY3pFUGp2TWh4YXNEenBxN0FtZXBCYkktYjBUb051UW1PVXpkMzZ4aC0yTHdXYXdCUmZLT2hUZzBGRUFHY3l6d3FPdkpRcm5aS1JzU19rQzRWbkRHN3pVNHpZUzVPbDBIV3MtTUZVV0Y2TlRrN3R3ZzBtbGR3?oc=5",
-      "published_at": "2026-10-25T04:54:15+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-25"
