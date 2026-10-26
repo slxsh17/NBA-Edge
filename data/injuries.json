@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T16:30:23.298626+00:00",
+  "updated_at": "2026-10-26T17:23:04.671332+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -68,14 +68,14 @@
       "status": "OUT"
     },
     {
-      "name": "Cooper Flagg",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Caleb Martin",
       "team": "DAL",
       "status": "OUT"
+    },
+    {
+      "name": "Cooper Flagg",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Naji Marshall",
@@ -235,6 +235,11 @@
     {
       "name": "Zach Edey",
       "team": "MEM",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Anthony Edwards",
+      "team": "MIN",
       "status": "DAY-TO-DAY"
     },
     {
