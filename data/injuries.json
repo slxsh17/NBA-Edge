@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T23:25:23.578238+00:00",
+  "updated_at": "2026-10-26T23:58:24.852713+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -406,6 +406,11 @@
       "name": "Jusuf Nurkic",
       "team": "UTA",
       "status": "OUT"
+    },
+    {
+      "name": "Justin Champagnie",
+      "team": "WAS",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "AJ Dybantsa",
