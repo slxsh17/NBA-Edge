@@ -1,19 +1,11 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-26T05:58:43.371731+00:00",
+  "checked_at": "2026-10-26T06:31:50.847708+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
-    {
-      "headline": "Predicting 76ers' Starting Lineup on Sunday With Joel Embiid Out - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSFJOMlFHSUM0UDQxbVFaeE5keW1hRk1uWEg2SkwxZVhsOU5ZMWY4R0VmMGJPOHJGdThKMVRkLTRPQXNTbWZpUFN0MmxnY2FpU3p2X2M3c1pqdW4yTEkxVlQ0X2FqOEMycVQ5YnhGcE9JV1Vjd2xneTRjcHBZVl9nZ21oWFRQdHlPR3lWSlpHeWg5dw?oc=5",
-      "published_at": "2026-10-25T19:30:01+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
     {
       "headline": "Paul Reed News: Enters starting lineup - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbU5MRUQwR0J3cGRrZEpYeXBfUXZtaUtiaGpWdkExT3R3b0RWUHJ4Q2pkclFnVkVsN21rUTM5T1h0MHd1U1hGUlV6QjdHSVNEeVFMNi13ZEJMRVVueFlmQWxkSGRoblpvTnpJcnVNcVAwMEJrc0JsUTEzLWRSb1pQbU1pSEdrdEhzVG1KNGF0dEd6VnRI?oc=5",
@@ -23,17 +15,17 @@
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Warriors-Nuggets Injury Report Features 3 Dubs Rotation Players, 1 Denver Starter - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVTViZUxKOHRGejhhTExSbzlfYTd6STc3ZmpxTkxfdzY2bEJiUGRkcm50T1ZobzNuclVNM1JlWG5XNFNzX2t6Q2xyRzBhOUxMczktbzZwSEVFLUpMdFlPd21WOG9iV0tBQ05aYnlMTkwzaWpEbnhXaFZkQlhmZG5qeUFMX2FzOW9QMUhuS2tFV1Z2a05ERnRmVFV4akc3OXNuVllyZFFPRTlvUnVSVmtNOGxCem85V1dmQUszLXYwQk85c0RGM1JkR1hn?oc=5",
-      "published_at": "2026-10-26T05:04:39+00:00",
+      "headline": "Los Angeles Lakers Big Man Named ‘Glaring Hole’ in Current Rotation - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNXduTXJyN1ZpWm9JenNpQkxzUEhQQjRWXzAzUGtiZkFPRVd3eW9aaTVxRV8tRmVlTDlqY3JZSkpVVy1LbzYzT0k4MDV3ZUhlX2h5SVYyUWE3enlLYWpacTdGZFNNNzNEdF9oTHg2QmZvdlJoS3dtejZBUHlNenpfUkJndHFyZk5KTHNlY184emdxb1BJTlE?oc=5",
+      "published_at": "2026-10-25T23:32:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Los Angeles Lakers Big Man Named ‘Glaring Hole’ in Current Rotation - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNXduTXJyN1ZpWm9JenNpQkxzUEhQQjRWXzAzUGtiZkFPRVd3eW9aaTVxRV8tRmVlTDlqY3JZSkpVVy1LbzYzT0k4MDV3ZUhlX2h5SVYyUWE3enlLYWpacTdGZFNNNzNEdF9oTHg2QmZvdlJoS3dtejZBUHlNenpfUkJndHFyZk5KTHNlY184emdxb1BJTlE?oc=5",
-      "published_at": "2026-10-25T23:32:03+00:00",
+      "headline": "Cavaliers Could Make a Surprising Rotation Change After Slow Start - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYXZ0R2ZoV0VjdEpZcmNMV2RsTzBJRWRwZ1A5U3hhRjhETzhGcE5xNzIwVkFXN01rS0h2S3FOQmt2dDVkR19lTnV0TXI4U3JCbnptaFhUalRMZGpaX3c5bXhzUVIwRk9PdmkzNHNUZ09fRlhLWHQxOG5ReXFXUXlVRGh0dWwwYmZJQTBqNXBqWmMtbFpNMlZSVjJIWDI3TG1CNVMzcnBTTkRXQUtxc2wtdndySHFWQzFQ?oc=5",
+      "published_at": "2026-10-25T19:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -55,25 +47,17 @@
       "scope_date": "2026-10-26"
     },
     {
+      "headline": "Predicting 76ers' Starting Lineup on Sunday With Joel Embiid Out - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSFJOMlFHSUM0UDQxbVFaeE5keW1hRk1uWEg2SkwxZVhsOU5ZMWY4R0VmMGJPOHJGdThKMVRkLTRPQXNTbWZpUFN0MmxnY2FpU3p2X2M3c1pqdW4yTEkxVlQ0X2FqOEMycVQ5YnhGcE9JV1Vjd2xneTRjcHBZVl9nZ21oWFRQdHlPR3lWSlpHeWg5dw?oc=5",
+      "published_at": "2026-10-25T19:30:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
       "headline": "Suns’ point guard rotation warrants patience after two games - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVm5fcVgxclc1R21EdFhCOUpnYmtyTHR6SlhubEJCbjBQcEdEVjVkNm9WakpGdFRzSy05c3o2TVZreTdfR2ZYU054SWtTSkg3UlU1Mk5PU2FYMWtDM3AzNk83SkxaTUdjaFJ6SVY1MnBZenp5Vzg4UFN1NllUS05vOE56azNpZ3ZIVHpF?oc=5",
       "published_at": "2026-10-25T18:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Cavaliers Could Make a Surprising Rotation Change After Slow Start - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYXZ0R2ZoV0VjdEpZcmNMV2RsTzBJRWRwZ1A5U3hhRjhETzhGcE5xNzIwVkFXN01rS0h2S3FOQmt2dDVkR19lTnV0TXI4U3JCbnptaFhUalRMZGpaX3c5bXhzUVIwRk9PdmkzNHNUZ09fRlhLWHQxOG5ReXFXUXlVRGh0dWwwYmZJQTBqNXBqWmMtbFpNMlZSVjJIWDI3TG1CNVMzcnBTTkRXQUtxc2wtdndySHFWQzFQ?oc=5",
-      "published_at": "2026-10-25T19:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
-      "published_at": "2026-10-25T23:47:46+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -95,33 +79,25 @@
       "scope_date": "2026-10-26"
     },
     {
+      "headline": "Warriors-Nuggets Injury Report Features 3 Dubs Rotation Players, 1 Denver Starter - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVTViZUxKOHRGejhhTExSbzlfYTd6STc3ZmpxTkxfdzY2bEJiUGRkcm50T1ZobzNuclVNM1JlWG5XNFNzX2t6Q2xyRzBhOUxMczktbzZwSEVFLUpMdFlPd21WOG9iV0tBQ05aYnlMTkwzaWpEbnhXaFZkQlhmZG5qeUFMX2FzOW9QMUhuS2tFV1Z2a05ERnRmVFV4akc3OXNuVllyZFFPRTlvUnVSVmtNOGxCem85V1dmQUszLXYwQk85c0RGM1JkR1hn?oc=5",
+      "published_at": "2026-10-26T05:04:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
+      "published_at": "2026-10-25T23:47:46+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
       "headline": "NASCAR Predictions for YellaWood 500, Starting Lineup at Talladega – 10/25/26 - PrizePicks",
       "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlFFLVdWRHZwZHg1MG8tZ01jV2hCejF0VnpSc0NqV2xYZVZzbXhXSl9CMzl5akJBMEtrQUMtT2k1dTlBajFKR2xlWjhWV1RDMmVRWC1Wc1BqaWw5Q3E1ckJLTi1pTkZnV1FnQU1yMS1PM3lnWmY3ODl2TzlSOE1jNFM4MVR5OHluWkhJVENXSy1SV25PLXU1VnVOLU1SU1RHX3RzWTNMQU1CV0lUc2dHNUlMVWdwaXd2aDQ5Wg?oc=5",
       "published_at": "2026-10-25T13:39:03+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Pistons' Paul Reed: Enters starting lineup - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeFczTUxncnA4U3A5aXhEcFFfb2FNcGRuakVtbnpUb25XOGw0bmJVcjNqR2NNdnQzRVV2andBSGZaZlhucVpRLVNueDhiUDhqZ0VNNXNPT3VyNHZXQVc2SkRtM0o5QWxwb2ozOWY0TzIxamtYRTFJWnBsME9SemtBQ2VDYUdKVFJpNm1zTFk4Y2RHTmQ4T3c?oc=5",
-      "published_at": "2026-10-25T23:28:18+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Dusty May can't keep Sergio De Larrea out of Mavericks' rotation any longer - The Smoking Cuban",
-      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNX2w2dWdqVHdSa2RfYWx2UlB3aVg0UnUwVjZtR05fTWFnLTBTM01NZUhkSXhZdFZSc3dmZUxiWjNEWXRDbG82aFZnNFZRVkFvamFLNUVlLWwwbFlYbHJScTJOMDZpLXNkVUhlVmViWlVuNndLRGlGcjVRNzMwUzBrMkhlT04xYXdVcHh5SlRjS0VCSmozZkJ2NUU1cTk2RnQxQUtZ?oc=5",
-      "published_at": "2026-10-25T14:57:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Chelsea boss Xabi Alonso confirms Mike Penders will start against Liverpool despite Tottenham nightmare - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdWYxdHdTdTBJTTV5cmM5bF9Sd3ZhX2d1UGFYUnVNZktlaHNuOXJ2aEVGT0lIcEp0dVB5dnd5LXFWcU0tT3NEdjZmaEltQ3Q3ZXBUdC1fZjN4aktRdW1zbFlBdVJCbDhNUmk0Tk5NRUFmS1lFX0gtQWt5VzN0TndoODhGd2MybWdW?oc=5",
-      "published_at": "2026-10-25T07:47:21+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
