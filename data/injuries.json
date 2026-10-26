@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T15:33:54.211072+00:00",
+  "updated_at": "2026-10-26T16:30:23.298626+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -70,7 +70,7 @@
     {
       "name": "Cooper Flagg",
       "team": "DAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Caleb Martin",
@@ -165,7 +165,7 @@
     {
       "name": "Marcus Smart",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Steven Adams",
