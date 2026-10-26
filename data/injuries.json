@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T13:54:03.276275+00:00",
+  "updated_at": "2026-10-26T15:33:54.211072+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -18,14 +18,19 @@
       "status": "OUT"
     },
     {
+      "name": "Mikel Brown Jr.",
+      "team": "BKN",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Tyler Bilodeau",
       "team": "BKN",
       "status": "OUT"
     },
     {
-      "name": "Mikel Brown Jr.",
-      "team": "BKN",
-      "status": "OUT"
+      "name": "Naz Reid",
+      "team": "CHA",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kon Knueppel",
@@ -63,12 +68,12 @@
       "status": "OUT"
     },
     {
-      "name": "Caleb Martin",
+      "name": "Cooper Flagg",
       "team": "DAL",
       "status": "OUT"
     },
     {
-      "name": "Cooper Flagg",
+      "name": "Caleb Martin",
       "team": "DAL",
       "status": "OUT"
     },
@@ -113,14 +118,14 @@
       "status": "OUT"
     },
     {
-      "name": "Isaiah Joe",
+      "name": "Ausar Thompson",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Ausar Thompson",
+      "name": "Isaiah Joe",
       "team": "DET",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jalen Duren",
@@ -225,12 +230,12 @@
     {
       "name": "Karim Lopez",
       "team": "MEM",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Zach Edey",
       "team": "MEM",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Donte DiVincenzo",
@@ -245,12 +250,12 @@
     {
       "name": "Jose Alvarado",
       "team": "NYK",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jalen Williams",
       "team": "OKC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jaylin Williams",
@@ -303,22 +308,22 @@
       "status": "OUT"
     },
     {
-      "name": "VJ Edgecombe",
-      "team": "PHI",
-      "status": "OUT"
-    },
-    {
-      "name": "Tacko Fall",
-      "team": "PHI",
-      "status": "OUT"
-    },
-    {
       "name": "Jabari Walker",
       "team": "PHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "VJ Edgecombe",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Joel Embiid",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tacko Fall",
       "team": "PHI",
       "status": "OUT"
     },
@@ -360,7 +365,7 @@
     {
       "name": "Keegan Murray",
       "team": "SAC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ben Simmons",
@@ -390,7 +395,7 @@
     {
       "name": "Kawhi Leonard",
       "team": "TOR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nate Bittle",
