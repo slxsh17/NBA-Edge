@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-26T21:26:19.952597+00:00",
+  "checked_at": "2026-10-26T21:57:19.969334+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -103,6 +103,14 @@
       "headline": "Warriors-Nuggets Injury Report Features 3 Dubs Rotation Players, 1 Denver Starter - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVTViZUxKOHRGejhhTExSbzlfYTd6STc3ZmpxTkxfdzY2bEJiUGRkcm50T1ZobzNuclVNM1JlWG5XNFNzX2t6Q2xyRzBhOUxMczktbzZwSEVFLUpMdFlPd21WOG9iV0tBQ05aYnlMTkwzaWpEbnhXaFZkQlhmZG5qeUFMX2FzOW9QMUhuS2tFV1Z2a05ERnRmVFV4akc3OXNuVllyZFFPRTlvUnVSVmtNOGxCem85V1dmQUszLXYwQk85c0RGM1JkR1hn?oc=5",
       "published_at": "2026-10-26T05:04:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Liam Coen on Brian Thomas Jr. being in starting lineup - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1VVGJ1MmlzU0tHZEJpRVhNZGhVeHdja3plNVphbGx0ZXFNUW9aRm9qeTMtd3JidTBVV1gxZnRKWUMtTTl6V09qM0hZeVNkZFp0OU5YNlVDbWpPZjdrOXhhVmQtZXJNUGctWm9JMWJfUG4yeGFXZ0Rtb3hZcG4?oc=5",
+      "published_at": "2026-10-26T19:06:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
