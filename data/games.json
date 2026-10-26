@@ -1,6 +1,6 @@
 {
   "date": "20261025",
-  "updated_at": "2026-10-25T22:03:53.506557-04:00",
+  "updated_at": "2026-10-25T23:01:08.068991-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -37,13 +37,13 @@
       "away": "Detroit Pistons",
       "home": "Philadelphia 76ers",
       "time": "2026-10-25T23:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Memphis Grizzlies",
       "home": "Sacramento Kings",
       "time": "2026-10-26T01:00Z",
-      "status": "In Progress"
+      "status": "End of Period"
     }
   ]
 }
