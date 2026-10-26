@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T22:55:13.313724+00:00",
+  "updated_at": "2026-10-26T23:25:23.578238+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -28,17 +28,17 @@
       "status": "OUT"
     },
     {
+      "name": "Coby White",
+      "team": "CHA",
+      "status": "OUT"
+    },
+    {
       "name": "Kon Knueppel",
       "team": "CHA",
       "status": "OUT"
     },
     {
       "name": "Grant Williams",
-      "team": "CHA",
-      "status": "OUT"
-    },
-    {
-      "name": "Coby White",
       "team": "CHA",
       "status": "OUT"
     },
@@ -148,13 +148,18 @@
       "status": "OUT"
     },
     {
+      "name": "Steven Adams",
+      "team": "HOU",
+      "status": "OUT"
+    },
+    {
       "name": "Marcus Smart",
       "team": "HOU",
       "status": "OUT"
     },
     {
-      "name": "Steven Adams",
-      "team": "HOU",
+      "name": "Ben Sheppard",
+      "team": "IND",
       "status": "OUT"
     },
     {
@@ -168,17 +173,7 @@
       "status": "OUT"
     },
     {
-      "name": "Aaron Nesmith",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Ivica Zubac",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Ben Sheppard",
       "team": "IND",
       "status": "OUT"
     },
