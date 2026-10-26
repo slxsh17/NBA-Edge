@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T21:31:06.734301+00:00",
+  "updated_at": "2026-10-26T22:11:00.726705+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -55,12 +55,7 @@
     {
       "name": "Patrick Williams",
       "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Noa Essengue",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Nic Claxton",
@@ -248,11 +243,6 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Anthony Edwards",
-      "team": "MIN",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Donte DiVincenzo",
       "team": "MIN",
       "status": "OUT"
@@ -268,6 +258,16 @@
       "status": "OUT"
     },
     {
+      "name": "Jalen Williams",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
+      "name": "Cason Wallace",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
       "name": "Nikola Topic",
       "team": "OKC",
       "status": "OUT"
@@ -278,17 +278,7 @@
       "status": "OUT"
     },
     {
-      "name": "Cason Wallace",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
       "name": "Chet Holmgren",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Jalen Williams",
       "team": "OKC",
       "status": "OUT"
     },
@@ -380,7 +370,7 @@
     {
       "name": "Keegan Murray",
       "team": "SAC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Ben Simmons",
