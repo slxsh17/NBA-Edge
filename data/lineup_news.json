@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-26T17:59:34.808013+00:00",
+  "checked_at": "2026-10-26T18:34:44.907940+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -35,6 +35,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Seth Curry bewildered by Warriors' starting lineup decision early in season - NBC Bay Area",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdlBMMWhvUW5WNWdBRjZLR0FXamZfcWY4YjNJZVBhdTZGcE82NWJ5UmtWVDdhQlZFUGgtSzVQTmZDX2JUQ2NaZjJoNWVxNnp2RVh4cXRkY29SZE5sMjFBQWVxdjRqWXpFTnRtbnp3VHYycjh5YlZNcXVyUEtnRWJXV0xnU2NyUjBYbXgxaFVucUt6SzRncE8wLVRoRUJyeTYz0gGoAUFVX3lxTFBZSGR4aENYR1cxSWlJaXNZQXBrOEtQVmpNSnVQdm81X1A5d1B3STI1M1VaOV9XQkNMWUJOb2FNMkpQcEk0NFB3WWgzUnF0MzZpWkh1MmxfWlZ2OGFLdTlZMUlHSGVmQlFvWGZiSk5HSU1JNkcwZHVPLWpWTlhjdVFMVXo1cVNyMndvc3BMT0Y5Z21FT0p4ZTR4bmxVdkVWdWtaUXd2WXM0eQ?oc=5",
+      "published_at": "2026-10-26T17:45:55+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
     {
       "headline": "Why Justin Champagnie Is Earning Permanent Role in Wizards Rotation - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRUNrSTdRbkJyR0VaeGw4LVhkWEdSaVU5VHhiY3VqRjlkUW0yTUUzVEJwZTNZMmtEUmhsTnRpOTFxZ19qMG1hT1dqODNqaURUNG1hdFo0TjF4b3NzYmVBUG5pS3ExUW9CTVNaYzdPb1hTRWlFcEdVZGxpZm1peGtDam9pbGkyLVhHMTNwOTJQenF1dw?oc=5",
@@ -103,14 +111,6 @@
       "headline": "Predicting 76ers' Starting Lineup on Sunday With Joel Embiid Out - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPazExNVVpZzJYdTlrYzh4aEROUWZZS1A4c3hmaEsxRmd3NktaazdLRUNWamY3dUs5aWZUUTRCaXRIMmZ2bGhHYWUxOVE0aFlCYjNmSG96RU1Ya0JvcllSRkZvSzk1OGJGNks3S3JiSkZKRVBHanpLVFFaSDJabWdpMUxwVEFVZm5JcllicUgtYzRVVjY5VDd4YTIyV2xMUVU0TWhCR2ZHbjZKR0IySUxj?oc=5",
       "published_at": "2026-10-25T19:30:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Suns’ point guard rotation warrants patience after two games - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVm5fcVgxclc1R21EdFhCOUpnYmtyTHR6SlhubEJCbjBQcEdEVjVkNm9WakpGdFRzSy05c3o2TVZreTdfR2ZYU054SWtTSkg3UlU1Mk5PU2FYMWtDM3AzNk83SkxaTUdjaFJ6SVY1MnBZenp5Vzg4UFN1NllUS05vOE56azNpZ3ZIVHpF?oc=5",
-      "published_at": "2026-10-25T18:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
