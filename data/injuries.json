@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T00:50:56.616136+00:00",
+  "updated_at": "2026-10-26T01:40:33.423218+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -248,9 +248,14 @@
       "status": "OUT"
     },
     {
+      "name": "Jalen Williams",
+      "team": "OKC",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jaylin Williams",
       "team": "OKC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cason Wallace",
@@ -271,6 +276,11 @@
       "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
+    },
+    {
+      "name": "Jalen Suggs",
+      "team": "ORL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jonathan Isaac",
