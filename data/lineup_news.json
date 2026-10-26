@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-26T05:02:03.562294+00:00",
+  "checked_at": "2026-10-26T05:58:43.371731+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -23,17 +23,17 @@
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Los Angeles Lakers Big Man Named ‘Glaring Hole’ in Current Rotation - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNXduTXJyN1ZpWm9JenNpQkxzUEhQQjRWXzAzUGtiZkFPRVd3eW9aaTVxRV8tRmVlTDlqY3JZSkpVVy1LbzYzT0k4MDV3ZUhlX2h5SVYyUWE3enlLYWpacTdGZFNNNzNEdF9oTHg2QmZvdlJoS3dtejZBUHlNenpfUkJndHFyZk5KTHNlY184emdxb1BJTlE?oc=5",
-      "published_at": "2026-10-25T23:32:03+00:00",
+      "headline": "Warriors-Nuggets Injury Report Features 3 Dubs Rotation Players, 1 Denver Starter - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVTViZUxKOHRGejhhTExSbzlfYTd6STc3ZmpxTkxfdzY2bEJiUGRkcm50T1ZobzNuclVNM1JlWG5XNFNzX2t6Q2xyRzBhOUxMczktbzZwSEVFLUpMdFlPd21WOG9iV0tBQ05aYnlMTkwzaWpEbnhXaFZkQlhmZG5qeUFMX2FzOW9QMUhuS2tFV1Z2a05ERnRmVFV4akc3OXNuVllyZFFPRTlvUnVSVmtNOGxCem85V1dmQUszLXYwQk85c0RGM1JkR1hn?oc=5",
+      "published_at": "2026-10-26T05:04:39+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Cavaliers Could Make a Surprising Rotation Change After Slow Start - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYXZ0R2ZoV0VjdEpZcmNMV2RsTzBJRWRwZ1A5U3hhRjhETzhGcE5xNzIwVkFXN01rS0h2S3FOQmt2dDVkR19lTnV0TXI4U3JCbnptaFhUalRMZGpaX3c5bXhzUVIwRk9PdmkzNHNUZ09fRlhLWHQxOG5ReXFXUXlVRGh0dWwwYmZJQTBqNXBqWmMtbFpNMlZSVjJIWDI3TG1CNVMzcnBTTkRXQUtxc2wtdndySHFWQzFQ?oc=5",
-      "published_at": "2026-10-25T19:00:00+00:00",
+      "headline": "Los Angeles Lakers Big Man Named ‘Glaring Hole’ in Current Rotation - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNXduTXJyN1ZpWm9JenNpQkxzUEhQQjRWXzAzUGtiZkFPRVd3eW9aaTVxRV8tRmVlTDlqY3JZSkpVVy1LbzYzT0k4MDV3ZUhlX2h5SVYyUWE3enlLYWpacTdGZFNNNzNEdF9oTHg2QmZvdlJoS3dtejZBUHlNenpfUkJndHFyZk5KTHNlY184emdxb1BJTlE?oc=5",
+      "published_at": "2026-10-25T23:32:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -63,6 +63,14 @@
       "scope_date": "2026-10-26"
     },
     {
+      "headline": "Cavaliers Could Make a Surprising Rotation Change After Slow Start - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYXZ0R2ZoV0VjdEpZcmNMV2RsTzBJRWRwZ1A5U3hhRjhETzhGcE5xNzIwVkFXN01rS0h2S3FOQmt2dDVkR19lTnV0TXI4U3JCbnptaFhUalRMZGpaX3c5bXhzUVIwRk9PdmkzNHNUZ09fRlhLWHQxOG5ReXFXUXlVRGh0dWwwYmZJQTBqNXBqWmMtbFpNMlZSVjJIWDI3TG1CNVMzcnBTTkRXQUtxc2wtdndySHFWQzFQ?oc=5",
+      "published_at": "2026-10-25T19:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
       "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
       "published_at": "2026-10-25T23:47:46+00:00",
@@ -82,14 +90,6 @@
       "headline": "What is Joe Mazzulla’s rotation telling us after two games? - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOXdxdkx3VDRydWZfbjJSWlZnd0R5RVR5aFZ2RzduTnhfMXQ2NjlhSC0zWVhmSmVBeXFBemdWaVBRQUpYR3dGUW9IVno3RWxSY3cwelJVVGVDS3JsbkJKME0tazB5SUVSR0xlekdwc2xfYkJxa3ZqeVl0RHV4LWJhMGZ6Q29oUnYz?oc=5",
       "published_at": "2026-10-25T11:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "3 Takeaways from Warriors' Loss to Suns: Dubs Must Evolve Center Rotation - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOW1WZi1JQTFmWEFDYzZZX19mWk5JNXNOSXN1TnI4RDBTM08yUGdldVlFT0RzOFRRekltNS1sZTZUcFNxRkxhVGg4cE5MV1dHTTFOamtpU2JVU0d4eGJkUUotWUFFM1RJU0E4dVhpSkMtSzE1NWNYYUtJWnJsNjRudVlDNUFJQQ?oc=5",
-      "published_at": "2026-10-25T05:37:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
