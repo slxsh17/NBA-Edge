@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T20:56:00.323900+00:00",
+  "updated_at": "2026-10-26T21:31:06.734301+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -118,12 +118,12 @@
       "status": "OUT"
     },
     {
-      "name": "Ausar Thompson",
+      "name": "Isaiah Joe",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Isaiah Joe",
+      "name": "Ausar Thompson",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
@@ -265,7 +265,7 @@
     {
       "name": "Jose Alvarado",
       "team": "NYK",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Nikola Topic",
