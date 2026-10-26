@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-26T22:23:21.049974+00:00",
+  "checked_at": "2026-10-26T22:58:47.263945+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -68,14 +68,6 @@
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Paul Reed News: Enters starting lineup - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbU5MRUQwR0J3cGRrZEpYeXBfUXZtaUtiaGpWdkExT3R3b0RWUHJ4Q2pkclFnVkVsN21rUTM5T1h0MHd1U1hGUlV6QjdHSVNEeVFMNi13ZEJMRVVueFlmQWxkSGRoblpvTnpJcnVNcVAwMEJrc0JsUTEzLWRSb1pQbU1pSEdrdEhzVG1KNGF0dEd6VnRI?oc=5",
-      "published_at": "2026-10-25T23:28:18+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
       "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeHB0Yy03OERscGZySkdTVWthbVdReVY3UHNJcUg2UUpreFczcnFpdUVCUk5sSG55YzFSRGNJZlhSNGdUbGZQN3pZdnY5YlpKWmVIUktxNzBIMzRXVklBVkhHeXZyOHhUampxUy1WWWl5T2FfOGJtWXhHMldWckF3RjkwVDRNNUFlMDBZWkgwMDk2WUc3VEVOUUNCT2xqbnNaWEh3cTUyRUMyMFNMXzhaVGR2ei1pUWhkNWl0aQ?oc=5",
       "published_at": "2026-10-26T18:53:14+00:00",
@@ -84,9 +76,17 @@
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Has Sharp Surpassed Clifford in Kings’ Rotation? - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUlRZYkVtXzVyWWNjeGNaOWJMamtReEhLZndBdHh0eHMwZ2E1ZTUtQkUwNjE5NUVIbVB2VHlsMXVOTDNaWGROVUJWdEZiZVNmSkdqT1E5cVpFNkVSWFFtMzdPRko5MlN4UThJdWFVSzFRc0xQa2thX2tNVTNBazVwVk81V3BHTDBwamVtQktibmE3STRXMW9udQ?oc=5",
-      "published_at": "2026-10-25T22:48:11+00:00",
+      "headline": "Paul Reed News: Enters starting lineup - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbU5MRUQwR0J3cGRrZEpYeXBfUXZtaUtiaGpWdkExT3R3b0RWUHJ4Q2pkclFnVkVsN21rUTM5T1h0MHd1U1hGUlV6QjdHSVNEeVFMNi13ZEJMRVVueFlmQWxkSGRoblpvTnpJcnVNcVAwMEJrc0JsUTEzLWRSb1pQbU1pSEdrdEhzVG1KNGF0dEd6VnRI?oc=5",
+      "published_at": "2026-10-25T23:28:18+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
+      "published_at": "2026-10-25T23:47:46+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -124,25 +124,9 @@
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Jabari Walker (knee) ruled out Sunday vs. Detroit - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFB1bjVHUjFWLVZOcUpyYXJoYnZfa2Rxd25GMDVUZUZEelJNWGo1RFFuWG9zcUpwTVFlRVhOMnJnc3ZWeHZtNzNWMHlmX1k0MDl6cUFNVU56Yk1WcWQyMWVSQTh1aXF3eG9VYl92VnAxSTBhU3hma3dwdWJCRE9qMURqYlN1cXBGN3o3N1NlNGY2b24yYUR3c1JCY1VTRE10TVdGdHFHMjc3LXpEM2NUSF9HQXc?oc=5",
-      "published_at": "2026-10-25T23:47:46+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
       "headline": "Forde: Minutes restriction? What minutes restriction. - Basketball.com.au",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY2hvR1dMdENUU1d0TXRlTmlwX3o4R1hRTWc3eF9mUzNnejBrWW84ZEE3M0JxWnVFcGlkUkxaRHduZnB0Wi1lLXduX1pyUC02OXVheml0MUVTek9WN0U1dmIybmlmR0JMa0pMMXpTaTJVQ0JMUW5lc0ZIQVQxTXFIU0tMOWhGZF9YX1NlSDhxTDcwQUlWZTJ5dF9ZaDI0dw?oc=5",
       "published_at": "2026-10-26T01:25:59+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Nets’ Jordi Fernandez reveals reason for Mikel Brown Jr., Egor Demin’s split in rotation - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPR3JHeHFZSGVMOHF4Qk9UT1RVRjFMYnRLSWFtTGU5SkpRSXF0WnhQZVBFSHdNUjFxSy1rTTBoUTUwcG84ZTE4ZjNIdzBwT2dZcGZXdTdoNlVBRHhORU9tYTZ1cTZMellvUnh6ZUR5aXRJeTJoNkRHTVptX255enpkTkVCMEVOSUZIVUg5dWpvZDJjbVpIWmVUa2F2bGVqSzdaWHF2U2dTbnZVUEZDM0lr?oc=5",
-      "published_at": "2026-10-25T22:41:54+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
