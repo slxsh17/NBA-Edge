@@ -1,11 +1,26 @@
-sg_today.html HTTP 200 size 374051 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/
-sg_tomorrow.html HTTP 200 size 298554 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-27/
-main_tomorrow.html HTTP 200 size 298435 final https://www.dailyfantasyfuel.com/nba/projections/fanduel/2026-10-27/
-proj.js HTTP 200 size 4209 final https://dff-common.s3.amazonaws.com/projections_mini.gz.js?734f96
-total 968
-drwxr-xr-x 2 runner runner   4096 Oct 27 02:28 .
-drwxr-xr-x 7 runner runner   4096 Oct 27 02:28 ..
--rw-r--r-- 1 runner runner 298435 Oct 27 02:28 main_tomorrow.html
--rw-r--r-- 1 runner runner   4209 Oct 27 02:28 proj.js
--rw-r--r-- 1 runner runner 374051 Oct 27 02:28 sg_today.html
--rw-r--r-- 1 runner runner 298554 Oct 27 02:28 sg_tomorrow.html
+base.js HTTP 200 size 3123 final https://dff-common.s3.amazonaws.com/base_mini.gz.js?m0nksd
+sg_212A4.html HTTP 200 size 373841 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/?slate=212A4
+sg_212A6.html HTTP 200 size 401658 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/?slate=212A6
+sg_212A7.html HTTP 200 size 683979 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/?slate=212A7
+sg_212A8.html HTTP 200 size 489565 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/?slate=212A8
+sg_212A9.html HTTP 200 size 298554 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/?slate=212A9
+sg_212AA.html HTTP 200 size 298554 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/?slate=212AA
+sg_212AB.html HTTP 200 size 298554 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/?slate=212AB
+probe/sg_212A4.html window.url_start_date = '2026-10-26' window.slate = 'MIN @ CLE' window.showdown_template_flag = '1'  rows=132
+probe/sg_212A6.html window.url_start_date = '2026-10-26' window.slate = 'GS @ DEN' window.showdown_template_flag = '1'  rows=180
+probe/sg_212A7.html window.url_start_date = '2026-10-26' window.slate = 'Express' window.showdown_template_flag = '1'  rows=672
+probe/sg_212A8.html window.url_start_date = '2026-10-26' window.slate = 'After Hours' window.showdown_template_flag = '1'  rows=336
+probe/sg_212A9.html window.url_start_date = '' window.slate = '' window.showdown_template_flag = '1'  rows=0
+probe/sg_212AA.html window.url_start_date = '' window.slate = '' window.showdown_template_flag = '1'  rows=0
+probe/sg_212AB.html window.url_start_date = '' window.slate = '' window.showdown_template_flag = '1'  rows=0
+total 2800
+drwxr-xr-x 2 runner runner   4096 Oct 27 02:30 .
+drwxr-xr-x 7 runner runner   4096 Oct 27 02:30 ..
+-rw-r--r-- 1 runner runner   3123 Oct 27 02:30 base.js
+-rw-r--r-- 1 runner runner 373841 Oct 27 02:30 sg_212A4.html
+-rw-r--r-- 1 runner runner 401658 Oct 27 02:30 sg_212A6.html
+-rw-r--r-- 1 runner runner 683979 Oct 27 02:30 sg_212A7.html
+-rw-r--r-- 1 runner runner 489565 Oct 27 02:30 sg_212A8.html
+-rw-r--r-- 1 runner runner 298554 Oct 27 02:30 sg_212A9.html
+-rw-r--r-- 1 runner runner 298554 Oct 27 02:30 sg_212AA.html
+-rw-r--r-- 1 runner runner 298554 Oct 27 02:30 sg_212AB.html
