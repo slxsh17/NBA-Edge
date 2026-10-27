@@ -20,6 +20,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
 
 
+LEAGUE_RATE=0.98
+RATE_PRIOR_GAMES=6
 TEAM_ALIASES={'GS':'GSW','NO':'NOP','NY':'NYK','PHO':'PHX','SA':'SAS','UTAH':'UTA','WSH':'WAS','BRK':'BKN'}
 
 
@@ -184,7 +186,9 @@ def expected_minutes(old, current, series, injured):
     if len(played)>=3 and prior>=16 and statistics.median(played[-3:])<prior*.7:
         warnings.append('Lower current-season playing time; extra weight given to recent games')
         return min(40,prior*.25+statistics.median(played[-3:])*.75),'recent_minutes_decline',warnings
-    w=min(.8,current['games']/(current['games']+3))
+    # Last season counts for less when it was itself a small sample (e.g. injury year).
+    prior_strength=3*min(1,old['games']/30)
+    w=min(.85,current['games']/(current['games']+prior_strength))
     return min(40,prior*(1-w)+cur*w),'sample_blend',warnings
 
 
@@ -208,6 +212,14 @@ def build_for_player(key,name,team,old,cur,series,injured,authorized_refs):
         w=min(.5,cur['games']/(cur['games']+15))
         rate=old['rate']*(1-w)+cur['rate']*w
     else:rate=(cur or old)['rate']
+    # Small samples regress toward league average (~0.98 FP/min for rotation players,
+    # 2025-26). A 50-game player barely moves; an 8-game hot streak gets pulled in.
+    games=(old['games'] if old else 0)+(cur['games'] if cur else 0)
+    raw_rate=rate
+    k=RATE_PRIOR_GAMES*max(0,1-games/40)  # no pull at all once a player has 40+ games
+    rate=(games*rate+k*LEAGUE_RATE)/(games+k) if games+k else rate
+    if games<20 and abs(raw_rate-rate)>=.15:
+        warnings.append(f'Small sample ({games} games): FP/min {raw_rate:.2f} regressed to {rate:.2f}')
     rate=min(2.5,max(.15,rate))
     result['expected_minutes']=round(m,2)
     result['fp_per_minute']=round(rate,4)
