@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T10:40:19.110331-04:00",
+  "updated_at": "2026-10-27T11:35:12.753804-04:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 52,
@@ -446,16 +446,6 @@
       "avg_points": 24.2
     },
     {
-      "id": "2991139",
-      "name": "Kris Dunn",
-      "team": "LAC",
-      "games": 3,
-      "avg_minutes": 31.3,
-      "avg_fantasy_points": 36.3,
-      "fantasy_points_per_minute": 1.157,
-      "avg_points": 9.7
-    },
-    {
       "id": "5041935",
       "name": "Cameron Boozer",
       "team": "MEM",
@@ -464,6 +454,16 @@
       "avg_fantasy_points": 36.0,
       "fantasy_points_per_minute": 1.09,
       "avg_points": 14.8
+    },
+    {
+      "id": "2991139",
+      "name": "Kris Dunn",
+      "team": "LAC",
+      "games": 3,
+      "avg_minutes": 31.3,
+      "avg_fantasy_points": 35.9,
+      "fantasy_points_per_minute": 1.147,
+      "avg_points": 9.7
     },
     {
       "id": "4684740",
@@ -1096,16 +1096,6 @@
       "avg_points": 16.2
     },
     {
-      "id": "4278562",
-      "name": "Paul Reed",
-      "team": "DET",
-      "games": 3,
-      "avg_minutes": 22.0,
-      "avg_fantasy_points": 26.8,
-      "fantasy_points_per_minute": 1.22,
-      "avg_points": 11.0
-    },
-    {
       "id": "3155526",
       "name": "Dillon Brooks",
       "team": "PHX",
@@ -1194,6 +1184,16 @@
       "avg_fantasy_points": 26.0,
       "fantasy_points_per_minute": 1.116,
       "avg_points": 11.7
+    },
+    {
+      "id": "4278562",
+      "name": "Paul Reed",
+      "team": "DET",
+      "games": 3,
+      "avg_minutes": 22.0,
+      "avg_fantasy_points": 25.8,
+      "fantasy_points_per_minute": 1.174,
+      "avg_points": 11.0
     },
     {
       "id": "3442",
@@ -2596,6 +2596,16 @@
       "avg_points": 5.0
     },
     {
+      "id": "5149077",
+      "name": "Kingston Flemings",
+      "team": "ATL",
+      "games": 4,
+      "avg_minutes": 18.2,
+      "avg_fantasy_points": 12.0,
+      "fantasy_points_per_minute": 0.656,
+      "avg_points": 3.2
+    },
+    {
       "id": "5281370",
       "name": "Hannes Steinbach",
       "team": "CHA",
@@ -2634,16 +2644,6 @@
       "avg_fantasy_points": 11.6,
       "fantasy_points_per_minute": 0.612,
       "avg_points": 5.2
-    },
-    {
-      "id": "5149077",
-      "name": "Kingston Flemings",
-      "team": "ATL",
-      "games": 4,
-      "avg_minutes": 18.2,
-      "avg_fantasy_points": 11.6,
-      "fantasy_points_per_minute": 0.636,
-      "avg_points": 3.2
     },
     {
       "id": "4397475",
@@ -5401,11 +5401,11 @@
       "minutes": 18.0,
       "pts": 6.0,
       "reb": 1.0,
-      "ast": 3.0,
+      "ast": 4.0,
       "stl": 0.0,
       "blk": 0.0,
       "tov": 4.0,
-      "fantasy_points": 7.7
+      "fantasy_points": 9.2
     },
     {
       "id": "6609",
@@ -7668,9 +7668,9 @@
       "reb": 8.0,
       "ast": 2.0,
       "stl": 0.0,
-      "blk": 3.0,
+      "blk": 2.0,
       "tov": 3.0,
-      "fantasy_points": 26.6
+      "fantasy_points": 23.6
     },
     {
       "id": "3149673",
@@ -13804,8 +13804,8 @@
       "ast": 5.0,
       "stl": 2.0,
       "blk": 0.0,
-      "tov": 2.0,
-      "fantasy_points": 24.5
+      "tov": 3.0,
+      "fantasy_points": 23.5
     },
     {
       "id": "4702352",
