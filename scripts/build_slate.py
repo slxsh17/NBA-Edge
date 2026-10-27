@@ -181,6 +181,7 @@ def build(day=None):
         else:
             m = float(row['team_change_minutes'] if moved else row['expected_minutes'])
             p['minutes'], p['rate'] = m, float(row['fp_per_minute'])
+            p['base_minutes'] = round(m, 2)  # before injury/starter/team/blowout adjustments (site re-weights these)
             p['method'] = 'team_change' if moved else row.get('minutes_method')
             p['_recent'] = row.get('team_recent_minutes') or []
             if moved:
@@ -279,6 +280,7 @@ def build(day=None):
         # 7. range: FP spread grows with projection; extra for shaky roles
         shaky = any(f.startswith(('ROLE DROP', 'New team', 'Small sample', 'No NBA')) for f in p['flags']) or p['status'] == 'QUESTIONABLE'
         sd = 0.28 * p['proj'] + 3 + (3 if shaky else 0)
+        p['shaky'] = shaky
         p['floor'] = round(max(0, p['proj'] - 1.28 * sd), 1)
         p['ceiling'] = round(p['proj'] + 1.28 * sd, 1)
         p['value'] = round(p['proj'] * 1000 / p['salary'], 2)

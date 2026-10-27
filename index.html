@@ -146,6 +146,23 @@ tr.detail td{background:var(--soft);text-align:left;font-size:13px;padding:10px 
 .detail-grid b{font:600 15px var(--num)}
 .detail ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
 .empty{padding:22px;text-align:center;color:var(--muted);font-size:14px}
+/* settings */
+.h2row{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.h2row h2{margin:0}
+#settings{border-top:1px solid var(--line);margin-top:16px;padding-top:14px}
+#settings h3{font:600 17px var(--num);margin:14px 0 6px}
+#settings h3:first-child{margin-top:0}
+.set{display:grid;grid-template-columns:1fr 64px;gap:2px 10px;align-items:center;margin:8px 0}
+.set label{font-size:14px;font-weight:500}
+.set output{font:600 16px var(--num);text-align:right}
+.set input{grid-column:1/-1}
+.set small{grid-column:1/-1;color:var(--muted);font-size:12px;line-height:1.35}
+.check{display:flex;gap:8px;align-items:flex-start;font-size:14px;margin:4px 0 12px}
+.check input{margin-top:3px;accent-color:var(--orange)}
+.override{display:flex;gap:8px;align-items:center;margin-top:8px}
+.override input{width:76px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:4px 8px}
+.tag.e{background:var(--ink);color:var(--paper)}
+.review-badge{font-size:12px;font-weight:600;color:var(--warn);margin-left:auto}
 footer{font-size:12.5px;color:var(--muted);padding:10px 0 40px;border-top:1px solid var(--line)}
 footer a{color:inherit}
 details summary{cursor:pointer}
@@ -193,7 +210,7 @@ details summary{cursor:pointer}
 <main>
   <div class="stack">
     <section class="panel show" data-view="build" aria-labelledby="h-build">
-      <h2 id="h-build">Build lineups</h2>
+      <div class="h2row"><h2 id="h-build">Build lineups</h2><button class="btn small" id="settings-btn" type="button" aria-expanded="false" aria-controls="settings">Model settings</button></div>
       <div class="ctl">
         <span>Lineups</span>
         <div class="seg" id="count"><button data-v="1" aria-pressed="true">1</button><button data-v="5">5</button><button data-v="10">10</button><button data-v="20">20</button></div>
@@ -202,10 +219,12 @@ details summary{cursor:pointer}
         <span id="exp-label">Max per player</span>
         <div class="range-row"><input type="range" id="exposure" min="20" max="100" step="5" value="60" aria-labelledby="exp-label"><output id="exposure-out" class="num">60%</output></div>
       </div>
+      <label class="check" id="review-wrap" hidden><input type="checkbox" id="review"><span>Include games that already started, to see what the lineup would have been. You can’t enter these on FanDuel.</span></label>
       <button class="btn primary" id="build" type="button">Build lineups</button>
       <div id="build-status" role="status"></div>
       <div id="lineups"></div>
       <div id="exposure-summary"></div>
+      <div id="settings" hidden></div>
     </section>
 
     <section class="panel" data-view="accuracy" aria-labelledby="h-acc">
@@ -260,7 +279,50 @@ const canFill=(p,slot)=>{const a=p.position.split('/');if(slot==='UTIL')return t
 
 const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(),source:'auto',
   count:1,mode:'cash',exposure:60,posf:'',search:'',sort:'proj',dir:-1,open:null,
-  locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:''};
+  locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null};
+const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.06};
+S.cfg={...DEFAULTS,...store.get('cfg',{})};
+const SETTINGS=[
+ {h:'Projection'},
+ {k:'vegas',label:'Vegas team totals',min:0,max:2,step:.1,fmt:'x',help:'How much a high or low team total moves projections. 0 ignores Vegas, 2 doubles its effect.'},
+ {k:'matchup',label:'Opponent matchup',min:0,max:2,step:.1,fmt:'x',help:'How much fantasy points allowed by the opponent at each position matters.'},
+ {k:'injury',label:'Minutes from injuries',min:0,max:2,step:.1,fmt:'x',help:'Extra minutes teammates get when a player is ruled out.'},
+ {k:'usage',label:'Usage bump from injuries',min:0,max:2,step:.1,fmt:'x',help:'Extra points per minute when a high-volume teammate is out.'},
+ {k:'starter',label:'Confirmed starter bump',min:0,max:2,step:.1,fmt:'x',help:'Extra minutes for bench players confirmed in the starting five.'},
+ {k:'blowout',label:'Blowout minutes cut',min:0,max:2,step:.1,fmt:'x',help:'How much starters lose in games with big spreads.'},
+ {h:'Lineup rules'},
+ {k:'maxTeam',label:'Max players per team',min:1,max:4,step:1,fmt:'',help:'FanDuel allows up to 4.'},
+ {k:'minSalary',label:'Minimum salary used',min:0,max:60000,step:500,fmt:'$',help:'Forces lineups to spend at least this much.'},
+ {k:'minUnique',label:'Lineups must differ by',min:1,max:5,step:1,fmt:' players',help:'For multiple lineups: how many players each one must change from the others.'},
+ {h:'Tournament mode'},
+ {k:'ceilW',label:'Upside weight',min:0,max:1,step:.05,fmt:'%',help:'How much a player\u2019s ceiling counts versus his projection.'},
+ {k:'ownFade',label:'Fade popular players',min:0,max:.3,step:.01,fmt:'pt',help:'Points subtracted per 1% of estimated ownership.'}];
+const fmtSet=(d,v)=>d.fmt==='x'?Number(v).toFixed(1)+'x':d.fmt==='$'?(v?'$'+Number(v).toLocaleString():'Off'):d.fmt==='%'?Math.round(v*100)+'%':d.fmt==='pt'?Number(v).toFixed(2):v+(d.fmt||'');
+function renderSettings(){
+  const box=$('settings');
+  box.innerHTML=SETTINGS.map(d=>d.h?`<h3>${d.h}</h3>`:`<div class="set"><label for="cfg-${d.k}">${d.label}</label><output id="cfg-${d.k}-out">${fmtSet(d,S.cfg[d.k])}</output><input type="range" id="cfg-${d.k}" data-k="${d.k}" min="${d.min}" max="${d.max}" step="${d.step}" value="${S.cfg[d.k]}"><small>${d.help}</small></div>`).join('')+
+  `<div style="display:flex;gap:8px;align-items:center;margin-top:12px"><button class="btn small" id="cfg-reset" type="button">Reset to defaults</button><span class="muted" style="font-size:12px">Saved on this device. The accuracy report grades the default settings.</span></div>`;
+}
+function setCfg(k,v){S.cfg[k]=v;store.set('cfg',S.cfg);recompute();renderPlayers();renderLineups()}
+// Rebuild each projection from its published parts with your weights (defaults reproduce the pipeline).
+function recompute(){
+  const c=S.cfg;
+  for(const p of S.players){
+    p._o??={proj:p.proj,floor:p.floor,ceiling:p.ceiling,minutes:p.minutes};
+    if(p.out||!p.rate){continue}
+    const a=p.adj||{},ov=S.over[pkey(p)];
+    let m;
+    if(ov&&ov.minutes!=null)m=ov.minutes;
+    else if(p.base_minutes!=null){m=p.base_minutes+(a.injury_min||0)*c.injury+(a.starter_min||0)*c.starter;m*=(a.team_cap||1);m*=1+(a.blowout||0)*c.blowout}
+    else m=p._o.minutes;
+    const f=(x,w)=>1+((x??1)-1)*w;
+    const wmax=Math.max(1,c.vegas,c.matchup,c.usage);  // same bounds as the pipeline at default weights
+    const env=Math.max(1-.12*wmax,Math.min(1+.14*wmax,f(a.vegas,c.vegas)*f(a.matchup,c.matchup)*f(a.usage,c.usage)));
+    const proj=m*p.rate*env;
+    const sd=.28*proj+3+(p.shaky?3:0);
+    p.minutes=+m.toFixed(1);p.proj=+proj.toFixed(2);p.floor=+Math.max(0,proj-1.28*sd).toFixed(1);p.ceiling=+(proj+1.28*sd).toFixed(1);p.value=+(proj*1000/p.salary).toFixed(2);p.edited=!!(ov&&ov.minutes!=null);
+  }
+}
 
 async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(Date.now()/60000));if(!r.ok)throw Error(file+' '+r.status);return r.json()}
 
@@ -286,11 +348,11 @@ function applyLiveInjuries(){
 }
 function restoreDayState(){
   const st=store.get('day',null);
-  if(st&&st.day===S.day){S.locks=new Set(st.locks);S.bans=new Set(st.bans);S.gamesOff=new Set(st.gamesOff);S.lineups=(st.lineups||[]).map(l=>({...l,picks:l.picks.map(rehydrate).filter(Boolean)})).filter(l=>l.picks.length===9)}
+  if(st&&st.day===S.day){S.over=st.over||{};S.locks=new Set(st.locks);S.bans=new Set(st.bans);S.gamesOff=new Set(st.gamesOff);S.lineups=(st.lineups||[]).map(l=>({...l,picks:l.picks.map(rehydrate).filter(Boolean)})).filter(l=>l.picks.length===9)}
   const set=store.get('settings',null);if(set){S.count=set.count||1;S.mode=set.mode||'cash';S.exposure=set.exposure||60}
 }
 function rehydrate(pk){const p=S.players.find(x=>pkey(x)===pk.k);return p?{p,slot:pk.slot}:null}
-function saveDayState(){store.set('day',{day:S.day,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings',{count:S.count,mode:S.mode,exposure:S.exposure})}
+function saveDayState(){store.set('day',{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings',{count:S.count,mode:S.mode,exposure:S.exposure})}
 
 // ---------- CSV upload ----------
 function parseCSV(text){const rows=[];let row=[],cell='',q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'){if(text[i+1]==='"'){cell+='"';i++}else q=false}else cell+=c}else if(c==='"')q=true;else if(c===','){row.push(cell);cell=''}else if(c==='\n'||c==='\r'){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cell);if(row.some(x=>x.trim()))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell);if(row.some(x=>x.trim()))rows.push(row);return rows}
@@ -324,11 +386,11 @@ async function applyCSV(text,remember=true){
 }
 
 // ---------- slate / games ----------
-const started=g=>g.time&&Date.now()>=Date.parse(g.time);
+const started=g=>!!g.time&&Date.now()>=Date.parse(g.time);
 const gameOf=p=>S.games.find(g=>g.home===p.team||g.away===p.team);
-function inPlay(p){const g=gameOf(p);if(!g)return S.source==='csv';return !started(g)&&!S.gamesOff.has(g.away+'@'+g.home)}
+function inPlay(p){const g=gameOf(p);if(!g)return S.source==='csv';return (S.review||!started(g))&&!S.gamesOff.has(g.away+'@'+g.home)}
 function slateGroups(){
-  const open=S.games.filter(g=>!started(g)&&g.time);if(open.length<3)return [];
+  const open=S.games.filter(g=>(S.review||!started(g))&&g.time);if(open.length<3)return [];
   const et=g=>Number(new Date(g.time).toLocaleString('en-US',{timeZone:'America/New_York',hour:'numeric',hour12:false}));
   const early=open.filter(g=>et(g)<20),late=open.filter(g=>et(g)>=21);
   const out=[{id:'all',label:'All games',games:open}];
@@ -339,12 +401,12 @@ function slateGroups(){
 function renderGames(){
   const box=$('games');
   if(!S.games.length){box.innerHTML='';$('slate-pick').hidden=true;return}
-  box.innerHTML=S.games.map(g=>{const id=g.away+'@'+g.home,st=started(g),on=!S.gamesOff.has(id);
+  box.innerHTML=S.games.map(g=>{const id=g.away+'@'+g.home,st=started(g)&&!S.review,on=!S.gamesOff.has(id);
     const line=g.total?`O/U ${g.total}`:'';const fav=g.home_spread==null?'':g.home_spread<0?`${g.home} −${Math.abs(g.home_spread)}`:g.home_spread>0?`${g.away} −${g.home_spread}`:'Pick';
     return `<button class="game${st?' started':''}" data-g="${id}" aria-pressed="${st?'false':on}" ${st?'disabled title="Already started"':''}><div class="teams">${esc(g.away)} @ ${esc(g.home)}</div><div class="info">${st?'Started':esc(tipLabel(g.time))}${line?', '+line:''}</div>${fav?`<div class="info">${esc(fav)}</div>`:''}</button>`}).join('');
   const groups=slateGroups(),pick=$('slate-pick');
   if(!groups.length){pick.hidden=true;return}
-  const cur=groups.find(gr=>S.games.every(g=>started(g)||(gr.games.includes(g)!==S.gamesOff.has(g.away+'@'+g.home))));
+  const cur=groups.find(gr=>S.games.every(g=>(started(g)&&!S.review)||(gr.games.includes(g)!==S.gamesOff.has(g.away+'@'+g.home))));
   pick.hidden=false;
   pick.innerHTML=groups.map(gr=>`<button class="chip" data-slate="${gr.id}" aria-pressed="${cur&&cur.id===gr.id}">${gr.label} (${gr.games.length})</button>`).join('')+'<span class="muted" style="font-size:12.5px">or tap games to pick your own</span>';
 }
@@ -363,6 +425,7 @@ function renderHeader(){
 function renderNotices(){
   const box=$('notices');
   if(!S.players.length){box.innerHTML=`<div class="notice">Today's slate isn't published yet. It usually shows up by 10am Eastern. You can also use your own FanDuel CSV.</div>`;return}
+  if(S.games.length&&S.games.every(started)&&!S.review){box.innerHTML='<div class="notice">Every game on today\u2019s slate has started, so new lineups can\u2019t be entered. Tomorrow\u2019s slate loads around 10am Eastern. <button class="linkish" id="see-review">See what tonight\u2019s lineup would have been</button></div>';$('see-review').onclick=()=>{S.review=true;$('review').checked=true;renderGames();renderPlayers();renderNotices();build()};return}
   const watch=S.players.filter(p=>!p.out&&p.salary>=4500&&p.proj>0&&(p.flags||[]).some(f=>/^(ROLE DROP|New team|DNP in last)/.test(f))).sort((a,b)=>b.salary-a.salary).slice(0,4);
   const ruled=S.players.filter(p=>(p.flags||[]).some(f=>f.startsWith('Ruled'))).slice(0,4);
   const q=S.players.filter(p=>p.status==='QUESTIONABLE'&&p.proj>=20).length;
@@ -376,10 +439,10 @@ function renderNotices(){
 function tags(p){let t='';if(p.out)t+='<span class="tag o">Out</span>';else if(p.status==='QUESTIONABLE')t+='<span class="tag q">Q</span>';
   if((p.flags||[]).some(f=>/^(ROLE DROP|New team|DNP in last)/.test(f)))t+='<span class="tag r">Role?</span>';
   if((p.adj||{}).injury_min>=3)t+=`<span class="tag u">+${Math.round(p.adj.injury_min)} min</span>`;
-  if(p.starter)t+='<span class="tag u">Starting</span>';return t}
+  if(p.starter)t+='<span class="tag u">Starting</span>';if(p.edited)t+='<span class="tag e">Edited</span>';return t}
 function visiblePlayers(){
   const q=S.search.trim().toLowerCase();
-  return S.players.filter(p=>(!S.posf||p.position.split('/').includes(S.posf))&&(!q||p.name.toLowerCase().includes(q)||p.team.toLowerCase()===q)&&(gameOf(p)?!started(gameOf(p)):true))
+  return S.players.filter(p=>(!S.posf||p.position.split('/').includes(S.posf))&&(!q||p.name.toLowerCase().includes(q)||p.team.toLowerCase()===q))
     .sort((a,b)=>{const k=S.sort;const va=k==='name'?a.name:(a[k]??-1),vb=k==='name'?b.name:(b[k]??-1);return (va>vb?1:va<vb?-1:0)*S.dir*(k==='name'?-1:1)});
 }
 function renderPlayers(){
@@ -399,19 +462,25 @@ function detail(p){
   if(a.injury_min)bits.push(`+${a.injury_min} min from injuries`);if(a.starter_min)bits.push(`+${a.starter_min} min confirmed starter`);
   if(a.vegas&&a.vegas!==1)bits.push(`Vegas ${pct(a.vegas)}`);if(a.matchup&&a.matchup!==1)bits.push(`Matchup ${pct(a.matchup)}`);if(a.usage&&a.usage!==1)bits.push(`Usage ${pct(a.usage)}`);if(a.blowout)bits.push(`Blowout risk ${(a.blowout*100).toFixed(0)}% minutes`);
   return `<div class="detail-grid"><span>Minutes <b>${p.minutes?Number(p.minutes).toFixed(1):'–'}</b></span><span>Points per minute <b>${p.rate?Number(p.rate).toFixed(2):'–'}</b></span><span>Range <b>${p.floor??'–'} to ${p.ceiling??'–'}</b></span>${p.naive?`<span>Season average <b>${p.naive.toFixed(1)}</b></span>`:''}${p.spread!=null?`<span>Spread <b>${p.spread>0?'+':''}${p.spread}</b></span>`:''}</div>
-  ${bits.length?`<div style="margin-top:6px">${esc(bits.join(', '))}</div>`:''}${(p.flags||[]).length?`<ul>${p.flags.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>`:''}`;
+  ${bits.length?`<div style="margin-top:6px">${esc(bits.join(', '))}</div>`:''}${p.rate&&!p.out?`<div class="override"><label for="ov-min">Your minutes</label><input id="ov-min" type="number" min="0" max="48" step="0.5" value="${S.over[pkey(p)]?.minutes??''}" placeholder="${(p._o?.minutes??p.minutes).toFixed?.(1)??''}" data-k="${esc(pkey(p))}"><button class="linkish" data-clear="${esc(pkey(p))}">${S.over[pkey(p)]?'Use model minutes':''}</button></div>`:''}${(p.flags||[]).length?`<ul>${p.flags.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>`:''}`;
 }
 $('ptable').addEventListener('click',e=>{
-  const tr=e.target.closest('tr.prow');if(!tr)return;const k=tr.dataset.k;
+  if(e.target.closest('tr.detail'))return;const tr=e.target.closest('tr.prow');if(!tr)return;const k=tr.dataset.k;
   const b=e.target.closest('button');
   if(b){const set=b.classList.contains('lock')?S.locks:S.bans,other=set===S.locks?S.bans:S.locks;set.has(k)?set.delete(k):(set.add(k),other.delete(k));saveDayState();renderPlayers();return}
   S.open=S.open===k?null:k;renderPlayers();
 });
+$('ptable').addEventListener('change',e=>{const el=e.target.closest('#ov-min');if(!el)return;const v=el.value===''?null:Math.max(0,Math.min(48,Number(el.value)));if(v==null)delete S.over[el.dataset.k];else S.over[el.dataset.k]={minutes:v};saveDayState();recompute();renderPlayers();renderLineups()});
+$('ptable').addEventListener('click',e=>{const b=e.target.closest('[data-clear]');if(!b||!b.dataset.clear)return;e.stopPropagation();delete S.over[b.dataset.clear];saveDayState();recompute();renderPlayers();renderLineups()},true);
 $('search').addEventListener('input',e=>{S.search=e.target.value;renderPlayers()});
 document.querySelectorAll('th button').forEach(b=>b.onclick=()=>{const k=b.dataset.sort;if(S.sort===k)S.dir*=-1;else{S.sort=k;S.dir=-1}document.querySelectorAll('th button').forEach(x=>x.removeAttribute('aria-sort'));b.setAttribute('aria-sort',S.dir<0?'descending':'ascending');renderPlayers()});
 
 // ---------- segmented controls ----------
 function seg(id,get,set){const el=$(id);const paint=()=>el.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===String(get()))));el.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;set(b.dataset.v);paint();saveDayState()});paint();return paint}
+$('settings-btn').onclick=()=>{const box=$('settings'),open=box.hidden;box.hidden=!open;$('settings-btn').setAttribute('aria-expanded',String(open));if(open){renderSettings();box.scrollIntoView({behavior:'smooth',block:'nearest'})}};
+$('settings').addEventListener('input',e=>{const el=e.target.closest('input[data-k]');if(!el)return;const d=SETTINGS.find(x=>x.k===el.dataset.k);$('cfg-'+d.k+'-out').textContent=fmtSet(d,el.value);setCfg(d.k,Number(el.value))});
+$('settings').addEventListener('click',e=>{if(e.target.id==='cfg-reset'){S.cfg={...DEFAULTS};store.set('cfg',S.cfg);renderSettings();recompute();renderPlayers();renderLineups()}});
+$('review').onchange=e=>{S.review=e.target.checked;renderGames();renderPlayers();renderNotices()};
 let paintCount,paintMode;
 function wireControls(){
   paintCount=seg('count',()=>S.count,v=>{S.count=+v;syncExposure()});
@@ -425,7 +494,7 @@ function syncExposure(){const on=S.count>1;$('exposure').disabled=!on;$('exposur
 // ---------- optimizer ----------
 let glpkP=null;
 function loadGLPK(){return glpkP??=import('https://cdn.jsdelivr.net/npm/glpk.js@5.0.0/+esm').then(m=>m.default()).catch(e=>{glpkP=null;throw Error('Couldn’t load the lineup solver. Check your connection and try again.')})}
-function score(p){return S.mode==='gpp'?(.55*p.proj+.45*(p.ceiling||p.proj)-.06*(p.own||0)):p.proj}
+function score(p){const c=S.cfg;return S.mode==='gpp'?((1-c.ceilW)*p.proj+c.ceilW*(p.ceiling||p.proj)-c.ownFade*(p.own||0)):p.proj}
 // Late games go in flex slots so late swap stays possible.
 function flexBonus(p,slot){if(!['G/F','F/C','UTIL'].includes(slot))return 0;const g=gameOf(p);return g&&g.time?(Date.parse(g.time)%86400000)/86400000*0.02:0}
 async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],minUnique=2}){
@@ -438,8 +507,9 @@ async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],mi
   for(const s in need){if(bySlot[s].length<need[s])return null;rows.push(c('slot'+s,bySlot[s],()=>1,glpk.GLP_FX,need[s],need[s]))}
   const lockSet=new Set([...S.locks]);
   for(const [i,vs] of Object.entries(byP)){const k=pkey(pool[i]);rows.push(c('p'+i,vs,()=>1,lockSet.has(k)?glpk.GLP_FX:glpk.GLP_UP,lockSet.has(k)?1:0,1))}
-  for(const [t,vs] of Object.entries(byTeam))rows.push(c('t'+t,vs,()=>1,glpk.GLP_UP,0,MAX_TEAM));
+  for(const [t,vs] of Object.entries(byTeam))rows.push(c('t'+t,vs,()=>1,glpk.GLP_UP,0,Math.min(MAX_TEAM,S.cfg.maxTeam)));
   rows.push(c('cap',vars,v=>v.p.salary,glpk.GLP_UP,0,CAP));
+  if(S.cfg.minSalary>0)rows.push(c('minsal',vars,v=>v.p.salary,glpk.GLP_LO,Math.min(S.cfg.minSalary,CAP),0));
   fixed.forEach((f,j)=>{const vs=vars.filter(v=>pkey(v.p)===pkey(f.p)&&v.s===f.slot);if(vs.length)rows.push(c('fix'+j,vs,()=>1,glpk.GLP_FX,1,1))});
   previous.forEach((keys,j)=>{const vs=vars.filter(v=>keys.has(pkey(v.p)));if(vs.length)rows.push(c('div'+j,vs,()=>1,glpk.GLP_UP,0,9-minUnique))});
   const lp={name:'edge',objective:{direction:glpk.GLP_MAX,name:'z',vars:vars.map(v=>({name:v.name,coef:score(v.p)+flexBonus(v.p,v.s)}))},subjectTo:rows,binaries:vars.map(v=>v.name)};
@@ -455,6 +525,7 @@ async function build(){
   const pool=S.players.filter(p=>p.proj>0&&!p.out&&inPlay(p)&&!S.bans.has(pkey(p)));
   const lockedOut=[...S.locks].filter(k=>!pool.some(p=>pkey(p)===k));
   if(lockedOut.length){status.textContent='A player you forced in isn’t available (out, or his game is off or started). Remove the ✓ and try again.';return}
+  if(!S.review&&S.games.length&&S.games.every(started)){status.textContent='All of today\u2019s games have started. Tick \u201cInclude games that already started\u201d to see what the lineup would have been.';return}
   if(pool.length<9){status.textContent='Not enough available players. Turn on more games or remove some ✕.';return}
   btn.disabled=true;status.textContent='Loading solver…';
   try{
@@ -463,9 +534,9 @@ async function build(){
     for(let n=0;n<S.count;n++){
       status.textContent=`Building lineup ${n+1} of ${S.count}…`;
       const excludeKeys=new Set([...uses].filter(([k,c])=>c>=cap&&!S.locks.has(k)).map(([k])=>k));
-      const picks=await solveOne(glpk,pool,{excludeKeys,previous:made.map(l=>new Set(l.picks.map(x=>pkey(x.p)))),minUnique:S.count>1?2:1});
+      const picks=await solveOne(glpk,pool,{excludeKeys,previous:made.map(l=>new Set(l.picks.map(x=>pkey(x.p)))),minUnique:S.count>1?S.cfg.minUnique:1});
       if(!picks)break;
-      const l={picks,built:Date.now()};l.proj0=total(l);made.push(l);
+      const l={picks,built:Date.now(),review:S.review&&picks.some(x=>{const g=gameOf(x.p);return g&&started(g)})};l.proj0=total(l);made.push(l);
       picks.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
       await new Promise(r=>setTimeout(r,0));
     }
@@ -496,11 +567,11 @@ function renderLineups(fresh=false){
   box.innerHTML=S.lineups.map((l,i)=>{
     const sal=l.picks.reduce((s,x)=>s+x.p.salary,0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/9;
     const live=l.picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).length;
-    const canSwap=live>0&&live<9;const gone=l.picks.filter(x=>x.p.out);const drift=pts-(l.proj0??pts);
+    const canSwap=!S.review&&live>0&&live<9;const reviewOnly=l.review;const gone=l.picks.filter(x=>x.p.out);const drift=pts-(l.proj0??pts);
     let note='';if(gone.length)note=`${gone.map(x=>esc(x.p.name)).join(', ')} ${gone.length>1?'are':'is'} now out. ${canSwap||!live?'Rebuild or use late swap.':''}`;
     else if(Math.abs(drift)>=1)note=`Projections updated since you built this (${drift>0?'+':''}${drift.toFixed(1)}).`;
     return `<article class="lineup${fresh?' fresh':''}"><div class="lu-head"><div class="lu-score num">${pts.toFixed(1)}<small>projected</small></div>
-      <div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Avg own<b>${own.toFixed(0)}%</b></div>
+      <div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Avg own<b>${own.toFixed(0)}%</b></div>${reviewOnly?'<span class="review-badge">Review only</span>':''}
       <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
       ${note?`<div class="lu-note">${note}</div>`:''}
       ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(x.p.salary)}</span><span class="pts">${x.p.out?'0.0':x.p.proj.toFixed(1)}</span></div>`}).join('')}
@@ -534,7 +605,7 @@ function renderSources(){
   const t=S.today,src=t&&t.sources||{};
   $('sources').innerHTML=`<p>Slate and Vegas lines: ${esc(src.slate||'not loaded')}${t?', projections built '+esc(ago(t.built_at)):''}.</p><p>Injuries: ESPN report, updated ${esc(ago(S.inj&&S.inj.updated_at))}. Starting lineups: RotoWire, checked ${esc(ago(src.lineups_checked))}. Box scores: ESPN, updated ${esc(ago(src.stats_updated))}.</p><p>Projection = expected minutes × fantasy points per minute, adjusted for Vegas team totals, opponent matchup, injuries and confirmed starters. Every adjustment is shown when you tap a player.</p>`;
 }
-function renderAll(){renderHeader();renderNotices();renderGames();renderPlayers();renderLineups();renderAccuracy();renderSources();paintCount&&paintCount();paintMode&&paintMode();syncExposure()}
+function renderAll(){recompute();const any=S.games.some(started);$('review-wrap').hidden=!any;if(!any)S.review=false;$('review').checked=S.review;renderHeader();renderNotices();renderGames();renderPlayers();renderLineups();renderAccuracy();renderSources();paintCount&&paintCount();paintMode&&paintMode();syncExposure()}
 
 // ---------- upload, refresh, tabs ----------
 $('upload-btn').onclick=()=>$('csv').click();
