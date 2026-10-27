@@ -87,8 +87,8 @@ def fetch(url):
         return res.read().decode('utf-8', 'replace')
 
 
-def parse(page, day):
-    if not re.search(r"window\.slate\s*=\s*'Main'", page):
+def parse(page, day, strict_main=True):
+    if strict_main and not re.search(r"window\.slate\s*=\s*'Main'", page):
         raise ValueError('page is not the Main slate')
     players, seen = [], set()
     for tag in ROW.findall(page):
@@ -128,9 +128,15 @@ def backfill(day):
     import json
     url = f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/'
     try:
-        players = parse(fetch(url), day)
+        page = fetch(url)
+        players = parse(page, day, strict_main=False)
     except Exception as e:
-        print(f'::warning::No archived slate for {day}: {e}')
+        label = re.search(r"window\.slate\s*=\s*'([^']*)'", page).group(1) if 'page' in locals() and re.search(r"window\.slate\s*=\s*'([^']*)'", page) else '?'
+        dates = sorted(set(re.findall(r'data-start_date="([^"]*)"', page)))[:5] if 'page' in locals() else []
+        msg = f'{day}: {e} | slate label={label} | row dates={dates} | size={len(page) if "page" in locals() else 0}'
+        print('::warning::' + msg)
+        with (DATA / 'archive' / 'backfill_log.txt').open('a', encoding='utf-8') as f:
+            f.write(msg + '\n')
         return 1
     games = build_games(players, day)
     write_archive(day, url, players, games)
