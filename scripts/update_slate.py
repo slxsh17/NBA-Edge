@@ -112,6 +112,7 @@ def parse(page, day, strict_main=True, min_players=18, min_salary=3000):
         status = STATUS.get(a.get('data-inj', '').upper(), 'ACTIVE')
         opp = a.get('data-opp', '').upper()
         players.append({'_opp': ALIASES.get(opp, opp), '_home': a.get('data-loc', '') == 'vs',
+                        '_ext': num(a.get('data-ppg_proj')),   # DFF's own public FanDuel projection (comparison only)
                         '_ou': num(a.get('data-ou')), '_spread': num(a.get('data-spread')),
                         'name': name, 'team': team, 'position': '/'.join(dict.fromkeys(pos)),
                         'salary': salary, 'minutes': 0, 'fp_per_min': 0, 'ownership': '',
@@ -174,7 +175,7 @@ def single_games(day, main_page):
         g = games[0]
         found.append({'id': sid, 'label': f"{g['away']} @ {g['home']}", **g,
                       'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
-                                   'position': p['position'], 'salary': p['salary'], 'status': p['status']} for p in players]})
+                                   'position': p['position'], 'salary': p['salary'], 'status': p['status'], 'ext_proj': p['_ext']} for p in players]})
     return sorted(found, key=lambda x: (x['time'] or '9', x['label']))
 
 
@@ -219,7 +220,7 @@ def slate_doc(day, url, players, games):
     return {'schema': 1, 'date': day, 'slate': 'Main', 'source': 'DailyFantasyFuel public FanDuel page (salaries, positions, injury tags, Vegas lines)',
             'source_url': url, 'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'games': games,
             'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
-                         'position': p['position'], 'salary': p['salary'], 'status': p['status']} for p in players]}
+                         'position': p['position'], 'salary': p['salary'], 'status': p['status'], 'ext_proj': p['_ext']} for p in players]}
 
 
 def write_archive(day, url, players, games):

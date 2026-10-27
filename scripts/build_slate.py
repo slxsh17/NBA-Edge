@@ -123,7 +123,7 @@ def starter_match(name, lineup_names):
 
 # ---------- shared final formula (mirrored in index.html and learn_weights.py) ----------
 DEFAULT_WEIGHTS = {'vegas': 1.0, 'matchup': 1.0, 'injury': 1.0, 'usage': 1.0, 'starter': 1.0,
-                   'blowout': 1.0, 'scale': 1.0, 'minutes_mult': {}}
+                   'blowout': 1.0, 'scale': 1.0, 'outside': 0.0, 'minutes_mult': {}}
 
 
 def learned_weights():
@@ -142,7 +142,12 @@ def final_projection(p, W):
     wmax = max(1.0, W['vegas'], W['matchup'], W['usage'])
     env = clip(f(a.get('vegas', 1.0), W['vegas']) * f(a.get('matchup', 1.0), W['matchup']) * f(a.get('usage', 1.0), W['usage']),
                1 - 0.12 * wmax, 1 + 0.14 * wmax)
-    return m, m * p['rate'] * env * W['scale']
+    proj = m * p['rate'] * env * W['scale']
+    # Blend with the outside (DailyFantasyFuel) projection by a learned weight (0 = ours only).
+    b = W.get('outside', 0.0)
+    if b and p.get('ext') is not None:
+        proj = (1 - b) * proj + b * p['ext']
+    return m, proj
 
 
 # ---------- main build ----------
@@ -212,7 +217,7 @@ def build(day=None, backtest=False, weights=None):
         moved = False
         if row is None and len(by_name.get(key, [])) == 1:
             row, moved = by_name[key][0], True
-        p = {'main': sp.get('main', True), 'name': sp['name'], 'team': team, 'opp': canon(sp.get('opp')), 'home': sp.get('home'),
+        p = {'main': sp.get('main', True), 'ext': sp.get('ext_proj'), 'name': sp['name'], 'team': team, 'opp': canon(sp.get('opp')), 'home': sp.get('home'),
              'position': sp['position'], 'salary': sp['salary'], 'status': sp.get('status', 'ACTIVE'),
              'flags': [], 'adj': {}, 'minutes': 0.0, 'rate': 0.0, 'proj': 0.0,
              'naive': round(naive.get(key, 0.0), 2)}
@@ -322,6 +327,8 @@ def build(day=None, backtest=False, weights=None):
         m, proj = final_projection(p, W)
         p['proj'] = round(proj, 2)
         p['minutes'] = round(m, 1)
+        if p.get('ext') is not None and abs(p['proj'] - p['ext']) >= max(8, 0.3 * max(p['ext'], 1)):
+            p['flags'].append(f"Outside projection disagrees: DailyFantasyFuel {p['ext']:.1f} vs NBA EDGE {p['proj']:.1f}")
         # 7. range: FP spread grows with projection; extra for shaky roles
         shaky = any(f.startswith(('ROLE DROP', 'New team', 'Small sample', 'No NBA')) for f in p['flags']) or p['status'] == 'QUESTIONABLE'
         sd = 0.28 * p['proj'] + 3 + (3 if shaky else 0)

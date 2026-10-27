@@ -29,7 +29,8 @@ from build_slate import DEFAULT_WEIGHTS, final_projection  # noqa: E402
 DATA = ROOT / 'data'
 OUT = DATA / 'learned_weights.json'
 BOUNDS = {'vegas': (0, 2), 'matchup': (0, 2), 'injury': (0, 2), 'usage': (0, 2),
-          'starter': (0, 2), 'blowout': (0, 2), 'scale': (0.85, 1.15)}
+          'starter': (0, 2), 'blowout': (0, 2), 'scale': (0.85, 1.15), 'outside': (0, 1)}
+PRIOR = {'outside': 0.0}   # penalty pulls each weight toward its prior (1.0 unless listed)
 MM_BOUNDS = (0.75, 1.25)
 MIN_ROWS = 300          # don't learn anything below this
 MIN_METHOD_ROWS = 40    # minutes correction needs this many rows for that rule
@@ -55,7 +56,7 @@ def mae(rows, W):
 
 
 def objective(rows, W, lam):
-    pen = sum((W[k] - 1.0) ** 2 for k in BOUNDS)
+    pen = sum((W.get(k, PRIOR.get(k, 1.0)) - PRIOR.get(k, 1.0)) ** 2 for k in BOUNDS)
     pen += sum((v - 1.0) ** 2 for v in W['minutes_mult'].values())
     return mae(rows, W) + lam * pen
 
@@ -91,7 +92,7 @@ def fit(rows, start):
 
 
 def blend(cur, new, a):
-    out = {k: round(cur[k] + a * (new[k] - cur[k]), 3) for k in BOUNDS}
+    out = {k: round(cur.get(k, PRIOR.get(k, 1.0)) + a * (new[k] - cur.get(k, PRIOR.get(k, 1.0))), 3) for k in BOUNDS}
     mm = {}
     for m in set(cur['minutes_mult']) | set(new['minutes_mult']):
         c, n = cur['minutes_mult'].get(m, 1.0), new['minutes_mult'].get(m, 1.0)
@@ -102,11 +103,12 @@ def blend(cur, new, a):
 
 def describe(old, new):
     names = {'vegas': 'Vegas', 'matchup': 'Matchup', 'injury': 'Injury minutes', 'usage': 'Usage bump',
-             'starter': 'Starter bump', 'blowout': 'Blowout cut', 'scale': 'Overall scale'}
+             'starter': 'Starter bump', 'blowout': 'Blowout cut', 'scale': 'Overall scale', 'outside': 'Outside projection blend'}
     ch = []
     for k, n in names.items():
-        if abs(new[k] - old[k]) >= 0.02:
-            ch.append(f'{n} {old[k]:.2f} → {new[k]:.2f}')
+        o = old.get(k, PRIOR.get(k, 1.0))
+        if abs(new[k] - o) >= 0.02:
+            ch.append(f'{n} {o:.2f} → {new[k]:.2f}')
     for m, v in new['minutes_mult'].items():
         o = old['minutes_mult'].get(m, 1.0)
         if abs(v - o) >= 0.02:
@@ -127,6 +129,8 @@ def main():
             return
     cur = {**DEFAULT_WEIGHTS, **(prev.get('weights') or {})}
     cur['minutes_mult'] = dict(cur.get('minutes_mult') or {})
+    for k in BOUNDS:
+        cur.setdefault(k, PRIOR.get(k, 1.0))
     rows = load_rows()
     days = sorted({r['date'] for r in rows})
     now = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')

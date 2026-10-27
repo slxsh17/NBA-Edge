@@ -94,9 +94,9 @@ def news_source(xml_text, slate_day, now=None):
     now=now or utc_now()
     root=ET.fromstring(xml_text)
     out=[]
-    words=re.compile(r'\b(starting (?:five|lineup)|will start|gets (?:the )?start|starting tonight|named (?:a )?starter|minutes? (?:restriction|limit|cap)|limited (?:to|minutes)|rotation|moved to (?:the )?bench|benched|won.t start|late scratch|ruled out)\b',re.I)
+    words=re.compile(r'\b(starting (?:five|lineup)|will start|to start|gets (?:the )?start|starting tonight|named (?:a )?starter|minutes? (?:restriction|limit|cap)|limited (?:to|minutes)|rotation|moved to (?:the )?bench|benched|won.t start|late scratch|ruled out|out (?:tonight|for)|will(?: not|n.t) play|questionable|doubtful|game-time decision|expected to (?:play|return)|(?:to|will) return|cleared to|upgraded|downgraded|sidelined|injur(?:y|ed)|sprain|available (?:tonight|vs))\b',re.I)
     seen=set()
-    for item in root.findall('.//item')[:100]:
+    for item in root.findall('.//item')[:150]:
         title=html.unescape(re.sub('<[^>]+>','',item.findtext('title') or '')).strip()
         link=(item.findtext('link') or '').strip()
         posted=(item.findtext('pubDate') or '').strip()
@@ -110,7 +110,7 @@ def news_source(xml_text, slate_day, now=None):
         if key in seen:continue
         seen.add(key)
         out.append({'headline':title[:210],'source_url':link,'published_at':when.isoformat(),'type':'headline_only','confirmed':False,'scope_date':slate_day})
-    return out[:40]
+    return out[:120]
 
 def build_snapshot(day=None, lineup_html=None, news_xml=None):
     now=utc_now()
@@ -123,14 +123,24 @@ def build_snapshot(day=None, lineup_html=None, news_xml=None):
     if lineup_html:
         try:groups=lineup_source(lineup_html,day)
         except Exception as ex:errors.append('lineup parse: '+str(ex)[:120])
+    feeds=[news_xml] if news_xml is not None else []
     if news_xml is None:
-        search='NBA ("starting lineup" OR "will start" OR "minutes restriction" OR "minutes limit" OR "rotation") when:1d'
-        query=urllib.parse.urlencode({'q':search,'hl':'en-US','gl':'US','ceid':'US:en'})
-        try:news_xml=get('https://news.google.com/rss/search?'+query)
-        except Exception as ex:errors.append('headlines: '+type(ex).__name__+': '+str(ex)[:120])
-    if news_xml:
-        try:news=news_source(news_xml,day,now)
+        # Several focused searches: starters, minutes limits, injury/availability news.
+        for search in ('NBA ("starting lineup" OR "will start" OR "to start" OR "moved to the bench" OR "rotation") when:1d',
+                       'NBA ("minutes restriction" OR "minutes limit" OR "limited minutes" OR "minutes cap") when:2d',
+                       'NBA ("ruled out" OR "questionable" OR "doubtful" OR "game-time decision" OR "will not play" OR "expected to play" OR "will return") when:1d'):
+            query=urllib.parse.urlencode({'q':search,'hl':'en-US','gl':'US','ceid':'US:en'})
+            try:feeds.append(get('https://news.google.com/rss/search?'+query))
+            except Exception as ex:errors.append('headlines: '+type(ex).__name__+': '+str(ex)[:120])
+    seen=set()
+    for xml_text in feeds:
+        try:
+            for h in news_source(xml_text,day,now):
+                k=re.sub(r'\W+','',h['headline'].casefold())
+                if k not in seen:
+                    seen.add(k);news.append(h)
         except Exception as ex:errors.append('headline parse: '+str(ex)[:120])
+    news.sort(key=lambda h:h['published_at'],reverse=True)
     return {'schema':1,'slate_date':day,'checked_at':now.isoformat(),
         'lineup_provider':'RotoWire public lineup page',
         'headlines_provider':'Google News public RSS (not a direct X feed)',
