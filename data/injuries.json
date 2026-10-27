@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T16:18:02.477742+00:00",
+  "updated_at": "2026-10-27T17:08:50.112103+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -11,6 +11,11 @@
       "name": "Henri Veesaar",
       "team": "ATL",
       "status": "OUT"
+    },
+    {
+      "name": "Derrick White",
+      "team": "BOS",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Devin Carter",
@@ -273,9 +278,9 @@
       "status": "OUT"
     },
     {
-      "name": "Jabari Walker",
+      "name": "Tacko Fall",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "VJ Edgecombe",
@@ -283,14 +288,14 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Joel Embiid",
+      "name": "Jabari Walker",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Tacko Fall",
+      "name": "Joel Embiid",
       "team": "PHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dominick Barlow",
