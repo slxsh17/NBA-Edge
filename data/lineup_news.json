@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-27",
-  "checked_at": "2026-10-27T11:01:46.454492+00:00",
+  "checked_at": "2026-10-27T11:58:10.139305+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -25,6 +25,14 @@
       "headline": "North Carolina has turned to an NBA championship-winning coach in Michael Malone to start new era - Newsday",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQmNGSzlRMDBXcksxV2t1bDlyOWItZktDMHg1TlY4WWNTMThyR2d6VWdJOEpmLTdDNE0xVEdsdmpmS0h3OTFBYnNnUEd5akx2cGZLTjZuYU10M3dERldwaDYzeVZNYXF2TGdfZ2NmU2l2SDFTV1NMV2N4WHdTaExBTUVSaUpYeFIyUFA5RnZlSGlSdFh0QlhF?oc=5",
       "published_at": "2026-10-27T10:14:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "North Carolina has turned to an NBA championship-winning coach in Michael Malone to start new era - The Killeen Daily Herald",
+      "source_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPcWdpbjdfNmhoVXYteDU0dEhmNG1XVldxTXhGeXoyUndZTnN3S3BpSVBfcTdZX28tRnFCN3dBZjlhQXFxUlJKM0toQ0NEZzAxdHdkN0lhWWNyS3RSOXByVHBnQXk2YUhybEtXd21rQ3BITVdSMUlMOFBSYXlzakJETGR3Tm8xMGJ1OGtwX2x5d2UwcU8ta1RKMUVzRVFGSXVTRGlHOG5hZTRQQVd1OW1HZ09FLUlhTXNPb2VGcWV4b0ZSVXVXUFpzcDhjV0ZSVVlzTUtYUTlNVGpXV0NoY0pCX01WeHM0NE8xNV95bjBmV1RNMWlYS3dVV0N5blU0ZWs?oc=5",
+      "published_at": "2026-10-27T10:10:09+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -246,8 +254,8 @@
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbllCU0d6MW81NUJXZ055aVFMTEtHY2o3N0ZWTktPT0FXZFdCeWNYbklSUWM1VGpiMzVuSE04N3JWMG5Kdm5Ibm1aRFAyUDJ4QTExb1VEMXlCX3dCVTFRNFBsbmRyWDh5TE9GNHFhNFlmT2xxb3NFbnd6WFFPdkxDdWZkbXprQ1JfUllFRmpzN09pV1d6cnVN?oc=5",
+      "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Yahoo",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSUpoVG9hdFJDTnphRUVHNG9DUlMzeW5XTlpRLS12MXJBNHZWTHlfc3ljZEt3SnJuam5GZ3VkM3pxZ1lKMFVkdTRPamhTT2V6YUJ2OU1SYTR5aGxIVzNOMldtODdrSmNXakZCdHlsci02ZkJJaTRXdmptdkZDdnZLSUhTUzYxbnlMaGVwSlpMWkZ4S3AyaWc?oc=5",
       "published_at": "2026-10-26T18:53:15+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -257,6 +265,14 @@
       "headline": "Andrew Nembhard Injury: Questionable for Monday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUTN2NTZtTDgxdWV4bjJkZ2NidkhXbS1TMmRSOU9RUHdvWWhPOWNQcjlCcVlNR09lU1AzZEZHYzFManAwVnJWaFFFTTNFMk8xZHJrN3U5TkhGaHpUUUZQV3lhSXpleGZrbXRVMjhobERGUndnTG9rWTFQcDdHel9SS2ZzbEhmZTJrN2NELWlMNGx0dUxPYXlMTWZ1aFE5bFhI?oc=5",
       "published_at": "2026-10-26T18:34:26+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Anthony Edwards Questionable Oct. 26 Against Cavaliers Due To Knee Injury - FanDuel",
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUFZQSmh0d01SblVmazNIZDRmNlktcjdhbGdnTnlJbW5IRGg0cVp3Q1VoMmpOYkpGdHZvWDN0V3RCcGdhN1RDT0ljOGdEX0Y4VTQ0VGxmbjNHVllpaEZDS1dZTUgxcl9iYkRxOHJqS05SaHRIWng4NTZXS0FkcFJBNWhfaDhGenNTRFhPVjF6cnZWZHhQaUlYajRvbW1ja1BQMUc3T25Db19hcXRocG90RnR3VWxOQmRXa2E0ck1hZUZ6bjg?oc=5",
+      "published_at": "2026-10-26T18:13:02+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -473,14 +489,6 @@
       "headline": "Celtics Get Encouraging Derrick White Update to Start Season - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQXh0WHdZOWRFUkJ6RjUyaVRfc0dieXoxLUgyWUphb09FTkk4OVVGTjRyVERxS0w2czhYZU5od2c4OU5FMFFIb2J5eUt5cW9VekVmelJub2dIdHhmZGtIX0dPSmdpaG94b0ZycUF0azdDSHl0Z0hQMExtNzJwUy1uZEhHaDhFQTB0QU11SHZMQQ?oc=5",
       "published_at": "2026-10-26T12:14:23+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "NBA Injury Report today (26th October): Full list of injuries and current status - Sportskeeda",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT3RUNXRjVFgwZTVxcmVCZ0lSME9yYUdYT01QZUZOMFI1YjNHV2pVMGZRZFcwT09RZHJZYXJBMkVmajZBOXlYNjdvNk1vZXZtLU5TWWptN0JvLXlzSXBRbGJSR2hDOVBvM0VoNkFZaDlXeEVnMXRzS3g3Z2ctTTZpZm4wNklPQzZPN19HYVBTSDRiSkRFc0hCMjlLVG5GbWM5ZFZQUnJsQzNpY1lhaUE?oc=5",
-      "published_at": "2026-10-26T11:09:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
