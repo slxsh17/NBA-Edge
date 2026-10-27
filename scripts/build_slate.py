@@ -225,7 +225,10 @@ def build(day=None, backtest=False, weights=None):
     last = read('last_season_stats.json')
     cur = read('player_stats.json')
     cutoff = day.replace('-', '')
-    logs_cur = [r for r in cur.get('game_logs', []) if str(r.get('date')) < cutoff]  # never peek at the day itself
+    season = {}
+    for r in read('season_logs.json').get('game_logs', []) + cur.get('game_logs', []):
+        season[(str(r.get('id') or r.get('name')), str(r.get('event_id') or r.get('date')))] = r
+    logs_cur = [r for r in season.values() if str(r.get('date')) < cutoff]  # never peek at the day itself
     logs_all = last.get('game_logs', []) + logs_cur
     tg_all = team_games(logs_all)
     naive = naive_fppg(last.get('players', []), logs_cur)

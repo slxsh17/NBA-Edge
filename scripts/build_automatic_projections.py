@@ -21,7 +21,31 @@ DATA = ROOT / 'data'
 
 
 LEAGUE_RATE=0.98
-RATE_PRIOR_GAMES=6
+# Rule settings. Defaults are the hand-picked values; tune_minutes.py learns better ones
+# from past seasons and saves them to data/model_params.json.
+DEFAULT_PARAMS={
+    'role_ratio':0.55,      # two played games below this share of last season's minutes = role drop
+    'role_bump':2.0,        # minutes added to the median of those two games
+    'short_ratio':0.5,      # one game below this share = short-game caution
+    'decline_ratio':0.7,    # median of last 3 below this share = declining role
+    'decline_w':0.75,       # weight on recent median when declining
+    'prior_k':3.0,          # how many 'games' last season is worth when blending
+    'blend_cap':0.85,       # max weight on this season in the blend
+    'recent_w':0.0,         # weight of last-5-games minutes inside this season's average
+    'dnp_mult':0.85,        # minutes kept after a DNP streak with a normal role before it
+    'rotation_out_min':3.0, # minutes for players out of the rotation
+    'rate_k':15.0,          # games before this season's FP/min gets half weight
+    'rate_cap':0.5,         # max weight on this season's FP/min
+    'shrink_games':6.0,     # pull of small samples toward league FP/min
+}
+def load_params():
+    try:
+        d=json.loads((pathlib.Path(__file__).resolve().parent.parent/'data'/'model_params.json').read_text(encoding='utf-8'))
+        return {**DEFAULT_PARAMS,**{k:float(v) for k,v in (d.get('params') or {}).items() if k in DEFAULT_PARAMS}}
+    except (OSError,ValueError):
+        return dict(DEFAULT_PARAMS)
+P=load_params()
+RATE_PRIOR_GAMES=P['shrink_games']
 TEAM_ALIASES={'GS':'GSW','NO':'NOP','NY':'NYK','PHO':'PHX','SA':'SAS','UTAH':'UTA','WSH':'WAS','BRK':'BKN'}
 
 
@@ -161,35 +185,51 @@ def expected_minutes(old, current, series, injured):
         baseline=prior or (current['minutes'] if current else 0)
         if last_played is None:
             warnings.append(f'ROLE DROP: no minutes in any of team\'s last {len(series)} games and not on injury report; verify roster/rotation')
-            return 3.0,'no_recent_minutes',warnings
-        if baseline and last_played<baseline*.55:
+            return P['rotation_out_min'],'no_recent_minutes',warnings
+        if baseline and last_played<baseline*P['role_ratio']:
             warnings.append(f'ROLE DROP: DNP in last {streak} team games after a reduced role, no injury listing; verify rotation')
-            return 3.0,'recent_dnp',warnings
+            return P['rotation_out_min'],'recent_dnp',warnings
         warnings.append(f'DNP in last {streak} team games with no injury listing; possible unlisted injury/rest — verify status')
-        m=prior*(.85) if prior else current['minutes']*.85
+        m=prior*P['dnp_mult'] if prior else current['minutes']*P['dnp_mult']
         return min(36,m),'dnp_streak_caution',warnings
     if not current:
         warnings.append('No recent regular-season minute observations')
         return min(40,old['minutes']),'prior_only',warnings
     cur=current['minutes']
+    if P['recent_w'] and current.get('last_minutes'):
+        cur=(1-P['recent_w'])*cur+P['recent_w']*statistics.mean(current['last_minutes'][-5:])
     if not old:
         warnings.append('No reliable last-season baseline; current-season sample only')
         return min(40,cur),'current_only',warnings
     last2=played[-2:]
-    if len(last2)>=2 and prior>=16 and all(x<=prior*.55 for x in last2):
-        new=min(38,max(1.0,statistics.median(last2)+2))
+    if len(last2)>=2 and prior>=16 and all(x<=prior*P['role_ratio'] for x in last2):
+        new=min(38,max(1.0,statistics.median(last2)+P['role_bump']))
         warnings.append('ROLE DROP: last two games played both <55% of prior average; verify rotation')
         return new,'recent_role_drop',warnings
-    if cur<prior*.5 and current['games']==1 and prior>=16:
+    if cur<prior*P['short_ratio'] and current['games']==1 and prior>=16:
         warnings.append('One extremely short recent game; role/early exit uncertain')
         return min(26,max(cur+5,prior*.60)),'single_short_game_caution',warnings
-    if len(played)>=3 and prior>=16 and statistics.median(played[-3:])<prior*.7:
+    if len(played)>=3 and prior>=16 and statistics.median(played[-3:])<prior*P['decline_ratio']:
         warnings.append('Lower current-season playing time; extra weight given to recent games')
-        return min(40,prior*.25+statistics.median(played[-3:])*.75),'recent_minutes_decline',warnings
+        return min(40,prior*(1-P['decline_w'])+statistics.median(played[-3:])*P['decline_w']),'recent_minutes_decline',warnings
     # Last season counts for less when it was itself a small sample (e.g. injury year).
-    prior_strength=3*min(1,old['games']/30)
-    w=min(.85,current['games']/(current['games']+prior_strength))
+    prior_strength=P['prior_k']*min(1,old['games']/30)
+    w=min(P['blend_cap'],current['games']/(current['games']+prior_strength))
     return min(40,prior*(1-w)+cur*w),'sample_blend',warnings
+
+
+def rate_for(old,cur):
+    """FP per minute: last season and this season blended, small samples pulled toward
+    league average (a 40+ game player isn't pulled at all)."""
+    if old and cur:
+        w=min(P['rate_cap'],cur['games']/(cur['games']+P['rate_k']))
+        rate=old['rate']*(1-w)+cur['rate']*w
+    else:rate=(cur or old)['rate']
+    games=(old['games'] if old else 0)+(cur['games'] if cur else 0)
+    raw=rate
+    k=P['shrink_games']*max(0,1-games/40)
+    rate=(games*rate+k*LEAGUE_RATE)/(games+k) if games+k else rate
+    return min(2.5,max(.15,rate)),raw,games
 
 
 def build_for_player(key,name,team,old,cur,series,injured,authorized_refs):
@@ -208,19 +248,9 @@ def build_for_player(key,name,team,old,cur,series,injured,authorized_refs):
             'minutes_method':method,'warnings':warnings,'confidence':'low',
             'reference_projection':None,'reference_source':None,'reference_delta':None}
     if m is None:return result
-    if old and cur:
-        w=min(.5,cur['games']/(cur['games']+15))
-        rate=old['rate']*(1-w)+cur['rate']*w
-    else:rate=(cur or old)['rate']
-    # Small samples regress toward league average (~0.98 FP/min for rotation players,
-    # 2025-26). A 50-game player barely moves; an 8-game hot streak gets pulled in.
-    games=(old['games'] if old else 0)+(cur['games'] if cur else 0)
-    raw_rate=rate
-    k=RATE_PRIOR_GAMES*max(0,1-games/40)  # no pull at all once a player has 40+ games
-    rate=(games*rate+k*LEAGUE_RATE)/(games+k) if games+k else rate
+    rate,raw_rate,games=rate_for(old,cur)
     if games<20 and abs(raw_rate-rate)>=.15:
         warnings.append(f'Small sample ({games} games): FP/min {raw_rate:.2f} regressed to {rate:.2f}')
-    rate=min(2.5,max(.15,rate))
     result['expected_minutes']=round(m,2)
     result['fp_per_minute']=round(rate,4)
     result['base_projected_fp']=round(m*rate,2)
@@ -251,12 +281,21 @@ def authorized_refs_for_date(data,day):
     return refs,bool(refs)
 
 
+def season_logs():
+    """This season's box scores: the permanent season file plus the latest 7-day feed."""
+    seen={}
+    for r in read('season_logs.json').get('game_logs',[])+read('player_stats.json').get('game_logs',[]):
+        seen[(str(r.get('id') or r.get('name')),str(r.get('event_id') or r.get('date')))]=r
+    return list(seen.values())
+
+
 def build(day=None, injury_map=None):
     """Projects every player with NBA history. No slate file needed: the browser
     matches these rows to whatever FanDuel CSV the user imports."""
     day=day or dt.datetime.now(ZoneInfo('America/New_York')).date()
     day_str=day.isoformat()
     old=read('last_season_stats.json');new=read('player_stats.json')
+    new={**new,'game_logs':season_logs()}
     prior=prior_index(old)
     floor=dt.date(2026,10,20)
     raw=new.get('game_logs',[])

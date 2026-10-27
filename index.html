@@ -344,8 +344,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json')]);
-  S.lw=lw.status==='fulfilled'?lw.value:null;
+  const [today,acc,inj,lw,mp]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
@@ -674,6 +674,7 @@ function learnedHTML(){
   ${Math.abs((w.scale??1)-1)>=.01?`<p style="margin:0 0 6px;font-size:14px">Overall projections ${w.scale<1?'lowered':'raised'} ${Math.abs(Math.round((w.scale-1)*100))}% to fix ${w.scale<1?'running high':'running low'}.</p>`:''}
   ${mm.length?`<p style="margin:0 0 6px;font-size:14px">${esc(mm.join(', '))}.</p>`:''}
   ${(w.outside||0)>=.01?`<p style="margin:0 0 6px;font-size:14px">Blends in ${Math.round(w.outside*100)}% of DailyFantasyFuel\u2019s public projection, because the blend was more accurate on days it hadn\u2019t seen.</p>`:''}
+  ${S.mp&&S.mp.decision?`<p style="margin:0 0 6px;font-size:14px">Minutes rules (retuned weekly on last season\u2019s games): ${esc(S.mp.decision)}${S.mp.params&&S.mp.params.recent_w>=.05?` A player\u2019s last 5 games now carry ${Math.round(S.mp.params.recent_w*100)}% of this season\u2019s minutes.`:''}</p>`:''}
   <details style="font-size:13.5px"><summary>Current weights</summary><table style="margin-top:6px"><tbody>${rows}</tbody></table>${lastAdopt?`<p class="muted" style="margin:6px 0 0">Last change ${esc(lastAdopt.date)}: ${esc(lastAdopt.changes.join(', ')||'none')}.</p>`:''}</details>`;
 }
 function renderSources(){
