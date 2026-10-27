@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T02:10:44.506151+00:00",
+  "updated_at": "2026-10-27T02:55:21.140353+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -203,11 +203,6 @@
       "status": "OUT"
     },
     {
-      "name": "Cameron Carr",
-      "team": "LAL",
-      "status": "OUT"
-    },
-    {
       "name": "Donte DiVincenzo",
       "team": "MIN",
       "status": "OUT"
@@ -383,12 +378,12 @@
       "status": "OUT"
     },
     {
-      "name": "Jaren Jackson Jr.",
+      "name": "Lauri Markkanen",
       "team": "UTA",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Lauri Markkanen",
+      "name": "Jaren Jackson Jr.",
       "team": "UTA",
       "status": "DAY-TO-DAY"
     },
