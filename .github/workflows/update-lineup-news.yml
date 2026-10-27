@@ -21,13 +21,18 @@ jobs:
         run: python -m pip install 'beautifulsoup4>=4.12,<5'
       - name: Retrieve NBA starters and rotation headlines
         run: python scripts/update_lineup_news.py
+      - name: Read new posts from NBA news accounts on X (only if X_BEARER_TOKEN is set)
+        if: always()
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: python scripts/update_x_news.py
       - name: Save public news snapshot
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/lineup_news.json
+          git add data/lineup_news.json data/x_news.json 2>/dev/null || git add data/lineup_news.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh public NBA starting lineup and rotation news'
-            git pull --rebase origin main
-            git push
+            for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done
           fi

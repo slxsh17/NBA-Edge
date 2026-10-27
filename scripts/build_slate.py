@@ -406,7 +406,10 @@ def build(day=None, backtest=False, weights=None):
             p['own'] = p['own_heur']
 
     if not backtest:
-        attach_news(players, read('lineup_news.json').get('headlines', []))
+        heads = list(read('lineup_news.json').get('headlines', []))
+        heads += [{'headline': f"@{x['account']}: {x['text']}", 'source_url': x['url'], 'published_at': x['at']}
+                  for x in read('x_news.json').get('posts', [])]
+        attach_news(players, heads)
     for p in players:
         p.pop('_recent', None)
     out_singles = single_game_slates(singles, players)
