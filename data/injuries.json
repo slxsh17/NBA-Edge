@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T23:58:24.852713+00:00",
+  "updated_at": "2026-10-27T00:40:54.942529+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -56,6 +56,11 @@
       "name": "Patrick Williams",
       "team": "CHI",
       "status": "OUT"
+    },
+    {
+      "name": "Sergio de Larrea",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Caleb Martin",
@@ -116,21 +121,6 @@
       "name": "Jalen Duren",
       "team": "DET",
       "status": "OUT"
-    },
-    {
-      "name": "Gui Santos",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Brandon Williams",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Charles Bassey",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kristaps Porzingis",
@@ -216,16 +206,6 @@
       "name": "Cameron Carr",
       "team": "LAL",
       "status": "OUT"
-    },
-    {
-      "name": "Isaiah Stewart",
-      "team": "MEM",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Karim Lopez",
-      "team": "MEM",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Donte DiVincenzo",
@@ -338,14 +318,19 @@
       "status": "OUT"
     },
     {
-      "name": "Chris Youngblood",
+      "name": "Branden Carlson",
       "team": "POR",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Branden Carlson",
+      "name": "Scoot Henderson",
       "team": "POR",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Chris Youngblood",
+      "team": "POR",
+      "status": "OUT"
     },
     {
       "name": "Shaedon Sharpe",
@@ -395,7 +380,7 @@
     {
       "name": "Jaxson Hayes",
       "team": "UTA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Trey Alexander",
