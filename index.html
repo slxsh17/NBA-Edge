@@ -181,6 +181,8 @@ details summary{cursor:pointer}
   .tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   [data-view]:not(.show){display:none}
   .col-own,.col-val,.tt{display:none}
+  th,td{padding-left:4px;padding-right:4px}
+  td.n{font-size:15px}
   .pcell{max-width:0;width:100%}
   .brand{font-size:26px}
   .top-actions{margin-left:0}
@@ -253,7 +255,7 @@ details summary{cursor:pointer}
         <th><button data-sort="proj" aria-sort="descending">Proj</button></th>
         <th class="col-val"><button data-sort="value">Value</button></th>
         <th class="col-own"><button data-sort="own">Own</button></th>
-        <th class="col-own"><button data-sort="lev" title="How often in winning lineups minus how owned">Lev</button></th>
+        <th class="col-lev"><button data-sort="lev" title="How often in winning lineups minus how owned">Lev</button></th>
         <th><span class="muted">Use</span></th>
       </tr></thead>
       <tbody id="ptable"><tr><td colspan="7" class="empty">Loading players…</td></tr></tbody>
@@ -521,7 +523,7 @@ function renderPlayers(){
   tb.innerHTML=rows.slice(0,220).map(p=>{const k=pkey(p),dim=p.out||!inPlay(p);const g=gameOf(p);
     const vs=p.opp?(p.home?'vs ':'@ ')+esc(p.opp):'';
     let html=`<tr class="prow${dim?' out':''}" data-k="${esc(k)}"><td class="pcell"><div class="pname">${esc(p.name)}</div><div class="pmeta">${tags(p)}${esc(p.position)}, ${esc(p.team)} ${vs}<span class="tt">${p.team_total?`, team total ${p.team_total}`:''}</span></div></td>
-    <td class="n">${money(p.salary)}</td><td class="proj">${p.proj?p.proj.toFixed(1):'–'}</td><td class="n col-val">${p.value?p.value.toFixed(1)+'x':'–'}</td><td class="n col-own">${p.own!=null&&p.proj?p.own.toFixed(0)+'%':'–'}</td><td class="n col-own lev ${p.lev>=3?'pos':p.lev<=-5?'neg':''}">${p.lev!=null&&p.proj?(p.lev>0?'+':'')+p.lev.toFixed(0):'–'}</td>
+    <td class="n">${money(p.salary)}</td><td class="proj">${p.proj?p.proj.toFixed(1):'–'}</td><td class="n col-val">${p.value?p.value.toFixed(1)+'x':'–'}</td><td class="n col-own">${p.own!=null&&p.proj?p.own.toFixed(0)+'%':'–'}</td><td class="n col-lev lev ${p.lev>=3?'pos':p.lev<=-5?'neg':''}">${p.lev!=null&&p.proj?(p.lev>0?'+':'')+p.lev.toFixed(0):'–'}</td>
     <td><div class="pick"><button class="lock" aria-label="Use ${esc(p.name)} in every lineup" aria-pressed="${S.locks.has(k)}">✓</button><button class="ban" aria-label="Never use ${esc(p.name)}" aria-pressed="${S.bans.has(k)}">✕</button></div></td></tr>`;
     if(S.open===k)html+=`<tr class="detail"><td colspan="7">${detail(p)}</td></tr>`;
     return html}).join('');
