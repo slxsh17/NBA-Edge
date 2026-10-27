@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-27",
-  "checked_at": "2026-10-27T09:08:53.910205+00:00",
+  "checked_at": "2026-10-27T10:04:31.491090+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -78,6 +78,14 @@
       "scope_date": "2026-10-27"
     },
     {
+      "headline": "Utah Jazz Coach Brings Bad Injury News About Jaren Jackson Jr. And Lauri Markkanen - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeEFmNTBZOF83SFVJR19uR1BLZm92TlpTRXNOYldlVy1QMW93NTRaM21Nb3RnS21lZkZZQlFUTjRkX2RUcUhDOUM0X1pzSmt1aHFHbDNGV0NJa3I0TkpjOEpuMGt1NEZMVFZBYldtUmxIbHpmUHAxWDdMZXZxazZ3dzV3?oc=5",
+      "published_at": "2026-10-27T07:00:44+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
       "headline": "Tyler Kolek should take Mike Brown at his word and push for Knicks rotation spot - Daily Knicks",
       "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBJMnJEMlJTc256OGJ4YnBIaHNpQ2FEaDdhblBVQzV4YklpdTBuUlgwWm11NFZfbHI0UUlBLWRRdnItMjRrRnFFNkloOUhjRnR5QTZEMFBXeDdTRm5MSG05S2pGZDZnYVphLXRjQUxlRmdFTGdoSGt2bXpFYkRrUQ?oc=5",
       "published_at": "2026-10-27T05:58:19+00:00",
@@ -137,6 +145,14 @@
       "headline": "This Kris Dunn Trade Scenario Would Strengthen the OklThunder’s Rotation - TWSN",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV3Q5WnY1SW9MbjhZODhOS1NlMnMyRE9qT21pU25rQ1YzdDIzNGFmSjBpS3JfMmhFTnh4QXk1RFFuZHA2bWJxbVFYc19GRjJFUkVpM2hMRERlbjZrcW16YWVOUWJDWjB1SkJ5Ulg0ZkxBdDlyQjFQdWxuY2x0NmhRZndPU0d1VnVMYmNKbU94OUdEV2pEci10Zm90aXJVLXMt?oc=5",
       "published_at": "2026-10-27T00:52:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "‘List of demands’: Fresh Brown-Tatum bombshell; NBA favourites cop double injury blow – Daily - Fox Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQMjhoSUxIMTBBcE1ac0RydTVKVENxRERYSlU3RXAtai1IMm82QUU5QXJ1TzR6Zk9KRHZJOWExY1BwM0ZYQkJXaUFCb3dJRW1ITVVlQVY3THVsY1pGRjZ5eEQ1ZV91aS1vMkxrNS1jejlpTFRYQ0ZOTWpaSjNEUFhBMHZSNFZ4bVJKMG9DaVduR2NoLWJBZVQzeHlJZmpZVk5QS0k1TzhYUlpSRkZhdlBPVUFvd1BoU3ZWOV9tbURmUjNvQ1NiVEg5Rzc0eTRZTGtNamdlUWpqQ0pNN2R2Z2JCcVVVMUc2VkJZWE9TdXpMY1VWR0lJRm42dWJRLWZwRGdpMGdPNF9B0gGGAkFVX3lxTFAyOGhJTEgxMEFwTVpzRHJ1NUpUQ3FERFhKVTdFcC1qLUgybzZBRTlBcnVPNHpmT0pEdkk5YTFjUHAzRlhCQldpQUJvd0lFbUhNVWVBVjdMdWxjWkZGNnl4RDVlX3VpLW8yTGs1LWN6OWlMVFhDRk5NalpKM0RQWEEwdlI0VnhtUkowb0NpV25HY2gtYkFlVDN4eUlmallWTlBLSTVPOFhSWlJGRmF2UE9VQW93UGhTdlY5X21tRGZSM29DU2JUSDlHNzR5NFlMa01qZ2VRampDSk03ZHZnYkJxVVUxRzZWQllYT1N1ekxjVVZHSUlGbjZ1YlEtZnBEZ2kwZ080X0E?oc=5",
+      "published_at": "2026-10-27T00:05:49+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -257,14 +273,6 @@
       "headline": "Andrew Nembhard Injury: Questionable for Monday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUTN2NTZtTDgxdWV4bjJkZ2NidkhXbS1TMmRSOU9RUHdvWWhPOWNQcjlCcVlNR09lU1AzZEZHYzFManAwVnJWaFFFTTNFMk8xZHJrN3U5TkhGaHpUUUZQV3lhSXpleGZrbXRVMjhobERGUndnTG9rWTFQcDdHel9SS2ZzbEhmZTJrN2NELWlMNGx0dUxPYXlMTWZ1aFE5bFhI?oc=5",
       "published_at": "2026-10-26T18:34:26+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "Anthony Edwards Questionable Oct. 26 Against Cavaliers Due To Knee Injury - FanDuel",
-      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUFZQSmh0d01SblVmazNIZDRmNlktcjdhbGdnTnlJbW5IRGg0cVp3Q1VoMmpOYkpGdHZvWDN0V3RCcGdhN1RDT0ljOGdEX0Y4VTQ0VGxmbjNHVllpaEZDS1dZTUgxcl9iYkRxOHJqS05SaHRIWng4NTZXS0FkcFJBNWhfaDhGenNTRFhPVjF6cnZWZHhQaUlYajRvbW1ja1BQMUc3T25Db19hcXRocG90RnR3VWxOQmRXa2E0ck1hZUZ6bjg?oc=5",
-      "published_at": "2026-10-26T18:13:02+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -470,6 +478,14 @@
       "scope_date": "2026-10-27"
     },
     {
+      "headline": "Men’s college basketball 2026-27 preseason Top 25: Why Duke is our No. 1 to start the year - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPREUxMjQwVmVKQXNsM2FVR1FCRnpYUHVHc01Ma0VtME1vV0p0dS1ZU3BqYXhyOFhYTkpoQTV0RndJV3FKdktRQkJYSjVjQVBXRldkdUtQQlFuekpsQkNxdlZLSnp1R2U2ZVhVZEE5X3BndXkwcWMxRGZpZmV6TWlhS1NoUzRKRW9MYnBhaE1CM2lMMWFpWUlzT3hpbmhGclRYSFg0?oc=5",
+      "published_at": "2026-10-26T12:35:16+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
       "headline": "James hopeful 76ers won’t need him to start at center often - TSN",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQmxtSnFyVEpGMnFuRVdUdWhUd2VwUWZCb0NFUXl1MHh0THRHX1hrN25kX3E5MmpVUlFWOUpBaGJzME5VV000ZTh0VmI3OHpHUTBmUHN2QjVNaEhqWG03RGhjYjU4TmdSY1hTUXlJQXBkeGhRd1RjX2xRaVZFdG9teGdHQ2xEZG1tU3k1UzBSVnRPWXd2c0toODhUTXQ3eU9fcjdXNw?oc=5",
       "published_at": "2026-10-26T12:20:32+00:00",
@@ -494,17 +510,17 @@
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Seth Curry bewildered by Warriors' starting lineup decision early in season - NBC Sports Bay Area & California",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcEhzNEhwcV80VzVMM095eGRJOVVlUnhUQXh5YTg3QnI2YmZVSGlvd0hkUnRhX2YzSzNmWndJdzlLTnVydzNNSmxfVnpUOC1CcWM3N2RUUk1wQ0RxdDlzX0tSR2lJU0RyQlZHYjZvZjJGVFlPYmhqdFM3b2xlRU51dVBEbzBnWkJXMk9KWGp1dmF3c01CUFJ2cGlLYWlodVltX185OWxzUFDSAbABQVVfeXFMUC1LRmZmZF9tQkxzR0JBVGhCSEVENXRZR181ZkE0emluV3J4RHpMejZfWXNRczRheDFJSzJKUjloUzhScjZvMGVzcHNfN25uazZ4Z253eGpJR3lUR2RYX21HUVFxVUthRGh3TVNUdkdnT3R3emF6RVlXQzFwekU0cnQwQnNrU3U3V2s2Sy1vZ0ZNZXVqSGVHclJfTGlWei1mcXdJcFFXM0hGazBCMGxLXzE?oc=5",
-      "published_at": "2026-10-26T10:09:16+00:00",
+      "headline": "Why Justin Champagnie Is Earning Permanent Role in Wizards Rotation - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOazVwVjVkeENkOHoyVmg3M3pVaVdNTUZ0TGRUSEowM2g0TGtQaVJWUlpMOGZvLTZyRm9NSGJwbHFfWWQzWGUzRzI4MW5oVjJvWXVGNWNyMTROQkhXSXNlOGU1eHdzQkcwbHdUWWxtd21VandTT0g1ald2QTFRU1EwNWYwcTFHdU5LUGVEU1UxRWx2NHpIUFo4OU5qc3F6ZFhQR0Y2cEw3VllsTHEwby1hNHN6Z3VLeWs?oc=5",
+      "published_at": "2026-10-26T10:21:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Why Justin Champagnie Is Earning Permanent Role in Wizards Rotation - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRUNrSTdRbkJyR0VaeGw4LVhkWEdSaVU5VHhiY3VqRjlkUW0yTUUzVEJwZTNZMmtEUmhsTnRpOTFxZ19qMG1hT1dqODNqaURUNG1hdFo0TjF4b3NzYmVBUG5pS3ExUW9CTVNaYzdPb1hTRWlFcEdVZGxpZm1peGtDam9pbGkyLVhHMTNwOTJQenF1dw?oc=5",
-      "published_at": "2026-10-26T10:00:42+00:00",
+      "headline": "Seth Curry bewildered by Warriors' starting lineup decision early in season - NBC Sports Bay Area & California",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcEhzNEhwcV80VzVMM095eGRJOVVlUnhUQXh5YTg3QnI2YmZVSGlvd0hkUnRhX2YzSzNmWndJdzlLTnVydzNNSmxfVnpUOC1CcWM3N2RUUk1wQ0RxdDlzX0tSR2lJU0RyQlZHYjZvZjJGVFlPYmhqdFM3b2xlRU51dVBEbzBnWkJXMk9KWGp1dmF3c01CUFJ2cGlLYWlodVltX185OWxzUFDSAbABQVVfeXFMUC1LRmZmZF9tQkxzR0JBVGhCSEVENXRZR181ZkE0emluV3J4RHpMejZfWXNRczRheDFJSzJKUjloUzhScjZvMGVzcHNfN25uazZ4Z253eGpJR3lUR2RYX21HUVFxVUthRGh3TVNUdkdnT3R3emF6RVlXQzFwekU0cnQwQnNrU3U3V2s2Sy1vZ0ZNZXVqSGVHclJfTGlWei1mcXdJcFFXM0hGazBCMGxLXzE?oc=5",
+      "published_at": "2026-10-26T10:09:16+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
