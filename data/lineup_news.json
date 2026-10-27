@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-27T02:59:14.719372+00:00",
+  "checked_at": "2026-10-27T03:27:07.947451+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -82,6 +82,14 @@
       "scope_date": "2026-10-26"
     },
     {
+      "headline": "Andrew Nembhard (neck) questionable Monday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZk9GNDAweFRiQkozQmhrUTBTRDQwem5zVUo5QVJCeEl3UDhzVHZBZ2t2QlVQRUtlLTMyQVdiamRGNENqRmJEUnRiOXBieVJUbjBiT0xUVGRuS1RJajZRcGNNdEZhYUI5WTVvZUt5dzhHNVVUeHVjcmdlNnpIS2lwZ1RQZmZXeEhNMlFKTEp0WUhhbXI4ZXJEcXRMam1yOGFBczRJVnM0eEhySl9Y?oc=5",
+      "published_at": "2026-10-27T01:41:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
       "headline": "Warriors Announce 4th New Starting Lineup of Season vs. Nuggets - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRDNabkdrdzJvRlBFQXB2WDJzY2xKc0ppMENZLXZVLW1rdkJ5R0U2UGR5cEpZRVFkWjRtc0dXaVd4d0RtbHZxSUhiWGp1TWVyYlZ1bnlRN242eXF4R3hTZ0RIY1I1d3VBR002Tk5qNTRucGZ0TG9Va2M4NHhjWEpxN3c5VEpydUF4ZnlPWGNnRWpPbTI0ZkdpQXVxbXhYUE1TMTZNTWQ4MTZyZm5EUDd4NEJn?oc=5",
       "published_at": "2026-10-27T01:36:44+00:00",
@@ -93,6 +101,14 @@
       "headline": "Ausar Thompson (ankle) questionable vs. New York - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTHc1cGVzWjgtS1JMQ2t3NUNsUTZmYzVMdUV2TFI4MTFmUVR2MjBCcE4wTnpDS2JnRXN2YXRKb2c1dVM1ZU54WUZMVkJBUkxtX1dBSE1iLXhpNmtjaURadEtPSlZyMV9SZElXVUNWc0J5S01lYmRzM0JsVG5MQWpVcUlybjVfR1BMck9hUUcwenczNDZ2bmF1bk5jeUN6Tko3TTZ6dFZmWlcyR3Q4bU54VzFJQQ?oc=5",
       "published_at": "2026-10-27T01:06:36+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "This Kris Dunn Trade Scenario Would Strengthen the OklThunder’s Rotation - TWSN",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV3Q5WnY1SW9MbjhZODhOS1NlMnMyRE9qT21pU25rQ1YzdDIzNGFmSjBpS3JfMmhFTnh4QXk1RFFuZHA2bWJxbVFYc19GRjJFUkVpM2hMRERlbjZrcW16YWVOUWJDWjB1SkJ5Ulg0ZkxBdDlyQjFQdWxuY2x0NmhRZndPU0d1VnVMYmNKbU94OUdEV2pEci10Zm90aXJVLXMt?oc=5",
+      "published_at": "2026-10-27T00:52:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -124,15 +140,7 @@
     {
       "headline": "Two key Pistons questionable for road contest against Knicks - The Detroit News",
       "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTEJXX1JUSFRyN1RMM3l0cmJDTl9xd21Nbzl6UG5GeHMyLTJWdzJPWGtfbXgtR3Z1XzR6S0Q0c3M5LWZFU3VSdlRkUTI4QUtCMXU4Sk5VdHdKcjNWYmk0dktuOGVuWXY0UkRJczltQ1NBYmZidDk2NHE1WGpwZ1lwOWZtNEJHLTcyU0g2bHpXUlhQMmtBNHJJeW1kNlJRMjB3WjZySWVCNHc4TVBuRkczZ2pUUHV4WmJmQ2JvMFFwbDhoWjZXb3NrRg?oc=5",
-      "published_at": "2026-10-26T22:14:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Thunder Lose 2 More Key Players After Devastating Jalen Williams Injury - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbThTYk5OcEJUaGUzcjVCQXJEdGdwZEdwdVBkaDVwVUY0anJLNXhKZnA1aWdxVFI5UHpocHlzeGJQLWFnaFNZY1otU3Z5Zl9GaVdhYm1MU3ZHdWRLZGRKOGh0ZUM2Y2xfMm5XSDMxc0RKMmRGU0xMaVZhenkwQ2poZlVNaHJDVExpRmltaE4zV1IyOWtDV0c2eQ?oc=5",
-      "published_at": "2026-10-26T22:11:14+00:00",
+      "published_at": "2026-10-26T23:06:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -194,8 +202,8 @@
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSUpoVG9hdFJDTnphRUVHNG9DUlMzeW5XTlpRLS12MXJBNHZWTHlfc3ljZEt3SnJuam5GZ3VkM3pxZ1lKMFVkdTRPamhTT2V6YUJ2OU1SYTR5aGxIVzNOMldtODdrSmNXakZCdHlsci02ZkJJaTRXdmptdkZDdnZLSUhTUzYxbnlMaGVwSlpMWkZ4S3AyaWc?oc=5",
+      "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbllCU0d6MW81NUJXZ055aVFMTEtHY2o3N0ZWTktPT0FXZFdCeWNYbklSUWM1VGpiMzVuSE04N3JWMG5Kdm5Ibm1aRFAyUDJ4QTExb1VEMXlCX3dCVTFRNFBsbmRyWDh5TE9GNHFhNFlmT2xxb3NFbnd6WFFPdkxDdWZkbXprQ1JfUllFRmpzN09pV1d6cnVN?oc=5",
       "published_at": "2026-10-26T18:53:15+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -557,30 +565,6 @@
       "headline": "Jalen Brunson sends strong message as Knicks still winless to start NBA season - BasketNews.com",
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTTB6X1hlVXN3YThEMmI5Y0FxOVdtQzJ5QnBsZ0t1LTdYUlJFM3A0eW9HTmp2S3NndkpPRHJzSk9xdkMxTWM2OURjeWcxbzdTUUs5WFk4VDhtZFA2VENjNzhNTlJKMXJ4X2FlMXVLbzlQLWd5Q01Xa3ZXX2Z2RS1DcnBWTUswR1A0T1lWSURQS2FEUU9MRHRFeHpNQXBtYWFIN2lHUUs4dWpPTk1GQjFhSy1pMWFVNU1sS2c?oc=5",
       "published_at": "2026-10-26T03:29:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Knicks Suffer Third Consecutive Loss To Start The Season; 5 Takeaways - Fadeaway World",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNkVKcGVxZm02dF9FcU9fbURzLUZyODRSanp0M3lld1dpbm1pZWVNU0RRZWJncEdrbDVoTnlublFGanZLakNrVHNXQm00VVpJZDFnb1FTN2k0aC1RZlVWYXA4TktsUU42TVMzUGJiZXlLRlRJVlZ5T25rYjE3SzYzQmlLeE00d3J5YkN2eTdCLXFia2FXQ3RpOUhkdFloQ1kwMVNXV25wY0lJNDdhNmpnOHdwckc?oc=5",
-      "published_at": "2026-10-26T03:10:48+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Karim López (knee) questionable Sunday vs. SAC - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU21ZT3ExaHVBeW5kM19VeFZlOW1xcXo3Y3hZSGVaX05XQ2dWTjBycGhnR3hqLURuXzFLbHljLTJxUUVPdzhFMDdpQmM3SFZwdVNKYzZ6SzhxREZwSllJNDdIU2tYLWJ6cU9ubjNobkpld3hEemFGblhNcEE1NkpPdXdkTjdIVDUydk13eV93c09LdE1MOElkdXl0OF9uYWpyVlY2SGN1SkFpVUU4MzZqRQ?oc=5",
-      "published_at": "2026-10-26T03:10:46+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Amid three-game losing streak to start season, Mike Brown implores Knicks to 'focus on the details' - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeS15WmQxYUVmVDB3c1VPRUxBM0FuTy0za3FURklOUmJRQ1k3YVNRbzZMcEttYW5qdzF5YVpqMnNWMl80dFhNQWU5ZEhYY1hPUzNuT1RTM0hfT1FOS3J5SW1sbG9NcDlNVTNCdkxPWnlQX1p0a1hMRVJJaGZhUHJxenNuVWc?oc=5",
-      "published_at": "2026-10-26T03:08:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
