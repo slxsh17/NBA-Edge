@@ -108,6 +108,46 @@ def naive_fppg(prior_players, logs):
     return {k: v[0] / v[1] for k, v in tot.items() if v[1]}
 
 
+NEWS_KINDS = [
+    ('restriction', re.compile(r'minutes? (restriction|limit|cap)|limited minutes|limited to', re.I)),
+    ('out', re.compile(r'ruled out|will(?: not|n.t) play|out (tonight|for|vs)|sidelined|late scratch', re.I)),
+    ('doubt', re.compile(r'questionable|doubtful|game-time decision|downgraded', re.I)),
+    ('start', re.compile(r'will start|to start|gets (the )?start|starting lineup|named (a )?starter|moves? into (the )?starting', re.I)),
+    ('bench', re.compile(r'moved to (the )?bench|benched|won.t start|come off the bench', re.I)),
+    ('return', re.compile(r'expected to (play|return)|(to|will) return|cleared to|upgraded|available', re.I)),
+]
+
+
+def attach_news(players, headlines):
+    """Match recent headlines to slate players (full name, or a unique last name).
+    Headlines are unverified: they become flags to check, never automatic minute changes."""
+    last_count = defaultdict(int)
+    for p in players:
+        last_count[norm(str(p['name']).split()[-1])] += 1
+    for h in headlines:
+        text = h.get('headline', '')
+        t = norm(text)
+        kinds = [k for k, rx in NEWS_KINDS if rx.search(text)]
+        for p in players:
+            full = norm(p['name'])
+            last = norm(str(p['name']).split()[-1])
+            if full in t:   # full names only: 'Seth Curry' must not match Stephen Curry
+                p.setdefault('news', []).append({'headline': text[:200], 'url': h.get('source_url'), 'at': h.get('published_at'), 'kinds': kinds})
+    for p in players:
+        news = sorted(p.get('news', []), key=lambda n: n.get('at') or '', reverse=True)[:4]
+        if not news:
+            p.pop('news', None)
+            continue
+        p['news'] = news
+        kinds = {k for n in news for k in n['kinds']}
+        if 'restriction' in kinds:
+            p['flags'].append('News: possible minutes restriction (unverified headline)')
+        if 'bench' in kinds:
+            p['flags'].append('News: possible move to the bench (unverified headline)')
+        if ('out' in kinds or 'doubt' in kinds) and not p.get('out'):
+            p['flags'].append('News: injury or availability headline; check status')
+
+
 def starter_match(name, lineup_names):
     """RotoWire lists 'D. Mitchell' style names."""
     full = norm(name)
@@ -327,8 +367,10 @@ def build(day=None, backtest=False, weights=None):
         m, proj = final_projection(p, W)
         p['proj'] = round(proj, 2)
         p['minutes'] = round(m, 1)
-        if p.get('ext') is not None and abs(p['proj'] - p['ext']) >= max(8, 0.3 * max(p['ext'], 1)):
-            p['flags'].append(f"Outside projection disagrees: DailyFantasyFuel {p['ext']:.1f} vs NBA EDGE {p['proj']:.1f}")
+        own_proj = final_projection(p, {**W, 'outside': 0.0})[1]
+        p['model_proj'] = round(own_proj, 2)
+        if p.get('ext') is not None and abs(own_proj - p['ext']) >= max(8, 0.3 * max(p['ext'], 1)):
+            p['flags'].append(f"Outside projection disagrees: DailyFantasyFuel {p['ext']:.1f} vs NBA EDGE model {own_proj:.1f}")
         # 7. range: FP spread grows with projection; extra for shaky roles
         shaky = any(f.startswith(('ROLE DROP', 'New team', 'Small sample', 'No NBA')) for f in p['flags']) or p['status'] == 'QUESTIONABLE'
         sd = 0.28 * p['proj'] + 3 + (3 if shaky else 0)
@@ -359,6 +401,8 @@ def build(day=None, backtest=False, weights=None):
         for p, o in zip(elig, own):
             p['own'] = round(min(60.0, o), 1)
 
+    if not backtest:
+        attach_news(players, read('lineup_news.json').get('headlines', []))
     for p in players:
         p.pop('_recent', None)
     out_singles = single_game_slates(singles, players)
