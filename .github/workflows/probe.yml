@@ -2,11 +2,15 @@ name: probe-slate-sources
 on:
   push:
     branches: [probe-slate]
+permissions:
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
+          exec > probe_out.txt 2>&1
           UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
           for u in \
             "https://www.dailyfantasyfuel.com/nba/projections/fanduel/2026-10-26/" \
@@ -15,9 +19,13 @@ jobs:
             "https://www.rotowire.com/daily/nba/optimizer.php?site=FanDuel" \
             "https://www.rotowire.com/daily/nba/value-report.php?site=FanDuel" \
             "https://www.numberfire.com/nba/daily-fantasy/daily-basketball-projections" ; do
-            echo "=== $u"; curl -sSL -A "$UA" -o /tmp/p.html -w "HTTP %{http_code} size %{size_download} final %{url_effective}\n" "$u" || true
-            grep -o 'data-salary="[^"]*"' /tmp/p.html | head -3
-            grep -oiE '(salary|"sal")[^<]{0,120}' /tmp/p.html | head -4
-            grep -oE 'data-name="[^"]*"[^>]{0,300}' /tmp/p.html | head -2
-            grep -oE '[a-zA-Z0-9_/.-]*(tables|ajax|api|json|csv)[a-zA-Z0-9_/.?=&-]*' /tmp/p.html | sort -u | head -15
+            echo "=== $u"; f=probe/$(echo "$u"|md5sum|cut -c1-6).html; mkdir -p probe; curl -sSL -A "$UA" -o $f -w "HTTP %{http_code} size %{size_download} final %{url_effective}\n" "$u" || true
+            grep -o 'data-salary="[^"]*"' $f | head -3
+            grep -oiE '(salary|"sal")[^<]{0,120}' $f | head -4
+            grep -oE 'data-name="[^"]*"[^>]{0,300}' $f | head -2
+            grep -oE '[a-zA-Z0-9_/.-]*(tables|ajax|api|json|csv)[a-zA-Z0-9_/.?=&-]*' $f | sort -u | head -15
           done
+      - run: |
+          mkdir -p probe && true
+          git config user.name bot && git config user.email bot@x
+          git add probe_out.txt probe && git commit -qm probe-results && git push
