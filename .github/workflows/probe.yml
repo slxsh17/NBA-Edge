@@ -1,0 +1,23 @@
+name: probe-slate-sources
+on:
+  push:
+    branches: [probe-slate]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
+          for u in \
+            "https://www.dailyfantasyfuel.com/nba/projections/fanduel/2026-10-26/" \
+            "https://www.dailyfantasyfuel.com/nba/projections/fanduel/" \
+            "https://www.fanduel.com/research/nba/fantasy/dfs-projections" \
+            "https://www.rotowire.com/daily/nba/optimizer.php?site=FanDuel" \
+            "https://www.rotowire.com/daily/nba/value-report.php?site=FanDuel" \
+            "https://www.numberfire.com/nba/daily-fantasy/daily-basketball-projections" ; do
+            echo "=== $u"; curl -sSL -A "$UA" -o /tmp/p.html -w "HTTP %{http_code} size %{size_download} final %{url_effective}\n" "$u" || true
+            grep -o 'data-salary="[^"]*"' /tmp/p.html | head -3
+            grep -oiE '(salary|"sal")[^<]{0,120}' /tmp/p.html | head -4
+            grep -oE 'data-name="[^"]*"[^>]{0,300}' /tmp/p.html | head -2
+            grep -oE '[a-zA-Z0-9_/.-]*(tables|ajax|api|json|csv)[a-zA-Z0-9_/.?=&-]*' /tmp/p.html | sort -u | head -15
+          done
