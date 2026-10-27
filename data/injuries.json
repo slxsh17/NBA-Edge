@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T01:28:56.242998+00:00",
+  "updated_at": "2026-10-27T02:10:44.506151+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -381,6 +381,16 @@
       "name": "Nate Bittle",
       "team": "TOR",
       "status": "OUT"
+    },
+    {
+      "name": "Jaren Jackson Jr.",
+      "team": "UTA",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Lauri Markkanen",
+      "team": "UTA",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaxson Hayes",
