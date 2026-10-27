@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T18:38:04.394159+00:00",
+  "updated_at": "2026-10-27T20:10:19.189761+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -173,6 +173,11 @@
       "status": "OUT"
     },
     {
+      "name": "Rui Hachimura",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
       "name": "Bradley Beal",
       "team": "LAC",
       "status": "OUT"
@@ -203,9 +208,19 @@
       "status": "OUT"
     },
     {
+      "name": "Simone Fontecchio",
+      "team": "MIA",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Donte DiVincenzo",
       "team": "MIN",
       "status": "OUT"
+    },
+    {
+      "name": "Jordan Poole",
+      "team": "NOP",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Yves Missi",
@@ -253,12 +268,12 @@
       "status": "OUT"
     },
     {
-      "name": "Jalen Suggs",
+      "name": "Jonathan Isaac",
       "team": "ORL",
       "status": "OUT"
     },
     {
-      "name": "Jonathan Isaac",
+      "name": "Jalen Suggs",
       "team": "ORL",
       "status": "OUT"
     },
@@ -368,13 +383,18 @@
       "status": "OUT"
     },
     {
+      "name": "Nate Bittle",
+      "team": "TOR",
+      "status": "OUT"
+    },
+    {
       "name": "Kawhi Leonard",
       "team": "TOR",
       "status": "OUT"
     },
     {
-      "name": "Nate Bittle",
-      "team": "TOR",
+      "name": "Jaren Jackson Jr.",
+      "team": "UTA",
       "status": "OUT"
     },
     {
@@ -384,11 +404,6 @@
     },
     {
       "name": "Lauri Markkanen",
-      "team": "UTA",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jaren Jackson Jr.",
       "team": "UTA",
       "status": "DAY-TO-DAY"
     },
