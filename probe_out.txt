@@ -1,63 +1,11 @@
-=== https://www.dailyfantasyfuel.com/nba/projections/fanduel/2026-10-26/
-HTTP 200 size 1126367 final https://www.dailyfantasyfuel.com/nba/projections/fanduel/2026-10-26/
-data-salary="12000"
-data-salary="11200"
-data-salary="9900"
-grep: write error: Broken pipe
-salary filters -->
-SALARY
-salary_min">
-salary_max">
-grep: write error: Broken pipe
-data-name="Nikola Jokic" data-fn="Nikola" data-ln="Jokic" data-pos="C" data-pos_alt="" data-spread="-7.5" data-ou= "236.5" data-rest="1" data-inj="" data-team="DEN" data-opp="GSW" data-loc="vs" data-proj_score="122" data-salary="12000" data-opp_rank="18"   data-l5_avg="58.9" data-l10_avg="54.5" data-szn_avg="61.8" data-ppg
-data-name="Giannis Antetokounmpo" data-fn="Giannis" data-ln="Antetokounmpo" data-pos="PF" data-pos_alt="" data-spread="-7.5" data-ou= "241.5" data-rest="1" data-inj="" data-team="MIA" data-opp="DAL" data-loc="vs" data-proj_score="124.5" data-salary="11200" data-opp_rank="25"   data-l5_avg="47.6" data-l10_avg="44.7" data-szn_avg="49
-grep: write error: Broken pipe
-//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js?LKMVkfg985
-//cdnjs.cloudflare.com/ajax/libs/noUiSlider/7.0.10/jquery.nouislider.all.min.js
-//fonts.googleapis.com/css?family=Open
-api_suffix
-=== https://www.dailyfantasyfuel.com/nba/projections/fanduel/
-HTTP 200 size 399628 final https://www.dailyfantasyfuel.com/nba/projections/fanduel/
-data-salary="17200"
-data-salary="13000"
-data-salary="12400"
-salary filters -->
-SALARY
-salary_min">
-salary_max">
-grep: write error: Broken pipe
-data-name="Nikola Jokic" data-fn="Nikola" data-ln="Jokic" data-pos="C" data-pos_alt="" data-spread="-7.5" data-ou= "236.5" data-rest="1" data-inj="" data-team="DEN" data-opp="GSW" data-loc="vs" data-proj_score="122" data-salary="17200" data-opp_rank="18"   data-l5_avg="58.9" data-l10_avg="54.5" data-szn_avg="61.8" data-ppg
-data-name="Jamal Murray" data-fn="Jamal" data-ln="Murray" data-pos="PG" data-pos_alt="" data-spread="-7.5" data-ou= "236.5" data-rest="1" data-inj="" data-team="DEN" data-opp="GSW" data-loc="vs" data-proj_score="122" data-salary="13000" data-opp_rank="22"   data-l5_avg="40.0" data-l10_avg="39.3" data-szn_avg="42.7" data-pp
-grep: write error: Broken pipe
-//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js?LKMVkfg985
-//cdnjs.cloudflare.com/ajax/libs/noUiSlider/7.0.10/jquery.nouislider.all.min.js
-//fonts.googleapis.com/css?family=Open
-api_suffix
-=== https://www.fanduel.com/research/nba/fantasy/dfs-projections
-HTTP 200 size 230971 final https://www.fanduel.com/research/nba/fantasy/dfs-projections
-Salary","value":"salary","description":"Salary"},{"label":"Value","value":"value","description":"Value"}]},{"label":"Stats","c
-Salary","value":"salary","description":"Salary"},{"label":"Value","value":"value","description":"Value"}]},{"label":"Stats","c
-Salary","value":"salary","description":"Salary"},{"label":"Value","value":"value","description":"Value"}]},{"label":"Stats","c
-Salary","value":"salary","description":"Salary"},{"label":"Value","value":"value","description":"Value"}]},{"label":"Stats","c
-application/json
-json
-=== https://www.rotowire.com/daily/nba/optimizer.php?site=FanDuel
-HTTP 200 size 324204 final https://www.rotowire.com/daily/nba/optimizer.php?site=FanDuel
-//ajax.googleapis.com
-//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
-//fonts.googleapis.com/css?family=Open
-//functions.adnami.io/api/macro/adsm.macro.rotowire.com.js
-=== https://www.rotowire.com/daily/nba/value-report.php?site=FanDuel
-HTTP 200 size 324204 final https://www.rotowire.com/daily/nba/optimizer.php?site=FanDuel
-//ajax.googleapis.com
-//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
-//fonts.googleapis.com/css?family=Open
-//functions.adnami.io/api/macro/adsm.macro.rotowire.com.js
-=== https://www.numberfire.com/nba/daily-fantasy/daily-basketball-projections
-HTTP 200 size 230971 final https://www.fanduel.com/research/nba/fantasy/dfs-projections
-Salary","value":"salary","description":"Salary"},{"label":"Value","value":"value","description":"Value"}]},{"label":"Stats","c
-Salary","value":"salary","description":"Salary"},{"label":"Value","value":"value","description":"Value"}]},{"label":"Stats","c
-Salary","value":"salary","description":"Salary"},{"label":"Value","value":"value","description":"Value"}]},{"label":"Stats","c
-Salary","value":"salary","description":"Salary"},{"label":"Value","value":"value","description":"Value"}]},{"label":"Stats","c
-application/json
-json
+sg_today.html HTTP 200 size 374051 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/
+sg_tomorrow.html HTTP 200 size 298554 final https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-27/
+main_tomorrow.html HTTP 200 size 298435 final https://www.dailyfantasyfuel.com/nba/projections/fanduel/2026-10-27/
+proj.js HTTP 200 size 4209 final https://dff-common.s3.amazonaws.com/projections_mini.gz.js?734f96
+total 968
+drwxr-xr-x 2 runner runner   4096 Oct 27 02:28 .
+drwxr-xr-x 7 runner runner   4096 Oct 27 02:28 ..
+-rw-r--r-- 1 runner runner 298435 Oct 27 02:28 main_tomorrow.html
+-rw-r--r-- 1 runner runner   4209 Oct 27 02:28 proj.js
+-rw-r--r-- 1 runner runner 374051 Oct 27 02:28 sg_today.html
+-rw-r--r-- 1 runner runner 298554 Oct 27 02:28 sg_tomorrow.html
