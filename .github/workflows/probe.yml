@@ -13,10 +13,10 @@ jobs:
           rm -rf probe probe_out.txt; mkdir -p probe
           UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
           get(){ curl -sSL -A "$UA" -o "probe/$1" -w "$1 HTTP %{http_code} size %{size_download} final %{url_effective}\n" "$2" >> probe_out.txt || true; }
-          get sg_today.html "https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/"
-          get sg_tomorrow.html "https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-27/"
-          get main_tomorrow.html "https://www.dailyfantasyfuel.com/nba/projections/fanduel/2026-10-27/"
-          get proj.js "https://dff-common.s3.amazonaws.com/projections_mini.gz.js?734f96"
+          get base.js "https://dff-common.s3.amazonaws.com/base_mini.gz.js?m0nksd"
+          for id in 212A4 212A6 212A7 212A8 212A9 212AA 212AB; do get "sg_$id.html" "https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-26/?slate=$id"; done
+          for f in probe/sg_*.html; do echo "$f $(grep -oE "window\.(slate|url_start_date|showdown_template_flag) = '[^']*'" $f | tr '\n' ' ') rows=$(grep -c projections-listing $f)" >> probe_out.txt; done
+          tr ';' '\n' < probe/base.js | grep -oiE ".{0,100}(slate|ajax|getJSON|\$\.get|fetch\().{0,160}" | head -40 >> probe_out.txt
           ls -la probe >> probe_out.txt
       - run: |
           git config user.name bot && git config user.email bot@x
