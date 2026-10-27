@@ -12,13 +12,20 @@ jobs:
       - run: |
           rm -rf probe probe_out.txt; mkdir -p probe
           UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
-          get(){ curl -sSL -A "$UA" -o "probe/$1" -w "$1 HTTP %{http_code} size %{size_download} final %{url_effective}\n" "$2" >> probe_out.txt || true; }
-          get ls_own.html "https://www.linestarapp.com/Ownership/Sport/NBA/Site/FanDuel"
-          get fta_own.html "https://fantasyteamadvice.com/ownerships?sport=nba"
-          get stok_own.html "https://www.stokastic.com/nba/nba-dfs-ownership"
-          get ls_api.json "https://www.linestarapp.com/DesktopModules/DailyFantasyApi/API/Fantasy/GetSalariesV5?sport=2&site=2&periodId=-1"
-          for f in probe/*.html probe/*.json; do echo "== $f" >> probe_out.txt; grep -oiE ".{0,120}(own(ership)?[%\" :=]|periodId|PeriodId|actual).{0,160}" $f | head -12 >> probe_out.txt; grep -oE "(https?:)?//[a-zA-Z0-9./_-]*(api|Api|API)[a-zA-Z0-9./_?=&-]*" $f | sort -u | head -15 >> probe_out.txt; done
-          ls -la probe >> probe_out.txt
+          get(){ curl -sSL -A "$UA" -o "probe/$1" -w "$1 HTTP %{http_code} size %{size_download} final %{url_effective}\n" "$2" >> probe_out.txt || echo "$1 FAILED" >> probe_out.txt; }
+          get rw_picks.html "https://www.rotowire.com/basketball/nba-dfs-picks-today.php"
+          get fd_research.html "https://www.fanduel.com/research/nba"
+          get fp_dfs.html "https://www.fantasypros.com/daily-fantasy/nba/"
+          get rb_dfs.html "https://www.rotoballer.com/category/nba/nba-dfs"
+          get stok_picks.html "https://www.stokastic.com/nba/nba-dfs-picks"
+          get dk_net.html "https://dknetwork.draftkings.com/nba-dfs/"
+          get fta_own.html "https://fantasyteamadvice.com/nba/dfs-ownership-projections"
+          get reddit.json "https://www.reddit.com/r/dfsports/new.json?limit=50"
+          get bsky.json "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=Lillard%20minutes&limit=10"
+          get nba_inj.html "https://official.nba.com/nba-injury-report-2026-27-season/"
+          for f in probe/*; do n=$(grep -oE "Wembanyama|Brunson|Lillard|Cunningham|Avdija|Henderson|Tatum|Sabonis|DeRozan|Fox" $f | wc -l); echo "$f names=$n" >> probe_out.txt; done
+          grep -oE "https://ak-static.cms.nba.com/referee/injury/Injury-Report_[^\"']+\.pdf" probe/nba_inj.html | tail -3 >> probe_out.txt || true
+          grep -oE 'href="[^"]*(nba-dfs|dfs-picks|picks-today|fanduel)[^"]*"' probe/fd_research.html probe/rb_dfs.html probe/fp_dfs.html probe/dk_net.html probe/stok_picks.html | sort -u | head -40 >> probe_out.txt
       - run: |
           git config user.name bot && git config user.email bot@x
           git add -A probe probe_out.txt && git commit -qm probe-results && git push
