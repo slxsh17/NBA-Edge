@@ -21,15 +21,18 @@ jobs:
           python-version: '3.12'
 
       - name: Update NBA schedule
-        run: python scripts/update_games.py
+        run: for i in 1 2 3; do python scripts/update_games.py && exit 0; sleep 20; done; exit 1
 
       - name: Update player statistics
-        run: python scripts/update_player_stats.py
+        run: for i in 1 2 3; do python scripts/update_player_stats.py && exit 0; sleep 20; done; exit 1
 
       - name: Save updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/games.json data/player_stats.json
-          git diff --cached --quiet || (git commit -m "Update NBA analytics" && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "Update NBA analytics"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
 
