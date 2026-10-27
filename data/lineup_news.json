@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-27",
-  "checked_at": "2026-10-27T04:01:39.771978+00:00",
+  "checked_at": "2026-10-27T04:58:40.343446+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -50,6 +50,14 @@
   ],
   "headlines": [
     {
+      "headline": "Is it time for the NBA to start looking at the WNBA’s coaches? - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcF9BdjZGeE9OcHc4cXBPVVprMVZuMWhETnNHVk5CMnZqMURZdHAtQVhUNFcxdElUclJocDhZaEFfaFM1cDllOUp4MlFoUmhFVk1ERnZ3dGlOTDlCN2xoMFZVNDdxMHhaT3BrTVVwN2luZUhpV1RsbG9qUzhmSnlyNWxvNUNsUDlqdHRhS1VXelQweS03cUZyR2JB?oc=5",
+      "published_at": "2026-10-27T03:31:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
       "headline": "Warriors Announce 4th New Starting Lineup of Season vs. Nuggets - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRDNabkdrdzJvRlBFQXB2WDJzY2xKc0ppMENZLXZVLW1rdkJ5R0U2UGR5cEpZRVFkWjRtc0dXaVd4d0RtbHZxSUhiWGp1TWVyYlZ1bnlRN242eXF4R3hTZ0RIY1I1d3VBR002Tk5qNTRucGZ0TG9Va2M4NHhjWEpxN3c5VEpydUF4ZnlPWGNnRWpPbTI0ZkdpQXVxbXhYUE1TMTZNTWQ4MTZyZm5EUDd4NEJn?oc=5",
       "published_at": "2026-10-27T01:36:44+00:00",
@@ -61,6 +69,14 @@
       "headline": "This Kris Dunn Trade Scenario Would Strengthen the OklThunder’s Rotation - TWSN",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV3Q5WnY1SW9MbjhZODhOS1NlMnMyRE9qT21pU25rQ1YzdDIzNGFmSjBpS3JfMmhFTnh4QXk1RFFuZHA2bWJxbVFYc19GRjJFUkVpM2hMRERlbjZrcW16YWVOUWJDWjB1SkJ5Ulg0ZkxBdDlyQjFQdWxuY2x0NmhRZndPU0d1VnVMYmNKbU94OUdEV2pEci10Zm90aXJVLXMt?oc=5",
       "published_at": "2026-10-27T00:52:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "‘List of demands’: Fresh Brown-Tatum bombshell; NBA favourites cop double injury blow – Daily - Fox Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQMjhoSUxIMTBBcE1ac0RydTVKVENxRERYSlU3RXAtai1IMm82QUU5QXJ1TzR6Zk9KRHZJOWExY1BwM0ZYQkJXaUFCb3dJRW1ITVVlQVY3THVsY1pGRjZ5eEQ1ZV91aS1vMkxrNS1jejlpTFRYQ0ZOTWpaSjNEUFhBMHZSNFZ4bVJKMG9DaVduR2NoLWJBZVQzeHlJZmpZVk5QS0k1TzhYUlpSRkZhdlBPVUFvd1BoU3ZWOV9tbURmUjNvQ1NiVEg5Rzc0eTRZTGtNamdlUWpqQ0pNN2R2Z2JCcVVVMUc2VkJZWE9TdXpMY1VWR0lJRm42dWJRLWZwRGdpMGdPNF9B0gGGAkFVX3lxTFAyOGhJTEgxMEFwTVpzRHJ1NUpUQ3FERFhKVTdFcC1qLUgybzZBRTlBcnVPNHpmT0pEdkk5YTFjUHAzRlhCQldpQUJvd0lFbUhNVWVBVjdMdWxjWkZGNnl4RDVlX3VpLW8yTGs1LWN6OWlMVFhDRk5NalpKM0RQWEEwdlI0VnhtUkowb0NpV25HY2gtYkFlVDN4eUlmallWTlBLSTVPOFhSWlJGRmF2UE9VQW93UGhTdlY5X21tRGZSM29DU2JUSDlHNzR5NFlMa01qZ2VRampDSk03ZHZnYkJxVVUxRzZWQllYT1N1ekxjVVZHSUlGbjZ1YlEtZnBEZ2kwZ080X0E?oc=5",
+      "published_at": "2026-10-27T00:05:49+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -98,14 +114,6 @@
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Is it time for the NBA to start looking at the WNBA’s coaches? - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcF9BdjZGeE9OcHc4cXBPVVprMVZuMWhETnNHVk5CMnZqMURZdHAtQVhUNFcxdElUclJocDhZaEFfaFM1cDllOUp4MlFoUmhFVk1ERnZ3dGlOTDlCN2xoMFZVNDdxMHhaT3BrTVVwN2luZUhpV1RsbG9qUzhmSnlyNWxvNUNsUDlqdHRhS1VXelQweS03cUZyR2JB?oc=5",
-      "published_at": "2026-10-26T21:52:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
       "headline": "Knicks Become 3rd Defending Champion To Start 0-3: What Happened To The First Two? - Fadeaway World",
       "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOERnZlpBb0dJTHFJYk1jOG4xSno2MDVlLXVzM2lBcW1ZMDc5UFh6T1BZREk4QmxUT0IwQ19tSk04cHhDMjQ3TFVWVjM2ZkFaSzJMY1M1VkVLTzVXOEI3Wm9Tcmc5aDQ4dnpZS3lubTRUUTFnZlhlMzFWWEdueHpadlBDWEh4RHYyUGtYeExiemJNS0pfbnQtQ1dISFZ1M0pYNWNLNzF5OTV5WjhMUEpLV1N4U3g5M18zWndfSjNtZl92Q2Nx?oc=5",
       "published_at": "2026-10-26T20:20:36+00:00",
@@ -130,9 +138,9 @@
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSUpoVG9hdFJDTnphRUVHNG9DUlMzeW5XTlpRLS12MXJBNHZWTHlfc3ljZEt3SnJuam5GZ3VkM3pxZ1lKMFVkdTRPamhTT2V6YUJ2OU1SYTR5aGxIVzNOMldtODdrSmNXakZCdHlsci02ZkJJaTRXdmptdkZDdnZLSUhTUzYxbnlMaGVwSlpMWkZ4S3AyaWc?oc=5",
-      "published_at": "2026-10-26T18:53:15+00:00",
+      "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeHB0Yy03OERscGZySkdTVWthbVdReVY3UHNJcUg2UUpreFczcnFpdUVCUk5sSG55YzFSRGNJZlhSNGdUbGZQN3pZdnY5YlpKWmVIUktxNzBIMzRXVklBVkhHeXZyOHhUampxUy1WWWl5T2FfOGJtWXhHMldWckF3RjkwVDRNNUFlMDBZWkgwMDk2WUc3VEVOUUNCT2xqbnNaWEh3cTUyRUMyMFNMXzhaVGR2ei1pUWhkNWl0aQ?oc=5",
+      "published_at": "2026-10-26T18:53:14+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -173,6 +181,14 @@
       "headline": "With knee giving him trouble, Anthony Edwards listed questionable on Monday - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVW5hbkFrbUg0NTFTTHBPOU4zNTB6Z1ZPR0J6Ynd5T2Z2VW50WC02UFNscG56Yngxd2Jzc0RNX3k2dVo3X0VQdzEyWjF1ZmFaeHhGMlNxd1k0bzV5cU9yN3RtSmRSWG9Yd0Y5Nk1FV1cyUjFEbDRUUlVSQkVaQVI5TjJUcFJRRDA?oc=5",
       "published_at": "2026-10-26T17:54:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Seth Curry bewildered by Warriors' starting lineup decision early in season - NBC Sports Bay Area & California",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQLUtGZmZkX21CTHNHQkFUaEJIRUQ1dFlHXzVmQTR6aW5XcnhEekx6Nl9Zc1FzNGF4MUlLMkpSOWhTOFJyNm8wZXNwc183bm5rNnhnbnd4aklHeVRHZFhfbUdRUXFVS2FEaHdNU1R2R2dPdHd6YXpFWVdDMXB6RTRydDBCc2tTdTdXazZLLW9nRk1ldWpIZUdyUl9MaVZ6LWZxd0lwUVczSEZrMEIwbEtfMdIBsAFBVV95cUxQLUtGZmZkX21CTHNHQkFUaEJIRUQ1dFlHXzVmQTR6aW5XcnhEekx6Nl9Zc1FzNGF4MUlLMkpSOWhTOFJyNm8wZXNwc183bm5rNnhnbnd4aklHeVRHZFhfbUdRUXFVS2FEaHdNU1R2R2dPdHd6YXpFWVdDMXB6RTRydDBCc2tTdTdXazZLLW9nRk1ldWpIZUdyUl9MaVZ6LWZxd0lwUVczSEZrMEIwbEtfMQ?oc=5",
+      "published_at": "2026-10-26T17:45:55+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -314,17 +330,17 @@
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Celtics Get Encouraging Derrick White Update to Start Season - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQXh0WHdZOWRFUkJ6RjUyaVRfc0dieXoxLUgyWUphb09FTkk4OVVGTjRyVERxS0w2czhYZU5od2c4OU5FMFFIb2J5eUt5cW9VekVmelJub2dIdHhmZGtIX0dPSmdpaG94b0ZycUF0azdDSHl0Z0hQMExtNzJwUy1uZEhHaDhFQTB0QU11SHZMQQ?oc=5",
-      "published_at": "2026-10-26T12:14:23+00:00",
+      "headline": "Men’s college basketball 2026-27 preseason Top 25: Why Duke is our No. 1 to start the year - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPREUxMjQwVmVKQXNsM2FVR1FCRnpYUHVHc01Ma0VtME1vV0p0dS1ZU3BqYXhyOFhYTkpoQTV0RndJV3FKdktRQkJYSjVjQVBXRldkdUtQQlFuekpsQkNxdlZLSnp1R2U2ZVhVZEE5X3BndXkwcWMxRGZpZmV6TWlhS1NoUzRKRW9MYnBhaE1CM2lMMWFpWUlzT3hpbmhGclRYSFg0?oc=5",
+      "published_at": "2026-10-26T12:35:16+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Seth Curry bewildered by Warriors' starting lineup decision early in season - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUFZHMUtsNFdCbEF2SG5mcTBIY2RHZldRV2xUTTR4ZElpeXNlUjU2OENvM2d3QkE3YXppQWJRVnAzdjRIb1FoMEU1dzRnNlI3QnJvQVdZYWh0NWJnVF9jMzlmN3djWURGeXVyQTRiWjhRVE0teVB2R1ZWZm5jOU9lN3k2ZWg0ZEpmcm15SHI0S0x4QQ?oc=5",
-      "published_at": "2026-10-26T10:45:55+00:00",
+      "headline": "Celtics Get Encouraging Derrick White Update to Start Season - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQXh0WHdZOWRFUkJ6RjUyaVRfc0dieXoxLUgyWUphb09FTkk4OVVGTjRyVERxS0w2czhYZU5od2c4OU5FMFFIb2J5eUt5cW9VekVmelJub2dIdHhmZGtIX0dPSmdpaG94b0ZycUF0azdDSHl0Z0hQMExtNzJwUy1uZEhHaDhFQTB0QU11SHZMQQ?oc=5",
+      "published_at": "2026-10-26T12:14:23+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -389,6 +405,22 @@
       "headline": "Khalifa Diop (knee) ruled out Monday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR0JFVXY0SkhkMmRQMHRBMVR4R0NrVHVzNmZ2ZWNFaUFQYzhtOTR3YmdjX0c1dmRSYU15QV9oNVBnLVRxSkZPUW5UQ3J4bnp2MVlZS3V0dXpPRnJDWmJxM0gyT1gtNUJDMXZ1cmpEYUFNOU9kRU5lR0p4ZG9oaS1NMGZldlRfUWsyNEHSAY8BQVVfeXFMUDZqSHFEOGFrQUdxVTZVM3RSSHd5RjIyX1UwVC1lLVdYamQ2MlV6Q2NWN09JZWhqa1pWZFNLQndMd1NpMGRuY3dhUVN2RkVmSnpyeDNxZkVSbFdaTW94aW9jM0wtUzF3ZnhaajViQWVaaGpSUllxeVlNVEpBTm5TODJjTkM2ZG5WSmhkUUR5TlU?oc=5",
       "published_at": "2026-10-26T07:54:48+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "The NBA Has No Shortage of Heated Moments to Start the 2026-27 Season - https://thegame.ph/",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9DbDRCSUdXN1dSRVFCM2MzemptRm5lOFRRbWZmVWhUVzVLaE1nY0tVLWpuSGNBeDFGWGhrYkpmckRVMnVHM2EyYXY5ajNkRmdPSWpGM0ZBREZubFA0a3RCd0t2UXhvempaY2RMcmhQeDVMZw?oc=5",
+      "published_at": "2026-10-26T07:23:21+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Jalen Williams stretchered off court after gruesome leg injury in Thunder vs Clippers game - The Oklahoman",
+      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTU9PZV91d1dFNU5YeVcwWlJWTHFhcUVxU0RrZHI1d2tUU0JuTENaWW5KbFVGbUd0VU1jX3FWc2FrTnpYcjBpT1kyUXZ5b0hhOHZZSExlbGdCRHVhd3Q1X3FSMlNGYTlTMVhvYlVpeGZSYVduOVdQVldrU1M1N3E2d0tEbmtSMGxFZ1lGZHllQ2tFV2ZZdXRTaXpuckNpOVp1R2VEcDRRZE1WbXVrblEzNlpQZ3FINnhwS1pCXzlweEVkR2VZNHJndXRYY1RxZHBzZkNZ?oc=5",
+      "published_at": "2026-10-26T06:02:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
