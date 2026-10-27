@@ -78,8 +78,9 @@ def main():
     try:
         players = parse(fetch(url), day)
     except Exception as e:  # keep whatever is already published; never write a partial slate
-        print(f'No slate published for {day}: {e}')
-        return 0
+        # Fail the workflow (red X in GitHub Actions) so a broken source is visible.
+        print(f'::error::No slate published for {day}: {e}')
+        return 1
     buf = io.StringIO()
     w = csv.DictWriter(buf, fieldnames=FIELDS, lineterminator='\n')
     w.writeheader()
