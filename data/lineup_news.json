@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-27",
-  "checked_at": "2026-10-27T21:57:54.645382+00:00",
+  "checked_at": "2026-10-27T22:27:25.753036+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,6 +22,30 @@
   ],
   "headlines": [
     {
+      "headline": "Santi Aldama Injury: Doubtful for Wednesday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSzA1c2Rzei1lUF94OFZuQmNMbzlmemkxZDlOVHFPVGJSMXZuVWNOalFjblV4eklSVU9wd1A3dXdybTFYOVUyOHBaeGtGemZGeGJsZlBkQzkyRnAzOTdSNXRBSG5yMkx5WnlETnBTY2RNN1Y2WHVFa1hxUVh5d0dUSGJXdHQ3ZUVLekRXUkg0RHFzOGNRMTBtX0JFUQ?oc=5",
+      "published_at": "2026-10-27T22:09:30+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Caleb Martin Injury: Questionable for Wednesday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYlJGUnBBQ3dORS13R0lxbGVyNlU3WnB6ajlLV2NMVThySFNncEdYZXJGc0VYZG8yb3JjaUx6YkNjd2M4ZFJUQV9rc0hEM0xPQjduSWlCZGttYmstMm81XzdhRzktLWdkRFA0d2E2SFBuUEVFOXc5dTJQbVdvelVkajdVQU0yT2k4dU10MnVOdVdVNC0yVWVURktuTnczVnVt?oc=5",
+      "published_at": "2026-10-27T22:07:15+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Anthony Edwards Injury: Questionable for Wednesday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYzVBTFJ1YWd2TW1ac3ZRdE90ZDVSUjBxb0ttTGdqd3R6R3lVblZ6X1pLaEQ4X3dpVGlDREZaTnMzSzJyUmtuejN2ck5HRHV5TjQxTE9xRHBsUDFFZlRJS1FtTXNhcmlnUTFPVmJ1MWlscHctTU9OZVhwZGlQcFVfdlhuekp6dWJMMWQxck9QVXVDMm9PTDEydWJ1VlB0NDZMUGcyNg?oc=5",
+      "published_at": "2026-10-27T22:05:27+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
       "headline": "Updated Detroit Pistons Starting Lineup vs. New York Knicks - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUGZGUWo1VVpSSW9tSXl1aDBqNHNaLVd6VE12NHgxLWJLMFpIUmhQa2pGd1lpUnMtdkpSMzRSWTR2cFU3Sk1KOHRybXcwMmNVU3duMFVORWZ0ZXRDUmlFajk0MTVZWmV5TmozaGlabWx3emwwcjk2SXVIVDB2RWRMVTE2UXNKa3FaY2RYSXhtUWNOaG9iZ1dxbEtuR2FUT3VGZFFNT0RDVGpBYzg?oc=5",
       "published_at": "2026-10-27T21:38:15+00:00",
@@ -41,14 +65,6 @@
       "headline": "Rockets star Alperen Sengun ruled out for Wednesday's game vs. Milwaukee - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcllJMTExaE9pUXBfa2taeFM0dEI4eVU2NnRwd1g5MTdqN2otT3hzb0VQcGpENXNaOGxwQUNBRk9tT2g0RXRZWFNmbFF4M1UySHBJaGR4bVBUNUhjRGpJMEQtNzZlM1FJakhUdFFxQmFiNlJkelQ4ZHRtTFVyY0QtYVlWR2x6NTNxLUE?oc=5",
       "published_at": "2026-10-27T21:34:03+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "Patrick Williams Injury: Questionable for Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcnNxb0F1MGprTVlCbC1GTW5uRkxMZlg1bDdzdnAxamQwTGhYSThPMzFlZS1tNHdnMUZPVGlDRTBSckpCWERXejdqcm0xMHpwZ2Fvc2xENlhKSlV6cm1GV3JjbnlmT1p1aVRicDU4REIyaGR4c21peFl4NFpVbm41bGdwNjVFXy0wcGlDUjJTcXpUVVIzV3RfUTRzUnZZSGtuUXVRTk1R?oc=5",
-      "published_at": "2026-10-27T21:23:13+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -206,6 +222,14 @@
       "scope_date": "2026-10-27"
     },
     {
+      "headline": "Saquon Barkley questionable vs. Cowboys, offering hope for Eagles’ depleted offense - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ1VoOEw3SHFNMEhmamt2VGMzZUdaUG0yekRmSkdqVFpvS1ZPay1CTmtsN3pPS2hIc010Rkt6aU9tcFJiTDNhUUhteUVseDBaWEZMUkVYYVh6TjNYR2RUVmJ0NUlzN0lET1pLcm5KNVlYc0RjSzNfYWxFTkVpM0tyeWRsV1pLNWhqS1E3elRjU0xtYVpkb2dhXzd6NGM?oc=5",
+      "published_at": "2026-10-27T12:16:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
       "headline": "The Cavs’ guard rotation has a new favorite — and Craig Porter Jr. is running out of road - Cleveland.com",
       "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOHdjQ2RGdHhKMnBxczhUSVZ1eDBuWExEUC1oUFlhQUVneEdUN1JaRnRxMGRSNmVMN1NBS1VvOTVWNk83UTZFaGpOSTU5ajN4Wi1ZWFlkN3dhSlJyOUxxZWNmdEtGZ0lBcHk3eDdzYW1KOWFyaGtkZ1htcVA5a0NRbGZ0a3Q2YjZIeEZ1TURoOUpMbnY3cV9qS05sOEdGMjFJa2lJRDFEX0J1QzhmQWQzNUtMV3pWMXBoejl6QWdPWVViai1aWm5KLQ?oc=5",
       "published_at": "2026-10-27T11:00:00+00:00",
@@ -278,14 +302,6 @@
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Utah Jazz Coach Brings Bad Injury News About Jaren Jackson Jr. And Lauri Markkanen - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeEFmNTBZOF83SFVJR19uR1BLZm92TlpTRXNOYldlVy1QMW93NTRaM21Nb3RnS21lZkZZQlFUTjRkX2RUcUhDOUM0X1pzSmt1aHFHbDNGV0NJa3I0TkpjOEpuMGt1NEZMVFZBYldtUmxIbHpmUHAxWDdMZXZxazZ3dzV3?oc=5",
-      "published_at": "2026-10-27T07:00:44+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
       "headline": "Tyler Kolek should take Mike Brown at his word and push for Knicks rotation spot - Daily Knicks",
       "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBJMnJEMlJTc256OGJ4YnBIaHNpQ2FEaDdhblBVQzV4YklpdTBuUlgwWm11NFZfbHI0UUlBLWRRdnItMjRrRnFFNkloOUhjRnR5QTZEMFBXeDdTRm5MSG05S2pGZDZnYVphLXRjQUxlRmdFTGdoSGt2bXpFYkRrUQ?oc=5",
       "published_at": "2026-10-27T05:58:19+00:00",
@@ -305,14 +321,6 @@
       "headline": "Knicks are 0-3, and Michael Jordan’s Bulls are only team in NBA history to start 0-3 and win title - ClutchPoints",
       "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPekk2VW1mTzBKaTBId1dEY3ROUS1iUE9wTFMyZk90NWt4VGdYR0doRzJPSXZ3aEw0ZzJWN1pBbDFKMmNXcmRXd29zeHgtZmxueURPZkh2TlVDdG54LUhPU1J2enJDeGJkMHVnaUlsNW5VTmNyQkNOUktBWnhXcU0tMTc2Wk9fQkdCbjRIMTVKWlYwMkZZR19TTmREOEhObTJSNUdZajl6WkdZc0tSQWxyaDZFRl9KZG1kQlM1blM4U3lreUNR?oc=5",
       "published_at": "2026-10-27T02:56:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "Thunder’s Alex Caruso ruled out for rest of Suns game with concerning injury - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeW5RUjZfdHZhVnRlSWJyYlhVNlkxQW1PcURmaVEwM2dCaXAzTklDRUNyTmRvcmtzTVZ3TGhxeDRUUEdPS3g1MzFQQ3habG9qbDZVTGNXSXhCLWF4WDYwakZGQUlzRzdNYXI1aG9PWmxTQmlZVlIxbG91VUdBWWRTd3BqMng0UQ?oc=5",
-      "published_at": "2026-10-27T02:48:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -369,30 +377,6 @@
       "headline": "Chet Holmgren (knee) ruled out Monday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUDFENmxJZFp0NklMeVd0VFNyM3F2cEpDNmxYX1VVbmhjWDZOZ19rZjhOLU9CWHpWTUlqeHkzZlQyUEk0RkxoT3FVQXJIQTR0eUU3ODBSZ2VBUTZKU0lIbndQdjAwY0ktb29ibk5BN3pjMXl0UGJIWTA1UkdrbVYwTFJGdkZoelVEQTNj0gGQAUFVX3lxTFB1cVlHRjZKd0lSUWRBZmVfb2VLeHphWTZPZ3JpSzYwdU1CN2VWNDY5dDdidzF0cV80UkwyYXZ4dnlHY0pyTlB1b0RFNTVHSnhWWjR2eEJqaXVSRVlIcWt4UWRLZ05NdUJ0Wkx4SGNadmVkSXRheXAwT2RwZnBOSHJGOXo4UExLaUVHQXBPb1haMw?oc=5",
       "published_at": "2026-10-26T23:09:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "Ravens' Jesse Minter Optimistic QB Lamar Jackson Will Start Sunday - RealGM",
-      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVmZSUlVPQWE2ZUZlVkVBRktiR3NLNW91bE9OVmV0LUtpTE10S04yZ0x6QTk3bGhwek5pMklfMjNxZlNkc1JsZndUdENOb3oxS25NODVPbHREX3dLYU9mVDFSMXlKbmFkYVFvYU1HTW1ZRm55V0xPR2JOV3E3cmY2UkQ5WWtOd3R1RDJLcWNadWVjZ25iRFV0NDJlUjdfN1otUDBmUVJHSDZZNHc?oc=5",
-      "published_at": "2026-10-26T22:28:17+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "Jaxson Hayes Questionable Oct. 26 Against Grizzlies Due To Soreness Injury - FanDuel",
-      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOLW1qQ2MxVy1FeHVIaHF5OG9rSHQzeVBTdjA2TXB4QUxqWFA3TjZ1QmJyU1ZtWllVMkhndW55U0djbnVSUndwREdfQ3YzYjJSXzUzeFJ3Z1FIbk1abmVUY1hlOGZnRWUwVmc5WUhUcEJtMDRWdThaZzRNbG16YUtBeWx6cEdZUjdWYy1nWUVUeUJvMUVXX1A0M09zWTBUODFOcnNGcEIwc1RDdEZ6bDVpaDVWc0R4MDhUNnFMTUVxUW03LVot?oc=5",
-      "published_at": "2026-10-26T22:23:57+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "Two key Pistons questionable for road contest against Knicks - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVFlFQmxNTElYNWp5em9SVm5rVy12V2F3Y0E1TmtKM2JMaHhCZHo5ZTcyU0FtZk1KSWNlTTZwRzZFMHBjVmRJVFdIc3pwWTgtTzJ4ZGxlZXE4WERDa0ZuQUwtc3p6WVIzTmNDTzlndThGQXdmT3JtMG9EZDJUYU1QNi03UXFmYm1FQUE?oc=5",
-      "published_at": "2026-10-26T22:02:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
