@@ -1,7 +1,12 @@
 {
-  "updated_at": "2026-10-27T20:55:26.286924+00:00",
+  "updated_at": "2026-10-27T21:29:52.999788+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
+    {
+      "name": "Aaron Wiggins",
+      "team": "ATL",
+      "status": "DAY-TO-DAY"
+    },
     {
       "name": "Mouhamed Gueye",
       "team": "ATL",
@@ -49,6 +54,11 @@
     },
     {
       "name": "Patrick Williams",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tobe Awaka",
       "team": "CHI",
       "status": "DAY-TO-DAY"
     },
@@ -158,22 +168,37 @@
       "status": "OUT"
     },
     {
-      "name": "Ivica Zubac",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Andrew Nembhard",
       "team": "IND",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Ben Sheppard",
+      "name": "Tyrese Haliburton",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Obi Toppin",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "T.J. McConnell",
       "team": "IND",
       "status": "OUT"
     },
     {
-      "name": "T.J. McConnell",
+      "name": "Ivica Zubac",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Ben Sheppard",
       "team": "IND",
       "status": "OUT"
     },
@@ -313,19 +338,9 @@
       "status": "OUT"
     },
     {
-      "name": "VJ Edgecombe",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Jabari Walker",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Joel Embiid",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Dominick Barlow",
@@ -430,7 +445,7 @@
     {
       "name": "Justin Champagnie",
       "team": "WAS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "AJ Dybantsa",
