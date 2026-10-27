@@ -281,7 +281,7 @@ def build(day=None, backtest=False, weights=None):
             if moved:
                 p['flags'].append(f"New team ({row['team']} → {team}); role unverified")
             for w in row.get('warnings', []):
-                if w.startswith(('ROLE DROP', 'DNP in last', 'Small sample', 'One extremely short', 'Lower current')):
+                if w.startswith(('ROLE DROP', 'DNP in last', 'Small sample', 'One extremely short', 'Lower current', 'Blowout')):
                     p['flags'].append(w)
         if p['status'] in ('OUT', 'DOUBTFUL'):
             p['out'] = True

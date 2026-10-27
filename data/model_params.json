@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-27T03:02:14+00:00",
+ "updated_at": "2026-10-27T03:31:22+00:00",
  "params": {
   "role_ratio": 0.5875,
   "role_bump": 1.8125,
@@ -14,9 +14,10 @@
   "rotation_out_min": 3.0,
   "rate_k": 12.6875,
   "rate_cap": 0.7437,
-  "shrink_games": 7.875
+  "shrink_games": 7.875,
+  "blowout_game_w": 1.0
  },
- "decision": "Adopted: held-out days 8.76 \u2192 8.46 FP miss; this season 8.29 \u2192 8.33.",
+ "decision": "Kept current settings: no clear gain on held-out days.",
  "results": {
   "default": {
    "test_fp": 8.757,
@@ -25,15 +26,15 @@
    "real_min": 5.196
   },
   "current": {
-   "test_fp": 8.757,
-   "test_min": 6.299,
-   "real_fp": 8.291,
-   "real_min": 5.196
-  },
-  "tuned": {
    "test_fp": 8.461,
    "test_min": 5.865,
    "real_fp": 8.333,
+   "real_min": 5.235
+  },
+  "tuned": {
+   "test_fp": 8.458,
+   "test_min": 5.865,
+   "real_fp": 8.349,
    "real_min": 5.235
   }
  },
@@ -58,6 +59,11 @@
     "rate_cap 0.5 \u2192 0.7437",
     "shrink_games 6 \u2192 7.875"
    ]
+  },
+  {
+   "date": "2026-10-26",
+   "adopted": false,
+   "changes": []
   }
  ],
  "method": "Replay of 2025-26 (Oct-Dec as prior, Jan-Apr predicted from earlier games only); coordinate search; adopted only if better on the held-out last quarter and not worse on this season."

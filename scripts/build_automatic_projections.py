@@ -37,7 +37,9 @@ DEFAULT_PARAMS={
     'rate_k':15.0,          # games before this season's FP/min gets half weight
     'rate_cap':0.5,         # max weight on this season's FP/min
     'shrink_games':6.0,     # pull of small samples toward league FP/min
+    'blowout_game_w':1.0,   # weight of 20+ point blowouts in recent minutes (below 0.5 they are also ignored by role-drop rules)
 }
+BLOWOUT=20
 def load_params():
     try:
         d=json.loads((pathlib.Path(__file__).resolve().parent.parent/'data'/'model_params.json').read_text(encoding='utf-8'))
@@ -91,7 +93,26 @@ def slate_rows(path):
                 yield {'name':name,'team':team,'salary':int(salary)}
 
 
+MARGINS={}
+
+
+def attach_margins(raw):
+    """Final margin of every game from the box scores (team points summed), so the model
+    can tell blowouts apart: starters sit late in blowouts, which distorts minutes."""
+    pts={}
+    for r in raw:
+        ev=str(r.get('event_id') or '');t=canon_team(r.get('team'))
+        if ev and t:
+            pts.setdefault(ev,{}).setdefault(t,0.0)
+            pts[ev][t]+=float(r.get('pts') or 0)
+    for ev,teams in pts.items():
+        if len(teams)==2:
+            (a,pa),(b,pb)=teams.items()
+            MARGINS[(ev,a)]=pa-pb;MARGINS[(ev,b)]=pb-pa
+
+
 def log_index(raw, date_floor=None, date_ceiling=None):
+    if not MARGINS:attach_margins(raw)
     grouped={}
     unique=set()
     for r in raw:
@@ -106,7 +127,8 @@ def log_index(raw, date_floor=None, date_ceiling=None):
         key=(name,event)
         if key in unique:continue
         unique.add(key)
-        grouped.setdefault(name,[]).append({'event':event,'date':date,'minutes':minutes,'fp':fp,'team':canon_team(r.get('team'))})
+        team=canon_team(r.get('team'))
+        grouped.setdefault(name,[]).append({'event':event,'date':date,'minutes':minutes,'fp':fp,'team':team,'margin':MARGINS.get((event,team))})
     for rows in grouped.values():rows.sort(key=lambda x:x['date'])
     return grouped
 
@@ -115,7 +137,7 @@ def summary(rows):
     if not rows:return None
     mins=[r['minutes'] for r in rows]
     return {'games':len(rows),'minutes':statistics.mean(mins),'rate':sum(r['fp'] for r in rows)/sum(mins),
-            'team':rows[-1]['team'],'last_minutes':mins[-5:]}
+            'team':rows[-1]['team'],'last_minutes':mins[-5:],'last_margins':[r.get('margin') for r in rows[-5:]]}
 
 
 def prior_index(data):
@@ -176,6 +198,11 @@ def expected_minutes(old, current, series, injured):
     if not old and not current:return None,'missing',warnings
     prior=old['minutes'] if old else None
     played=[x for x in series if x>0] or (current['last_minutes'] if current else [])
+    if current and P['blowout_game_w']<0.5:
+        # Recent games that were blowouts don't count toward role-drop/decline rules.
+        lm,lg=current.get('last_minutes',[]),current.get('last_margins',[])
+        clean=[m for m,g in zip(lm,lg) if g is None or abs(g)<BLOWOUT]
+        if len(clean)>=2 and len(clean)<len(lm):played=clean
     streak=len(series)-len(dropwhile_zero(series))
     if injured and streak:
         warnings.append(f'DNP in last {streak} team game(s); on injury report ({injured})')
@@ -197,7 +224,10 @@ def expected_minutes(old, current, series, injured):
         return min(40,old['minutes']),'prior_only',warnings
     cur=current['minutes']
     if P['recent_w'] and current.get('last_minutes'):
-        cur=(1-P['recent_w'])*cur+P['recent_w']*statistics.mean(current['last_minutes'][-5:])
+        lm=current['last_minutes'][-5:];lg=(current.get('last_margins') or [None]*len(lm))[-len(lm):]
+        w=[P['blowout_game_w'] if g is not None and abs(g)>=BLOWOUT else 1.0 for g in lg]
+        recent=sum(a*b for a,b in zip(lm,w))/sum(w) if sum(w)>0 else statistics.mean(lm)
+        cur=(1-P['recent_w'])*cur+P['recent_w']*recent
     if not old:
         warnings.append('No reliable last-season baseline; current-season sample only')
         return min(40,cur),'current_only',warnings
@@ -235,6 +265,9 @@ def rate_for(old,cur):
 def build_for_player(key,name,team,old,cur,series,injured,authorized_refs):
     if old and old['games']<3:old=None
     m,method,warnings=expected_minutes(old,cur,series,injured)
+    if cur and cur.get('last_margins') and cur['last_margins'][-1] is not None and abs(cur['last_margins'][-1])>=BLOWOUT:
+        g=cur['last_margins'][-1]
+        warnings.append(f"Blowout last game ({'won' if g>0 else 'lost'} by {abs(g):.0f}): his {cur['last_minutes'][-1]:.0f} minutes may not reflect his role")
     result={'name':name,'team':team,'previous_games':old['games'] if old else 0,
             'previous_team':old['team'] if old else None,
             'current_games':cur['games'] if cur else 0,
@@ -299,6 +332,7 @@ def build(day=None, injury_map=None):
     prior=prior_index(old)
     floor=dt.date(2026,10,20)
     raw=new.get('game_logs',[])
+    attach_margins(raw)
     cur_logs=log_index(raw,floor,day)
     current={k:summary(v) for k,v in cur_logs.items()}
     schedules=team_schedule(raw,floor,day)

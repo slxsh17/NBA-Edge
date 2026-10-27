@@ -144,6 +144,8 @@ tr.out td{opacity:.45}
 .pick button{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:transparent;font-size:13px;line-height:1;color:var(--muted)}
 .pick button[aria-pressed="true"].lock{background:var(--good);border-color:var(--good);color:#fff}
 .pick button[aria-pressed="true"].ban{background:var(--bad);border-color:var(--bad);color:#fff}
+td.lev.pos{color:var(--good);font-weight:600}td.lev.neg{color:var(--bad)}
+.levbox{margin:0 0 10px;font-size:13.5px}.levbox summary{font-weight:600}.levbox ul{margin:6px 0 0;padding-left:18px}
 tr.detail td{background:var(--soft);text-align:left;font-size:13px;padding:10px 12px}
 .detail-grid{display:flex;flex-wrap:wrap;gap:6px 22px}
 .detail-grid b{font:600 15px var(--num)}
@@ -243,6 +245,7 @@ details summary{cursor:pointer}
       <input id="search" type="search" placeholder="Search players or teams" aria-label="Search players">
       <div class="seg" id="posf"><button data-v="" aria-pressed="true">All</button><button data-v="PG">PG</button><button data-v="SG">SG</button><button data-v="SF">SF</button><button data-v="PF">PF</button><button data-v="C">C</button></div>
     </div>
+    <details class="levbox" id="levbox" hidden><summary>Leverage plays and pivots</summary><div id="levlist"></div></details>
     <table>
       <thead><tr>
         <th><button data-sort="name">Player</button></th>
@@ -250,9 +253,10 @@ details summary{cursor:pointer}
         <th><button data-sort="proj" aria-sort="descending">Proj</button></th>
         <th class="col-val"><button data-sort="value">Value</button></th>
         <th class="col-own"><button data-sort="own">Own</button></th>
+        <th class="col-own"><button data-sort="lev" title="How often in winning lineups minus how owned">Lev</button></th>
         <th><span class="muted">Use</span></th>
       </tr></thead>
-      <tbody id="ptable"><tr><td colspan="6" class="empty">Loading players…</td></tr></tbody>
+      <tbody id="ptable"><tr><td colspan="7" class="empty">Loading players…</td></tr></tbody>
     </table>
     <p class="muted" style="font-size:12.5px;margin:10px 0 0">Tap a player for minutes, range and why the projection moved. ✓ forces a player into every lineup, ✕ removes him.</p>
   </section>
@@ -288,7 +292,7 @@ const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(
   locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null,format:'classic',sgId:null};
 const F=()=>FMT[S.format];const multOf=slot=>F().mult[slot]||1;
 const fmtKey=()=>S.format==='single'?'sg:'+S.sgId:'main';
-const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,outside:0,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.06,sgCap:60000};
+const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,outside:0,levW:.15,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.03,sgCap:60000};
 const LEARNABLE=['vegas','matchup','injury','usage','starter','blowout','outside'];
 S.user=store.get('cfgUser',{});S.learned={scale:1,minutes_mult:{}};
 function learnedDefaults(){const o={...DEFAULTS};for(const k of LEARNABLE)if(typeof S.learned[k]==='number')o[k]=+S.learned[k].toFixed(2);return o}
@@ -310,6 +314,7 @@ const SETTINGS=[
  {k:'minUnique',label:'Lineups must differ by',min:1,max:5,step:1,fmt:' players',help:'For multiple lineups: how many players each one must change from the others.'},
  {h:'Tournament mode'},
  {k:'ceilW',label:'Upside weight',min:0,max:1,step:.05,fmt:'%',help:'How much a player\u2019s ceiling counts versus his projection.'},
+ {k:'levW',label:'Leverage weight',min:0,max:.5,step:.01,fmt:'pt',help:'Points added per point of leverage (winning-lineup rate minus ownership). This is the LeVertical idea: favor plays the optimizer-driven field is under-owning.'},
  {k:'ownFade',label:'Fade popular players',min:0,max:.3,step:.01,fmt:'pt',help:'Points subtracted per 1% of estimated ownership.'}];
 const fmtSet=(d,v)=>d.fmt==='x'?Number(v).toFixed(2)+'x':d.fmt==='$'?(v?'$'+Number(v).toLocaleString():'Off'):d.fmt==='%'?Math.round(v*100)+'%':d.fmt==='pt'?Number(v).toFixed(2):v+(d.fmt||'');
 function renderSettings(){
@@ -344,8 +349,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json')]);
-  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;
+  const [today,acc,inj,lw,mp,op]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
@@ -368,7 +373,7 @@ function applyFormat(){
     S.sgId=sg.id;
     const by=new Map(S.today.players.map(p=>[pkey(p),p]));
     S.players=sg.players.map(r=>{const b=by.get(r.k);if(!b)return null;const out=!!b.out||['OUT','DOUBTFUL'].includes(r.status);
-      return {...b,salary:r.salary,own:r.own??null,out,status:b.out?b.status:(out?r.status:b.status),proj:out?0:b.proj,_o:undefined}}).filter(Boolean);
+      return {...b,salary:r.salary,own:r.own??null,opt:r.opt??null,lev:r.lev??null,pivots:null,out,status:b.out?b.status:(out?r.status:b.status),proj:out?0:b.proj,_o:undefined}}).filter(Boolean);
     S.games=[{away:sg.away,home:sg.home,time:sg.time,total:sg.total,home_spread:sg.home_spread}];
   }else{S.players=S.today.players.filter(p=>p.main!==false).map(p=>({...p}));S.games=S.today.games||[]}
 }
@@ -493,21 +498,32 @@ function renderNotices(){
 function tags(p){let t='';if(p.out)t+='<span class="tag o">Out</span>';else if(p.status==='QUESTIONABLE')t+='<span class="tag q">Q</span>';
   if((p.flags||[]).some(f=>/^(ROLE DROP|New team|DNP in last)/.test(f)))t+='<span class="tag r">Role?</span>';
   if((p.adj||{}).injury_min>=3)t+=`<span class="tag u">+${Math.round(p.adj.injury_min)} min</span>`;
-  if(p.starter)t+='<span class="tag u">Starting</span>';if((p.flags||[]).some(f=>f.startsWith('Outside')))t+='<span class="tag r">Disagree</span>';if(p.news)t+='<span class="tag q">News</span>';if(p.edited)t+='<span class="tag e">Edited</span>';return t}
+  if(p.starter)t+='<span class="tag u">Starting</span>';if((p.flags||[]).some(f=>f.startsWith('Outside')))t+='<span class="tag r">Disagree</span>';if(p.news)t+='<span class="tag q">News</span>';if((p.flags||[]).some(f=>f.startsWith('Blowout')))t+='<span class="tag q" title="Last game was a blowout">Blowout</span>';if(p.edited)t+='<span class="tag e">Edited</span>';return t}
 function visiblePlayers(){
   const q=S.search.trim().toLowerCase();
   return S.players.filter(p=>(!S.posf||p.position.split('/').includes(S.posf))&&(!q||p.name.toLowerCase().includes(q)||p.team.toLowerCase()===q))
     .sort((a,b)=>{const k=S.sort;const va=k==='name'?a.name:(a[k]??-1),vb=k==='name'?b.name:(b[k]??-1);return (va>vb?1:va<vb?-1:0)*S.dir*(k==='name'?-1:1)});
 }
+function renderLeverage(){
+  const live=S.players.filter(p=>p.proj>0&&!p.out&&inPlay(p)&&p.lev!=null);
+  if(!live.length){$('levbox').hidden=true;return}
+  const top=[...live].sort((a,b)=>b.lev-a.lev).slice(0,6);
+  const piv=live.filter(p=>p.pivots&&p.pivots.length).sort((a,b)=>b.own-a.own).slice(0,5);
+  $('levbox').hidden=false;
+  $('levlist').innerHTML=`<div class="muted" style="margin-top:6px">Leverage = how often a player is in the best lineup when the slate is simulated, minus how much of the field will own him.</div>
+  <ul>${top.map(p=>`<li><b>${esc(p.name)}</b> ${money(p.salary)}: in ${p.opt.toFixed(0)}% of winning lineups, about ${p.own.toFixed(0)}% owned (${p.lev>0?'+':''}${p.lev.toFixed(0)})</li>`).join('')}</ul>
+  ${piv.length?`<div style="margin-top:8px;font-weight:600">Pivots off the chalk</div><ul>${piv.map(p=>`<li><b>${esc(p.name)}</b> (${p.own.toFixed(0)}% owned, ${p.proj.toFixed(1)}) → ${p.pivots.map(b=>`${esc(b.name)} ${money(b.salary)}, ${Number(b.proj).toFixed(1)}, ${Number(b.own).toFixed(0)}% owned`).join(' or ')}</li>`).join('')}</ul>`:''}`;
+}
 function renderPlayers(){
+  renderLeverage();
   const rows=visiblePlayers(),tb=$('ptable');
-  if(!rows.length){tb.innerHTML=`<tr><td colspan="6" class="empty">${S.players.length?'No players match.':'No players loaded.'}</td></tr>`;return}
+  if(!rows.length){tb.innerHTML=`<tr><td colspan="7" class="empty">${S.players.length?'No players match.':'No players loaded.'}</td></tr>`;return}
   tb.innerHTML=rows.slice(0,220).map(p=>{const k=pkey(p),dim=p.out||!inPlay(p);const g=gameOf(p);
     const vs=p.opp?(p.home?'vs ':'@ ')+esc(p.opp):'';
     let html=`<tr class="prow${dim?' out':''}" data-k="${esc(k)}"><td class="pcell"><div class="pname">${esc(p.name)}</div><div class="pmeta">${tags(p)}${esc(p.position)}, ${esc(p.team)} ${vs}<span class="tt">${p.team_total?`, team total ${p.team_total}`:''}</span></div></td>
-    <td class="n">${money(p.salary)}</td><td class="proj">${p.proj?p.proj.toFixed(1):'–'}</td><td class="n col-val">${p.value?p.value.toFixed(1)+'x':'–'}</td><td class="n col-own">${p.own!=null&&p.proj?p.own.toFixed(0)+'%':'–'}</td>
+    <td class="n">${money(p.salary)}</td><td class="proj">${p.proj?p.proj.toFixed(1):'–'}</td><td class="n col-val">${p.value?p.value.toFixed(1)+'x':'–'}</td><td class="n col-own">${p.own!=null&&p.proj?p.own.toFixed(0)+'%':'–'}</td><td class="n col-own lev ${p.lev>=3?'pos':p.lev<=-5?'neg':''}">${p.lev!=null&&p.proj?(p.lev>0?'+':'')+p.lev.toFixed(0):'–'}</td>
     <td><div class="pick"><button class="lock" aria-label="Use ${esc(p.name)} in every lineup" aria-pressed="${S.locks.has(k)}">✓</button><button class="ban" aria-label="Never use ${esc(p.name)}" aria-pressed="${S.bans.has(k)}">✕</button></div></td></tr>`;
-    if(S.open===k)html+=`<tr class="detail"><td colspan="6">${detail(p)}</td></tr>`;
+    if(S.open===k)html+=`<tr class="detail"><td colspan="7">${detail(p)}</td></tr>`;
     return html}).join('');
 }
 function detail(p){
@@ -515,7 +531,8 @@ function detail(p){
   const pct=x=>(x>=1?'+':'')+((x-1)*100).toFixed(1)+'%';
   if(a.injury_min)bits.push(`+${a.injury_min} min from injuries`);if(a.starter_min)bits.push(`+${a.starter_min} min confirmed starter`);
   if(a.vegas&&a.vegas!==1)bits.push(`Vegas ${pct(a.vegas)}`);if(a.matchup&&a.matchup!==1)bits.push(`Matchup ${pct(a.matchup)}`);if(a.usage&&a.usage!==1)bits.push(`Usage ${pct(a.usage)}`);if(a.blowout)bits.push(`Blowout risk ${(a.blowout*100).toFixed(0)}% minutes`);
-  return `<div class="detail-grid"><span>Minutes <b>${p.minutes?Number(p.minutes).toFixed(1):'–'}</b></span><span>Points per minute <b>${p.rate?Number(p.rate).toFixed(2):'–'}</b></span><span>Range <b>${p.floor??'–'} to ${p.ceiling??'–'}</b></span>${p.naive?`<span>Season average <b>${p.naive.toFixed(1)}</b></span>`:''}${p.ext!=null?`<span>NBA EDGE model <b>${(p.model_proj??p.proj).toFixed(1)}</b></span><span>DailyFantasyFuel <b>${Number(p.ext).toFixed(1)}</b></span>`:''}${p.spread!=null?`<span>Spread <b>${p.spread>0?'+':''}${p.spread}</b></span>`:''}</div>
+  return `<div class="detail-grid"><span>Minutes <b>${p.minutes?Number(p.minutes).toFixed(1):'–'}</b></span><span>Points per minute <b>${p.rate?Number(p.rate).toFixed(2):'–'}</b></span><span>Range <b>${p.floor??'–'} to ${p.ceiling??'–'}</b></span>${p.naive?`<span>Season average <b>${p.naive.toFixed(1)}</b></span>`:''}${p.ext!=null?`<span>NBA EDGE model <b>${(p.model_proj??p.proj).toFixed(1)}</b></span><span>DailyFantasyFuel <b>${Number(p.ext).toFixed(1)}</b></span>`:''}${p.spread!=null?`<span>Spread <b>${p.spread>0?'+':''}${p.spread}</b></span>`:''}${p.opt!=null?`<span>In winning lineups <b>${p.opt.toFixed(0)}%</b></span><span>Leverage <b>${p.lev>0?'+':''}${p.lev.toFixed(0)}</b></span>`:''}</div>
+  ${p.pivots&&p.pivots.length?`<div style="margin-top:6px">Pivot ideas: ${p.pivots.map(b=>`${esc(b.name)} (${money(b.salary)}, ${Number(b.proj).toFixed(1)} proj, ${Number(b.own).toFixed(0)}% owned)`).join(', ')}</div>`:''}
   ${bits.length?`<div style="margin-top:6px">${esc(bits.join(', '))}</div>`:''}${p.rate&&!p.out?`<div class="override"><label for="ov-min">Your minutes</label><input id="ov-min" type="number" min="0" max="48" step="0.5" value="${S.over[pkey(p)]?.minutes??''}" placeholder="${(p._o?.minutes??p.minutes).toFixed?.(1)??''}" data-k="${esc(pkey(p))}"><button class="linkish" data-clear="${esc(pkey(p))}">${S.over[pkey(p)]?'Use model minutes':''}</button></div>`:''}${(p.flags||[]).length?`<ul>${p.flags.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>`:''}${p.news?`<div style="margin-top:8px"><b style="font:600 14px var(--body)">Headlines</b><ul>${p.news.map(n=>`<li><a href="${esc(n.url)}" target="_blank" rel="noopener noreferrer">${esc(n.headline)}</a> <span class="muted">${esc(ago(n.at))}</span></li>`).join('')}</ul></div>`:''}`;
 }
 $('ptable').addEventListener('click',e=>{
@@ -548,7 +565,7 @@ function syncExposure(){const on=S.count>1;$('exposure').disabled=!on;$('exposur
 // ---------- optimizer ----------
 let glpkP=null;
 function loadGLPK(){return glpkP??=import('https://cdn.jsdelivr.net/npm/glpk.js@5.0.0/+esm').then(m=>m.default()).catch(e=>{glpkP=null;throw Error('Couldn’t load the lineup solver. Check your connection and try again.')})}
-function score(p){const c=S.cfg;return S.mode==='gpp'?((1-c.ceilW)*p.proj+c.ceilW*(p.ceiling||p.proj)-c.ownFade*(p.own||0)):p.proj}
+function score(p){const c=S.cfg;return S.mode==='gpp'?((1-c.ceilW)*p.proj+c.ceilW*(p.ceiling||p.proj)-c.ownFade*(p.own||0)+c.levW*(p.lev||0)):p.proj}
 // Late games go in flex slots so late swap stays possible.
 function flexBonus(p,slot){if(!['G/F','F/C','UTIL'].includes(slot))return 0;const g=gameOf(p);return g&&g.time?(Date.parse(g.time)%86400000)/86400000*0.02:0}
 async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],minUnique=2}){
@@ -674,6 +691,7 @@ function learnedHTML(){
   ${Math.abs((w.scale??1)-1)>=.01?`<p style="margin:0 0 6px;font-size:14px">Overall projections ${w.scale<1?'lowered':'raised'} ${Math.abs(Math.round((w.scale-1)*100))}% to fix ${w.scale<1?'running high':'running low'}.</p>`:''}
   ${mm.length?`<p style="margin:0 0 6px;font-size:14px">${esc(mm.join(', '))}.</p>`:''}
   ${(w.outside||0)>=.01?`<p style="margin:0 0 6px;font-size:14px">Blends in ${Math.round(w.outside*100)}% of DailyFantasyFuel\u2019s public projection, because the blend was more accurate on days it hadn\u2019t seen.</p>`:''}
+  ${S.op&&S.op.evaluation?`<p style="margin:0 0 6px;font-size:14px">Ownership (graded against real FanDuel contests): misses by ${S.op.evaluation.heldout_fitted??S.op.evaluation.avg_miss_all_days} points per player on the latest held-out slate${S.op.evaluation.linestar_heldout!=null?` (LineStar\u2019s projections: ${S.op.evaluation.linestar_heldout})`:''}. ${esc(S.op.decision||'')}</p>`:''}
   ${S.mp&&S.mp.decision?`<p style="margin:0 0 6px;font-size:14px">Minutes rules (retuned weekly on last season\u2019s games): ${esc(S.mp.decision)}${S.mp.params&&S.mp.params.recent_w>=.05?` A player\u2019s last 5 games now carry ${Math.round(S.mp.params.recent_w*100)}% of this season\u2019s minutes.`:''}</p>`:''}
   <details style="font-size:13.5px"><summary>Current weights</summary><table style="margin-top:6px"><tbody>${rows}</tbody></table>${lastAdopt?`<p class="muted" style="margin:6px 0 0">Last change ${esc(lastAdopt.date)}: ${esc(lastAdopt.changes.join(', ')||'none')}.</p>`:''}</details>`;
 }

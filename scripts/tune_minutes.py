@@ -28,7 +28,7 @@ DATA = ROOT / 'data'
 OUT = DATA / 'model_params.json'
 BOUNDS = {'role_ratio': (0.35, 0.75), 'role_bump': (0, 6), 'short_ratio': (0.3, 0.7), 'decline_ratio': (0.5, 0.9),
           'decline_w': (0.3, 1.0), 'prior_k': (0.5, 10), 'blend_cap': (0.6, 0.98), 'recent_w': (0, 0.8),
-          'rate_k': (3, 40), 'rate_cap': (0.3, 0.95), 'shrink_games': (0, 15)}
+          'rate_k': (3, 40), 'rate_cap': (0.3, 0.95), 'shrink_games': (0, 15), 'blowout_game_w': (0, 1)}
 STEP = {k: (hi - lo) / 8 for k, (lo, hi) in BOUNDS.items()}
 
 
@@ -109,6 +109,7 @@ def main():
     t0 = time.time()
     last_season = json.loads((DATA / 'last_season_stats.json').read_text(encoding='utf-8'))
     raw = last_season.get('game_logs', [])
+    B.attach_margins(raw)
     prior = {k: B.summary(v) for k, v in B.log_index(raw, dt.date(2025, 10, 21), dt.date(2026, 1, 1)).items()}
     prior = {k: v for k, v in prior.items() if v and v['games'] >= 3}
     all_days = sorted({str(r['date']) for r in raw if str(r['date']) >= '20260106'})
@@ -120,6 +121,7 @@ def main():
 
     # Real check: this season, prior = full 2025-26, injury tags from archived slates.
     season = B.season_logs()
+    B.attach_margins(season)
     prior_full = B.prior_index(last_season)
     inj_by_day = {}
     for f in sorted((DATA / 'archive').glob('slate_*.json')):
