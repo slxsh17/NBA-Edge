@@ -1,61 +1,31 @@
 {
-  "date": "20261026",
-  "updated_at": "2026-10-26T23:29:38.624400-04:00",
+  "date": "20261027",
+  "updated_at": "2026-10-27T00:05:29.696903-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
-      "away": "Washington Wizards",
-      "home": "Charlotte Hornets",
-      "time": "2026-10-26T23:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Minnesota Timberwolves",
-      "home": "Cleveland Cavaliers",
-      "time": "2026-10-26T23:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Chicago Bulls",
+      "away": "Brooklyn Nets",
       "home": "Boston Celtics",
-      "time": "2026-10-26T23:30Z",
-      "status": "Final"
+      "time": "2026-10-27T23:30Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Dallas Mavericks",
-      "home": "Miami Heat",
-      "time": "2026-10-26T23:30Z",
-      "status": "Final"
+      "away": "Detroit Pistons",
+      "home": "New York Knicks",
+      "time": "2026-10-28T00:00Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Indiana Pacers",
-      "home": "Milwaukee Bucks",
-      "time": "2026-10-27T00:00Z",
-      "status": "Final"
+      "away": "Sacramento Kings",
+      "home": "San Antonio Spurs",
+      "time": "2026-10-28T00:00Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Phoenix Suns",
-      "home": "Oklahoma City Thunder",
-      "time": "2026-10-27T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Atlanta Hawks",
-      "home": "Houston Rockets",
-      "time": "2026-10-27T00:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Memphis Grizzlies",
-      "home": "Utah Jazz",
-      "time": "2026-10-27T01:00Z",
-      "status": "In Progress"
-    },
-    {
-      "away": "Golden State Warriors",
-      "home": "Denver Nuggets",
-      "time": "2026-10-27T02:00Z",
-      "status": "In Progress"
+      "away": "Portland Trail Blazers",
+      "home": "Los Angeles Lakers",
+      "time": "2026-10-28T03:00Z",
+      "status": "Scheduled"
     }
   ]
 }
