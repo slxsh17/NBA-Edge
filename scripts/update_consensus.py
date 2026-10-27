@@ -1,102 +1,170 @@
 #!/usr/bin/env python3
-"""Conservative public NBA DFS *recommendation* monitor, no paywall bypass.
-Only counts player-specific picks supported by parsed article headings or explicit
-recommendation language in public page text. Inaccessible pages are NOT counted.
+"""NBA EDGE consensus radar -> data/public_consensus.json (+ daily copy in data/consensus/).
+
+What other people are playing tonight, from public pages only:
+  * Fantasy Team Advice: free projected ownership (FanDuel tab, main slate; top players
+    at each position).
+  * LineStar: free projected ownership for the players its logged-out view names.
+  * DraftKings Network: today's public "top targets" and "value picks" articles; a
+    player named in a pick article counts as a mention.
+The ownership model blends these in by weights it learns against real ownership.
 """
-import csv, html, json, re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
-from html.parser import HTMLParser
-from pathlib import Path
-from datetime import datetime, timezone, timedelta
-from email.utils import parsedate_to_datetime
-ROOT=Path(__file__).resolve().parent.parent; DATA=ROOT/'data'
-SOURCES={
- 'RotoBaller':'rotoballer.com', 'RotoWire':'rotowire.com',
- 'FantasyLabs':'fantasylabs.com', 'RotoGrinders':'rotogrinders.com',
- 'Stokastic':'stokastic.com', 'DraftKings Network':'dknetwork.draftkings.com',
- 'FantasyPros':'fantasypros.com', 'NumberFire':'numberfire.com',
- 'SportsLine':'sportsline.com',
-}
-HEADERS={'User-Agent':'Mozilla/5.0 (compatible; NBAEdgeResearch/2.0; public articles only)','Accept':'text/html,application/rss+xml,application/xml'}
-PICK_WORDS=re.compile(r'\b(?:top picks?|best picks?|core play|value plays?|bargain plays?|top plays?|favorite plays?|must.play|target|recommended|recommend|strong plays?|studs?|sleepers?|cash plays?|tournament plays?|gpp plays?|dfs picks?|priority plays?|building blocks?|top option|my favorite|love (?:the )?spot)\b',re.I)
-NEGATIVE=re.compile(r'\b(?:avoid|fade|do not play|don.t play|not a play|stay away|overrated|injured|ruled out|questionable|doubtful)\b',re.I)
-DFS=re.compile(r'\b(?:nba\s+dfs|fantasy basketball|draftkings|fanduel|daily fantasy|dfs\s+(?:picks|plays|lineups|targets)|nba fantasy)\b',re.I)
-def clean(s):return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]*>',' ',str(s or '')))).strip()
-class Reader(HTMLParser):
- def __init__(self):super().__init__();self.tag=None;self.stack=[];self.buf=[];self.blocks=[];self.ignore=0
- def handle_starttag(self,tag,attrs):
-  self.stack.append(tag)
-  if tag in ('script','style','nav','footer'):self.ignore+=1
-  if tag in ('h1','h2','h3','h4','p','li') and not self.ignore:self.buf.append([tag,''])
- def handle_data(self,data):
-  if not self.ignore and self.buf:self.buf[-1][1]+=data
- def handle_endtag(self,tag):
-  if self.buf and self.buf[-1][0]==tag:self.blocks.append(tuple(self.buf.pop()))
-  if tag in ('script','style','nav','footer') and self.ignore:self.ignore-=1
-  if self.stack:self.stack.pop()
-def names():
- result=[]
- for p in (DATA/'player_positions.csv',DATA/'slate_names.csv'):
-  if p.exists():
-   with p.open(encoding='utf-8-sig',newline='') as f:
-    for row in csv.DictReader(f):
-     n=(row.get('name') or '').strip()
-     if n and n not in result:result.append(n)
- return result
-def rss(domain):
- query=f'site:{domain} ("NBA DFS" OR "NBA fantasy") (picks OR plays OR targets OR values) when:2d'
- url='https://news.google.com/rss/search?q='+urllib.parse.quote(query)+'&hl=en-US&gl=US&ceid=US:en'
- with urllib.request.urlopen(urllib.request.Request(url,headers=HEADERS),timeout=18) as r:feed=r.read(800000)
- root=ET.fromstring(feed);out=[]
- for item in root.findall('./channel/item')[:20]:
-  title=clean(item.findtext('title'));link=item.findtext('link') or ''
-  try:published=parsedate_to_datetime(item.findtext('pubDate')).astimezone(timezone.utc)
-  except (ValueError,TypeError):continue
-  if published<datetime.now(timezone.utc)-timedelta(hours=48):continue
-  if DFS.search(title) or PICK_WORDS.search(title):out.append((title,link,published.isoformat()))
- return out
-def fetch_page(url,domain):
- try:
-  with urllib.request.urlopen(urllib.request.Request(url,headers=HEADERS),timeout=12) as r:
-   final=r.geturl();content=r.read(450000).decode('utf-8','replace')
-  if not urllib.parse.urlparse(final).hostname.endswith(domain):return None,None
-  reader=Reader();reader.feed(content)
-  return final,[(tag,clean(text)) for tag,text in reader.blocks if len(clean(text))>15][:400]
- except Exception:return None,None
-def make_pattern(name):
- parts=re.findall(r'[a-z0-9]+',name.lower());return re.compile(r'(?<![a-z])'+r'[\s\W]*'.join(map(re.escape,parts))+r'(?![a-z])',re.I) if parts else re.compile(r'(?!)')
+import datetime as dt
+import html
+import json
+import pathlib
+import re
+import unicodedata
+import urllib.request
+from zoneinfo import ZoneInfo
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+DATA = ROOT / 'data'
+UA = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36 NBA-EDGE-personal'}
+ALIASES = {'GS': 'GSW', 'NO': 'NOP', 'NY': 'NYK', 'PHO': 'PHX', 'SA': 'SAS', 'UTAH': 'UTA', 'WSH': 'WAS', 'BRK': 'BKN'}
+
+
+def canon(t):
+    t = str(t or '').upper()
+    return ALIASES.get(t, t)
+
+
+def norm(s):
+    return re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', str(s or '')).lower())
+
+
+def get(url, timeout=30):
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
+        return r.read().decode('utf-8', 'replace')
+
+
+def text(s):
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', s))).strip()
+
+
+def fta_fanduel(errors):
+    """Fantasy Team Advice FanDuel panel: [(name, team, own%)] for its default (main) slate."""
+    try:
+        page = get('https://fantasyteamadvice.com/nba/dfs-ownership-projections')
+    except Exception as e:
+        errors.append(f'FantasyTeamAdvice: {e}')
+        return [], None
+    a = page.find('id="ownership-fd"')
+    if a < 0:
+        errors.append('FantasyTeamAdvice: FanDuel panel not found')
+        return [], None
+    b = page.find('role="tabpanel"', a + 30)
+    panel = page[a:b if b > 0 else a + 200000]
+    m = re.search(r'Showing:</span>\s*<span[^>]*>([^<]+)</span>', panel)
+    label = text(m.group(1)) if m else None
+    out = []
+    for row in re.finditer(r'data-player-card-player-id-param="\d+"[^>]*>([^<]+)</a>(.{0,1500}?)>(\d+(?:\.\d+)?)%</span>', panel, re.S):
+        team = re.search(r'</span></a>([A-Z]{2,4})</span>', row.group(2))
+        out.append({'name': html.unescape(row.group(1)).strip(), 'team': canon(team.group(1)) if team else None, 'own': float(row.group(3))})
+    return out, label
+
+
+def linestar_projected(errors):
+    """LineStar projected ownership for named players on today's main slate."""
+    try:
+        d = json.loads(get('https://www.linestarapp.com/DesktopModules/DailyFantasyApi/API/Fantasy/GetSalariesV5?sport=2&site=2&periodId=-1', 40))
+    except Exception as e:
+        errors.append(f'LineStar: {e}')
+        return []
+    own = d.get('Ownership') or {}
+    sc = json.loads(d.get('SalaryContainerJson') or '{}')
+    named = {s['Id']: s for s in sc.get('Salaries', [])}
+    main = next((s for s in own.get('Slates', []) if s.get('SlateName') == 'Main'), None)
+    out = []
+    for sid, rows in (own.get('Projected') or {}).items():
+        for r in rows:
+            s = named.get(r['SalaryId'])
+            if s and (main is None or True):
+                out.append({'name': unicodedata.normalize('NFC', s['Name']), 'team': canon(s.get('PTEAM')), 'own': r['Owned'], 'slate': sid})
+    # keep the largest slate's numbers per player (the main slate has the most players)
+    best = {}
+    for r in out:
+        k = norm(r['name']) + '|' + r['team']
+        best.setdefault(k, r)
+    return list(best.values())
+
+
+def dk_articles(day, errors):
+    """Today's DraftKings Network pick articles (targets, values, cheat sheets)."""
+    try:
+        page = get('https://dknetwork.draftkings.com/sport/nba/fantasy/')
+    except Exception as e:
+        errors.append(f'DK Network: {e}')
+        return []
+    mmdd = dt.date.fromisoformat(day).strftime('%-m-%-d-%y')
+    links = sorted(set(re.findall(r'href="(https://dknetwork\.draftkings\.com/\d{4}/\d{2}/\d{2}/[^"]*(?:nba-dfs|fantasy-basketball)[^"]*' + re.escape(mmdd) + r'[^"]*)"', page)))
+    arts = []
+    for url in links[:6]:
+        if 'pick6' in url:
+            continue
+        try:
+            body = get(url)
+        except Exception as e:
+            errors.append(f'DK article: {e}')
+            continue
+        main = re.search(r'<article.*?</article>', body, re.S)
+        arts.append({'url': url, 'title': text(re.search(r'<title>(.*?)</title>', body, re.S).group(1)) if '<title>' in body else url,
+                     'text': text(main.group(0) if main else body)})
+    return arts
+
+
 def main():
- known=names();patterns={n:make_pattern(n) for n in known};results={};errors={};checked=0;hits=0
- for provider,domain in SOURCES.items():
-  try:articles=rss(domain)
-  except Exception as exc:errors[provider]=str(exc)[:100];continue
-  for title,link,pub in articles:
-   target,blocks=fetch_page(link,domain)
-   if not blocks:continue
-   checked+=1
-   if not any(DFS.search(txt) for tag,txt in blocks[:35]) and not DFS.search(title):continue
-   headings=[(ix,txt) for ix,(tag,txt) in enumerate(blocks) if tag in ('h2','h3','h4')]
-   for name,pattern in patterns.items():
-    evidence=[]
-    for i,(tag,line) in enumerate(blocks):
-     if not pattern.search(line):continue
-     if tag in ('h2','h3','h4'):
-      # Player-specific DFS pick heading in a verified recommendation article.
-      intro=' '.join(t for _,t in blocks[:12])[:1800]
-      if PICK_WORDS.search(title+' '+intro) and not NEGATIVE.search(line):evidence.append(line[:230])
-     elif tag in ('p','li') and len(line)<650 and PICK_WORDS.search(line) and not NEGATIVE.search(line):
-      evidence.append(line[:230])
-    if not evidence:continue
-    hits+=1
-    record=results.setdefault(name,{'name':name,'sources':set(),'articles':[]})
-    if any(a['provider']==provider and a['url']==target for a in record['articles']):continue
-    record['sources'].add(provider)
-    record['articles'].append({'provider':provider,'title':title,'url':target,'published_at':pub,'evidence':evidence[0],'signal':'explicit_pick_context'})
- people=[]
- for r in results.values():
-  people.append({'name':r['name'],'source_count':len(r['sources']),'mention_count':len(r['articles']),'recommendation_count':len(r['articles']),'articles':r['articles'][:8]})
- people.sort(key=lambda r:(-r['source_count'],-r['recommendation_count'],r['name']))
- output={'updated_at':datetime.now(timezone.utc).isoformat(),'window_hours':48,'method':'Conservative public DFS pick recognition in publicly accessible article headings/paragraphs; not direct ownership predictions. Unreadable articles excluded.','sources_checked':list(SOURCES),'source_errors':errors,'articles_checked':checked,'players':people,'article_count':sum(len(r['articles']) for r in people)}
- DATA.mkdir(exist_ok=True)
- (DATA/'public_consensus.json').write_text(json.dumps(output,indent=2)+'\n',encoding='utf-8')
- print('Recommendation articles inspected:',checked,'unique players:',len(people),'verified recommendations:',output['article_count'])
-if __name__=='__main__':main()
+    day = dt.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+    errors = []
+    slate = {}
+    try:
+        slate = json.loads((DATA / f'slate_{day}.json').read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        pass
+    roster = {norm(p['name']) + '|' + p['team']: p for p in slate.get('players', [])}
+    fta, fta_label = fta_fanduel(errors)
+    ls = linestar_projected(errors)
+    arts = dk_articles(day, errors)
+    players = {}
+
+    def slot(name, team):
+        k = norm(name) + '|' + canon(team or '')
+        if k not in roster:   # match by name only when team missing/odd
+            hits = [kk for kk in roster if kk.split('|')[0] == norm(name)]
+            k = hits[0] if len(hits) == 1 else k
+        rec = players.setdefault(k, {'name': roster.get(k, {}).get('name', name), 'team': roster.get(k, {}).get('team', canon(team)),
+                                     'fta_own': None, 'linestar_own': None, 'mentions': 0, 'articles': []})
+        return rec
+    for r in fta:
+        slot(r['name'], r['team'])['fta_own'] = r['own']
+    for r in ls:
+        slot(r['name'], r['team'])['linestar_own'] = r['own']
+    for a in arts:
+        t = norm(a['text'])
+        for k, p in roster.items():
+            if norm(p['name']) in t:
+                rec = slot(p['name'], p['team'])
+                rec['mentions'] += 1
+                rec['articles'].append({'title': a['title'][:140], 'url': a['url']})
+    out_players = []
+    for p in players.values():
+        ext = [v for v in (p['fta_own'], p['linestar_own']) if v is not None]
+        p['consensus_own'] = round(sum(ext) / len(ext), 1) if ext else None
+        # fields the classic page reads
+        p['source_count'] = (p['fta_own'] is not None) + (p['linestar_own'] is not None) + (1 if p['mentions'] else 0)
+        p['mention_count'] = p['mentions']
+        out_players.append(p)
+    out_players.sort(key=lambda p: -((p['consensus_own'] or 0) + 5 * p['mentions']))
+    doc = {'schema': 2, 'date': day, 'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
+           'sources': {'fantasyteamadvice': {'players': len(fta), 'slate': fta_label}, 'linestar': {'players': len(ls)},
+                       'dknetwork_articles': [{'title': a['title'][:140], 'url': a['url']} for a in arts]},
+           'source_errors': errors[:10], 'players': out_players,
+           'method': 'Public projected ownership (Fantasy Team Advice FanDuel tab, LineStar logged-out view) and player mentions in public DraftKings Network pick articles.'}
+    (DATA / 'public_consensus.json').write_text(json.dumps(doc, indent=0) + '\n', encoding='utf-8')
+    (DATA / 'consensus').mkdir(exist_ok=True)
+    (DATA / 'consensus' / f'{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
+    print(f"consensus {day}: FTA {len(fta)} ({fta_label}), LineStar {len(ls)}, DK articles {len(arts)}, players {len(out_players)}; errors {errors[:3]}")
+
+
+if __name__ == '__main__':
+    main()

@@ -2,7 +2,7 @@ name: NBA EDGE Public Consensus Radar
 on:
   workflow_dispatch:
   schedule:
-    - cron: '13 * * * *'
+    - cron: '7,37 14-23 * * *'
 permissions:
   contents: write
 concurrency:
@@ -17,11 +17,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Read recent public NBA articles
+      - name: Read public projected ownership and pick articles
         run: python scripts/update_consensus.py
       - name: Publish results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/public_consensus.json
-          git diff --cached --quiet || (git commit -m "Refresh public NBA DFS mentions" && git pull --rebase && git push)
+          git add data/public_consensus.json data/consensus
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh public NBA DFS consensus"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1

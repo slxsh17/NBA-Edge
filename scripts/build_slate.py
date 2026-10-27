@@ -411,6 +411,7 @@ def build(day=None, backtest=False, weights=None):
         p.pop('_recent', None)
     out_singles = single_game_slates(singles, players)
     if not backtest:
+        SIM_DAY[0] = day
         simulate(players, out_singles, read('today.json'))
     out = {'schema': 1, 'model': 'v28', 'date': day, 'weights': W, 'slate': slate.get('slate', 'Main'),
            'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
@@ -437,6 +438,27 @@ def chalk(own, power, total):
     return {k: min(95.0, v * sc) for k, v in raw.items()}
 
 
+def apply_consensus(own, players, cons, P, total):
+    """Blend public projected ownership (where available) and pick-article mentions into
+    our ownership, then rescale to the slate total. Weights are learned."""
+    ew, mw = P.get('external_w', 0.0), P.get('mention_w', 0.0)
+    if not cons or (not ew and not mw):
+        return own
+    out = dict(own)
+    for p in players:
+        c = cons.get(norm(p['name']) + '|' + p['team'])
+        if not c or id(p) not in out:
+            continue
+        v = out[id(p)]
+        if ew and c.get('consensus_own') is not None:
+            v = (1 - ew) * v + ew * c['consensus_own']
+        if mw and c.get('mentions'):
+            v *= 1 + mw * min(c['mentions'], 3)
+        out[id(p)] = v
+    sc = total / (sum(out.values()) or 1)
+    return {k: min(95.0, v * sc) for k, v in out.items()}
+
+
 def simulate(players, singles, old):
     """Field ownership (simulated optimizer field + feel), optimal rate, leverage, pivots.
     Reuses the previous run's numbers when nothing that matters changed."""
@@ -445,7 +467,7 @@ def simulate(players, singles, old):
     import field_sim as FS
     P = own_params()
     main = [p for p in players if p['main'] and p['proj'] > 0 and not p.get('out')]
-    sig = json.dumps([P] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
+    sig = json.dumps([P, read('public_consensus.json').get('updated_at')] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
                      + [[sg['id'], [[r['k'], r['salary'], r['status']] for r in sg['players']]] for sg in singles])
     import hashlib
     sig = hashlib.sha1(sig.encode()).hexdigest()
@@ -453,7 +475,7 @@ def simulate(players, singles, old):
         prev = {(q['name'], q['team']): q for q in old.get('players', [])}
         for p in players:
             q = prev.get((p['name'], p['team']), {})
-            for k in ('own', 'opt', 'lev', 'pivots'):
+            for k in ('own', 'opt', 'lev', 'pivots', 'consensus'):
                 if k in q:
                     p[k] = q[k]
         prev_sg = {x['id']: {r['k']: r for r in x['players']} for x in old.get('single_games', [])}
@@ -467,6 +489,14 @@ def simulate(players, singles, old):
         return
     sim = FS.field_ownership(main, 'classic', 60000, P, sims=200)
     own = chalk(FS.blend_ownership(main, sim, P, 900), P.get('chalk_power', 1.0), 900)
+    pc = read('public_consensus.json')
+    cons = {norm(c['name']) + '|' + c['team']: c for c in pc.get('players', [])} if pc.get('date') == SIM_DAY[0] else {}
+    own = apply_consensus(own, main, cons, P, 900)
+    for p in main:
+        c = cons.get(norm(p['name']) + '|' + p['team'])
+        if c:
+            p['consensus'] = {k: c.get(k) for k in ('fta_own', 'linestar_own', 'mentions')}
+            p['consensus']['articles'] = c.get('articles', [])[:3]
     opt = FS.optimal_rate(main, 'classic', 60000, sims=200)
     for p in main:
         p['own'] = round(own.get(id(p), 0.0), 1)
@@ -498,6 +528,7 @@ def simulate(players, singles, old):
 
 
 SIM_SIG = [None]
+SIM_DAY = [None]
 
 
 def single_game_slates(singles, players):
