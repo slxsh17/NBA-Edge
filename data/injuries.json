@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T14:34:08.439533+00:00",
+  "updated_at": "2026-10-27T15:26:31.141880+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -53,6 +53,11 @@
       "status": "OUT"
     },
     {
+      "name": "Santi Aldama",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
       "name": "Naji Marshall",
       "team": "DAL",
       "status": "DAY-TO-DAY"
@@ -69,11 +74,6 @@
     },
     {
       "name": "Tarik Biberovic",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Santi Aldama",
       "team": "DAL",
       "status": "OUT"
     },
