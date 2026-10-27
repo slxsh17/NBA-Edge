@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T20:10:19.189761+00:00",
+  "updated_at": "2026-10-27T20:55:26.286924+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -123,6 +123,11 @@
       "status": "OUT"
     },
     {
+      "name": "Yaxel Lendeborg",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Kristaps Porzingis",
       "team": "GSW",
       "status": "OUT"
@@ -141,6 +146,11 @@
       "name": "Marcus Smart",
       "team": "HOU",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "status": "OUT"
     },
     {
       "name": "Steven Adams",
@@ -206,6 +216,11 @@
       "name": "Adou Thiero",
       "team": "LAL",
       "status": "OUT"
+    },
+    {
+      "name": "Pelle Larsson",
+      "team": "MIA",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Simone Fontecchio",
@@ -338,11 +353,6 @@
       "status": "OUT"
     },
     {
-      "name": "Branden Carlson",
-      "team": "POR",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Scoot Henderson",
       "team": "POR",
       "status": "DAY-TO-DAY"
@@ -393,17 +403,17 @@
       "status": "OUT"
     },
     {
+      "name": "Lauri Markkanen",
+      "team": "UTA",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jaren Jackson Jr.",
       "team": "UTA",
       "status": "OUT"
     },
     {
       "name": "Jaxson Hayes",
-      "team": "UTA",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Lauri Markkanen",
       "team": "UTA",
       "status": "DAY-TO-DAY"
     },
