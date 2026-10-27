@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:29:52.999788+00:00",
+  "updated_at": "2026-10-27T22:10:33.330111+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -273,22 +273,12 @@
       "status": "OUT"
     },
     {
-      "name": "Chet Holmgren",
-      "team": "OKC",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Alex Caruso",
-      "team": "OKC",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jalen Williams",
+      "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
     },
     {
-      "name": "Cason Wallace",
+      "name": "Chet Holmgren",
       "team": "OKC",
       "status": "OUT"
     },
@@ -298,7 +288,22 @@
       "status": "OUT"
     },
     {
-      "name": "Thomas Sorber",
+      "name": "Ajay Mitchell",
+      "team": "OKC",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Alex Caruso",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
+      "name": "Jalen Williams",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
+      "name": "Cason Wallace",
       "team": "OKC",
       "status": "OUT"
     },
