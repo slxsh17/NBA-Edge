@@ -1,0 +1,50 @@
+name: NBA EDGE Slate Pipeline
+
+# Every 15 min, 10am-midnight Eastern: today's FanDuel slate (hourly) ->
+# base projections -> final slate projections (data/today.json) -> accuracy report.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 0-3,14-23 * * *'
+  workflow_run:
+    workflows: ['NBA EDGE Daily Data Updates']
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-edge-pipeline
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: FanDuel slate + Vegas lines
+        run: python scripts/update_slate.py
+      - name: Base projections (minutes x FP/min)
+        if: always()
+        run: python scripts/build_automatic_projections.py
+      - name: Final slate projections
+        if: always()
+        run: python scripts/build_slate.py
+      - name: Accuracy report
+        if: always()
+        run: python scripts/grade_projections.py
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A data/slate_* data/automatic_projections.json data/today.json data/accuracy.json data/history
+          git diff --cached --quiet && exit 0
+          git commit -m 'Update NBA EDGE slate pipeline'
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1

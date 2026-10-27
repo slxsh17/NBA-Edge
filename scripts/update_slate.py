@@ -31,6 +31,54 @@ ROW = re.compile(r'<tr[^>]*class="[^"]*projections-listing[^"]*"[^>]*>', re.S)
 ATTR = re.compile(r'(data-[a-z_]+)=\s*"([^"]*)"')
 
 
+def num(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
+TEAM_NAMES = {'Atlanta Hawks': 'ATL', 'Boston Celtics': 'BOS', 'Brooklyn Nets': 'BKN', 'Charlotte Hornets': 'CHA',
+    'Chicago Bulls': 'CHI', 'Cleveland Cavaliers': 'CLE', 'Dallas Mavericks': 'DAL', 'Denver Nuggets': 'DEN',
+    'Detroit Pistons': 'DET', 'Golden State Warriors': 'GSW', 'Houston Rockets': 'HOU', 'Indiana Pacers': 'IND',
+    'LA Clippers': 'LAC', 'Los Angeles Clippers': 'LAC', 'Los Angeles Lakers': 'LAL', 'Memphis Grizzlies': 'MEM',
+    'Miami Heat': 'MIA', 'Milwaukee Bucks': 'MIL', 'Minnesota Timberwolves': 'MIN', 'New Orleans Pelicans': 'NOP',
+    'New York Knicks': 'NYK', 'Oklahoma City Thunder': 'OKC', 'Orlando Magic': 'ORL', 'Philadelphia 76ers': 'PHI',
+    'Phoenix Suns': 'PHX', 'Portland Trail Blazers': 'POR', 'Sacramento Kings': 'SAC', 'San Antonio Spurs': 'SAS',
+    'Toronto Raptors': 'TOR', 'Utah Jazz': 'UTA', 'Washington Wizards': 'WAS'}
+
+
+def game_times(day):
+    """Tip-off times from data/games.json (published by the Daily Data Updates workflow)."""
+    import json
+    try:
+        g = json.loads((DATA / 'games.json').read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return {}
+    if str(g.get('date')) != day.replace('-', ''):
+        return {}
+    out = {}
+    for x in g.get('games', []):
+        a, h = TEAM_NAMES.get(x.get('away')), TEAM_NAMES.get(x.get('home'))
+        if a and h:
+            out[(a, h)] = x.get('time')
+    return out
+
+
+def build_games(players, day):
+    times = game_times(day)
+    games = {}
+    for p in players:
+        home, away = (p['team'], p['_opp']) if p['_home'] else (p['_opp'], p['team'])
+        g = games.setdefault((away, home), {'away': away, 'home': home, 'time': times.get((away, home)),
+                                            'total': None, 'home_spread': None})
+        if p['_ou'] and not g['total']:
+            g['total'] = p['_ou']
+        if p['_spread'] is not None and g['home_spread'] is None:
+            g['home_spread'] = p['_spread'] if p['_home'] else -p['_spread']
+    return sorted(games.values(), key=lambda g: (g['time'] or '9', g['away']))
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers={
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36 NBA-EDGE-personal',
@@ -62,7 +110,10 @@ def parse(page, day):
             continue
         seen.add(key)
         status = STATUS.get(a.get('data-inj', '').upper(), 'ACTIVE')
-        players.append({'name': name, 'team': team, 'position': '/'.join(dict.fromkeys(pos)),
+        opp = a.get('data-opp', '').upper()
+        players.append({'_opp': ALIASES.get(opp, opp), '_home': a.get('data-loc', '') == 'vs',
+                        '_ou': num(a.get('data-ou')), '_spread': num(a.get('data-spread')),
+                        'name': name, 'team': team, 'position': '/'.join(dict.fromkeys(pos)),
                         'salary': salary, 'minutes': 0, 'fp_per_min': 0, 'ownership': '',
                         'matchup_factor': 1, 'usage_factor': 1, 'foul_lost_min': 0,
                         'blowout_lost_min': 0, 'ceiling_sd': 8, 'status': status})
@@ -73,7 +124,17 @@ def parse(page, day):
 
 
 def main():
+    import json
     day = dt.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+    # The pipeline runs every 15 min; only re-read the source about hourly.
+    try:
+        prev = json.loads((DATA / f'slate_{day}.json').read_text(encoding='utf-8'))
+        age = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(prev['fetched_at'])
+        if age < dt.timedelta(minutes=50) and '--force' not in sys.argv:
+            print(f'Slate fetched {int(age.total_seconds() // 60)} min ago; skipping')
+            return 0
+    except (OSError, ValueError, KeyError):
+        pass
     url = f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/'
     try:
         players = parse(fetch(url), day)
@@ -81,16 +142,23 @@ def main():
         # Fail the workflow (red X in GitHub Actions) so a broken source is visible.
         print(f'::error::No slate published for {day}: {e}')
         return 1
+    games = build_games(players, day)
     buf = io.StringIO()
-    w = csv.DictWriter(buf, fieldnames=FIELDS, lineterminator='\n')
+    w = csv.DictWriter(buf, fieldnames=FIELDS, lineterminator='\n', extrasaction='ignore')
     w.writeheader()
     w.writerows(players)
     DATA.mkdir(parents=True, exist_ok=True)
-    out = DATA / f'slate_{day}.csv'
+    out = DATA / f'slate_{day}.csv'   # legacy page format
     out.write_text(buf.getvalue(), encoding='utf-8')
+    slate = {'schema': 1, 'date': day, 'slate': 'Main', 'source': 'DailyFantasyFuel public FanDuel page (salaries, positions, injury tags, Vegas lines)',
+             'source_url': url, 'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'games': games,
+             'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
+                          'position': p['position'], 'salary': p['salary'], 'status': p['status']} for p in players]}
+    (DATA / f'slate_{day}.json').write_text(json.dumps(slate, separators=(',', ':')) + '\n', encoding='utf-8')
     # Keep the repo tidy: only the last 7 daily slates.
-    for old in sorted(DATA.glob('slate_*.csv'))[:-7]:
-        old.unlink()
+    for pattern in ('slate_*.csv', 'slate_*.json'):
+        for old in sorted(DATA.glob(pattern))[:-7]:
+            old.unlink()
     outs = sum(p['status'] == 'OUT' for p in players)
     print(f'Published {out.name}: {len(players)} players, {len({p["team"] for p in players})} teams, {outs} OUT')
     return 0

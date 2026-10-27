@@ -295,6 +295,9 @@ def build(day=None):
 def main():
     output=build()
     DATA.mkdir(parents=True,exist_ok=True)
+    prev=read('automatic_projections.json')
+    if prev and {k:v for k,v in prev.items() if k!='created_at'}=={k:v for k,v in output.items() if k!='created_at'}:
+        print('automatic_projections.json unchanged');return
     (DATA/'automatic_projections.json').write_text(json.dumps(output,separators=(',',':'))+'\n',encoding='utf-8')
     print('NBA EDGE v25',output['slate_date'], 'projected',output['players_projected'],
           'role warnings',output['role_warnings'],'external comparisons',output['outside_compared'])
