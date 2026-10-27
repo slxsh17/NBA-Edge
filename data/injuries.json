@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T00:40:54.942529+00:00",
+  "updated_at": "2026-10-27T01:28:56.242998+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -88,14 +88,14 @@
       "status": "OUT"
     },
     {
-      "name": "Alpha Diallo",
+      "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
     },
     {
-      "name": "Cameron Johnson",
+      "name": "Alpha Diallo",
       "team": "DEN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Spencer Jones",
@@ -221,6 +221,11 @@
       "name": "Jose Alvarado",
       "team": "NYK",
       "status": "OUT"
+    },
+    {
+      "name": "Alex Caruso",
+      "team": "OKC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jalen Williams",
