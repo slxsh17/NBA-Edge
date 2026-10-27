@@ -402,21 +402,102 @@ def build(day=None, backtest=False, weights=None):
             for i in free:
                 own[i] += over * own[i] / fw
         for p, o in zip(elig, own):
-            p['own'] = round(min(60.0, o), 1)
+            p['own_heur'] = round(min(60.0, o), 1)
+            p['own'] = p['own_heur']
 
     if not backtest:
         attach_news(players, read('lineup_news.json').get('headlines', []))
     for p in players:
         p.pop('_recent', None)
     out_singles = single_game_slates(singles, players)
+    if not backtest:
+        simulate(players, out_singles, read('today.json'))
     out = {'schema': 1, 'model': 'v28', 'date': day, 'weights': W, 'slate': slate.get('slate', 'Main'),
            'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
            'avg_team_total': round(avg_tt, 1) if avg_tt else None, 'games': games,
            'sources': {'slate': slate.get('source'), 'injuries_updated': read('injuries.json').get('updated_at'),
                        'stats_updated': cur.get('updated_at'), 'lineups_checked': read('lineup_news.json').get('checked_at')},
-           'single_games': out_singles,
+           'single_games': out_singles, 'sim_sig': SIM_SIG[0], 'own_model': own_params(),
            'players': sorted(players, key=lambda p: -p['proj'])}
     return out
+
+
+def own_params():
+    """Ownership model settings learned by learn_ownership.py (defaults otherwise)."""
+    import field_sim as FS
+    return {**FS.DEFAULT_OWN, **(read('ownership_params.json').get('params') or {})}
+
+
+def chalk(own, power, total):
+    """Sharpen (power > 1) or flatten ownership, keeping the slate total."""
+    if power == 1 or not own:
+        return own
+    raw = {k: max(v, 0) ** power for k, v in own.items()}
+    sc = total / (sum(raw.values()) or 1)
+    return {k: min(95.0, v * sc) for k, v in raw.items()}
+
+
+def simulate(players, singles, old):
+    """Field ownership (simulated optimizer field + feel), optimal rate, leverage, pivots.
+    Reuses the previous run's numbers when nothing that matters changed."""
+    import sys
+    sys.path.insert(0, str(ROOT / 'scripts'))
+    import field_sim as FS
+    P = own_params()
+    main = [p for p in players if p['main'] and p['proj'] > 0 and not p.get('out')]
+    sig = json.dumps([P] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
+                     + [[sg['id'], [[r['k'], r['salary'], r['status']] for r in sg['players']]] for sg in singles])
+    import hashlib
+    sig = hashlib.sha1(sig.encode()).hexdigest()
+    if old.get('sim_sig') == sig:
+        prev = {(q['name'], q['team']): q for q in old.get('players', [])}
+        for p in players:
+            q = prev.get((p['name'], p['team']), {})
+            for k in ('own', 'opt', 'lev', 'pivots'):
+                if k in q:
+                    p[k] = q[k]
+        prev_sg = {x['id']: {r['k']: r for r in x['players']} for x in old.get('single_games', [])}
+        for sg in singles:
+            for r in sg['players']:
+                q = prev_sg.get(sg['id'], {}).get(r['k'], {})
+                for k in ('own', 'opt', 'lev'):
+                    if k in q:
+                        r[k] = q[k]
+        SIM_SIG[0] = sig
+        return
+    sim = FS.field_ownership(main, 'classic', 60000, P, sims=200)
+    own = chalk(FS.blend_ownership(main, sim, P, 900), P.get('chalk_power', 1.0), 900)
+    opt = FS.optimal_rate(main, 'classic', 60000, sims=200)
+    for p in main:
+        p['own'] = round(own.get(id(p), 0.0), 1)
+        p['opt'] = round(opt.get(id(p), 0.0), 1)
+        p['lev'] = round(p['opt'] - p['own'], 1)
+    for a, alts in FS.pivots(main).items():
+        pa = next(p for p in main if id(p) == a)
+        pa['pivots'] = [{'name': b['name'], 'team': b['team'], 'salary': b['salary'], 'proj': b['proj'], 'own': b['own']} for b in alts]
+    by_key = {norm(p['name']) + '|' + p['team']: p for p in players}
+    for sg in singles:
+        clones = []
+        for r in sg['players']:
+            b = by_key.get(r['k'])
+            if b and b['proj'] > 0 and not b.get('out') and r['status'] not in ('OUT', 'DOUBTFUL'):
+                clones.append({'k': r['k'], 'name': b['name'], 'team': b['team'], 'position': b['position'], 'salary': r['salary'],
+                               'proj': b['proj'], 'ext': b.get('ext'), 'ceiling': b.get('ceiling'), 'own_heur': r.get('own', 0)})
+        if len(clones) < 6:
+            continue
+        s_sim = FS.field_ownership(clones, 'single', 60000, P, sims=150)
+        s_own = chalk(FS.blend_ownership(clones, s_sim, P, 600), P.get('chalk_power', 1.0), 600)
+        s_opt = FS.optimal_rate(clones, 'single', 60000, sims=150)
+        rows = {r['k']: r for r in sg['players']}
+        for c in clones:
+            r = rows[c['k']]
+            r['own'] = round(s_own.get(id(c), 0.0), 1)
+            r['opt'] = round(s_opt.get(id(c), 0.0), 1)
+            r['lev'] = round(r['opt'] - r['own'], 1)
+    SIM_SIG[0] = sig
+
+
+SIM_SIG = [None]
 
 
 def single_game_slates(singles, players):
