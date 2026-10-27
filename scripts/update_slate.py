@@ -87,7 +87,7 @@ def fetch(url):
         return res.read().decode('utf-8', 'replace')
 
 
-def parse(page, day, strict_main=True):
+def parse(page, day, strict_main=True, min_players=18, min_salary=3000):
     if strict_main and not re.search(r"window\.slate\s*=\s*'Main'", page):
         raise ValueError('page is not the Main slate')
     players, seen = [], set()
@@ -103,7 +103,7 @@ def parse(page, day, strict_main=True):
             salary = int(float(a.get('data-salary', '0')))
         except ValueError:
             continue
-        if not name or not team or not pos or not 3000 <= salary <= 20000:
+        if not name or not team or not pos or not min_salary <= salary <= 25000:
             continue
         key = (name.lower(), team)
         if key in seen:
@@ -118,9 +118,80 @@ def parse(page, day, strict_main=True):
                         'matchup_factor': 1, 'usage_factor': 1, 'foul_lost_min': 0,
                         'blowout_lost_min': 0, 'ceiling_sd': 8, 'status': status})
     teams = {p['team'] for p in players}
-    if len(players) < 18 or len(teams) < 2:
+    if len(players) < min_players or len(teams) < 2:
         raise ValueError(f'only {len(players)} players / {len(teams)} teams found for {day}')
     return sorted(players, key=lambda p: -p['salary'])
+
+
+SG_URL = 'https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/{day}/?slate={sid}'
+
+
+def b36(n):
+    digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    out = ''
+    while n:
+        n, r = divmod(n, 36)
+        out = digits[r] + out
+    return out or '0'
+
+
+def page_var(page, name):
+    m = re.search(r"window\.%s\s*=\s*'([^']*)'" % name, page)
+    return m.group(1) if m else ''
+
+
+def single_games(day, main_page):
+    """FanDuel single-game slates: DFF numbers each day's slates consecutively after the
+    main slate. Scan forward, keep 2-team slates for this date, stop after 3 empty IDs."""
+    import time
+    start = page_var(main_page, 'url')
+    if not start:
+        return []
+    found, misses, n = [], 0, int(start, 36) + 1
+    while misses < 3 and n < int(start, 36) + 30:
+        sid = b36(n)
+        n += 1
+        try:
+            page = fetch(SG_URL.format(day=day, sid=sid))
+        except Exception:
+            misses += 1
+            continue
+        time.sleep(1)
+        if page_var(page, 'url_start_date') != day:
+            misses += 1
+            continue
+        misses = 0
+        if page_var(page, 'team_count') != '2':
+            continue                       # multi-game showdowns (Express, After Hours...)
+        try:
+            players = parse(page, day, strict_main=False, min_players=8, min_salary=500)
+        except Exception as e:
+            print(f'::warning::single game {sid}: {e}')
+            continue
+        games = build_games(players, day)
+        if len(games) != 1:
+            continue
+        g = games[0]
+        found.append({'id': sid, 'label': f"{g['away']} @ {g['home']}", **g,
+                      'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
+                                   'position': p['position'], 'salary': p['salary'], 'status': p['status']} for p in players]})
+    return sorted(found, key=lambda x: (x['time'] or '9', x['label']))
+
+
+def write_singles(day, singles):
+    import json
+    doc = {'schema': 1, 'date': day, 'source': 'DailyFantasyFuel public FanDuel single-game pages',
+           'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'slates': singles}
+    (DATA / f'single_{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
+    arch = DATA / 'archive'
+    arch.mkdir(parents=True, exist_ok=True)
+    doc.pop('fetched_at')
+    (arch / f'single_{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
+    for pattern in ('single_*.json',):
+        for old in sorted(DATA.glob(pattern))[:-7]:
+            old.unlink()
+        for old in sorted(arch.glob(pattern))[:-150]:
+            old.unlink()
 
 
 def backfill(day):
@@ -179,7 +250,8 @@ def main():
         pass
     url = f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/'
     try:
-        players = parse(fetch(url), day)
+        main_page = fetch(url)
+        players = parse(main_page, day)
     except Exception as e:  # keep whatever is already published; never write a partial slate
         # Fail the workflow (red X in GitHub Actions) so a broken source is visible.
         print(f'::error::No slate published for {day}: {e}')
@@ -199,6 +271,12 @@ def main():
     for pattern in ('slate_*.csv', 'slate_*.json'):
         for old in sorted(DATA.glob(pattern))[:-7]:
             old.unlink()
+    try:
+        singles = single_games(day, main_page)
+        write_singles(day, singles)
+        print(f'Single-game slates: {", ".join(x["label"] for x in singles) or "none"}')
+    except Exception as e:
+        print(f'::warning::single-game discovery failed: {e}')
     outs = sum(p['status'] == 'OUT' for p in players)
     print(f'Published {out.name}: {len(players)} players, {len({p["team"] for p in players})} teams, {outs} OUT')
     return 0

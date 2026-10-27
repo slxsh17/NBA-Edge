@@ -186,8 +186,19 @@ def build(day=None, backtest=False, weights=None):
     naive = naive_fppg(last.get('players', []), logs_cur)
 
     games = slate.get('games', [])
+    # Single-game slates: project their players too (games not on the main slate get added).
+    singles = (read(f'archive/single_{day}.json') if backtest else read(f'single_{day}.json')).get('slates', []) if not backtest else []
+    on_main = {(norm(p['name']), canon(p['team'])) for p in slate['players']}
+    slate_players = [dict(p, main=True) for p in slate['players']]
+    for sg in singles:
+        for sp in sg['players']:
+            k = (norm(sp['name']), canon(sp['team']))
+            if k not in on_main:
+                on_main.add(k)
+                slate_players.append(dict(sp, main=False))
+    main_teams = {g['home'] for g in games} | {g['away'] for g in games}
     totals = {}
-    for g in games:
+    for g in games + [sg for sg in singles if sg['home'] not in main_teams]:
         if g.get('total') and g.get('home_spread') is not None:
             t, s = g['total'], g['home_spread']
             totals[g['home']] = (t / 2 - s / 2, s)
@@ -195,13 +206,13 @@ def build(day=None, backtest=False, weights=None):
     avg_tt = statistics.mean(v[0] for v in totals.values()) if totals else None
 
     players = []
-    for sp in slate['players']:
+    for sp in slate_players:
         key, team = norm(sp['name']), canon(sp['team'])
         row = by_team.get((key, team))
         moved = False
         if row is None and len(by_name.get(key, [])) == 1:
             row, moved = by_name[key][0], True
-        p = {'name': sp['name'], 'team': team, 'opp': canon(sp.get('opp')), 'home': sp.get('home'),
+        p = {'main': sp.get('main', True), 'name': sp['name'], 'team': team, 'opp': canon(sp.get('opp')), 'home': sp.get('home'),
              'position': sp['position'], 'salary': sp['salary'], 'status': sp.get('status', 'ACTIVE'),
              'flags': [], 'adj': {}, 'minutes': 0.0, 'rate': 0.0, 'proj': 0.0,
              'naive': round(naive.get(key, 0.0), 2)}
@@ -321,7 +332,7 @@ def build(day=None, backtest=False, weights=None):
 
     # ownership estimate: value + raw points + game environment + news, normalized to
     # 900% (9 roster spots) with a 60% cap; excess is redistributed.
-    elig = [p for p in players if p['proj'] > 0]
+    elig = [p for p in players if p['proj'] > 0 and p['main']]
     if elig:
         ws = []
         for p in elig:
@@ -343,12 +354,48 @@ def build(day=None, backtest=False, weights=None):
 
     for p in players:
         p.pop('_recent', None)
+    out_singles = single_game_slates(singles, players)
     out = {'schema': 1, 'model': 'v28', 'date': day, 'weights': W, 'slate': slate.get('slate', 'Main'),
            'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
            'avg_team_total': round(avg_tt, 1) if avg_tt else None, 'games': games,
            'sources': {'slate': slate.get('source'), 'injuries_updated': read('injuries.json').get('updated_at'),
                        'stats_updated': cur.get('updated_at'), 'lineups_checked': read('lineup_news.json').get('checked_at')},
+           'single_games': out_singles,
            'players': sorted(players, key=lambda p: -p['proj'])}
+    return out
+
+
+def single_game_slates(singles, players):
+    """Per single-game slate: its own salaries and an ownership estimate normalized to 500%
+    (5 roster spots). Projections are shared with the main model by player key."""
+    by_key = {norm(p['name']) + '|' + p['team']: p for p in players}
+    out = []
+    for sg in singles:
+        rows = []
+        for sp in sg['players']:
+            k = norm(sp['name']) + '|' + canon(sp['team'])
+            p = by_key.get(k)
+            if not p:
+                continue
+            rows.append({'k': k, 'salary': sp['salary'], 'status': sp.get('status', 'ACTIVE')})
+        elig = [(r, by_key[r['k']]) for r in rows if by_key[r['k']]['proj'] > 0]
+        if elig:
+            ws = [math.exp(0.06 * (p['proj'] - 25) + 0.15 * (min(p['proj'] * 1000 / max(r['salary'], 1000), 8) - 3)) for r, p in elig]
+            tot = sum(ws)
+            own = [500 * w / tot for w in ws]
+            for _ in range(20):
+                over = sum(max(0, o - 75) for o in own)
+                if over < 0.01:
+                    break
+                free = [i for i, o in enumerate(own) if o < 75]
+                fw = sum(own[i] for i in free) or 1
+                own = [min(o, 75) for o in own]
+                for i in free:
+                    own[i] += over * own[i] / fw
+            for (r, _), o in zip(elig, own):
+                r['own'] = round(o, 1)
+        out.append({'id': sg['id'], 'label': sg['label'], 'away': sg['away'], 'home': sg['home'], 'time': sg.get('time'),
+                    'total': sg.get('total'), 'home_spread': sg.get('home_spread'), 'players': rows})
     return out
 
 

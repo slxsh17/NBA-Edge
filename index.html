@@ -25,6 +25,7 @@
   --orange:#FF7A2E;--orange-soft:#3A2416;--good:#4CC37E;--warn:#E3A93A;--bad:#F06A6A;}}
 :root[data-theme="dark"]{--paper:#121722;--surface:#1A2130;--ink:#E8ECF3;--muted:#98A3B8;--line:#2A3345;--soft:#222A3A;--orange:#FF7A2E;--orange-soft:#3A2416;--good:#4CC37E;--warn:#E3A93A;--bad:#F06A6A}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.45 var(--body)}
 button,input,select{font:inherit;color:inherit}
@@ -56,6 +57,8 @@ header{padding:18px 0 10px}
 .game .info{font-size:12px;color:var(--muted)}
 .game[aria-pressed="false"]{opacity:.45;background:transparent}
 .game.started{opacity:.5;cursor:default;border-style:dashed}
+.fmt-row{display:flex;gap:10px;align-items:center;margin:0 0 8px;flex-wrap:wrap}
+.mult{font:600 11px var(--body);color:var(--orange);margin-left:4px}
 .slate-pick{display:flex;gap:6px;align-items:center;margin:2px 0 4px;flex-wrap:wrap}
 .chip{border:1px solid var(--line);background:transparent;border-radius:999px;padding:4px 12px;font-size:13px}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
@@ -90,7 +93,7 @@ input[type=range]{width:100%;accent-color:var(--orange)}
 .lu-stat{font-size:12px;color:var(--muted)}
 .lu-stat b{display:block;font:600 19px/1.1 var(--num);color:var(--ink)}
 .lu-actions{margin-left:auto;display:flex;gap:6px}
-.lu-row{display:grid;grid-template-columns:40px 1fr auto 52px;gap:8px;align-items:center;padding:6px 14px;font-size:14px}
+.lu-row{display:grid;grid-template-columns:44px 1fr auto 66px;gap:8px;align-items:center;padding:6px 14px;font-size:14px}
 .lu-row+.lu-row{border-top:1px solid var(--soft)}
 .slot{font:600 14px var(--num);color:var(--muted)}
 .lu-row .who{min-width:0}
@@ -197,6 +200,7 @@ details summary{cursor:pointer}
   </div>
 </header>
 
+<div class="fmt-row" id="fmt-row" hidden><div class="seg" id="fmt"><button data-v="classic" aria-pressed="true">Classic</button><button data-v="single">Single game</button></div><span class="muted" id="fmt-note" style="font-size:12.5px"></span></div>
 <div class="slate-pick" id="slate-pick" hidden></div>
 <div class="games" id="games" aria-label="Games on this slate"></div>
 <div id="notices"></div>
@@ -264,7 +268,8 @@ details summary{cursor:pointer}
 (()=>{
 'use strict';
 const $=id=>document.getElementById(id);
-const SLOTS=['PG','SG','SF','PF','C','G/F','F/C','UTIL','UTIL'];
+const FMT={classic:{need:{PG:1,SG:1,SF:1,PF:1,C:1,'G/F':1,'F/C':1,UTIL:2},order:['PG','SG','SF','PF','C','G/F','F/C','UTIL'],size:9,mult:{}},
+  single:{need:{MVP:1,STAR:1,PRO:1,UTIL:2},order:['MVP','STAR','PRO','UTIL'],size:5,mult:{MVP:2,STAR:1.5,PRO:1.2}}};
 const CAP=60000, MAX_TEAM=4;
 const ALIAS={GS:'GSW',NO:'NOP',NY:'NYK',PHO:'PHX',SA:'SAS',UTAH:'UTA',WSH:'WAS',BRK:'BKN'};
 const canon=t=>{t=String(t||'').trim().toUpperCase();return ALIAS[t]||t};
@@ -275,11 +280,13 @@ const money=n=>'$'+Number(n).toLocaleString();
 const eastDay=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const tipLabel=t=>t?new Date(t).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'';
 const store={get(k,d){try{const v=localStorage.getItem('edge27.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem('edge27.'+k,JSON.stringify(v))}catch(e){}}};
-const canFill=(p,slot)=>{const a=p.position.split('/');if(slot==='UTIL')return true;if(slot==='G/F')return a.some(x=>['PG','SG','SF','PF'].includes(x));if(slot==='F/C')return a.some(x=>['SF','PF','C'].includes(x));return a.includes(slot)};
+const canFill=(p,slot)=>{if(S.format==='single')return true;const a=p.position.split('/');if(slot==='UTIL')return true;if(slot==='G/F')return a.some(x=>['PG','SG','SF','PF'].includes(x));if(slot==='F/C')return a.some(x=>['SF','PF','C'].includes(x));return a.includes(slot)};
 
 const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(),source:'auto',
   count:1,mode:'cash',exposure:60,posf:'',search:'',sort:'proj',dir:-1,open:null,
-  locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null};
+  locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null,format:'classic',sgId:null};
+const F=()=>FMT[S.format];const multOf=slot=>F().mult[slot]||1;
+const fmtKey=()=>S.format==='single'?'sg:'+S.sgId:'main';
 const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.06};
 const LEARNABLE=['vegas','matchup','injury','usage','starter','blowout'];
 S.user=store.get('cfgUser',{});S.learned={scale:1,minutes_mult:{}};
@@ -340,12 +347,32 @@ async function load(){
   S.learned={scale:1,minutes_mult:{},...((today.status==='fulfilled'&&today.value.weights)||{})};rebuildCfg();
   const saved=store.get('csv',null);
   if(saved&&saved.day===S.day){S.source='csv';await applyCSV(saved.text,false)}
-  else if(S.today&&S.today.date===S.day){S.source='auto';S.games=S.today.games||[];S.players=S.today.players.map(p=>({...p}))}
+  else if(S.today&&S.today.date===S.day){S.source='auto';const f=store.get('format',null);if(f&&f.day===S.day){S.format=f.format;S.sgId=f.sgId}applyFormat()}
   else{S.players=[];S.games=[]}
   applyLiveInjuries();
   restoreDayState();
   renderAll();
 }
+function singles(){return (S.today&&S.today.date===S.day&&S.today.single_games)||[]}
+function applyFormat(){
+  if(S.source==='csv')return;
+  const sgs=singles();
+  if(S.format==='single'){
+    const sg=sgs.find(x=>x.id===S.sgId)||sgs[0];
+    if(!sg){S.format='classic';return applyFormat()}
+    S.sgId=sg.id;
+    const by=new Map(S.today.players.map(p=>[pkey(p),p]));
+    S.players=sg.players.map(r=>{const b=by.get(r.k);if(!b)return null;const out=!!b.out||['OUT','DOUBTFUL'].includes(r.status);
+      return {...b,salary:r.salary,own:r.own??null,out,status:b.out?b.status:(out?r.status:b.status),proj:out?0:b.proj,_o:undefined}}).filter(Boolean);
+    S.games=[{away:sg.away,home:sg.home,time:sg.time,total:sg.total,home_spread:sg.home_spread}];
+  }else{S.players=S.today.players.filter(p=>p.main!==false).map(p=>({...p}));S.games=S.today.games||[]}
+}
+function switchFormat(fmt,sgId){
+  S.format=fmt;if(sgId)S.sgId=sgId;store.set('format',{day:S.day,format:S.format,sgId:S.sgId});
+  S.locks=new Set();S.bans=new Set();S.gamesOff=new Set();S.lineups=[];S.over={};S.open=null;S.review=false;
+  applyFormat();applyLiveInjuries();restoreDayState();renderAll();$('build-status').textContent='';
+}
+$('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.dataset.v===S.format)return;switchFormat(b.dataset.v)});
 function applyLiveInjuries(){
   if(!S.inj||!Array.isArray(S.inj.injuries))return;
   const out=new Map(S.inj.injuries.map(r=>[key(r.name)+'|'+canon(r.team),String(r.status||'').toUpperCase()]));
@@ -353,12 +380,13 @@ function applyLiveInjuries(){
     if(['OUT','INACTIVE','DOUBTFUL'].includes(st)&&!p.out){p.out=true;p.status=st==='INACTIVE'?'OUT':st;p.flags=[...(p.flags||[]),'Ruled '+p.status.toLowerCase()+' in the latest injury report']}}
 }
 function restoreDayState(){
-  const st=store.get('day',null);
-  if(st&&st.day===S.day){S.over=st.over||{};S.locks=new Set(st.locks);S.bans=new Set(st.bans);S.gamesOff=new Set(st.gamesOff);S.lineups=(st.lineups||[]).map(l=>({...l,picks:l.picks.map(rehydrate).filter(Boolean)})).filter(l=>l.picks.length===9)}
-  const set=store.get('settings',null);if(set){S.count=set.count||1;S.mode=set.mode||'cash';S.exposure=set.exposure||60}
+  const st=store.get('day:'+fmtKey(),null);
+  if(st&&st.day===S.day){S.over=st.over||{};S.locks=new Set(st.locks);S.bans=new Set(st.bans);S.gamesOff=new Set(st.gamesOff);S.lineups=(st.lineups||[]).map(l=>({...l,picks:l.picks.map(rehydrate).filter(Boolean)})).filter(l=>l.picks.length===F().size)}
+  const set=store.get('settings:'+S.format,null);if(set){S.count=set.count||1;S.mode=set.mode||'cash';S.exposure=set.exposure||60}else{S.count=1;S.mode='cash';S.exposure=S.format==='single'?100:60}
+  const ex=$('exposure');if(ex){ex.value=S.exposure;$('exposure-out').textContent=S.exposure+'%'}
 }
 function rehydrate(pk){const p=S.players.find(x=>pkey(x)===pk.k);return p?{p,slot:pk.slot}:null}
-function saveDayState(){store.set('day',{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings',{count:S.count,mode:S.mode,exposure:S.exposure})}
+function saveDayState(){store.set('day:'+fmtKey(),{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings:'+S.format,{count:S.count,mode:S.mode,exposure:S.exposure})}
 
 // ---------- CSV upload ----------
 function parseCSV(text){const rows=[];let row=[],cell='',q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'){if(text[i+1]==='"'){cell+='"';i++}else q=false}else cell+=c}else if(c==='"')q=true;else if(c===','){row.push(cell);cell=''}else if(c==='\n'||c==='\r'){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cell);if(row.some(x=>x.trim()))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell);if(row.some(x=>x.trim()))rows.push(row);return rows}
@@ -388,6 +416,7 @@ async function applyCSV(text,remember=true){
   S.players=players;S.source='csv';
   const teams=new Set(players.map(p=>p.team));
   S.games=(S.today&&S.today.date===S.day?S.today.games:[]).filter(g=>teams.has(g.home)||teams.has(g.away));
+  if(teams.size===2){S.format='single';S.sgId='csv'}else if(S.format==='single'){S.format='classic'}
   if(remember)store.set('csv',{day:S.day,text});
 }
 
@@ -396,6 +425,7 @@ const started=g=>!!g.time&&Date.now()>=Date.parse(g.time);
 const gameOf=p=>S.games.find(g=>g.home===p.team||g.away===p.team);
 function inPlay(p){const g=gameOf(p);if(!g)return S.source==='csv';return (S.review||!started(g))&&!S.gamesOff.has(g.away+'@'+g.home)}
 function slateGroups(){
+  if(S.format==='single')return [];
   const open=S.games.filter(g=>(S.review||!started(g))&&g.time);if(open.length<3)return [];
   const et=g=>Number(new Date(g.time).toLocaleString('en-US',{timeZone:'America/New_York',hour:'numeric',hour12:false}));
   const early=open.filter(g=>et(g)<20),late=open.filter(g=>et(g)>=21);
@@ -406,6 +436,15 @@ function slateGroups(){
 }
 function renderGames(){
   const box=$('games');
+  const sgs=singles();$('fmt-row').hidden=!sgs.length&&S.format==='classic';
+  $('fmt').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===S.format)));
+  $('fmt-note').textContent=S.format==='single'?'MVP scores 2x, STAR 1.5x, PRO 1.2x. Salary is the same in every spot.':(sgs.length?sgs.length+' single-game slate'+(sgs.length>1?'s':'')+' today':'');
+  if(S.format==='single'&&S.source!=='csv'){
+    $('slate-pick').hidden=true;
+    box.innerHTML=sgs.map(g=>{const st=started(g);const fav=g.home_spread==null?'':g.home_spread<0?`${g.home} −${Math.abs(g.home_spread)}`:g.home_spread>0?`${g.away} −${g.home_spread}`:'Pick';
+      return `<button class="game" data-sg="${esc(g.id)}" aria-pressed="${g.id===S.sgId}"><div class="teams">${esc(g.away)} @ ${esc(g.home)}</div><div class="info">${st?'Started':esc(tipLabel(g.time))}${g.total?', O/U '+g.total:''}</div>${fav?`<div class="info">${esc(fav)}</div>`:''}</button>`}).join('');
+    return;
+  }
   if(!S.games.length){box.innerHTML='';$('slate-pick').hidden=true;return}
   box.innerHTML=S.games.map(g=>{const id=g.away+'@'+g.home,st=started(g)&&!S.review,on=!S.gamesOff.has(id);
     const line=g.total?`O/U ${g.total}`:'';const fav=g.home_spread==null?'':g.home_spread<0?`${g.home} −${Math.abs(g.home_spread)}`:g.home_spread>0?`${g.away} −${g.home_spread}`:'Pick';
@@ -416,7 +455,7 @@ function renderGames(){
   pick.hidden=false;
   pick.innerHTML=groups.map(gr=>`<button class="chip" data-slate="${gr.id}" aria-pressed="${cur&&cur.id===gr.id}">${gr.label} (${gr.games.length})</button>`).join('')+'<span class="muted" style="font-size:12.5px">or tap games to pick your own</span>';
 }
-$('games').addEventListener('click',e=>{const b=e.target.closest('.game');if(!b||b.disabled)return;const id=b.dataset.g;S.gamesOff.has(id)?S.gamesOff.delete(id):S.gamesOff.add(id);saveDayState();renderGames();renderPlayers()});
+$('games').addEventListener('click',e=>{const b=e.target.closest('.game');if(!b||b.disabled)return;if(b.dataset.sg){if(b.dataset.sg!==S.sgId)switchFormat('single',b.dataset.sg);return}const id=b.dataset.g;S.gamesOff.has(id)?S.gamesOff.delete(id):S.gamesOff.add(id);saveDayState();renderGames();renderPlayers()});
 $('slate-pick').addEventListener('click',e=>{const b=e.target.closest('[data-slate]');if(!b)return;const gr=slateGroups().find(x=>x.id===b.dataset.slate);S.gamesOff=new Set(S.games.filter(g=>!gr.games.includes(g)).map(g=>g.away+'@'+g.home));saveDayState();renderGames();renderPlayers()});
 
 // ---------- header + notices ----------
@@ -425,7 +464,7 @@ function renderHeader(){
   const n=S.players.filter(p=>p.proj>0).length;
   const d=new Date(S.day+'T12:00:00').toLocaleDateString([], {weekday:'short',month:'short',day:'numeric'});
   if(!S.players.length){$('slate-meta').textContent=d+': no slate yet';return}
-  $('slate-meta').innerHTML=S.source==='csv'?`${esc(d)}, your CSV (${S.players.length} players) <button class="linkish" id="use-auto">Switch to automatic slate</button>`:`${esc(d)}, FanDuel main slate, ${n} projected players, updated ${esc(ago(S.today.built_at))}`;
+  $('slate-meta').innerHTML=S.source==='csv'?`${esc(d)}, your CSV (${S.players.length} players) <button class="linkish" id="use-auto">Switch to automatic slate</button>`:(S.format==='single'?`${esc(d)}, single game ${esc(S.games[0]?S.games[0].away+' @ '+S.games[0].home:'')}, ${n} projected players, updated ${esc(ago(S.today.built_at))}`:`${esc(d)}, FanDuel main slate, ${n} projected players, updated ${esc(ago(S.today.built_at))}`);
   const ua=$('use-auto');if(ua)ua.onclick=()=>{store.set('csv',null);S.locks.clear();S.bans.clear();S.lineups=[];load()};
 }
 function renderNotices(){
@@ -505,7 +544,7 @@ function score(p){const c=S.cfg;return S.mode==='gpp'?((1-c.ceilW)*p.proj+c.ceil
 function flexBonus(p,slot){if(!['G/F','F/C','UTIL'].includes(slot))return 0;const g=gameOf(p);return g&&g.time?(Date.parse(g.time)%86400000)/86400000*0.02:0}
 async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],minUnique=2}){
   const vars=[],bySlot={},byP={},byTeam={};
-  const need={PG:1,SG:1,SF:1,PF:1,C:1,'G/F':1,'F/C':1,UTIL:2};
+  const need=F().need,size=F().size;
   for(const s in need)bySlot[s]=[];
   pool.forEach((p,i)=>{if(excludeKeys.has(pkey(p)))return;for(const s in need)if(canFill(p,s)){const v={name:`x${i}_${s.replace('/','')}`,p,s,i};vars.push(v);bySlot[s].push(v);(byP[i]??=[]).push(v);(byTeam[p.team]??=[]).push(v)}});
   const c=(name,vs,coef,type,lb,ub)=>({name,vars:vs.map(v=>({name:v.name,coef:coef(v)})),bnds:{type,lb,ub}});
@@ -517,22 +556,23 @@ async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],mi
   rows.push(c('cap',vars,v=>v.p.salary,glpk.GLP_UP,0,CAP));
   if(S.cfg.minSalary>0)rows.push(c('minsal',vars,v=>v.p.salary,glpk.GLP_LO,Math.min(S.cfg.minSalary,CAP),0));
   fixed.forEach((f,j)=>{const vs=vars.filter(v=>pkey(v.p)===pkey(f.p)&&v.s===f.slot);if(vs.length)rows.push(c('fix'+j,vs,()=>1,glpk.GLP_FX,1,1))});
-  previous.forEach((keys,j)=>{const vs=vars.filter(v=>keys.has(pkey(v.p)));if(vs.length)rows.push(c('div'+j,vs,()=>1,glpk.GLP_UP,0,9-minUnique))});
-  const lp={name:'edge',objective:{direction:glpk.GLP_MAX,name:'z',vars:vars.map(v=>({name:v.name,coef:score(v.p)+flexBonus(v.p,v.s)}))},subjectTo:rows,binaries:vars.map(v=>v.name)};
+  // Classic: lineups differ by minUnique players. Single game: by at least one player-or-slot change.
+  previous.forEach((keys,j)=>{const single=S.format==='single';const vs=vars.filter(v=>keys.has(single?pkey(v.p)+'|'+v.s:pkey(v.p)));if(vs.length)rows.push(c('div'+j,vs,()=>1,glpk.GLP_UP,0,single?size-1:size-minUnique))});
+  const lp={name:'edge',objective:{direction:glpk.GLP_MAX,name:'z',vars:vars.map(v=>({name:v.name,coef:score(v.p)*multOf(v.s)+(S.format==='classic'?flexBonus(v.p,v.s):0)}))},subjectTo:rows,binaries:vars.map(v=>v.name)};
   const res=await glpk.solve(lp,{msglev:glpk.GLP_MSG_OFF,presol:true,tmlim:20});
   if(![glpk.GLP_OPT,glpk.GLP_FEAS].includes(res?.result?.status))return null;
-  const chosen=vars.filter(v=>res.result.vars[v.name]>.5);if(chosen.length!==9)return null;
-  const order=['PG','SG','SF','PF','C','G/F','F/C','UTIL'];chosen.sort((a,b)=>order.indexOf(a.s)-order.indexOf(b.s));
+  const chosen=vars.filter(v=>res.result.vars[v.name]>.5);if(chosen.length!==size)return null;
+  const order=F().order;chosen.sort((a,b)=>order.indexOf(a.s)-order.indexOf(b.s));
   return chosen.map(v=>({p:v.p,slot:v.s}));
 }
-const total=l=>l.picks.reduce((s,x)=>s+(x.p.out?0:x.p.proj),0);
+const total=l=>l.picks.reduce((s,x)=>s+(x.p.out?0:x.p.proj*multOf(x.slot)),0);
 async function build(){
   const btn=$('build'),status=$('build-status');
   const pool=S.players.filter(p=>p.proj>0&&!p.out&&inPlay(p)&&!S.bans.has(pkey(p)));
   const lockedOut=[...S.locks].filter(k=>!pool.some(p=>pkey(p)===k));
   if(lockedOut.length){status.textContent='A player you forced in isn’t available (out, or his game is off or started). Remove the ✓ and try again.';return}
   if(!S.review&&S.games.length&&S.games.every(started)){status.textContent='All of today\u2019s games have started. Tick \u201cInclude games that already started\u201d to see what the lineup would have been.';return}
-  if(pool.length<9){status.textContent='Not enough available players. Turn on more games or remove some ✕.';return}
+  if(pool.length<F().size){status.textContent='Not enough available players. Turn on more games or remove some ✕.';return}
   btn.disabled=true;status.textContent='Loading solver…';
   try{
     const glpk=await loadGLPK();const made=[],uses=new Map();
@@ -540,7 +580,7 @@ async function build(){
     for(let n=0;n<S.count;n++){
       status.textContent=`Building lineup ${n+1} of ${S.count}…`;
       const excludeKeys=new Set([...uses].filter(([k,c])=>c>=cap&&!S.locks.has(k)).map(([k])=>k));
-      const picks=await solveOne(glpk,pool,{excludeKeys,previous:made.map(l=>new Set(l.picks.map(x=>pkey(x.p)))),minUnique:S.count>1?S.cfg.minUnique:1});
+      const picks=await solveOne(glpk,pool,{excludeKeys,previous:made.map(l=>new Set(l.picks.map(x=>S.format==='single'?pkey(x.p)+'|'+x.slot:pkey(x.p)))),minUnique:S.count>1?S.cfg.minUnique:1});
       if(!picks)break;
       const l={picks,built:Date.now(),review:S.review&&picks.some(x=>{const g=gameOf(x.p);return g&&started(g)})};l.proj0=total(l);made.push(l);
       picks.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
@@ -571,16 +611,16 @@ function renderLineups(fresh=false){
   const box=$('lineups');
   if(!S.lineups.length){box.innerHTML='';$('exposure-summary').innerHTML='';return}
   box.innerHTML=S.lineups.map((l,i)=>{
-    const sal=l.picks.reduce((s,x)=>s+x.p.salary,0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/9;
+    const sal=l.picks.reduce((s,x)=>s+x.p.salary,0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/l.picks.length;
     const live=l.picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).length;
-    const canSwap=!S.review&&live>0&&live<9;const reviewOnly=l.review;const gone=l.picks.filter(x=>x.p.out);const drift=pts-(l.proj0??pts);
+    const canSwap=S.format==='classic'&&!S.review&&live>0&&live<l.picks.length;const reviewOnly=l.review;const gone=l.picks.filter(x=>x.p.out);const drift=pts-(l.proj0??pts);
     let note='';if(gone.length)note=`${gone.map(x=>esc(x.p.name)).join(', ')} ${gone.length>1?'are':'is'} now out. ${canSwap||!live?'Rebuild or use late swap.':''}`;
     else if(Math.abs(drift)>=1)note=`Projections updated since you built this (${drift>0?'+':''}${drift.toFixed(1)}).`;
     return `<article class="lineup${fresh?' fresh':''}"><div class="lu-head"><div class="lu-score num">${pts.toFixed(1)}<small>projected</small></div>
       <div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Avg own<b>${own.toFixed(0)}%</b></div>${reviewOnly?'<span class="review-badge">Review only</span>':''}
       <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
       ${note?`<div class="lu-note">${note}</div>`:''}
-      ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(x.p.salary)}</span><span class="pts">${x.p.out?'0.0':x.p.proj.toFixed(1)}</span></div>`}).join('')}
+      ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(x.p.salary)}</span><span class="pts">${x.p.out?'0.0':(x.p.proj*multOf(x.slot)).toFixed(1)}${multOf(x.slot)>1?`<span class="mult">${multOf(x.slot)}x</span>`:''}</span></div>`}).join('')}
     </article>`}).join('');
   if(S.lineups.length>1){const c=new Map();S.lineups.forEach(l=>l.picks.forEach(x=>c.set(x.p.name,(c.get(x.p.name)||0)+1)));
     const top=[...c].sort((a,b)=>b[1]-a[1]).slice(0,10);
