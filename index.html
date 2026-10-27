@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NBA EDGE v23 — One-upload Automatic Analytics</title><meta name="theme-color" content="#0a111e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NBA EDGE v25 — Rotation Validation & Projection Audit</title><meta name="theme-color" content="#0a111e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png">
 <style>
 :root{color-scheme:dark;--bg:#0a111e;--panel:#111e30;--panel2:#182940;--line:#294058;--text:#edf5ff;--muted:#9fb0c6;--blue:#64adff;--green:#4ee0b0;--gold:#ffd073}*{box-sizing:border-box}body{margin:0;background:linear-gradient(155deg,#0d1828,#090f1b 65%);font:14px system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text)}main{max-width:1320px;margin:auto;padding:26px 20px 80px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:20px}h1{font-size:27px;margin:0;letter-spacing:.04em}h1 span{color:var(--green)}h2{font-size:17px;margin:0 0 14px}.sub,.muted{color:var(--muted)}.sub{margin:7px 0 0}.tag{border:1px solid #366d69;color:#75f6c8;padding:7px 10px;border-radius:100px;font-size:12px}.layout{display:grid;grid-template-columns:minmax(310px,420px) 1fr;gap:17px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:17px}.ctrl{display:grid;grid-template-columns:1fr 1fr;gap:12px}.ctrl label{display:flex;flex-direction:column;gap:7px;font-size:12px;color:var(--muted)}input,select,button{font:inherit}input,select{width:100%;background:#091626;color:var(--text);border:1px solid #36506b;border-radius:9px;padding:10px}input[type=range]{padding:0;accent-color:var(--green)}button{border:0;border-radius:9px;padding:10px 14px;color:#081621;background:var(--green);font-weight:700;cursor:pointer}button.alt{color:var(--text);background:var(--panel2);border:1px solid #36506b}button:disabled{opacity:.5;cursor:not-allowed}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.small{font-size:12px}.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.stat{background:var(--panel2);border-radius:10px;padding:12px}.stat b{display:block;font-size:19px;margin-top:5px}.stat em{font-size:11px;font-style:normal;color:var(--muted)}.tablewrap{overflow:auto;max-height:640px}table{border-collapse:collapse;width:100%;min-width:720px}th,td{padding:10px 8px;border-bottom:1px solid #25394f;text-align:left;white-space:nowrap}th{position:sticky;top:0;background:var(--panel);z-index:1;color:var(--muted);font-size:11px;letter-spacing:.045em}td{font-size:12px}td strong{font-size:13px}.badge{font-size:10px;padding:3px 6px;border-radius:6px;background:#264b55;color:#a2f3cd}.warn{background:#5a3b29;color:#ffda9c}.tabs{display:flex;gap:8px;flex-wrap:wrap}.tabs button{padding:7px 12px}.lineup{display:grid;grid-template-columns:36px 1fr auto auto;gap:0;align-items:center}.lineup>div{padding:11px 7px;border-bottom:1px solid #25394f}.lineup .pos{color:var(--green);font-weight:700}.lineup .name{font-weight:650}.lineup .details{font-size:11px;color:var(--muted)}.help{line-height:1.55;color:var(--muted)}.notice{border-left:3px solid var(--gold);padding:10px 12px;background:#322b21;color:#f6e7c4;border-radius:5px;margin:12px 0}.empty{padding:30px 10px;text-align:center;color:var(--muted)}a{color:var(--blue)}@media(max-width:930px){.layout{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(3,1fr)}}@media(max-width:480px){main{padding:16px 12px}.ctrl{grid-template-columns:1fr}.statrow{gap:5px}.stat{padding:8px}.stat b{font-size:16px}.lineup{grid-template-columns:29px 1fr 58px 58px;font-size:12px}}
 @media(max-width:600px){button{min-height:44px}input,select{font-size:16px}.lineup .details{font-size:10px}.card{padding:13px}.tablewrap{max-height:420px}header h1{font-size:25px}}
@@ -32,16 +32,22 @@ label:has(input[type="file"]:not(#csv)), input[type="file"]:not(#csv),
 #edge-automatic .indicator{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 #edge-automatic .indicator span{font-size:11px;background:#1e3946;border:1px solid #3a5662;border-radius:14px;padding:5px 9px}
 #edge-auto-status{color:#d4e6e7;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+
+.edge-v24-audit{margin:9px 0 5px;border:1px solid #3f5667;border-radius:8px;padding:10px;background:#182b3b;color:#c8dcdf;font-size:12px}
+.edge-v24-audit b{color:#ffdc9b}.edge-v24-audit .risk-item{margin:5px 0;border-bottom:1px solid #254152;padding:4px 0}
+.edge-v24-audit .review-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:7px}
+.edge-v24-audit .review-links a{font-size:12px}
 </style></head><body><main>
-<header><div><h1>NBA <span>EDGE</span></h1><p class="sub">FanDuel-style basketball research optimizer · no wager placement</p></div><span class="tag">AUTO · v23</span></header>
+<header><div><h1>NBA <span>EDGE</span></h1><p class="sub">FanDuel-style basketball research optimizer · no wager placement</p></div><span class="tag">AUTO · v24</span></header>
 <div class="edge-command" id="edgehome">
-<h2>One slate upload. Automatic analytics.</h2>
-<p>Upload today’s FanDuel slate once. NBA EDGE automatically checks its published historical statistics, matchup data, injury reports, lineup news, public picks and model calibration. Missing data stays neutral or unavailable.</p>
+<h2>One slate upload. Rotation-aware projections.</h2>
+<p>Upload today’s FanDuel slate once. NBA EDGE automatically checks its published historical statistics, matchup data, injury reports, lineup news, public picks and model calibration. Missing data stays neutral or unavailable. Large projection discrepancies are flagged before you build.</p>
 <div class="edge-actions"><button id="edge-import" type="button">Upload today's slate</button><button id="edge-update" type="button">Refresh all NBA data</button><button id="edge-build" class="edge-primary" type="button">Generate lineups</button><button id="edge-crowdbtn" type="button">Crowd / chalk</button><button id="edge-advanced" type="button" aria-expanded="false">Show detailed tools</button></div>
 <div class="edge-ticker"><span id="edge-pool">Pool: loading</span><span id="edge-feeds">Sources: checking</span><span id="edge-pop">Ownership: research estimate</span></div><div id="edge-flow" class="edge-flow-status"></div>
 <div id="edge-automatic" role="status" aria-live="polite">
   <h3>Automatic analytics <span style="font-weight:400;color:#91e5ce">· no other uploads</span></h3>
   <div id="edge-auto-status">Waiting for today's slate. NBA data feeds are automatically checked.</div>
+  <div id="edge-rotation-alerts" class="edge-v24-audit" aria-live="polite">Waiting for lineup data and projection checks.</div>
   <div class="indicator"><span id="auto-base">Baseline: checking</span><span id="auto-dvp">DvP / usage: checking</span><span id="auto-injury">Injuries: checking</span><span id="auto-crowd">Expert picks: checking</span><span id="auto-provider">Licensed providers: checking</span></div>
 </div>
 <div class="edge-crowd" id="edge-crowd"><h3>Expert pick consensus <span style="font-size:11px;color:#9eb5c8;font-weight:400">· not observed ownership</span></h3><div id="edge-crowd-grid" class="edge-crowd-grid"><span class="edge-note">Waiting for source data.</span></div><p class="edge-note">These are publicly documented picks, not measured lineup ownership. Inaccessible/premium articles are not counted. The modeled percentage is separate from independent article mentions, and should not be treated as field ownership.</p></div>
@@ -85,7 +91,7 @@ label:has(input[type="file"]:not(#csv)), input[type="file"]:not(#csv),
 <div class="card"><h2>Live matchup feed + usage evidence <span class="tag">NEW · v16</span></h2><p class="help small">Automatic daily schedule and historical opponent DvP from completed box scores. True usage-rate adjustments require possession-level usage inputs; missing data stays neutral. Matchups use current schedule, not stale slate opponents.</p><button id="refreshmatchlive">Refresh published matchup feed</button><p id="matchliveinfo" class="help small">Waiting for historical data...</p></div>
 <div class="card"><h2>Late Swap Lab <span class="tag">NEW · v16</span></h2><p class="help small">Research-only late-swap simulation. Confirm your specific contest supports late swap. Started games stay fixed in their ORIGINAL slots. Later-starting players are preferred in G/F, F/C and UTIL when projected scores are tied. Unknown start times block swapping, not treated as unlocked.</p><div class="ctrl"><label>Current simulation time (your browser time)<input id="swapclock" type="datetime-local"></label></div><button id="savelineswap">Save lineup 1 as current lineup</button> <button id="runswap">Re-optimize unlocked slots</button> <button id="clearswap">Clear saved lineup</button><p id="swapstatus" class="help small">Generate a lineup and save it to simulate late swaps.</p><div id="swaplocked" class="help small"></div></div>
 <div class="card"><h2>Public Expert Picks <span class="tag">NEW · v19.1</span></h2><p class="help small">Public NBA DFS articles only. Counts players explicitly presented as picks, targets, or value plays, with article links and supporting text. General news and incidental player mentions are excluded. <b>Not observed ownership or a substitute for paid projections.</b> Premium projections from FantasyLabs, RotoGrinders and Stokastic aren't included unless you provide licensed data.</p><button type="button" id="refreshconsensus">Refresh public consensus</button> <label style="display:inline-block;margin-left:8px">Consensus sensitivity <select id="conweight"><option value="0" selected>Off / baseline</option><option value="0.1">Low</option><option value="0.25">Moderate (exploratory)</option></select></label><p id="consstatus" class="help small">Public mention feed not loaded. Baseline ownership unaffected.</p><div class="tablewrap"><table><thead><tr><th>Player</th><th>Sites recommending</th><th>Articles naming as a pick</th><th>Ownership est. (baseline → adjusted)</th><th>Evidence</th></tr></thead><tbody id="consrows"><tr><td colspan="5">Refresh expert picks to see supported recommendations.</td></tr></tbody></table></div></div><div class="card" id="chalkpanel"><h2>Chalk Watch <span class="tag">NEW · v18</span></h2><p class="help small">Potentially popular picks inferred from projected ownership AND independent public headline coverage. <b>Headlines are not necessarily recommendations.</b> No licensed external ownership feed is connected. "Confirmed chalk" is never claimed.</p><div class="ctrl"><label>Potential chalk threshold <select id="chalkthreshold"><option value="15">15% estimated</option><option value="20" selected>20% estimated</option><option value="30">30% estimated</option><option value="40">40% estimated</option></select></label><label>Minimum independent sources <select id="chalksources"><option value="0" selected>No source requirement</option><option value="1">1 verified publisher</option><option value="2">2 independent publishers</option><option value="3">3 independent publishers</option></select></label></div><p id="chalkstatus" class="help small">Load today's slate. Analytics and public sources update automatically when available.</p><div class="tablewrap"><table><thead><tr><th>Player</th><th>Chalk signal</th><th>Ownership est.</th><th>Public sources</th><th>FP/$1K</th><th>Source evidence</th></tr></thead><tbody id="chalkrows"><tr><td colspan="6">No rankings yet.</td></tr></tbody></table></div></div>
-<div class="card"><h2>Projection Reality Check <span class="tag">NEW · v18</span></h2><p class="help small">Shows historical baseline, capped combined matchup/usage factors and injury-related minutes. Bounds are risk controls, <b>not proven calibration</b>; higher projected totals do not imply better accuracy.</p><div class="tablewrap"><table><thead><tr><th>Player</th><th>Base FP</th><th>Extra min</th><th>DvP × Usage</th><th>Final FP</th><th>Flag</th></tr></thead><tbody id="realityrows"><tr><td colspan="6">Import player data to audit projections.</td></tr></tbody></table></div></div>
+<div class="card"><h2>Projection Reality Check <span class="tag">NEW · v18</span></h2><p class="help small">Shows recent-rotation-aware baseline, capped matchup/usage factors and injury-related minutes. Bounds are risk controls, <b>not proven calibration</b>; higher projected totals do not imply better accuracy.</p><div class="tablewrap"><table><thead><tr><th>Player</th><th>Base FP</th><th>Extra min</th><th>DvP × Usage</th><th>Final FP</th><th>Flag</th></tr></thead><tbody id="realityrows"><tr><td colspan="6">Import player data to audit projections.</td></tr></tbody></table></div></div>
 <div class="card"><h2>2. Configure model</h2><div class="ctrl"><label>Optimization approach<select id="mode"><option value="balanced">Balanced — points + ownership</option><option value="points">Highest projected points</option><option value="leverage">Lower-ownership research</option><option value="ceiling">Ceiling simulation</option></select></label><label>Salary cap ($)<input id="cap" type="number" value="60000" min="10000" max="100000" step="100"></label><label>Ownership preference <span id="ownval">20%</span><input id="own" type="range" min="0" max="50" step="5" value="20"></label><label>Minimum salary spent ($)<input id="minsalary" type="number" value="0" min="0" step="100"></label><label>Max players / team<select id="maxteam"><option value="9">No extra limit</option><option value="4">4</option><option value="3">3</option><option value="2">2</option></select></label><label>Alternative lineups<select id="count"><option>1</option><option selected>3</option><option>5</option><option>10</option></select></label></div><div class="actions"><button id="optimize">Generate research lineups</button></div><p class="help small">2026–27 classic: PG, SG, SF, PF, C, G/F, F/C, UTIL, UTIL. G/F accepts guards or forwards; F/C accepts forwards or centers. Minutes adjustments use optional foul/blowout context; ownership is an estimate and is never treated as certainty.</p><p id="status" class="small muted" role="status"></p><div class="notice" style="margin-top:12px"><b>Ownership research · uncalibrated · value-sensitive</b><p class="small">Field-behavior simulation combining different lineup preferences, historical salary-tier patterns, expert picks, and optional published numeric ownership forecasts. <b>These are exploratory, not actual ownership.</b></p><button id="estimateown" type="button">Estimate ownership / popularity</button><p id="popstatus" class="small"></p></div></div>
 
 <section class="card" id="model-learning"><h2>Daily Model Evaluation <span class="tag">v21</span></h2>
@@ -140,6 +146,7 @@ function injuryEvidence(p){const n=Number(p.observed_games||0);return n>=20?'his
 function injuryBonusCap(p){
  const base=Number(p.minutes)||0,n=Number(p.observed_games||0);
  if(p.v8_unmatched||n<3||base<=0)return 0;
+ if(['recent_role_drop','single_short_game_caution'].includes(p.minutes_method))return 0; // do not override observed rotation collapse with speculative injury boosts
  // Conservative global player-level guardrail, not an empirically derived absence-response model.
  return Math.max(0,Math.min(n>=20?4:n>=5?2:1, 38-base));
 }
@@ -302,7 +309,7 @@ function fieldSetup(){
 
 function metric(p){const pr=projection(p),o=effectiveOwnership(p)==null?50:Math.max(0,Math.min(100,effectiveOwnership(p)));switch($('mode').value){case 'points':return pr;case 'ceiling':return pr+.65*p.ceiling_sd;case 'leverage':return pr+(50-o)*.22;default:return pr+(50-o)*.12*toNum($('own').value)/20}}
 function lev(p){return projection(p)*(1-(effectiveOwnership(p)==null?0:Math.max(0,Math.min(100,effectiveOwnership(p)))/100))}
-function eligible(p){const minGames=Number($('minhistory')?.value||0);return !p.live_out&&!['OUT','INACTIVE','DNP'].includes(p.status.toUpperCase())&&p.salary>0&&adjustedMin(p)>0&&p.fp_per_min>0&&(!minGames||Number(p.observed_games||0)>=minGames)}
+function eligible(p){const minGames=Number($('minhistory')?.value||0);return !p.live_out&&!['OUT','INACTIVE','DNP','DOUBTFUL'].includes(String(p.live_status||p.status||'').toUpperCase())&&!['OUT','INACTIVE','DNP','DOUBTFUL'].includes(String(p.status||'').toUpperCase())&&p.salary>0&&adjustedMin(p)>0&&p.fp_per_min>0&&(!minGames||Number(p.observed_games||0)>=minGames)}
 function safe(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function populateInjuryPlayersIfNeeded(){}
 function renderOwnershipRankings(){
@@ -461,6 +468,13 @@ $('applystats').onclick=async()=>{
   const currentLogs=(current.game_logs||[]).filter(r=>/^202610(2[01-9]|3[01])|^2026(11|12)|^2027/.test(String(r.date||'')));
   const grouped=new Map();for(const row of currentLogs){const key=normalizeName(row.name);if(!key||!(Number(row.minutes)>0))continue;let p=grouped.get(key);if(!p){p={name:row.name,games:0,minutes:0,fp:0};grouped.set(key,p)}p.games++;p.minutes+=Number(row.minutes);p.fp+=Number(row.fantasy_points)}
   const currentByName=new Map([...grouped].map(([key,v])=>[key,{games:v.games,avg_minutes:v.minutes/v.games,fantasy_points_per_minute:v.fp/v.minutes}]));
+  // v24 browser-only fallback: use actual recent rotation logs even when no current
+  // GitHub-published salary slate exists. This preserves the one-upload workflow.
+  const recentByName=new Map();for(const row of currentLogs){
+    if(!(Number(row.minutes)>0))continue;const k=normalizeName(row.name);if(!k)continue;
+    const list=recentByName.get(k)||[];list.push({date:String(row.date||''),min:Number(row.minutes)});recentByName.set(k,list);
+  }
+  for(const list of recentByName.values())list.sort((a,b)=>a.date.localeCompare(b.date));
   const priorByName=new Map();for(const q of prior.players){let key=normalizeName(q.name);if(priorByName.has(key)){priorByName.set(key,null)}else priorByName.set(key,q)}
   let matched=0,priorOnly=0,currentOnly=0,missing=0;
   for(const p of players){
@@ -475,10 +489,25 @@ $('applystats').onclick=async()=>{
    p.fp_per_min=Math.min(4,Math.max(.1,(historicalValid?Number(old.fantasy_points_per_minute):0)*(1-weight)+(currentValid?Number(now.fantasy_points_per_minute):0)*weight));
    p.observed_games=(historicalValid?Number(old.games):0)+(currentValid?Number(now.games):0);
    p.prior_games=historicalValid?old.games:0;p.current_games=currentValid?now.games:0;p.observed_weight=weight;
+   p.rotation_warnings=[];p.minutes_method='browser_history_blend';
+   if(historicalValid&&currentValid){
+     const recent=(recentByName.get(key)||[]).slice(-3),priorMin=Number(old.avg_minutes);
+     const last2=recent.slice(-2).map(r=>r.min);
+     if(last2.length===2&&priorMin>=16&&last2.every(v=>v<=priorMin*.55)){
+       p.minutes=Math.min(38,Math.max(1,(last2[0]+last2[1])/2+2));
+       p.minutes_method='recent_role_drop';p.rotation_warnings.push('ROLE DROP: recent two games sharply below prior-season minutes; verify role');
+     }else if(recent.length===1&&recent[0].min<priorMin*.5&&priorMin>=16){
+       p.minutes=Math.min(26,Math.max(recent[0].min+5,priorMin*.60));
+       p.minutes_method='single_short_game_caution';p.rotation_warnings.push('One very short game; current role uncertain');
+     }else if(recent.length===3&&priorMin>=16&&recent.every(r=>r.min<priorMin*.7)){
+       p.minutes=Math.min(40,priorMin*.25+recent.map(r=>r.min).sort((a,b)=>a-b)[1]*.75);
+       p.minutes_method='recent_minutes_decline';p.rotation_warnings.push('Recent minutes below prior-season rotation');
+     }
+   }
    matched++;if(historicalValid&&!currentValid)priorOnly++;if(currentValid&&!historicalValid)currentOnly++;
   }
   invalidateInjury();last=[];savePool();refresh();updateInjuries();$('lineups').innerHTML='<div class="empty">Historical projections applied. Generate a new research lineup.</div>';
-  $('modelsummary').textContent='v8: '+matched+' matched; '+missing+' excluded without verified game logs. Current-season influence increases with games played.';
+  $('modelsummary').textContent='v24 browser fallback: '+matched+' matched; '+missing+' excluded without game logs. Recent role drops override stale prior minutes.';
   result.textContent='Historical projection estimates applied to '+matched+' of '+players.length+' imported players; '+priorOnly+' prior-season only, '+currentOnly+' current-season only, '+missing+' excluded (no evidence). Historical coverage '+prior.date_count+'/'+prior.expected_date_count+' dates. Ownership/injuries still unverified. Re-import slate CSV to reset.';
  }catch(e){result.textContent='Could not apply both seasons: '+e.message}
 };
@@ -511,7 +540,7 @@ function matchStatus(){let n=players.filter(p=>!/^Demo /.test(p.name));let d=n.f
 const oldRefresh=refresh;
 refresh=function(){oldRefresh();matchStatus()};
 const oldProjection=projection;
-projection=function(p){const m=matchFactors(p);const base=Math.max(0,adjustedMin(p)*p.fp_per_min);const raw=m.dvp*m.usage;const joint=Math.max(.90,Math.min(1.10,1+(raw-1)*.50));return getExternalProjection(p,base*joint)};
+projection=function(p){const m=matchFactors(p);const base=Math.max(0,adjustedMin(p)*p.fp_per_min);const raw=m.dvp*m.usage;const joint=Math.max(.93,Math.min(1.07,1+(raw-1)*.35));return getExternalProjection(p,base*joint)};
 async function importMatchFile(id,fn){$(''+id).addEventListener('change',async ev=>{try{const f=ev.target.files?.[0];if(!f)return;let rows=csvObj(await f.text());let accepted=0;for(const row of rows)accepted+=fn(row)?1:0;invalidateMatch();$('matchstatus').textContent=`Accepted ${accepted} of ${rows.length} rows from ${f.name}. `+$('matchstatus').textContent;}catch(e){$('matchstatus').textContent='CSV import failed: '+e.message}})}
 importMatchFile('opponentcsv',r=>{if(!r.team||!r.opponent)return false;opponentRecords.set(cleanTeam(r.team),cleanTeam(r.opponent));return true});
 importMatchFile('dvpcsv',r=>{const d={fp_allowed:Number(r.fp_allowed),league_avg:Number(r.league_avg),games:Number(r.games)};if(!r.opponent||!r.position||!(d.fp_allowed>0)||!(d.league_avg>0))return false;dvpRecords.set(ratingKey(r.opponent,r.position),d);return true});
@@ -861,17 +890,34 @@ window.addEventListener('load',()=>{
     const today=typeof eastDay==='function'?eastDay():'';
     let file;
     try{file=await getJSON('automatic_projections.json')}catch(e){return {ok:false,message:'Server baseline unavailable (using historical feed fallback).'}}
-    if(file.schema!==1||file.slate_date!==today||!Array.isArray(file.players))return {ok:false,message:'Automatic baseline is not for today; using historical feed fallback.'};
-    const lookup=new Map(file.players.map(p=>[nameKey(p.name)+'|'+String(p.team).toUpperCase()+'|'+p.salary,p]));
+    if(![1,2].includes(file.schema)||file.slate_date!==today||!Array.isArray(file.players))return {ok:false,message:'Automatic baseline is not for today; using historical feed fallback.'};
+    // v25: schema 2 projects every player (no slate file on GitHub needed); match by name+team, then name only.
+    const byTeam=new Map(),byName=new Map();
+    for(const r of file.players){const k=nameKey(r.name);byTeam.set(k+'|'+String(r.team).toUpperCase(),r);byName.set(k,byName.has(k)?null:r)}
+    const findRow=p=>{
+      if(file.schema===1)return byTeam.get(nameKey(p.name)+'|'+String(p.team).toUpperCase()+'|'+p.salary)||null;
+      const k=nameKey(p.name),t=String(p.team).toUpperCase();
+      const exact=byTeam.get(k+'|'+t);if(exact)return exact;
+      const any=byName.get(k);if(!any)return null;
+      // Team differs from his box scores (trade/signing): the DNP check used the wrong team's games.
+      const m=Number(any.team_change_minutes)||0;
+      return {...any,expected_minutes:m,minutes_method:'team_change',warnings:['New team on slate ('+any.team+' -> '+t+'); recent rotation unverified']};
+    };
+    const riskRows=[];
     let n=0,excluded=0;
     for(const p of players){
-      const row=lookup.get(nameKey(p.name)+'|'+String(p.team).toUpperCase()+'|'+p.salary);
+      const row=findRow(p);
       if(!row){p.minutes=0;p.fp_per_min=0;p.v8_unmatched=true;excluded++;continue;}
       if(Number(row.expected_minutes)>0&&Number(row.fp_per_minute)>0){
         p.minutes=Number(row.expected_minutes);p.fp_per_min=Number(row.fp_per_minute);
         p.observed_games=Number(row.previous_games||0)+Number(row.current_games||0);
         p.prior_games=Number(row.previous_games||0);p.current_games=Number(row.current_games||0);
-        p.v8_unmatched=false;p.placeholder_minutes=false;n++;
+        p.v8_unmatched=false;p.placeholder_minutes=false;
+        p.minutes_method=row.minutes_method||'unknown';p.rotation_warnings=Array.isArray(row.warnings)?row.warnings:[];
+        p.last_five_minutes=Array.isArray(row.current_last_minutes)?row.current_last_minutes:[];
+        p.prior_avg_minutes=row.prior_avg_minutes;p.current_avg_minutes=row.current_avg_minutes;
+        p.external_reference=row.reference_projection;p.reference_source=row.reference_source;
+        if(p.rotation_warnings.length)riskRows.push(p);n++;
       }else{
         // Do not turn missing NBA evidence into a 30-minute projected starter.
         p.minutes=0;p.fp_per_min=0;p.v8_unmatched=true;excluded++;
@@ -879,7 +925,16 @@ window.addEventListener('load',()=>{
     }
     if(n<Math.min(7,Math.ceil(players.length*0.3)))return {ok:false,message:'Insufficient matched historical baselines ('+n+'). Using browser history fallback.'};
     invalidateInjury();last=[];savePool();refresh();
-    return {ok:true,message:n+'/'+players.length+' players from observed NBA box scores; '+excluded+' without supported history',key:file.created_at||'unknown'};
+    const status=document.getElementById('edge-rotation-alerts');
+    if(status){
+      const flagged=riskRows.filter(p=>p.rotation_warnings.some(w=>/ROLE DROP|short recent game|DNP in last|New team|Large disagreement/i.test(w))).sort((a,b)=>b.salary-a.salary);
+      const notable=flagged.slice(0,7).map(p=>'<div class="risk-item"><b>'+String(p.name).replace(/[<>&]/g,'')+'</b> · '+p.minutes.toFixed(1)+' expected min · '+p.rotation_warnings.join(' / ').replace(/[<>&]/g,'')+'</div>').join('');
+      status.innerHTML='<b>Projection checks:</b> '+flagged.length+' major rotation/projection flags · '+Number(file.outside_compared||0)+' compared with authorized external forecasts. '+
+        (file.outside_compared?'Check outlier differences before trusting projections.':'No authorized numeric outside feed connected; cross-source comparison unavailable.')+
+        (notable||'<div>Current history has no flagged extreme rotation changes in the loaded sample.</div>')+
+        '<div class="review-links"><a href="https://www.dailyfantasyfuel.com/nba/projections/fanduel/'+today+'/" target="_blank" rel="noopener noreferrer">Public FanDuel projection reference</a><a href="https://www.nba.com/players/todays-lineups" target="_blank" rel="noopener noreferrer">Verify starters</a></div>';
+    }
+    return {ok:true,message:n+'/'+players.length+' supported; '+riskRows.length+' warnings; '+excluded+' without history',key:file.created_at||'unknown'};
   }
   async function safeClick(id){const b=el(id);if(!b||typeof b.onclick!=='function')return false;try{await b.onclick();return true}catch(e){console.warn(id,e);return false}}
   async function pipeline(force=false){
@@ -897,6 +952,12 @@ window.addEventListener('load',()=>{
         catch(e){console.warn('historical fallback',e)}
       }
       tag('auto-base','Projected minutes: '+baseline.message);
+      if(!baseline.ok){const a=el('edge-rotation-alerts');if(a){
+        const risky=players.filter(p=>Array.isArray(p.rotation_warnings)&&p.rotation_warnings.length);
+        a.innerHTML='<b>Browser rotation checks:</b> '+risky.length+' notable current-season role changes. '+
+        (risky.slice(0,8).map(p=>'<div class="risk-item"><b>'+String(p.name).replace(/[<>&]/g,'')+'</b> · '+Number(p.minutes).toFixed(1)+' min · '+p.rotation_warnings.join(' / ').replace(/[<>&]/g,'')+'</div>').join('')||'No confirmed role changes in available recent box scores.')+
+        '<div class="risk-item">No authorized outside numeric projection feed connected. <a href="https://www.dailyfantasyfuel.com/nba/projections/fanduel/'+day+'/" target="_blank" rel="noopener noreferrer">Compare published public projections</a>. Missing or stale player history is flagged; check confirmed starters and injuries.</div>';
+      }}
       await safeClick('reloadmatchup');
       const matchText=el('matchstatus')?.textContent||'';
       tag('auto-dvp',/DvP coverage:/i.test(matchText)?'DvP/usage: loaded':'DvP/usage: neutral if unavailable');
@@ -910,7 +971,7 @@ window.addEventListener('load',()=>{
       tag('auto-provider',window.__nbaEdgeExternal?.mode==='automatic'?'Licensed feed: matched':'External projections: not connected');
       try{if(typeof calculatePopularity==='function')calculatePopularity()}catch(e){console.warn('Ownership simulator unavailable',e)}
       lastDone=slateKey;
-      info('Automatic pipeline checked · '+new Date().toLocaleTimeString()+'. Historical baselines, injury and lineup news, DvP and usage evidence and public picks are integrated where published. Missing inputs remain neutral or unavailable. Ownership is an estimate, not observed selection.');
+      info('NBA EDGE v25 checked · '+new Date().toLocaleTimeString()+'. Recent rotations take precedence: two low-minute games or 2+ straight DNPs without an injury listing trigger a role-drop check. Large disagreement warnings appear only with an authorized same-slate reference. Injuries/news may lag and ownership remains estimated.');
       if(el('edge-flow'))el('edge-flow').textContent='Slate analysis ready. Review alerts, then generate lineups.';
     }catch(e){info('Partial automatic analysis: '+e.message+' — missing feeds remain flagged.');console.error('NBA EDGE automatic pipeline:',e)}
     finally{active=false}

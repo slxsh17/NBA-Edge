@@ -1,34 +1,40 @@
 name: NBA EDGE Automatic Projection Baselines
 
+# v25: projects every player with NBA history, so no slate CSV needs to be in the repo.
+# The site matches these rows to whatever FanDuel slate you import in the browser.
 on:
   workflow_dispatch:
   schedule:
-    - cron: '11 * * * *'
+    - cron: '13 * * * *'
+  workflow_run:
+    workflows: ['NBA EDGE Daily Data Updates']
+    types: [completed]
 
 permissions:
   contents: write
 
 concurrency:
   group: nba-edge-auto-projection
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build projections from published data
+      - name: Build DNP-aware projections for all players
         run: python scripts/build_automatic_projections.py
       - name: Publish projection snapshot
         run: |
-          if [ ! -f data/automatic_projections.json ]; then
-            echo "No today's published slate; no projection snapshot generated."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/automatic_projections.json
-          git diff --cached --quiet || (git commit -m "Update NBA EDGE projection baseline" && git pull --rebase && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m 'Update DNP-aware NBA projections'
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
