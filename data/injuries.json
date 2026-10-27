@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T15:26:31.141880+00:00",
+  "updated_at": "2026-10-27T16:18:02.477742+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -103,12 +103,12 @@
       "status": "OUT"
     },
     {
-      "name": "Isaiah Joe",
+      "name": "Ausar Thompson",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Ausar Thompson",
+      "name": "Isaiah Joe",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
@@ -365,7 +365,7 @@
     {
       "name": "Kawhi Leonard",
       "team": "TOR",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Nate Bittle",
