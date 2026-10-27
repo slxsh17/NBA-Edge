@@ -1,0 +1,37 @@
+name: NBA EDGE Daily FanDuel Slate
+
+# Publishes data/slate_YYYY-MM-DD.csv (FanDuel main slate) so the site loads it
+# without a manual upload. Hourly 8am–7pm Eastern; a manual upload still overrides.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 12-23 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-edge-slate
+  cancel-in-progress: false
+
+jobs:
+  slate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch today's FanDuel main slate
+        run: python scripts/update_slate.py
+      - name: Publish slate
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A data/slate_*.csv
+          git diff --cached --quiet && exit 0
+          git commit -m 'Update FanDuel main slate'
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1

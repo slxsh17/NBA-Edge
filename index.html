@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NBA EDGE v25 — Rotation Validation & Projection Audit</title><meta name="theme-color" content="#0a111e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NBA EDGE v26 — Rotation Validation & Projection Audit</title><meta name="theme-color" content="#0a111e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png">
 <style>
 :root{color-scheme:dark;--bg:#0a111e;--panel:#111e30;--panel2:#182940;--line:#294058;--text:#edf5ff;--muted:#9fb0c6;--blue:#64adff;--green:#4ee0b0;--gold:#ffd073}*{box-sizing:border-box}body{margin:0;background:linear-gradient(155deg,#0d1828,#090f1b 65%);font:14px system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text)}main{max-width:1320px;margin:auto;padding:26px 20px 80px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:20px}h1{font-size:27px;margin:0;letter-spacing:.04em}h1 span{color:var(--green)}h2{font-size:17px;margin:0 0 14px}.sub,.muted{color:var(--muted)}.sub{margin:7px 0 0}.tag{border:1px solid #366d69;color:#75f6c8;padding:7px 10px;border-radius:100px;font-size:12px}.layout{display:grid;grid-template-columns:minmax(310px,420px) 1fr;gap:17px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:17px}.ctrl{display:grid;grid-template-columns:1fr 1fr;gap:12px}.ctrl label{display:flex;flex-direction:column;gap:7px;font-size:12px;color:var(--muted)}input,select,button{font:inherit}input,select{width:100%;background:#091626;color:var(--text);border:1px solid #36506b;border-radius:9px;padding:10px}input[type=range]{padding:0;accent-color:var(--green)}button{border:0;border-radius:9px;padding:10px 14px;color:#081621;background:var(--green);font-weight:700;cursor:pointer}button.alt{color:var(--text);background:var(--panel2);border:1px solid #36506b}button:disabled{opacity:.5;cursor:not-allowed}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.small{font-size:12px}.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.stat{background:var(--panel2);border-radius:10px;padding:12px}.stat b{display:block;font-size:19px;margin-top:5px}.stat em{font-size:11px;font-style:normal;color:var(--muted)}.tablewrap{overflow:auto;max-height:640px}table{border-collapse:collapse;width:100%;min-width:720px}th,td{padding:10px 8px;border-bottom:1px solid #25394f;text-align:left;white-space:nowrap}th{position:sticky;top:0;background:var(--panel);z-index:1;color:var(--muted);font-size:11px;letter-spacing:.045em}td{font-size:12px}td strong{font-size:13px}.badge{font-size:10px;padding:3px 6px;border-radius:6px;background:#264b55;color:#a2f3cd}.warn{background:#5a3b29;color:#ffda9c}.tabs{display:flex;gap:8px;flex-wrap:wrap}.tabs button{padding:7px 12px}.lineup{display:grid;grid-template-columns:36px 1fr auto auto;gap:0;align-items:center}.lineup>div{padding:11px 7px;border-bottom:1px solid #25394f}.lineup .pos{color:var(--green);font-weight:700}.lineup .name{font-weight:650}.lineup .details{font-size:11px;color:var(--muted)}.help{line-height:1.55;color:var(--muted)}.notice{border-left:3px solid var(--gold);padding:10px 12px;background:#322b21;color:#f6e7c4;border-radius:5px;margin:12px 0}.empty{padding:30px 10px;text-align:center;color:var(--muted)}a{color:var(--blue)}@media(max-width:930px){.layout{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(3,1fr)}}@media(max-width:480px){main{padding:16px 12px}.ctrl{grid-template-columns:1fr}.statrow{gap:5px}.stat{padding:8px}.stat b{font-size:16px}.lineup{grid-template-columns:29px 1fr 58px 58px;font-size:12px}}
 @media(max-width:600px){button{min-height:44px}input,select{font-size:16px}.lineup .details{font-size:10px}.card{padding:13px}.tablewrap{max-height:420px}header h1{font-size:25px}}
@@ -46,7 +46,7 @@ label:has(input[type="file"]:not(#csv)), input[type="file"]:not(#csv),
 <div class="edge-ticker"><span id="edge-pool">Pool: loading</span><span id="edge-feeds">Sources: checking</span><span id="edge-pop">Ownership: research estimate</span></div><div id="edge-flow" class="edge-flow-status"></div>
 <div id="edge-automatic" role="status" aria-live="polite">
   <h3>Automatic analytics <span style="font-weight:400;color:#91e5ce">· no other uploads</span></h3>
-  <div id="edge-auto-status">Waiting for today's slate. NBA data feeds are automatically checked.</div>
+  <div id="edge-auto-status">Loading today's FanDuel main slate automatically…</div>
   <div id="edge-rotation-alerts" class="edge-v24-audit" aria-live="polite">Waiting for lineup data and projection checks.</div>
   <div class="indicator"><span id="auto-base">Baseline: checking</span><span id="auto-dvp">DvP / usage: checking</span><span id="auto-injury">Injuries: checking</span><span id="auto-crowd">Expert picks: checking</span><span id="auto-provider">Licensed providers: checking</span></div>
 </div>
@@ -126,7 +126,7 @@ function getStarterMinutesDelta(p){
  return Number(entries.get(normalizeName(p.name)+"|"+String(p.team||'').trim().toUpperCase())||0);
 }
 'use strict';
-const $=id=>document.getElementById(id);let players=[],last=[],refreshTimer=null;const storeKey='nbaedge.v8.pool';
+const $=id=>document.getElementById(id);let players=[],last=[],refreshTimer=null;const TEAM_CANON={GS:'GSW',NO:'NOP',NY:'NYK',PHO:'PHX',SA:'SAS',UTAH:'UTA',WSH:'WAS',BRK:'BKN'};const canonTeam=t=>{t=String(t||'').trim().toUpperCase();return TEAM_CANON[t]||t};window.canonTeam=canonTeam;const storeKey='nbaedge.v8.pool';
 let consensusByPlayer=new Map(),consensusSnapshot=null;
 const dvpRecords=new Map(),usageRecords=new Map(),opponentRecords=new Map();
 const slots=['PG','SG','SF','PF','C','G/F','F/C','UTIL','UTIL'];
@@ -139,7 +139,7 @@ function demo(){const teams=['BOS','NYK','DEN','OKC','MIL','SAS','MIN','LAL','OR
 function matchesPrimaryPosition(a,b){const x=String(a.position||'').split(/[\/,|]/),y=String(b.position||'').split(/[\/,|]/);return x.some(v=>y.includes(v))}
 function getInjuryKey(p){return String(p.name)+'|'+String(p.team)}
 function getInjuryBonus(p){return injuryBonuses.get(getInjuryKey(p))||0}
-function invalidateInjury(){injuryCase=null;injuryBonuses.clear();}
+function invalidateInjury(){injuryCase=null;injuryBonuses.clear();window.__edgeInjSig=null;}
 function renderInjury(){const tbody=$('injrows');if(!tbody)return;const out=liveInjuries.filter(q=>['OUT','INACTIVE'].includes(q.status));tbody.innerHTML=out.length?out.map(q=>`<tr><td>${safe(q.name)}</td><td>${safe(q.team||'?')}</td><td>${(injuryCase?.details?.[getInjuryKey(q)]||0).toFixed(1)}</td><td>${players.filter(p=>p.team===q.team&&getInjuryBonus(p)>0).length}</td></tr>`).join(''):'<tr><td colspan="4">No confirmed OUT injuries in the current snapshot, or the feed has no reports.</td></tr>'}
 function normalizeInjuryName(v){return String(v||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9]/g,'').toLowerCase()}
 function injuryEvidence(p){const n=Number(p.observed_games||0);return n>=20?'historical sample':n>=5?'limited sample':'very low sample'}
@@ -183,8 +183,8 @@ async function updateInjuries(){const status=$('injstatus');try{
  const res=await fetch('./data/injuries.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status+' — data/injuries.json has not been published');
  const data=await res.json();if(!Array.isArray(data.injuries))throw Error('Invalid injury snapshot schema');
  const age=Date.now()-Date.parse(data.updated_at||'');if(!Number.isFinite(age)||age>45*60*1000||age< -300000)throw Error('Report is stale or has an invalid timestamp');
- liveInjuries=data.injuries;injuryFeedOk=true;injuryFetchedAt=data.updated_at;
- let found=0;for(const p of players){const report=liveInjuries.find(q=>normalizeInjuryName(q.name)===normalizeInjuryName(p.name)&&String(q.team||'').toUpperCase()===String(p.team||'').toUpperCase());p.live_out=!!report&&['OUT','INACTIVE'].includes(report.status);p.live_status=report?.status||null;if(report)found++;}
+ const injSig=JSON.stringify(data.injuries)+'|'+players.map(p=>p.name+p.team).join(',');if(injSig===window.__edgeInjSig&&injuryFeedOk){injuryFetchedAt=data.updated_at;status.textContent=status.textContent.replace(/^Injury snapshot: [^·]*/,'Injury snapshot: '+new Date(data.updated_at).toLocaleString()+' ');return}window.__edgeInjSig=injSig;liveInjuries=data.injuries;injuryFeedOk=true;injuryFetchedAt=data.updated_at;
+ let found=0;for(const p of players){const report=liveInjuries.find(q=>normalizeInjuryName(q.name)===normalizeInjuryName(p.name)&&canonTeam(q.team)===canonTeam(p.team));p.live_out=!!report&&['OUT','INACTIVE'].includes(report.status);p.live_status=report?.status||null;if(report)found++;}
  const hadEstimates=players.some(p=>p.ownership_estimate!=null);const impacted=applyLiveInjuryModel();if(hadEstimates&&players.length){try{calculatePopularity()}catch(e){}}status.textContent=`Injury snapshot: ${new Date(data.updated_at).toLocaleString()} · ${liveInjuries.length} reported players · ${found} matched to imported pool · ${impacted} OUT players with historical minutes modeled. Source: ${data.source||'unofficial feed'}.`;
  $('injwarning').textContent='Statuses depend on upstream coverage. Only OUT/INACTIVE automatically excluded. News may lag; unmatched players remain unchanged. Always verify late news.';
  }catch(err){injuryFeedOk=false;players.forEach(p=>{p.live_out=false;p.live_status=null});injuryBonuses.clear();injuryCase=null;last=[];refresh();renderInjury();status.textContent='Injury feed unavailable or outdated: '+err.message+'. Injury-driven projections disabled until valid new data arrives. Verify official injury reports.';}
@@ -336,15 +336,34 @@ function loadCSV(text){
    const statusRaw=(r['injury indicator']||'').trim().toUpperCase();
    const mapped={O:'OUT',OUT:'OUT',Q:'QUESTIONABLE',D:'DOUBTFUL',DNP:'DNP'};
    const fppg=toNum(r.fppg,0);const pos=(r.position||'').toUpperCase().replace(/\s/g,'');
-   return {id,name:r.nickname||[r['first name'],r['last name']].filter(Boolean).join(' '),team:r.team||'UNK',position:pos,salary:toNum(r.salary),minutes:fppg>0?30:0,fp_per_min:fppg>0?fppg/30:0,ownership:null,matchup_factor:1,usage_factor:1,foul_lost_min:0,blowout_lost_min:0,ceiling_sd:8,status:mapped[statusRaw]||'ACTIVE',fanduel_fppg:fppg,placeholder_minutes:fppg>0};
+   return {id,name:r.nickname||[r['first name'],r['last name']].filter(Boolean).join(' '),team:canonTeam(r.team||'UNK'),position:pos,salary:toNum(r.salary),minutes:fppg>0?30:0,fp_per_min:fppg>0?fppg/30:0,ownership:null,matchup_factor:1,usage_factor:1,foul_lost_min:0,blowout_lost_min:0,ceiling_sd:8,status:mapped[statusRaw]||'ACTIVE',fanduel_fppg:fppg,placeholder_minutes:fppg>0};
   }
-  return {id,name:r.name,team:r.team||'UNK',position:(r.position||'').toUpperCase().replace(/\s/g,''),salary:toNum(r.salary),minutes:toNum(r.minutes),fp_per_min:toNum(r.fp_per_min),ownership:r.ownership===''?null:toNum(r.ownership,null),matchup_factor:toNum(r.matchup_factor,1),usage_factor:toNum(r.usage_factor,1),foul_lost_min:toNum(r.foul_lost_min),blowout_lost_min:toNum(r.blowout_lost_min),ceiling_sd:toNum(r.ceiling_sd,8),status:(r.status||'ACTIVE').toUpperCase()};
+  return {id,name:r.name,team:canonTeam(r.team||'UNK'),position:(r.position||'').toUpperCase().replace(/\s/g,''),salary:toNum(r.salary),minutes:toNum(r.minutes),fp_per_min:toNum(r.fp_per_min),ownership:r.ownership===''?null:toNum(r.ownership,null),matchup_factor:toNum(r.matchup_factor,1),usage_factor:toNum(r.usage_factor,1),foul_lost_min:toNum(r.foul_lost_min),blowout_lost_min:toNum(r.blowout_lost_min),ceiling_sd:toNum(r.ceiling_sd,8),status:(r.status||'ACTIVE').toUpperCase()};
  }).filter(p=>p.name&&p.position&&p.salary>0);
  if(!data.length)throw Error('No valid players found.');
  players=data;invalidateInjury();last=[];savePool();
  $('source').textContent=`Source: imported ${rawFD?'raw FanDuel':'NBA EDGE'} CSV (${data.length} players). Salary and position values are from this file. Recorded historical baselines load automatically; placeholder minutes are not treated as forecasts.`;
  refresh();$('lineups').innerHTML='<div class="empty">New slate loaded. Apply historical + current stats, then generate lineups.</div>';updateInjuries();
 }
+// v26: background data refreshes used to wipe generated lineups every few minutes.
+// Keep them on screen; if projections moved or a player became ineligible, show a banner instead.
+window.edgeKeepLineups=async function(fn){
+ const keep=Array.isArray(last)?last.slice():[];
+ const total=b=>b.picks.reduce((s,p)=>s+projection(p),0);
+ const before=keep.map(total);
+ try{return await fn()}finally{
+  try{
+   if(keep.length&&!last.length){
+    const byKey=new Map(players.map(p=>[p.name+'|'+canonTeam(p.team),p]));
+    const remapped=keep.map(b=>({...b,picks:b.picks.map(p=>byKey.get(p.name+'|'+canonTeam(p.team))||p)}));
+    const gone=remapped.some(b=>b.picks.some(p=>!byKey.has(p.name+'|'+canonTeam(p.team))||!eligible(p)));
+    const drift=Math.max(0,...remapped.map((b,i)=>Math.abs(total(b)-before[i])));
+    last=remapped;renderLineups();
+    if(gone||drift>1){const box=$('lineups');if(box){const note=document.createElement('div');note.className='empty';note.id='edge-stale-banner';note.style.cssText='border:1px solid #c9a227;color:#ffdc9b;margin-bottom:8px';note.textContent=(gone?'A player in these lineups is now out or ineligible. ':'Projections updated (up to '+drift.toFixed(1)+' FP). ')+'Regenerate for updated lineups.';box.prepend(note)}}
+   }
+  }catch(e){console.warn('Lineup keeper',e)}
+ }
+};
 function savePool(){try{localStorage.setItem(storeKey,JSON.stringify(players))}catch(e){}}
 // Free GitHub Pages slate synchronization. Does not scrape or authenticate to FanDuel.
 const SLATE_DATE_KEY='nbaedge.slate.lastDate';
@@ -377,9 +396,9 @@ async function refreshPublishedSlate(force=false){
   const n=players.length;
   if(n<9)throw Error(`only ${n} usable players`);
   setSlateDay(today,'published');lastPublishedCSV=csvText;lastPublishedDay=today;
-  $('source').textContent=`Source: published ${today} FanDuel slate (${n} players). Data does not update until a new CSV is uploaded to GitHub.`;
+  $('source').textContent=`Source: published ${today} FanDuel slate (${n} players). Auto-published FanDuel main slate (refreshed hourly). Upload a CSV to use a different slate.`;
   slateMessage(`${today} · ${n} players loaded · updating statistical baselines…`);
-  try{await $('applystats').onclick()}catch(e){console.warn('Historical application:',e)}
+  try{if(window.edgeAutoSync)await window.edgeAutoSync(true)}catch(e){console.warn('Automatic analysis:',e)}
   slateMessage(`${today} · ${n} players · published slate active`);
   $('status').textContent=`Loaded ${today} FanDuel player pool. Review injury statuses and projections before optimizing.`;
  }catch(e){
@@ -454,11 +473,11 @@ $('template').onclick=()=>{let csv=fields.join(',')+'\n'+['Example Player','BOS'
 async function refreshGames(){const status=$('gamefresh'),out=$('gamelist');status.textContent='Checking schedule…';try{const r=await fetch('./data/games.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('No schedule file published yet (HTTP '+r.status+')');const d=await r.json();if(!Array.isArray(d.games))throw Error('Invalid schedule file');status.textContent='Snapshot generated '+new Date(d.updated_at).toLocaleString()+' · source: ESPN public scoreboard (unofficial)';out.innerHTML=d.games.length?d.games.map(g=>'<div style="padding:7px 0;border-bottom:1px solid #294058"><b>'+safe(g.away)+' @ '+safe(g.home)+'</b> · '+safe(g.time||'Time unavailable')+'<span class="muted"> · '+safe(g.status||'Scheduled')+'</span></div>').join(''):'No NBA games listed in the latest snapshot.'}catch(e){status.textContent='Free schedule unavailable: '+e.message;out.textContent='The optimizer still works with imported CSV player pools.'}}
 $('reloadgames').onclick=refreshGames;refreshGames();
 async function refreshPlayerStats(){const status=$('statsfresh'),out=$('statrows');status.textContent='Loading recently completed NBA games…';try{const r=await fetch('./data/player_stats.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('No player_stats.json generated yet (HTTP '+r.status+')');const d=await r.json();if(!Array.isArray(d.players))throw Error('Invalid stats format');status.textContent='Updated '+new Date(d.updated_at).toLocaleString()+' · '+d.games_processed+' completed games · '+d.players.length+' players';out.innerHTML=d.players.length?d.players.slice(0,100).map(p=>'<tr><td>'+safe(p.name)+'</td><td>'+safe(p.team)+'</td><td>'+Number(p.games)+'</td><td>'+Number(p.avg_minutes).toFixed(1)+'</td><td>'+Number(p.avg_fantasy_points).toFixed(1)+'</td><td>'+Number(p.fantasy_points_per_minute).toFixed(2)+'</td></tr>').join(''):'<tr><td colspan="6">No completed player box scores available in the last seven days.</td></tr>'}catch(e){status.textContent='Stats unavailable: '+e.message;out.innerHTML='<tr><td colspan="6">The demonstration optimizer still operates independently.</td></tr>'}}
-$('reloadstats').onclick=refreshPlayerStats;refreshPlayerStats();
+$('reloadstats').onclick=refreshPlayerStats;
 const normalizeName=n=>String(n||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
-async function fetchSeason(path){const r=await fetch(path+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error(path+' unavailable (HTTP '+r.status+')');const d=await r.json();if(!Array.isArray(d.players))throw Error('Malformed '+path);return d}
+const seasonCache=new Map();async function fetchSeason(path){const hit=seasonCache.get(path);if(hit&&Date.now()-hit.at<20*60*1000)return hit.data;const r=await fetch(path+'?t='+Math.floor(Date.now()/(20*60*1000)));if(!r.ok)throw Error(path+' unavailable (HTTP '+r.status+')');const d=await r.json();if(!Array.isArray(d.players))throw Error('Malformed '+path);seasonCache.set(path,{at:Date.now(),data:d});return d}
 async function showHistoricalCoverage(){try{const h=await fetchSeason('./data/last_season_stats.json');$('historyfresh').textContent='2025–26 history: '+h.date_count+' of '+h.expected_date_count+' dates checked · '+h.players.length+' players · '+h.coverage+' coverage · refreshed '+new Date(h.updated_at).toLocaleString();}catch(e){$('historyfresh').textContent='Historical baseline unavailable: '+e.message+' · run the Historical Backfill workflow first.'}}
-$('reloadhistory').onclick=showHistoricalCoverage;showHistoricalCoverage();
+$('reloadhistory').onclick=showHistoricalCoverage;
 $('applystats').onclick=async()=>{
  const result=$('statsapply');result.textContent='Loading both NBA seasons…';
  try{
@@ -512,7 +531,7 @@ $('applystats').onclick=async()=>{
  }catch(e){result.textContent='Could not apply both seasons: '+e.message}
 };
 
-updateInjuries();setInterval(()=>{if(!document.hidden)updateInjuries()},120000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateInjuries()});
+updateInjuries();setInterval(()=>{if(!document.hidden)edgeKeepLineups(updateInjuries)},120000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)edgeKeepLineups(updateInjuries)});
 if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
 
 // v15 verified-input matchup and usage model; neutral without data.
@@ -636,7 +655,7 @@ $e('edge-build').onclick=()=>{
  const opt=$e('optimize');if(opt){opt.click();$e('edge-flow').textContent='Lineup optimization requested; inspect the solver result below.';setTimeout(renderCrowd,900)}
 };
 $e('edge-crowdbtn').onclick=()=>{renderCrowd();$e('edge-crowd').scrollIntoView({behavior:'smooth',block:'center'})};
-$e('edge-advanced').onclick=()=>{const shown=document.body.classList.toggle('edge-expanded');$e('edge-advanced').textContent=shown?'Hide detailed tools':'Show detailed tools';$e('edge-advanced').setAttribute('aria-expanded',String(shown))};
+$e('edge-advanced').onclick=()=>{const shown=document.body.classList.toggle('edge-expanded');if(shown&&!window.__edgeDetailsLoaded){window.__edgeDetailsLoaded=true;try{refreshPlayerStats();showHistoricalCoverage()}catch(e){console.warn(e)}}$e('edge-advanced').textContent=shown?'Hide detailed tools':'Show detailed tools';$e('edge-advanced').setAttribute('aria-expanded',String(shown))};
 function esc(t){return String(t??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]))}
 function renderCrowd(){
  const grid=$e('edge-crowd-grid');if(!grid)return;
@@ -651,13 +670,14 @@ function renderCrowd(){
  }catch(e){console.warn('Crowd rendering',e)}
  rows.sort((a,b)=>b.source-a.source||b.mentions-a.mentions);rows=rows.slice(0,8);
  if(!rows.length){grid.innerHTML='<span class="edge-note">No verified player recommendations matched this slate. Sites may be inaccessible or publish picks after this update. Run the public consensus workflow and refresh feeds.</span>';return;}
- grid.innerHTML=rows.map(r=>{
+ const crowdHTML=rows.map(r=>{
  const own=Number.isFinite(Number(r.own))&&r.own!==null?`${Number(r.own).toFixed(1)}% model estimate`:'ownership not estimated';
  const evidence=r.articles.find(a=>/^https?:\/\//.test(a.url||''));
  const link=evidence?`<a href="${esc(evidence.url)}" target="_blank" rel="noopener noreferrer">Evidence ↗</a>`:'No public link';
  const label=r.source>=3?'Multiple expert picks':r.source>=2?'Multiple-site recommendation':'Single-site recommendation';
  return `<div class="edge-crowd-item"><b>${esc(r.name)}</b><small>${esc(label)} · ${r.source} recommending sites / ${r.mentions} picks</small><small>${esc(own)} · ${link}</small></div>`;
  }).join('');
+ if(grid.innerHTML!==crowdHTML)grid.innerHTML=crowdHTML;
 }
 function updateHeader(){try{const n=$e('nplayers')?.textContent||'—';$e('edge-pool').textContent='Players: '+n;$e('edge-feeds').textContent='Check feed timestamps in details';$e('edge-pop').textContent='Ownership: estimated, not observed';renderCrowd()}catch(e){console.warn(e)}}
 const observer=new MutationObserver(()=>{clearTimeout(window.__edgeUpdateDelay);window.__edgeUpdateDelay=setTimeout(updateHeader,350)});
@@ -691,7 +711,7 @@ window.addEventListener('load',()=>refreshModelEvaluation());
 window.addEventListener('load',()=>{
   if(typeof refreshPublishedSlate==='function'){
     refreshPublishedSlate();
-    setInterval(()=>{if(!manualSlateOverride)refreshPublishedSlate()},5*60*1000);
+    setInterval(()=>{if(!manualSlateOverride&&!document.hidden)edgeKeepLineups(()=>refreshPublishedSlate())},10*60*1000);
   }
 });
 </script><script>
@@ -871,9 +891,9 @@ $n('starter-refresh').onclick=refreshNews;
 window.addEventListener('load',()=>{
  setTimeout(refreshNews,1300);
  setTimeout(refreshAuthorizedBluecollar,2300);
- setInterval(()=>{if(!document.hidden)refreshAuthorizedBluecollar()},3*60*1000);
- setInterval(()=>{if(!document.hidden)refreshNews()},3*60*1000);
- document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshNews()});
+ setInterval(()=>{if(!document.hidden)edgeKeepLineups(refreshAuthorizedBluecollar)},10*60*1000);
+ setInterval(()=>{if(!document.hidden)edgeKeepLineups(refreshNews)},3*60*1000);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)edgeKeepLineups(refreshNews)});
 });
 })();
 </script><script>
@@ -893,10 +913,10 @@ window.addEventListener('load',()=>{
     if(![1,2].includes(file.schema)||file.slate_date!==today||!Array.isArray(file.players))return {ok:false,message:'Automatic baseline is not for today; using historical feed fallback.'};
     // v25: schema 2 projects every player (no slate file on GitHub needed); match by name+team, then name only.
     const byTeam=new Map(),byName=new Map();
-    for(const r of file.players){const k=nameKey(r.name);byTeam.set(k+'|'+String(r.team).toUpperCase(),r);byName.set(k,byName.has(k)?null:r)}
+    for(const r of file.players){const k=nameKey(r.name);byTeam.set(k+'|'+window.canonTeam(r.team),r);byName.set(k,byName.has(k)?null:r)}
     const findRow=p=>{
       if(file.schema===1)return byTeam.get(nameKey(p.name)+'|'+String(p.team).toUpperCase()+'|'+p.salary)||null;
-      const k=nameKey(p.name),t=String(p.team).toUpperCase();
+      const k=nameKey(p.name),t=window.canonTeam(p.team);
       const exact=byTeam.get(k+'|'+t);if(exact)return exact;
       const any=byName.get(k);if(!any)return null;
       // Team differs from his box scores (trade/signing): the DNP check used the wrong team's games.
@@ -937,7 +957,10 @@ window.addEventListener('load',()=>{
     return {ok:true,message:n+'/'+players.length+' supported; '+riskRows.length+' warnings; '+excluded+' without history',key:file.created_at||'unknown'};
   }
   async function safeClick(id){const b=el(id);if(!b||typeof b.onclick!=='function')return false;try{await b.onclick();return true}catch(e){console.warn(id,e);return false}}
-  async function pipeline(force=false){
+  let inflight=null;
+  // Overlapping callers share one run instead of a second run silently returning early.
+  function pipeline(force=false){if(inflight)return inflight;inflight=pipelineRun(force).finally(()=>{inflight=null});return inflight}
+  async function pipelineRun(force=false){
     if(active||!Array.isArray(players)||!players.length||players.every(p=>/^Demo /.test(p.name)))return;
     const day=typeof eastDay==='function'?eastDay():'';
     if(slatePoolDay && slatePoolDay!==day){info('Saved slate is from '+slatePoolDay+'. Upload today\'s FanDuel slate; no stale projections will be generated.');return}
@@ -971,7 +994,7 @@ window.addEventListener('load',()=>{
       tag('auto-provider',window.__nbaEdgeExternal?.mode==='automatic'?'Licensed feed: matched':'External projections: not connected');
       try{if(typeof calculatePopularity==='function')calculatePopularity()}catch(e){console.warn('Ownership simulator unavailable',e)}
       lastDone=slateKey;
-      info('NBA EDGE v25 checked · '+new Date().toLocaleTimeString()+'. Recent rotations take precedence: two low-minute games or 2+ straight DNPs without an injury listing trigger a role-drop check. Large disagreement warnings appear only with an authorized same-slate reference. Injuries/news may lag and ownership remains estimated.');
+      info('NBA EDGE v26 checked · '+new Date().toLocaleTimeString()+'. Recent rotations take precedence: two low-minute games or 2+ straight DNPs without an injury listing trigger a role-drop check. Large disagreement warnings appear only with an authorized same-slate reference. Injuries/news may lag and ownership remains estimated.');
       if(el('edge-flow'))el('edge-flow').textContent='Slate analysis ready. Review alerts, then generate lineups.';
     }catch(e){info('Partial automatic analysis: '+e.message+' — missing feeds remain flagged.');console.error('NBA EDGE automatic pipeline:',e)}
     finally{active=false}
@@ -983,10 +1006,15 @@ window.addEventListener('load',()=>{
   // Published daily slate loading updates its player count asynchronously.
   const count=el('nplayers');if(count)new MutationObserver(()=>soon()).observe(count,{subtree:true,childList:true});
   // Run once after browser and preexisting analytics handlers are ready.
-  window.addEventListener('load',()=>setTimeout(()=>pipeline(true),3000));
+  window.addEventListener('load',()=>setTimeout(()=>{if(!lastDone)pipeline(true)},3000));
   // Data refresh while the page is open. Never silently substitute yesterday's slate.
-  setInterval(()=>{if(!document.hidden)pipeline(true)},5*60*1000);
-  document.addEventListener('visibilitychange',()=>{if(!document.hidden)soon(true)});
+  // v26: background checks are cheap (HEAD request) and only rerun analysis when projections changed.
+  let projTag='';
+  async function projectionsChanged(){try{const r=await fetch('./data/automatic_projections.json?h='+Date.now(),{method:'HEAD',cache:'no-store'});const tag=(r.headers.get('etag')||'')+(r.headers.get('last-modified')||'');if(!tag)return true;const changed=tag!==projTag;projTag=tag;return changed}catch(e){return false}}
+  projectionsChanged();
+  async function backgroundCheck(){if(document.hidden||active)return;if(await projectionsChanged())edgeKeepLineups(()=>pipeline(true))}
+  setInterval(backgroundCheck,5*60*1000);
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)backgroundCheck()});
   const refreshButton=el('edge-update');if(refreshButton)refreshButton.onclick=()=>pipeline(true);
   // The previous "import" shortcut could accidentally select a hidden external upload.
   const importButton=el('edge-import');if(importButton)importButton.onclick=()=>el('csv')?.click();

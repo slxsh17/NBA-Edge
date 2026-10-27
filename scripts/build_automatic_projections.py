@@ -20,6 +20,14 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
 
 
+TEAM_ALIASES={'GS':'GSW','NO':'NOP','NY':'NYK','PHO':'PHX','SA':'SAS','UTAH':'UTA','WSH':'WAS','BRK':'BKN'}
+
+
+def canon_team(t):
+    t=str(t or '').strip().upper()
+    return TEAM_ALIASES.get(t,t)
+
+
 def norm(s):
     return re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', str(s or '')).lower())
 
@@ -72,7 +80,7 @@ def log_index(raw, date_floor=None, date_ceiling=None):
         key=(name,event)
         if key in unique:continue
         unique.add(key)
-        grouped.setdefault(name,[]).append({'event':event,'date':date,'minutes':minutes,'fp':fp,'team':str(r.get('team') or '').upper()})
+        grouped.setdefault(name,[]).append({'event':event,'date':date,'minutes':minutes,'fp':fp,'team':canon_team(r.get('team'))})
     for rows in grouped.values():rows.sort(key=lambda x:x['date'])
     return grouped
 
@@ -92,7 +100,7 @@ def prior_index(data):
         m=num(r.get('avg_minutes'),.01,48);f=num(r.get('fantasy_points_per_minute'),.01,4)
         g=int(num(r.get('games'),0,100) or 0)
         if m and f and g:
-            result[key]={'games':g,'minutes':m,'rate':f,'team':str(r.get('team') or '').upper(),
+            result[key]={'games':g,'minutes':m,'rate':f,'team':canon_team(r.get('team')),
                          'last_minutes':[]}
     return result
 
@@ -102,7 +110,7 @@ def team_schedule(raw, date_floor, date_ceiling):
     games={}
     for r in raw:
         date=parse_date(r.get('date'))
-        team=str(r.get('team') or '').upper()
+        team=canon_team(r.get('team'))
         if date is None or not team or date<date_floor or date>=date_ceiling:continue
         games.setdefault(team,{})[str(r.get('event_id') or date.isoformat())]=date
     return {t:sorted(((d,e) for e,d in ev.items()),key=lambda x:x[0]) for t,ev in games.items()}
@@ -225,7 +233,7 @@ def authorized_refs_for_date(data,day):
     refs={}
     for r in data.get('players',[]):
         proj=num(r.get('projected_fp') or r.get('projection') or r.get('fantasy_points'),.01,160)
-        name=norm(r.get('name'));team=str(r.get('team') or '').upper()
+        name=norm(r.get('name'));team=canon_team(r.get('team'))
         source=str(r.get('source') or data.get('provider') or '').strip()
         if proj and name and team and source:refs[(name,team)]={'projection':proj,'source':source}
     return refs,bool(refs)
@@ -275,7 +283,7 @@ def build(day=None):
 def main():
     output=build()
     DATA.mkdir(parents=True,exist_ok=True)
-    (DATA/'automatic_projections.json').write_text(json.dumps(output,indent=2)+'\n',encoding='utf-8')
+    (DATA/'automatic_projections.json').write_text(json.dumps(output,separators=(',',':'))+'\n',encoding='utf-8')
     print('NBA EDGE v25',output['slate_date'], 'projected',output['players_projected'],
           'role warnings',output['role_warnings'],'external comparisons',output['outside_compared'])
 
