@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T04:14:59.604306+00:00",
+  "updated_at": "2026-10-27T04:54:52.820735+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -83,17 +83,17 @@
       "status": "OUT"
     },
     {
+      "name": "Spencer Jones",
+      "team": "DEN",
+      "status": "OUT"
+    },
+    {
       "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
     },
     {
       "name": "Alpha Diallo",
-      "team": "DEN",
-      "status": "OUT"
-    },
-    {
-      "name": "Spencer Jones",
       "team": "DEN",
       "status": "OUT"
     },
@@ -133,14 +133,24 @@
       "status": "OUT"
     },
     {
+      "name": "Marcus Smart",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Steven Adams",
       "team": "HOU",
       "status": "OUT"
     },
     {
-      "name": "Marcus Smart",
-      "team": "HOU",
-      "status": "OUT"
+      "name": "Ivica Zubac",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Andrew Nembhard",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ben Sheppard",
@@ -148,17 +158,7 @@
       "status": "OUT"
     },
     {
-      "name": "Andrew Nembhard",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
       "name": "T.J. McConnell",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Ivica Zubac",
       "team": "IND",
       "status": "OUT"
     },
@@ -305,7 +305,7 @@
     {
       "name": "Oso Ighodaro",
       "team": "PHX",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mark Williams",
@@ -373,6 +373,11 @@
       "status": "OUT"
     },
     {
+      "name": "Jaxson Hayes",
+      "team": "UTA",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Lauri Markkanen",
       "team": "UTA",
       "status": "DAY-TO-DAY"
@@ -381,11 +386,6 @@
       "name": "Jaren Jackson Jr.",
       "team": "UTA",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jaxson Hayes",
-      "team": "UTA",
-      "status": "OUT"
     },
     {
       "name": "Trey Alexander",
