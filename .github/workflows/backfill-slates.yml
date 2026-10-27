@@ -1,0 +1,36 @@
+name: NBA EDGE Backfill Slates
+
+# Manual: archive past FanDuel slates (with Vegas lines) so the learner can
+# rebuild and grade past projections. Example dates: 2026-10-21 2026-10-22
+on:
+  workflow_dispatch:
+    inputs:
+      dates:
+        description: 'Space-separated dates (YYYY-MM-DD)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Archive slates
+        run: python scripts/update_slate.py --date ${{ github.event.inputs.dates }}
+      - name: Publish
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A data/archive
+          git diff --cached --quiet && exit 0
+          git commit -m 'Archive past FanDuel slates'
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1

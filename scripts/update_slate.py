@@ -123,8 +123,44 @@ def parse(page, day):
     return sorted(players, key=lambda p: -p['salary'])
 
 
+def backfill(day):
+    """--date YYYY-MM-DD: archive a past slate (for backtests/learning). Doesn't touch today's files."""
+    import json
+    url = f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/'
+    try:
+        players = parse(fetch(url), day)
+    except Exception as e:
+        print(f'::warning::No archived slate for {day}: {e}')
+        return 1
+    games = build_games(players, day)
+    write_archive(day, url, players, games)
+    print(f'Archived {day}: {len(players)} players, {len(games)} games, {sum(g["total"] is not None for g in games)} with Vegas lines')
+    return 0
+
+
+def slate_doc(day, url, players, games):
+    return {'schema': 1, 'date': day, 'slate': 'Main', 'source': 'DailyFantasyFuel public FanDuel page (salaries, positions, injury tags, Vegas lines)',
+            'source_url': url, 'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'games': games,
+            'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
+                         'position': p['position'], 'salary': p['salary'], 'status': p['status']} for p in players]}
+
+
+def write_archive(day, url, players, games):
+    """Permanent copy of each day's slate so the learner can rebuild past projections."""
+    import json
+    arch = DATA / 'archive'
+    arch.mkdir(parents=True, exist_ok=True)
+    doc = slate_doc(day, url, players, games)
+    doc.pop('fetched_at')
+    (arch / f'slate_{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
+    for old in sorted(arch.glob('slate_*.json'))[:-150]:
+        old.unlink()
+
+
 def main():
     import json
+    if '--date' in sys.argv:
+        return max(backfill(d) for d in sys.argv[sys.argv.index('--date') + 1:] if re.match(r'\d{4}-\d{2}-\d{2}$', d))
     day = dt.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
     # The pipeline runs every 15 min; only re-read the source about hourly.
     try:
@@ -150,10 +186,8 @@ def main():
     DATA.mkdir(parents=True, exist_ok=True)
     out = DATA / f'slate_{day}.csv'   # legacy page format
     out.write_text(buf.getvalue(), encoding='utf-8')
-    slate = {'schema': 1, 'date': day, 'slate': 'Main', 'source': 'DailyFantasyFuel public FanDuel page (salaries, positions, injury tags, Vegas lines)',
-             'source_url': url, 'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'games': games,
-             'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
-                          'position': p['position'], 'salary': p['salary'], 'status': p['status']} for p in players]}
+    slate = slate_doc(day, url, players, games)
+    write_archive(day, url, players, games)
     (DATA / f'slate_{day}.json').write_text(json.dumps(slate, separators=(',', ':')) + '\n', encoding='utf-8')
     # Keep the repo tidy: only the last 7 daily slates.
     for pattern in ('slate_*.csv', 'slate_*.json'):
