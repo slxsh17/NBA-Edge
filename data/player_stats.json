@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T09:39:33.616879-04:00",
+  "updated_at": "2026-10-27T10:40:19.110331-04:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 52,
@@ -41,8 +41,8 @@
       "team": "ATL",
       "games": 4,
       "avg_minutes": 32.8,
-      "avg_fantasy_points": 50.7,
-      "fantasy_points_per_minute": 1.548,
+      "avg_fantasy_points": 49.6,
+      "fantasy_points_per_minute": 1.514,
       "avg_points": 21.5
     },
     {
@@ -136,6 +136,16 @@
       "avg_points": 21.8
     },
     {
+      "id": "4065733",
+      "name": "Ty Jerome",
+      "team": "MEM",
+      "games": 4,
+      "avg_minutes": 31.5,
+      "avg_fantasy_points": 45.0,
+      "fantasy_points_per_minute": 1.427,
+      "avg_points": 29.8
+    },
+    {
       "id": "4278073",
       "name": "Shai Gilgeous-Alexander",
       "team": "OKC",
@@ -154,16 +164,6 @@
       "avg_fantasy_points": 44.8,
       "fantasy_points_per_minute": 1.304,
       "avg_points": 21.7
-    },
-    {
-      "id": "4065733",
-      "name": "Ty Jerome",
-      "team": "MEM",
-      "games": 4,
-      "avg_minutes": 31.5,
-      "avg_fantasy_points": 44.6,
-      "fantasy_points_per_minute": 1.415,
-      "avg_points": 29.8
     },
     {
       "id": "3907497",
@@ -446,16 +446,6 @@
       "avg_points": 24.2
     },
     {
-      "id": "5041935",
-      "name": "Cameron Boozer",
-      "team": "MEM",
-      "games": 4,
-      "avg_minutes": 33.0,
-      "avg_fantasy_points": 36.5,
-      "fantasy_points_per_minute": 1.105,
-      "avg_points": 15.2
-    },
-    {
       "id": "2991139",
       "name": "Kris Dunn",
       "team": "LAC",
@@ -464,6 +454,16 @@
       "avg_fantasy_points": 36.3,
       "fantasy_points_per_minute": 1.157,
       "avg_points": 9.7
+    },
+    {
+      "id": "5041935",
+      "name": "Cameron Boozer",
+      "team": "MEM",
+      "games": 4,
+      "avg_minutes": 33.0,
+      "avg_fantasy_points": 36.0,
+      "fantasy_points_per_minute": 1.09,
+      "avg_points": 14.8
     },
     {
       "id": "4684740",
@@ -886,6 +886,16 @@
       "avg_points": 13.0
     },
     {
+      "id": "4903027",
+      "name": "Cedric Coward",
+      "team": "MEM",
+      "games": 3,
+      "avg_minutes": 30.3,
+      "avg_fantasy_points": 29.6,
+      "fantasy_points_per_minute": 0.976,
+      "avg_points": 13.3
+    },
+    {
       "id": "4432848",
       "name": "Jaime Jaquez Jr.",
       "team": "MIL",
@@ -904,16 +914,6 @@
       "avg_fantasy_points": 29.4,
       "fantasy_points_per_minute": 0.988,
       "avg_points": 11.5
-    },
-    {
-      "id": "4903027",
-      "name": "Cedric Coward",
-      "team": "MEM",
-      "games": 3,
-      "avg_minutes": 30.3,
-      "avg_fantasy_points": 29.4,
-      "fantasy_points_per_minute": 0.97,
-      "avg_points": 12.7
     },
     {
       "id": "3934719",
@@ -1226,6 +1226,16 @@
       "avg_points": 15.3
     },
     {
+      "id": "4432170",
+      "name": "Isaiah Jackson",
+      "team": "LAC",
+      "games": 3,
+      "avg_minutes": 22.3,
+      "avg_fantasy_points": 25.6,
+      "fantasy_points_per_minute": 1.148,
+      "avg_points": 9.7
+    },
+    {
       "id": "4066336",
       "name": "Lauri Markkanen",
       "team": "UTAH",
@@ -1266,16 +1276,6 @@
       "avg_points": 8.7
     },
     {
-      "id": "4432170",
-      "name": "Isaiah Jackson",
-      "team": "LAC",
-      "games": 3,
-      "avg_minutes": 22.3,
-      "avg_fantasy_points": 25.3,
-      "fantasy_points_per_minute": 1.133,
-      "avg_points": 9.7
-    },
-    {
       "id": "5254165",
       "name": "Keaton Wagler",
       "team": "LAC",
@@ -1294,6 +1294,16 @@
       "avg_fantasy_points": 25.0,
       "fantasy_points_per_minute": 1.0,
       "avg_points": 12.0
+    },
+    {
+      "id": "2490149",
+      "name": "CJ McCollum",
+      "team": "ATL",
+      "games": 4,
+      "avg_minutes": 26.8,
+      "avg_fantasy_points": 24.9,
+      "fantasy_points_per_minute": 0.932,
+      "avg_points": 17.2
     },
     {
       "id": "4684742",
@@ -1354,16 +1364,6 @@
       "avg_fantasy_points": 24.2,
       "fantasy_points_per_minute": 0.909,
       "avg_points": 16.3
-    },
-    {
-      "id": "2490149",
-      "name": "CJ McCollum",
-      "team": "ATL",
-      "games": 4,
-      "avg_minutes": 26.8,
-      "avg_fantasy_points": 24.2,
-      "fantasy_points_per_minute": 0.904,
-      "avg_points": 17.2
     },
     {
       "id": "4871145",
@@ -5941,11 +5941,11 @@
       "minutes": 36.0,
       "pts": 21.0,
       "reb": 9.0,
-      "ast": 4.0,
-      "stl": 2.0,
+      "ast": 3.0,
+      "stl": 1.0,
       "blk": 2.0,
       "tov": 4.0,
-      "fantasy_points": 45.8
+      "fantasy_points": 41.3
     },
     {
       "id": "4437244",
@@ -6722,10 +6722,10 @@
       "pts": 20.0,
       "reb": 1.0,
       "ast": 3.0,
-      "stl": 3.0,
+      "stl": 4.0,
       "blk": 0.0,
       "tov": 1.0,
-      "fantasy_points": 33.7
+      "fantasy_points": 36.7
     },
     {
       "id": "2990984",
@@ -7366,11 +7366,11 @@
       "minutes": 32.0,
       "pts": 31.0,
       "reb": 4.0,
-      "ast": 6.0,
+      "ast": 7.0,
       "stl": 1.0,
       "blk": 0.0,
       "tov": 1.0,
-      "fantasy_points": 46.8
+      "fantasy_points": 48.3
     },
     {
       "id": "4702382",
@@ -9179,13 +9179,13 @@
       "date": "20261025",
       "event_id": "401909867",
       "minutes": 32.0,
-      "pts": 15.0,
+      "pts": 17.0,
       "reb": 11.0,
-      "ast": 2.0,
+      "ast": 1.0,
       "stl": 1.0,
       "blk": 0.0,
       "tov": 2.0,
-      "fantasy_points": 32.2
+      "fantasy_points": 32.7
     },
     {
       "id": "4683692",
@@ -9209,13 +9209,13 @@
       "date": "20261025",
       "event_id": "401909867",
       "minutes": 31.0,
-      "pts": 16.0,
+      "pts": 14.0,
       "reb": 11.0,
       "ast": 4.0,
       "stl": 0.0,
       "blk": 2.0,
       "tov": 1.0,
-      "fantasy_points": 40.2
+      "fantasy_points": 38.2
     },
     {
       "id": "4433083",
@@ -14764,8 +14764,8 @@
       "ast": 3.0,
       "stl": 3.0,
       "blk": 1.0,
-      "tov": 3.0,
-      "fantasy_points": 26.7
+      "tov": 2.0,
+      "fantasy_points": 27.7
     },
     {
       "id": "5061585",
