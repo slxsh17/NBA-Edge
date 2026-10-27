@@ -366,8 +366,8 @@ def build(day=None, backtest=False, weights=None):
 
 
 def single_game_slates(singles, players):
-    """Per single-game slate: its own salaries and an ownership estimate normalized to 500%
-    (5 roster spots). Projections are shared with the main model by player key."""
+    """Per single-game slate: its own salaries and an ownership estimate normalized to 600%
+    (6 roster spots: 1 MVP + 5 UTIL). Projections are shared with the main model by player key."""
     by_key = {norm(p['name']) + '|' + p['team']: p for p in players}
     out = []
     for sg in singles:
@@ -382,7 +382,7 @@ def single_game_slates(singles, players):
         if elig:
             ws = [math.exp(0.06 * (p['proj'] - 25) + 0.15 * (min(p['proj'] * 1000 / max(r['salary'], 1000), 8) - 3)) for r, p in elig]
             tot = sum(ws)
-            own = [500 * w / tot for w in ws]
+            own = [600 * w / tot for w in ws]
             for _ in range(20):
                 over = sum(max(0, o - 75) for o in own)
                 if over < 0.01:

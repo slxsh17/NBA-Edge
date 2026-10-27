@@ -269,7 +269,8 @@ details summary{cursor:pointer}
 'use strict';
 const $=id=>document.getElementById(id);
 const FMT={classic:{need:{PG:1,SG:1,SF:1,PF:1,C:1,'G/F':1,'F/C':1,UTIL:2},order:['PG','SG','SF','PF','C','G/F','F/C','UTIL'],size:9,mult:{}},
-  single:{need:{MVP:1,STAR:1,PRO:1,UTIL:2},order:['MVP','STAR','PRO','UTIL'],size:5,mult:{MVP:2,STAR:1.5,PRO:1.2}}};
+  single:{need:{MVP:1,UTIL:5},order:['MVP','UTIL'],size:6,mult:{MVP:1.5},salMult:{MVP:1.5}}};
+const salOf=x=>x.p.salary*((F().salMult||{})[x.slot]||1);
 const CAP=60000, MAX_TEAM=4;
 const ALIAS={GS:'GSW',NO:'NOP',NY:'NYK',PHO:'PHX',SA:'SAS',UTAH:'UTA',WSH:'WAS',BRK:'BKN'};
 const canon=t=>{t=String(t||'').trim().toUpperCase();return ALIAS[t]||t};
@@ -287,7 +288,7 @@ const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(
   locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null,format:'classic',sgId:null};
 const F=()=>FMT[S.format];const multOf=slot=>F().mult[slot]||1;
 const fmtKey=()=>S.format==='single'?'sg:'+S.sgId:'main';
-const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.06};
+const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.06,sgCap:60000};
 const LEARNABLE=['vegas','matchup','injury','usage','starter','blowout'];
 S.user=store.get('cfgUser',{});S.learned={scale:1,minutes_mult:{}};
 function learnedDefaults(){const o={...DEFAULTS};for(const k of LEARNABLE)if(typeof S.learned[k]==='number')o[k]=+S.learned[k].toFixed(2);return o}
@@ -302,8 +303,9 @@ const SETTINGS=[
  {k:'starter',label:'Confirmed starter bump',min:0,max:2,step:.1,fmt:'x',help:'Extra minutes for bench players confirmed in the starting five.'},
  {k:'blowout',label:'Blowout minutes cut',min:0,max:2,step:.1,fmt:'x',help:'How much starters lose in games with big spreads.'},
  {h:'Lineup rules'},
- {k:'maxTeam',label:'Max players per team',min:1,max:4,step:1,fmt:'',help:'FanDuel allows up to 4.'},
+ {k:'maxTeam',label:'Max players per team (classic)',min:1,max:4,step:1,fmt:'',help:'FanDuel allows up to 4. Single game always allows up to 5.'},
  {k:'minSalary',label:'Minimum salary used',min:0,max:60000,step:500,fmt:'$',help:'Forces lineups to spend at least this much.'},
+ {k:'sgCap',label:'Single-game salary cap',min:40000,max:80000,step:500,fmt:'$',help:'FanDuel single game: MVP costs 1.5x salary. Change this if FanDuel shows a different cap.'},
  {k:'minUnique',label:'Lineups must differ by',min:1,max:5,step:1,fmt:' players',help:'For multiple lineups: how many players each one must change from the others.'},
  {h:'Tournament mode'},
  {k:'ceilW',label:'Upside weight',min:0,max:1,step:.05,fmt:'%',help:'How much a player\u2019s ceiling counts versus his projection.'},
@@ -438,7 +440,7 @@ function renderGames(){
   const box=$('games');
   const sgs=singles();$('fmt-row').hidden=!sgs.length&&S.format==='classic';
   $('fmt').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===S.format)));
-  $('fmt-note').textContent=S.format==='single'?'MVP scores 2x, STAR 1.5x, PRO 1.2x. Salary is the same in every spot.':(sgs.length?sgs.length+' single-game slate'+(sgs.length>1?'s':'')+' today':'');
+  $('fmt-note').textContent=S.format==='single'?'1 MVP + 5 UTIL. MVP scores 1.5x and costs 1.5x salary. Players from both teams.':(sgs.length?sgs.length+' single-game slate'+(sgs.length>1?'s':'')+' today':'');
   if(S.format==='single'&&S.source!=='csv'){
     $('slate-pick').hidden=true;
     box.innerHTML=sgs.map(g=>{const st=started(g);const fav=g.home_spread==null?'':g.home_spread<0?`${g.home} −${Math.abs(g.home_spread)}`:g.home_spread>0?`${g.away} −${g.home_spread}`:'Pick';
@@ -552,9 +554,11 @@ async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],mi
   for(const s in need){if(bySlot[s].length<need[s])return null;rows.push(c('slot'+s,bySlot[s],()=>1,glpk.GLP_FX,need[s],need[s]))}
   const lockSet=new Set([...S.locks]);
   for(const [i,vs] of Object.entries(byP)){const k=pkey(pool[i]);rows.push(c('p'+i,vs,()=>1,lockSet.has(k)?glpk.GLP_FX:glpk.GLP_UP,lockSet.has(k)?1:0,1))}
-  for(const [t,vs] of Object.entries(byTeam))rows.push(c('t'+t,vs,()=>1,glpk.GLP_UP,0,Math.min(MAX_TEAM,S.cfg.maxTeam)));
-  rows.push(c('cap',vars,v=>v.p.salary,glpk.GLP_UP,0,CAP));
-  if(S.cfg.minSalary>0)rows.push(c('minsal',vars,v=>v.p.salary,glpk.GLP_LO,Math.min(S.cfg.minSalary,CAP),0));
+  // Classic: max 4 per team. Single game: max 5 per team, so both teams are always used.
+  const teamMax=S.format==='single'?5:Math.min(MAX_TEAM,S.cfg.maxTeam),capNow=S.format==='single'?S.cfg.sgCap:CAP,sm=v=>v.p.salary*((F().salMult||{})[v.s]||1);
+  for(const [t,vs] of Object.entries(byTeam))rows.push(c('t'+t,vs,()=>1,glpk.GLP_UP,0,teamMax));
+  rows.push(c('cap',vars,sm,glpk.GLP_UP,0,capNow));
+  if(S.cfg.minSalary>0)rows.push(c('minsal',vars,sm,glpk.GLP_LO,Math.min(S.cfg.minSalary,capNow),0));
   fixed.forEach((f,j)=>{const vs=vars.filter(v=>pkey(v.p)===pkey(f.p)&&v.s===f.slot);if(vs.length)rows.push(c('fix'+j,vs,()=>1,glpk.GLP_FX,1,1))});
   // Classic: lineups differ by minUnique players. Single game: by at least one player-or-slot change.
   previous.forEach((keys,j)=>{const single=S.format==='single';const vs=vars.filter(v=>keys.has(single?pkey(v.p)+'|'+v.s:pkey(v.p)));if(vs.length)rows.push(c('div'+j,vs,()=>1,glpk.GLP_UP,0,single?size-1:size-minUnique))});
@@ -611,7 +615,7 @@ function renderLineups(fresh=false){
   const box=$('lineups');
   if(!S.lineups.length){box.innerHTML='';$('exposure-summary').innerHTML='';return}
   box.innerHTML=S.lineups.map((l,i)=>{
-    const sal=l.picks.reduce((s,x)=>s+x.p.salary,0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/l.picks.length;
+    const sal=l.picks.reduce((s,x)=>s+salOf(x),0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/l.picks.length;
     const live=l.picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).length;
     const canSwap=S.format==='classic'&&!S.review&&live>0&&live<l.picks.length;const reviewOnly=l.review;const gone=l.picks.filter(x=>x.p.out);const drift=pts-(l.proj0??pts);
     let note='';if(gone.length)note=`${gone.map(x=>esc(x.p.name)).join(', ')} ${gone.length>1?'are':'is'} now out. ${canSwap||!live?'Rebuild or use late swap.':''}`;
@@ -620,7 +624,7 @@ function renderLineups(fresh=false){
       <div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Avg own<b>${own.toFixed(0)}%</b></div>${reviewOnly?'<span class="review-badge">Review only</span>':''}
       <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
       ${note?`<div class="lu-note">${note}</div>`:''}
-      ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(x.p.salary)}</span><span class="pts">${x.p.out?'0.0':(x.p.proj*multOf(x.slot)).toFixed(1)}${multOf(x.slot)>1?`<span class="mult">${multOf(x.slot)}x</span>`:''}</span></div>`}).join('')}
+      ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(salOf(x))}</span><span class="pts">${x.p.out?'0.0':(x.p.proj*multOf(x.slot)).toFixed(1)}${multOf(x.slot)>1?`<span class="mult">${multOf(x.slot)}x</span>`:''}</span></div>`}).join('')}
     </article>`}).join('');
   if(S.lineups.length>1){const c=new Map();S.lineups.forEach(l=>l.picks.forEach(x=>c.set(x.p.name,(c.get(x.p.name)||0)+1)));
     const top=[...c].sort((a,b)=>b[1]-a[1]).slice(0,10);
@@ -629,7 +633,7 @@ function renderLineups(fresh=false){
 }
 $('lineups').addEventListener('click',async e=>{const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]');
   if(s)lateSwap(+s.dataset.swap);
-  if(c){const l=S.lineups[+c.dataset.copy];const text=l.picks.map(x=>`${x.slot} ${x.p.name} (${x.p.team}) ${money(x.p.salary)}`).join('\n');try{await navigator.clipboard.writeText(text);c.textContent='Copied'}catch(err){c.textContent='Copy failed'}setTimeout(()=>c.textContent='Copy',1500)}});
+  if(c){const l=S.lineups[+c.dataset.copy];const text=l.picks.map(x=>`${x.slot} ${x.p.name} (${x.p.team}) ${money(salOf(x))}`).join('\n');try{await navigator.clipboard.writeText(text);c.textContent='Copied'}catch(err){c.textContent='Copy failed'}setTimeout(()=>c.textContent='Copy',1500)}});
 $('build').onclick=build;
 
 // ---------- accuracy ----------
