@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T22:10:33.330111+00:00",
+  "updated_at": "2026-10-27T22:54:03.324068+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -68,7 +68,22 @@
       "status": "OUT"
     },
     {
+      "name": "Tarik Biberovic",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
       "name": "Santi Aldama",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Sergio de Larrea",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Caleb Martin",
       "team": "DAL",
       "status": "OUT"
     },
@@ -78,23 +93,18 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Sergio de Larrea",
+      "name": "Kyrie Irving",
       "team": "DAL",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Caleb Martin",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Tarik Biberovic",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
       "name": "Dereck Lively II",
       "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Spencer Jones",
+      "team": "DEN",
       "status": "OUT"
     },
     {
@@ -104,11 +114,6 @@
     },
     {
       "name": "Alpha Diallo",
-      "team": "DEN",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Spencer Jones",
       "team": "DEN",
       "status": "OUT"
     },
@@ -250,6 +255,11 @@
     {
       "name": "Simone Fontecchio",
       "team": "MIA",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Anthony Edwards",
+      "team": "MIN",
       "status": "DAY-TO-DAY"
     },
     {
