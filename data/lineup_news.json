@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-27",
-  "checked_at": "2026-10-27T20:29:01.993820+00:00",
+  "checked_at": "2026-10-27T21:02:54.232777+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,54 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Yaxel Lendeborg (foot) questionable Wednesday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVnlOUlFjcEhXdm5scmVOMS04eUhaeVQzamtiS0JBa1ZoM0UtcTZxUTFTMUJrUnlUMGo4RU53Q3Q3S2RjNXU2a0RlSHNacU1oSlhZaFVSZVZWdEx0aHpyNkZYRXo5UXJOazd5TzFLOXJJWDhaTjBsQkIwamFLaDZqRmJ3eld4OWVqd1o4MlJHVkd1V2tEYl9XcmJuVUd5OTI3eWs5RTludTc5UG11ZDdIbw?oc=5",
+      "published_at": "2026-10-27T21:02:13+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Rui Hachimura will not play against Lakers - USA Today",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT1UwS2lVUkh3ejZGSzlvZHphSE1xcFMtbmE2c2hiX2dGRmlrUDBTLW95c08wMWpOOERTak51a3czX0RxRjlub0g3empRMHFkUmtmUEhtMDZLOXphUldPcWd0bVBKYTU2bUlLMGJfQnk1cWpsbm42NTR6YWZCZnQ2UFlYbEl3N3hUNmZVSEY0b1dwQ2EyUDhySjBiemlJQUU3NXJ4dlI0cldxeW5xdkJYZzc2X1F1dw?oc=5",
+      "published_at": "2026-10-27T21:00:09+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "AJ Dybantsa (ankle) questionable Wednesday vs. CLE - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY29pS1hFRnJBUlRzWVFTTk9STjF2RzhPU0RPVzZZQ25qbEZLVV9Sc3l2VzVxMTVOSUNhWjVsZTE3bWl3T0M4Tk96eE16TEtXb19LWk5peUVCRDliU1hLbHpmQjFFY1lrai02N0FMU0tnNkZoMHp1SGl2MjBwem1iYS1CZExkQ2dEeThJbS1JUHpLQ1R5ekg0M1dENWIzRzFleXNwTXFJQ1l2VFMxYWlkM0xmVjNSdw?oc=5",
+      "published_at": "2026-10-27T20:57:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Simone Fontecchio (illness) doubtful Wednesday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNclVWbkVCaFNnaFVXcXZ3OGdqVXBPSlY3WHNCaG5TNkszb1NuX0pRdkloOW5jU2dCaldoMnBZNzIxckdrV0hxWHVCeUlELTA2dU5hLXcyNkg5MEp3bVVuaHhXaEdGQ1dKX1IyRzQ2RWcwYlJyQVU5OWJMc01OeTJkWlJQX1hrR21fdmd0eDBNd2J0c3k1eUNBQ2puNEs5eHZySnBQZm5WRjRsa29GZGpjY1FB?oc=5",
+      "published_at": "2026-10-27T20:54:34+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Most Injured NBA Teams 2026-27: Ranked by Who’s Hurt - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1wR0tZeVVJTks3eG5DQ1hreEU1bHVMRzh3ejBxaklhY0c2eWFMcUt6VkMzRmJfS045blhLYU50b3JiWnd4NTFyaXpkVDRXZ1d1dm1JZnhrRmdVLTFKcGRub0ItQ2VPbEMyZ2IzS0xLX1dTQ1NXZ2VUUFowMVl2dw?oc=5",
+      "published_at": "2026-10-27T20:46:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
+    {
+      "headline": "Marcus Smart Injury: Questionable for Wednesday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNemZ1T2pjMWJ5b1pjQ3RwcjRMY3JjX1FjM3VyU3J4QXNsX09US01aVG0tN08zdW92dkgyVGMxVGRMbzRFN2JUc0hTS2tJNmF6d3ppM1BRSVZJbmQyYi0xLVNKM2ZOYWdLY3hBMC0xb2dua3BreThibkc5NWF3b0ZvYzBreTZqanptWU1NX2xidzVoTkhQdWJyMG5BME5ZUS1Q?oc=5",
+      "published_at": "2026-10-27T20:22:11+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-27"
+    },
     {
       "headline": "Kobe Sanders News: Joining starting lineup - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUXlIUl80dWNUT3JUaWpvWWtNeUtia3FWOXNoZnRFZ0NMelBwdFFMME5lcV9QM0c2ekQtN1dIR3p6ZlR2RXNUYlh0dlBSbVIya1JEY1JMdmhtd0VBZ1JNNjJMTXR1cDNiVVg3OFpBdHEzbGhodEhid0Rha2o2OTFPU0MwbW0tdkpvdnRZR0V1U1JDLVJzQTFVTTlB?oc=5",
@@ -62,17 +110,17 @@
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Oregon: Dante Moore Will Not Play Again This Season Stream of NCAA Football - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcVRFV0VjUUdJQ1RDeGJ5cGlKLTY2eDZIV3dIMTRYVkZBTFE1TFBxWEtsamxCZFR3Yzd5NmIzX3BPOC1FdFFFY1Z4ZU5teFFyWkl2N3I3dXQwVk9EcXNzNGhwQWVEWkt1YUxYMHl0TEpNU0FfcnFOMHFQUEZaRURGSnNZRl90Um14TE5wUTVadUVEMGtBSjA5a2Niam5YOHlzU0pQc0R6NnA?oc=5",
-      "published_at": "2026-10-27T17:51:16+00:00",
+      "headline": "Meleek Thomas' 16-point NBA debut puts pressure on Kenny Atkinson to tweak Cavs rotation - King James Gospel",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdkRHTW1zUmhQYld3UjZ3THEyb3FhT1E0TnVlYkRrUXBpWHZ1N3I1VnZTc3ZxZFVoZU1lMkJudktBV1ZnUjRWVklVWFNKWHRpamsxU3NJNl85X1F1ZUcyYVdsbU9fU3VmOWlNNE5HNlpVdnRBWnhKMVMtRG1VNTNZNm42SzVpTlFvTkxyNmlHUQ?oc=5",
+      "published_at": "2026-10-27T16:42:59+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
     },
     {
-      "headline": "Meleek Thomas' 16-point NBA debut puts pressure on Kenny Atkinson to tweak Cavs rotation - King James Gospel",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdkRHTW1zUmhQYld3UjZ3THEyb3FhT1E0TnVlYkRrUXBpWHZ1N3I1VnZTc3ZxZFVoZU1lMkJudktBV1ZnUjRWVklVWFNKWHRpamsxU3NJNl85X1F1ZUcyYVdsbU9fU3VmOWlNNE5HNlpVdnRBWnhKMVMtRG1VNTNZNm42SzVpTlFvTkxyNmlHUQ?oc=5",
-      "published_at": "2026-10-27T16:42:59+00:00",
+      "headline": "Should Celtics Replace Jordan Walsh in Starting Lineup? - CLNS Media",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQb0U5UlNQNDc4OWxsMTlSbDZVRkljLUlfaXl1YjMzd2o3NS1pRlYyMEVqZ1hra0RUazgtWkhydG4xNzZuMU5qTHFTbVJpLU5VNFhqWGcyNTBZVXVJRDc4OGZFdDhFSXFIQXNXc2dlODNuYkRpR1EybzlOZGpKZDdRLWNvNmdNeEdsQ0h4dUJR0gGOAUFVX3lxTFBvRTlSU1A0Nzg5bGwxOVJsNlVGSWMtSV9peXViMzN3ajc1LWlGVjIwRWpnWGtrRFRrOC1aSHJ0bjE3Nm4xTmpMcVNtUmktTlU0WGpYZzI1MFlVdUlENzg4ZkV0OEVJcUhBc1dzZ2U4M25iRGlHUTJvOU5kakpkN1EtY282Z014R2xDSHh1QlE?oc=5",
+      "published_at": "2026-10-27T16:31:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -89,14 +137,6 @@
       "headline": "NBA injury report: Jalen Duren among players out Tuesday, October 27 - TalkBasket.net",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZVFWcEhVX1hqbzhrYTB1dnNaY2NTSk50QXNrQTlpZXhVelI0QndqcDlwSWZ1ZlRVbDJ3d1VQZEVoZmNMMlIwT0lJMDlzeUozc09CWm1DZ3FESTIwTXpVdTJ1WWFPQWxYSDZEUlduODN0RTZaVjQ5QWtndC1adkpEV2xtRDNablpsNnE0cktncFRtbC1VUUlvN2VBNW9kRnpRamc?oc=5",
       "published_at": "2026-10-27T15:41:29+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "Cason Wallace (shoulder) ruled out vs. Clippers. - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOU2RVeUExUXNUTWRsQVlQRWdOYVdBQm15SndJbzg3OXptTHlKRS0tdFZQQnlYREJpcEhEd3UtOG43d1VFSDZtWEN6MFZKOTNWYmNlUjIyXzNLVmRlZlVCOXdMVVFjTmZ4RmVyREthVlAzN3FXaXRMZldLa2Z4aGZmV0FfRVZnWHYycEdfVG5IZnI4eVR6a0VUejNNdXlfSGdXMDZ3SVZkNjFzNjFHanRNbDFsLXZyUU9tWFE?oc=5",
-      "published_at": "2026-10-27T15:27:28+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -137,14 +177,6 @@
       "headline": "North Carolina has turned to an NBA championship-winning coach in Michael Malone to start new era - Newsday",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQmNGSzlRMDBXcksxV2t1bDlyOWItZktDMHg1TlY4WWNTMThyR2d6VWdJOEpmLTdDNE0xVEdsdmpmS0h3OTFBYnNnUEd5akx2cGZLTjZuYU10M3dERldwaDYzeVZNYXF2TGdfZ2NmU2l2SDFTV1NMV2N4WHdTaExBTUVSaUpYeFIyUFA5RnZlSGlSdFh0QlhF?oc=5",
       "published_at": "2026-10-27T10:14:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "North Carolina has turned to an NBA championship-winning coach in Michael Malone to start new era - Bluefield Daily Telegraph",
-      "source_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOeDI1MXYxZnJmb2FQREdKYXlnUTVEUVlNaDZfLVp2MTQ3d3EyMWpSMFV4SEhhc2MxTjI3dVc0YjhhYTFpLTVGNkcxM2d3SnVFbXhDSEFySTY1eXNmV2ZjTy1uQWpoaXlmOXkwODJXNnJEZm9qblBuSzBjWm1na1ZHMm1QRXFEMWE3ancwUlVCeGRpVVdac1BpemFER1VsNlV5S0lCcmRFc19mWDlUNFZwQm1GYkxHMHBZdHZNMzZTd1RrYlRKNHFMd0JEeW9kMURZTWxSWmx5ckZhM2FkS0tRMnJvSHZOU1dzeGlJU1lLOWg2bk12TnI2dkNpelFtOUNvY2dka2V0TU01ZWZVaVl2bnlzaXc0TTQ?oc=5",
-      "published_at": "2026-10-27T10:10:09+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
@@ -361,14 +393,6 @@
       "headline": "Cavs Must Hold Lead vs. 3-0 Timberwolves, With Edwards Questionable - BVM Sports",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdHNpTnBlYTF5dE5TUFlLbnduVWlkY0pNOXV1Z1RYYXE1NjhzVWFNY0tDS3RKazFrNm4tTHZSZWlZNTFYUjNJNFlSNnR2eVFXMFpod25wS0Myd0NtMFplLWl3OGJvNDJrMkdrOHJHRnVYdVM5V0pQdXFsblhyaEczTDVwOUhXU25HYWtLNFFEbGxIZHF2MHpTS2tTM0RiTGFw?oc=5",
       "published_at": "2026-10-26T21:04:44+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-27"
-    },
-    {
-      "headline": "Pacers confirm bad injury news on C Ivica Zubac's status for Monday's game vs Bucks - IndyStar",
-      "source_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUWhvcTdlcWNfV1EwR1VsUzdnV1Q5Mzgtb1U5ZmJRYVZ3by1tU1hNYVY0R096Tm56Q1p0LUpMWG9wbHhOenVWa2RwbDBObXkzQU1uNzV2SVJzWlZkbUZTV2hyeDFyYW05SFdvRkdpbzlrRXVFUUR1Y0g4Zm5tYVpIcl9KSndjM0s3S0wwaTdWZ3huclpZd1RFNDNsNk5RaVp6eFJrVWdmdHBRVzM0YzRNZno4R08zSWV1Vm00N2FUeWUxQTVhNmd3NXpNTVhCSjJhal8wNURQVzFyakhOSEhBekJwMA?oc=5",
-      "published_at": "2026-10-26T20:54:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-27"
