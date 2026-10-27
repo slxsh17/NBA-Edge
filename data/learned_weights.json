@@ -1,0 +1,63 @@
+{
+ "schema": 1,
+ "updated_at": "2026-10-27T02:22:09+00:00",
+ "samples": 717,
+ "days": 5,
+ "weights": {
+  "vegas": 0.98,
+  "matchup": 0.95,
+  "injury": 0.84,
+  "usage": 1.005,
+  "starter": 1.0,
+  "blowout": 0.99,
+  "scale": 0.925,
+  "minutes_mult": {
+   "team_change": 1.09,
+   "prior_only": 0.99,
+   "sample_blend": 1.035,
+   "current_only": 1.11
+  }
+ },
+ "previous": {
+  "vegas": 1.0,
+  "matchup": 1.0,
+  "injury": 1.0,
+  "usage": 1.0,
+  "starter": 1.0,
+  "blowout": 1.0,
+  "scale": 1.0,
+  "minutes_mult": {}
+ },
+ "validation": {
+  "test_days": [
+   "2026-10-24",
+   "2026-10-25"
+  ],
+  "test_rows": 270,
+  "default_mae": 8.624,
+  "current_mae": 8.624,
+  "fitted_mae": 8.532
+ },
+ "in_sample_mae": {
+  "default": 8.566,
+  "learned": 8.301
+ },
+ "decision": "Adopted: on 270 held-out player-games the refit missed by 8.53 vs 8.62 with current weights.",
+ "log": [
+  {
+   "date": "2026-10-27",
+   "adopted": true,
+   "changes": [
+    "Vegas 1.00 \u2192 0.98",
+    "Matchup 1.00 \u2192 0.95",
+    "Injury minutes 1.00 \u2192 0.84",
+    "Overall scale 1.00 \u2192 0.93",
+    "Minutes (team_change) 1.00 \u2192 1.09",
+    "Minutes (sample_blend) 1.00 \u2192 1.03",
+    "Minutes (current_only) 1.00 \u2192 1.11"
+   ],
+   "heldout_gain": 0.091
+  }
+ ],
+ "method": "Coordinate search minimizing average miss with a pull toward 1.0; adopted only if it beats current weights on the most recent days held out from fitting; moves halfway."
+}

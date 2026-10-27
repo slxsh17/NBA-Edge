@@ -281,12 +281,16 @@ const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(
   count:1,mode:'cash',exposure:60,posf:'',search:'',sort:'proj',dir:-1,open:null,
   locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null};
 const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.06};
-S.cfg={...DEFAULTS,...store.get('cfg',{})};
+const LEARNABLE=['vegas','matchup','injury','usage','starter','blowout'];
+S.user=store.get('cfgUser',{});S.learned={scale:1,minutes_mult:{}};
+function learnedDefaults(){const o={...DEFAULTS};for(const k of LEARNABLE)if(typeof S.learned[k]==='number')o[k]=+S.learned[k].toFixed(2);return o}
+function rebuildCfg(){S.cfg={...learnedDefaults(),...S.user}}
+rebuildCfg();
 const SETTINGS=[
  {h:'Projection'},
- {k:'vegas',label:'Vegas team totals',min:0,max:2,step:.1,fmt:'x',help:'How much a high or low team total moves projections. 0 ignores Vegas, 2 doubles its effect.'},
- {k:'matchup',label:'Opponent matchup',min:0,max:2,step:.1,fmt:'x',help:'How much fantasy points allowed by the opponent at each position matters.'},
- {k:'injury',label:'Minutes from injuries',min:0,max:2,step:.1,fmt:'x',help:'Extra minutes teammates get when a player is ruled out.'},
+ {k:'vegas',label:'Vegas team totals',min:0,max:2,step:.05,fmt:'x',help:'How much a high or low team total moves projections. 0 ignores Vegas, 2 doubles its effect.'},
+ {k:'matchup',label:'Opponent matchup',min:0,max:2,step:.05,fmt:'x',help:'How much fantasy points allowed by the opponent at each position matters.'},
+ {k:'injury',label:'Minutes from injuries',min:0,max:2,step:.05,fmt:'x',help:'Extra minutes teammates get when a player is ruled out.'},
  {k:'usage',label:'Usage bump from injuries',min:0,max:2,step:.1,fmt:'x',help:'Extra points per minute when a high-volume teammate is out.'},
  {k:'starter',label:'Confirmed starter bump',min:0,max:2,step:.1,fmt:'x',help:'Extra minutes for bench players confirmed in the starting five.'},
  {k:'blowout',label:'Blowout minutes cut',min:0,max:2,step:.1,fmt:'x',help:'How much starters lose in games with big spreads.'},
@@ -297,13 +301,13 @@ const SETTINGS=[
  {h:'Tournament mode'},
  {k:'ceilW',label:'Upside weight',min:0,max:1,step:.05,fmt:'%',help:'How much a player\u2019s ceiling counts versus his projection.'},
  {k:'ownFade',label:'Fade popular players',min:0,max:.3,step:.01,fmt:'pt',help:'Points subtracted per 1% of estimated ownership.'}];
-const fmtSet=(d,v)=>d.fmt==='x'?Number(v).toFixed(1)+'x':d.fmt==='$'?(v?'$'+Number(v).toLocaleString():'Off'):d.fmt==='%'?Math.round(v*100)+'%':d.fmt==='pt'?Number(v).toFixed(2):v+(d.fmt||'');
+const fmtSet=(d,v)=>d.fmt==='x'?Number(v).toFixed(2)+'x':d.fmt==='$'?(v?'$'+Number(v).toLocaleString():'Off'):d.fmt==='%'?Math.round(v*100)+'%':d.fmt==='pt'?Number(v).toFixed(2):v+(d.fmt||'');
 function renderSettings(){
   const box=$('settings');
-  box.innerHTML=SETTINGS.map(d=>d.h?`<h3>${d.h}</h3>`:`<div class="set"><label for="cfg-${d.k}">${d.label}</label><output id="cfg-${d.k}-out">${fmtSet(d,S.cfg[d.k])}</output><input type="range" id="cfg-${d.k}" data-k="${d.k}" min="${d.min}" max="${d.max}" step="${d.step}" value="${S.cfg[d.k]}"><small>${d.help}</small></div>`).join('')+
-  `<div style="display:flex;gap:8px;align-items:center;margin-top:12px"><button class="btn small" id="cfg-reset" type="button">Reset to defaults</button><span class="muted" style="font-size:12px">Saved on this device. The accuracy report grades the default settings.</span></div>`;
+  box.innerHTML=SETTINGS.map(d=>d.h?`<h3>${d.h}</h3>`:`<div class="set"><label for="cfg-${d.k}">${d.label}</label><output id="cfg-${d.k}-out">${fmtSet(d,S.cfg[d.k])}</output><input type="range" id="cfg-${d.k}" data-k="${d.k}" min="${d.min}" max="${d.max}" step="${d.step}" value="${S.cfg[d.k]}"><small>${d.help}${LEARNABLE.includes(d.k)?` Learned value: <b>${fmtSet(d,learnedDefaults()[d.k])}</b>${d.k in S.user?' (you changed this)':''}.`:''}</small></div>`).join('')+
+  `<div style="display:flex;gap:8px;align-items:center;margin-top:12px"><button class="btn small" id="cfg-reset" type="button">Reset to learned values</button><span class="muted" style="font-size:12px">Saved on this device. The model relearns these every morning from its results; the accuracy report grades the learned values.</span></div>`;
 }
-function setCfg(k,v){S.cfg[k]=v;store.set('cfg',S.cfg);recompute();renderPlayers();renderLineups()}
+function setCfg(k,v){S.user[k]=v;store.set('cfgUser',S.user);rebuildCfg();recompute();renderPlayers();renderLineups()}
 // Rebuild each projection from its published parts with your weights (defaults reproduce the pipeline).
 function recompute(){
   const c=S.cfg;
@@ -313,12 +317,12 @@ function recompute(){
     const a=p.adj||{},ov=S.over[pkey(p)];
     let m;
     if(ov&&ov.minutes!=null)m=ov.minutes;
-    else if(p.base_minutes!=null){m=p.base_minutes+(a.injury_min||0)*c.injury+(a.starter_min||0)*c.starter;m*=(a.team_cap||1);m*=1+(a.blowout||0)*c.blowout}
+    else if(p.base_minutes!=null){const mm=(S.learned.minutes_mult||{})[p.method||'other']??1;m=p.base_minutes*mm+(a.injury_min||0)*c.injury+(a.starter_min||0)*c.starter;m*=(a.team_cap||1);m*=1+(a.blowout||0)*c.blowout}
     else m=p._o.minutes;
     const f=(x,w)=>1+((x??1)-1)*w;
     const wmax=Math.max(1,c.vegas,c.matchup,c.usage);  // same bounds as the pipeline at default weights
     const env=Math.max(1-.12*wmax,Math.min(1+.14*wmax,f(a.vegas,c.vegas)*f(a.matchup,c.matchup)*f(a.usage,c.usage)));
-    const proj=m*p.rate*env;
+    const proj=m*p.rate*env*(p.base_minutes!=null?(S.learned.scale??1):1);
     const sd=.28*proj+3+(p.shaky?3:0);
     p.minutes=+m.toFixed(1);p.proj=+proj.toFixed(2);p.floor=+Math.max(0,proj-1.28*sd).toFixed(1);p.ceiling=+(proj+1.28*sd).toFixed(1);p.value=+(proj*1000/p.salary).toFixed(2);p.edited=!!(ov&&ov.minutes!=null);
   }
@@ -328,10 +332,12 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json')]);
+  const [today,acc,inj,lw]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
+  S.learned={scale:1,minutes_mult:{},...((today.status==='fulfilled'&&today.value.weights)||{})};rebuildCfg();
   const saved=store.get('csv',null);
   if(saved&&saved.day===S.day){S.source='csv';await applyCSV(saved.text,false)}
   else if(S.today&&S.today.date===S.day){S.source='auto';S.games=S.today.games||[];S.players=S.today.players.map(p=>({...p}))}
@@ -479,7 +485,7 @@ document.querySelectorAll('th button').forEach(b=>b.onclick=()=>{const k=b.datas
 function seg(id,get,set){const el=$(id);const paint=()=>el.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===String(get()))));el.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;set(b.dataset.v);paint();saveDayState()});paint();return paint}
 $('settings-btn').onclick=()=>{const box=$('settings'),open=box.hidden;box.hidden=!open;$('settings-btn').setAttribute('aria-expanded',String(open));if(open){renderSettings();box.scrollIntoView({behavior:'smooth',block:'nearest'})}};
 $('settings').addEventListener('input',e=>{const el=e.target.closest('input[data-k]');if(!el)return;const d=SETTINGS.find(x=>x.k===el.dataset.k);$('cfg-'+d.k+'-out').textContent=fmtSet(d,el.value);setCfg(d.k,Number(el.value))});
-$('settings').addEventListener('click',e=>{if(e.target.id==='cfg-reset'){S.cfg={...DEFAULTS};store.set('cfg',S.cfg);renderSettings();recompute();renderPlayers();renderLineups()}});
+$('settings').addEventListener('click',e=>{if(e.target.id==='cfg-reset'){S.user={};store.set('cfgUser',S.user);rebuildCfg();renderSettings();recompute();renderPlayers();renderLineups()}});
 $('review').onchange=e=>{S.review=e.target.checked;renderGames();renderPlayers();renderNotices()};
 let paintCount,paintMode;
 function wireControls(){
@@ -597,13 +603,28 @@ function renderAccuracy(){
   <p style="margin:0 0 6px;font-size:14px">${beat?`Over the last ${s.days} days the model missed by ${(s.naive_mae-s.mae).toFixed(1)} fewer fantasy points per player than just using each player’s season average.`:`Over the last ${s.days} days the model hasn’t beaten a plain season average yet.`} It ran ${s.bias>0?'low':'high'} by ${Math.abs(s.bias).toFixed(1)} points on average and missed minutes by ${s.minutes_mae.toFixed(1)}.</p>
   <div class="bars" role="img" aria-label="Daily average miss, model vs season average">${days.map(d=>`<div class="bar"><div class="pair"><i class="m" style="height:${d.mae/maxv*64}px" title="Model ${d.mae}"></i><i class="n" style="height:${(d.naive_mae||0)/maxv*64}px" title="Season average ${d.naive_mae}"></i></div>${new Date(d.date+'T12:00:00').toLocaleDateString([], {month:'numeric',day:'numeric'})}${d.backtest?'*':''}</div>`).join('')}</div>
   <div class="legend"><i style="background:var(--orange);margin-left:0"></i>Model<i style="background:var(--line)"></i>Season average</div>
-  ${days.some(d=>d.backtest)?'<p class="muted" style="font-size:12px;margin:6px 0 0">* Backtest: the base model rebuilt using only data from before that day, without Vegas or injury adjustments.</p>':''}
+  ${days.some(d=>d.backtest)?'<p class="muted" style="font-size:12px;margin:6px 0 0">* Backtest: the full model rebuilt using only information from before that day (no live injury news or confirmed lineups).</p>':''}
+  ${learnedHTML()}
   ${last&&last.biggest_misses?`<details style="margin-top:10px;font-size:13.5px"><summary>Biggest misses on ${new Date(last.date+'T12:00:00').toLocaleDateString([], {month:'short',day:'numeric'})}</summary><table style="margin-top:6px"><tbody>${last.biggest_misses.map(m=>`<tr><td style="text-align:left">${esc(m.name)}</td><td class="n">${m.proj.toFixed(1)}</td><td class="n">${m.actual.toFixed(1)}</td></tr>`).join('')}</tbody></table></details>`:''}`;
 }
 
+function learnedHTML(){
+  const l=S.lw;if(!l||!l.weights)return '';
+  const w=l.weights,names={vegas:'Vegas',matchup:'Matchup',injury:'Injury minutes',usage:'Usage bump',starter:'Starter bump',blowout:'Blowout cut'};
+  const methods={sample_blend:'regular players',current_only:'rookies and first-year players',team_change:'players on new teams',prior_only:'players without games this season',recent_role_drop:'players whose role just dropped',recent_minutes_decline:'players losing minutes',dnp_streak_caution:'players coming off DNPs',no_recent_minutes:'players out of the rotation',single_short_game_caution:'players after one short game'};
+  const pct=v=>(v>=1?'+':'')+Math.round((v-1)*100)+'%';
+  const rows=Object.entries(names).map(([k,n])=>`<tr><td style="text-align:left">${n}</td><td class="n">${Number(w[k]??1).toFixed(2)}x</td></tr>`).join('');
+  const mm=Object.entries(w.minutes_mult||{}).filter(([,v])=>Math.abs(v-1)>=.02).map(([k,v])=>`${pct(v)} minutes for ${methods[k]||k}`);
+  const lastAdopt=[...(l.log||[])].reverse().find(x=>x.adopted);
+  return `<h3 style="font:600 18px var(--num);margin:16px 0 4px">What it has learned</h3>
+  <p style="margin:0 0 6px;font-size:14px">${esc(l.decision||'')} Based on ${l.samples} graded player-games over ${l.days} days.</p>
+  ${Math.abs((w.scale??1)-1)>=.01?`<p style="margin:0 0 6px;font-size:14px">Overall projections ${w.scale<1?'lowered':'raised'} ${Math.abs(Math.round((w.scale-1)*100))}% to fix ${w.scale<1?'running high':'running low'}.</p>`:''}
+  ${mm.length?`<p style="margin:0 0 6px;font-size:14px">${esc(mm.join(', '))}.</p>`:''}
+  <details style="font-size:13.5px"><summary>Current weights</summary><table style="margin-top:6px"><tbody>${rows}</tbody></table>${lastAdopt?`<p class="muted" style="margin:6px 0 0">Last change ${esc(lastAdopt.date)}: ${esc(lastAdopt.changes.join(', ')||'none')}.</p>`:''}</details>`;
+}
 function renderSources(){
   const t=S.today,src=t&&t.sources||{};
-  $('sources').innerHTML=`<p>Slate and Vegas lines: ${esc(src.slate||'not loaded')}${t?', projections built '+esc(ago(t.built_at)):''}.</p><p>Injuries: ESPN report, updated ${esc(ago(S.inj&&S.inj.updated_at))}. Starting lineups: RotoWire, checked ${esc(ago(src.lineups_checked))}. Box scores: ESPN, updated ${esc(ago(src.stats_updated))}.</p><p>Projection = expected minutes × fantasy points per minute, adjusted for Vegas team totals, opponent matchup, injuries and confirmed starters. Every adjustment is shown when you tap a player.</p>`;
+  $('sources').innerHTML=`<p>Slate and Vegas lines: ${esc(src.slate||'not loaded')}${t?', projections built '+esc(ago(t.built_at)):''}.</p><p>Injuries: ESPN report, updated ${esc(ago(S.inj&&S.inj.updated_at))}. Starting lineups: RotoWire, checked ${esc(ago(src.lineups_checked))}. Box scores: ESPN, updated ${esc(ago(src.stats_updated))}.</p><p>Projection = expected minutes × fantasy points per minute, adjusted for Vegas team totals, opponent matchup, injuries and confirmed starters. How much each adjustment counts is relearned every morning from graded results. Every adjustment is shown when you tap a player.</p>`;
 }
 function renderAll(){recompute();const any=S.games.some(started);$('review-wrap').hidden=!any;if(!any)S.review=false;$('review').checked=S.review;renderHeader();renderNotices();renderGames();renderPlayers();renderLineups();renderAccuracy();renderSources();paintCount&&paintCount();paintMode&&paintMode();syncExposure()}
 

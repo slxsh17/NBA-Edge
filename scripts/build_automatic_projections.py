@@ -251,7 +251,7 @@ def authorized_refs_for_date(data,day):
     return refs,bool(refs)
 
 
-def build(day=None):
+def build(day=None, injury_map=None):
     """Projects every player with NBA history. No slate file needed: the browser
     matches these rows to whatever FanDuel CSV the user imports."""
     day=day or dt.datetime.now(ZoneInfo('America/New_York')).date()
@@ -267,8 +267,8 @@ def build(day=None):
     for r in old.get('players',[])+old.get('game_logs',[])+raw:
         k=norm(r.get('name'))
         if k:names[k]=r.get('name')
-    injuries={}
-    for r in read('injuries.json').get('injuries',[]):
+    injuries=dict(injury_map) if injury_map is not None else {}
+    for r in ([] if injury_map is not None else read('injuries.json').get('injuries',[])):
         k=norm(r.get('name'))
         if k:injuries[k]=str(r.get('status') or 'listed')
     refs,have_refs=authorized_refs_for_date(read('authorized_projection_benchmarks.json'),day_str)

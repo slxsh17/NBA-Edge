@@ -121,14 +121,48 @@ def starter_match(name, lineup_names):
     return False
 
 
+# ---------- shared final formula (mirrored in index.html and learn_weights.py) ----------
+DEFAULT_WEIGHTS = {'vegas': 1.0, 'matchup': 1.0, 'injury': 1.0, 'usage': 1.0, 'starter': 1.0,
+                   'blowout': 1.0, 'scale': 1.0, 'minutes_mult': {}}
+
+
+def learned_weights():
+    """Weights fitted nightly by learn_weights.py (falls back to defaults)."""
+    w = read('learned_weights.json').get('weights')
+    return w if isinstance(w, dict) else {}
+
+
+def final_projection(p, W):
+    """minutes, projection from base minutes + recorded adjustments + weights."""
+    a = p.get('adj', {})
+    mm = (W.get('minutes_mult') or {}).get(p.get('method') or 'other', 1.0)
+    m = (p['base_minutes'] * mm + a.get('injury_min', 0) * W['injury'] + a.get('starter_min', 0) * W['starter'])
+    m *= a.get('team_cap', 1.0) * (1 + a.get('blowout', 0) * W['blowout'])
+    f = lambda x, w: 1 + (x - 1) * w
+    wmax = max(1.0, W['vegas'], W['matchup'], W['usage'])
+    env = clip(f(a.get('vegas', 1.0), W['vegas']) * f(a.get('matchup', 1.0), W['matchup']) * f(a.get('usage', 1.0), W['usage']),
+               1 - 0.12 * wmax, 1 + 0.14 * wmax)
+    return m, m * p['rate'] * env * W['scale']
+
+
 # ---------- main build ----------
-def build(day=None):
+def build(day=None, backtest=False, weights=None):
+    """backtest=True rebuilds a past day using only information available before it:
+    archived slate (its own injury tags), box scores before that date, no live feeds."""
     day = day or dt.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
-    slate = read(f'slate_{day}.json')
+    slate = read(f'archive/slate_{day}.json') if backtest else read(f'slate_{day}.json')
     if not slate.get('players'):
         print('No slate JSON for', day)
         return None
-    base = read('automatic_projections.json')
+    W = {**DEFAULT_WEIGHTS, **(weights if weights is not None else learned_weights())}
+    if backtest:
+        import sys
+        sys.path.insert(0, str(ROOT / 'scripts'))
+        import build_automatic_projections as B
+        tags = {norm(p['name']): p['status'] for p in slate['players'] if p.get('status') in ('OUT', 'DOUBTFUL', 'QUESTIONABLE')}
+        base = B.build(dt.date.fromisoformat(day), injury_map=tags)
+    else:
+        base = read('automatic_projections.json')
     base_rows = base.get('players', []) if base.get('slate_date') == day else []
     by_team = {(norm(r['name']), canon(r['team'])): r for r in base_rows}
     by_name = defaultdict(list)
@@ -136,16 +170,17 @@ def build(day=None):
         by_name[norm(r['name'])].append(r)
 
     inj = {}
-    for r in read('injuries.json').get('injuries', []):
+    for r in ([] if backtest else read('injuries.json').get('injuries', [])):
         inj[(norm(r.get('name')), canon(r.get('team')))] = str(r.get('status') or '').upper()
-    lineups = {canon(l.get('team')): l for l in read('lineup_news.json').get('lineups', [])
+    lineups = {} if backtest else {canon(l.get('team')): l for l in read('lineup_news.json').get('lineups', [])
                if l.get('date') == day and l.get('status') == 'confirmed'}
     mu = read('matchup_usage.json')
     dvp = {(canon(d['opponent']), d['position']): d for d in mu.get('dvp', []) if d.get('league_avg')}
 
     last = read('last_season_stats.json')
     cur = read('player_stats.json')
-    logs_cur = cur.get('game_logs', [])
+    cutoff = day.replace('-', '')
+    logs_cur = [r for r in cur.get('game_logs', []) if str(r.get('date')) < cutoff]  # never peek at the day itself
     logs_all = last.get('game_logs', []) + logs_cur
     tg_all = team_games(logs_all)
     naive = naive_fppg(last.get('players', []), logs_cur)
@@ -253,7 +288,7 @@ def build(day=None):
 
     # 5-6. Vegas + matchup, then final numbers
     for p in players:
-        if p.get('out') or p['minutes'] <= 0:
+        if p.get('out') or p['minutes'] <= 0 or 'base_minutes' not in p:
             p['proj'] = 0.0
             continue
         vegas = 1.0
@@ -264,7 +299,6 @@ def build(day=None):
             vegas = clip(1 + 0.6 * (tt / avg_tt - 1), 0.92, 1.08)
             if abs(spread) > 9 and p['minutes'] >= 28:
                 trim = min(0.06, 0.01 * (abs(spread) - 9))
-                p['minutes'] *= 1 - trim
                 p['adj']['blowout'] = round(-trim, 3)
         p['adj']['vegas'] = round(vegas, 3)
         ratios = []
@@ -274,9 +308,9 @@ def build(day=None):
                 ratios.append(d['fp_allowed'] / d['league_avg'])
         matchup = clip(1 + 0.5 * (statistics.mean(ratios) - 1), 0.94, 1.06) if ratios else 1.0
         p['adj']['matchup'] = round(matchup, 3)
-        env = clip(vegas * matchup * p['adj'].get('usage', 1.0), 0.88, 1.14)
-        p['proj'] = round(p['minutes'] * p['rate'] * env, 2)
-        p['minutes'] = round(p['minutes'], 1)
+        m, proj = final_projection(p, W)
+        p['proj'] = round(proj, 2)
+        p['minutes'] = round(m, 1)
         # 7. range: FP spread grows with projection; extra for shaky roles
         shaky = any(f.startswith(('ROLE DROP', 'New team', 'Small sample', 'No NBA')) for f in p['flags']) or p['status'] == 'QUESTIONABLE'
         sd = 0.28 * p['proj'] + 3 + (3 if shaky else 0)
@@ -309,7 +343,7 @@ def build(day=None):
 
     for p in players:
         p.pop('_recent', None)
-    out = {'schema': 1, 'model': 'v27', 'date': day, 'slate': slate.get('slate', 'Main'),
+    out = {'schema': 1, 'model': 'v28', 'date': day, 'weights': W, 'slate': slate.get('slate', 'Main'),
            'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
            'avg_team_total': round(avg_tt, 1) if avg_tt else None, 'games': games,
            'sources': {'slate': slate.get('source'), 'injuries_updated': read('injuries.json').get('updated_at'),

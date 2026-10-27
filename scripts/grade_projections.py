@@ -57,9 +57,7 @@ def snapshot(now):
         if start is None or now >= start:   # game started (or unknown time): freeze
             continue
         key = norm(p['name']) + '|' + p['team']
-        rec = {'name': p['name'], 'team': p['team'], 'salary': p['salary'], 'proj': p['proj'],
-               'naive': p.get('naive', 0), 'minutes': p['minutes'], 'out': bool(p.get('out')),
-               'own': p.get('own')}
+        rec = component_record(p)
         if snap['players'].get(key) != rec:
             snap['players'][key] = rec
             changed = True
@@ -69,12 +67,38 @@ def snapshot(now):
         old.unlink()
 
 
-def grade_day(snap, logs):
+def component_record(p):
+    """Everything the learner needs to recompute this projection under different weights."""
+    return {'name': p['name'], 'team': p['team'], 'salary': p['salary'], 'proj': p['proj'],
+            'naive': p.get('naive', 0), 'minutes': p['minutes'], 'out': bool(p.get('out')),
+            'own': p.get('own'), 'base_minutes': p.get('base_minutes'), 'rate': p.get('rate'),
+            'adj': p.get('adj', {}), 'method': p.get('method'), 'shaky': p.get('shaky')}
+
+
+def attach_actuals(snap, logs):
+    """Store actual minutes/FP in the snapshot itself, so learning data outlives the
+    7-day box-score window. Returns True if anything changed."""
     day = snap['date'].replace('-', '')
     actual = {}
     for r in logs:
         if str(r.get('date')) == day:
             actual[norm(r.get('name')) + '|' + canon(r.get('team'))] = (float(r.get('minutes') or 0), float(r.get('fantasy_points') or 0))
+    if not actual:
+        return False
+    teams = {k.split('|')[1] for k in actual}
+    changed = False
+    for key, s in snap['players'].items():
+        if key.split('|')[1] not in teams:
+            continue
+        a = actual.get(key, (0.0, 0.0))   # team played, player absent from box score = DNP
+        if s.get('actual_min') != a[0] or s.get('actual') != a[1]:
+            s['actual_min'], s['actual'] = a
+            changed = True
+    return changed
+
+
+def grade_day(snap, logs):
+    actual = {k: (s['actual_min'], s['actual']) for k, s in snap['players'].items() if 'actual' in s}
     if not actual:
         return None
     rows, missed = [], []
@@ -115,7 +139,10 @@ def main():
         day = path.stem
         if day >= today:
             continue
-        res = grade_day(read(path), logs)
+        snap = read(path)
+        if attach_actuals(snap, logs):
+            path.write_text(json.dumps(snap, separators=(',', ':')) + '\n', encoding='utf-8')
+        res = grade_day(snap, logs)
         if res:
             graded[day] = res      # regrade while box scores are still in the 7-day window
     days = sorted(graded.values(), key=lambda d: d['date'])[-30:]

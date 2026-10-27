@@ -1,7 +1,7 @@
 name: NBA EDGE Slate Pipeline
 
 # Every 15 min, 10am-midnight Eastern: today's FanDuel slate (hourly) ->
-# base projections -> final slate projections (data/today.json) -> accuracy report.
+# grade -> learn weights (daily) -> final slate projections (data/today.json) -> snapshot.
 on:
   workflow_dispatch:
   schedule:
@@ -32,10 +32,16 @@ jobs:
       - name: Base projections (minutes x FP/min)
         if: always()
         run: python scripts/build_automatic_projections.py
+      - name: Grade past days
+        if: always()
+        run: python scripts/grade_projections.py
+      - name: Learn weights (once each morning)
+        if: always()
+        run: python scripts/learn_weights.py
       - name: Final slate projections
         if: always()
         run: python scripts/build_slate.py
-      - name: Accuracy report
+      - name: Snapshot projections before tip-off
         if: always()
         run: python scripts/grade_projections.py
       - name: Publish
@@ -43,7 +49,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A data/slate_* data/automatic_projections.json data/today.json data/accuracy.json data/history
+          git add -A data/slate_* data/automatic_projections.json data/today.json data/accuracy.json data/history data/learned_weights.json data/archive
           git diff --cached --quiet && exit 0
           git commit -m 'Update NBA EDGE slate pipeline'
           for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
