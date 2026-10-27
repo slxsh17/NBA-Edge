@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-27T01:13:50.291170+00:00",
+  "checked_at": "2026-10-27T02:01:42.596663+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -53,6 +53,14 @@
       "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbllCU0d6MW81NUJXZ055aVFMTEtHY2o3N0ZWTktPT0FXZFdCeWNYbklSUWM1VGpiMzVuSE04N3JWMG5Kdm5Ibm1aRFAyUDJ4QTExb1VEMXlCX3dCVTFRNFBsbmRyWDh5TE9GNHFhNFlmT2xxb3NFbnd6WFFPdkxDdWZkbXprQ1JfUllFRmpzN09pV1d6cnVN?oc=5",
       "published_at": "2026-10-26T18:53:15+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Warriors Announce 4th New Starting Lineup of Season vs. Nuggets - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRDNabkdrdzJvRlBFQXB2WDJzY2xKc0ppMENZLXZVLW1rdkJ5R0U2UGR5cEpZRVFkWjRtc0dXaVd4d0RtbHZxSUhiWGp1TWVyYlZ1bnlRN242eXF4R3hTZ0RIY1I1d3VBR002Tk5qNTRucGZ0TG9Va2M4NHhjWEpxN3c5VEpydUF4ZnlPWGNnRWpPbTI0ZkdpQXVxbXhYUE1TMTZNTWQ4MTZyZm5EUDd4NEJn?oc=5",
+      "published_at": "2026-10-27T01:36:44+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -117,14 +125,6 @@
       "headline": "Liam Coen on Brian Thomas Jr. being in starting lineup - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1VVGJ1MmlzU0tHZEJpRVhNZGhVeHdja3plNVphbGx0ZXFNUW9aRm9qeTMtd3JidTBVV1gxZnRKWUMtTTl6V09qM0hZeVNkZFp0OU5YNlVDbWpPZjdrOXhhVmQtZXJNUGctWm9JMWJfUG4yeGFXZ0Rtb3hZcG4?oc=5",
       "published_at": "2026-10-26T19:06:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Forde: Minutes restriction? What minutes restriction. - Basketball.com.au",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY2hvR1dMdENUU1d0TXRlTmlwX3o4R1hRTWc3eF9mUzNnejBrWW84ZEE3M0JxWnVFcGlkUkxaRHduZnB0Wi1lLXduX1pyUC02OXVheml0MUVTek9WN0U1dmIybmlmR0JMa0pMMXpTaTJVQ0JMUW5lc0ZIQVQxTXFIU0tMOWhGZF9YX1NlSDhxTDcwQUlWZTJ5dF9ZaDI0dw?oc=5",
-      "published_at": "2026-10-26T01:25:59+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
