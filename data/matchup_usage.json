@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T09:11:42.609720-04:00",
+  "updated_at": "2026-10-27T15:06:05.371452-04:00",
   "source": "ESPN unofficial completed NBA box scores and local FanDuel positional mapping",
   "dvp_method": "Mean fantasy points allowed per player-game by nominal position; not pace or role adjusted",
   "usage_method": "Box-score estimated possession share, current-season sample only; projected_usage equals historical_usage until separately verified change",
@@ -398,14 +398,14 @@
     {
       "opponent": "HOU",
       "position": "PF",
-      "fp_allowed": 23.13,
+      "fp_allowed": 23.09,
       "league_avg": 23.34,
       "games": 115
     },
     {
       "opponent": "HOU",
       "position": "PG",
-      "fp_allowed": 21.35,
+      "fp_allowed": 21.36,
       "league_avg": 24.5,
       "games": 92
     },
@@ -419,7 +419,7 @@
     {
       "opponent": "HOU",
       "position": "SG",
-      "fp_allowed": 19.42,
+      "fp_allowed": 19.44,
       "league_avg": 21.37,
       "games": 137
     },
@@ -510,7 +510,7 @@
     {
       "opponent": "LAL",
       "position": "PG",
-      "fp_allowed": 24.29,
+      "fp_allowed": 24.28,
       "league_avg": 24.5,
       "games": 93
     },
@@ -923,7 +923,7 @@
     {
       "opponent": "SAC",
       "position": "PF",
-      "fp_allowed": 25.42,
+      "fp_allowed": 25.4,
       "league_avg": 23.34,
       "games": 119
     },
@@ -944,7 +944,7 @@
     {
       "opponent": "SAC",
       "position": "SG",
-      "fp_allowed": 23.18,
+      "fp_allowed": 23.2,
       "league_avg": 21.37,
       "games": 139
     },
@@ -1898,14 +1898,14 @@
     },
     {
       "name": "Cedric Coward",
-      "historical_usage": 15.14,
-      "projected_usage": 15.14,
+      "historical_usage": 15.56,
+      "projected_usage": 15.56,
       "games": 3
     },
     {
       "name": "Cameron Boozer",
-      "historical_usage": 24.43,
-      "projected_usage": 24.43,
+      "historical_usage": 24.1,
+      "projected_usage": 24.1,
       "games": 4
     },
     {
@@ -2402,14 +2402,14 @@
     },
     {
       "name": "Isaiah Jackson",
-      "historical_usage": 20.86,
-      "projected_usage": 20.86,
+      "historical_usage": 20.37,
+      "projected_usage": 20.37,
       "games": 3
     },
     {
       "name": "Kris Dunn",
-      "historical_usage": 11.59,
-      "projected_usage": 11.59,
+      "historical_usage": 11.99,
+      "projected_usage": 11.99,
       "games": 3
     },
     {
