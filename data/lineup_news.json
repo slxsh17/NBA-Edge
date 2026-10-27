@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-26",
-  "checked_at": "2026-10-27T00:15:43.662458+00:00",
+  "checked_at": "2026-10-27T01:13:50.291170+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -32,37 +32,43 @@
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
       "date": "2026-10-26"
+    },
+    {
+      "team": "MEM",
+      "status": "confirmed",
+      "players": [
+        "Ty Jerome",
+        "Cedric Coward",
+        "Jaylen Wells",
+        "C. Boozer",
+        "Zach Edey"
+      ],
+      "source": "RotoWire NBA Daily Lineups",
+      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
+      "date": "2026-10-26"
     }
   ],
   "headlines": [
     {
-      "headline": "Saddiq Bey's Play Already Demanding Pelicans Rotation Adjustment - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVVdVOTlYRUJvSWtxZjRycVNvaVFJT01rQmxYcmE0MXQtMHR2SnRCTlZXYWJJTkMwQkhDdWMzbEdETlpJODQ3cnU3ZnVYV3B1cGpLNXdROFhTcnduYlp4X2pESm9qTmw5cGlBR0F6bWxyR0NyNTlXTTNRSk11WGJmb2IwemVPWnI4WVhv?oc=5",
-      "published_at": "2026-10-26T19:00:04+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-26"
-    },
-    {
-      "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOeHB0Yy03OERscGZySkdTVWthbVdReVY3UHNJcUg2UUpreFczcnFpdUVCUk5sSG55YzFSRGNJZlhSNGdUbGZQN3pZdnY5YlpKWmVIUktxNzBIMzRXVklBVkhHeXZyOHhUampxUy1WWWl5T2FfOGJtWXhHMldWckF3RjkwVDRNNUFlMDBZWkgwMDk2WUc3VEVOUUNCT2xqbnNaWEh3cTUyRUMyMFNMXzhaVGR2ei1pUWhkNWl0aQ?oc=5",
-      "published_at": "2026-10-26T18:53:14+00:00",
+      "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Minnesota Timberwolves - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbllCU0d6MW81NUJXZ055aVFMTEtHY2o3N0ZWTktPT0FXZFdCeWNYbklSUWM1VGpiMzVuSE04N3JWMG5Kdm5Ibm1aRFAyUDJ4QTExb1VEMXlCX3dCVTFRNFBsbmRyWDh5TE9GNHFhNFlmT2xxb3NFbnd6WFFPdkxDdWZkbXprQ1JfUllFRmpzN09pV1d6cnVN?oc=5",
+      "published_at": "2026-10-26T18:53:15+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
     },
     {
       "headline": "Seth Curry bewildered by Warriors' starting lineup decision early in season - NBC Sports Bay Area & California",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcEhzNEhwcV80VzVMM095eGRJOVVlUnhUQXh5YTg3QnI2YmZVSGlvd0hkUnRhX2YzSzNmWndJdzlLTnVydzNNSmxfVnpUOC1CcWM3N2RUUk1wQ0RxdDlzX0tSR2lJU0RyQlZHYjZvZjJGVFlPYmhqdFM3b2xlRU51dVBEbzBnWkJXMk9KWGp1dmF3c01CUFJ2cGlLYWlodVltX185OWxzUFDSAbABQVVfeXFMUC1LRmZmZF9tQkxzR0JBVGhCSEVENXRZR181ZkE0emluV3J4RHpMejZfWXNRczRheDFJSzJKUjloUzhScjZvMGVzcHNfN25uazZ4Z253eGpJR3lUR2RYX21HUVFxVUthRGh3TVNUdkdnT3R3emF6RVlXQzFwekU0cnQwQnNrU3U3V2s2Sy1vZ0ZNZXVqSGVHclJfTGlWei1mcXdJcFFXM0hGazBCMGxLXzE?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQLUtGZmZkX21CTHNHQkFUaEJIRUQ1dFlHXzVmQTR6aW5XcnhEekx6Nl9Zc1FzNGF4MUlLMkpSOWhTOFJyNm8wZXNwc183bm5rNnhnbnd4aklHeVRHZFhfbUdRUXFVS2FEaHdNU1R2R2dPdHd6YXpFWVdDMXB6RTRydDBCc2tTdTdXazZLLW9nRk1ldWpIZUdyUl9MaVZ6LWZxd0lwUVczSEZrMEIwbEtfMdIBsAFBVV95cUxQLUtGZmZkX21CTHNHQkFUaEJIRUQ1dFlHXzVmQTR6aW5XcnhEekx6Nl9Zc1FzNGF4MUlLMkpSOWhTOFJyNm8wZXNwc183bm5rNnhnbnd4aklHeVRHZFhfbUdRUXFVS2FEaHdNU1R2R2dPdHd6YXpFWVdDMXB6RTRydDBCc2tTdTdXazZLLW9nRk1ldWpIZUdyUl9MaVZ6LWZxd0lwUVczSEZrMEIwbEtfMQ?oc=5",
       "published_at": "2026-10-26T17:45:55+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
     },
     {
-      "headline": "Why Justin Champagnie Is Earning Permanent Role in Wizards Rotation - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRUNrSTdRbkJyR0VaeGw4LVhkWEdSaVU5VHhiY3VqRjlkUW0yTUUzVEJwZTNZMmtEUmhsTnRpOTFxZ19qMG1hT1dqODNqaURUNG1hdFo0TjF4b3NzYmVBUG5pS3ExUW9CTVNaYzdPb1hTRWlFcEdVZGxpZm1peGtDam9pbGkyLVhHMTNwOTJQenF1dw?oc=5",
-      "published_at": "2026-10-26T10:00:42+00:00",
+      "headline": "Saddiq Bey's Play Already Demanding Pelicans Rotation Adjustment - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVVdVOTlYRUJvSWtxZjRycVNvaVFJT01rQmxYcmE0MXQtMHR2SnRCTlZXYWJJTkMwQkhDdWMzbEdETlpJODQ3cnU3ZnVYV3B1cGpLNXdROFhTcnduYlp4X2pESm9qTmw5cGlBR0F6bWxyR0NyNTlXTTNRSk11WGJmb2IwemVPWnI4WVhv?oc=5",
+      "published_at": "2026-10-26T19:00:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
@@ -79,6 +85,54 @@
       "headline": "Warriors-Nuggets Injury Report Features 3 Dubs Rotation Players, 1 Denver Starter - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVTViZUxKOHRGejhhTExSbzlfYTd6STc3ZmpxTkxfdzY2bEJiUGRkcm50T1ZobzNuclVNM1JlWG5XNFNzX2t6Q2xyRzBhOUxMczktbzZwSEVFLUpMdFlPd21WOG9iV0tBQ05aYnlMTkwzaWpEbnhXaFZkQlhmZG5qeUFMX2FzOW9QMUhuS2tFV1Z2a05ERnRmVFV4akc3OXNuVllyZFFPRTlvUnVSVmtNOGxCem85V1dmQUszLXYwQk85c0RGM1JkR1hn?oc=5",
       "published_at": "2026-10-26T05:04:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Why Justin Champagnie Is Earning Permanent Role in Wizards Rotation - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRUNrSTdRbkJyR0VaeGw4LVhkWEdSaVU5VHhiY3VqRjlkUW0yTUUzVEJwZTNZMmtEUmhsTnRpOTFxZ19qMG1hT1dqODNqaURUNG1hdFo0TjF4b3NzYmVBUG5pS3ExUW9CTVNaYzdPb1hTRWlFcEdVZGxpZm1peGtDam9pbGkyLVhHMTNwOTJQenF1dw?oc=5",
+      "published_at": "2026-10-26T10:00:42+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Suns Reveal Starting Lineup vs Depleted Thunder - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSkJ4UXkxSzQ0a29oV2pFQnhMSXd1YzJVTU1tQjE3amNfb3JOZkFiMjJTZ1JRNnFpVWRPcDRmMGh2NmNvYk1KaTFpVk1CYmhiVHJaNHZyVjNyM1FLMWlkZGRRLUlqY1RaZGVyazk3cnVYRVNWaDlyRDJMbEM3Qk1EQU5BckF1MGtES0xJa1BSNzFSMkU?oc=5",
+      "published_at": "2026-10-26T23:31:12+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Suns' New Starting Five Is Already Producing Mixed Results - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaGFSUHlySmR1c3VBel9VQU45SEQ3cE40SDBkTDZqamh4M0dmM28wN2JjeV9PeDhLZ3BFUERNQXBvUWMtVEdfLW1JT2VUZEljQ1FnTWVZamJ0ZUh2Y1FrWjFSVWhBYS0tNGNhUjI4blJ2RnJpMjVHLVhVZnhlUzBnTnlwZ3MySkJiZTdZSXh3?oc=5",
+      "published_at": "2026-10-26T23:00:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Liam Coen on Brian Thomas Jr. being in starting lineup - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1VVGJ1MmlzU0tHZEJpRVhNZGhVeHdja3plNVphbGx0ZXFNUW9aRm9qeTMtd3JidTBVV1gxZnRKWUMtTTl6V09qM0hZeVNkZFp0OU5YNlVDbWpPZjdrOXhhVmQtZXJNUGctWm9JMWJfUG4yeGFXZ0Rtb3hZcG4?oc=5",
+      "published_at": "2026-10-26T19:06:06+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "Forde: Minutes restriction? What minutes restriction. - Basketball.com.au",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY2hvR1dMdENUU1d0TXRlTmlwX3o4R1hRTWc3eF9mUzNnejBrWW84ZEE3M0JxWnVFcGlkUkxaRHduZnB0Wi1lLXduX1pyUC02OXVheml0MUVTek9WN0U1dmIybmlmR0JMa0pMMXpTaTJVQ0JMUW5lc0ZIQVQxTXFIU0tMOWhGZF9YX1NlSDhxTDcwQUlWZTJ5dF9ZaDI0dw?oc=5",
+      "published_at": "2026-10-26T01:25:59+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-26"
+    },
+    {
+      "headline": "This Kris Dunn Trade Scenario Would Strengthen the OklThunder’s Rotation - TWSN",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV3Q5WnY1SW9MbjhZODhOS1NlMnMyRE9qT21pU25rQ1YzdDIzNGFmSjBpS3JfMmhFTnh4QXk1RFFuZHA2bWJxbVFYc19GRjJFUkVpM2hMRERlbjZrcW16YWVOUWJDWjB1SkJ5Ulg0ZkxBdDlyQjFQdWxuY2x0NmhRZndPU0d1VnVMYmNKbU94OUdEV2pEci10Zm90aXJVLXMt?oc=5",
+      "published_at": "2026-10-27T00:52:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-26"
