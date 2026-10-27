@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T02:55:21.140353+00:00",
+  "updated_at": "2026-10-27T04:14:59.604306+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -16,11 +16,6 @@
       "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
-    },
-    {
-      "name": "Mikel Brown Jr.",
-      "team": "BKN",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tyler Bilodeau",
@@ -48,14 +43,19 @@
       "status": "OUT"
     },
     {
+      "name": "Patrick Williams",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
     },
     {
-      "name": "Patrick Williams",
-      "team": "CHI",
-      "status": "OUT"
+      "name": "Naji Marshall",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Sergio de Larrea",
@@ -64,11 +64,6 @@
     },
     {
       "name": "Caleb Martin",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Naji Marshall",
       "team": "DAL",
       "status": "OUT"
     },
