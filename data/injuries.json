@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T23:28:04.082150+00:00",
+  "updated_at": "2026-10-28T00:01:36.342656+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -118,14 +118,9 @@
       "status": "OUT"
     },
     {
-      "name": "Ausar Thompson",
-      "team": "DET",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Isaiah Joe",
       "team": "DET",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jalen Duren",
@@ -235,6 +230,11 @@
     {
       "name": "Jordan Miller",
       "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Cameron Carr",
+      "team": "LAL",
       "status": "OUT"
     },
     {
