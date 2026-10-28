@@ -173,6 +173,8 @@ tr.detail td{background:var(--soft);text-align:left;font-size:13px;padding:10px 
 .override input{width:76px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:4px 8px}
 .tag.e{background:var(--ink);color:var(--paper)}
 .review-badge{font-size:12px;font-weight:600;color:var(--warn);margin-left:auto}
+#fd-export{margin-top:12px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+#fd-export[hidden]{display:none}
 .sim-badge{font-size:12px;font-weight:600;color:var(--orange);padding:6px 14px 0}
 footer{font-size:12.5px;color:var(--muted);padding:10px 0 40px;border-top:1px solid var(--line)}
 footer a{color:inherit}
@@ -212,6 +214,7 @@ details summary{cursor:pointer}
       <button class="btn small" id="refresh" type="button">Refresh</button>
       <button class="btn small" id="upload-btn" type="button">Use my CSV</button>
       <input type="file" id="csv" accept=".csv,text/csv" hidden>
+      <input type="file" id="fd-ids" accept=".csv,text/csv" hidden>
     </div>
   </div>
 </header>
@@ -244,6 +247,7 @@ details summary{cursor:pointer}
       <button class="btn primary" id="build" type="button">Build lineups</button>
       <div id="build-status" role="status"></div>
       <div id="lineups"></div>
+      <div id="fd-export" hidden><button class="btn" id="fd-export-btn" type="button">Download for FanDuel</button><div class="muted" id="fd-export-msg"></div></div>
       <div id="exposure-summary"></div>
       <div id="settings" hidden></div>
     </section>
@@ -443,7 +447,41 @@ async function applyCSV(text,remember=true){
   S.games=(S.today&&S.today.date===S.day?S.today.games:[]).filter(g=>teams.has(g.home)||teams.has(g.away));
   if(teams.size===2){S.format='single';S.sgId='csv'}else if(S.format==='single'){S.format='classic'}
   if(remember)store.set('csv',{day:S.day,text});
+  ingestIds(rows);
 }
+
+// ---------- FanDuel bulk upload ----------
+// FanDuel's lineup upload wants FanDuel player IDs (the "Id" column of the player list you download
+// from a contest). Only those IDs are taken from the file; projections stay automatic.
+function idStore(){const v=store.get('fdids',null);return v&&v.day===S.day?v:{day:S.day,maps:{}}}
+function curIdKey(){if(S.format==='single'){const g=S.games[0];return g?'sg:'+[g.away,g.home].sort().join('@'):''}return 'main'}
+function ingestIds(rows){
+  const h=rows[0].map(x=>x.trim().toLowerCase()),iId=h.indexOf('id'),iName=h.indexOf('nickname'),iF=h.indexOf('first name'),iL=h.indexOf('last name'),iTeam=h.indexOf('team');
+  if(iId<0||iTeam<0)return null;
+  const map={},teams=new Set();
+  for(const r of rows.slice(1)){const name=(iName>=0&&r[iName])||[r[iF],r[iL]].filter(Boolean).join(' ');const id=String(r[iId]||'').trim();if(!name||!id)continue;const t=canon(r[iTeam]);teams.add(t);map[key(name)+'|'+t]=id}
+  if(!Object.keys(map).length)return null;
+  const k=teams.size===2?'sg:'+[...teams].sort().join('@'):'main';const st=idStore();st.maps[k]=map;store.set('fdids',st);return k;
+}
+function fdHeader(){return F().order.flatMap(s=>Array(F().need[s]).fill(s==='MVP'?'MVP - 1.5X Points':s))}
+function exportable(){return S.lineups.filter(l=>!l.review)}
+function missingIds(){const m=idStore().maps[curIdKey()]||{};const miss=new Set();exportable().forEach(l=>l.picks.forEach(x=>{if(!m[pkey(x.p)])miss.add(x.p.name)}));return {m,miss:[...miss]}}
+function downloadFD(){
+  const {m,miss}=missingIds(),msg=$('fd-export-msg');
+  if(miss.length){msg.textContent=`No FanDuel ID for ${miss.slice(0,4).join(', ')}${miss.length>4?' and '+(miss.length-4)+' more':''}. Choose the player list for this exact contest.`;return false}
+  const rows=[fdHeader().join(',')].concat(exportable().map(l=>l.picks.map(x=>m[pkey(x.p)]).join(',')));
+  const blob=new Blob([rows.join('\r\n')+'\r\n'],{type:'text/csv'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download=`nba-edge-fanduel-${S.day}-${S.format==='single'?curIdKey().slice(3).replace('@','-'):'main'}.csv`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000);
+  msg.textContent=`Saved ${rows.length-1} lineup${rows.length>2?'s':''}. On FanDuel: open the contest, choose Upload lineups from CSV, and pick this file.`;return true;
+}
+function renderExport(){const box=$('fd-export');if(!box)return;const n=exportable().length;box.hidden=!n;if(!n)return;
+  const {miss}=missingIds();$('fd-export-btn').textContent=miss.length?'Download for FanDuel (link IDs first)':'Download for FanDuel';
+  if(miss.length&&!$('fd-export-msg').dataset.touched)$('fd-export-msg').textContent='FanDuel needs its own player IDs. On FanDuel, open the contest and tap Download players list, then choose that file here. Only the IDs are used.';}
+$('fd-export-btn').onclick=()=>{$('fd-export-msg').dataset.touched='1';const {miss}=missingIds();if(miss.length)$('fd-ids').click();else downloadFD()};
+$('fd-ids').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;const msg=$('fd-export-msg');
+  try{const k=ingestIds(parseCSV(await f.text()));if(!k){msg.textContent='That file has no Id column. Use the player list downloaded from the FanDuel contest.';return}
+    if(k!==curIdKey()){msg.textContent=k==='main'?'That player list is for a multi-game slate, but you\u2019re on a single game. Switch to Classic or choose the single-game list.':'That player list is for a single game ('+k.slice(3).replace('@',' & ')+'). Choose the list for this slate.';return}
+    downloadFD();renderExport()}catch(err){msg.textContent='Couldn\u2019t read that file.'}};
 
 // ---------- slate / games ----------
 const started=g=>!!g.time&&Date.now()>=Date.parse(g.time);
@@ -677,6 +715,7 @@ async function lateSwap(i){
 // ---------- lineups ----------
 function renderLineups(fresh=false){
   const box=$('lineups');
+  renderExport();
   if(!S.lineups.length){box.innerHTML='';$('exposure-summary').innerHTML='';return}
   box.innerHTML=S.lineups.map((l,i)=>{
     const sal=l.picks.reduce((s,x)=>s+salOf(x),0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/l.picks.length;
