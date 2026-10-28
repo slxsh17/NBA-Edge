@@ -163,7 +163,42 @@ def starter_match(name, lineup_names):
 
 # ---------- shared final formula (mirrored in index.html and learn_weights.py) ----------
 DEFAULT_WEIGHTS = {'vegas': 1.0, 'matchup': 1.0, 'injury': 1.0, 'usage': 1.0, 'starter': 1.0,
-                   'blowout': 1.0, 'scale': 1.0, 'outside': 0.0, 'minutes_mult': {}}
+                   'blowout': 1.0, 'scale': 1.0, 'outside': 0.0, 'travel': 0.0, 'minutes_mult': {}}
+ARENAS = {'ATL': (33.757, -84.396), 'BOS': (42.366, -71.062), 'BKN': (40.683, -73.975), 'CHA': (35.225, -80.839),
+          'CHI': (41.881, -87.674), 'CLE': (41.497, -81.688), 'DAL': (32.790, -96.810), 'DEN': (39.749, -105.008),
+          'DET': (42.341, -83.055), 'GSW': (37.768, -122.388), 'HOU': (29.751, -95.362), 'IND': (39.764, -86.155),
+          'LAC': (33.945, -118.341), 'LAL': (34.043, -118.267), 'MEM': (35.138, -90.051), 'MIA': (25.781, -80.188),
+          'MIL': (43.045, -87.917), 'MIN': (44.979, -93.276), 'NOP': (29.949, -90.082), 'NYK': (40.751, -73.993),
+          'OKC': (35.463, -97.515), 'ORL': (28.539, -81.384), 'PHI': (39.901, -75.172), 'PHX': (33.446, -112.071),
+          'POR': (45.532, -122.667), 'SAC': (38.580, -121.500), 'SAS': (29.427, -98.437), 'TOR': (43.643, -79.379),
+          'UTA': (40.768, -111.901), 'WAS': (38.898, -77.021)}
+
+
+def km(a, b):
+    (la1, lo1), (la2, lo2) = ARENAS[a], ARENAS[b]
+    p1, p2 = math.radians(la1), math.radians(la2)
+    h = math.sin((p2 - p1) / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(math.radians(lo2 - lo1) / 2) ** 2
+    return 2 * 6371 * math.asin(math.sqrt(h))
+
+
+def travel_km(day, games):
+    """Distance each team travels into tonight: last venue (from saved slates, up to 5 days
+    back) to tonight's arena. Unknown last venue -> no entry."""
+    tonight = {}
+    for g in games:
+        tonight[g['home']] = g['home']
+        tonight[g['away']] = g['home']
+    last = {}
+    d0 = dt.date.fromisoformat(day)
+    for back in range(1, 6):
+        d = (d0 - dt.timedelta(days=back)).isoformat()
+        for f in (f'archive/slate_{d}.json', f'archive/single_{d}.json'):
+            doc = read(f)
+            for g in doc.get('games', []) + doc.get('slates', []):
+                for t in (g.get('home'), g.get('away')):
+                    if t and t not in last and g.get('home') in ARENAS:
+                        last[t] = g['home']
+    return {t: round(km(last[t], v)) for t, v in tonight.items() if t in last and t in ARENAS and v in ARENAS}
 
 
 def learned_weights():
@@ -183,6 +218,7 @@ def final_projection(p, W):
     env = clip(f(a.get('vegas', 1.0), W['vegas']) * f(a.get('matchup', 1.0), W['matchup']) * f(a.get('usage', 1.0), W['usage']),
                1 - 0.12 * wmax, 1 + 0.14 * wmax)
     proj = m * p['rate'] * env * W['scale']
+    proj *= 1 + W.get('travel', 0.0) * a.get('travel_km', 0) / 1000.0   # learned; 0 until it proves useful
     # Blend with the outside (DailyFantasyFuel) projection by a learned weight (0 = ours only).
     b = W.get('outside', 0.0)
     if b and p.get('ext') is not None:
@@ -252,6 +288,7 @@ def build(day=None, backtest=False, weights=None):
             totals[g['home']] = (t / 2 - s / 2, s)
             totals[g['away']] = (t / 2 + s / 2, -s)
     avg_tt = statistics.mean(v[0] for v in totals.values()) if totals else None
+    travel = travel_km(day, games + [sg for sg in singles if sg['home'] not in main_teams])
 
     players = []
     for sp in slate_players:
@@ -281,7 +318,7 @@ def build(day=None, backtest=False, weights=None):
             if moved:
                 p['flags'].append(f"New team ({row['team']} → {team}); role unverified")
             for w in row.get('warnings', []):
-                if w.startswith(('ROLE DROP', 'DNP in last', 'Small sample', 'One extremely short', 'Lower current', 'Blowout')):
+                if w.startswith(('ROLE DROP', 'DNP in last', 'Small sample', 'One extremely short', 'Lower current', 'Blowout', 'Back-to-back', 'Third game')):
                     p['flags'].append(w)
         if p['status'] in ('OUT', 'DOUBTFUL'):
             p['out'] = True
@@ -360,6 +397,10 @@ def build(day=None, backtest=False, weights=None):
                 trim = min(0.06, 0.01 * (abs(spread) - 9))
                 p['adj']['blowout'] = round(-trim, 3)
         p['adj']['vegas'] = round(vegas, 3)
+        if travel.get(p['team']):
+            p['adj']['travel_km'] = travel[p['team']]
+            if travel[p['team']] >= 2500:
+                p['flags'].append(f"Long trip in: about {travel[p['team']]:,} km since last game")
         ratios = []
         for pos in p['position'].split('/'):
             d = dvp.get((p['opp'], pos))
@@ -470,7 +511,7 @@ def simulate(players, singles, old):
     import field_sim as FS
     P = own_params()
     main = [p for p in players if p['main'] and p['proj'] > 0 and not p.get('out')]
-    sig = json.dumps([P, read('public_consensus.json').get('updated_at')] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
+    sig = json.dumps([P, read('public_consensus.json').get('updated_at'), len(read('alerts.json').get('late_news', []))] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
                      + [[sg['id'], [[r['k'], r['salary'], r['status']] for r in sg['players']]] for sg in singles])
     import hashlib
     sig = hashlib.sha1(sig.encode()).hexdigest()
@@ -478,7 +519,7 @@ def simulate(players, singles, old):
         prev = {(q['name'], q['team']): q for q in old.get('players', [])}
         for p in players:
             q = prev.get((p['name'], p['team']), {})
-            for k in ('own', 'opt', 'lev', 'pivots', 'consensus'):
+            for k in ('own', 'opt', 'lev', 'pivots', 'consensus', 'late_news'):
                 if k in q:
                     p[k] = q[k]
         prev_sg = {x['id']: {r['k']: r for r in x['players']} for x in old.get('single_games', [])}
@@ -495,6 +536,20 @@ def simulate(players, singles, old):
     pc = read('public_consensus.json')
     cons = {norm(c['name']) + '|' + c['team']: c for c in pc.get('players', [])} if pc.get('date') == SIM_DAY[0] else {}
     own = apply_consensus(own, main, cons, P, 900)
+    # Late-news leverage: players who gained from news close to tip-off. Most of the field
+    # has built by then, so they end up less owned than a fresh projection suggests.
+    al = read('alerts.json')
+    late = {x['key']: x for x in al.get('late_news', [])} if al.get('date') == SIM_DAY[0] else {}
+    if late:
+        lw = P.get('late_news_own', 0.8)
+        for p in main:
+            x = late.get(p['name'] + '|' + p['team'])
+            if x and id(p) in own:
+                own[id(p)] *= lw
+                p['flags'].append(f"Late news: gained after {x['because']} (the field may not react in time)")
+                p['late_news'] = True
+        sc = 900 / (sum(own.values()) or 1)
+        own = {k: v * sc for k, v in own.items()}
     for p in main:
         c = cons.get(norm(p['name']) + '|' + p['team'])
         if c:

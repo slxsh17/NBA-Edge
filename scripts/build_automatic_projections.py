@@ -37,7 +37,9 @@ DEFAULT_PARAMS={
     'rate_k':15.0,          # games before this season's FP/min gets half weight
     'rate_cap':0.5,         # max weight on this season's FP/min
     'shrink_games':6.0,     # pull of small samples toward league FP/min
-    'blowout_game_w':1.0,   # weight of 20+ point blowouts in recent minutes (below 0.5 they are also ignored by role-drop rules)
+    'blowout_game_w':1.0,
+    'b2b_mult':1.0,         # projection multiplier on the second night of a back-to-back
+    'three_in_four_mult':1.0, # ... on the third game in four nights   # weight of 20+ point blowouts in recent minutes (below 0.5 they are also ignored by role-drop rules)
 }
 BLOWOUT=20
 def load_params():
@@ -262,9 +264,26 @@ def rate_for(old,cur):
     return min(2.5,max(.15,rate)),raw,games
 
 
-def build_for_player(key,name,team,old,cur,series,injured,authorized_refs):
+def rest_flags(schedule, day):
+    """(back_to_back, third_in_four, days_rest) for a team playing on `day`, from its game dates."""
+    dates=[d for d,_ in schedule if d<day]
+    if not dates:return False,False,None
+    rest=(day-dates[-1]).days
+    recent=sum(1 for d in dates if (day-d).days<=3)
+    return rest==1,recent>=2,rest
+
+
+def rest_mult(b2b,t34):
+    return (P['b2b_mult'] if b2b else 1.0)*(P['three_in_four_mult'] if t34 else 1.0)
+
+
+def build_for_player(key,name,team,old,cur,series,injured,authorized_refs,rest=(False,False,None)):
     if old and old['games']<3:old=None
     m,method,warnings=expected_minutes(old,cur,series,injured)
+    b2b,t34,rest_days=rest
+    if m is not None and (b2b or t34):
+        m*=rest_mult(b2b,t34)
+        warnings.append('Back-to-back (second night)' if b2b else 'Third game in four nights')
     if cur and cur.get('last_margins') and cur['last_margins'][-1] is not None and abs(cur['last_margins'][-1])>=BLOWOUT:
         g=cur['last_margins'][-1]
         warnings.append(f"Blowout last game ({'won' if g>0 else 'lost'} by {abs(g):.0f}): his {cur['last_minutes'][-1]:.0f} minutes may not reflect his role")
@@ -351,7 +370,7 @@ def build(day=None, injury_map=None):
         team=(c or o or {}).get('team') or ''
         if not team:continue
         series=minute_series(cur_logs.get(key),schedules.get(team,[]))
-        out.append(build_for_player(key,names.get(key,key),team,o,c,series,injuries.get(key),refs))
+        out.append(build_for_player(key,names.get(key,key),team,o,c,series,injuries.get(key),refs,rest_flags(schedules.get(team,[]),day)))
     covered=sum(p['base_projected_fp'] is not None for p in out)
     risky=sum(any('ROLE DROP' in s or 'short recent game' in s or 'DNP in last' in s for s in p['warnings']) for p in out)
     compared=sum(p['reference_projection'] is not None for p in out)

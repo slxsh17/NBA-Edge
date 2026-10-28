@@ -28,7 +28,8 @@ DATA = ROOT / 'data'
 OUT = DATA / 'model_params.json'
 BOUNDS = {'role_ratio': (0.35, 0.75), 'role_bump': (0, 6), 'short_ratio': (0.3, 0.7), 'decline_ratio': (0.5, 0.9),
           'decline_w': (0.3, 1.0), 'prior_k': (0.5, 10), 'blend_cap': (0.6, 0.98), 'recent_w': (0, 0.8),
-          'rate_k': (3, 40), 'rate_cap': (0.3, 0.95), 'shrink_games': (0, 15), 'blowout_game_w': (0, 1)}
+          'rate_k': (3, 40), 'rate_cap': (0.3, 0.95), 'shrink_games': (0, 15), 'blowout_game_w': (0, 1),
+          'b2b_mult': (0.85, 1.05), 'three_in_four_mult': (0.85, 1.05)}
 STEP = {k: (hi - lo) / 8 for k, (lo, hi) in BOUNDS.items()}
 
 
@@ -62,17 +63,19 @@ def rows_for(raw, prior, floor, days, injured_by_day=None):
             series = B.minute_series(cur_logs.get(key), sched.get(team, []))
             if len(series) - len(B.dropwhile_zero(series)) >= 2:
                 continue
-            rows.append((day, old, cur, series, inj.get(key), fp, mins))
+            b2b, t34, _ = B.rest_flags(sched.get(team, []), target)
+            rows.append((day, old, cur, series, inj.get(key), fp, mins, b2b, t34))
     return rows
 
 
 def evaluate(rows, params):
     B.P.update(params)
     e_fp, e_min = [], []
-    for _, old, cur, series, inj, fp, mins in rows:
+    for _, old, cur, series, inj, fp, mins, b2b, t34 in rows:
         m = B.expected_minutes(old, cur, series, inj)[0]
         if m is None:
             continue
+        m *= B.rest_mult(b2b, t34)
         rate = B.rate_for(old if old and old['games'] >= 3 else None, cur)[0]
         e_fp.append(abs(fp - m * rate))
         e_min.append(abs(mins - m))

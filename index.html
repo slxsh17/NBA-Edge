@@ -350,7 +350,7 @@ function recompute(){
     const f=(x,w)=>1+((x??1)-1)*w;
     const wmax=Math.max(1,c.vegas,c.matchup,c.usage);  // same bounds as the pipeline at default weights
     const env=Math.max(1-.12*wmax,Math.min(1+.14*wmax,f(a.vegas,c.vegas)*f(a.matchup,c.matchup)*f(a.usage,c.usage)));
-    let proj=m*p.rate*env*(p.base_minutes!=null?(S.learned.scale??1):1);
+    let proj=m*p.rate*env*(p.base_minutes!=null?(S.learned.scale??1):1)*(1+(S.learned.travel||0)*(a.travel_km||0)/1000);
     p.model_proj=+proj.toFixed(2);
     if(c.outside&&p.ext!=null)proj=(1-c.outside)*proj+c.outside*p.ext;   // same blend as the pipeline
     const sd=.28*proj+3+(p.shaky?3:0);
@@ -362,8 +362,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp,op,mr]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json')]);
-  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;
+  const [today,acc,inj,lw,mp,op,mr,al]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
@@ -497,7 +497,8 @@ function renderNotices(){
   const watch=S.players.filter(p=>!p.out&&p.salary>=4500&&p.proj>0&&(p.flags||[]).some(f=>/^(ROLE DROP|New team|DNP in last)/.test(f))).sort((a,b)=>b.salary-a.salary).slice(0,4);
   const ruled=S.players.filter(p=>(p.flags||[]).some(f=>f.startsWith('Ruled'))).slice(0,4);
   const q=S.players.filter(p=>p.status==='QUESTIONABLE'&&p.proj>=20).length;
-  const items=[...ruled.map(p=>`<b>${esc(p.name)}</b> ruled ${esc(p.status.toLowerCase())} after the last projection update.`),
+  const recent=(S.al&&S.al.date===S.day?S.al.alerts:[]).slice(-4).reverse();
+  const items=[...recent.map(a=>`<b>${esc(a.title)}</b>${a.late?' <span class="tag u">Late news</span>':''} <span class="muted">${esc(ago(a.at))}</span><br><span class="muted">${esc(a.body)}</span>`),...ruled.map(p=>`<b>${esc(p.name)}</b> ruled ${esc(p.status.toLowerCase())} after the last projection update.`),
     ...watch.map(p=>`<b>${esc(p.name)}</b>: ${esc(p.flags.find(f=>/^(ROLE DROP|New team|DNP in last)/.test(f)).replace(/^ROLE DROP: /,''))}`)];
   const dis=S.players.filter(p=>!p.out&&p.proj>0&&p.salary>=4000&&(p.flags||[]).some(f=>f.startsWith('Outside'))).sort((a,b)=>b.salary-a.salary).slice(0,3);
   dis.forEach(p=>items.push(`<b>${esc(p.name)}</b>: NBA EDGE ${Number(p.model_proj??p.proj).toFixed(1)} vs DailyFantasyFuel ${Number(p.ext).toFixed(1)}. Check his role.`));
@@ -511,7 +512,7 @@ function renderNotices(){
 function tags(p){let t='';if(p.out)t+='<span class="tag o">Out</span>';else if(p.status==='QUESTIONABLE')t+='<span class="tag q">Q</span>';
   if((p.flags||[]).some(f=>/^(ROLE DROP|New team|DNP in last)/.test(f)))t+='<span class="tag r">Role?</span>';
   if((p.adj||{}).injury_min>=3)t+=`<span class="tag u">+${Math.round(p.adj.injury_min)} min</span>`;
-  if(p.starter)t+='<span class="tag u">Starting</span>';if((p.flags||[]).some(f=>f.startsWith('Outside')))t+='<span class="tag r">Disagree</span>';if(p.news)t+='<span class="tag q">News</span>';if(p.consensus&&((p.consensus.fta_own||0)>=25||(p.consensus.linestar_own||0)>=25||(p.consensus.mentions||0)>=2))t+='<span class="tag r" title="Public consensus chalk">Chalk</span>';if((p.flags||[]).some(f=>f.startsWith('Blowout')))t+='<span class="tag q" title="Last game was a blowout">Blowout</span>';if(p.edited)t+='<span class="tag e">Edited</span>';return t}
+  if(p.starter)t+='<span class="tag u">Starting</span>';if((p.flags||[]).some(f=>f.startsWith('Back-to-back')))t+='<span class="tag q" title="Second night of a back-to-back">B2B</span>';if(p.late_news)t+='<span class="tag u" title="Gained from late news">Late news</span>';if((p.flags||[]).some(f=>f.startsWith('Outside')))t+='<span class="tag r">Disagree</span>';if(p.news)t+='<span class="tag q">News</span>';if(p.consensus&&((p.consensus.fta_own||0)>=25||(p.consensus.linestar_own||0)>=25||(p.consensus.mentions||0)>=2))t+='<span class="tag r" title="Public consensus chalk">Chalk</span>';if((p.flags||[]).some(f=>f.startsWith('Blowout')))t+='<span class="tag q" title="Last game was a blowout">Blowout</span>';if(p.edited)t+='<span class="tag e">Edited</span>';return t}
 function visiblePlayers(){
   const q=S.search.trim().toLowerCase();
   return S.players.filter(p=>(!S.posf||p.position.split('/').includes(S.posf))&&(!q||p.name.toLowerCase().includes(q)||p.team.toLowerCase()===q))
