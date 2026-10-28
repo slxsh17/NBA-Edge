@@ -75,5 +75,33 @@
    }
   }
  ],
- "method": "Simulated optimizer field on consensus projections + feel-based share; grid search graded against actual FanDuel ownership of named players."
+ "method": "Simulated optimizer field on consensus projections + feel-based share; grid search graded against actual FanDuel ownership of named players.",
+ "single_params": {
+  "field_noise": 0.32,
+  "consensus_w": 1.0,
+  "field_mix": 0.8,
+  "chalk_power": 0.8,
+  "external_w": 0.75,
+  "mention_w": 0.0,
+  "no_ext": {
+   "field_noise": 0.32,
+   "consensus_w": 1.0,
+   "field_mix": 0.7,
+   "chalk_power": 0.8,
+   "external_w": 0.0,
+   "mention_w": 0.0
+  }
+ },
+ "single_eval": {
+  "decision": "Adopted: single-game ownership on 2026-10-27 (held out) missed by 6.9 vs 12.1 before.",
+  "slates": 15,
+  "full_pool_slates": 3,
+  "heldout_day": "2026-10-27",
+  "heldout_current": 12.13,
+  "heldout_fitted": 6.95,
+  "heldout_main_settings": 12.13,
+  "linestar_heldout": 8.48,
+  "avg_miss_all": 7.1,
+  "heldout_without_linestar": 9.4
+ }
 }
