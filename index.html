@@ -8,6 +8,10 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NBA EDGE">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#F3F5F8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121722" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +40,7 @@ button{cursor:pointer}
 .wrap{max-width:1240px;margin:0 auto;padding:0 16px}
 
 /* header */
-header{padding:18px 0 10px}
+header{padding:calc(18px + env(safe-area-inset-top)) 0 10px}
 .top{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .brand{font:700 30px/1 var(--num);letter-spacing:.02em;margin:0}
 .brand b{color:var(--orange);font-weight:700}
@@ -177,7 +181,7 @@ details summary{cursor:pointer}
 .tabs{display:none}
 @media (max-width:900px){
   main{grid-template-columns:1fr}
-  .tabs{display:flex;position:sticky;top:0;z-index:5;background:var(--paper);padding:6px 0 8px;gap:6px}
+  .tabs{display:flex;position:sticky;top:0;z-index:5;background:var(--paper);padding:calc(6px + env(safe-area-inset-top)) 0 8px;gap:6px}
   .tabs button{flex:1;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 0;font-size:14px}
   .tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   [data-view]:not(.show){display:none}
