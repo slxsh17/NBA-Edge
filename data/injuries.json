@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T21:58:27.577543+00:00",
+  "updated_at": "2026-10-28T22:39:34.639475+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -48,14 +48,14 @@
       "status": "OUT"
     },
     {
-      "name": "Patrick Williams",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Tobe Awaka",
       "team": "CHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Patrick Williams",
+      "team": "CHI",
+      "status": "OUT"
     },
     {
       "name": "Nic Claxton",
@@ -133,11 +133,6 @@
       "status": "OUT"
     },
     {
-      "name": "Yaxel Lendeborg",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Kristaps Porzingis",
       "team": "GSW",
       "status": "OUT"
@@ -168,6 +163,11 @@
       "status": "OUT"
     },
     {
+      "name": "Obi Toppin",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "T.J. McConnell",
       "team": "IND",
       "status": "OUT"
@@ -181,16 +181,6 @@
       "name": "Tyrese Haliburton",
       "team": "IND",
       "status": "OUT"
-    },
-    {
-      "name": "Obi Toppin",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Aaron Nesmith",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ivica Zubac",
@@ -316,11 +306,6 @@
       "name": "Otega Oweh",
       "team": "OKC",
       "status": "OUT"
-    },
-    {
-      "name": "Anthony Black",
-      "team": "ORL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jonathan Isaac",
@@ -450,6 +435,11 @@
     {
       "name": "Jusuf Nurkic",
       "team": "UTA",
+      "status": "OUT"
+    },
+    {
+      "name": "Tre Johnson",
+      "team": "WAS",
       "status": "OUT"
     },
     {
