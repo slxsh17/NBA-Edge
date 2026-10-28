@@ -144,6 +144,7 @@ tr.out td{opacity:.45}
 .pick button{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:transparent;font-size:13px;line-height:1;color:var(--muted)}
 .pick button[aria-pressed="true"].lock{background:var(--good);border-color:var(--good);color:#fff}
 .pick button[aria-pressed="true"].ban{background:var(--bad);border-color:var(--bad);color:#fff}
+span.sal-short{display:none}
 td.lev.pos{color:var(--good);font-weight:600}td.lev.neg{color:var(--bad)}
 .levbox{margin:0 0 10px;font-size:13.5px}.levbox summary{font-weight:600}.levbox ul{margin:6px 0 0;padding-left:18px}
 tr.detail td{background:var(--soft);text-align:left;font-size:13px;padding:10px 12px}
@@ -180,7 +181,9 @@ details summary{cursor:pointer}
   .tabs button{flex:1;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 0;font-size:14px}
   .tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   [data-view]:not(.show){display:none}
-  .col-own,.col-val,.tt{display:none}
+  .col-own,.tt,.sal-full{display:none}
+  .sal-short{display:inline!important}
+  .pick button{width:26px;height:26px}
   th,td{padding-left:4px;padding-right:4px}
   td.n{font-size:15px}
   .pcell{max-width:0;width:100%}
@@ -523,7 +526,7 @@ function renderPlayers(){
   tb.innerHTML=rows.slice(0,220).map(p=>{const k=pkey(p),dim=p.out||!inPlay(p);const g=gameOf(p);
     const vs=p.opp?(p.home?'vs ':'@ ')+esc(p.opp):'';
     let html=`<tr class="prow${dim?' out':''}" data-k="${esc(k)}"><td class="pcell"><div class="pname">${esc(p.name)}</div><div class="pmeta">${tags(p)}${esc(p.position)}, ${esc(p.team)} ${vs}<span class="tt">${p.team_total?`, team total ${p.team_total}`:''}</span></div></td>
-    <td class="n">${money(p.salary)}</td><td class="proj">${p.proj?p.proj.toFixed(1):'–'}</td><td class="n col-val">${p.value?p.value.toFixed(1)+'x':'–'}</td><td class="n col-own">${p.own!=null&&p.proj?p.own.toFixed(0)+'%':'–'}</td><td class="n col-lev lev ${p.lev>=3?'pos':p.lev<=-5?'neg':''}">${p.lev!=null&&p.proj?(p.lev>0?'+':'')+p.lev.toFixed(0):'–'}</td>
+    <td class="n"><span class="sal-full">${money(p.salary)}</span><span class="sal-short">$${(p.salary/1000).toFixed(1)}K</span></td><td class="proj">${p.proj?p.proj.toFixed(1):'–'}</td><td class="n col-val">${p.value?p.value.toFixed(1)+'x':'–'}</td><td class="n col-own">${p.own!=null&&p.proj?p.own.toFixed(0)+'%':'–'}</td><td class="n col-lev lev ${p.lev>=3?'pos':p.lev<=-5?'neg':''}">${p.lev!=null&&p.proj?(Math.round(p.lev)>0?'+':'')+(Math.round(p.lev)||0):'–'}</td>
     <td><div class="pick"><button class="lock" aria-label="Use ${esc(p.name)} in every lineup" aria-pressed="${S.locks.has(k)}">✓</button><button class="ban" aria-label="Never use ${esc(p.name)}" aria-pressed="${S.bans.has(k)}">✕</button></div></td></tr>`;
     if(S.open===k)html+=`<tr class="detail"><td colspan="7">${detail(p)}</td></tr>`;
     return html}).join('');
