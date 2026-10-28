@@ -136,6 +136,15 @@ def b36(n):
     return out or '0'
 
 
+def next_id(sid):
+    """DFF slate IDs: the last character counts 0-9, then carries into the rest (base 36).
+    e.g. 212A3 -> 212A4, 21309 -> 21310."""
+    head, last = sid[:-1], sid[-1]
+    if last.isdigit() and last != '9':
+        return head + str(int(last) + 1)
+    return b36(int(head, 36) + 1) + '0'
+
+
 def page_var(page, name):
     m = re.search(r"window\.%s\s*=\s*'([^']*)'" % name, page)
     return m.group(1) if m else ''
@@ -148,10 +157,10 @@ def single_games(day, main_page):
     start = page_var(main_page, 'url')
     if not start:
         return []
-    found, misses, n = [], 0, int(start, 36) + 1
-    while misses < 3 and n < int(start, 36) + 30:
-        sid = b36(n)
-        n += 1
+    found, misses, sid, tries = [], 0, start, 0
+    while misses < 3 and tries < 30:
+        sid = next_id(sid)
+        tries += 1
         try:
             page = fetch(SG_URL.format(day=day, sid=sid))
         except Exception:
@@ -244,7 +253,11 @@ def main():
     try:
         prev = json.loads((DATA / f'slate_{day}.json').read_text(encoding='utf-8'))
         age = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(prev['fetched_at'])
-        if age < dt.timedelta(minutes=50) and '--force' not in sys.argv:
+        try:
+            have_singles = bool(json.loads((DATA / f'single_{day}.json').read_text(encoding='utf-8')).get('slates'))
+        except (OSError, ValueError):
+            have_singles = False
+        if age < dt.timedelta(minutes=50) and have_singles and '--force' not in sys.argv:
             print(f'Slate fetched {int(age.total_seconds() // 60)} min ago; skipping')
             return 0
     except (OSError, ValueError, KeyError):
