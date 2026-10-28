@@ -1,45 +1,28 @@
-rw_picks.html HTTP 200 size 469198 final https://www.rotowire.com/basketball/nba-dfs-picks-today.php
-fd_research.html HTTP 504 size 936 final https://www.fanduel.com/research/nba
-fp_dfs.html HTTP 403 size 200 final https://www.fantasypros.com/daily-fantasy/nba/
-rb_dfs.html HTTP 404 size 85015 final https://www.rotoballer.com/category/nba/nba-dfs
-stok_picks.html HTTP 200 size 61046 final https://www.stokastic.com/
-dk_net.html HTTP 200 size 194156 final https://dknetwork.draftkings.com/sport/nba/fantasy/
-fta_own.html HTTP 200 size 159568 final https://fantasyteamadvice.com/nba/dfs-ownership-projections
-reddit.json HTTP 403 size 190240 final https://www.reddit.com/r/dfsports/new.json?limit=50
-bsky.json HTTP 403 size 2334 final https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=Lillard%20minutes&limit=10
-nba_inj.html HTTP 200 size 123831 final https://official.nba.com/nba-injury-report-2026-27-season/
-probe/bsky.json names=0
-probe/dk_net.html names=0
-probe/fd_research.html names=0
-probe/fp_dfs.html names=0
-probe/fta_own.html names=33
-probe/nba_inj.html names=0
-probe/rb_dfs.html names=0
-probe/reddit.json names=0
-probe/rw_picks.html names=0
-probe/stok_picks.html names=0
-https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_11_45AM.pdf
-https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_12_00PM.pdf
-https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-27_12_15PM.pdf
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/19/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-tuesday-10-20-26-2/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/20/draftkings-nba-pick6-fantasy-basketball-picks-today-top-picks-for-10-20-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/20/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-tuesday-10-20-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/21/draftkings-nba-pick6-fantasy-basketball-picks-today-top-picks-for-10-21-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/21/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-22-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/21/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-wednesday-10-21-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/21/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-10-21-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/22/draftkings-nba-pick6-fantasy-basketball-picks-today-top-picks-for-10-22-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/22/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-23-26-2/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/22/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-thursday-10-22-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/23/draftkings-nba-pick6-fantasy-basketball-picks-today-top-picks-for-10-23-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/23/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-saturday-10-24-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/23/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-friday-10-23-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/24/fantasy-basketball-cheat-sheet-top-draftkings-nba-dfs-plays-for-saturday-10-24-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/24/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-saturday-10-24-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/25/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-monday-10-26-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/25/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-sunday-10-25-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/26/draftkings-nba-pick6-fantasy-basketball-picks-today-top-picks-for-10-26-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/26/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-tuesday-10-27-26-2/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/26/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-monday-10-26-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/27/draftkings-nba-pick6-fantasy-basketball-picks-today-top-picks-for-10-27-26/"
-probe/dk_net.html:href="https://dknetwork.draftkings.com/2026/10/27/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-tuesday-10-27-26/"
+main 21309 Main
+default single page: 21310 ORL @ TOR 2026-10-28 2
+212ZX   
+212ZY   
+212ZZ   
+21300   
+21301   
+21302   
+21303   
+21304   
+21305   
+21306   
+21307   
+21308   
+21309 2026-10-28 Main 24
+2130A   
+2130B   
+2130C   
+2130D   
+2130E   
+2130F   
+2130G   
+2130H   
+2130I   
+2130J   
+2130K   
+2130L   
+2130M   
