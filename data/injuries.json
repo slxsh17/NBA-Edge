@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T17:20:05.912204+00:00",
+  "updated_at": "2026-10-28T18:55:29.859423+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -68,12 +68,17 @@
       "status": "OUT"
     },
     {
-      "name": "Santi Aldama",
+      "name": "Naji Marshall",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tarik Biberovic",
       "team": "DAL",
       "status": "OUT"
     },
     {
-      "name": "Tarik Biberovic",
+      "name": "Santi Aldama",
       "team": "DAL",
       "status": "OUT"
     },
@@ -86,11 +91,6 @@
       "name": "Caleb Martin",
       "team": "DAL",
       "status": "OUT"
-    },
-    {
-      "name": "Naji Marshall",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kyrie Irving",
@@ -138,14 +138,14 @@
       "status": "OUT"
     },
     {
-      "name": "Kristaps Porzingis",
-      "team": "GSW",
-      "status": "OUT"
-    },
-    {
       "name": "Yaxel Lendeborg",
       "team": "GSW",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Kristaps Porzingis",
+      "team": "GSW",
+      "status": "OUT"
     },
     {
       "name": "Moses Moody",
@@ -160,7 +160,7 @@
     {
       "name": "Marcus Smart",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Alperen Sengun",
@@ -173,12 +173,12 @@
       "status": "OUT"
     },
     {
-      "name": "Andrew Nembhard",
+      "name": "Tyrese Haliburton",
       "team": "IND",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Tyrese Haliburton",
+      "name": "Andrew Nembhard",
       "team": "IND",
       "status": "DAY-TO-DAY"
     },
@@ -268,11 +268,6 @@
       "status": "OUT"
     },
     {
-      "name": "Jordan Poole",
-      "team": "NOP",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Yves Missi",
       "team": "NOP",
       "status": "OUT"
@@ -280,7 +275,12 @@
     {
       "name": "Jose Alvarado",
       "team": "NYK",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Alex Caruso",
+      "team": "OKC",
+      "status": "OUT"
     },
     {
       "name": "Thomas Sorber",
@@ -301,11 +301,6 @@
       "name": "Ajay Mitchell",
       "team": "OKC",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Alex Caruso",
-      "team": "OKC",
-      "status": "OUT"
     },
     {
       "name": "Jalen Williams",
