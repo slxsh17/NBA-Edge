@@ -107,6 +107,18 @@ input[type=range]{width:100%;accent-color:var(--orange)}
 .lu-row .pts{font:600 17px var(--num);text-align:right}
 .lu-row.locked{background:var(--soft)}
 .lu-note{font-size:12.5px;padding:8px 14px;background:var(--orange-soft)}
+#entries{margin-bottom:16px}
+.ent-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.ent-head h3{font:600 18px var(--num);margin:0;flex:1}
+.ent-form{border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:12px}
+.ent-form textarea{width:100%;min-height:64px;font:inherit;font-size:15px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);box-sizing:border-box}
+.ent-form input[type=text]{width:100%;font:inherit;font-size:15px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);box-sizing:border-box}
+.ent-form select{font:inherit;font-size:14px;max-width:100%}
+.ent-row{display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:center;padding:4px 0;font-size:14px}
+.swap{padding:10px 14px;background:var(--orange-soft);font-size:13.5px}
+.swap b.gain{color:var(--good)}
+.swap ul{margin:6px 0;padding-left:18px}
+.lu-row.changed{box-shadow:inset 3px 0 0 var(--orange)}
 .exposure{font-size:13px;margin-top:12px}
 .exposure span{display:inline-block;margin:0 10px 4px 0}
 
@@ -231,6 +243,7 @@ details summary{cursor:pointer}
   <div class="stack">
     <section class="panel show" data-view="build" aria-labelledby="h-build">
       <div class="h2row"><h2 id="h-build">Build lineups</h2><button class="btn small" id="settings-btn" type="button" aria-expanded="false" aria-controls="settings">Model settings</button></div>
+      <div id="entries"></div>
       <div class="ctl">
         <span>Lineups</span>
         <div class="seg" id="count"><button data-v="1" aria-pressed="true">1</button><button data-v="5">5</button><button data-v="10">10</button><button data-v="20">20</button></div>
@@ -409,7 +422,9 @@ function restoreDayState(){
   if(st&&st.day===S.day){S.over=st.over||{};S.locks=new Set(st.locks);S.bans=new Set(st.bans);S.gamesOff=new Set(st.gamesOff);S.lineups=(st.lineups||[]).map(l=>({...l,picks:l.picks.map(rehydrate).filter(Boolean)})).filter(l=>l.picks.length===F().size)}
   const set=store.get('settings:'+S.format,null);if(set){S.count=set.count||1;S.mode=set.mode||'cash';S.exposure=set.exposure||60;S.useSim=set.useSim!==false}else{S.count=1;S.mode='cash';S.exposure=S.format==='single'?100:60}
   const ex=$('exposure');if(ex){ex.value=S.exposure;$('exposure-out').textContent=S.exposure+'%'}
+  loadEntries();
 }
+function loadEntries(){const v=store.get(entKey(),[]);S.entries=(v||[]).map(e=>({label:e.label||'',picks:e.picks.map(rehydrate).filter(Boolean)})).filter(e=>e.picks.length===F().size);S.entStarted=-1}
 function rehydrate(pk){const p=S.players.find(x=>pkey(x)===pk.k);return p?{p,slot:pk.slot}:null}
 function saveDayState(){store.set('day:'+fmtKey(),{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,sim:l.sim,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings:'+S.format,{count:S.count,mode:S.mode,exposure:S.exposure,useSim:S.useSim})}
 
@@ -675,8 +690,113 @@ async function lateSwap(i){
   }catch(e){status.textContent=e.message}
 }
 
+// ---------- my entries: lineups you actually entered, re-optimized as games lock ----------
+const slotList=()=>F().order.flatMap(s=>Array(F().need[s]).fill(s));
+const entKey=()=>'entries:'+S.day+':'+fmtKey();
+function saveEntries(){store.set(entKey(),(S.entries||[]).map(e=>({label:e.label,picks:e.picks.map(x=>({k:pkey(x.p),slot:x.slot}))})))}
+const isStarted=o=>{const g=gameOf(o.p||o);return !!(g&&started(g))};
+function nameCands(tok){
+  const t=key(tok);if(!t)return [];
+  const sfx=/^(jr|sr|ii|iii|iv|v)$/;
+  let c=S.players.filter(p=>key(p.name)===t);
+  if(!c.length)c=S.players.filter(p=>{const parts=p.name.split(/\s+/).filter(w=>!sfx.test(key(w)));return key(parts.slice(1).join(''))===t||key(parts[parts.length-1])===t});
+  if(!c.length&&t.length>=4)c=S.players.filter(p=>key(p.name).includes(t));
+  return c;
+}
+function parseEntry(text){
+  const toks=text.split(/[,\n;]+/).map(x=>x.trim()).filter(Boolean),slots=slotList();
+  const built=new Set(S.lineups.flatMap(l=>l.picks.map(x=>pkey(x.p))));
+  return toks.map((tok,i)=>{const slot=slots[i]||'';let c=nameCands(tok);
+    c.sort((a,b)=>(canFill(b,slot)-canFill(a,slot))||(built.has(pkey(b))-built.has(pkey(a)))||(b.salary-a.salary));
+    return {tok,slot,cands:c,pick:c[0]?pkey(c[0]):''}});
+}
+function assignSlots(players){
+  const slots=slotList();if(players.every((p,i)=>canFill(p,slots[i])))return players.map((p,i)=>({p,slot:slots[i]}));
+  const used=Array(slots.length).fill(false),res=Array(players.length);
+  const go=i=>{if(i===players.length)return true;for(let j=0;j<slots.length;j++)if(!used[j]&&canFill(players[i],slots[j])){used[j]=true;res[i]=slots[j];if(go(i+1))return true;used[j]=false}return false};
+  return go(0)?players.map((p,i)=>({p,slot:res[i]})):null;
+}
+function entryRows(picks,changed=new Set()){return picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}${changed.has(pkey(x.p))?' changed':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)}${g?', '+(lk?'locked':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(salOf(x))}</span><span class="pts">${x.p.out?'0.0':(x.p.proj*multOf(x.slot)).toFixed(1)}</span></div>`}).join('')}
+function swapChanges(oldP,newP){
+  const out=[],keep=new Set(oldP.map(x=>pkey(x.p)).filter(k=>newP.some(y=>pkey(y.p)===k)));
+  const gone=oldP.filter(x=>!keep.has(pkey(x.p))),added=newP.filter(y=>!keep.has(pkey(y.p)));
+  for(const y of added){const i=gone.findIndex(x=>x.slot===y.slot);const x=i>=0?gone.splice(i,1)[0]:gone.shift();out.push(`${y.slot}: <b>${esc(x?x.p.name:'?')}</b> → <b>${esc(y.p.name)}</b> (${(y.p.proj*multOf(y.slot)).toFixed(1)} vs ${x?(x.p.out?0:x.p.proj*multOf(x.slot)).toFixed(1):'0'})`)}
+  for(const y of newP){const x=oldP.find(o=>pkey(o.p)===pkey(y.p));if(x&&x.slot!==y.slot)out.push(`Move <b>${esc(y.p.name)}</b> from ${x.slot} to ${y.slot}`)}
+  return out;
+}
+function renderEntries(){
+  const box=$('entries');if(!box)return;const es=S.entries||[];
+  if(S.source==='csv'&&!es.length&&!S.entForm){box.innerHTML='';return}
+  let h=`<div class="ent-head"><h3>My entries</h3>${S.entForm?'':'<button class="btn small" id="ent-add" type="button">Add a lineup I entered</button>'}</div>`;
+  if(!es.length&&!S.entForm)h+=`<p class="muted" style="margin:0 0 4px;font-size:13px">Add the lineups you entered on FanDuel. As games lock, NBA EDGE keeps the locked players and finds the best swaps for everyone who hasn’t played yet.</p>`;
+  if(S.entForm){const d=S.entDraft;
+    h+=`<div class="ent-form"><label style="font-size:13px" for="ent-text">Players in FanDuel’s order (${slotList().join(', ')}), separated by commas. Last names are fine.</label>
+      <textarea id="ent-text" placeholder="Harden, Mitchell, Grimes, Toppin, Jokic, Nembhard, Wilson, Black, VanVleet">${esc(S.entText||'')}</textarea>
+      <div style="display:flex;gap:8px;margin:8px 0"><button class="btn small" id="ent-check" type="button">Check names</button><button class="btn small" id="ent-cancel" type="button">Cancel</button></div>`;
+    if(d){h+=d.map((r,i)=>`<div class="ent-row"><span class="slot">${esc(r.slot)}</span><div>${!r.cands.length?`<span style="color:var(--bad)">No player matches “${esc(r.tok)}”</span>`:r.cands.length===1?esc(r.cands[0].name)+' <span class="muted">'+esc(r.cands[0].team)+'</span>':`<select data-di="${i}" aria-label="Which ${esc(r.tok)}">${r.cands.map(c=>`<option value="${esc(pkey(c))}"${pkey(c)===r.pick?' selected':''}>${esc(c.name)} (${esc(c.team)} ${esc(c.position)}, ${money(c.salary)})</option>`).join('')}</select>`}</div></div>`).join('');
+      h+=`<div style="margin-top:8px"><input type="text" id="ent-label" placeholder="Name (optional), e.g. $10 Dime SE" value="${esc(S.entLabel||'')}"></div><button class="btn primary small" id="ent-save" type="button" style="margin-top:8px">Save entry</button><div id="ent-msg" class="muted" style="font-size:13px;margin-top:6px"></div>`}
+    h+='</div>'}
+  h+=es.map((e,i)=>{const pts=e.picks.reduce((t,x)=>t+(x.p.out?0:x.p.proj*multOf(x.slot)),0),sal=e.picks.reduce((t,x)=>t+salOf(x),0),lk=e.picks.filter(isStarted).length;
+    const sg=e.suggest;let sw='';
+    if(sg&&sg.picks){const ch=swapChanges(e.picks,sg.picks);sw=`<div class="swap"><div><b>Late swap: ${sg.gain>=0.05?`<b class="gain">+${sg.gain.toFixed(1)}</b> projected`:`${sg.gain.toFixed(1)} projected, more upside and leverage`}</b> (${esc(sg.mode)} settings)</div><ul>${ch.map(c=>`<li>${c}</li>`).join('')}</ul><button class="btn small" data-eapply="${i}" type="button">I made these swaps</button> <button class="btn small" data-eshow="${i}" type="button">${sg.open?'Hide':'Show'} new lineup</button></div>${sg.open?`<div style="border-top:1px solid var(--line)">${entryRows(sg.picks,new Set(sg.picks.filter(y=>!e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot)).map(y=>pkey(y.p))))}</div>`:''}`}
+    else if(sg&&sg.msg)sw=`<div class="lu-note">${esc(sg.msg)}</div>`;
+    return `<article class="lineup"><div class="lu-head"><div class="lu-score num">${pts.toFixed(1)}<small>projected</small></div><div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Locked<b>${lk}/${e.picks.length}</b></div>
+      <div class="lu-actions"><button class="btn small" data-eswap="${i}" type="button">Late swap</button><button class="btn small" data-edel="${i}" type="button" aria-label="Remove entry ${i+1}">Remove</button></div></div>
+      ${e.label?`<div class="sim-badge">${esc(e.label)}</div>`:''}${sw}${entryRows(e.picks)}</article>`}).join('');
+  box.innerHTML=h;
+}
+// Re-seat the new lineup so players you keep stay in their old slots (fewer moves to make on FanDuel).
+function keepSlots(picks,old,fixed){
+  const fx=new Set(fixed.map(f=>pkey(f.p))),slots=slotList();
+  const free=slots.slice();for(const f of fixed){free.splice(free.indexOf(f.slot),1)}
+  const movers=picks.filter(x=>!fx.has(pkey(x.p))),was=new Map(old.map(x=>[pkey(x.p),x.slot]));
+  const gone=old.filter(x=>!fx.has(pkey(x.p))&&!picks.some(y=>pkey(y.p)===pkey(x.p))).map(x=>x.slot);
+  movers.sort((a,b)=>(was.has(pkey(b.p))-was.has(pkey(a.p))));
+  const used=Array(free.length).fill(false),res=[];
+  const pref=x=>{const w=was.get(pkey(x.p));return free.map((s,j)=>j).sort((a,b)=>((free[b]===w)-(free[a]===w))||((gone.includes(free[b]))-(gone.includes(free[a]))))};
+  const go=i=>{if(i===movers.length)return true;for(const j of pref(movers[i]))if(!used[j]&&canFill(movers[i].p,free[j])){used[j]=true;res[i]=free[j];if(go(i+1))return true;used[j]=false}return false};
+  if(!go(0))return picks;
+  const order=F().order;
+  return [...picks.filter(x=>fx.has(pkey(x.p))),...movers.map((x,i)=>({p:x.p,slot:res[i]}))].sort((a,b)=>order.indexOf(a.slot)-order.indexOf(b.slot));
+}
+async function entrySwap(i,quiet=false){
+  const e=S.entries[i];if(!e)return;const size=F().size;
+  const fixed=e.picks.filter(isStarted);
+  if(fixed.length===size){e.suggest={msg:'Every player is locked. Nothing left to swap.'};renderEntries();return}
+  const pool=S.players.filter(p=>p.proj>0&&!p.out&&!S.bans.has(pkey(p))&&(fixed.some(f=>f.p===p)||(gameOf(p)&&!isStarted(p))));
+  try{const glpk=await loadGLPK();const saveLocks=S.locks;S.locks=new Set();
+    let picks;try{picks=await solveOne(glpk,pool,{fixed})}finally{S.locks=saveLocks}
+    if(!picks){e.suggest={msg:'No lineup fits under the cap with the locked players.'};renderEntries();return}
+    const before=e.picks.reduce((t,x)=>t+(x.p.out?0:x.p.proj*multOf(x.slot)),0),after=picks.reduce((t,x)=>t+x.p.proj*multOf(x.slot),0);
+    picks=keepSlots(picks,e.picks,fixed);
+    const same=picks.every(y=>e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot));
+    const sc=ps=>ps.reduce((t,x)=>t+(x.p.out?0:score(x.p)*multOf(x.slot)),0),better=sc(picks)-sc(e.picks);
+    e.suggest=same||better<0.3?{msg:quiet?'':'No better swap right now. This is already the best lineup for the games left.'}:{picks,gain:after-before,better,mode:S.mode==='gpp'?'tournament':'cash',open:false};
+    if(quiet&&e.suggest.msg==='')e.suggest=null;
+  }catch(err){e.suggest={msg:err.message}}
+  renderEntries();
+}
+async function autoSwaps(){const n=S.games.filter(started).length;if(!(S.entries||[]).length||n===S.entStarted)return;S.entStarted=n;for(let i=0;i<S.entries.length;i++)await entrySwap(i,true)}
+$('entries').addEventListener('click',async e=>{const t=e.target.closest('button');if(!t)return;
+  if(t.id==='ent-add'){S.entForm=true;S.entDraft=null;S.entText='';S.entLabel='';renderEntries();$('ent-text').focus();return}
+  if(t.id==='ent-cancel'){S.entForm=false;renderEntries();return}
+  if(t.id==='ent-check'){S.entText=$('ent-text').value;S.entDraft=parseEntry(S.entText);renderEntries();return}
+  if(t.id==='ent-save'){const d=S.entDraft,msg=$('ent-msg');S.entLabel=$('ent-label').value.trim();
+    if(!d||d.length!==F().size){msg.textContent=`Need exactly ${F().size} players (got ${d?d.length:0}).`;return}
+    if(d.some(r=>!r.pick)){msg.textContent='Fix the names in red first.';return}
+    const ps=d.map(r=>S.players.find(p=>pkey(p)===r.pick));if(new Set(ps.map(pkey)).size!==ps.length){msg.textContent='The same player is listed twice.';return}
+    const picks=assignSlots(ps);if(!picks){msg.textContent='Those players don’t fit FanDuel’s positions. Check the order.';return}
+    (S.entries??=[]).push({label:S.entLabel,picks});saveEntries();S.entForm=false;S.entDraft=null;renderEntries();entrySwap(S.entries.length-1,true);return}
+  const i=+(t.dataset.eswap??t.dataset.edel??t.dataset.eapply??t.dataset.eshow??-1);const en=S.entries&&S.entries[i];if(!en)return;
+  if(t.dataset.eswap!=null){t.textContent='Checking…';await entrySwap(i)}
+  else if(t.dataset.edel!=null){S.entries.splice(i,1);saveEntries();renderEntries()}
+  else if(t.dataset.eapply!=null){en.picks=en.suggest.picks;en.suggest=null;saveEntries();renderEntries()}
+  else if(t.dataset.eshow!=null){en.suggest.open=!en.suggest.open;renderEntries()}});
+$('entries').addEventListener('change',e=>{const s=e.target.closest('[data-di]');if(s&&S.entDraft)S.entDraft[+s.dataset.di].pick=s.value});
+
 // ---------- lineups ----------
 function renderLineups(fresh=false){
+  renderEntries();
   const box=$('lineups');
   if(!S.lineups.length){box.innerHTML='';$('exposure-summary').innerHTML='';return}
   box.innerHTML=S.lineups.map((l,i)=>{
@@ -689,7 +809,7 @@ function renderLineups(fresh=false){
     if(risky.length&&!reviewOnly)note+=(note?' ':'')+`Check before lock: ${risky.map(x=>esc(x.p.name)+' ('+esc(x.p.status==='QUESTIONABLE'?'questionable':(x.p.flags.find(f=>/^(ROLE DROP|New team|DNP in last|Outside|News)/.test(f))||'').replace(/^ROLE DROP: /,'role drop: ').replace(/:.*$/,'').toLowerCase())+')').join(', ')}.`;
     return `<article class="lineup${fresh?' fresh':''}"><div class="lu-head"><div class="lu-score num">${pts.toFixed(1)}<small>projected</small></div>
       <div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Avg own<b>${own.toFixed(0)}%</b></div>${reviewOnly?'<span class="review-badge">Review only</span>':''}
-      <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
+      <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-enter="${i}" aria-label="Save lineup ${i+1} as an entry">I entered this</button><button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
       ${l.sim!=null?`<div class="sim-badge">Simulated winner: top 5% in ${l.sim}% of simulated nights</div>`:''}
       ${note?`<div class="lu-note">${note}</div>`:''}
       ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(salOf(x))}</span><span class="pts">${x.p.out?'0.0':(x.p.proj*multOf(x.slot)).toFixed(1)}${multOf(x.slot)>1?`<span class="mult">${multOf(x.slot)}x</span>`:''}</span></div>`}).join('')}
@@ -699,7 +819,8 @@ function renderLineups(fresh=false){
     $('exposure-summary').innerHTML=`<div class="exposure"><div class="muted" style="margin-bottom:4px">Most used players</div>${top.map(([n,k])=>`<span><b>${esc(n)}</b> ${Math.round(k/S.lineups.length*100)}%</span>`).join('')}</div>`}
   else $('exposure-summary').innerHTML='';
 }
-$('lineups').addEventListener('click',async e=>{const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]');
+$('lineups').addEventListener('click',async e=>{const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]'),en=e.target.closest('[data-enter]');
+  if(en){const l=S.lineups[+en.dataset.enter];const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(!(S.entries||[]).some(x=>x.picks.map(y=>pkey(y.p)+y.slot).sort().join()===k)){(S.entries??=[]).push({label:'',picks:l.picks.map(x=>({...x}))});saveEntries()}en.textContent='Saved to My entries';renderEntries();setTimeout(()=>en.textContent='I entered this',1500)}
   if(s)lateSwap(+s.dataset.swap);
   if(c){const l=S.lineups[+c.dataset.copy];const text=l.picks.map(x=>`${x.slot} ${x.p.name} (${x.p.team}) ${money(salOf(x))}`).join('\n');try{await navigator.clipboard.writeText(text);c.textContent='Copied'}catch(err){c.textContent='Copy failed'}setTimeout(()=>c.textContent='Copy',1500)}});
 $('build').onclick=build;
@@ -763,7 +884,7 @@ function renderSources(){
   const t=S.today,src=t&&t.sources||{};
   $('sources').innerHTML=`<p>Slate and Vegas lines: ${esc(src.slate||'not loaded')}${t?', projections built '+esc(ago(t.built_at)):''}.</p><p>Injuries: ESPN report, updated ${esc(ago(S.inj&&S.inj.updated_at))}. Starting lineups: RotoWire, checked ${esc(ago(src.lineups_checked))}. Box scores: ESPN, updated ${esc(ago(src.stats_updated))}.</p><p>Projection = expected minutes × fantasy points per minute, adjusted for Vegas team totals, opponent matchup, injuries and confirmed starters. How much each adjustment counts is relearned every morning from graded results. Every adjustment is shown when you tap a player.</p>`;
 }
-function renderAll(){recompute();const any=S.games.some(started);$('review-wrap').hidden=!any;if(!any)S.review=false;$('review').checked=S.review;renderHeader();renderNotices();renderGames();renderPlayers();renderLineups();renderAccuracy();renderSources();paintCount&&paintCount();paintMode&&paintMode();syncExposure();syncSim()}
+function renderAll(){recompute();const any=S.games.some(started);$('review-wrap').hidden=!any;if(!any)S.review=false;$('review').checked=S.review;renderHeader();renderNotices();renderGames();renderPlayers();renderLineups();renderAccuracy();renderSources();paintCount&&paintCount();paintMode&&paintMode();syncExposure();syncSim();autoSwaps()}
 
 // ---------- upload, refresh, tabs ----------
 $('upload-btn').onclick=()=>$('csv').click();
@@ -774,7 +895,7 @@ document.querySelector('.tabs').addEventListener('click',e=>{const b=e.target.cl
 // Background: only reload when the published projections actually changed. Lineups are kept.
 async function check(){if(document.hidden)return;try{const r=await fetch('data/today.json?h='+Date.now(),{method:'HEAD',cache:'no-store'});const tag=(r.headers.get('etag')||'')+(r.headers.get('last-modified')||'');if(tag&&S.etag&&tag!==S.etag)await load();S.etag=tag||S.etag}catch(e){}}
 setInterval(check,4*60*1000);document.addEventListener('visibilitychange',check);
-setInterval(()=>{if(!document.hidden){renderGames();renderLineups()}},60*1000);
+setInterval(()=>{if(!document.hidden){renderGames();renderLineups();autoSwaps()}},60*1000);
 
 wireControls();
 load().then(check).catch(e=>{$('slate-meta').textContent='Couldn’t load data: '+e.message});
