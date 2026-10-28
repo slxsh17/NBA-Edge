@@ -1,6 +1,6 @@
 // NBA EDGE v27. Network-first; offline fallback. Cache entries are keyed by path
 // (query strings ignored) so cache-busting ?t= requests no longer pile up copies.
-const CACHE='nba-edge-v35';
+const CACHE='nba-edge-v36';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 const keyFor=req=>{const u=new URL(req.url);u.search='';return u.toString()};
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting()});

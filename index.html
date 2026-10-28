@@ -181,7 +181,11 @@ details summary{cursor:pointer}
   .tabs button{flex:1;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 0;font-size:14px}
   .tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   [data-view]:not(.show){display:none}
-  .col-own,.tt,.sal-full{display:none}
+  .tt,.sal-full{display:none}
+  td.n,td.proj{font-size:14px}
+  th{font-size:11.5px}
+  .pick{gap:2px}
+  .pick button{width:24px!important;height:24px!important;font-size:11px}
   .sal-short{display:inline!important}
   .pick button{width:26px;height:26px}
   th,td{padding-left:4px;padding-right:4px}
@@ -509,6 +513,7 @@ function visiblePlayers(){
   return S.players.filter(p=>(!S.posf||p.position.split('/').includes(S.posf))&&(!q||p.name.toLowerCase().includes(q)||p.team.toLowerCase()===q))
     .sort((a,b)=>{const k=S.sort;const va=k==='name'?a.name:(a[k]??-1),vb=k==='name'?b.name:(b[k]??-1);return (va>vb?1:va<vb?-1:0)*S.dir*(k==='name'?-1:1)});
 }
+function shortName(n){const parts=String(n).split(' ');return parts.length>1?parts[0][0]+'. '+parts.slice(1).join(' '):n}
 function renderLeverage(){
   const live=S.players.filter(p=>p.proj>0&&!p.out&&inPlay(p)&&p.lev!=null);
   if(!live.length){$('levbox').hidden=true;return}
@@ -525,7 +530,7 @@ function renderPlayers(){
   if(!rows.length){tb.innerHTML=`<tr><td colspan="7" class="empty">${S.players.length?'No players match.':'No players loaded.'}</td></tr>`;return}
   tb.innerHTML=rows.slice(0,220).map(p=>{const k=pkey(p),dim=p.out||!inPlay(p);const g=gameOf(p);
     const vs=p.opp?(p.home?'vs ':'@ ')+esc(p.opp):'';
-    let html=`<tr class="prow${dim?' out':''}" data-k="${esc(k)}"><td class="pcell"><div class="pname">${esc(p.name)}</div><div class="pmeta">${tags(p)}${esc(p.position)}, ${esc(p.team)} ${vs}<span class="tt">${p.team_total?`, team total ${p.team_total}`:''}</span></div></td>
+    let html=`<tr class="prow${dim?' out':''}" data-k="${esc(k)}"><td class="pcell"><div class="pname"><span class="sal-full">${esc(p.name)}</span><span class="sal-short">${esc(shortName(p.name))}</span></div><div class="pmeta">${tags(p)}${esc(p.position)}, ${esc(p.team)} ${vs}<span class="tt">${p.team_total?`, team total ${p.team_total}`:''}</span></div></td>
     <td class="n"><span class="sal-full">${money(p.salary)}</span><span class="sal-short">$${(p.salary/1000).toFixed(1)}K</span></td><td class="proj">${p.proj?p.proj.toFixed(1):'–'}</td><td class="n col-val">${p.value?p.value.toFixed(1)+'x':'–'}</td><td class="n col-own">${p.own!=null&&p.proj?p.own.toFixed(0)+'%':'–'}</td><td class="n col-lev lev ${p.lev>=3?'pos':p.lev<=-5?'neg':''}">${p.lev!=null&&p.proj?(Math.round(p.lev)>0?'+':'')+(Math.round(p.lev)||0):'–'}</td>
     <td><div class="pick"><button class="lock" aria-label="Use ${esc(p.name)} in every lineup" aria-pressed="${S.locks.has(k)}">✓</button><button class="ban" aria-label="Never use ${esc(p.name)}" aria-pressed="${S.bans.has(k)}">✕</button></div></td></tr>`;
     if(S.open===k)html+=`<tr class="detail"><td colspan="7">${detail(p)}</td></tr>`;
