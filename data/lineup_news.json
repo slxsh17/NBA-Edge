@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-28",
-  "checked_at": "2026-10-28T22:59:34.536390+00:00",
+  "checked_at": "2026-10-28T23:27:51.793926+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,6 +22,14 @@
   ],
   "headlines": [
     {
+      "headline": "Gui Santos Injury: Ruled out Wednesday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQem1ZcGNFaVdySThIS1BvVmd3M3E2cThuZS1OMlhTVlJ5VENRcVYtQ3k1Y1NlOGtuZnctcG1zUmhZbkxhcEw5enYxWV9jX052YllVVFJudm9JTGpvMkt3cUg5cVpqWE5BelpVTWRwVWFlRGdKVEcybGdWdlFCQnZVQ202Si1OT19BWWhJcWdBai1ySEpl?oc=5",
+      "published_at": "2026-10-28T22:58:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
       "headline": "Updated Cleveland Cavaliers Starting Lineup vs. Washington Wizards - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNY0xMYXgxWDN0VkF0T19FWTF4Njh6OHkxX25pZlBVbGJSMVhrYTh5bWVnS0xiZ09BNW5iMmg3MndsNVp6MmhIZ0tPR1hXTDFualc1alBOMEtZUzM4Tmc0d0owZy1LbGZLam44dGZyMXBiYWRhYTIwWlc1RC0xdnFPYkFOWHJHaTV3bHVVV3hKVTJwMk14N21TR2lUay04LVpZand3MmxtYUpJVmRQZHBxaXQtMlZkLTg?oc=5",
       "published_at": "2026-10-28T22:37:17+00:00",
@@ -30,9 +38,33 @@
       "scope_date": "2026-10-28"
     },
     {
+      "headline": "Tre Johnson Injury: Ruled out Wednesday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaVVfT0t5ZUQ2MjJYT1RuT18wMzVWQUlIU1JZdmdkeVIxZkgyNHdtUHA1eV94Ym9WZTBVdmpyNDd0R2ZPM1VvZ1lhTWROXzVua2l2YWZNUjZ2X3pWdG5ub0hjY3ZPWkFMVUNwcl8tS1gzQ0JaTXROVWgzYmd3Y1dTaDNmNmxOWTdNem1RNUNCQWxRLUhYZFE?oc=5",
+      "published_at": "2026-10-28T22:28:29+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
       "headline": "Wizards' AJ Dybantsa: On minutes restriction Wednesday - CBS Sports",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTVA5TTRqeF9QdndUaVRJZjVKZHNkeUhtMDdwdHViNE5FTmY0dE9OYXIxZVl0VFRJNWJta2tEckQ0SWs2X19yS2Q2SVVVa2lIaU5GeEdzR19OTThJZTZIT2JNNU8yYTVJU0I3WXZCbGVzU1g5cXRwUzR2X2tGY0YtaXR3dFdQV09DUkowUjQ5aXFZMjVZLVZrZkdDZjZ5cXh4UTJoN1Vn?oc=5",
       "published_at": "2026-10-28T22:26:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Drew Rasmussen to start Game 5 on short rest as Rays try to extend World Series - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTXlic2pSbDVuNUhxLTJVdGVCQUVYWC1qdmtUU3d5aTNTT0N5Z3lLQ0NTeHZvMDdHNHBiQjRaZ3pPeTlqQW13NmtWb3VqNkJLRkFtbnVDY1kxbndlNDhCUUxURUJ4dE1BWVhXTlUwMjlaTWxld2xqc2dOV2pCRWNhWTY4LVNSM2tEUndpZWNlOWJuTFdJNDRF?oc=5",
+      "published_at": "2026-10-28T21:53:37+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Aaron Nesmith Injury: Downgraded to questionable - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMDB5TUxSMElWZDFCVUtnTVpLTnl3ZFhJQ2hkWkl2Y0U2TF8zWmRhSVhmNVFWMWltc2U5ME1CQ05NTmNQNEM5LVR0dVdtWWQ2eUtiMGNKMFp5eV9ua3dTM0VoR0pFRzRmWkJad25GY2ZfbTIwcmlpcXVCLWpxYlJYSFVWWEVULXRscnBMQ2ZsR0lONUt6SmViOFVtRTloMFJ5SkE?oc=5",
+      "published_at": "2026-10-28T21:52:11+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -62,14 +94,6 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Drew Rasmussen to start Game 5 on short rest as Rays try to extend World Series - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTXlic2pSbDVuNUhxLTJVdGVCQUVYWC1qdmtUU3d5aTNTT0N5Z3lLQ0NTeHZvMDdHNHBiQjRaZ3pPeTlqQW13NmtWb3VqNkJLRkFtbnVDY1kxbndlNDhCUUxURUJ4dE1BWVhXTlUwMjlaTWxld2xqc2dOV2pCRWNhWTY4LVNSM2tEUndpZWNlOWJuTFdJNDRF?oc=5",
-      "published_at": "2026-10-28T19:45:59+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
       "headline": "Anthony Black (personal) listed questionable Wednesday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVFZxWXcxekdRelNydV9sUmNXMTZaT01LeG9GaG1CTjZlNDJtWjlqQUFubGVqQUI0cl9IUUJ6RV9NUE14ODNEbmZyMGF4a18yeXBvbHZhS1dtMWp4SVBGRVdBazhTYy1FR21CTFF3T0kwYjhsSWtGNWxpVjEwYnNRQS0wbF9VdXpsbnpPR0JHdVlIa2U3MDZSS1ZaWG14bm1yZWfSAacBQVVfeXFMUFRHNVRpYmtfdW9rTzNDOVhzQWFrNWVUU0Q5NnZtN2pPbXc4ZXh2WFBaUDVmXzFaak9RWFN5a0V3YnhYdFo4X0JpdlUzSEwxV1cyV3UzRGlScVNSMjJOZHdVMnRGeml4TWVlNWp6TlFMcHdEUkRicENHRl91eXhCUkRyN3NqcEdyeG40eEljOGNqejV0Yk1FRXJHSkowZmFNRU1PNS1LS0k?oc=5",
       "published_at": "2026-10-28T19:14:51+00:00",
@@ -89,14 +113,6 @@
       "headline": "NBA Fantasy: Best pickups with stars sidelined - NBA.com",
       "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9YdEFwTGI4ZWFnS2U2bTByV0QxcmlLaHR4MEJxV2RpS1hqSVNQdHVPWkF6NllXQmFIX2VLdjI2VjNGZVlQTUNhdUhMRk00WDhiUGJPUTdmSEpXWl9NdzU4bTJkejZYWTIxb1JFZGRlUnBDVWJyMDNsbWpB?oc=5",
       "published_at": "2026-10-28T19:06:11+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Jonathan Taylor’s wife reacts to Quenton Nelson trade: ‘Do I need to start packing our bags?’ - The Athletic - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQWY3UzltbTMwbHM4RzQ5aElSTC1kRFVGemtOeHVmYnQ1SjA0NzNoYmVLZi1MelVJcjkzS2t6dURKbEhycWk2clNpSkhCOG1VNDdQR25GRzBZX1d0RGlMdTZqVEliSGhOb2xQUTZLNHN2bWNDa2dqdWxPcXFkaG5NQl90ZERMN0RiREEtTDktVlA1dTV0VnU0cURvX013TjZ5?oc=5",
-      "published_at": "2026-10-28T18:48:36+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -166,8 +182,8 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Knicks’ Karl-Anthony Towns reveals the biggest difference to start the 2026-27 season - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQWFNSDFkZFZVSC1DQjhicFU3enJ3d1JBWHNzV2ZkMlBfV3hfNG8xM2xpX3pKVDR6bTl5Wk8xdVE1aEtEOG5aVHJ2d1F3TWJNNkVlb2l5Wk5sNVJNUFJqbDJ1bExuLWhBdlhWUjAzMm1JQzZOQUx4YmtyU0ptaDd4T3JTZmpmWTRvbTh3d0VLYXE1b0FwYmNSQ1B4V1NTS3lZSnlnTE4wVlVOUjdGc3dxc2R6YUpXT2EyNUhCbzhYbjAtazc4MjU0Q3dBSTdqN0E?oc=5",
+      "headline": "Knicks’ Karl-Anthony Towns reveals the biggest difference to start the 2026-27 season - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZzM4U01SeVFWWFNqR0pVYjdXZjVPbXdWUjZSLVdOb0NVaEhYTXZFaEJIMHBZVVhpYWlhQjM3WVFoZDdTMWNLeU5XWDBNVGFMTUZGZ1h0aWx1Um02ODBnR1M3SGZncEJwUjVVbFdLNTlUNTlLZWZ6cGY3ZGxDRmVyRXJVTmNvV1JJUGc?oc=5",
       "published_at": "2026-10-28T04:25:00+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -177,6 +193,14 @@
       "headline": "Nets’ Egor Demin ruled out for rest of Celtics game with concerning injury - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRUtZc0c4d1FfdjNxalVLTGdHV3RaZ1dQQ2R5RVB4amd0cG1GVllQS040NkFXS1kyYzFxaGl0anIwTFB4UlRGZlhfUkpyMXptWXdSYlJCN09xMEdteGFlWmN3NGtYZ01CRWRiU1VfLS1sb09rZFZGcDNUSDJFVEU2Qw?oc=5",
       "published_at": "2026-10-28T02:13:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Timberwolves Starting Lineup And Depth Chart After Anthony Edwards Injury - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOGRULVNjS3gxeXJRaDRiTXplU3NWOWRpbzBadHNGX0FoWks2SC1ReWNUamVWaVdYWE5OMGJBbDJKbmZrZHBIRVlHbXV4cENxc18wVTN5cm41Q1hhSkxfT0dxTDFCZGtZa3ZTUndrVy1nNXJSenM0TW1wQ1p3UXg4VWtPNmNJTlUzb183b2RueVp5YXM?oc=5",
+      "published_at": "2026-10-28T02:06:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -198,9 +222,9 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Atlanta Hawks Add Key Rotation Player To Injury Report Ahead Of Matchup vs Miami - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMzZDMklXS3BvOWYtaExtcnpxcVpPbHRrRUFmNVRSWkdoeTZsdWJUeXBiWlk1anhjVDNaUTgxM3FFXzFoR1pxX0FRS19XcXJVTFRQMWhYUHJxUzJRbUkzTEdEeXpUTTk4OTFJWDEwUjZ0RW82alhVaDl3alB3X0NmS0dTWXJzWlhZdWw0V0RYXzZfck9GSkxELUtGZnMxT0lySWlOUTNJT0pPVXRqaXYwM1lVWkw3cng0M2ZGTzNUZTVPWlYxV2c?oc=5",
-      "published_at": "2026-10-28T00:34:14+00:00",
+      "headline": "Atlanta Hawks Add Key Rotation Player To Injury Report Ahead Of Matchup vs Miami - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcHI4X2prd3g1X3JIUDdXYUtnbkVYN1pmdTU5U0lJYXVHa0lnRlNUemZSelJmbFIwQkd0SVI0Uzk4ZmJPTW1MVjFpMS1GT3NIZXVKbnl1b1R4WE8zWE5TTGpBTFlLYW9LVW9hZDN0VVlJQ2NwNUpmRE9uLXBqNFFVbXVoSUljQQ?oc=5",
+      "published_at": "2026-10-28T00:34:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -225,62 +249,6 @@
       "headline": "Washington Wizards Make Major AJ Dybantsa Injury Announcement Before Cavaliers Game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbVdIbjhISzdnT2dEeDNFaDhRT3pKYUs5YXVtLVNILUxOUkZ4VzRRNUJvalljUVU1em1LejBmYUhoZDNhUDdxRVBQZENKV3VXOWlwZnU3MTk0TnlfSEF2M3NnQUtyWmwxNzI5VG1udTlXdnhZb0VhWGhubkpBTXJ3OV9CeHJKUDYySzA3V0Vn?oc=5",
       "published_at": "2026-10-28T00:17:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Isaiah Joe Injury: Ruled out Tuesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaFlDV2dFY2xlcjlKeExlVEs0dzNWNjBFZ2E5VzkzTWE2NGpXclpoTGl5NHJidk9XVDBOMVZIYlpYcnF0R25zV1dwWUhSeU93U09sVHU3NG8yUHE1eUl0dU1uQy1RcGJEenl4MzlJTHVmeW5OR0tHZmxzQkl3MFhfc0ZZOUVwVFJhOExUeWYzcktpdw?oc=5",
-      "published_at": "2026-10-27T23:21:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Pistons get top defender back for Knicks matchup, veteran guard ruled out - MLive.com",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZmlkbkgtRXF1VnJiQktkQ2N1SUtqQUdYT1c5OXZCNnJPVzV4MzJ6UXdHVThTbmhGUUJXbG5zYThxdjhnVEVXOF9HRUM0N19QQkhpem9ONW1zZEktMmRraWYtUGo0OUd2dVRnam5NSDBQdFJ2aWp4THZ1YURHQXloLXFIeWRGN3lmdVBpamJaVzJqWFlCdE9QdjFqY0tpQWd5RGktOWlRQXlrZGdjSE5pT0U1cnRiUQ?oc=5",
-      "published_at": "2026-10-27T23:17:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Projecting Clippers’ Starting Lineup and Rotation When Fully Healthy - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT3hSU1ZKRE1QTkF3YllVb0RuYUFtLWlsUmd4bEMtOWxReEYyeVI3QjIzSFo1RGRNSnpSM3ZmQllrMzBjcGtnRV83ME13RUNvY1FNWXRhQ1EzckNxS1kwTlZsMzVSNFdCT213QXoxWFFpTnBRTHJjcmljVlNCVXdMR1hneDhvWjNwZHpST0tfcWFGVXRPd3VVcw?oc=5",
-      "published_at": "2026-10-27T23:15:54+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Timberwolves Starting Lineup And Depth Chart After Anthony Edwards Injury - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYnBXOEdUOGdYY25ranE4TFBlVUVOTDNFZEFCM0Z0TVU1OUdMdzU4c25YV2tVWWE4djdXaXNLUU9mbFVRNEZNcTZWZDhYRDl5TG9GcUlCZVU5QU5Wbzh4a2tNOTZaWF8yUWJsc1hJdG9sN0p6a0tZaC1ITUZnMDUtRHFGbGdKeGhFd0tUOUNobXU2VmxLM2NNal9xNFJ5XzY1aGJQOW1B?oc=5",
-      "published_at": "2026-10-27T23:13:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Jaxson Hayes Injury: Questionable versus Spurs - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZ2VTYm5wQWl4X2RnanRidHExejRGNDFjZERaTU4tZWNWQnp2TmRfVVVsSjc3bE42eHR4VVY1enE5YnI2amZuRWhvQkhHX2RrNThiNUFLZEY0ZHJVNkoxbzFveS1fajZhUU1DMjFBdS1IYl9HSjZTbGZmWmdWNkhPUWowaXdOUW1naldjQ2JRSGNpRjVQSTVDcXloWmV1cmc?oc=5",
-      "published_at": "2026-10-27T23:10:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Lauri Markkanen Injury: Questionable for Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ1ctV1pmQ2hNT21hb1pLeGE3Z0c5X29INDloR0VDcXF5cTl4dlFUb0dpX3hOQXVQR3dfMHJ5VmMxNWZJTDJISmRGeWRuRzhZaDJPRjJkQXJmRExQMTgzbExtOG9DalZ3Y1dHbnNyZWY0NlkxQmF3clJ4TEk5MGVYbDlsMTlKcnVsUjVzazRGQVpELUt0VDdRSDM4SnMyRUdwNldTTA?oc=5",
-      "published_at": "2026-10-27T23:05:23+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Who will start for Anthony Edwards as Timberwolves star set for surgery? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUUVfcGdXZGVjYTFtVDhCOFlBd2wxV3EtTTVOS0FTUUZ6MWZ3aFNvaVhXRkNKOXhndVpTb1FtWFQtdlRzLUZRMGtWMGdMNjNWd0N1OEFxRmxqWGhUcG1kd1RkV3ZjS2VuRHJuQ0dQVmlmSXA0M0tmZndzVUtSckwwTFJkaVpRMWc0OUFZSTlDaHpkUQ?oc=5",
-      "published_at": "2026-10-27T23:00:39+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
