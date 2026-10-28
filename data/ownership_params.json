@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-27T16:31:00+00:00",
+ "updated_at": "2026-10-28T04:00:53+00:00",
  "params": {
   "field_noise": 0.05,
   "consensus_w": 1.0,
@@ -9,7 +9,7 @@
   "external_w": 0.5,
   "mention_w": 0.0
  },
- "decision": "Adopted: on 2026-10-25 (held out) ownership missed by 2.7 points vs 3.5 before.",
+ "decision": "Kept current settings: refit didn't beat them on 2026-10-27 (4.3 vs 4.3).",
  "days_used": [
   "2026-10-20",
   "2026-10-21",
@@ -17,16 +17,17 @@
   "2026-10-23",
   "2026-10-24",
   "2026-10-25",
-  "2026-10-26"
+  "2026-10-26",
+  "2026-10-27"
  ],
  "evaluation": {
-  "days": 5,
-  "players": 583,
-  "avg_miss_all_days": 2.81,
-  "heldout_day": "2026-10-25",
-  "heldout_current": 3.5,
-  "heldout_fitted": 2.74,
-  "linestar_heldout": 3.18
+  "days": 6,
+  "players": 655,
+  "avg_miss_all_days": 2.98,
+  "heldout_day": "2026-10-27",
+  "heldout_current": 4.27,
+  "heldout_fitted": 4.27,
+  "linestar_heldout": 4.65
  },
  "log": [
   {
@@ -52,6 +53,18 @@
   {
    "date": "2026-10-27",
    "adopted": true,
+   "params": {
+    "field_noise": 0.05,
+    "consensus_w": 1.0,
+    "field_mix": 0.8,
+    "chalk_power": 0.8,
+    "external_w": 0.5,
+    "mention_w": 0.0
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "adopted": false,
    "params": {
     "field_noise": 0.05,
     "consensus_w": 1.0,
