@@ -1,12 +1,7 @@
 {
-  "updated_at": "2026-10-28T21:12:30.064090+00:00",
+  "updated_at": "2026-10-28T21:58:27.577543+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
-    {
-      "name": "Aaron Wiggins",
-      "team": "ATL",
-      "status": "DAY-TO-DAY"
-    },
     {
       "name": "Mouhamed Gueye",
       "team": "ATL",
@@ -173,14 +168,19 @@
       "status": "OUT"
     },
     {
-      "name": "Tyrese Haliburton",
+      "name": "T.J. McConnell",
       "team": "IND",
       "status": "OUT"
     },
     {
-      "name": "Andrew Nembhard",
+      "name": "Ben Sheppard",
       "team": "IND",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Tyrese Haliburton",
+      "team": "IND",
+      "status": "OUT"
     },
     {
       "name": "Obi Toppin",
@@ -193,17 +193,7 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "T.J. McConnell",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
       "name": "Ivica Zubac",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Ben Sheppard",
       "team": "IND",
       "status": "OUT"
     },
