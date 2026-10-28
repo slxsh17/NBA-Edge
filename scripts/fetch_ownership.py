@@ -74,7 +74,10 @@ def parse(d):
         slates.append({'name': s.get('SlateName'), 'type': 'single' if single else 'classic', 'games': s.get('Games'),
                        'salary_cap': s.get('SalaryCap'), 'start_utc': s.get('SlateDateUtc'),
                        'contests': [{'name': c['Contest'].get('ContestName'), 'entries': c['Contest'].get('EntryCount'),
-                                     'fee': c['Contest'].get('EntryFee'), 'type': c['Contest'].get('ContestType')} for c in contests],
+                                     'fee': c['Contest'].get('EntryFee'), 'type': c['Contest'].get('ContestType'),
+                                     # every other small field LineStar gives (scores, payout lines) for strategy learning
+                                     'extra': {k: v for k, v in c['Contest'].items() if isinstance(v, (int, float)) or (isinstance(v, str) and len(v) < 60)}}
+                                    for c in contests],
                        'players': players})
     return slates
 

@@ -1,0 +1,90 @@
+{
+ "schema": 1,
+ "updated_at": "2026-10-28T17:23:46+00:00",
+ "nights": 6,
+ "days": [
+  "2026-10-21",
+  "2026-10-22",
+  "2026-10-23",
+  "2026-10-24",
+  "2026-10-25",
+  "2026-10-27"
+ ],
+ "avg_hindsight_best": 430.5,
+ "cash": {
+  "best": {
+   "ceilW": 0.0,
+   "levW": 0.3,
+   "ownFade": 0.08
+  },
+  "best_avg": 305.7,
+  "projection_only_avg": 282.7
+ },
+ "tournament": {
+  "best": {
+   "ceilW": 0.0,
+   "levW": 0.3,
+   "ownFade": 0.08
+  },
+  "best_avg_best_of_5": 323.1,
+  "site_default_avg_best_of_5": 312.5,
+  "sim_winners_avg_best_of_5": 315.7,
+  "top5": [
+   {
+    "ceilW": 0.0,
+    "levW": 0.3,
+    "ownFade": 0.08,
+    "avg_best_of_5": 323.1
+   },
+   {
+    "ceilW": 0.0,
+    "levW": 0.3,
+    "ownFade": 0.03,
+    "avg_best_of_5": 319.9
+   },
+   {
+    "ceilW": 0.25,
+    "levW": 0.3,
+    "ownFade": 0.08,
+    "avg_best_of_5": 319.9
+   },
+   {
+    "ceilW": 0.25,
+    "levW": 0.15,
+    "ownFade": 0.03,
+    "avg_best_of_5": 319.8
+   },
+   {
+    "ceilW": 0.0,
+    "levW": 0.5,
+    "ownFade": 0.03,
+    "avg_best_of_5": 319.6
+   }
+  ]
+ },
+ "your_results": {
+  "nights": 1,
+  "entries": 2,
+  "cashed": 2,
+  "fees": 17,
+  "won": 35
+ },
+ "caution": "Small sample: settings are a guide, not a rule, until there are 20+ nights.",
+ "method": "Replays past main slates with pre-tip projections and ownership; lineups scored by actual FanDuel points. Tournament = best of 5 lineups (2+ players different).",
+ "log": [
+  {
+   "date": "2026-10-28",
+   "nights": 6,
+   "gpp": {
+    "ceilW": 0.0,
+    "levW": 0.3,
+    "ownFade": 0.08
+   },
+   "cash": {
+    "ceilW": 0.0,
+    "levW": 0.3,
+    "ownFade": 0.08
+   }
+  }
+ ]
+}

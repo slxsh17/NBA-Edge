@@ -70,23 +70,27 @@ def linestar_projected(errors):
         d = json.loads(get('https://www.linestarapp.com/DesktopModules/DailyFantasyApi/API/Fantasy/GetSalariesV5?sport=2&site=2&periodId=-1', 40))
     except Exception as e:
         errors.append(f'LineStar: {e}')
-        return []
+        return [], {}
     own = d.get('Ownership') or {}
     sc = json.loads(d.get('SalaryContainerJson') or '{}')
     named = {s['Id']: s for s in sc.get('Salaries', [])}
-    main = next((s for s in own.get('Slates', []) if s.get('SlateName') == 'Main'), None)
-    out = []
+    groups = {}
     for sid, rows in (own.get('Projected') or {}).items():
         for r in rows:
             s = named.get(r['SalaryId'])
-            if s and (main is None or True):
-                out.append({'name': unicodedata.normalize('NFC', s['Name']), 'team': canon(s.get('PTEAM')), 'own': r['Owned'], 'slate': sid})
-    # keep the largest slate's numbers per player (the main slate has the most players)
-    best = {}
-    for r in out:
-        k = norm(r['name']) + '|' + r['team']
-        best.setdefault(k, r)
-    return list(best.values())
+            if s:
+                groups.setdefault(sid, []).append({'name': unicodedata.normalize('NFC', s['Name']), 'team': canon(s.get('PTEAM')), 'own': r['Owned']})
+    # Each slate's numbers stay separate: the main slate is the one spanning the most teams;
+    # two-team groups are single-game slates (ownership there totals 600%, not 900%).
+    teams = {sid: {r['team'] for r in rows} for sid, rows in groups.items()}
+    main = max(groups, key=lambda sid: (len(teams[sid]), len(groups[sid])), default=None)
+    singles = {}
+    for sid, rows in groups.items():
+        if sid != main and len(teams[sid]) == 2:
+            pair = '@'.join(sorted(teams[sid]))
+            if len(rows) > len(singles.get(pair, [])):
+                singles[pair] = rows
+    return (groups.get(main, []) if main and len(teams[main]) > 2 else []), singles
 
 
 def dk_articles(day, errors):
@@ -123,7 +127,7 @@ def main():
         pass
     roster = {norm(p['name']) + '|' + p['team']: p for p in slate.get('players', [])}
     fta, fta_label = fta_fanduel(errors)
-    ls = linestar_projected(errors)
+    ls, ls_singles = linestar_projected(errors)
     arts = dk_articles(day, errors)
     players = {}
 
@@ -156,10 +160,13 @@ def main():
         out_players.append(p)
     out_players.sort(key=lambda p: -((p['consensus_own'] or 0) + 5 * p['mentions']))
     doc = {'schema': 2, 'date': day, 'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
-           'sources': {'fantasyteamadvice': {'players': len(fta), 'slate': fta_label}, 'linestar': {'players': len(ls)},
+           'sources': {'fantasyteamadvice': {'players': len(fta), 'slate': fta_label}, 'linestar': {'players': len(ls), 'single_slates': len(ls_singles)},
                        'dknetwork_articles': [{'title': a['title'][:140], 'url': a['url']} for a in arts]},
-           'source_errors': errors[:10], 'players': out_players,
+           'source_errors': errors[:10], 'players': out_players, 'singles': ls_singles,
            'method': 'Public projected ownership (Fantasy Team Advice FanDuel tab, LineStar logged-out view) and player mentions in public DraftKings Network pick articles.'}
+    if not out_players and not ls_singles and errors:
+        print('every source failed; keeping the previous consensus file', errors[:3])
+        return
     (DATA / 'public_consensus.json').write_text(json.dumps(doc, indent=0) + '\n', encoding='utf-8')
     (DATA / 'consensus').mkdir(exist_ok=True)
     (DATA / 'consensus' / f'{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')

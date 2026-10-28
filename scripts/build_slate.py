@@ -473,6 +473,12 @@ def own_params():
     return {**FS.DEFAULT_OWN, **(read('ownership_params.json').get('params') or {})}
 
 
+def single_own_params():
+    """Single-game ownership settings (learned separately; main-slate settings until then)."""
+    d = read('ownership_params.json')
+    return {**own_params(), 'external_w': 0.0, 'mention_w': 0.0, **(d.get('single_params') or {})}
+
+
 def chalk(own, power, total):
     """Sharpen (power > 1) or flatten ownership, keeping the slate total."""
     if power == 1 or not own:
@@ -511,7 +517,7 @@ def simulate(players, singles, old):
     import field_sim as FS
     P = own_params()
     main = [p for p in players if p['main'] and p['proj'] > 0 and not p.get('out')]
-    sig = json.dumps(['sim-v3', read('model_params.json').get('corr'), P, read('public_consensus.json').get('updated_at'), len(read('alerts.json').get('late_news', []))] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
+    sig = json.dumps(['sim-v3', read('model_params.json').get('corr'), P, single_own_params(), (read('public_consensus.json').get('singles') or {}), read('public_consensus.json').get('updated_at'), len(read('alerts.json').get('late_news', []))] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
                      + [[sg['id'], [[r['k'], r['salary'], r['status']] for r in sg['players']]] for sg in singles])
     import hashlib
     sig = hashlib.sha1(sig.encode()).hexdigest()
@@ -571,6 +577,10 @@ def simulate(players, singles, old):
         pa = next(p for p in main if id(p) == a)
         pa['pivots'] = [{'name': b['name'], 'team': b['team'], 'salary': b['salary'], 'proj': b['proj'], 'own': b['own']} for b in alts]
     by_key = {norm(p['name']) + '|' + p['team']: p for p in players}
+    PS = single_own_params()
+    s_cons = {}
+    for pair, rows in (pc.get('singles') or {}).items() if pc.get('date') == SIM_DAY[0] else []:
+        s_cons[pair] = {norm(r['name']) + '|' + r['team']: {'consensus_own': r['own'], 'mentions': 0} for r in rows}
     for sg in singles:
         clones = []
         for r in sg['players']:
@@ -581,8 +591,11 @@ def simulate(players, singles, old):
                                'opp': b.get('opp')})
         if len(clones) < 6:
             continue
-        s_sim = FS.field_ownership(clones, 'single', 60000, P, sims=150)
-        s_own = chalk(FS.blend_ownership(clones, s_sim, P, 600), P.get('chalk_power', 1.0), 600)
+        pair = '@'.join(sorted((sg['away'], sg['home'])))
+        PSg = PS if s_cons.get(pair) or not PS.get('no_ext') else {**PS, **PS['no_ext']}
+        s_sim = FS.field_ownership(clones, 'single', 60000, PSg, sims=150)
+        s_own = chalk(FS.blend_ownership(clones, s_sim, PSg, 600), PSg.get('chalk_power', 1.0), 600)
+        s_own = apply_consensus(s_own, clones, s_cons.get(pair, {}), PSg, 600)
         s_opt, s_top = FS.optimal_rate(clones, 'single', 60000, sims=200, corr=corr, keep_top=25)
         sg['sim_lineups'] = s_top
         rows = {r['k']: r for r in sg['players']}
@@ -597,6 +610,25 @@ def simulate(players, singles, old):
 SIM_SIG = [None]
 SIM_LINEUPS = [[]]
 SIM_DAY = [None]
+
+
+def single_heur(pairs):
+    """Feel-based single-game ownership from (projection, salary) pairs, totalling 600% (6 spots)."""
+    if not pairs:
+        return []
+    ws = [math.exp(0.06 * (pr - 25) + 0.15 * (min(pr * 1000 / max(sal, 1000), 8) - 3)) for pr, sal in pairs]
+    tot = sum(ws)
+    own = [600 * w / tot for w in ws]
+    for _ in range(20):
+        over = sum(max(0, o - 75) for o in own)
+        if over < 0.01:
+            break
+        free = [i for i, o in enumerate(own) if o < 75]
+        fw = sum(own[i] for i in free) or 1
+        own = [min(o, 75) for o in own]
+        for i in free:
+            own[i] += over * own[i] / fw
+    return own
 
 
 def single_game_slates(singles, players):
@@ -614,19 +646,7 @@ def single_game_slates(singles, players):
             rows.append({'k': k, 'salary': sp['salary'], 'status': sp.get('status', 'ACTIVE')})
         elig = [(r, by_key[r['k']]) for r in rows if by_key[r['k']]['proj'] > 0]
         if elig:
-            ws = [math.exp(0.06 * (p['proj'] - 25) + 0.15 * (min(p['proj'] * 1000 / max(r['salary'], 1000), 8) - 3)) for r, p in elig]
-            tot = sum(ws)
-            own = [600 * w / tot for w in ws]
-            for _ in range(20):
-                over = sum(max(0, o - 75) for o in own)
-                if over < 0.01:
-                    break
-                free = [i for i, o in enumerate(own) if o < 75]
-                fw = sum(own[i] for i in free) or 1
-                own = [min(o, 75) for o in own]
-                for i in free:
-                    own[i] += over * own[i] / fw
-            for (r, _), o in zip(elig, own):
+            for (r, _), o in zip(elig, single_heur([(p['proj'], r['salary']) for r, p in elig])):
                 r['own'] = round(o, 1)
         out.append({'id': sg['id'], 'label': sg['label'], 'away': sg['away'], 'home': sg['home'], 'time': sg.get('time'),
                     'total': sg.get('total'), 'home_spread': sg.get('home_spread'), 'players': rows})
