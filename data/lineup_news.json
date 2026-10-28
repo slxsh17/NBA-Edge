@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "slate_date": "2026-10-28",
-  "checked_at": "2026-10-28T23:27:51.793926+00:00",
+  "checked_at": "2026-10-28T23:59:37.812242+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
     {
       "team": "MIL",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "Ryan Rollins",
         "Tyler Herro",
@@ -201,14 +201,6 @@
       "headline": "Timberwolves Starting Lineup And Depth Chart After Anthony Edwards Injury - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOGRULVNjS3gxeXJRaDRiTXplU3NWOWRpbzBadHNGX0FoWks2SC1ReWNUamVWaVdYWE5OMGJBbDJKbmZrZHBIRVlHbXV4cENxc18wVTN5cm41Q1hhSkxfT0dxTDFCZGtZa3ZTUndrVy1nNXJSenM0TW1wQ1p3UXg4VWtPNmNJTlUzb183b2RueVp5YXM?oc=5",
       "published_at": "2026-10-28T02:06:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Dallas Mavericks Make Kyrie Irving Injury Announcement Before Thunder Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPajVDNmk2Xzk3cmg4WWF3RmFvLTBXQllvaVB4bHlqUnctZEw2eHFmeUxBTEtER1lZbVY1OGVMb05waDJEYjl3ZllBWEsxNE1hUFNhMl9xeFY5ei1JWF95OFY2QkUwbUJMeGozNkh6UHlmYjM0dmJpdnMyZUp6MlVEN0t5bXdjZEpmMC0xc093?oc=5",
-      "published_at": "2026-10-28T01:53:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
