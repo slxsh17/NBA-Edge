@@ -1,0 +1,18 @@
+{
+ "schema": 1,
+ "note": "Main-slate lineups the user entered on FanDuel, logged from their screenshots. Scores as of the screenshot.",
+ "days": [
+  {
+   "date": "2026-10-27",
+   "slate": "Main",
+   "players": ["De'Aaron Fox", "Stephon Castle", "Mikal Bridges", "Deni Avdija", "Karl-Anthony Towns", "Derrick White", "Mitchell Robinson", "Luka Doncic", "Jrue Holiday"],
+   "projected": 302.16,
+   "score": 302.0,
+   "final": false,
+   "contests": [
+    {"name": "$500 NBA Small Rebound", "fee": 12, "place": 9, "field": 49, "won": 25},
+    {"name": "$2.5K Tue NBA Assist (Single Entry)", "fee": 5, "place": 101, "field": 595, "won": 10}
+   ]
+  }
+ ]
+}

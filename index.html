@@ -351,8 +351,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp,op]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json')]);
-  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;
+  const [today,acc,inj,lw,mp,op,mr]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
@@ -668,11 +668,11 @@ $('build').onclick=build;
 // ---------- accuracy ----------
 function renderAccuracy(){
   const box=$('accuracy'),a=S.acc;
-  if(!a||!a.summary_7d){box.innerHTML='<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
+  if(!a||!a.summary_7d){box.innerHTML=resultsHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
   const s=a.summary_7d,beat=s.naive_mae&&s.mae<s.naive_mae;
   const days=a.days.slice(-7),maxv=Math.max(...days.map(d=>Math.max(d.mae,d.naive_mae||0)),1);
   const last=a.days[a.days.length-1];
-  box.innerHTML=`<div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
+  box.innerHTML=resultsHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
   <p style="margin:0 0 6px;font-size:14px">${beat?`Over the last ${s.days} days the model missed by ${(s.naive_mae-s.mae).toFixed(1)} fewer fantasy points per player than just using each player’s season average.`:`Over the last ${s.days} days the model hasn’t beaten a plain season average yet.`} It ran ${s.bias>0?'low':'high'} by ${Math.abs(s.bias).toFixed(1)} points on average and missed minutes by ${s.minutes_mae.toFixed(1)}.</p>
   <div class="bars" role="img" aria-label="Daily average miss, model vs season average">${days.map(d=>`<div class="bar"><div class="pair"><i class="m" style="height:${d.mae/maxv*64}px" title="Model ${d.mae}"></i><i class="n" style="height:${(d.naive_mae||0)/maxv*64}px" title="Season average ${d.naive_mae}"></i></div>${new Date(d.date+'T12:00:00').toLocaleDateString([], {month:'numeric',day:'numeric'})}${d.backtest?'*':''}</div>`).join('')}</div>
   <div class="legend"><i style="background:var(--orange);margin-left:0"></i>Model<i style="background:var(--line)"></i>Season average</div>
@@ -681,6 +681,15 @@ function renderAccuracy(){
   ${last&&last.biggest_misses?`<details style="margin-top:10px;font-size:13.5px"><summary>Biggest misses on ${new Date(last.date+'T12:00:00').toLocaleDateString([], {month:'short',day:'numeric'})}</summary><table style="margin-top:6px"><tbody>${last.biggest_misses.map(m=>`<tr><td style="text-align:left">${esc(m.name)}</td><td class="n">${m.proj.toFixed(1)}</td><td class="n">${m.actual.toFixed(1)}</td></tr>`).join('')}</tbody></table></details>`:''}`;
 }
 
+function resultsHTML(){
+  const r=S.mr;if(!r||!(r.days||[]).length)return '';
+  const cs=r.days.flatMap(d=>d.contests||[]),fees=cs.reduce((a,c)=>a+c.fee,0),won=cs.reduce((a,c)=>a+c.won,0),cashed=cs.filter(c=>c.won>0).length;
+  const daysCashed=r.days.filter(d=>(d.contests||[]).some(c=>c.won>0)).length,profit=won-fees;
+  return `<h3 style="font:600 18px var(--num);margin:16px 0 4px">Your results</h3>
+  <div class="acc-big"><div>Days cashed<b>${daysCashed}/${r.days.length}</b></div><div>Contests cashed<b>${cashed}/${cs.length}</b></div><div>Profit<b style="color:${profit>=0?'var(--good)':'var(--bad)'}">${profit>=0?'+':'−'}$${Math.abs(profit).toFixed(0)}</b></div></div>
+  <p style="margin:0 0 6px;font-size:14px">$${fees} in entry fees, $${won} won (${fees?((won/fees-1)*100).toFixed(0):0}% return).</p>
+  <details style="font-size:13.5px"><summary>Each night</summary><table style="margin-top:6px"><tbody>${[...r.days].reverse().map(d=>{const f=d.contests.reduce((a,c)=>a+c.fee,0),w=d.contests.reduce((a,c)=>a+c.won,0);return `<tr><td style="text-align:left">${new Date(d.date+'T12:00:00').toLocaleDateString([], {month:'short',day:'numeric'})}</td><td class="n">${d.score} pts</td><td class="n">proj ${d.projected}</td><td class="n" style="color:${w>f?'var(--good)':w<f?'var(--bad)':'inherit'}">${w-f>=0?'+':'−'}$${Math.abs(w-f)}</td></tr>`}).join('')}</tbody></table></details>`;
+}
 function learnedHTML(){
   const l=S.lw;if(!l||!l.weights)return '';
   const w=l.weights,names={vegas:'Vegas',matchup:'Matchup',injury:'Injury minutes',usage:'Usage bump',starter:'Starter bump',blowout:'Blowout cut',outside:'Outside projection blend'};
