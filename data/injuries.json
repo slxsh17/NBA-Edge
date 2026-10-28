@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T14:29:35.039165+00:00",
+  "updated_at": "2026-10-28T15:25:14.418893+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -133,14 +133,14 @@
       "status": "OUT"
     },
     {
-      "name": "Yaxel Lendeborg",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Kristaps Porzingis",
       "team": "GSW",
       "status": "OUT"
+    },
+    {
+      "name": "Yaxel Lendeborg",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Moses Moody",
@@ -248,12 +248,12 @@
       "status": "OUT"
     },
     {
-      "name": "Pelle Larsson",
+      "name": "Simone Fontecchio",
       "team": "MIA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Simone Fontecchio",
+      "name": "Pelle Larsson",
       "team": "MIA",
       "status": "DAY-TO-DAY"
     },
@@ -321,6 +321,11 @@
       "name": "Otega Oweh",
       "team": "OKC",
       "status": "OUT"
+    },
+    {
+      "name": "Anthony Black",
+      "team": "ORL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jonathan Isaac",
