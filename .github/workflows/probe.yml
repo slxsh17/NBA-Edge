@@ -11,21 +11,24 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           rm -rf probe probe_out.txt; mkdir -p probe
-          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
-          get(){ curl -sSL -A "$UA" -o "probe/$1" -w "$1 HTTP %{http_code} size %{size_download} final %{url_effective}\n" "$2" >> probe_out.txt || echo "$1 FAILED" >> probe_out.txt; }
-          get rw_picks.html "https://www.rotowire.com/basketball/nba-dfs-picks-today.php"
-          get fd_research.html "https://www.fanduel.com/research/nba"
-          get fp_dfs.html "https://www.fantasypros.com/daily-fantasy/nba/"
-          get rb_dfs.html "https://www.rotoballer.com/category/nba/nba-dfs"
-          get stok_picks.html "https://www.stokastic.com/nba/nba-dfs-picks"
-          get dk_net.html "https://dknetwork.draftkings.com/nba-dfs/"
-          get fta_own.html "https://fantasyteamadvice.com/nba/dfs-ownership-projections"
-          get reddit.json "https://www.reddit.com/r/dfsports/new.json?limit=50"
-          get bsky.json "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=Lillard%20minutes&limit=10"
-          get nba_inj.html "https://official.nba.com/nba-injury-report-2026-27-season/"
-          for f in probe/*; do n=$(grep -oE "Wembanyama|Brunson|Lillard|Cunningham|Avdija|Henderson|Tatum|Sabonis|DeRozan|Fox" $f | wc -l); echo "$f names=$n" >> probe_out.txt; done
-          grep -oE "https://ak-static.cms.nba.com/referee/injury/Injury-Report_[^\"']+\.pdf" probe/nba_inj.html | tail -3 >> probe_out.txt || true
-          grep -oE 'href="[^"]*(nba-dfs|dfs-picks|picks-today|fanduel)[^"]*"' probe/fd_research.html probe/rb_dfs.html probe/fp_dfs.html probe/dk_net.html probe/stok_picks.html | sort -u | head -40 >> probe_out.txt
+          python3 - <<'PY' > probe_out.txt
+          import re,urllib.request,time
+          UA={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) Chrome/124 Safari/537.36'}
+          get=lambda u:urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read().decode('utf-8','replace')
+          v=lambda p,n:(re.search(r"window\.%s\s*=\s*'([^']*)'"%n,p) or [None,''])[1]
+          m=get('https://www.dailyfantasyfuel.com/nba/projections/fanduel/2026-10-28/')
+          start=v(m,'url');print('main',start,v(m,'slate'))
+          s=get('https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-28/')
+          print('default single page:',v(s,'url'),v(s,'slate'),v(s,'url_start_date'),v(s,'team_count'))
+          d='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+          def b36(n):
+              o=''
+              while n:n,r=divmod(n,36);o=d[r]+o
+              return o
+          for n in range(int(start,36)-12,int(start,36)+14):
+              sid=b36(n);p=get('https://www.dailyfantasyfuel.com/nba/showdown-single-game-projections/fanduel/2026-10-28/?slate='+sid)
+              print(sid,v(p,'url_start_date'),v(p,'slate'),v(p,'team_count'));time.sleep(.5)
+          PY
       - run: |
           git config user.name bot && git config user.email bot@x
-          git add -A probe probe_out.txt && git commit -qm probe-results && git push
+          git add -A probe_out.txt && git commit -qm probe-results && git push
