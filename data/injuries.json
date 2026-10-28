@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T22:39:34.639475+00:00",
+  "updated_at": "2026-10-28T23:17:48.155269+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -98,14 +98,14 @@
       "status": "OUT"
     },
     {
-      "name": "Spencer Jones",
+      "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
     },
     {
-      "name": "Cameron Johnson",
+      "name": "Spencer Jones",
       "team": "DEN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Alpha Diallo",
@@ -123,13 +123,13 @@
       "status": "OUT"
     },
     {
-      "name": "Ausar Thompson",
-      "team": "DET",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Jalen Duren",
       "team": "DET",
+      "status": "OUT"
+    },
+    {
+      "name": "Gui Santos",
+      "team": "GSW",
       "status": "OUT"
     },
     {
@@ -161,11 +161,6 @@
       "name": "Steven Adams",
       "team": "HOU",
       "status": "OUT"
-    },
-    {
-      "name": "Obi Toppin",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "T.J. McConnell",
