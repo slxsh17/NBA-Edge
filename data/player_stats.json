@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T09:27:18.462816-04:00",
+  "updated_at": "2026-10-28T10:20:09.637653-04:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 53,
@@ -411,8 +411,8 @@
       "team": "SAC",
       "games": 4,
       "avg_minutes": 36.0,
-      "avg_fantasy_points": 37.1,
-      "fantasy_points_per_minute": 1.03,
+      "avg_fantasy_points": 36.8,
+      "fantasy_points_per_minute": 1.023,
       "avg_points": 27.2
     },
     {
@@ -500,9 +500,9 @@
       "name": "De'Aaron Fox",
       "team": "SA",
       "games": 3,
-      "avg_minutes": 29.3,
+      "avg_minutes": 28.7,
       "avg_fantasy_points": 35.4,
-      "fantasy_points_per_minute": 1.207,
+      "fantasy_points_per_minute": 1.235,
       "avg_points": 16.3
     },
     {
@@ -740,9 +740,9 @@
       "name": "Dylan Harper",
       "team": "SA",
       "games": 3,
-      "avg_minutes": 31.3,
+      "avg_minutes": 30.7,
       "avg_fantasy_points": 31.9,
-      "fantasy_points_per_minute": 1.019,
+      "fantasy_points_per_minute": 1.041,
       "avg_points": 18.3
     },
     {
@@ -970,9 +970,9 @@
       "name": "Devin Vassell",
       "team": "SA",
       "games": 3,
-      "avg_minutes": 30.7,
+      "avg_minutes": 30.0,
       "avg_fantasy_points": 28.5,
-      "fantasy_points_per_minute": 0.928,
+      "fantasy_points_per_minute": 0.949,
       "avg_points": 11.7
     },
     {
@@ -1040,9 +1040,9 @@
       "name": "Julian Champagnie",
       "team": "SA",
       "games": 3,
-      "avg_minutes": 26.0,
+      "avg_minutes": 27.0,
       "avg_fantasy_points": 27.2,
-      "fantasy_points_per_minute": 1.046,
+      "fantasy_points_per_minute": 1.007,
       "avg_points": 14.7
     },
     {
@@ -3110,9 +3110,9 @@
       "name": "Steven Adams",
       "team": "HOU",
       "games": 1,
-      "avg_minutes": 9.0,
+      "avg_minutes": 8.0,
       "avg_fantasy_points": 7.9,
-      "fantasy_points_per_minute": 0.878,
+      "fantasy_points_per_minute": 0.988,
       "avg_points": 4.0
     },
     {
@@ -3520,9 +3520,9 @@
       "name": "Carter Bryant",
       "team": "SA",
       "games": 3,
-      "avg_minutes": 10.3,
+      "avg_minutes": 11.0,
       "avg_fantasy_points": 4.5,
-      "fantasy_points_per_minute": 0.432,
+      "fantasy_points_per_minute": 0.406,
       "avg_points": 1.7
     },
     {
@@ -8734,8 +8734,8 @@
       "ast": 5.0,
       "stl": 2.0,
       "blk": 0.0,
-      "tov": 3.0,
-      "fantasy_points": 49.9
+      "tov": 4.0,
+      "fantasy_points": 48.9
     },
     {
       "id": "4277847",
@@ -14083,7 +14083,7 @@
       "team": "HOU",
       "date": "20261023",
       "event_id": "401909096",
-      "minutes": 9.0,
+      "minutes": 8.0,
       "pts": 4.0,
       "reb": 2.0,
       "ast": 1.0,
@@ -15553,7 +15553,7 @@
       "team": "SA",
       "date": "20261023",
       "event_id": "401909096",
-      "minutes": 25.0,
+      "minutes": 28.0,
       "pts": 6.0,
       "reb": 0.0,
       "ast": 0.0,
@@ -16558,7 +16558,7 @@
       "team": "SA",
       "date": "20261023",
       "event_id": "401909096",
-      "minutes": 36.0,
+      "minutes": 34.0,
       "pts": 20.0,
       "reb": 3.0,
       "ast": 2.0,
@@ -16663,7 +16663,7 @@
       "team": "SA",
       "date": "20261023",
       "event_id": "401909096",
-      "minutes": 36.0,
+      "minutes": 34.0,
       "pts": 10.0,
       "reb": 4.0,
       "ast": 2.0,
@@ -16828,7 +16828,7 @@
       "team": "SA",
       "date": "20261023",
       "event_id": "401909096",
-      "minutes": 34.0,
+      "minutes": 32.0,
       "pts": 19.0,
       "reb": 4.0,
       "ast": 9.0,
@@ -17068,7 +17068,7 @@
       "team": "SA",
       "date": "20261023",
       "event_id": "401909096",
-      "minutes": 4.0,
+      "minutes": 6.0,
       "pts": 0.0,
       "reb": 0.0,
       "ast": 0.0,
