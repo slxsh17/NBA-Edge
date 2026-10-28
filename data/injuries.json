@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T00:01:36.342656+00:00",
+  "updated_at": "2026-10-28T01:00:21.125704+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -21,6 +21,11 @@
       "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
+    },
+    {
+      "name": "Egor Demin",
+      "team": "BKN",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tyler Bilodeau",
