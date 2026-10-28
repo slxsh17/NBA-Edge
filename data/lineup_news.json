@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-28",
-  "checked_at": "2026-10-28T17:13:36.141284+00:00",
+  "checked_at": "2026-10-28T18:05:27.367608+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Knicks vs. Bulls odds update: New York looks to start winning streak in Chicago - SILive.com",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWnNSSEI2NGxsVVlXMEltSW1XQUMtQ05lMWlDTlhaZnZ6SHV0OFhHVk5UbWRkWm1hOVk0QzVDcWJKdVpoTWR6Nm8yMXFFZUpXZlhOWkRlY1RhNlpCM0stREdWc1l5X0VlbFJXRXVwZEh4NDN4Tlp2TUg1Q3ZSQ0pYUEdpRURPZkYtbC1FTWxZUFRfY19MQUNMN1VPRUNlNkVpdGMxbnhWTkVFRXoxc2JRcnBmYnNOYU42eUpwc213?oc=5",
+      "published_at": "2026-10-28T17:15:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
     {
       "headline": "Jonathan Taylor’s wife reacts to Quenton Nelson trade: ‘Do I need to start packing our bags?’ - The Athletic - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQWY3UzltbTMwbHM4RzQ5aElSTC1kRFVGemtOeHVmYnQ1SjA0NzNoYmVLZi1MelVJcjkzS2t6dURKbEhycWk2clNpSkhCOG1VNDdQR25GRzBZX1d0RGlMdTZqVEliSGhOb2xQUTZLNHN2bWNDa2dqdWxPcXFkaG5NQl90ZERMN0RiREEtTDktVlA1dTV0VnU0cURvX013TjZ5?oc=5",
@@ -62,14 +70,6 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Pat Riley’s next trade miracle may need to start with Nikola Jovic - All U Can Heat",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaml6dUhNWmJwSU5xVFNWOFZuektSTTFsS1Raem05Tkk3VTBrOGNheUc4dTFIclZUQXR6QTE4djNYdFRFUHNhZWhtZ1VNMG9aOWI2YU5DaldOdFB3LTF6YlhwUXFxMVBsRmFoUXZwbUo5d3FyVEFScG04NkFwQUk3aFIyRzBMdTNfVzB0dThlQk1ZNC1Z?oc=5",
-      "published_at": "2026-10-28T14:39:52+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
       "headline": "Jaxson Hayes Carries Questionable Tag for Wednesday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY1pTOVpCeWo4dlRSZnd6dTJjNjEwU3lkdzZ3OTZWaHlOVE1oTFVWY21Lamxvc1c0NmRUbVVRNGVhMU9fNllQdGQtSEtCRjNGckxvbXlnMWNodXJMMTVLYUppM050VkVqTW10dkZGcFp1dlg5MW12SXdiNGJJNHFKVE5PVUZiWVptdjRaWFBkWGg4RXJZVkZNRGhSdGRhQW8?oc=5",
       "published_at": "2026-10-28T13:57:11+00:00",
@@ -81,6 +81,14 @@
       "headline": "AJ Dybantsa Listed as Questionable Versus Cleveland - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNanlwRUUzaVcxaFUzZFhwLXM1SjNWeWJ3b3BrdUVpSTk4TWh5S3BMMmZPMUJXQ05WZXlrQ3k0bE5BYW1WaGhDVGFWTTJWcGFybUFpUzRjcXBzTzdTX1Y3Z3p0cXVkUnM1RnpfUzV4ZXBKa0luVFBKZTBHbk9DSUgyWFZwYXlJUzJmMk13VVVNbU15b0c2RWtjMlRtTXllazg?oc=5",
       "published_at": "2026-10-28T13:07:12+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Tyrese Haliburton (hamstring) questionable Weds. - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY1l2NFRzZ0Q0QWJrS0h4TVJZYzkxbjVYV0xSZ0l6MnB1b0x3ejVQYnA0TzZwWmg2dzd3TzRkaXVlaXY4dTd2SlhnUDBzaVNRb25nay1fXzc0Qm9vTkdOTHRGaE5lZjRJOHVVREM0T01xUXRLU1RJc2VrSlBaQnM2QTgtak5nbE9FMm9meGcxVmZQaHN1US11SVZuSGt0ZXVTQXRTUjNPazl2WEFWOFNFVDBHbw?oc=5",
+      "published_at": "2026-10-28T12:42:57+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -137,22 +145,6 @@
       "headline": "Naji Marshall (illness) questionable Wednesday - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRVhieWxDREh5bVpaT1BnTmdMNlNiUkUtWF9hb0ZqZ0FJbVFvZ2FIZGNtdS1memNPaFJudlNIZ19UZEIyWDRCZF91M3loSXNmVXJLbEJ0ai15Vk1zSnBsWHFRakpHMnlJZWZBVS14TElvM2NoaHl3SmhoQ0p4akk5TUtOaE9GSEdGZzI3YnNTNjlZTER2VnMxeHVKa1J0ak5TLUhOYWVqWkdvdkhMaHVfSl9B?oc=5",
       "published_at": "2026-10-28T06:04:46+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Brewers to start Dustin May as they go for sweep - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeFJuUExiazdkLVh2bUVkN2FsaEdEQWJjZFdLb3M3Q1lGUG4wUHF5TzNCYS11NEZndXZpT0pVcEwxN2V4UlVCZkhEaUJ0Q2tiZGVBdFZqcE9VZVF5THpQMTNiWl8xeE5zZ2haZzZZcFVsS1J3N1dWVHowR00wQTk4eVI5Z3R5d2VkQmZ5ek1BU0dGNmdNdmdSVlVCdUhOMm96N2UxcjJ2eU13NS1FWk8yNXQwYlo?oc=5",
-      "published_at": "2026-10-28T05:01:46+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Tyrese Haliburton (hamstring) questionable Weds. - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY1l2NFRzZ0Q0QWJrS0h4TVJZYzkxbjVYV0xSZ0l6MnB1b0x3ejVQYnA0TzZwWmg2dzd3TzRkaXVlaXY4dTd2SlhnUDBzaVNRb25nay1fXzc0Qm9vTkdOTHRGaE5lZjRJOHVVREM0T01xUXRLU1RJc2VrSlBaQnM2QTgtak5nbE9FMm9meGcxVmZQaHN1US11SVZuSGt0ZXVTQXRTUjNPazl2WEFWOFNFVDBHbw?oc=5",
-      "published_at": "2026-10-28T04:41:59+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -246,6 +238,14 @@
       "scope_date": "2026-10-28"
     },
     {
+      "headline": "Washington Wizards Make Major AJ Dybantsa Injury Announcement Before Cavaliers Game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbVdIbjhISzdnT2dEeDNFaDhRT3pKYUs5YXVtLVNILUxOUkZ4VzRRNUJvalljUVU1em1LejBmYUhoZDNhUDdxRVBQZENKV3VXOWlwZnU3MTk0TnlfSEF2M3NnQUtyWmwxNzI5VG1udTlXdnhZb0VhWGhubkpBTXJ3OV9CeHJKUDYySzA3V0Vn?oc=5",
+      "published_at": "2026-10-28T00:17:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
       "headline": "Ajay Mitchell Questionable Oct. 28 Against Mavericks Due To Ankle Injury - FanDuel",
       "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOM1h6WDh5WXQwdTVBMUZxTDlmR29neHRYWVhuLVNCSWJNVm1yMm1WSE9Ed2hZZlcwa3VraFdZcjBnZVZIWGZFTzZmcEx6NEpoRGtiV1NyQ0JRUkdveWtfSncxTEREV0ZkQWVrUU9XRmxEaV9Uem9IYmNBZ2YwOGVNOUxNMXoyTmVRSDJKRlpROUw5d0laYXpvM0hpZ3k0M3M1T0lmSm5mTEJvWEx4M2h0ZHF5TXlPaUlYZkR5V1I2NnhjZw?oc=5",
       "published_at": "2026-10-27T23:26:33+00:00",
@@ -288,6 +288,14 @@
     {
       "headline": "Projecting Clippers’ Starting Lineup and Rotation When Fully Healthy - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT3hSU1ZKRE1QTkF3YllVb0RuYUFtLWlsUmd4bEMtOWxReEYyeVI3QjIzSFo1RGRNSnpSM3ZmQllrMzBjcGtnRV83ME13RUNvY1FNWXRhQ1EzckNxS1kwTlZsMzVSNFdCT213QXoxWFFpTnBRTHJjcmljVlNCVXdMR1hneDhvWjNwZHpST0tfcWFGVXRPd3VVcw?oc=5",
+      "published_at": "2026-10-27T23:15:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Video - Projecting Clippers’ Starting Lineup and Rotation When Fully Healthy - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRjd6QzUwMlZSVF9qT2wzdkxQUXZvaFAtMzNRSE5nUHVsbjhrTUJ6cjcxd3BqUHR1VzZ0cnR6SndXdW5mNmRnZzhTd291cklzR1RQQVh0SjdTTDZOZkVxOUk4a1VnYWRQQy1zeWFGSmI5TF9CQ0d5alNBZDd3LXE0OGZNc3NJSTBOMG5nQzdQUl9jTkhzcjFKUGpmUDFnei1RZFlJTHlNbEZOaWpRaFZKNV84Wlkzdw?oc=5",
       "published_at": "2026-10-27T23:15:54+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -390,9 +398,9 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Updated Detroit Pistons Starting Lineup vs. New York Knicks - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYUVfdFJqN2ZTbWlYNkd1cll2Y3J5dEplY2psMm14bGY3d1NTc2Y2ajNvZG52c2ZXaXlwenE1V3RQcEdhRllHZkpOTHpNS3hyX3dxbzJkWm9fRGVpSDB2aXJhNEhRWUpBWG9ZRHlDajhwRFZydTZ4eGpsbEV4QXBqb3phUnVPazJ6M0FoVllsNVo?oc=5",
-      "published_at": "2026-10-27T21:38:16+00:00",
+      "headline": "Updated Detroit Pistons Starting Lineup vs. New York Knicks - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUGZGUWo1VVpSSW9tSXl1aDBqNHNaLVd6VE12NHgxLWJLMFpIUmhQa2pGd1lpUnMtdkpSMzRSWTR2cFU3Sk1KOHRybXcwMmNVU3duMFVORWZ0ZXRDUmlFajk0MTVZWmV5TmozaGlabWx3emwwcjk2SXVIVDB2RWRMVTE2UXNKa3FaY2RYSXhtUWNOaG9iZ1dxbEtuR2FUT3VGZFFNT0RDVGpBYzg?oc=5",
+      "published_at": "2026-10-27T21:38:15+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -422,14 +430,6 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Washington Wizards Make Major AJ Dybantsa Injury Announcement Before Cavaliers Game - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTC1CYVZ6V2xWWFZxMWRiMHJZRFdFZi1lT2QycGlraEx1WWd3QzJmQXlEaEh2VTVjWkJVRDNUV1dOemM5Z3ZXT1c5aC1uejdoMk16NzAydk5talJKZDhCdEdkLUkxTU9YNjlxdjdtNmxRczFHTjR4WEVSbnJOQUFtOTd5cDRJamlzYmZn?oc=5",
-      "published_at": "2026-10-27T21:17:48+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
       "headline": "Aaron Wiggins Injury: Questionable for Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRkctSmoxdGd0S2plZU1PSFZGUjBjajVtNzFoX3YtdV9WVFhNX2FiVEdnWEtMUjRITzdybkNITEJpR2M2RzBCRUd2QmQtWkhFV1FZRkotQVo0LUJ5LTNHcUZmR2dkazFmOS05bkIzLU1iYzNwRjlKeVZPTXRBc2gyN0FqNl9xMW1wM1V1S1JPX095S0pDQWY4ZWZnS1ByYm1pa2c?oc=5",
       "published_at": "2026-10-27T21:07:36+00:00",
@@ -446,9 +446,9 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Most Injured NBA Teams 2026-27: Ranked by Who’s Hurt - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1wR0tZeVVJTks3eG5DQ1hreEU1bHVMRzh3ejBxaklhY0c2eWFMcUt6VkMzRmJfS045blhLYU50b3JiWnd4NTFyaXpkVDRXZ1d1dm1JZnhrRmdVLTFKcGRub0ItQ2VPbEMyZ2IzS0xLX1dTQ1NXZ2VUUFowMVl2dw?oc=5",
-      "published_at": "2026-10-27T20:46:00+00:00",
+      "headline": "Pablo López, Marvin Miller Man of the Year nominee, aims for return to Twins rotation in 2027 - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnN1OTdTamhRWVJwZGNjT3NiTU91TUI2YXRYbHR5c2xuc2tjWGlfYllLNm1jOGJpY29aNWZ4QS1HMlhZX2pXaXhEa3FlN2dKV2VNbWd0VmtJUXpvdWpWazFsNmNtMmZrU0hHLUJkUzlPdU9NZFg1OUdBWWVGMFVCQ2J1TVRfWF9ZZFQ0aXlxRQ?oc=5",
+      "published_at": "2026-10-27T20:54:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -494,25 +494,9 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Pablo López, Marvin Miller Man of the Year nominee, aims for return to Twins rotation in 2027 - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnN1OTdTamhRWVJwZGNjT3NiTU91TUI2YXRYbHR5c2xuc2tjWGlfYllLNm1jOGJpY29aNWZ4QS1HMlhZX2pXaXhEa3FlN2dKV2VNbWd0VmtJUXpvdWpWazFsNmNtMmZrU0hHLUJkUzlPdU9NZFg1OUdBWWVGMFVCQ2J1TVRfWF9ZZFQ0aXlxRQ?oc=5",
-      "published_at": "2026-10-27T19:42:08+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
       "headline": "Does bet365 Have Injury Protection for the NFL, NBA, WNBA, MLB, and NHL? - bet365",
       "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc241c180R1ZVR2d2cEU0Y2V0YWk4MEJweEsyZ21SRnhKRk5pNHM0Tzd3SDRiV1ppYk9yUXJBUzB6NE1zTmpZaXlRU200Q0tjc28tUVh0VFNoMXN6aHFqUzRHUzdxNERZNDhweE9xU2xMYmtFZ0xKemZtdW81R2EtMHhpRzhEaGNYV1RPbFlGLXpzVDR3QkF6bkdOelpIdFlNM0lUa1ZWclRQUzRPNm9qVkg3NDNsellXclVV?oc=5",
       "published_at": "2026-10-27T18:19:55+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Thunder Urged To Consider Trading For NBA's Hottest Scorer Ty Jerome Amid Major Injury Crisis - Fadeaway World",
-      "source_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYzZJRjVMTzNWN2xoX01pS3hpbkhuekRTVVNQWk85ZlJUYnplZ1FDN3Y1WFl4Nl95NTdzWnppZHIxZGkxSGJnMndUdnkxeHR4UFN2UHloSTRhN0RIYVJVNFJMLWg4UnFQRXdnSFN1RkRFV1Z0bFJGYnhadXdIZ1ZXMDd3MlJCNGpieHFDY1RzLWdGekxYSGdOYU1oY2NjOU1odGs2aEJzM0wxUWhmZC1ISWlWSHVWTG0xUjlsc05lMElXbHZMNjJtVGJXS2dCYTUwSmp4WF9zZDJqcWxoeG9LaXRteXFzYmg4dlk4amRn?oc=5",
-      "published_at": "2026-10-27T17:58:47+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
