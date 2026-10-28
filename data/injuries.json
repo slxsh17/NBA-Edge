@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T23:17:48.155269+00:00",
+  "updated_at": "2026-10-28T23:55:19.961873+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -86,11 +86,6 @@
       "name": "Caleb Martin",
       "team": "DAL",
       "status": "OUT"
-    },
-    {
-      "name": "Kyrie Irving",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dereck Lively II",
