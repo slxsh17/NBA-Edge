@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-28",
-  "checked_at": "2026-10-28T08:18:58.884301+00:00",
+  "checked_at": "2026-10-28T09:13:12.902481+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,9 +22,17 @@
   ],
   "headlines": [
     {
-      "headline": "Knicks’ Karl-Anthony Towns reveals the biggest difference to start the 2026-27 season - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZzM4U01SeVFWWFNqR0pVYjdXZjVPbXdWUjZSLVdOb0NVaEhYTXZFaEJIMHBZVVhpYWlhQjM3WVFoZDdTMWNLeU5XWDBNVGFMTUZGZ1h0aWx1Um02ODBnR1M3SGZncEJwUjVVbFdLNTlUNTlLZWZ6cGY3ZGxDRmVyRXJVTmNvV1JJUGc?oc=5",
-      "published_at": "2026-10-28T04:25:00+00:00",
+      "headline": "Brewers to start Dustin May as they go for sweep - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeFJuUExiazdkLVh2bUVkN2FsaEdEQWJjZFdLb3M3Q1lGUG4wUHF5TzNCYS11NEZndXZpT0pVcEwxN2V4UlVCZkhEaUJ0Q2tiZGVBdFZqcE9VZVF5THpQMTNiWl8xeE5zZ2haZzZZcFVsS1J3N1dWVHowR00wQTk4eVI5Z3R5d2VkQmZ5ek1BU0dGNmdNdmdSVlVCdUhOMm96N2UxcjJ2eU13NS1FWk8yNXQwYlo?oc=5",
+      "published_at": "2026-10-28T05:01:46+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Sidy Cissoko is forcing his way into the Blazers rotation after a strong start to the 2026-27 regular season - شبكة تواصل الإخبارية",
+      "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5CdzhHN3k4R1cyUmJnbEY2bF9NMXh1SnNIVW01WDRKN1lLdWRSY3d5amxIMExaTXN6bDlLTmVmV2dSc2FWTnRzb21aOEtsR24wYlJR?oc=5",
+      "published_at": "2026-10-28T04:24:53+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -33,6 +41,22 @@
       "headline": "Indiana Pacers' Ben Sheppard Needs Surgery On A Torn Meniscus, And Indiana's Wing Rotation Takes Another Hit - NDTV Sports",
       "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWEVBek1oMGgxd2hRdUNidy1RNWZLbnJOQnV4aENTLW5GMmpWVEl5dUdDeE5NR0NtUkNqbGhQWTh1S1FmLXBNZGJDRzVfUDJLaVlMMlBPWFRxSTBXMmlEd0NCc3JNaHVienE4X250UllPbVdWLXpleWx5cGMwMDZ5bVNBVG9vNnpiVWlRTzJSUjNLcWpNbllyWGFvSmhTWWlWQ3RHclVZb1JxUVZkNVJJd1BEMzROajUwRzlEc2JPYXNDRzNLMndBZHBNV3I5ZU81Y3NnS0M1bkdQZURJQmY4?oc=5",
       "published_at": "2026-10-28T03:31:41+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Knicks news: Karl-Anthony Towns reveals biggest difference to start the 2026-27 season - ClutchPoints",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQWFNSDFkZFZVSC1DQjhicFU3enJ3d1JBWHNzV2ZkMlBfV3hfNG8xM2xpX3pKVDR6bTl5Wk8xdVE1aEtEOG5aVHJ2d1F3TWJNNkVlb2l5Wk5sNVJNUFJqbDJ1bExuLWhBdlhWUjAzMm1JQzZOQUx4YmtyU0ptaDd4T3JTZmpmWTRvbTh3d0VLYXE1b0FwYmNSQ1B4V1NTS3lZSnlnTE4wVlVOUjdGc3dxc2R6YUpXT2EyNUhCbzhYbjAtazc4MjU0Q3dBSTdqN0E?oc=5",
+      "published_at": "2026-10-28T03:27:25+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "\"That is our fraternity\" - Steve Smith revealed why Jordan and LeBron didn't make his all-time starting five - Basketball Network",
+      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObktCUGUxSXU5SVFjVFYyVU4wckQzWUh2b2JOUzVuUHRQTTZNUHJEZFplajdLQU9hMkxxNGVRdF92cFNJMnluUWlIYnFGNmltUjZJalROMFkwSk82b1ZubWh5YVhUdThRdVdhR3dHWFNiekxjS1ZZUGhmNWdhRkJmTlNTSlNqNUY5UDMxc0JwY0hnM25DYXVneENNY0w4N0FPTG9nMjdoaW9udWhxNFhKMUNMemV2ZDl1YkEyc0hSelZoUQ?oc=5",
+      "published_at": "2026-10-28T03:23:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -54,9 +78,9 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Atlanta Hawks Add Key Rotation Player To Injury Report Ahead Of Matchup vs Miami - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcHI4X2prd3g1X3JIUDdXYUtnbkVYN1pmdTU5U0lJYXVHa0lnRlNUemZSelJmbFIwQkd0SVI0Uzk4ZmJPTW1MVjFpMS1GT3NIZXVKbnl1b1R4WE8zWE5TTGpBTFlLYW9LVW9hZDN0VVlJQ2NwNUpmRE9uLXBqNFFVbXVoSUljQQ?oc=5",
-      "published_at": "2026-10-28T00:34:00+00:00",
+      "headline": "Atlanta Hawks Add Key Rotation Player To Injury Report Ahead Of Matchup vs Miami - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMzZDMklXS3BvOWYtaExtcnpxcVpPbHRrRUFmNVRSWkdoeTZsdWJUeXBiWlk1anhjVDNaUTgxM3FFXzFoR1pxX0FRS19XcXJVTFRQMWhYUHJxUzJRbUkzTEdEeXpUTTk4OTFJWDEwUjZ0RW82alhVaDl3alB3X0NmS0dTWXJzWlhZdWw0V0RYXzZfck9GSkxELUtGZnMxT0lySWlOUTNJT0pPVXRqaXYwM1lVWkw3cng0M2ZGTzNUZTVPWlYxV2c?oc=5",
+      "published_at": "2026-10-28T00:34:14+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -145,6 +169,14 @@
       "headline": "Rookie Tobe Awaka is questionable vs NYK with a right … - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS0tjZWszYjJ3dWlLYjF3V2JjMTNsMFVrM1NrVXEwcVQ5TEp1UEhEVzJZOThJQzQ0MU5oRk9FdWFpRkFqVjZuUk45Sk5qdW9YdWVSbnpTNkJTdWVNTmtodEU2Z01JTG4wM0RpSXdIVUpPcjF2SkM3eS11RGplNW5HaDdrdVRjNTZFUXc?oc=5",
       "published_at": "2026-10-27T22:52:55+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Vegas Sports Sunday: Raiders lose 4th straight. Is it time to start Mendoza? - Las Vegas Review-Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeEJPT0Zrdm5vTDN4M0Z0cDdiWmh3N3gybXJKNjdqMXptTDJULVRSdjlTTnk2MXpSVnVBLXlSQ2FfVC1CaWJrQTEyakhuVGF5VUo5cmlFaTM5N2l2VVN3NUZLVDlwMEZLSU9VOGhYWlM5WkMzWlFjTmVaYXg4TDhxV3kwT3h1VVpZYlRGSHhKM0p3WTIyU3Q4TEtHRGRtWnNNRTFtbXNNb25YaHVKTTJIcm5nd2tOMW9ZbWJNeEVJaTBBaEtLcEE?oc=5",
+      "published_at": "2026-10-27T22:39:26+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -278,6 +310,14 @@
       "scope_date": "2026-10-28"
     },
     {
+      "headline": "Pablo López, Marvin Miller Man of the Year nominee, aims for return to Twins rotation in 2027 - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdnN1OTdTamhRWVJwZGNjT3NiTU91TUI2YXRYbHR5c2xuc2tjWGlfYllLNm1jOGJpY29aNWZ4QS1HMlhZX2pXaXhEa3FlN2dKV2VNbWd0VmtJUXpvdWpWazFsNmNtMmZrU0hHLUJkUzlPdU9NZFg1OUdBWWVGMFVCQ2J1TVRfWF9ZZFQ0aXlxRQ?oc=5",
+      "published_at": "2026-10-27T19:42:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
       "headline": "Thunder Urged To Consider Trading For NBA's Hottest Scorer Ty Jerome Amid Major Injury Crisis - Fadeaway World",
       "source_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYzZJRjVMTzNWN2xoX01pS3hpbkhuekRTVVNQWk85ZlJUYnplZ1FDN3Y1WFl4Nl95NTdzWnppZHIxZGkxSGJnMndUdnkxeHR4UFN2UHloSTRhN0RIYVJVNFJMLWg4UnFQRXdnSFN1RkRFV1Z0bFJGYnhadXdIZ1ZXMDd3MlJCNGpieHFDY1RzLWdGekxYSGdOYU1oY2NjOU1odGs2aEJzM0wxUWhmZC1ISWlWSHVWTG0xUjlsc05lMElXbHZMNjJtVGJXS2dCYTUwSmp4WF9zZDJqcWxoeG9LaXRteXFzYmg4dlk4amRn?oc=5",
       "published_at": "2026-10-27T17:58:47+00:00",
@@ -294,9 +334,25 @@
       "scope_date": "2026-10-28"
     },
     {
+      "headline": "Should Celtics Replace Jordan Walsh in Starting Lineup? - CLNS Media",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQb0U5UlNQNDc4OWxsMTlSbDZVRkljLUlfaXl1YjMzd2o3NS1pRlYyMEVqZ1hra0RUazgtWkhydG4xNzZuMU5qTHFTbVJpLU5VNFhqWGcyNTBZVXVJRDc4OGZFdDhFSXFIQXNXc2dlODNuYkRpR1EybzlOZGpKZDdRLWNvNmdNeEdsQ0h4dUJR0gGOAUFVX3lxTFBvRTlSU1A0Nzg5bGwxOVJsNlVGSWMtSV9peXViMzN3ajc1LWlGVjIwRWpnWGtrRFRrOC1aSHJ0bjE3Nm4xTmpMcVNtUmktTlU0WGpYZzI1MFlVdUlENzg4ZkV0OEVJcUhBc1dzZ2U4M25iRGlHUTJvOU5kakpkN1EtY282Z014R2xDSHh1QlE?oc=5",
+      "published_at": "2026-10-27T16:31:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
       "headline": "Dončić’s leadership and productivity has the Lakers thriving to start the season - The Sporting Tribune",
       "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQ2JjMXE2VzNWRlUtd2FVMl9sRVNjQ2hpREFmWTgzV0daUjMtd1pzbDNBbFdoZDBja1dGSGRuVVJkT1ZaVGdxaWFha1FEZURYRDMzcnFxTzl4bWJrN21DWFktdzhwem5HLXlMZVh4eEZjNGVBcXNrVmxBWkRwSXgxQi1GNHhmZnhHZjBHc09acnJXc2licEdNeFFMdGh6dHRwS1pFQ2h6cEtJZ1RqUF9NRENwLXVSZEpKa3U5aFdaWHpRdw?oc=5",
       "published_at": "2026-10-27T16:29:56+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Wizards Finally Implement Fan-Favorite Reserve, but he Doesn't Look Rotation-Ready - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQX3doS1hUcDVMZVpGbkNIVVoyVnpheDBFelBPbU1TWDctd2JZdWdXQml2UDY4S294TXRjZ1hramFpblZwV1hxREJ2cldhR1djejVrdkpWNDNnTXRTYXNlRktHbTVFaWVWNU9yaE43YjA0Y05zajBXTWE2aE9zcEUwTjgySUpqeVlXT3RjN0w1Zjg?oc=5",
+      "published_at": "2026-10-27T16:24:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -313,6 +369,14 @@
       "headline": "Does bet365 Have Injury Protection for the NBA, WNBA, MLB, and NHL? - bet365",
       "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc241c180R1ZVR2d2cEU0Y2V0YWk4MEJweEsyZ21SRnhKRk5pNHM0Tzd3SDRiV1ppYk9yUXJBUzB6NE1zTmpZaXlRU200Q0tjc28tUVh0VFNoMXN6aHFqUzRHUzdxNERZNDhweE9xU2xMYmtFZ0xKemZtdW81R2EtMHhpRzhEaGNYV1RPbFlGLXpzVDR3QkF6bkdOelpIdFlNM0lUa1ZWclRQUzRPNm9qVkg3NDNsellXclVV?oc=5",
       "published_at": "2026-10-27T15:03:03+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "This Kris Dunn Trade Scenario Would Strengthen the OklThunder’s Rotation - TWSN",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQV3Q5WnY1SW9MbjhZODhOS1NlMnMyRE9qT21pU25rQ1YzdDIzNGFmSjBpS3JfMmhFTnh4QXk1RFFuZHA2bWJxbVFYc19GRjJFUkVpM2hMRERlbjZrcW16YWVOUWJDWjB1SkJ5Ulg0ZkxBdDlyQjFQdWxuY2x0NmhRZndPU0d1VnVMYmNKbU94OUdEV2pEci10Zm90aXJVLXMt?oc=5",
+      "published_at": "2026-10-27T15:01:21+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -342,6 +406,14 @@
       "scope_date": "2026-10-28"
     },
     {
+      "headline": "North Carolina has turned to an NBA championship-winning coach in Michael Malone to start new era - The Lethbridge Herald",
+      "source_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNGNfRXRYNFBva2VXSVdQYUZGazVJajRqSk1WbnBQeHFRTFAtSDE1b2JadE1XcGNTWkhjdXpPeFYzbk5ReU85dWFjYm5LeVFfYk9uWWw0ZF9QRDBaNXh4TkwxbG00c3ZRV21PTXRyVUFpYWxrdzB5TS1lWEl4NHpvMzIxaVBPZHJ6Y0RIVkFGODN6ZGlzdUZUUi1sSXNISmFmWXV4UTJtQVpMZ0RJd1VEc2k3dW02LTdOUllSbFd4YlFhVUUyTUVyZ0ZsTGp4N1JjZG9rV1hvMUpEUklqelM1NE5PT0VLazVnU3ZWbXIwc3dXWFk?oc=5",
+      "published_at": "2026-10-27T12:23:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
       "headline": "Ravens QB Lamar Jackson ruled out vs. Bengals; Tyler Huntley to start again - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTnBaZENhTkpYRGtIOTBBVHNPM0wwVEpmZWVQZ3RGbVdVOFozZk1OQ216NmhkXzNOZFV4QXNmUTBqcUkwTmx4bGtia1hLclBDRDZ0aXNYQWxNWW9makVBSFR1QWQ0M2Z6Mkw2RTQxTlkxdVo5cHl0OUJjdDc1QUZmMUZraXplR1RnTlFjSXByNTJUeG45RDRFY3pjcVFBVms?oc=5",
       "published_at": "2026-10-27T12:08:00+00:00",
@@ -350,8 +422,16 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "North Carolina has turned to an NBA championship-winning coach in Michael Malone to start new era - Your Valley",
-      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPM3RjVlIyTlZWSmlqTG5oRHJTMm9UbkxSbzV5YVkxSnBZd0FWRE5uM0NQR3RIUTZteGFaLUxvYkZzdXJlSUZtMDhHVklfcWdUOW0ydmFfendQWjhWNDZ5ci1lNkYzN0lVUVpLc3FpOGhQbFM0NXRjUFl4cVNZV05pNERBNGZJYTlyNy1yVUxzdDVVa1dvT3RZQU92bHkzUEdKWDVHNER3UkNLQXhOX0VmRWhxaFpfNVdTdVBaeFJNWHUtbzNMSUdONHVaNWI0OVU4dTFmQV9R?oc=5",
+      "headline": "The Cavs’ guard rotation has a new favorite — and Craig Porter Jr. is running out of road - Cleveland.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOHdjQ2RGdHhKMnBxczhUSVZ1eDBuWExEUC1oUFlhQUVneEdUN1JaRnRxMGRSNmVMN1NBS1VvOTVWNk83UTZFaGpOSTU5ajN4Wi1ZWFlkN3dhSlJyOUxxZWNmdEtGZ0lBcHk3eDdzYW1KOWFyaGtkZ1htcVA5a0NRbGZ0a3Q2YjZIeEZ1TURoOUpMbnY3cV9qS05sOEdGMjFJa2lJRDFEX0J1QzhmQWQzNUtMV3pWMXBoejl6QWdPWVViai1aWm5KLQ?oc=5",
+      "published_at": "2026-10-27T11:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "North Carolina has turned to an NBA championship-winning coach in Michael Malone to start new era - Bluefield Daily Telegraph",
+      "source_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOeDI1MXYxZnJmb2FQREdKYXlnUTVEUVlNaDZfLVp2MTQ3d3EyMWpSMFV4SEhhc2MxTjI3dVc0YjhhYTFpLTVGNkcxM2d3SnVFbXhDSEFySTY1eXNmV2ZjTy1uQWpoaXlmOXkwODJXNnJEZm9qblBuSzBjWm1na1ZHMm1QRXFEMWE3ancwUlVCeGRpVVdac1BpemFER1VsNlV5S0lCcmRFc19mWDlUNFZwQm1GYkxHMHBZdHZNMzZTd1RrYlRKNHFMd0JEeW9kMURZTWxSWmx5ckZhM2FkS0tRMnJvSHZOU1dzeGlJU1lLOWg2bk12TnI2dkNpelFtOUNvY2dka2V0TU01ZWZVaVl2bnlzaXc0TTQ?oc=5",
       "published_at": "2026-10-27T10:10:09+00:00",
       "type": "headline_only",
       "confirmed": false,
