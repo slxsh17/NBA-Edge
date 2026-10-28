@@ -173,8 +173,6 @@ tr.detail td{background:var(--soft);text-align:left;font-size:13px;padding:10px 
 .override input{width:76px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:4px 8px}
 .tag.e{background:var(--ink);color:var(--paper)}
 .review-badge{font-size:12px;font-weight:600;color:var(--warn);margin-left:auto}
-#fd-export{margin-top:12px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
-#fd-export[hidden]{display:none}
 .sim-badge{font-size:12px;font-weight:600;color:var(--orange);padding:6px 14px 0}
 footer{font-size:12.5px;color:var(--muted);padding:10px 0 40px;border-top:1px solid var(--line)}
 footer a{color:inherit}
@@ -214,7 +212,6 @@ details summary{cursor:pointer}
       <button class="btn small" id="refresh" type="button">Refresh</button>
       <button class="btn small" id="upload-btn" type="button">Use my CSV</button>
       <input type="file" id="csv" accept=".csv,text/csv" hidden>
-      <input type="file" id="fd-ids" accept=".csv,text/csv" hidden>
     </div>
   </div>
 </header>
@@ -247,7 +244,6 @@ details summary{cursor:pointer}
       <button class="btn primary" id="build" type="button">Build lineups</button>
       <div id="build-status" role="status"></div>
       <div id="lineups"></div>
-      <div id="fd-export" hidden><button class="btn" id="fd-export-btn" type="button">Download for FanDuel</button><div class="muted" id="fd-export-msg"></div></div>
       <div id="exposure-summary"></div>
       <div id="settings" hidden></div>
     </section>
@@ -368,8 +364,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp,op,mr,al]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json')]);
-  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;
+  const [today,acc,inj,lw,mp,op,mr,al,st]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
@@ -447,41 +443,8 @@ async function applyCSV(text,remember=true){
   S.games=(S.today&&S.today.date===S.day?S.today.games:[]).filter(g=>teams.has(g.home)||teams.has(g.away));
   if(teams.size===2){S.format='single';S.sgId='csv'}else if(S.format==='single'){S.format='classic'}
   if(remember)store.set('csv',{day:S.day,text});
-  ingestIds(rows);
 }
 
-// ---------- FanDuel bulk upload ----------
-// FanDuel's lineup upload wants FanDuel player IDs (the "Id" column of the player list you download
-// from a contest). Only those IDs are taken from the file; projections stay automatic.
-function idStore(){const v=store.get('fdids',null);return v&&v.day===S.day?v:{day:S.day,maps:{}}}
-function curIdKey(){if(S.format==='single'){const g=S.games[0];return g?'sg:'+[g.away,g.home].sort().join('@'):''}return 'main'}
-function ingestIds(rows){
-  const h=rows[0].map(x=>x.trim().toLowerCase()),iId=h.indexOf('id'),iName=h.indexOf('nickname'),iF=h.indexOf('first name'),iL=h.indexOf('last name'),iTeam=h.indexOf('team');
-  if(iId<0||iTeam<0)return null;
-  const map={},teams=new Set();
-  for(const r of rows.slice(1)){const name=(iName>=0&&r[iName])||[r[iF],r[iL]].filter(Boolean).join(' ');const id=String(r[iId]||'').trim();if(!name||!id)continue;const t=canon(r[iTeam]);teams.add(t);map[key(name)+'|'+t]=id}
-  if(!Object.keys(map).length)return null;
-  const k=teams.size===2?'sg:'+[...teams].sort().join('@'):'main';const st=idStore();st.maps[k]=map;store.set('fdids',st);return k;
-}
-function fdHeader(){return F().order.flatMap(s=>Array(F().need[s]).fill(s==='MVP'?'MVP - 1.5X Points':s))}
-function exportable(){return S.lineups.filter(l=>!l.review)}
-function missingIds(){const m=idStore().maps[curIdKey()]||{};const miss=new Set();exportable().forEach(l=>l.picks.forEach(x=>{if(!m[pkey(x.p)])miss.add(x.p.name)}));return {m,miss:[...miss]}}
-function downloadFD(){
-  const {m,miss}=missingIds(),msg=$('fd-export-msg');
-  if(miss.length){msg.textContent=`No FanDuel ID for ${miss.slice(0,4).join(', ')}${miss.length>4?' and '+(miss.length-4)+' more':''}. Choose the player list for this exact contest.`;return false}
-  const rows=[fdHeader().join(',')].concat(exportable().map(l=>l.picks.map(x=>m[pkey(x.p)]).join(',')));
-  const blob=new Blob([rows.join('\r\n')+'\r\n'],{type:'text/csv'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);
-  a.download=`nba-edge-fanduel-${S.day}-${S.format==='single'?curIdKey().slice(3).replace('@','-'):'main'}.csv`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000);
-  msg.textContent=`Saved ${rows.length-1} lineup${rows.length>2?'s':''}. On FanDuel: open the contest, choose Upload lineups from CSV, and pick this file.`;return true;
-}
-function renderExport(){const box=$('fd-export');if(!box)return;const n=exportable().length;box.hidden=!n;if(!n)return;
-  const {miss}=missingIds();$('fd-export-btn').textContent=miss.length?'Download for FanDuel (link IDs first)':'Download for FanDuel';
-  if(miss.length&&!$('fd-export-msg').dataset.touched)$('fd-export-msg').textContent='FanDuel needs its own player IDs. On FanDuel, open the contest and tap Download players list, then choose that file here. Only the IDs are used.';}
-$('fd-export-btn').onclick=()=>{$('fd-export-msg').dataset.touched='1';const {miss}=missingIds();if(miss.length)$('fd-ids').click();else downloadFD()};
-$('fd-ids').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;const msg=$('fd-export-msg');
-  try{const k=ingestIds(parseCSV(await f.text()));if(!k){msg.textContent='That file has no Id column. Use the player list downloaded from the FanDuel contest.';return}
-    if(k!==curIdKey()){msg.textContent=k==='main'?'That player list is for a multi-game slate, but you\u2019re on a single game. Switch to Classic or choose the single-game list.':'That player list is for a single game ('+k.slice(3).replace('@',' & ')+'). Choose the list for this slate.';return}
-    downloadFD();renderExport()}catch(err){msg.textContent='Couldn\u2019t read that file.'}};
 
 // ---------- slate / games ----------
 const started=g=>!!g.time&&Date.now()>=Date.parse(g.time);
@@ -715,7 +678,6 @@ async function lateSwap(i){
 // ---------- lineups ----------
 function renderLineups(fresh=false){
   const box=$('lineups');
-  renderExport();
   if(!S.lineups.length){box.innerHTML='';$('exposure-summary').innerHTML='';return}
   box.innerHTML=S.lineups.map((l,i)=>{
     const sal=l.picks.reduce((s,x)=>s+salOf(x),0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/l.picks.length;
@@ -745,11 +707,11 @@ $('build').onclick=build;
 // ---------- accuracy ----------
 function renderAccuracy(){
   const box=$('accuracy'),a=S.acc;
-  if(!a||!a.summary_7d){box.innerHTML=resultsHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
+  if(!a||!a.summary_7d){box.innerHTML=resultsHTML()+strategyHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
   const s=a.summary_7d,beat=s.naive_mae&&s.mae<s.naive_mae;
   const days=a.days.slice(-7),maxv=Math.max(...days.map(d=>Math.max(d.mae,d.naive_mae||0)),1);
   const last=a.days[a.days.length-1];
-  box.innerHTML=resultsHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
+  box.innerHTML=resultsHTML()+strategyHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
   <p style="margin:0 0 6px;font-size:14px">${beat?`Over the last ${s.days} days the model missed by ${(s.naive_mae-s.mae).toFixed(1)} fewer fantasy points per player than just using each player’s season average.`:`Over the last ${s.days} days the model hasn’t beaten a plain season average yet.`} It ran ${s.bias>0?'low':'high'} by ${Math.abs(s.bias).toFixed(1)} points on average and missed minutes by ${s.minutes_mae.toFixed(1)}.</p>
   <div class="bars" role="img" aria-label="Daily average miss, model vs season average">${days.map(d=>`<div class="bar"><div class="pair"><i class="m" style="height:${d.mae/maxv*64}px" title="Model ${d.mae}"></i><i class="n" style="height:${(d.naive_mae||0)/maxv*64}px" title="Season average ${d.naive_mae}"></i></div>${new Date(d.date+'T12:00:00').toLocaleDateString([], {month:'numeric',day:'numeric'})}${d.backtest?'*':''}</div>`).join('')}</div>
   <div class="legend"><i style="background:var(--orange);margin-left:0"></i>Model<i style="background:var(--line)"></i>Season average</div>
@@ -758,6 +720,19 @@ function renderAccuracy(){
   ${last&&last.biggest_misses?`<details style="margin-top:10px;font-size:13.5px"><summary>Biggest misses on ${new Date(last.date+'T12:00:00').toLocaleDateString([], {month:'short',day:'numeric'})}</summary><table style="margin-top:6px"><tbody>${last.biggest_misses.map(m=>`<tr><td style="text-align:left">${esc(m.name)}</td><td class="n">${m.proj.toFixed(1)}</td><td class="n">${m.actual.toFixed(1)}</td></tr>`).join('')}</tbody></table></details>`:''}`;
 }
 
+function strategyHTML(){
+  const t=S.st;if(!t||!t.tournament)return '';
+  const g=t.tournament,c=t.cash,set=b=>`upside ${Math.round(b.ceilW*100)}%, leverage ${b.levW.toFixed(2)}, fade ${b.ownFade.toFixed(2)}`;
+  const using=k=>['ceilW','levW','ownFade'].every(x=>Math.abs((S.cfg[x]??0)-t[k].best[x])<1e-9);
+  return `<h3 style="font:600 18px var(--num);margin:16px 0 4px">What strategy has worked</h3>
+  <p style="margin:0 0 6px;font-size:14px">Replaying the last ${t.nights} main slates with the projections we had before tip-off, scored with what players actually did:</p>
+  <div class="acc-big"><div>Tournament best of 5<b>${g.best_avg_best_of_5}</b></div>${g.site_default_avg_best_of_5!=null?`<div class="base">Default settings<b>${g.site_default_avg_best_of_5}</b></div>`:''}${g.sim_winners_avg_best_of_5!=null?`<div class="base">Simulated winners<b>${g.sim_winners_avg_best_of_5}</b></div>`:''}</div>
+  <p style="margin:0 0 6px;font-size:14px">Best tournament settings: ${set(g.best)}. Best single lineup: ${set(c.best)} (${c.best_avg} pts a night vs ${c.projection_only_avg} with projections alone).</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0">${using('tournament')?'<span class="muted" style="font-size:13px">You’re using the best tournament settings.</span>':'<button class="btn small" data-strat="tournament" type="button">Use best tournament settings</button>'}</div>
+  ${t.caution?`<p class="muted" style="font-size:12px;margin:4px 0 0">${esc(t.caution)}</p>`:''}`;
+}
+$('accuracy').addEventListener('click',e=>{const b=e.target.closest('[data-strat]');if(!b||!S.st)return;const best=S.st[b.dataset.strat].best;
+  for(const k of ['ceilW','levW','ownFade'])S.user[k]=best[k];store.set('cfgUser',S.user);rebuildCfg();recompute();renderPlayers();renderLineups();renderAccuracy();if(!$('settings').hidden)renderSettings()});
 function resultsHTML(){
   const r=S.mr;if(!r||!(r.days||[]).length)return '';
   const cs=r.days.flatMap(d=>d.contests||[]),fees=cs.reduce((a,c)=>a+c.fee,0),won=cs.reduce((a,c)=>a+c.won,0),cashed=cs.filter(c=>c.won>0).length;
