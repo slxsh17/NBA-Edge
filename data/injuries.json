@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T01:58:31.063753+00:00",
+  "updated_at": "2026-10-28T02:45:02.554915+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -381,11 +381,6 @@
       "name": "Chris Youngblood",
       "team": "POR",
       "status": "OUT"
-    },
-    {
-      "name": "Scoot Henderson",
-      "team": "POR",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Shaedon Sharpe",
