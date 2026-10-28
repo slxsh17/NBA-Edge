@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T05:05:25.136226+00:00",
+  "updated_at": "2026-10-28T05:48:12.748941+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -125,7 +125,7 @@
     {
       "name": "Isaiah Joe",
       "team": "DET",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jalen Duren",
@@ -280,7 +280,7 @@
     {
       "name": "Jose Alvarado",
       "team": "NYK",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Thomas Sorber",
