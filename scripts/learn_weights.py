@@ -124,8 +124,12 @@ def main():
     last = prev.get('updated_at')
     if last and '--force' not in sys.argv:
         last_et = dt.datetime.fromisoformat(last).astimezone(ZoneInfo('America/New_York'))
-        if last_et.date() == et.date():
-            print('Already learned today; keeping weights')
+        # Learn once per morning, after every game from the night before has a final box score.
+        if et.hour < 8:
+            print('Waiting until 8am ET so late games are final; keeping weights')
+            return
+        if last_et.date() == et.date() and last_et.hour >= 8:
+            print('Already learned this morning; keeping weights')
             return
     cur = {**DEFAULT_WEIGHTS, **(prev.get('weights') or {})}
     cur['minutes_mult'] = dict(cur.get('minutes_mult') or {})

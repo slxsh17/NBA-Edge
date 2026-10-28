@@ -106,7 +106,9 @@ def grade_day(snap, logs):
         if s['out'] or s['proj'] <= 0:
             continue
         a = actual.get(key)
-        if a is None or a[0] <= 0:
+        if a is None:          # his team's game isn't final yet (or wasn't played): not a DNP
+            continue
+        if a[0] <= 0:
             if s['proj'] >= 15:
                 missed.append({'name': s['name'], 'team': s['team'], 'proj': s['proj']})
             continue
