@@ -95,9 +95,9 @@ Dennis Schroder,CHA,PG,5400,0,0,,1,1,0,0,8,ACTIVE
 Kel'el Ware,MIL,C,5400,0,0,,1,1,0,0,8,ACTIVE
 Isaiah Jackson,LAC,PF/C,5300,0,0,,1,1,0,0,8,ACTIVE
 CJ McCollum,ATL,SG/PG,5300,0,0,,1,1,0,0,8,ACTIVE
-Myles Turner,MIL,C,5300,0,0,,1,1,0,0,8,ACTIVE
 Anthony Black,ORL,PG/SG,5300,0,0,,1,1,0,0,8,ACTIVE
 Darryn Peterson,UTA,SG,5300,0,0,,1,1,0,0,8,ACTIVE
+Myles Turner,MIL,C,5300,0,0,,1,1,0,0,8,ACTIVE
 AJ Dybantsa,WAS,SF,5300,0,0,,1,1,0,0,8,QUESTIONABLE
 Mo Bamba,UTA,C,5300,0,0,,1,1,0,0,8,ACTIVE
 Jaxson Hayes,UTA,C,5200,0,0,,1,1,0,0,8,QUESTIONABLE
@@ -118,8 +118,8 @@ Daniel Gafford,DAL,C,4900,0,0,,1,1,0,0,8,ACTIVE
 Keaton Wagler,LAC,SG,4900,0,0,,1,1,0,0,8,ACTIVE
 Duncan Robinson,DET,SG/SF,4900,0,0,,1,1,0,0,8,ACTIVE
 Bobby Portis,MIA,C/PF,4800,0,0,,1,1,0,0,8,ACTIVE
-Zaccharie Risacher,DAL,SF/SG,4800,0,0,,1,1,0,0,8,ACTIVE
 Saddiq Bey,NOP,SF,4800,0,0,,1,1,0,0,8,ACTIVE
+Zaccharie Risacher,DAL,SF/SG,4800,0,0,,1,1,0,0,8,ACTIVE
 Devin Vassell,SAS,SF,4700,0,0,,1,1,0,0,8,ACTIVE
 Andrew Wiggins,MIA,SF,4700,0,0,,1,1,0,0,8,ACTIVE
 Christian Braun,DEN,SG/SF,4700,0,0,,1,1,0,0,8,ACTIVE
@@ -158,7 +158,6 @@ Isaiah Collier,UTA,PG,4100,0,0,,1,1,0,0,8,ACTIVE
 Brandon Williams,GSW,PG,4100,0,0,,1,1,0,0,8,ACTIVE
 Dean Wade,PHI,PF,4100,0,0,,1,1,0,0,8,ACTIVE
 Max Christie,DAL,SG,4000,0,0,,1,1,0,0,8,ACTIVE
-Kasparas Jakucionis,MIL,SG/PG,4000,0,0,,1,1,0,0,8,ACTIVE
 Aday Mara,OKC,C,4000,0,0,,1,1,0,0,8,ACTIVE
 Kelly Oubre,IND,SF,4000,0,0,,1,1,0,0,8,ACTIVE
 Aaron Nesmith,IND,SF,4000,0,0,,1,1,0,0,8,QUESTIONABLE
@@ -168,17 +167,18 @@ Allen Graves,TOR,PF/SF,4000,0,0,,1,1,0,0,8,ACTIVE
 Anfernee Simons,PHI,SG,4000,0,0,,1,1,0,0,8,ACTIVE
 Collin Sexton,LAL,SG,4000,0,0,,1,1,0,0,8,ACTIVE
 DeAndre Jordan,NOP,C,4000,0,0,,1,1,0,0,8,ACTIVE
+Kasparas Jakucionis,MIL,SG/PG,4000,0,0,,1,1,0,0,8,ACTIVE
 Ronald Holland,DET,SF,4000,0,0,,1,1,0,0,8,ACTIVE
 Max Strus,LAC,SG,4000,0,0,,1,1,0,0,8,OUT
 Justin Champagnie,WAS,SF,4000,0,0,,1,1,0,0,8,OUT
 Dereck Lively,DAL,C,4000,0,0,,1,1,0,0,8,OUT
 Jaylin Williams,OKC,C/PF,3900,0,0,,1,1,0,0,8,ACTIVE
 Kobe Sanders,LAC,SG,3900,0,0,,1,1,0,0,8,ACTIVE
-Jamal Shead,TOR,PG,3900,0,0,,1,1,0,0,8,ACTIVE
 Keldon Johnson,SAS,SF/PF,3900,0,0,,1,1,0,0,8,ACTIVE
 Leonard Miller,CHI,PF,3900,0,0,,1,1,0,0,8,ACTIVE
 Trevon Brazile,DEN,PF,3900,0,0,,1,1,0,0,8,ACTIVE
 Sandro Mamukelashvili,LAL,C,3900,0,0,,1,1,0,0,8,ACTIVE
+Jamal Shead,TOR,PG,3900,0,0,,1,1,0,0,8,ACTIVE
 Tre Johnson,WAS,SG,3900,0,0,,1,1,0,0,8,ACTIVE
 Jock Landale,ATL,C,3900,0,0,,1,1,0,0,8,ACTIVE
 Andre Drummond,NYK,C,3900,0,0,,1,1,0,0,8,ACTIVE
@@ -234,7 +234,6 @@ Jamal Cain,ORL,SF,3600,0,0,,1,1,0,0,8,ACTIVE
 Nikola Vucevic,ORL,C,3600,0,0,,1,1,0,0,8,ACTIVE
 Bones Hyland,MIN,PG,3600,0,0,,1,1,0,0,8,ACTIVE
 Goga Bitadze,ORL,C,3600,0,0,,1,1,0,0,8,ACTIVE
-Bogdan Bogdanovic,HOU,SF/SG,3600,0,0,,1,1,0,0,8,ACTIVE
 Royce O'Neale,CHA,PF,3600,0,0,,1,1,0,0,8,ACTIVE
 Isaac Okoro,CHI,SF,3600,0,0,,1,1,0,0,8,ACTIVE
 Herbert Jones,NOP,PF,3600,0,0,,1,1,0,0,8,ACTIVE
@@ -247,6 +246,7 @@ Tyler Kolek,NYK,PG,3600,0,0,,1,1,0,0,8,ACTIVE
 Christian Anderson,CHA,PG,3600,0,0,,1,1,0,0,8,ACTIVE
 Nate Ament,MIL,SF,3600,0,0,,1,1,0,0,8,ACTIVE
 Khris Middleton,WAS,SF,3600,0,0,,1,1,0,0,8,ACTIVE
+Bogdan Bogdanovic,HOU,SF/SG,3600,0,0,,1,1,0,0,8,ACTIVE
 Dru Smith,MIA,PG,3600,0,0,,1,1,0,0,8,ACTIVE
 Tyus Jones,DEN,PG,3600,0,0,,1,1,0,0,8,ACTIVE
 Nikola Jovic,MIA,PF,3600,0,0,,1,1,0,0,8,ACTIVE
@@ -271,6 +271,7 @@ Carter Bryant,SAS,SF,3500,0,0,,1,1,0,0,8,ACTIVE
 Will Riley,WAS,SF,3500,0,0,,1,1,0,0,8,ACTIVE
 Harrison Barnes,SAS,SF,3500,0,0,,1,1,0,0,8,ACTIVE
 Cody Williams,MIN,SF,3500,0,0,,1,1,0,0,8,ACTIVE
+Mohamed Diawara,NYK,PF,3500,0,0,,1,1,0,0,8,ACTIVE
 Alijah Martin,TOR,SG,3500,0,0,,1,1,0,0,8,ACTIVE
 Zeke Nnaji,DEN,C,3500,0,0,,1,1,0,0,8,ACTIVE
 Tolu Smith,DET,PF,3500,0,0,,1,1,0,0,8,ACTIVE
@@ -286,6 +287,7 @@ Jaren Jackson,UTA,PF/C,3500,0,0,,1,1,0,0,8,OUT
 Grant Williams,CHA,C,3500,0,0,,1,1,0,0,8,OUT
 Tacko Fall,PHI,C,3500,0,0,,1,1,0,0,8,OUT
 Caleb Martin,DAL,SG,3500,0,0,,1,1,0,0,8,OUT
+Patrick Williams,CHI,PF,3500,0,0,,1,1,0,0,8,OUT
 Moses Moody,GSW,SG,3500,0,0,,1,1,0,0,8,OUT
 Jalen Williams,OKC,SF/SG,3500,0,0,,1,1,0,0,8,OUT
 Paolo Banchero,ORL,PF,3500,0,0,,1,1,0,0,8,OUT
