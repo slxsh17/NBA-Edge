@@ -1,14 +1,14 @@
 {
 "schema": 2,
 "date": "2026-10-28",
-"updated_at": "2026-10-28T19:45:14+00:00",
+"updated_at": "2026-10-28T20:40:13+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
 "slate": "FanDuel \u00b7 Main \u00b7 Locks Wed, Oct 28 \u00b7 7:00 PM ET"
 },
 "linestar": {
-"players": 25,
+"players": 22,
 "single_slates": 3
 },
 "dknetwork_articles": [
@@ -64,10 +64,10 @@
 "name": "Darius Garland",
 "team": "LAC",
 "fta_own": 33.6,
-"linestar_own": 38.6,
+"linestar_own": 41.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 36.1,
+"consensus_own": 37.8,
 "source_count": 2,
 "mention_count": 0
 },
@@ -75,10 +75,10 @@
 "name": "RJ Barrett",
 "team": "TOR",
 "fta_own": 51.8,
-"linestar_own": 13.9,
+"linestar_own": 12.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 32.9,
+"consensus_own": 32.4,
 "source_count": 2,
 "mention_count": 0
 },
@@ -86,7 +86,7 @@
 "name": "Ayo Dosunmu",
 "team": "MIN",
 "fta_own": 28.1,
-"linestar_own": 13.3,
+"linestar_own": 11.9,
 "mentions": 1,
 "articles": [
 {
@@ -94,24 +94,8 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-wednesday-10-28-26/"
 }
 ],
-"consensus_own": 20.7,
+"consensus_own": 20.0,
 "source_count": 3,
-"mention_count": 1
-},
-{
-"name": "Rudy Gobert",
-"team": "MIN",
-"fta_own": null,
-"linestar_own": 20.1,
-"mentions": 1,
-"articles": [
-{
-"title": "Fantasy Basketball Picks: Top DraftKings NBA DFS Targets, Values for Wednesday 10/28/26",
-"url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-wednesday-10-28-26/"
-}
-],
-"consensus_own": 20.1,
-"source_count": 2,
 "mention_count": 1
 },
 {
@@ -142,24 +126,29 @@
 "mention_count": 0
 },
 {
+"name": "Rudy Gobert",
+"team": "MIN",
+"fta_own": null,
+"linestar_own": 18.9,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Picks: Top DraftKings NBA DFS Targets, Values for Wednesday 10/28/26",
+"url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-wednesday-10-28-26/"
+}
+],
+"consensus_own": 18.9,
+"source_count": 2,
+"mention_count": 1
+},
+{
 "name": "Evan Mobley",
 "team": "CLE",
-"fta_own": 23.9,
+"fta_own": 23.8,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 23.9,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Jaylin Williams",
-"team": "OKC",
-"fta_own": null,
-"linestar_own": 23.0,
-"mentions": 0,
-"articles": [],
-"consensus_own": 23.0,
+"consensus_own": 23.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -177,22 +166,22 @@
 {
 "name": "Jalen Johnson",
 "team": "ATL",
-"fta_own": 19.6,
+"fta_own": 19.7,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 19.6,
+"consensus_own": 19.7,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Nikola Jokic",
 "team": "DEN",
-"fta_own": 19.4,
+"fta_own": 19.3,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 19.4,
+"consensus_own": 19.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -211,10 +200,10 @@
 "name": "Stephon Castle",
 "team": "SAS",
 "fta_own": null,
-"linestar_own": 17.1,
+"linestar_own": 17.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 17.1,
+"consensus_own": 17.2,
 "source_count": 1,
 "mention_count": 0
 },
@@ -246,10 +235,10 @@
 "name": "De'Aaron Fox",
 "team": "SAS",
 "fta_own": null,
-"linestar_own": 11.5,
+"linestar_own": 12.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 11.5,
+"consensus_own": 12.2,
 "source_count": 1,
 "mention_count": 0
 },
@@ -337,7 +326,7 @@
 "name": "Anthony Black",
 "team": "ORL",
 "fta_own": null,
-"linestar_own": 4.6,
+"linestar_own": 4.7,
 "mentions": 1,
 "articles": [
 {
@@ -345,7 +334,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/three-must-start-nba-dfs-picks-for-wednesday-10-28-26/"
 }
 ],
-"consensus_own": 4.6,
+"consensus_own": 4.7,
 "source_count": 2,
 "mention_count": 1
 },
@@ -353,7 +342,7 @@
 "name": "Ja'Kobe Walter",
 "team": "TOR",
 "fta_own": null,
-"linestar_own": 1.2,
+"linestar_own": 1.1,
 "mentions": 1,
 "articles": [
 {
@@ -361,29 +350,18 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-10-28-26/"
 }
 ],
-"consensus_own": 1.2,
+"consensus_own": 1.1,
 "source_count": 2,
 "mention_count": 1
-},
-{
-"name": "Devin Vassell",
-"team": "SAS",
-"fta_own": null,
-"linestar_own": 5.3,
-"mentions": 0,
-"articles": [],
-"consensus_own": 5.3,
-"source_count": 1,
-"mention_count": 0
 },
 {
 "name": "Wendell Carter",
 "team": "ORL",
 "fta_own": null,
-"linestar_own": 5.2,
+"linestar_own": 5.3,
 "mentions": 0,
 "articles": [],
-"consensus_own": 5.2,
+"consensus_own": 5.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -708,13 +686,24 @@
 "mention_count": 1
 },
 {
-"name": "Isaiah Hartenstein",
-"team": "OKC",
+"name": "Devin Vassell",
+"team": "SAS",
 "fta_own": null,
-"linestar_own": 4.8,
+"linestar_own": 4.4,
 "mentions": 0,
 "articles": [],
-"consensus_own": 4.8,
+"consensus_own": 4.4,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Kris Dunn",
+"team": "LAC",
+"fta_own": null,
+"linestar_own": 4.3,
+"mentions": 0,
+"articles": [],
+"consensus_own": 4.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -722,26 +711,15 @@
 "name": "Christian Braun",
 "team": "DEN",
 "fta_own": null,
-"linestar_own": 3.7,
+"linestar_own": 3.5,
 "mentions": 0,
 "articles": [],
-"consensus_own": 3.7,
+"consensus_own": 3.5,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Kenrich Williams",
-"team": "OKC",
-"fta_own": null,
-"linestar_own": 2.0,
-"mentions": 0,
-"articles": [],
-"consensus_own": 2.0,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Jared McCain",
 "team": "OKC",
 "fta_own": null,
 "linestar_own": 1.8,
@@ -755,10 +733,32 @@
 "name": "Kobe Sanders",
 "team": "LAC",
 "fta_own": null,
+"linestar_own": 1.8,
+"mentions": 0,
+"articles": [],
+"consensus_own": 1.8,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Sandro Mamukelashvili",
+"team": "LAL",
+"fta_own": null,
 "linestar_own": 1.7,
 "mentions": 0,
 "articles": [],
 "consensus_own": 1.7,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Jared McCain",
+"team": "OKC",
+"fta_own": null,
+"linestar_own": 1.3,
+"mentions": 0,
+"articles": [],
+"consensus_own": 1.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -774,24 +774,35 @@
 "mention_count": 0
 },
 {
-"name": "Tristan da Silva",
-"team": "ORL",
+"name": "Julian Champagnie",
+"team": "SAS",
 "fta_own": null,
-"linestar_own": 1.0,
+"linestar_own": 0.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 1.0,
+"consensus_own": 0.9,
 "source_count": 1,
 "mention_count": 0
 },
 {
-"name": "Julian Champagnie",
-"team": "SAS",
+"name": "Tristan da Silva",
+"team": "ORL",
 "fta_own": null,
-"linestar_own": 1.0,
+"linestar_own": 0.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 1.0,
+"consensus_own": 0.9,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Quentin Grimes",
+"team": "LAL",
+"fta_own": null,
+"linestar_own": 0.8,
+"mentions": 0,
+"articles": [],
+"consensus_own": 0.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -807,57 +818,13 @@
 "mention_count": 0
 },
 {
-"name": "Ziaire Williams",
-"team": "LAL",
-"fta_own": null,
-"linestar_own": 0.6,
-"mentions": 0,
-"articles": [],
-"consensus_own": 0.6,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Kelly Oubre",
-"team": "IND",
-"fta_own": null,
-"linestar_own": 0.6,
-"mentions": 0,
-"articles": [],
-"consensus_own": 0.6,
-"source_count": 1,
-"mention_count": 0
-},
-{
 "name": "Gui Santos",
 "team": "GSW",
 "fta_own": null,
-"linestar_own": 0.6,
+"linestar_own": 0.5,
 "mentions": 0,
 "articles": [],
-"consensus_own": 0.6,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Sandro Mamukelashvili",
-"team": "LAL",
-"fta_own": null,
-"linestar_own": 0.4,
-"mentions": 0,
-"articles": [],
-"consensus_own": 0.4,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Quentin Grimes",
-"team": "LAL",
-"fta_own": null,
-"linestar_own": 0.3,
-"mentions": 0,
-"articles": [],
-"consensus_own": 0.3,
+"consensus_own": 0.5,
 "source_count": 1,
 "mention_count": 0
 }
@@ -921,27 +888,27 @@
 {
 "name": "Darius Garland",
 "team": "LAC",
-"own": 62.9
+"own": 72.4
+},
+{
+"name": "Kris Dunn",
+"team": "LAC",
+"own": 42.2
 },
 {
 "name": "Kobe Sanders",
 "team": "LAC",
-"own": 39.8
-},
-{
-"name": "Ziaire Williams",
-"team": "LAL",
-"own": 26.9
+"own": 35.3
 },
 {
 "name": "Sandro Mamukelashvili",
 "team": "LAL",
-"own": 24.7
+"own": 33.0
 },
 {
 "name": "Quentin Grimes",
 "team": "LAL",
-"own": 8.6
+"own": 20.6
 }
 ]
 },
