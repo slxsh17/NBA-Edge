@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T16:22:08.943780+00:00",
+  "updated_at": "2026-10-28T17:20:05.912204+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -124,6 +124,11 @@
     },
     {
       "name": "Isaiah Joe",
+      "team": "DET",
+      "status": "OUT"
+    },
+    {
+      "name": "Ausar Thompson",
       "team": "DET",
       "status": "DAY-TO-DAY"
     },
