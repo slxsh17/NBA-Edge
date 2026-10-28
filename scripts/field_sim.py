@@ -163,27 +163,64 @@ def field_ownership(players, fmt='classic', cap=60000, params=None, sims=250, se
     return {id(p): 100.0 * counts[i] / max(done, 1) for i, p in enumerate(pool)}
 
 
-def optimal_rate(players, fmt='classic', cap=60000, sims=250, seed=11):
-    """How often each player is in the best lineup when games are played out (%)."""
+DEFAULT_CORR = {'game': 0.277, 'team': 0.176}   # measured on 2025-26: opponents +0.08, teammates +0.11
+
+
+def optimal_rate(players, fmt='classic', cap=60000, sims=250, seed=11, corr=None, keep_top=40):
+    """Play the slate out `sims` times with correlated outcomes and solve the best lineup each
+    time. A shared game factor lifts both teams in a shootout; a team factor lifts teammates
+    together. Returns ({id(player): % of winning lineups}, [most frequent winning lineups])."""
+    C = {**DEFAULT_CORR, **(corr or {})}
+    rg, rt = C['game'], C['team']
+    ri = math.sqrt(max(0.0, 1 - rg * rg - rt * rt))
     pool = trim_pool(players, 'proj', fmt)
     if len(pool) < FORMATS[fmt]['size']:
-        return {}
+        return {}, []
     solver = Solver(pool, fmt, cap)
     rng = random.Random(seed)
+    games = sorted({tuple(sorted((p['team'], p.get('opp') or p['team']))) for p in pool})
     counts = [0] * len(pool)
+    lineups = {}
+    outcomes = []
     done = 0
     for _ in range(sims):
+        G = {g: rng.gauss(0, 1) for g in games}
+        T = {t: rng.gauss(0, 1) for t in {p['team'] for p in pool}}
         scores = []
         for p in pool:
             sd = max(1.0, (p.get('ceiling', p['proj'] * 1.4) - p['proj']) / 1.28)
-            scores.append(max(0.0, rng.gauss(p['proj'], sd)))
+            g = G[tuple(sorted((p['team'], p.get('opp') or p['team'])))]
+            z = rg * g + rt * T[p['team']] + ri * rng.gauss(0, 1)
+            scores.append(max(0.0, p['proj'] + sd * z))
         lu = solver.best(scores)
         if not lu:
             continue
         done += 1
+        outcomes.append(scores)
         for i, _s in lu:
             counts[i] += 1
-    return {id(p): 100.0 * counts[i] / max(done, 1) for i, p in enumerate(pool)}
+        key = tuple(sorted(lu))
+        lineups[key] = lineups.get(key, 0) + 1
+    rate = {id(p): 100.0 * counts[i] / max(done, 1) for i, p in enumerate(pool)}
+    # Tournament test: every candidate lineup is scored on every simulated night; count how
+    # often it lands in the top 5% of all candidates that night.
+    mult = FORMATS[fmt]['mult']
+    cands = list(lineups)
+    hits = [0] * len(cands)
+    for sc in outcomes:
+        vals = [sum(sc[i] * mult.get(sl, 1.0) for i, sl in key) for key in cands]
+        cut = sorted(vals)[int(len(vals) * 0.95)] if len(vals) >= 20 else max(vals)
+        for j, v in enumerate(vals):
+            if v >= cut:
+                hits[j] += 1
+    order = sorted(range(len(cands)), key=lambda j: -hits[j])
+    top = []
+    for j in order[:keep_top]:
+        key, n = cands[j], lineups[cands[j]]
+        top.append({'top5': round(100.0 * hits[j] / max(len(outcomes), 1), 1), 'freq': round(100.0 * n / max(done, 1), 2),
+                    'proj': round(sum(pool[i]['proj'] * mult.get(sl, 1.0) for i, sl in key), 1),
+                    'players': [{'name': pool[i]['name'], 'team': pool[i]['team'], 'slot': sl} for i, sl in key]})
+    return rate, top
 
 
 def blend_ownership(players, sim, P, total):

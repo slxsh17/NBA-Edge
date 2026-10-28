@@ -462,7 +462,7 @@ def build(day=None, backtest=False, weights=None):
            'avg_team_total': round(avg_tt, 1) if avg_tt else None, 'games': games,
            'sources': {'slate': slate.get('source'), 'injuries_updated': read('injuries.json').get('updated_at'),
                        'stats_updated': cur.get('updated_at'), 'lineups_checked': read('lineup_news.json').get('checked_at')},
-           'single_games': out_singles, 'sim_sig': SIM_SIG[0], 'own_model': own_params(),
+           'single_games': out_singles, 'sim_sig': SIM_SIG[0], 'own_model': own_params(), 'sim_lineups': SIM_LINEUPS[0],
            'players': sorted(players, key=lambda p: -p['proj'])}
     return out
 
@@ -511,7 +511,7 @@ def simulate(players, singles, old):
     import field_sim as FS
     P = own_params()
     main = [p for p in players if p['main'] and p['proj'] > 0 and not p.get('out')]
-    sig = json.dumps([P, read('public_consensus.json').get('updated_at'), len(read('alerts.json').get('late_news', []))] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
+    sig = json.dumps(['sim-v3', read('model_params.json').get('corr'), P, read('public_consensus.json').get('updated_at'), len(read('alerts.json').get('late_news', []))] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
                      + [[sg['id'], [[r['k'], r['salary'], r['status']] for r in sg['players']]] for sg in singles])
     import hashlib
     sig = hashlib.sha1(sig.encode()).hexdigest()
@@ -530,6 +530,11 @@ def simulate(players, singles, old):
                     if k in q:
                         r[k] = q[k]
         SIM_SIG[0] = sig
+        SIM_LINEUPS[0] = old.get('sim_lineups', [])
+        prev_sl = {x['id']: x.get('sim_lineups') for x in old.get('single_games', [])}
+        for sg in singles:
+            if prev_sl.get(sg['id']):
+                sg['sim_lineups'] = prev_sl[sg['id']]
         return
     sim = FS.field_ownership(main, 'classic', 60000, P, sims=200)
     own = chalk(FS.blend_ownership(main, sim, P, 900), P.get('chalk_power', 1.0), 900)
@@ -555,7 +560,9 @@ def simulate(players, singles, old):
         if c:
             p['consensus'] = {k: c.get(k) for k in ('fta_own', 'linestar_own', 'mentions')}
             p['consensus']['articles'] = c.get('articles', [])[:3]
-    opt = FS.optimal_rate(main, 'classic', 60000, sims=200)
+    corr = read('model_params.json').get('corr')
+    opt, top = FS.optimal_rate(main, 'classic', 60000, sims=300, corr=corr)
+    SIM_LINEUPS[0] = top
     for p in main:
         p['own'] = round(own.get(id(p), 0.0), 1)
         p['opt'] = round(opt.get(id(p), 0.0), 1)
@@ -570,12 +577,14 @@ def simulate(players, singles, old):
             b = by_key.get(r['k'])
             if b and b['proj'] > 0 and not b.get('out') and r['status'] not in ('OUT', 'DOUBTFUL'):
                 clones.append({'k': r['k'], 'name': b['name'], 'team': b['team'], 'position': b['position'], 'salary': r['salary'],
-                               'proj': b['proj'], 'ext': b.get('ext'), 'ceiling': b.get('ceiling'), 'own_heur': r.get('own', 0)})
+                               'proj': b['proj'], 'ext': b.get('ext'), 'ceiling': b.get('ceiling'), 'own_heur': r.get('own', 0),
+                               'opp': b.get('opp')})
         if len(clones) < 6:
             continue
         s_sim = FS.field_ownership(clones, 'single', 60000, P, sims=150)
         s_own = chalk(FS.blend_ownership(clones, s_sim, P, 600), P.get('chalk_power', 1.0), 600)
-        s_opt = FS.optimal_rate(clones, 'single', 60000, sims=150)
+        s_opt, s_top = FS.optimal_rate(clones, 'single', 60000, sims=200, corr=corr, keep_top=25)
+        sg['sim_lineups'] = s_top
         rows = {r['k']: r for r in sg['players']}
         for c in clones:
             r = rows[c['k']]
@@ -586,6 +595,7 @@ def simulate(players, singles, old):
 
 
 SIM_SIG = [None]
+SIM_LINEUPS = [[]]
 SIM_DAY = [None]
 
 

@@ -15,6 +15,7 @@ Runs weekly (Mondays) in the pipeline, or with --force.
 """
 import datetime as dt
 import json
+import math
 import pathlib
 import statistics
 import sys
@@ -64,14 +65,14 @@ def rows_for(raw, prior, floor, days, injured_by_day=None):
             if len(series) - len(B.dropwhile_zero(series)) >= 2:
                 continue
             b2b, t34, _ = B.rest_flags(sched.get(team, []), target)
-            rows.append((day, old, cur, series, inj.get(key), fp, mins, b2b, t34))
+            rows.append((day, old, cur, series, inj.get(key), fp, mins, b2b, t34, team, str(r.get('event_id'))))
     return rows
 
 
 def evaluate(rows, params):
     B.P.update(params)
     e_fp, e_min = [], []
-    for _, old, cur, series, inj, fp, mins, b2b, t34 in rows:
+    for _, old, cur, series, inj, fp, mins, b2b, t34, *_ in rows:
         m = B.expected_minutes(old, cur, series, inj)[0]
         if m is None:
             continue
@@ -80,6 +81,34 @@ def evaluate(rows, params):
         e_fp.append(abs(fp - m * rate))
         e_min.append(abs(mins - m))
     return statistics.mean(e_fp), statistics.mean(e_min)
+
+
+def correlations(rows, params):
+    """How players' beat/miss moves together in the same game: teammates and opponents.
+    Converted into the simulation's game and team factor loadings."""
+    import itertools
+    B.P.update(params)
+    games = {}
+    for day, old, cur, series, inj, fp, mins, b2b, t34, team, ev in rows:
+        m = B.expected_minutes(old, cur, series, inj)[0]
+        if m is None:
+            continue
+        pred = m * B.rate_for(old if old and old['games'] >= 3 else None, cur)[0] * B.rest_mult(b2b, t34)
+        if pred < 15:
+            continue
+        games.setdefault((day, ev), []).append((team, (fp - pred) / (0.28 * pred + 3)))
+    tm, op = [], []
+    for rs in games.values():
+        for (t1, a), (t2, b) in itertools.combinations(rs, 2):
+            (tm if t1 == t2 else op).extend([(a, b), (b, a)])
+    if len(tm) < 500 or len(op) < 500:
+        return None
+    c_t = statistics.correlation([a for a, _ in tm], [b for _, b in tm])
+    c_o = statistics.correlation([a for a, _ in op], [b for _, b in op])
+    g = math.sqrt(max(0.0, c_o))
+    t = math.sqrt(max(0.0, c_t - c_o))
+    return {'game': round(g, 3), 'team': round(t, 3), 'teammate_corr': round(c_t, 3), 'opponent_corr': round(c_o, 3),
+            'pairs': len(tm) // 2 + len(op) // 2}
 
 
 def search(rows, start):
@@ -151,8 +180,9 @@ def main():
     else:
         decision = ('Kept current settings: ' + ('no clear gain on held-out days.' if not ok_test else 'worse on this season’s real days.'))
     log = (prev.get('log') or [])[-20:] + [{'date': today.isoformat(), 'adopted': adopted, 'changes': changes}]
+    corr = correlations(rows, new) or prev.get('corr')
     out = {'schema': 1, 'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
-           'params': new, 'decision': decision, 'results': res,
+           'params': new, 'corr': corr, 'decision': decision, 'results': res,
            'rows': {'train': len(train), 'test': len(test), 'real': len(real)}, 'log': log,
            'method': 'Replay of 2025-26 (Oct-Dec as prior, Jan-Apr predicted from earlier games only); coordinate search; adopted only if better on the held-out last quarter and not worse on this season.'}
     OUT.write_text(json.dumps(out, indent=1) + '\n', encoding='utf-8')
