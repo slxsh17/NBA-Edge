@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T15:25:14.418893+00:00",
+  "updated_at": "2026-10-28T16:22:08.943780+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -253,11 +253,6 @@
       "status": "OUT"
     },
     {
-      "name": "Pelle Larsson",
-      "team": "MIA",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Anthony Edwards",
       "team": "MIN",
       "status": "OUT"
@@ -459,11 +454,6 @@
     },
     {
       "name": "Justin Champagnie",
-      "team": "WAS",
-      "status": "OUT"
-    },
-    {
-      "name": "AJ Dybantsa",
       "team": "WAS",
       "status": "OUT"
     },
