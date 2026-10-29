@@ -260,7 +260,7 @@ details summary{cursor:pointer}
       <button class="btn primary" id="build" type="button">Build lineups</button>
       <div id="build-status" role="status"></div>
       <div id="lineups"></div>
-      <div id="fd-export" hidden><button class="btn" id="fd-export-btn" type="button">Download for FanDuel</button><div class="muted" id="fd-export-msg"></div></div>
+      <div id="fd-export" hidden><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="fd-export-btn" type="button">Download for FanDuel</button><button class="btn" id="enter-all" type="button">I entered all of these</button></div><div class="muted" id="fd-export-msg"></div></div>
       <div id="exposure-summary"></div>
       <div id="settings" hidden></div>
     </section>
@@ -428,9 +428,9 @@ function restoreDayState(){
   const ex=$('exposure');if(ex){ex.value=S.exposure;$('exposure-out').textContent=S.exposure+'%'}
   loadEntries();
 }
-function loadEntries(){const v=store.get(entKey(),[]);S.entries=(v||[]).map(e=>({label:e.label||'',picks:e.picks.map(rehydrate).filter(Boolean)})).filter(e=>e.picks.length===F().size);S.entStarted=-1}
+function loadEntries(){const v=store.get(entKey(),[]);S.entries=(v||[]).map(e=>({label:e.label||'',noise:e.noise||null,gap0:e.gap0||0,picks:e.picks.map(rehydrate).filter(Boolean)})).filter(e=>e.picks.length===F().size);S.entStarted=-1}
 function rehydrate(pk){const p=S.players.find(x=>pkey(x)===pk.k);return p?{p,slot:pk.slot}:null}
-function saveDayState(){store.set('day:'+fmtKey(),{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,sim:l.sim,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings:'+S.format,{count:S.count,mode:S.mode,exposure:S.exposure,useSim:S.useSim})}
+function saveDayState(){store.set('day:'+fmtKey(),{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,sim:l.sim,noise:l.noise||null,gap0:l.gap0||0,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings:'+S.format,{count:S.count,mode:S.mode,exposure:S.exposure,useSim:S.useSim})}
 
 // ---------- CSV upload ----------
 function parseCSV(text){const rows=[];let row=[],cell='',q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'){if(text[i+1]==='"'){cell+='"';i++}else q=false}else cell+=c}else if(c==='"')q=true;else if(c===','){row.push(cell);cell=''}else if(c==='\n'||c==='\r'){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cell);if(row.some(x=>x.trim()))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell);if(row.some(x=>x.trim()))rows.push(row);return rows}
@@ -490,8 +490,13 @@ function downloadFD(){
   msg.textContent=`Saved ${rows.length-1} lineup${rows.length>2?'s':''}. On FanDuel: open the contest, choose Upload lineups from CSV, and pick this file.`;return true;
 }
 function renderExport(){const box=$('fd-export');if(!box)return;const n=exportable().length;box.hidden=!n;if(!n)return;
+  $('enter-all').textContent=n>1?`I entered all ${n}`:'I entered this';
   const {miss}=missingIds();$('fd-export-btn').textContent=miss.length?'Download for FanDuel (link IDs first)':'Download for FanDuel';
   if(miss.length&&!$('fd-export-msg').dataset.touched)$('fd-export-msg').textContent='FanDuel needs its own player IDs. On FanDuel, open the contest and tap Download players list, then choose that file here. Only the IDs are used.';}
+$('enter-all').onclick=()=>{const ls=exportable();const have=new Set((S.entries||[]).map(e=>e.picks.map(y=>pkey(y.p)+y.slot).sort().join()));let n=0;
+  for(const l of ls){const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(have.has(k))continue;have.add(k);(S.entries??=[]).push({label:'',noise:l.noise||null,gap0:l.gap0||0,picks:l.picks.map(x=>({...x}))});n++}
+  saveEntries();S.entStarted=-1;$('fd-export-msg').dataset.touched='1';$('fd-export-msg').textContent=n?`Saved ${n} lineup${n>1?'s':''} to My entries (top of this page). Late swaps will be checked for all of them as games lock.`:'All of these are already in My entries.';
+  renderEntries();autoSwaps()};
 $('fd-export-btn').onclick=()=>{$('fd-export-msg').dataset.touched='1';const {miss}=missingIds();if(miss.length)$('fd-ids').click();else downloadFD()};
 $('fd-ids').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;const msg=$('fd-export-msg');
   try{const k=ingestIds(parseCSV(await f.text()));if(!k){msg.textContent='That file has no Id column. Use the player list downloaded from the FanDuel contest.';return}
@@ -700,6 +705,7 @@ async function build(){
     const glpk=await loadGLPK();const made=[],uses=new Map();
     const cap=S.count>1?Math.max(1,Math.ceil(S.count*S.exposure/100)):S.count;
     const keyOf=x=>S.format==='single'?pkey(x.p)+'|'+x.slot:pkey(x.p),minU=S.count>1?S.cfg.minUnique:1,size=F().size;
+    const scoreOf=ps=>ps.reduce((t,x)=>t+score(x.p)*multOf(x.slot),0);
     // Big batches: drop players who can't realistically make a lineup (keeps the solver fast).
     if(S.count>20&&S.format==='classic'&&pool.length>90){
       const keep=new Set([...S.locks]);const val=p=>score(p)/Math.max(p.salary,3500)*1000;
@@ -734,22 +740,27 @@ async function build(){
       // Big batches: re-solve with small random shifts to every projection (like simulating
       // slightly different nights) until the lineup is new enough. Each solve stays simple and
       // fast; the slow exact method is only the fallback.
-      if(S.count>20&&made.length>=3){
+      let picksNoise=null;
+      if(S.count>20&&made.length>=1){
         const sigma=S.mode==='gpp'?0.15:0.08;
         for(let t=0;t<12&&!picks;t++){
           const noise=new Map(pool.map(p=>{let z=0;for(let k=0;k<6;k++)z+=Math.random();return [pkey(p),Math.exp(sigma*(z-3)*1.41)]}));
           const cand=await solveOne(glpk,pool,{excludeKeys,noise});
-          if(cand&&prevSets.every(st=>cand.filter(x=>st.has(keyOf(x))).length<=size-minU))picks=cand;
+          if(cand&&prevSets.every(st=>cand.filter(x=>st.has(keyOf(x))).length<=size-minU)){picks=cand;picksNoise=Object.fromEntries([...noise].map(([k,v])=>[k,Math.round(v*1000)/1000]))}
         }
       }
       if(!picks)picks=await solveOne(glpk,pool,{excludeKeys,previous:prevSets,minUnique:minU});
       if(!picks)break;
       picks=lateFlex(picks,new Set(picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).map(x=>pkey(x.p))));
-      const l={picks,built:Date.now(),review:S.review&&picks.some(x=>{const g=gameOf(x.p);return g&&started(g)})};l.proj0=total(l);made.push(l);
+      const l={picks,built:Date.now(),noise:picksNoise,review:S.review&&picks.some(x=>{const g=gameOf(x.p);return g&&started(g)})};l.proj0=total(l);made.push(l);
       picks.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
       await new Promise(r=>setTimeout(r,0));
     }
     if(!made.length){status.textContent='No valid lineup fits these settings. Remove some ✓ or turn on more games.';return}
+    // Lineups picked on purpose below the top score (simulated winners, spread-out sets) remember
+    // how far below they started, so late swap only flags them when the news really changes things.
+    if(made.length>1){const ref=await solveOne(glpk,pool,{excludeKeys:new Set()});const top=ref?scoreOf(ref):0;
+      for(const l of made)if(!l.noise)l.gap0=Math.max(0,Math.round((top-scoreOf(l.picks))*10)/10)}
     S.lineups=made;S.showAll=false;saveDayState();renderLineups(true);
     status.textContent=made.length<S.count?`Built ${made.length} of ${S.count}. The max-per-player limit ran out of combinations; raise it for more.`:`Built ${made.length} lineup${made.length>1?'s':''}.`;
   }catch(e){status.textContent=e.message}
@@ -762,7 +773,7 @@ async function lateSwap(i){
   status.textContent='Re-optimizing players in games that haven’t started…';
   try{const glpk=await loadGLPK();
     const saveLocks=S.locks;S.locks=new Set([...S.locks].filter(k=>pool.some(p=>pkey(p)===k)));
-    let picks=await solveOne(glpk,pool,{fixed});S.locks=saveLocks;
+    let picks=await solveOne(glpk,pool,{fixed,noise:l.noise?new Map(Object.entries(l.noise)):null});S.locks=saveLocks;
     if(picks)picks=lateFlex(picks,new Set(fixed.map(f=>pkey(f.p))));
     if(!picks){status.textContent='No better swap fits under the cap.';return}
     const before=total(l);S.lineups[i]={picks,built:Date.now()};S.lineups[i].proj0=total(S.lineups[i]);saveDayState();renderLineups();
@@ -773,7 +784,7 @@ async function lateSwap(i){
 // ---------- my entries: lineups you actually entered, re-optimized as games lock ----------
 const slotList=()=>F().order.flatMap(s=>Array(F().need[s]).fill(s));
 const entKey=()=>'entries:'+S.day+':'+fmtKey();
-function saveEntries(){store.set(entKey(),(S.entries||[]).map(e=>({label:e.label,picks:e.picks.map(x=>({k:pkey(x.p),slot:x.slot}))})))}
+function saveEntries(){store.set(entKey(),(S.entries||[]).map(e=>({label:e.label,noise:e.noise||null,gap0:e.gap0||0,picks:e.picks.map(x=>({k:pkey(x.p),slot:x.slot}))})))}
 const isStarted=o=>{const g=gameOf(o.p||o);return !!(g&&started(g))};
 function nameCands(tok){
   const t=key(tok);if(!t)return [];
@@ -805,7 +816,7 @@ function swapChanges(oldP,newP){
   return out;
 }
 function renderEntries(){
-  const box=$('entries');if(!box)return;const es=S.entries||[];
+  const box=$('entries');if(!box||S.entBatch)return;const es=S.entries||[];
   if(S.source==='csv'&&!es.length&&!S.entForm){box.innerHTML='';return}
   let h=`<div class="ent-head"><h3>My entries</h3>${S.entForm?'':'<button class="btn small" id="ent-add" type="button">Add a lineup I entered</button>'}</div>`;
   if(!es.length&&!S.entForm)h+=`<p class="muted" style="margin:0 0 4px;font-size:13px">Add the lineups you entered on FanDuel. As games lock, NBA EDGE keeps the locked players and finds the best swaps for everyone who hasn’t played yet.</p>`;
@@ -816,13 +827,17 @@ function renderEntries(){
     if(d){h+=d.map((r,i)=>`<div class="ent-row"><span class="slot">${esc(r.slot)}</span><div>${!r.cands.length?`<span style="color:var(--bad)">No player matches “${esc(r.tok)}”</span>`:r.cands.length===1?esc(r.cands[0].name)+' <span class="muted">'+esc(r.cands[0].team)+'</span>':`<select data-di="${i}" aria-label="Which ${esc(r.tok)}">${r.cands.map(c=>`<option value="${esc(pkey(c))}"${pkey(c)===r.pick?' selected':''}>${esc(c.name)} (${esc(c.team)} ${esc(c.position)}, ${money(c.salary)})</option>`).join('')}</select>`}</div></div>`).join('');
       h+=`<div style="margin-top:8px"><input type="text" id="ent-label" placeholder="Name (optional), e.g. $10 Dime SE" value="${esc(S.entLabel||'')}"></div><button class="btn primary small" id="ent-save" type="button" style="margin-top:8px">Save entry</button><div id="ent-msg" class="muted" style="font-size:13px;margin-top:6px"></div>`}
     h+='</div>'}
-  h+=es.map((e,i)=>{const pts=e.picks.reduce((t,x)=>t+(x.p.out?0:x.p.proj*multOf(x.slot)),0),sal=e.picks.reduce((t,x)=>t+salOf(x),0),lk=e.picks.filter(isStarted).length;
+  const nSw=es.filter(e=>e.suggest&&e.suggest.picks).length;
+  if(es.length>1)h+=`<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 8px;font-size:13.5px"><span>${es.length} entries${S.entChecking?', checking late swaps…':nSw?`, <b>${nSw}</b> with a late swap`:''}.</span>${nSw>1?'<button class="btn small" id="ent-apply-all" type="button">I made all the swaps</button>':''}<button class="btn small" id="ent-clear" type="button">Remove all</button></div>`;
+  const order=es.map((e,i)=>i).sort((a,b)=>(!!(es[b].suggest&&es[b].suggest.picks))-(!!(es[a].suggest&&es[a].suggest.picks))),SHOWE=5,vis=S.entShowAll?order:order.slice(0,SHOWE);
+  h+=vis.map(i=>[es[i],i]).map(([e,i])=>{const pts=e.picks.reduce((t,x)=>t+(x.p.out?0:x.p.proj*multOf(x.slot)),0),sal=e.picks.reduce((t,x)=>t+salOf(x),0),lk=e.picks.filter(isStarted).length;
     const sg=e.suggest;let sw='';
     if(sg&&sg.picks){const ch=swapChanges(e.picks,sg.picks);sw=`<div class="swap"><div><b>Late swap: ${sg.gain>=0.05?`<b class="gain">+${sg.gain.toFixed(1)}</b> projected`:`${sg.gain.toFixed(1)} projected, more upside and leverage`}</b> (${esc(sg.mode)} settings)</div><ul>${ch.map(c=>`<li>${c}</li>`).join('')}</ul><button class="btn small" data-eapply="${i}" type="button">I made these swaps</button> <button class="btn small" data-eshow="${i}" type="button">${sg.open?'Hide':'Show'} new lineup</button></div>${sg.open?`<div style="border-top:1px solid var(--line)">${entryRows(sg.picks,new Set(sg.picks.filter(y=>!e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot)).map(y=>pkey(y.p))))}</div>`:''}`}
     else if(sg&&sg.msg)sw=`<div class="lu-note">${esc(sg.msg)}</div>`;
     return `<article class="lineup"><div class="lu-head"><div class="lu-score num">${pts.toFixed(1)}<small>projected</small></div><div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Locked<b>${lk}/${e.picks.length}</b></div>
       <div class="lu-actions"><button class="btn small" data-eswap="${i}" type="button">Late swap</button><button class="btn small" data-edel="${i}" type="button" aria-label="Remove entry ${i+1}">Remove</button></div></div>
       ${e.label?`<div class="sim-badge">${esc(e.label)}</div>`:''}${sw}${entryRows(e.picks)}</article>`}).join('');
+  if(es.length>SHOWE)h+=`<button class="btn small" id="ent-show-all" type="button" style="margin-bottom:8px">${S.entShowAll?'Show fewer':'Show all '+es.length+' entries'}</button>`;
   box.innerHTML=h;
 }
 // Re-seat the new lineup so players you keep stay in their old slots (fewer moves to make on FanDuel).
@@ -845,21 +860,28 @@ async function entrySwap(i,quiet=false){
   if(fixed.length===size){e.suggest={msg:'Every player is locked. Nothing left to swap.'};renderEntries();return}
   const pool=S.players.filter(p=>p.proj>0&&!p.out&&!S.bans.has(pkey(p))&&(fixed.some(f=>f.p===p)||(gameOf(p)&&!isStarted(p))));
   try{const glpk=await loadGLPK();const saveLocks=S.locks;S.locks=new Set();
-    let picks;try{picks=await solveOne(glpk,pool,{fixed})}finally{S.locks=saveLocks}
+    const nz=e.noise?new Map(Object.entries(e.noise)):null;
+    let picks;try{picks=await solveOne(glpk,pool,{fixed,noise:nz})}finally{S.locks=saveLocks}
     if(!picks){e.suggest={msg:'No lineup fits under the cap with the locked players.'};renderEntries();return}
     const before=e.picks.reduce((t,x)=>t+(x.p.out?0:x.p.proj*multOf(x.slot)),0),after=picks.reduce((t,x)=>t+x.p.proj*multOf(x.slot),0);
     picks=keepSlots(picks,e.picks,fixed);
     const same=picks.every(y=>e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot));
-    const sc=ps=>ps.reduce((t,x)=>t+(x.p.out?0:score(x.p)*multOf(x.slot)),0),better=sc(picks)-sc(e.picks);
-    e.suggest=same||better<0.3?{msg:quiet?'':'No better swap right now. This is already the best lineup for the games left.'}:{picks,gain:after-before,better,mode:S.mode==='gpp'?'tournament':'cash',open:false};
+    const sc=ps=>ps.reduce((t,x)=>t+(x.p.out?0:score(x.p)*(nz?nz.get(pkey(x.p))||1:1)*multOf(x.slot)),0),better=sc(picks)-sc(e.picks);
+    e.suggest=same||better<(nz?Math.max(0.3,0.006*sc(e.picks)):0.3)+(e.gap0||0)?{msg:quiet?'':'No better swap right now. This is already the best lineup for the games left.'}:{picks,gain:after-before,better,mode:S.mode==='gpp'?'tournament':'cash',open:false};
     if(quiet&&e.suggest.msg==='')e.suggest=null;
   }catch(err){e.suggest={msg:err.message}}
   renderEntries();
 }
-async function autoSwaps(){const n=S.games.filter(started).length;if(!(S.entries||[]).length||n===S.entStarted)return;S.entStarted=n;for(let i=0;i<S.entries.length;i++)await entrySwap(i,true)}
+async function autoSwaps(){const n=S.games.filter(started).length;if(!(S.entries||[]).length||n===S.entStarted||S.entChecking)return;S.entStarted=n;
+  const many=S.entries.length>5;S.entChecking=many;if(many)renderEntries();
+  for(let i=0;i<S.entries.length;i++){S.entBatch=many;await entrySwap(i,true);S.entBatch=false;if(many&&i%25===24)renderEntries()}
+  S.entChecking=false;renderEntries()}
 $('entries').addEventListener('click',async e=>{const t=e.target.closest('button');if(!t)return;
   if(t.id==='ent-add'){S.entForm=true;S.entDraft=null;S.entText='';S.entLabel='';renderEntries();$('ent-text').focus();return}
   if(t.id==='ent-cancel'){S.entForm=false;renderEntries();return}
+  if(t.id==='ent-show-all'){S.entShowAll=!S.entShowAll;renderEntries();return}
+  if(t.id==='ent-clear'){if(!t.dataset.armed){t.dataset.armed='1';t.textContent='Tap again to remove all';setTimeout(()=>{if(t.isConnected){delete t.dataset.armed;t.textContent='Remove all'}},4000);return}S.entries=[];saveEntries();renderEntries();return}
+  if(t.id==='ent-apply-all'){for(const en of S.entries)if(en.suggest&&en.suggest.picks){en.picks=en.suggest.picks;en.suggest=null}saveEntries();renderEntries();return}
   if(t.id==='ent-check'){S.entText=$('ent-text').value;S.entDraft=parseEntry(S.entText);renderEntries();return}
   if(t.id==='ent-save'){const d=S.entDraft,msg=$('ent-msg');S.entLabel=$('ent-label').value.trim();
     if(!d||d.length!==F().size){msg.textContent=`Need exactly ${F().size} players (got ${d?d.length:0}).`;return}
@@ -902,7 +924,7 @@ function renderLineups(fresh=false){
   else $('exposure-summary').innerHTML='';
 }
 $('lineups').addEventListener('click',async e=>{if(e.target.id==='show-all'){S.showAll=!S.showAll;renderLineups();return}const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]'),en=e.target.closest('[data-enter]');
-  if(en){const l=S.lineups[+en.dataset.enter];const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(!(S.entries||[]).some(x=>x.picks.map(y=>pkey(y.p)+y.slot).sort().join()===k)){(S.entries??=[]).push({label:'',picks:l.picks.map(x=>({...x}))});saveEntries()}en.textContent='Saved to My entries';renderEntries();setTimeout(()=>en.textContent='I entered this',1500)}
+  if(en){const l=S.lineups[+en.dataset.enter];const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(!(S.entries||[]).some(x=>x.picks.map(y=>pkey(y.p)+y.slot).sort().join()===k)){(S.entries??=[]).push({label:'',noise:l.noise||null,gap0:l.gap0||0,picks:l.picks.map(x=>({...x}))});saveEntries()}en.textContent='Saved to My entries';renderEntries();setTimeout(()=>en.textContent='I entered this',1500)}
   if(s)lateSwap(+s.dataset.swap);
   if(c){const l=S.lineups[+c.dataset.copy];const text=l.picks.map(x=>`${x.slot} ${x.p.name} (${x.p.team}) ${money(salOf(x))}`).join('\n');try{await navigator.clipboard.writeText(text);c.textContent='Copied'}catch(err){c.textContent='Copy failed'}setTimeout(()=>c.textContent='Copy',1500)}});
 $('build').onclick=build;
