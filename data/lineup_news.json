@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-29",
-  "checked_at": "2026-10-29T09:35:15.148164+00:00",
+  "checked_at": "2026-10-29T10:32:02.776245+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,22 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Braves face familiar starting rotation questions entering offseason - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZWRhdVRjdzc4aFlEeEdMTEpoT2NNOGROWXBWZEpPT2VGbnBIcHF5SjhlXzVMYnYzcnpETzhlbVdiOTJoa1JDX1RDaDJsR3k3WVdwX3dtOWdBZUU3YjcyOVJuUDY5VlRjZkFjdHcyX2VvM1JMd0NReGVWYTYxRVR2cURzemhhdFlVbVNsU2RTbWFGTDNiZDhOMnBtN3dnaDZFXzdQSkt3?oc=5",
+      "published_at": "2026-10-29T10:00:44+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
+      "headline": "The NBA's Most Crowded Roster Is Its Injury List, With 79 Players Flagged in One Day - International Business Times UK",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNaklpeWxsQnhfRjZGZWpkX2tuYjBWRlREVHhwaU1zb1VSb1JSSWktUm1rQ0RvTVIyTGpiNS1xTWcwNHBIbmxMd0hPQmtVRE41aWRSTHhqdmEzRlh3aWxFMVVBbVg4MGxzQjVTOHE4NUh1YndNTE9pb0ZObEs4RmthMUQwUnZJUQ?oc=5",
+      "published_at": "2026-10-29T09:53:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
     {
       "headline": "Lakers Reveal New Starting Lineup Without Luka Doncic - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNV0Z2Q1VvNE5ZMFp2NzhVWC1wczZ4bUs3R0RsOXhyc040RS0tdnlSeDlpRVI4ay05b3lqdGZfeWROeTdWc0hyTVhrT3R0cm9Oa2lqYTc1TTJyNkQxb3FNcEpsYy1SSWY5d25HLTc3Mk1DOUI3NnZTUjk4alI4SjQwaXVVUTV3MVh0SEYzUlN4WQ?oc=5",
@@ -158,6 +174,14 @@
       "scope_date": "2026-10-29"
     },
     {
+      "headline": "3 Timberwolves guards who could step up with Anthony Edwards sidelined - Yahoo",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd3F3d3dCb3RSMVRqWGdyR1BiVDV3SzluVF9rMjNtZ0dLX3pUenQzS29XTTJMWTREbVdhTERIMmZQeTZHT0xZc1RrRmxfRE9GNFpwaEZWcnhfb2p4dlhhalhLdHV4aHhJZVpLLXBhU2stUHRFZlRGZFJiaHhONDRIdHVYa0dUMUE?oc=5",
+      "published_at": "2026-10-28T20:22:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
       "headline": "Marcus Smart has been ruled out for tonight's game. … - HoopsHype",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTHpqQnNjLWZCQXVYdUpoMWd4Wnh4RGJzWUdGQlNFUjRoeEV5VUlKdGhVUDZHb0QtcEZid1oxaTBlS0tZazFSRTc5aGo1eDF0M2lqR1dibDRibGt6em5GbUtKaHRBY2prb1Q2MUVDMGJ5cXZ5YTJJSDlrd0pUOXp5N3JkSU41aGFxTDUzdmU5aUNUQmotZXl4S3pEel9FRlFNLS1COUt6dE9vQ1pRZk5nSDV0WFpveFI3RFVnT1NMSGg?oc=5",
       "published_at": "2026-10-28T20:11:00+00:00",
@@ -209,14 +233,6 @@
       "headline": "Naji Marshall Injury: Downgraded to doubtful - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUlJwNUtJNzRXR2pxekxkNGhJekVKSlBoa2dLemQ3UDJkYkVIN3V5aHVJOUVmOUFvaHFlZzJUMmVaLURQMFlublc5c0NUN0ZXbXNldlA2X1ZUR0RiUTdpOEhrdUlWbklObG1SQUlDMkIwdGxBTGJ1VFBXYUtpZ2gtcG9rVzNqeGZxeFJ1OHVaUW5DQXI3UDVtRGxueHo?oc=5",
       "published_at": "2026-10-28T18:22:27+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Video - Nets’ Dëmin Shares Positive Update After Injury Scare - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNXBKTWxmMGROckJEUTR1YWNsVWhmVURmcGdhVmJvSDhibWFGbkRfTXQzS3VfVEpMdFV1UGRQc3l0UWNzYnVYbnoyTzdzWjEzcG9GUU5pUkhfUk9PYXJNWGhWZXBBdVEwdWM2QmE2eDdSYmRwcE1ucWY4ckhBOTVrcnJiZWdBOTJuX1pqeTgzbElGMjBCYy1DdDBHZTM?oc=5",
-      "published_at": "2026-10-28T18:06:11+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
