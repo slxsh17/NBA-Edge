@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T03:23:34.782851+00:00",
+  "updated_at": "2026-10-29T04:17:23.062865+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -284,11 +284,6 @@
     },
     {
       "name": "Cason Wallace",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Otega Oweh",
       "team": "OKC",
       "status": "OUT"
     },
