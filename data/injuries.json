@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T18:21:57.017048+00:00",
+  "updated_at": "2026-10-29T19:25:54.386791+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -28,12 +28,12 @@
       "status": "OUT"
     },
     {
-      "name": "Coby White",
+      "name": "Kon Knueppel",
       "team": "CHA",
       "status": "OUT"
     },
     {
-      "name": "Kon Knueppel",
+      "name": "Coby White",
       "team": "CHA",
       "status": "OUT"
     },
@@ -48,14 +48,19 @@
       "status": "OUT"
     },
     {
-      "name": "Tobe Awaka",
+      "name": "Patrick Williams",
+      "team": "CHI",
+      "status": "OUT"
+    },
+    {
+      "name": "Jalen Smith",
       "team": "CHI",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Patrick Williams",
+      "name": "Tobe Awaka",
       "team": "CHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nic Claxton",
@@ -188,14 +193,14 @@
       "status": "OUT"
     },
     {
-      "name": "Rui Hachimura",
-      "team": "LAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
+    },
+    {
+      "name": "Rui Hachimura",
+      "team": "LAC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Max Strus",
@@ -351,6 +356,11 @@
       "name": "Mark Williams",
       "team": "PHX",
       "status": "OUT"
+    },
+    {
+      "name": "Robert Williams III",
+      "team": "POR",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Chris Youngblood",
