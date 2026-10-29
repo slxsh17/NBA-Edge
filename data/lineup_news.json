@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-28",
-  "checked_at": "2026-10-28T23:59:37.812242+00:00",
+  "checked_at": "2026-10-29T00:37:50.313466+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Naji Marshall Injury: Ruled out Wednesday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOXY1UjNiNzhaTzkwX2ZIN01GS3EyeHk1cjEzemVyYXV5WWNHZFdwdkpxazJvSnVUYVYweGhRUVlVREhZSWNaWnR6MmdsX0g1NTBlZHE2SE5TandCMVpkV0tyNXk2U0ZOTU10dV9Ba1NIaG9QVzY2Vl9uTTV4LUV6WTlSLW9TT3F6MkFYYkdxNmI0YlhHa0dBcA?oc=5",
+      "published_at": "2026-10-28T23:52:37+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
     {
       "headline": "Gui Santos Injury: Ruled out Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQem1ZcGNFaVdySThIS1BvVmd3M3E2cThuZS1OMlhTVlJ5VENRcVYtQ3k1Y1NlOGtuZnctcG1zUmhZbkxhcEw5enYxWV9jX052YllVVFJudm9JTGpvMkt3cUg5cVpqWE5BelpVTWRwVWFlRGdKVEcybGdWdlFCQnZVQ202Si1OT19BWWhJcWdBai1ySEpl?oc=5",
@@ -78,6 +86,14 @@
       "scope_date": "2026-10-28"
     },
     {
+      "headline": "Warriors vs. Timberwolves injury report: Yaxel Lendeborg is questionable - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbTQ1bmlLZllxdWo5MkVRLXpScjlEeGc2ZDl3YjRSVFRrQ2hNU05pM3hHOFpBRVJSeExQSTFjMUd1MXBVLW10eGN4RGNnOFZsNGVDZDRxYjNQaGIwczBTQ1hGLW05OS1uT1UxOGFUQXcyOGUtOUtQNnFGN0pISEU3elBqU1FNRlZQMWRLLWdoTkU?oc=5",
+      "published_at": "2026-10-28T20:36:37+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
       "headline": "Luka Doncic (back) ruled out Wednesday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbUdsWk5OZ1RYTHBra2xvZzVWSS1BMVR5c0VyVnVXZ3N5eFBCbXlmM3lpU1MxX0VHNUxHRG5fM0ltT2FIWW95UHh1dVVZMGVPYldEeUd6Q1NtWDh5dmZzSFVNWUcweVRLcC1jMGZQdVFPeDROUkNnUVR3SmNuSWlDMEhYamNCMnpaWjg2R9IBkgFBVV95cUxQRGdrSDdfNnZvUGpmNmtsUDVmOTdzVFhiei1Wd3lpc3YtNjdLeGViUld3amxOUVpNZ2U0TzlBSTl2aXpuQnY2VW95NTNHQ0lzdTdWVGtkLVVCVU5Zck9vWGpBM0wwVEtiTE1Bc3JXYlhXMlFlbDN5WEc0VW5CQWREUS1FV0FUVFBMaVJIeEpUTl9Mdw?oc=5",
       "published_at": "2026-10-28T20:07:10+00:00",
@@ -89,6 +105,14 @@
       "headline": "Ziaire Williams Injury: Ruled out Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPU0FHVW42SWVPM1RuNVBNVGZlaTY0NE52SVBOWFd4eXNNZ0xTMG15Qi0zQnVhSDIwLTBSV0daY2ZKb2M0elUzcTRlaDFlYjFZSEVpXzRBbXBjNDNtNDByb18wekdrMUNHMFdMU0JJeHVVTnM2MnlvZkNlbm5qZTM0QU1HTF9PX290SEZUZDZXTTFtQ2plS1R2cE43UQ?oc=5",
       "published_at": "2026-10-28T20:06:57+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "What the Justin Champagnie Injury Means for Wizards Rotation - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQU1NyTGxZaHNiTUU2blUzNjYyWFZXaGFYclY5LVZOanhDbWlGY0U0ZkFqZzE5NnpBY29iUHRmbVRtaXVhRkdBQl9qMFAzNVJNdVlTMlF5QmVycEVVSEIwVGc4dk93VDN3UVY0eUE3WDZQSjMtZTdnOG9qbWQ5LVktQURDUWJQVlg2SEFob3RGOVg?oc=5",
+      "published_at": "2026-10-28T19:59:48+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -209,38 +233,6 @@
       "headline": "“I would basically bring VJ off the bench” – John Wall proposes bold change to Sixers' starting lineup - Basketball Network",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSktzUTMwTUptMXdUcnozOTUxR1JqU3pyTk5MWm1LQmR3X3NvUlhqNGphWVpiRE13X1NEMklIQWdjZVZhVmg4c1ZhTGVkRG9kRWxQNF9tXzllVzZjQVJYTjB2ZXEzTzNlcXh1ZGNWM2NCbGdEYU1qZl9GcEg2T3NYLXZaNUNzcnRWVGhLRnZJYXB2ZXVoQlBMdVBHaTFPcjBTaE5jRA?oc=5",
       "published_at": "2026-10-28T01:09:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Atlanta Hawks Add Key Rotation Player To Injury Report Ahead Of Matchup vs Miami - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcHI4X2prd3g1X3JIUDdXYUtnbkVYN1pmdTU5U0lJYXVHa0lnRlNUemZSelJmbFIwQkd0SVI0Uzk4ZmJPTW1MVjFpMS1GT3NIZXVKbnl1b1R4WE8zWE5TTGpBTFlLYW9LVW9hZDN0VVlJQ2NwNUpmRE9uLXBqNFFVbXVoSUljQQ?oc=5",
-      "published_at": "2026-10-28T00:34:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Scoot Henderson is Questionable Against Lakers - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNOVVMdkZWdW5VaGp3QzlPQmJ1Q3htX1BYMXFzdS0xQ3BzT3FCaE52QUM3UEtxZThmdlo5QzE2T01ZYnFmY19SUlgxMkhsLU51bDNwNkh4U1A5aFYwZ05SSC1wcWZTRG9xLXdlVFNOV05nZUZSWVhYQjVhZTlHeGdHQU81dXJ3UGwzdUV4Wmt1eHFYZUhvQ2hz?oc=5",
-      "published_at": "2026-10-28T00:27:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Wizards' Rookie AJ Dybantsa Listed as Questionable vs. Cleveland - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWUpwSDYyemF6N25oNlFGMVdmc0xDTWJUWFdqaWZrREJzT2FWbnhsVVI5eVlSNEk2R3VKeG9fdzZ4UllFOWJOZVdzdWxQY1ZDcG03ZHlxTHpFZUY2cUhLY3BWSGtRMXZOTWRnSU5YUzV3bXZqRGtibndIU0cxMWxnMlEzWV83T1Bqenc?oc=5",
-      "published_at": "2026-10-28T00:24:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Washington Wizards Make Major AJ Dybantsa Injury Announcement Before Cavaliers Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbVdIbjhISzdnT2dEeDNFaDhRT3pKYUs5YXVtLVNILUxOUkZ4VzRRNUJvalljUVU1em1LejBmYUhoZDNhUDdxRVBQZENKV3VXOWlwZnU3MTk0TnlfSEF2M3NnQUtyWmwxNzI5VG1udTlXdnhZb0VhWGhubkpBTXJ3OV9CeHJKUDYySzA3V0Vn?oc=5",
-      "published_at": "2026-10-28T00:17:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
