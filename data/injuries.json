@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:47:41.592442+00:00",
+  "updated_at": "2026-10-29T22:25:14.917496+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -83,16 +83,6 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Sergio de Larrea",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Naji Marshall",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Tarik Biberovic",
       "team": "DAL",
       "status": "OUT"
@@ -101,6 +91,16 @@
       "name": "Santi Aldama",
       "team": "DAL",
       "status": "OUT"
+    },
+    {
+      "name": "Sergio de Larrea",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
+      "name": "Naji Marshall",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dereck Lively II",
@@ -213,14 +213,14 @@
       "status": "OUT"
     },
     {
-      "name": "Yanic Konan Niederhauser",
-      "team": "LAC",
-      "status": "OUT"
-    },
-    {
       "name": "Rui Hachimura",
       "team": "LAC",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Yanic Konan Niederhauser",
+      "team": "LAC",
+      "status": "OUT"
     },
     {
       "name": "Max Strus",
@@ -278,9 +278,14 @@
       "status": "OUT"
     },
     {
+      "name": "Dejounte Murray",
+      "team": "NOP",
+      "status": "OUT"
+    },
+    {
       "name": "Jordan Poole",
       "team": "NOP",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Yves Missi",
