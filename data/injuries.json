@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T01:42:11.315672+00:00",
+  "updated_at": "2026-10-29T02:32:25.413833+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -396,11 +396,6 @@
       "name": "Kawhi Leonard",
       "team": "TOR",
       "status": "OUT"
-    },
-    {
-      "name": "Darryn Peterson",
-      "team": "UTA",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Lauri Markkanen",
