@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T23:55:19.961873+00:00",
+  "updated_at": "2026-10-29T00:42:57.332809+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -65,7 +65,7 @@
     {
       "name": "Naji Marshall",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Tarik Biberovic",
@@ -79,11 +79,6 @@
     },
     {
       "name": "Sergio de Larrea",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Caleb Martin",
       "team": "DAL",
       "status": "OUT"
     },
@@ -253,8 +248,18 @@
       "status": "OUT"
     },
     {
+      "name": "Karl-Anthony Towns",
+      "team": "NYK",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jose Alvarado",
       "team": "NYK",
+      "status": "OUT"
+    },
+    {
+      "name": "Jalen Williams",
+      "team": "OKC",
       "status": "OUT"
     },
     {
@@ -274,16 +279,6 @@
     },
     {
       "name": "Nikola Topic",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Ajay Mitchell",
-      "team": "OKC",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jalen Williams",
       "team": "OKC",
       "status": "OUT"
     },
@@ -403,14 +398,9 @@
       "status": "OUT"
     },
     {
-      "name": "Jaxson Hayes",
-      "team": "UTA",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Lauri Markkanen",
       "team": "UTA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jaren Jackson Jr.",
