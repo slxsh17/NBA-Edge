@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T21:03:30.135967+00:00",
+  "updated_at": "2026-10-29T21:47:41.592442+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -26,6 +26,11 @@
       "name": "Tyler Bilodeau",
       "team": "BKN",
       "status": "OUT"
+    },
+    {
+      "name": "Dennis Schroder",
+      "team": "CHA",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kon Knueppel",
@@ -173,9 +178,19 @@
       "status": "OUT"
     },
     {
-      "name": "Ivica Zubac",
+      "name": "Andrew Nembhard",
       "team": "IND",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Ivica Zubac",
+      "team": "IND",
+      "status": "OUT"
     },
     {
       "name": "T.J. McConnell",
@@ -334,6 +349,11 @@
     },
     {
       "name": "Jabari Walker",
+      "team": "PHI",
+      "status": "OUT"
+    },
+    {
+      "name": "Jaylen Brown",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
