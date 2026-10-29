@@ -188,7 +188,7 @@ def optimal_rate(players, fmt='classic', cap=60000, sims=250, seed=11, corr=None
         T = {t: rng.gauss(0, 1) for t in {p['team'] for p in pool}}
         scores = []
         for p in pool:
-            sd = max(1.0, (p.get('ceiling', p['proj'] * 1.4) - p['proj']) / 1.28)
+            sd = C.get('sd_scale', 1.0) * max(1.0, (p.get('ceiling', p['proj'] * 1.4) - p['proj']) / 1.28)
             g = G[tuple(sorted((p['team'], p.get('opp') or p['team'])))]
             z = rg * g + rt * T[p['team']] + ri * rng.gauss(0, 1)
             scores.append(max(0.0, p['proj'] + sd * z))

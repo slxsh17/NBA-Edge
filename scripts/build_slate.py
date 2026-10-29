@@ -517,7 +517,7 @@ def simulate(players, singles, old):
     import field_sim as FS
     P = own_params()
     main = [p for p in players if p['main'] and p['proj'] > 0 and not p.get('out')]
-    sig = json.dumps(['sim-v3', read('model_params.json').get('corr'), P, single_own_params(), (read('public_consensus.json').get('singles') or {}), read('public_consensus.json').get('updated_at'), len(read('alerts.json').get('late_news', []))] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
+    sig = json.dumps(['sim-v3', read('model_params.json').get('corr'), read('lineup_results.json').get('calibration'), P, single_own_params(), (read('public_consensus.json').get('singles') or {}), read('public_consensus.json').get('updated_at'), len(read('alerts.json').get('late_news', []))] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), p.get('ext')] for p in main]
                      + [[sg['id'], [[r['k'], r['salary'], r['status']] for r in sg['players']]] for sg in singles])
     import hashlib
     sig = hashlib.sha1(sig.encode()).hexdigest()
@@ -566,7 +566,7 @@ def simulate(players, singles, old):
         if c:
             p['consensus'] = {k: c.get(k) for k in ('fta_own', 'linestar_own', 'mentions')}
             p['consensus']['articles'] = c.get('articles', [])[:3]
-    corr = read('model_params.json').get('corr')
+    corr = {**(read('model_params.json').get('corr') or {}), **(read('lineup_results.json').get('calibration') or {})}
     opt, top = FS.optimal_rate(main, 'classic', 60000, sims=300, corr=corr)
     SIM_LINEUPS[0] = top
     for p in main:
