@@ -1,17 +1,119 @@
 {
  "schema": 1,
- "note": "Main-slate lineups the user entered on FanDuel, logged from their screenshots. Scores as of the screenshot.",
+ "note": "Lineups the user entered on FanDuel, logged from their screenshots. One record per lineup; contests list each entry group with total fees and winnings.",
  "days": [
   {
    "date": "2026-10-27",
    "slate": "Main",
-   "players": ["De'Aaron Fox", "Stephon Castle", "Mikal Bridges", "Deni Avdija", "Karl-Anthony Towns", "Derrick White", "Mitchell Robinson", "Luka Doncic", "Jrue Holiday"],
+   "players": [
+    "De'Aaron Fox",
+    "Stephon Castle",
+    "Mikal Bridges",
+    "Deni Avdija",
+    "Karl-Anthony Towns",
+    "Derrick White",
+    "Mitchell Robinson",
+    "Luka Doncic",
+    "Jrue Holiday"
+   ],
    "projected": 302.16,
    "score": 302.0,
-   "final": false,
+   "final": true,
    "contests": [
-    {"name": "$500 NBA Small Rebound", "fee": 12, "place": 9, "field": 49, "won": 25},
-    {"name": "$2.5K Tue NBA Assist (Single Entry)", "fee": 5, "place": 101, "field": 595, "won": 10}
+    {
+     "name": "$500 NBA Small Rebound",
+     "fee": 12,
+     "place": 9,
+     "field": 49,
+     "won": 25
+    },
+    {
+     "name": "$2.5K Tue NBA Assist (Single Entry)",
+     "fee": 5,
+     "place": 101,
+     "field": 595,
+     "won": 10
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "slate": "Main",
+   "entry": "Lineup A",
+   "players": [
+    "James Harden",
+    "Donovan Mitchell",
+    "Quentin Grimes",
+    "Obi Toppin",
+    "Nikola Jokic",
+    "Andrew Nembhard",
+    "Caleb Wilson",
+    "Anthony Black",
+    "Fred VanVleet"
+   ],
+   "projected": 320.0,
+   "score": 311.2,
+   "final": true,
+   "late_swapped": false,
+   "contests": [
+    {
+     "name": "$4K Wed NBA Dime (SE) + $15K Wed NBA Pick N' Roll",
+     "entries": 2,
+     "fee": 12.22,
+     "won": 29
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "slate": "Main",
+   "entry": "Lineup B",
+   "players": [
+    "Andrew Nembhard",
+    "Ayo Dosunmu",
+    "Quentin Grimes",
+    "Jalen Johnson",
+    "Nikola Jokic",
+    "Reed Sheppard",
+    "Caleb Wilson",
+    "Stephen Curry",
+    "Fred VanVleet"
+   ],
+   "projected": 328.35,
+   "score": 376.3,
+   "final": true,
+   "late_swapped": true,
+   "swaps": "Bridges -> Grimes, Black -> Sheppard, Gobert -> Wilson, Garland -> Curry",
+   "contests": [
+    {
+     "name": "$500 Small Rebound + $2K Block (SE) + $14K Piggy Bank",
+     "entries": 3,
+     "fee": 14.05,
+     "won": 327
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "slate": "LAL @ LAC",
+   "entry": "Single game",
+   "players": [
+    "Austin Reaves",
+    "Walker Kessler",
+    "Darius Garland",
+    "Keaton Wagler",
+    "Quentin Grimes",
+    "Matisse Thybulle"
+   ],
+   "score": 180.65,
+   "final": true,
+   "contests": [
+    {
+     "name": "LAL @ LAC single game",
+     "entries": 1,
+     "fee": 9,
+     "won": 16
+    }
    ]
   }
  ]
