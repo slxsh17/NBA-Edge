@@ -1,79 +1,25 @@
 {
-  "date": "20261028",
-  "updated_at": "2026-10-28T23:09:25.666437-04:00",
+  "date": "20261029",
+  "updated_at": "2026-10-29T00:10:56.665336-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
-      "away": "Miami Heat",
+      "away": "Cleveland Cavaliers",
       "home": "Atlanta Hawks",
-      "time": "2026-10-28T23:00Z",
-      "status": "Final"
+      "time": "2026-10-30T00:00Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Washington Wizards",
-      "home": "Cleveland Cavaliers",
-      "time": "2026-10-28T23:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Charlotte Hornets",
-      "home": "Detroit Pistons",
-      "time": "2026-10-28T23:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Philadelphia 76ers",
-      "home": "Indiana Pacers",
-      "time": "2026-10-28T23:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Orlando Magic",
-      "home": "Toronto Raptors",
-      "time": "2026-10-28T23:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "New York Knicks",
-      "home": "Chicago Bulls",
-      "time": "2026-10-29T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Houston Rockets",
-      "home": "Milwaukee Bucks",
-      "time": "2026-10-29T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Golden State Warriors",
-      "home": "Minnesota Timberwolves",
-      "time": "2026-10-29T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Denver Nuggets",
+      "away": "Sacramento Kings",
       "home": "New Orleans Pelicans",
-      "time": "2026-10-29T00:00Z",
-      "status": "Final"
+      "time": "2026-10-30T00:00Z",
+      "status": "Scheduled"
     },
     {
-      "away": "San Antonio Spurs",
-      "home": "Utah Jazz",
-      "time": "2026-10-29T01:00Z",
-      "status": "In Progress"
-    },
-    {
-      "away": "Oklahoma City Thunder",
-      "home": "Dallas Mavericks",
-      "time": "2026-10-29T01:30Z",
-      "status": "In Progress"
-    },
-    {
-      "away": "Los Angeles Lakers",
-      "home": "LA Clippers",
-      "time": "2026-10-29T02:30Z",
-      "status": "In Progress"
+      "away": "Memphis Grizzlies",
+      "home": "Portland Trail Blazers",
+      "time": "2026-10-30T02:00Z",
+      "status": "Scheduled"
     }
   ]
 }
