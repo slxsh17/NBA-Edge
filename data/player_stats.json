@@ -1,11 +1,9 @@
 {
-  "updated_at": "2026-10-28T22:16:27.242797-04:00",
+  "updated_at": "2026-10-28T23:09:25.877345-04:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
-  "games_processed": 52,
-  "errors": [
-    "401909877: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)>"
-  ],
+  "games_processed": 53,
+  "errors": [],
   "players": [
     {
       "id": "3945274",
@@ -16,6 +14,16 @@
       "avg_fantasy_points": 56.0,
       "fantasy_points_per_minute": 1.577,
       "avg_points": 36.0
+    },
+    {
+      "id": "4065648",
+      "name": "Jayson Tatum",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 35.7,
+      "avg_fantasy_points": 55.2,
+      "fantasy_points_per_minute": 1.549,
+      "avg_points": 33.0
     },
     {
       "id": "3112335",
@@ -46,16 +54,6 @@
       "avg_fantasy_points": 52.9,
       "fantasy_points_per_minute": 1.763,
       "avg_points": 25.0
-    },
-    {
-      "id": "4065648",
-      "name": "Jayson Tatum",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 32.5,
-      "avg_fantasy_points": 52.3,
-      "fantasy_points_per_minute": 1.611,
-      "avg_points": 29.5
     },
     {
       "id": "4701230",
@@ -308,6 +306,16 @@
       "avg_points": 23.5
     },
     {
+      "id": "3064514",
+      "name": "Julius Randle",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 35.2,
+      "avg_fantasy_points": 39.1,
+      "fantasy_points_per_minute": 1.11,
+      "avg_points": 22.5
+    },
+    {
       "id": "3202",
       "name": "Kevin Durant",
       "team": "HOU",
@@ -316,6 +324,16 @@
       "avg_fantasy_points": 38.9,
       "fantasy_points_per_minute": 1.104,
       "avg_points": 23.5
+    },
+    {
+      "id": "4278104",
+      "name": "Michael Porter Jr.",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 32.0,
+      "avg_fantasy_points": 38.6,
+      "fantasy_points_per_minute": 1.208,
+      "avg_points": 22.8
     },
     {
       "id": "4566434",
@@ -336,16 +354,6 @@
       "avg_fantasy_points": 38.3,
       "fantasy_points_per_minute": 1.136,
       "avg_points": 21.0
-    },
-    {
-      "id": "3064514",
-      "name": "Julius Randle",
-      "team": "BKN",
-      "games": 3,
-      "avg_minutes": 32.3,
-      "avg_fantasy_points": 38.2,
-      "fantasy_points_per_minute": 1.182,
-      "avg_points": 22.0
     },
     {
       "id": "4433134",
@@ -496,16 +504,6 @@
       "avg_fantasy_points": 35.7,
       "fantasy_points_per_minute": 1.409,
       "avg_points": 20.0
-    },
-    {
-      "id": "4278104",
-      "name": "Michael Porter Jr.",
-      "team": "BKN",
-      "games": 3,
-      "avg_minutes": 29.3,
-      "avg_fantasy_points": 35.7,
-      "fantasy_points_per_minute": 1.218,
-      "avg_points": 21.3
     },
     {
       "id": "4066259",
@@ -778,6 +776,16 @@
       "avg_points": 18.0
     },
     {
+      "id": "4251",
+      "name": "Paul George",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 31.7,
+      "avg_fantasy_points": 31.4,
+      "fantasy_points_per_minute": 0.993,
+      "avg_points": 17.0
+    },
+    {
       "id": "4431671",
       "name": "Jaden McDaniels",
       "team": "MIN",
@@ -1038,6 +1046,16 @@
       "avg_points": 14.7
     },
     {
+      "id": "3078576",
+      "name": "Derrick White",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 28.0,
+      "avg_fantasy_points": 27.2,
+      "fantasy_points_per_minute": 0.97,
+      "avg_points": 11.0
+    },
+    {
       "id": "4593803",
       "name": "Jalen Williams",
       "team": "OKC",
@@ -1178,16 +1196,6 @@
       "avg_points": 6.5
     },
     {
-      "id": "4251",
-      "name": "Paul George",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 29.5,
-      "avg_fantasy_points": 26.2,
-      "fantasy_points_per_minute": 0.888,
-      "avg_points": 15.5
-    },
-    {
       "id": "2991350",
       "name": "Alex Caruso",
       "team": "OKC",
@@ -1208,16 +1216,6 @@
       "avg_points": 11.7
     },
     {
-      "id": "3078576",
-      "name": "Derrick White",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 25.5,
-      "avg_fantasy_points": 26.0,
-      "fantasy_points_per_minute": 1.02,
-      "avg_points": 8.5
-    },
-    {
       "id": "3442",
       "name": "DeAndre Jordan",
       "team": "NO",
@@ -1236,16 +1234,6 @@
       "avg_fantasy_points": 25.7,
       "fantasy_points_per_minute": 0.772,
       "avg_points": 15.3
-    },
-    {
-      "id": "4397424",
-      "name": "Neemias Queta",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 20.5,
-      "avg_fantasy_points": 25.6,
-      "fantasy_points_per_minute": 1.249,
-      "avg_points": 11.0
     },
     {
       "id": "4432170",
@@ -1336,16 +1324,6 @@
       "avg_fantasy_points": 24.8,
       "fantasy_points_per_minute": 1.138,
       "avg_points": 12.5
-    },
-    {
-      "id": "4066354",
-      "name": "Payton Pritchard",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 26.0,
-      "avg_fantasy_points": 24.7,
-      "fantasy_points_per_minute": 0.95,
-      "avg_points": 16.0
     },
     {
       "id": "2490149",
@@ -1638,14 +1616,14 @@
       "avg_points": 12.7
     },
     {
-      "id": "4432194",
-      "name": "Day'Ron Sharpe",
-      "team": "BKN",
+      "id": "4066354",
+      "name": "Payton Pritchard",
+      "team": "BOS",
       "games": 3,
-      "avg_minutes": 23.0,
-      "avg_fantasy_points": 21.8,
-      "fantasy_points_per_minute": 0.949,
-      "avg_points": 8.7
+      "avg_minutes": 25.3,
+      "avg_fantasy_points": 21.6,
+      "fantasy_points_per_minute": 0.853,
+      "avg_points": 12.0
     },
     {
       "id": "5214640",
@@ -1658,14 +1636,14 @@
       "avg_points": 10.2
     },
     {
-      "id": "4702177",
-      "name": "Keon Ellis",
+      "id": "5101761",
+      "name": "Mikel Brown Jr.",
       "team": "BKN",
       "games": 3,
-      "avg_minutes": 26.3,
-      "avg_fantasy_points": 21.3,
-      "fantasy_points_per_minute": 0.81,
-      "avg_points": 7.3
+      "avg_minutes": 22.7,
+      "avg_fantasy_points": 21.2,
+      "fantasy_points_per_minute": 0.934,
+      "avg_points": 10.3
     },
     {
       "id": "4432847",
@@ -1696,6 +1674,16 @@
       "avg_fantasy_points": 21.1,
       "fantasy_points_per_minute": 1.112,
       "avg_points": 7.3
+    },
+    {
+      "id": "4397424",
+      "name": "Neemias Queta",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 18.7,
+      "avg_fantasy_points": 20.9,
+      "fantasy_points_per_minute": 1.121,
+      "avg_points": 9.7
     },
     {
       "id": "4278585",
@@ -1745,6 +1733,26 @@
       "avg_minutes": 17.0,
       "avg_fantasy_points": 20.5,
       "fantasy_points_per_minute": 1.209,
+      "avg_points": 7.5
+    },
+    {
+      "id": "4702177",
+      "name": "Keon Ellis",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 26.0,
+      "avg_fantasy_points": 20.4,
+      "fantasy_points_per_minute": 0.785,
+      "avg_points": 6.0
+    },
+    {
+      "id": "4432194",
+      "name": "Day'Ron Sharpe",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 21.5,
+      "avg_fantasy_points": 20.4,
+      "fantasy_points_per_minute": 0.95,
       "avg_points": 7.5
     },
     {
@@ -1928,16 +1936,6 @@
       "avg_points": 9.8
     },
     {
-      "id": "5175643",
-      "name": "Egor Demin",
-      "team": "BKN",
-      "games": 3,
-      "avg_minutes": 25.7,
-      "avg_fantasy_points": 18.0,
-      "fantasy_points_per_minute": 0.703,
-      "avg_points": 9.7
-    },
-    {
       "id": "5081727",
       "name": "Sidy Cissoko",
       "team": "POR",
@@ -1968,16 +1966,6 @@
       "avg_points": 8.0
     },
     {
-      "id": "5101761",
-      "name": "Mikel Brown Jr.",
-      "team": "BKN",
-      "games": 2,
-      "avg_minutes": 20.0,
-      "avg_fantasy_points": 17.5,
-      "fantasy_points_per_minute": 0.875,
-      "avg_points": 7.0
-    },
-    {
       "id": "6589",
       "name": "Draymond Green",
       "team": "GS",
@@ -2006,6 +1994,16 @@
       "avg_fantasy_points": 17.1,
       "fantasy_points_per_minute": 0.886,
       "avg_points": 6.3
+    },
+    {
+      "id": "4683689",
+      "name": "Jordan Walsh",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 20.7,
+      "avg_fantasy_points": 17.0,
+      "fantasy_points_per_minute": 0.821,
+      "avg_points": 8.0
     },
     {
       "id": "5279133",
@@ -2048,6 +2046,16 @@
       "avg_points": 7.0
     },
     {
+      "id": "3150844",
+      "name": "Moritz Wagner",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 16.8,
+      "avg_fantasy_points": 16.8,
+      "fantasy_points_per_minute": 1.003,
+      "avg_points": 10.2
+    },
+    {
       "id": "3913174",
       "name": "Luke Kennard",
       "team": "PHX",
@@ -2086,6 +2094,16 @@
       "avg_fantasy_points": 16.7,
       "fantasy_points_per_minute": 0.806,
       "avg_points": 7.0
+    },
+    {
+      "id": "5279130",
+      "name": "Nolan Traore",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 17.5,
+      "avg_fantasy_points": 16.6,
+      "fantasy_points_per_minute": 0.949,
+      "avg_points": 9.5
     },
     {
       "id": "4592691",
@@ -2198,6 +2216,16 @@
       "avg_points": 5.8
     },
     {
+      "id": "5175643",
+      "name": "Egor Demin",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 21.8,
+      "avg_fantasy_points": 15.6,
+      "fantasy_points_per_minute": 0.716,
+      "avg_points": 7.8
+    },
+    {
       "id": "5174983",
       "name": "Aday Mara",
       "team": "OKC",
@@ -2248,6 +2276,36 @@
       "avg_points": 8.0
     },
     {
+      "id": "4065804",
+      "name": "Sam Hauser",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 22.7,
+      "avg_fantasy_points": 14.8,
+      "fantasy_points_per_minute": 0.654,
+      "avg_points": 9.3
+    },
+    {
+      "id": "4712896",
+      "name": "Noah Clowney",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 21.5,
+      "avg_fantasy_points": 14.7,
+      "fantasy_points_per_minute": 0.683,
+      "avg_points": 6.2
+    },
+    {
+      "id": "4351852",
+      "name": "Mitchell Robinson",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 21.0,
+      "avg_fantasy_points": 14.7,
+      "fantasy_points_per_minute": 0.702,
+      "avg_points": 6.0
+    },
+    {
       "id": "5211176",
       "name": "Tidjane Salaun",
       "team": "CHA",
@@ -2288,36 +2346,6 @@
       "avg_points": 6.0
     },
     {
-      "id": "4351852",
-      "name": "Mitchell Robinson",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 19.0,
-      "avg_fantasy_points": 14.6,
-      "fantasy_points_per_minute": 0.768,
-      "avg_points": 5.5
-    },
-    {
-      "id": "4712896",
-      "name": "Noah Clowney",
-      "team": "BKN",
-      "games": 3,
-      "avg_minutes": 20.7,
-      "avg_fantasy_points": 14.5,
-      "fantasy_points_per_minute": 0.7,
-      "avg_points": 7.3
-    },
-    {
-      "id": "4065804",
-      "name": "Sam Hauser",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 21.5,
-      "avg_fantasy_points": 14.4,
-      "fantasy_points_per_minute": 0.667,
-      "avg_points": 8.5
-    },
-    {
       "id": "4432810",
       "name": "Isaiah Stewart",
       "team": "MEM",
@@ -2326,6 +2354,16 @@
       "avg_fantasy_points": 14.4,
       "fantasy_points_per_minute": 0.815,
       "avg_points": 7.0
+    },
+    {
+      "id": "5174655",
+      "name": "Chaney Johnson",
+      "team": "BKN",
+      "games": 4,
+      "avg_minutes": 20.5,
+      "avg_fantasy_points": 14.3,
+      "fantasy_points_per_minute": 0.699,
+      "avg_points": 7.2
     },
     {
       "id": "5082206",
@@ -2346,16 +2384,6 @@
       "avg_fantasy_points": 14.1,
       "fantasy_points_per_minute": 0.861,
       "avg_points": 8.0
-    },
-    {
-      "id": "5279130",
-      "name": "Nolan Traore",
-      "team": "BKN",
-      "games": 3,
-      "avg_minutes": 15.3,
-      "avg_fantasy_points": 13.9,
-      "fantasy_points_per_minute": 0.907,
-      "avg_points": 7.7
     },
     {
       "id": "5144091",
@@ -2428,16 +2456,6 @@
       "avg_points": 3.0
     },
     {
-      "id": "5175647",
-      "name": "Hugo Gonzalez",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 14.0,
-      "avg_fantasy_points": 13.2,
-      "fantasy_points_per_minute": 0.946,
-      "avg_points": 6.5
-    },
-    {
       "id": "3914044",
       "name": "Landry Shamet",
       "team": "NY",
@@ -2466,16 +2484,6 @@
       "avg_fantasy_points": 13.1,
       "fantasy_points_per_minute": 1.871,
       "avg_points": 3.0
-    },
-    {
-      "id": "4277951",
-      "name": "Luka Garza",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 8.5,
-      "avg_fantasy_points": 12.9,
-      "fantasy_points_per_minute": 1.518,
-      "avg_points": 7.0
     },
     {
       "id": "4845374",
@@ -2528,16 +2536,6 @@
       "avg_points": 5.0
     },
     {
-      "id": "3150844",
-      "name": "Moritz Wagner",
-      "team": "BKN",
-      "games": 3,
-      "avg_minutes": 15.0,
-      "avg_fantasy_points": 12.3,
-      "fantasy_points_per_minute": 0.82,
-      "avg_points": 8.7
-    },
-    {
       "id": "6475",
       "name": "Klay Thompson",
       "team": "MIA",
@@ -2546,16 +2544,6 @@
       "avg_fantasy_points": 12.2,
       "fantasy_points_per_minute": 0.596,
       "avg_points": 9.0
-    },
-    {
-      "id": "4683689",
-      "name": "Jordan Walsh",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 19.0,
-      "avg_fantasy_points": 12.1,
-      "fantasy_points_per_minute": 0.637,
-      "avg_points": 4.5
     },
     {
       "id": "4348700",
@@ -2688,16 +2676,6 @@
       "avg_points": 4.7
     },
     {
-      "id": "5174655",
-      "name": "Chaney Johnson",
-      "team": "BKN",
-      "games": 3,
-      "avg_minutes": 17.7,
-      "avg_fantasy_points": 11.2,
-      "fantasy_points_per_minute": 0.636,
-      "avg_points": 4.7
-    },
-    {
       "id": "3133602",
       "name": "Svi Mykhailiuk",
       "team": "UTAH",
@@ -2798,6 +2776,16 @@
       "avg_points": 6.5
     },
     {
+      "id": "4277951",
+      "name": "Luka Garza",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 10.0,
+      "avg_fantasy_points": 10.5,
+      "fantasy_points_per_minute": 1.053,
+      "avg_points": 5.3
+    },
+    {
       "id": "3136196",
       "name": "Trey Lyles",
       "team": "MIN",
@@ -2876,6 +2864,16 @@
       "avg_fantasy_points": 9.4,
       "fantasy_points_per_minute": 0.783,
       "avg_points": 2.0
+    },
+    {
+      "id": "5175647",
+      "name": "Hugo Gonzalez",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 11.3,
+      "avg_fantasy_points": 9.3,
+      "fantasy_points_per_minute": 0.821,
+      "avg_points": 4.3
     },
     {
       "id": "4280151",
@@ -3036,6 +3034,16 @@
       "avg_fantasy_points": 8.6,
       "fantasy_points_per_minute": 0.688,
       "avg_points": 4.0
+    },
+    {
+      "id": "4593841",
+      "name": "Baylor Scheierman",
+      "team": "BOS",
+      "games": 3,
+      "avg_minutes": 16.7,
+      "avg_fantasy_points": 8.5,
+      "fantasy_points_per_minute": 0.51,
+      "avg_points": 2.3
     },
     {
       "id": "5279129",
@@ -3236,16 +3244,6 @@
       "avg_fantasy_points": 6.6,
       "fantasy_points_per_minute": 2.2,
       "avg_points": 4.5
-    },
-    {
-      "id": "4593841",
-      "name": "Baylor Scheierman",
-      "team": "BOS",
-      "games": 2,
-      "avg_minutes": 14.5,
-      "avg_fantasy_points": 6.6,
-      "fantasy_points_per_minute": 0.455,
-      "avg_points": 2.0
     },
     {
       "id": "5217746",
@@ -4360,6 +4358,21 @@
       "fantasy_points": 26.8
     },
     {
+      "id": "4065804",
+      "name": "Sam Hauser",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 25.0,
+      "pts": 11.0,
+      "reb": 4.0,
+      "ast": 0.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 15.8
+    },
+    {
       "id": "4683771",
       "name": "Ronald Holland II",
       "team": "DET",
@@ -4420,6 +4433,21 @@
       "fantasy_points": 5.2
     },
     {
+      "id": "4066354",
+      "name": "Payton Pritchard",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 24.0,
+      "pts": 4.0,
+      "reb": 2.0,
+      "ast": 6.0,
+      "stl": 0.0,
+      "blk": 1.0,
+      "tov": 3.0,
+      "fantasy_points": 15.4
+    },
+    {
       "id": "4278562",
       "name": "Paul Reed",
       "team": "DET",
@@ -4433,6 +4461,21 @@
       "blk": 1.0,
       "tov": 2.0,
       "fantasy_points": 44.3
+    },
+    {
+      "id": "4251",
+      "name": "Paul George",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 36.0,
+      "pts": 20.0,
+      "reb": 7.0,
+      "ast": 7.0,
+      "stl": 2.0,
+      "blk": 0.0,
+      "tov": 3.0,
+      "fantasy_points": 41.9
     },
     {
       "id": "5211983",
@@ -4465,6 +4508,36 @@
       "fantasy_points": 34.4
     },
     {
+      "id": "5279130",
+      "name": "Nolan Traore",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 24.0,
+      "pts": 15.0,
+      "reb": 1.0,
+      "ast": 3.0,
+      "stl": 2.0,
+      "blk": 0.0,
+      "tov": 2.0,
+      "fantasy_points": 24.7
+    },
+    {
+      "id": "4712896",
+      "name": "Noah Clowney",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 24.0,
+      "pts": 3.0,
+      "reb": 4.0,
+      "ast": 1.0,
+      "stl": 0.0,
+      "blk": 2.0,
+      "tov": 0.0,
+      "fantasy_points": 15.3
+    },
+    {
       "id": "4702384",
       "name": "Nique Clifford",
       "team": "SAC",
@@ -4478,6 +4551,36 @@
       "blk": 0.0,
       "tov": 0.0,
       "fantasy_points": 2.0
+    },
+    {
+      "id": "4397424",
+      "name": "Neemias Queta",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 15.0,
+      "pts": 7.0,
+      "reb": 3.0,
+      "ast": 2.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 2.0,
+      "fantasy_points": 11.6
+    },
+    {
+      "id": "3150844",
+      "name": "Moritz Wagner",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 22.0,
+      "pts": 15.0,
+      "reb": 4.0,
+      "ast": 3.0,
+      "stl": 2.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 30.3
     },
     {
       "id": "5289900",
@@ -4495,6 +4598,21 @@
       "fantasy_points": 0.0
     },
     {
+      "id": "4351852",
+      "name": "Mitchell Robinson",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 25.0,
+      "pts": 7.0,
+      "reb": 5.0,
+      "ast": 0.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 15.0
+    },
+    {
       "id": "4431823",
       "name": "Miles McBride",
       "team": "NY",
@@ -4510,6 +4628,21 @@
       "fantasy_points": 7.7
     },
     {
+      "id": "5101761",
+      "name": "Mikel Brown Jr.",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 28.0,
+      "pts": 17.0,
+      "reb": 5.0,
+      "ast": 5.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 2.0,
+      "fantasy_points": 28.5
+    },
+    {
       "id": "3147657",
       "name": "Mikal Bridges",
       "team": "NY",
@@ -4523,6 +4656,21 @@
       "blk": 0.0,
       "tov": 2.0,
       "fantasy_points": 22.6
+    },
+    {
+      "id": "4278104",
+      "name": "Michael Porter Jr.",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 40.0,
+      "pts": 27.0,
+      "reb": 12.0,
+      "ast": 2.0,
+      "stl": 0.0,
+      "blk": 2.0,
+      "tov": 3.0,
+      "fantasy_points": 47.4
     },
     {
       "id": "3907498",
@@ -4568,6 +4716,21 @@
       "blk": 0.0,
       "tov": 2.0,
       "fantasy_points": 4.3
+    },
+    {
+      "id": "4277951",
+      "name": "Luka Garza",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 13.0,
+      "pts": 2.0,
+      "reb": 4.0,
+      "ast": 0.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 5.8
     },
     {
       "id": "3945274",
@@ -4645,6 +4808,21 @@
       "fantasy_points": 14.2
     },
     {
+      "id": "4702177",
+      "name": "Keon Ellis",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 25.0,
+      "pts": 2.0,
+      "reb": 3.0,
+      "ast": 4.0,
+      "stl": 0.0,
+      "blk": 2.0,
+      "tov": 0.0,
+      "fantasy_points": 17.6
+    },
+    {
       "id": "4395723",
       "name": "Keldon Johnson",
       "team": "SA",
@@ -4673,6 +4851,21 @@
       "blk": 0.0,
       "tov": 7.0,
       "fantasy_points": 48.5
+    },
+    {
+      "id": "3064514",
+      "name": "Julius Randle",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 44.0,
+      "pts": 24.0,
+      "reb": 9.0,
+      "ast": 4.0,
+      "stl": 2.0,
+      "blk": 0.0,
+      "tov": 5.0,
+      "fantasy_points": 41.8
     },
     {
       "id": "4592479",
@@ -4720,6 +4913,21 @@
       "fantasy_points": 28.8
     },
     {
+      "id": "4683689",
+      "name": "Jordan Walsh",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 24.0,
+      "pts": 15.0,
+      "reb": 6.0,
+      "ast": 1.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 26.7
+    },
+    {
       "id": "3134916",
       "name": "Jordan McLaughlin",
       "team": "SA",
@@ -4763,6 +4971,21 @@
       "blk": 3.0,
       "tov": 1.0,
       "fantasy_points": 22.3
+    },
+    {
+      "id": "4065648",
+      "name": "Jayson Tatum",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 42.0,
+      "pts": 40.0,
+      "reb": 5.0,
+      "ast": 8.0,
+      "stl": 0.0,
+      "blk": 1.0,
+      "tov": 0.0,
+      "fantasy_points": 61.0
     },
     {
       "id": "2596112",
@@ -4870,6 +5093,21 @@
       "fantasy_points": 1.5
     },
     {
+      "id": "5175647",
+      "name": "Hugo Gonzalez",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 6.0,
+      "pts": 0.0,
+      "reb": 2.0,
+      "ast": 0.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 1.4
+    },
+    {
       "id": "6578",
       "name": "Harrison Barnes",
       "team": "SA",
@@ -4913,6 +5151,21 @@
       "blk": 0.0,
       "tov": 0.0,
       "fantasy_points": 0.0
+    },
+    {
+      "id": "5175643",
+      "name": "Egor Demin",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 10.0,
+      "pts": 2.0,
+      "reb": 1.0,
+      "ast": 2.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 8.2
     },
     {
       "id": "5258459",
@@ -5005,6 +5258,21 @@
       "fantasy_points": 32.8
     },
     {
+      "id": "3078576",
+      "name": "Derrick White",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 33.0,
+      "pts": 16.0,
+      "reb": 5.0,
+      "ast": 7.0,
+      "stl": 0.0,
+      "blk": 0.0,
+      "tov": 3.0,
+      "fantasy_points": 29.5
+    },
+    {
       "id": "4683021",
       "name": "Deni Avdija",
       "team": "POR",
@@ -5048,6 +5316,21 @@
       "blk": 0.0,
       "tov": 3.0,
       "fantasy_points": 21.8
+    },
+    {
+      "id": "4432194",
+      "name": "Day'Ron Sharpe",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 17.0,
+      "pts": 4.0,
+      "reb": 6.0,
+      "ast": 0.0,
+      "stl": 1.0,
+      "blk": 1.0,
+      "tov": 1.0,
+      "fantasy_points": 16.2
     },
     {
       "id": "5142620",
@@ -5140,6 +5423,21 @@
       "fantasy_points": 2.0
     },
     {
+      "id": "5174655",
+      "name": "Chaney Johnson",
+      "team": "BKN",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 29.0,
+      "pts": 15.0,
+      "reb": 3.0,
+      "ast": 2.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 1.0,
+      "fantasy_points": 23.6
+    },
+    {
       "id": "5061568",
       "name": "Carter Bryant",
       "team": "SA",
@@ -5168,6 +5466,21 @@
       "blk": 1.0,
       "tov": 3.0,
       "fantasy_points": 41.8
+    },
+    {
+      "id": "4593841",
+      "name": "Baylor Scheierman",
+      "team": "BOS",
+      "date": "20261027",
+      "event_id": "401909877",
+      "minutes": 21.0,
+      "pts": 3.0,
+      "reb": 4.0,
+      "ast": 1.0,
+      "stl": 1.0,
+      "blk": 0.0,
+      "tov": 0.0,
+      "fantasy_points": 12.3
     },
     {
       "id": "4066457",

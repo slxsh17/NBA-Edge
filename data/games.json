@@ -1,6 +1,6 @@
 {
   "date": "20261028",
-  "updated_at": "2026-10-28T22:16:26.951181-04:00",
+  "updated_at": "2026-10-28T23:09:25.666437-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -37,31 +37,31 @@
       "away": "New York Knicks",
       "home": "Chicago Bulls",
       "time": "2026-10-29T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Houston Rockets",
       "home": "Milwaukee Bucks",
       "time": "2026-10-29T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Golden State Warriors",
       "home": "Minnesota Timberwolves",
       "time": "2026-10-29T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Denver Nuggets",
       "home": "New Orleans Pelicans",
       "time": "2026-10-29T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "San Antonio Spurs",
       "home": "Utah Jazz",
       "time": "2026-10-29T01:00Z",
-      "status": "Halftime"
+      "status": "In Progress"
     },
     {
       "away": "Oklahoma City Thunder",
@@ -73,7 +73,7 @@
       "away": "Los Angeles Lakers",
       "home": "LA Clippers",
       "time": "2026-10-29T02:30Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     }
   ]
 }
