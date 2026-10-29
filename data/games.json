@@ -1,19 +1,19 @@
 {
   "date": "20261028",
-  "updated_at": "2026-10-28T20:02:02.393664-04:00",
+  "updated_at": "2026-10-28T21:27:47.730612-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
       "away": "Miami Heat",
       "home": "Atlanta Hawks",
       "time": "2026-10-28T23:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Washington Wizards",
       "home": "Cleveland Cavaliers",
       "time": "2026-10-28T23:00Z",
-      "status": "In Progress"
+      "status": "End of Period"
     },
     {
       "away": "Charlotte Hornets",
@@ -37,31 +37,31 @@
       "away": "New York Knicks",
       "home": "Chicago Bulls",
       "time": "2026-10-29T00:00Z",
-      "status": "Scheduled"
+      "status": "Halftime"
     },
     {
       "away": "Houston Rockets",
       "home": "Milwaukee Bucks",
       "time": "2026-10-29T00:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Golden State Warriors",
       "home": "Minnesota Timberwolves",
       "time": "2026-10-29T00:00Z",
-      "status": "Scheduled"
+      "status": "Halftime"
     },
     {
       "away": "Denver Nuggets",
       "home": "New Orleans Pelicans",
       "time": "2026-10-29T00:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "San Antonio Spurs",
       "home": "Utah Jazz",
       "time": "2026-10-29T01:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Oklahoma City Thunder",
