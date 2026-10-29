@@ -1,12 +1,12 @@
 {
 "schema": 1,
-"updated_at": "2026-10-29T04:22:30+00:00",
+"updated_at": "2026-10-29T04:26:53+00:00",
 "calibration": {
-"sd_scale": 1.063,
+"sd_scale": 1.016,
 "shift_classic": -4.44,
-"shift_single": 0.9
+"shift_single": 1.86
 },
-"calibration_players": 793,
+"calibration_players": 982,
 "summary": [
 {
 "format": "classic",
@@ -44,35 +44,35 @@
 {
 "format": "single",
 "strategy": "cash",
-"slates": 3,
-"avg_actual": 218.0,
-"avg_proj": 213.0,
-"avg_pct_of_best": 84.4,
-"within_sim_range": 100,
+"slates": 5,
+"avg_actual": 217.0,
+"avg_proj": 208.1,
+"avg_pct_of_best": 83.2,
+"within_sim_range": 80,
 "below_range": 0,
-"above_range": 0
+"above_range": 20
 },
 {
 "format": "single",
 "strategy": "sim_winner",
-"slates": 3,
-"avg_actual": 220.6,
-"avg_proj": 210.5,
-"avg_pct_of_best": 85.4,
-"within_sim_range": 100,
+"slates": 5,
+"avg_actual": 223.4,
+"avg_proj": 206.1,
+"avg_pct_of_best": 85.6,
+"within_sim_range": 80,
 "below_range": 0,
-"above_range": 0
+"above_range": 20
 },
 {
 "format": "single",
 "strategy": "tournament",
-"slates": 3,
-"avg_actual": 213.8,
-"avg_proj": 210.3,
-"avg_pct_of_best": 82.8,
-"within_sim_range": 100,
+"slates": 5,
+"avg_actual": 221.0,
+"avg_proj": 205.4,
+"avg_pct_of_best": 84.7,
+"within_sim_range": 80,
 "below_range": 0,
-"above_range": 0
+"above_range": 20
 }
 ],
 "slates": [
@@ -3104,6 +3104,576 @@
 "slot": "UTIL",
 "proj": 17.07,
 "actual": 13.2
+}
+]
+}
+]
+},
+{
+"date": "2026-10-28",
+"slate": "single:ORL@TOR",
+"label": "ORL @ TOR",
+"format": "single",
+"rebuilt": true,
+"final": true,
+"hindsight_best": {
+"score": 256.5,
+"players": [
+{
+"name": "Scottie Barnes",
+"team": "TOR",
+"slot": "UTIL"
+},
+{
+"name": "Desmond Bane",
+"team": "ORL",
+"slot": "UTIL"
+},
+{
+"name": "Immanuel Quickley",
+"team": "TOR",
+"slot": "UTIL"
+},
+{
+"name": "Jamal Shead",
+"team": "TOR",
+"slot": "UTIL"
+},
+{
+"name": "Trayce Jackson-Davis",
+"team": "TOR",
+"slot": "UTIL"
+},
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 188.8,
+"actual": 164.8,
+"sim": {
+"p10": 141.3,
+"p50": 187.4,
+"p90": 235.0,
+"mean": 187.9
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jakob Poeltl",
+"proj": 22.19,
+"actual": 3.4
+},
+{
+"name": "Franz Wagner",
+"proj": 37.04,
+"actual": 26.3
+}
+],
+"boosts": [
+{
+"name": "RJ Barrett",
+"proj": 32.25,
+"actual": 47.8
+},
+{
+"name": "Immanuel Quickley",
+"proj": 29.45,
+"actual": 35.1
+}
+],
+"players": [
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "MVP",
+"proj": 37.04,
+"actual": 26.3
+},
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 32.25,
+"actual": 47.8
+},
+{
+"name": "Immanuel Quickley",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 29.45,
+"actual": 35.1
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 27.98,
+"actual": 13.9
+},
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 21.36,
+"actual": 25.1
+},
+{
+"name": "Jakob Poeltl",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 22.19,
+"actual": 3.4
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 186.8,
+"actual": 203.4,
+"sim": {
+"p10": 139.8,
+"p50": 184.8,
+"p90": 232.4,
+"mean": 185.8
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jakob Poeltl",
+"proj": 22.19,
+"actual": 3.4
+},
+{
+"name": "Anthony Black",
+"proj": 27.98,
+"actual": 13.9
+}
+],
+"boosts": [
+{
+"name": "RJ Barrett",
+"proj": 32.25,
+"actual": 47.8
+},
+{
+"name": "Scottie Barnes",
+"proj": 37.4,
+"actual": 54.2
+}
+],
+"players": [
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"slot": "MVP",
+"proj": 32.25,
+"actual": 47.8
+},
+{
+"name": "Scottie Barnes",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 37.4,
+"actual": 54.2
+},
+{
+"name": "Immanuel Quickley",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 29.45,
+"actual": 35.1
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 27.98,
+"actual": 13.9
+},
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 21.36,
+"actual": 25.1
+},
+{
+"name": "Jakob Poeltl",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 22.19,
+"actual": 3.4
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 186.3,
+"actual": 189.2,
+"sim": {
+"p10": 138.1,
+"p50": 184.2,
+"p90": 232.0,
+"mean": 185.3
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jakob Poeltl",
+"proj": 22.19,
+"actual": 3.4
+},
+{
+"name": "Anthony Black",
+"proj": 27.98,
+"actual": 13.9
+}
+],
+"boosts": [
+{
+"name": "RJ Barrett",
+"proj": 32.25,
+"actual": 47.8
+},
+{
+"name": "Scottie Barnes",
+"proj": 37.4,
+"actual": 54.2
+}
+],
+"players": [
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"slot": "MVP",
+"proj": 32.25,
+"actual": 47.8
+},
+{
+"name": "Scottie Barnes",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 37.4,
+"actual": 54.2
+},
+{
+"name": "Immanuel Quickley",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 29.45,
+"actual": 35.1
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 27.98,
+"actual": 13.9
+},
+{
+"name": "Collin Murray-Boyles",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 20.89,
+"actual": 10.9
+},
+{
+"name": "Jakob Poeltl",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 22.19,
+"actual": 3.4
+}
+]
+}
+]
+},
+{
+"date": "2026-10-28",
+"slate": "single:SAS@UTA",
+"label": "SAS @ UTA",
+"format": "single",
+"rebuilt": true,
+"final": true,
+"hindsight_best": {
+"score": 270.8,
+"players": [
+{
+"name": "Dylan Harper",
+"team": "SAS",
+"slot": "UTIL"
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"slot": "UTIL"
+},
+{
+"name": "Darryn Peterson",
+"team": "UTA",
+"slot": "UTIL"
+},
+{
+"name": "Jaxson Hayes",
+"team": "UTA",
+"slot": "UTIL"
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"slot": "UTIL"
+},
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 212.7,
+"actual": 266.1,
+"sim": {
+"p10": 158.9,
+"p50": 211.5,
+"p90": 264.5,
+"mean": 211.6
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Isaiah Collier",
+"proj": 21.21,
+"actual": 18.4
+},
+{
+"name": "De'Aaron Fox",
+"proj": 32.15,
+"actual": 32.6
+}
+],
+"boosts": [
+{
+"name": "Victor Wembanyama",
+"proj": 49.28,
+"actual": 72.3
+},
+{
+"name": "Devin Vassell",
+"proj": 24.73,
+"actual": 38.0
+}
+],
+"players": [
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "MVP",
+"proj": 49.28,
+"actual": 72.3
+},
+{
+"name": "Stephon Castle",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 33.61,
+"actual": 39.2
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 32.15,
+"actual": 32.6
+},
+{
+"name": "Darryn Peterson",
+"team": "UTA",
+"slot": "UTIL",
+"proj": 27.05,
+"actual": 29.5
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 24.73,
+"actual": 38.0
+},
+{
+"name": "Isaiah Collier",
+"team": "UTA",
+"slot": "UTIL",
+"proj": 21.21,
+"actual": 18.4
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 209.2,
+"actual": 260.4,
+"sim": {
+"p10": 157.4,
+"p50": 207.9,
+"p90": 258.9,
+"mean": 208.3
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "De'Aaron Fox",
+"proj": 32.15,
+"actual": 32.6
+},
+{
+"name": "Darryn Peterson",
+"proj": 27.05,
+"actual": 29.5
+}
+],
+"boosts": [
+{
+"name": "Victor Wembanyama",
+"proj": 49.28,
+"actual": 72.3
+},
+{
+"name": "Devin Vassell",
+"proj": 24.73,
+"actual": 38.0
+}
+],
+"players": [
+{
+"name": "Darryn Peterson",
+"team": "UTA",
+"slot": "MVP",
+"proj": 27.05,
+"actual": 29.5
+},
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 49.28,
+"actual": 72.3
+},
+{
+"name": "Stephon Castle",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 33.61,
+"actual": 39.2
+},
+{
+"name": "Dylan Harper",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 28.88,
+"actual": 34.0
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 32.15,
+"actual": 32.6
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 24.73,
+"actual": 38.0
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 212.7,
+"actual": 266.1,
+"sim": {
+"p10": 158.9,
+"p50": 211.5,
+"p90": 264.5,
+"mean": 211.6
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Isaiah Collier",
+"proj": 21.21,
+"actual": 18.4
+},
+{
+"name": "De'Aaron Fox",
+"proj": 32.15,
+"actual": 32.6
+}
+],
+"boosts": [
+{
+"name": "Victor Wembanyama",
+"proj": 49.28,
+"actual": 72.3
+},
+{
+"name": "Devin Vassell",
+"proj": 24.73,
+"actual": 38.0
+}
+],
+"players": [
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "MVP",
+"proj": 49.28,
+"actual": 72.3
+},
+{
+"name": "Stephon Castle",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 33.61,
+"actual": 39.2
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 32.15,
+"actual": 32.6
+},
+{
+"name": "Darryn Peterson",
+"team": "UTA",
+"slot": "UTIL",
+"proj": 27.05,
+"actual": 29.5
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 24.73,
+"actual": 38.0
+},
+{
+"name": "Isaiah Collier",
+"team": "UTA",
+"slot": "UTIL",
+"proj": 21.21,
+"actual": 18.4
 }
 ]
 }
