@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-10-28",
-"updated_at": "2026-10-28T23:34:11+00:00",
+"updated_at": "2026-10-29T00:06:58+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -730,17 +730,6 @@
 "mention_count": 0
 },
 {
-"name": "Draymond Green",
-"team": "GSW",
-"fta_own": null,
-"linestar_own": 2.4,
-"mentions": 0,
-"articles": [],
-"consensus_own": 2.4,
-"source_count": 1,
-"mention_count": 0
-},
-{
 "name": "Kobe Sanders",
 "team": "LAC",
 "fta_own": null,
@@ -829,6 +818,17 @@
 "mention_count": 0
 },
 {
+"name": "Trevon Brazile",
+"team": "DEN",
+"fta_own": null,
+"linestar_own": 0.5,
+"mentions": 0,
+"articles": [],
+"consensus_own": 0.5,
+"source_count": 1,
+"mention_count": 0
+},
+{
 "name": "Jase Richardson",
 "team": "ORL",
 "fta_own": null,
@@ -872,7 +872,7 @@
 {
 "name": "Stephon Castle",
 "team": "SAS",
-"own": 68.3
+"own": 68.0
 },
 {
 "name": "Devin Vassell",
@@ -887,7 +887,7 @@
 {
 "name": "Ace Bailey",
 "team": "UTA",
-"own": 42.8
+"own": 42.7
 },
 {
 "name": "Julian Champagnie",
