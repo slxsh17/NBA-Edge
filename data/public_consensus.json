@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-10-29",
-"updated_at": "2026-10-29T18:46:12+00:00",
+"updated_at": "2026-10-29T19:47:54+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -19,6 +19,10 @@
 {
 "title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Thursday 10/29/26",
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-thursday-10-29-26/"
+},
+{
+"title": "Three must-start NBA DFS picks for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/three-must-start-nba-dfs-picks-for-thursday-10-29-26/"
 }
 ]
 },
@@ -43,34 +47,38 @@
 {
 "name": "Darius Acuff",
 "team": "SAC",
-"fta_own": 58.4,
-"linestar_own": 61.8,
+"fta_own": 58.3,
+"linestar_own": 61.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 60.1,
+"consensus_own": 60.0,
 "source_count": 2,
 "mention_count": 0
 },
 {
 "name": "Domantas Sabonis",
 "team": "SAC",
-"fta_own": 48.0,
+"fta_own": 48.1,
 "linestar_own": null,
-"mentions": 1,
+"mentions": 2,
 "articles": [
 {
 "title": "Top DraftKings NBA DFS Targets, Values for Thursday 10/29/26",
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
+},
+{
+"title": "Three must-start NBA DFS picks for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/three-must-start-nba-dfs-picks-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 48.0,
+"consensus_own": 48.1,
 "source_count": 2,
-"mention_count": 1
+"mention_count": 2
 },
 {
 "name": "Evan Mobley",
 "team": "CLE",
-"fta_own": 47.7,
+"fta_own": 47.8,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -79,15 +87,15 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 47.7,
+"consensus_own": 47.8,
 "source_count": 2,
 "mention_count": 1
 },
 {
 "name": "Deni Avdija",
 "team": "POR",
-"fta_own": 51.0,
-"linestar_own": 42.8,
+"fta_own": 51.2,
+"linestar_own": 43.1,
 "mentions": 1,
 "articles": [
 {
@@ -95,7 +103,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 46.9,
+"consensus_own": 47.2,
 "source_count": 3,
 "mention_count": 1
 },
@@ -114,7 +122,7 @@
 "name": "Damian Lillard",
 "team": "POR",
 "fta_own": null,
-"linestar_own": 40.3,
+"linestar_own": 40.2,
 "mentions": 1,
 "articles": [
 {
@@ -122,15 +130,15 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 40.3,
+"consensus_own": 40.2,
 "source_count": 2,
 "mention_count": 1
 },
 {
 "name": "Zach LaVine",
 "team": "SAC",
-"fta_own": 29.8,
-"linestar_own": 44.8,
+"fta_own": 29.7,
+"linestar_own": 44.0,
 "mentions": 1,
 "articles": [
 {
@@ -138,15 +146,31 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 37.3,
+"consensus_own": 36.9,
 "source_count": 3,
+"mention_count": 1
+},
+{
+"name": "Jarrett Allen",
+"team": "CLE",
+"fta_own": null,
+"linestar_own": 32.1,
+"mentions": 1,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
+}
+],
+"consensus_own": 32.1,
+"source_count": 2,
 "mention_count": 1
 },
 {
 "name": "CJ McCollum",
 "team": "ATL",
 "fta_own": 46.8,
-"linestar_own": 27.1,
+"linestar_own": 27.2,
 "mentions": 0,
 "articles": [],
 "consensus_own": 37.0,
@@ -154,26 +178,10 @@
 "mention_count": 0
 },
 {
-"name": "Jarrett Allen",
-"team": "CLE",
-"fta_own": null,
-"linestar_own": 32.0,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Thursday 10/29/26",
-"url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
-}
-],
-"consensus_own": 32.0,
-"source_count": 2,
-"mention_count": 1
-},
-{
 "name": "Peyton Watson",
 "team": "CLE",
 "fta_own": null,
-"linestar_own": 30.8,
+"linestar_own": 31.0,
 "mentions": 1,
 "articles": [
 {
@@ -181,7 +189,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 30.8,
+"consensus_own": 31.0,
 "source_count": 2,
 "mention_count": 1
 },
@@ -189,26 +197,26 @@
 "name": "Cedric Coward",
 "team": "MEM",
 "fta_own": 34.1,
-"linestar_own": 36.3,
+"linestar_own": 35.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 35.2,
+"consensus_own": 35.0,
 "source_count": 2,
 "mention_count": 0
 },
 {
 "name": "Donovan Clingan",
 "team": "POR",
-"fta_own": 36.9,
-"linestar_own": 20.2,
+"fta_own": 37.1,
+"linestar_own": 22.3,
 "mentions": 1,
 "articles": [
 {
-"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Thursday 10/29/26",
-"url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-thursday-10-29-26/"
+"title": "Three must-start NBA DFS picks for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/three-must-start-nba-dfs-picks-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 28.5,
+"consensus_own": 29.7,
 "source_count": 3,
 "mention_count": 1
 },
@@ -216,17 +224,17 @@
 "name": "Precious Achiuwa",
 "team": "SAC",
 "fta_own": null,
-"linestar_own": 33.5,
+"linestar_own": 33.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 33.5,
+"consensus_own": 33.2,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Ty Jerome",
 "team": "MEM",
-"fta_own": 27.4,
+"fta_own": 27.5,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -235,7 +243,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 27.4,
+"consensus_own": 27.5,
 "source_count": 2,
 "mention_count": 1
 },
@@ -259,7 +267,7 @@
 "name": "Nickeil Alexander-Walker",
 "team": "ATL",
 "fta_own": null,
-"linestar_own": 22.0,
+"linestar_own": 22.2,
 "mentions": 1,
 "articles": [
 {
@@ -267,7 +275,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 22.0,
+"consensus_own": 22.2,
 "source_count": 2,
 "mention_count": 1
 },
@@ -275,7 +283,7 @@
 "name": "Dyson Daniels",
 "team": "ATL",
 "fta_own": 30.3,
-"linestar_own": 21.8,
+"linestar_own": 21.9,
 "mentions": 0,
 "articles": [],
 "consensus_own": 26.1,
@@ -286,10 +294,10 @@
 "name": "Saddiq Bey",
 "team": "NOP",
 "fta_own": null,
-"linestar_own": 17.1,
+"linestar_own": 17.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 17.1,
+"consensus_own": 17.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -297,10 +305,10 @@
 "name": "Jeremiah Fears",
 "team": "NOP",
 "fta_own": null,
-"linestar_own": 15.4,
+"linestar_own": 15.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 15.4,
+"consensus_own": 15.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -308,7 +316,7 @@
 "name": "Toumani Camara",
 "team": "POR",
 "fta_own": null,
-"linestar_own": 6.6,
+"linestar_own": 6.5,
 "mentions": 1,
 "articles": [
 {
@@ -316,9 +324,49 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
 }
 ],
-"consensus_own": 6.6,
+"consensus_own": 6.5,
 "source_count": 2,
 "mention_count": 1
+},
+{
+"name": "Zion Williamson",
+"team": "NOP",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 2,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
+},
+{
+"title": "Three must-start NBA DFS picks for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/three-must-start-nba-dfs-picks-for-thursday-10-29-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 2
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 2,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
+},
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-thursday-10-29-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 2
 },
 {
 "name": "Robert Williams",
@@ -332,8 +380,8 @@
 "url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
 },
 {
-"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Thursday 10/29/26",
-"url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-thursday-10-29-26/"
+"title": "Three must-start NBA DFS picks for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/three-must-start-nba-dfs-picks-for-thursday-10-29-26/"
 }
 ],
 "consensus_own": null,
@@ -375,38 +423,6 @@
 {
 "name": "Trey Murphy",
 "team": "NOP",
-"fta_own": null,
-"linestar_own": null,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Thursday 10/29/26",
-"url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
-}
-],
-"consensus_own": null,
-"source_count": 1,
-"mention_count": 1
-},
-{
-"name": "Zion Williamson",
-"team": "NOP",
-"fta_own": null,
-"linestar_own": null,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Thursday 10/29/26",
-"url": "https://dknetwork.draftkings.com/2026/10/28/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-thursday-10-29-26/"
-}
-],
-"consensus_own": null,
-"source_count": 1,
-"mention_count": 1
-},
-{
-"name": "Jrue Holiday",
-"team": "POR",
 "fta_own": null,
 "linestar_own": null,
 "mentions": 1,
@@ -547,6 +563,38 @@
 "consensus_own": null,
 "source_count": 1,
 "mention_count": 1
+},
+{
+"name": "Maxime Raynaud",
+"team": "SAC",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Three must-start NBA DFS picks for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/three-must-start-nba-dfs-picks-for-thursday-10-29-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Dylan Cardwell",
+"team": "SAC",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Three must-start NBA DFS picks for Thursday 10/29/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/three-must-start-nba-dfs-picks-for-thursday-10-29-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
 }
 ],
 "singles": {
@@ -581,27 +629,27 @@
 {
 "name": "Deni Avdija",
 "team": "POR",
-"own": 71.4
+"own": 74.3
 },
 {
 "name": "Damian Lillard",
 "team": "POR",
-"own": 49.4
+"own": 51.4
 },
 {
 "name": "Donovan Clingan",
 "team": "POR",
-"own": 42.1
+"own": 45.1
 },
 {
 "name": "Cedric Coward",
 "team": "MEM",
-"own": 39.7
+"own": 39.6
 },
 {
 "name": "Toumani Camara",
 "team": "POR",
-"own": 35.5
+"own": 35.4
 }
 ]
 },
