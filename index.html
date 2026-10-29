@@ -185,6 +185,8 @@ tr.detail td{background:var(--soft);text-align:left;font-size:13px;padding:10px 
 .override input{width:76px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:4px 8px}
 .tag.e{background:var(--ink);color:var(--paper)}
 .review-badge{font-size:12px;font-weight:600;color:var(--warn);margin-left:auto}
+#fd-export{margin-top:12px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+#fd-export[hidden]{display:none}
 .sim-badge{font-size:12px;font-weight:600;color:var(--orange);padding:6px 14px 0}
 footer{font-size:12.5px;color:var(--muted);padding:10px 0 40px;border-top:1px solid var(--line)}
 footer a{color:inherit}
@@ -224,6 +226,7 @@ details summary{cursor:pointer}
       <button class="btn small" id="refresh" type="button">Refresh</button>
       <button class="btn small" id="upload-btn" type="button">Use my CSV</button>
       <input type="file" id="csv" accept=".csv,text/csv" hidden>
+      <input type="file" id="fd-ids" accept=".csv,text/csv" hidden>
     </div>
   </div>
 </header>
@@ -246,7 +249,7 @@ details summary{cursor:pointer}
       <div id="entries"></div>
       <div class="ctl">
         <span>Lineups</span>
-        <div class="seg" id="count"><button data-v="1" aria-pressed="true">1</button><button data-v="5">5</button><button data-v="10">10</button><button data-v="20">20</button></div>
+        <div class="seg" id="count"><button data-v="1" aria-pressed="true">1</button><button data-v="5">5</button><button data-v="20">20</button><button data-v="50">50</button><button data-v="150">150</button></div>
         <span>Contest</span>
         <div class="seg" id="mode"><button data-v="cash" aria-pressed="true">Cash</button><button data-v="gpp">Tournament</button></div>
         <span id="exp-label">Max per player</span>
@@ -257,6 +260,7 @@ details summary{cursor:pointer}
       <button class="btn primary" id="build" type="button">Build lineups</button>
       <div id="build-status" role="status"></div>
       <div id="lineups"></div>
+      <div id="fd-export" hidden><button class="btn" id="fd-export-btn" type="button">Download for FanDuel</button><div class="muted" id="fd-export-msg"></div></div>
       <div id="exposure-summary"></div>
       <div id="settings" hidden></div>
     </section>
@@ -458,8 +462,41 @@ async function applyCSV(text,remember=true){
   S.games=(S.today&&S.today.date===S.day?S.today.games:[]).filter(g=>teams.has(g.home)||teams.has(g.away));
   if(teams.size===2){S.format='single';S.sgId='csv'}else if(S.format==='single'){S.format='classic'}
   if(remember)store.set('csv',{day:S.day,text});
+  ingestIds(rows);
 }
 
+// ---------- FanDuel bulk upload ----------
+// FanDuel's lineup upload wants FanDuel player IDs (the "Id" column of the player list you download
+// from a contest). Only those IDs are taken from the file; projections stay automatic.
+function idStore(){const v=store.get('fdids',null);return v&&v.day===S.day?v:{day:S.day,maps:{}}}
+function curIdKey(){if(S.format==='single'){const g=S.games[0];return g?'sg:'+[g.away,g.home].sort().join('@'):''}return 'main'}
+function ingestIds(rows){
+  const h=rows[0].map(x=>x.trim().toLowerCase()),iId=h.indexOf('id'),iName=h.indexOf('nickname'),iF=h.indexOf('first name'),iL=h.indexOf('last name'),iTeam=h.indexOf('team');
+  if(iId<0||iTeam<0)return null;
+  const map={},teams=new Set();
+  for(const r of rows.slice(1)){const name=(iName>=0&&r[iName])||[r[iF],r[iL]].filter(Boolean).join(' ');const id=String(r[iId]||'').trim();if(!name||!id)continue;const t=canon(r[iTeam]);teams.add(t);map[key(name)+'|'+t]=id}
+  if(!Object.keys(map).length)return null;
+  const k=teams.size===2?'sg:'+[...teams].sort().join('@'):'main';const st=idStore();st.maps[k]=map;store.set('fdids',st);return k;
+}
+function fdHeader(){return F().order.flatMap(s=>Array(F().need[s]).fill(s==='MVP'?'MVP - 1.5X Points':s))}
+function exportable(){return S.lineups.filter(l=>!l.review)}
+function missingIds(){const m=idStore().maps[curIdKey()]||{};const miss=new Set();exportable().forEach(l=>l.picks.forEach(x=>{if(!m[pkey(x.p)])miss.add(x.p.name)}));return {m,miss:[...miss]}}
+function downloadFD(){
+  const {m,miss}=missingIds(),msg=$('fd-export-msg');
+  if(miss.length){msg.textContent=`No FanDuel ID for ${miss.slice(0,4).join(', ')}${miss.length>4?' and '+(miss.length-4)+' more':''}. Choose the player list for this exact contest.`;return false}
+  const rows=[fdHeader().join(',')].concat(exportable().map(l=>l.picks.map(x=>m[pkey(x.p)]).join(',')));
+  const blob=new Blob([rows.join('\r\n')+'\r\n'],{type:'text/csv'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download=`nba-edge-fanduel-${S.day}-${S.format==='single'?curIdKey().slice(3).replace('@','-'):'main'}.csv`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000);
+  msg.textContent=`Saved ${rows.length-1} lineup${rows.length>2?'s':''}. On FanDuel: open the contest, choose Upload lineups from CSV, and pick this file.`;return true;
+}
+function renderExport(){const box=$('fd-export');if(!box)return;const n=exportable().length;box.hidden=!n;if(!n)return;
+  const {miss}=missingIds();$('fd-export-btn').textContent=miss.length?'Download for FanDuel (link IDs first)':'Download for FanDuel';
+  if(miss.length&&!$('fd-export-msg').dataset.touched)$('fd-export-msg').textContent='FanDuel needs its own player IDs. On FanDuel, open the contest and tap Download players list, then choose that file here. Only the IDs are used.';}
+$('fd-export-btn').onclick=()=>{$('fd-export-msg').dataset.touched='1';const {miss}=missingIds();if(miss.length)$('fd-ids').click();else downloadFD()};
+$('fd-ids').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;const msg=$('fd-export-msg');
+  try{const k=ingestIds(parseCSV(await f.text()));if(!k){msg.textContent='That file has no Id column. Use the player list downloaded from the FanDuel contest.';return}
+    if(k!==curIdKey()){msg.textContent=k==='main'?'That player list is for a multi-game slate, but you\u2019re on a single game. Switch to Classic or choose the single-game list.':'That player list is for a single game ('+k.slice(3).replace('@',' & ')+'). Choose the list for this slate.';return}
+    downloadFD();renderExport()}catch(err){msg.textContent='Couldn\u2019t read that file.'}};
 
 // ---------- slate / games ----------
 const started=g=>!!g.time&&Date.now()>=Date.parse(g.time);
@@ -623,7 +660,7 @@ function lateFlex(picks,fixedKeys=new Set()){
   const order=F().order;
   return [...fixed,...ps.map((p,i)=>({p,slot:best[i]}))].sort((a,b)=>order.indexOf(a.slot)-order.indexOf(b.slot)||tip(a.p)-tip(b.p));
 }
-async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],minUnique=2}){
+async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],minUnique=2,noise=null}){
   const vars=[],bySlot={},byP={},byTeam={};
   const need=F().need,size=F().size;
   for(const s in need)bySlot[s]=[];
@@ -641,8 +678,10 @@ async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],mi
   fixed.forEach((f,j)=>{const vs=vars.filter(v=>pkey(v.p)===pkey(f.p)&&v.s===f.slot);if(vs.length)rows.push(c('fix'+j,vs,()=>1,glpk.GLP_FX,1,1))});
   // Classic: lineups differ by minUnique players. Single game: by at least one player-or-slot change.
   previous.forEach((keys,j)=>{const single=S.format==='single';const vs=vars.filter(v=>keys.has(single?pkey(v.p)+'|'+v.s:pkey(v.p)));if(vs.length)rows.push(c('div'+j,vs,()=>1,glpk.GLP_UP,0,single?size-1:size-minUnique))});
-  const lp={name:'edge',objective:{direction:glpk.GLP_MAX,name:'z',vars:vars.map(v=>({name:v.name,coef:score(v.p)*multOf(v.s)+(S.format==='classic'?flexBonus(v.p,v.s):0)}))},subjectTo:rows,binaries:vars.map(v=>v.name)};
-  const res=await glpk.solve(lp,{msglev:glpk.GLP_MSG_OFF,presol:true,tmlim:20});
+  const lp={name:'edge',objective:{direction:glpk.GLP_MAX,name:'z',vars:vars.map(v=>({name:v.name,coef:score(v.p)*(noise?noise.get(pkey(v.p))||1:1)*multOf(v.s)+(S.format==='classic'?flexBonus(v.p,v.s):0)}))},subjectTo:rows,binaries:vars.map(v=>v.name)};
+  // Big batches: accept a lineup within 0.3% of optimal and cap each solve, so 150 lineups finish in a minute or two.
+  const big=S.count>20;
+  const res=await glpk.solve(lp,{msglev:glpk.GLP_MSG_OFF,presol:true,tmlim:big?4:20,mipgap:big?0.003:0.0001});
   if(![glpk.GLP_OPT,glpk.GLP_FEAS].includes(res?.result?.status))return null;
   const chosen=vars.filter(v=>res.result.vars[v.name]>.5);if(chosen.length!==size)return null;
   const order=F().order;chosen.sort((a,b)=>order.indexOf(a.s)-order.indexOf(b.s));
@@ -661,6 +700,14 @@ async function build(){
     const glpk=await loadGLPK();const made=[],uses=new Map();
     const cap=S.count>1?Math.max(1,Math.ceil(S.count*S.exposure/100)):S.count;
     const keyOf=x=>S.format==='single'?pkey(x.p)+'|'+x.slot:pkey(x.p),minU=S.count>1?S.cfg.minUnique:1,size=F().size;
+    // Big batches: drop players who can't realistically make a lineup (keeps the solver fast).
+    if(S.count>20&&S.format==='classic'&&pool.length>90){
+      const keep=new Set([...S.locks]);const val=p=>score(p)/Math.max(p.salary,3500)*1000;
+      [...pool].sort((a,b)=>score(b)-score(a)).slice(0,45).forEach(p=>keep.add(pkey(p)));
+      [...pool].sort((a,b)=>val(b)-val(a)).slice(0,45).forEach(p=>keep.add(pkey(p)));
+      for(const pos of ['PG','SG','SF','PF','C'])pool.filter(p=>p.position.split('/').includes(pos)).sort((a,b)=>score(b)-score(a)).slice(0,10).forEach(p=>keep.add(pkey(p)));
+      for(let i=pool.length-1;i>=0;i--)if(!keep.has(pkey(pool[i])))pool.splice(i,1);
+    }
     const capNow=S.format==='single'?S.cfg.sgCap:CAP,teamMax=S.format==='single'?5:Math.min(MAX_TEAM,S.cfg.maxTeam);
     if(S.mode==='gpp'&&S.useSim&&!S.review){
       const byK=new Map(pool.map(p=>[pkey(p),p]));
@@ -682,7 +729,20 @@ async function build(){
     for(let n=made.length;n<S.count;n++){
       status.textContent=`Building lineup ${n+1} of ${S.count}…`;
       const excludeKeys=new Set([...uses].filter(([k,c])=>c>=cap&&!S.locks.has(k)).map(([k])=>k));
-      let picks=await solveOne(glpk,pool,{excludeKeys,previous:made.map(l=>new Set(l.picks.map(x=>S.format==='single'?pkey(x.p)+'|'+x.slot:pkey(x.p)))),minUnique:S.count>1?S.cfg.minUnique:1});
+      const prevSets=made.map(l=>new Set(l.picks.map(keyOf)));
+      let picks=null;
+      // Big batches: re-solve with small random shifts to every projection (like simulating
+      // slightly different nights) until the lineup is new enough. Each solve stays simple and
+      // fast; the slow exact method is only the fallback.
+      if(S.count>20&&made.length>=3){
+        const sigma=S.mode==='gpp'?0.15:0.08;
+        for(let t=0;t<12&&!picks;t++){
+          const noise=new Map(pool.map(p=>{let z=0;for(let k=0;k<6;k++)z+=Math.random();return [pkey(p),Math.exp(sigma*(z-3)*1.41)]}));
+          const cand=await solveOne(glpk,pool,{excludeKeys,noise});
+          if(cand&&prevSets.every(st=>cand.filter(x=>st.has(keyOf(x))).length<=size-minU))picks=cand;
+        }
+      }
+      if(!picks)picks=await solveOne(glpk,pool,{excludeKeys,previous:prevSets,minUnique:minU});
       if(!picks)break;
       picks=lateFlex(picks,new Set(picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).map(x=>pkey(x.p))));
       const l={picks,built:Date.now(),review:S.review&&picks.some(x=>{const g=gameOf(x.p);return g&&started(g)})};l.proj0=total(l);made.push(l);
@@ -690,7 +750,7 @@ async function build(){
       await new Promise(r=>setTimeout(r,0));
     }
     if(!made.length){status.textContent='No valid lineup fits these settings. Remove some ✓ or turn on more games.';return}
-    S.lineups=made;saveDayState();renderLineups(true);
+    S.lineups=made;S.showAll=false;saveDayState();renderLineups(true);
     status.textContent=made.length<S.count?`Built ${made.length} of ${S.count}. The max-per-player limit ran out of combinations; raise it for more.`:`Built ${made.length} lineup${made.length>1?'s':''}.`;
   }catch(e){status.textContent=e.message}
   finally{btn.disabled=false}
@@ -818,8 +878,10 @@ $('entries').addEventListener('change',e=>{const s=e.target.closest('[data-di]')
 function renderLineups(fresh=false){
   renderEntries();
   const box=$('lineups');
+  renderExport();
   if(!S.lineups.length){box.innerHTML='';$('exposure-summary').innerHTML='';return}
-  box.innerHTML=S.lineups.map((l,i)=>{
+  const SHOW=10,shown=S.showAll?S.lineups:S.lineups.slice(0,SHOW);
+  box.innerHTML=shown.map((l,i)=>{
     const sal=l.picks.reduce((s,x)=>s+salOf(x),0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/l.picks.length;
     const live=l.picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).length;
     const canSwap=S.format==='classic'&&!S.review&&live>0&&live<l.picks.length;const reviewOnly=l.review;const gone=l.picks.filter(x=>x.p.out);const drift=pts-(l.proj0??pts);
@@ -833,13 +895,13 @@ function renderLineups(fresh=false){
       ${l.sim!=null?`<div class="sim-badge">Simulated winner: top 5% in ${l.sim}% of simulated nights</div>`:''}
       ${note?`<div class="lu-note">${note}</div>`:''}
       ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(salOf(x))}</span><span class="pts">${x.p.out?'0.0':(x.p.proj*multOf(x.slot)).toFixed(1)}${multOf(x.slot)>1?`<span class="mult">${multOf(x.slot)}x</span>`:''}</span></div>`}).join('')}
-    </article>`}).join('');
+    </article>`}).join('')+(S.lineups.length>SHOW?`<button class="btn small" id="show-all" type="button" style="margin-top:8px">${S.showAll?'Show first '+SHOW:'Show all '+S.lineups.length+' lineups'}</button>`:'');
   if(S.lineups.length>1){const c=new Map();S.lineups.forEach(l=>l.picks.forEach(x=>c.set(x.p.name,(c.get(x.p.name)||0)+1)));
-    const top=[...c].sort((a,b)=>b[1]-a[1]).slice(0,10);
+    const top=[...c].sort((a,b)=>b[1]-a[1]).slice(0,S.lineups.length>20?20:10);
     $('exposure-summary').innerHTML=`<div class="exposure"><div class="muted" style="margin-bottom:4px">Most used players</div>${top.map(([n,k])=>`<span><b>${esc(n)}</b> ${Math.round(k/S.lineups.length*100)}%</span>`).join('')}</div>`}
   else $('exposure-summary').innerHTML='';
 }
-$('lineups').addEventListener('click',async e=>{const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]'),en=e.target.closest('[data-enter]');
+$('lineups').addEventListener('click',async e=>{if(e.target.id==='show-all'){S.showAll=!S.showAll;renderLineups();return}const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]'),en=e.target.closest('[data-enter]');
   if(en){const l=S.lineups[+en.dataset.enter];const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(!(S.entries||[]).some(x=>x.picks.map(y=>pkey(y.p)+y.slot).sort().join()===k)){(S.entries??=[]).push({label:'',picks:l.picks.map(x=>({...x}))});saveEntries()}en.textContent='Saved to My entries';renderEntries();setTimeout(()=>en.textContent='I entered this',1500)}
   if(s)lateSwap(+s.dataset.swap);
   if(c){const l=S.lineups[+c.dataset.copy];const text=l.picks.map(x=>`${x.slot} ${x.p.name} (${x.p.team}) ${money(salOf(x))}`).join('\n');try{await navigator.clipboard.writeText(text);c.textContent='Copied'}catch(err){c.textContent='Copy failed'}setTimeout(()=>c.textContent='Copy',1500)}});
