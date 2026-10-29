@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T20:14:34.400669+00:00",
+  "updated_at": "2026-10-29T21:03:30.135967+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -153,14 +153,19 @@
       "status": "OUT"
     },
     {
-      "name": "Alperen Sengun",
+      "name": "Reed Sheppard",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Marcus Smart",
       "team": "HOU",
       "status": "OUT"
+    },
+    {
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Steven Adams",
