@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T00:42:57.332809+00:00",
+  "updated_at": "2026-10-29T01:42:11.315672+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -178,12 +178,7 @@
       "status": "OUT"
     },
     {
-      "name": "Rui Hachimura",
-      "team": "LAC",
-      "status": "OUT"
-    },
-    {
-      "name": "Bradley Beal",
+      "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
     },
@@ -193,12 +188,17 @@
       "status": "OUT"
     },
     {
-      "name": "Yanic Konan Niederhauser",
+      "name": "Brandon Ingram",
       "team": "LAC",
       "status": "OUT"
     },
     {
-      "name": "Brandon Ingram",
+      "name": "Rui Hachimura",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Bradley Beal",
       "team": "LAC",
       "status": "OUT"
     },
@@ -243,14 +243,14 @@
       "status": "OUT"
     },
     {
+      "name": "Jordan Poole",
+      "team": "NOP",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Yves Missi",
       "team": "NOP",
       "status": "OUT"
-    },
-    {
-      "name": "Karl-Anthony Towns",
-      "team": "NYK",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jose Alvarado",
@@ -396,6 +396,11 @@
       "name": "Kawhi Leonard",
       "team": "TOR",
       "status": "OUT"
+    },
+    {
+      "name": "Darryn Peterson",
+      "team": "UTA",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Lauri Markkanen",
