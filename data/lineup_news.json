@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-29",
-  "checked_at": "2026-10-29T19:20:36.578430+00:00",
+  "checked_at": "2026-10-29T20:08:24.832421+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,22 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Jalen Smith (finger) questionable Friday vs. BOS - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUkhpQXh0TkFuOWo0S2M5NGNPUkt2ZGEwN2tKalBKQV93ZWV0S1RucU5MUF9vT3R4VHhJVDgxNGVMN3RLVDVOME5ERXQ2Q0M4QmRQeldhNm9JZ3IxdWdBX21mSndYVm9BUE1PVU9VLXhZWXRZbENWN3UyMlBkWncxb19LblBVYmFpWGpYdWVsSTdjSmxUal9oSDk2YmhEVVZ5c0x3U3ZxczI5Uy1CQ0hRS3JCUQ?oc=5",
+      "published_at": "2026-10-29T19:46:19+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
+      "headline": "NBA ratings still rising to start new season - Awful Announcing",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUEZVRGV6NWcwRnBxWnZBaHJ5ZnEyUkZZeThJTXZQcjNCWVNranljNGxQbmUxYWx6SWpfOUpGamJ6NVFQWUpZVV90ZmtaYjNfckdXd3hlQU1VMnc3bUFuQjc5bTZqUUVibHlFR2ZVeEFLdmJUb1pmV24teHhDMEtaYlpXMA?oc=5",
+      "published_at": "2026-10-29T19:32:34+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
     {
       "headline": "Jordan Poole Downgraded to Doubtful for Thursday's Matchup With Kings - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQmtVeEw0X3JRSm1rRzU0VHowMng2cGwweHlaZE5MNkhHN18tUFp0UzRrU1VYalpONTZmZmZ5cnYxTFFxODlHMjIwS1ZvRE9yWGRWVFZJTmxaNmpBRGE4bnlJZ3hndXIwbVVVMi1vSjVhZnoxZWxFZWVzbHExcE5fVV9NM1R1eWYzTG5xbWFhVUhnMmtIZjJPUE9EZDJXNjFKeEZSNU9QTDl0RDFFVkhTWHl1WnBqZw?oc=5",
@@ -142,9 +158,9 @@
       "scope_date": "2026-10-29"
     },
     {
-      "headline": "ESSENTIAL: Why Meleek Thomas MUST Be Part of the Cleveland Cavaliers Rotation! - 9News",
-      "source_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQcjBCTnA5VGZqRzNwbTY0THRQaXFKYVpwcTVTamVOVmNoMmx0cjIycWkxNzY0cmtuRF83Uy01S0FudGFaSXlYc29HM0VLMFJPQWFYRkZDUmdLTWpLNmRPZl9xSG5UbFNUMFhJNWpKQ1hSZ3JuU3hrNWY0c1ZCSkIwTGFrampjYUZWcWVsT0J5Z2FpZVpWdUlLZTlXRzhDM2w0TDNpeHR6R25ZSm5rV1Z1MnNUY1JuMDFPZHRFSXJVQlh2SFRLbE1NQmJWU1R6bjhvMXhpUnlpbVRnaVUtc1dxZWxVOFAybGV1c0swdFBJQUxBbld0MXF0cjNLTDJvX3BDUjE1UUxDZjdjSTVBVFhnblR2NEtueEVXY3c?oc=5",
-      "published_at": "2026-10-29T13:10:00+00:00",
+      "headline": "Drew Rasmussen to start Game 5 on short rest as Rays try to extend World Series - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTXlic2pSbDVuNUhxLTJVdGVCQUVYWC1qdmtUU3d5aTNTT0N5Z3lLQ0NTeHZvMDdHNHBiQjRaZ3pPeTlqQW13NmtWb3VqNkJLRkFtbnVDY1kxbndlNDhCUUxURUJ4dE1BWVhXTlUwMjlaTWxld2xqc2dOV2pCRWNhWTY4LVNSM2tEUndpZWNlOWJuTFdJNDRF?oc=5",
+      "published_at": "2026-10-29T12:29:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
@@ -214,6 +230,14 @@
       "scope_date": "2026-10-29"
     },
     {
+      "headline": "Lakers Reveal New Starting Lineup Without Luka Doncic - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNV0Z2Q1VvNE5ZMFp2NzhVWC1wczZ4bUs3R0RsOXhyc040RS0tdnlSeDlpRVI4ay05b3lqdGZfeWROeTdWc0hyTVhrT3R0cm9Oa2lqYTc1TTJyNkQxb3FNcEpsYy1SSWY5d25HLTc3Mk1DOUI3NnZTUjk4alI4SjQwaXVVUTV3MVh0SEYzUlN4WQ?oc=5",
+      "published_at": "2026-10-29T05:10:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
       "headline": "Aaron Nesmith (hamstring) downgraded to questionable - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcGpkVFFWc09aV0lFNkU1T3Y4djh5RXVpNHluZ3d4VG8xRjQtUmtDN3RMcW5oRlhQcUM5dTFLRl9SZUVmd0Jmb3pkR0dld0tlTGE0N1lmWGxYNWNhTENTS0pQRExFVXBIU3VMQkJlRjFPQ2lXemJma1k3ajVadUNCVlBPMHZsSVZDRGhkRXY2NmhHMHltUTl2b0hZWGdWZkl3QmRNSUJZOFBvQ18yR3ozc2Jn?oc=5",
       "published_at": "2026-10-29T04:43:36+00:00",
@@ -265,14 +289,6 @@
       "headline": "Jake LaRavia Joins Lakers' Starting Lineup Wednesday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObjVBQ19yN19CSHhHRkwteGpRdGtSbEJrQWVWSkNzdFJwaXpPYkxTM1VyclBhUkZqelMyaVYtb3FzanJuQ2Z4a3V5WktKNzJHWVFfN1BQeEY0UEJGUnhoQXh0NmlaVzJZNkVzZ2ltM3J3V2puemRmTEZtdmJmcnR3ZUg0TVdQUFhhbzA4ZlNiRU5nVlE2RjJyemhtQXhhREU?oc=5",
       "published_at": "2026-10-29T02:30:15+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Lakers Reveal New Starting Lineup Without Luka Doncic - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNclp4VzF1eUM0VWZFSjJ3S1dsZ0Q5YWxuU2JjNXl6YmNxRXZ4ZHhteUZkWnBnUmpUME01ZHljN1p1dHNQUlRfRUxYZ3o0Vy1vU09mcGtLQlNnR3Z4RTh3bHZNakJiTWlockhKXzRKcGZiQ2UybUU1X1ZuajBzd1Eyajdpek5yeFUxQzdIVXdIeG5Ta0ZhZGc?oc=5",
-      "published_at": "2026-10-29T02:21:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
@@ -438,14 +454,6 @@
       "scope_date": "2026-10-29"
     },
     {
-      "headline": "Drew Rasmussen to start Game 5 on short rest as Rays try to extend World Series - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTXlic2pSbDVuNUhxLTJVdGVCQUVYWC1qdmtUU3d5aTNTT0N5Z3lLQ0NTeHZvMDdHNHBiQjRaZ3pPeTlqQW13NmtWb3VqNkJLRkFtbnVDY1kxbndlNDhCUUxURUJ4dE1BWVhXTlUwMjlaTWxld2xqc2dOV2pCRWNhWTY4LVNSM2tEUndpZWNlOWJuTFdJNDRF?oc=5",
-      "published_at": "2026-10-28T21:53:37+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
       "headline": "Aaron Nesmith Injury: Downgraded to questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMDB5TUxSMElWZDFCVUtnTVpLTnl3ZFhJQ2hkWkl2Y0U2TF8zWmRhSVhmNVFWMWltc2U5ME1CQ05NTmNQNEM5LVR0dVdtWWQ2eUtiMGNKMFp5eV9ua3dTM0VoR0pFRzRmWkJad25GY2ZfbTIwcmlpcXVCLWpxYlJYSFVWWEVULXRscnBMQ2ZsR0lONUt6SmViOFVtRTloMFJ5SkE?oc=5",
       "published_at": "2026-10-28T21:52:11+00:00",
@@ -518,33 +526,9 @@
       "scope_date": "2026-10-29"
     },
     {
-      "headline": "3 Timberwolves guards who could step up with Anthony Edwards sidelined - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd3F3d3dCb3RSMVRqWGdyR1BiVDV3SzluVF9rMjNtZ0dLX3pUenQzS29XTTJMWTREbVdhTERIMmZQeTZHT0xZc1RrRmxfRE9GNFpwaEZWcnhfb2p4dlhhalhLdHV4aHhJZVpLLXBhU2stUHRFZlRGZFJiaHhONDRIdHVYa0dUMUE?oc=5",
-      "published_at": "2026-10-28T20:22:54+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
       "headline": "Marcus Smart has been ruled out for tonight's game. … - HoopsHype",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTHpqQnNjLWZCQXVYdUpoMWd4Wnh4RGJzWUdGQlNFUjRoeEV5VUlKdGhVUDZHb0QtcEZid1oxaTBlS0tZazFSRTc5aGo1eDF0M2lqR1dibDRibGt6em5GbUtKaHRBY2prb1Q2MUVDMGJ5cXZ5YTJJSDlrd0pUOXp5N3JkSU41aGFxTDUzdmU5aUNUQmotZXl4S3pEel9FRlFNLS1COUt6dE9vQ1pRZk5nSDV0WFpveFI3RFVnT1NMSGg?oc=5",
       "published_at": "2026-10-28T20:11:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Luka Doncic (back) ruled out Wednesday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbUdsWk5OZ1RYTHBra2xvZzVWSS1BMVR5c0VyVnVXZ3N5eFBCbXlmM3lpU1MxX0VHNUxHRG5fM0ltT2FIWW95UHh1dVVZMGVPYldEeUd6Q1NtWDh5dmZzSFVNWUcweVRLcC1jMGZQdVFPeDROUkNnUVR3SmNuSWlDMEhYamNCMnpaWjg2R9IBkgFBVV95cUxQRGdrSDdfNnZvUGpmNmtsUDVmOTdzVFhiei1Wd3lpc3YtNjdLeGViUld3amxOUVpNZ2U0TzlBSTl2aXpuQnY2VW95NTNHQ0lzdTdWVGtkLVVCVU5Zck9vWGpBM0wwVEtiTE1Bc3JXYlhXMlFlbDN5WEc0VW5CQWREUS1FV0FUVFBMaVJIeEpUTl9Mdw?oc=5",
-      "published_at": "2026-10-28T20:07:10+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "What the Justin Champagnie Injury Means for Wizards Rotation - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQU1NyTGxZaHNiTUU2blUzNjYyWFZXaGFYclY5LVZOanhDbWlGY0U0ZkFqZzE5NnpBY29iUHRmbVRtaXVhRkdBQl9qMFAzNVJNdVlTMlF5QmVycEVVSEIwVGc4dk93VDN3UVY0eUE3WDZQSjMtZTdnOG9qbWQ5LVktQURDUWJQVlg2SEFob3RGOVg?oc=5",
-      "published_at": "2026-10-28T19:59:48+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
