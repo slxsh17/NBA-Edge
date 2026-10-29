@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T23:09:46.173367+00:00",
+  "updated_at": "2026-10-29T23:48:16.544920+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -75,12 +75,7 @@
     {
       "name": "Meleek Thomas",
       "team": "CLE",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jaylon Tyson",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Tarik Biberovic",
