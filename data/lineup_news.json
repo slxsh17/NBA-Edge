@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-28",
-  "checked_at": "2026-10-29T00:37:50.313466+00:00",
+  "checked_at": "2026-10-29T01:45:00.100253+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,22 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "OKC Thunder Updated Starting Lineup vs. Mavericks - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYlowWWZ5bmptNjJnZjRyekdTdHpjV3F6M0V6enJJdHlnSUlpOE9jRkFDbnlPOEhaZ2otTkRjU0tjZW5jb2xyQnhiTnJ4a1NPbng1NVhsN3M0RnVfZUIxNmJYOHQxNDdLMlh1MzI5NDdOdktNdWo4c0w1MnAxTVdMOURLR1FGbG9tN3V3UlN5NWY0NnpVU2c?oc=5",
+      "published_at": "2026-10-29T01:22:44+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Lauri Markkanen Ruled Out Against Spurs - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaTZxRS0yZVUxYjdNalVZdW54UmJ5ODJFTlRGRER2VVk0aWNRRDBUeWZTcWZyTmRsU0M0U0FyeEY2NmQyNGJ5TVBpQXd1R0xxZ255YnpLMTc3cTk2bEl3bHNLSHpvSTZ4cVdSWUhpeHB2bTVDTU9ZcU8zS29RaEQxM3Y0b0RING5hRktxSm5HWQ?oc=5",
+      "published_at": "2026-10-29T00:52:12+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
     {
       "headline": "Naji Marshall Injury: Ruled out Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOXY1UjNiNzhaTzkwX2ZIN01GS3EyeHk1cjEzemVyYXV5WWNHZFdwdkpxazJvSnVUYVYweGhRUVlVREhZSWNaWnR6MmdsX0g1NTBlZHE2SE5TandCMVpkV0tyNXk2U0ZOTU10dV9Ba1NIaG9QVzY2Vl9uTTV4LUV6WTlSLW9TT3F6MkFYYkdxNmI0YlhHa0dBcA?oc=5",
@@ -86,9 +102,17 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Warriors vs. Timberwolves injury report: Yaxel Lendeborg is questionable - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbTQ1bmlLZllxdWo5MkVRLXpScjlEeGc2ZDl3YjRSVFRrQ2hNU05pM3hHOFpBRVJSeExQSTFjMUd1MXBVLW10eGN4RGNnOFZsNGVDZDRxYjNQaGIwczBTQ1hGLW05OS1uT1UxOGFUQXcyOGUtOUtQNnFGN0pISEU3elBqU1FNRlZQMWRLLWdoTkU?oc=5",
-      "published_at": "2026-10-28T20:36:37+00:00",
+      "headline": "3 Timberwolves guards who could step up with Anthony Edwards sidelined - Yahoo",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd3F3d3dCb3RSMVRqWGdyR1BiVDV3SzluVF9rMjNtZ0dLX3pUenQzS29XTTJMWTREbVdhTERIMmZQeTZHT0xZc1RrRmxfRE9GNFpwaEZWcnhfb2p4dlhhalhLdHV4aHhJZVpLLXBhU2stUHRFZlRGZFJiaHhONDRIdHVYa0dUMUE?oc=5",
+      "published_at": "2026-10-28T20:22:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Marcus Smart has been ruled out for tonight's game. … - HoopsHype",
+      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTHpqQnNjLWZCQXVYdUpoMWd4Wnh4RGJzWUdGQlNFUjRoeEV5VUlKdGhVUDZHb0QtcEZid1oxaTBlS0tZazFSRTc5aGo1eDF0M2lqR1dibDRibGt6em5GbUtKaHRBY2prb1Q2MUVDMGJ5cXZ5YTJJSDlrd0pUOXp5N3JkSU41aGFxTDUzdmU5aUNUQmotZXl4S3pEel9FRlFNLS1COUt6dE9vQ1pRZk5nSDV0WFpveFI3RFVnT1NMSGg?oc=5",
+      "published_at": "2026-10-28T20:11:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -118,6 +142,14 @@
       "scope_date": "2026-10-28"
     },
     {
+      "headline": "Rays ace Drew Rasmussen to start World Series Game 5 on short rest against Milwaukee - KSL News",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa1N6VmdXdkwwaDhQZFNFU2VXd3p6OFlkYi1RMngxWGtiQWdXWjlOb1hESVhDMV9pZ1U1M2s4TTJJNjNITUQyYnduRG9FMTk5SzRlNHBBQW9Od1dvczNMMzlodldLbmVmX0NlVGlzMmZlV3dhS19QSE9SalFoNXV0RDhpcEJ5eVpLc3BFQXlKSG1STFBFdDRQSTZXenhQNkVJQlRKMzJLSUxwMXZQMjFUUndNM3k1QWh5Y2V0cktn?oc=5",
+      "published_at": "2026-10-28T19:35:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
       "headline": "Anthony Black (personal) listed questionable Wednesday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVFZxWXcxekdRelNydV9sUmNXMTZaT01LeG9GaG1CTjZlNDJtWjlqQUFubGVqQUI0cl9IUUJ6RV9NUE14ODNEbmZyMGF4a18yeXBvbHZhS1dtMWp4SVBGRVdBazhTYy1FR21CTFF3T0kwYjhsSWtGNWxpVjEwYnNRQS0wbF9VdXpsbnpPR0JHdVlIa2U3MDZSS1ZaWG14bm1yZWfSAacBQVVfeXFMUFRHNVRpYmtfdW9rTzNDOVhzQWFrNWVUU0Q5NnZtN2pPbXc4ZXh2WFBaUDVmXzFaak9RWFN5a0V3YnhYdFo4X0JpdlUzSEwxV1cyV3UzRGlScVNSMjJOZHdVMnRGeml4TWVlNWp6TlFMcHdEUkRicENHRl91eXhCUkRyN3NqcEdyeG40eEljOGNqejV0Yk1FRXJHSkowZmFNRU1PNS1LS0k?oc=5",
       "published_at": "2026-10-28T19:14:51+00:00",
@@ -126,25 +158,9 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Marcus Smart has been ruled out for tonight's game. … - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQ2tQUEFzSDdyZnh0d2tXYmdyUjg3NmRuSU9JY1o5NFFRdTRuWnZMTjRJSi1OT3kwR2Y4V1R1VjJmbVMtWS00MThXM0JTclNaaUZ2RzR5YnRrY3kweWZWaHZrSDFBQ2Y5UF91TlVPcV9BRUhFOFhtaGdxZG5veGwzNFdNRURYeE5C?oc=5",
-      "published_at": "2026-10-28T19:11:56+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
       "headline": "NBA Fantasy: Best pickups with stars sidelined - NBA.com",
       "source_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9YdEFwTGI4ZWFnS2U2bTByV0QxcmlLaHR4MEJxV2RpS1hqSVNQdHVPWkF6NllXQmFIX2VLdjI2VjNGZVlQTUNhdUhMRk00WDhiUGJPUTdmSEpXWl9NdzU4bTJkejZYWTIxb1JFZGRlUnBDVWJyMDNsbWpB?oc=5",
       "published_at": "2026-10-28T19:06:11+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Video - Nets’ Dëmin Shares Positive Update After Injury Scare - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNXBKTWxmMGROckJEUTR1YWNsVWhmVURmcGdhVmJvSDhibWFGbkRfTXQzS3VfVEpMdFV1UGRQc3l0UWNzYnVYbnoyTzdzWjEzcG9GUU5pUkhfUk9PYXJNWGhWZXBBdVEwdWM2QmE2eDdSYmRwcE1ucWY4ckhBOTVrcnJiZWdBOTJuX1pqeTgzbElGMjBCYy1DdDBHZTM?oc=5",
-      "published_at": "2026-10-28T18:06:11+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -190,25 +206,33 @@
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "AJ Dybantsa Listed as Questionable Versus Cleveland - NBA News | Fantasy Basketball - RotoBaller",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNanlwRUUzaVcxaFUzZFhwLXM1SjNWeWJ3b3BrdUVpSTk4TWh5S3BMMmZPMUJXQ05WZXlrQ3k0bE5BYW1WaGhDVGFWTTJWcGFybUFpUzRjcXBzTzdTX1Y3Z3p0cXVkUnM1RnpfUzV4ZXBKa0luVFBKZTBHbk9DSUgyWFZwYXlJUzJmMk13VVVNbU15b0c2RWtjMlRtTXllazg?oc=5",
-      "published_at": "2026-10-28T13:07:12+00:00",
+      "headline": "Yaxel Lendeborg Questionable for Wednesday - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdExzQ2JmTndKVjZnbjhWUXE5aW5JS0VXR0tvNElwSUF4NkxWQ3JGM0p1RVVINUxZMUdhX3hEeUVRY1dRWGR4bzZjNkpRSkpKSERfRURnZzlxbjd0SmR6dFdmZjgzcDRvOGlyMzBMYjZGRTQ3RjRlSjJNX1Z4V2ROX2VwQUk4N2U0SzdTVFZYZ2gtMWM?oc=5",
+      "published_at": "2026-10-28T13:01:12+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
     },
     {
-      "headline": "Red Bulls beat Inter Miami as Messi plays limited minutes - The Daily Star",
-      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSWZ6RVBoWDhaQW9uZFg2bVdUaUNPWHZaMDN2TXFGY1dBeWkzbm5fUHNVMEJhbTZXZDFxRC1hTEhXWmsycVh0bU5aX1RHMDRIX0JDNEcwdWpMLVVRU2FjQ3RRUUpzTG80U0NlYUcyRndOV1BmU2R0XzdrZzhqcGJScUJ2YWRHRVJ0dW5ZSUxFVUdKZ0lwaHBfRFJEODROODNhZi1UU19rSElmVG5CdXB1YzN3?oc=5",
-      "published_at": "2026-10-28T11:32:29+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "Knicks’ Karl-Anthony Towns reveals the biggest difference to start the 2026-27 season - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZzM4U01SeVFWWFNqR0pVYjdXZjVPbXdWUjZSLVdOb0NVaEhYTXZFaEJIMHBZVVhpYWlhQjM3WVFoZDdTMWNLeU5XWDBNVGFMTUZGZ1h0aWx1Um02ODBnR1M3SGZncEJwUjVVbFdLNTlUNTlLZWZ6cGY3ZGxDRmVyRXJVTmNvV1JJUGc?oc=5",
+      "headline": "Knicks’ Karl-Anthony Towns reveals the biggest difference to start the 2026-27 season - ClutchPoints",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQWFNSDFkZFZVSC1DQjhicFU3enJ3d1JBWHNzV2ZkMlBfV3hfNG8xM2xpX3pKVDR6bTl5Wk8xdVE1aEtEOG5aVHJ2d1F3TWJNNkVlb2l5Wk5sNVJNUFJqbDJ1bExuLWhBdlhWUjAzMm1JQzZOQUx4YmtyU0ptaDd4T3JTZmpmWTRvbTh3d0VLYXE1b0FwYmNSQ1B4V1NTS3lZSnlnTE4wVlVOUjdGc3dxc2R6YUpXT2EyNUhCbzhYbjAtazc4MjU0Q3dBSTdqN0E?oc=5",
       "published_at": "2026-10-28T04:25:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Sidy Cissoko is forcing his way into the Blazers rotation after a strong start to the 2026-27 regular season - شبكة تواصل الإخبارية",
+      "source_url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5CdzhHN3k4R1cyUmJnbEY2bF9NMXh1SnNIVW01WDRKN1lLdWRSY3d5amxIMExaTXN6bDlLTmVmV2dSc2FWTnRzb21aOEtsR24wYlJR?oc=5",
+      "published_at": "2026-10-28T04:24:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-28"
+    },
+    {
+      "headline": "Indiana Pacers' Ben Sheppard Needs Surgery On A Torn Meniscus, And Indiana's Wing Rotation Takes Another Hit - NDTV Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNWEVBek1oMGgxd2hRdUNidy1RNWZLbnJOQnV4aENTLW5GMmpWVEl5dUdDeE5NR0NtUkNqbGhQWTh1S1FmLXBNZGJDRzVfUDJLaVlMMlBPWFRxSTBXMmlEd0NCc3JNaHVienE4X250UllPbVdWLXpleWx5cGMwMDZ5bVNBVG9vNnpiVWlRTzJSUjNLcWpNbllyWGFvSmhTWWlWQ3RHclVZb1JxUVZkNVJJd1BEMzROajUwRzlEc2JPYXNDRzNLMndBZHBNV3I5ZU81Y3NnS0M1bkdQZURJQmY4?oc=5",
+      "published_at": "2026-10-28T03:31:41+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
@@ -225,14 +249,6 @@
       "headline": "Timberwolves Starting Lineup And Depth Chart After Anthony Edwards Injury - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOGRULVNjS3gxeXJRaDRiTXplU3NWOWRpbzBadHNGX0FoWks2SC1ReWNUamVWaVdYWE5OMGJBbDJKbmZrZHBIRVlHbXV4cENxc18wVTN5cm41Q1hhSkxfT0dxTDFCZGtZa3ZTUndrVy1nNXJSenM0TW1wQ1p3UXg4VWtPNmNJTlUzb183b2RueVp5YXM?oc=5",
       "published_at": "2026-10-28T02:06:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-28"
-    },
-    {
-      "headline": "“I would basically bring VJ off the bench” – John Wall proposes bold change to Sixers' starting lineup - Basketball Network",
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSktzUTMwTUptMXdUcnozOTUxR1JqU3pyTk5MWm1LQmR3X3NvUlhqNGphWVpiRE13X1NEMklIQWdjZVZhVmg4c1ZhTGVkRG9kRWxQNF9tXzllVzZjQVJYTjB2ZXEzTzNlcXh1ZGNWM2NCbGdEYU1qZl9GcEg2T3NYLXZaNUNzcnRWVGhLRnZJYXB2ZXVoQlBMdVBHaTFPcjBTaE5jRA?oc=5",
-      "published_at": "2026-10-28T01:09:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-28"
