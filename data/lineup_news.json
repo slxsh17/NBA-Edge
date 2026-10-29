@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-29",
-  "checked_at": "2026-10-29T11:27:49.343078+00:00",
+  "checked_at": "2026-10-29T12:08:47.679034+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,7 +22,15 @@
   ],
   "headlines": [
     {
-      "headline": "Jake Paul says he will return to boxing with Dubai fight on Christmas Eve - The New York Times",
+      "headline": "Clippers continue to struggle with turnovers to start 2026-27 season - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOG1ESmpkanl5dGNQRGFYUFdGUHFMQ0JYZUE0ai1KUmxYZGVFQ0RoX1E1aEk3eGpSRGpKOHUyNTlPaVFUQjVfZWR5SUxUVTlFOXYxYnY5eXJQVmZWTlJuTjlMZzhpaTJPSU1xZGFSRkFNYlBLeWtxTGFJMXdHc2x2RjlNeFBqem5lNjNXcUZQd1IxWnNpLUE?oc=5",
+      "published_at": "2026-10-29T11:37:42+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
+      "headline": "Jake Paul says he will return to boxing with Dubai fight on Christmas Eve - The Athletic - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLXk4TDlLcWp1NHY1VHRXMUlTc205MHBhOUwyWjhYaFZXamhjMlZuZ0ZVM1ZfN0ZieXItdE1vNDJiUjVWN0xNYTRjRGM5ZXJuZzVjelhmMVFiNTVqc3h0UjRuMjZBSEZybjd6Zk94R2lQWmJoUEZZUFllYzBrWXZYbGdDMWlveVZO?oc=5",
       "published_at": "2026-10-29T11:00:43+00:00",
       "type": "headline_only",
@@ -302,6 +310,14 @@
       "scope_date": "2026-10-29"
     },
     {
+      "headline": "3 Timberwolves guards who could step up with Anthony Edwards sidelined - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd3F3d3dCb3RSMVRqWGdyR1BiVDV3SzluVF9rMjNtZ0dLX3pUenQzS29XTTJMWTREbVdhTERIMmZQeTZHT0xZc1RrRmxfRE9GNFpwaEZWcnhfb2p4dlhhalhLdHV4aHhJZVpLLXBhU2stUHRFZlRGZFJiaHhONDRIdHVYa0dUMUE?oc=5",
+      "published_at": "2026-10-28T20:22:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
       "headline": "Marcus Smart has been ruled out for tonight's game. … - HoopsHype",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTHpqQnNjLWZCQXVYdUpoMWd4Wnh4RGJzWUdGQlNFUjRoeEV5VUlKdGhVUDZHb0QtcEZid1oxaTBlS0tZazFSRTc5aGo1eDF0M2lqR1dibDRibGt6em5GbUtKaHRBY2prb1Q2MUVDMGJ5cXZ5YTJJSDlrd0pUOXp5N3JkSU41aGFxTDUzdmU5aUNUQmotZXl4S3pEel9FRlFNLS1COUt6dE9vQ1pRZk5nSDV0WFpveFI3RFVnT1NMSGg?oc=5",
       "published_at": "2026-10-28T20:11:00+00:00",
@@ -361,14 +377,6 @@
       "headline": "Naji Marshall Injury: Downgraded to doubtful - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUlJwNUtJNzRXR2pxekxkNGhJekVKSlBoa2dLemQ3UDJkYkVIN3V5aHVJOUVmOUFvaHFlZzJUMmVaLURQMFlublc5c0NUN0ZXbXNldlA2X1ZUR0RiUTdpOEhrdUlWbklObG1SQUlDMkIwdGxBTGJ1VFBXYUtpZ2gtcG9rVzNqeGZxeFJ1OHVaUW5DQXI3UDVtRGxueHo?oc=5",
       "published_at": "2026-10-28T18:22:27+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Video - Nets’ Dëmin Shares Positive Update After Injury Scare - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNXBKTWxmMGROckJEUTR1YWNsVWhmVURmcGdhVmJvSDhibWFGbkRfTXQzS3VfVEpMdFV1UGRQc3l0UWNzYnVYbnoyTzdzWjEzcG9GUU5pUkhfUk9PYXJNWGhWZXBBdVEwdWM2QmE2eDdSYmRwcE1ucWY4ckhBOTVrcnJiZWdBOTJuX1pqeTgzbElGMjBCYy1DdDBHZTM?oc=5",
-      "published_at": "2026-10-28T18:06:11+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
@@ -481,14 +489,6 @@
       "headline": "Yaxel Lendeborg Questionable for Wednesday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdExzQ2JmTndKVjZnbjhWUXE5aW5JS0VXR0tvNElwSUF4NkxWQ3JGM0p1RVVINUxZMUdhX3hEeUVRY1dRWGR4bzZjNkpRSkpKSERfRURnZzlxbjd0SmR6dFdmZjgzcDRvOGlyMzBMYjZGRTQ3RjRlSjJNX1Z4V2ROX2VwQUk4N2U0SzdTVFZYZ2gtMWM?oc=5",
       "published_at": "2026-10-28T13:01:12+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Red Bulls beat Inter Miami as Messi plays limited minutes - The Daily Star",
-      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSWZ6RVBoWDhaQW9uZFg2bVdUaUNPWHZaMDN2TXFGY1dBeWkzbm5fUHNVMEJhbTZXZDFxRC1hTEhXWmsycVh0bU5aX1RHMDRIX0JDNEcwdWpMLVVRU2FjQ3RRUUpzTG80U0NlYUcyRndOV1BmU2R0XzdrZzhqcGJScUJ2YWRHRVJ0dW5ZSUxFVUdKZ0lwaHBfRFJEODROODNhZi1UU19rSElmVG5CdXB1YzN3?oc=5",
-      "published_at": "2026-10-28T11:32:29+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
