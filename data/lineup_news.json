@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-29",
-  "checked_at": "2026-10-29T17:16:35.188859+00:00",
+  "checked_at": "2026-10-29T18:07:58.018660+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,30 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Pacers' Rick Carlisle reveals absolute earliest Tyrese Haliburton will return from hamstring injury - ClutchPoints",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNk9tZWNBdXZEVlZ5eXB0RGtMOFZ0d2M1SEhRUkZGZ1o3T1lOdTBtNlR1NTZ6SUVTcUc4NVV1QWVrd2t2eHc2M0laYlRWbFc1TzVMcjdnVXo1RDRfOVRqVkV1Smsxejkzd0xEZUhWLWgzNmNLLUlSSUY3Z0diNGowajF3dWY5UVhMSS1nay1pZWhXVWY4d1JhdjFNc2tkS2p3NHRza0RaYUdDWVJSb0oyTEx3ajliTzc3UjZqSUFWVGR5MnlmRlN4WVp2WlhNY2s?oc=5",
+      "published_at": "2026-10-29T17:37:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
+      "headline": "Jordan Poole (ankle) doubtful Thursday vs. Kings - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaGczb1FHd1E4cUtnWTRyd2dpS3kwWjdnczdtakVuREk5aVVRYl9QUXl3MFRFQ2l5Wml2OWRYcHBYWUZ5dEhkSVlSbFdpT1ItSER0S3VXTnZGNktJdndIWlhHckk1cGY1NHNZODB4OFFiaEQ5NUVSZG1vQ2kwUk5EWEx6Z05YaHo1bGlFUEpicW9rb3A3MEpqMGhNU0pGeFlpaU9uVF9CZzB3N1VySHN4dlJ0aw?oc=5",
+      "published_at": "2026-10-29T17:34:14+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
+      "headline": "Pistons' John Collins: Struggles in limited minutes - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRVh6dVVUcG5rVUwwdktOckpWb2wyeHNMSDg0TU5QRjNZc2FuWmlLOFdnakttMVhxWFo3QUxfb1duakFPdDBRdW5ieVBhSUxnU2h5RlRoSzJtOVBsTm1lMktpM0NzODBqRHotMXBqbFJQV2ZTNHh2aG5ZdkV2OVNGWk1xZWxVeGtQZ2g0M2NYTzMxMENoYkNNRXM1ZEFOU0pWWXc?oc=5",
+      "published_at": "2026-10-29T17:31:10+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
     {
       "headline": "Jaylon Tyson (cervical strain) questionable Thurs - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMldabzkwUnlkNTUzWjBodUcyV0FEbnYya1g2U3ZBa1cyWUV2YUhlQkJlUWM3WHVzck0xRnZndW9RVEx3QW02UmFNUkpJTHpKTmlyQzFOeUE0VGVubWYtZDhvQ0oxTmRULTlLdUxHT0lhQnZzZWJ1U1pPQ2NwSTdYSHVwb2w0WEJfT1NwTTZaanlRSVEtRGRLR0NQUU95WUZGa0VfTnJNQ0FhSGtVOVA1VElKSmdZQQ?oc=5",
@@ -198,6 +222,14 @@
       "scope_date": "2026-10-29"
     },
     {
+      "headline": "Junior Caminero expected to play in Game 5 - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNlFTNUktOGhzcUJwcXRVLXllcC1jRHNjeE9FV2kzTTVoTU9Cd202ajdvWnJudnI5ZzRnMElwVEpIbzJfaF9FUk1Cd1BPRzRsSVFPaVBFd0ltRWg1b0FLa2pEaWtDeHZEa0ZTYXVSczh2OHp4NmdXcDMtLXF0RlBDM3hSMG1iRGlCRjMwNVJ6ZUdteTZ4UEpFZGtHTEpCTmdiUVd4aTJ1VDdkVnRE?oc=5",
+      "published_at": "2026-10-29T02:18:42+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
       "headline": "Naji Marshall (illness) downgraded to doubtful - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZTMxaGhWMGd0aTY2ZFBsbGNObk5ORVBKWFFJWjM5WE5LRXBULWdvNHZmdkVqMFpJMnRnN210Z0ZkQ1MxcFhNdTZQd0liNi1OaXVyOWhfY1RTa1ByNjE2ZFpUcE1LMEJmcnFtTUJFNnVNRW91R3lwR0E3TGxwYjlwT1RzczA0TjRDSzZuQU1jelY3ckFqeEFVNW9oRnNIN25HU001MkFscjY4Sm9qSndJTkVn?oc=5",
       "published_at": "2026-10-29T02:13:58+00:00",
@@ -249,14 +281,6 @@
       "headline": "Lauri Markkanen Ruled Out Against Spurs - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaTZxRS0yZVUxYjdNalVZdW54UmJ5ODJFTlRGRER2VVk0aWNRRDBUeWZTcWZyTmRsU0M0U0FyeEY2NmQyNGJ5TVBpQXd1R0xxZ255YnpLMTc3cTk2bEl3bHNLSHpvSTZ4cVdSWUhpeHB2bTVDTU9ZcU8zS29RaEQxM3Y0b0RING5hRktxSm5HWQ?oc=5",
       "published_at": "2026-10-29T00:52:12+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "EuroLeague Injury Report (updated daily) - BasketNews.com",
-      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5mdFh1RzIteVNzX3ZLWXIwOXRiNzBEX3FlNU1sMC1LY0VIanlOcHdUUk41YWRWSmNoZVVoWnZwQnpueFVldVNOM29NN21URTg0LWloTmVXdXdwdDVsN1N0em9xdVNRdk1reEdPLW1iemtjMmJjdEV0MWlnU08?oc=5",
-      "published_at": "2026-10-29T00:27:44+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
@@ -398,6 +422,14 @@
       "scope_date": "2026-10-29"
     },
     {
+      "headline": "3 Timberwolves guards who could step up with Anthony Edwards sidelined - Yahoo",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd3F3d3dCb3RSMVRqWGdyR1BiVDV3SzluVF9rMjNtZ0dLX3pUenQzS29XTTJMWTREbVdhTERIMmZQeTZHT0xZc1RrRmxfRE9GNFpwaEZWcnhfb2p4dlhhalhLdHV4aHhJZVpLLXBhU2stUHRFZlRGZFJiaHhONDRIdHVYa0dUMUE?oc=5",
+      "published_at": "2026-10-28T20:22:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
       "headline": "Marcus Smart has been ruled out for tonight's game. … - HoopsHype",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTHpqQnNjLWZCQXVYdUpoMWd4Wnh4RGJzWUdGQlNFUjRoeEV5VUlKdGhVUDZHb0QtcEZid1oxaTBlS0tZazFSRTc5aGo1eDF0M2lqR1dibDRibGt6em5GbUtKaHRBY2prb1Q2MUVDMGJ5cXZ5YTJJSDlrd0pUOXp5N3JkSU41aGFxTDUzdmU5aUNUQmotZXl4S3pEel9FRlFNLS1COUt6dE9vQ1pRZk5nSDV0WFpveFI3RFVnT1NMSGg?oc=5",
       "published_at": "2026-10-28T20:11:00+00:00",
@@ -489,30 +521,6 @@
       "headline": "Mavericks' Tarik Biberovic: Ruled out Wednesday - CBS Sports",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOa1lWamNPUXpTSFlLQWlsNzZGZ3BKSzlJcEVwQjJ5aS1RTy1GS0dnSHM4V1N5ZzdvQTJDVGhaamZOMmE0OUpGQnptdERqaUZoSTYwTnJYMklZallRc1N2SFBMS0RnMmVDVDJjQWktOWtoTGRTVVI0a0o2dFZHci0xdUZVdnk2LWMxTlFQYzNuRG11UWZGUW5LV1ZuS2s?oc=5",
       "published_at": "2026-10-28T18:21:22+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Video - Nets’ Dëmin Shares Positive Update After Injury Scare - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNXBKTWxmMGROckJEUTR1YWNsVWhmVURmcGdhVmJvSDhibWFGbkRfTXQzS3VfVEpMdFV1UGRQc3l0UWNzYnVYbnoyTzdzWjEzcG9GUU5pUkhfUk9PYXJNWGhWZXBBdVEwdWM2QmE2eDdSYmRwcE1ucWY4ckhBOTVrcnJiZWdBOTJuX1pqeTgzbElGMjBCYy1DdDBHZTM?oc=5",
-      "published_at": "2026-10-28T18:06:11+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Junior Caminero expected to play in Game 5 - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNlFTNUktOGhzcUJwcXRVLXllcC1jRHNjeE9FV2kzTTVoTU9Cd202ajdvWnJudnI5ZzRnMElwVEpIbzJfaF9FUk1Cd1BPRzRsSVFPaVBFd0ltRWg1b0FLa2pEaWtDeHZEa0ZTYXVSczh2OHp4NmdXcDMtLXF0RlBDM3hSMG1iRGlCRjMwNVJ6ZUdteTZ4UEpFZGtHTEpCTmdiUVd4aTJ1VDdkVnRE?oc=5",
-      "published_at": "2026-10-28T17:59:26+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Detroit Pistons Injury Report Delivers Bad News Ahead of Hornets Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZ1NJbW1DQ3VKT3B3TFRqbWpHRE9hVHc3Vkp5ZEFQbFpBM2FvUW1YcWlfbXFuUXo2SGNWcWlUc2NaQ05tdlczZGR3RVNaejdvX0tfOEg3MXBZUTgydHYtY3pjS0hUTC1CanRLUDIwV3dVUlZkd1RhdTlXYXI0WkctbDRiODI4dWVDaVJFLW5RM2w?oc=5",
-      "published_at": "2026-10-28T17:55:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
