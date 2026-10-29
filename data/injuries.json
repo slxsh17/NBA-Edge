@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T05:06:50.742013+00:00",
+  "updated_at": "2026-10-29T05:51:41.494968+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -178,6 +178,11 @@
       "status": "OUT"
     },
     {
+      "name": "Rui Hachimura",
+      "team": "LAC",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
@@ -193,11 +198,6 @@
       "status": "OUT"
     },
     {
-      "name": "Rui Hachimura",
-      "team": "LAC",
-      "status": "OUT"
-    },
-    {
       "name": "Bradley Beal",
       "team": "LAC",
       "status": "OUT"
@@ -208,22 +208,22 @@
       "status": "OUT"
     },
     {
+      "name": "Ziaire Williams",
+      "team": "LAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Luka Doncic",
+      "team": "LAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Cameron Carr",
       "team": "LAL",
       "status": "OUT"
     },
     {
       "name": "Adou Thiero",
-      "team": "LAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Ziaire Williams",
-      "team": "LAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Luka Doncic",
       "team": "LAL",
       "status": "OUT"
     },
