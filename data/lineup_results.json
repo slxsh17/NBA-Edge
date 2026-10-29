@@ -1,10 +1,10 @@
 {
 "schema": 1,
-"updated_at": "2026-10-29T16:18:34+00:00",
+"updated_at": "2026-10-29T16:50:13+00:00",
 "calibration": {
 "sd_scale": 1.026,
-"shift_classic": -4.04,
-"shift_single": 1.34
+"shift_classic": -4.07,
+"shift_single": 1.39
 },
 "calibration_players": 997,
 "summary": [
@@ -14,7 +14,7 @@
 "slates": 7,
 "avg_actual": 286.7,
 "avg_proj": 338.8,
-"avg_pct_of_best": 66.5,
+"avg_pct_of_best": 66.2,
 "within_sim_range": 57,
 "below_range": 43,
 "above_range": 0
@@ -23,9 +23,9 @@
 "format": "classic",
 "strategy": "sim_winner",
 "slates": 7,
-"avg_actual": 285.9,
+"avg_actual": 285.3,
 "avg_proj": 322.8,
-"avg_pct_of_best": 66.2,
+"avg_pct_of_best": 65.7,
 "within_sim_range": 71,
 "below_range": 29,
 "above_range": 0
@@ -36,7 +36,7 @@
 "slates": 7,
 "avg_actual": 300.5,
 "avg_proj": 320.7,
-"avg_pct_of_best": 69.2,
+"avg_pct_of_best": 68.9,
 "within_sim_range": 100,
 "below_range": 0,
 "above_range": 0
@@ -45,9 +45,9 @@
 "format": "single",
 "strategy": "cash",
 "slates": 6,
-"avg_actual": 211.7,
+"avg_actual": 212.4,
 "avg_proj": 207.1,
-"avg_pct_of_best": 83.5,
+"avg_pct_of_best": 82.0,
 "within_sim_range": 83,
 "below_range": 0,
 "above_range": 17
@@ -56,9 +56,9 @@
 "format": "single",
 "strategy": "sim_winner",
 "slates": 6,
-"avg_actual": 217.1,
+"avg_actual": 217.8,
 "avg_proj": 205.5,
-"avg_pct_of_best": 85.5,
+"avg_pct_of_best": 84.1,
 "within_sim_range": 83,
 "below_range": 0,
 "above_range": 17
@@ -69,7 +69,7 @@
 "slates": 6,
 "avg_actual": 214.3,
 "avg_proj": 204.5,
-"avg_pct_of_best": 84.5,
+"avg_pct_of_best": 82.8,
 "within_sim_range": 83,
 "below_range": 0,
 "above_range": 17
@@ -2184,12 +2184,12 @@
 "rebuilt": true,
 "final": true,
 "hindsight_best": {
-"score": 387.9,
+"score": 397.2,
 "players": [
 {
-"name": "Victor Wembanyama",
-"team": "SAS",
-"slot": "F/C"
+"name": "Luka Doncic",
+"team": "LAL",
+"slot": "PG"
 },
 {
 "name": "Jayson Tatum",
@@ -2197,38 +2197,38 @@
 "slot": "PF"
 },
 {
-"name": "Karl-Anthony Towns",
-"team": "NYK",
-"slot": "C"
+"name": "Michael Porter",
+"team": "BKN",
+"slot": "G/F"
+},
+{
+"name": "Paul George",
+"team": "BOS",
+"slot": "F/C"
 },
 {
 "name": "Paul Reed",
 "team": "DET",
-"slot": "UTIL"
-},
-{
-"name": "Dylan Harper",
-"team": "SAS",
-"slot": "SG"
+"slot": "C"
 },
 {
 "name": "Jrue Holiday",
 "team": "POR",
-"slot": "PG"
+"slot": "SG"
 },
 {
 "name": "Julian Champagnie",
 "team": "SAS",
-"slot": "G/F"
+"slot": "SF"
+},
+{
+"name": "Robert Williams",
+"team": "POR",
+"slot": "UTIL"
 },
 {
 "name": "De'Andre Hunter",
 "team": "SAC",
-"slot": "SF"
-},
-{
-"name": "Moritz Wagner",
-"team": "BKN",
 "slot": "UTIL"
 }
 ]
@@ -2547,10 +2547,10 @@
 "rebuilt": true,
 "final": true,
 "hindsight_best": {
-"score": 256.9,
+"score": 266.3,
 "players": [
 {
-"name": "Julius Randle",
+"name": "Michael Porter",
 "team": "BKN",
 "slot": "UTIL"
 },
@@ -2560,7 +2560,7 @@
 "slot": "UTIL"
 },
 {
-"name": "Nolan Traore",
+"name": "Mikel Brown",
 "team": "BKN",
 "slot": "UTIL"
 },
@@ -2832,7 +2832,7 @@
 "rebuilt": true,
 "final": true,
 "hindsight_best": {
-"score": 249.0,
+"score": 261.1,
 "players": [
 {
 "name": "Austin Reaves",
@@ -2850,8 +2850,8 @@
 "slot": "UTIL"
 },
 {
-"name": "Ziaire Williams",
-"team": "LAL",
+"name": "Robert Williams",
+"team": "POR",
 "slot": "UTIL"
 },
 {
@@ -3117,7 +3117,7 @@
 "rebuilt": true,
 "final": true,
 "hindsight_best": {
-"score": 463.5,
+"score": 466.5,
 "players": [
 {
 "name": "Victor Wembanyama",
@@ -3372,7 +3372,7 @@
 {
 "strategy": "sim_winner",
 "proj": 298.0,
-"actual": 255.5,
+"actual": 251.3,
 "sim": {
 "p10": 245.2,
 "p50": 297.7,
@@ -3389,7 +3389,7 @@
 {
 "name": "LaMelo Ball",
 "proj": 36.14,
-"actual": 21.8
+"actual": 20.6
 }
 ],
 "boosts": [
@@ -3410,7 +3410,7 @@
 "team": "MIN",
 "slot": "PG",
 "proj": 36.14,
-"actual": 21.8
+"actual": 20.6
 },
 {
 "name": "Nickeil Alexander-Walker",
@@ -3445,7 +3445,7 @@
 "team": "ATL",
 "slot": "G/F",
 "proj": 45.84,
-"actual": 42.3
+"actual": 39.3
 },
 {
 "name": "Nikola Jokic",
@@ -3480,7 +3480,7 @@
 "rebuilt": true,
 "final": true,
 "hindsight_best": {
-"score": 217.7,
+"score": 227.7,
 "players": [
 {
 "name": "Walker Kessler",
@@ -3493,17 +3493,17 @@
 "slot": "UTIL"
 },
 {
+"name": "Derrick Jones",
+"team": "LAC",
+"slot": "UTIL"
+},
+{
 "name": "Collin Sexton",
 "team": "LAL",
 "slot": "UTIL"
 },
 {
 "name": "Sandro Mamukelashvili",
-"team": "LAL",
-"slot": "UTIL"
-},
-{
-"name": "Jake LaRavia",
 "team": "LAL",
 "slot": "UTIL"
 },
@@ -3765,7 +3765,7 @@
 "rebuilt": true,
 "final": true,
 "hindsight_best": {
-"score": 256.5,
+"score": 253.5,
 "players": [
 {
 "name": "Scottie Barnes",
@@ -4050,10 +4050,10 @@
 "rebuilt": true,
 "final": true,
 "hindsight_best": {
-"score": 270.8,
+"score": 273.4,
 "players": [
 {
-"name": "Dylan Harper",
+"name": "Stephon Castle",
 "team": "SAS",
 "slot": "UTIL"
 },
@@ -4068,12 +4068,12 @@
 "slot": "UTIL"
 },
 {
-"name": "Jaxson Hayes",
-"team": "UTA",
+"name": "Devin Vassell",
+"team": "SAS",
 "slot": "UTIL"
 },
 {
-"name": "Devin Vassell",
+"name": "Keldon Johnson",
 "team": "SAS",
 "slot": "UTIL"
 },
@@ -4088,7 +4088,7 @@
 {
 "strategy": "cash",
 "proj": 212.7,
-"actual": 266.1,
+"actual": 270.6,
 "sim": {
 "p10": 158.9,
 "p50": 211.5,
@@ -4112,7 +4112,7 @@
 {
 "name": "Victor Wembanyama",
 "proj": 49.28,
-"actual": 72.3
+"actual": 75.3
 },
 {
 "name": "Devin Vassell",
@@ -4126,7 +4126,7 @@
 "team": "SAS",
 "slot": "MVP",
 "proj": 49.28,
-"actual": 72.3
+"actual": 75.3
 },
 {
 "name": "Stephon Castle",
@@ -4183,16 +4183,16 @@
 "actual": 32.6
 },
 {
-"name": "Darryn Peterson",
-"proj": 27.05,
-"actual": 29.5
+"name": "Dylan Harper",
+"proj": 28.88,
+"actual": 31.0
 }
 ],
 "boosts": [
 {
 "name": "Victor Wembanyama",
 "proj": 49.28,
-"actual": 72.3
+"actual": 75.3
 },
 {
 "name": "Devin Vassell",
@@ -4213,7 +4213,7 @@
 "team": "SAS",
 "slot": "UTIL",
 "proj": 49.28,
-"actual": 72.3
+"actual": 75.3
 },
 {
 "name": "Stephon Castle",
@@ -4227,7 +4227,7 @@
 "team": "SAS",
 "slot": "UTIL",
 "proj": 28.88,
-"actual": 34.0
+"actual": 31.0
 },
 {
 "name": "De'Aaron Fox",
@@ -4248,7 +4248,7 @@
 {
 "strategy": "sim_winner",
 "proj": 212.7,
-"actual": 266.1,
+"actual": 270.6,
 "sim": {
 "p10": 158.9,
 "p50": 211.5,
@@ -4272,7 +4272,7 @@
 {
 "name": "Victor Wembanyama",
 "proj": 49.28,
-"actual": 72.3
+"actual": 75.3
 },
 {
 "name": "Devin Vassell",
@@ -4286,7 +4286,7 @@
 "team": "SAS",
 "slot": "MVP",
 "proj": 49.28,
-"actual": 72.3
+"actual": 75.3
 },
 {
 "name": "Stephon Castle",

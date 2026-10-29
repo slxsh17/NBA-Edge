@@ -28,7 +28,11 @@ def canon(t):
 
 
 def norm(s):
-    return re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', str(s or '')).lower())
+    # Name key: accents, case and punctuation ignored, and a trailing Jr./Sr./II/III/IV dropped,
+    # so "Darius Acuff" (FanDuel) matches "Darius Acuff Jr." (ESPN box scores).
+    s = unicodedata.normalize('NFKD', str(s or '')).lower().strip()
+    s = re.sub(r'[\s,]+(jr|sr|ii|iii|iv|v)\.?$', '', s)
+    return re.sub(r'[^a-z0-9]', '', s)
 
 
 def read(path, default=None):
@@ -135,6 +139,10 @@ def main():
     snapshot(now)
     today = now.astimezone(ZoneInfo('America/New_York')).date().isoformat()
     logs = read(DATA / 'player_stats.json').get('game_logs', [])
+    # the season archive keeps every box score, so older days can still be (re)graded
+    seen = {(str(r.get('date')), r.get('event_id'), r.get('id')) for r in logs}
+    sl = read(DATA / 'season_logs.json')
+    logs = logs + [r for r in (sl.get('game_logs') or sl.get('logs') or []) if (str(r.get('date')), r.get('event_id'), r.get('id')) not in seen]
     report = read(DATA / 'accuracy.json', {'schema': 1, 'days': []})
     graded = {d['date']: d for d in report.get('days', [])}
     for path in sorted(HIST.glob('*.json')) if HIST.exists() else []:

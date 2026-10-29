@@ -38,7 +38,11 @@ def canon(t):
 
 
 def norm(s):
-    return re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', str(s or '')).lower())
+    # Name key: accents, case and punctuation ignored, and a trailing Jr./Sr./II/III/IV dropped,
+    # so "Darius Acuff" (FanDuel) matches "Darius Acuff Jr." (ESPN box scores).
+    s = unicodedata.normalize('NFKD', str(s or '')).lower().strip()
+    s = re.sub(r'[\s,]+(jr|sr|ii|iii|iv|v)\.?$', '', s)
+    return re.sub(r'[^a-z0-9]', '', s)
 
 
 def read(name, default=None):
