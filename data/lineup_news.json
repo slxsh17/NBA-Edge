@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-29",
-  "checked_at": "2026-10-29T13:29:13.301177+00:00",
+  "checked_at": "2026-10-29T14:23:33.479529+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -65,6 +65,14 @@
       "headline": "AJ Dybantsa to start Wizards debut Wednesday - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdkRNdGhBYzVlakF2NlBsV1Z5X21RTU9Vc3A4YUJrUXJaaGRQU1NLcmhTTksxNEQ2NzhJbTlyZklmMEZ4OTItU1o3eUFvb1UtNmZDbmt6ZnZYZzJNSlZEUjlKam5kY2tudjJmbC1jRFlIN29tWkRiY1laNE5tVXZOQW9hS2p1UmdTYkZJanhNNUNyRDhrSUtSQVNMUzJ3b3BYU3hia0pmTmQxMWpwQmpmTVpB?oc=5",
       "published_at": "2026-10-29T04:32:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
+      "headline": "JJ Redick Reveals Why Lakers Ruled Out Luka Doncic, Ziaire Williams vs. Clippers - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOazNNc0pBdklPRzBiT2Y2ZWRZWkl6UWppWkJackZRYVJUY0VNdFVIbUNUM0hLcE91MGp1SDNwcWtCd1M5T3ktdVVjU0swalV1NDlsa0xuc2lsb3lnYUR3bTQ3Y3NpbUJPUFhKTVFnTy1qOEZ2cGdONXl1dmtYeTM2dUh2NA?oc=5",
+      "published_at": "2026-10-29T04:12:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
@@ -270,6 +278,14 @@
       "scope_date": "2026-10-29"
     },
     {
+      "headline": "Video - Nets’ Dëmin Shares Positive Update After Injury Scare - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNXBKTWxmMGROckJEUTR1YWNsVWhmVURmcGdhVmJvSDhibWFGbkRfTXQzS3VfVEpMdFV1UGRQc3l0UWNzYnVYbnoyTzdzWjEzcG9GUU5pUkhfUk9PYXJNWGhWZXBBdVEwdWM2QmE2eDdSYmRwcE1ucWY4ckhBOTVrcnJiZWdBOTJuX1pqeTgzbElGMjBCYy1DdDBHZTM?oc=5",
+      "published_at": "2026-10-28T18:06:11+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-29"
+    },
+    {
       "headline": "Knicks Vs Bulls: Jose Alvarado Ruled Out With Ankle Sprain - Total Apex Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5JdVBvSUhwSTlxRTFUS3M0YUU5X1NIZXhheklUQmY3T28xbXNwZUI4bXQ4dGJOSktYR2VIaEVLQkItaW0tZmFzNUJFMlN5Q0dURVpRY2VMWkJ0Sk1uQXc?oc=5",
       "published_at": "2026-10-28T16:06:02+00:00",
@@ -305,14 +321,6 @@
       "headline": "Why The Blazers’ Guards Are Working To Start The Season - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSzAtZXN4bU9MSm9SZ2lNVDVCZ2N3SVQ4YlBzNy1oVUREbExuZFUxLV9xSFF6Z2RRY3ZiTlhRNlhDalRfOTd3T1hvdWxvdHlQT1NseUtkb1NQc0QxVnk2TFRSLUF0Y1ZIaU15Vzd1MzhKQ0NTelZZaGY3SW44cl9ENC1IMEZEcWpa?oc=5",
       "published_at": "2026-10-28T14:48:20+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-29"
-    },
-    {
-      "headline": "Jaxson Hayes Carries Questionable Tag for Wednesday - NBA News | Fantasy Basketball - RotoBaller",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY1pTOVpCeWo4dlRSZnd6dTJjNjEwU3lkdzZ3OTZWaHlOVE1oTFVWY21Lamxvc1c0NmRUbVVRNGVhMU9fNllQdGQtSEtCRjNGckxvbXlnMWNodXJMMTVLYUppM050VkVqTW10dkZGcFp1dlg5MW12SXdiNGJJNHFKVE5PVUZiWVptdjRaWFBkWGg4RXJZVkZNRGhSdGRhQW8?oc=5",
-      "published_at": "2026-10-28T13:57:11+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-29"
