@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-29T05:17:46+00:00",
+ "updated_at": "2026-10-29T16:58:18+00:00",
  "nights": 7,
  "days": [
   "2026-10-21",
@@ -11,55 +11,55 @@
   "2026-10-27",
   "2026-10-28"
  ],
- "avg_hindsight_best": 435.2,
+ "avg_hindsight_best": 435.7,
  "cash": {
   "best": {
    "ceilW": 0.0,
    "levW": 0.3,
-   "ownFade": 0.15
+   "ownFade": 0.08
   },
-  "best_avg": 300.4,
+  "best_avg": 307.7,
   "projection_only_avg": 286.7
  },
  "tournament": {
   "best": {
-   "ceilW": 0.25,
-   "levW": 0.15,
+   "ceilW": 0.45,
+   "levW": 0.5,
    "ownFade": 0.08
   },
-  "best_avg_best_of_5": 318.8,
-  "site_default_avg_best_of_5": 311.8,
-  "sim_winners_avg_best_of_5": 321.3,
+  "best_avg_best_of_5": 324.3,
+  "site_default_avg_best_of_5": 314.0,
+  "sim_winners_avg_best_of_5": 324.0,
   "top5": [
    {
-    "ceilW": 0.25,
-    "levW": 0.15,
+    "ceilW": 0.45,
+    "levW": 0.5,
     "ownFade": 0.08,
-    "avg_best_of_5": 318.8
+    "avg_best_of_5": 324.3
    },
    {
-    "ceilW": 0.25,
-    "levW": 0.15,
+    "ceilW": 0.65,
+    "levW": 0.5,
     "ownFade": 0.03,
-    "avg_best_of_5": 317.9
+    "avg_best_of_5": 321.0
    },
    {
-    "ceilW": 0.0,
-    "levW": 0.15,
-    "ownFade": 0.15,
-    "avg_best_of_5": 317.1
-   },
-   {
-    "ceilW": 0.25,
-    "levW": 0.15,
-    "ownFade": 0.15,
-    "avg_best_of_5": 316.9
-   },
-   {
-    "ceilW": 0.0,
-    "levW": 0.3,
+    "ceilW": 0.65,
+    "levW": 0.5,
     "ownFade": 0.08,
-    "avg_best_of_5": 316.1
+    "avg_best_of_5": 319.7
+   },
+   {
+    "ceilW": 0.65,
+    "levW": 0.5,
+    "ownFade": 0.15,
+    "avg_best_of_5": 319.5
+   },
+   {
+    "ceilW": 0.65,
+    "levW": 0.5,
+    "ownFade": 0.0,
+    "avg_best_of_5": 319.4
    }
   ]
  },
@@ -99,6 +99,20 @@
     "ceilW": 0.0,
     "levW": 0.3,
     "ownFade": 0.15
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "nights": 7,
+   "gpp": {
+    "ceilW": 0.45,
+    "levW": 0.5,
+    "ownFade": 0.08
+   },
+   "cash": {
+    "ceilW": 0.0,
+    "levW": 0.3,
+    "ownFade": 0.08
    }
   }
  ]
