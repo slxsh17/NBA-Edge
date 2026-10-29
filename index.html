@@ -605,6 +605,24 @@ function loadGLPK(){return glpkP??=import('https://cdn.jsdelivr.net/npm/glpk.js@
 function score(p){const c=S.cfg;return S.mode==='gpp'?((1-c.ceilW)*p.proj+c.ceilW*(p.ceiling||p.proj)-c.ownFade*(p.own||0)+c.levW*(p.lev||0)):p.proj}
 // Late games go in flex slots so late swap stays possible.
 function flexBonus(p,slot){if(!['G/F','F/C','UTIL'].includes(slot))return 0;const g=gameOf(p);return g&&g.time?(Date.parse(g.time)%86400000)/86400000*0.02:0}
+// Late swap flexibility: after a lineup is chosen, seat its latest-tipping players in UTIL first,
+// then G/F and F/C, and the earliest games in PG/SG/SF/PF/C. If late news hits a late game, the
+// player you'd swap is in a slot that can take almost anyone. Players in fixedKeys keep their slot.
+const FLEXW={UTIL:3,'G/F':2,'F/C':2};
+function lateFlex(picks,fixedKeys=new Set()){
+  if(S.format!=='classic'||picks.length!==F().size)return picks;
+  const tip=p=>{const g=gameOf(p);return g&&g.time?Date.parse(g.time):0};
+  const t0=Math.min(...picks.map(x=>tip(x.p)||Infinity)),mins=p=>tip(p)?(tip(p)-t0)/60000:0;
+  const slots=slotList(),fixed=picks.filter(x=>fixedKeys.has(pkey(x.p))),free=slots.slice();
+  for(const f of fixed)free.splice(free.indexOf(f.slot),1);
+  const ps=picks.filter(x=>!fixedKeys.has(pkey(x.p))).map(x=>x.p).sort((a,b)=>tip(b)-tip(a));
+  let best=null,bestV=-Infinity;const used=Array(free.length).fill(false),cur=[];
+  const go=i=>{if(i===ps.length){const v=cur.reduce((a,sl,k)=>a+(FLEXW[sl]||0)*(1+mins(ps[k])),0);if(v>bestV){bestV=v;best=cur.slice()}return}
+    for(let j=0;j<free.length;j++){if(used[j]||!canFill(ps[i],free[j]))continue;if(j>0&&free[j]===free[j-1]&&!used[j-1])continue;used[j]=true;cur[i]=free[j];go(i+1);used[j]=false}};
+  go(0);if(!best)return picks;
+  const order=F().order;
+  return [...fixed,...ps.map((p,i)=>({p,slot:best[i]}))].sort((a,b)=>order.indexOf(a.slot)-order.indexOf(b.slot)||tip(a.p)-tip(b.p));
+}
 async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],minUnique=2}){
   const vars=[],bySlot={},byP={},byTeam={};
   const need=F().need,size=F().size;
@@ -656,16 +674,17 @@ async function build(){
         const tc={};if(picks.some(x=>(tc[x.p.team]=(tc[x.p.team]||0)+1)>teamMax))continue;
         const ks=new Set(picks.map(keyOf));
         if(made.some(l=>l.picks.filter(x=>ks.has(keyOf(x))).length>size-minU))continue;
-        const order=F().order;picks.sort((a,b)=>order.indexOf(a.slot)-order.indexOf(b.slot));
-        const l={picks,built:Date.now(),sim:c.top5};l.proj0=total(l);made.push(l);
-        picks.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
+        const seated=lateFlex(picks);
+        const l={picks:seated,built:Date.now(),sim:c.top5};l.proj0=total(l);made.push(l);
+        seated.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
       }
     }
     for(let n=made.length;n<S.count;n++){
       status.textContent=`Building lineup ${n+1} of ${S.count}…`;
       const excludeKeys=new Set([...uses].filter(([k,c])=>c>=cap&&!S.locks.has(k)).map(([k])=>k));
-      const picks=await solveOne(glpk,pool,{excludeKeys,previous:made.map(l=>new Set(l.picks.map(x=>S.format==='single'?pkey(x.p)+'|'+x.slot:pkey(x.p)))),minUnique:S.count>1?S.cfg.minUnique:1});
+      let picks=await solveOne(glpk,pool,{excludeKeys,previous:made.map(l=>new Set(l.picks.map(x=>S.format==='single'?pkey(x.p)+'|'+x.slot:pkey(x.p)))),minUnique:S.count>1?S.cfg.minUnique:1});
       if(!picks)break;
+      picks=lateFlex(picks,new Set(picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).map(x=>pkey(x.p))));
       const l={picks,built:Date.now(),review:S.review&&picks.some(x=>{const g=gameOf(x.p);return g&&started(g)})};l.proj0=total(l);made.push(l);
       picks.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
       await new Promise(r=>setTimeout(r,0));
@@ -683,7 +702,8 @@ async function lateSwap(i){
   status.textContent='Re-optimizing players in games that haven’t started…';
   try{const glpk=await loadGLPK();
     const saveLocks=S.locks;S.locks=new Set([...S.locks].filter(k=>pool.some(p=>pkey(p)===k)));
-    const picks=await solveOne(glpk,pool,{fixed});S.locks=saveLocks;
+    let picks=await solveOne(glpk,pool,{fixed});S.locks=saveLocks;
+    if(picks)picks=lateFlex(picks,new Set(fixed.map(f=>pkey(f.p))));
     if(!picks){status.textContent='No better swap fits under the cap.';return}
     const before=total(l);S.lineups[i]={picks,built:Date.now()};S.lineups[i].proj0=total(S.lineups[i]);saveDayState();renderLineups();
     const gain=total(S.lineups[i])-before;status.textContent=gain>0.05?`Late swap added ${gain.toFixed(1)} projected points.`:'Your lineup is already the best option for the games left.';

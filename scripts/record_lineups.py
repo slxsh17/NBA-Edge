@@ -74,12 +74,48 @@ def build(pool, fmt, scores):
     return [(pool[i], slot) for i, slot in lu] if lu else None
 
 
+TIPS = {}   # team -> tip time (set from today's games); used to seat late games in flex slots
+FLEXW = {'UTIL': 3, 'G/F': 2, 'F/C': 2}
+
+
+def late_flex(picks):
+    """Re-seat a classic lineup so the latest-tipping players sit in UTIL, then G/F / F/C,
+    keeping late-swap options open. Same players, only the slots change."""
+    if not TIPS or len(picks) != 9:
+        return picks
+    slots = [s for s, n in FS.FORMATS['classic']['need'].items() for _ in range(n)]
+    t0 = min((TIPS[p['team']] for p, _ in picks if p['team'] in TIPS), default=0)
+    late = lambda p: (TIPS.get(p['team'], t0) - t0) / 60.0
+    ps = sorted((p for p, _ in picks), key=lambda p: -late(p))
+    best, best_v, used, cur = None, -1.0, [False] * 9, [None] * 9
+
+    def go(i):
+        nonlocal best, best_v
+        if i == len(ps):
+            v = sum(FLEXW.get(sl, 0) * (1 + late(ps[k])) for k, sl in enumerate(cur))
+            if v > best_v:
+                best_v, best = v, list(cur)
+            return
+        for j, sl in enumerate(slots):
+            if used[j] or not FS.can_fill(ps[i]['position'], sl, 'classic'):
+                continue
+            if j > 0 and slots[j - 1] == sl and not used[j - 1]:
+                continue
+            used[j], cur[i] = True, sl
+            go(i + 1)
+            used[j] = False
+    go(0)
+    return list(zip(ps, best)) if best else picks
+
+
 def pack(picks, fmt, strategy, corr, extra=None):
+    if fmt == 'classic':
+        picks = late_flex(picks)
     mult = FS.FORMATS[fmt]['mult']
     rows = [{'name': p['name'], 'team': p['team'], 'opp': p.get('opp'), 'slot': s, 'salary': p['salary'], 'proj': round(p['proj'], 2),
              'ceiling': p.get('ceiling'), 'own': p.get('own'), 'mult': mult.get(s, 1.0)} for p, s in picks]
     order = list(FS.FORMATS[fmt]['need'])
-    rows.sort(key=lambda r: order.index(r['slot']))
+    rows.sort(key=lambda r: (order.index(r['slot']), TIPS.get(r['team'], 0)))
     out = {'strategy': strategy, 'players': rows, 'proj': round(sum(r['proj'] * r['mult'] for r in rows), 1),
            'salary': sum(int(r['salary'] * (1.5 if r['slot'] == 'MVP' else 1)) for r in rows),
            'sim': simulate(rows, corr, shift=(corr or {}).get('shift_' + fmt, 0.0))}
@@ -133,6 +169,9 @@ def main():
             changed = True
 
     main_games = today.get('games', [])
+    for g in main_games:
+        if g.get('time'):
+            TIPS[g['home']] = TIPS[g['away']] = tip(g['time']).timestamp() / 60.0
     locks = [tip(g['time']) for g in main_games if g.get('time')]
     main_pool = [p for p in players if p.get('main') and p['proj'] > 0 and not p.get('out')]
     put('main', 'Main slate', 'classic', min(locks) if locks else None, main_pool, today.get('sim_lineups'))
