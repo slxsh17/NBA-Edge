@@ -1,11 +1,27 @@
 {
   "schema": 1,
   "slate_date": "2026-10-30",
-  "checked_at": "2026-10-30T11:05:07.934131+00:00",
+  "checked_at": "2026-10-30T12:04:29.329132+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Trail Blazers' Ja Morant ruled out of loss to Grizzlies with hamstring injury - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUVUwT09SLWI0RDdqMG43Rkg1TUhGZW9Xa1VHVE5HWHBOSjBJaFZ6Y0ZQUUJxTzR6a1hyZlI5dURXVm00RV85TGlERW5FZkxVTExpQV9oMDhKM2Z5eTQ4dzZRcWVST1cyemJaMHl2bmN0YndXdFZmOTlDYkpCVHFzS3FYc1RldlVzd3hiUE1CWnBEc1lXcmc3X09RZWRaZ3o5S2FQRW14QzJFS1lldjFJanNDYWU2RE5za0tEdzlmYWZtTFFKbXBJ?oc=5",
+      "published_at": "2026-10-30T11:24:10+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Chicago Bulls: Every Rotation Player Described in One Word - Substack",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeThVcVBRREc1d3F1bTcxY2VQMEpUR1BGalhBQjljWDZ2T29jdG1qYWF0YVdmMTdqbXA0OTk0aF9RZlVGVERoMlA5V3dWcmw2RlVrSmJfYm4wYzlMMkhMMW9lTkduc1BHRnlQYkJrRTUzQnd5eGNVMzh2ZUhQVmhjVF9WZw?oc=5",
+      "published_at": "2026-10-30T11:02:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
     {
       "headline": "José Alvarado also ruled out against Philadelphia - NBAmaniacs",
       "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNc3Zhek5vTTR4ZjNiRGRJUUF4Y0tkcnFjX1pTd0dBY19VZEYtcllWRnVxOXhsMWpvLVpPaWt2RkZQemZmRjN5a2dQX0p5Z1hSSEFvb2QwaFp0Mnl6VXRBZmROUUxtNF9NV3QtcHYzZnhJbFM4WHJKeE1jNE5KRjJrVA?oc=5",
@@ -26,14 +42,6 @@
       "headline": "Jose Alvarado (ankle) ruled out Friday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPemJvUHBkMG85eWd6cGp2bjlfVWRIWTBoQlJBcUZWMTFCcTlLUnN1dXgzUVFaaklhek1mSmFZOS1PNmpxX2pZdGFqZDhrQlo4TnBlRzhCRURKcGdYNTJqSXg4a0kzQTlQSXhGT3B5eFJJcTVuRzdUMkRTdmc0bnAxRXFKWVk0eS1nR0FyRdIBkgFBVV95cUxQck85dGNWc2ZNaG1Kcnc0a3pwVktXeHZMZDVLODhSbmhHUExwUGRMU0RsLS1kbDRvZE5pQW50VlN6OXgyY2UwNnNTUlVTOEN6VGhBdzdYb1FSVmczX19kbnJCc2kzR1dkdjR6SGVkMXNsbzdSVWxQMjk1NWNhM2RhZl9SZW9lTE9hclAxckE3THBfQQ?oc=5",
       "published_at": "2026-10-30T06:14:30+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Trail Blazers' Ja Morant ruled out of loss to Grizzlies with hamstring injury - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUVUwT09SLWI0RDdqMG43Rkg1TUhGZW9Xa1VHVE5HWHBOSjBJaFZ6Y0ZQUUJxTzR6a1hyZlI5dURXVm00RV85TGlERW5FZkxVTExpQV9oMDhKM2Z5eTQ4dzZRcWVST1cyemJaMHl2bmN0YndXdFZmOTlDYkpCVHFzS3FYc1RldlVzd3hiUE1CWnBEc1lXcmc3X09RZWRaZ3o5S2FQRW14QzJFS1lldjFJanNDYWU2RE5za0tEdzlmYWZtTFFKbXBJ?oc=5",
-      "published_at": "2026-10-30T04:50:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -207,14 +215,6 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Full injury report for Sixers-Knicks on Friday - PhillyVoice",
-      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPV0FDN0JJREpSVGhvR3FMRnNBbzBFcFZoVWIwZjhfZklHM3NyRTNEaUlfSVVOMjVpNDR1Z25yQVhPVjlIbTZ1T29WWU8tY3BTT01GaW8za0hkMzRpYXk4X0UxS3o1QWw1NHpabUMyMWVuYmlNNXVOeWVNMGdwUVllbGJPdmh0eEVTTjdBTmpiUzg3Q3R4MHJqWTZXNFVvcjEtZmZuVHV2QzhSbGxRX3R1SmdHTWExRnlwckRSVmJoSVRfbXBkcTF1NWp2RWZDaDR5VlNGOFJB?oc=5",
-      "published_at": "2026-10-29T21:35:02+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
       "headline": "Jalen Smith is questionable with a left finger sprain. - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd1c5TXduUnNaemZWcDZpN3UwRDBLR1lOUWpjU3BWeURjc3lUaWdaYnJ6ZnFZVEZDUEVfU1dVbTMwNERDOHZIeDFTMldZVEN4d1ludmt3OF84ZDNhRTd6OEgzZUljRzVobndSeGltMUdSaGRJR3JzOFhOcDhYYm92UlE2WG9ITEJGS1FRb3B3?oc=5",
       "published_at": "2026-10-29T21:09:54+00:00",
@@ -231,9 +231,9 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Warriors' Rotation Analysis: What Kerr Is Getting Right and Wrong After 5 Games - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdGtUMXVDRlowQmpoSUZWWnNxN3RWMEZRcXgtdGRrZkE2MVZuWF9NSGVLQ0ZiN0ptQzkyaTRjSHY3TGpGR0Q3ZEJWYUpGMDRwWVRKZ2ZlZkx4TTQ0VkpobnYwOFhWTDZLZVVWUTBvaXV0UnllelpUeXZPcXZubnAwMHhzeWtiODM2cUdEejRoUk5HeDljZkxVenFnNFlWLXRyYURRVnNxRFRNeS1QeXZOem1DVWE1LWFnUUdyRGExN1I2c3VyYkE?oc=5",
-      "published_at": "2026-10-29T21:07:49+00:00",
+      "headline": "Warriors' Rotation Analysis: What Kerr Is Getting Right and Wrong After 5 Games - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZGRnbWMtR3VHR2c1TEhVY1hfU2ZwLVc2a09vLVF3YWhvZmJWM0trX3JIeXk1V1FzemxlcER3eG9VU3JCWG1USkJaT3FicnB4amJTWkN2T2RBd3RpWkhrVDRmc3FWUEc0SUdyd0VaUEtpckY2Ri0tU3ptN09VdVg5UmJOT09NOEh5VmhRRUEtWXVqdw?oc=5",
+      "published_at": "2026-10-29T21:07:50+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -295,22 +295,6 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "5 Sneaker and Hat Combos to Add to Your Rotation - Complex",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWVlUNjlKTzFFSkFQTVhJS25KMDJGLTZLazhxNVpRVzR6VzdBTkdqY01wN0FXbzhjMGd6Y2hLMGZTQS1KNlpuS0FYRjF4WnE0THdqZDhuR3NqNlQ3cl9SaVBpLXFHWXpBbkVDSGlKcGtkbUMzMjJGVWo5ekVtZDkzY2p0TWlZa2xqdUJV?oc=5",
-      "published_at": "2026-10-29T19:19:29+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Yaxel Lendeborg's playmaking leap could be what completes this Warriors rotation - Blue Man Hoop",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUXBDa0lfZmFWNWs2YXJDaTFXSlpEdGxfN3NaLXNkRUY1dGFRMHNIMklEOWd6MDdCZ2MtUHliRF9ucGVxazY3eFVmRzFWNmE4c3pzT0tPM19zR091UXRWWlFndThJRk9MZ2M1WXdjVXpiTnVucWxVRml1ZGxJVzBFMS1HcHU4MXptdno0THI0RlNtREJhN1Y1ZzhhaEl4MFJib3JNZ0Jlcw?oc=5",
-      "published_at": "2026-10-29T19:00:01+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
       "headline": "Robert Williams Injury: Doubtful for Thursday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQU0RQWEozelV5TG1USTN2djFRWVlwRlJ2N1VTajY4WkJmeTVxQkVEZF9ocjBkbkx2eXRUMy1FSjhMQlJmUll1T2NfY1JCQ2hBNVZJUWFldDliWU5FMU5MVEhiZzNGUEVPSUNSaFlSYTh0VXZ3Umk4bEpILVVibDcwazdnTUlmeWlqQV9GdFdHX1pUeUZBNTR0YV9oR2xhdw?oc=5",
       "published_at": "2026-10-29T18:57:17+00:00",
@@ -354,14 +338,6 @@
       "headline": "Sixers list Brown as questionable for meeting with Knicks - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdzlQa2J1c2lXUHA2WjFTek5aTmhraWsxd0xLaHVMMjNZVXRReFdEdVRrSlM3akFmZTV4WVpjLUtyMzRaY3NyblpTNDJCMEdWWWYyaFVsWWIzM1RvR05uSW9OczFhX183LWI3akpRZUwwN216Tlplb0VuWjY4QVRTMmxha016eEJTMGRxSURleFc?oc=5",
       "published_at": "2026-10-29T18:07:01+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Tanner McKee to Start for Eagles vs. Panthers Stream of National Football League - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQWh6YnhISkYybHBsV1h0ZUk5UURPTnI0cEFrMVpyajV4QkZqWGtheTRyNE1vRkpTOTB4Z3gtcVd1a1Q3SkRVWDc2RV9xSWRFbnNXUHptZ045ZkVsR0JFUGJGOFlwcFAzcVhqZWZsa25wWk9FTy1Xenowa3Z3NnUzbEtUX2hBNXVaQUNOb3hKUQ?oc=5",
-      "published_at": "2026-10-29T17:43:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -423,14 +399,6 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Cavs vs. Hawks: How to watch, odds, and injury report - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBXMEFwZlU4ajNLX284NDV3MEFLYVNIMWNlMzRuMEhNTVFpaXlWeDduTU03UUhmVWxhdTROY29Yc3hheW9pSVlDXzhXdlBjX2JNLVFWS1dCTGN5OU9qMGRobDMxUnBOTHN2TE9Takk5RTU0TzNaQWdPTVdHeWROZw?oc=5",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
       "headline": "Boston Celtics About to Start NBA Cup: Need to Know - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQmZHaDVQRWJ3Smt1RGZGbjcwTzhXcWRBNmN6RUktQkdhMmljdGxmUlhQa3JGYlNvbC04R2pYUXpldmRlY3NmcXRkOUFzVUVzS2NxSWtRZmh6WDJNM01xMjQtMnFpZS1ZMXpKdlJSTlNFU3liclBMWFkwTE45OEEwN3dGU2c1cXVYMFduVnVKUFlqTzc5WmluZ3RPMFI?oc=5",
       "published_at": "2026-10-29T14:50:53+00:00",
@@ -447,41 +415,9 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "The Giants Will Start J.J. McCarthy at QB Over Jameis Winston This Week vs Houston - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWFpXZmR4VXNsQ3lRbTRYdTZfd0kwanRnSFRsMS1yMnAybFRQQm81TkFrdXdkUVZtNzZMUzRFUzZHNjFRYnNBU1NIZ1h3RW9MZzhZS3NMSng3RzJnVEdNOUkzWHZWaWZGTGRxcEVVbHJCb0NTakRESEFMa0pUOTdrZ3dWZVpSNWQxb2xLclNwN3puN2xwMVFVTVFiN3RST1JxQ0RXeTBfMEdVMUpOb19zaThkUUNsUFAwU1otU0wyd1Y?oc=5",
-      "published_at": "2026-10-29T13:34:02+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "ESSENTIAL: Why Meleek Thomas MUST Be Part of the Cleveland Cavaliers Rotation! - 5newsonline.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQNzFOODJMX3d6R3QxbzhGc0wwWXJJX1NVNllpbWFmWHJUSWR3UzlGVG5QR0VLUmR0XzlNT2FMVEJXY2RLMndaaGNLZVJxYUFldWttRzlnWFVhRlFWSGo5aHlyeFdobFJhMDh6RE4wQUdvdFlFSTBOTTA2bzNCWldMWEtsTmtTeWpBNGpxOHpnQ3FZMng5Z0VyTjkxbWR0NnpYZXVXY0FfeGs2ZlR1SWw2WGlVZG1ndjNnVTZtRUE0TkdFNXRLY3RmTjVrMFJrUThQWDNMRGd0TGhqc3cxeG9rRlUwNnlZVFpLUlRCclBWb3JCS0tDZWlBVnVtdHQ3TWk2WGtXXzZsNXc4MEs3emZpNVlGWkJRSlVWNDFBOFdCTlV2dw?oc=5",
-      "published_at": "2026-10-29T13:10:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Clippers continue to struggle with turnovers to start 2026-27 season - USA Today",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPal82WnVOOWRKRjNaQ3dJd05XVllCbU1oaVAxNXlWaFBHYjNIM3RJMnNqdnlLMDJaRTdPQnVzNXkxUHJDX1pYckNpRmdnY0JkZmdFNng4VWhLd09fdzNZbUxiNFVGLTFFM1dOOVRlcFRjZzl5SXJ6ZU9xMU81MnNPTlgtZVJwejdRTWlSaUlNVmsyV2NMTHlqbU50RlMxV3piVnVfSWRoVUE5T09sWHc?oc=5",
-      "published_at": "2026-10-29T12:37:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
       "headline": "Drew Rasmussen to start Game 5 on short rest as Rays try to extend World Series - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTXlic2pSbDVuNUhxLTJVdGVCQUVYWC1qdmtUU3d5aTNTT0N5Z3lLQ0NTeHZvMDdHNHBiQjRaZ3pPeTlqQW13NmtWb3VqNkJLRkFtbnVDY1kxbndlNDhCUUxURUJ4dE1BWVhXTlUwMjlaTWxld2xqc2dOV2pCRWNhWTY4LVNSM2tEUndpZWNlOWJuTFdJNDRF?oc=5",
       "published_at": "2026-10-29T12:29:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Clippers continue to struggle with turnovers to start 2026-27 season - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOG1ESmpkanl5dGNQRGFYUFdGUHFMQ0JYZUE0ai1KUmxYZGVFQ0RoX1E1aEk3eGpSRGpKOHUyNTlPaVFUQjVfZWR5SUxUVTlFOXYxYnY5eXJQVmZWTlJuTjlMZzhpaTJPSU1xZGFSRkFNYlBLeWtxTGFJMXdHc2x2RjlNeFBqem5lNjNXcUZQd1IxWnNpLUE?oc=5",
-      "published_at": "2026-10-29T11:37:42+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
