@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T18:43:16.737464+00:00",
+  "updated_at": "2026-10-30T19:31:40.771095+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -103,12 +103,12 @@
       "status": "OUT"
     },
     {
-      "name": "Alpha Diallo",
+      "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
     },
     {
-      "name": "Cameron Johnson",
+      "name": "Alpha Diallo",
       "team": "DEN",
       "status": "OUT"
     },
@@ -173,6 +173,16 @@
       "status": "OUT"
     },
     {
+      "name": "T.J. McConnell",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Johnny Furphy",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
       "name": "Andrew Nembhard",
       "team": "IND",
       "status": "DAY-TO-DAY"
@@ -188,22 +198,12 @@
       "status": "OUT"
     },
     {
-      "name": "T.J. McConnell",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
       "name": "Ben Sheppard",
       "team": "IND",
       "status": "OUT"
     },
     {
       "name": "Tyrese Haliburton",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Johnny Furphy",
       "team": "IND",
       "status": "OUT"
     },
@@ -378,12 +378,12 @@
       "status": "OUT"
     },
     {
-      "name": "Robert Williams III",
+      "name": "Ja Morant",
       "team": "POR",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Ja Morant",
+      "name": "Robert Williams III",
       "team": "POR",
       "status": "DAY-TO-DAY"
     },
