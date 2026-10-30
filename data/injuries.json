@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T00:20:42.019390+00:00",
+  "updated_at": "2026-10-30T01:34:01.817475+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -253,6 +253,11 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Ty Jerome",
+      "team": "MEM",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Simone Fontecchio",
       "team": "MIA",
       "status": "DAY-TO-DAY"
@@ -380,7 +385,7 @@
     {
       "name": "Robert Williams III",
       "team": "POR",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Chris Youngblood",
