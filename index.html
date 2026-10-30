@@ -108,6 +108,9 @@ input[type=range]{width:100%;accent-color:var(--orange)}
 .lu-row.locked{background:var(--soft)}
 .lu-note{font-size:12.5px;padding:8px 14px;background:var(--orange-soft)}
 #entries{margin-bottom:16px}
+.set-badge{font-size:12px;color:var(--muted);padding:6px 14px 0}
+.cpanel{font-size:13px;padding:8px 14px;background:var(--soft);border-top:1px solid var(--line)}
+.cpanel table{width:100%;margin:4px 0}.cpanel td{padding:3px 2px;border-top:1px solid var(--line)}
 .odds{font-size:12.5px;padding:6px 14px;border-bottom:1px solid var(--soft);color:var(--muted)}
 .odds b{color:var(--ink)}
 .odds .fit{color:var(--orange);font-weight:600}
@@ -438,9 +441,9 @@ function restoreDayState(){
   const ex=$('exposure');if(ex){ex.value=S.exposure;$('exposure-out').textContent=S.exposure+'%'}
   loadEntries();
 }
-function loadEntries(){const v=store.get(entKey(),[]);S.entries=(v||[]).map(e=>({label:e.label||'',noise:e.noise||null,gap0:e.gap0||0,picks:e.picks.map(rehydrate).filter(Boolean)})).filter(e=>e.picks.length===F().size);S.entStarted=-1}
+function loadEntries(){const v=store.get(entKey(),[]);S.entries=(v||[]).map(e=>({label:e.label||'',noise:e.noise||null,gap0:e.gap0||0,settings:e.settings||null,sim:e.sim??null,picks:e.picks.map(rehydrate).filter(Boolean)})).filter(e=>e.picks.length===F().size);S.entStarted=-1}
 function rehydrate(pk){const p=S.players.find(x=>pkey(x)===pk.k);return p?{p,slot:pk.slot}:null}
-function saveDayState(){store.set('day:'+fmtKey(),{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,sim:l.sim,noise:l.noise||null,gap0:l.gap0||0,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings:'+S.format,{count:S.count,mode:S.mode,exposure:S.exposure,useSim:S.useSim})}
+function saveDayState(){store.set('day:'+fmtKey(),{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,sim:l.sim,noise:l.noise||null,gap0:l.gap0||0,settings:l.settings||null,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings:'+S.format,{count:S.count,mode:S.mode,exposure:S.exposure,useSim:S.useSim})}
 
 // ---------- CSV upload ----------
 function parseCSV(text){const rows=[];let row=[],cell='',q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'){if(text[i+1]==='"'){cell+='"';i++}else q=false}else cell+=c}else if(c==='"')q=true;else if(c===','){row.push(cell);cell=''}else if(c==='\n'||c==='\r'){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cell);if(row.some(x=>x.trim()))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell);if(row.some(x=>x.trim()))rows.push(row);return rows}
@@ -504,7 +507,7 @@ function renderExport(){const box=$('fd-export');if(!box)return;const n=exportab
   const {miss}=missingIds();$('fd-export-btn').textContent=miss.length?'Download for FanDuel (link IDs first)':'Download for FanDuel';
   if(miss.length&&!$('fd-export-msg').dataset.touched)$('fd-export-msg').textContent='FanDuel needs its own player IDs. On FanDuel, open the contest and tap Download players list, then choose that file here. Only the IDs are used.';}
 $('enter-all').onclick=()=>{const ls=exportable();const have=new Set((S.entries||[]).map(e=>e.picks.map(y=>pkey(y.p)+y.slot).sort().join()));let n=0;
-  for(const l of ls){const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(have.has(k))continue;have.add(k);(S.entries??=[]).push({label:'',noise:l.noise||null,gap0:l.gap0||0,picks:l.picks.map(x=>({...x}))});n++}
+  for(const l of ls){const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(have.has(k))continue;have.add(k);(S.entries??=[]).push({label:'',noise:l.noise||null,gap0:l.gap0||0,settings:l.settings||currentSettings(),sim:l.sim??null,picks:l.picks.map(x=>({...x}))});n++}
   saveEntries();S.entStarted=-1;$('fd-export-msg').dataset.touched='1';$('fd-export-msg').textContent=n?`Saved ${n} lineup${n>1?'s':''} to My entries (top of this page). Late swaps will be checked for all of them as games lock.`:'All of these are already in My entries.';
   renderEntries();autoSwaps()};
 $('fd-export-btn').onclick=()=>{$('fd-export-msg').dataset.touched='1';const {miss}=missingIds();if(miss.length)$('fd-ids').click();else downloadFD()};
@@ -728,6 +731,7 @@ async function build(){
     const glpk=await loadGLPK();const made=[],uses=new Map();
     const cap=S.count>1?Math.max(1,Math.ceil(S.count*S.exposure/100)):S.count;
     const keyOf=x=>S.format==='single'?pkey(x.p)+'|'+x.slot:pkey(x.p),minU=S.count>1?S.cfg.minUnique:1,size=F().size;
+    const settings=currentSettings();
     const scoreOf=ps=>ps.reduce((t,x)=>t+score(x.p)*multOf(x.slot),0);
     // Big batches: drop players who can't realistically make a lineup (keeps the solver fast).
     if(S.count>20&&S.format==='classic'&&pool.length>90){
@@ -751,7 +755,7 @@ async function build(){
         const ks=new Set(picks.map(keyOf));
         if(made.some(l=>l.picks.filter(x=>ks.has(keyOf(x))).length>size-minU))continue;
         const seated=lateFlex(picks);
-        const l={picks:seated,built:Date.now(),sim:c.top5};l.proj0=total(l);made.push(l);
+        const l={picks:seated,built:Date.now(),sim:c.top5,settings};l.proj0=total(l);made.push(l);
         seated.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
       }
     }
@@ -774,7 +778,7 @@ async function build(){
       if(!picks)picks=await solveOne(glpk,pool,{excludeKeys,previous:prevSets,minUnique:minU});
       if(!picks)break;
       picks=lateFlex(picks,new Set(picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).map(x=>pkey(x.p))));
-      const l={picks,built:Date.now(),noise:picksNoise,review:S.review&&picks.some(x=>{const g=gameOf(x.p);return g&&started(g)})};l.proj0=total(l);made.push(l);
+      const l={picks,built:Date.now(),settings,noise:picksNoise,review:S.review&&picks.some(x=>{const g=gameOf(x.p);return g&&started(g)})};l.proj0=total(l);made.push(l);
       picks.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
       await new Promise(r=>setTimeout(r,0));
     }
@@ -788,6 +792,16 @@ async function build(){
   }catch(e){status.textContent=e.message}
   finally{btn.disabled=false}
 }
+// Each lineup remembers the settings it was built with, so late swap re-optimizes it the same way
+// (a cash lineup stays a cash lineup even if you've since switched the page to Tournament).
+const SETKEYS=['ceilW','levW','ownFade','maxTeam','minSalary','minUnique'];
+function currentSettings(){const o={mode:S.mode,sim:S.mode==='gpp'&&!!S.useSim,at:Date.now()};for(const k of SETKEYS)o[k]=S.cfg[k];return o}
+async function withSettings(set,fn){if(!set)return fn();const m=S.mode,c=S.cfg;S.mode=set.mode;S.cfg={...c};for(const k of SETKEYS)if(set[k]!=null)S.cfg[k]=set[k];
+  try{return await fn()}finally{S.mode=m;S.cfg=c}}
+function settingsLabel(set,l){if(!set)return '';const t=set.at?new Date(set.at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'';
+  const kind=set.mode==='gpp'?(l&&l.sim!=null?'Tournament · simulated winner':'Tournament'):'Cash';
+  const extra=set.mode==='gpp'?` · upside ${Math.round((set.ceilW||0)*100)}%, leverage ${(set.levW||0).toFixed(2)}, fade ${(set.ownFade||0).toFixed(2)}`:'';
+  return `<div class="set-badge">Built as ${kind}${extra}${t?' · '+t:''}. Late swap uses these settings.</div>`}
 async function lateSwap(i){
   const l=S.lineups[i],status=$('build-status');
   const fixed=l.picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)});
@@ -795,10 +809,10 @@ async function lateSwap(i){
   status.textContent='Re-optimizing players in games that haven’t started…';
   try{const glpk=await loadGLPK();
     const saveLocks=S.locks;S.locks=new Set([...S.locks].filter(k=>pool.some(p=>pkey(p)===k)));
-    let picks=await solveOne(glpk,pool,{fixed,noise:l.noise?new Map(Object.entries(l.noise)):null});S.locks=saveLocks;
+    let picks=await withSettings(l.settings,()=>solveOne(glpk,pool,{fixed,noise:l.noise?new Map(Object.entries(l.noise)):null}));S.locks=saveLocks;
     if(picks)picks=lateFlex(picks,new Set(fixed.map(f=>pkey(f.p))));
     if(!picks){status.textContent='No better swap fits under the cap.';return}
-    const before=total(l);S.lineups[i]={picks,built:Date.now()};S.lineups[i].proj0=total(S.lineups[i]);saveDayState();renderLineups();
+    const before=total(l);S.lineups[i]={...l,picks,built:Date.now(),review:false};S.lineups[i].proj0=total(S.lineups[i]);saveDayState();renderLineups();
     const gain=total(S.lineups[i])-before;status.textContent=gain>0.05?`Late swap added ${gain.toFixed(1)} projected points.`:'Your lineup is already the best option for the games left.';
   }catch(e){status.textContent=e.message}
 }
@@ -806,7 +820,7 @@ async function lateSwap(i){
 // ---------- my entries: lineups you actually entered, re-optimized as games lock ----------
 const slotList=()=>F().order.flatMap(s=>Array(F().need[s]).fill(s));
 const entKey=()=>'entries:'+S.day+':'+fmtKey();
-function saveEntries(){store.set(entKey(),(S.entries||[]).map(e=>({label:e.label,noise:e.noise||null,gap0:e.gap0||0,picks:e.picks.map(x=>({k:pkey(x.p),slot:x.slot}))})))}
+function saveEntries(){store.set(entKey(),(S.entries||[]).map(e=>({label:e.label,noise:e.noise||null,gap0:e.gap0||0,settings:e.settings||null,sim:e.sim??null,picks:e.picks.map(x=>({k:pkey(x.p),slot:x.slot}))})))}
 const isStarted=o=>{const g=gameOf(o.p||o);return !!(g&&started(g))};
 function nameCands(tok){
   const t=key(tok);if(!t)return [];
@@ -857,8 +871,8 @@ function renderEntries(){
     if(sg&&sg.picks){const ch=swapChanges(e.picks,sg.picks);sw=`<div class="swap"><div><b>Late swap: ${sg.gain>=0.05?`<b class="gain">+${sg.gain.toFixed(1)}</b> projected`:`${sg.gain.toFixed(1)} projected, more upside and leverage`}</b> (${esc(sg.mode)} settings)</div><ul>${ch.map(c=>`<li>${c}</li>`).join('')}</ul><button class="btn small" data-eapply="${i}" type="button">I made these swaps</button> <button class="btn small" data-eshow="${i}" type="button">${sg.open?'Hide':'Show'} new lineup</button></div>${sg.open?`<div style="border-top:1px solid var(--line)">${entryRows(sg.picks,new Set(sg.picks.filter(y=>!e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot)).map(y=>pkey(y.p))))}</div>`:''}`}
     else if(sg&&sg.msg)sw=`<div class="lu-note">${esc(sg.msg)}</div>`;
     return `<article class="lineup"><div class="lu-head"><div class="lu-score num">${pts.toFixed(1)}<small>projected</small></div><div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Locked<b>${lk}/${e.picks.length}</b></div>
-      <div class="lu-actions"><button class="btn small" data-eswap="${i}" type="button">Late swap</button><button class="btn small" data-edel="${i}" type="button" aria-label="Remove entry ${i+1}">Remove</button></div></div>
-      ${e.label?`<div class="sim-badge">${esc(e.label)}</div>`:''}${sw}${entryRows(e.picks)}</article>`}).join('');
+      <div class="lu-actions"><button class="btn small" data-econtests="${i}" type="button">Contests</button><button class="btn small" data-eswap="${i}" type="button">Late swap</button><button class="btn small" data-edel="${i}" type="button" aria-label="Remove entry ${i+1}">Remove</button></div></div>
+      ${e.label?`<div class="sim-badge">${esc(e.label)}</div>`:''}${settingsLabel(e.settings,e)}${S.openC==='e'+i?contestPanel(e.picks):''}${sw}${entryRows(e.picks)}</article>`}).join('');
   if(es.length>SHOWE)h+=`<button class="btn small" id="ent-show-all" type="button" style="margin-bottom:8px">${S.entShowAll?'Show fewer':'Show all '+es.length+' entries'}</button>`;
   box.innerHTML=h;
   if(typeof renderWhere==='function')renderWhere();
@@ -884,13 +898,14 @@ async function entrySwap(i,quiet=false){
   const pool=S.players.filter(p=>p.proj>0&&!p.out&&!S.bans.has(pkey(p))&&(fixed.some(f=>f.p===p)||(gameOf(p)&&!isStarted(p))));
   try{const glpk=await loadGLPK();const saveLocks=S.locks;S.locks=new Set();
     const nz=e.noise?new Map(Object.entries(e.noise)):null;
-    let picks;try{picks=await solveOne(glpk,pool,{fixed,noise:nz})}finally{S.locks=saveLocks}
+    let picks;try{picks=await withSettings(e.settings,()=>solveOne(glpk,pool,{fixed,noise:nz}))}finally{S.locks=saveLocks}
     if(!picks){e.suggest={msg:'No lineup fits under the cap with the locked players.'};renderEntries();return}
     const before=e.picks.reduce((t,x)=>t+(x.p.out?0:x.p.proj*multOf(x.slot)),0),after=picks.reduce((t,x)=>t+x.p.proj*multOf(x.slot),0);
     picks=keepSlots(picks,e.picks,fixed);
     const same=picks.every(y=>e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot));
-    const sc=ps=>ps.reduce((t,x)=>t+(x.p.out?0:score(x.p)*(nz?nz.get(pkey(x.p))||1:1)*multOf(x.slot)),0),better=sc(picks)-sc(e.picks);
-    e.suggest=same||better<(nz?Math.max(0.3,0.006*sc(e.picks)):0.3)+(e.gap0||0)?{msg:quiet?'':'No better swap right now. This is already the best lineup for the games left.'}:{picks,gain:after-before,better,mode:S.mode==='gpp'?'tournament':'cash',open:false};
+    const scoreOf=ps=>ps.reduce((t,x)=>t+(x.p.out?0:score(x.p)*(nz?nz.get(pkey(x.p))||1:1)*multOf(x.slot)),0);
+    const [scNew,scOld]=await withSettings(e.settings,async()=>[scoreOf(picks),scoreOf(e.picks)]);const better=scNew-scOld,sc=ps=>ps===picks?scNew:scOld;
+    e.suggest=same||better<(nz?Math.max(0.3,0.006*sc(e.picks)):0.3)+(e.gap0||0)?{msg:quiet?'':'No better swap right now. This is already the best lineup for the games left.'}:{picks,gain:after-before,better,mode:((e.settings&&e.settings.mode)||S.mode)==='gpp'?'tournament':'cash',open:false};
     if(quiet&&e.suggest.msg==='')e.suggest=null;
   }catch(err){e.suggest={msg:err.message}}
   renderEntries();
@@ -911,7 +926,8 @@ $('entries').addEventListener('click',async e=>{const t=e.target.closest('button
     if(d.some(r=>!r.pick)){msg.textContent='Fix the names in red first.';return}
     const ps=d.map(r=>S.players.find(p=>pkey(p)===r.pick));if(new Set(ps.map(pkey)).size!==ps.length){msg.textContent='The same player is listed twice.';return}
     const picks=assignSlots(ps);if(!picks){msg.textContent='Those players don’t fit FanDuel’s positions. Check the order.';return}
-    (S.entries??=[]).push({label:S.entLabel,picks});saveEntries();S.entForm=false;S.entDraft=null;renderEntries();entrySwap(S.entries.length-1,true);return}
+    (S.entries??=[]).push({label:S.entLabel,picks,settings:currentSettings()});saveEntries();S.entForm=false;S.entDraft=null;renderEntries();entrySwap(S.entries.length-1,true);return}
+  if(t.dataset.econtests!=null){const k='e'+t.dataset.econtests;S.openC=S.openC===k?null:k;renderEntries();return}
   const i=+(t.dataset.eswap??t.dataset.edel??t.dataset.eapply??t.dataset.eshow??-1);const en=S.entries&&S.entries[i];if(!en)return;
   if(t.dataset.eswap!=null){t.textContent='Checking…';await entrySwap(i)}
   else if(t.dataset.edel!=null){S.entries.splice(i,1);saveEntries();renderEntries()}
@@ -960,6 +976,13 @@ function contestEV(picks){
     const ev=sum/ns.length;out[k.id]={ev,cash:cash/ns.length,sd:Math.sqrt(Math.max(0,sq/ns.length-ev*ev))}}
   return out;
 }
+function contestPanel(picks){
+  if(!csReady()||!S.cs.catalog)return `<div class="cpanel muted">Contest odds are for tonight's main slate${S.format==='single'?' (single-game contests coming later)':''}.</div>`;
+  const e=contestEV(picks),rows=[...S.cs.catalog].sort((a,b)=>e[b.id].ev-e[a.id].ev);
+  const good=rows.filter(k=>e[k.id].ev>1);
+  return `<div class="cpanel"><div style="margin-bottom:4px"><b>${good.length?'Best contests for this lineup: '+good.slice(0,2).map(k=>esc(k.name)).join(', '):'No contest type shows a profit for this lineup tonight'}</b></div>
+  <table><tbody>${rows.map(k=>{const x=e[k.id],ok=x.ev>1;return `<tr><td>${ok?'✓ ':''}${esc(k.name)}<div class="muted" style="font-size:12px">${esc(k.examples)}</div></td><td class="n" style="color:${ok?'var(--good)':'var(--muted)'}">${ok?'+':''}${Math.round((x.ev-1)*100)}%</td><td class="n">${pct(x.cash)} cash</td></tr>`}).join('')}</tbody></table>
+  <div class="muted" style="font-size:12px">Expected profit per $1 over 300 simulated nights against each contest's own field. Stakes: see “Where to enter tonight”.</div></div>`}
 function bankroll(){const v=Number(store.get('bankroll',400));return v>0?v:400}
 function riskPct(){const v=Number(store.get('riskPct',5));return v>0&&v<=50?v:5}
 function feeSplit(amount,fees){const out=[];let left=amount;for(const f of [...fees].sort((a,b)=>b-a)){while(left>=f-1e-9&&out.length<12){out.push(f);left-=f}}return out}
@@ -1017,9 +1040,11 @@ function renderLineups(fresh=false){
     if(risky.length&&!reviewOnly)note+=(note?' ':'')+`Check before lock: ${risky.map(x=>esc(x.p.name)+' ('+esc(x.p.status==='QUESTIONABLE'?'questionable':(x.p.flags.find(f=>/^(ROLE DROP|New team|DNP in last|Outside|News)/.test(f))||'').replace(/^ROLE DROP: /,'role drop: ').replace(/:.*$/,'').toLowerCase())+')').join(', ')}.`;
     return `<article class="lineup${fresh?' fresh':''}"><div class="lu-head"><div class="lu-score num">${pts.toFixed(1)}<small>projected</small></div>
       <div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Avg own<b>${own.toFixed(0)}%</b></div>${reviewOnly?'<span class="review-badge">Review only</span>':''}
-      <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-enter="${i}" aria-label="Save lineup ${i+1} as an entry">I entered this</button><button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
+      <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-contests="${i}" aria-expanded="${S.openC==='l'+i}">Contests</button><button class="btn small" data-enter="${i}" aria-label="Save lineup ${i+1} as an entry">I entered this</button><button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
       ${l.sim!=null?`<div class="sim-badge">Simulated winner: top 5% in ${l.sim}% of simulated nights</div>`:''}
+      ${settingsLabel(l.settings,l)}
       ${oddsRow(l.picks)}
+      ${S.openC==='l'+i?contestPanel(l.picks):''}
       ${note?`<div class="lu-note">${note}</div>`:''}
       ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(salOf(x))}</span><span class="pts">${x.p.out?'0.0':(x.p.proj*multOf(x.slot)).toFixed(1)}${multOf(x.slot)>1?`<span class="mult">${multOf(x.slot)}x</span>`:''}</span></div>`}).join('')}
     </article>`}).join('')+(S.lineups.length>SHOW?`<button class="btn small" id="show-all" type="button" style="margin-top:8px">${S.showAll?'Show first '+SHOW:'Show all '+S.lineups.length+' lineups'}</button>`:'');
@@ -1029,8 +1054,9 @@ function renderLineups(fresh=false){
   else $('exposure-summary').innerHTML='';
   renderWhere();
 }
-$('lineups').addEventListener('click',async e=>{if(e.target.id==='show-all'){S.showAll=!S.showAll;renderLineups();return}const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]'),en=e.target.closest('[data-enter]');
-  if(en){const l=S.lineups[+en.dataset.enter];const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(!(S.entries||[]).some(x=>x.picks.map(y=>pkey(y.p)+y.slot).sort().join()===k)){(S.entries??=[]).push({label:'',noise:l.noise||null,gap0:l.gap0||0,picks:l.picks.map(x=>({...x}))});saveEntries()}en.textContent='Saved to My entries';renderEntries();setTimeout(()=>en.textContent='I entered this',1500)}
+$('lineups').addEventListener('click',async e=>{if(e.target.id==='show-all'){S.showAll=!S.showAll;renderLineups();return}
+  const cb=e.target.closest('[data-contests]');if(cb){const k='l'+cb.dataset.contests;S.openC=S.openC===k?null:k;renderLineups();return}const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]'),en=e.target.closest('[data-enter]');
+  if(en){const l=S.lineups[+en.dataset.enter];const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(!(S.entries||[]).some(x=>x.picks.map(y=>pkey(y.p)+y.slot).sort().join()===k)){(S.entries??=[]).push({label:'',noise:l.noise||null,gap0:l.gap0||0,settings:l.settings||currentSettings(),sim:l.sim??null,picks:l.picks.map(x=>({...x}))});saveEntries()}en.textContent='Saved to My entries';renderEntries();setTimeout(()=>en.textContent='I entered this',1500)}
   if(s)lateSwap(+s.dataset.swap);
   if(c){const l=S.lineups[+c.dataset.copy];const text=l.picks.map(x=>`${x.slot} ${x.p.name} (${x.p.team}) ${money(salOf(x))}`).join('\n');try{await navigator.clipboard.writeText(text);c.textContent='Copied'}catch(err){c.textContent='Copy failed'}setTimeout(()=>c.textContent='Copy',1500)}});
 $('build').onclick=build;
