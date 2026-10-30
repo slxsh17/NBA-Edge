@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T23:48:16.544920+00:00",
+  "updated_at": "2026-10-30T00:20:42.019390+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -103,17 +103,17 @@
       "status": "OUT"
     },
     {
+      "name": "Alpha Diallo",
+      "team": "DEN",
+      "status": "OUT"
+    },
+    {
       "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
     },
     {
       "name": "Spencer Jones",
-      "team": "DEN",
-      "status": "OUT"
-    },
-    {
-      "name": "Alpha Diallo",
       "team": "DEN",
       "status": "OUT"
     },
@@ -238,16 +238,6 @@
       "status": "OUT"
     },
     {
-      "name": "Ziaire Williams",
-      "team": "LAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Luka Doncic",
-      "team": "LAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Cameron Carr",
       "team": "LAL",
       "status": "OUT"
@@ -256,6 +246,11 @@
       "name": "Adou Thiero",
       "team": "LAL",
       "status": "OUT"
+    },
+    {
+      "name": "Ziaire Williams",
+      "team": "LAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Simone Fontecchio",
