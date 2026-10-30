@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:27:51.515355+00:00",
+  "updated_at": "2026-10-30T16:22:05.567150+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -33,14 +33,14 @@
       "status": "OUT"
     },
     {
-      "name": "Kon Knueppel",
-      "team": "CHA",
-      "status": "OUT"
-    },
-    {
       "name": "Dennis Schroder",
       "team": "CHA",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Kon Knueppel",
+      "team": "CHA",
+      "status": "OUT"
     },
     {
       "name": "Coby White",
@@ -55,11 +55,6 @@
     {
       "name": "Kylan Boswell",
       "team": "CHA",
-      "status": "OUT"
-    },
-    {
-      "name": "Patrick Williams",
-      "team": "CHI",
       "status": "OUT"
     },
     {
