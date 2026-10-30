@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T20:17:08.523286+00:00",
+  "updated_at": "2026-10-30T20:59:54.052444+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -58,6 +58,11 @@
       "status": "OUT"
     },
     {
+      "name": "Dailyn Swain",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jalen Smith",
       "team": "CHI",
       "status": "DAY-TO-DAY"
@@ -78,6 +83,11 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Naji Marshall",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Tarik Biberovic",
       "team": "DAL",
       "status": "OUT"
@@ -93,22 +103,17 @@
       "status": "OUT"
     },
     {
-      "name": "Naji Marshall",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Dereck Lively II",
       "team": "DAL",
       "status": "OUT"
     },
     {
-      "name": "Cameron Johnson",
+      "name": "Alpha Diallo",
       "team": "DEN",
       "status": "OUT"
     },
     {
-      "name": "Alpha Diallo",
+      "name": "Cameron Johnson",
       "team": "DEN",
       "status": "OUT"
     },
@@ -125,7 +130,7 @@
     {
       "name": "Isaiah Joe",
       "team": "DET",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jalen Duren",
@@ -171,6 +176,11 @@
       "name": "Steven Adams",
       "team": "HOU",
       "status": "OUT"
+    },
+    {
+      "name": "Obi Toppin",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "T.J. McConnell",
@@ -283,6 +293,11 @@
       "status": "OUT"
     },
     {
+      "name": "Karl-Anthony Towns",
+      "team": "NYK",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jose Alvarado",
       "team": "NYK",
       "status": "OUT"
@@ -343,14 +358,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jabari Walker",
-      "team": "PHI",
-      "status": "OUT"
-    },
-    {
       "name": "Jaylen Brown",
       "team": "PHI",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jabari Walker",
+      "team": "PHI",
+      "status": "OUT"
     },
     {
       "name": "Tacko Fall",
