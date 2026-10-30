@@ -1,42 +1,42 @@
 {
 "schema": 1,
-"updated_at": "2026-10-29T16:50:13+00:00",
+"updated_at": "2026-10-30T04:32:48+00:00",
 "calibration": {
-"sd_scale": 1.026,
-"shift_classic": -4.07,
+"sd_scale": 1.042,
+"shift_classic": -3.23,
 "shift_single": 1.39
 },
-"calibration_players": 997,
+"calibration_players": 1050,
 "summary": [
 {
 "format": "classic",
 "strategy": "cash",
-"slates": 7,
-"avg_actual": 286.7,
-"avg_proj": 338.8,
-"avg_pct_of_best": 66.2,
-"within_sim_range": 57,
-"below_range": 43,
-"above_range": 0
+"slates": 8,
+"avg_actual": 294.5,
+"avg_proj": 334.8,
+"avg_pct_of_best": 67.7,
+"within_sim_range": 50,
+"below_range": 38,
+"above_range": 12
 },
 {
 "format": "classic",
 "strategy": "sim_winner",
-"slates": 7,
-"avg_actual": 285.3,
-"avg_proj": 322.8,
-"avg_pct_of_best": 65.7,
-"within_sim_range": 71,
-"below_range": 29,
-"above_range": 0
+"slates": 8,
+"avg_actual": 293.3,
+"avg_proj": 320.3,
+"avg_pct_of_best": 67.3,
+"within_sim_range": 62,
+"below_range": 25,
+"above_range": 12
 },
 {
 "format": "classic",
 "strategy": "tournament",
-"slates": 7,
-"avg_actual": 300.5,
-"avg_proj": 320.7,
-"avg_pct_of_best": 68.9,
+"slates": 8,
+"avg_actual": 295.0,
+"avg_proj": 314.9,
+"avg_pct_of_best": 67.5,
 "within_sim_range": 100,
 "below_range": 0,
 "above_range": 0
@@ -4322,6 +4322,369 @@
 "slot": "UTIL",
 "proj": 21.21,
 "actual": 18.4
+}
+]
+}
+]
+},
+{
+"date": "2026-10-29",
+"slate": "main",
+"label": "Main slate",
+"format": "classic",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 447.3,
+"players": [
+{
+"name": "Domantas Sabonis",
+"team": "SAC",
+"slot": "F/C"
+},
+{
+"name": "Deni Avdija",
+"team": "POR",
+"slot": "SF"
+},
+{
+"name": "Cameron Boozer",
+"team": "MEM",
+"slot": "G/F"
+},
+{
+"name": "Zion Williamson",
+"team": "NOP",
+"slot": "PF"
+},
+{
+"name": "Darius Acuff",
+"team": "SAC",
+"slot": "PG"
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C"
+},
+{
+"name": "Cedric Coward",
+"team": "MEM",
+"slot": "SG"
+},
+{
+"name": "Precious Achiuwa",
+"team": "SAC",
+"slot": "UTIL"
+},
+{
+"name": "Jeremiah Fears",
+"team": "NOP",
+"slot": "UTIL"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 306.6,
+"actual": 349.4,
+"sim": {
+"p10": 212.9,
+"p50": 270.7,
+"p90": 326.9,
+"mean": 270.1
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Derik Queen",
+"proj": 29.49,
+"actual": 14.9
+},
+{
+"name": "Donovan Mitchell",
+"proj": 40.43,
+"actual": 33.1
+}
+],
+"boosts": [
+{
+"name": "Jeremiah Fears",
+"proj": 28.39,
+"actual": 66.1
+},
+{
+"name": "Darius Acuff",
+"proj": 35.51,
+"actual": 59.2
+}
+],
+"players": [
+{
+"name": "Darius Acuff",
+"team": "SAC",
+"slot": "PG",
+"proj": 35.51,
+"actual": 59.2
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"slot": "SG",
+"proj": 40.43,
+"actual": 33.1
+},
+{
+"name": "Saddiq Bey",
+"team": "NOP",
+"slot": "SF",
+"proj": 25.56,
+"actual": 18.3
+},
+{
+"name": "Zion Williamson",
+"team": "NOP",
+"slot": "PF",
+"proj": 34.63,
+"actual": 47.2
+},
+{
+"name": "Domantas Sabonis",
+"team": "SAC",
+"slot": "C",
+"proj": 43.11,
+"actual": 39.5
+},
+{
+"name": "James Harden",
+"team": "CLE",
+"slot": "G/F",
+"proj": 35.48,
+"actual": 33.0
+},
+{
+"name": "Derik Queen",
+"team": "NOP",
+"slot": "F/C",
+"proj": 29.49,
+"actual": 14.9
+},
+{
+"name": "Jeremiah Fears",
+"team": "NOP",
+"slot": "UTIL",
+"proj": 28.39,
+"actual": 66.1
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"slot": "UTIL",
+"proj": 34.03,
+"actual": 38.1
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 274.9,
+"actual": 256.5,
+"sim": {
+"p10": 187.8,
+"p50": 238.1,
+"p90": 289.2,
+"mean": 237.7
+},
+"band": "within range",
+"busts": [
+{
+"name": "Derik Queen",
+"proj": 29.49,
+"actual": 14.9
+},
+{
+"name": "Ja Morant",
+"proj": 28.32,
+"actual": 19.9
+}
+],
+"boosts": [
+{
+"name": "Cameron Boozer",
+"proj": 32.4,
+"actual": 48.4
+},
+{
+"name": "Nickeil Alexander-Walker",
+"proj": 29.48,
+"actual": 33.1
+}
+],
+"players": [
+{
+"name": "James Harden",
+"team": "CLE",
+"slot": "PG",
+"proj": 35.48,
+"actual": 33.0
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"slot": "SG",
+"proj": 40.43,
+"actual": 33.1
+},
+{
+"name": "Trey Murphy",
+"team": "NOP",
+"slot": "SF",
+"proj": 31.56,
+"actual": 32.5
+},
+{
+"name": "Cameron Boozer",
+"team": "MEM",
+"slot": "PF",
+"proj": 32.4,
+"actual": 48.4
+},
+{
+"name": "Derik Queen",
+"team": "NOP",
+"slot": "C",
+"proj": 29.49,
+"actual": 14.9
+},
+{
+"name": "Nickeil Alexander-Walker",
+"team": "ATL",
+"slot": "G/F",
+"proj": 29.48,
+"actual": 33.1
+},
+{
+"name": "Zach Edey",
+"team": "MEM",
+"slot": "F/C",
+"proj": 22.65,
+"actual": 21.4
+},
+{
+"name": "Ja Morant",
+"team": "POR",
+"slot": "UTIL",
+"proj": 28.32,
+"actual": 19.9
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"slot": "UTIL",
+"proj": 25.08,
+"actual": 20.2
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 302.8,
+"actual": 349.4,
+"sim": {
+"p10": 207.2,
+"p50": 265.1,
+"p90": 325.3,
+"mean": 265.9
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Derik Queen",
+"proj": 29.49,
+"actual": 14.9
+},
+{
+"name": "Donovan Mitchell",
+"proj": 40.43,
+"actual": 33.1
+}
+],
+"boosts": [
+{
+"name": "Jeremiah Fears",
+"proj": 28.39,
+"actual": 66.1
+},
+{
+"name": "Darius Acuff",
+"proj": 35.51,
+"actual": 59.2
+}
+],
+"players": [
+{
+"name": "James Harden",
+"team": "CLE",
+"slot": "PG",
+"proj": 35.48,
+"actual": 33.0
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"slot": "SG",
+"proj": 40.43,
+"actual": 33.1
+},
+{
+"name": "Saddiq Bey",
+"team": "NOP",
+"slot": "SF",
+"proj": 25.56,
+"actual": 18.3
+},
+{
+"name": "Zion Williamson",
+"team": "NOP",
+"slot": "PF",
+"proj": 34.63,
+"actual": 47.2
+},
+{
+"name": "Domantas Sabonis",
+"team": "SAC",
+"slot": "C",
+"proj": 43.11,
+"actual": 39.5
+},
+{
+"name": "Darius Acuff",
+"team": "SAC",
+"slot": "G/F",
+"proj": 35.51,
+"actual": 59.2
+},
+{
+"name": "Derik Queen",
+"team": "NOP",
+"slot": "F/C",
+"proj": 29.49,
+"actual": 14.9
+},
+{
+"name": "Zach LaVine",
+"team": "SAC",
+"slot": "UTIL",
+"proj": 30.23,
+"actual": 38.1
+},
+{
+"name": "Jeremiah Fears",
+"team": "NOP",
+"slot": "UTIL",
+"proj": 28.39,
+"actual": 66.1
 }
 ]
 }
