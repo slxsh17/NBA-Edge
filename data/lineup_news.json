@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-30",
-  "checked_at": "2026-10-30T10:14:07.254487+00:00",
+  "checked_at": "2026-10-30T11:05:07.934131+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -42,6 +42,14 @@
       "headline": "Trail Blazers' Ja Morant ruled out of game vs. Grizzlies with hamstring injury - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcjJBR2pvNnZhVThyazladTEzNnctR2hkRnotWno4MWdsd2xSNzRDYnptQU5QYUlOQU5Mc084QlJ0X05rNVRKZkF1X0FHc2R6aFNlOEl3cGdSUUtBeXhyOE5xOWhzcWVmTkJVR0lleWJZdGJYVlhmajZoZnZBUl9FOFFueU5pekJrQTh0MTRCbEFnemluVmlTako3UXJpNDh3Mk1LX2YzY2JtbHpQM2J3aUg4Z0NSTHBpVGxVOTVsMWFMMk1QX3Yw?oc=5",
       "published_at": "2026-10-30T04:47:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Southeast NBA Notes: Reid Benched, Dybantsa Debuts, Flemings Shines - BVM Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYTZJMjJwcFBVTy1PbU5ZamV5ejVlQXg3amlnV3I0VTlFaDlENlI0UHpUbTVmOXpCUjhPdW9yMVY5TnBjV285Q2l5el9kYU42OWZ6YlhsTGkwMXpmVUZsY2VaTUJndzM0Y0ZhSFRISlQzRVY3bTRKOWNCZUFpRGx2eWhGWjBMTUFCTHBkb21xMGo0RWU5dlVzWnRFZEtsaWc?oc=5",
+      "published_at": "2026-10-30T04:23:30+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -138,6 +146,14 @@
       "headline": "Cavs injury report: Meleek Thomas, Jaylon Tyson questionable vs. Hawks - Cavaliers Nation",
       "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSnRSU1NSZ0htOVJDMGhwTVZINndTTkJwQ2hWdml3MVVkOHRibWJGMVJnWWJrNDFsMHdra1h5WkYwZk9fOE14UFFVZXVOZ1FJWjFfRHJDZll2eTN3ZkxQR3V1VWVlcGplVjM0c251akpWdGNLQ0lsN3VSdkM1VjZndE1hTGlzME4wZnd3MDlIcldGcWZwYlB5UGd5X1dLa1dfRUJYRUhoVjRoREU?oc=5",
       "published_at": "2026-10-29T23:12:52+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Mavericks Injury Report vs. Rockets: Marshall Questionable - Dallas Hoops Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZEVMWjktLVJpWGN3d0JYanlUUnYxZEJPck5qd1d2dUZ0eVRia2FrVk1XUTBCQnh0MkRFclA3TVpHejdtcWV1bk5sdnZrRWpnX0R0TzRTRlozZnJmcDZOblRBbk42Sm9OQ25CQ01oaVdUZGp2TTdfbi1KQ08wcW5wTXp3dlFIZjVnUDR3RU5GeEtyczRjOFgzdWJSSlpWSmc?oc=5",
+      "published_at": "2026-10-29T22:19:54+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -466,22 +482,6 @@
       "headline": "Clippers continue to struggle with turnovers to start 2026-27 season - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOG1ESmpkanl5dGNQRGFYUFdGUHFMQ0JYZUE0ai1KUmxYZGVFQ0RoX1E1aEk3eGpSRGpKOHUyNTlPaVFUQjVfZWR5SUxUVTlFOXYxYnY5eXJQVmZWTlJuTjlMZzhpaTJPSU1xZGFSRkFNYlBLeWtxTGFJMXdHc2x2RjlNeFBqem5lNjNXcUZQd1IxWnNpLUE?oc=5",
       "published_at": "2026-10-29T11:37:42+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Jake Paul says he will return to boxing with Dubai fight on Christmas Eve - The Athletic - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLXk4TDlLcWp1NHY1VHRXMUlTc205MHBhOUwyWjhYaFZXamhjMlZuZ0ZVM1ZfN0ZieXItdE1vNDJiUjVWN0xNYTRjRGM5ZXJuZzVjelhmMVFiNTVqc3h0UjRuMjZBSEZybjd6Zk94R2lQWmJoUEZZUFllYzBrWXZYbGdDMWlveVZO?oc=5",
-      "published_at": "2026-10-29T11:00:43+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Zach Lowe shifts title odds toward Spurs after unfortunate Jalen Williams injury - Air Alamo",
-      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbC1pWEF0QzBuUlR5cDhqVEprQjlVSlppdjZGaWdPNFpEUmVDTy1qZy1UNGVXY0QwYWU5aXZMdUdNMmwzNFNUb09OSFQ1d0xFOHNwZkY4dDB1RjJ2OXNIT1hBMTFtMFRKVGhCTklTZ1JWc1lRdWtqbXdad0xaaFdGZWdPLTFPbmxHME9waWtEaEJ0cl9FX3YyalItVVNaT0NEa1NF?oc=5",
-      "published_at": "2026-10-29T11:00:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
