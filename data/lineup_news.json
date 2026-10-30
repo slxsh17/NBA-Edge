@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-30",
-  "checked_at": "2026-10-30T16:11:12.240724+00:00",
+  "checked_at": "2026-10-30T17:06:55.280980+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -55,14 +55,6 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "The Chicago Bulls have one solution to the NBA's injury plague: Norman Powell - Pippen Ain't Easy",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPd1BQNUZJOVdQQjNWUW1lVW16VGpaeVZPUFpvNGtLSnV0NVh2TzhJaDcwVzdDZThleE9GVkxEWEtkMFBMSjc5bUFzY3V2YzZKQzBQUmcxSTVqZUFTUkJud2xEVjFDcy1IaWNNV3hKd3Azc3A4cTR5aWdDeHZCWmxNZjd3bWlVbDIz?oc=5",
-      "published_at": "2026-10-30T13:00:04+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
       "headline": "Trail Blazers' Ja Morant ruled out of loss to Grizzlies with hamstring injury - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUVUwT09SLWI0RDdqMG43Rkg1TUhGZW9Xa1VHVE5HWHBOSjBJaFZ6Y0ZQUUJxTzR6a1hyZlI5dURXVm00RV85TGlERW5FZkxVTExpQV9oMDhKM2Z5eTQ4dzZRcWVST1cyemJaMHl2bmN0YndXdFZmOTlDYkpCVHFzS3FYc1RldlVzd3hiUE1CWnBEc1lXcmc3X09RZWRaZ3o5S2FQRW14QzJFS1lldjFJanNDYWU2RE5za0tEdzlmYWZtTFFKbXBJ?oc=5",
       "published_at": "2026-10-30T11:24:10+00:00",
@@ -98,6 +90,14 @@
       "headline": "Trail Blazers' Ja Morant ruled out of game vs. Grizzlies with hamstring injury - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcjJBR2pvNnZhVThyazladTEzNnctR2hkRnotWno4MWdsd2xSNzRDYnptQU5QYUlOQU5Mc084QlJ0X05rNVRKZkF1X0FHc2R6aFNlOEl3cGdSUUtBeXhyOE5xOWhzcWVmTkJVR0lleWJZdGJYVlhmajZoZnZBUl9FOFFueU5pekJrQTh0MTRCbEFnemluVmlTako3UXJpNDh3Mk1LX2YzY2JtbHpQM2J3aUg4Z0NSTHBpVGxVOTVsMWFMMk1QX3Yw?oc=5",
       "published_at": "2026-10-30T04:47:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Southeast NBA Notes: Reid Benched, Dybantsa Debuts, Flemings Shines - BVM Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYTZJMjJwcFBVTy1PbU5ZamV5ejVlQXg3amlnV3I0VTlFaDlENlI0UHpUbTVmOXpCUjhPdW9yMVY5TnBjV285Q2l5el9kYU42OWZ6YlhsTGkwMXpmVUZsY2VaTUJndzM0Y0ZhSFRISlQzRVY3bTRKOWNCZUFpRGx2eWhGWjBMTUFCTHBkb21xMGo0RWU5dlVzWnRFZEtsaWc?oc=5",
+      "published_at": "2026-10-30T04:23:30+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -338,22 +338,6 @@
       "headline": "Pistons' John Collins: Struggles in limited minutes - CBS Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRVh6dVVUcG5rVUwwdktOckpWb2wyeHNMSDg0TU5QRjNZc2FuWmlLOFdnakttMVhxWFo3QUxfb1duakFPdDBRdW5ieVBhSUxnU2h5RlRoSzJtOVBsTm1lMktpM0NzODBqRHotMXBqbFJQV2ZTNHh2aG5ZdkV2OVNGWk1xZWxVeGtQZ2g0M2NYTzMxMENoYkNNRXM1ZEFOU0pWWXc?oc=5",
       "published_at": "2026-10-29T17:31:10+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Jordan Poole Injury: Downgraded to doubtful - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObnR3WENwdGxMakF1X28yYnR2dkRzSWtZVnUyS0FYaWFEbWlyRGIwMF9WQnNzR0Jjd1RyUFFXX2ZrVTNxZ3Exd3JUa3psMEgyV1JiS1lQMHdzZERfMl9HdEc0V1NjY0FHYjV4SzJsbm1fVm5ETDJlRW9qbW5IS0MyMksybmVNdnh4Q21mWmk4RVdoUXBqbDg3MG13MA?oc=5",
-      "published_at": "2026-10-29T16:49:37+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "NBA primetime game viewership up 19% to start season across ESPN, NBC, Prime Video - Sports Business Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObjIzRFh4VWtXNDJGQXk1cDlnX0tqeWRYZ2Q0QTgwQnN3cUJGY0ZMWDNINFRydU9mSGlPb1hIanJIMTR6Tzd5a3poczA4RXA4TXlfTU9pNFRGanVMaWloenN1ckFsNzljbGZJOTVXd0t4akwtZktmMmVMUHgtUjA0a2JZQ3Q0UF9vUDFkc2M4WHRLejNJdjlsSHUzWE1ZX3VxNWpPTnFjbk5pZ2l1Rm5kSV93cXVRZHZuX2FiSVo1MVNkVHp0U0dvVHlnYzRMd3k3N0FkVw?oc=5",
-      "published_at": "2026-10-29T16:46:27+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
