@@ -108,6 +108,15 @@ input[type=range]{width:100%;accent-color:var(--orange)}
 .lu-row.locked{background:var(--soft)}
 .lu-note{font-size:12.5px;padding:8px 14px;background:var(--orange-soft)}
 #entries{margin-bottom:16px}
+.odds{font-size:12.5px;padding:6px 14px;border-bottom:1px solid var(--soft);color:var(--muted)}
+.odds b{color:var(--ink)}
+.odds .fit{color:var(--orange);font-weight:600}
+#where{margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
+#where h3{font:600 18px var(--num);margin:0 0 6px}
+#where table{width:100%;font-size:13.5px;margin:6px 0}
+#where td{padding:5px 4px;vertical-align:top;border-top:1px solid var(--soft)}
+#where .amt{font:600 15px var(--num);white-space:nowrap;text-align:right}
+#bankroll{width:96px;font:inherit;font-size:15px;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
 .ent-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
 .ent-head h3{font:600 18px var(--num);margin:0;flex:1}
 .ent-form{border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:12px}
@@ -262,6 +271,7 @@ details summary{cursor:pointer}
       <div id="lineups"></div>
       <div id="fd-export" hidden><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="fd-export-btn" type="button">Download for FanDuel</button><button class="btn" id="enter-all" type="button">I entered all of these</button></div><div class="muted" id="fd-export-msg"></div></div>
       <div id="exposure-summary"></div>
+      <div id="where"></div>
       <div id="settings" hidden></div>
     </section>
 
@@ -381,8 +391,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp,op,mr,al,st,lr]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json')]);
-  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;S.lr=lr.status==='fulfilled'?lr.value:null;
+  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;S.lr=lr.status==='fulfilled'?lr.value:null;S.cs=cs.status==='fulfilled'?cs.value:null;S.ch=ch.status==='fulfilled'?ch.value:null;S.csIdx=null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
@@ -851,6 +861,7 @@ function renderEntries(){
       ${e.label?`<div class="sim-badge">${esc(e.label)}</div>`:''}${sw}${entryRows(e.picks)}</article>`}).join('');
   if(es.length>SHOWE)h+=`<button class="btn small" id="ent-show-all" type="button" style="margin-bottom:8px">${S.entShowAll?'Show fewer':'Show all '+es.length+' entries'}</button>`;
   box.innerHTML=h;
+  if(typeof renderWhere==='function')renderWhere();
 }
 // Re-seat the new lineup so players you keep stay in their old slots (fewer moves to make on FanDuel).
 function keepSlots(picks,old,fixed){
@@ -908,6 +919,62 @@ $('entries').addEventListener('click',async e=>{const t=e.target.closest('button
   else if(t.dataset.eshow!=null){en.suggest.open=!en.suggest.open;renderEntries()}});
 $('entries').addEventListener('change',e=>{const s=e.target.closest('[data-di]');if(s&&S.entDraft)S.entDraft[+s.dataset.di].pick=s.value});
 
+// ---------- where to enter: contest odds against tonight's simulated FanDuel field ----------
+// data/contest_sims.json (pipeline): 300 simulated nights, each with the score a lineup needs to
+// win a Double Up (top 43.5%), a 50/50, cash a tournament (top ~22%) and reach the top 1%, from a
+// simulated field of ~1,200 lineups calibrated to a real FanDuel Double Up line.
+const pnorm=s=>String(s||'').normalize('NFKD').toLowerCase().trim().replace(/[\s,]+(jr|sr|ii|iii|iv|v)\.?$/,'').replace(/[^a-z0-9]/g,'');
+function csReady(){const c=S.cs;return !!(c&&c.date===S.day&&S.format==='classic'&&S.source!=='csv'&&c.players&&c.scores)}
+function contestOdds(picks){
+  if(!csReady())return null;const c=S.cs;
+  if(!S.csIdx)S.csIdx=new Map(c.players.map((k,i)=>[k,i]));
+  const cols=[],fixed=[];for(const x of picks){const i=S.csIdx.get(pnorm(x.p.name)+'|'+x.p.team);if(i==null)fixed.push(x.p.out?0:x.p.proj);else if(x.p.out)fixed.push(0);else cols.push(i)}
+  // Our picks land below projection on average (the optimizer favors projections that ran hot).
+  // The pipeline fits that gap so the odds it gave before tip-off match how often NBA EDGE's lineup
+  // really beat the Double Up line on graded nights; it's charged to every lineup here.
+  const cal=c.odds_shift_per_player,shift=Math.min(0,cal!=null?cal:(((S.lr&&S.lr.calibration)||{}).shift_classic||0))*picks.length;
+  const base=fixed.reduce((a,b)=>a+b,0)+shift;let du=0,ff=0,gc=0,t1=0;const n=c.scores.length;
+  for(let k=0;k<n;k++){const row=c.scores[k];let v=base;for(const i of cols)v+=row[i];
+    if(v>=c.lines.double_up[k])du++;if(v>=c.lines.fifty[k])ff++;if(v>=c.lines.gpp_cash[k])gc++;if(v>=c.lines.top1[k])t1++}
+  return {du:du/n,ff:ff/n,gc:gc/n,t1:t1/n};
+}
+const pct=v=>v>=0.995?'99%+':(v*100<1&&v>0?(v*100).toFixed(1):Math.round(v*100))+'%';
+function fitOf(o){if(!o)return '';if(o.du>=0.55)return 'Cash games (Double Ups)';if(o.t1>=0.015)return 'Tournaments';if(o.du>=0.5)return 'Double Ups, small';return 'Tournaments only, small'}
+function oddsRow(picks){const o=contestOdds(picks);if(!o)return '';
+  return `<div class="odds">Double Up win <b>${pct(o.du)}</b> · Tournament cash <b>${pct(o.gc)}</b> · Top 1% <b>${pct(o.t1)}</b> · <span class="fit">${fitOf(o)}</span></div>`}
+function bankroll(){const v=Number(store.get('bankroll',400));return v>0?v:400}
+function renderWhere(){
+  const box=$('where');if(!box)return;
+  const src=(S.entries||[]).length?S.entries:S.lineups;
+  if(!src.length){box.innerHTML='';return}
+  if(!csReady()){box.innerHTML=S.format==='single'?'<p class="muted" style="font-size:13px">Contest odds are for the main slate for now.</p>':'';return}
+  const B=bankroll(),c=S.cs,od=src.map(l=>({l,o:contestOdds(l.picks)})).filter(x=>x.o);
+  if(!od.length){box.innerHTML='';return}
+  const byDu=[...od].sort((a,b)=>b.o.du-a.o.du),best=byDu[0],idx=x=>src.indexOf(x.l)+1;
+  const many=od.length>20,avgT1=od.reduce((a,x)=>a+x.o.t1,0)/od.length,avgGc=od.reduce((a,x)=>a+x.o.gc,0)/od.length;
+  // Cash: quarter-Kelly on an even-money Double Up (pays 2x), capped at 8% of bankroll.
+  const kelly=Math.max(0,2*best.o.du-1)/4,cashAmt=best.o.du>=0.52?Math.min(0.08,kelly)*B:0;
+  // Tournaments: 0.5-2% of bankroll depending on how often the set reaches the top 1% vs the field's 1%.
+  const gppFrac=Math.max(0.005,Math.min(0.02,0.015*(many?avgT1:byDu.reduce((a,x)=>Math.max(a,x.o.t1),0))/0.01));
+  const gppAmt=gppFrac*B,se=[...od].sort((a,b)=>b.o.gc-a.o.gc)[0];
+  const rows=[];
+  if(cashAmt>=1)rows.push([`<b>Cash games</b>: Double Ups / 50-50s with lineup ${idx(best)}`,`Wins a Double Up ${pct(best.o.du)} of the time (break-even is 50%). Spread it over 2–3 contests rather than one.`,cashAmt]);
+  else rows.push([`<b>Skip cash games</b>`,`Your best lineup wins a Double Up only ${pct(best.o.du)} of the time; you need 50% just to break even after FanDuel’s cut.`,0]);
+  if(many){const n=Math.max(0,Math.min(150,od.length,Math.floor(gppAmt/0.05)));
+    const weak=avgT1<0.01&&avgGc<0.22;
+    rows.push([`<b>Penny tournament</b> (Piggy Bank Shot, $0.05, 150 max): your top ${n} lineups${weak?' <span class="muted">(optional)</span>':''}`,`Your set reaches the top 1% ${pct(avgT1)} of the time per lineup (field average 1%), cashes ${pct(avgGc)} (field ~22%).${weak?' That’s below the average entry tonight, so keep it to pocket change or skip it.':''}`,n*0.05]);
+    const left=gppAmt-n*0.05,top=[...od].sort((a,b)=>b.o.t1-a.o.t1);
+    if(left>=3)rows.push([`<b>$1–$3 tournaments</b> with your ${Math.min(top.length,Math.floor(left))} best top-1% lineups (lineup ${idx(top[0])} first)`,`Best lineup reaches the top 1% ${pct(top[0].o.t1)} of the time.`,Math.floor(left)]);}
+  else rows.push([`<b>Single-entry tournaments</b> (Block / Dribbler type) with lineup ${idx(se)}`,`Cashes ${pct(se.o.gc)} (field ~22%), top 1% ${pct(se.o.t1)}.${se.o.gc<0.22?' Not better than the average entry tonight, so keep it small.':''} Small single-entry contests have been softer than this simulated field (your 302 on Oct 27 beat 83% of two of them).`,Math.min(gppAmt,0.03*B)]);
+  const total=rows.reduce((a,r)=>a+r[2],0),h=S.ch&&S.ch.summary&&S.ch.summary.cash,econ=(S.ch&&S.ch.economics)||{};
+  box.innerHTML=`<h3>Where to enter tonight</h3>
+  <label style="font-size:13.5px">Bankroll $<input id="bankroll" type="number" min="10" step="10" inputmode="decimal" value="${B}"></label>
+  <table><tbody>${rows.map(r=>`<tr><td>${r[0]}<div class="muted" style="font-size:12.5px">${r[1]}</div></td><td class="amt">${r[2]?money(Math.round(r[2]*100)/100):'$0'}</td></tr>`).join('')}
+  <tr><td><b>Total tonight</b> <span class="muted" style="font-size:12.5px">(${(total/B*100).toFixed(1)}% of bankroll; keep it under 10%)</span></td><td class="amt">${money(Math.round(total*100)/100)}</td></tr></tbody></table>
+  <p class="muted" style="font-size:12.5px;margin:4px 0 0">Odds come from 300 simulated nights against a simulated FanDuel field of ${c.field_size} lineups${(S.entries||[]).length?' (your saved entries)':''}. FanDuel keeps about ${econ['Double Up']?econ['Double Up'].avg_rake_pct:13}% of Double Up fees and ${econ['Tournament']?econ['Tournament'].avg_rake_pct:16}% of tournament fees. ${h?`Looking back, NBA EDGE’s cash lineup would have beaten the Double Up line on ${h.double_up_wins} of ${h.nights} graded nights (estimated).`:''} Stakes use a quarter of the Kelly bet and shrink when the edge is thin.</p>`;
+  $('bankroll').onchange=e=>{const v=Math.max(10,Number(e.target.value)||400);store.set('bankroll',v);renderWhere()};
+}
+
 // ---------- lineups ----------
 function renderLineups(fresh=false){
   renderEntries();
@@ -927,6 +994,7 @@ function renderLineups(fresh=false){
       <div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Avg own<b>${own.toFixed(0)}%</b></div>${reviewOnly?'<span class="review-badge">Review only</span>':''}
       <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-enter="${i}" aria-label="Save lineup ${i+1} as an entry">I entered this</button><button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
       ${l.sim!=null?`<div class="sim-badge">Simulated winner: top 5% in ${l.sim}% of simulated nights</div>`:''}
+      ${oddsRow(l.picks)}
       ${note?`<div class="lu-note">${note}</div>`:''}
       ${l.picks.map(x=>{const g=gameOf(x.p),lk=g&&started(g);return `<div class="lu-row${lk?' locked':''}"><span class="slot">${x.slot}</span><div class="who"><div>${esc(x.p.name)}${x.p.out?' <span class="tag o">Out</span>':''}</div><div class="sub">${esc(x.p.team)} ${x.p.opp?(x.p.home?'vs ':'@ ')+esc(x.p.opp):''}${g?', '+(lk?'started':esc(tipLabel(g.time))):''}</div></div><span class="sal">${money(salOf(x))}</span><span class="pts">${x.p.out?'0.0':(x.p.proj*multOf(x.slot)).toFixed(1)}${multOf(x.slot)>1?`<span class="mult">${multOf(x.slot)}x</span>`:''}</span></div>`}).join('')}
     </article>`}).join('')+(S.lineups.length>SHOW?`<button class="btn small" id="show-all" type="button" style="margin-top:8px">${S.showAll?'Show first '+SHOW:'Show all '+S.lineups.length+' lineups'}</button>`:'');
@@ -934,6 +1002,7 @@ function renderLineups(fresh=false){
     const top=[...c].sort((a,b)=>b[1]-a[1]).slice(0,S.lineups.length>20?20:10);
     $('exposure-summary').innerHTML=`<div class="exposure"><div class="muted" style="margin-bottom:4px">Most used players</div>${top.map(([n,k])=>`<span><b>${esc(n)}</b> ${Math.round(k/S.lineups.length*100)}%</span>`).join('')}</div>`}
   else $('exposure-summary').innerHTML='';
+  renderWhere();
 }
 $('lineups').addEventListener('click',async e=>{if(e.target.id==='show-all'){S.showAll=!S.showAll;renderLineups();return}const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]'),en=e.target.closest('[data-enter]');
   if(en){const l=S.lineups[+en.dataset.enter];const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(!(S.entries||[]).some(x=>x.picks.map(y=>pkey(y.p)+y.slot).sort().join()===k)){(S.entries??=[]).push({label:'',noise:l.noise||null,gap0:l.gap0||0,picks:l.picks.map(x=>({...x}))});saveEntries()}en.textContent='Saved to My entries';renderEntries();setTimeout(()=>en.textContent='I entered this',1500)}
