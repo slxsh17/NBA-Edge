@@ -1,23 +1,23 @@
 {
  "schema": 1,
- "updated_at": "2026-10-29T12:02:02+00:00",
- "samples": 1025,
- "days": 7,
+ "updated_at": "2026-10-30T12:04:58+00:00",
+ "samples": 1083,
+ "days": 8,
  "weights": {
   "vegas": 1.015,
   "matchup": 1.015,
-  "injury": 0.99,
-  "usage": 1.015,
+  "injury": 1.005,
+  "usage": 1.03,
   "starter": 1.0,
-  "blowout": 1.0,
+  "blowout": 0.985,
   "scale": 0.95,
-  "outside": 0.63,
-  "travel": 0.0,
+  "outside": 0.68,
+  "travel": 0.01,
   "minutes_mult": {
-   "prior_only": 0.785,
+   "current_only": 1.125,
+   "prior_only": 0.768,
    "team_change": 1.07,
-   "current_only": 1.04,
-   "sample_blend": 0.847
+   "sample_blend": 0.822
   }
  },
  "previous": {
@@ -39,19 +39,19 @@
  },
  "validation": {
   "test_days": [
-   "2026-10-27",
-   "2026-10-28"
+   "2026-10-28",
+   "2026-10-29"
   ],
-  "test_rows": 307,
-  "default_mae": 7.4,
-  "current_mae": 6.745,
-  "fitted_mae": 6.726
+  "test_rows": 288,
+  "default_mae": 7.933,
+  "current_mae": 7.272,
+  "fitted_mae": 7.243
  },
  "in_sample_mae": {
-  "default": 8.269,
-  "learned": 7.413
+  "default": 8.352,
+  "learned": 7.486
  },
- "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (6.73 vs 6.74).",
+ "decision": "Adopted: on 288 held-out player-games the refit missed by 7.24 vs 7.27 with current weights.",
  "log": [
   {
    "date": "2026-10-27",
@@ -126,6 +126,16 @@
    "adopted": false,
    "changes": [],
    "heldout_gain": 0.018
+  },
+  {
+   "date": "2026-10-30",
+   "adopted": true,
+   "changes": [
+    "Outside projection blend 0.63 \u2192 0.68",
+    "Minutes (current_only) 1.04 \u2192 1.12",
+    "Minutes (sample_blend) 0.85 \u2192 0.82"
+   ],
+   "heldout_gain": 0.029
   }
  ],
  "method": "Coordinate search minimizing average miss with a pull toward 1.0; adopted only if it beats current weights on the most recent days held out from fitting; moves halfway."
