@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T22:17:42.514029+00:00",
+  "updated_at": "2026-10-30T23:33:20.721049+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -68,7 +68,7 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Tarik Biberovic",
+      "name": "Sergio de Larrea",
       "team": "DAL",
       "status": "OUT"
     },
@@ -78,7 +78,7 @@
       "status": "OUT"
     },
     {
-      "name": "Sergio de Larrea",
+      "name": "Tarik Biberovic",
       "team": "DAL",
       "status": "OUT"
     },
@@ -138,19 +138,14 @@
       "status": "OUT"
     },
     {
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "status": "OUT"
+    },
+    {
       "name": "Reed Sheppard",
       "team": "HOU",
       "status": "OUT"
-    },
-    {
-      "name": "Marcus Smart",
-      "team": "HOU",
-      "status": "OUT"
-    },
-    {
-      "name": "Alperen Sengun",
-      "team": "HOU",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Steven Adams",
@@ -160,7 +155,7 @@
     {
       "name": "Obi Toppin",
       "team": "IND",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "T.J. McConnell",
@@ -171,16 +166,6 @@
       "name": "Johnny Furphy",
       "team": "IND",
       "status": "OUT"
-    },
-    {
-      "name": "Andrew Nembhard",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Aaron Nesmith",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ivica Zubac",
@@ -196,11 +181,6 @@
       "name": "Tyrese Haliburton",
       "team": "IND",
       "status": "OUT"
-    },
-    {
-      "name": "Rui Hachimura",
-      "team": "LAC",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Yanic Konan Niederhauser",
@@ -238,13 +218,18 @@
       "status": "OUT"
     },
     {
-      "name": "Quinten Post",
+      "name": "Scotty Pippen Jr.",
       "team": "MEM",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Simone Fontecchio",
-      "team": "MIA",
+      "name": "Ty Jerome",
+      "team": "MEM",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Quinten Post",
+      "team": "MEM",
       "status": "DAY-TO-DAY"
     },
     {
@@ -268,11 +253,6 @@
       "status": "OUT"
     },
     {
-      "name": "Karl-Anthony Towns",
-      "team": "NYK",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Jose Alvarado",
       "team": "NYK",
       "status": "OUT"
@@ -280,7 +260,7 @@
     {
       "name": "Chet Holmgren",
       "team": "OKC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jalen Williams",
@@ -368,17 +348,17 @@
       "status": "OUT"
     },
     {
-      "name": "Ja Morant",
-      "team": "POR",
-      "status": "OUT"
-    },
-    {
       "name": "Robert Williams III",
       "team": "POR",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Chris Youngblood",
+      "team": "POR",
+      "status": "OUT"
+    },
+    {
+      "name": "Ja Morant",
       "team": "POR",
       "status": "OUT"
     },
@@ -446,11 +426,6 @@
       "name": "Jusuf Nurkic",
       "team": "UTA",
       "status": "OUT"
-    },
-    {
-      "name": "Tre Johnson",
-      "team": "WAS",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Justin Champagnie",
