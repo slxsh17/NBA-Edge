@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T01:34:01.817475+00:00",
+  "updated_at": "2026-10-30T02:23:24.939010+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -250,11 +250,6 @@
     {
       "name": "Ziaire Williams",
       "team": "LAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Ty Jerome",
-      "team": "MEM",
       "status": "DAY-TO-DAY"
     },
     {
