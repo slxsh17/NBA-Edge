@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T13:33:11.735011+00:00",
+  "updated_at": "2026-10-30T14:33:03.860619+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -16,6 +16,11 @@
       "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
+    },
+    {
+      "name": "Noah Clowney",
+      "team": "BKN",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Egor Demin",
