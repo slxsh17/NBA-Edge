@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T02:23:24.939010+00:00",
+  "updated_at": "2026-10-30T03:15:49.289355+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -75,7 +75,7 @@
     {
       "name": "Meleek Thomas",
       "team": "CLE",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tarik Biberovic",
@@ -268,14 +268,14 @@
       "status": "OUT"
     },
     {
-      "name": "Dejounte Murray",
-      "team": "NOP",
-      "status": "OUT"
-    },
-    {
       "name": "Jordan Poole",
       "team": "NOP",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Dejounte Murray",
+      "team": "NOP",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Yves Missi",
