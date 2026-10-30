@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-29T04:15:50+00:00",
+ "updated_at": "2026-10-30T04:12:30+00:00",
  "params": {
   "field_noise": 0.05,
   "consensus_w": 1.0,
@@ -9,7 +9,7 @@
   "external_w": 0.5,
   "mention_w": 0.0
  },
- "decision": "Kept current settings: refit didn't beat them on 2026-10-28 (2.5 vs 2.5).",
+ "decision": "Kept current settings: refit didn't beat them on 2026-10-29 (4.5 vs 4.6).",
  "days_used": [
   "2026-10-20",
   "2026-10-21",
@@ -19,7 +19,8 @@
   "2026-10-25",
   "2026-10-26",
   "2026-10-27",
-  "2026-10-28"
+  "2026-10-28",
+  "2026-10-29"
  ],
  "single_params": {
   "field_noise": 0.32,
@@ -31,32 +32,32 @@
   "no_ext": {
    "field_noise": 0.32,
    "consensus_w": 1.0,
-   "field_mix": 0.8,
+   "field_mix": 0.7,
    "chalk_power": 0.8,
    "external_w": 0.0,
    "mention_w": 0.0
   }
  },
  "single_eval": {
-  "decision": "Kept single-game settings: refit didn't beat them on 2026-10-28 (7.9 vs 7.9).",
-  "slates": 18,
+  "decision": "Kept single-game settings: refit didn't beat them on 2026-10-29 (4.8 vs 4.8).",
+  "slates": 19,
   "full_pool_slates": 6,
-  "heldout_day": "2026-10-28",
-  "heldout_current": 7.91,
-  "heldout_fitted": 7.91,
-  "heldout_main_settings": 12.16,
-  "linestar_heldout": 9.35,
-  "avg_miss_all": 7.23,
-  "heldout_without_linestar": 9.7
+  "heldout_day": "2026-10-29",
+  "heldout_current": 4.83,
+  "heldout_fitted": 4.85,
+  "heldout_main_settings": 15.47,
+  "linestar_heldout": 5.72,
+  "avg_miss_all": 7.07,
+  "heldout_without_linestar": 7.26
  },
  "evaluation": {
-  "days": 7,
-  "players": 837,
-  "avg_miss_all_days": 2.87,
-  "heldout_day": "2026-10-28",
-  "heldout_current": 2.47,
-  "heldout_fitted": 2.47,
-  "linestar_heldout": 2.89
+  "days": 8,
+  "players": 888,
+  "avg_miss_all_days": 2.97,
+  "heldout_day": "2026-10-29",
+  "heldout_current": 4.56,
+  "heldout_fitted": 4.48,
+  "linestar_heldout": 6.91
  },
  "log": [
   {
@@ -105,6 +106,18 @@
   },
   {
    "date": "2026-10-29",
+   "adopted": false,
+   "params": {
+    "field_noise": 0.05,
+    "consensus_w": 1.0,
+    "field_mix": 0.8,
+    "chalk_power": 0.8,
+    "external_w": 0.5,
+    "mention_w": 0.0
+   }
+  },
+  {
+   "date": "2026-10-30",
    "adopted": false,
    "params": {
     "field_noise": 0.05,
