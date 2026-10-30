@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-30",
-  "checked_at": "2026-10-30T12:04:29.329132+00:00",
+  "checked_at": "2026-10-30T13:25:27.699831+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -18,6 +18,14 @@
       "headline": "Chicago Bulls: Every Rotation Player Described in One Word - Substack",
       "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeThVcVBRREc1d3F1bTcxY2VQMEpUR1BGalhBQjljWDZ2T29jdG1qYWF0YVdmMTdqbXA0OTk0aF9RZlVGVERoMlA5V3dWcmw2RlVrSmJfYm4wYzlMMkhMMW9lTkduc1BHRnlQYkJrRTUzQnd5eGNVMzh2ZUhQVmhjVF9WZw?oc=5",
       "published_at": "2026-10-30T11:02:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Celtics Announce Injury Report Ahead Of First NBA Cup Game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRWJYNkZlVlc0TXhrZnVVaTdQMnFWdEptNS1JSzByc0dJRWxnM2pfQVBTVVpHbVVTbzNNbFp3WTk4aVV3YkhpN0xFMjhFT0k2V250MjBveUFxZnFoQXhqR2psYW5aSXNfSW9DcFVTMEJSWVR4WlNXRGt6d0h5X2xJejJmSU81Y0lGY1BONGNB?oc=5",
+      "published_at": "2026-10-30T10:00:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -295,6 +303,14 @@
       "scope_date": "2026-10-30"
     },
     {
+      "headline": "Yaxel Lendeborg's playmaking leap could be what completes this Warriors rotation - Blue Man Hoop",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUXBDa0lfZmFWNWs2YXJDaTFXSlpEdGxfN3NaLXNkRUY1dGFRMHNIMklEOWd6MDdCZ2MtUHliRF9ucGVxazY3eFVmRzFWNmE4c3pzT0tPM19zR091UXRWWlFndThJRk9MZ2M1WXdjVXpiTnVucWxVRml1ZGxJVzBFMS1HcHU4MXptdno0THI0RlNtREJhN1Y1ZzhhaEl4MFJib3JNZ0Jlcw?oc=5",
+      "published_at": "2026-10-29T19:00:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
       "headline": "Robert Williams Injury: Doubtful for Thursday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQU0RQWEozelV5TG1USTN2djFRWVlwRlJ2N1VTajY4WkJmeTVxQkVEZF9ocjBkbkx2eXRUMy1FSjhMQlJmUll1T2NfY1JCQ2hBNVZJUWFldDliWU5FMU5MVEhiZzNGUEVPSUNSaFlSYTh0VXZ3Umk4bEpILVVibDcwazdnTUlmeWlqQV9GdFdHX1pUeUZBNTR0YV9oR2xhdw?oc=5",
       "published_at": "2026-10-29T18:57:17+00:00",
@@ -410,14 +426,6 @@
       "headline": "Knicks’ Mikal Bridges sees minutes cut as Mike Brown’s bold rotation gamble pays off - Business Upturn",
       "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZ3dWb3pwUUlkLXpnQ2EzZ2NGY0NtMGRNT211M3ZqRUQxcXFhZ2hUNVpMX25rMHVGYU41RHpfRDVTRVU2V19IbDdTcXM5NlBmNUtYYWVXMGktU3czWlZqSk1OczZpSHQyMC16RVdfYmJubE1YWWx1SFgxZXEyaVZlby1GeEVFSnZYZllPNk44UmJBWDlXb2tZdFMtWmVwRzgxMGVjdUdnZVl2LW9OakluTy1KU2xXUE1tWHBKVzBR?oc=5",
       "published_at": "2026-10-29T14:44:36+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Drew Rasmussen to start Game 5 on short rest as Rays try to extend World Series - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTXlic2pSbDVuNUhxLTJVdGVCQUVYWC1qdmtUU3d5aTNTT0N5Z3lLQ0NTeHZvMDdHNHBiQjRaZ3pPeTlqQW13NmtWb3VqNkJLRkFtbnVDY1kxbndlNDhCUUxURUJ4dE1BWVhXTlUwMjlaTWxld2xqc2dOV2pCRWNhWTY4LVNSM2tEUndpZWNlOWJuTFdJNDRF?oc=5",
-      "published_at": "2026-10-29T12:29:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
