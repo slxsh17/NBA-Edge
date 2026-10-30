@@ -394,8 +394,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json')]);
-  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;S.lr=lr.status==='fulfilled'?lr.value:null;S.cs=cs.status==='fulfilled'?cs.value:null;S.ch=ch.status==='fulfilled'?ch.value:null;S.csIdx=null;
+  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch,me]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json'),getJSON('my_entries.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;S.lr=lr.status==='fulfilled'?lr.value:null;S.cs=cs.status==='fulfilled'?cs.value:null;S.ch=ch.status==='fulfilled'?ch.value:null;S.me=me.status==='fulfilled'?me.value:null;S.csIdx=null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
@@ -406,6 +406,7 @@ async function load(){
   else{S.players=[];S.games=[]}
   applyLiveInjuries();
   restoreDayState();
+  syncEntries();
   renderAll();
 }
 function singles(){return (S.today&&S.today.date===S.day&&S.today.single_games)||[]}
@@ -425,7 +426,7 @@ function applyFormat(){
 function switchFormat(fmt,sgId){
   S.format=fmt;if(sgId)S.sgId=sgId;store.set('format',{day:S.day,format:S.format,sgId:S.sgId});
   S.locks=new Set();S.bans=new Set();S.gamesOff=new Set();S.lineups=[];S.over={};S.open=null;S.review=false;
-  applyFormat();applyLiveInjuries();restoreDayState();renderAll();$('build-status').textContent='';
+  applyFormat();applyLiveInjuries();restoreDayState();syncEntries();renderAll();$('build-status').textContent='';
 }
 $('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.dataset.v===S.format)return;switchFormat(b.dataset.v)});
 function applyLiveInjuries(){
@@ -440,6 +441,18 @@ function restoreDayState(){
   const set=store.get('settings:'+S.format,null);if(set){S.count=set.count||1;S.mode=set.mode||'cash';S.exposure=set.exposure||60;S.useSim=set.useSim!==false}else{S.count=1;S.mode='cash';S.exposure=S.format==='single'?100:60}
   const ex=$('exposure');if(ex){ex.value=S.exposure;$('exposure-out').textContent=S.exposure+'%'}
   loadEntries();
+}
+// Entries sent from chat (data/my_entries.json, e.g. lineups read from your FanDuel screenshots).
+// A newer file replaces this device's saved entries for that slate once.
+function syncEntries(){
+  const m=S.me;if(!m||m.date!==S.day||S.format!=='classic'||S.source==='csv'||!(m.entries||[]).length)return;
+  const stampKey='entriesSync:'+S.day;if(store.get(stampKey,'')>=m.updated_at)return;
+  const by=new Map(S.players.map(p=>[pnorm(p.name)+'|'+p.team,p]));
+  const es=m.entries.map(e=>({label:e.label||'',settings:e.settings||null,sim:null,noise:null,gap0:0,
+    picks:e.players.map(r=>{const p=by.get(pnorm(r.name)+'|'+r.team);return p?{p,slot:r.slot}:null}).filter(Boolean)})).filter(e=>e.picks.length===F().size);
+  if(!es.length)return;
+  if(m.replace)S.entries=es;else (S.entries??=[]).push(...es);
+  saveEntries();store.set(stampKey,m.updated_at);S.entStarted=-1;
 }
 function loadEntries(){const v=store.get(entKey(),[]);S.entries=(v||[]).map(e=>({label:e.label||'',noise:e.noise||null,gap0:e.gap0||0,settings:e.settings||null,sim:e.sim??null,picks:e.picks.map(rehydrate).filter(Boolean)})).filter(e=>e.picks.length===F().size);S.entStarted=-1}
 function rehydrate(pk){const p=S.players.find(x=>pkey(x)===pk.k);return p?{p,slot:pk.slot}:null}

@@ -1,0 +1,121 @@
+{
+ "date": "2026-10-30",
+ "updated_at": "2026-10-30T23:48:37+00:00",
+ "replace": true,
+ "note": "Lineups entered on FanDuel, read from your screenshot. Replaces the entries saved on your device for this slate.",
+ "entries": [
+  {
+   "label": "Cash lineup \u00b7 3 entries, $22",
+   "settings": {
+    "mode": "cash",
+    "sim": false,
+    "at": 1793400300000
+   },
+   "players": [
+    {
+     "name": "Fred VanVleet",
+     "team": "HOU",
+     "slot": "PG"
+    },
+    {
+     "name": "Andrew Nembhard",
+     "team": "IND",
+     "slot": "SG"
+    },
+    {
+     "name": "Kelly Oubre",
+     "team": "IND",
+     "slot": "SF"
+    },
+    {
+     "name": "Caleb Wilson",
+     "team": "CHI",
+     "slot": "PF"
+    },
+    {
+     "name": "Joel Embiid",
+     "team": "PHI",
+     "slot": "C"
+    },
+    {
+     "name": "Keaton Wagler",
+     "team": "LAC",
+     "slot": "G/F"
+    },
+    {
+     "name": "Giannis Antetokounmpo",
+     "team": "MIA",
+     "slot": "F/C"
+    },
+    {
+     "name": "Immanuel Quickley",
+     "team": "TOR",
+     "slot": "UTIL"
+    },
+    {
+     "name": "Derrick White",
+     "team": "BOS",
+     "slot": "UTIL"
+    }
+   ]
+  },
+  {
+   "label": "Tournament lineup \u00b7 3 entries, $9",
+   "settings": {
+    "mode": "gpp",
+    "sim": false,
+    "ceilW": 0.45,
+    "levW": 0.15,
+    "ownFade": 0.03,
+    "at": 1793400300000
+   },
+   "players": [
+    {
+     "name": "Mikel Brown",
+     "team": "BKN",
+     "slot": "PG"
+    },
+    {
+     "name": "Keaton Wagler",
+     "team": "LAC",
+     "slot": "SG"
+    },
+    {
+     "name": "Kevin Durant",
+     "team": "HOU",
+     "slot": "SF"
+    },
+    {
+     "name": "Caleb Wilson",
+     "team": "CHI",
+     "slot": "PF"
+    },
+    {
+     "name": "Bam Adebayo",
+     "team": "MIA",
+     "slot": "C"
+    },
+    {
+     "name": "Cade Cunningham",
+     "team": "DET",
+     "slot": "G/F"
+    },
+    {
+     "name": "LeBron James",
+     "team": "PHI",
+     "slot": "F/C"
+    },
+    {
+     "name": "Aaron Nesmith",
+     "team": "IND",
+     "slot": "UTIL"
+    },
+    {
+     "name": "Fred VanVleet",
+     "team": "HOU",
+     "slot": "UTIL"
+    }
+   ]
+  }
+ ]
+}
