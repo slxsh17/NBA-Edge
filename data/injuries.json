@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T04:08:33.332581+00:00",
+  "updated_at": "2026-10-30T04:56:33.589635+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -385,7 +385,12 @@
     {
       "name": "Robert Williams III",
       "team": "POR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Ja Morant",
+      "team": "POR",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Chris Youngblood",
