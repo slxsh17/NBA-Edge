@@ -1,15 +1,31 @@
 {
   "schema": 1,
   "slate_date": "2026-10-30",
-  "checked_at": "2026-10-30T14:20:04.212470+00:00",
+  "checked_at": "2026-10-30T15:16:11.066975+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
     {
+      "headline": "Celtics poised to start storybook NBA Cup run for Brad Stevens - Hardwood Houdini",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYVo5RFJQQVdRVDhiM0RtS1E2MURwRjlxMlVnRDBMamJ0SGgwODFBTy1SRVJNWWpuQlFKd2ppdDJxb0xCSnZRRHFhdm9xZXNRX2J0WEprQW4tSFd3b05TU2FwaHZKZjlRcUE1TnAxMU5tU3k4YTJLRXM3empYaUoyTVFSSWFTb1hfdFlJ?oc=5",
+      "published_at": "2026-10-30T15:00:03+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
       "headline": "NBA injury report: Haliburton, Durant headline Friday’s absences - TalkBasket.net",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ2w5TTlNS1VlYnViaml0NjFSMUZWS2Y0R3Rva0RibU43cncwTXBTSWxZVkt4Q3kxakVFQU9DOGVqREpzTnVlVTljUHdJMEV5RjhfSTdqQmlvTEhDU1FxOGRYSmNkZkhGZTVFdGl3S1MzOURHXzduZTk2dzVRS1Z1ODdVX0pienpDMGZMYkFKMDROZWN0ZlM0?oc=5",
       "published_at": "2026-10-30T14:13:59+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "The Chicago Bulls have one solution to the NBA's injury plague: Norman Powell - Pippen Ain't Easy",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPd1BQNUZJOVdQQjNWUW1lVW16VGpaeVZPUFpvNGtLSnV0NVh2TzhJaDcwVzdDZThleE9GVkxEWEtkMFBMSjc5bUFzY3V2YzZKQzBQUmcxSTVqZUFTUkJud2xEVjFDcy1IaWNNV3hKd3Azc3A4cTR5aWdDeHZCWmxNZjd3bWlVbDIz?oc=5",
+      "published_at": "2026-10-30T13:00:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -31,9 +47,9 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Celtics Announce Injury Report Ahead Of First NBA Cup Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRWJYNkZlVlc0TXhrZnVVaTdQMnFWdEptNS1JSzByc0dJRWxnM2pfQVBTVVpHbVVTbzNNbFp3WTk4aVV3YkhpN0xFMjhFT0k2V250MjBveUFxZnFoQXhqR2psYW5aSXNfSW9DcFVTMEJSWVR4WlNXRGt6d0h5X2xJejJmSU81Y0lGY1BONGNB?oc=5",
-      "published_at": "2026-10-30T10:00:35+00:00",
+      "headline": "Celtics Announce Injury Report Ahead Of First NBA Cup Game - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNS0NBa2dMSjVZME1USUNaak9Td3FBbFUya00xN2c5dzgtV2hUV1hEQkp2dklIMkxhem82UFhUbzRhZExUaG1fSk13cDQtdkZadUZlbkR3enluMzRZQW04Zmo0NGFKUURvTVdBRnE2QWVaTmdwQmlrYW5uSDB4cVdJMks0OHIwQUZCaXpIdFdfcG5lcGhVRWx5em5SbVlGT0IxRTc2VkJB?oc=5",
+      "published_at": "2026-10-30T07:00:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -79,14 +95,6 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Rockets Announce Alperen Sengun Injury Status Update vs. Mavericks - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTkg0ZkVWWWZDYmtlQjhZOS13Ylp3cWRqaVAwUW12YU1sVWNmTG5xb1RkYXMwVFp1cV9XVERSTXFNREhfTldOSVlZMnNDQ3dtU3JxNFpueGN2Q3FxTmpZcE14NTRmU1h1UUdJSU1ZeVYxQmFoMVBiakhucWg4cjRSWm92em8yelBjRmhDX2ZGYXE?oc=5",
-      "published_at": "2026-10-29T23:48:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
       "headline": "Meleek Thomas Ruled Out Against Hawks - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWUZLWnkyYUhpa0tRN293RVUzWFN5STJhLTZKcEY0LS16Yk9GOFA3UVhLdmR5cUctZ0FZS2JJRmpaQUJVM3VFMUNaWm5YdThqbHhLMEY0Um5fdFlqRnFEOXFGeVMxelB5UTVpeUlyY2N3dkRxdUNub2pxUUlYNV9JenNITl9fckptTHVZaQ?oc=5",
       "published_at": "2026-10-29T23:28:33+00:00",
@@ -114,6 +122,14 @@
       "headline": "Sergio De Larrea (knee) ruled out Friday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeXFTS1NoYm9pVVh1clFIUG9YRFNiYklvZUg2U0U2Xy1PWkxnYmtlSi0zUlVMOGJMSXYyY3hkSHNpUGo3T1ZXaGJ6ZjBOZzlFZUFxRVZVeUJpOXdhS056ZDBmTzAzZHlQV1NjbkZoQmd5b2VxWWg0X0JDT3ZjMkl5RDdXRkx5Y3lFTllRdTRKUdIBlAFBVV95cUxNUE1TdWdkcTFHZGd0Qm9Ld2t3SnpOSFJQdi1UMTQ3YXFael9PTEpkVVI0YmdtN1VweDY3VFNOMVpKdDFUUFJxYzRVNWN5ZVc2cGlLVHBtUDlsVE5xcEZjcGlYV05DdGRVbEZ2ZEhlRU8wVlpvTmE5RW0zQ1ZXTWlydktkU1UtOWE5SUhZSjh2SWJfRGlB?oc=5",
       "published_at": "2026-10-29T22:45:55+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Mavericks Injury Report vs. Rockets: Marshall Questionable - Dallas Hoops Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZEVMWjktLVJpWGN3d0JYanlUUnYxZEJPck5qd1d2dUZ0eVRia2FrVk1XUTBCQnh0MkRFclA3TVpHejdtcWV1bk5sdnZrRWpnX0R0TzRTRlozZnJmcDZOblRBbk42Sm9OQ25CQ01oaVdUZGp2TTdfbi1KQ08wcW5wTXp3dlFIZjVnUDR3RU5GeEtyczRjOFgzdWJSSlpWSmc?oc=5",
+      "published_at": "2026-10-29T22:19:54+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -167,6 +183,14 @@
       "scope_date": "2026-10-30"
     },
     {
+      "headline": "Full injury report for Sixers-Knicks on Friday - PhillyVoice",
+      "source_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPV0FDN0JJREpSVGhvR3FMRnNBbzBFcFZoVWIwZjhfZklHM3NyRTNEaUlfSVVOMjVpNDR1Z25yQVhPVjlIbTZ1T29WWU8tY3BTT01GaW8za0hkMzRpYXk4X0UxS3o1QWw1NHpabUMyMWVuYmlNNXVOeWVNMGdwUVllbGJPdmh0eEVTTjdBTmpiUzg3Q3R4MHJqWTZXNFVvcjEtZmZuVHV2QzhSbGxRX3R1SmdHTWExRnlwckRSVmJoSVRfbXBkcTF1NWp2RWZDaDR5VlNGOFJB?oc=5",
+      "published_at": "2026-10-29T21:35:02+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
       "headline": "Aaron Nesmith Injury: Expected to play Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaWVfZ1kzb204c1o3OFIzZjFYRXJQdnZha3BZWHN6MlJ2QlBUaDlBa05wRG1FUFU1M1RwcEVvSGJmbUF2aHhlWWtLOW1IWjVBSHN0eTFvSy1pMERTNkZNS2dhdGJnZkpEcGNaZ3VDMzFwdkVuNlZ0SmNHMVFUejdJM1EweXJhaTFxSk1jLUctTjlfNUs2bEk5dzUzOGtPUQ?oc=5",
       "published_at": "2026-10-29T21:07:52+00:00",
@@ -194,6 +218,14 @@
       "headline": "Alperen Sengun Injury: Questionable for Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYjlvMTQyckMxUDI1RDRWaVJnU09UQ1BOeEVlT3lLMFdNa09zQU9wbVZlSWxkdG9zOW5NTVZNYWwyVXQ4aEVmbG94bGx3Mi15SW5CX2JaUFZxUjgwS1FpODJPcXNHeUxuM2VaeUJ6M0RjREMycnlobGp2NUp6dUZTSjNrTGF4STdoNldBZ3d5UEppMTE3RTNsU1V2NU9MdUk?oc=5",
       "published_at": "2026-10-29T20:34:29+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Isaiah Joe Injury: Listed as questionable - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObWloTEFwUmd1WV9ET1Q1LThEcmtTeTlLZ0t1MWVUbnluUUk0YWhnR1hXTm1yaDdXUWM2RUFmZHJQaWJsd0dpREpJclFNVmZmM2JUUHBudG5HMG9aUFYyaWstSW9ZTl9HVTM1aUY1SEplZDl3TlFhc2RlbE1QUWt4Y3M3VDRhRjF3RnFFTmNjU184LTBfT0txUw?oc=5",
+      "published_at": "2026-10-29T20:34:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -263,6 +295,14 @@
       "scope_date": "2026-10-30"
     },
     {
+      "headline": "Tanner McKee to Start for Eagles vs. Panthers Stream of National Football League - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQWh6YnhISkYybHBsV1h0ZUk5UURPTnI0cEFrMVpyajV4QkZqWGtheTRyNE1vRkpTOTB4Z3gtcVd1a1Q3SkRVWDc2RV9xSWRFbnNXUHptZ045ZkVsR0JFUGJGOFlwcFAzcVhqZWZsa25wWk9FTy1Xenowa3Z3NnUzbEtUX2hBNXVaQUNOb3hKUQ?oc=5",
+      "published_at": "2026-10-29T17:43:06+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
       "headline": "John Collins News: Struggles in limited minutes - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRnhNRVY2SXFvc1lSNkU4N051WWdfbF85cmdSMXBxcXQ1WjlmZFR0VW4xMldLWGdmUzhteExmTWJnd0hZQnFTd292ZDhiZDZnT21LOU5VRDRzemlVRmxoaXBXMldXUUlKNnZtZ09HMWZDT2I1OWtEaXYzcG1iRWduU2VYcW90Y1hweERTcXh1WHhBX05GdGU1cHJpWUNld0Nv?oc=5",
       "published_at": "2026-10-29T17:31:10+00:00",
@@ -306,30 +346,6 @@
       "headline": "NBA injury report: Murray, Sharpe out Thursday, October 29 - TalkBasket.net",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOc1VGa1ZxSjNnUzFFX0pWb0FlWVg2a3UybGRlU21LaUpIS3BaSFBZbERKRmhybzhJcHRCUHpibC1JQkdzV00zUmtTWWNnUXdqQVVsQXg4QV9UWlFPM29oNHIyNjBiVnB3bldQUHpyQXRqemc2bUZHWGhmRVk5SW15cGpNdU9VdnppNWhpczliQnNlWk0?oc=5",
       "published_at": "2026-10-29T15:32:16+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Drew Rasmussen will start Game 5 for Rays - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNc0M1WEw0eTFGWTU4U0NqTkUxclhNNXlFNXdhTkRzZVZjWDBqaURBYTlUV0pDVTdHa0EzR05QcW56OXl6V0xzVkJ2SldPaWR3ckhHS3ZvQk5hTmNDM2xhTFFmNnc1MGVSOWFYS3ZGc18yc1U5OEVrdmR3NE9LV3NMVW96VzFrQ0N4VGp1V1Y4WWlwRGViR0VHSUFTQ2t4VGFUTDNGRDIzTWFienc?oc=5",
-      "published_at": "2026-10-29T15:01:09+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Boston Celtics About to Start NBA Cup: Need to Know - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQmZHaDVQRWJ3Smt1RGZGbjcwTzhXcWRBNmN6RUktQkdhMmljdGxmUlhQa3JGYlNvbC04R2pYUXpldmRlY3NmcXRkOUFzVUVzS2NxSWtRZmh6WDJNM01xMjQtMnFpZS1ZMXpKdlJSTlNFU3liclBMWFkwTE45OEEwN3dGU2c1cXVYMFduVnVKUFlqTzc5WmluZ3RPMFI?oc=5",
-      "published_at": "2026-10-29T14:50:53+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Knicks’ Mikal Bridges sees minutes cut as Mike Brown’s bold rotation gamble pays off - Business Upturn",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZ3dWb3pwUUlkLXpnQ2EzZ2NGY0NtMGRNT211M3ZqRUQxcXFhZ2hUNVpMX25rMHVGYU41RHpfRDVTRVU2V19IbDdTcXM5NlBmNUtYYWVXMGktU3czWlZqSk1OczZpSHQyMC16RVdfYmJubE1YWWx1SFgxZXEyaVZlby1GeEVFSnZYZllPNk44UmJBWDlXb2tZdFMtWmVwRzgxMGVjdUdnZVl2LW9OakluTy1KU2xXUE1tWHBKVzBR?oc=5",
-      "published_at": "2026-10-29T14:44:36+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
