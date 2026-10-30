@@ -1,25 +1,25 @@
 {
   "date": "20261029",
-  "updated_at": "2026-10-29T21:46:05.530736-04:00",
+  "updated_at": "2026-10-29T22:33:17.895429-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
       "away": "Cleveland Cavaliers",
       "home": "Atlanta Hawks",
       "time": "2026-10-30T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Sacramento Kings",
       "home": "New Orleans Pelicans",
       "time": "2026-10-30T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Memphis Grizzlies",
       "home": "Portland Trail Blazers",
       "time": "2026-10-30T02:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     }
   ]
 }
