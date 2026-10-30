@@ -115,6 +115,54 @@
      "won": 16
     }
    ]
+  },
+  {
+   "date": "2026-10-29",
+   "slate": "Main",
+   "entry": "Single-entry lineup",
+   "score": null,
+   "final": true,
+   "contests": [
+    {
+     "name": "Big Double Up",
+     "entries": 1,
+     "fee": 5,
+     "won": 10
+    },
+    {
+     "name": "Layup (20 max)",
+     "entries": 1,
+     "fee": 4,
+     "won": 8
+    },
+    {
+     "name": "Block (SE)",
+     "entries": 1,
+     "fee": 2,
+     "won": 4
+    },
+    {
+     "name": "Dribbler (SE)",
+     "entries": 1,
+     "fee": 1,
+     "won": 2.5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "slate": "Main",
+   "entry": "Multi-entry tournament set",
+   "score": null,
+   "final": true,
+   "note": "Rest of the night's entries (Piggy Bank Shot, 150 max): $24.50 in, $0.52 back.",
+   "contests": [
+    {
+     "name": "Piggy Bank Shot (150 max) and others",
+     "fee": 24.5,
+     "won": 0.52
+    }
+   ]
   }
  ]
 }

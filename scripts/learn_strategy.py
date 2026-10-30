@@ -127,6 +127,26 @@ def main():
     rank_cash = sorted(keys, key=lambda k: -avg(k, 'one'))
     as_dict = lambda k: {'ceilW': k[0], 'levW': k[1], 'ownFade': k[2]}
     dflt = (SITE_DEFAULT['ceilW'], SITE_DEFAULT['levW'], SITE_DEFAULT['ownFade'])
+
+    # Guard against overfitting a handful of nights: leave one night out, pick the best settings on
+    # the others, score them on the night left out. Only adopt "learned" settings when that honest
+    # test beats the defaults; otherwise keep the defaults. (Oct 29: settings that topped 7 nights
+    # with leverage 0.5 faded Acuff and Fears, the two best plays, and scored 252 vs 354.)
+    def loo(field, ref):
+        if len(nights) < 4:
+            return None, None
+        got, base = [], []
+        for j, n in enumerate(nights):
+            rest = [m for i, m in enumerate(nights) if i != j]
+            pick = max(keys, key=lambda k: statistics.mean(m['grid'][k][field] for m in rest))
+            got.append(n['grid'][pick][field])
+            base.append(n['grid'][ref][field])
+        return statistics.mean(got), statistics.mean(base)
+    loo_g, loo_gd = loo('best5', dflt) if dflt in keys else (None, None)
+    gpp_pick = rank_gpp[0] if (loo_g is not None and loo_g > loo_gd + 3) else (dflt if dflt in keys else rank_gpp[0])
+    cash0 = (0.0, 0.0, 0.0)
+    loo_c, loo_cd = loo('one', cash0) if cash0 in keys else (None, None)
+    cash_pick = rank_cash[0] if (loo_c is not None and loo_c > loo_cd + 3) else (cash0 if cash0 in keys else rank_cash[0])
     sims = [n['sim_best5'] for n in nights if n['sim_best5'] is not None]
     mine = read(DATA / 'my_results.json').get('days', [])
     entries = [c for d in mine for c in d.get('contests', [])]
@@ -134,9 +154,11 @@ def main():
         'schema': 1, 'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
         'nights': len(nights), 'days': [n['day'] for n in nights],
         'avg_hindsight_best': round(statistics.mean(n['best_possible'] for n in nights), 1),
-        'cash': {'best': as_dict(rank_cash[0]), 'best_avg': round(avg(rank_cash[0], 'one'), 1),
+        'cash': {'best': as_dict(cash_pick), 'best_avg': round(avg(cash_pick, 'one'), 1), 'in_sample_top': as_dict(rank_cash[0]),
+                 'leave_one_out': {'learned': round(loo_c, 1) if loo_c else None, 'projection_only': round(loo_cd, 1) if loo_cd else None},
                  'projection_only_avg': round(statistics.mean(n['cash'] for n in nights), 1)},
-        'tournament': {'best': as_dict(rank_gpp[0]), 'best_avg_best_of_5': round(avg(rank_gpp[0], 'best5'), 1),
+        'tournament': {'best': as_dict(gpp_pick), 'best_avg_best_of_5': round(avg(gpp_pick, 'best5'), 1), 'in_sample_top': as_dict(rank_gpp[0]),
+                       'leave_one_out': {'learned': round(loo_g, 1) if loo_g else None, 'defaults': round(loo_gd, 1) if loo_gd else None},
                        'site_default_avg_best_of_5': round(avg(dflt, 'best5'), 1) if dflt in keys else None,
                        'sim_winners_avg_best_of_5': round(statistics.mean(sims), 1) if len(sims) == len(nights) else None,
                        'top5': [{**as_dict(k), 'avg_best_of_5': round(avg(k, 'best5'), 1)} for k in rank_gpp[:5]]},
