@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-10-30",
-"updated_at": "2026-10-30T17:39:57+00:00",
+"updated_at": "2026-10-30T18:43:25+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -27,7 +27,7 @@
 {
 "name": "Brandon Miller",
 "team": "CHA",
-"fta_own": 56.6,
+"fta_own": 56.9,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -36,26 +36,26 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 56.6,
+"consensus_own": 56.9,
 "source_count": 2,
 "mention_count": 1
 },
 {
 "name": "Anthony Davis",
 "team": "WAS",
-"fta_own": 58.3,
+"fta_own": 56.9,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 58.3,
+"consensus_own": 56.9,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Paul Reed",
 "team": "DET",
-"fta_own": 44.3,
-"linestar_own": 44.2,
+"fta_own": 43.3,
+"linestar_own": 44.4,
 "mentions": 1,
 "articles": [
 {
@@ -63,25 +63,25 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 44.2,
+"consensus_own": 43.8,
 "source_count": 3,
 "mention_count": 1
 },
 {
 "name": "Dennis Schroder",
 "team": "CHA",
-"fta_own": 60.6,
-"linestar_own": 29.9,
+"fta_own": 62.0,
+"linestar_own": 30.0,
 "mentions": 0,
 "articles": [],
-"consensus_own": 45.2,
+"consensus_own": 46.0,
 "source_count": 2,
 "mention_count": 0
 },
 {
 "name": "Andrew Nembhard",
 "team": "IND",
-"fta_own": 36.9,
+"fta_own": 37.9,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -90,14 +90,14 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 36.9,
+"consensus_own": 37.9,
 "source_count": 2,
 "mention_count": 1
 },
 {
 "name": "Jayson Tatum",
 "team": "BOS",
-"fta_own": 29.1,
+"fta_own": 30.2,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -106,30 +106,14 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 29.1,
-"source_count": 2,
-"mention_count": 1
-},
-{
-"name": "Giannis Antetokounmpo",
-"team": "MIA",
-"fta_own": 26.9,
-"linestar_own": null,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Friday 10/30/26",
-"url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
-}
-],
-"consensus_own": 26.9,
+"consensus_own": 30.2,
 "source_count": 2,
 "mention_count": 1
 },
 {
 "name": "Jaden McDaniels",
 "team": "MIN",
-"fta_own": 26.4,
+"fta_own": 26.6,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -138,15 +122,15 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 26.4,
+"consensus_own": 26.6,
 "source_count": 2,
 "mention_count": 1
 },
 {
-"name": "Moussa Diabate",
-"team": "CHA",
-"fta_own": 16.9,
-"linestar_own": 33.5,
+"name": "Giannis Antetokounmpo",
+"team": "MIA",
+"fta_own": 26.5,
+"linestar_own": null,
 "mentions": 1,
 "articles": [
 {
@@ -154,7 +138,23 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 25.2,
+"consensus_own": 26.5,
+"source_count": 2,
+"mention_count": 1
+},
+{
+"name": "Moussa Diabate",
+"team": "CHA",
+"fta_own": 18.0,
+"linestar_own": 34.0,
+"mentions": 1,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Friday 10/30/26",
+"url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
+}
+],
+"consensus_own": 26.0,
 "source_count": 3,
 "mention_count": 1
 },
@@ -172,7 +172,7 @@
 {
 "name": "Derrick White",
 "team": "BOS",
-"fta_own": 22.9,
+"fta_own": 23.0,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -181,14 +181,14 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 22.9,
+"consensus_own": 23.0,
 "source_count": 2,
 "mention_count": 1
 },
 {
 "name": "Immanuel Quickley",
 "team": "TOR",
-"fta_own": 21.9,
+"fta_own": 22.4,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -197,14 +197,14 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 21.9,
+"consensus_own": 22.4,
 "source_count": 2,
 "mention_count": 1
 },
 {
 "name": "RJ Barrett",
 "team": "TOR",
-"fta_own": 21.6,
+"fta_own": 22.0,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -213,7 +213,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 21.6,
+"consensus_own": 22.0,
 "source_count": 2,
 "mention_count": 1
 },
@@ -231,7 +231,7 @@
 {
 "name": "Joel Embiid",
 "team": "PHI",
-"fta_own": 18.1,
+"fta_own": 17.2,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -240,7 +240,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 18.1,
+"consensus_own": 17.2,
 "source_count": 2,
 "mention_count": 1
 },
@@ -248,7 +248,7 @@
 "name": "Fred VanVleet",
 "team": "HOU",
 "fta_own": null,
-"linestar_own": 14.5,
+"linestar_own": 14.4,
 "mentions": 1,
 "articles": [
 {
@@ -256,7 +256,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 14.5,
+"consensus_own": 14.4,
 "source_count": 2,
 "mention_count": 1
 },
@@ -280,7 +280,7 @@
 "name": "Kyshawn George",
 "team": "WAS",
 "fta_own": null,
-"linestar_own": 8.9,
+"linestar_own": 9.2,
 "mentions": 1,
 "articles": [
 {
@@ -288,7 +288,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 8.9,
+"consensus_own": 9.2,
 "source_count": 2,
 "mention_count": 1
 },
@@ -296,7 +296,7 @@
 "name": "Grayson Allen",
 "team": "CHA",
 "fta_own": null,
-"linestar_own": 7.6,
+"linestar_own": 7.7,
 "mentions": 1,
 "articles": [
 {
@@ -304,7 +304,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/29/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-10-30-26/"
 }
 ],
-"consensus_own": 7.6,
+"consensus_own": 7.7,
 "source_count": 2,
 "mention_count": 1
 },
@@ -886,10 +886,10 @@
 "name": "Chaney Johnson",
 "team": "BKN",
 "fta_own": null,
-"linestar_own": 1.1,
+"linestar_own": 1.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 1.1,
+"consensus_own": 1.2,
 "source_count": 1,
 "mention_count": 0
 },
