@@ -84,7 +84,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A data/slate_* data/single_* data/automatic_projections.json data/today.json data/accuracy.json data/history data/learned_weights.json data/archive data/season_logs.json data/model_params.json data/ownership data/ownership_params.json data/alerts.json data/strategy.json data/lineups data/lineup_results.json data/contest_sims.json data/contest_history.json
+          git add -A data/slate_* data/single_* data/automatic_projections.json data/today.json data/accuracy.json data/history data/learned_weights.json data/archive data/season_logs.json data/model_params.json data/ownership data/ownership_params.json data/alerts.json data/strategy.json data/lineups data/lineup_results.json data/contest_sims.json data/contest_history.json data/manual_status.json
           git diff --cached --quiet && exit 0
           git commit -m 'Update NBA EDGE slate pipeline'
           for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done

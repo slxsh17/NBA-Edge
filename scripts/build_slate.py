@@ -292,6 +292,11 @@ def build(day=None, backtest=False, weights=None):
     for r in ([] if backtest else read('injuries.json').get('injuries', [])):
         inj[(norm(r.get('name')), canon(r.get('team')))] = str(r.get('status') or '').upper()
     news_status = {} if backtest else headline_status(day)
+    # Manual statuses (data/manual_status.json) for news the feeds haven't caught yet, e.g. a
+    # player ruled out minutes before lock. Only entries dated today are used.
+    for r in ([] if backtest else read('manual_status.json').get('players', [])):
+        if r.get('date') == day and r.get('status') in ('OUT', 'DOUBTFUL'):
+            inj[(norm(r['name']), canon(r['team']))] = r['status']
     lineups = {} if backtest else {canon(l.get('team')): l for l in read('lineup_news.json').get('lineups', [])
                if l.get('date') == day and l.get('status') == 'confirmed'}
     mu = read('matchup_usage.json')
@@ -345,6 +350,7 @@ def build(day=None, backtest=False, weights=None):
         if ns and (espn or '') not in ('OUT', 'INACTIVE') and not (ns == 'DOUBTFUL' and espn == 'DOUBTFUL'):
             espn = ns
             p['flags'].append(f"News: {ns.lower()} per today's report ({news_status['_why'][key][:90]}); official feed hasn't caught up")
+        if espn in ('OUT', 'INACTIVE', 'DOUBTFUL'):
             p['status'] = espn if espn != 'INACTIVE' else 'OUT'
         elif espn in ('QUESTIONABLE', 'DAY-TO-DAY', 'GTD') and p['status'] == 'ACTIVE':
             p['status'] = 'QUESTIONABLE'
