@@ -232,6 +232,56 @@ def history():
     return nights, summ
 
 
+# FanDuel contest types, from the 74 contests LineStar tracked (Oct 20-29: entries, fees, prize
+# pools, "Top N Win") and the contests you've entered (screenshots). field: which simulated field
+# the contest is scored against. Small single-entry contests were softer than Double Ups: on Oct 29
+# their cash lines were 340-362 vs 368.3 for the Big Double Up.
+CATALOG = [
+    {'id': 'double_up', 'name': 'Big Double Up', 'examples': 'Big $2 / $5 Double Up', 'fees': [2, 5, 10], 'field': 'sharp',
+     'kind': 'double', 'share': 0.435, 'mult': 2.0, 'max': 1, 'entries': 1500},
+    {'id': 'fifty', 'name': '50/50', 'examples': '50/50s', 'fees': [1, 2, 5], 'field': 'sharp', 'kind': 'double', 'share': 0.5, 'mult': 1.74, 'max': 1, 'entries': 500},
+    {'id': 'se', 'name': 'Single-entry tournament', 'examples': 'Dribbler $1, Block $2, Assist $5, Dime $10', 'fees': [1, 2, 5, 10],
+     'field': 'casual', 'kind': 'gpp', 'share': 0.2, 'rake': 0.156, 'max': 1, 'entries': 800},
+    {'id': 'small', 'name': 'Small-field tournament', 'examples': 'Small Rebound $12 (~50 entries)', 'fees': [12], 'field': 'casual',
+     'kind': 'gpp', 'share': 0.2, 'rake': 0.15, 'max': 1, 'entries': 50},
+    {'id': 'me20', 'name': 'Multi-entry tournament (20-25 max)', 'examples': "Layup $4, Pick N' Roll $2.22", 'fees': [2.22, 4], 'field': 'casual',
+     'kind': 'gpp', 'share': 0.22, 'rake': 0.156, 'max': 20, 'entries': 8000},
+    {'id': 'penny', 'name': 'Piggy Bank Shot', 'examples': '$0.05, 150 max', 'fees': [0.05], 'field': 'sharp', 'kind': 'gpp',
+     'share': 0.22, 'rake': 0.131, 'max': 150, 'entries': 100000},
+    {'id': 'shot', 'name': 'The Shot', 'examples': '$6-$9, 150 max', 'fees': [6, 9], 'field': 'sharp', 'kind': 'gpp',
+     'share': 0.22, 'rake': 0.156, 'max': 150, 'entries': 25000},
+]
+QS = [0.5, 1, 2, 3, 5, 7.5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 56.5, 60, 65, 70, 75, 78, 80, 82, 85, 88, 90,
+      92, 94, 95, 96, 97, 98, 99, 99.5, 99.8, 99.9, 99.95]
+
+
+def payout(c, q):
+    """Prize as a multiple of the entry fee for finishing in the top fraction q of contest c.
+    Double Ups pay a flat multiple. Tournaments: min cash 2x at the cash line, rising as a power
+    law to the top, sized so the total paid equals the prize pool (entry fees minus FanDuel's cut)."""
+    if c['kind'] == 'double':
+        return c['mult'] if q <= c['share'] else 0.0
+    if q > c['share']:
+        return 0.0
+    b = 1 - 2 * c['share'] / (1 - c['rake'])
+    return 2.0 * (max(q, 1.0 / c['entries']) / c['share']) ** -b
+
+
+def contest_ev(lineup_scores, quants):
+    """lineup_scores: our score per night; quants: {field: nights x len(QS)}. Returns per contest
+    expected return per $1, chance to cash, and the spread of returns."""
+    out = {}
+    for c in CATALOG:
+        Q = quants[c['field']]
+        ms = []
+        for n, sc in enumerate(lineup_scores):
+            pct = float(np.interp(sc, Q[n], QS, left=0.0, right=99.99))
+            ms.append(payout(c, max(1e-6, 1 - pct / 100)))
+        ms = np.array(ms)
+        out[c['id']] = {'ev': round(float(ms.mean()), 3), 'cash': round(float((ms > 0).mean()), 3), 'sd': round(float(ms.std()), 3)}
+    return out
+
+
 def live(corr, odds_shift=None):
     today = read(DATA / 'today.json')
     if not today.get('players'):
@@ -244,6 +294,7 @@ def live(corr, odds_shift=None):
     if read(DATA / 'contest_sims.json').get('sig') == sig:
         return 'same'
     field = build_field(pool)
+    casual = build_field(pool, seed=9, opt_share=0.65, noise=0.18)
     own_sim = np.zeros(len(pool))
     for lu in field:
         own_sim[list(lu)] += 1
@@ -252,13 +303,29 @@ def live(corr, odds_shift=None):
     idx = np.array(field)
     fscores = O[:, idx].sum(axis=2)                     # nights x field
     L = lines_from(fscores)
+    cscores = O[:, np.array(casual)].sum(axis=2)
+    quants = {'sharp': np.percentile(fscores, QS, axis=1).T, 'casual': np.percentile(cscores, QS, axis=1).T}
+    # NBA EDGE's own lineups for tonight, run through every contest type
+    shift = (odds_shift or 0.0)
+    rec = read(DATA / 'lineups' / f"{today['date']}.json").get('slates', {}).get('main', {})
+    key = {(p['name'], p['team']): i for i, p in enumerate(pool)}
+    evals = {}
+    for lu in rec.get('lineups', []):
+        ids = [key.get((x['name'], x['team'])) for x in lu['players']]
+        if None in ids:
+            continue
+        sc = O[:, ids].sum(axis=1) + 9 * shift
+        evals[lu['strategy']] = contest_ev(sc, quants)
     keep = [i for i, p in enumerate(pool) if p['proj'] >= 6]
     corr_own = float(np.corrcoef(own_sim, [p.get('own') or 0 for p in pool])[0, 1])
     return {'sig': sig, 'odds_shift_per_player': odds_shift, 'date': today['date'], 'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
             'nights': NIGHTS, 'field_size': len(field), 'field_own_vs_model_corr': round(corr_own, 2),
             'line_shares': LINES,
-            'lines': {k: [round(float(x), 1) for x in v] for k, v in L.items()},
+            'lines': {k: [int(round(float(x))) for x in v] for k, v in L.items()},
             'lines_median': {k: round(float(np.median(v)), 1) for k, v in L.items()},
+            'catalog': CATALOG, 'qs': QS,
+            'quants': {f: [[int(round(float(x))) for x in row] for row in Q] for f, Q in quants.items()},
+            'nba_edge_contest_ev': evals,
             'players': [norm(pool[i]['name']) + '|' + pool[i]['team'] for i in keep],
             'scores': [[int(round(float(O[n, i]))) for i in keep] for n in range(NIGHTS)]}
 

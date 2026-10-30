@@ -942,37 +942,62 @@ const pct=v=>v>=0.995?'99%+':(v*100<1&&v>0?(v*100).toFixed(1):Math.round(v*100))
 function fitOf(o){if(!o)return '';if(o.du>=0.55)return 'Cash games (Double Ups)';if(o.t1>=0.015)return 'Tournaments';if(o.du>=0.5)return 'Double Ups, small';return 'Tournaments only, small'}
 function oddsRow(picks){const o=contestOdds(picks);if(!o)return '';
   return `<div class="odds">Double Up win <b>${pct(o.du)}</b> · Tournament cash <b>${pct(o.gc)}</b> · Top 1% <b>${pct(o.t1)}</b> · <span class="fit">${fitOf(o)}</span></div>`}
+// Contest simulator: every FanDuel contest type (data/contest_sims.json catalog) scored against
+// its own simulated field (sharp for Double Ups and big tournaments, softer for small single-entry
+// ones) on 300 simulated nights, with the same payout model as the pipeline.
+function payoutX(c,q){if(c.kind==='double')return q<=c.share?c.mult:0;if(q>c.share)return 0;const b=1-2*c.share/(1-c.rake);return 2*Math.pow(Math.max(q,1/c.entries)/c.share,-b)}
+function interpPct(v,row,qs){if(v<=row[0])return 0;const n=row.length;if(v>=row[n-1])return 99.99;let lo=0,hi=n-1;while(hi-lo>1){const m=(lo+hi)>>1;if(row[m]<=v)lo=m;else hi=m}const a=row[lo],b=row[hi];return qs[lo]+(b>a?(v-a)/(b-a):0)*(qs[hi]-qs[lo])}
+function lineupNights(picks){
+  const c=S.cs;if(!S.csIdx)S.csIdx=new Map(c.players.map((k,i)=>[k,i]));
+  const cols=[];let base=0;for(const x of picks){const i=S.csIdx.get(pnorm(x.p.name)+'|'+x.p.team);if(x.p.out)continue;if(i==null)base+=x.p.proj;else cols.push(i)}
+  const cal=c.odds_shift_per_player,shift=Math.min(0,cal!=null?cal:0)*picks.length;
+  return c.scores.map(row=>{let v=base+shift;for(const i of cols)v+=row[i];return v});
+}
+function contestEV(picks){
+  const c=S.cs;if(!c.catalog||!c.quants)return null;const ns=lineupNights(picks),out={};
+  for(const k of c.catalog){const Q=c.quants[k.field];let sum=0,sq=0,cash=0;
+    for(let n=0;n<ns.length;n++){const pc=interpPct(ns[n],Q[n],c.qs),m=payoutX(k,Math.max(1e-6,1-pc/100));sum+=m;sq+=m*m;if(m>0)cash++}
+    const ev=sum/ns.length;out[k.id]={ev,cash:cash/ns.length,sd:Math.sqrt(Math.max(0,sq/ns.length-ev*ev))}}
+  return out;
+}
 function bankroll(){const v=Number(store.get('bankroll',400));return v>0?v:400}
+function riskPct(){const v=Number(store.get('riskPct',5));return v>0&&v<=50?v:5}
+function feeSplit(amount,fees){const out=[];let left=amount;for(const f of [...fees].sort((a,b)=>b-a)){while(left>=f-1e-9&&out.length<12){out.push(f);left-=f}}return out}
 function renderWhere(){
   const box=$('where');if(!box)return;
   const src=(S.entries||[]).length?S.entries:S.lineups;
   if(!src.length){box.innerHTML='';return}
-  if(!csReady()){box.innerHTML=S.format==='single'?'<p class="muted" style="font-size:13px">Contest odds are for the main slate for now.</p>':'';return}
-  const B=bankroll(),c=S.cs,od=src.map(l=>({l,o:contestOdds(l.picks)})).filter(x=>x.o);
-  if(!od.length){box.innerHTML='';return}
-  const byDu=[...od].sort((a,b)=>b.o.du-a.o.du),best=byDu[0],idx=x=>src.indexOf(x.l)+1;
-  const many=od.length>20,avgT1=od.reduce((a,x)=>a+x.o.t1,0)/od.length,avgGc=od.reduce((a,x)=>a+x.o.gc,0)/od.length;
-  // Cash: quarter-Kelly on an even-money Double Up (pays 2x), capped at 8% of bankroll.
-  const kelly=Math.max(0,2*best.o.du-1)/4,cashAmt=best.o.du>=0.52?Math.min(0.08,kelly)*B:0;
-  // Tournaments: 0.5-2% of bankroll depending on how often the set reaches the top 1% vs the field's 1%.
-  const gppFrac=Math.max(0.005,Math.min(0.02,0.015*(many?avgT1:byDu.reduce((a,x)=>Math.max(a,x.o.t1),0))/0.01));
-  const gppAmt=gppFrac*B,se=[...od].sort((a,b)=>b.o.gc-a.o.gc)[0];
+  if(!csReady()||!S.cs.catalog){box.innerHTML=S.format==='single'?'<p class="muted" style="font-size:13px">Contest odds are for the main slate for now.</p>':'';return}
+  const B=bankroll(),R=riskPct(),budget=B*R/100,c=S.cs,cat=c.catalog;
+  const evs=src.slice(0,150).map((l,i)=>({i,l,e:contestEV(l.picks)}));
+  // per contest: the lineups to use (single-entry: the best one; multi-entry: the best N)
+  const plan=cat.map(k=>{const ranked=[...evs].sort((a,b)=>b.e[k.id].ev-a.e[k.id].ev),use=ranked.slice(0,k.max);
+    const ev=use.reduce((a,x)=>a+x.e[k.id].ev,0)/use.length,sd=use.reduce((a,x)=>a+x.e[k.id].sd,0)/use.length,cash=use.reduce((a,x)=>a+x.e[k.id].cash,0)/use.length;
+    // quarter-Kelly stake per entry, as a share of bankroll: (EV-1)/variance / 4
+    const kel=ev>1?Math.max(0,(ev-1)/Math.max(sd*sd,0.05))/4:0;
+    const cap=use.length*Math.max(...k.fees)*(k.max>1?1:3);  // single-entry: up to 3 separate contests
+    return {k,use,ev,sd,cash,kelly:Math.min(kel*B*(k.max>1?Math.sqrt(use.length):1),cap),cap}});
+  const pos=plan.filter(x=>x.ev>1.0),kellyTotal=pos.reduce((a,x)=>a+x.kelly,0);
+  let alloc=new Map();
+  if(pos.length){let left=budget;const w=pos.reduce((a,x)=>a+x.kelly,0)||1;
+    for(const x of pos)alloc.set(x.k.id,Math.min(x.cap,budget*x.kelly/w));
+    left=budget-[...alloc.values()].reduce((a,b)=>a+b,0);
+    for(const x of [...pos].sort((a,b)=>b.ev-a.ev)){if(left<0.5)break;const room=x.cap-alloc.get(x.k.id);const add=Math.min(room,left);alloc.set(x.k.id,alloc.get(x.k.id)+add);left-=add}}
   const rows=[];
-  if(cashAmt>=1)rows.push([`<b>Cash games</b>: Double Ups / 50-50s with lineup ${idx(best)}`,`Wins a Double Up ${pct(best.o.du)} of the time (break-even is 50%). Spread it over 2–3 contests rather than one.`,cashAmt]);
-  else rows.push([`<b>Skip cash games</b>`,`Your best lineup wins a Double Up only ${pct(best.o.du)} of the time; you need 50% just to break even after FanDuel’s cut.`,0]);
-  if(many){const n=Math.max(0,Math.min(150,od.length,Math.floor(gppAmt/0.05)));
-    const weak=avgT1<0.01&&avgGc<0.22;
-    rows.push([`<b>Penny tournament</b> (Piggy Bank Shot, $0.05, 150 max): your top ${n} lineups${weak?' <span class="muted">(optional)</span>':''}`,`Your set reaches the top 1% ${pct(avgT1)} of the time per lineup (field average 1%), cashes ${pct(avgGc)} (field ~22%).${weak?' That’s below the average entry tonight, so keep it to pocket change or skip it.':''}`,n*0.05]);
-    const left=gppAmt-n*0.05,top=[...od].sort((a,b)=>b.o.t1-a.o.t1);
-    if(left>=3)rows.push([`<b>$1–$3 tournaments</b> with your ${Math.min(top.length,Math.floor(left))} best top-1% lineups (lineup ${idx(top[0])} first)`,`Best lineup reaches the top 1% ${pct(top[0].o.t1)} of the time.`,Math.floor(left)]);}
-  else rows.push([`<b>Single-entry tournaments</b> (Block / Dribbler type) with lineup ${idx(se)}`,`Cashes ${pct(se.o.gc)} (field ~22%), top 1% ${pct(se.o.t1)}.${se.o.gc<0.22?' Not better than the average entry tonight, so keep it small.':''} Small single-entry contests have been softer than this simulated field (your 302 on Oct 27 beat 83% of two of them).`,Math.min(gppAmt,0.03*B)]);
-  const total=rows.reduce((a,r)=>a+r[2],0),h=S.ch&&S.ch.summary&&S.ch.summary.cash,econ=(S.ch&&S.ch.economics)||{};
+  for(const x of [...pos].sort((a,b)=>b.ev-a.ev)){const amt=alloc.get(x.k.id)||0;if(amt<0.05)continue;let what;
+    if(x.k.max===1){const fees=feeSplit(amt,x.k.fees);if(!fees.length)continue;what=`${fees.length>1?fees.length+' different contests ('+fees.map(f=>'$'+f).join(', ')+')':'one $'+fees[0]+' contest'} with lineup ${x.use[0].i+1}`;rows.push([x,what,fees.reduce((a,b)=>a+b,0)])}
+    else{const fee=x.k.fees.find(f=>f*Math.min(x.use.length,x.k.max)<=amt+1e-9)||Math.min(...x.k.fees);const n=Math.max(1,Math.min(x.use.length,Math.floor(amt/fee+1e-9)));if(n*fee>amt+1e-9&&n===1&&fee>amt)continue;what=`${n} entr${n>1?'ies':'y'} × $${fee} with your top ${n} lineup${n>1?'s':''}`;rows.push([x,what,n*fee])}}
+  const spent=rows.reduce((a,r)=>a+r[2],0);
+  const all=[...plan].sort((a,b)=>b.ev-a.ev).map(x=>`<tr><td>${esc(x.k.name)}<div class="muted" style="font-size:12px">${esc(x.k.examples)} · ${x.k.field==='sharp'?'sharp field':'softer field'}</div></td><td class="n">${x.ev>=1?'+':''}${Math.round((x.ev-1)*100)}%</td><td class="n">${pct(x.cash)}</td></tr>`).join('');
   box.innerHTML=`<h3>Where to enter tonight</h3>
-  <label style="font-size:13.5px">Bankroll $<input id="bankroll" type="number" min="10" step="10" inputmode="decimal" value="${B}"></label>
-  <table><tbody>${rows.map(r=>`<tr><td>${r[0]}<div class="muted" style="font-size:12.5px">${r[1]}</div></td><td class="amt">${r[2]?money(Math.round(r[2]*100)/100):'$0'}</td></tr>`).join('')}
-  <tr><td><b>Total tonight</b> <span class="muted" style="font-size:12.5px">(${(total/B*100).toFixed(1)}% of bankroll; keep it under 10%)</span></td><td class="amt">${money(Math.round(total*100)/100)}</td></tr></tbody></table>
-  <p class="muted" style="font-size:12.5px;margin:4px 0 0">Odds come from 300 simulated nights against a simulated FanDuel field of ${c.field_size} lineups${(S.entries||[]).length?' (your saved entries)':''}. FanDuel keeps about ${econ['Double Up']?econ['Double Up'].avg_rake_pct:13}% of Double Up fees and ${econ['Tournament']?econ['Tournament'].avg_rake_pct:16}% of tournament fees. ${h?`Looking back, NBA EDGE’s cash lineup would have beaten the Double Up line on ${h.double_up_wins} of ${h.nights} graded nights (estimated).`:''} Stakes use a quarter of the Kelly bet and shrink when the edge is thin.</p>`;
+  <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:13.5px"><label>Bankroll $<input id="bankroll" type="number" min="10" step="10" inputmode="decimal" value="${B}"></label><label>Risk tonight <input id="riskpct" type="number" min="1" max="25" step="1" inputmode="decimal" value="${R}" style="width:56px;font:inherit;font-size:15px;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)">%</label></div>
+  <table><tbody>${rows.length?rows.map(r=>`<tr><td><b>${esc(r[0].k.name)}</b>: ${r[1]}<div class="muted" style="font-size:12.5px">Expected return ${r[0].ev>=1?'+':''}${Math.round((r[0].ev-1)*100)}% per $1, cashes ${pct(r[0].cash)} of nights (${esc(r[0].k.examples)}).</div></td><td class="amt">${money(Math.round(r[2]*100)/100)}</td></tr>`).join(''):`<tr><td colspan="2"><b>No contest type has a positive expected return for your lineups tonight.</b> Skip, or keep it to a dollar or two for fun.</td></tr>`}
+  <tr><td><b>Total</b> <span class="muted" style="font-size:12.5px">(${(spent/B*100).toFixed(1)}% of bankroll)</span></td><td class="amt">${money(Math.round(spent*100)/100)}</td></tr></tbody></table>
+  <p style="font-size:13px;margin:4px 0">You set ${R}% (${money(Math.round(budget))}).${spent<budget-1?` Only ${money(Math.round(spent*100)/100)} fits contests with a positive expected return at sensible entry counts; putting the rest in negative-return contests only adds risk.`:''}${pos.length?` For tonight's edge, the betting math (quarter Kelly) would stake about ${money(Math.max(1,Math.round(kellyTotal)))}; more than that raises the swings faster than the expected profit.`:''}</p>
+  <details style="font-size:13.5px"><summary>Every contest type, simulated</summary><table><thead><tr><th style="text-align:left">Contest</th><th class="n">Return</th><th class="n">Cashes</th></tr></thead><tbody>${all}</tbody></table>
+  <p class="muted" style="font-size:12px;margin:4px 0 0">Return = expected profit per $1 for your best lineup(s), after FanDuel's cut, over 300 simulated nights. Double Ups and big tournaments are scored against a sharp field fitted to the real Oct 29 Double Up line (368.3); small single-entry contests against a softer field fitted to their Oct 29 cash lines (340–362). Tournament prizes use a standard payout curve sized to each prize pool; real big tournaments pay their top few spots even more, which 300 simulated nights can't see, so big-tournament returns here are on the low side. These are estimates from a few nights of data.</p></details>`;
   $('bankroll').onchange=e=>{const v=Math.max(10,Number(e.target.value)||400);store.set('bankroll',v);renderWhere()};
+  $('riskpct').onchange=e=>{const v=Math.max(1,Math.min(25,Number(e.target.value)||5));store.set('riskPct',v);renderWhere()};
 }
 
 // ---------- lineups ----------
