@@ -122,6 +122,40 @@ NEWS_KINDS = [
 ]
 
 
+def headline_status(day):
+    """Downgrades the official ESPN feed hasn't caught up with yet, from today's headlines
+    ("Jaylen Brown (knee) downgraded to doubtful"). Only the newest status headline per player
+    counts, it must be from the last 18 hours, and it can only make a player less available."""
+    now = dt.datetime.now(dt.timezone.utc)
+    heads = list(read('lineup_news.json').get('headlines', []))
+    best = {}
+    for h in heads:
+        text, at = h.get('headline') or '', h.get('published_at') or ''
+        try:
+            t = dt.datetime.fromisoformat(at.replace('Z', '+00:00'))
+        except ValueError:
+            continue
+        if (now - t).total_seconds() > 18 * 3600:
+            continue
+        if re.search(r'ruled out|will not play|won.t play|\bout (tonight|friday|saturday|sunday|monday|tuesday|wednesday|thursday|vs)|downgraded to out', text, re.I):
+            st = 'OUT'
+        elif re.search(r'doubtful', text, re.I):
+            st = 'DOUBTFUL'
+        elif re.search(r'probable|upgraded|cleared|will play|available|questionable|game-time', text, re.I):
+            st = 'OK'
+        else:
+            continue
+        m = re.match(r"\s*([A-Z][\w.'’-]+(?: [A-Z][\w.'’-]+){1,3}?)(?: \(|'s|’s| is | has | now | will | downgraded| ruled| upgraded| out| questionable| doubtful| probable)", text)
+        if not m:
+            continue
+        k = norm(m.group(1))
+        if k not in best or at > best[k][0]:
+            best[k] = (at, st, text)
+    out = {k: v[1] for k, v in best.items() if v[1] in ('OUT', 'DOUBTFUL')}
+    out['_why'] = {k: best[k][2] for k in out}
+    return out
+
+
 def attach_news(players, headlines):
     """Match recent headlines to slate players (full name, or a unique last name).
     Headlines are unverified: they become flags to check, never automatic minute changes."""
@@ -257,6 +291,7 @@ def build(day=None, backtest=False, weights=None):
     inj = {}
     for r in ([] if backtest else read('injuries.json').get('injuries', [])):
         inj[(norm(r.get('name')), canon(r.get('team')))] = str(r.get('status') or '').upper()
+    news_status = {} if backtest else headline_status(day)
     lineups = {} if backtest else {canon(l.get('team')): l for l in read('lineup_news.json').get('lineups', [])
                if l.get('date') == day and l.get('status') == 'confirmed'}
     mu = read('matchup_usage.json')
@@ -306,7 +341,10 @@ def build(day=None, backtest=False, weights=None):
              'flags': [], 'adj': {}, 'minutes': 0.0, 'rate': 0.0, 'proj': 0.0,
              'naive': round(naive.get(key, 0.0), 2)}
         espn = inj.get((key, team))
-        if espn in ('OUT', 'INACTIVE', 'DOUBTFUL'):
+        ns = news_status.get(key)
+        if ns and (espn or '') not in ('OUT', 'INACTIVE') and not (ns == 'DOUBTFUL' and espn == 'DOUBTFUL'):
+            espn = ns
+            p['flags'].append(f"News: {ns.lower()} per today's report ({news_status['_why'][key][:90]}); official feed hasn't caught up")
             p['status'] = espn if espn != 'INACTIVE' else 'OUT'
         elif espn in ('QUESTIONABLE', 'DAY-TO-DAY', 'GTD') and p['status'] == 'ACTIVE':
             p['status'] = 'QUESTIONABLE'
