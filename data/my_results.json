@@ -119,48 +119,41 @@
   {
    "date": "2026-10-29",
    "slate": "Main",
-   "entry": "Single-entry lineup",
-   "score": null,
+   "entry": "Main lineup",
+   "players": [
+    "Jeremiah Fears",
+    "Damian Lillard",
+    "Deni Avdija",
+    "Zion Williamson",
+    "Onyeka Okongwu",
+    "Darius Acuff",
+    "Domantas Sabonis",
+    "Derik Queen",
+    "Donovan Clingan"
+   ],
+   "score": 375.1,
    "final": true,
    "contests": [
     {
-     "name": "Big Double Up",
-     "entries": 1,
-     "fee": 5,
-     "won": 10
-    },
-    {
-     "name": "Layup (20 max)",
-     "entries": 1,
-     "fee": 4,
-     "won": 8
-    },
-    {
-     "name": "Block (SE)",
-     "entries": 1,
-     "fee": 2,
-     "won": 4
-    },
-    {
-     "name": "Dribbler (SE)",
-     "entries": 1,
-     "fee": 1,
-     "won": 2.5
+     "name": "Double Up, Layup, Block, Dribbler",
+     "entries": 4,
+     "fee": 20,
+     "won": 16.5
     }
    ]
   },
   {
    "date": "2026-10-29",
    "slate": "Main",
-   "entry": "Multi-entry tournament set",
-   "score": null,
+   "entry": "150-max tournament set",
+   "score": 405.6,
    "final": true,
-   "note": "Rest of the night's entries (Piggy Bank Shot, 150 max): $24.50 in, $0.52 back.",
+   "note": "Best lineups 405.6 and 403.3 each returned $0.15 on $0.05 entries; the rest of the set didn't cash.",
    "contests": [
     {
      "name": "Piggy Bank Shot (150 max) and others",
-     "fee": 24.5,
-     "won": 0.52
+     "fee": 16.5,
+     "won": 0.51
     }
    ]
   }
