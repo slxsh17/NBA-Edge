@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-10-31",
-"updated_at": "2026-10-31T17:30:45+00:00",
+"updated_at": "2026-10-31T18:01:45+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -15,14 +15,6 @@
 {
 "title": "Top DraftKings NBA DFS Targets, Values for Saturday 10/31/26",
 "url": "https://dknetwork.draftkings.com/2026/10/30/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-saturday-10-31-26/"
-},
-{
-"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Saturday 10/31/26",
-"url": "https://dknetwork.draftkings.com/2026/10/31/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-saturday-10-31-26/"
-},
-{
-"title": "Three must-start fantasy basketball players for the Saturday 10/31/26 NBA slate",
-"url": "https://dknetwork.draftkings.com/2026/10/31/three-must-start-fantasy-basketball-players-for-the-saturday-10-31-26-nba-slate/"
 }
 ]
 },
@@ -54,10 +46,10 @@
 "name": "Donovan Clingan",
 "team": "POR",
 "fta_own": null,
-"linestar_own": 35.5,
+"linestar_own": 33.5,
 "mentions": 0,
 "articles": [],
-"consensus_own": 35.5,
+"consensus_own": 33.5,
 "source_count": 1,
 "mention_count": 0
 },
@@ -75,33 +67,22 @@
 {
 "name": "Tyrese Maxey",
 "team": "PHI",
-"fta_own": 31.5,
+"fta_own": 30.8,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 31.5,
+"consensus_own": 30.8,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Naz Reid",
 "team": "CHA",
-"fta_own": 30.0,
+"fta_own": 30.3,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 30.0,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Jrue Holiday",
-"team": "POR",
-"fta_own": null,
-"linestar_own": 29.3,
-"mentions": 0,
-"articles": [],
-"consensus_own": 29.3,
+"consensus_own": 30.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -109,39 +90,39 @@
 "name": "Dennis Schr\u00f6der",
 "team": "CHA",
 "fta_own": null,
-"linestar_own": 28.4,
+"linestar_own": 27.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 28.4,
+"consensus_own": 27.8,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Evan Mobley",
 "team": "CLE",
-"fta_own": 27.2,
+"fta_own": 26.2,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 27.2,
+"consensus_own": 26.2,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Moussa Diabate",
 "team": "CHA",
-"fta_own": 25.7,
+"fta_own": 26.1,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 25.7,
+"consensus_own": 26.1,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Isaiah Collier",
 "team": "UTA",
-"fta_own": 49.8,
+"fta_own": 49.7,
 "linestar_own": 0.6,
 "mentions": 0,
 "articles": [],
@@ -150,57 +131,35 @@
 "mention_count": 0
 },
 {
+"name": "Darius Acuff",
+"team": "SAC",
+"fta_own": 23.2,
+"linestar_own": null,
+"mentions": 0,
+"articles": [],
+"consensus_own": 23.2,
+"source_count": 1,
+"mention_count": 0
+},
+{
 "name": "Toumani Camara",
 "team": "POR",
 "fta_own": null,
-"linestar_own": 24.3,
+"linestar_own": 23.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 24.3,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Darius Acuff",
-"team": "SAC",
-"fta_own": 23.8,
-"linestar_own": null,
-"mentions": 0,
-"articles": [],
-"consensus_own": 23.8,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Reed Sheppard",
-"team": "HOU",
-"fta_own": 22.2,
-"linestar_own": null,
-"mentions": 0,
-"articles": [],
-"consensus_own": 22.2,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "James Harden",
-"team": "CLE",
-"fta_own": 21.4,
-"linestar_own": null,
-"mentions": 0,
-"articles": [],
-"consensus_own": 21.4,
+"consensus_own": 23.2,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "VJ Edgecombe",
 "team": "PHI",
-"fta_own": 35.1,
-"linestar_own": 6.0,
+"fta_own": 33.4,
+"linestar_own": 8.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 20.6,
+"consensus_own": 21.1,
 "source_count": 2,
 "mention_count": 0
 },
@@ -208,29 +167,51 @@
 "name": "Jarrett Allen",
 "team": "CLE",
 "fta_own": null,
-"linestar_own": 19.7,
+"linestar_own": 19.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 19.7,
+"consensus_own": 19.8,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Dyson Daniels",
 "team": "ATL",
-"fta_own": 24.6,
-"linestar_own": 12.6,
+"fta_own": 25.8,
+"linestar_own": 12.4,
 "mentions": 0,
 "articles": [],
-"consensus_own": 18.6,
+"consensus_own": 19.1,
+"source_count": 2,
+"mention_count": 0
+},
+{
+"name": "Amen Thompson",
+"team": "HOU",
+"fta_own": 22.1,
+"linestar_own": 6.8,
+"mentions": 0,
+"articles": [],
+"consensus_own": 14.5,
 "source_count": 2,
 "mention_count": 0
 },
 {
 "name": "Brandon Miller",
 "team": "CHA",
-"fta_own": 13.1,
+"fta_own": 13.4,
 "linestar_own": null,
+"mentions": 0,
+"articles": [],
+"consensus_own": 13.4,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Scoot Henderson",
+"team": "POR",
+"fta_own": null,
+"linestar_own": 13.1,
 "mentions": 0,
 "articles": [],
 "consensus_own": 13.1,
@@ -241,10 +222,10 @@
 "name": "Stephon Castle",
 "team": "SAS",
 "fta_own": null,
-"linestar_own": 12.5,
+"linestar_own": 12.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 12.5,
+"consensus_own": 12.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -260,10 +241,21 @@
 "mention_count": 0
 },
 {
+"name": "Jeremiah Fears",
+"team": "NOP",
+"fta_own": null,
+"linestar_own": 11.2,
+"mentions": 0,
+"articles": [],
+"consensus_own": 11.2,
+"source_count": 1,
+"mention_count": 0
+},
+{
 "name": "Peyton Watson",
 "team": "CLE",
-"fta_own": 14.7,
-"linestar_own": 7.6,
+"fta_own": 14.8,
+"linestar_own": 7.4,
 "mentions": 0,
 "articles": [],
 "consensus_own": 11.1,
@@ -271,24 +263,13 @@
 "mention_count": 0
 },
 {
-"name": "Jeremiah Fears",
-"team": "NOP",
-"fta_own": null,
-"linestar_own": 11.0,
-"mentions": 0,
-"articles": [],
-"consensus_own": 11.0,
-"source_count": 1,
-"mention_count": 0
-},
-{
 "name": "Jaylen Brown",
 "team": "PHI",
 "fta_own": null,
-"linestar_own": 7.9,
+"linestar_own": 10.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 7.9,
+"consensus_own": 10.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -296,10 +277,10 @@
 "name": "Kevin Durant",
 "team": "HOU",
 "fta_own": null,
-"linestar_own": 7.3,
+"linestar_own": 7.6,
 "mentions": 0,
 "articles": [],
-"consensus_own": 7.3,
+"consensus_own": 7.6,
 "source_count": 1,
 "mention_count": 0
 },
@@ -307,21 +288,10 @@
 "name": "CJ McCollum",
 "team": "ATL",
 "fta_own": null,
-"linestar_own": 7.1,
+"linestar_own": 6.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 7.1,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Amen Thompson",
-"team": "HOU",
-"fta_own": null,
-"linestar_own": 6.4,
-"mentions": 0,
-"articles": [],
-"consensus_own": 6.4,
+"consensus_own": 6.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -340,21 +310,10 @@
 "name": "Jabari Smith",
 "team": "HOU",
 "fta_own": null,
-"linestar_own": 4.4,
+"linestar_own": 4.3,
 "mentions": 0,
 "articles": [],
-"consensus_own": 4.4,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Jaylin Williams",
-"team": "OKC",
-"fta_own": null,
-"linestar_own": 3.8,
-"mentions": 0,
-"articles": [],
-"consensus_own": 3.8,
+"consensus_own": 4.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -362,10 +321,21 @@
 "name": "Kenrich Williams",
 "team": "OKC",
 "fta_own": null,
-"linestar_own": 3.4,
+"linestar_own": 3.5,
 "mentions": 0,
 "articles": [],
-"consensus_own": 3.4,
+"consensus_own": 3.5,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Jaylin Williams",
+"team": "OKC",
+"fta_own": null,
+"linestar_own": 3.2,
+"mentions": 0,
+"articles": [],
+"consensus_own": 3.2,
 "source_count": 1,
 "mention_count": 0
 },
@@ -384,10 +354,10 @@
 "name": "Dean Wade",
 "team": "PHI",
 "fta_own": null,
-"linestar_own": 0.4,
+"linestar_own": 0.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 0.4,
+"consensus_own": 0.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -411,11 +381,6 @@
 "own": 56.2
 },
 {
-"name": "Jrue Holiday",
-"team": "POR",
-"own": 45.8
-},
-{
 "name": "Toumani Camara",
 "team": "POR",
 "own": 40.8
@@ -426,6 +391,11 @@
 "own": 34.9
 },
 {
+"name": "Scoot Henderson",
+"team": "POR",
+"own": 33.8
+},
+{
 "name": "Isaiah Collier",
 "team": "UTA",
 "own": 24.8
@@ -433,29 +403,29 @@
 ],
 "CHA@PHI": [
 {
-"name": "Dennis Schr\u00f6der",
-"team": "CHA",
-"own": 42.9
-},
-{
 "name": "Jaylen Brown",
 "team": "PHI",
-"own": 42.6
+"own": 56.0
 },
 {
 "name": "VJ Edgecombe",
 "team": "PHI",
-"own": 33.4
+"own": 44.4
+},
+{
+"name": "Dennis Schr\u00f6der",
+"team": "CHA",
+"own": 42.5
 },
 {
 "name": "Sion James",
 "team": "CHA",
-"own": 19.2
+"own": 18.9
 },
 {
 "name": "Dean Wade",
 "team": "PHI",
-"own": 6.6
+"own": 7.7
 }
 ],
 "ATL@NOP": [
@@ -489,27 +459,27 @@
 {
 "name": "Kevin Durant",
 "team": "HOU",
-"own": 42.1
+"own": 43.0
 },
 {
 "name": "Amen Thompson",
 "team": "HOU",
-"own": 38.3
+"own": 40.4
 },
 {
 "name": "Jabari Smith",
 "team": "HOU",
-"own": 30.4
+"own": 31.2
 },
 {
 "name": "Jaylin Williams",
 "team": "OKC",
-"own": 7.5
+"own": 7.6
 },
 {
 "name": "Kenrich Williams",
 "team": "OKC",
-"own": 7.3
+"own": 7.2
 }
 ]
 },
