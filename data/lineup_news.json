@@ -1,19 +1,19 @@
 {
   "schema": 1,
   "slate_date": "2026-10-31",
-  "checked_at": "2026-10-31T06:01:38.441159+00:00",
+  "checked_at": "2026-10-31T07:23:02.936085+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
     {
-      "team": "MIA",
-      "status": "confirmed",
+      "team": "MIL",
+      "status": "projected",
       "players": [
-        "D. Mitchell",
-        "Klay Thompson",
-        "A. Wiggins",
-        "G. Antetokounmpo",
-        "Bam Adebayo"
+        "Ryan Rollins",
+        "Tyler Herro",
+        "Jaime Jaquez",
+        "Kyle Kuzma",
+        "Myles Turner"
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
@@ -30,6 +30,14 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Rui Hachimura (quad) to start Friday vs. Minnesota - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWjNhTFEzXzZKXzhhWGxONk9Ia2UzNTRLc3lwdUVIVGNCS0RuUkFvRDZsV2x4THNpckFSSUJoTkZSYVlHM05YeU80cnVaWnctbkFERGhHUXJwMHVHRWdoMlY5dWRiYWtUZ2hqQXBxQ3VIdEhjems3cHNkYUdnNUxNOS1PdnFYTzUxVzJWV2t5LTc3UVd6WXk2ckE3di1kWmNBX3NTMDRfWWtqV21BR2xOTlAtUVhvZw?oc=5",
+      "published_at": "2026-10-31T05:08:59+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "Tre Mann News: Cracks rotation Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUXVzNkNKQXJOVnUzWUdzMEhvLTNodkdYQm5ZYng4TEtBVXpoLWJxSC05Ym1FSTF3eVJwQzVCQ0IxOXUwMVg1RkN0dldRQm9wT01ib1F0Rnd5NUlpT0p3My1ZVDAyNi0wamNON2FPbGQycmhDeVlXTGJVZWFfNXRHYzk3Smlwc2ZLUDlFY1Z1U0tRVzA?oc=5",
       "published_at": "2026-10-31T03:51:17+00:00",
@@ -38,9 +46,17 @@
       "scope_date": "2026-10-31"
     },
     {
-      "headline": "NBA Cup: Boston Celtics Earn Victory to Start Pool Play - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZzhUQ1Zhcm5aTU1YV19DQU90bC05aDE0cEJKSnI4VllvaWVaT3ZQNVlYWUNXNWhxYjNzQU1JeFlFNWZ4dXd4V0RxVFJXNlpHd3dxMi0xYlh5elZBYXEwRjJEYjE1Z1BURGpaendGTTNObHJPMlAtTUZ2Wmg5emplTFVB?oc=5",
-      "published_at": "2026-10-31T02:32:00+00:00",
+      "headline": "Giannis Antetokounmpo posts massive 31-point triple-double to start NBA Emirates Cup action - NBA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWVhic1dodldoZDMxeUVTaTNSLURaSTRrTDBOWWtyTE9ZLXp5S241YnNNcGlvbmNBT1VXNW9PREZrV0VpaGZHamtWM1hja1hJYUVCaGZ6eW11WERaZ1N3U182amdVY1RRNC1ZSGJxckczMTZ0ejJPMGtRWUFDNV90eUFSZi1VMGZHLWdfaThHZlJ1VkE2OE1OYXJqQ3hxZmI4bGxXaFYxU1BYbC0yNVVKWkNjNldqNng2VFpmNg?oc=5",
+      "published_at": "2026-10-31T03:47:32+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "NBA Cup: Boston Celtics Earn Victory to Start Pool Play - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZElLRVhHWFBPcXdtbEUxYVcxRmlvT25HdU9kb1N0OWx6SjRUUTlDc1pqR3NWMUZoVW1LUE9OVG5GVFRDSlZ3WUhaRlpfTUpmOUIzQXJaMUxUd0lHRFd5cWE4b1JyZ1VlRXdtZlpsai1lM2YzQU9FRlktb01RNGZoajgwbEp4YTRfZC1MZFBDRnJaWDd4QTZrSGF5cWRkQ1lnN1E?oc=5",
+      "published_at": "2026-10-31T02:34:19+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -57,14 +73,6 @@
       "headline": "Lakers Reveal Starting Lineup Vs Warriors After Luka Doncic News - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOW41VzBZZVR1Z293VGg5MXBra2ZfOVdSUDhud3N6aGhHTFZoTG5GVzlBcTd6clFZMmhRSXhDa19ON0hUbkRHR0Z0WFhDRTZ1bUJia3RSRHBxSmZwNnczOUdBVUFweEw1WFVaeW9RbEFLZDJWTXJEMDRuM1cwVUxHSWc3Y2xvbFJxbWRUMWVTTXNOamdGM3hTaQ?oc=5",
       "published_at": "2026-10-31T01:38:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "Rui Hachimura (quad) to start Friday vs. Minnesota - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWjNhTFEzXzZKXzhhWGxONk9Ia2UzNTRLc3lwdUVIVGNCS0RuUkFvRDZsV2x4THNpckFSSUJoTkZSYVlHM05YeU80cnVaWnctbkFERGhHUXJwMHVHRWdoMlY5dWRiYWtUZ2hqQXBxQ3VIdEhjems3cHNkYUdnNUxNOS1PdnFYTzUxVzJWV2t5LTc3UVd6WXk2ckE3di1kWmNBX3NTMDRfWWtqV21BR2xOTlAtUVhvZw?oc=5",
-      "published_at": "2026-10-31T01:36:53+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -145,14 +153,6 @@
       "headline": "Obi Toppin Injury: Ruled out Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTl9Lc203MzRVeVd1SFQ3clpGdmhqN1FUejJUVVZ4ZlNXclFUS0FJaENLYkEwODJHaUhZZnk1bG90eW16ckpvZmwwbXdaWGVNUkl6QTJUblZFejVvSU5ha1A5alktUTBlX24xZlNSZnlUN1hDSVhFcXZsS01JV3g2aE9FeUNQbFU3N2U3WFRrTm0?oc=5",
       "published_at": "2026-10-30T22:51:09+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "Alperen Sengun Injury: Ruled out Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQnlfNm5iRnlNQ2ZvOWZwaEE0NkMxVG5VbndVNklXM0FUUElwVHUycDNzbERFWXJIeHhxa0cwaVNLMUp1LVlHWXNmcEdVeW02VV9qUHVTdlBaQXcyR1BlZHVuSlNYMklHOG0xVElhTWhFVDBDNVp2M1FncHVCZDI3QmtlNWdwWF9YSnliclAyWnRpM2ZRb3c?oc=5",
-      "published_at": "2026-10-30T22:39:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -254,6 +254,14 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Ziaire Williams (foot) ruled out Friday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYzh4WFRLdndPM193RElQTTMtOVduWmlJakZjOG93UFFza1BlcFQtUVBiblk2X0hpcU9ibDFVc0d6QnF6WG1CMG9PVFFYVWdYUEd1bzRSNnJBY3l1ZXN0bnp1RF9aVFZEVndCVU9LUmpncHRUanRUVVV2UGU4ZkhjSVNsRm9YQTBhbDJsVi130gGTAUFVX3lxTFBVb2J1MGRHWVp6bktqdHI4T0gwYVp3VHEtamxIdTZpNjVfMVRvRVJhcGNZM0dmWHFBWGYteFdqazRweC1odnFmS0dpMGo5UHRKNmpoVnVTa2RoaHBSUGVJN0dLNmVid0NvdS1MZjJPUTFEellaNzBPQ2RHS1otSnJnMEdXX3kzRnV2bk9JWWlRemdxQQ?oc=5",
+      "published_at": "2026-10-30T20:28:50+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "Sixers vs. Knicks: Preview, injury updates and prediction for NBA Cup opener - Metro Philadelphia",
       "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZzNCQ2ZMRW82NWFkSEp1SFhLNk5SellOMjVaV2s2alFVM3pHbm84ZHM0alBSSE9lNTUxQmMyVm1EOWU2WUZFdUNHMTV0RUxqX1RoSUYwY01NeEhxY3A1Z1MtN0llUVdLMmwxZlpIT082aDN0OGY5eW0xTHdRc2cycnFIRzdra3pST1VsSzBNRXMyWlFMeDJQWmNFQmlLR1pQSDZELTJ1WlR4N2prV2tWd05LTUs5dy1GcmlyWHh6b0FrUQ?oc=5",
       "published_at": "2026-10-30T20:27:03+00:00",
@@ -310,17 +318,9 @@
       "scope_date": "2026-10-31"
     },
     {
-      "headline": "Celtics Announce Injury Report Ahead Of First NBA Cup Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRWJYNkZlVlc0TXhrZnVVaTdQMnFWdEptNS1JSzByc0dJRWxnM2pfQVBTVVpHbVVTbzNNbFp3WTk4aVV3YkhpN0xFMjhFT0k2V250MjBveUFxZnFoQXhqR2psYW5aSXNfSW9DcFVTMEJSWVR4WlNXRGt6d0h5X2xJejJmSU81Y0lGY1BONGNB?oc=5",
-      "published_at": "2026-10-30T10:00:35+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "Branden Carlson News: Enters rotation Thursday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMmlCU18xM3RINnBHWU1rbHJwSm4wOHVaa3BDUmhSMm1oOHhSN3NLMURfU2VwTWk2ME1oZGpxemp0TFp0MVRvWGVWYnFxbE9tdTh1LVRXYXBnTXY3bjFvMzVOSFJ0NmI2UE9KODRUWF94cFlVM28xdldpcnRJY1J6VjQ5UHRHV1dnQjRyQXJGSEdTbkZMbUxnNFRrZEhBUVU?oc=5",
-      "published_at": "2026-10-30T06:28:44+00:00",
+      "headline": "Chicago Bulls: Every Rotation Player Described in One Word - Substack",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeThVcVBRREc1d3F1bTcxY2VQMEpUR1BGalhBQjljWDZ2T29jdG1qYWF0YVdmMTdqbXA0OTk0aF9RZlVGVERoMlA5V3dWcmw2RlVrSmJfYm4wYzlMMkhMMW9lTkduc1BHRnlQYkJrRTUzQnd5eGNVMzh2ZUhQVmhjVF9WZw?oc=5",
+      "published_at": "2026-10-30T11:02:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
