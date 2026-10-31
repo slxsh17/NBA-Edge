@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-31",
-  "checked_at": "2026-10-31T12:29:36.543610+00:00",
+  "checked_at": "2026-10-31T13:21:24.310984+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Ty Jerome Listed as Questionable for Saturday - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSWNEd2UxVURRdzdSZ0w0bE5UdW9wTVpUM2czSUpUQk83WGM2QW1fTTNHVGlsWjNIYmtzbHdLM0JBRXdBSFF1VkRrT0M3anNKZXBzWmxXOHA1aWNaQ2hodFBjaVJQbnJBOFRVUVI5aUg3UTNsNDYyWTNzOHlkVExUaDNkbVFYVy05MmRqcGN0T2pGSFhHeUg4?oc=5",
+      "published_at": "2026-10-31T12:32:09+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
     {
       "headline": "Jaylen Brown’s Injury Addressed Before 76ers-Knicks Game - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa1pZRFdBMHB3YjJSbkVmTjNvWmFLanRpNm13T2l5NnZybW9GS0tIMEJvRGItZXppdDdWc0ZTMVlHcVFranlyMzMxS1BGQzdOSFVpeXhmZzVscXg5Z3ZBNER4NVFJd21TX1NFQ09GMVgtTl9MbW9xTXdvTHdRNkt3NDlWVnB3ZU55bmY1MHlvbHVLb1pNaWtkYWxpNnA?oc=5",
