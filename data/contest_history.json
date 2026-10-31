@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-31T19:47:19+00:00",
+ "updated_at": "2026-10-31T19:56:20+00:00",
  "economics": {
   "Double Up": {
    "contests": 11,
@@ -37,6 +37,7 @@
  "summary": {
   "odds_shift_per_player": -2.8,
   "odds_calibration_nights": 9,
+  "soft_shift_per_player": -1.2,
   "cash": {
    "nights": 9,
    "double_up_wins": 3,
