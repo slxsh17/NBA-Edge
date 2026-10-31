@@ -45,7 +45,10 @@ LINES = {'double_up': 0.565, 'fifty': 0.50, 'gpp_cash': 0.78, 'top1': 0.99}
 # your 302 at the 69th percentile; it actually finished 83rd percentile in two smaller
 # single-entry tournaments, so for casual contests these numbers are on the cautious side.
 OBSERVED = {'2026-10-29': {'double_up': 368.3, 'layup_20max_cash': 362.4, 'block_se_cash': 361.7},
-            '2026-10-27': {'your_302_percentile_small_rebound': 81.6, 'your_302_percentile_assist_se': 83.0}}
+            '2026-10-27': {'your_302_percentile_small_rebound': 81.6, 'your_302_percentile_assist_se': 83.0},
+            # Oct 30: NBA EDGE's cash lineup (309.0) went 0 for 3 in your cash contests, so the real
+            # line was above 309 even though the simulated Double Up line was 301.7.
+            '2026-10-30': {'cash_line_above': 309.0}}
 
 
 def read(p, default=None):
@@ -214,6 +217,18 @@ def history():
                                 'field_percentile': round(float((fs < v).mean() * 100), 1)} for k, v in mine.items()}}
         nights.append(res)
         print(day, 'lines', L, 'observed', OBSERVED.get(day), {k: (v['score'], v['field_percentile']) for k, v in res['nba_edge'].items()})
+    # Real results override the simulated field: a known Double Up line decides wins outright; a
+    # known loss ("line above X") turns any simulated win at or below X into a loss.
+    for n in nights:
+        obs = OBSERVED.get(n['date'])
+        if not obs:
+            continue
+        n['observed_lines'] = obs
+        for v in n['nba_edge'].values():
+            if obs.get('double_up'):
+                v['beats_double_up'] = v['score'] >= obs['double_up']
+            elif obs.get('cash_line_above') and v['score'] <= obs['cash_line_above']:
+                v['beats_double_up'] = False
     # Odds calibration: the per-player shift that makes the simulator's pre-tip Double Up odds for
     # our cash lineup match how often it actually beat the line (least squares on win/loss).
     cal = [(np.array(n['cash_vs_line_sim']), n['nba_edge']['cash']['beats_double_up']) for n in nights
