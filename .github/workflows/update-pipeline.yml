@@ -74,7 +74,8 @@ jobs:
       - name: Late-news alerts (push via ntfy if NTFY_TOPIC is set)
         if: always()
         env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          # The NTFY_TOPIC secret wins if set; otherwise the topic subscribed in the ntfy app.
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || 'nbaedge' }}
         run: python scripts/alerts.py
       - name: Snapshot projections before tip-off
         if: always()
