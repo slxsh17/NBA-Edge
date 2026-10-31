@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-31",
-  "checked_at": "2026-10-31T15:23:51.427938+00:00",
+  "checked_at": "2026-10-31T15:56:54.498142+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "NBA injury report: Ja Morant, Shaedon Sharpe out Saturday - TalkBasket.net",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPR2dWaEpjRkFfTms0N1BYRzJpVWN5NWRSMVItM3dnSnBVdU9qdWY2UWRhTFFxdjV2Y1labmo3eHFPcHl1NlMxRGkzeFY1RHpfbmdhLWdQSEJNeF9MakYwRTRTdG83RmNRWC1rbGRnY2pGbENDd0tYYXVsbjg1d00xVkZPX2Q3TWRaMnd4QXFJQzAxaUk?oc=5",
+      "published_at": "2026-10-31T15:21:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
     {
       "headline": "Mike Lupica: Knicks need to start acting like championship parade is over - New York Daily News",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeXY3ZVg0cG1NUVU2OEtBXy1aSlVkWlE2U2FYdUNIVVVZVTQyTUZUMktpSWRRWGtyYWFGV3MxY3pqYXhzeV82TUlaem1ONlV3S29GVHc4c2hDX3pTUlJsUUhOd1NrSXVLNF9nckhocXdWdXFIM2llRHVxakpNanFGN0ZEYnBSekhmVTRFdmYtOFd2bEZ0OFdlSk1Da3k4Y1ZOOFFTV1MwTQ?oc=5",
@@ -46,9 +54,9 @@
       "scope_date": "2026-10-31"
     },
     {
-      "headline": "Examining center rotation, NBA Cup, Boston Children’s Hospital (Celtics Notebook) - MassLive",
-      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaWYtUVpDemxTSmpMVUtNcVVkX0ppMnY0MDZDR3VlUjBvZ0NXY2Y5SnREUWdDbG1uYnFwU1JIdnRYY3g1RjFFZHlrdkpHc3paa2p2S0VpZ2hzSnotSHJONk5meER1MDlzY0gwd2VIWm84eHRaVV9NdXd0U2EtZ2VONlhlaGxDTU9pV0o0MEpqdV9ORWUwSzVQcTYyamU1LXJjQ1Y3bGhpUFNFWndLTF9BaFlvNDdzeF9odG1odjdoQQ?oc=5",
-      "published_at": "2026-10-31T09:00:00+00:00",
+      "headline": "Examining center rotation, NBA Cup, Boston Children’s Hospital (Celtics Notebook) - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOY2VZaGYxV0VDd082b2pCRnpBcWFkZlE4TjRKSnRDUkpCV2xZWldtMzdxSFc3NncxUzNESzE0d1Z0Q2NiMnZleEl3Smx5SzBLa050NzViS01MSk5xdWFOaTFrUTdxUXRxN18xOW5ZT3BWMl84RUtTV0NLQUlZWURpYTRoVHg3STNHcEE?oc=5",
+      "published_at": "2026-10-31T09:02:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -89,14 +97,6 @@
       "headline": "NBA Cup: Boston Celtics Earn Victory to Start Pool Play - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZzhUQ1Zhcm5aTU1YV19DQU90bC05aDE0cEJKSnI4VllvaWVaT3ZQNVlYWUNXNWhxYjNzQU1JeFlFNWZ4dXd4V0RxVFJXNlpHd3dxMi0xYlh5elZBYXEwRjJEYjE1Z1BURGpaendGTTNObHJPMlAtTUZ2Wmg5emplTFVB?oc=5",
       "published_at": "2026-10-31T02:32:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "Knicks Announce Starting Lineup For 76ers Game After Karl-Anthony Towns Injury - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ2R6aDF3a2lwdGxXekMzM2N6WEQwZEV0RjE2Sl92Z3FkUm5iQTVoWlJNbUtOQXVIMDhqMmJpN2ZKaENockM4U3RGYTdPcFp2eTE2dVJvd3dnQmRKMVB6WTE3TkVPeGVsTVJ4QWVqb09melZTb0VrM1dQVlpFZW1yS0ZGc1diam00V2lLN00wcw?oc=5",
-      "published_at": "2026-10-31T01:54:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -166,9 +166,9 @@
       "scope_date": "2026-10-31"
     },
     {
-      "headline": "Ty Jerome (back) listed questionable Saturday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWHU3ZWZkMDBfRmFUbXcweUdsS2t1akZZbWJIRENDT0d2Rkd3SVctMWtXVy00MlpCUVBEaDZhMTJxZW4yQTBTcWFtOThPejVpRmFQZ0tETHFpLXBJSzZ5SkdGeWlvUi1SaGtvZ29ObWF0cWw3dmJiRWtvUFEzLUoxdW9vTnRpVlh4Z1V2NEZEcW5IMTl4TkHSAZsBQVVfeXFMUDRsYUE2X0hwYzEycmR4bXpqRl9ZM2VoZG8yYW5aaHRaTWxVdHUzZDlSOVJyRUhmQXZuRTNrV2dHRDhjekVZLV9HMUc5cUVJTFlFZlN4TmZpUTMzT1E2dk9xN3VnZWFXcjFMQk8xOEJtT3VVYldocFpoNmtxOGhQLThzYWFUMmhTWVEwUmtwaDMtN2x5Tl96T1Nhcjg?oc=5",
-      "published_at": "2026-10-30T23:02:09+00:00",
+      "headline": "Knicks Announce Starting Lineup For 76ers Game After Karl-Anthony Towns Injury - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT3R2T3loSzBpVjQzc0VZQzQwcDRZWUhpdzBBQ1RrU2lsS0VoWENRSEVqV1RvR1ZOcjhMYjZtOEhPcEZ3MXNVMWdLaUxwdWRhcEFlRmtudmIzYTQ4NlVzWXJ0NjV4U3Ztd2VGSFNBTk10N3RxZmc1d2lTZ1RLdmwyeEw5MzNJTDcwN19pUDd6YWtkVGdaenU2V3FxeDRHNDA?oc=5",
+      "published_at": "2026-10-30T23:03:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -177,6 +177,14 @@
       "headline": "Key Winger Ruled Out vs. Bucks, Injuries Hitting Cavaliers Early in Season - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9uMlc0VUZ4UjRiQUpjcnl6T0ZaREQ2QnBuLW9GUkJwX0lqeDVMYnFLb1c5OFliQ3NaNXdheXlHTTBJU3NtZjBfMFMteGo1Y2dGVW1iZndqa1E4NVV3RENmX3BpdFAyYU9sdFBYaWNoWllDU0R3RjhsT0pPWUxzaVE?oc=5",
       "published_at": "2026-10-30T23:00:10+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Alperen Sengun (back) ruled out Friday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSTMxSDh3WW1KYUwxeGJhY1JVWi1HSkxUTlBFUTdyTU5kN1dqYWk1cFk4QWg0MDVGaUI4Z1JreHNMMHpiVXQ2WW96S1JmWTZiUU43U0FaanpmVUFhU2NVR0tuaFNUQTZ5VUYwdmdvZ0luTUdpTUNZdGs0RHpwWVNJOXdOdjlUQndlU2kydtIBkgFBVV95cUxNVFRJZi1yZ2R0bHM2aHRxV001RFA2enJyTXFLNktHUzloRGRYcGVIRnJnVXRQZEhzYmppWTNGSmdkOXZkelE0eHN3STNvaV9nTEM2bVpManExNklQQUVNZUFWZmZiMVBYcEYtbmk3eVBWMmltd3JFRlB5VDVjeWNYWF9xNVJzVVNYbkhGLTBTdTNwQQ?oc=5",
+      "published_at": "2026-10-30T22:57:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -257,14 +265,6 @@
       "headline": "Jaylen Brown downgraded to OUT, LeBron, Embiid not listed for Sixers-Knicks Cup matchup - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQLVUzTmNoNTZUdzhjeEtmRU80QTlwbWRaZTFnTU9sYlJoN243N1VVUDVQdkE4eU9NRFc5UWROekt6YnJld3JuS3ZXWlgwczlXZktFYjkxcVhleW9XQmJQbjhHN251bG4yeVpPNERwZ0hjLUZfb3lUSlQydkNXMlNRNUF3bXFYeTBRSWp5VFU4ekp5UQ?oc=5",
       "published_at": "2026-10-30T21:51:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "76ers vs Knicks NBA Cup 2026: Where to Watch, Injury Report and Everything You Need to Know - EssentiallySports",
-      "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNRXpuRERUbVpYOGJydUY2aEE2NllXd05uVFpUZ09HVlF6M3lzYmhOckIxZW5LM0lpS285dDkwYmxTeHpVYVlCa2hPdWNiVC0yLXR2RUFTcjVJOEZXQ29DNTJMb3N1OTZCNjh2NTQ4MDhUaEc3U1FLRU5uLW4xcEtvM0R3YzBBU25IYjJwWTZhMGhvQnRRUTFJNlM2aFVDT3ZKd3ppS0dSMm9HUXgxTVJTY3VZUXNlY3gzTDBiWl85Rkx5R2FoejhqWFQ2azdsN0NkYVZPOWx0ZkRCYnFOaXNDS1BOejFwZw?oc=5",
-      "published_at": "2026-10-30T21:34:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -353,14 +353,6 @@
       "headline": "Warriors vs. Lakers injury report: Luka Dončić will play, Gui Santos doubtful - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX0dYYTlYdEh0Y2N3WC1LQi1OeHY2c0NTOVBPYlpKVm94bWI2XzJvZldXZThYaVhIYUdFVk15aGg3TU5YZzRQZWViaktTWVdNSERUZ3ZMZkNSMDFReVNnaUszM1VpNHhjbDZoenpfRVpnbkhQc0FtSDU3UjU0ZFVPWFJYbVYyekJR?oc=5",
       "published_at": "2026-10-30T20:21:47+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "Simone Fontecchio (illness) questionable vs. IND - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObEhjanVNMXNGUm5oMVM1SGM0cHlGMGthQkhrX0hFWVFLZFRRaGhBWktMbU1TdmJsTGVxQjRxU2JPSHBoUXlmNHozY2w5dUYyc0ZtckUxVkdhcDdOMngxZmVGOTltX0R0Zk1EOExORkFzU21vekQ0ekZmbU5vZjF0Y3VXUWR4TlNIMEtzN1Z0WjJfd3ZHbzlmT3ZhaHpDczJzT2FGZmV3S0R4azM1bHpWY2xDSQ?oc=5",
-      "published_at": "2026-10-30T20:03:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
