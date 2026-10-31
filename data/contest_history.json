@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-31T18:51:46+00:00",
+ "updated_at": "2026-10-31T19:04:33+00:00",
  "economics": {
   "Double Up": {
    "contests": 11,
@@ -35,11 +35,11 @@
   }
  },
  "summary": {
-  "odds_shift_per_player": -0.8,
+  "odds_shift_per_player": -2.8,
   "odds_calibration_nights": 9,
   "cash": {
    "nights": 9,
-   "double_up_wins": 4,
+   "double_up_wins": 3,
    "gpp_cashes": 0,
    "avg_field_percentile": 40.8
   },
@@ -3056,12 +3056,14 @@
     "top1": 351.2,
     "best_in_field": 369.2
    },
-   "observed_lines": null,
+   "observed_lines": {
+    "cash_line_above": 309.0
+   },
    "hindsight_best": 437.4,
    "nba_edge": {
     "cash": {
      "score": 309.0,
-     "beats_double_up": true,
+     "beats_double_up": false,
      "beats_gpp_cash": false,
      "field_percentile": 69.6
     },
