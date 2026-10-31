@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T20:00:10.118008+00:00",
+  "updated_at": "2026-10-31T20:40:18.454236+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -110,6 +110,16 @@
     {
       "name": "Jalen Duren",
       "team": "DET",
+      "status": "OUT"
+    },
+    {
+      "name": "Gui Santos",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Draymond Green",
+      "team": "GSW",
       "status": "OUT"
     },
     {
