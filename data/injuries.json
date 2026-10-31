@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T19:20:15.410162+00:00",
+  "updated_at": "2026-10-31T20:00:10.118008+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -110,6 +110,11 @@
     {
       "name": "Jalen Duren",
       "team": "DET",
+      "status": "OUT"
+    },
+    {
+      "name": "Stephen Curry",
+      "team": "GSW",
       "status": "OUT"
     },
     {
