@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T04:37:49.141364+00:00",
+  "updated_at": "2026-10-31T05:20:22.784163+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -50,7 +50,7 @@
     {
       "name": "Dailyn Swain",
       "team": "CHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nic Claxton",
@@ -128,14 +128,14 @@
       "status": "OUT"
     },
     {
-      "name": "Alperen Sengun",
-      "team": "HOU",
-      "status": "OUT"
-    },
-    {
       "name": "Reed Sheppard",
       "team": "HOU",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Alperen Sengun",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Steven Adams",
@@ -145,7 +145,7 @@
     {
       "name": "Obi Toppin",
       "team": "IND",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "T.J. McConnell",
@@ -200,7 +200,7 @@
     {
       "name": "Ziaire Williams",
       "team": "LAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Adou Thiero",
@@ -305,7 +305,7 @@
     {
       "name": "Jaylen Brown",
       "team": "PHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jabari Walker",
