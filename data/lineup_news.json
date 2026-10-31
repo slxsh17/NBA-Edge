@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-30",
-  "checked_at": "2026-10-31T00:41:35.341080+00:00",
+  "checked_at": "2026-10-31T01:43:48.795730+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,9 +22,33 @@
   ],
   "headlines": [
     {
+      "headline": "Lakers Reveal Starting Lineup Vs Warriors After Luka Doncic News - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOW41VzBZZVR1Z293VGg5MXBra2ZfOVdSUDhud3N6aGhHTFZoTG5GVzlBcTd6clFZMmhRSXhDa19ON0hUbkRHR0Z0WFhDRTZ1bUJia3RSRHBxSmZwNnczOUdBVUFweEw1WFVaeW9RbEFLZDJWTXJEMDRuM1cwVUxHSWc3Y2xvbFJxbWRUMWVTTXNOamdGM3hTaQ?oc=5",
+      "published_at": "2026-10-31T01:35:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Cavs injury report: Jaylon Tyson out, Meleek Thomas questionable vs. Bucks - Cavaliers Nation",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSnBKT1ZKQTVQOV94eFNxc3Y5cmRrMmRYX2p3WGNmbWtGdnhlcEpqLXp4MTZJQ21seTFHdHdWT1NXS2xYQ2YwT09TelhYQzRhbVBqSmFxdTd3aGYtNTZmUFBsS0E3ZEZabEh3QmQwdUtpa0xjN1k1dzYwTWF5T1RyN1hjeGVTcnp6T1FVUEhOOV9DX1VmVzhLS19UQXpDdGlheFM4LUw2ZnJnS3ZRVk83cw?oc=5",
+      "published_at": "2026-10-31T00:26:56+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
       "headline": "Sixers to start Maxey, VJ, LeBron, Wade, Embiid - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYWV2NDl3dnl2NEJuY0UzdEd0VFVxM1pHV1BmM2t5LTdSMjkwNGpvaHRYSENjenptdmZUUVpVNEZwc0FVYktOZ3FIV05EVEdENlFMUlNMcWxxTzFTZmNQMVdya29DWkNadVJUQVhuVjZnZjdNSnRYSng0M3hZbTJ3VjAzalFnUkh0TjljZXptYXlhZ1hVNVNydkZCOWc0WkhjdTh0NFdiSGk0WFJodERpQQ?oc=5",
       "published_at": "2026-10-31T00:23:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Nets’ Jordi Fernandez reveals motivation behind moving Nolan Traore into starting lineup - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbTNpUTdjeXhqeWdfYmlpNDBvcjFGcTN4OUpmbmpDM0YxLW1qdnZ4T05ESVpQbURnSGM5UzZ4UDZCU3U3eWowVC0yQXVEUDl6eWR1NWY2VXp2ZzM0RlZTaVBpNDA4elQ1MjFRZHNKUEY0SVBjUWFCUXRQdmxiVm1HZ25ha2Etc1hSY2dmbkhHVmxKdw?oc=5",
+      "published_at": "2026-10-31T00:11:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -166,6 +190,14 @@
       "scope_date": "2026-10-30"
     },
     {
+      "headline": "76ers’ Jaylen Brown Gets Telling Injury Update Ahead of Matchup vs. Knicks - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVElWM2N2blIyVVZtT1p4WlhEU3FYbmFxSUcweHduZHZpYlFGSGVSckMtWDNGZEV5VzZmMkVEczJpODFUWUdNX1p4eDhkM1luSkZEcVc3WGNFT3YyNkFSMEMwaEVXWmwxYUd6aUtVR2YxZ1BjZDhwOXNjdHFnal90QjMyTzg4RF9Od2c?oc=5",
+      "published_at": "2026-10-30T21:26:50+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
       "headline": "Jordan Poole Injury: Ruled out for Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQejl0SzBVRkZmejdvZkNROWNsVmZiejRXZVZZdXR5V1Facmk0VlplemFjUzlmZFE0OUY4eFJsSDJKc1hQNzcxTkgxdW8ta1JwUjAwdTBBUExreFNDalBLbGtpNm1XOVlaUVh3cXA1QVN3UWV2VXVLUVFUUGpTZXZSYUZXMEhZMk51LUpwcDhKOWtVMkRmMTlraDhiUQ?oc=5",
       "published_at": "2026-10-30T21:25:12+00:00",
@@ -182,17 +214,17 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "76ers’ Jaylen Brown Gets Telling Injury Update Ahead of Matchup vs. Knicks - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVElWM2N2blIyVVZtT1p4WlhEU3FYbmFxSUcweHduZHZpYlFGSGVSckMtWDNGZEV5VzZmMkVEczJpODFUWUdNX1p4eDhkM1luSkZEcVc3WGNFT3YyNkFSMEMwaEVXWmwxYUd6aUtVR2YxZ1BjZDhwOXNjdHFnal90QjMyTzg4RF9Od2c?oc=5",
-      "published_at": "2026-10-30T21:08:53+00:00",
+      "headline": "NBA Injury Report: Who to add with Anthony Edwards, Tyrese Haliburton, Ja Morant and other stars sidelined - Yahoo",
+      "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQTc0QkN2VnpwRTF4TzZ1TE0zLWZTcnY0STJzY2xEaF9qVUYxVnNxdmhBVE9EbEtrZUdzUHR6V0Z1MkNRM29BS0hnYWtKRWw4Z3owQlhNb0FjUkZ2NWl1RVFNQTkwLVhWaGRmNVpvSWRYdXFYX2hfNGtTR0VUMkVSNWJ0d0daeG9CRGZVNUlNYkg2M0Q0LXlnTHo0TmVhY29JSnh0Q2VaWm85VDZ1N3JFSjNLcEpiXzBoaFpEQkJhaXJLc2dWZDlxWG9wenlCNGVSaVJQMmRvWXppRlJtRDZPcU5EbDBMZw?oc=5",
+      "published_at": "2026-10-30T21:03:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Bulls Will Start NBA Cup Play Against Celtics, And That's a Very Scary Thought - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeEgwbEVQQTlvS2MzbjQ1VTZhUXpDaExTWlNYemVxcW1ocXQwbnEzZjQ5SFhSdTlrMGlXb0xlZmJKRldKdlpad2Zzc0RwaFlRNWVYa1YwWV9BTWtCRjlONERINWVxNi01VFhsZmZmRWlwV2ltNGV2dlBlcGh4UndOb0ZPUGtwT291eS1Sc21YR2RJVHBmS3dRVExCMGJLM3hnSDFCVFJDdGhLYVhkRkU2alh2b0o?oc=5",
-      "published_at": "2026-10-30T21:00:03+00:00",
+      "headline": "Bulls Will Start NBA Cup Play Against Celtics, And That's a Very Scary Thought - Yahoo",
+      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBnRFJhVkZjYnRlNTk3dUVBOFpOaTYtTVNSZWVMZ0lxTGN6WFZDQVR1RFRxNDVrU2RnNDdrVFZQVmM0VHNGQnlrd1VwRWVYMkJoLUhEVFV6REZVUGpRLUxnY3VkalF3bUMyRFl5TWhJVThEOEgyY2dZSE1tQ3U?oc=5",
+      "published_at": "2026-10-30T21:00:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -286,9 +318,25 @@
       "scope_date": "2026-10-30"
     },
     {
+      "headline": "Barcelona Predicted Lineup vs. Alaves: Flick Focuses on Rotation After Tough Week - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcGNYbnU1djQxUkY4eDFkUGNiMUtXSzg3Y1NFVnBXd2RkNEk5OEFUdzJCSV9mRmJXVHpjdnVpTDBkN0l0QWdNMl9oaXI2U182UTVyTmptT1BmdlJXSmFWT0pWYV9KYnRKRy1TR09uczFmVmJYQjFkOFdkZVBEV0dQdTFzNlZPaGlZeTROVk41LUtvYUIxOExGeFA0bzFuZw?oc=5",
+      "published_at": "2026-10-30T16:00:02+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
       "headline": "Celtics poised to start storybook NBA Cup run for Brad Stevens - Hardwood Houdini",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYVo5RFJQQVdRVDhiM0RtS1E2MURwRjlxMlVnRDBMamJ0SGgwODFBTy1SRVJNWWpuQlFKd2ppdDJxb0xCSnZRRHFhdm9xZXNRX2J0WEprQW4tSFd3b05TU2FwaHZKZjlRcUE1TnAxMU5tU3k4YTJLRXM3empYaUoyTVFSSWFTb1hfdFlJ?oc=5",
       "published_at": "2026-10-30T15:00:03+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Fantasy Football Week 8 TE Rankings: Tight Ends to Start and Sit - DraftKings Network",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVXNudUhEYVgxZ0tHTFNNdmxVWEZ3emR0ZEY1anBtOGd6SFBtZXhlbEYyNGVUUzRZNXhyTlRuWE5HQ0MxMU5uMEx2a0RUVWZ5b0toQTN4Y2VFOTBpX2xxWEEyWkJnSDJ3MWJoXzRhaW9Ba2didXFsOUc2a0V0NDZyZVM1YVdmUUU?oc=5",
+      "published_at": "2026-10-30T14:45:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
