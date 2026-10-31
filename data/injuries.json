@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T23:11:19.561532+00:00",
+  "updated_at": "2026-10-31T23:52:00.876002+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -66,11 +66,6 @@
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
-    },
-    {
-      "name": "Meleek Thomas",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaylon Tyson",
@@ -238,19 +233,19 @@
       "status": "OUT"
     },
     {
-      "name": "Scotty Pippen Jr.",
-      "team": "MEM",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Ty Jerome",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Scotty Pippen Jr.",
+      "team": "MEM",
+      "status": "OUT"
     },
     {
       "name": "Quinten Post",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Rudy Gobert",
