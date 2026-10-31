@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T18:34:45.503575+00:00",
+  "updated_at": "2026-10-31T19:20:15.410162+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -58,14 +58,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jaylon Tyson",
-      "team": "CLE",
-      "status": "OUT"
-    },
-    {
       "name": "Meleek Thomas",
       "team": "CLE",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jaylon Tyson",
+      "team": "CLE",
+      "status": "OUT"
     },
     {
       "name": "Sergio de Larrea",
@@ -376,6 +376,11 @@
       "name": "Ben Simmons",
       "team": "SAC",
       "status": "OUT"
+    },
+    {
+      "name": "Stephon Castle",
+      "team": "SAS",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tobias Harris",
