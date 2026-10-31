@@ -237,7 +237,7 @@ def history():
     if len(cal) >= 5:
         best = min((sum((float((d + 9 * sh >= 0).mean()) - y) ** 2 for d, y in cal), sh) for sh in np.arange(-6.0, 0.01, 0.1))
         odds_shift = round(float(best[1]), 1)
-    summ = {'odds_shift_per_player': odds_shift, 'odds_calibration_nights': len(cal)}
+    summ = {'odds_shift_per_player': odds_shift, 'odds_calibration_nights': len(cal), 'soft_shift_per_player': lineup_shift()}
     for strat in ('cash', 'tournament', 'sim_winner'):  # noqa
         xs = [n['nba_edge'][strat] for n in nights if strat in n['nba_edge']]
         if xs:
@@ -283,13 +283,15 @@ def payout(c, q):
 
 
 def contest_ev(lineup_scores, quants):
-    """lineup_scores: our score per night; quants: {field: nights x len(QS)}. Returns per contest
+    """lineup_scores: our score per night, or {field: scores per night} when the sharp and softer
+    fields carry different calibrations; quants: {field: nights x len(QS)}. Returns per contest
     expected return per $1, chance to cash, and the spread of returns."""
     out = {}
     for c in CATALOG:
         Q = quants[c['field']]
         ms = []
-        for n, sc in enumerate(lineup_scores):
+        scores = lineup_scores[c['field']] if isinstance(lineup_scores, dict) else lineup_scores
+        for n, sc in enumerate(scores):
             pct = float(np.interp(sc, Q[n], QS, left=0.0, right=99.99))
             ms.append(payout(c, max(1e-6, 1 - pct / 100)))
         ms = np.array(ms)
@@ -345,7 +347,24 @@ def build_portfolio(pool, corr, field, O_eval, n=150, gen_nights=1200, shift=0.0
             'candidates': len(cands)}
 
 
-def live(corr, odds_shift=None):
+def lineup_shift(hl=3.0):
+    """Per-player gap between NBA EDGE's graded main-slate lineups and their projections, recent
+    nights counted most (half-life 3 nights), never a bonus. Used for the softer-field contests:
+    their field is already fitted to real cash lines, so only our lineup's own bias carries over.
+    (The Double Up calibration also absorbs how much sharper real Double Up fields are than the
+    simulated one, which doesn't apply to small single-entry contests.)"""
+    m = [s for s in read(DATA / 'lineup_results.json').get('slates', []) if s.get('slate') == 'main']
+    num = den = 0.0
+    for i, s in enumerate(m):
+        w = 0.5 ** ((len(m) - 1 - i) / hl)
+        for lu in s.get('lineups', []):
+            if lu.get('actual') is not None and lu.get('proj'):
+                num += w * (lu['actual'] - lu['proj']) / 9
+                den += w
+    return round(min(0.0, num / den), 1) if den else None
+
+
+def live(corr, odds_shift=None, soft_shift=None):
     today = read(DATA / 'today.json')
     if not today.get('players'):
         return None
@@ -353,7 +372,7 @@ def live(corr, odds_shift=None):
     if len(pool) < 30:
         return None
     import hashlib
-    sig = hashlib.sha1(json.dumps(['portfolio-v2', today['date'], corr, odds_shift] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), round(p.get('own') or 0)] for p in pool]).encode()).hexdigest()
+    sig = hashlib.sha1(json.dumps(['portfolio-v2', today['date'], corr, odds_shift, soft_shift] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), round(p.get('own') or 0)] for p in pool]).encode()).hexdigest()
     if read(DATA / 'contest_sims.json').get('sig') == sig:
         return 'same'
     field = build_field(pool)
@@ -377,11 +396,12 @@ def live(corr, odds_shift=None):
         ids = [key.get((x['name'], x['team'])) for x in lu['players']]
         if None in ids:
             continue
-        sc = O[:, ids].sum(axis=1) + 9 * shift
-        evals[lu['strategy']] = contest_ev(sc, quants)
+        sc = O[:, ids].sum(axis=1)
+        soft = shift if soft_shift is None else soft_shift
+        evals[lu['strategy']] = contest_ev({'sharp': sc + 9 * shift, 'casual': sc + 9 * soft}, quants)
     keep = [i for i, p in enumerate(pool) if p['proj'] >= 6]
     corr_own = float(np.corrcoef(own_sim, [p.get('own') or 0 for p in pool])[0, 1])
-    return {'sig': sig, 'odds_shift_per_player': odds_shift, 'date': today['date'], 'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
+    return {'sig': sig, 'odds_shift_per_player': odds_shift, 'odds_shift_soft_per_player': soft_shift, 'date': today['date'], 'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
             'nights': NIGHTS, 'field_size': len(field), 'field_own_vs_model_corr': round(corr_own, 2),
             'line_shares': LINES,
             'lines': {k: [int(round(float(x))) for x in v] for k, v in L.items()},
@@ -496,7 +516,7 @@ def main():
     (DATA / 'contest_history.json').write_text(json.dumps(hist, indent=1) + '\n', encoding='utf-8')
     print(json.dumps({'economics': econ, 'summary': summ}, indent=1))
     grade_portfolios(corr)
-    lv = live(corr, summ.get('odds_shift_per_player'))
+    lv = live(corr, summ.get('odds_shift_per_player'), summ.get('soft_shift_per_player'))
     if isinstance(lv, dict) and lv.get('portfolio'):
         # freeze tonight's portfolio until the first game tips; that frozen set is what gets graded
         today = read(DATA / 'today.json')

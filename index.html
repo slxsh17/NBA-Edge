@@ -1001,15 +1001,18 @@ function oddsRow(picks){const o=contestOdds(picks);if(!o)return '';
 // ones) on 300 simulated nights, with the same payout model as the pipeline.
 function payoutX(c,q){if(c.kind==='double')return q<=c.share?c.mult:0;if(q>c.share)return 0;const b=1-2*c.share/(1-c.rake);return 2*Math.pow(Math.max(q,1/c.entries)/c.share,-b)}
 function interpPct(v,row,qs){if(v<=row[0])return 0;const n=row.length;if(v>=row[n-1])return 99.99;let lo=0,hi=n-1;while(hi-lo>1){const m=(lo+hi)>>1;if(row[m]<=v)lo=m;else hi=m}const a=row[lo],b=row[hi];return qs[lo]+(b>a?(v-a)/(b-a):0)*(qs[hi]-qs[lo])}
-function lineupNights(picks){
+// field 'sharp' (Double Ups, big tournaments): charged the Double Up calibration, which also covers
+// real Double Up fields being sharper than the simulated one. 'casual' (small single-entry): only
+// NBA EDGE's recent gap to projection, since that field is fitted to real soft-contest cash lines.
+function lineupNights(picks,field){
   const c=S.cs;if(!S.csIdx)S.csIdx=new Map(c.players.map((k,i)=>[k,i]));
   const cols=[];let base=0;for(const x of picks){const i=S.csIdx.get(pnorm(x.p.name)+'|'+x.p.team);if(x.p.out)continue;if(i==null)base+=x.p.proj;else cols.push(i)}
-  const cal=c.odds_shift_per_player,shift=Math.min(0,cal!=null?cal:0)*picks.length;
+  const cal=field==='casual'&&c.odds_shift_soft_per_player!=null?c.odds_shift_soft_per_player:c.odds_shift_per_player,shift=Math.min(0,cal!=null?cal:0)*picks.length;
   return c.scores.map(row=>{let v=base+shift;for(const i of cols)v+=row[i];return v});
 }
 function contestEV(picks){
-  const c=S.cs;if(!c.catalog||!c.quants)return null;const ns=lineupNights(picks),out={};
-  for(const k of c.catalog){const Q=c.quants[k.field];let sum=0,sq=0,cash=0;
+  const c=S.cs;if(!c.catalog||!c.quants)return null;const byF={sharp:lineupNights(picks,'sharp'),casual:lineupNights(picks,'casual')},out={};
+  for(const k of c.catalog){const Q=c.quants[k.field],ns=byF[k.field]||byF.sharp;let sum=0,sq=0,cash=0;
     for(let n=0;n<ns.length;n++){const pc=interpPct(ns[n],Q[n],c.qs),m=payoutX(k,Math.max(1e-6,1-pc/100));sum+=m;sq+=m*m;if(m>0)cash++}
     const ev=sum/ns.length;out[k.id]={ev,cash:cash/ns.length,sd:Math.sqrt(Math.max(0,sq/ns.length-ev*ev))}}
   return out;
@@ -1060,7 +1063,7 @@ function renderWhere(){
   <tr><td><b>Total</b> <span class="muted" style="font-size:12.5px">(${(spent/B*100).toFixed(1)}% of bankroll)</span></td><td class="amt">${money(Math.round(spent*100)/100)}</td></tr></tbody></table>
   <p style="font-size:13px;margin:4px 0">You set ${R}% (${money(Math.round(budget))}).${spent<budget-1?` Only ${money(Math.round(spent*100)/100)} fits contests with a positive expected return at sensible entry counts; putting the rest in negative-return contests only adds risk.`:''}${pos.length?` For tonight's edge, the betting math (quarter Kelly) would stake about ${money(Math.max(1,Math.round(kellyTotal)))}; more than that raises the swings faster than the expected profit.`:''}</p>
   <details style="font-size:13.5px"><summary>Every contest type, simulated</summary><table><thead><tr><th style="text-align:left">Contest</th><th class="n">Return</th><th class="n">Cashes</th></tr></thead><tbody>${all}</tbody></table>
-  <p class="muted" style="font-size:12px;margin:4px 0 0">Return = expected profit per $1 for your best lineup(s), after FanDuel's cut, over 300 simulated nights. Double Ups and big tournaments are scored against a sharp field fitted to the real Oct 29 Double Up line (368.3); small single-entry contests against a softer field fitted to their Oct 29 cash lines (340–362). Tournament prizes use a standard payout curve sized to each prize pool; real big tournaments pay their top few spots even more, which 300 simulated nights can't see, so big-tournament returns here are on the low side. These are estimates from a few nights of data.</p></details>`;
+  <p class="muted" style="font-size:12px;margin:4px 0 0">Return = expected profit per $1 for your best lineup(s), after FanDuel's cut, over 300 simulated nights. Double Ups and big tournaments are scored against a sharp field fitted to the real Oct 29 Double Up line (368.3), with a penalty fitted to how often NBA EDGE's cash lineup has really beaten Double Up lines (${S.cs.odds_shift_per_player!=null?(S.cs.odds_shift_per_player*9).toFixed(0)+' pts per lineup':'none yet'}). Small single-entry contests are scored against a softer field fitted to their real cash lines (340–362 on Oct 29), charged only NBA EDGE's recent gap to projection (${S.cs.odds_shift_soft_per_player!=null?(S.cs.odds_shift_soft_per_player*9).toFixed(0)+' pts':'same penalty'}). Tournament prizes use a standard payout curve sized to each prize pool; real big tournaments pay their top few spots even more, which 300 simulated nights can't see, so big-tournament returns here are on the low side. These are estimates from a few nights of data.</p></details>`;
   $('bankroll').onchange=e=>{const v=Math.max(10,Number(e.target.value)||400);store.set('bankroll',v);renderWhere()};
   $('riskpct').onchange=e=>{const v=Math.max(1,Math.min(25,Number(e.target.value)||5));store.set('riskPct',v);renderWhere()};
 }
