@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T13:32:46.573345+00:00",
+  "updated_at": "2026-10-31T14:17:45.134969+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -301,6 +301,16 @@
       "name": "Izaiyah Nelson",
       "team": "ORL",
       "status": "OUT"
+    },
+    {
+      "name": "LeBron James",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Joel Embiid",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaylen Brown",
