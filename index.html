@@ -456,7 +456,7 @@ function syncEntries(){
 }
 function loadEntries(){const v=store.get(entKey(),[]);S.entries=(v||[]).map(e=>({label:e.label||'',noise:e.noise||null,gap0:e.gap0||0,settings:e.settings||null,sim:e.sim??null,picks:e.picks.map(rehydrate).filter(Boolean)})).filter(e=>e.picks.length===F().size);S.entStarted=-1}
 function rehydrate(pk){const p=S.players.find(x=>pkey(x)===pk.k);return p?{p,slot:pk.slot}:null}
-function saveDayState(){store.set('day:'+fmtKey(),{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,sim:l.sim,noise:l.noise||null,gap0:l.gap0||0,settings:l.settings||null,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings:'+S.format,{count:S.count,mode:S.mode,exposure:S.exposure,useSim:S.useSim})}
+function saveDayState(){store.set('day:'+fmtKey(),{day:S.day,over:S.over,locks:[...S.locks],bans:[...S.bans],gamesOff:[...S.gamesOff],lineups:S.lineups.map(l=>({built:l.built,proj0:l.proj0,review:l.review,sim:l.sim,port:l.port??null,noise:l.noise||null,gap0:l.gap0||0,settings:l.settings||null,picks:l.picks.map(x=>({k:pkey(x.p),slot:x.slot}))}))});store.set('settings:'+S.format,{count:S.count,mode:S.mode,exposure:S.exposure,useSim:S.useSim})}
 
 // ---------- CSV upload ----------
 function parseCSV(text){const rows=[];let row=[],cell='',q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'){if(text[i+1]==='"'){cell+='"';i++}else q=false}else cell+=c}else if(c==='"')q=true;else if(c===','){row.push(cell);cell=''}else if(c==='\n'||c==='\r'){if(c==='\r'&&text[i+1]==='\n')i++;row.push(cell);if(row.some(x=>x.trim()))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell);if(row.some(x=>x.trim()))rows.push(row);return rows}
@@ -656,7 +656,7 @@ $('settings').addEventListener('click',e=>{if(e.target.id==='cfg-reset'){S.user=
 $('review').onchange=e=>{S.review=e.target.checked;renderGames();renderPlayers();renderNotices()};
 let paintCount,paintMode;
 function wireControls(){
-  paintCount=seg('count',()=>S.count,v=>{S.count=+v;syncExposure()});
+  paintCount=seg('count',()=>S.count,v=>{S.count=+v;syncExposure();syncSim()});
   paintMode=seg('mode',()=>S.mode,v=>{S.mode=v;syncSim()});
   $('use-sim').onchange=e=>{S.useSim=e.target.checked;saveDayState()};syncSim();
   seg('posf',()=>S.posf,v=>{S.posf=v;renderPlayers()});
@@ -664,7 +664,9 @@ function wireControls(){
   syncExposure();
 }
 function simList(){if(S.source==='csv'||!S.today||S.today.date!==S.day)return [];if(S.format==='single'){const sg=singles().find(x=>x.id===S.sgId);return (sg&&sg.sim_lineups)||[]}return S.today.sim_lineups||[]}
-function syncSim(){const w=$('sim-wrap');if(!w)return;w.hidden=!(S.mode==='gpp'&&simList().length);$('use-sim').checked=S.useSim}
+function syncSim(){const w=$('sim-wrap');if(!w)return;const big=S.count>20&&csReady()&&S.cs.portfolio&&(S.cs.portfolio.lineups||[]).length;
+  w.hidden=!(S.mode==='gpp'&&(simList().length||big));$('use-sim').checked=S.useSim;
+  w.querySelector('span').textContent=big?`Use NBA EDGE’s LeVertical portfolio: ${S.cs.portfolio.lineups.length} lineups picked for how often they beat 99% of the simulated FanDuel field, with each player’s exposure held near how often he’s in winning lineups.`:'Start from simulated winners: lineups that finished in the top 5% most often across thousands of simulated nights (teammates and opponents rise and fall together).'}
 function syncExposure(){const on=S.count>1;$('exposure').disabled=!on;$('exposure').closest('.range-row').style.opacity=on?1:.4}
 
 // ---------- optimizer ----------
@@ -755,7 +757,26 @@ async function build(){
       for(let i=pool.length-1;i>=0;i--)if(!keep.has(pkey(pool[i])))pool.splice(i,1);
     }
     const capNow=S.format==='single'?S.cfg.sgCap:CAP,teamMax=S.format==='single'?5:Math.min(MAX_TEAM,S.cfg.maxTeam);
-    if(S.mode==='gpp'&&S.useSim&&!S.review){
+    // Big tournament sets: NBA EDGE's LeVertical portfolio (pipeline): highest top-1% equity vs the
+    // simulated field, each player's exposure held near his optimal rate.
+    const port=(S.mode==='gpp'&&S.useSim&&!S.review&&S.count>20&&csReady()&&S.cs.portfolio&&S.cs.portfolio.lineups)||null;
+    if(port){
+      const byK=new Map(pool.map(p=>[pnorm(p.name)+'|'+p.team,p]));
+      for(const c of port){
+        if(made.length>=S.count)break;
+        const picks=c.p.map(([k,slot])=>({p:byK.get(k),slot}));
+        if(picks.some(x=>!x.p||!canFill(x.p,x.slot)))continue;
+        if([...S.locks].some(k=>!picks.some(x=>pkey(x.p)===k)))continue;
+        if(picks.some(x=>(uses.get(pkey(x.p))||0)>=cap&&!S.locks.has(pkey(x.p))))continue;
+        if(picks.reduce((t,x)=>t+salOf(x),0)>capNow)continue;
+        const ks=new Set(picks.map(keyOf));
+        if(made.some(l=>l.picks.filter(x=>ks.has(keyOf(x))).length>size-minU))continue;
+        const seated=lateFlex(picks);
+        const l={picks:seated,built:Date.now(),port:c.eq,settings:{...settings,port:true}};l.proj0=total(l);made.push(l);
+        seated.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1));
+      }
+    }
+    if(!port&&S.mode==='gpp'&&S.useSim&&!S.review){
       const byK=new Map(pool.map(p=>[pkey(p),p]));
       for(const c of simList()){
         if(made.length>=S.count)break;
@@ -812,7 +833,7 @@ function currentSettings(){const o={mode:S.mode,sim:S.mode==='gpp'&&!!S.useSim,a
 async function withSettings(set,fn){if(!set)return fn();const m=S.mode,c=S.cfg;S.mode=set.mode;S.cfg={...c};for(const k of SETKEYS)if(set[k]!=null)S.cfg[k]=set[k];
   try{return await fn()}finally{S.mode=m;S.cfg=c}}
 function settingsLabel(set,l){if(!set)return '';const t=set.at?new Date(set.at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'';
-  const kind=set.mode==='gpp'?(l&&l.sim!=null?'Tournament · simulated winner':'Tournament'):'Cash';
+  const kind=set.mode==='gpp'?(set.port||(l&&l.port!=null)?'Tournament · LeVertical portfolio':l&&l.sim!=null?'Tournament · simulated winner':'Tournament'):'Cash';
   const extra=set.mode==='gpp'?` · upside ${Math.round((set.ceilW||0)*100)}%, leverage ${(set.levW||0).toFixed(2)}, fade ${(set.ownFade||0).toFixed(2)}`:'';
   return `<div class="set-badge">Built as ${kind}${extra}${t?' · '+t:''}. Late swap uses these settings.</div>`}
 async function lateSwap(i){
@@ -1055,6 +1076,7 @@ function renderLineups(fresh=false){
       <div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Avg own<b>${own.toFixed(0)}%</b></div>${reviewOnly?'<span class="review-badge">Review only</span>':''}
       <div class="lu-actions">${canSwap?`<button class="btn small" data-swap="${i}">Late swap</button>`:''}<button class="btn small" data-contests="${i}" aria-expanded="${S.openC==='l'+i}">Contests</button><button class="btn small" data-enter="${i}" aria-label="Save lineup ${i+1} as an entry">I entered this</button><button class="btn small" data-copy="${i}" aria-label="Copy lineup ${i+1}">Copy</button></div></div>
       ${l.sim!=null?`<div class="sim-badge">Simulated winner: top 5% in ${l.sim}% of simulated nights</div>`:''}
+      ${l.port!=null?`<div class="sim-badge">LeVertical portfolio: beats 99% of the simulated field on ${l.port}% of nights</div>`:''}
       ${settingsLabel(l.settings,l)}
       ${oddsRow(l.picks)}
       ${S.openC==='l'+i?contestPanel(l.picks):''}

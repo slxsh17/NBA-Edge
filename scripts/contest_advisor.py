@@ -282,6 +282,54 @@ def contest_ev(lineup_scores, quants):
     return out
 
 
+def build_portfolio(pool, corr, field, O_eval, n=150, gen_nights=1200, shift=0.0):
+    """LeVertical-style 150-lineup set.
+    1. Candidates: the best lineup on each of 1,200 simulated nights (correlated outcomes).
+    2. Optimal rate: how often each player is in those winning lineups.
+    3. Each candidate's top-1% equity: how often it beats 99% of the simulated FanDuel field on
+       300 separate simulated nights (so near-copies of the field's chalk lineups score low).
+    4. Pick the highest-equity lineups, capping each player's exposure near his optimal rate
+       (overweight the players the field under-owns, keep good chalk, never 0 or 100%), with
+       every lineup at least 2 players different."""
+    solver = FS.Solver(pool, 'classic', 60000)
+    O_gen = outcomes(pool, corr, nights=gen_nights, seed=21)
+    cands = {}
+    for row in O_gen:
+        lu = solver.best(list(row))
+        if lu:
+            k = tuple(sorted(i for i, _ in lu))
+            if k not in cands:
+                cands[k] = {'slots': lu, 'count': 0}
+            cands[k]['count'] += 1
+    total = sum(c['count'] for c in cands.values()) or 1
+    opt = np.zeros(len(pool))
+    for k, c in cands.items():
+        opt[list(k)] += c['count']
+    opt = opt / total
+    fidx = np.array(field)
+    thr = np.percentile(O_eval[:, fidx].sum(axis=2), 99, axis=1)
+    # shift: the calibrated per-player bias (same for every lineup, so it changes the odds shown, not the order)
+    eq = {k: float((O_eval[:, list(k)].sum(axis=1) + 9 * shift >= thr).mean()) for k in cands}
+    caps = [max(1, math.ceil(n * min(0.6, max(opt[i] * 1.25, 0.02)))) for i in range(len(pool))]
+    picked, cnt = [], {}
+    for k in sorted(cands, key=lambda k: (-eq[k], -cands[k]['count'])):
+        if any(cnt.get(i, 0) >= caps[i] for i in k):
+            continue
+        ks = set(k)
+        if any(len(ks & set(m)) > 7 for m in picked):
+            continue
+        picked.append(k)
+        for i in k:
+            cnt[i] = cnt.get(i, 0) + 1
+        if len(picked) >= n:
+            break
+    key = lambda i: norm(pool[i]['name']) + '|' + pool[i]['team']
+    return {'lineups': [{'p': [[key(i), sl] for i, sl in cands[k]['slots']], 'eq': round(eq[k] * 100, 1),
+                         'proj': round(float(sum(pool[i]['proj'] for i in k)), 1)} for k in picked],
+            'opt': {key(i): round(float(opt[i] * 100), 1) for i in range(len(pool)) if opt[i] > 0},
+            'candidates': len(cands)}
+
+
 def live(corr, odds_shift=None):
     today = read(DATA / 'today.json')
     if not today.get('players'):
@@ -290,7 +338,7 @@ def live(corr, odds_shift=None):
     if len(pool) < 30:
         return None
     import hashlib
-    sig = hashlib.sha1(json.dumps([today['date'], corr, odds_shift] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), round(p.get('own') or 0)] for p in pool]).encode()).hexdigest()
+    sig = hashlib.sha1(json.dumps(['portfolio-v2', today['date'], corr, odds_shift] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), round(p.get('own') or 0)] for p in pool]).encode()).hexdigest()
     if read(DATA / 'contest_sims.json').get('sig') == sig:
         return 'same'
     field = build_field(pool)
@@ -326,6 +374,7 @@ def live(corr, odds_shift=None):
             'catalog': CATALOG, 'qs': QS,
             'quants': {f: [[int(round(float(x))) for x in row] for row in Q] for f, Q in quants.items()},
             'nba_edge_contest_ev': evals,
+            'portfolio': build_portfolio(pool, corr, field, O, shift=odds_shift or 0.0),
             'players': [norm(pool[i]['name']) + '|' + pool[i]['team'] for i in keep],
             'scores': [[int(round(float(O[n, i]))) for i in keep] for n in range(NIGHTS)]}
 
