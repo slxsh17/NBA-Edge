@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-30",
-  "checked_at": "2026-10-31T02:33:05.208047+00:00",
+  "checked_at": "2026-10-31T03:29:42.088956+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "NBA Cup: Boston Celtics Earn Victory to Start Pool Play - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZzhUQ1Zhcm5aTU1YV19DQU90bC05aDE0cEJKSnI4VllvaWVaT3ZQNVlYWUNXNWhxYjNzQU1JeFlFNWZ4dXd4V0RxVFJXNlpHd3dxMi0xYlh5elZBYXEwRjJEYjE1Z1BURGpaendGTTNObHJPMlAtTUZ2Wmg5emplTFVB?oc=5",
+      "published_at": "2026-10-31T02:32:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
     {
       "headline": "Knicks Announce Starting Lineup For 76ers Game After Karl-Anthony Towns Injury - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ2R6aDF3a2lwdGxXekMzM2N6WEQwZEV0RjE2Sl92Z3FkUm5iQTVoWlJNbUtOQXVIMDhqMmJpN2ZKaENockM4U3RGYTdPcFp2eTE2dVJvd3dnQmRKMVB6WTE3TkVPeGVsTVJ4QWVqb09melZTb0VrM1dQVlpFZW1yS0ZGc1diam00V2lLN00wcw?oc=5",
@@ -94,14 +102,6 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Lauri Markkanen Injury: Questionable versus Portland - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbXl5S1RlaEZEVmZiUmktLWplTDRJbjBwbTFETlpxM0JQa2hfSGk0aFFyd2E0SlBwTmVRUzdGRmh2cWtSZnd6dHhWVHUxampsb0ozRTVxTWxaMXpSMU5ZNGdNSFF2V19qWGhVeGhlVnh0am5rXzJxTzJJUDctbi1qNFdINHVzTEFFQV9NVW8wVzFsdndCTXZtMGYtQlhibXlESUlRZk1Jaw?oc=5",
-      "published_at": "2026-10-30T23:13:31+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
       "headline": "Robert Williams Injury: Questionable to play Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVmRQUW4wQndsSFJkMVdUV0ZDUllvb3lFY1d2STlxZTdvMTZfcWc3dm1BdzBvcmY2WnRwOTlQYTEtc3BzUkRkT0ZVRE03ZWszaS1Fak9yTmpKT0dXM0x2NDVXTkxrOGZjMVBoN3NEeDhkMXNReWxBcnlMMTFDVEZSb0p2OFJCQk5ZRzZOTXBqU3cySjVkaERneWVqcFpDZ096c3NwSlNtZ0M?oc=5",
       "published_at": "2026-10-30T23:11:47+00:00",
@@ -121,6 +121,14 @@
       "headline": "Chet Holmgren (knee) ruled out Saturday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMlJFUFVrX085alkxYk1FcWFKQ3dzQ2dqRnR6RlN6N2VIZzRFZ3VpSUxZYjlsX1JZRWVHYTQxdElkcVZkTVRuNzVlX2J3NlViUmxCTFVKTmRRVEdhdUZvLVZ4b1ROaU1Qa1FXNTJIa0NtSWYtNHNDNFVBQ19oZUxOZFhFeXBNTDlvaGZJWXh30gGTAUFVX3lxTE5tZzM0MVg0d1JiTjlrOHB3cE5Zc01TbldpSWxjVi1OcmlNSU5oWUc5dW5zNEU3Zkx2TkVKVy1jMEMzZ0Ztb1ZxVldYbklUa3kybkF4TlNDM3V0SFpOekEtMDBCUUhnZWd0bEUwaDNsaWhTX0ZlV29YczYyOXFCbWx2R3dDZHFaWlgyeV9CNlBPRmxRTQ?oc=5",
       "published_at": "2026-10-30T22:59:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-30"
+    },
+    {
+      "headline": "Video - Clippers List Six Players on Injury Report for Timberwolves Game - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb0szNnpBRGIwbURNREZrNnYwaF9QWF9xNVVuOWx0YV8yRWpleEM0VmtvbHl3VUFmVEpoWGVveVJqZHpvTUpDSUlEZEFYUUpuM1RQUmdEd3JiV0s0LVRuMHREcm9WVDdPRXVDZWFGbVA1Vlg4a0hEZDRCTHVKamcteXFRUl9NQVIwM2tsQ0tIXzk4NVM5X21heDBzUGppVDJqRFpzbUVPdVZmRF9VREFVWDdn?oc=5",
+      "published_at": "2026-10-30T22:54:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -230,9 +238,9 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Timberwolves Make Call on Two Young Rotation Pieces - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOU3U0T1F2clNDRi0yblc2dFZidHdnTmFWdmo5Z2d4clctZ0RHQkxzc09SZzBvWXVFaXJ4dGxCSkpNTzd4OGtQanZiVVIwc3ByRUwyQ1NTRFdwdWtKRzBGTG5uYXVRTFFsYk8wX0ZFal82MnhEX1RDQkhZWDlUTnlXRldqbGJwU1BSUjJidkhB?oc=5",
-      "published_at": "2026-10-30T21:15:43+00:00",
+      "headline": "Timberwolves Make Call on Two Young Rotation Pieces - Minnesota Sports Fan",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNR1FtN2dQdWcwQkU2MldCZnVRcXZfc21GN3YzX0lBUWo0U1l5VUZXZ1oyNXNLSjctbTFobUFzeHNjc2tEaDBObVUtejZPdEJkNmZ2Vzl3Ykp6NFZma0s1azRzYVktbkpWc2tSNnpEZkZJcUUtRHo3ZUt0RFBGSDFXR1JnR0ZldXFFX01icjZ6LXBpTzR6MU5UTkd2X0daMXhnWHZnUDVQYzY?oc=5",
+      "published_at": "2026-10-30T21:20:53+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
@@ -334,14 +342,6 @@
       "scope_date": "2026-10-30"
     },
     {
-      "headline": "Fantasy Football Week 8 TE Rankings: Tight Ends to Start and Sit - DraftKings Network",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVXNudUhEYVgxZ0tHTFNNdmxVWEZ3emR0ZEY1anBtOGd6SFBtZXhlbEYyNGVUUzRZNXhyTlRuWE5HQ0MxMU5uMEx2a0RUVWZ5b0toQTN4Y2VFOTBpX2xxWEEyWkJnSDJ3MWJoXzRhaW9Ba2didXFsOUc2a0V0NDZyZVM1YVdmUUU?oc=5",
-      "published_at": "2026-10-30T14:45:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
       "headline": "Noah Clowney Injury: Downgraded to questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcDY5ZGhtZ21uMC1OSUQ4aXdqWWRQTDdjMlZEVHJ4T1BkRWdaQzZ0cklIejc3ZUNmb0Z3eWJpemtfV0FlUXN1cHpNT2E0OEFWS2c5ejlQNkdvUGZoTmM0NWpPQ2Fwa2lhaUlaemM2a25RWkJ2N1BsYlB0bEI0YzRIbTVjTG1kWC1GeUZ1U2tWZ0FVZVBMZ3FTSkZfRTR0WkJ2?oc=5",
       "published_at": "2026-10-30T14:16:10+00:00",
@@ -393,14 +393,6 @@
       "headline": "Southeast NBA Notes: Reid Benched, Dybantsa Debuts, Flemings Shines - BVM Sports",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYTZJMjJwcFBVTy1PbU5ZamV5ejVlQXg3amlnV3I0VTlFaDlENlI0UHpUbTVmOXpCUjhPdW9yMVY5TnBjV285Q2l5el9kYU42OWZ6YlhsTGkwMXpmVUZsY2VaTUJndzM0Y0ZhSFRISlQzRVY3bTRKOWNCZUFpRGx2eWhGWjBMTUFCTHBkb21xMGo0RWU5dlVzWnRFZEtsaWc?oc=5",
       "published_at": "2026-10-30T04:23:30+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-30"
-    },
-    {
-      "headline": "Quinten Post Injury: Doubtful to return Thursday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUkMwN2R5OWc5cU9vMXN6TWhSb1k3REZqNnBVNWNRTElVV0MtRnpFbkYtRGdId1k2ZFBGNk1QSlI1cXVTYzZxRk5FdkItYnhlcWN4bk5VRlJNd1V0dE5laEVFUzNBdklZbXFHRjVXbG54SWgwakgyY0FsNHFMSWNWeWF4MXFWU3prMEtYeUVOQ3ViZlRjbUdLeWNMcnBqT1FPM1E?oc=5",
-      "published_at": "2026-10-30T03:27:55+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-30"
