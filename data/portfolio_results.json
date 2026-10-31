@@ -1,0 +1,207 @@
+{
+ "nights": [
+  {
+   "date": "2026-10-21",
+   "backtest": true,
+   "portfolio": {
+    "lineups": 150,
+    "best": 372.4,
+    "median": 276.6,
+    "cashes": 10,
+    "top1": 0,
+    "penny_roi": -0.806,
+    "shot_roi": -0.809
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 359.0,
+    "median": 276.9,
+    "cashes": 4,
+    "top1": 0,
+    "penny_roi": -0.924,
+    "shot_roi": -0.925
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "backtest": true,
+   "portfolio": {
+    "lineups": 150,
+    "best": 326.4,
+    "median": 257.5,
+    "cashes": 16,
+    "top1": 1,
+    "penny_roi": -0.691,
+    "shot_roi": -0.696
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 330.3,
+    "median": 253.5,
+    "cashes": 9,
+    "top1": 1,
+    "penny_roi": -0.795,
+    "shot_roi": -0.8
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "backtest": true,
+   "portfolio": {
+    "lineups": 150,
+    "best": 350.0,
+    "median": 269.6,
+    "cashes": 48,
+    "top1": 3,
+    "penny_roi": 0.561,
+    "shot_roi": 0.504
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 345.2,
+    "median": 272.1,
+    "cashes": 50,
+    "top1": 4,
+    "penny_roi": 0.578,
+    "shot_roi": 0.526
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "backtest": true,
+   "portfolio": {
+    "lineups": 150,
+    "best": 443.8,
+    "median": 328.6,
+    "cashes": 6,
+    "top1": 1,
+    "penny_roi": 0.944,
+    "shot_roi": -0.09
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 414.6,
+    "median": 316.6,
+    "cashes": 2,
+    "top1": 0,
+    "penny_roi": -0.941,
+    "shot_roi": -0.942
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "backtest": true,
+   "portfolio": {
+    "lineups": 150,
+    "best": 359.4,
+    "median": 298.3,
+    "cashes": 35,
+    "top1": 2,
+    "penny_roi": -0.12,
+    "shot_roi": -0.14
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 341.7,
+    "median": 286.4,
+    "cashes": 19,
+    "top1": 0,
+    "penny_roi": -0.66,
+    "shot_roi": -0.663
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "backtest": true,
+   "portfolio": {
+    "lineups": 150,
+    "best": 326.2,
+    "median": 286.5,
+    "cashes": 22,
+    "top1": 0,
+    "penny_roi": -0.593,
+    "shot_roi": -0.597
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 321.3,
+    "median": 276.8,
+    "cashes": 13,
+    "top1": 0,
+    "penny_roi": -0.763,
+    "shot_roi": -0.766
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "backtest": true,
+   "portfolio": {
+    "lineups": 150,
+    "best": 371.8,
+    "median": 296.8,
+    "cashes": 41,
+    "top1": 4,
+    "penny_roi": 0.083,
+    "shot_roi": 0.055
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 359.3,
+    "median": 276.9,
+    "cashes": 24,
+    "top1": 1,
+    "penny_roi": -0.504,
+    "shot_roi": -0.512
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "backtest": true,
+   "portfolio": {
+    "lineups": 150,
+    "best": 383.3,
+    "median": 299.1,
+    "cashes": 1,
+    "top1": 0,
+    "penny_roi": -0.986,
+    "shot_roi": -0.986
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 369.8,
+    "median": 280.7,
+    "cashes": 0,
+    "top1": 0,
+    "penny_roi": -1.0,
+    "shot_roi": -1.0
+   }
+  }
+ ],
+ "updated_at": "2026-10-31T00:55:49+00:00",
+ "summary": {
+  "all": {
+   "nights": 8,
+   "portfolio_best": 366.66,
+   "portfolio_cashes": 22.38,
+   "portfolio_top1": 1.38,
+   "portfolio_penny_roi": -0.2,
+   "previous_method_best": 355.15,
+   "previous_method_cashes": 15.12,
+   "previous_method_top1": 0.75,
+   "previous_method_penny_roi": -0.63
+  },
+  "live": {
+   "nights": 0,
+   "portfolio_best": null,
+   "portfolio_cashes": null,
+   "portfolio_top1": null,
+   "portfolio_penny_roi": null,
+   "previous_method_best": null,
+   "previous_method_cashes": null,
+   "previous_method_top1": null,
+   "previous_method_penny_roi": null
+  }
+ },
+ "status": "keep",
+ "method": "Frozen at first tip, scored with actual FanDuel points against a simulated field scored with the same results. Cashes = top 22%, top1 = top 1%; ROI uses the Piggy Bank payout model."
+}

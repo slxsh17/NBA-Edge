@@ -379,6 +379,97 @@ def live(corr, odds_shift=None):
             'scores': [[int(round(float(O[n, i]))) for i in keep] for n in range(NIGHTS)]}
 
 
+def set_metrics(scores, field_act):
+    """How a set of lineups did: actual scores placed in the simulated field (scored with actual results)."""
+    fs = np.sort(np.asarray(field_act))
+    sc = np.asarray(scores, dtype=float)
+    pct = np.searchsorted(fs, sc, side='right') / len(fs) * 100
+    cat = {c['id']: c for c in CATALOG}
+    out = {'lineups': int(len(sc)), 'best': round(float(sc.max()), 1), 'median': round(float(np.median(sc)), 1),
+           'cashes': int((pct >= 78).sum()), 'top1': int((pct >= 99).sum())}
+    for cid in ('penny', 'shot'):
+        out[cid + '_roi'] = round(float(np.mean([payout(cat[cid], max(1e-6, 1 - q / 100)) for q in pct])) - 1, 3)
+    return out
+
+
+def baseline_set(pool, corr, n=150):
+    """The previous 150-lineup method (projection/upside/leverage score scaled by each simulated
+    night, 60% max per player), rebuilt for comparison."""
+    solver = FS.Solver(pool, 'classic', 60000)
+    O = outcomes(pool, corr, nights=900, seed=21)
+    proj = np.array([p['proj'] for p in pool])
+    opt = np.zeros(len(pool))
+    for row in O[:600]:
+        lu = solver.best(list(row))
+        if lu:
+            opt[[i for i, _ in lu]] += 1
+    lev = opt / max(1, opt.sum() / 9) * 100 - np.array([p['own'] for p in pool])
+    base = 0.55 * proj + 0.45 * np.array([p['ceiling'] for p in pool]) - 0.03 * np.array([p['own'] for p in pool]) + 0.15 * lev
+    picked, cnt = [], {}
+    for row in O[600:]:
+        lu = solver.best(list(base * row / np.maximum(proj, 1)))
+        if not lu:
+            continue
+        k = tuple(sorted(i for i, _ in lu))
+        if any(cnt.get(i, 0) >= int(n * 0.6) for i in k) or any(len(set(k) & set(m)) > 7 for m in picked):
+            continue
+        picked.append(k)
+        for i in k:
+            cnt[i] = cnt.get(i, 0) + 1
+        if len(picked) >= n:
+            break
+    return picked
+
+
+def grade_portfolios(corr):
+    """Grade each night's frozen LeVertical portfolio (data/portfolios/) with actual results, next
+    to the previous method rebuilt for the same night. Starts with the 8 backtest nights."""
+    path = DATA / 'portfolio_results.json'
+    res = read(path, {'nights': []})
+    done = {r['date'] for r in res['nights']}
+    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    for f in sorted((DATA / 'portfolios').glob('*.json')) if (DATA / 'portfolios').exists() else []:
+        day = f.stem
+        if day >= today or day in done:
+            continue
+        snap = read(DATA / 'history' / f'{day}.json').get('players') or {}
+        pool = past_pool(day)
+        if not pool or not snap:
+            continue
+        act = {k: s.get('actual', 0.0) for k, s in snap.items()}
+        port = read(f)
+        p_scores = [sum(act.get(k, 0.0) for k, _ in lu['p']) for lu in port.get('lineups', [])]
+        if not p_scores:
+            continue
+        field = build_field(pool, n=800, seed=7)
+        a = np.array([p['actual'] for p in pool])
+        field_act = a[np.array(field)].sum(axis=1)
+        base = baseline_set(pool, corr)
+        row = {'date': day, 'backtest': False, 'portfolio': set_metrics(p_scores, field_act),
+               'previous_method': set_metrics([a[list(k)].sum() for k in base], field_act)}
+        res['nights'].append(row)
+        print('portfolio graded', row)
+    res['nights'].sort(key=lambda r: r['date'])
+    live_n = [r for r in res['nights'] if not r.get('backtest')]
+
+    def avg(rows, who, k):
+        return round(statistics.mean(r[who][k] for r in rows), 2) if rows else None
+    summ = {}
+    for label, rows in (('all', res['nights']), ('live', live_n)):
+        summ[label] = {'nights': len(rows), **{f'{who}_{k}': avg(rows, who, k) for who in ('portfolio', 'previous_method')
+                                                 for k in ('best', 'cashes', 'top1', 'penny_roi')}}
+    # Keep it on unless 10+ live nights say the previous method does better.
+    status = 'keep'
+    if len(live_n) >= 10 and (summ['live']['portfolio_penny_roi'] < summ['live']['previous_method_penny_roi']
+                              and summ['live']['portfolio_cashes'] < summ['live']['previous_method_cashes']):
+        status = 'pull'
+    res.update({'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'summary': summ, 'status': status,
+                'method': 'Frozen at first tip, scored with actual FanDuel points against a simulated field scored with the '
+                          'same results. Cashes = top 22%, top1 = top 1%; ROI uses the Piggy Bank payout model.'})
+    path.write_text(json.dumps(res, indent=1) + '\n', encoding='utf-8')
+    return res
+
+
 def main():
     corr = {**(read(DATA / 'model_params.json').get('corr') or {}), **(read(DATA / 'lineup_results.json').get('calibration') or {})}
     nights, summ = history()
@@ -389,7 +480,18 @@ def main():
                       'lines are the field percentiles each contest pays.'}
     (DATA / 'contest_history.json').write_text(json.dumps(hist, indent=1) + '\n', encoding='utf-8')
     print(json.dumps({'economics': econ, 'summary': summ}, indent=1))
+    grade_portfolios(corr)
     lv = live(corr, summ.get('odds_shift_per_player'))
+    if isinstance(lv, dict) and lv.get('portfolio'):
+        # freeze tonight's portfolio until the first game tips; that frozen set is what gets graded
+        today = read(DATA / 'today.json')
+        tips = [g['time'] for g in today.get('games', []) if g.get('time')]
+        first = min(dt.datetime.fromisoformat(t.replace('Z', '+00:00')) for t in tips) if tips else None
+        if first and dt.datetime.now(dt.timezone.utc) < first:
+            (DATA / 'portfolios').mkdir(exist_ok=True)
+            (DATA / 'portfolios' / f"{lv['date']}.json").write_text(json.dumps(
+                {'date': lv['date'], 'frozen_at': lv['built_at'], 'lineups': lv['portfolio']['lineups']},
+                separators=(',', ':')) + '\n', encoding='utf-8')
     if lv == 'same':
         print('live: projections unchanged; keeping contest_sims.json')
     elif lv:

@@ -394,8 +394,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch,me]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json'),getJSON('my_entries.json')]);
-  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;S.lr=lr.status==='fulfilled'?lr.value:null;S.cs=cs.status==='fulfilled'?cs.value:null;S.ch=ch.status==='fulfilled'?ch.value:null;S.me=me.status==='fulfilled'?me.value:null;S.csIdx=null;
+  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch,me,pr]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json'),getJSON('my_entries.json'),getJSON('portfolio_results.json')]);
+  S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;S.lr=lr.status==='fulfilled'?lr.value:null;S.cs=cs.status==='fulfilled'?cs.value:null;S.ch=ch.status==='fulfilled'?ch.value:null;S.me=me.status==='fulfilled'?me.value:null;S.pr=pr.status==='fulfilled'?pr.value:null;S.csIdx=null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
   S.inj=inj.status==='fulfilled'?inj.value:null;
@@ -664,7 +664,7 @@ function wireControls(){
   syncExposure();
 }
 function simList(){if(S.source==='csv'||!S.today||S.today.date!==S.day)return [];if(S.format==='single'){const sg=singles().find(x=>x.id===S.sgId);return (sg&&sg.sim_lineups)||[]}return S.today.sim_lineups||[]}
-function syncSim(){const w=$('sim-wrap');if(!w)return;const big=S.count>20&&csReady()&&S.cs.portfolio&&(S.cs.portfolio.lineups||[]).length;
+function syncSim(){const w=$('sim-wrap');if(!w)return;const big=S.count>20&&csReady()&&S.cs.portfolio&&!(S.pr&&S.pr.status==='pull')&&(S.cs.portfolio.lineups||[]).length;
   w.hidden=!(S.mode==='gpp'&&(simList().length||big));$('use-sim').checked=S.useSim;
   w.querySelector('span').textContent=big?`Use NBA EDGE’s LeVertical portfolio: ${S.cs.portfolio.lineups.length} lineups picked for how often they beat 99% of the simulated FanDuel field, with each player’s exposure held near how often he’s in winning lineups.`:'Start from simulated winners: lineups that finished in the top 5% most often across thousands of simulated nights (teammates and opponents rise and fall together).'}
 function syncExposure(){const on=S.count>1;$('exposure').disabled=!on;$('exposure').closest('.range-row').style.opacity=on?1:.4}
@@ -759,7 +759,7 @@ async function build(){
     const capNow=S.format==='single'?S.cfg.sgCap:CAP,teamMax=S.format==='single'?5:Math.min(MAX_TEAM,S.cfg.maxTeam);
     // Big tournament sets: NBA EDGE's LeVertical portfolio (pipeline): highest top-1% equity vs the
     // simulated field, each player's exposure held near his optimal rate.
-    const port=(S.mode==='gpp'&&S.useSim&&!S.review&&S.count>20&&csReady()&&S.cs.portfolio&&S.cs.portfolio.lineups)||null;
+    const port=(S.mode==='gpp'&&S.useSim&&!S.review&&S.count>20&&csReady()&&S.cs.portfolio&&!(S.pr&&S.pr.status==='pull')&&S.cs.portfolio.lineups)||null;
     if(port){
       const byK=new Map(pool.map(p=>[pnorm(p.name)+'|'+p.team,p]));
       for(const c of port){
@@ -1099,11 +1099,11 @@ $('build').onclick=build;
 // ---------- accuracy ----------
 function renderAccuracy(){
   const box=$('accuracy'),a=S.acc;
-  if(!a||!a.summary_7d){box.innerHTML=resultsHTML()+lineupsHTML()+strategyHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
+  if(!a||!a.summary_7d){box.innerHTML=resultsHTML()+lineupsHTML()+portfolioHTML()+strategyHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
   const s=a.summary_7d,beat=s.naive_mae&&s.mae<s.naive_mae;
   const days=a.days.slice(-7),maxv=Math.max(...days.map(d=>Math.max(d.mae,d.naive_mae||0)),1);
   const last=a.days[a.days.length-1];
-  box.innerHTML=resultsHTML()+lineupsHTML()+strategyHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
+  box.innerHTML=resultsHTML()+lineupsHTML()+portfolioHTML()+strategyHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
   <p style="margin:0 0 6px;font-size:14px">${beat?`Over the last ${s.days} days the model missed by ${(s.naive_mae-s.mae).toFixed(1)} fewer fantasy points per player than just using each player’s season average.`:`Over the last ${s.days} days the model hasn’t beaten a plain season average yet.`} It ran ${s.bias>0?'low':'high'} by ${Math.abs(s.bias).toFixed(1)} points on average and missed minutes by ${s.minutes_mae.toFixed(1)}.</p>
   <div class="bars" role="img" aria-label="Daily average miss, model vs season average">${days.map(d=>`<div class="bar"><div class="pair"><i class="m" style="height:${d.mae/maxv*64}px" title="Model ${d.mae}"></i><i class="n" style="height:${(d.naive_mae||0)/maxv*64}px" title="Season average ${d.naive_mae}"></i></div>${new Date(d.date+'T12:00:00').toLocaleDateString([], {month:'numeric',day:'numeric'})}${d.backtest?'*':''}</div>`).join('')}</div>
   <div class="legend"><i style="background:var(--orange);margin-left:0"></i>Model<i style="background:var(--line)"></i>Season average</div>
@@ -1124,6 +1124,17 @@ function lineupsHTML(){
   ${table('classic')}${table('single')}
   <p style="margin:0 0 6px;font-size:13.5px">What it learned: ${c.shift_classic!=null?`players it picks on the main slate land ${Math.abs(c.shift_classic).toFixed(1)} points ${c.shift_classic<0?'below':'above'} projection on average (the hottest projections are the likeliest to be too high), so lineup ranges are re-centered. `:''}${c.sd_scale?`Real outcomes are ${c.sd_scale>=1?Math.round((c.sd_scale-1)*100)+'% wider':Math.round((1-c.sd_scale)*100)+'% narrower'} than the simulator assumed, so all simulations now use that spread.`:''}</p>
   <details style="font-size:13.5px"><summary>Each slate</summary><table style="margin-top:6px;width:100%"><tbody>${[...r.slates].reverse().slice(0,20).map(x=>{const t=x.lineups.find(g=>g.strategy==='tournament')||x.lineups[0];return `<tr><td style="text-align:left">${new Date(x.date+'T12:00:00').toLocaleDateString([], {month:'numeric',day:'numeric'})} ${esc(x.format==='single'?x.label:'Main')}${x.rebuilt?'*':''}</td><td class="n">${t.proj}</td><td class="n"><b>${t.actual}</b></td><td class="n">best ${x.hindsight_best?x.hindsight_best.score:'–'}</td></tr>`}).join('')}</tbody></table><p class="muted" style="margin:4px 0 0">Tournament lineup shown. * Rebuilt from the projections saved before tip-off (before live recording started).</p></details>`;
+}
+function portfolioHTML(){
+  const r=S.pr;if(!r||!r.summary||!r.summary.all||!r.summary.all.nights)return '';
+  const a=r.summary.all,l=r.summary.live,f=(v,d=1)=>v==null?'–':Number(v).toFixed(d),roi=v=>v==null?'–':(v>=0?'+':'')+Math.round(v*100)+'%';
+  const rows=[['Best of 150 (avg)','best',1],['Lineups that cashed (per night)','cashes',1],['Top-1% finishes (per night)','top1',2]];
+  return `<h3 style="font:600 18px var(--num);margin:16px 0 4px">LeVertical portfolio record</h3>
+  <p style="margin:0 0 4px;font-size:14px">Each night NBA EDGE's 150-lineup portfolio is frozen at the first tip and graded with real results, next to the previous 150-lineup method rebuilt for the same night. ${l.nights?`${l.nights} live night${l.nights>1?'s':''} plus ${a.nights-l.nights} backtest nights.`:`${a.nights} backtest nights so far; live nights start with the next slate.`}</p>
+  <table style="margin:6px 0 8px;font-size:13.5px;width:100%"><thead><tr><th style="text-align:left"></th><th class="n">Portfolio</th><th class="n">Previous</th></tr></thead><tbody>
+  ${rows.map(([t,k,d])=>`<tr><td style="text-align:left">${t}</td><td class="n"><b>${f(a['portfolio_'+k],d)}</b></td><td class="n">${f(a['previous_method_'+k],d)}</td></tr>`).join('')}
+  <tr><td style="text-align:left">Est. return, penny tournament</td><td class="n"><b>${roi(a.portfolio_penny_roi)}</b></td><td class="n">${roi(a.previous_method_penny_roi)}</td></tr></tbody></table>
+  <p class="muted" style="font-size:12px;margin:0">${r.status==='pull'?'After 10+ live nights the previous method did better, so the portfolio is switched off for 150-lineup builds.':'The portfolio stays on unless 10+ live nights show the previous method doing better.'} Scored against a simulated FanDuel field using the same results; returns use a standard payout curve that undercounts the very top prizes.</p>`;
 }
 function strategyHTML(){
   const t=S.st;if(!t||!t.tournament)return '';
