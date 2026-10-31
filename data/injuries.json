@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T21:19:22.069900+00:00",
+  "updated_at": "2026-10-31T21:56:11.994787+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -168,6 +168,11 @@
       "status": "OUT"
     },
     {
+      "name": "Ivica Zubac",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
       "name": "Aaron Nesmith",
       "team": "IND",
       "status": "DAY-TO-DAY"
@@ -184,11 +189,6 @@
     },
     {
       "name": "Johnny Furphy",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Ivica Zubac",
       "team": "IND",
       "status": "OUT"
     },
@@ -268,6 +268,11 @@
       "status": "OUT"
     },
     {
+      "name": "Dejounte Murray",
+      "team": "NOP",
+      "status": "OUT"
+    },
+    {
       "name": "Yves Missi",
       "team": "NOP",
       "status": "OUT"
@@ -338,17 +343,7 @@
       "status": "OUT"
     },
     {
-      "name": "Jabari Walker",
-      "team": "PHI",
-      "status": "OUT"
-    },
-    {
       "name": "LeBron James",
-      "team": "PHI",
-      "status": "OUT"
-    },
-    {
-      "name": "Tacko Fall",
       "team": "PHI",
       "status": "OUT"
     },
@@ -356,11 +351,6 @@
       "name": "Joel Embiid",
       "team": "PHI",
       "status": "OUT"
-    },
-    {
-      "name": "Jaylen Brown",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dominick Barlow",
