@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T14:17:45.134969+00:00",
+  "updated_at": "2026-10-31T14:55:37.288839+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -303,12 +303,12 @@
       "status": "OUT"
     },
     {
-      "name": "LeBron James",
+      "name": "Joel Embiid",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Joel Embiid",
+      "name": "LeBron James",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
