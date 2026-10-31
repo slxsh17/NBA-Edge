@@ -1,6 +1,6 @@
 {
   "date": "20261030",
-  "updated_at": "2026-10-30T22:33:26.139363-04:00",
+  "updated_at": "2026-10-30T23:29:56.838520-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -37,13 +37,13 @@
       "away": "Indiana Pacers",
       "home": "Miami Heat",
       "time": "2026-10-31T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Houston Rockets",
       "home": "Dallas Mavericks",
       "time": "2026-10-31T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "LA Clippers",
@@ -55,13 +55,13 @@
       "away": "Los Angeles Lakers",
       "home": "Golden State Warriors",
       "time": "2026-10-31T02:00Z",
-      "status": "In Progress"
+      "status": "Halftime"
     },
     {
       "away": "Denver Nuggets",
       "home": "Phoenix Suns",
       "time": "2026-10-31T02:00Z",
-      "status": "End of Period"
+      "status": "In Progress"
     }
   ]
 }
