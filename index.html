@@ -114,6 +114,8 @@ input[type=range]{width:100%;accent-color:var(--orange)}
 .odds{font-size:12.5px;padding:6px 14px;border-bottom:1px solid var(--soft);color:var(--muted)}
 .odds b{color:var(--ink)}
 .odds .fit{color:var(--orange);font-weight:600}
+.plan-top{font-size:13.5px;line-height:1.45;padding:9px 12px;margin:10px 0;border:1px solid var(--line);border-radius:10px;background:var(--orange-soft)}
+.plan-top a{color:var(--orange);font-weight:600}
 #where{margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
 #where h3{font:600 18px var(--num);margin:0 0 6px}
 #where table{width:100%;font-size:13.5px;margin:6px 0}
@@ -271,6 +273,7 @@ details summary{cursor:pointer}
       <label class="check" id="review-wrap" hidden><input type="checkbox" id="review"><span>Include games that already started, to see what the lineup would have been. You can’t enter these on FanDuel.</span></label>
       <button class="btn primary" id="build" type="button">Build lineups</button>
       <div id="build-status" role="status"></div>
+      <div id="plan-top"></div>
       <div id="lineups"></div>
       <div id="fd-export" hidden><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="fd-export-btn" type="button">Download for FanDuel</button><button class="btn" id="enter-all" type="button">I entered all of these</button></div><div class="muted" id="fd-export-msg"></div></div>
       <div id="exposure-summary"></div>
@@ -989,9 +992,10 @@ function contestOdds(picks){
   return {du:du/n,ff:ff/n,gc:gc/n,t1:t1/n};
 }
 const pct=v=>v>=0.995?'99%+':(v*100<1&&v>0?(v*100).toFixed(1):Math.round(v*100))+'%';
-function fitOf(o){if(!o)return '';if(o.du>=0.55)return 'Cash games (Double Ups)';if(o.t1>=0.015)return 'Tournaments';if(o.du>=0.5)return 'Double Ups, small';return 'Tournaments only, small'}
+// A Double Up pays 2x, so it needs a 50% win rate to break even.
+function fitOf(o){if(!o)return '';if(o.du>=0.55)return 'Good for Double Ups';if(o.du>=0.5)return 'Double Ups: about break-even, small stakes';if(o.t1>=0.015)return 'Skip Double Ups · tournaments';return 'Skip Double Ups · small tournament stakes'}
 function oddsRow(picks){const o=contestOdds(picks);if(!o)return '';
-  return `<div class="odds">Double Up win <b>${pct(o.du)}</b> · Tournament cash <b>${pct(o.gc)}</b> · Top 1% <b>${pct(o.t1)}</b> · <span class="fit">${fitOf(o)}</span></div>`}
+  return `<div class="odds">Double Up win <b>${pct(o.du)}</b> <span style="font-size:11.5px">(needs 50%)</span> · Tournament cash <b>${pct(o.gc)}</b> · Top 1% <b>${pct(o.t1)}</b> · <span class="fit">${fitOf(o)}</span></div>`}
 // Contest simulator: every FanDuel contest type (data/contest_sims.json catalog) scored against
 // its own simulated field (sharp for Double Ups and big tournaments, softer for small single-entry
 // ones) on 300 simulated nights, with the same payout model as the pipeline.
@@ -1021,7 +1025,7 @@ function bankroll(){const v=Number(store.get('bankroll',400));return v>0?v:400}
 function riskPct(){const v=Number(store.get('riskPct',5));return v>0&&v<=50?v:5}
 function feeSplit(amount,fees){const out=[];let left=amount;for(const f of [...fees].sort((a,b)=>b-a)){while(left>=f-1e-9&&out.length<12){out.push(f);left-=f}}return out}
 function renderWhere(){
-  const box=$('where');if(!box)return;
+  const box=$('where');if(!box)return;const top=$('plan-top');if(top)top.innerHTML='';
   const src=(S.entries||[]).length?S.entries:S.lineups;
   if(!src.length){box.innerHTML='';return}
   if(!csReady()||!S.cs.catalog){box.innerHTML=S.format==='single'?'<p class="muted" style="font-size:13px">Contest odds are for the main slate for now.</p>':'';return}
@@ -1045,6 +1049,10 @@ function renderWhere(){
     if(x.k.max===1){const fees=feeSplit(amt,x.k.fees);if(!fees.length)continue;what=`${fees.length>1?fees.length+' different contests ('+fees.map(f=>'$'+f).join(', ')+')':'one $'+fees[0]+' contest'} with lineup ${x.use[0].i+1}`;rows.push([x,what,fees.reduce((a,b)=>a+b,0)])}
     else{const fee=x.k.fees.find(f=>f*Math.min(x.use.length,x.k.max)<=amt+1e-9)||Math.min(...x.k.fees);const n=Math.max(1,Math.min(x.use.length,Math.floor(amt/fee+1e-9)));if(n*fee>amt+1e-9&&n===1&&fee>amt)continue;what=`${n} entr${n>1?'ies':'y'} × $${fee} with your top ${n} lineup${n>1?'s':''}`;rows.push([x,what,n*fee])}}
   const spent=rows.reduce((a,r)=>a+r[2],0);
+  // Same plan, one line, above the lineups, so it's the first thing seen before entering.
+  if(top){const weak=evs.map(x=>({x,o:contestOdds(x.l.picks)})).filter(y=>y.o&&y.o.du<0.5).slice(0,3);
+    const skip=weak.length?` Skip Double Ups and 50/50s with ${weak.map(y=>`${src===S.entries?'entry':'lineup'} ${y.x.i+1} (wins ${pct(y.o.du)}, needs 50%)`).join(', ')}.`:'';
+    top.innerHTML=`<div class="plan-top">${rows.length?`<b>Tonight’s plan: ${money(Math.round(spent*100)/100)} total</b> (${(spent/B*100).toFixed(1)}% of bankroll) in ${rows.map(r=>esc(r[0].k.name)).join(', ')}.`:`<b>Tonight’s plan: sit out, or $1–2 for fun.</b> No contest type has a positive expected return for these lineups.`}${skip} <a href="#where">Details</a></div>`}
   const all=[...plan].sort((a,b)=>b.ev-a.ev).map(x=>`<tr><td>${esc(x.k.name)}<div class="muted" style="font-size:12px">${esc(x.k.examples)} · ${x.k.field==='sharp'?'sharp field':'softer field'}</div></td><td class="n">${x.ev>=1?'+':''}${Math.round((x.ev-1)*100)}%</td><td class="n">${pct(x.cash)}</td></tr>`).join('');
   box.innerHTML=`<h3>Where to enter tonight</h3>
   <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:13.5px"><label>Bankroll $<input id="bankroll" type="number" min="10" step="10" inputmode="decimal" value="${B}"></label><label>Risk tonight <input id="riskpct" type="number" min="1" max="25" step="1" inputmode="decimal" value="${R}" style="width:56px;font:inherit;font-size:15px;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)">%</label></div>

@@ -156,6 +156,62 @@
      "won": 0.51
     }
    ]
+  },
+  {
+   "date": "2026-10-30",
+   "slate": "Main",
+   "entry": "Cash lineup",
+   "players": [
+    "Fred VanVleet",
+    "Andrew Nembhard",
+    "Kelly Oubre",
+    "Caleb Wilson",
+    "Joel Embiid",
+    "Keaton Wagler",
+    "Giannis Antetokounmpo",
+    "Immanuel Quickley",
+    "Derrick White"
+   ],
+   "projected": 300.8,
+   "score": 309.0,
+   "final": true,
+   "note": "Score computed from final box scores (no screenshot of results yet); assumes no late swaps. The site rated it 33% to win a Double Up before lock.",
+   "contests": [
+    {
+     "name": "Cash contests",
+     "entries": 3,
+     "fee": 22,
+     "won": 0
+    }
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "slate": "Main",
+   "entry": "Tournament lineup",
+   "players": [
+    "Mikel Brown",
+    "Keaton Wagler",
+    "Kevin Durant",
+    "Caleb Wilson",
+    "Bam Adebayo",
+    "Cade Cunningham",
+    "LeBron James",
+    "Aaron Nesmith",
+    "Fred VanVleet"
+   ],
+   "projected": 294.0,
+   "score": 289.9,
+   "final": true,
+   "note": "Score computed from final box scores (no screenshot of results yet); assumes no late swaps.",
+   "contests": [
+    {
+     "name": "Tournaments",
+     "entries": 3,
+     "fee": 9,
+     "won": 0
+    }
+   ]
   }
  ]
 }
