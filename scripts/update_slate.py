@@ -88,7 +88,7 @@ def fetch(url):
 
 
 def parse(page, day, strict_main=True, min_players=18, min_salary=3000):
-    if strict_main and not re.search(r"window\.slate\s*=\s*'Main'", page):
+    if strict_main and not re.search(r"window\.slate\s*=\s*'Main", page):
         raise ValueError('page is not the Main slate')
     players, seen = [], set()
     for tag in ROW.findall(page):
@@ -143,6 +143,49 @@ def next_id(sid):
     if last.isdigit() and last != '9':
         return head + str(int(last) + 1)
     return b36(int(head, 36) + 1) + '0'
+
+
+def prev_id(sid):
+    """Inverse of next_id: 21360 -> 21359, 212A4 -> 212A3."""
+    head, last = sid[:-1], sid[-1]
+    if last.isdigit() and last != '0':
+        return head + str(int(last) - 1)
+    return b36(int(head, 36) - 1) + '9'
+
+
+MAIN_URL = 'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/?slate={sid}'
+
+
+def find_main(day, page):
+    """DFF's default page for a date is normally the Main slate, but on days with an early game
+    (e.g. a 3 PM tip) it can open on another slate. Look for the Main slate among the slate IDs
+    the page links to, then neighbouring IDs (DFF numbers a day's slates consecutively)."""
+    import time
+    start = page_var(page, 'url')
+    cands = []
+    for sid in re.findall(r'[?&]slate=([0-9A-Za-z]{4,8})', page):
+        if sid != start and sid not in cands:
+            cands.append(sid)
+    if start:
+        f = b = start
+        for _ in range(8):
+            f, b = next_id(f), prev_id(b)
+            cands += [x for x in (f, b) if x not in cands]
+    for sid in cands[:30]:
+        try:
+            pg = fetch(MAIN_URL.format(day=day, sid=sid))
+        except Exception:
+            continue
+        time.sleep(1)
+        if not re.search(r"window\.slate\s*=\s*'Main", pg) or page_var(pg, 'url_start_date') not in ('', day):
+            continue
+        try:
+            players = parse(pg, day)
+        except ValueError:
+            continue
+        print(f'Default page was the {page_var(page, "slate") or "?"} slate; using Main slate {sid}')
+        return pg, players, MAIN_URL.format(day=day, sid=sid)
+    raise ValueError(f'default page is the {page_var(page, "slate") or "?"} slate and no Main slate was found near ID {start or "?"}')
 
 
 def page_var(page, name):
@@ -265,7 +308,12 @@ def main():
     url = f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/'
     try:
         main_page = fetch(url)
-        players = parse(main_page, day)
+        try:
+            players = parse(main_page, day)
+        except ValueError as e:
+            if 'not the Main slate' not in str(e):
+                raise
+            main_page, players, url = find_main(day, main_page)
     except Exception as e:  # keep whatever is already published; never write a partial slate
         # Fail the workflow (red X in GitHub Actions) so a broken source is visible.
         print(f'::error::No slate published for {day}: {e}')
