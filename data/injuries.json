@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T20:40:18.454236+00:00",
+  "updated_at": "2026-10-31T21:19:22.069900+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -13,8 +13,18 @@
       "status": "OUT"
     },
     {
+      "name": "Mitchell Robinson",
+      "team": "BOS",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Devin Carter",
       "team": "BOS",
+      "status": "OUT"
+    },
+    {
+      "name": "Mikel Brown Jr.",
+      "team": "BKN",
       "status": "OUT"
     },
     {
@@ -156,6 +166,11 @@
       "name": "Steven Adams",
       "team": "HOU",
       "status": "OUT"
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Obi Toppin",
