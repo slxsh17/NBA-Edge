@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T17:52:07.794863+00:00",
+  "updated_at": "2026-10-31T18:34:45.503575+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -223,6 +223,11 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Rudy Gobert",
+      "team": "MIN",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Anthony Edwards",
       "team": "MIN",
       "status": "OUT"
@@ -343,16 +348,6 @@
       "status": "OUT"
     },
     {
-      "name": "Robert Williams III",
-      "team": "POR",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Chris Youngblood",
-      "team": "POR",
-      "status": "OUT"
-    },
-    {
       "name": "Ja Morant",
       "team": "POR",
       "status": "OUT"
@@ -401,11 +396,6 @@
       "name": "Nate Bittle",
       "team": "TOR",
       "status": "OUT"
-    },
-    {
-      "name": "Lauri Markkanen",
-      "team": "UTA",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaren Jackson Jr.",
