@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-31",
-  "checked_at": "2026-10-31T20:57:51.080713+00:00",
+  "checked_at": "2026-10-31T21:24:47.824487+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "The Suns have no choice but to change their starting lineup - Valley of the Suns",
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUFE3bW54THR3clZLcU1STTVfc1RzTHMtbU9OUFBLNFYwZEJ4MkhqbE9hLTVoSUxzOENyUDV0aUZSUk9QaXY5V2h5TWZsQWlfRi1tN19HWFA4Mm9PdUNXMlhlMklkV1FySDhuUGxDV0hMQ0NkUlRjN05kc0NFRG80eQ?oc=5",
+      "published_at": "2026-10-31T21:06:34+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
     {
       "headline": "Celtics injury report: Mitchell Robinson listed for Magic game Sunday - MassLive",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcHA2TWZ1VWItT0Y1V1RLRDBXTVFWd0ZTQWFld0s2cS0yVXdGRnFVTFg5aFh3MFdtdXJob0cwZi16Ty1vNDVTS0FwZXZvV09lTVRMUk5RWFY0ZG5aWS12VmlDc01STzBINm0xLW5Nbk1lNUZnOHpxZ0E2WDN1TnE5Yk9KSnZNNjBrWUJ5MzBkSXRucWpySjg0YmhZRVJUa0tpZ2xNc1AyZHpzeFVvZWE4eGNyQ2g?oc=5",
@@ -94,6 +102,14 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Jaylen Brown, Tacko Fall questionable, Joel Embiid, LeBron James ruled OUT for Sixers-Hornets - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNLUhQTVhNT3haWkk3dTNHQ1NaV194RFcxRzVLY3pORF9zM2ZSLW5wcTBUbmIyWVBEWjQ0WVZtTHZDd2pUNEpDUVdiaTliY1pVWXliYjVVZXNxVWRLQnVhMEJudGlXN1p4MVVPSFp2dHZxR0s2Q3VsQlRRUXpwLVFnSGREWkdGcnJXaUNveGd3?oc=5",
+      "published_at": "2026-10-31T17:18:28+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "LeBron James Ruled Out Saturday Against Charlotte - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUlRUbF9oamRjS3ZmR2pJZzhPZWhqQXZvbWxRZXB2RDkwd0NuOHJ3eW1fUDNJZjgtVGsyZm1YdU5NVEZQc3dvQ2l1SDlKOFJHZmVfS2wzVGw3N1FZN19NVGJMREJwNmN4X1VjX1ZEVnBXT1Yyek9YQ0ZHVWNtZlhqYnZXS2V5Wl8zNi1OVzFlWmU3UlJjQVRQTXdsaHk?oc=5",
       "published_at": "2026-10-31T17:17:12+00:00",
@@ -113,14 +129,6 @@
       "headline": "Jaylen Brown Injury: Questionable for Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQclhmOVItbVBMSkd3V3pKZWllQ1Z0dzRsRlZSeTRjYkVNSnR6WEphU2xWMzZrWVF0dnB1dUw5OFYwMFZVU2RNVjI1ZHNBLVJvYzYxUHRkUThEeVg5LXhtNHRObzNOMDFsVGFUM1l3UGlETkNTX3dUOHZ6cEpYNzZEcUlwVVJWeFlXV3FpRU84WUROV1g1R0JvVmtxa0Y3SzQ?oc=5",
       "published_at": "2026-10-31T17:08:32+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "NBA injury report: Ja Morant, Shaedon Sharpe out Saturday - TalkBasket.net",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPR2dWaEpjRkFfTms0N1BYRzJpVWN5NWRSMVItM3dnSnBVdU9qdWY2UWRhTFFxdjV2Y1labmo3eHFPcHl1NlMxRGkzeFY1RHpfbmdhLWdQSEJNeF9MakYwRTRTdG83RmNRWC1rbGRnY2pGbENDd0tYYXVsbjg1d00xVkZPX2Q3TWRaMnd4QXFJQzAxaUk?oc=5",
-      "published_at": "2026-10-31T15:21:08+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -190,9 +198,9 @@
       "scope_date": "2026-10-31"
     },
     {
-      "headline": "NBA Cup: Boston Celtics Earn Victory to Start Pool Play - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZzhUQ1Zhcm5aTU1YV19DQU90bC05aDE0cEJKSnI4VllvaWVaT3ZQNVlYWUNXNWhxYjNzQU1JeFlFNWZ4dXd4V0RxVFJXNlpHd3dxMi0xYlh5elZBYXEwRjJEYjE1Z1BURGpaendGTTNObHJPMlAtTUZ2Wmg5emplTFVB?oc=5",
-      "published_at": "2026-10-31T02:32:00+00:00",
+      "headline": "NBA Cup: Boston Celtics Earn Victory to Start Pool Play - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZElLRVhHWFBPcXdtbEUxYVcxRmlvT25HdU9kb1N0OWx6SjRUUTlDc1pqR3NWMUZoVW1LUE9OVG5GVFRDSlZ3WUhaRlpfTUpmOUIzQXJaMUxUd0lHRFd5cWE4b1JyZ1VlRXdtZlpsai1lM2YzQU9FRlktb01RNGZoajgwbEp4YTRfZC1MZFBDRnJaWDd4QTZrSGF5cWRkQ1lnN1E?oc=5",
+      "published_at": "2026-10-31T02:34:19+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -393,30 +401,6 @@
       "headline": "Jordan Poole Injury: Ruled out for Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQejl0SzBVRkZmejdvZkNROWNsVmZiejRXZVZZdXR5V1Facmk0VlplemFjUzlmZFE0OUY4eFJsSDJKc1hQNzcxTkgxdW8ta1JwUjAwdTBBUExreFNDalBLbGtpNm1XOVlaUVh3cXA1QVN3UWV2VXVLUVFUUGpTZXZSYUZXMEhZMk51LUpwcDhKOWtVMkRmMTlraDhiUQ?oc=5",
       "published_at": "2026-10-30T21:25:12+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "Timberwolves Make Call on Two Young Rotation Pieces - Minnesota Sports Fan",
-      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNR1FtN2dQdWcwQkU2MldCZnVRcXZfc21GN3YzX0lBUWo0U1l5VUZXZ1oyNXNLSjctbTFobUFzeHNjc2tEaDBObVUtejZPdEJkNmZ2Vzl3Ykp6NFZma0s1azRzYVktbkpWc2tSNnpEZkZJcUUtRHo3ZUt0RFBGSDFXR1JnR0ZldXFFX01icjZ6LXBpTzR6MU5UTkd2X0daMXhnWHZnUDVQYzY?oc=5",
-      "published_at": "2026-10-30T21:20:53+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "NBA Injury Report: Who to add with Anthony Edwards, Tyrese Haliburton, Ja Morant and other stars sidelined - Yahoo",
-      "source_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQTc0QkN2VnpwRTF4TzZ1TE0zLWZTcnY0STJzY2xEaF9qVUYxVnNxdmhBVE9EbEtrZUdzUHR6V0Z1MkNRM29BS0hnYWtKRWw4Z3owQlhNb0FjUkZ2NWl1RVFNQTkwLVhWaGRmNVpvSWRYdXFYX2hfNGtTR0VUMkVSNWJ0d0daeG9CRGZVNUlNYkg2M0Q0LXlnTHo0TmVhY29JSnh0Q2VaWm85VDZ1N3JFSjNLcEpiXzBoaFpEQkJhaXJLc2dWZDlxWG9wenlCNGVSaVJQMmRvWXppRlJtRDZPcU5EbDBMZw?oc=5",
-      "published_at": "2026-10-30T21:03:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
-      "headline": "Bulls Will Start NBA Cup Play Against Celtics, And That's a Very Scary Thought - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeEgwbEVQQTlvS2MzbjQ1VTZhUXpDaExTWlNYemVxcW1ocXQwbnEzZjQ5SFhSdTlrMGlXb0xlZmJKRldKdlpad2Zzc0RwaFlRNWVYa1YwWV9BTWtCRjlONERINWVxNi01VFhsZmZmRWlwV2ltNGV2dlBlcGh4UndOb0ZPUGtwT291eS1Sc21YR2RJVHBmS3dRVExCMGJLM3hnSDFCVFJDdGhLYVhkRkU2alh2b0o?oc=5",
-      "published_at": "2026-10-30T21:00:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
