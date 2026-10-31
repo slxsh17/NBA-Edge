@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-31",
-  "checked_at": "2026-10-31T11:57:08.148060+00:00",
+  "checked_at": "2026-10-31T12:29:36.543610+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Jaylen Brown’s Injury Addressed Before 76ers-Knicks Game - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa1pZRFdBMHB3YjJSbkVmTjNvWmFLanRpNm13T2l5NnZybW9GS0tIMEJvRGItZXppdDdWc0ZTMVlHcVFranlyMzMxS1BGQzdOSFVpeXhmZzVscXg5Z3ZBNER4NVFJd21TX1NFQ09GMVgtTl9MbW9xTXdvTHdRNkt3NDlWVnB3ZU55bmY1MHlvbHVLb1pNaWtkYWxpNnA?oc=5",
+      "published_at": "2026-10-31T11:15:29+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
     {
       "headline": "Examining center rotation, NBA Cup, Boston Children’s Hospital (Celtics Notebook) - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOY2VZaGYxV0VDd082b2pCRnpBcWFkZlE4TjRKSnRDUkpCV2xZWldtMzdxSFc3NncxUzNESzE0d1Z0Q2NiMnZleEl3Smx5SzBLa050NzViS01MSk5xdWFOaTFrUTdxUXRxN18xOW5ZT3BWMl84RUtTV0NLQUlZWURpYTRoVHg3STNHcEE?oc=5",
@@ -78,6 +86,14 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Thunder injuries pile up as Chet Holmgren suffers major injury - Flashscore.co.za",
+      "source_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQU53N3d1Uk5hZm1Gb1Y5U2hOWXRsbkFISFBNMEVhOS1GRzRLaS1qSzg3WUxWMEZmRU9wa1Z0NWo2UFVwNTNVTF9ZZkhndmtyZUZ0b09SdmVYWVNmcXlQS2JFTWNVSmlFd2MwZlV3YWFjZW5VOUxSNEtUblJYdHVPOXJqWFl2NVk1RlpZcXltLWhqNGRZbGdhNDVkOVlsSHhVUXJzeU05YU1RVnYyRDVZVDZXT29VdGw1R1haeU9ZdE51TFdoaXFiQWxja2wzbG0zdXFxdnp6X21pUQ?oc=5",
+      "published_at": "2026-10-31T03:35:47+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "NBA Cup: Boston Celtics Earn Victory to Start Pool Play - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZElLRVhHWFBPcXdtbEUxYVcxRmlvT25HdU9kb1N0OWx6SjRUUTlDc1pqR3NWMUZoVW1LUE9OVG5GVFRDSlZ3WUhaRlpfTUpmOUIzQXJaMUxUd0lHRFd5cWE4b1JyZ1VlRXdtZlpsai1lM2YzQU9FRlktb01RNGZoajgwbEp4YTRfZC1MZFBDRnJaWDd4QTZrSGF5cWRkQ1lnN1E?oc=5",
       "published_at": "2026-10-31T02:34:19+00:00",
@@ -102,6 +118,22 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Chet Holmgren ruled out 8-10 weeks as Thunder’s injury crisis continues to worsen - Basketball Network",
+      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaGdDRXRvcmNlTUFuYWJNUnkwbTBCbXdvSHlpRDc1SDR6XzJwakxzMDIxdGhXMnNrbEU3QmppNEhFYnJCX0tmcnBBeWJUNjIxd3FHZVRGLUtGRTZQYXo0UzlObk9ISG5YcDBKV3MtaExFZm1yWHEzc3lrSkloWW1qWUF2MkI5RS1kQmtROVRIT2hlVmtjajNLVnVTVmhvRzc3LWRNVDRJbjVnMnc2d1Y2S1FUbnZBMU1SZ3ZfOW4yS0xQZE9U?oc=5",
+      "published_at": "2026-10-31T01:27:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Alperen Şengün will not play against Mavs - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY1Z1a3ZYRENnQnNZa1I2ZFdydmRmU0JxT2EySnBMTkVJazdIZk5iQklNT3NyOGJfclNjdTQwZU1LU0lDOHpwQ3V2eVppSEZiWXNNYl8zenpINER0V2pLWFNRWEVzWEpFWTZEQ0ljMUZxTjZlY3Znc0QyV3k1eFBKM0xYX2R6MFpaZ1g5ME5VXy00UFZ3Z3dZdEhmVlRkRnBfOU4ta2I4blB0N0wtRlE?oc=5",
+      "published_at": "2026-10-31T01:13:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "Cavs injury report: Jaylon Tyson out, Meleek Thomas questionable vs. Bucks - Cavaliers Nation",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSnBKT1ZKQTVQOV94eFNxc3Y5cmRrMmRYX2p3WGNmbWtGdnhlcEpqLXp4MTZJQ21seTFHdHdWT1NXS2xYQ2YwT09TelhYQzRhbVBqSmFxdTd3aGYtNTZmUFBsS0E3ZEZabEh3QmQwdUtpa0xjN1k1dzYwTWF5T1RyN1hjeGVTcnp6T1FVUEhOOV9DX1VmVzhLS19UQXpDdGlheFM4LUw2ZnJnS3ZRVk83cw?oc=5",
       "published_at": "2026-10-31T00:26:56+00:00",
@@ -113,6 +145,14 @@
       "headline": "Nets’ Jordi Fernandez reveals motivation behind moving Nolan Traore into starting lineup - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbTNpUTdjeXhqeWdfYmlpNDBvcjFGcTN4OUpmbmpDM0YxLW1qdnZ4T05ESVpQbURnSGM5UzZ4UDZCU3U3eWowVC0yQXVEUDl6eWR1NWY2VXp2ZzM0RlZTaVBpNDA4elQ1MjFRZHNKUEY0SVBjUWFCUXRQdmxiVm1HZ25ha2Etc1hSY2dmbkhHVmxKdw?oc=5",
       "published_at": "2026-10-31T00:11:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Jaylen Brown out of 76ers starting lineup with knee soreness Friday; timetable TBD - MassLive",
+      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUlRMYmloNFlqMzJOWHBBYnV1NkRiY0VWNDRpOFVpVDg1VnBpazAtYnl3Um5LUWJ4dFdkT3ZQb2R2ZzdpZmxBZHNnRTdOZGh1UnFWb2J6MmozQXVLRERuNE95RmFjTGtNcG1MN2V4WWU5bUU5NzlGZjQxM1c0VzB5UVo0aXJ1N3dRY2h1VVlXRGpISGUzOWhsRFExRnNUUTB3bzJaeFhvaGx5LV9WVlprTUg1Vmdzdmo0cTctdndBS3lJbzlVekE?oc=5",
+      "published_at": "2026-10-30T23:59:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -190,6 +230,22 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "76ers' Jaylen Brown out for Friday's game vs. Knicks with left patellar tendinopathy - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPc2R4TmlHQWV3X2RjZU83LUVwbkNpeWVaMFN5YnBBYmRNVjlVbm1LSVFqbHF5UnhwMzRpV3FWU25DczNuMHJacGlaVjFfZFpvcGVLSENELTFwWmd4YkFFM2FUM0JTbmV3NURwRm9NZVpGd3ZsMjhTQmdMZHdmejZmSWJ3aDIwazBUaTdGdVZCSWdkbGZsdjQzMngzeXAzbTZSTVlKRVo5QVhsZjZzZ3pIcUQ1dzBvSEJzQThmQlYzNUJfSFdCWGQ5bmNxQUlOZw?oc=5",
+      "published_at": "2026-10-30T22:45:13+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Alperen Sengun Injury: Ruled out Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQnlfNm5iRnlNQ2ZvOWZwaEE0NkMxVG5VbndVNklXM0FUUElwVHUycDNzbERFWXJIeHhxa0cwaVNLMUp1LVlHWXNmcEdVeW02VV9qUHVTdlBaQXcyR1BlZHVuSlNYMklHOG0xVElhTWhFVDBDNVp2M1FncHVCZDI3QmtlNWdwWF9YSnliclAyWnRpM2ZRb3c?oc=5",
+      "published_at": "2026-10-30T22:39:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "Scotty Pippen Injury: Questionable for Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONEZBSkhBRk1ER0lMUE1ud292eDFDY0xTajFrY29qSlFZMmJGdnlsLUh5WnpCd0tEWWJMLUk5YlVPUFNPMUE1Q2hycnl1c3BLY3ptZGNVNUFOY3lEckFKS1JjTU5FWUxUaW5PX0I2Vy0xOUQ2Wjl5NWdsSU1iR1pGUDd2SU15T0NLd1ZRLTFfSGJaTTdQQUttMjRzWDFsOVZM?oc=5",
       "published_at": "2026-10-30T22:35:14+00:00",
@@ -201,6 +257,14 @@
       "headline": "Ty Jerome Injury: Questionable versus Kings - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTi1BY0p5clkyWVExano5QmxtNVZTc0FrTzYxNmVQLTE5YS1YSldzTkRkRWFfekdYUGlwWUI3R0FoTHRTVTlJczl1R1VvR1FLUlJPbmlyNHJoNWpDVF9yYU9MR2RBeUJJQ3p4QUZHaTRIYm5sUGdRVDV4ZmdySFJDbDJNekM4WnpMVG9TVHhOUVFEREhnS2hSNENtZw?oc=5",
       "published_at": "2026-10-30T22:29:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Quinten Post Injury: Doubtful for Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNVZpbzlvbWx5SXhObWp3RlVtNU4yR3d3ekhiU0U1ZHNsaGhqRUVTSVVnWnFtdHJGbnZCS1ZsMmRuNVNIMFBDSHI3VFhhUUF3OFg5eGdBeWl3YWU4d2JPcFNXS1RtV0VHZHhqTndrWXBzbGpzOWVpYjVYeWUzdDczVHJlOHRyanY3T3FtSExhZTBnNGdJUGxuM2tB?oc=5",
+      "published_at": "2026-10-30T22:23:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -241,6 +305,14 @@
       "headline": "Jaylen Brown downgraded to OUT, LeBron, Embiid not listed for Sixers-Knicks Cup matchup - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQLVUzTmNoNTZUdzhjeEtmRU80QTlwbWRaZTFnTU9sYlJoN243N1VVUDVQdkE4eU9NRFc5UWROekt6YnJld3JuS3ZXWlgwczlXZktFYjkxcVhleW9XQmJQbjhHN251bG4yeVpPNERwZ0hjLUZfb3lUSlQydkNXMlNRNUF3bXFYeTBRSWp5VFU4ekp5UQ?oc=5",
       "published_at": "2026-10-30T21:51:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Yves Missi Injury: Ruled out Saturday as expected - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaVNfcW1ZUHlsa25TY3BzeFJwWlZ1MUNCWXVKeWxGemFvRjJFM1VrVVF6cklBN2d6d3V3NXZzQ19ETU5pN2FLUFo3RFpiMUZqM1lmRkJOVFhteGN1QXl6aWRWVU41cFc3d2FSa0tZV0FIQUFjYmlZUXZJWVZOZklCcXhKUkF4WXNZekhiaHJFLTBqSVZTTEdmbWhXTEt4bk15Rmdj?oc=5",
+      "published_at": "2026-10-30T21:32:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -302,9 +374,25 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Isaiah Joe Injury: Ruled out Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRmxFakktUExCMFRUVlFCZGJKQ3hMeE15ZXNHRm9qaWlIdGgwbFgtX1Z4UHFOSWRmN0dTZXRCbDQ4ZjktMHlld1BYVzFFRU56bXlLZTk4RnFOQmNPMG1wWk1aZV8tQXFmd0FGd0txdE9vT1Y3NXg2TjJKOVNPVTBocWdET2FvLXloc1hLNWJBVVo?oc=5",
+      "published_at": "2026-10-30T20:35:48+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "NBA Cup Injury Report: Detroit Pistons Vs. Brooklyn Nets - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNanZ1TE43ZUx2b3lfVzJJQVVxX1RvNGdtQXc3Wm56bGdFdXMtWkdhb0tDVFRSVHZqaTBiVldHWGFyVlJLeWk0NjkwWUNpdEF1WkZrR2xiSEo0S28xZ2RuRVdtRjVCamFjWWpseFh2UFQwOFFCaFl6WUxKUllNa1E0WENjdkF2dDRDZy10T0VaOGk0VHVQd2hUYmRMMmJVX2FaZjJVNjR2bw?oc=5",
       "published_at": "2026-10-30T20:32:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Ziaire Williams (foot) ruled out Friday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYzh4WFRLdndPM193RElQTTMtOVduWmlJakZjOG93UFFza1BlcFQtUVBiblk2X0hpcU9ibDFVc0d6QnF6WG1CMG9PVFFYVWdYUEd1bzRSNnJBY3l1ZXN0bnp1RF9aVFZEVndCVU9LUmpncHRUanRUVVV2UGU4ZkhjSVNsRm9YQTBhbDJsVi130gGTAUFVX3lxTFBVb2J1MGRHWVp6bktqdHI4T0gwYVp3VHEtamxIdTZpNjVfMVRvRVJhcGNZM0dmWHFBWGYteFdqazRweC1odnFmS0dpMGo5UHRKNmpoVnVTa2RoaHBSUGVJN0dLNmVid0NvdS1MZjJPUTFEellaNzBPQ2RHS1otSnJnMEdXX3kzRnV2bk9JWWlRemdxQQ?oc=5",
+      "published_at": "2026-10-30T20:28:50+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -366,6 +454,22 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Mavericks' Injury Report Ahead of NBA Cup Opener Against Houston Rockets - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa1I3dTFYb2JpSFBYRjhCc0Q5YU0wOWR5a1ZESmFkSVY0cTh2TFF5VndleWpRZERJUHRUQmtVZVhQUWMyaFZjbTl4M2RLMWwzQ1FGZFRwcjFGQTZHQXZJTmdYb0dLRE0xSnJkdWdkOC04NkFzTkpxT19xN0lrSjR3V3Q5V3ZxMGFNZUh3aDZmbVNvaFoxTW5Kdks3UG5kZjlESjBWSUxhZFR5VHI3V2M2QmgtNmU?oc=5",
+      "published_at": "2026-10-30T17:05:32+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Noah Clowney is questionable tonight with an illness. - HoopsHype",
+      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc3QzY3RjNVVwaEtBRjc5cXFPbE9QTHR6N0lpdnBmZktIRlpTd0ZDQ3BLYmZ3QTZLVFV4UHlIWDNBdTdhZF9oUHd1aHlCWkszSERKdDdqLXZCWEM0SFRIZmtvX1BFZjR3d21ZMXVmcWFGSjZTNVZ5UFZoTlpUY28zWnRZemoxSExNZDFIOG1JRUJaTFhYUjIySkxyUHpadXRoVGNpUXk1MlZwS2xwYURXSVdCbGhDT2U2SzEwT193akZPblVi?oc=5",
+      "published_at": "2026-10-30T16:07:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "Celtics poised to start storybook NBA Cup run for Brad Stevens - Hardwood Houdini",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYVo5RFJQQVdRVDhiM0RtS1E2MURwRjlxMlVnRDBMamJ0SGgwODFBTy1SRVJNWWpuQlFKd2ppdDJxb0xCSnZRRHFhdm9xZXNRX2J0WEprQW4tSFd3b05TU2FwaHZKZjlRcUE1TnAxMU5tU3k4YTJLRXM3empYaUoyTVFSSWFTb1hfdFlJ?oc=5",
       "published_at": "2026-10-30T15:00:03+00:00",
@@ -385,6 +489,14 @@
       "headline": "NBA injury report: Haliburton, Durant headline Friday’s absences - TalkBasket.net",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ2w5TTlNS1VlYnViaml0NjFSMUZWS2Y0R3Rva0RibU43cncwTXBTSWxZVkt4Q3kxakVFQU9DOGVqREpzTnVlVTljUHdJMEV5RjhfSTdqQmlvTEhDU1FxOGRYSmNkZkhGZTVFdGl3S1MzOURHXzduZTk2dzVRS1Z1ODdVX0pienpDMGZMYkFKMDROZWN0ZlM0?oc=5",
       "published_at": "2026-10-30T14:13:59+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Knicks vs 76ers: Jaylen Brown Ruled Out Friday - Total Apex Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DS1dmd2x6QktiT3V5d1AwNFRNRVRaZVFyU1BiUjA1djZrRGpJamZ2ZGRvanEweHZpRzlGOVZmMDhfaGd3RFBHLWVwTHk3MXJ6eTFPbF9pNjBxXzhfS084Rmo3VDdiNlRUTUhfLQ?oc=5",
+      "published_at": "2026-10-30T13:27:27+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
