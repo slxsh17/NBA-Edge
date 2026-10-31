@@ -188,6 +188,27 @@ def find_main(day, page):
     raise ValueError(f'default page is the {page_var(page, "slate") or "?"} slate and no Main slate was found near ID {start or "?"}')
 
 
+def evening_only(players, day, cutoff_hour=17):
+    """Drop games that tip before 5 PM ET when at least 3 games tip later (FanDuel's Main slate
+    is the evening games)."""
+    times = game_times(day)
+    et = ZoneInfo('America/New_York')
+
+    def hour(p):
+        home, away = (p['team'], p['_opp']) if p['_home'] else (p['_opp'], p['team'])
+        t = times.get((away, home))
+        return dt.datetime.fromisoformat(t.replace('Z', '+00:00')).astimezone(et).hour if t else None
+    games = {}
+    for p in players:
+        games.setdefault(tuple(sorted((p['team'], p['_opp']))), hour(p))
+    late = [g for g, h in games.items() if h is None or h >= cutoff_hour]
+    if len(late) < 3 or len(late) == len(games):
+        return players, f'Using the {len(games)}-game All Day pool.'
+    early = sorted('@'.join(g) for g, h in games.items() if h is not None and h < cutoff_hour)
+    keep = [p for p in players if (hour(p) is None or hour(p) >= cutoff_hour)]
+    return keep, f'Using the All Day pool without afternoon games ({", ".join(early)}): {len(late)} games.'
+
+
 def page_var(page, name):
     m = re.search(r"window\.%s\s*=\s*'([^']*)'" % name, page)
     return m.group(1) if m else ''
@@ -313,7 +334,15 @@ def main():
         except ValueError as e:
             if 'not the Main slate' not in str(e):
                 raise
-            main_page, players, url = find_main(day, main_page)
+            try:
+                main_page, players, url = find_main(day, main_page)
+            except ValueError as e2:
+                # No Main slate listed (Oct 31: an afternoon game, and DFF shows only 'All Day').
+                # FanDuel salaries are the same on every slate, so use that pool minus the
+                # afternoon games; the site still lets you switch any game off.
+                players = parse(main_page, day, strict_main=False)
+                players, note = evening_only(players, day)
+                print(f'::warning::{e2}. {note}')
     except Exception as e:  # keep whatever is already published; never write a partial slate
         # Fail the workflow (red X in GitHub Actions) so a broken source is visible.
         print(f'::error::No slate published for {day}: {e}')
