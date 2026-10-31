@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T00:11:22.245902+00:00",
+  "updated_at": "2026-10-31T01:24:11.519581+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -93,11 +93,6 @@
       "status": "OUT"
     },
     {
-      "name": "Cameron Johnson",
-      "team": "DEN",
-      "status": "OUT"
-    },
-    {
       "name": "Spencer Jones",
       "team": "DEN",
       "status": "OUT"
@@ -116,11 +111,6 @@
       "name": "Jalen Duren",
       "team": "DET",
       "status": "OUT"
-    },
-    {
-      "name": "Gui Santos",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kristaps Porzingis",
@@ -258,6 +248,11 @@
       "status": "OUT"
     },
     {
+      "name": "Cason Wallace",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
       "name": "Chet Holmgren",
       "team": "OKC",
       "status": "OUT"
@@ -279,11 +274,6 @@
     },
     {
       "name": "Nikola Topic",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Cason Wallace",
       "team": "OKC",
       "status": "OUT"
     },
@@ -336,11 +326,6 @@
       "name": "Ariel Hukporti",
       "team": "PHI",
       "status": "OUT"
-    },
-    {
-      "name": "Oso Ighodaro",
-      "team": "PHX",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mark Williams",
