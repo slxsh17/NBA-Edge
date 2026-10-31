@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-10-31",
-"updated_at": "2026-10-31T14:34:06+00:00",
+"updated_at": "2026-10-31T15:08:19+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -90,10 +90,10 @@
 "name": "Donovan Clingan",
 "team": "POR",
 "fta_own": null,
-"linestar_own": 32.3,
+"linestar_own": 32.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 32.3,
+"consensus_own": 32.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -101,10 +101,10 @@
 "name": "VJ Edgecombe",
 "team": "PHI",
 "fta_own": 53.4,
-"linestar_own": 7.8,
+"linestar_own": 8.0,
 "mentions": 0,
 "articles": [],
-"consensus_own": 30.6,
+"consensus_own": 30.7,
 "source_count": 2,
 "mention_count": 0
 },
@@ -134,10 +134,10 @@
 "name": "Onyeka Okongwu",
 "team": "ATL",
 "fta_own": 23.1,
-"linestar_own": 34.3,
+"linestar_own": 33.6,
 "mentions": 0,
 "articles": [],
-"consensus_own": 28.7,
+"consensus_own": 28.4,
 "source_count": 2,
 "mention_count": 0
 },
@@ -145,10 +145,10 @@
 "name": "Jrue Holiday",
 "team": "POR",
 "fta_own": null,
-"linestar_own": 27.9,
+"linestar_own": 27.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 27.9,
+"consensus_own": 27.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -167,10 +167,10 @@
 "name": "Toumani Camara",
 "team": "POR",
 "fta_own": null,
-"linestar_own": 24.0,
+"linestar_own": 24.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 24.0,
+"consensus_own": 24.2,
 "source_count": 1,
 "mention_count": 0
 },
@@ -200,10 +200,10 @@
 "name": "Dennis Schroder",
 "team": "CHA",
 "fta_own": 22.9,
-"linestar_own": 20.4,
+"linestar_own": 20.6,
 "mentions": 0,
 "articles": [],
-"consensus_own": 21.6,
+"consensus_own": 21.8,
 "source_count": 2,
 "mention_count": 0
 },
@@ -211,10 +211,10 @@
 "name": "Jarrett Allen",
 "team": "CLE",
 "fta_own": null,
-"linestar_own": 18.6,
+"linestar_own": 19.6,
 "mentions": 0,
 "articles": [],
-"consensus_own": 18.6,
+"consensus_own": 19.6,
 "source_count": 1,
 "mention_count": 0
 },
@@ -222,10 +222,10 @@
 "name": "Dyson Daniels",
 "team": "ATL",
 "fta_own": 15.6,
-"linestar_own": 12.4,
+"linestar_own": 12.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 14.0,
+"consensus_own": 13.9,
 "source_count": 2,
 "mention_count": 0
 },
@@ -233,7 +233,7 @@
 "name": "Jaylen Brown",
 "team": "PHI",
 "fta_own": 17.8,
-"linestar_own": 7.0,
+"linestar_own": 7.1,
 "mentions": 0,
 "articles": [],
 "consensus_own": 12.4,
@@ -244,10 +244,10 @@
 "name": "Stephon Castle",
 "team": "SAS",
 "fta_own": null,
-"linestar_own": 12.2,
+"linestar_own": 11.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 12.2,
+"consensus_own": 11.9,
 "source_count": 1,
 "mention_count": 0
 },
@@ -266,10 +266,10 @@
 "name": "Nickeil Alexander-Walker",
 "team": "ATL",
 "fta_own": null,
-"linestar_own": 11.6,
+"linestar_own": 11.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 11.6,
+"consensus_own": 11.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -277,10 +277,10 @@
 "name": "Jeremiah Fears",
 "team": "NOP",
 "fta_own": null,
-"linestar_own": 11.0,
+"linestar_own": 11.1,
 "mentions": 0,
 "articles": [],
-"consensus_own": 11.0,
+"consensus_own": 11.1,
 "source_count": 1,
 "mention_count": 0
 },
@@ -288,10 +288,21 @@
 "name": "Kevin Durant",
 "team": "HOU",
 "fta_own": null,
-"linestar_own": 7.6,
+"linestar_own": 7.3,
 "mentions": 0,
 "articles": [],
-"consensus_own": 7.6,
+"consensus_own": 7.3,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "CJ McCollum",
+"team": "ATL",
+"fta_own": null,
+"linestar_own": 7.3,
+"mentions": 0,
+"articles": [],
+"consensus_own": 7.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -310,21 +321,10 @@
 "name": "Amen Thompson",
 "team": "HOU",
 "fta_own": null,
-"linestar_own": 7.0,
+"linestar_own": 6.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 7.0,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "CJ McCollum",
-"team": "ATL",
-"fta_own": null,
-"linestar_own": 6.9,
-"mentions": 0,
-"articles": [],
-"consensus_own": 6.9,
+"consensus_own": 6.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -332,10 +332,10 @@
 "name": "Fred VanVleet",
 "team": "HOU",
 "fta_own": null,
-"linestar_own": 5.6,
+"linestar_own": 5.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 5.6,
+"consensus_own": 5.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -343,10 +343,10 @@
 "name": "Jaylen Wells",
 "team": "MEM",
 "fta_own": null,
-"linestar_own": 5.4,
+"linestar_own": 5.0,
 "mentions": 0,
 "articles": [],
-"consensus_own": 5.4,
+"consensus_own": 5.0,
 "source_count": 1,
 "mention_count": 0
 },
@@ -362,17 +362,6 @@
 "mention_count": 0
 },
 {
-"name": "Kenrich Williams",
-"team": "OKC",
-"fta_own": null,
-"linestar_own": 3.2,
-"mentions": 0,
-"articles": [],
-"consensus_own": 3.2,
-"source_count": 1,
-"mention_count": 0
-},
-{
 "name": "Jaxson Hayes",
 "team": "UTA",
 "fta_own": null,
@@ -380,6 +369,17 @@
 "mentions": 0,
 "articles": [],
 "consensus_own": 3.1,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Kenrich Williams",
+"team": "OKC",
+"fta_own": null,
+"linestar_own": 3.0,
+"mentions": 0,
+"articles": [],
+"consensus_own": 3.0,
 "source_count": 1,
 "mention_count": 0
 },
@@ -422,12 +422,12 @@
 {
 "name": "Donovan Clingan",
 "team": "POR",
-"own": 56.3
+"own": 56.6
 },
 {
 "name": "Jrue Holiday",
 "team": "POR",
-"own": 45.0
+"own": 45.4
 },
 {
 "name": "Toumani Camara",
@@ -437,7 +437,7 @@
 {
 "name": "Jaxson Hayes",
 "team": "UTA",
-"own": 34.6
+"own": 34.0
 },
 {
 "name": "Isaiah Collier",
@@ -449,27 +449,27 @@
 {
 "name": "Dennis Schr\u00f6der",
 "team": "CHA",
-"own": 45.0
+"own": 44.8
 },
 {
 "name": "Jaylen Brown",
 "team": "PHI",
-"own": 39.4
+"own": 39.3
 },
 {
 "name": "VJ Edgecombe",
 "team": "PHI",
-"own": 35.1
+"own": 36.2
 },
 {
 "name": "Sion James",
 "team": "CHA",
-"own": 19.0
+"own": 18.7
 },
 {
 "name": "Dean Wade",
 "team": "PHI",
-"own": 7.3
+"own": 8.7
 }
 ],
 "ATL@NOP": [
@@ -481,7 +481,7 @@
 {
 "name": "Jeremiah Fears",
 "team": "NOP",
-"own": 53.9
+"own": 53.7
 },
 {
 "name": "CJ McCollum",
@@ -503,12 +503,12 @@
 {
 "name": "Kevin Durant",
 "team": "HOU",
-"own": 43.3
+"own": 42.9
 },
 {
 "name": "Amen Thompson",
 "team": "HOU",
-"own": 40.9
+"own": 40.5
 },
 {
 "name": "Fred VanVleet",
@@ -523,7 +523,7 @@
 {
 "name": "Kenrich Williams",
 "team": "OKC",
-"own": 6.2
+"own": 6.4
 }
 ]
 },
