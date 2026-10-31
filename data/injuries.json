@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T17:16:30.639588+00:00",
+  "updated_at": "2026-10-31T17:52:07.794863+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -130,12 +130,12 @@
     {
       "name": "Reed Sheppard",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Alperen Sengun",
+      "name": "Fred VanVleet",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Steven Adams",
@@ -303,22 +303,12 @@
       "status": "OUT"
     },
     {
-      "name": "Joel Embiid",
+      "name": "Jabari Walker",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "LeBron James",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jaylen Brown",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jabari Walker",
       "team": "PHI",
       "status": "OUT"
     },
@@ -326,6 +316,16 @@
       "name": "Tacko Fall",
       "team": "PHI",
       "status": "OUT"
+    },
+    {
+      "name": "Joel Embiid",
+      "team": "PHI",
+      "status": "OUT"
+    },
+    {
+      "name": "Jaylen Brown",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dominick Barlow",
