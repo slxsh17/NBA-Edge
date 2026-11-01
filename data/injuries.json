@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-01T04:25:08.371079+00:00",
+  "updated_at": "2026-11-01T05:18:28.170668+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
-      "name": "Jalen Johnson",
+      "name": "Jock Landale",
       "team": "ATL",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Jock Landale",
+      "name": "Jalen Johnson",
       "team": "ATL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mouhamed Gueye",
@@ -80,7 +80,7 @@
     {
       "name": "Jaylon Tyson",
       "team": "CLE",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Sergio de Larrea",
@@ -158,14 +158,14 @@
       "status": "OUT"
     },
     {
-      "name": "Reed Sheppard",
-      "team": "HOU",
-      "status": "OUT"
-    },
-    {
       "name": "Fred VanVleet",
       "team": "HOU",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Reed Sheppard",
+      "team": "HOU",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Steven Adams",
@@ -243,24 +243,24 @@
       "status": "OUT"
     },
     {
-      "name": "Ty Jerome",
+      "name": "Quinten Post",
       "team": "MEM",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Scotty Pippen Jr.",
       "team": "MEM",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Quinten Post",
+      "name": "Ty Jerome",
       "team": "MEM",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Rudy Gobert",
       "team": "MIN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Edwards",
@@ -273,17 +273,17 @@
       "status": "OUT"
     },
     {
+      "name": "Jordan Poole",
+      "team": "NOP",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Dejounte Murray",
       "team": "NOP",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Yves Missi",
-      "team": "NOP",
-      "status": "OUT"
-    },
-    {
-      "name": "Jordan Poole",
       "team": "NOP",
       "status": "OUT"
     },
@@ -348,14 +348,14 @@
       "status": "OUT"
     },
     {
-      "name": "LeBron James",
-      "team": "PHI",
-      "status": "OUT"
-    },
-    {
       "name": "Joel Embiid",
       "team": "PHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "LeBron James",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dominick Barlow",
