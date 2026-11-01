@@ -76,7 +76,8 @@ def component_record(p):
     return {'name': p['name'], 'team': p['team'], 'salary': p['salary'], 'proj': p['proj'],
             'naive': p.get('naive', 0), 'minutes': p['minutes'], 'out': bool(p.get('out')),
             'own': p.get('own'), 'base_minutes': p.get('base_minutes'), 'rate': p.get('rate'),
-            'adj': p.get('adj', {}), 'method': p.get('method'), 'shaky': p.get('shaky'), 'ext': p.get('ext')}
+            'adj': p.get('adj', {}), 'method': p.get('method'), 'shaky': p.get('shaky'), 'ext': p.get('ext'),
+            'darko_rate': p.get('darko_rate'), 'darko_min': p.get('darko_min')}
 
 
 def attach_actuals(snap, logs):

@@ -37,6 +37,9 @@ jobs:
       - name: Tune minutes rules (weekly)
         if: always()
         run: python scripts/tune_minutes.py
+      - name: DARKO projections (advanced per-100 rates; at most every 6 hours)
+        if: always()
+        run: python scripts/update_darko.py
       - name: Base projections (minutes x FP/min)
         if: always()
         run: python scripts/build_automatic_projections.py
@@ -87,7 +90,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           # Only paths that exist: a missing one (e.g. data/portfolios before the first frozen
           # portfolio) makes git add fail with exit 128 and nothing gets published.
-          paths=(); for p in data/slate_* data/single_* data/automatic_projections.json data/today.json data/accuracy.json data/history data/learned_weights.json data/archive data/season_logs.json data/model_params.json data/ownership data/ownership_params.json data/alerts.json data/strategy.json data/lineups data/lineup_results.json data/contest_sims.json data/contest_history.json data/portfolios data/portfolio_results.json data/manual_status.json; do [ -e "$p" ] && paths+=("$p"); done
+          paths=(); for p in data/slate_* data/single_* data/automatic_projections.json data/today.json data/accuracy.json data/history data/learned_weights.json data/archive data/season_logs.json data/model_params.json data/ownership data/ownership_params.json data/alerts.json data/strategy.json data/lineups data/lineup_results.json data/contest_sims.json data/contest_history.json data/portfolios data/portfolio_results.json data/manual_status.json data/darko.json; do [ -e "$p" ] && paths+=("$p"); done
           git add -A "${paths[@]}"
           # Files the cleanup steps deleted (old slates / single games / lineups) don't match the shell
           # globs above; left unstaged they made every pull --rebase refuse to run (Nov 1).

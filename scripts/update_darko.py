@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-"""NBA EDGE: DARKO per-game box-score projections -> data/darko.json.
+"""NBA EDGE: DARKO projections -> data/darko.json (+ data/archive/darko_YYYY-MM-DD.json).
 
 DARKO (darko.app, by Kostya Medvedovsky) is a public Bayesian player-projection model built on
 every box score, with stat-specific stabilization, aging curves and daily updates. Its Fantasy
-Lab page lists each player's projected minutes and per-game PTS/REB/AST/STL/BLK/3PM/TOV. We turn
-those into FanDuel points per minute (pts + 1.2 reb + 1.5 ast + 3 stl + 3 blk - tov) and use it
-as a second opinion on each player's scoring rate. How much it counts is learned from graded
-nights (learn_weights.py 'darko'); it starts at 0 and is only adopted if it beats the current
-model on held-out days.
+Lab page embeds, for every player, expected minutes, team pace and per-100-possession rates
+(points, rebounds, assists, steals, blocks, turnovers, shot attempts). We turn those into FanDuel
+points per minute: (pts + 1.2 reb + 1.5 ast + 3 stl + 3 blk - tov) per 100 x pace / 4800, and
+use it as a second opinion on each player's scoring rate. How much it counts is learned from
+graded nights (learn_weights.py 'darko'): it starts at 0 and is adopted only if it beats the
+current model on held-out days.
 
-Fetched at most every 6 hours; a failed fetch keeps the previous file.
+  python scripts/update_darko.py                  today's projections (at most every 6 hours)
+  python scripts/update_darko.py --backfill D...  DARKO as of the day before each date D (its
+                                                  "time machine"), written into data/history/D.json
+                                                  so the learner can test it on graded nights
+A failed fetch keeps the previous file.
 """
 import datetime as dt
 import html
@@ -132,8 +137,69 @@ def parse_table(page):
     return None, []
 
 
+def norm(s):
+    import unicodedata
+    s = unicodedata.normalize('NFKD', str(s or '')).lower().strip()
+    s = re.sub(r'[\s,]+(jr|sr|ii|iii|iv|v)\.?$', '', s)
+    return re.sub(r'[^a-z0-9]', '', s)
+
+
+def by_name(rows):
+    out = {}
+    for r in rows:
+        out.setdefault(norm(r['name']), []).append(r)
+    return out
+
+
+def lookup(index, name, team):
+    """DARKO row for a player: name + team, or name alone when it's unique (recent trades)."""
+    cands = index.get(norm(name)) or []
+    for r in cands:
+        if r['team'] == team:
+            return r
+    return cands[0] if len(cands) == 1 else None
+
+
+def doc_for(rows, asof=None):
+    return {'schema': 1, 'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'asof': asof,
+            'source': 'DARKO DPM Fantasy Lab (darko.app/projections): expected minutes, pace, per-100 box score',
+            'players': rows}
+
+
+def backfill(days):
+    """For each graded night D: DARKO as of D-1 (no leakage from D's games) -> archive + history rows."""
+    import time
+    for day in days:
+        asof = (dt.date.fromisoformat(day) - dt.timedelta(days=1)).isoformat()
+        try:
+            _, rows = parse(fetch(f'{URL}?asof={asof}'))
+        except Exception as e:
+            print(f'::warning::DARKO {asof}: {e}')
+            continue
+        if len(rows) < 100:
+            print(f'::warning::DARKO {asof}: only {len(rows)} players')
+            continue
+        (DATA / 'archive').mkdir(exist_ok=True)
+        (DATA / 'archive' / f'darko_{day}.json').write_text(json.dumps(doc_for(rows, asof), separators=(',', ':')) + '\n', encoding='utf-8')
+        hp = DATA / 'history' / f'{day}.json'
+        n = 0
+        if hp.exists():
+            snap = json.loads(hp.read_text(encoding='utf-8'))
+            index = by_name(rows)
+            for key, p in snap.get('players', {}).items():
+                r = lookup(index, p.get('name') or key.split('|')[0], p.get('team') or key.split('|')[-1])
+                if r and r.get('fd_per_min'):
+                    p['darko_rate'], p['darko_min'] = r['fd_per_min'], r['min']
+                    n += 1
+            hp.write_text(json.dumps(snap, separators=(',', ':')) + '\n', encoding='utf-8')
+        print(f'{day}: DARKO as of {asof}, {len(rows)} players, {n} history rows tagged')
+        time.sleep(2)
+
+
 def main():
-    prev = {}
+    if '--backfill' in sys.argv:
+        backfill([d for d in sys.argv[sys.argv.index('--backfill') + 1:] if re.match(r'\d{4}-\d{2}-\d{2}$', d)])
+        return 0
     try:
         prev = json.loads(OUT.read_text(encoding='utf-8'))
         age = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(prev['updated_at'])
@@ -150,10 +216,13 @@ def main():
     if len(rows) < 100:
         print(f'::warning::DARKO page parsed only {len(rows)} players (columns {head}); keeping previous file')
         return 0
-    doc = {'schema': 1, 'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
-           'source': 'DARKO DPM Fantasy Lab (darko.app/projections): projected minutes and per-game box score',
-           'columns': head, 'players': rows}
+    doc = doc_for(rows)
     OUT.write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
+    from zoneinfo import ZoneInfo
+    day = dt.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+    arch = DATA / 'archive' / f'darko_{day}.json'
+    if not arch.exists():                      # the morning's numbers, kept for learning
+        arch.write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
     print(f'DARKO: {len(rows)} players; top {rows[0]["name"]} {rows[0]["fd"]} FD/g in {rows[0]["min"]} min')
     return 0
 

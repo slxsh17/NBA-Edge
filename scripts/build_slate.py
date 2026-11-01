@@ -201,7 +201,7 @@ def starter_match(name, lineup_names):
 
 # ---------- shared final formula (mirrored in index.html and learn_weights.py) ----------
 DEFAULT_WEIGHTS = {'vegas': 1.0, 'matchup': 1.0, 'injury': 1.0, 'usage': 1.0, 'starter': 1.0,
-                   'blowout': 1.0, 'scale': 1.0, 'outside': 0.0, 'travel': 0.0, 'minutes_mult': {}}
+                   'blowout': 1.0, 'scale': 1.0, 'outside': 0.0, 'travel': 0.0, 'darko': 0.0, 'minutes_mult': {}}
 ARENAS = {'ATL': (33.757, -84.396), 'BOS': (42.366, -71.062), 'BKN': (40.683, -73.975), 'CHA': (35.225, -80.839),
           'CHI': (41.881, -87.674), 'CLE': (41.497, -81.688), 'DAL': (32.790, -96.810), 'DEN': (39.749, -105.008),
           'DET': (42.341, -83.055), 'GSW': (37.768, -122.388), 'HOU': (29.751, -95.362), 'IND': (39.764, -86.155),
@@ -255,7 +255,13 @@ def final_projection(p, W):
     wmax = max(1.0, W['vegas'], W['matchup'], W['usage'])
     env = clip(f(a.get('vegas', 1.0), W['vegas']) * f(a.get('matchup', 1.0), W['matchup']) * f(a.get('usage', 1.0), W['usage']),
                1 - 0.12 * wmax, 1 + 0.14 * wmax)
-    proj = m * p['rate'] * env * W['scale']
+    # DARKO's FanDuel points per minute (advanced per-100 model) blended into the rate by a
+    # learned weight (0 = NBA EDGE's own rate only).
+    rate = p['rate']
+    d = W.get('darko', 0.0)
+    if d and p.get('darko_rate'):
+        rate = (1 - d) * rate + d * p['darko_rate']
+    proj = m * rate * env * W['scale']
     proj *= 1 + W.get('travel', 0.0) * a.get('travel_km', 0) / 1000.0   # learned; 0 until it proves useful
     # Blend with the outside (DailyFantasyFuel) projection by a learned weight (0 = ours only).
     b = W.get('outside', 0.0)
@@ -265,10 +271,31 @@ def final_projection(p, W):
 
 
 # ---------- main build ----------
+_DARKO = None
+_DARKO_FILE = 'darko.json'
+
+
+def darko_lookup(name, team):
+    """DARKO row (data/darko.json; a backtest uses that day's archived copy) by name + team,
+    or by name alone if unique."""
+    global _DARKO
+    if _DARKO is None:
+        _DARKO = {}
+        for r in (read(_DARKO_FILE) or {}).get('players', []):
+            _DARKO.setdefault(norm(r['name']), []).append(r)
+    cands = _DARKO.get(norm(name)) or []
+    for r in cands:
+        if canon(r.get('team')) == team:
+            return r
+    return cands[0] if len(cands) == 1 else None
+
+
 def build(day=None, backtest=False, weights=None):
     """backtest=True rebuilds a past day using only information available before it:
     archived slate (its own injury tags), box scores before that date, no live feeds."""
     day = day or dt.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+    global _DARKO, _DARKO_FILE
+    _DARKO, _DARKO_FILE = None, (f'archive/darko_{day}.json' if backtest else 'darko.json')
     slate = read(f'archive/slate_{day}.json') if backtest else read(f'slate_{day}.json')
     if not slate.get('players'):
         print('No slate JSON for', day)
@@ -360,6 +387,9 @@ def build(day=None, backtest=False, weights=None):
         else:
             m = float(row['team_change_minutes'] if moved else row['expected_minutes'])
             p['minutes'], p['rate'] = m, float(row['fp_per_minute'])
+            dk = darko_lookup(sp['name'], team)
+            if dk and dk.get('fd_per_min'):
+                p['darko_rate'], p['darko_min'] = dk['fd_per_min'], dk['min']
             p['base_minutes'] = round(m, 2)  # before injury/starter/team/blowout adjustments (site re-weights these)
             p['method'] = 'team_change' if moved else row.get('minutes_method')
             p['_recent'] = row.get('team_recent_minutes') or []
