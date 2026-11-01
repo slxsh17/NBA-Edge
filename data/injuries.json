@@ -1,7 +1,12 @@
 {
-  "updated_at": "2026-10-31T23:52:00.876002+00:00",
+  "updated_at": "2026-11-01T00:49:52.349205+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
+    {
+      "name": "Jock Landale",
+      "team": "ATL",
+      "status": "OUT"
+    },
     {
       "name": "Mouhamed Gueye",
       "team": "ATL",
