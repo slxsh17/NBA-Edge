@@ -26,14 +26,13 @@ jobs:
               except Exception as e:
                   return f'ERR {e!r}'[:160], ''
           out = []
-          st, rb = get('https://www.darko.app/robots.txt'); out.append('robots: ' + st + ' ' + rb[:300].replace('\n', ' | '))
-          for path in ('/projections', '/daily'):
-              st, b = get('https://www.darko.app' + path)
-              out.append(f'{path} {st}')
-              i = b.find('Wembanyama')
-              out.append('near Wemby: ' + re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', b[max(0, i-1500):i+1500]))[:900] if i >= 0 else 'no Wemby')
-              out.append('raw near: ' + re.sub(r'\s+', ' ', b[max(0, i-400):i+400])[:800] if i >= 0 else '')
-              out.append('data hints: ' + ', '.join(sorted(set(re.findall(r'(__[A-Za-z_]+__|sveltekit[^"\s]{0,40}|data-[a-z_-]+=)', b)))[:40])[:500])
-              out.append('fantasy words: ' + ', '.join(sorted(set(w.lower() for w in re.findall(r'\b(FanDuel|DraftKings|minutes|MIN|FPTS|fpts|salary|value|ownership)\b', b))))[:200])
+          import update_darko as D
+          page = D.fetch(D.URL)
+          head, rows = D.parse(page)
+          out.append(f'columns={head} rows={len(rows)} tables={len(re.findall("<table", page))} trs={len(re.findall("<tr", page))}')
+          for r in rows[:3] + rows[-2:]:
+              out.append(json.dumps(r))
+          out.append('pagination hints: ' + ', '.join(sorted(set(re.findall(r'(?:page|limit|show|rows|per)[=:][^"&\s]{0,12}', page, re.I))))[:300])
+          out.append('buttons: ' + ', '.join(sorted(set(re.sub(r'<[^>]+>', '', b).strip() for b in re.findall(r'<button[^>]*>(.*?)</button>', page, re.S))))[:400])
           print('::warning::' + ' || '.join(out).replace('\n', ' '))
           PY
