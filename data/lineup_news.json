@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-01",
-  "checked_at": "2026-11-01T13:21:41.972242+00:00",
+  "checked_at": "2026-11-01T14:04:28.953119+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -95,6 +95,14 @@
       "scope_date": "2026-11-01"
     },
     {
+      "headline": "Lakers guard Cameron Carr cleared to make NBA debut - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYS1DOXFHeFdsa3hlaC0yUlZqdkp6WUl6dGo4ckVaQ3pKcEpEZ0wydmY2bjF6bzAxUFBheXNWQ3V4MHRqZW1wOXp5aGFWU2dSeWlZLUFDYVFQT0tsYTl0VGFjZU1xbTNDNjNXNm5wVHJsT1ppckUzcll2a1dxN2NKQkhqSU1oZm1yYkE?oc=5",
+      "published_at": "2026-11-01T00:08:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
       "headline": "Ziaire Williams Injury: Questionable for Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVEc1Qjdtbk1wOHRmWGFobXdiYUdVQ3VpcVNMUHdTYmJNV21SdXhSckJJZVZuSkZCTDNqdWV6WXB0UUctNm5QQXpmTUYtclNoNVJXeW9xUkVsZWR2NDR2ZTJ1Rzc5MVVpRUdnT19qOXRONHhsTTB3NW1KZ0RWMncyUjBOTGlCaFcyaUhKUDhmczZpQVAwN1FGcG5sV3FQVlpn?oc=5",
       "published_at": "2026-11-01T00:04:09+00:00",
@@ -130,6 +138,14 @@
       "headline": "Spurs Announce Late Stephon Castle Injury Update Before Timberwolves Game - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPczV2alJyLVp0SFhiUWFFOGVyOUJfRlZSZXFVWHd6S3dBV2RqYXBQemd0V3YwMVMzdGJxN1c4aTV4bGU3ZWlhMDcwQ0hxT2RWa2hyT2RoQTN6STh6RFRIcC02d2xnaVZqbXpPeHh0aFZZZ1Y1d1FlY3BFd3Y2WWV0QWxHTk1xdl9LenR4NWVBc0Q4ekk?oc=5",
       "published_at": "2026-10-31T23:05:29+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "Pelicans G Jordan Poole Out Against Hawks, Second Straight Miss With Ankle Sprain - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaENaX0p0UE92Z0drRG0zMHZfTTRlR3FCY3Q3SWtlMU5OeEhCTUFzNVFRN3pTMEFXcXVwX1JpZXBYdFZMa2dRQnVsWFdHelN3ZkF2bW5MakRIZlVBc0ZsYXJQYmRlQ0JaLVlrUXVscmJ4b3R6WHVqMDNOdy1BRk85QzcxdDVBc1U?oc=5",
+      "published_at": "2026-10-31T23:05:08+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
@@ -234,6 +250,14 @@
       "headline": "Mitchell Robinson News: Questionable for Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZDFFUGxsYmxOcUFuRTcxZE1rOVhXZDZLX254cUpEZFZyN3dfQzBMNl84WGZFVU5zSXd1ZHQ0OEJ2Y2FORm1uN1pROE5ORzFLUkloVG1JSkw1S0RmcnNjZzJHY29PUVpzTTVkNmZxUzN0amdQeWc0eVIxdjVMLTlDdVhCamFJcjI2M2Y4cG82M3RiQmo5NG1wc1NOM051M2tl?oc=5",
       "published_at": "2026-10-31T20:32:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "Points leader Kyle Larson to start third at Martinsville - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZFdtQV9wbzFDZVpVb0daUFRUTDdpZ1c3OC11LTRuRnZvcG9ibmtJTFFEMzVKcmdOMndnMDBpRDhZMVc5dFh4QTJVQWgwRXRrbWR5MXZhVU9ObjhpbS10X01GSnJ4dDZyeUNrRExEMmozTjFhWHlzdkp1UjUwV0FIeUlFcVE?oc=5",
+      "published_at": "2026-10-31T20:23:19+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
@@ -442,14 +466,6 @@
       "headline": "Jaylen Brown’s Injury Addressed Before 76ers-Knicks Game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPX05UYVpNUDA2dDFsMEc5d005UTJEZmhzVW5kdGsxUjh4cHh4alp6dndfOVhRbklrRHNMSTYtT3dfTlpybFJWdURLYjhJZHFwX3RxSDN5SFRBaGYwQ0pibTJNR0VOd09EVmR3ZWdVTE9RVzBfNnZEY3o2XzlOYXd2aTZaRXlXY1U0dGd2bQ?oc=5",
       "published_at": "2026-10-31T14:15:13+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Mike Lupica: Knicks need to start acting like championship parade is over - New York Daily News",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeXY3ZVg0cG1NUVU2OEtBXy1aSlVkWlE2U2FYdUNIVVVZVTQyTUZUMktpSWRRWGtyYWFGV3MxY3pqYXhzeV82TUlaem1ONlV3S29GVHc4c2hDX3pTUlJsUUhOd1NrSXVLNF9nckhocXdWdXFIM2llRHVxakpNanFGN0ZEYnBSekhmVTRFdmYtOFd2bEZ0OFdlSk1Da3k4Y1ZOOFFTV1MwTQ?oc=5",
-      "published_at": "2026-10-31T13:39:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
