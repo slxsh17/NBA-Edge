@@ -1,11 +1,19 @@
 {
   "schema": 1,
   "slate_date": "2026-11-01",
-  "checked_at": "2026-11-01T11:00:32.365659+00:00",
+  "checked_at": "2026-11-01T11:55:57.629082+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "How will return of Suzuki, Demidov affect the red-hot Canadiens? - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbTJoX2cwOUhxREItYVlvdlFGb1lXaUtJbEtUbVFjekQ1QXRoYkM5Ym9GUThCdzB5dkQtNmxYaGpmLWtYZ25CNW5WcGdQYms0LTg3VkxiLVpBdE1LQzRHYUlWcXpPc0xGTjBLLS1GVkY3TjdWdTRYQk5mcGowNy10S2tsZkl0aWkyVjE0Y0k4MUVrSVBsTGFxQ1hlTUdHOERBZGxz?oc=5",
+      "published_at": "2026-11-01T11:00:09+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
     {
       "headline": "The Trick and the Treat From Kings' Sixth Straight Loss to Start Season - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOazItbnktWVR1YkFvQ09aUzNuMW5lZ0l3M2FKTGdYaWo0d04xQXdORkUtdFJoRlY3QW5jSGs0X091V19nYmF2RV9iY2xOZEl5VlZ4NE9Rb1dVbVFRbklvaDhRS0tseXdsaE5kYWF3SzY1V3pZUmlfYVZlUGxkYnktZldNaTJ1bERvckdfS19QQ1JncHRsMzlnWGxndWN0aS1DdWhITnZKVQ?oc=5",
@@ -418,14 +426,6 @@
       "headline": "Lauri Markkanen Questionable Oct. 31 Against Trail Blazers Due To Wrist Injury - FanDuel",
       "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMGRUVXF2Tm5lX2R1M1Q5elplc2s0UHpiTDUtUEdQSDdibVlZWHYteWNZdXNNd1BweHI1SWQ3ekREeXVleTRCVFJoZWNfOGVmc0swQTNxVkFRTnpfZElXTENobktMbkU5MWRaci11MkZPbFROaUN3RUVDOTFuWHg1d2xKWTB0ZzBYazlRR3BWU0NndE5Bd3lLYmRObTVQLUgwMTRUM0R2TlpzS2Fzc1dTR2xFaThOUHJvSEVLcTJQcWgzcDJsNHhFSDdR?oc=5",
       "published_at": "2026-10-31T12:13:02+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Jaylen Brown’s Injury Addressed Before 76ers-Knicks Game - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa1pZRFdBMHB3YjJSbkVmTjNvWmFLanRpNm13T2l5NnZybW9GS0tIMEJvRGItZXppdDdWc0ZTMVlHcVFranlyMzMxS1BGQzdOSFVpeXhmZzVscXg5Z3ZBNER4NVFJd21TX1NFQ09GMVgtTl9MbW9xTXdvTHdRNkt3NDlWVnB3ZU55bmY1MHlvbHVLb1pNaWtkYWxpNnA?oc=5",
-      "published_at": "2026-10-31T11:15:29+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
