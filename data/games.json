@@ -1,6 +1,6 @@
 {
   "date": "20261031",
-  "updated_at": "2026-10-31T21:39:33.926513-04:00",
+  "updated_at": "2026-10-31T22:35:18.847508-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -25,25 +25,25 @@
       "away": "Sacramento Kings",
       "home": "Memphis Grizzlies",
       "time": "2026-11-01T00:00Z",
-      "status": "In Progress"
+      "status": "End of Period"
     },
     {
       "away": "Cleveland Cavaliers",
       "home": "Milwaukee Bucks",
       "time": "2026-11-01T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Minnesota Timberwolves",
       "home": "San Antonio Spurs",
       "time": "2026-11-01T00:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Oklahoma City Thunder",
       "home": "Houston Rockets",
       "time": "2026-11-01T00:30Z",
-      "status": "Halftime"
+      "status": "In Progress"
     }
   ]
 }
