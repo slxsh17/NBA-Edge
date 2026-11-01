@@ -42,5 +42,6 @@ jobs:
                   b = D.fetch('https://www.darko.app' + path); out.append(f'{path}: len={len(b)} head={b[:200]!r}')
               except Exception as e:
                   out.append(f'{path}: {e}')
-          print('::warning::' + ' || '.join(out).replace('\n', ' '))
+          for line in out[:10]:
+              print('::warning::' + re.sub(r'[^ -~]', '?', line).replace('::', ': :')[:900])
           PY
