@@ -400,7 +400,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch,me,pr]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json'),getJSON('my_entries.json'),getJSON('portfolio_results.json')]);
+  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch,me,pr,ppr]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json'),getJSON('my_entries.json'),getJSON('portfolio_results.json'),getJSON('props_results.json')]);
+  S.ppr=ppr.status==='fulfilled'?ppr.value:null;S.pps=undefined;
   S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;S.lr=lr.status==='fulfilled'?lr.value:null;S.cs=cs.status==='fulfilled'?cs.value:null;S.ch=ch.status==='fulfilled'?ch.value:null;S.me=me.status==='fulfilled'?me.value:null;S.pr=pr.status==='fulfilled'?pr.value:null;S.csIdx=null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
@@ -1125,11 +1126,11 @@ $('build').onclick=build;
 // ---------- accuracy ----------
 function renderAccuracy(){
   const box=$('accuracy'),a=S.acc;
-  if(!a||!a.summary_7d){box.innerHTML=resultsHTML()+lineupsHTML()+portfolioHTML()+strategyHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
+  if(!a||!a.summary_7d){box.innerHTML=resultsHTML()+lineupsHTML()+portfolioHTML()+propsHTML()+strategyHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
   const s=a.summary_7d,beat=s.naive_mae&&s.mae<s.naive_mae;
   const days=a.days.slice(-7),maxv=Math.max(...days.map(d=>Math.max(d.mae,d.naive_mae||0)),1);
   const last=a.days[a.days.length-1];
-  box.innerHTML=resultsHTML()+lineupsHTML()+portfolioHTML()+strategyHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
+  box.innerHTML=resultsHTML()+lineupsHTML()+portfolioHTML()+propsHTML()+strategyHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
   <p style="margin:0 0 6px;font-size:14px">${beat?`Over the last ${s.days} days the model missed by ${(s.naive_mae-s.mae).toFixed(1)} fewer fantasy points per player than just using each player’s season average.`:`Over the last ${s.days} days the model hasn’t beaten a plain season average yet.`} It ran ${s.bias>0?'low':'high'} by ${Math.abs(s.bias).toFixed(1)} points on average and missed minutes by ${s.minutes_mae.toFixed(1)}.</p>
   <div class="bars" role="img" aria-label="Daily average miss, model vs season average">${days.map(d=>`<div class="bar"><div class="pair"><i class="m" style="height:${d.mae/maxv*64}px" title="Model ${d.mae}"></i><i class="n" style="height:${(d.naive_mae||0)/maxv*64}px" title="Season average ${d.naive_mae}"></i></div>${new Date(d.date+'T12:00:00').toLocaleDateString([], {month:'numeric',day:'numeric'})}${d.backtest?'*':''}</div>`).join('')}</div>
   <div class="legend"><i style="background:var(--orange);margin-left:0"></i>Model<i style="background:var(--line)"></i>Season average</div>
@@ -1161,6 +1162,20 @@ function portfolioHTML(){
   ${rows.map(([t,k,d])=>`<tr><td style="text-align:left">${t}</td><td class="n"><b>${f(a['portfolio_'+k],d)}</b></td><td class="n">${f(a['previous_method_'+k],d)}</td></tr>`).join('')}
   <tr><td style="text-align:left">Est. return, penny tournament</td><td class="n"><b>${roi(a.portfolio_penny_roi)}</b></td><td class="n">${roi(a.previous_method_penny_roi)}</td></tr></tbody></table>
   <p class="muted" style="font-size:12px;margin:0">${r.status==='pull'?'After 10+ live nights the previous method did better, so the portfolio is switched off for 150-lineup builds.':'The portfolio stays on unless 10+ live nights show the previous method doing better.'} Scored against a simulated FanDuel field using the same results; returns use a standard payout curve that undercounts the very top prizes.</p>`;
+}
+// Player props: paper trading only (scripts/props.py). Tonight's picks load on first view.
+function propsHTML(){
+  const r=S.ppr;if(!r)return '';
+  if(S.pps===undefined&&S.day){S.pps=null;getJSON('props/'+S.day+'.json').then(d=>{S.pps=d;renderAccuracy()}).catch(()=>{S.pps={props:[]}})}
+  const k=r.picks||{},pc=x=>x==null?'–':(x*100).toFixed(1)+'%',sgn=x=>(x>0?'+':x<0?'−':'')+Math.abs(x).toFixed(2);
+  const tonight=((S.pps&&S.pps.props)||[]).filter(x=>x.pick).sort((a,b)=>(b.pick.prob-b.pick.breakeven)-(a.pick.prob-a.pick.breakeven));
+  const lbl={pts:'points',reb:'rebounds',ast:'assists'};
+  const better=r.brier&&r.brier.nba_edge!=null&&r.brier.fanduel_no_vig!=null?(r.brier.nba_edge<r.brier.fanduel_no_vig?'better':'worse'):null;
+  return `<h3 style="font:600 18px var(--num);margin:16px 0 4px">Player props (paper only)</h3>
+  <p style="margin:0 0 6px;font-size:14px">${r.status&&r.status!=='ok'?esc(r.status)+' ':''}No bets are placed. NBA EDGE compares its chance of each FanDuel points, rebounds and assists line hitting with FanDuel\u2019s price and grades every line after the games.</p>
+  ${k.n?`<div class="acc-big"><div>Paper picks<b>${k.wins}-${k.losses}${k.pushes?'-'+k.pushes:''}</b></div><div class="base">Hit rate<b>${pc(k.hit_rate)}</b></div><div class="base">Needed<b>${pc(k.avg_breakeven)}</b></div><div class="base">Units<b>${sgn(k.units)}</b></div></div>`:'<p class="muted" style="font-size:13px;margin:0 0 6px">No graded picks yet.</p>'}
+  ${better?`<p style="margin:0 0 6px;font-size:14px">On ${r.lines_graded} graded lines, NBA EDGE\u2019s probabilities were <b>${better}</b> than FanDuel\u2019s own (Brier ${r.brier.nba_edge} vs ${r.brier.fanduel_no_vig}; lower is better). ${better==='better'?'That is what an edge looks like, if it holds over hundreds of lines.':'Until this flips, there is no edge to bet.'}</p>`:''}
+  ${tonight.length?`<details style="font-size:13.5px"><summary>Tonight\u2019s paper picks (${tonight.length})</summary><table style="margin-top:6px;width:100%"><tbody>${tonight.slice(0,25).map(x=>`<tr><td style="text-align:left">${esc(x.player)} ${x.pick.side} ${x.line} ${lbl[x.stat]||x.stat}<div class="muted" style="font-size:12px">proj ${x.proj} · ${x.pick.price>0?'+':''}${x.pick.price}</div></td><td class="n">${pc(x.pick.prob)}</td><td class="n">${pc(x.pick.breakeven)}</td></tr>`).join('')}</tbody></table><p class="muted" style="font-size:12px;margin:4px 0 0">Columns: NBA EDGE\u2019s chance, FanDuel break-even.</p></details>`:''}`;
 }
 function strategyHTML(){
   const t=S.st;if(!t||!t.tournament)return '';

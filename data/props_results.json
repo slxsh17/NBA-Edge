@@ -1,0 +1,25 @@
+{
+ "schema": 1,
+ "updated_at": "2026-11-01T21:55:37+00:00",
+ "status": "Waiting for ODDS_API_KEY (free key from the-odds-api.com, added as a GitHub repository secret).",
+ "paper_only": true,
+ "nights": 0,
+ "lines_graded": 0,
+ "picks": {
+  "n": 0,
+  "wins": 0,
+  "losses": 0,
+  "pushes": 0,
+  "units": 0,
+  "roi": null,
+  "hit_rate": null,
+  "avg_breakeven": null
+ },
+ "brier": {
+  "nba_edge": null,
+  "fanduel_no_vig": null
+ },
+ "calibration": [],
+ "recent_picks": [],
+ "method": "Paper only. Mean = projected minutes x DARKO per-minute rate; negative binomial spread; pick when our probability beats FanDuel break-even by 5+ points. Lower Brier = better probabilities; an edge needs NBA EDGE below FanDuel no-vig."
+}

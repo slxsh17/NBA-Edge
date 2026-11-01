@@ -73,6 +73,11 @@ jobs:
           # The NTFY_TOPIC secret wins if set; otherwise the topic subscribed in the ntfy app.
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || 'nbaedge' }}
         run: python scripts/alerts.py
+      - name: Player props (paper trading; FanDuel lines via The Odds API if ODDS_API_KEY is set)
+        if: always()
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scripts/props.py
       - name: Record NBA EDGE's lineups for every slate (frozen at each slate's lock)
         if: always()
         run: python scripts/record_lineups.py
@@ -90,7 +95,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           # Only paths that exist: a missing one (e.g. data/portfolios before the first frozen
           # portfolio) makes git add fail with exit 128 and nothing gets published.
-          paths=(); for p in data/slate_* data/single_* data/automatic_projections.json data/today.json data/accuracy.json data/history data/learned_weights.json data/archive data/season_logs.json data/model_params.json data/ownership data/ownership_params.json data/alerts.json data/strategy.json data/lineups data/lineup_results.json data/contest_sims.json data/contest_history.json data/portfolios data/portfolio_results.json data/manual_status.json data/darko.json; do [ -e "$p" ] && paths+=("$p"); done
+          paths=(); for p in data/slate_* data/single_* data/automatic_projections.json data/today.json data/accuracy.json data/history data/learned_weights.json data/archive data/season_logs.json data/model_params.json data/ownership data/ownership_params.json data/alerts.json data/strategy.json data/lineups data/lineup_results.json data/contest_sims.json data/contest_history.json data/portfolios data/portfolio_results.json data/manual_status.json data/darko.json data/props data/props_results.json; do [ -e "$p" ] && paths+=("$p"); done
           git add -A "${paths[@]}"
           # Files the cleanup steps deleted (old slates / single games / lineups) don't match the shell
           # globs above; left unstaged they made every pull --rebase refuse to run (Nov 1).
