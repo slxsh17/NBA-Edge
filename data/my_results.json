@@ -212,6 +212,58 @@
      "won": 0
     }
    ]
+  },
+  {
+   "date": "2026-10-31",
+   "slate": "Main",
+   "entry": "Cash lineup",
+   "players": [
+    "Evan Mobley",
+    "Jaylen Brown",
+    "Cameron Boozer",
+    "Darius Acuff",
+    "VJ Edgecombe",
+    "De'Aaron Fox",
+    "Onyeka Okongwu",
+    "Jarrett Allen",
+    "Dennis Schroder"
+   ],
+   "projected": 304.6,
+   "score": 309.1,
+   "final": true,
+   "note": "Lost every contest (per user). Lineup and fees assumed from the pre-lock plan (3 x $10 single-entry + one $2.22 20-max); update from the results screenshot.",
+   "contests": [
+    {
+     "name": "Single-entry tournaments (3) + 20-max (1)",
+     "entries": 4,
+     "fee": 32.22,
+     "won": 0
+    }
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "slate": "ATL @ NOP",
+   "entry": "Single game",
+   "players": [
+    "Jalen Johnson",
+    "Dejounte Murray",
+    "Onyeka Okongwu",
+    "Derik Queen",
+    "CJ McCollum",
+    "Aaron Wiggins"
+   ],
+   "score": 160.6,
+   "final": true,
+   "note": "Murray ruled out ~5:48 PM ET (scored 0); assumed $5 single entry.",
+   "contests": [
+    {
+     "name": "ATL @ NOP single game",
+     "entries": 1,
+     "fee": 5,
+     "won": 0
+    }
+   ]
   }
  ]
 }
