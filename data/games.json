@@ -1,49 +1,31 @@
 {
-  "date": "20261031",
-  "updated_at": "2026-10-31T23:36:30.031543-04:00",
+  "date": "20261101",
+  "updated_at": "2026-11-01T00:37:33.845802-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
-      "away": "Portland Trail Blazers",
-      "home": "Utah Jazz",
-      "time": "2026-10-31T19:00Z",
-      "status": "Final"
+      "away": "Boston Celtics",
+      "home": "Orlando Magic",
+      "time": "2026-11-01T20:30Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Philadelphia 76ers",
-      "home": "Charlotte Hornets",
-      "time": "2026-10-31T22:00Z",
-      "status": "Final"
+      "away": "Brooklyn Nets",
+      "home": "Indiana Pacers",
+      "time": "2026-11-01T22:00Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Atlanta Hawks",
-      "home": "New Orleans Pelicans",
-      "time": "2026-10-31T23:00Z",
-      "status": "Final"
+      "away": "LA Clippers",
+      "home": "Golden State Warriors",
+      "time": "2026-11-02T01:30Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Sacramento Kings",
-      "home": "Memphis Grizzlies",
-      "time": "2026-11-01T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Cleveland Cavaliers",
-      "home": "Milwaukee Bucks",
-      "time": "2026-11-01T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Minnesota Timberwolves",
-      "home": "San Antonio Spurs",
-      "time": "2026-11-01T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Oklahoma City Thunder",
-      "home": "Houston Rockets",
-      "time": "2026-11-01T00:30Z",
-      "status": "Final"
+      "away": "Toronto Raptors",
+      "home": "Los Angeles Lakers",
+      "time": "2026-11-02T02:00Z",
+      "status": "Scheduled"
     }
   ]
 }
