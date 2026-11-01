@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T23:18:15.879108+00:00",
+  "updated_at": "2026-11-01T23:53:16.799766+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -88,6 +88,11 @@
       "status": "OUT"
     },
     {
+      "name": "Tarik Biberovic",
+      "team": "DAL",
+      "status": "OUT"
+    },
+    {
       "name": "Dereck Lively II",
       "team": "DAL",
       "status": "OUT"
@@ -104,11 +109,6 @@
     },
     {
       "name": "Sergio de Larrea",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Tarik Biberovic",
       "team": "DAL",
       "status": "OUT"
     },
@@ -248,12 +248,12 @@
       "status": "OUT"
     },
     {
-      "name": "Quinten Post",
+      "name": "Scotty Pippen Jr.",
       "team": "MEM",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Scotty Pippen Jr.",
+      "name": "Quinten Post",
       "team": "MEM",
       "status": "DAY-TO-DAY"
     },
@@ -373,14 +373,14 @@
       "status": "OUT"
     },
     {
-      "name": "Zach LaVine",
-      "team": "SAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Dylan Cardwell",
       "team": "SAC",
       "status": "OUT"
+    },
+    {
+      "name": "Zach LaVine",
+      "team": "SAC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Maxime Raynaud",
