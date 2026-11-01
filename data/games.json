@@ -1,6 +1,6 @@
 {
   "date": "20261031",
-  "updated_at": "2026-10-31T19:55:22.733490-04:00",
+  "updated_at": "2026-10-31T20:28:21.729650-04:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -13,7 +13,7 @@
       "away": "Philadelphia 76ers",
       "home": "Charlotte Hornets",
       "time": "2026-10-31T22:00Z",
-      "status": "End of Period"
+      "status": "In Progress"
     },
     {
       "away": "Atlanta Hawks",
@@ -25,19 +25,19 @@
       "away": "Sacramento Kings",
       "home": "Memphis Grizzlies",
       "time": "2026-11-01T00:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Cleveland Cavaliers",
       "home": "Milwaukee Bucks",
       "time": "2026-11-01T00:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Minnesota Timberwolves",
       "home": "San Antonio Spurs",
       "time": "2026-11-01T00:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Oklahoma City Thunder",
