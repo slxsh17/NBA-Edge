@@ -26,22 +26,24 @@ jobs:
               except Exception as e:
                   return f'ERR {e!r}'[:160], ''
           out = []
-          st, pg = get(f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/')
-          rows = U.ROW.findall(pg)
-          if rows:
-              keys = sorted({k for k, v in U.ATTR.findall(rows[0])})
-              out.append('DFF row attrs: ' + ','.join(keys))
-              out.append('DFF row0: ' + ' '.join(f'{k}={v}' for k, v in U.ATTR.findall(rows[0]))[:900])
-          nba_h = {'Referer': 'https://www.nba.com/', 'Origin': 'https://www.nba.com', 'x-nba-stats-origin': 'stats', 'x-nba-stats-token': 'true', 'Accept': 'application/json'}
-          st, b = get('https://stats.nba.com/stats/leaguedashptstats?College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&GameScope=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=PerGame&PlayerExperience=&PlayerOrTeam=Player&PlayerPosition=&PtMeasureType=Passing&Season=2026-27&SeasonSegment=&SeasonType=Regular%20Season&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight=', nba_h)
-          out.append('NBA tracking passing: ' + st + ' ' + b[:150].replace('\n',' '))
-          st, b = get('https://stats.nba.com/stats/leaguedashplayerstats?MeasureType=Advanced&PerMode=PerGame&Season=2026-27&SeasonType=Regular%20Season&LeagueID=00&LastNGames=0&Month=0&OpponentTeamID=0&PORound=0&PaceAdjust=N&Period=0&PlusMinus=N&Rank=N&TeamID=0&DateFrom=&DateTo=&GameScope=&GameSegment=&Location=&Outcome=&PlayerExperience=&PlayerPosition=&SeasonSegment=&ShotClockRange=&StarterBench=&VsConference=&VsDivision=&College=&Conference=&Country=&Division=&DraftPick=&DraftYear=&Height=&Weight=', nba_h)
-          out.append('NBA advanced: ' + st + ' ' + b[:150].replace('\n',' '))
-          st, b = get('https://api.pbpstats.com/get-totals/nba?Season=2025-26&SeasonType=Regular%2BSeason&Type=Player')
-          out.append('pbpstats: ' + st + ' ' + b[:120].replace('\n',' '))
-          st, b = get('https://www.fanduel.com/research/nba/fantasy/dfs-projections')
-          out.append('FanDuel Research: ' + st + ' has_proj=' + str('projection' in b.lower()) + ' ' + (re.search(r'<title>([^<]*)', b) or [0, ''])[1][:80])
           st, b = get('https://www.darko.app/')
-          out.append('DARKO: ' + st + ' ' + (re.search(r'<title>([^<]*)', b) or [0, ''])[1][:80])
+          out.append('DARKO ' + st)
+          out.append('scripts: ' + ', '.join(sorted(set(re.findall(r'<script[^>]+src="([^"]+)"', b))))[:500])
+          out.append('json-ish: ' + ', '.join(sorted(set(re.findall(r'["\'](/[^"\'\s]*(?:api|json|csv|data)[^"\'\s]*)["\']', b))))[:600])
+          out.append('links: ' + ', '.join(sorted(set(re.findall(r'href="(/[^"#]*)"', b))))[:500])
+          m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', b, re.S)
+          if m:
+              nd = json.loads(m.group(1)); out.append('NEXT_DATA keys: ' + str(list((nd.get('props') or {}).get('pageProps', {}).keys()))[:300])
+          out.append('text sample: ' + re.sub(r'<[^>]+>', ' ', b)[:400].replace('\n', ' '))
+          for path in ('/projections', '/api/projections', '/daily', '/box-score-projections'):
+              st2, b2 = get('https://www.darko.app' + path)
+              out.append(f'{path}: {st2} ' + (re.search(r'<title>([^<]*)', b2) or [0, ''])[1][:60])
+          st, b = get('https://www.fanduel.com/research/nba/fantasy/dfs-projections')
+          m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', b, re.S)
+          out.append('FD research NEXT_DATA: ' + (str(len(m.group(1))) if m else 'none'))
+          out.append('FD api-ish: ' + ', '.join(sorted(set(re.findall(r'https://[a-z0-9.-]*fanduel[a-z0-9./-]*(?:api|graphql)[^"\'\s]*', b))))[:400])
+          if m:
+              txt = m.group(1)
+              i = txt.find('Wembanyama'); out.append('FD near player: ' + txt[max(0, i-300):i+300] if i >= 0 else 'FD: no player name in NEXT_DATA')
           print('::warning::' + ' || '.join(out).replace('\n', ' '))
           PY
