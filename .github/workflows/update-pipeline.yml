@@ -67,6 +67,12 @@ jobs:
       - name: Final slate projections
         if: always()
         run: python scripts/build_slate.py
+      - name: Late-news alerts (push via ntfy if NTFY_TOPIC is set)
+        if: always()
+        env:
+          # The NTFY_TOPIC secret wins if set; otherwise the topic subscribed in the ntfy app.
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || 'nbaedge' }}
+        run: python scripts/alerts.py
       - name: Record NBA EDGE's lineups for every slate (frozen at each slate's lock)
         if: always()
         run: python scripts/record_lineups.py
@@ -74,12 +80,6 @@ jobs:
         if: always()
         timeout-minutes: 30
         run: python scripts/contest_advisor.py
-      - name: Late-news alerts (push via ntfy if NTFY_TOPIC is set)
-        if: always()
-        env:
-          # The NTFY_TOPIC secret wins if set; otherwise the topic subscribed in the ntfy app.
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || 'nbaedge' }}
-        run: python scripts/alerts.py
       - name: Snapshot projections before tip-off
         if: always()
         run: python scripts/grade_projections.py

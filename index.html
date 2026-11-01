@@ -860,7 +860,19 @@ async function lateSwap(i){
 // ---------- my entries: lineups you actually entered, re-optimized as games lock ----------
 const slotList=()=>F().order.flatMap(s=>Array(F().need[s]).fill(s));
 const entKey=()=>'entries:'+S.day+':'+fmtKey();
-function saveEntries(){store.set(entKey(),(S.entries||[]).map(e=>({label:e.label,noise:e.noise||null,gap0:e.gap0||0,settings:e.settings||null,sim:e.sim??null,picks:e.picks.map(x=>({k:pkey(x.p),slot:x.slot}))})))}
+function saveEntries(){store.set(entKey(),(S.entries||[]).map(e=>({label:e.label,noise:e.noise||null,gap0:e.gap0||0,settings:e.settings||null,sim:e.sim??null,picks:e.picks.map(x=>({k:pkey(x.p),slot:x.slot}))})));shareEntries()}
+// Your entries go to the pipeline (via the ntfy topic nbaedge-entries) so a late scratch of a player
+// you entered triggers a phone push with the swap. Only names, teams and slots are sent.
+let shareT=null;
+function shareEntries(){
+  if(S.review||S.source==='csv'||!S.day)return;
+  clearTimeout(shareT);shareT=setTimeout(()=>{
+    const fmt=fmtKey(),es=(S.entries||[]).map((e,i)=>({l:e.label||('Entry '+(i+1)),s:e.picks.map(x=>[x.p.name,x.p.team,x.slot])}));
+    const sig=JSON.stringify([S.day,fmt,es]),sk='entriesShared:'+fmt;if(store.get(sk,'')===sig)return;
+    const at=Date.now(),parts=[];for(let i=0;i<Math.max(1,es.length);i+=10)parts.push(es.slice(i,i+10));
+    Promise.all(parts.map((e,i)=>fetch('https://ntfy.sh/nbaedge-entries',{method:'POST',body:JSON.stringify({v:1,day:S.day,fmt,at,n:parts.length,i,e})})))
+      .then(rs=>{if(rs.every(r=>r.ok))store.set(sk,sig)}).catch(()=>{});
+  },4000)}
 const isStarted=o=>{const g=gameOf(o.p||o);return !!(g&&started(g))};
 function nameCands(tok){
   const t=key(tok);if(!t)return [];

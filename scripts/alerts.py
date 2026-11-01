@@ -9,13 +9,25 @@ After each projection rebuild, compare with the previous run and alert on:
 News within LATE_WINDOW minutes of tip-off marks the beneficiaries as late-news leverage
 (most of the field has built by then); build_slate.py reads that from alerts.json.
 Push: set the repository secret NTFY_TOPIC (subscribe to the same topic in the ntfy app).
+
+Your entries: when you save lineups on the site ("I entered this" / "I entered all"), the site
+posts them to the ntfy topic nbaedge-entries. Each run reads the latest snapshot (or
+data/my_entries.json) and, if a player in one of your entries is ruled out before his game
+starts, pushes the best single swap for that slot: highest projection that fits the salary
+left, can play the slot, and whose game hasn't started.
 """
 import datetime as dt
 import json
 import os
 import pathlib
+import re
+import sys
+import unicodedata
 import urllib.request
 from zoneinfo import ZoneInfo
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import field_sim as FS  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
@@ -37,6 +49,100 @@ def push(topic, title, body, tags):
                                           'Priority': 'high', 'Click': SITE})
     with urllib.request.urlopen(req, timeout=20) as r:
         return r.status
+
+
+ENTRY_TOPIC = os.environ.get('NTFY_ENTRIES_TOPIC', '').strip() or 'nbaedge-entries'
+CAP = 60000
+
+
+def norm(s):
+    s = unicodedata.normalize('NFKD', str(s or '')).lower().strip()
+    s = re.sub(r'[\s,]+(jr|sr|ii|iii|iv|v)\.?$', '', s)
+    return re.sub(r'[^a-z0-9]', '', s)
+
+
+def load_entries(day):
+    """{format key: [entry]} from the newest complete snapshot the site posted today (ntfy), else
+    data/my_entries.json. Entry: {'l': label, 's': [[name, team, slot], ...]}."""
+    lines = []
+    try:
+        req = urllib.request.Request(f'https://ntfy.sh/{ENTRY_TOPIC}/json?poll=1&since=36h', headers={'User-Agent': 'NBA-EDGE'})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            lines = r.read().decode('utf-8', 'replace').splitlines()
+    except Exception as e:
+        print(f'::warning::entries poll failed: {e}')
+    snaps = {}
+    for ln in lines:
+        try:
+            m = json.loads(ln)
+            d = json.loads(m.get('message') or '') if m.get('event') == 'message' else None
+        except ValueError:
+            continue
+        if not isinstance(d, dict) or d.get('v') != 1 or d.get('day') != day:
+            continue
+        s = snaps.setdefault((d.get('fmt'), d.get('at') or 0), {'n': d.get('n', 1), 'parts': {}})
+        s['parts'][d.get('i', 0)] = d.get('e') or []
+    out = {}
+    for (fmt, _at), s in sorted(snaps.items(), key=lambda kv: kv[0][1]):
+        if len(s['parts']) == s['n']:
+            out[fmt] = [e for i in sorted(s['parts']) for e in s['parts'][i]]
+    if 'main' not in out:
+        me = read(DATA / 'my_entries.json')
+        if me.get('date') == day:
+            out['main'] = [{'l': e.get('label', ''), 's': [[r['name'], r['team'], r['slot']] for r in e.get('players', [])]}
+                           for e in me.get('entries', [])]
+    return out
+
+
+def entry_swaps(today, entries, now, tips):
+    """For every entered player who is now out and whose game hasn't started: the best swap."""
+    main = {norm(p['name']) + '|' + p['team']: p for p in today['players']}
+    started = lambda team: bool(tips.get(team) and now >= tips[team][0])
+    sgs = {('sg:' + str(sg['id'])): sg for sg in today.get('single_games', [])}
+    out = []
+    for fmt_key, ents in entries.items():
+        fmt = 'classic' if fmt_key == 'main' else 'single'
+        if fmt == 'classic':
+            pool = {k: (p, p['salary']) for k, p in main.items() if p.get('main')}
+        else:
+            sg = sgs.get(fmt_key)
+            if not sg:
+                continue
+            pool = {r['k']: (main[r['k']], r['salary']) for r in sg['players'] if r['k'] in main}
+        for ei, e in enumerate(ents):
+            rows = []
+            for name, team, slot in e.get('s', []):
+                k = norm(name) + '|' + team
+                rows.append((k, slot, pool.get(k)))
+            if any(r[2] is None for r in rows):
+                continue
+            keys = {k for k, _, _ in rows}
+            for k, slot, (p, sal) in rows:
+                if not p.get('out') or started(p['team']):
+                    continue
+                mult = FS.FORMATS[fmt]['mult'].get(slot, 1.0)
+                smul = FS.FORMATS[fmt]['sal'].get(slot, 1.0)
+                used = sum(int(s2 * FS.FORMATS[fmt]['sal'].get(sl2, 1.0)) for k2, sl2, (_, s2) in rows if k2 != k)
+                room = CAP - used
+                best = None
+                for k2, (q, s2) in pool.items():
+                    if k2 in keys or q.get('out') or (q.get('proj') or 0) <= 0 or started(q['team']):
+                        continue
+                    if not FS.can_fill(q['position'], slot, fmt) or int(s2 * smul) > room:
+                        continue
+                    if fmt == 'classic':
+                        teams = [main[k3]['team'] for k3, _, _ in rows if k3 != k] + [q['team']]
+                        if teams.count(q['team']) > FS.FORMATS['classic']['team_max']:
+                            continue
+                    if best is None or q['proj'] * mult > best[0]:
+                        best = (q['proj'] * mult, q, s2)
+                label = e.get('l') or f'Entry {ei + 1}'
+                out.append({'id': f"swap|{fmt_key}|{ei}|{k}", 'fmt': fmt_key, 'entry': label, 'slot': slot,
+                            'out_player': p['name'], 'team': p['team'],
+                            'swap': best and {'name': best[1]['name'], 'team': best[1]['team'], 'salary': int(best[2] * smul),
+                                              'proj': round(best[0], 1)},
+                            'room': room})
+    return out
 
 
 def main():
@@ -115,6 +221,36 @@ def main():
             except Exception as e:
                 print(f'::warning::ntfy push failed: {e}')
         print('ALERT', a['title'], '|', a['body'])
+    # Your entries: a swap push for every entered player now out whose game hasn't started.
+    swaps = []
+    try:
+        swaps = entry_swaps(today, load_entries(day), now, tips)
+    except Exception as e:
+        print(f'::warning::entry swap check failed: {e}')
+    sent = {a['id'] for a in state['alerts']}
+    for sw in swaps:
+        sid = f"{day}|{sw['id']}"
+        if sid in sent:
+            continue
+        tip = tips.get(sw['team'], (None, ''))[0]
+        by = tip.astimezone(ET).strftime('%-I:%M %p') if tip else 'his game starts'
+        if sw['swap']:
+            body = (f"{sw['entry']}, {sw['slot']}: {sw['out_player']} -> {sw['swap']['name']} ({sw['swap']['team']}, "
+                    f"${sw['swap']['salary']:,}, {sw['swap']['proj']} proj). Swap on FanDuel before {by}. "
+                    f"Tap to re-optimize every unlocked spot instead.")
+        else:
+            body = f"{sw['entry']}, {sw['slot']}: {sw['out_player']} is out and no one fits ${sw['room']:,}. Open the site to re-optimize before {by}."
+        a = {'id': sid, 'kind': 'swap', 'late': False, 'player': sw['out_player'], 'team': sw['team'],
+             'title': f"Swap {sw['out_player']} out of your lineup", 'body': body, 'at': now.isoformat(timespec='seconds')}
+        state['alerts'].append(a)
+        new_alerts.append(a)
+        if topic:
+            try:
+                push(topic, a['title'], a['body'], 'warning')
+                a['pushed'] = True
+            except Exception as e:
+                print(f'::warning::ntfy push failed: {e}')
+        print('SWAP', a['title'], '|', a['body'])
     state['players'] = cur
     state['updated_at'] = now.isoformat(timespec='seconds')
     old = read(DATA / 'alerts.json')
