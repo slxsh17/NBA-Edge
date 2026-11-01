@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T21:20:40.267590+00:00",
+  "updated_at": "2026-11-01T22:04:49.899367+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -21,11 +21,6 @@
       "name": "Henri Veesaar",
       "team": "ATL",
       "status": "OUT"
-    },
-    {
-      "name": "Jayson Tatum",
-      "team": "BOS",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mitchell Robinson",
@@ -73,6 +68,16 @@
       "status": "OUT"
     },
     {
+      "name": "Jalen Smith",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tobe Awaka",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
@@ -83,9 +88,14 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Jaylon Tyson",
+      "name": "Peyton Watson",
       "team": "CLE",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jaylon Tyson",
+      "team": "CLE",
+      "status": "OUT"
     },
     {
       "name": "Sergio de Larrea",
@@ -438,12 +448,22 @@
       "status": "OUT"
     },
     {
-      "name": "Justin Champagnie",
+      "name": "Tristan Vukcevic",
       "team": "WAS",
       "status": "OUT"
     },
     {
-      "name": "Tristan Vukcevic",
+      "name": "Alex Sarr",
+      "team": "WAS",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Anthony Gill",
+      "team": "WAS",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Justin Champagnie",
       "team": "WAS",
       "status": "OUT"
     },
