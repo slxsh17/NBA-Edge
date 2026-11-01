@@ -28,11 +28,19 @@ jobs:
           out = []
           import update_darko as D
           page = D.fetch(D.URL)
-          head, rows = D.parse(page)
-          out.append(f'columns={head} rows={len(rows)} tables={len(re.findall("<table", page))} trs={len(re.findall("<tr", page))}')
-          for r in rows[:3] + rows[-2:]:
-              out.append(json.dumps(r))
-          out.append('pagination hints: ' + ', '.join(sorted(set(re.findall(r'(?:page|limit|show|rows|per)[=:][^"&\s]{0,12}', page, re.I))))[:300])
-          out.append('buttons: ' + ', '.join(sorted(set(re.sub(r'<[^>]+>', '', b).strip() for b in re.findall(r'<button[^>]*>(.*?)</button>', page, re.S))))[:400])
+          for nm in ('Dean Wade', 'Jock Landale', 'Ryan Kalkbrenner', 'Victor Wembanyama'):
+              out.append(f'{nm}: {page.count(nm)}')
+          scripts = re.findall(r'<script[^>]*>(.*?)</script>', page, re.S)
+          out.append('inline scripts sizes: ' + str(sorted((len(x) for x in scripts), reverse=True)[:6]))
+          big = max(scripts, key=len) if scripts else ''
+          i = big.find('Wembanyama'); out.append('big script near Wemby: ' + re.sub(r'\s+', ' ', big[max(0, i-300):i+500]) if i >= 0 else 'big script head: ' + big[:400])
+          for q in ('?page=2', '?page=1&per=500', '?limit=1000'):
+              p2 = D.fetch(D.URL + q); h2, r2 = D.parse(p2)
+              out.append(f'{q}: rows={len(r2)} first={r2[0]["name"] if r2 else None} last={r2[-1]["name"] if r2 else None}')
+          for path in ('/projections.csv', '/api/projections.csv', '/projections/__data.json', '/projections/__data.json?x-sveltekit-invalidated=01'):
+              try:
+                  b = D.fetch('https://www.darko.app' + path); out.append(f'{path}: len={len(b)} head={b[:200]!r}')
+              except Exception as e:
+                  out.append(f'{path}: {e}')
           print('::warning::' + ' || '.join(out).replace('\n', ' '))
           PY
