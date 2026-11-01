@@ -1,11 +1,19 @@
 {
   "schema": 1,
   "slate_date": "2026-11-01",
-  "checked_at": "2026-11-01T14:58:45.775623+00:00",
+  "checked_at": "2026-11-01T15:26:50.322534+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Tyler Kolek's strong start gives the Knicks a tough rotation decision when Jose Alvarado returns - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSkFWcGs5Q0pIa25LbkRHWlRsXzFZaE0wZzRhNkc1bkg0dVBaNkpYZTZlTkZxWUpLY1VMcndiakRfQTNkVmxKakpCaWN0cjFyMzlEdzJmN3JDYVh3dWpmMlljQ0g0U0JZU0dNaFJxOE10YWd6X05ieVhaZVhmU2RvZk02SzRlRFE?oc=5",
+      "published_at": "2026-11-01T15:05:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
     {
       "headline": "NASCAR Predictions for Xfinity 500, Starting Lineup at Martinsville – 11/1/26 - PrizePicks",
       "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdXNvRUEwVWNxZWpfdFY5MlFkTXYwNnNRc0ltR2hiWUZjeXR0LUFwUzZDSDdIOHpzNUpkZ3ZjeGVGaFU3WDZZZ3ZmTEYwdVpQWUV3ZEQ3UjlSSXU1TVVvREJLTmJwaUg3WEhaNmF1WlRNV0E5YW0wRnpPdjJYbjBqd1EyYTcyM201dHVaV2VvdVZDUmVSTlp2VlgwTGFRVC01ODNlX1Z3Ym5hWUVacHg1UmhhT0lVOHRXUlZLNmdR?oc=5",
@@ -87,25 +95,9 @@
       "scope_date": "2026-11-01"
     },
     {
-      "headline": "Will Ty Jerome, Scotty Pippen Jr. play vs Kings? Grizzlies injury update - The Commercial Appeal",
-      "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdmxLaFlWajhlemNHUlZ0MWtheVFCRUdsOWUzWHdsUm1iMUFxQWZxd1ZvMktNOFRRUzdLeXFwaFVwUGhfUzJhRXBIbmxXaFdzbmdLMEcyVUptMmgwbG9vWEJGMDhXeEVVTGFEQWp2ZEFXd2dTb3NGSDg0V2E2MHdYc3oxeEtQOWZxU0Z0Y3NTQWFlX1VZdWpVVkc0RGVUQXVTdVF0Ty1MNEM4UGQ2T0xQUXI1QTdOSVYtc0c5YWZiNzlQaDVBOHFDSFR1d2hpVnZHOGkxb3gyWQ?oc=5",
-      "published_at": "2026-11-01T00:56:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
       "headline": "What channel is Thunder vs Rockets on TV tonight? Time, NBA schedule, injury report - The Oklahoman",
       "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSjFYMzVpUllaNU1oWVZGcWVfRTUtcE1oZmZGbTBuV094VU8tN29MOGtkUlVudXl6aFVQdmd5bkNjQkc1dVowT2dKWW5EWTNQUV9QcGhLTHpaVkhCdm90U2h1dDhObTlzOFpaako3am4wX1FESFRkMlpJb2J0dWYtSC1tMFpGNHEycmdpdUhqd3YzTG5xcTZPVTdtVk12S3ZYX2s1a2FIdHBaS2lDX0NYdndZTXdoZTNXY1lNRW5nZnNsUldRUE9BM1plQU9jdnJrdVJrQXlUYWdKVndOQ2JNRDN3?oc=5",
       "published_at": "2026-11-01T00:39:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Lakers Get Encouraging Injury Update on Key Starter After Warriors Collapse - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObkZJVkNDWXVNaTZwSUZmWlFBR2lqSXlBbFpydVhiSzN1X0VwOTV5blRMbk9ncEVNRWJWNjJKd2pmU0xtMlFCVkJMV2QtczZJSks0ZWpJSVNmVkpuUVNTYWdYWEo0RzlGa2hYaEJ5NGdLZ1NISElJY1Y5WVh1Z2ZNOG1Ba2gwQUlXVzBjNG42YmpDRE1jay1qbg?oc=5",
-      "published_at": "2026-11-01T00:28:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
@@ -482,14 +474,6 @@
       "headline": "Full injury report for Sixers-Hornets on Saturday - PhillyVoice",
       "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVmtyUWJWdy1YamYtYU42bW9pbmlwNDdhWHNETEZSYkF3M1Rtd2ZvNjQtRVJYYzBRTXVRRHBQZUoyc28zSW9BRC1qU0FZMHdERjhKOTBTUG9faERSYVVwMDEzeDJnc1Npa3Ita3RzYnNnbmthdWlmT3ptVkJ1bUNrT29takMydEQtWWR2RGpmMVlSS0RKdDBNRV9hczVjc0ptbXpOMy1aMm5HcU9GU0hXU3FlUks5aWppeHpLVEhodElmazhzZGpEMw?oc=5",
       "published_at": "2026-10-31T17:03:29+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "NBA injury report: Ja Morant, Shaedon Sharpe out Saturday - TalkBasket.net",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPR2dWaEpjRkFfTms0N1BYRzJpVWN5NWRSMVItM3dnSnBVdU9qdWY2UWRhTFFxdjV2Y1labmo3eHFPcHl1NlMxRGkzeFY1RHpfbmdhLWdQSEJNeF9MakYwRTRTdG83RmNRWC1rbGRnY2pGbENDd0tYYXVsbjg1d00xVkZPX2Q3TWRaMnd4QXFJQzAxaUk?oc=5",
-      "published_at": "2026-10-31T15:21:08+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
