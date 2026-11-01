@@ -89,7 +89,15 @@ jobs:
           # portfolio) makes git add fail with exit 128 and nothing gets published.
           paths=(); for p in data/slate_* data/single_* data/automatic_projections.json data/today.json data/accuracy.json data/history data/learned_weights.json data/archive data/season_logs.json data/model_params.json data/ownership data/ownership_params.json data/alerts.json data/strategy.json data/lineups data/lineup_results.json data/contest_sims.json data/contest_history.json data/portfolios data/portfolio_results.json data/manual_status.json; do [ -e "$p" ] && paths+=("$p"); done
           git add -A "${paths[@]}"
+          # Files the cleanup steps deleted (old slates / single games / lineups) don't match the shell
+          # globs above; left unstaged they made every pull --rebase refuse to run (Nov 1).
+          git add -u -- 'data/slate_*' 'data/single_*' 'data/lineups' 'data/archive' 'data/history'
           git diff --cached --quiet && exit 0
           git commit -m 'Update NBA EDGE slate pipeline'
-          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          for i in 1 2 3; do
+            git pull --rebase --autostash -X theirs && git push && exit 0
+            git status --short | head -8 | sed 's/^/::warning::publish retry: /'
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
           exit 1
