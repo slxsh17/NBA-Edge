@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-11-01",
-"updated_at": "2026-11-01T18:02:23+00:00",
+"updated_at": "2026-11-01T18:39:39+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -62,11 +62,11 @@
 {
 "name": "Franz Wagner",
 "team": "ORL",
-"fta_own": 59.4,
+"fta_own": 59.3,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 59.4,
+"consensus_own": 59.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -95,11 +95,11 @@
 {
 "name": "Brandin Podziemski",
 "team": "GSW",
-"fta_own": 43.0,
+"fta_own": 43.1,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 43.0,
+"consensus_own": 43.1,
 "source_count": 1,
 "mention_count": 0
 },
@@ -107,32 +107,32 @@
 "name": "De'Anthony Melton",
 "team": "GSW",
 "fta_own": null,
-"linestar_own": 41.9,
+"linestar_own": 41.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 41.9,
+"consensus_own": 41.7,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Michael Porter",
 "team": "BKN",
-"fta_own": 40.9,
+"fta_own": 41.0,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 40.9,
+"consensus_own": 41.0,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Scottie Barnes",
 "team": "TOR",
-"fta_own": 41.6,
-"linestar_own": 24.8,
+"fta_own": 41.7,
+"linestar_own": 24.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 33.2,
+"consensus_own": 33.3,
 "source_count": 2,
 "mention_count": 0
 },
@@ -140,10 +140,10 @@
 "name": "Neemias Queta",
 "team": "BOS",
 "fta_own": 49.4,
-"linestar_own": 15.8,
+"linestar_own": 16.0,
 "mentions": 0,
 "articles": [],
-"consensus_own": 32.6,
+"consensus_own": 32.7,
 "source_count": 2,
 "mention_count": 0
 },
@@ -151,10 +151,10 @@
 "name": "Day'Ron Sharpe",
 "team": "BKN",
 "fta_own": 33.1,
-"linestar_own": 26.3,
+"linestar_own": 29.1,
 "mentions": 0,
 "articles": [],
-"consensus_own": 29.7,
+"consensus_own": 31.1,
 "source_count": 2,
 "mention_count": 0
 },
@@ -173,10 +173,10 @@
 "name": "RJ Barrett",
 "team": "TOR",
 "fta_own": 41.6,
-"linestar_own": 13.6,
+"linestar_own": 13.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 27.6,
+"consensus_own": 27.7,
 "source_count": 2,
 "mention_count": 0
 },
@@ -184,10 +184,10 @@
 "name": "Isaiah Jackson",
 "team": "LAC",
 "fta_own": 27.7,
-"linestar_own": 23.7,
+"linestar_own": 24.0,
 "mentions": 0,
 "articles": [],
-"consensus_own": 25.7,
+"consensus_own": 25.9,
 "source_count": 2,
 "mention_count": 0
 },
@@ -206,10 +206,10 @@
 "name": "Wendell Carter",
 "team": "ORL",
 "fta_own": null,
-"linestar_own": 20.9,
+"linestar_own": 20.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 20.9,
+"consensus_own": 20.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -217,10 +217,10 @@
 "name": "Desmond Bane",
 "team": "ORL",
 "fta_own": null,
-"linestar_own": 20.3,
+"linestar_own": 20.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 20.3,
+"consensus_own": 20.2,
 "source_count": 1,
 "mention_count": 0
 },
@@ -228,10 +228,10 @@
 "name": "Nolan Traore",
 "team": "BKN",
 "fta_own": null,
-"linestar_own": 16.3,
+"linestar_own": 16.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 16.3,
+"consensus_own": 16.9,
 "source_count": 1,
 "mention_count": 0
 },
@@ -239,10 +239,10 @@
 "name": "Gui Santos",
 "team": "GSW",
 "fta_own": null,
-"linestar_own": 12.3,
+"linestar_own": 12.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 12.3,
+"consensus_own": 12.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -250,10 +250,10 @@
 "name": "Jay Huff",
 "team": "IND",
 "fta_own": null,
-"linestar_own": 5.2,
+"linestar_own": 4.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 5.2,
+"consensus_own": 4.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -261,10 +261,10 @@
 "name": "Ziaire Williams",
 "team": "LAL",
 "fta_own": null,
-"linestar_own": 4.6,
+"linestar_own": 4.5,
 "mentions": 0,
 "articles": [],
-"consensus_own": 4.6,
+"consensus_own": 4.5,
 "source_count": 1,
 "mention_count": 0
 },
@@ -283,10 +283,10 @@
 "name": "Matisse Thybulle",
 "team": "LAL",
 "fta_own": null,
-"linestar_own": 2.6,
+"linestar_own": 2.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 2.6,
+"consensus_own": 2.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -294,10 +294,10 @@
 "name": "Graham Ike",
 "team": "GSW",
 "fta_own": null,
-"linestar_own": 1.0,
+"linestar_own": 0.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 1.0,
+"consensus_own": 0.9,
 "source_count": 1,
 "mention_count": 0
 },
@@ -318,7 +318,7 @@
 {
 "name": "Desmond Bane",
 "team": "ORL",
-"own": 40.0
+"own": 40.9
 },
 {
 "name": "Anthony Black",
@@ -333,7 +333,7 @@
 {
 "name": "Neemias Queta",
 "team": "BOS",
-"own": 34.0
+"own": 36.3
 },
 {
 "name": "Jase Richardson",
@@ -350,22 +350,22 @@
 {
 "name": "Jakob Poeltl",
 "team": "TOR",
-"own": 33.9
+"own": 34.9
 },
 {
 "name": "RJ Barrett",
 "team": "TOR",
-"own": 31.5
-},
-{
-"name": "Ziaire Williams",
-"team": "LAL",
-"own": 23.6
+"own": 30.8
 },
 {
 "name": "Matisse Thybulle",
 "team": "LAL",
-"own": 22.9
+"own": 23.7
+},
+{
+"name": "Ziaire Williams",
+"team": "LAL",
+"own": 23.5
 }
 ]
 },
