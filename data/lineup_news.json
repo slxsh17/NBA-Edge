@@ -1,15 +1,39 @@
 {
   "schema": 1,
   "slate_date": "2026-11-01",
-  "checked_at": "2026-11-01T12:28:53.805653+00:00",
+  "checked_at": "2026-11-01T13:21:41.972242+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
     {
-      "headline": "How will return of Suzuki, Demidov affect the red-hot Canadiens? - The New York Times",
+      "headline": "Mapping the Path to Rotation Minutes for These Four First-Round Rookies - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQamtnSEFVY05oSGUtRlFIMWlQZi1HcEN1b0ZmU3k4SC1Sa19iWG5OanpfSExKVFVxNWkzU2VTd0JBclJESHJRNHJPZTBocXpSUEIwYUozWGpueWJoaG5uTHFueTl4b0ZfTFVZN0RnZEFObFdHLUZuS013MjFRZngxN0tvaDU4elMwZnRhUVZxZUZyR3ZldDNMQWJQYVpxVlNJbVBnU2FKSFdFeHZ6OS1SOURB?oc=5",
+      "published_at": "2026-11-01T13:00:02+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "Mitchell Robinson Questionable Sunday Against Orlando - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZEhaOUtxcEhQYjE0Mm8tQ0M5T3Z6X2VVbVA3ZVhHUE9kQmJBVG9UdXB2TEVSM3hzWmI1dUg1TTJsWWJkemlKOW05WnpPYy1KREI3QW9BT2hLQWpVMklpc012VjRIMktSUzNJYjJFRnBWVU0wSmtBVDlIRWR1aUhDR2FsWC1HYnZBODhhNUpCZjhBT21rZS1WSkVMM1FkclVIRUE?oc=5",
+      "published_at": "2026-11-01T12:29:13+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "Marcus Smart Gets the Start and Helps Houston to Bounce-Back Win - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdDNTaVdwRHF6UUFIR25sRXBpbjlZZks0ZVlkWnIwSUVtaHBhWEotUUE1Rm5ZTE5fMEFQaEtJRENtN3JjeEdoS1d1blh1LVd0c2FETHcwamFIX0lPdVFhRWRkMHNNaGJwOU1IYUV1M184VEJzbWdMclJaRGlGd3MzQzFFTEVnanJyUEM5OGxaMUxrN1FqUGJIc0lNcTBKX0ZaRmcyakJqSWZPNmdhR2JXQlZJQUc?oc=5",
+      "published_at": "2026-11-01T12:01:56+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "How will return of Nick Suzuki, Ivan Demidov affect the red-hot Canadiens? - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbTJoX2cwOUhxREItYVlvdlFGb1lXaUtJbEtUbVFjekQ1QXRoYkM5Ym9GUThCdzB5dkQtNmxYaGpmLWtYZ25CNW5WcGdQYms0LTg3VkxiLVpBdE1LQzRHYUlWcXpPc0xGTjBLLS1GVkY3TjdWdTRYQk5mcGowNy10S2tsZkl0aWkyVjE0Y0k4MUVrSVBsTGFxQ1hlTUdHOERBZGxz?oc=5",
-      "published_at": "2026-11-01T11:00:09+00:00",
+      "published_at": "2026-11-01T11:33:20+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
@@ -191,7 +215,7 @@
       "scope_date": "2026-11-01"
     },
     {
-      "headline": "Celtics injury report: Mitchell Robinson listed for Magic game Sunday - MassLive.com",
+      "headline": "Celtics injury report: Mitchell Robinson listed for Magic game Sunday - MassLive",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcHA2TWZ1VWItT0Y1V1RLRDBXTVFWd0ZTQWFld0s2cS0yVXdGRnFVTFg5aFh3MFdtdXJob0cwZi16Ty1vNDVTS0FwZXZvV09lTVRMUk5RWFY0ZG5aWS12VmlDc01STzBINm0xLW5Nbk1lNUZnOHpxZ0E2WDN1TnE5Yk9KSnZNNjBrWUJ5MzBkSXRucWpySjg0YmhZRVJUa0tpZ2xNc1AyZHpzeFVvZWE4eGNyQ2g?oc=5",
       "published_at": "2026-10-31T20:37:00+00:00",
       "type": "headline_only",
@@ -426,14 +450,6 @@
       "headline": "Mike Lupica: Knicks need to start acting like championship parade is over - New York Daily News",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeXY3ZVg0cG1NUVU2OEtBXy1aSlVkWlE2U2FYdUNIVVVZVTQyTUZUMktpSWRRWGtyYWFGV3MxY3pqYXhzeV82TUlaem1ONlV3S29GVHc4c2hDX3pTUlJsUUhOd1NrSXVLNF9nckhocXdWdXFIM2llRHVxakpNanFGN0ZEYnBSekhmVTRFdmYtOFd2bEZ0OFdlSk1Da3k4Y1ZOOFFTV1MwTQ?oc=5",
       "published_at": "2026-10-31T13:39:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Ja Morant’s Injury: How The Blazers Will Have To Adjust - Last Word On Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9SbHM2Ml8wNjRMWGRpdng0aFJnS2otdkcyM0ZmUlRxUF9TbkdxM2dDT2xfSnUtUjgtMl9xLUJmVHlwVWZYUFZ3d2xGWEwxNGVicHJzWTdnbklPMXlnVng4clkzc2MtUzJNdFdCWE9oMFBFeVVUeFRVdEZTRmNRenM?oc=5",
-      "published_at": "2026-10-31T13:21:05+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
