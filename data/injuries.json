@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T15:20:15.583021+00:00",
+  "updated_at": "2026-11-01T16:03:50.168022+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -205,11 +205,6 @@
     {
       "name": "Tyrese Haliburton",
       "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Yanic Konan Niederhauser",
-      "team": "LAC",
       "status": "OUT"
     },
     {
