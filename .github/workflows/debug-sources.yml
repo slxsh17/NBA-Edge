@@ -28,20 +28,18 @@ jobs:
           out = []
           import update_darko as D
           page = D.fetch(D.URL)
-          for nm in ('Dean Wade', 'Jock Landale', 'Ryan Kalkbrenner', 'Victor Wembanyama'):
-              out.append(f'{nm}: {page.count(nm)}')
-          scripts = re.findall(r'<script[^>]*>(.*?)</script>', page, re.S)
-          out.append('inline scripts sizes: ' + str(sorted((len(x) for x in scripts), reverse=True)[:6]))
-          big = max(scripts, key=len) if scripts else ''
-          i = big.find('Wembanyama'); out.append('big script near Wemby: ' + re.sub(r'\s+', ' ', big[max(0, i-300):i+500]) if i >= 0 else 'big script head: ' + big[:400])
-          for q in ('?page=2', '?page=1&per=500', '?limit=1000'):
-              p2 = D.fetch(D.URL + q); h2, r2 = D.parse(p2)
-              out.append(f'{q}: rows={len(r2)} first={r2[0]["name"] if r2 else None} last={r2[-1]["name"] if r2 else None}')
-          for path in ('/projections.csv', '/api/projections.csv', '/projections/__data.json', '/projections/__data.json?x-sveltekit-invalidated=01'):
+          rows = D.parse_data(page)
+          out.append(f'embedded rows={len(rows)} dates={sorted(set(r["date"] for r in rows))[-3:]} sample={rows[0]["name"]} {rows[0]["fd"]}')
+          tm = sorted(set(re.findall(r'(?:time-machine|timemachine|asOf|as_of|date)=?[^"&\s<]{0,20}', page, re.I)))[:15]
+          out.append('time machine hints: ' + ', '.join(tm))
+          for q in ('?date=2026-10-25', '?as_of=2026-10-25', '?asof=2026-10-25', '?d=2026-10-25'):
               try:
-                  b = D.fetch('https://www.darko.app' + path); out.append(f'{path}: len={len(b)} head={b[:200]!r}')
+                  p2 = D.fetch(D.URL + q); r2 = D.parse_data(p2)
+                  out.append(f'{q}: rows={len(r2)} dates={sorted(set(r["date"] for r in r2))[-2:]} wemby={[ (r["fd"], r["date"]) for r in r2 if "Wembanyama" in r["name"]][:1]}')
               except Exception as e:
-                  out.append(f'{path}: {e}')
+                  out.append(f'{q}: {e}')
+          links = sorted(set(re.findall(r'href="(/[^"#]*(?:time|machine|date)[^"#]*)"', page, re.I)))[:10]
+          out.append('time links: ' + ', '.join(links))
           for line in out[:10]:
               print('::warning::' + re.sub(r'[^ -~]', '?', line).replace('::', ': :')[:900])
           PY

@@ -50,8 +50,55 @@ def num(v):
         return None
 
 
+REC = re.compile(r'\{nba_id:(\d+),player_name:"((?:[^"\\]|\\.)*)",team_name:"([^"]*)",tm_id:(\d+),position:"([^"]*)",date:"([^"]*)",(x_[^{}]*)\}')
+KV = re.compile(r'(x_[a-z0-9_]+):(-?[\d.]+(?:e-?\d+)?)')
+
+
+def parse_data(page):
+    """The page embeds DARKO's full projection set (every player, not just the 100 shown):
+    expected minutes, team pace and per-100-possession rates. Per-game stat = rate * pace * min / 4800."""
+    best = {}
+    for m in REC.finditer(page):
+        nba_id, name, team_name, _tm, pos, date, rest = m.groups()
+        x = {k: float(v) for k, v in KV.findall(rest)}
+        if 'x_minutes' not in x or 'x_pace' not in x or 'x_pts_100' not in x:
+            continue
+        if nba_id in best and best[nba_id]['date'] >= date:
+            continue
+        poss = x['x_pace'] / 4800.0          # possessions per minute played
+        per100 = {'pts': x.get('x_pts_100', 0), 'reb': x.get('x_orb_100', 0) + x.get('x_drb_100', 0),
+                  'ast': x.get('x_ast_100', 0), 'stl': x.get('x_stl_100', 0), 'blk': x.get('x_blk_100', 0),
+                  'tov': x.get('x_tov_100', 0)}
+        fd_100 = per100['pts'] + 1.2 * per100['reb'] + 1.5 * per100['ast'] + 3 * per100['stl'] + 3 * per100['blk'] - per100['tov']
+        mins = x['x_minutes']
+        best[nba_id] = {'nba_id': nba_id, 'name': html.unescape(name.encode().decode('unicode_escape') if '\\' in name else name),
+                        'team': TEAMS.get(team_name, team_name), 'pos': pos, 'date': date, 'min': round(mins, 2), 'pace': round(x['x_pace'], 2),
+                        **{k + '_100': round(v, 3) for k, v in per100.items()},
+                        'fga_100': x.get('x_fga_100'), 'fta_100': x.get('x_fta_100'), 'fg3a_100': x.get('x_fg3a_100'),
+                        'fd_per_min': round(fd_100 * poss, 4), 'fd': round(fd_100 * poss * mins, 2)}
+    return sorted(best.values(), key=lambda r: -r['fd'])
+
+
+TEAMS = {'Atlanta Hawks': 'ATL', 'Boston Celtics': 'BOS', 'Brooklyn Nets': 'BKN', 'Charlotte Hornets': 'CHA',
+         'Chicago Bulls': 'CHI', 'Cleveland Cavaliers': 'CLE', 'Dallas Mavericks': 'DAL', 'Denver Nuggets': 'DEN',
+         'Detroit Pistons': 'DET', 'Golden State Warriors': 'GSW', 'Houston Rockets': 'HOU', 'Indiana Pacers': 'IND',
+         'LA Clippers': 'LAC', 'Los Angeles Clippers': 'LAC', 'Los Angeles Lakers': 'LAL', 'Memphis Grizzlies': 'MEM',
+         'Miami Heat': 'MIA', 'Milwaukee Bucks': 'MIL', 'Minnesota Timberwolves': 'MIN', 'New Orleans Pelicans': 'NOP',
+         'New York Knicks': 'NYK', 'Oklahoma City Thunder': 'OKC', 'Orlando Magic': 'ORL', 'Philadelphia 76ers': 'PHI',
+         'Phoenix Suns': 'PHX', 'Portland Trail Blazers': 'POR', 'Sacramento Kings': 'SAC', 'San Antonio Spurs': 'SAS',
+         'Toronto Raptors': 'TOR', 'Utah Jazz': 'UTA', 'Washington Wizards': 'WAS'}
+
+
 def parse(page):
-    """The Fantasy Lab table: rank, player (+position tag), team, then one column per stat."""
+    """Full embedded data first; the visible 100-row table as a fallback."""
+    rows = parse_data(page)
+    if rows:
+        return ['embedded'], rows
+    return parse_table(page)
+
+
+def parse_table(page):
+    """The visible Fantasy Lab table: rank, player (+position tag), team, one column per stat."""
     tables = re.findall(r'<table[^>]*>(.*?)</table>', page, re.S)
     for t in tables:
         head = [re.sub(r'[^A-Z0-9%/+]', '', re.sub(r'<[^>]+>', ' ', h).upper())
