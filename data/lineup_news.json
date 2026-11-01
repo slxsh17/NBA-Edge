@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-01",
-  "checked_at": "2026-11-01T09:28:32.883353+00:00",
+  "checked_at": "2026-11-01T10:09:16.241805+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -378,6 +378,14 @@
       "headline": "Mike Lupica: Knicks need to start acting like championship parade is over - New York Daily News",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeXY3ZVg0cG1NUVU2OEtBXy1aSlVkWlE2U2FYdUNIVVVZVTQyTUZUMktpSWRRWGtyYWFGV3MxY3pqYXhzeV82TUlaem1ONlV3S29GVHc4c2hDX3pTUlJsUUhOd1NrSXVLNF9nckhocXdWdXFIM2llRHVxakpNanFGN0ZEYnBSekhmVTRFdmYtOFd2bEZ0OFdlSk1Da3k4Y1ZOOFFTV1MwTQ?oc=5",
       "published_at": "2026-10-31T13:39:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "Lauri Markkanen Questionable Oct. 31 Against Trail Blazers Due To Wrist Injury - FanDuel",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMGRUVXF2Tm5lX2R1M1Q5elplc2s0UHpiTDUtUEdQSDdibVlZWHYteWNZdXNNd1BweHI1SWQ3ekREeXVleTRCVFJoZWNfOGVmc0swQTNxVkFRTnpfZElXTENobktMbkU5MWRaci11MkZPbFROaUN3RUVDOTFuWHg1d2xKWTB0ZzBYazlRR3BWU0NndE5Bd3lLYmRObTVQLUgwMTRUM0R2TlpzS2Fzc1dTR2xFaThOUHJvSEVLcTJQcWgzcDJsNHhFSDdR?oc=5",
+      "published_at": "2026-10-31T12:13:02+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
