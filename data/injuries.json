@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T20:02:25.428156+00:00",
+  "updated_at": "2026-11-01T20:41:19.550847+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -173,6 +173,11 @@
       "status": "OUT"
     },
     {
+      "name": "Obi Toppin",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
       "name": "T.J. McConnell",
       "team": "IND",
       "status": "OUT"
@@ -184,11 +189,6 @@
     },
     {
       "name": "Aaron Nesmith",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Obi Toppin",
       "team": "IND",
       "status": "DAY-TO-DAY"
     },
@@ -205,6 +205,16 @@
     {
       "name": "Tyrese Haliburton",
       "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Yanic Konan Niederhauser",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Brandon Ingram",
+      "team": "LAC",
       "status": "OUT"
     },
     {
@@ -263,9 +273,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jordan Poole",
+      "name": "Trey Murphy III",
       "team": "NOP",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jordan Poole",
+      "team": "NOP",
+      "status": "OUT"
     },
     {
       "name": "Dejounte Murray",
