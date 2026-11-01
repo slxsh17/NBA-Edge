@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-31T18:23:42+00:00",
+ "updated_at": "2026-11-01T18:32:33+00:00",
  "params": {
   "field_noise": 0.05,
   "consensus_w": 1.0,
@@ -9,7 +9,7 @@
   "external_w": 0.5,
   "mention_w": 0.0
  },
- "decision": "Kept current settings: refit didn't beat them on 2026-10-30 (2.9 vs 2.8).",
+ "decision": "Kept current settings: refit didn't beat them on 2026-10-31 (3.6 vs 3.6).",
  "days_used": [
   "2026-10-20",
   "2026-10-21",
@@ -21,7 +21,8 @@
   "2026-10-27",
   "2026-10-28",
   "2026-10-29",
-  "2026-10-30"
+  "2026-10-30",
+  "2026-10-31"
  ],
  "single_params": {
   "field_noise": 0.32,
@@ -40,25 +41,25 @@
   }
  },
  "single_eval": {
-  "decision": "Kept single-game settings: refit didn't beat them on 2026-10-30 (7.1 vs 7.2).",
-  "slates": 20,
-  "full_pool_slates": 7,
-  "heldout_day": "2026-10-30",
-  "heldout_current": 7.23,
-  "heldout_fitted": 7.11,
-  "heldout_main_settings": 7.32,
-  "linestar_heldout": 10.86,
-  "avg_miss_all": 7.08,
-  "heldout_without_linestar": 10.17
+  "decision": "Kept single-game settings: refit didn't beat them on 2026-10-31 (5.8 vs 5.8).",
+  "slates": 22,
+  "full_pool_slates": 9,
+  "heldout_day": "2026-10-31",
+  "heldout_current": 5.82,
+  "heldout_fitted": 5.79,
+  "heldout_main_settings": 12.9,
+  "linestar_heldout": 9.55,
+  "avg_miss_all": 6.97,
+  "heldout_without_linestar": 10.12
  },
  "evaluation": {
-  "days": 9,
-  "players": 997,
-  "avg_miss_all_days": 2.94,
-  "heldout_day": "2026-10-30",
-  "heldout_current": 2.76,
-  "heldout_fitted": 2.9,
-  "linestar_heldout": 3.34
+  "days": 10,
+  "players": 1102,
+  "avg_miss_all_days": 3.01,
+  "heldout_day": "2026-10-31",
+  "heldout_current": 3.62,
+  "heldout_fitted": 3.63,
+  "linestar_heldout": 4.69
  },
  "log": [
   {
@@ -131,6 +132,18 @@
   },
   {
    "date": "2026-10-31",
+   "adopted": false,
+   "params": {
+    "field_noise": 0.05,
+    "consensus_w": 1.0,
+    "field_mix": 0.8,
+    "chalk_power": 0.8,
+    "external_w": 0.5,
+    "mention_w": 0.0
+   }
+  },
+  {
+   "date": "2026-11-01",
    "adopted": false,
    "params": {
     "field_noise": 0.05,
