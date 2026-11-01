@@ -201,7 +201,7 @@ def starter_match(name, lineup_names):
 
 # ---------- shared final formula (mirrored in index.html and learn_weights.py) ----------
 DEFAULT_WEIGHTS = {'vegas': 1.0, 'matchup': 1.0, 'injury': 1.0, 'usage': 1.0, 'starter': 1.0,
-                   'blowout': 1.0, 'scale': 1.0, 'outside': 0.0, 'travel': 0.0, 'darko': 0.0, 'minutes_mult': {}}
+                   'blowout': 1.0, 'scale': 1.0, 'outside': 0.0, 'travel': 0.0, 'darko': 0.0, 'darko_min': 0.0, 'minutes_mult': {}}
 ARENAS = {'ATL': (33.757, -84.396), 'BOS': (42.366, -71.062), 'BKN': (40.683, -73.975), 'CHA': (35.225, -80.839),
           'CHI': (41.881, -87.674), 'CLE': (41.497, -81.688), 'DAL': (32.790, -96.810), 'DEN': (39.749, -105.008),
           'DET': (42.341, -83.055), 'GSW': (37.768, -122.388), 'HOU': (29.751, -95.362), 'IND': (39.764, -86.155),
@@ -249,7 +249,11 @@ def final_projection(p, W):
     """minutes, projection from base minutes + recorded adjustments + weights."""
     a = p.get('adj', {})
     mm = (W.get('minutes_mult') or {}).get(p.get('method') or 'other', 1.0)
-    m = (p['base_minutes'] * mm + a.get('injury_min', 0) * W['injury'] + a.get('starter_min', 0) * W['starter'])
+    base = p['base_minutes'] * mm
+    dm = W.get('darko_min', 0.0)           # learned pull of base minutes toward DARKO's expected minutes
+    if dm and p.get('darko_min') and base > 0:
+        base = (1 - dm) * base + dm * p['darko_min']
+    m = (base + a.get('injury_min', 0) * W['injury'] + a.get('starter_min', 0) * W['starter'])
     m *= a.get('team_cap', 1.0) * (1 + a.get('blowout', 0) * W['blowout'])
     f = lambda x, w: 1 + (x - 1) * w
     wmax = max(1.0, W['vegas'], W['matchup'], W['usage'])

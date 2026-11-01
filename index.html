@@ -340,8 +340,8 @@ const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(
   locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null,format:'classic',sgId:null};
 const F=()=>FMT[S.format];const multOf=slot=>F().mult[slot]||1;
 const fmtKey=()=>S.format==='single'?'sg:'+S.sgId:'main';
-const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,outside:0,darko:0,levW:.15,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.03,sgCap:60000};
-const LEARNABLE=['vegas','matchup','injury','usage','starter','blowout','outside','darko'];
+const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,outside:0,darko:0,darko_min:0,levW:.15,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.03,sgCap:60000};
+const LEARNABLE=['vegas','matchup','injury','usage','starter','blowout','outside','darko','darko_min'];
 S.user=store.get('cfgUser',{});S.learned={scale:1,minutes_mult:{}};
 function learnedDefaults(){const o={...DEFAULTS};for(const k of LEARNABLE)if(typeof S.learned[k]==='number')o[k]=+S.learned[k].toFixed(2);return o}
 function rebuildCfg(){S.cfg={...learnedDefaults(),...S.user}}
@@ -355,6 +355,7 @@ const SETTINGS=[
  {k:'starter',label:'Confirmed starter bump',min:0,max:2,step:.1,fmt:'x',help:'Extra minutes for bench players confirmed in the starting five.'},
  {k:'blowout',label:'Blowout minutes cut',min:0,max:2,step:.1,fmt:'x',help:'How much starters lose in games with big spreads.'},
  {k:'outside',label:'Outside projection blend',min:0,max:1,step:.05,fmt:'%',help:'How much DailyFantasyFuel\u2019s public projection counts. 0% uses only NBA EDGE.'},
+ {k:'darko_min',label:'DARKO minutes blend',min:0,max:.8,step:.05,fmt:'%',help:'How much each player\u2019s base minutes lean toward DARKO\u2019s expected minutes (before tonight\u2019s injury and starter adjustments). Learned like the others.'},
  {k:'darko',label:'DARKO scoring-rate blend',min:0,max:1,step:.05,fmt:'%',help:'How much DARKO\u2019s points per minute counts (an advanced per-100-possession model with stat-by-stat stabilization). The learner raises it only if it proves more accurate on nights it hasn\u2019t seen.'},
  {h:'Lineup rules'},
  {k:'maxTeam',label:'Max players per team (classic)',min:1,max:4,step:1,fmt:'',help:'FanDuel allows up to 4. Single game always allows up to 5.'},
@@ -381,7 +382,7 @@ function recompute(){
     const a=p.adj||{},ov=S.over[pkey(p)];
     let m;
     if(ov&&ov.minutes!=null)m=ov.minutes;
-    else if(p.base_minutes!=null){const mm=(S.learned.minutes_mult||{})[p.method||'other']??1;m=p.base_minutes*mm+(a.injury_min||0)*c.injury+(a.starter_min||0)*c.starter;m*=(a.team_cap||1);m*=1+(a.blowout||0)*c.blowout}
+    else if(p.base_minutes!=null){const mm=(S.learned.minutes_mult||{})[p.method||'other']??1;let base=p.base_minutes*mm;if(c.darko_min&&p.darko_min&&base>0)base=(1-c.darko_min)*base+c.darko_min*p.darko_min;m=base+(a.injury_min||0)*c.injury+(a.starter_min||0)*c.starter;m*=(a.team_cap||1);m*=1+(a.blowout||0)*c.blowout}
     else m=p._o.minutes;
     const f=(x,w)=>1+((x??1)-1)*w;
     const wmax=Math.max(1,c.vegas,c.matchup,c.usage);  // same bounds as the pipeline at default weights
@@ -1174,7 +1175,7 @@ function resultsHTML(){
 }
 function learnedHTML(){
   const l=S.lw;if(!l||!l.weights)return '';
-  const w=l.weights,names={vegas:'Vegas',matchup:'Matchup',injury:'Injury minutes',usage:'Usage bump',starter:'Starter bump',blowout:'Blowout cut',outside:'Outside projection blend',darko:'DARKO rate blend'};
+  const w=l.weights,names={vegas:'Vegas',matchup:'Matchup',injury:'Injury minutes',usage:'Usage bump',starter:'Starter bump',blowout:'Blowout cut',outside:'Outside projection blend',darko:'DARKO rate blend',darko_min:'DARKO minutes blend'};
   const methods={sample_blend:'regular players',current_only:'rookies and first-year players',team_change:'players on new teams',prior_only:'players without games this season',recent_role_drop:'players whose role just dropped',recent_minutes_decline:'players losing minutes',dnp_streak_caution:'players coming off DNPs',no_recent_minutes:'players out of the rotation',single_short_game_caution:'players after one short game'};
   const pct=v=>(v>=1?'+':'')+Math.round((v-1)*100)+'%';
   const rows=Object.entries(names).map(([k,n])=>`<tr><td style="text-align:left">${n}</td><td class="n">${Number(w[k]??1).toFixed(2)}x</td></tr>`).join('');

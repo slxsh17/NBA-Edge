@@ -30,8 +30,8 @@ DATA = ROOT / 'data'
 OUT = DATA / 'learned_weights.json'
 BOUNDS = {'vegas': (0, 2), 'matchup': (0, 2), 'injury': (0, 2), 'usage': (0, 2),
           'starter': (0, 2), 'blowout': (0, 2), 'scale': (0.85, 1.15), 'outside': (0, 1), 'travel': (-0.05, 0.02),
-          'darko': (0, 1)}
-PRIOR = {'outside': 0.0, 'travel': 0.0, 'darko': 0.0}   # penalty pulls each weight toward its prior (1.0 unless listed)
+          'darko': (0, 1), 'darko_min': (0, 0.8)}
+PRIOR = {'outside': 0.0, 'travel': 0.0, 'darko': 0.0, 'darko_min': 0.0}   # penalty pulls each weight toward its prior (1.0 unless listed)
 MM_BOUNDS = (0.75, 1.25)
 MIN_ROWS = 300          # don't learn anything below this
 MIN_METHOD_ROWS = 40    # minutes correction needs this many rows for that rule
@@ -104,7 +104,7 @@ def blend(cur, new, a):
 
 def describe(old, new):
     names = {'vegas': 'Vegas', 'matchup': 'Matchup', 'injury': 'Injury minutes', 'usage': 'Usage bump',
-             'starter': 'Starter bump', 'blowout': 'Blowout cut', 'scale': 'Overall scale', 'outside': 'Outside projection blend', 'travel': 'Travel (per 1,000 km)', 'darko': 'DARKO rate blend'}
+             'starter': 'Starter bump', 'blowout': 'Blowout cut', 'scale': 'Overall scale', 'outside': 'Outside projection blend', 'travel': 'Travel (per 1,000 km)', 'darko': 'DARKO rate blend', 'darko_min': 'DARKO minutes blend'}
     ch = []
     for k, n in names.items():
         o = old.get(k, PRIOR.get(k, 1.0))
