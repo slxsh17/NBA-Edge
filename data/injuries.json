@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T17:17:01.325499+00:00",
+  "updated_at": "2026-11-01T17:53:03.395587+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -68,14 +68,14 @@
       "status": "OUT"
     },
     {
-      "name": "Dailyn Swain",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
+    },
+    {
+      "name": "Dailyn Swain",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaylon Tyson",
