@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-01T22:04:49.899367+00:00",
+  "updated_at": "2026-11-01T22:40:34.012488+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
-    {
-      "name": "Jock Landale",
-      "team": "ATL",
-      "status": "DAY-TO-DAY"
-    },
     {
       "name": "Jalen Johnson",
       "team": "ATL",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jock Landale",
+      "team": "ATL",
+      "status": "OUT"
     },
     {
       "name": "Mouhamed Gueye",
@@ -48,22 +48,12 @@
       "status": "OUT"
     },
     {
-      "name": "Kon Knueppel",
-      "team": "CHA",
-      "status": "OUT"
-    },
-    {
-      "name": "Coby White",
-      "team": "CHA",
-      "status": "OUT"
-    },
-    {
       "name": "Grant Williams",
       "team": "CHA",
       "status": "OUT"
     },
     {
-      "name": "Kylan Boswell",
+      "name": "Kon Knueppel",
       "team": "CHA",
       "status": "OUT"
     },
@@ -359,11 +349,6 @@
     },
     {
       "name": "Joel Embiid",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "LeBron James",
       "team": "PHI",
       "status": "DAY-TO-DAY"
     },
