@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T22:40:34.012488+00:00",
+  "updated_at": "2026-11-01T23:18:15.879108+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -88,9 +88,14 @@
       "status": "OUT"
     },
     {
-      "name": "Sergio de Larrea",
+      "name": "Dereck Lively II",
       "team": "DAL",
       "status": "OUT"
+    },
+    {
+      "name": "Kyrie Irving",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Santi Aldama",
@@ -98,12 +103,12 @@
       "status": "OUT"
     },
     {
-      "name": "Tarik Biberovic",
+      "name": "Sergio de Larrea",
       "team": "DAL",
       "status": "OUT"
     },
     {
-      "name": "Dereck Lively II",
+      "name": "Tarik Biberovic",
       "team": "DAL",
       "status": "OUT"
     },
@@ -253,16 +258,6 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Ty Jerome",
-      "team": "MEM",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Rudy Gobert",
-      "team": "MIN",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Anthony Edwards",
       "team": "MIN",
       "status": "OUT"
@@ -376,6 +371,11 @@
       "name": "Shaedon Sharpe",
       "team": "POR",
       "status": "OUT"
+    },
+    {
+      "name": "Zach LaVine",
+      "team": "SAC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dylan Cardwell",
