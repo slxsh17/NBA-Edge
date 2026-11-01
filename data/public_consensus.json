@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-10-31",
-"updated_at": "2026-10-31T23:35:33+00:00",
+"updated_at": "2026-11-01T00:05:06+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -86,7 +86,7 @@
 {
 "name": "Darius Acuff",
 "team": "SAC",
-"fta_own": 29.2,
+"fta_own": 29.3,
 "linestar_own": null,
 "mentions": 2,
 "articles": [
@@ -99,14 +99,14 @@
 "url": "https://dknetwork.draftkings.com/2026/10/31/three-must-start-fantasy-basketball-players-for-the-saturday-10-31-26-nba-slate/"
 }
 ],
-"consensus_own": 29.2,
+"consensus_own": 29.3,
 "source_count": 2,
 "mention_count": 2
 },
 {
 "name": "Evan Mobley",
 "team": "CLE",
-"fta_own": 25.8,
+"fta_own": 25.9,
 "linestar_own": null,
 "mentions": 2,
 "articles": [
@@ -119,7 +119,7 @@
 "url": "https://dknetwork.draftkings.com/2026/10/31/top-nba-dfs-stacks-for-saturday-10-31-26/"
 }
 ],
-"consensus_own": 25.8,
+"consensus_own": 25.9,
 "source_count": 2,
 "mention_count": 2
 },
@@ -148,40 +148,40 @@
 {
 "name": "Naz Reid",
 "team": "CHA",
-"fta_own": 29.0,
+"fta_own": 29.1,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 29.0,
+"consensus_own": 29.1,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Tyrese Maxey",
 "team": "PHI",
-"fta_own": 26.2,
+"fta_own": 26.3,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 26.2,
+"consensus_own": 26.3,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Moussa Diabate",
 "team": "CHA",
-"fta_own": 25.4,
+"fta_own": 25.5,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 25.4,
+"consensus_own": 25.5,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "VJ Edgecombe",
 "team": "PHI",
-"fta_own": 40.2,
+"fta_own": 40.3,
 "linestar_own": 9.5,
 "mentions": 0,
 "articles": [],
@@ -219,7 +219,7 @@
 {
 "name": "Dyson Daniels",
 "team": "ATL",
-"fta_own": 22.7,
+"fta_own": 22.8,
 "linestar_own": 12.5,
 "mentions": 1,
 "articles": [
@@ -285,22 +285,22 @@
 {
 "name": "Peyton Watson",
 "team": "CLE",
-"fta_own": 19.9,
+"fta_own": 20.0,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 19.9,
+"consensus_own": 20.0,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Jaylen Brown",
 "team": "PHI",
-"fta_own": 25.1,
+"fta_own": 25.2,
 "linestar_own": 10.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 18.0,
+"consensus_own": 18.1,
 "source_count": 2,
 "mention_count": 0
 },
@@ -1115,6 +1115,22 @@
 "mention_count": 1
 },
 {
+"name": "Quinten Post",
+"team": "MEM",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Top NBA DFS Stacks for Saturday 10/31/26",
+"url": "https://dknetwork.draftkings.com/2026/10/31/top-nba-dfs-stacks-for-saturday-10-31-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
 "name": "Mouhamed Gueye",
 "team": "ATL",
 "fta_own": null,
@@ -1321,22 +1337,22 @@
 {
 "name": "Amen Thompson",
 "team": "HOU",
-"own": 48.5
+"own": 50.2
 },
 {
 "name": "Kevin Durant",
 "team": "HOU",
-"own": 46.8
+"own": 48.7
 },
 {
 "name": "Jabari Smith",
 "team": "HOU",
-"own": 33.1
+"own": 35.0
 },
 {
 "name": "Marcus Smart",
 "team": "HOU",
-"own": 15.7
+"own": 15.9
 },
 {
 "name": "Kenrich Williams",
