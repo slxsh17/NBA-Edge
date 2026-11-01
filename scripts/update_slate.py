@@ -329,6 +329,10 @@ def main():
     url = f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/'
     try:
         main_page = fetch(url)
+        if not ROW.search(main_page):          # DFF occasionally serves a page without player rows
+            import time
+            time.sleep(15)
+            main_page = fetch(url)
         try:
             players = parse(main_page, day)
         except ValueError as e:
