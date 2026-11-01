@@ -1,0 +1,31 @@
+name: Debug slate source (temporary)
+on:
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Probe DailyFantasyFuel
+        run: |
+          python - <<'PY'
+          import re, sys, datetime as dt, urllib.request
+          sys.path.insert(0, 'scripts')
+          import update_slate as U
+          from zoneinfo import ZoneInfo
+          day = dt.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+          out = [f'day={day}']
+          try:
+              pg = U.fetch(f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/')
+              rows = U.ROW.findall(pg)
+              dates = sorted(set(re.findall(r'data-start_date="([^"]*)"', pg)))
+              out.append(f"len={len(pg)} slate={U.page_var(pg,'slate')!r} url={U.page_var(pg,'url')!r} start={U.page_var(pg,'url_start_date')!r} teams={U.page_var(pg,'team_count')!r} rows={len(rows)} row_dates={dates[:5]}")
+              out.append('title=' + (re.search(r'<title>([^<]*)', pg) or [None, ''])[1][:120])
+              out.append('head=' + re.sub(r'\s+', ' ', pg[:300]))
+          except Exception as e:
+              out.append(f'fetch error: {e!r}')
+          print('::warning::' + ' || '.join(out))
+          PY
