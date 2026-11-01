@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-01",
-  "checked_at": "2026-11-01T04:37:37.230082+00:00",
+  "checked_at": "2026-11-01T05:30:20.958711+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -30,14 +30,6 @@
       "scope_date": "2026-11-01"
     },
     {
-      "headline": "Spurs Announce Late Stephon Castle Injury Update Before Timberwolves Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONWpYWElnaEVGQ0lRdURsenR3bmdzYm9taXhSLXlOTVE5bk5SXzd3aG5yS3pTZzcxTGFzS2tkYnVoc1Iydm9HSzFaRlJPX0JlSi1Qc1E1WjNTam03Z3VHWjJ5ZGYzSzFUZ2ppamJlRXM4UzFoTFViZ1hOd2UyTDJ3dFNRTGQ4cFQwVlVndXJn?oc=5",
-      "published_at": "2026-11-01T00:48:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
       "headline": "Ime Udoka also said there's no minutes restriction for … - HoopsHype",
       "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTnJpWWd2dUNnM3dwZ2pKNGh6OG1VSi1ON1Y5elJoZFVpNEhRbmo5bFJHOEFSVFNzMzNGcWNsQUlhdHJoX09DclByVjh3MmVpcGF0TE9UN0k5WGdWNlY4UmhUYXViMHZfMGd6bmRQT3hRVWJGd01uOWk2VXFrc1psUEFiR1RFWThKS212ajNPMmVYQnpwU3RVX21WNF9IV0VraEstd05tVmpwSDlweExaTE8tLXBLdlRFa1l5UEFIeHJyQ25KOXc?oc=5",
       "published_at": "2026-11-01T00:11:31+00:00",
@@ -56,6 +48,14 @@
     {
       "headline": "Ime Udoka also said there's no minutes restriction for … - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1MQmlRY1R2QVdJM0lyZjY4M0JubDdWVmVFZmZrV2JORGM5N1piMmVJdFpBVGFZTDEtZEUtMGpyMU1Ybm96czdqOUE4S1ZXLTdLLXFFQ2VkaVIxU2psZ2luQ1BJRXVKNTA1MUFTc3BiZUdZNHEtbmhHUnRrbEItUQ?oc=5",
+      "published_at": "2026-11-01T00:08:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "Lakers guard Cameron Carr cleared to make NBA debut - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYS1DOXFHeFdsa3hlaC0yUlZqdkp6WUl6dGo4ckVaQ3pKcEpEZ0wydmY2bjF6bzAxUFBheXNWQ3V4MHRqZW1wOXp5aGFWU2dSeWlZLUFDYVFQT0tsYTl0VGFjZU1xbTNDNjNXNm5wVHJsT1ppckUzcll2a1dxN2NKQkhqSU1oZm1yYkE?oc=5",
       "published_at": "2026-11-01T00:08:00+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -89,6 +89,30 @@
       "headline": "Rudy Gobert (lower back spasms) has been ruled OUT for … - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVF8tczIzOGUtcXo5aU5aZ3NQZDFMdnhTTU9CSkttbGtXdlhoT19jVW5NWXA2M3NIYkJKZDllUUhVakt4dnpMV192QmRWNk9melF4WVVucVo0alZ1QWdHeGhBUUI2VjJDb3FpSHIteFJtVkFaaS1NcEtKazhZa09NWHZ1MlA?oc=5",
       "published_at": "2026-10-31T23:10:58+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "Spurs Announce Late Stephon Castle Injury Update Before Timberwolves Game - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPczV2alJyLVp0SFhiUWFFOGVyOUJfRlZSZXFVWHd6S3dBV2RqYXBQemd0V3YwMVMzdGJxN1c4aTV4bGU3ZWlhMDcwQ0hxT2RWa2hyT2RoQTN6STh6RFRIcC02d2xnaVZqbXpPeHh0aFZZZ1Y1d1FlY3BFd3Y2WWV0QWxHTk1xdl9LenR4NWVBc0Q4ekk?oc=5",
+      "published_at": "2026-10-31T23:05:29+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "Pelicans G Jordan Poole Out Against Hawks, Second Straight Miss With Ankle Sprain - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaENaX0p0UE92Z0drRG0zMHZfTTRlR3FCY3Q3SWtlMU5OeEhCTUFzNVFRN3pTMEFXcXVwX1JpZXBYdFZMa2dRQnVsWFdHelN3ZkF2bW5MakRIZlVBc0ZsYXJQYmRlQ0JaLVlrUXVscmJ4b3R6WHVqMDNOdy1BRk85QzcxdDVBc1U?oc=5",
+      "published_at": "2026-10-31T23:05:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
+      "headline": "\"There is only so many Modern Family episodes a person can watch\" - Kobe Bryant used Achilles rehab to start his business empire - Basketball Network",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNEVickg4NG5PaHU5RmNhT1pibTZSNUF6clBqc1hvd2VSTkRRdTl1NnJsbWJfakJKOXhyZlN1SERyT2VheUhMcGlBckVDNE02c1hpd0FsY1ltaE5mZndzbGxDTlliS0YzS3JQUDh6RzRORU5ucDdGQ2lCcmN5aUxlYTJub0xzNHZJbXhCV2tJbDFlNXBUdklmNmR0WXFfOHdJZVIwWC0ySlpZdGxD?oc=5",
+      "published_at": "2026-10-31T22:52:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
@@ -374,6 +398,14 @@
       "scope_date": "2026-11-01"
     },
     {
+      "headline": "Ja Morant’s Injury: How The Blazers Will Have To Adjust - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQalFkc1dzYUVBWGtpSzVLWEJMWEU5ZGFzYmRfR2VYU3d1anRBT1VSX01iNXRFb1lGLVVrWUFhQk1ZbHhvX0I2QXdndy1DLTRzY1JTejBDeXZ1d25yLWFDMGZjd3R4MXhWZXBxMWY2bDVsRlN5SllZdEZXdWMwcnR0YVE1Q2wxYWM?oc=5",
+      "published_at": "2026-10-31T13:21:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
       "headline": "Jaylen Brown’s Injury Addressed Before 76ers-Knicks Game - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa1pZRFdBMHB3YjJSbkVmTjNvWmFLanRpNm13T2l5NnZybW9GS0tIMEJvRGItZXppdDdWc0ZTMVlHcVFranlyMzMxS1BGQzdOSFVpeXhmZzVscXg5Z3ZBNER4NVFJd21TX1NFQ09GMVgtTl9MbW9xTXdvTHdRNkt3NDlWVnB3ZU55bmY1MHlvbHVLb1pNaWtkYWxpNnA?oc=5",
       "published_at": "2026-10-31T11:15:29+00:00",
@@ -390,65 +422,17 @@
       "scope_date": "2026-11-01"
     },
     {
+      "headline": "Gui Santos (knee) doubtful vs. Los Angeles - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQUlneWNpVjJzN2pOUXBFMFhYM3dQTl9HQUNUYTYyN29LZFhjQ3RyQUdtdDdxdXJ2TWRmRGt0Zkt1XzBVQzNHUUdxclppZXQ0VEZhd0tVSV9VSGF1Ukc1dG9YQlkwWnBkUjE4Z3BvUDNTck5LajMxTzhJZ1c0elRJY1ZwQmdfQWQ0R01LOEswLVRzMWp1SW1VZml3Q3BucnM5cTV5ZFF6VGxmUzQ?oc=5",
+      "published_at": "2026-10-31T06:13:47+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-01"
+    },
+    {
       "headline": "\"He Getting Fined\" - NBA World Reacts to Steph Curry's Questionable Celebration After Hitting 3 Over Luka Doncic - College Sports Network",
       "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbHRvbTUwOUI2SDQzdXdFb1FVcDI4U3dlTWxuZlduT25KTVJrR2RLQnlpTTlJTk1fek9nbHRRNlpQSS1fOVNIM1hRd0wtTUpyMmUwOW1ZdlBzc3d1ZnRTMXIxUmJUY1VKcUdtbWdpdnRGQkREQ0hQMjdlb0x2SURJNFp3N3BZTG9HYzVjN1dCR3YzZFVwY2FPWHZ1Z2tibURCd2FLVVBTN19sZkZlRzJYUzdCc1VMRkdva2lBZmVZbzdsUWVBbmFfV1ljVTZLMWZCbFkwY0RMMV9oVlljVWJQMQ?oc=5",
       "published_at": "2026-10-31T05:33:52+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Sixers to start Maxey, VJ, LeBron, Wade, Embiid - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYWV2NDl3dnl2NEJuY0UzdEd0VFVxM1pHV1BmM2t5LTdSMjkwNGpvaHRYSENjenptdmZUUVpVNEZwc0FVYktOZ3FIV05EVEdENlFMUlNMcWxxTzFTZmNQMVdya29DWkNadVJUQVhuVjZnZjdNSnRYSng0M3hZbTJ3VjAzalFnUkh0TjljZXptYXlhZ1hVNVNydkZCOWc0WkhjdTh0NFdiSGk0WFJodERpQQ?oc=5",
-      "published_at": "2026-10-31T05:25:58+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Nurse: Dean Wade likely to start vs. New York - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZHBDQ1phUWJDNVNzZUU4azJXUm85eVM3UlJWZ2o2T3RQMEhSYXR5M05BcGZpRC1QLUtfUEx3T3VkbllaLUZrUXBCM004bjIzd0lMdUpxOWk0ZHdIZ3E4bjRQZWdKeTA0N1FzNWsyci03eFQyNXRmblV3czhsRDBIaEZYTEJpcE5JY1VVcDZYbTFWM0FndlNlTW1JcDlzeS1tMHN0X0JIMzJhel9zeUJlcg?oc=5",
-      "published_at": "2026-10-31T05:25:57+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Rui Hachimura (quad) to start Friday vs. Minnesota - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWjNhTFEzXzZKXzhhWGxONk9Ia2UzNTRLc3lwdUVIVGNCS0RuUkFvRDZsV2x4THNpckFSSUJoTkZSYVlHM05YeU80cnVaWnctbkFERGhHUXJwMHVHRWdoMlY5dWRiYWtUZ2hqQXBxQ3VIdEhjems3cHNkYUdnNUxNOS1PdnFYTzUxVzJWV2t5LTc3UVd6WXk2ckE3di1kWmNBX3NTMDRfWWtqV21BR2xOTlAtUVhvZw?oc=5",
-      "published_at": "2026-10-31T05:08:59+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Chet Holmgren ruled out 8-10 weeks as Thunder's injury crisis continues to worsen - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80eElyQnpGaGtid0FBSjIweEtZTTdKMG5SSXVkdS1yZ0QyNkpLckN6RllLVXpBMjJuczRIblRiOV9VdmpKMEdYWDVJUUY1OG5YQ3NsZE1DVTdjX0VXbXJvdVlteW5FV3pQal9KSXJNZTVZZ09oVEFsMWhITllKQQ?oc=5",
-      "published_at": "2026-10-31T04:51:27+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Without injured Brown, 76ers outlast Knicks in NBA Cup Group Play - 6abc Philadelphia",
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTTliM3F1QlZRLXBWaGVuZ0xEY29KdXZTMEY1ZGZwRFJoVFBCQXlPOXM0aUxaaDRZQi1qRmFUVDRBS2l4NEtZZGU1RXRkeGROVUNQQ2ZTdmlOMEh6Tkx5Q1dlNEh6TERYcnBfWkFwQ3U4N2ZuYWplazIyWmZ3bGtLZFV3S0hwQnpKNDh2NVhrcU9yRGhFNGJSVVo3dThaRG9wV1NfcQ?oc=5",
-      "published_at": "2026-10-31T04:47:31+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Obi Toppin (back) questionable Friday vs. Heat - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWkZ4ano2Q29OeVA0a29pY0U5U1V4TVBmTUZUd1FRdUhrYnZNS3ZjVTAyUHZIVHQxemZtQ2xWUURnSFUwOVdyRVZiMUdvd3NVV1ItUndadWNFYlhaZjJuVVJ3aGRpakI4M3VyLWxNNzAyS1VqVjVHSzVjQzNPRE9hQkt3emlGYzh4NVN2QlFKQVZFeFViRXJrOWR6dXlsc1ppNnUtaDczS1ctMW85bmw5Vw?oc=5",
-      "published_at": "2026-10-31T04:46:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-01"
-    },
-    {
-      "headline": "Quinten Post (ankle) doubtful Saturday vs. Kings - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaUVaWXE3alBUOXVJS1V6SndXMTljSVdoQU92b1dNanpmQm9jSzY5WEtpUk51OUdQWjJ5bHBGckNEOUVfdHZSUFMtRDVBTGxPa2NuUWcxUzhUMGlQaWlkcGVJRUJfMmVEemZmYk1VWDZONEVFcEhCT3RNZ2hZMTZUSWd6RGh4MVhmb2psMkpaZlVtMkVSb0VFZ184R3V0dXp3X2xyYXVxdS05V09MY1Jodi1oMA?oc=5",
-      "published_at": "2026-10-31T04:38:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-01"
