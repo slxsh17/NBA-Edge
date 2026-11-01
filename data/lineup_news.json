@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-10-31",
-  "checked_at": "2026-11-01T02:34:33.625527+00:00",
+  "checked_at": "2026-11-01T03:35:48.421077+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "What channel is Thunder vs Rockets on TV tonight? Time, NBA schedule, injury report - The Oklahoman",
+      "source_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSjFYMzVpUllaNU1oWVZGcWVfRTUtcE1oZmZGbTBuV094VU8tN29MOGtkUlVudXl6aFVQdmd5bkNjQkc1dVowT2dKWW5EWTNQUV9QcGhLTHpaVkhCdm90U2h1dDhObTlzOFpaako3am4wX1FESFRkMlpJb2J0dWYtSC1tMFpGNHEycmdpdUhqd3YzTG5xcTZPVTdtVk12S3ZYX2s1a2FIdHBaS2lDX0NYdndZTXdoZTNXY1lNRW5nZnNsUldRUE9BM1plQU9jdnJrdVJrQXlUYWdKVndOQ2JNRDN3?oc=5",
+      "published_at": "2026-11-01T00:39:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
     {
       "headline": "Ime Udoka also said there's no minutes restriction for … - HoopsHype",
       "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTnJpWWd2dUNnM3dwZ2pKNGh6OG1VSi1ON1Y5elJoZFVpNEhRbmo5bFJHOEFSVFNzMzNGcWNsQUlhdHJoX09DclByVjh3MmVpcGF0TE9UN0k5WGdWNlY4UmhUYXViMHZfMGd6bmRQT3hRVWJGd01uOWk2VXFrc1psUEFiR1RFWThKS212ajNPMmVYQnpwU3RVX21WNF9IV0VraEstd05tVmpwSDlweExaTE8tLXBLdlRFa1l5UEFIeHJyQ25KOXc?oc=5",
@@ -57,6 +65,14 @@
       "headline": "Alperen Sengun (back) will not have minutes limit Saturday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOYV9NeURzNHQ2UHFpSk5XbmN2VE1kM0l4WjBicWhzOExsamNKVzQ5eDA4RGVQNTl2ZDNvcVhHNHVTSFoyUmF0ZGl3YnE1Yk5OZlNDa00yZVNxNGR4T3VmdE5tRnh3ZkxBNFIxM2xNZmZsdXFFQTg2a0U0TlFIai1kcHFmRXJ0OThOYUNSeWltMnRoVVRMbm1YMFJUT2doeEg3U0NIOWtWa9IBrAFBVV95cUxONk5VRXNEM2hiX0V5ZllSY21oZExXeDE5QkczdDU1dlYwcHU2U0hzTEJMV1RCNFgxY3lVU1ZnYzA4ZVJROVpYZHphZjhmeG5RM25VV3RVSnZ4OEZBTVV2cUxHRzlsUWExMnprZUNKbzJxakVHSnFhY05tNDJQNklrRHdkSE14Q2FSREpGcHh3Nnhzc0RmVkFOb3RCY0ZVaVcwZm5QQ0s5bG1keG92?oc=5",
       "published_at": "2026-10-31T23:17:42+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "\"There is only so many Modern Family episodes a person can watch\" - Kobe Bryant used Achilles rehab to start his business empire - Basketball Network",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNEVickg4NG5PaHU5RmNhT1pibTZSNUF6clBqc1hvd2VSTkRRdTl1NnJsbWJfakJKOXhyZlN1SERyT2VheUhMcGlBckVDNE02c1hpd0FsY1ltaE5mZndzbGxDTlliS0YzS3JQUDh6RzRORU5ucDdGQ2lCcmN5aUxlYTJub0xzNHZJbXhCV2tJbDFlNXBUdklmNmR0WXFfOHdJZVIwWC0ySlpZdGxD?oc=5",
+      "published_at": "2026-10-31T22:52:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -118,8 +134,8 @@
       "scope_date": "2026-10-31"
     },
     {
-      "headline": "Cleveland Cavaliers Starting Lineup vs. Milwaukee Bucks, How To Watch and Information - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQazE3WlJBUGthU00tMjZJdVg0T2dib2JVbXZWa2RLd0Y3cFB6WVBnNDZ0ZDI4U3pUYWwzTVhNRFhmVTV5QkZrTjZXNUZGb1ctOFU2SVFnRFA5UzlrN25jNUxOenpYemFoNlB5RDR5c0FCSHIxc1NVdGhZZkJoYmh6LS01X2h3S0prMENBUllDUENfS3Roc1p2QXl2aTh6Wk1mNmE2X1hRRHQyNEZTWG8tWTllSjN0YXJJSU5aQ0owOVEwNi1UdFZkaVJaSUpmZGs?oc=5",
+      "headline": "Cleveland Cavaliers Starting Lineup vs. Milwaukee Bucks, How To Watch and Information - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbG9lRDlHRnpxZ0FZM2YxWlN1UVp4YmFub09MU1ZOR25iNkFDV3d0UWJFcjRBNHRITmpmQ2VaMTdOdFBFd3BUMTgybXVrU0FjYnRTd0xJM3RmS1ZJZEVHT1JhYnNNZUduY2RkZl9GdVlHLVZTZk1WcV9BQVBiYjFEZjYzT19mRk5pLWJuN3RsaFE?oc=5",
       "published_at": "2026-10-31T20:34:11+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -174,9 +190,25 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Stephon Castle dealing with migraine, listed as questionable against Timberwolves - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZ21aRGJNYlg5OXNzc1R3NzhxcW5GZzBEUzRwR3FJOUdja1FuOHZxRWE4ZkNIdGFZT01ESEh6T21hRk1DbGF3eWZJNGdUVk9qWXY5ZEFIdlJTQkpzd0phU05fbnBZTU4xUzNsYzlVd25oNmhiU0hIcGNmQXZFR3NqNWFRN2h6dG5mZGJwR21SYmQ?oc=5",
+      "published_at": "2026-10-31T19:14:59+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "Stephon Castle Injury: Questionable for Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPanJXTXN6UGVTcExiNG1uckt4OXU5NjNEU1FhSU9oTFQwZHZVSnVCSnl5LXllUWV0ZWpGOTE3d3NHNlp4NklVSnduUjlCZTRwUW9uQ0VNYl9UTThuRE0tVEswRUMtNjRxaThnVzM1eXQzYkxnSldwOXZIVWxTZ1VOQ3NsbFBUUlEtSmZJazY1ZnRsSEhJOVlZQkF6R3N3RzBJSUE?oc=5",
       "published_at": "2026-10-31T19:06:03+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "NBA: Thunder Hit with Crushing News as Star Player Sidelined—Here’s How Long He’ll Be Out - Al Bat",
+      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXBleTZwMU9YUHh6RldCcXdkSjVBS2l6cC1VYW92d2VuUXgtYkNTVUxVNHZjdEFpMmRSbUlQaXB5ZjlOR1pMTVB0MjdPWjExNXdDWHFuN2lHUk5IdXFJRFRGMTZuZlRGN1RqeE9ZMS1LTHdBSW5NY1p4WUpEZm1JTUVyUmVncjZPV04tczg4aGc1N2xvLVBBdTNYOGtZdEhqMGItMFlGTld5aS1ITUtmLTRYN0hmTXI5di13RUhfRGZRaERBSks1MkNHQU44elVFTndJTNIB1AFBVV95cUxOeXBleTZwMU9YUHh6RldCcXdkSjVBS2l6cC1VYW92d2VuUXgtYkNTVUxVNHZjdEFpMmRSbUlQaXB5ZjlOR1pMTVB0MjdPWjExNXdDWHFuN2lHUk5IdXFJRFRGMTZuZlRGN1RqeE9ZMS1LTHdBSW5NY1p4WUpEZm1JTUVyUmVncjZPV04tczg4aGc1N2xvLVBBdTNYOGtZdEhqMGItMFlGTld5aS1ITUtmLTRYN0hmTXI5di13RUhfRGZRaERBSks1MkNHQU44elVFTndJTA?oc=5",
+      "published_at": "2026-10-31T18:30:28+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
@@ -262,14 +294,6 @@
       "scope_date": "2026-10-31"
     },
     {
-      "headline": "Full injury report for Sixers-Hornets on Saturday - PhillyVoice",
-      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVmtyUWJWdy1YamYtYU42bW9pbmlwNDdhWHNETEZSYkF3M1Rtd2ZvNjQtRVJYYzBRTXVRRHBQZUoyc28zSW9BRC1qU0FZMHdERjhKOTBTUG9faERSYVVwMDEzeDJnc1Npa3Ita3RzYnNnbmthdWlmT3ptVkJ1bUNrT29takMydEQtWWR2RGpmMVlSS0RKdDBNRV9hczVjc0ptbXpOMy1aMm5HcU9GU0hXU3FlUks5aWppeHpLVEhodElmazhzZGpEMw?oc=5",
-      "published_at": "2026-10-31T17:03:29+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-10-31"
-    },
-    {
       "headline": "Steph Curry, Draymond Green ruled out for front end of Warriors' back-to-back - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRDBqQktSMEVMckl1dGM5TmVyb3pJeHB6Sk56R2FoTDgtbnZNUXBTN1BjQ1RZcGFzb1c0aXF2U3R3RVVZa0F1ZWRJbTBydFBWaDgtRFRobEdZVVRKMmYxSmpWNGZ0Y2dmalI3eFpDbFFSV3pnbkJKcjUyQ0RzTUZBMlY1NlRtMEFO?oc=5",
       "published_at": "2026-10-31T14:43:08+00:00",
@@ -286,9 +310,25 @@
       "scope_date": "2026-10-31"
     },
     {
+      "headline": "Ja Morant’s Injury: How The Blazers Will Have To Adjust - Last Word On Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9SbHM2Ml8wNjRMWGRpdng0aFJnS2otdkcyM0ZmUlRxUF9TbkdxM2dDT2xfSnUtUjgtMl9xLUJmVHlwVWZYUFZ3d2xGWEwxNGVicHJzWTdnbklPMXlnVng4clkzc2MtUzJNdFdCWE9oMFBFeVVUeFRVdEZTRmNRenM?oc=5",
+      "published_at": "2026-10-31T13:21:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
       "headline": "Jaylen Brown’s Injury Addressed Before 76ers-Knicks Game - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa1pZRFdBMHB3YjJSbkVmTjNvWmFLanRpNm13T2l5NnZybW9GS0tIMEJvRGItZXppdDdWc0ZTMVlHcVFranlyMzMxS1BGQzdOSFVpeXhmZzVscXg5Z3ZBNER4NVFJd21TX1NFQ09GMVgtTl9MbW9xTXdvTHdRNkt3NDlWVnB3ZU55bmY1MHlvbHVLb1pNaWtkYWxpNnA?oc=5",
       "published_at": "2026-10-31T11:15:29+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-10-31"
+    },
+    {
+      "headline": "Cavs at Bucks: How to watch, odds, and injury report - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeGlUZXF1d0x0STk1UHBkNmc1ZmJ0cGJFMGo4Sl80T3phdFlGUE1lb0Q5OEw4eDFiMXJGQ0xqWEJFYm02Y1VmQVZCUEQxSHZsM3JuR3NpOHNoUHh4Y1FfbGlHSDlEdVdYWGpSWERmWWZaTTNYcGFldkhHR0FSWU81ejBwbw?oc=5",
+      "published_at": "2026-10-31T11:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-10-31"
