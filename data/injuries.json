@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T14:43:10.617941+00:00",
+  "updated_at": "2026-11-01T15:20:15.583021+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -25,7 +25,7 @@
     {
       "name": "Mitchell Robinson",
       "team": "BOS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Devin Carter",
@@ -233,14 +233,14 @@
       "status": "OUT"
     },
     {
-      "name": "Ziaire Williams",
-      "team": "LAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Adou Thiero",
       "team": "LAL",
       "status": "OUT"
+    },
+    {
+      "name": "Ziaire Williams",
+      "team": "LAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Quinten Post",
