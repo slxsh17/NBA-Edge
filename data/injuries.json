@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T04:43:22.736133+00:00",
+  "updated_at": "2026-11-02T05:44:33.933973+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -140,7 +140,7 @@
     {
       "name": "Gui Santos",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Draymond Green",
@@ -420,7 +420,7 @@
     {
       "name": "Jakob Poeltl",
       "team": "TOR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kawhi Leonard",
