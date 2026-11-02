@@ -3,7 +3,8 @@
 
 No bets are placed. Each night, about 30-150 minutes before the first main-slate tip, FanDuel's
 points / rebounds / assists lines come from The Odds API (free plan: set the repository secret
-ODDS_API_KEY). For every line NBA EDGE estimates the chance of the over and the under:
+ODDS_API_KEY), each game's lines about 40-150 minutes before its tip. Every pipeline run re-scores
+the lines with the latest projections (the site's live props feed); a game's picks freeze at tip. For every line NBA EDGE estimates the chance of the over and the under:
 
   mean   = expected minutes (NBA EDGE base / DARKO average, plus injury minutes) x DARKO
            per-minute rate (pts, reb, ast; points also get the Vegas team-total adjustment)
@@ -44,7 +45,7 @@ STAT = {'player_points': 'pts', 'player_rebounds': 'reb', 'player_assists': 'ast
 PHI = {'pts': 4.0, 'reb': 1.2, 'ast': 1.4}
 EDGE = 0.05
 MIN_MINUTES = 15
-WINDOW = (30, 150)          # minutes before the first main-slate tip
+WINDOW = (40, 150)          # fetch each game's lines this many minutes before its tip
 TEAMS = {'Atlanta Hawks': 'ATL', 'Boston Celtics': 'BOS', 'Brooklyn Nets': 'BKN', 'Charlotte Hornets': 'CHA',
          'Chicago Bulls': 'CHI', 'Cleveland Cavaliers': 'CLE', 'Dallas Mavericks': 'DAL', 'Denver Nuggets': 'DEN',
          'Detroit Pistons': 'DET', 'Golden State Warriors': 'GSW', 'Houston Rockets': 'HOU', 'Indiana Pacers': 'IND',
@@ -153,35 +154,56 @@ def first_tip(today):
     return min(tips) if tips else None
 
 
-def fetch_lines(key, day):
-    """FanDuel props for today's games. Returns (props, credits_remaining, note)."""
-    events, h = get(f'{API}/events?apiKey={urllib.parse.quote(key)}')
+def game_key(away, home):
+    return f'{away} @ {home}'
+
+
+def due_games(today, fetched, now):
+    """Today's games whose FanDuel lines should be fetched now: tip 40-150 minutes away, not fetched yet."""
+    out = []
+    for g in today.get('games', []):
+        if not g.get('time'):
+            continue
+        tip = dt.datetime.fromisoformat(g['time'].replace('Z', '+00:00'))
+        mins = (tip - now).total_seconds() / 60
+        k = game_key(g.get('away'), g.get('home'))
+        if WINDOW[0] <= mins <= WINDOW[1] and k not in fetched:
+            out.append(k)
+    return out
+
+
+def fetch_lines(key, day, want, markets=None, n_games=None):
+    """FanDuel props for the games in `want` ("AWY @ HOM"). Returns (props, credits_remaining, markets, fetched keys).
+    Markets are chosen once per night from the credit budget (credits left / days left in the month,
+    spread over all of tonight's games) and reused for the night's later games."""
+    events, h = get(f'{API}/events?apiKey={urllib.parse.quote(key)}')     # free
+    left = h.get('x-requests-remaining')
     todays = []
     for e in events:
         t = dt.datetime.fromisoformat(e['commence_time'].replace('Z', '+00:00'))
-        if t.astimezone(ET).date().isoformat() == day and t > dt.datetime.now(dt.timezone.utc):
-            todays.append((e, t))
-    if not todays:
-        return [], h.get('x-requests-remaining'), 'no games left today'
-    left = h.get('x-requests-remaining')
-    now = dt.datetime.now(ET)
-    nxt = (now.replace(day=1) + dt.timedelta(days=32)).replace(day=1)
-    days_left = max(1, (nxt.date() - now.date()).days)
-    budget = float(left) / days_left if left not in (None, '') else 3 * len(todays)
-    n_mk = max(0, min(3, int(budget // max(1, len(todays)))))
-    if n_mk == 0:
-        return [], left, f'not enough credits tonight ({left} left, {days_left} days to go)'
-    markets = MARKETS[:n_mk]
-    props = []
-    for e, t in todays:
+        if t.astimezone(ET).date().isoformat() == day:
+            todays.append((e, t, game_key(TEAMS.get(e['away_team'], e['away_team']), TEAMS.get(e['home_team'], e['home_team']))))
+    if markets is None:
+        now = dt.datetime.now(ET)
+        nxt = (now.replace(day=1) + dt.timedelta(days=32)).replace(day=1)
+        days_left = max(1, (nxt.date() - now.date()).days)
+        budget = float(left) / days_left if left not in (None, '') else 3 * len(todays)
+        markets = MARKETS[:max(0, min(3, int(budget // max(1, n_games or len(todays)))))]
+    if not markets:
+        return [], left, markets, []
+    props, done = [], []
+    for e, t, game in todays:
+        if game not in want or t <= dt.datetime.now(dt.timezone.utc):
+            continue
         try:
             d, h = get(f"{API}/events/{e['id']}/odds?apiKey={urllib.parse.quote(key)}&regions=us&bookmakers=fanduel"
                        f"&oddsFormat=american&markets={','.join(markets)}")
             left = h.get('x-requests-remaining', left)
         except Exception as ex:
-            print(f"::warning::props {e.get('away_team')} @ {e.get('home_team')}: {ex}")
+            print(f"::warning::props {game}: {ex}")
             continue
-        game = f"{TEAMS.get(e['away_team'], e['away_team'])} @ {TEAMS.get(e['home_team'], e['home_team'])}"
+        done.append(game)
+        at = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')
         for b in d.get('bookmakers', []):
             if b.get('key') != 'fanduel':
                 continue
@@ -194,8 +216,35 @@ def fetch_lines(key, day):
                 for (player, line), sides in by.items():
                     if player and line is not None and 'Over' in sides and 'Under' in sides:
                         props.append({'player': player, 'game': game, 'tip': t.isoformat(), 'market': m['key'],
-                                      'line': line, 'over': sides['Over'], 'under': sides['Under']})
-    return props, left, f"markets: {', '.join(STAT[m] for m in markets)}"
+                                      'line': line, 'over': sides['Over'], 'under': sides['Under'], 'line_at': at})
+    return props, left, markets, done
+
+
+BASE = ('player', 'game', 'tip', 'market', 'line', 'over', 'under', 'line_at')
+
+
+def rescore(rows, proj, now):
+    """Live re-scoring with the latest projections for games that haven't tipped. Rows for games that
+    have started are left as they were at tip: that last pre-tip pick is what gets graded. When our
+    projection has moved a lot since the line was posted (news), FanDuel has probably moved the line
+    too, so no pick until fresh lines come in."""
+    out = []
+    for r in rows:
+        if dt.datetime.fromisoformat(r['tip'].replace('Z', '+00:00')) <= now:
+            out.append(r)
+            continue
+        new = analyze([{k: r[k] for k in BASE if k in r}], proj)[0]
+        p0 = r['proj0'] if 'proj0' in r else new.get('proj')
+        new['proj0'] = p0
+        if p0 is not None and new.get('proj') is not None and abs(new['proj'] - p0) > max(1.0, 0.12 * p0):
+            new['moved'] = True
+            new.pop('pick', None)
+        if new.get('pick') and r.get('pick') and r['pick']['side'] == new['pick']['side']:
+            new['pick']['since'] = r['pick'].get('since') or r.get('line_at')
+        elif new.get('pick'):
+            new['pick']['since'] = now.isoformat(timespec='seconds')
+        out.append(new)
+    return out
 
 
 def analyze(props, proj):
@@ -304,29 +353,42 @@ def summarize(status):
 
 def main():
     today = read(DATA / 'today.json')
+    now = dt.datetime.now(dt.timezone.utc)
     day = dt.datetime.now(ET).date().isoformat()
     OUT.mkdir(exist_ok=True)
     grade(day)
     key = os.environ.get('ODDS_API_KEY', '').strip()
     path = OUT / f'{day}.json'
     status = 'Waiting for ODDS_API_KEY (free key from the-odds-api.com, added as a GitHub repository secret).' if not key else 'ok'
-    tip = first_tip(today) if today.get('date') == day else None
-    if key and tip and not read(path).get('props'):
-        mins = (tip - dt.datetime.now(dt.timezone.utc)).total_seconds() / 60
-        if WINDOW[0] <= mins <= WINDOW[1] or '--force' in sys.argv:
-            try:
-                lines, left, note = fetch_lines(key, day)
-                rows = analyze(lines, projections(today))
-                path.write_text(json.dumps({'date': day, 'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
-                                            'credits_remaining': left, 'note': note, 'props': rows}, separators=(',', ':')) + '\n',
-                                encoding='utf-8')
-                n_p = sum(1 for r in rows if r.get('pick'))
-                print(f'props: {len(rows)} lines, {n_p} paper picks ({note}; {left} credits left)')
-            except Exception as e:
-                print(f'::warning::props fetch failed: {e}')
-                status = f'Last fetch failed: {e}'[:200]
-        else:
-            print(f'props: {mins:.0f} min to first tip; fetching {WINDOW[0]}-{WINDOW[1]} min before')
+    doc = read(path) or {'date': day, 'props': []}
+    doc.setdefault('fetched', {})
+    if today.get('date') != day:
+        today = {}
+    proj = projections(today)
+    want = due_games(today, doc['fetched'], now) if key and today else []
+    if want:
+        try:
+            rows, left, markets, done = fetch_lines(key, day, want, doc.get('markets'), len(today.get('games', [])))
+            doc['markets'] = markets
+            doc['credits_remaining'] = left
+            for g in done:
+                doc['fetched'][g] = now.isoformat(timespec='seconds')
+            doc['props'] = [r for r in doc['props'] if r['game'] not in done] + rows
+            print(f"props: fetched {', '.join(done) or 'nothing'} ({', '.join(STAT[m] for m in markets) or 'no credits'}; {left} credits left)")
+        except Exception as e:
+            print(f'::warning::props fetch failed: {e}')
+            status = f'Last fetch failed: {e}'[:200]
+    elif today:
+        nxt = [g for g in today.get('games', []) if g.get('time') and game_key(g.get('away'), g.get('home')) not in doc['fetched']]
+        if nxt:
+            print(f"props: next lines about {WINDOW[1]} min before {min(g['time'] for g in nxt)}")
+    if doc['props'] and not doc.get('graded') and proj:
+        doc['props'] = rescore(doc['props'], proj, now)
+        doc['updated_at'] = now.isoformat(timespec='seconds')
+        doc['games'] = {game_key(g.get('away'), g.get('home')): g.get('time') for g in today.get('games', []) if g.get('time')}
+        path.write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
+        n_p = sum(1 for r in doc['props'] if r.get('pick') and dt.datetime.fromisoformat(r['tip'].replace('Z', '+00:00')) > now)
+        print(f"props: {len(doc['props'])} lines, {n_p} live paper picks")
     s = summarize(status)
     print('props record:', s['picks'], 'brier', s['brier'])
 

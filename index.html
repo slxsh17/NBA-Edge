@@ -211,6 +211,14 @@ tr.detail td{background:var(--soft);text-align:left;font-size:13px;padding:10px 
 footer{font-size:12.5px;color:var(--muted);padding:10px 0 40px;border-top:1px solid var(--line)}
 footer a{color:inherit}
 details summary{cursor:pointer}
+.prop{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px solid var(--soft)}
+.prop .bet{font:600 15px var(--num);margin-top:1px}
+.prop .sub{font-size:12px;color:var(--muted)}
+.prop .new{font-size:10.5px;font-weight:700;color:#fff;background:var(--orange);border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:1px}
+.prop .pct{text-align:right;font:600 17px var(--num);white-space:nowrap}
+.props-note{font-size:13px;margin:4px 0 8px}
+.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);width:max-content;max-width:min(92vw,440px);background:var(--ink);color:var(--paper);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.4;box-shadow:0 6px 24px rgba(0,0,0,.25);z-index:50;cursor:pointer}
+.toast[hidden]{display:none}
 
 /* mobile */
 .tabs{display:none}
@@ -258,6 +266,7 @@ details summary{cursor:pointer}
 
 <nav class="tabs" role="tablist">
   <button role="tab" aria-selected="true" data-tab="build">Lineups</button>
+  <button role="tab" aria-selected="false" data-tab="props">Props</button>
   <button role="tab" aria-selected="false" data-tab="players">Players</button>
   <button role="tab" aria-selected="false" data-tab="accuracy">Accuracy</button>
 </nav>
@@ -285,6 +294,11 @@ details summary{cursor:pointer}
       <div id="exposure-summary"></div>
       <div id="where"></div>
       <div id="settings" hidden></div>
+    </section>
+
+    <section class="panel" data-view="props" aria-labelledby="h-props">
+      <div class="h2row"><h2 id="h-props">Live props</h2><span class="muted" id="props-age" style="font-size:12.5px"></span></div>
+      <div id="props-live"><div class="empty">Loading props…</div></div>
     </section>
 
     <section class="panel" data-view="accuracy" aria-labelledby="h-acc">
@@ -316,6 +330,7 @@ details summary{cursor:pointer}
   </section>
 </main>
 
+<div id="toast" class="toast" role="status" hidden></div>
 <footer>
   <details><summary>Data sources and update times</summary><div id="sources" style="margin-top:8px"></div></details>
   <p>Research tool only. It never places entries or bets. Ownership numbers are model estimates, not real FanDuel ownership. <a href="legacy.html">Classic version</a></p>
@@ -1206,6 +1221,54 @@ function portfolioHTML(){
   <tr><td style="text-align:left">Est. return, penny tournament</td><td class="n"><b>${roi(a.portfolio_penny_roi)}</b></td><td class="n">${roi(a.previous_method_penny_roi)}</td></tr></tbody></table>
   <p class="muted" style="font-size:12px;margin:0">${r.status==='pull'?'After 10+ live nights the previous method did better, so the portfolio is switched off for 150-lineup builds.':'The portfolio stays on unless 10+ live nights show the previous method doing better.'} Scored against a simulated FanDuel field using the same results; returns use a standard payout curve that undercounts the very top prizes.</p>`;
 }
+// ---------- live props feed ----------
+// data/props/DAY.json (scripts/props.py): FanDuel lines fetched about 2 hours before each game,
+// re-scored with the latest projections on every pipeline run (~15 min); picks for a game freeze
+// at its tip. The page polls every 2 minutes and pops up a note when new picks appear.
+const propId=x=>x.player+'|'+x.stat+'|'+x.line+'|'+x.pick.side;
+const STATL={pts:'pts',reb:'reb',ast:'ast'};
+const clock=ms=>new Date(ms).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});
+function liveDay(){return (S.today&&S.today.date)||S.day}
+async function pollProps(){
+  const day=liveDay();if(!day)return;let d;
+  try{d=await getJSON('props/'+day+'.json')}catch(e){d={date:day,props:[],missing:true}}
+  S.pl=d;renderProps();
+  const now=Date.now(),live=(d.props||[]).filter(x=>x.pick&&Date.parse(x.tip)>now).sort((a,b)=>(b.pick.prob-b.pick.breakeven)-(a.pick.prob-a.pick.breakeven));
+  const key='propsNotified:'+day,seen=new Set(store.get(key,[])),fresh=live.filter(x=>!seen.has(propId(x)));
+  if(!fresh.length)return;
+  fresh.forEach(x=>seen.add(propId(x)));store.set(key,[...seen]);
+  const t=fresh[0];
+  toast(`<b>${fresh.length} new prop${fresh.length>1?'s':''}</b>: ${esc(t.player)} ${t.pick.side} ${t.line} ${STATL[t.stat]||t.stat} (${Math.round(t.pick.prob*100)}% vs ${Math.round(t.pick.breakeven*100)}% needed)${fresh.length>1?' and more':''}. Tap to see.`);
+}
+let toastT=null;
+function toast(html){const el=$('toast');el.innerHTML=html;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>{el.hidden=true},9000)}
+$('toast').onclick=()=>{$('toast').hidden=true;const b=document.querySelector('.tabs [data-tab="props"]');if(b)b.click();if(getComputedStyle(document.querySelector('.tabs')).display==='none')setTimeout(()=>$('h-props').scrollIntoView({behavior:'smooth',block:'start'}),50)};
+function renderProps(){
+  const box=$('props-live');if(!box)return;const d=S.pl;
+  if(!d){box.innerHTML='<div class="empty">Loading props…</div>';return}
+  const now=Date.now(),rows=d.props||[];
+  const live=rows.filter(x=>x.pick&&Date.parse(x.tip)>now).sort((a,b)=>(b.pick.prob-b.pick.breakeven)-(a.pick.prob-a.pick.breakeven));
+  const locked=rows.filter(x=>x.pick&&Date.parse(x.tip)<=now).length,moved=rows.filter(x=>x.moved&&Date.parse(x.tip)>now).length;
+  $('props-age').textContent=d.updated_at?'updated '+ago(d.updated_at):'';
+  const games=d.games||Object.fromEntries(((S.today&&S.today.games)||[]).filter(g=>g.time).map(g=>[g.away+' @ '+g.home,g.time]));
+  const pending=Object.entries(games).filter(([k,t])=>!(d.fetched||{})[k]&&Date.parse(t)>now).map(([,t])=>Date.parse(t)).sort((a,b)=>a-b);
+  const nxt=pending.length?`Lines for ${pending.length} more game${pending.length>1?'s':''} arrive about 2 hours before tip${live.length?'':`, the first around ${clock(Math.max(now,pending[0]-150*60000))}`}.`:'';
+  const r=S.ppr&&S.ppr.picks,pc=x=>Math.round(x*100)+'%';
+  const rec=r&&r.n?`Paper record <b>${r.wins}-${r.losses}${r.pushes?'-'+r.pushes:''}</b> (hit ${pc(r.hit_rate||0)}, needed ${pc(r.avg_breakeven||0)}).`:'No graded props yet, so this model hasn’t shown it can beat FanDuel’s odds.';
+  const head=`<p class="props-note">${live.length?`<b>${live.length} live pick${live.length>1?'s':''}</b>, best first. `:''}${nxt} ${rec}</p>`;
+  if(!live.length){box.innerHTML=head+`<p class="muted" style="font-size:13px">${rows.length?'No line beats FanDuel’s price by 5+ points right now.':'No lines yet tonight.'} This page checks every 2 minutes.</p>`;return}
+  const show=S.propsAll?live:live.slice(0,20);
+  box.innerHTML=head+show.map(x=>{const isNew=x.pick.since&&now-Date.parse(x.pick.since)<30*60000;
+    return `<div class="prop"><div><div><b>${esc(x.player)}</b> <span class="muted">${esc(x.team||'')}</span>${isNew?'<span class="new">NEW</span>':''}</div>
+    <div class="bet">${x.pick.side.toUpperCase()} ${x.line} ${STATL[x.stat]||x.stat} <span class="muted" style="font-weight:500">${x.pick.price>0?'+':''}${x.pick.price}</span></div>
+    <div class="sub">${esc(x.game)} · ${clock(Date.parse((d.games||{})[x.game]||x.tip))} · proj ${Number(x.proj).toFixed(1)} in ${Math.round(x.minutes)} min</div></div>
+    <div class="pct">${pc(x.pick.prob)}<div class="sub">needs ${pc(x.pick.breakeven)}</div></div></div>`}).join('')
+    +(live.length>20?`<button class="btn small" id="props-all" type="button" style="margin-top:8px">${S.propsAll?'Show top 20':'Show all '+live.length}</button>`:'')
+    +`<p class="muted" style="font-size:12px;margin:8px 0 0">Paper picks: NBA EDGE’s chance vs FanDuel’s break-even (vig included). Lines are FanDuel’s from about 2 hours before each game${d.markets?` (${d.markets.map(m=>({player_points:'points',player_rebounds:'rebounds',player_assists:'assists'})[m]||m).join(', ')} tonight)`:''}; they aren’t refreshed after that, so a pick pauses when news moves our projection a lot${moved?` (${moved} paused now)`:''}. ${locked?locked+' picks locked in games that started. ':''}Big edges more often mean the model is missing something than a gift.</p>`;
+}
+$('props-live').addEventListener('click',e=>{if(e.target.id==='props-all'){S.propsAll=!S.propsAll;renderProps()}});
+setInterval(()=>{if(!document.hidden)pollProps()},2*60*1000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)pollProps()});
 // Player props: paper trading only (scripts/props.py). Tonight's picks load on first view.
 function propsHTML(){
   const r=S.ppr;if(!r)return '';
@@ -1279,7 +1342,7 @@ setInterval(check,4*60*1000);document.addEventListener('visibilitychange',check)
 setInterval(()=>{if(!document.hidden){renderGames();renderLineups();autoSwaps()}},60*1000);
 
 wireControls();
-load().then(check).catch(e=>{$('slate-meta').textContent='Couldn’t load data: '+e.message});
+load().then(()=>{pollProps();return check()}).catch(e=>{$('slate-meta').textContent='Couldn’t load data: '+e.message});
 if('serviceWorker' in navigator)navigator.serviceWorker.register('service-worker.js').catch(()=>{});
 })();
 </script>
