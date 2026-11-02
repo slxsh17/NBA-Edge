@@ -5,8 +5,8 @@ Jayson Tatum,BOS,PF/SF,10300,0,0,,1,1,0,0,8,ACTIVE
 Cooper Flagg,DAL,SF,10100,0,0,,1,1,0,0,8,ACTIVE
 Shai Gilgeous-Alexander,OKC,PG,9900,0,0,,1,1,0,0,8,ACTIVE
 Domantas Sabonis,SAC,C,9800,0,0,,1,1,0,0,8,ACTIVE
-Jalen Johnson,ATL,PF,9700,0,0,,1,1,0,0,8,QUESTIONABLE
 Cade Cunningham,DET,PG,9700,0,0,,1,1,0,0,8,ACTIVE
+Jalen Johnson,ATL,PF,9700,0,0,,1,1,0,0,8,OUT
 Tyrese Maxey,PHI,PG,9500,0,0,,1,1,0,0,8,ACTIVE
 Anthony Davis,WAS,PF/C,9200,0,0,,1,1,0,0,8,ACTIVE
 Deni Avdija,POR,PF/SF,8900,0,0,,1,1,0,0,8,ACTIVE
@@ -72,8 +72,8 @@ Derrick White,BOS,PG,5900,0,0,,1,1,0,0,8,ACTIVE
 Fred VanVleet,HOU,PG,5900,0,0,,1,1,0,0,8,ACTIVE
 Jaime Jaquez,MIL,SF,5900,0,0,,1,1,0,0,8,ACTIVE
 Ivica Zubac,IND,C,5900,0,0,,1,1,0,0,8,OUT
-Ausar Thompson,DET,SF/SG,5800,0,0,,1,1,0,0,8,ACTIVE
 Onyeka Okongwu,ATL,C,5800,0,0,,1,1,0,0,8,ACTIVE
+Ausar Thompson,DET,SF/SG,5800,0,0,,1,1,0,0,8,ACTIVE
 Moussa Diabate,CHA,C/PF,5800,0,0,,1,1,0,0,8,ACTIVE
 Precious Achiuwa,SAC,PF,5800,0,0,,1,1,0,0,8,ACTIVE
 Josh Hart,NYK,SF/PF,5800,0,0,,1,1,0,0,8,ACTIVE
@@ -126,9 +126,9 @@ Mo Bamba,UTA,C,4800,0,0,,1,1,0,0,8,ACTIVE
 De'Andre Hunter,SAC,SF,4700,0,0,,1,1,0,0,8,ACTIVE
 Aaron Wiggins,ATL,SF,4700,0,0,,1,1,0,0,8,ACTIVE
 Joan Beringer,MIN,C,4700,0,0,,1,1,0,0,8,ACTIVE
-Obi Toppin,IND,PF/C,4600,0,0,,1,1,0,0,8,QUESTIONABLE
 Jared McCain,OKC,SG,4600,0,0,,1,1,0,0,8,ACTIVE
 Isaiah Stewart,MEM,C,4600,0,0,,1,1,0,0,8,ACTIVE
+Obi Toppin,IND,PF/C,4600,0,0,,1,1,0,0,8,OUT
 Daniss Jenkins,DET,PG,4500,0,0,,1,1,0,0,8,ACTIVE
 DeMar DeRozan,DEN,SF,4500,0,0,,1,1,0,0,8,ACTIVE
 Keegan Murray,SAC,PF/SF,4500,0,0,,1,1,0,0,8,OUT
@@ -281,6 +281,7 @@ Ebuka Okorie,DET,PG,3500,0,0,,1,1,0,0,8,ACTIVE
 Dorian Finney-Smith,ATL,SF,3500,0,0,,1,1,0,0,8,ACTIVE
 Colin Castleton,ORL,C,3500,0,0,,1,1,0,0,8,ACTIVE
 Tarris Reed,SAS,C,3500,0,0,,1,1,0,0,8,ACTIVE
+RayJ Dennis,ATL,PG,3500,0,0,,1,1,0,0,8,ACTIVE
 Tre Mann,WAS,PG,3500,0,0,,1,1,0,0,8,ACTIVE
 Jordan McLaughlin,SAS,PG,3500,0,0,,1,1,0,0,8,ACTIVE
 Thomas Bryant,CLE,C,3500,0,0,,1,1,0,0,8,ACTIVE
