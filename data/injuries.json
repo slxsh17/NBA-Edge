@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T03:48:35.742919+00:00",
+  "updated_at": "2026-11-02T04:43:22.736133+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -138,6 +138,11 @@
       "status": "OUT"
     },
     {
+      "name": "Gui Santos",
+      "team": "GSW",
+      "status": "OUT"
+    },
+    {
       "name": "Draymond Green",
       "team": "GSW",
       "status": "OUT"
@@ -206,6 +211,11 @@
       "name": "Tyrese Haliburton",
       "team": "IND",
       "status": "OUT"
+    },
+    {
+      "name": "Derrick Jones Jr.",
+      "team": "LAC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Max Strus",
