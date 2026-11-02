@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T17:41:04.660617+00:00",
+  "updated_at": "2026-11-02T18:38:07.283828+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -31,11 +31,6 @@
       "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
-    },
-    {
-      "name": "Mikel Brown Jr.",
-      "team": "BKN",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Egor Demin",
@@ -178,17 +173,37 @@
       "status": "OUT"
     },
     {
-      "name": "Obi Toppin",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "T.J. McConnell",
       "team": "IND",
       "status": "OUT"
     },
     {
       "name": "Ivica Zubac",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Larry Nance Jr.",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Obi Toppin",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Andrew Nembhard",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Pascal Siakam",
       "team": "IND",
       "status": "OUT"
     },
@@ -448,19 +463,24 @@
       "status": "OUT"
     },
     {
-      "name": "Tristan Vukcevic",
+      "name": "Reece Beekman",
+      "team": "WAS",
+      "status": "OUT"
+    },
+    {
+      "name": "Anthony Gill",
       "team": "WAS",
       "status": "OUT"
     },
     {
       "name": "Alex Sarr",
       "team": "WAS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Anthony Gill",
+      "name": "Tristan Vukcevic",
       "team": "WAS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Justin Champagnie",
