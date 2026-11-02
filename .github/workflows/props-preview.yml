@@ -1,0 +1,62 @@
+name: Props preview (temporary)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preview tonight's FanDuel props against NBA EDGE (does not touch the paper record)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          python - <<'PY'
+          import datetime as dt, json, os, sys, urllib.parse
+          sys.path.insert(0, 'scripts')
+          import props as P
+          key = os.environ['ODDS_API_KEY'].strip()
+          day = dt.datetime.now(P.ET).date().isoformat()
+          events, h = P.get(f'{P.API}/events?apiKey={urllib.parse.quote(key)}')
+          lines, left = [], h.get('x-requests-remaining')
+          for e in events:
+              t = dt.datetime.fromisoformat(e['commence_time'].replace('Z', '+00:00'))
+              if t.astimezone(P.ET).date().isoformat() != day or t <= dt.datetime.now(dt.timezone.utc):
+                  continue
+              d, h = P.get(f"{P.API}/events/{e['id']}/odds?apiKey={urllib.parse.quote(key)}&regions=us&bookmakers=fanduel"
+                           f"&oddsFormat=american&markets={','.join(P.MARKETS)}")
+              left = h.get('x-requests-remaining', left)
+              game = f"{P.TEAMS.get(e['away_team'], e['away_team'])} @ {P.TEAMS.get(e['home_team'], e['home_team'])}"
+              for b in d.get('bookmakers', []):
+                  if b.get('key') != 'fanduel':
+                      continue
+                  for m in b.get('markets', []):
+                      if m.get('key') not in P.STAT:
+                          continue
+                      by = {}
+                      for o in m.get('outcomes', []):
+                          by.setdefault((o.get('description'), o.get('point')), {})[o.get('name')] = o.get('price')
+                      for (player, line), sides in by.items():
+                          if player and line is not None and 'Over' in sides and 'Under' in sides:
+                              lines.append({'player': player, 'game': game, 'tip': t.isoformat(), 'market': m['key'],
+                                            'line': line, 'over': sides['Over'], 'under': sides['Under']})
+          today = P.read(P.DATA / 'today.json')
+          rows = P.analyze(lines, P.projections(today))
+          out = {'date': day, 'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
+                 'today_updated': today.get('updated_at') or today.get('generated_at'), 'credits_remaining': left, 'props': rows}
+          (P.DATA / 'props_preview.json').write_text(json.dumps(out, separators=(',', ':')) + '\n', encoding='utf-8')
+          print(f"::warning::preview {len(rows)} lines, {sum(1 for r in rows if r.get('pick'))} picks, {left} credits left")
+          PY
+      - name: Save
+        run: |
+          git config user.name "nba-edge-bot"
+          git config user.email "nba-edge-bot@users.noreply.github.com"
+          git add data/props_preview.json
+          git commit -m "Props preview" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase --autostash -X theirs && git push && break; sleep 10; done
