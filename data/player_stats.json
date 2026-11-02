@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T10:44:38.098072-05:00",
+  "updated_at": "2026-11-02T11:48:45.943303-05:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 49,
@@ -3216,6 +3216,16 @@
       "avg_points": 2.0
     },
     {
+      "id": "5106058",
+      "name": "Emanuel Sharp",
+      "team": "SAC",
+      "games": 3,
+      "avg_minutes": 20.7,
+      "avg_fantasy_points": 6.3,
+      "fantasy_points_per_minute": 0.305,
+      "avg_points": 2.3
+    },
+    {
       "id": "4431734",
       "name": "Tristan Enaruna",
       "team": "CLE",
@@ -3284,16 +3294,6 @@
       "avg_fantasy_points": 5.9,
       "fantasy_points_per_minute": 0.496,
       "avg_points": 1.0
-    },
-    {
-      "id": "5106058",
-      "name": "Emanuel Sharp",
-      "team": "SAC",
-      "games": 3,
-      "avg_minutes": 20.7,
-      "avg_fantasy_points": 5.9,
-      "fantasy_points_per_minute": 0.285,
-      "avg_points": 2.3
     },
     {
       "id": "5106258",
@@ -12055,12 +12055,12 @@
       "event_id": "401909894",
       "minutes": 18.0,
       "pts": 0.0,
-      "reb": 0.0,
+      "reb": 1.0,
       "ast": 0.0,
       "stl": 1.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 3.0
+      "fantasy_points": 4.2
     },
     {
       "id": "4869342",
