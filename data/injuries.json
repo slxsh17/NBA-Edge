@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T23:53:16.799766+00:00",
+  "updated_at": "2026-11-02T00:51:00.298897+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -113,12 +113,12 @@
       "status": "OUT"
     },
     {
-      "name": "Alpha Diallo",
+      "name": "Spencer Jones",
       "team": "DEN",
       "status": "OUT"
     },
     {
-      "name": "Spencer Jones",
+      "name": "Alpha Diallo",
       "team": "DEN",
       "status": "OUT"
     },
@@ -136,11 +136,6 @@
       "name": "Jalen Duren",
       "team": "DET",
       "status": "OUT"
-    },
-    {
-      "name": "Gui Santos",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Draymond Green",
@@ -255,6 +250,11 @@
     {
       "name": "Quinten Post",
       "team": "MEM",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Tim Hardaway Jr.",
+      "team": "MIA",
       "status": "DAY-TO-DAY"
     },
     {
