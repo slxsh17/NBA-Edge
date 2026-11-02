@@ -1,6 +1,6 @@
 {
   "date": "20261101",
-  "updated_at": "2026-11-01T22:40:10.839482-05:00",
+  "updated_at": "2026-11-01T23:45:53.653925-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -19,13 +19,13 @@
       "away": "LA Clippers",
       "home": "Golden State Warriors",
       "time": "2026-11-02T01:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Toronto Raptors",
       "home": "Los Angeles Lakers",
       "time": "2026-11-02T02:00Z",
-      "status": "In Progress"
+      "status": "Final"
     }
   ]
 }
