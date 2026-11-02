@@ -5,13 +5,14 @@ No bets are placed. Each night, about 30-150 minutes before the first main-slate
 points / rebounds / assists lines come from The Odds API (free plan: set the repository secret
 ODDS_API_KEY). For every line NBA EDGE estimates the chance of the over and the under:
 
-  mean   = NBA EDGE projected minutes x DARKO per-minute rate (pts, reb, ast; points also get
-           the Vegas team-total adjustment)
-  spread = negative binomial with variance = phi x mean, phi fitted on 1,100 graded player-games
-           (Oct 22-31) so predicted over rates matched actual ones: pts 6, reb 4, ast 4
+  mean   = expected minutes (NBA EDGE base / DARKO average, plus injury minutes) x DARKO
+           per-minute rate (pts, reb, ast; points also get the Vegas team-total adjustment)
+  spread = negative binomial with variance = phi x mean, phi fitted by log loss on 976 graded
+           player-games (Oct 21-Nov 1, lines around each mean): pts 4, reb 1.2, ast 1.4
 
 A prop is a paper pick when our probability beats FanDuel's break-even (its price, vig included)
-by 5+ points, the player isn't out and is projected for 15+ minutes. After the games every
+by 5+ points, the player is active (not questionable), has no role-change or outside-projection
+flag, and is projected for 15+ minutes. After the games every
 line is graded (DNPs void, as FanDuel does): picks get a W/L and units at the posted odds, and
 all lines feed a calibration check of our probabilities against the market's no-vig ones.
 That last check is the honest test: an edge exists only if our probabilities beat the market's.
@@ -40,7 +41,7 @@ API = 'https://api.the-odds-api.com/v4/sports/basketball_nba'
 ET = ZoneInfo('America/New_York')
 MARKETS = ['player_points', 'player_assists', 'player_rebounds']      # priority order when credits are short
 STAT = {'player_points': 'pts', 'player_rebounds': 'reb', 'player_assists': 'ast'}
-PHI = {'pts': 6.0, 'reb': 4.0, 'ast': 4.0}
+PHI = {'pts': 4.0, 'reb': 1.2, 'ast': 1.4}
 EDGE = 0.05
 MIN_MINUTES = 15
 WINDOW = (30, 150)          # minutes before the first main-slate tip
@@ -110,6 +111,18 @@ def get(url):
 
 
 # ---------- tonight ----------
+def prop_minutes(p):
+    """Expected minutes for props: halfway between NBA EDGE's base minutes and DARKO's, plus
+    injury-freed minutes. Not today.json's `minutes`: that one carries a learned shrink that the
+    FanDuel projection undoes with its scale and outside blend, so it runs 3-5 minutes low for
+    starters (Oct 27-Nov 1). This version: bias -0.1 min, miss 4.4 min on 817 player-games."""
+    if p.get('out'):
+        return 0.0
+    b = p.get('base_minutes') or 0.0
+    m = (b + p['darko_min']) / 2 if p.get('darko_min') and b > 0 else b
+    return m + (p.get('adj') or {}).get('injury_min', 0.0) if m > 0 else 0.0
+
+
 def projections(today):
     """norm(name) -> {team, minutes, out, pts, reb, ast} from tonight's minutes and DARKO rates."""
     darko = {}
@@ -119,12 +132,18 @@ def projections(today):
     for p in today.get('players', []):
         cands = darko.get(norm(p['name'])) or []
         d = next((r for r in cands if r['team'] == p['team']), cands[0] if len(cands) == 1 else None)
-        if not d or not p.get('minutes'):
+        m = prop_minutes(p)
+        if not d or not m:
             continue
-        poss = d['pace'] / 4800.0 * p['minutes']
+        poss = d['pace'] / 4800.0 * m
         vg = (p.get('adj') or {}).get('vegas', 1.0)
-        out[norm(p['name'])] = {'name': p['name'], 'team': p['team'], 'minutes': p['minutes'], 'out': bool(p.get('out')),
-                                'status': p.get('status'), 'pts': d['pts_100'] * poss * vg, 'reb': d['reb_100'] * poss,
+        out[norm(p['name'])] = {'name': p['name'], 'team': p['team'], 'minutes': m, 'out': bool(p.get('out')),
+                                'status': p.get('status'),
+                                # no paper pick when the inputs are shaky: game-time decisions, a role
+                                # change our minutes model flags, or a big gap to the outside projection
+                                'shaky': (p.get('status') or 'ACTIVE').upper() not in ('ACTIVE', 'PROBABLE')
+                                or any(f.startswith(('ROLE', 'Outside projection disagrees')) for f in p.get('flags') or []),
+                                'pts': d['pts_100'] * poss * vg, 'reb': d['reb_100'] * poss,
                                 'ast': d['ast_100'] * poss}
     return out
 
@@ -192,7 +211,7 @@ def analyze(props, proj):
             row.update({'team': p['team'], 'minutes': round(p['minutes'], 1), 'proj': round(mu, 2),
                         'p_over': round(ov, 4), 'p_under': round(un, 4), 'p_push': round(push, 4),
                         'market_p_over': round(mo / (mo + mu_), 4)})
-            if not p['out'] and p['minutes'] >= MIN_MINUTES:
+            if not p['out'] and not p.get('shaky') and p['minutes'] >= MIN_MINUTES:
                 for side, pw, price in (('over', ov, pr['over']), ('under', un, pr['under'])):
                     be = implied(price)
                     if pw - be >= EDGE:
