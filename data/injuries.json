@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:26:20.345732+00:00",
+  "updated_at": "2026-11-02T21:16:13.681206+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -443,12 +443,12 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Kawhi Leonard",
+      "name": "Nate Bittle",
       "team": "TOR",
       "status": "OUT"
     },
     {
-      "name": "Nate Bittle",
+      "name": "Kawhi Leonard",
       "team": "TOR",
       "status": "OUT"
     },
