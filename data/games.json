@@ -1,31 +1,97 @@
 {
-  "date": "20261101",
-  "updated_at": "2026-11-01T23:45:53.653925-05:00",
+  "date": "20261102",
+  "updated_at": "2026-11-02T00:47:01.460750-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
-      "away": "Boston Celtics",
-      "home": "Orlando Magic",
-      "time": "2026-11-01T20:30Z",
-      "status": "Final"
+      "away": "Oklahoma City Thunder",
+      "home": "Cleveland Cavaliers",
+      "time": "2026-11-03T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Detroit Pistons",
+      "home": "Charlotte Hornets",
+      "time": "2026-11-03T00:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Atlanta Hawks",
+      "home": "Indiana Pacers",
+      "time": "2026-11-03T00:30Z",
+      "status": "Scheduled"
     },
     {
       "away": "Brooklyn Nets",
-      "home": "Indiana Pacers",
-      "time": "2026-11-01T22:00Z",
-      "status": "Final"
+      "home": "New York Knicks",
+      "time": "2026-11-03T00:30Z",
+      "status": "Scheduled"
     },
     {
-      "away": "LA Clippers",
+      "away": "Washington Wizards",
+      "home": "Orlando Magic",
+      "time": "2026-11-03T00:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Chicago Bulls",
+      "home": "Philadelphia 76ers",
+      "time": "2026-11-03T00:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Sacramento Kings",
+      "home": "Dallas Mavericks",
+      "time": "2026-11-03T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "New Orleans Pelicans",
+      "home": "Memphis Grizzlies",
+      "time": "2026-11-03T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Milwaukee Bucks",
+      "home": "Minnesota Timberwolves",
+      "time": "2026-11-03T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Boston Celtics",
+      "home": "Houston Rockets",
+      "time": "2026-11-03T01:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Utah Jazz",
+      "home": "San Antonio Spurs",
+      "time": "2026-11-03T01:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Portland Trail Blazers",
+      "home": "Denver Nuggets",
+      "time": "2026-11-03T02:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Phoenix Suns",
       "home": "Golden State Warriors",
-      "time": "2026-11-02T01:30Z",
-      "status": "Final"
+      "time": "2026-11-03T03:00Z",
+      "status": "Scheduled"
     },
     {
       "away": "Toronto Raptors",
+      "home": "LA Clippers",
+      "time": "2026-11-03T03:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Miami Heat",
       "home": "Los Angeles Lakers",
-      "time": "2026-11-02T02:00Z",
-      "status": "Final"
+      "time": "2026-11-03T03:00Z",
+      "status": "Scheduled"
     }
   ]
 }
