@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T01:57:34.079288+00:00",
+  "updated_at": "2026-11-02T02:50:24.814549+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -35,7 +35,7 @@
     {
       "name": "Mikel Brown Jr.",
       "team": "BKN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Egor Demin",
@@ -180,7 +180,7 @@
     {
       "name": "Obi Toppin",
       "team": "IND",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "T.J. McConnell",
@@ -405,6 +405,11 @@
     {
       "name": "Jayden Quaintance",
       "team": "SAS",
+      "status": "OUT"
+    },
+    {
+      "name": "Jakob Poeltl",
+      "team": "TOR",
       "status": "OUT"
     },
     {
