@@ -3,8 +3,10 @@
 
 No bets are placed. Each night, about 30-150 minutes before the first main-slate tip, FanDuel's
 points / rebounds / assists lines come from The Odds API (free plan: set the repository secret
-ODDS_API_KEY), each game's lines about 40-150 minutes before its tip. Every pipeline run re-scores
-the lines with the latest projections (the site's live props feed); a game's picks freeze at tip. For every line NBA EDGE estimates the chance of the over and the under:
+ODDS_API_KEY). Credits decide the night (plan_night): on the free plan one pull per game about
+40-150 minutes before its tip, usually points only; on a paid plan all three markets, re-pulled
+every 15-120 minutes from 4 hours before each tip. Every pipeline run re-scores the lines with the
+latest projections (the site's live props feed); a game's picks freeze at tip. For every line NBA EDGE estimates the chance of the over and the under:
 
   mean   = expected minutes (NBA EDGE base / DARKO average, plus injury minutes) x DARKO
            per-minute rate (pts, reb, ast; points also get the Vegas team-total adjustment)
@@ -45,7 +47,9 @@ STAT = {'player_points': 'pts', 'player_rebounds': 'reb', 'player_assists': 'ast
 PHI = {'pts': 4.0, 'reb': 1.2, 'ast': 1.4}
 EDGE = 0.05
 MIN_MINUTES = 15
-WINDOW = (40, 150)          # fetch each game's lines this many minutes before its tip
+WINDOW = (40, 150)          # single pull (free plan): minutes before each game's tip
+OPEN, CLOSE = 240, 10       # refreshing pulls (paid plan): from 4 hours to 10 minutes before tip
+REFRESH = [15, 20, 30, 45, 60, 90, 120]
 TEAMS = {'Atlanta Hawks': 'ATL', 'Boston Celtics': 'BOS', 'Brooklyn Nets': 'BKN', 'Charlotte Hornets': 'CHA',
          'Chicago Bulls': 'CHI', 'Cleveland Cavaliers': 'CLE', 'Dallas Mavericks': 'DAL', 'Denver Nuggets': 'DEN',
          'Detroit Pistons': 'DET', 'Golden State Warriors': 'GSW', 'Houston Rockets': 'HOU', 'Indiana Pacers': 'IND',
@@ -158,8 +162,23 @@ def game_key(away, home):
     return f'{away} @ {home}'
 
 
-def due_games(today, fetched, now):
-    """Today's games whose FanDuel lines should be fetched now: tip 40-150 minutes away, not fetched yet."""
+def plan_night(left, days_left, n_games):
+    """How to spend tonight's credits (credits left / days left in the month): all three markets if
+    possible, refreshed as often as the budget allows (every 15-120 minutes from 4 hours before each
+    tip). Returns (markets, refresh minutes or None for a single pull about 2 hours before tip).
+    Free plan (500 a month): one pull, usually points only. 20K plan: 3 markets every 15-20 min."""
+    budget = float(left) / max(1, days_left) if left not in (None, '') else 3 * n_games
+    n = max(1, n_games)
+    for n_mk in (3, 2, 1):
+        for iv in REFRESH:
+            if n * n_mk * math.ceil((OPEN - CLOSE) / iv) <= budget:
+                return MARKETS[:n_mk], iv
+    return MARKETS[:max(0, min(3, int(budget // n)))], None
+
+
+def due_games(today, fetched, now, refresh):
+    """Games whose FanDuel lines should be pulled now. Single pull: tip 40-150 minutes away and not
+    pulled yet. Refreshing: tip 10-240 minutes away and last pull at least `refresh` minutes ago."""
     out = []
     for g in today.get('games', []):
         if not g.get('time'):
@@ -167,32 +186,31 @@ def due_games(today, fetched, now):
         tip = dt.datetime.fromisoformat(g['time'].replace('Z', '+00:00'))
         mins = (tip - now).total_seconds() / 60
         k = game_key(g.get('away'), g.get('home'))
-        if WINDOW[0] <= mins <= WINDOW[1] and k not in fetched:
+        last = fetched.get(k)
+        if refresh is None:
+            if WINDOW[0] <= mins <= WINDOW[1] and not last:
+                out.append(k)
+        elif CLOSE <= mins <= OPEN and (not last or (now - dt.datetime.fromisoformat(last)).total_seconds() / 60 >= refresh - 3):
             out.append(k)
     return out
 
 
-def fetch_lines(key, day, want, markets=None, n_games=None):
-    """FanDuel props for the games in `want` ("AWY @ HOM"). Returns (props, credits_remaining, markets, fetched keys).
-    Markets are chosen once per night from the credit budget (credits left / days left in the month,
-    spread over all of tonight's games) and reused for the night's later games."""
-    events, h = get(f'{API}/events?apiKey={urllib.parse.quote(key)}')     # free
-    left = h.get('x-requests-remaining')
-    todays = []
+def tonight_events(key, day):
+    """Today's events from The Odds API (this call is free) and credits left."""
+    events, h = get(f'{API}/events?apiKey={urllib.parse.quote(key)}')
+    out = []
     for e in events:
         t = dt.datetime.fromisoformat(e['commence_time'].replace('Z', '+00:00'))
         if t.astimezone(ET).date().isoformat() == day:
-            todays.append((e, t, game_key(TEAMS.get(e['away_team'], e['away_team']), TEAMS.get(e['home_team'], e['home_team']))))
-    if markets is None:
-        now = dt.datetime.now(ET)
-        nxt = (now.replace(day=1) + dt.timedelta(days=32)).replace(day=1)
-        days_left = max(1, (nxt.date() - now.date()).days)
-        budget = float(left) / days_left if left not in (None, '') else 3 * len(todays)
-        markets = MARKETS[:max(0, min(3, int(budget // max(1, n_games or len(todays)))))]
-    if not markets:
-        return [], left, markets, []
+            out.append((e, t, game_key(TEAMS.get(e['away_team'], e['away_team']), TEAMS.get(e['home_team'], e['home_team']))))
+    return out, h.get('x-requests-remaining')
+
+
+def fetch_lines(key, events, want, markets, left=None):
+    """FanDuel props for the games in `want` ("AWY @ HOM"); one credit per market per game.
+    Returns (props, credits_remaining, pulled game keys)."""
     props, done = [], []
-    for e, t, game in todays:
+    for e, t, game in events:
         if game not in want or t <= dt.datetime.now(dt.timezone.utc):
             continue
         try:
@@ -217,10 +235,10 @@ def fetch_lines(key, day, want, markets=None, n_games=None):
                     if player and line is not None and 'Over' in sides and 'Under' in sides:
                         props.append({'player': player, 'game': game, 'tip': t.isoformat(), 'market': m['key'],
                                       'line': line, 'over': sides['Over'], 'under': sides['Under'], 'line_at': at})
-    return props, left, markets, done
+    return props, left, done
 
 
-BASE = ('player', 'game', 'tip', 'market', 'line', 'over', 'under', 'line_at')
+BASE = ('player', 'game', 'tip', 'market', 'line', 'over', 'under', 'line_at', 'line0', 'line0_at')
 
 
 def rescore(rows, proj, now):
@@ -365,23 +383,35 @@ def main():
     if today.get('date') != day:
         today = {}
     proj = projections(today)
-    want = due_games(today, doc['fetched'], now) if key and today else []
-    if want:
+    soon = [g for g in today.get('games', []) if g.get('time') and 0 < (dt.datetime.fromisoformat(g['time'].replace('Z', '+00:00')) - now).total_seconds() / 60 <= OPEN]
+    if key and soon:
         try:
-            rows, left, markets, done = fetch_lines(key, day, want, doc.get('markets'), len(today.get('games', [])))
-            doc['markets'] = markets
-            doc['credits_remaining'] = left
-            for g in done:
-                doc['fetched'][g] = now.isoformat(timespec='seconds')
-            doc['props'] = [r for r in doc['props'] if r['game'] not in done] + rows
-            print(f"props: fetched {', '.join(done) or 'nothing'} ({', '.join(STAT[m] for m in markets) or 'no credits'}; {left} credits left)")
+            events, left = tonight_events(key, day)
+            if 'refresh_min' not in doc:
+                nxt = (dt.datetime.now(ET).replace(day=1) + dt.timedelta(days=32)).replace(day=1)
+                doc['markets'], doc['refresh_min'] = plan_night(left, (nxt.date() - dt.datetime.now(ET).date()).days, len(today.get('games', [])))
+                doc['credits_at_start'] = left
+                print(f"props: tonight {', '.join(STAT[m] for m in doc['markets']) or 'no markets'}, "
+                      f"{'refresh every ' + str(doc['refresh_min']) + ' min' if doc['refresh_min'] else 'one pull per game'} ({left} credits left)")
+            want = due_games(today, doc['fetched'], now, doc['refresh_min']) if doc['markets'] else []
+            if want:
+                rows, left, done = fetch_lines(key, events, want, doc['markets'], left)
+                doc['credits_remaining'] = left
+                old = {(r['player'], r['market']): r for r in doc['props'] if r['game'] in done}
+                for r in rows:
+                    o = old.get((r['player'], r['market']))
+                    if o:
+                        # keep where the line opened, and a pick's start time when the line hasn't changed
+                        r['line0'], r['line0_at'] = o.get('line0', o['line']), o.get('line0_at', o.get('line_at'))
+                        if o.get('pick') and o['line'] == r['line']:
+                            r['pick'] = o['pick']
+                for g in done:
+                    doc['fetched'][g] = now.isoformat(timespec='seconds')
+                doc['props'] = [r for r in doc['props'] if r['game'] not in done] + rows
+                print(f"props: pulled {', '.join(done) or 'nothing'} ({left} credits left)")
         except Exception as e:
             print(f'::warning::props fetch failed: {e}')
             status = f'Last fetch failed: {e}'[:200]
-    elif today:
-        nxt = [g for g in today.get('games', []) if g.get('time') and game_key(g.get('away'), g.get('home')) not in doc['fetched']]
-        if nxt:
-            print(f"props: next lines about {WINDOW[1]} min before {min(g['time'] for g in nxt)}")
     if doc['props'] and not doc.get('graded') and proj:
         doc['props'] = rescore(doc['props'], proj, now)
         doc['updated_at'] = now.isoformat(timespec='seconds')
