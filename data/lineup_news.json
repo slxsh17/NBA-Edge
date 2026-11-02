@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-02",
-  "checked_at": "2026-11-02T23:01:50.917058+00:00",
+  "checked_at": "2026-11-02T23:55:29.283668+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -50,6 +50,70 @@
   ],
   "headlines": [
     {
+      "headline": "3 stats show how dominant Pistons' defense has been to start season - Sporting News",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRUhJV0RDQ3h1NjNQNG9iRWR0ZW9mMWo2RGpFV0FOaW1mMVViLWJqYlZITkU4VmYxbkRKWlVORjRfdTUzTzh4enNWekloLUU0Vi1ZS3FQNEFNdDE0cXpkUzJwUGNfbjlXcjctUmdPbTlEWnlwR3cyNEVnZmZqMU0zNGowQXpLa2FYSEtGZ3FzVXkyVEszbklSRGFHZjNxT2w2Y1NwbldKRlRyblVEbW9lanpB?oc=5",
+      "published_at": "2026-11-02T23:51:38+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Dylan Cardwell Injury: Ruled out Monday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPV0pRYjFXajBvMXVWNDlTdDE3RWNLdml1Mi1kS0t3NjRMVkVmSW53Y0lfZmcwRnpmMVk4VzdsMlMxVFVBQmFSTEdkNm5DYW5SODlYdGt3Yk1zUHJtY08ycFlyb0JJLTFHRTQyUmFsTzk2LXRHM3gzempXRW5xSVg0SjFtRFVfRzdYSzg5OThnRTMwSnYtU1E?oc=5",
+      "published_at": "2026-11-02T23:34:22+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Peyton Watson out for Cavs; Meleek Thomas to start - Hoops Wire",
+      "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5tcWxKS2RDNTNuRndVODVrVlpiVGZGNDhmTzFqWHJJLVlvVUxpWWNKRTY4R1RIR1VHaFhndnJOSGg2bEdhNnY0MkZsb1lVV0RLSDNLQ01EMERFTU52dGpuY1JpX20tbnBzc09J?oc=5",
+      "published_at": "2026-11-02T23:30:41+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Braden Smith to start Monday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRTBvaWlfQ0NhTm41NTVOdm9OQVNIX3hQYmE3clgwakcxd05Fc0pmNWJvY0NzYXZLcUxDMXhYRnhfcXlxc3hRQXo3N0VGbkpILWQ5MU1GY1Z2encyenkxRFIwYkx0clNJSElrWjFhTTJmX0ZhandIUWN1RkVfR0JkN0NR0gGHAUFVX3lxTFBENUlGenpDeWNmaS1hX1Z5cnJwTmtITnEzSDZ0TlgzM2otbllXTDhtd202QWxEdTFsZ09CN2tXSjcyVlJ1cnVoQ01fN1ZFSnJwSDhsakYwdE1wSDhONWs5OEJIQllqNk5naU1iMnUzY0xRdlE4Nnd1NUU5VWU2aVBwRlpqUk5uRQ?oc=5",
+      "published_at": "2026-11-02T23:16:16+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Pacers guard Braden Smith to start for first time in NBA career vs. Hawks - WRTV",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNc1kwZEZjb0s3TlNYQzdEUjMzMG5hdmVUd1l5ZjhyNy1fYVEtRFJMMGNKZ213NlZqS2N6bE01d3RGcU9DWUt2LXlCazR2eThXd1FhdlZIaUtQQnd6X3g5RDkyYWNocU05MUhaQVB6cXBIbHBzbU1NVlNrNE5wQXd3VGM3NGlESURCZTBnalI4VExhREZQcnUtZDZCWTRTcVlVOTcySXIwRy1MTnNLNktSN2JwMVV2WDQ?oc=5",
+      "published_at": "2026-11-02T23:11:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Hawks Face Injury Woes As Johnson Listed Questionable For Indiana Clash - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSjlPQmFYZXJuQ3ozbGxLcGhKUDBsc25NOVB5U1h6d09Vbkx3aFNiWW1NQ0ZLXzdnUmRZcjlUWV84ZHlqTGxkaG1IdmNIN09oaHNVc0Z1dEpEc0ZXUzZ6N3lzTG4yd09CbVFFOFBzODNRamdQR1p4UW1SUXMxY2JYa01PSDZsZw?oc=5",
+      "published_at": "2026-11-02T22:59:10+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Jalen Johnson Injury: Ruled out Monday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOM0NWVUlRbnR5NDV2OFR1ZkFBeUZNay14eUt2QXlLTFc1OTIyU2NpeTk5VVpfY1BSYTBjb1E0dkFveTdvX2ZYSllqeXZMQ0xFd1pRS0o2N1pBZFBiZUJsYVltT1F5cV9EcGpJZ2RyMmM1Mi1HOEtfOUYyS05Ld2N2R0xVLU83eDU3ZzJoM2dnbW9zZ1Vw?oc=5",
+      "published_at": "2026-11-02T22:58:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Pacers’ Pascal Siakam injury update vs. Hawks means entire starting lineup is out - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOd2FuOFJ0d3ltWEZjZ043X3pHeHZkcnlIc1dMQ1N6cjFWYWtWclJ0ajVyTkstUDFZbkNTajJGWGlmTXM3Q1RsaFJGY0JQMHZieEhMbTZYcTlmNHI3V1ZQSjBzaF9ieTdvNUpKR0ZuQzdabFVaN3pCTlNVdU1NWnhIeTFJeHRMZw?oc=5",
+      "published_at": "2026-11-02T22:54:10+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
       "headline": "Dylan Cardwell Injury: Downgraded to doubtful - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPODlRU3RxaTVJWGV3MHJQX3Vfb3R5V3dnZEcxYnVVQ3labGJWb3d1M1EtbDN4emxlemlyRGJPOGJCd0U2MWM2MlFqSTZYLW5oVXh5N19YNzBTNTlDbm9LakZtRkNQcGdUZmxtbUd4dVMtZjZlWTBadFZTUXFiRndKVHFXdFg1WFdzd0QzWUpXeUNYMG9yOExCbk5zZldQUQ?oc=5",
       "published_at": "2026-11-02T22:53:35+00:00",
@@ -58,9 +122,25 @@
       "scope_date": "2026-11-02"
     },
     {
+      "headline": "Cardinals will start Gardner Minshew after stunning comeback win over Cowboys - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZVhKd0QyMTRLZjFiYk1IRUlXbHQ2eDd1T2oyeGRlZ2JTVVZ5QWt0UVZQYXFTQUdrX0luWFBnMUN6b3ZYMjI4Z2NSY1g5a0lBaEVwcXNoUlVfS2xGYzV5LW5oQUR2N2V6dy1kTUJzOFU1MWRXRzZEOTFGWHlVU2dDWHNlSnROcl9TVHlIamZlSU9DVWxGbUhhMWdTMk8tclBx?oc=5",
+      "published_at": "2026-11-02T22:48:52+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
       "headline": "Terrence Shannon Jr. (listed as questionable with a … - HoopsHype",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU0FReTlYWUhkTEFIV284anFXSXhZb0JDZjNnYTZRYWRGVjJ6S0ZxRlRNU09ETEljYzFhX0Fud2dFNW9MWEZFeWNoOFNPSG5hUnhxbGZBVTNZeWRCRTJxcjA5Z29DbXpaT2NoTFZiSjRtVksxdnJ3QmdjcEFqNi1Pelk4SFp3UGEyd3RIV1JsZzBqdDhIRkx6OUVrX2JPcW4zdVhDRzVKdWxVMmpzSmlhcHVvQm9VdlJ0anMtTXV1RlM?oc=5",
       "published_at": "2026-11-02T22:41:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Detroit Pistons Vs. Charlotte Hornets Injury Report: Jalen Duren, Kon Knueppel Ruled Out - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPU2Jfd1lNZzJKRzFUNklaY0Nkb1NwdGZ5LWRkZlZ0UmlkUGY0MFBMT3ZLMkJ3ZGU0UUIzUkNudDlKcUlRNkhuLTMzcmx3STlaNnhBZkNSZXlfRTBnaHNmc2tHWU1VXzdhNXB1VGVac3RTWGVLeXd2dWJMUTRqTm1jQ3p1UldiN0ktTTJ2VllR?oc=5",
+      "published_at": "2026-11-02T22:30:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -82,25 +162,9 @@
       "scope_date": "2026-11-02"
     },
     {
-      "headline": "Pacers’ Pascal Siakam injury update vs. Hawks means entire starting lineup is out - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMnlYREhmdjlWaWxlNnhnLWNEYUZTaW51bVlxRDdFOEpwTG42WWtBdzdMWXlxSnBvOGtWeVgxVWl1Yk0wWWdMRlRtZUxpQklwcE9venpPZGdBUF9VUDZYNU9GTnJBWVZ2aVM1alhXeW85Uzl1bHlIcUtCcW9MTXlOeWlwcmJ0NHdnYnpNQzdfazRPeXpoSWNYMVdxWVlRQlRSYzNxOV9BY0g5akdxOGJtRl9jTnQ3S3lPSEpZ?oc=5",
-      "published_at": "2026-11-02T21:56:23+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
       "headline": "Raptors’ Scottie Barnes questionable vs. Clippers - Sportsnet.ca",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOT1BNZ3ZjLTNteVhOaGI5cFB0SUZDM2M0eVFxQ1hDRkk1VV9sYWpIazVKYlVpUXV6ZDJ4U0FPUmw0c1BCUHVrMU9lLXE0Y0d2VlFsbkxlcEZfdlNOZEoyMnhOZm9MWXJLbEdhaDhneTRLRjdsekpNenRDWDF5NWJOSGJic3JMU1RXTHRld0Nn?oc=5",
       "published_at": "2026-11-02T21:48:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Cardinals will start Gardner Minshew after stunning comeback win over Cowboys - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZVhKd0QyMTRLZjFiYk1IRUlXbHQ2eDd1T2oyeGRlZ2JTVVZ5QWt0UVZQYXFTQUdrX0luWFBnMUN6b3ZYMjI4Z2NSY1g5a0lBaEVwcXNoUlVfS2xGYzV5LW5oQUR2N2V6dy1kTUJzOFU1MWRXRzZEOTFGWHlVU2dDWHNlSnROcl9TVHlIamZlSU9DVWxGbUhhMWdTMk8tclBx?oc=5",
-      "published_at": "2026-11-02T21:34:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -117,6 +181,14 @@
       "headline": "Scottie Barnes Injury: Questionable to face LAC - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOLWh5RzByaXhXZVd5dkg3NnkzRm5jVEtoSkJqaU5XWS1ieTB2a1dibWQ0WnRzSm9WaTB0ZHBpWjlaQndRaHBselRYNVJ3TXNweE9nVW9pRVdQR19KR1U0N0ltT3ZzUjFuNlVvd2JnYWpnNDY1ZGhWQklIZzRCb2R1ckp3bXdWbnVJSllNdkdYUzRGbnZ0WkVmT3JjYlNHYy1B?oc=5",
       "published_at": "2026-11-02T21:23:03+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Derrick Jones Injury: Ruled out Monday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEpVb2xkbzRnUkxhLXNkd2xNOXV2VEFfbUtMVi1PU09BYVp2NE52anZpTzVNckc2RHF1WVhoM3RTVjU2Q3ZialYtdzRHcDAyVEhkTVBBVVc5S1l3M0xjTDJsRm4wRmU0NUI2ZkJqSXFSMHZqTUd5SzFubDczQ185Z1ZWb0dIYmMybnRQaFlMYUtTNGR2?oc=5",
+      "published_at": "2026-11-02T21:12:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -170,9 +242,9 @@
       "scope_date": "2026-11-02"
     },
     {
-      "headline": "QUESTIONABLE - Obi Toppin - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE41Z1FBTko0MlJkemtFTWpiTVhic3lSTzMySnBwVGt5T1RSNTA5Q1l4WlM3aDlPclBpT1pRa3EyUHRQNmdjWTdFazh4UjFvTWIySFlscDA3QlFMMHNsd0dUM2M3dTJIZWxldmw2Ul92RndyWUxvRDk5RHhaYUI?oc=5",
-      "published_at": "2026-11-02T19:33:07+00:00",
+      "headline": "QUESTIONABLE - Obi Toppin - HoopsHype",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPamk4VWZwcEtNUzNwSmlSbWh2RUI0a2xRcFJiQ3l1NmQ0NG9iMUt2QU5UZklaSTZBT1lHX0tZQU11d2gwRmRuR3IzN1l0V2JjWlVzN3NKTTA2cEgzY1FrQTFSZHZULVRpY3pMeWlGcFRQb3FoZ3o4cnZFVWU4STJsRTlYNnB0NXJxNnpQdWt5UVhBdkJlZ2RmV1RHbUxZQQ?oc=5",
+      "published_at": "2026-11-02T19:16:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -218,9 +290,25 @@
       "scope_date": "2026-11-02"
     },
     {
+      "headline": "Kings vs. Mavericks injury report: Kyrie Irving, Zach LaVine pop up as Sacramento tries for first win - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQk8tc2ZqLXhxemZ3Yk5NcjloZGI0Q0RDTUk0dmZmaXhoM0lZQ085OHJiT2lmZF9RdVJoYnVXSUxLN2JiMVlVSGMwMHduTDBmRnpaTjZNU3JyM3RUb1dQRnkyMHgwN3ZtalUyUGtWYXdpTXhkbGF4YWJJajdyeVF5LU9yVWVJenU2?oc=5",
+      "published_at": "2026-11-02T17:13:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
       "headline": "Kyle Whittingham says Michigan will start Tommy Carr at QB for ‘foreseeable future’ - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYl9JQXQtR09RMmx2VlNPa19jVVNlQmw4Y1NuYmdnRDJqQ3BjSHcxOEE0YUI3bDBGZkhJOERPRU9JZzZnMHJiNWtGTG8tV0pYWlk3cV8zREhrbXNObF9seUNEcmVXMDI1OFFEbldWQnRETlVCUGxNV3JwOTJ6d1dBdjl2WHRNX3o4NnIzMC1WdXpsZnNMVGZfN0I5cWttYmF0MGc?oc=5",
       "published_at": "2026-11-02T16:49:44+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "\"That's not even a question\" - Donte DiVincenzo's doctor says the Wolves guard will return this season - Basketball Network",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdWxsX252VUFkaUx0M3Z6SXpKbmd6NWU1RXFWUVVyYmhMRDktam42TUpoUnlxbVVfbnItcnZyTWI0eW54MXpzVGlSMWZFdjNqZ2tqeUduWlpRMUpqSi1TMkJFTkt5bTVPT0dNWkVSQlRtcVp0WGgxUEpWSjlqZlVmNjRIMXdQWlRYU2Q4cURKVV9vR3lXa05Qdy1TYWJBamlkcDlnb2kwei1wWW9kcnlCdmZ6TXJ5THM?oc=5",
+      "published_at": "2026-11-02T16:20:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -250,9 +338,25 @@
       "scope_date": "2026-11-02"
     },
     {
+      "headline": "How to watch Sixers vs. Bulls on Nov. 2: Game preview, line ups, injury reports and more - The Times of India",
+      "source_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPbXh3WmZEUlFmQU5jS3UyX3I2VEduZjhJa1VFT0lGVlVNVl9DVzRBbVpCX3k4YVZMUGdYWTc5NXVzVlY1UTZLcHh6cE9IWVdlMzZKNjlfdFZHZHB2SExmaUJQblBmSG5PckQ4cGU1VnVPZzNGYm9BdGFLbUhJNk9kaHlVN0wzX0o0aktVZjlnNWJoT2gzY2wtZ1V2NFFjV2tqcUlCbU1ZWnlCMGwyRVlYNHNRZVJ0Y2lvdDZoUTV6QWVya3l3aE1nY29hWmVmS2RQdEtTS25tbFdXajFFM202WnN4TVczcHNIMjIxdkR3SXFPNUdsVGVhVnRlYl85OVdKblHSAYICQVVfeXFMT214d1pmRFJRZkFOY0t1Ml9yNlRHbmY4SWtVRU9JRlZVTVZfQ1c0QW1aQl95OGFWTFBnWFk3OTV1c1ZWNVE2S3B4enBPSFlXZTM2SjY5X3RWR2RwdkhMZmlCUG5QZkhuT3JEOHBlNVZ1T2czRmJvQXRhS21ISTZPZGh5VTdMM19KNGpLVWY5ZzViaE9oM2NsLWdVdjRRY1dranFJQm1NWVp5QjBsMkVZWDRzUWVSdGNpb3Q2aFE1ekFlcmt5d2hNZ2NvYVplZktkUHRLU0tubWxXV2oxRTNtNlpzeE1XM3BzSDIyMXZEd0lxTzVHbFRlYVZ0ZWJfOTlXSm5R?oc=5",
+      "published_at": "2026-11-02T14:30:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
       "headline": "With Joel Embiid questionable, Sixers host Bulls in one-game homestand - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVkl4VlYyUzlZbGZxUEo1NTZlZFpYQkRKVUxPajRZVEZVY2VkYXlvTmtKbjFRWVFPRnh1RDJ4WFZ0SzNDR3JVMzlrZ2pZRnVjcVA1ZExPSU1heXg1OHRGTDFDRmV0YXNIUzJVZUF4RFd5TFNQNktDcHc4XzFWZWd1ZjV4a1drVjR5Vm9VVFd3?oc=5",
       "published_at": "2026-11-02T14:18:13+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Bulls’ Blowout Loss Raises Questions About Giddey, Starting Lineup - BVM Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVmR4TzA5S05wd2ppWWlrZFFSX1kwV0lzc1BPdTFvWG9WNlN1WHNvQmIxd3MzMHp2VTQ1bHQ3OXhqZEZBQktCZDFyOVVlUkMyOWpweWRoR3FnTnRmWG5nbUtpRk91RzlOeEFONkIwSEpMbmpFQVdKY2FaMzdwMVA5SWxRQTg2UTU5TUJYZ0NfUHJzQ015TS1kNHFYNG5nbUU?oc=5",
+      "published_at": "2026-11-02T13:13:28+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -266,9 +370,9 @@
       "scope_date": "2026-11-02"
     },
     {
-      "headline": "Vitor Pereira on shock Forest exit, Gibbs-White and what next: ‘I’m waiting for the rain, to start work’ - The Athletic - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMEdLNXBRMzdpQU9DRGxxeFZzUDJLaXNtSlNiNS1CU2FKRkVfakloNGJRN1YtT2dsTG5jZXFPVy1EYVJOQnkzd2lSdWF0c3hlNkxkbzU3Z0R0SlhkZmg3TGZvNTVmZUNvNGVma1F3Sng4U2lBVjFOamg1cW9UekVNOFVqcUtjUUVfODRaWUlGMVhSNTVhbndEZXJMRmFucWxKRDhKa1hkZw?oc=5",
-      "published_at": "2026-11-02T09:11:00+00:00",
+      "headline": "Cavs vs. Thunder: How to watch, odds, and injury report - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQmlPdXdLbmg1cDQ1SmpwTktIZTlmUzZURWg2RkxZLW91WWlhanFmRHdXNkhHc0RBQmVGQVc5enk1SHN4bXhiV1pTdTUwLXZEaUlYZTRmaDcxXzFXZzAzY213VG9jWFVZdWhyYTVTZGpPRGdfZjlITDJ1OERqQTdnYQ?oc=5",
+      "published_at": "2026-11-02T12:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -285,6 +389,14 @@
       "headline": "Bulls Facing Difficult Starting Lineup Decision with Nic Claxton Return Looming - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWk1hOGQ5eXBJbE5fOWI1bUh4WVFjT2NFMjRpQ2ZsbklBdHY2UTFDRDN0V1VUYkJ4QWpLTlhsS2daSjV0R0kyUmVYaTg4Q3VnZURaMmI4S0pieWRqX3ItbjJVZWZ0R0dmaVhac3B6cENYT0ExcHdCZG1uV3Q3VDByTjVBOURzNXZKTHFwTWtJUlRvc0FCY3hDRmZvRTNFYXQ2M1hYMG14TFpsTzVBZDRiQ19JcHhBQQ?oc=5",
       "published_at": "2026-11-02T05:30:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Philadelphia 76ers Announce Joel Embiid Injury Update Before Bulls Game - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcWNYaEkwVXZ2VnFoUWRuTndMVE9ySElGVHVWWkdfVGtEdE9YX0k1UXdGUW50ZVhtajlmTHMzdUxsOGxaRVRmbGpnNFN2NDFrQy1WN09BRExJZ0wtWFhwV0RWRjlJS3ZlU2dwZUVrUDFRVXZIX2FCZkd3MTNVY1l2dXJsWjg3Qms?oc=5",
+      "published_at": "2026-11-02T05:29:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -322,8 +434,24 @@
       "scope_date": "2026-11-02"
     },
     {
+      "headline": "Warriors' Georges Niang: Will start Sunday - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUVVT1Y0Rnl3bXd6Z3pyN1JVSHdud0RyQWE3eFpsWUdIeFdoMndfZ2xrSU9rM2hjNlp3OVhXSGV3ck5QRE10SS1DQW15aERlTTZEbXBMTTVQc0gzVUtRWUNaVVVWLTNROHJSWFhhSHBZNmVKSjVURkdHR21YaURVT2lqUTNIWS1wVzJxYXE2WUtyaGpMcEE?oc=5",
+      "published_at": "2026-11-02T01:24:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
       "headline": "Charles Bassey News: Enters starting lineup Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcDk3cXN0VTF5eUs1c2EtYkRCbFV5b3N6SmtpQURMZUJVT1FRQUVxOWxyVVZOQ2tWcFlLOXduRGtmUmdJblMtU3dsRmZzbFdJUTY1UDlzdU94WmtfdkU3YXlsaFpNc3lFSzZMbzh5S0VhLW1mdkplNU9MNm5sdVdJZzFSRjFUTUdzelZLUllGeFBBSTlBLUhSNG5VTU42VENXTlpLLQ?oc=5",
+      "published_at": "2026-11-02T01:20:07+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Warriors' Charles Bassey: Enters starting lineup Sunday - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVjBuS1RHM2VNTGVhNlRHMXlMbFVKcUFYcGNlUVlRZVNSa1VWRWI2Smx1b0FDQjBDbDM4WndQUVduWkc5N2VPMmYyNlZNUzVpdDFaY3dtWXNvRE5NNjJyamZsWkVQY1JCOFVOeTlVTVhTX0VZYi1ob3RHUXF0NkZlbm9yRG9QaF9SZURIYXVHQ25HcTZpc0VTVHI0dl95Q3U4dFBDQmNOUQ?oc=5",
       "published_at": "2026-11-02T01:20:07+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -357,70 +485,6 @@
       "headline": "Hornets’ Coby White is back, Kon Knueppel close to injury return - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPT1JoX2lhelkyc0JHM0U1NXdzaFFpeVZnVDJQaFhoZ3ZkcF8zSXpBN2k1dkRRRUhFU1dSV2VqMVE5VVNlNnFuM045S3NsUlF6ckdPVWFQYm1zNEpSemJZb21oVmxLVUF1TEt2dzdMYnlzYmV4bTdXYW1ib3ZjWEx2YW13?oc=5",
       "published_at": "2026-11-02T00:10:50+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Raptors vs. Lakers Injury Report: Three Ruled Out in Cross Conference Matchup - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOejh5MEZqcC1JSWI5bHduaF9HeWtSQnoySF9Fa3ZYMWhDanZnZVByYWkwOURnaktUb2tpeEsxNjJ1WjI4aUh0cHc2cXBEdFFyZFlhSUJmQXVmMUEtd2c4eEt5ZDR4Z3ZoR2lHTmtTb1R2WlFZZE1tUlJJMDFabGw3VkZ4M3FfQ2ZGWC1Campvc0p3S2tyZWotVHpFdEZLdE1YdXh4N3kyY25ZY1FPLXR2cDdOSl9DRnZySnVzcTB3?oc=5",
-      "published_at": "2026-11-01T23:49:52+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Video - Raptors vs. Lakers Injury Report: Three Ruled Out in Cross Conference Matchup - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSEtxTll1SzZPNzRBN2l0allYdGJ3SlZJaWh4V0Q3YmR3ZEU4bnAxX1A2ZWZnVlhmVzJ5MGh5S1FFSWtXclZMOHpRc3pFbktZRGU3dm1HdVFsTUdvckw5TXExYVRUREdkWlcwaUQzVlhSRlpVWXJDMmpHU2EyS2hGREdMNDFwV0ExNFZUUXBCclFYOXllQXEtcXNmTnJhZF9yNHg1VnQ4RkNDU1lXYzlOWHZRSDNGckdfUzMwVEFobw?oc=5",
-      "published_at": "2026-11-01T23:38:43+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Jose Alvarado is officially listed as QUESTIONABLE for … - HoopsHype",
-      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZzg1N0ZNY0NNdnAwRkVUNzFQTGZZaHpSMmNiazgzN25PSlNRYjVfWjdkS29LNEVUY3NsREtGMEV6LXFKYzgzTVBGSWdNdkNseko4bVQyb2JJUTJyYXo0dy1RTTYwMGJlVHJVLW5jOVJObTNnSG1ZbUFOTWtObTJaUmFGMnpuUjJQcEZheXZBTEdUNGRWMTd4Smo3MGMtWlRucXFQbW9RcV91TTZXTzNnR0VyaldiMlRlUXZFSWszOUVqQ0I3ZGd3?oc=5",
-      "published_at": "2026-11-01T23:30:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Joel Embiid is QUESTIONABLE for tomorrow’s game … - HoopsHype",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdUVLd056Qlp1bWFpdGE3QzhwNGgzakFkNFZ1MGQ5N2tNQVRobWh6UzhBS0tpTkc1NmlHMVRDNUVBVHp0RVl1Z3g2dlVPeDRDS1pMNmMzeElKM2lTeWtmdnVINTYzTUE0RGRjYkhwajhTYXdGREtPdmJRVk9laTc2NURYeXdFQms2dTVESDZXbUx1cjBlV0p5azN0VmNzbnBNVzZ6SUdPbnVxVXJ4QVltWU9xbkgxTzZoYi01UA?oc=5",
-      "published_at": "2026-11-01T23:28:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Dylan Cardwell Injury: Questionable versus Dallas - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSkZKRlhxLVR6aTEtMV9qT1V3VW9rQ0xUWHhzQnBTLVB5VWttU2NHTnFKN3JaSW9EQURxQmV0blYtRW5nMmxtV3lwSnRkZjA5U1ptOFRJY01JQnE3SnJYRUE2Q0ZqY2NueG1aY2dpTFRxZ1lRU0p5cWdkZnJzWUdZeGpVcDQwQUk2N2V1aXU1Umo3N1o1T0NGNW8wUzh0a0RJTGYw?oc=5",
-      "published_at": "2026-11-01T23:24:52+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Jalen Johnson (ankle) listed questionable Monday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdWdNU2R3cVRGdnNfcFZvS2ZwZTByamlQMGtuME9zeTNXWi1NZjVaSnI4YmVtVkZpZFhfa0h2VXl0aUFkU2MzSXZqRGxCSmplNUh3Q04tcFVwQnlLRG9zakREbG8xVnBrOUpvR2VkNkE5eFJzUUFvWVdRajJOb2ZsX1JqVm5ZM1pCYjYzVEdMYWk3MUZRc0xqRU530gGfAUFVX3lxTE9Mc0VRR1R1OVluM2NscHpnWll4RlBQSS1KeUhMZjBaMFdRTVY5cUJ2d1htcXZzSEw3dWp4cGxzcURJR2N0aUlMQVlrQnVhQkoxTW9xM0ZENTR6ZFhzT2o4SnFiMjZCYVBpWWZHbUZELTF2cGkwWTk0NXZKUzhvS2Q0MmJIUVMyY09IeXRjMzRtekRKM2FUV1VPOWFZX0Fwdw?oc=5",
-      "published_at": "2026-11-01T23:22:58+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Quinten Post Injury: Questionable for Monday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeUNvbm5kM1Q2OEFWUFlicjd0bnV4ekZlVnFCc3JqYmdONTdPMjB1UEotMG9Bek1UakI1UmFKakRiSE5hZzc2X1JRMFhNbjVCQ254dmJDNjZnMEQ2SnBHSkNSY2xuUlZUMWVXZDhSanFEN0cxNDNKd3JvbmpHZVc4NU5tTVBBS2huNmtrcE03RDRiWWZ4Unl5ZXU4bWc?oc=5",
-      "published_at": "2026-11-01T23:13:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "4 takeaways as Celtics defeat Magic, feature new starting lineup - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSjNzakZkb3BsVE80NXJfbVRkc1pFS1ZuNVZuVFkxMGR2R3ZWc0l4UlRxLUE4b1AyZy1mYVRVQ2FfTWJhZXVnSHhhUk9Cakd5N3dwZ3ZZUmVlRmJfd0dlQUloZW1WVnFGTk0wSXlTRzFKcDZnTngzNDNIQW4yaHB6UHJ4dzVsMVp1?oc=5",
-      "published_at": "2026-11-01T23:10:19+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
