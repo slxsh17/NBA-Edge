@@ -886,8 +886,12 @@ function saveEntries(){store.set(entKey(),(S.entries||[]).map(e=>({label:e.label
 // Your entries go to the pipeline (via the ntfy topic nbaedge-entries) so a late scratch of a player
 // you entered triggers a phone push with the swap. Only names, teams and slots are sent.
 let shareT=null;
+// Swap-alert sharing is per device and owner-only: entries posted to the alert feed drive the swap
+// pushes on the owner's phone, so a friend using the app must not overwrite them. Devices that
+// already shared keep sharing; new devices start off.
+function shareOn(){let v=store.get('shareEntries',null);if(v===null){try{v=Object.keys(localStorage).some(k=>k.startsWith('edge27.entriesShared:'))}catch(e){v=false}store.set('shareEntries',v)}return !!v}
 function shareEntries(){
-  if(S.review||S.source==='csv'||!S.day)return;
+  if(S.review||S.source==='csv'||!S.day||!shareOn())return;
   clearTimeout(shareT);shareT=setTimeout(()=>{
     const fmt=fmtKey(),es=(S.entries||[]).map((e,i)=>({l:e.label||('Entry '+(i+1)),s:e.picks.map(x=>[x.p.name,x.p.team,x.slot])}));
     const sig=JSON.stringify([S.day,fmt,es]),sk='entriesShared:'+fmt;if(store.get(sk,'')===sig)return;
@@ -925,10 +929,12 @@ function swapChanges(oldP,newP){
   for(const y of newP){const x=oldP.find(o=>pkey(o.p)===pkey(y.p));if(x&&x.slot!==y.slot)out.push(`Move <b>${esc(y.p.name)}</b> from ${x.slot} to ${y.slot}`)}
   return out;
 }
+$('entries').addEventListener('change',e=>{if(e.target.id==='ent-share'){store.set('shareEntries',e.target.checked);if(e.target.checked)shareEntries()}});
 function renderEntries(){
   const box=$('entries');if(!box||S.entBatch)return;const es=S.entries||[];
   if(S.source==='csv'&&!es.length&&!S.entForm){box.innerHTML='';return}
   let h=`<div class="ent-head"><h3>My entries</h3>${S.entForm?'':'<button class="btn small" id="ent-add" type="button">Add a lineup I entered</button>'}</div>`;
+  if(es.length)h+=`<label class="check" style="font-size:12.5px;margin:0 0 8px"><input type="checkbox" id="ent-share"${shareOn()?' checked':''}><span>Send these entries to the owner’s swap-alert pushes. Owner’s phone only; leave off if you’re a guest.</span></label>`;
   if(!es.length&&!S.entForm)h+=`<p class="muted" style="margin:0 0 4px;font-size:13px">Add the lineups you entered on FanDuel. As games lock, NBA EDGE keeps the locked players and finds the best swaps for everyone who hasn’t played yet.</p>`;
   if(S.entForm){const d=S.entDraft;
     h+=`<div class="ent-form"><label style="font-size:13px" for="ent-text">Players in FanDuel’s order (${slotList().join(', ')}), separated by commas. Last names are fine.</label>
