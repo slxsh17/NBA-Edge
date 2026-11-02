@@ -1,40 +1,128 @@
 {
-  "updated_at": "2026-11-01T20:31:04.963833-05:00",
+  "updated_at": "2026-11-02T02:47:53.516374-05:00",
   "source": "ESPN unofficial completed NBA box scores and local FanDuel positional mapping",
   "dvp_method": "Mean fantasy points allowed per player-game by nominal position; not pace or role adjusted",
   "usage_method": "Box-score estimated possession share, current-season sample only; projected_usage equals historical_usage until separately verified change",
   "opponents": [
     {
-      "team": "BOS",
-      "opponent": "ORL"
+      "team": "OKC",
+      "opponent": "CLE"
     },
     {
-      "team": "ORL",
-      "opponent": "BOS"
+      "team": "CLE",
+      "opponent": "OKC"
     },
     {
-      "team": "BKN",
+      "team": "DET",
+      "opponent": "CHA"
+    },
+    {
+      "team": "CHA",
+      "opponent": "DET"
+    },
+    {
+      "team": "ATL",
       "opponent": "IND"
     },
     {
       "team": "IND",
+      "opponent": "ATL"
+    },
+    {
+      "team": "BKN",
+      "opponent": "NYK"
+    },
+    {
+      "team": "NYK",
       "opponent": "BKN"
     },
     {
-      "team": "LAC",
+      "team": "WAS",
+      "opponent": "ORL"
+    },
+    {
+      "team": "ORL",
+      "opponent": "WAS"
+    },
+    {
+      "team": "CHI",
+      "opponent": "PHI"
+    },
+    {
+      "team": "PHI",
+      "opponent": "CHI"
+    },
+    {
+      "team": "SAC",
+      "opponent": "DAL"
+    },
+    {
+      "team": "DAL",
+      "opponent": "SAC"
+    },
+    {
+      "team": "NOP",
+      "opponent": "MEM"
+    },
+    {
+      "team": "MEM",
+      "opponent": "NOP"
+    },
+    {
+      "team": "MIL",
+      "opponent": "MIN"
+    },
+    {
+      "team": "MIN",
+      "opponent": "MIL"
+    },
+    {
+      "team": "BOS",
+      "opponent": "HOU"
+    },
+    {
+      "team": "HOU",
+      "opponent": "BOS"
+    },
+    {
+      "team": "UTA",
+      "opponent": "SAS"
+    },
+    {
+      "team": "SAS",
+      "opponent": "UTA"
+    },
+    {
+      "team": "POR",
+      "opponent": "DEN"
+    },
+    {
+      "team": "DEN",
+      "opponent": "POR"
+    },
+    {
+      "team": "PHX",
       "opponent": "GSW"
     },
     {
       "team": "GSW",
-      "opponent": "LAC"
+      "opponent": "PHX"
     },
     {
       "team": "TOR",
+      "opponent": "LAC"
+    },
+    {
+      "team": "LAC",
+      "opponent": "TOR"
+    },
+    {
+      "team": "MIA",
       "opponent": "LAL"
     },
     {
       "team": "LAL",
-      "opponent": "TOR"
+      "opponent": "MIA"
     }
   ],
   "dvp": [
@@ -42,7 +130,7 @@
       "opponent": "ATL",
       "position": "C",
       "fp_allowed": 22.76,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 104
     },
     {
@@ -56,64 +144,64 @@
       "opponent": "ATL",
       "position": "PG",
       "fp_allowed": 23.71,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 96
     },
     {
       "opponent": "ATL",
       "position": "SF",
       "fp_allowed": 20.74,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 123
     },
     {
       "opponent": "ATL",
       "position": "SG",
       "fp_allowed": 20.54,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 142
     },
     {
       "opponent": "BKN",
       "position": "C",
-      "fp_allowed": 25.84,
-      "league_avg": 23.27,
-      "games": 87
+      "fp_allowed": 25.81,
+      "league_avg": 23.28,
+      "games": 86
     },
     {
       "opponent": "BKN",
       "position": "PF",
-      "fp_allowed": 24.37,
+      "fp_allowed": 24.28,
       "league_avg": 23.35,
-      "games": 104
+      "games": 103
     },
     {
       "opponent": "BKN",
       "position": "PG",
-      "fp_allowed": 23.66,
-      "league_avg": 24.59,
+      "fp_allowed": 23.07,
+      "league_avg": 24.57,
       "games": 80
     },
     {
       "opponent": "BKN",
       "position": "SF",
-      "fp_allowed": 22.34,
-      "league_avg": 20.98,
-      "games": 121
+      "fp_allowed": 22.27,
+      "league_avg": 21.0,
+      "games": 122
     },
     {
       "opponent": "BKN",
       "position": "SG",
-      "fp_allowed": 22.53,
-      "league_avg": 21.27,
+      "fp_allowed": 22.67,
+      "league_avg": 21.26,
       "games": 126
     },
     {
       "opponent": "BOS",
       "position": "C",
-      "fp_allowed": 21.39,
-      "league_avg": 23.27,
-      "games": 107
+      "fp_allowed": 21.12,
+      "league_avg": 23.28,
+      "games": 109
     },
     {
       "opponent": "BOS",
@@ -125,29 +213,29 @@
     {
       "opponent": "BOS",
       "position": "PG",
-      "fp_allowed": 21.26,
-      "league_avg": 24.59,
-      "games": 87
+      "fp_allowed": 21.33,
+      "league_avg": 24.57,
+      "games": 89
     },
     {
       "opponent": "BOS",
       "position": "SF",
-      "fp_allowed": 19.28,
-      "league_avg": 20.98,
-      "games": 114
+      "fp_allowed": 19.47,
+      "league_avg": 21.0,
+      "games": 117
     },
     {
       "opponent": "BOS",
       "position": "SG",
-      "fp_allowed": 18.89,
-      "league_avg": 21.27,
-      "games": 161
+      "fp_allowed": 18.95,
+      "league_avg": 21.26,
+      "games": 162
     },
     {
       "opponent": "CHA",
       "position": "C",
       "fp_allowed": 20.56,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 108
     },
     {
@@ -161,28 +249,28 @@
       "opponent": "CHA",
       "position": "PG",
       "fp_allowed": 23.7,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 97
     },
     {
       "opponent": "CHA",
       "position": "SF",
       "fp_allowed": 17.52,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 127
     },
     {
       "opponent": "CHA",
       "position": "SG",
       "fp_allowed": 21.25,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 131
     },
     {
       "opponent": "CHI",
       "position": "C",
       "fp_allowed": 26.95,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 90
     },
     {
@@ -196,28 +284,28 @@
       "opponent": "CHI",
       "position": "PG",
       "fp_allowed": 27.32,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 81
     },
     {
       "opponent": "CHI",
       "position": "SF",
       "fp_allowed": 22.78,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 106
     },
     {
       "opponent": "CHI",
       "position": "SG",
       "fp_allowed": 22.69,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 133
     },
     {
       "opponent": "CLE",
       "position": "C",
       "fp_allowed": 24.25,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 105
     },
     {
@@ -231,28 +319,28 @@
       "opponent": "CLE",
       "position": "PG",
       "fp_allowed": 23.91,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 89
     },
     {
       "opponent": "CLE",
       "position": "SF",
       "fp_allowed": 21.5,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 133
     },
     {
       "opponent": "CLE",
       "position": "SG",
       "fp_allowed": 22.27,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 147
     },
     {
       "opponent": "DAL",
       "position": "C",
       "fp_allowed": 26.04,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 96
     },
     {
@@ -266,28 +354,28 @@
       "opponent": "DAL",
       "position": "PG",
       "fp_allowed": 25.68,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 87
     },
     {
       "opponent": "DAL",
       "position": "SF",
       "fp_allowed": 20.62,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 115
     },
     {
       "opponent": "DAL",
       "position": "SG",
       "fp_allowed": 24.77,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 127
     },
     {
       "opponent": "DEN",
       "position": "C",
       "fp_allowed": 22.42,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 99
     },
     {
@@ -301,28 +389,28 @@
       "opponent": "DEN",
       "position": "PG",
       "fp_allowed": 24.68,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 85
     },
     {
       "opponent": "DEN",
       "position": "SF",
       "fp_allowed": 21.59,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 125
     },
     {
       "opponent": "DEN",
       "position": "SG",
       "fp_allowed": 21.98,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 143
     },
     {
       "opponent": "DET",
       "position": "C",
       "fp_allowed": 22.79,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 109
     },
     {
@@ -336,63 +424,63 @@
       "opponent": "DET",
       "position": "PG",
       "fp_allowed": 23.07,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 94
     },
     {
       "opponent": "DET",
       "position": "SF",
       "fp_allowed": 23.02,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 103
     },
     {
       "opponent": "DET",
       "position": "SG",
       "fp_allowed": 20.26,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 134
     },
     {
       "opponent": "GSW",
       "position": "C",
-      "fp_allowed": 22.5,
-      "league_avg": 23.27,
-      "games": 101
+      "fp_allowed": 22.42,
+      "league_avg": 23.28,
+      "games": 102
     },
     {
       "opponent": "GSW",
       "position": "PF",
-      "fp_allowed": 23.08,
+      "fp_allowed": 23.01,
       "league_avg": 23.35,
-      "games": 106
+      "games": 107
     },
     {
       "opponent": "GSW",
       "position": "PG",
-      "fp_allowed": 26.33,
-      "league_avg": 24.59,
-      "games": 84
+      "fp_allowed": 26.5,
+      "league_avg": 24.57,
+      "games": 86
     },
     {
       "opponent": "GSW",
       "position": "SF",
-      "fp_allowed": 23.59,
-      "league_avg": 20.98,
-      "games": 111
+      "fp_allowed": 23.41,
+      "league_avg": 21.0,
+      "games": 114
     },
     {
       "opponent": "GSW",
       "position": "SG",
-      "fp_allowed": 21.65,
-      "league_avg": 21.27,
-      "games": 134
+      "fp_allowed": 21.22,
+      "league_avg": 21.26,
+      "games": 139
     },
     {
       "opponent": "HOU",
       "position": "C",
       "fp_allowed": 22.22,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 104
     },
     {
@@ -406,168 +494,168 @@
       "opponent": "HOU",
       "position": "PG",
       "fp_allowed": 21.8,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 91
     },
     {
       "opponent": "HOU",
       "position": "SF",
       "fp_allowed": 21.7,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 114
     },
     {
       "opponent": "HOU",
       "position": "SG",
       "fp_allowed": 19.17,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 140
     },
     {
       "opponent": "IND",
       "position": "C",
-      "fp_allowed": 23.59,
-      "league_avg": 23.27,
+      "fp_allowed": 23.85,
+      "league_avg": 23.28,
       "games": 86
     },
     {
       "opponent": "IND",
       "position": "PF",
-      "fp_allowed": 24.66,
+      "fp_allowed": 25.04,
       "league_avg": 23.35,
-      "games": 110
+      "games": 108
     },
     {
       "opponent": "IND",
       "position": "PG",
-      "fp_allowed": 25.52,
-      "league_avg": 24.59,
-      "games": 91
+      "fp_allowed": 25.72,
+      "league_avg": 24.57,
+      "games": 90
     },
     {
       "opponent": "IND",
       "position": "SF",
-      "fp_allowed": 19.65,
-      "league_avg": 20.98,
-      "games": 119
+      "fp_allowed": 19.53,
+      "league_avg": 21.0,
+      "games": 118
     },
     {
       "opponent": "IND",
       "position": "SG",
-      "fp_allowed": 20.57,
-      "league_avg": 21.27,
-      "games": 149
+      "fp_allowed": 20.49,
+      "league_avg": 21.26,
+      "games": 148
     },
     {
       "opponent": "LAC",
       "position": "C",
-      "fp_allowed": 20.99,
-      "league_avg": 23.27,
-      "games": 110
+      "fp_allowed": 21.02,
+      "league_avg": 23.28,
+      "games": 112
     },
     {
       "opponent": "LAC",
       "position": "PF",
-      "fp_allowed": 20.48,
+      "fp_allowed": 20.23,
       "league_avg": 23.35,
-      "games": 126
+      "games": 128
     },
     {
       "opponent": "LAC",
       "position": "PG",
-      "fp_allowed": 25.43,
-      "league_avg": 24.59,
-      "games": 81
+      "fp_allowed": 25.3,
+      "league_avg": 24.57,
+      "games": 84
     },
     {
       "opponent": "LAC",
       "position": "SF",
-      "fp_allowed": 18.82,
-      "league_avg": 20.98,
-      "games": 129
+      "fp_allowed": 19.01,
+      "league_avg": 21.0,
+      "games": 131
     },
     {
       "opponent": "LAC",
       "position": "SG",
-      "fp_allowed": 20.63,
-      "league_avg": 21.27,
-      "games": 148
+      "fp_allowed": 20.66,
+      "league_avg": 21.26,
+      "games": 150
     },
     {
       "opponent": "LAL",
       "position": "C",
       "fp_allowed": 20.71,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 113
     },
     {
       "opponent": "LAL",
       "position": "PF",
-      "fp_allowed": 24.08,
+      "fp_allowed": 23.77,
       "league_avg": 23.35,
-      "games": 110
+      "games": 113
     },
     {
       "opponent": "LAL",
       "position": "PG",
-      "fp_allowed": 24.31,
-      "league_avg": 24.59,
+      "fp_allowed": 24.3,
+      "league_avg": 24.57,
       "games": 94
     },
     {
       "opponent": "LAL",
       "position": "SF",
-      "fp_allowed": 20.23,
-      "league_avg": 20.98,
-      "games": 123
+      "fp_allowed": 20.25,
+      "league_avg": 21.0,
+      "games": 121
     },
     {
       "opponent": "LAL",
       "position": "SG",
-      "fp_allowed": 21.11,
-      "league_avg": 21.27,
-      "games": 135
+      "fp_allowed": 21.31,
+      "league_avg": 21.26,
+      "games": 136
     },
     {
       "opponent": "MEM",
       "position": "C",
-      "fp_allowed": 23.85,
-      "league_avg": 23.27,
-      "games": 104
+      "fp_allowed": 23.69,
+      "league_avg": 23.28,
+      "games": 103
     },
     {
       "opponent": "MEM",
       "position": "PF",
-      "fp_allowed": 26.77,
+      "fp_allowed": 26.78,
       "league_avg": 23.35,
-      "games": 112
+      "games": 110
     },
     {
       "opponent": "MEM",
       "position": "PG",
       "fp_allowed": 26.39,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 82
     },
     {
       "opponent": "MEM",
       "position": "SF",
-      "fp_allowed": 23.21,
-      "league_avg": 20.98,
-      "games": 130
+      "fp_allowed": 23.41,
+      "league_avg": 21.0,
+      "games": 128
     },
     {
       "opponent": "MEM",
       "position": "SG",
-      "fp_allowed": 21.53,
-      "league_avg": 21.27,
-      "games": 146
+      "fp_allowed": 21.51,
+      "league_avg": 21.26,
+      "games": 143
     },
     {
       "opponent": "MIA",
       "position": "C",
       "fp_allowed": 22.31,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 89
     },
     {
@@ -581,28 +669,28 @@
       "opponent": "MIA",
       "position": "PG",
       "fp_allowed": 25.13,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 91
     },
     {
       "opponent": "MIA",
       "position": "SF",
       "fp_allowed": 21.66,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 126
     },
     {
       "opponent": "MIA",
       "position": "SG",
       "fp_allowed": 22.98,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 135
     },
     {
       "opponent": "MIL",
       "position": "C",
       "fp_allowed": 23.59,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 88
     },
     {
@@ -616,63 +704,63 @@
       "opponent": "MIL",
       "position": "PG",
       "fp_allowed": 25.64,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 91
     },
     {
       "opponent": "MIL",
       "position": "SF",
       "fp_allowed": 21.45,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 119
     },
     {
       "opponent": "MIL",
       "position": "SG",
       "fp_allowed": 22.62,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 138
     },
     {
       "opponent": "MIN",
       "position": "C",
-      "fp_allowed": 22.41,
-      "league_avg": 23.27,
-      "games": 96
+      "fp_allowed": 22.64,
+      "league_avg": 23.28,
+      "games": 95
     },
     {
       "opponent": "MIN",
       "position": "PF",
-      "fp_allowed": 22.56,
+      "fp_allowed": 22.93,
       "league_avg": 23.35,
-      "games": 109
+      "games": 104
     },
     {
       "opponent": "MIN",
       "position": "PG",
-      "fp_allowed": 23.17,
-      "league_avg": 24.59,
-      "games": 103
+      "fp_allowed": 23.38,
+      "league_avg": 24.57,
+      "games": 100
     },
     {
       "opponent": "MIN",
       "position": "SF",
-      "fp_allowed": 19.84,
-      "league_avg": 20.98,
-      "games": 126
+      "fp_allowed": 19.92,
+      "league_avg": 21.0,
+      "games": 125
     },
     {
       "opponent": "MIN",
       "position": "SG",
-      "fp_allowed": 19.61,
-      "league_avg": 21.27,
-      "games": 153
+      "fp_allowed": 19.48,
+      "league_avg": 21.26,
+      "games": 150
     },
     {
       "opponent": "NOP",
       "position": "C",
       "fp_allowed": 26.92,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 107
     },
     {
@@ -686,29 +774,29 @@
       "opponent": "NOP",
       "position": "PG",
       "fp_allowed": 25.82,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 76
     },
     {
       "opponent": "NOP",
       "position": "SF",
       "fp_allowed": 22.16,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 130
     },
     {
       "opponent": "NOP",
       "position": "SG",
       "fp_allowed": 22.06,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 143
     },
     {
       "opponent": "NYK",
       "position": "C",
-      "fp_allowed": 21.58,
-      "league_avg": 23.27,
-      "games": 101
+      "fp_allowed": 21.62,
+      "league_avg": 23.28,
+      "games": 100
     },
     {
       "opponent": "NYK",
@@ -720,64 +808,64 @@
     {
       "opponent": "NYK",
       "position": "PG",
-      "fp_allowed": 23.01,
-      "league_avg": 24.59,
-      "games": 102
+      "fp_allowed": 23.04,
+      "league_avg": 24.57,
+      "games": 99
     },
     {
       "opponent": "NYK",
       "position": "SF",
-      "fp_allowed": 19.68,
-      "league_avg": 20.98,
-      "games": 124
+      "fp_allowed": 19.45,
+      "league_avg": 21.0,
+      "games": 121
     },
     {
       "opponent": "NYK",
       "position": "SG",
-      "fp_allowed": 20.58,
-      "league_avg": 21.27,
-      "games": 140
+      "fp_allowed": 20.47,
+      "league_avg": 21.26,
+      "games": 139
     },
     {
       "opponent": "OKC",
       "position": "C",
-      "fp_allowed": 20.64,
-      "league_avg": 23.27,
-      "games": 107
+      "fp_allowed": 20.63,
+      "league_avg": 23.28,
+      "games": 106
     },
     {
       "opponent": "OKC",
       "position": "PF",
-      "fp_allowed": 22.59,
+      "fp_allowed": 22.54,
       "league_avg": 23.35,
-      "games": 123
-    },
-    {
-      "opponent": "OKC",
-      "position": "PG",
-      "fp_allowed": 22.2,
-      "league_avg": 24.59,
-      "games": 88
-    },
-    {
-      "opponent": "OKC",
-      "position": "SF",
-      "fp_allowed": 19.25,
-      "league_avg": 20.98,
       "games": 122
     },
     {
       "opponent": "OKC",
+      "position": "PG",
+      "fp_allowed": 21.8,
+      "league_avg": 24.57,
+      "games": 86
+    },
+    {
+      "opponent": "OKC",
+      "position": "SF",
+      "fp_allowed": 19.52,
+      "league_avg": 21.0,
+      "games": 120
+    },
+    {
+      "opponent": "OKC",
       "position": "SG",
-      "fp_allowed": 20.09,
-      "league_avg": 21.27,
-      "games": 150
+      "fp_allowed": 20.14,
+      "league_avg": 21.26,
+      "games": 147
     },
     {
       "opponent": "ORL",
       "position": "C",
       "fp_allowed": 24.36,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 95
     },
     {
@@ -791,28 +879,28 @@
       "opponent": "ORL",
       "position": "PG",
       "fp_allowed": 25.75,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 77
     },
     {
       "opponent": "ORL",
       "position": "SF",
       "fp_allowed": 20.36,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 112
     },
     {
       "opponent": "ORL",
       "position": "SG",
       "fp_allowed": 20.06,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 151
     },
     {
       "opponent": "PHI",
       "position": "C",
       "fp_allowed": 23.02,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 102
     },
     {
@@ -826,28 +914,28 @@
       "opponent": "PHI",
       "position": "PG",
       "fp_allowed": 25.33,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 86
     },
     {
       "opponent": "PHI",
       "position": "SF",
       "fp_allowed": 21.34,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 117
     },
     {
       "opponent": "PHI",
       "position": "SG",
       "fp_allowed": 21.12,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 143
     },
     {
       "opponent": "PHX",
       "position": "C",
       "fp_allowed": 23.15,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 95
     },
     {
@@ -861,28 +949,28 @@
       "opponent": "PHX",
       "position": "PG",
       "fp_allowed": 24.24,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 74
     },
     {
       "opponent": "PHX",
       "position": "SF",
       "fp_allowed": 19.85,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 112
     },
     {
       "opponent": "PHX",
       "position": "SG",
       "fp_allowed": 19.17,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 135
     },
     {
       "opponent": "POR",
       "position": "C",
       "fp_allowed": 26.48,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 101
     },
     {
@@ -896,63 +984,63 @@
       "opponent": "POR",
       "position": "PG",
       "fp_allowed": 24.55,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 91
     },
     {
       "opponent": "POR",
       "position": "SF",
       "fp_allowed": 22.47,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 123
     },
     {
       "opponent": "POR",
       "position": "SG",
       "fp_allowed": 20.45,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 135
     },
     {
       "opponent": "SAC",
       "position": "C",
       "fp_allowed": 23.62,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 101
     },
     {
       "opponent": "SAC",
       "position": "PF",
-      "fp_allowed": 25.15,
+      "fp_allowed": 25.49,
       "league_avg": 23.35,
-      "games": 128
+      "games": 122
     },
     {
       "opponent": "SAC",
       "position": "PG",
       "fp_allowed": 26.93,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 88
     },
     {
       "opponent": "SAC",
       "position": "SF",
-      "fp_allowed": 20.89,
-      "league_avg": 20.98,
-      "games": 122
+      "fp_allowed": 20.79,
+      "league_avg": 21.0,
+      "games": 121
     },
     {
       "opponent": "SAC",
       "position": "SG",
-      "fp_allowed": 23.41,
-      "league_avg": 21.27,
-      "games": 136
+      "fp_allowed": 23.19,
+      "league_avg": 21.26,
+      "games": 133
     },
     {
       "opponent": "SAS",
       "position": "C",
       "fp_allowed": 23.41,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 105
     },
     {
@@ -966,28 +1054,28 @@
       "opponent": "SAS",
       "position": "PG",
       "fp_allowed": 24.94,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 90
     },
     {
       "opponent": "SAS",
       "position": "SF",
       "fp_allowed": 19.7,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 120
     },
     {
       "opponent": "SAS",
       "position": "SG",
       "fp_allowed": 20.16,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 149
     },
     {
       "opponent": "STARS",
       "position": "SF",
       "fp_allowed": 9.3,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 5
     },
     {
@@ -1000,44 +1088,44 @@
     {
       "opponent": "TOR",
       "position": "C",
-      "fp_allowed": 21.97,
-      "league_avg": 23.27,
+      "fp_allowed": 22.14,
+      "league_avg": 23.28,
       "games": 97
     },
     {
       "opponent": "TOR",
       "position": "PF",
-      "fp_allowed": 23.75,
+      "fp_allowed": 23.66,
       "league_avg": 23.35,
-      "games": 108
+      "games": 107
     },
     {
       "opponent": "TOR",
       "position": "PG",
-      "fp_allowed": 21.92,
-      "league_avg": 24.59,
+      "fp_allowed": 22.27,
+      "league_avg": 24.57,
       "games": 79
     },
     {
       "opponent": "TOR",
       "position": "SF",
-      "fp_allowed": 18.65,
-      "league_avg": 20.98,
+      "fp_allowed": 18.82,
+      "league_avg": 21.0,
       "games": 113
     },
     {
       "opponent": "TOR",
       "position": "SG",
-      "fp_allowed": 19.95,
-      "league_avg": 21.27,
+      "fp_allowed": 20.01,
+      "league_avg": 21.26,
       "games": 145
     },
     {
       "opponent": "UTAH",
       "position": "C",
-      "fp_allowed": 23.69,
-      "league_avg": 23.27,
-      "games": 106
+      "fp_allowed": 24.07,
+      "league_avg": 23.28,
+      "games": 103
     },
     {
       "opponent": "UTAH",
@@ -1049,29 +1137,29 @@
     {
       "opponent": "UTAH",
       "position": "PG",
-      "fp_allowed": 29.29,
-      "league_avg": 24.59,
-      "games": 80
+      "fp_allowed": 28.67,
+      "league_avg": 24.57,
+      "games": 79
     },
     {
       "opponent": "UTAH",
       "position": "SF",
-      "fp_allowed": 22.66,
-      "league_avg": 20.98,
-      "games": 114
+      "fp_allowed": 22.74,
+      "league_avg": 21.0,
+      "games": 111
     },
     {
       "opponent": "UTAH",
       "position": "SG",
-      "fp_allowed": 24.74,
-      "league_avg": 21.27,
-      "games": 153
+      "fp_allowed": 24.82,
+      "league_avg": 21.26,
+      "games": 150
     },
     {
       "opponent": "WAS",
       "position": "C",
       "fp_allowed": 26.03,
-      "league_avg": 23.27,
+      "league_avg": 23.28,
       "games": 97
     },
     {
@@ -1085,25 +1173,493 @@
       "opponent": "WAS",
       "position": "PG",
       "fp_allowed": 25.31,
-      "league_avg": 24.59,
+      "league_avg": 24.57,
       "games": 86
     },
     {
       "opponent": "WAS",
       "position": "SF",
       "fp_allowed": 24.3,
-      "league_avg": 20.98,
+      "league_avg": 21.0,
       "games": 111
     },
     {
       "opponent": "WAS",
       "position": "SG",
       "fp_allowed": 22.81,
-      "league_avg": 21.27,
+      "league_avg": 21.26,
       "games": 131
     }
   ],
   "usage": [
+    {
+      "name": "Paul George",
+      "historical_usage": 26.75,
+      "projected_usage": 26.75,
+      "games": 4
+    },
+    {
+      "name": "Jayson Tatum",
+      "historical_usage": 33.99,
+      "projected_usage": 33.99,
+      "games": 4
+    },
+    {
+      "name": "Neemias Queta",
+      "historical_usage": 16.7,
+      "projected_usage": 16.7,
+      "games": 4
+    },
+    {
+      "name": "Derrick White",
+      "historical_usage": 17.77,
+      "projected_usage": 17.77,
+      "games": 4
+    },
+    {
+      "name": "Hugo Gonzalez",
+      "historical_usage": 13.71,
+      "projected_usage": 13.71,
+      "games": 4
+    },
+    {
+      "name": "Sam Hauser",
+      "historical_usage": 11.41,
+      "projected_usage": 11.41,
+      "games": 4
+    },
+    {
+      "name": "Luka Garza",
+      "historical_usage": 21.89,
+      "projected_usage": 21.89,
+      "games": 4
+    },
+    {
+      "name": "Payton Pritchard",
+      "historical_usage": 24.18,
+      "projected_usage": 24.18,
+      "games": 4
+    },
+    {
+      "name": "Baylor Scheierman",
+      "historical_usage": 10.31,
+      "projected_usage": 10.31,
+      "games": 4
+    },
+    {
+      "name": "Jordan Walsh",
+      "historical_usage": 14.39,
+      "projected_usage": 14.39,
+      "games": 4
+    },
+    {
+      "name": "Franz Wagner",
+      "historical_usage": 29.88,
+      "projected_usage": 29.88,
+      "games": 4
+    },
+    {
+      "name": "Wendell Carter Jr.",
+      "historical_usage": 14.55,
+      "projected_usage": 14.55,
+      "games": 4
+    },
+    {
+      "name": "Desmond Bane",
+      "historical_usage": 23.15,
+      "projected_usage": 23.15,
+      "games": 4
+    },
+    {
+      "name": "Anthony Black",
+      "historical_usage": 22.83,
+      "projected_usage": 22.83,
+      "games": 4
+    },
+    {
+      "name": "Jase Richardson",
+      "historical_usage": 16.77,
+      "projected_usage": 16.77,
+      "games": 4
+    },
+    {
+      "name": "Jamal Cain",
+      "historical_usage": 15.99,
+      "projected_usage": 15.99,
+      "games": 4
+    },
+    {
+      "name": "Tristan da Silva",
+      "historical_usage": 17.34,
+      "projected_usage": 17.34,
+      "games": 4
+    },
+    {
+      "name": "Nikola Vucevic",
+      "historical_usage": 16.41,
+      "projected_usage": 16.41,
+      "games": 4
+    },
+    {
+      "name": "Goga Bitadze",
+      "historical_usage": 15.89,
+      "projected_usage": 15.89,
+      "games": 3
+    },
+    {
+      "name": "Julius Randle",
+      "historical_usage": 29.1,
+      "projected_usage": 29.1,
+      "games": 4
+    },
+    {
+      "name": "Michael Porter Jr.",
+      "historical_usage": 25.9,
+      "projected_usage": 25.9,
+      "games": 4
+    },
+    {
+      "name": "Chaney Johnson",
+      "historical_usage": 12.47,
+      "projected_usage": 12.47,
+      "games": 4
+    },
+    {
+      "name": "Day'Ron Sharpe",
+      "historical_usage": 17.18,
+      "projected_usage": 17.18,
+      "games": 4
+    },
+    {
+      "name": "Nolan Traore",
+      "historical_usage": 24.09,
+      "projected_usage": 24.09,
+      "games": 4
+    },
+    {
+      "name": "Noah Clowney",
+      "historical_usage": 13.32,
+      "projected_usage": 13.32,
+      "games": 4
+    },
+    {
+      "name": "Moritz Wagner",
+      "historical_usage": 23.66,
+      "projected_usage": 23.66,
+      "games": 4
+    },
+    {
+      "name": "Keon Ellis",
+      "historical_usage": 11.02,
+      "projected_usage": 11.02,
+      "games": 4
+    },
+    {
+      "name": "Pascal Siakam",
+      "historical_usage": 28.49,
+      "projected_usage": 28.49,
+      "games": 5
+    },
+    {
+      "name": "Jay Huff",
+      "historical_usage": 12.86,
+      "projected_usage": 12.86,
+      "games": 5
+    },
+    {
+      "name": "Kelly Oubre Jr.",
+      "historical_usage": 20.0,
+      "projected_usage": 20.0,
+      "games": 5
+    },
+    {
+      "name": "Andrew Nembhard",
+      "historical_usage": 26.09,
+      "projected_usage": 26.09,
+      "games": 4
+    },
+    {
+      "name": "Aaron Nesmith",
+      "historical_usage": 23.86,
+      "projected_usage": 23.86,
+      "games": 5
+    },
+    {
+      "name": "Larry Nance Jr.",
+      "historical_usage": 12.53,
+      "projected_usage": 12.53,
+      "games": 5
+    },
+    {
+      "name": "Jalen Slawson",
+      "historical_usage": 11.83,
+      "projected_usage": 11.83,
+      "games": 5
+    },
+    {
+      "name": "Jarace Walker",
+      "historical_usage": 17.08,
+      "projected_usage": 17.08,
+      "games": 5
+    },
+    {
+      "name": "Quenton Jackson",
+      "historical_usage": 18.06,
+      "projected_usage": 18.06,
+      "games": 5
+    },
+    {
+      "name": "Derrick Jones Jr.",
+      "historical_usage": 14.86,
+      "projected_usage": 14.86,
+      "games": 4
+    },
+    {
+      "name": "Rui Hachimura",
+      "historical_usage": 23.09,
+      "projected_usage": 23.09,
+      "games": 3
+    },
+    {
+      "name": "Isaiah Jackson",
+      "historical_usage": 18.16,
+      "projected_usage": 18.16,
+      "games": 4
+    },
+    {
+      "name": "Kris Dunn",
+      "historical_usage": 12.22,
+      "projected_usage": 12.22,
+      "games": 4
+    },
+    {
+      "name": "Darius Garland",
+      "historical_usage": 29.79,
+      "projected_usage": 29.79,
+      "games": 4
+    },
+    {
+      "name": "Baba Miller",
+      "historical_usage": 22.85,
+      "projected_usage": 22.85,
+      "games": 3
+    },
+    {
+      "name": "Nick Martinelli",
+      "historical_usage": 28.8,
+      "projected_usage": 28.8,
+      "games": 3
+    },
+    {
+      "name": "Brook Lopez",
+      "historical_usage": 20.3,
+      "projected_usage": 20.3,
+      "games": 4
+    },
+    {
+      "name": "Kobe Sanders",
+      "historical_usage": 16.91,
+      "projected_usage": 16.91,
+      "games": 4
+    },
+    {
+      "name": "Cam Christie",
+      "historical_usage": 28.92,
+      "projected_usage": 28.92,
+      "games": 3
+    },
+    {
+      "name": "Gradey Dick",
+      "historical_usage": 20.4,
+      "projected_usage": 20.4,
+      "games": 4
+    },
+    {
+      "name": "Keaton Wagler",
+      "historical_usage": 27.45,
+      "projected_usage": 27.45,
+      "games": 4
+    },
+    {
+      "name": "Georges Niang",
+      "historical_usage": 16.07,
+      "projected_usage": 16.07,
+      "games": 4
+    },
+    {
+      "name": "Yaxel Lendeborg",
+      "historical_usage": 29.67,
+      "projected_usage": 29.67,
+      "games": 4
+    },
+    {
+      "name": "Charles Bassey",
+      "historical_usage": 21.16,
+      "projected_usage": 21.16,
+      "games": 3
+    },
+    {
+      "name": "De'Anthony Melton",
+      "historical_usage": 19.84,
+      "projected_usage": 19.84,
+      "games": 4
+    },
+    {
+      "name": "Brandin Podziemski",
+      "historical_usage": 18.51,
+      "projected_usage": 18.51,
+      "games": 4
+    },
+    {
+      "name": "Gui Santos",
+      "historical_usage": 17.29,
+      "projected_usage": 17.29,
+      "games": 3
+    },
+    {
+      "name": "Al Horford",
+      "historical_usage": 14.83,
+      "projected_usage": 14.83,
+      "games": 4
+    },
+    {
+      "name": "Gary Payton II",
+      "historical_usage": 18.82,
+      "projected_usage": 18.82,
+      "games": 4
+    },
+    {
+      "name": "Brandon Williams",
+      "historical_usage": 28.52,
+      "projected_usage": 28.52,
+      "games": 4
+    },
+    {
+      "name": "Will Richard",
+      "historical_usage": 8.72,
+      "projected_usage": 8.72,
+      "games": 3
+    },
+    {
+      "name": "RJ Barrett",
+      "historical_usage": 25.82,
+      "projected_usage": 25.82,
+      "games": 4
+    },
+    {
+      "name": "Trayce Jackson-Davis",
+      "historical_usage": 13.72,
+      "projected_usage": 13.72,
+      "games": 3
+    },
+    {
+      "name": "Scottie Barnes",
+      "historical_usage": 31.73,
+      "projected_usage": 31.73,
+      "games": 4
+    },
+    {
+      "name": "Immanuel Quickley",
+      "historical_usage": 21.5,
+      "projected_usage": 21.5,
+      "games": 4
+    },
+    {
+      "name": "Ja'Kobe Walter",
+      "historical_usage": 13.75,
+      "projected_usage": 13.75,
+      "games": 4
+    },
+    {
+      "name": "Jamison Battle",
+      "historical_usage": 19.93,
+      "projected_usage": 19.93,
+      "games": 4
+    },
+    {
+      "name": "Collin Murray-Boyles",
+      "historical_usage": 18.24,
+      "projected_usage": 18.24,
+      "games": 4
+    },
+    {
+      "name": "Allen Graves",
+      "historical_usage": 16.07,
+      "projected_usage": 16.07,
+      "games": 4
+    },
+    {
+      "name": "Jamal Shead",
+      "historical_usage": 15.63,
+      "projected_usage": 15.63,
+      "games": 4
+    },
+    {
+      "name": "Jaden Bradley",
+      "historical_usage": 20.57,
+      "projected_usage": 20.57,
+      "games": 3
+    },
+    {
+      "name": "Alijah Martin",
+      "historical_usage": 19.24,
+      "projected_usage": 19.24,
+      "games": 3
+    },
+    {
+      "name": "Jake LaRavia",
+      "historical_usage": 9.88,
+      "projected_usage": 9.88,
+      "games": 5
+    },
+    {
+      "name": "Walker Kessler",
+      "historical_usage": 13.09,
+      "projected_usage": 13.09,
+      "games": 5
+    },
+    {
+      "name": "Matisse Thybulle",
+      "historical_usage": 13.75,
+      "projected_usage": 13.75,
+      "games": 5
+    },
+    {
+      "name": "Luka Doncic",
+      "historical_usage": 40.35,
+      "projected_usage": 40.35,
+      "games": 4
+    },
+    {
+      "name": "Austin Reaves",
+      "historical_usage": 26.78,
+      "projected_usage": 26.78,
+      "games": 5
+    },
+    {
+      "name": "Jarred Vanderbilt",
+      "historical_usage": 5.88,
+      "projected_usage": 5.88,
+      "games": 3
+    },
+    {
+      "name": "Sandro Mamukelashvili",
+      "historical_usage": 17.29,
+      "projected_usage": 17.29,
+      "games": 5
+    },
+    {
+      "name": "Collin Sexton",
+      "historical_usage": 30.74,
+      "projected_usage": 30.74,
+      "games": 5
+    },
+    {
+      "name": "Quentin Grimes",
+      "historical_usage": 13.42,
+      "projected_usage": 13.42,
+      "games": 5
+    },
     {
       "name": "Toumani Camara",
       "historical_usage": 14.37,
@@ -1214,207 +1770,207 @@
     },
     {
       "name": "Dean Wade",
-      "historical_usage": 5.85,
-      "projected_usage": 5.85,
-      "games": 4
+      "historical_usage": 5.81,
+      "projected_usage": 5.81,
+      "games": 3
     },
     {
       "name": "Adem Bona",
-      "historical_usage": 11.37,
-      "projected_usage": 11.37,
-      "games": 5
+      "historical_usage": 12.26,
+      "projected_usage": 12.26,
+      "games": 4
     },
     {
       "name": "Jaylen Brown",
-      "historical_usage": 26.17,
-      "projected_usage": 26.17,
-      "games": 4
+      "historical_usage": 25.77,
+      "projected_usage": 25.77,
+      "games": 3
     },
     {
       "name": "Tyrese Maxey",
-      "historical_usage": 32.41,
-      "projected_usage": 32.41,
-      "games": 5
+      "historical_usage": 33.28,
+      "projected_usage": 33.28,
+      "games": 4
     },
     {
       "name": "VJ Edgecombe",
-      "historical_usage": 17.59,
-      "projected_usage": 17.59,
-      "games": 4
+      "historical_usage": 17.46,
+      "projected_usage": 17.46,
+      "games": 3
     },
     {
       "name": "Kentavious Caldwell-Pope",
       "historical_usage": 11.14,
       "projected_usage": 11.14,
-      "games": 5
+      "games": 4
     },
     {
       "name": "Anfernee Simons",
-      "historical_usage": 19.33,
-      "projected_usage": 19.33,
-      "games": 5
+      "historical_usage": 19.85,
+      "projected_usage": 19.85,
+      "games": 4
     },
     {
       "name": "Labaron Philon Jr.",
-      "historical_usage": 19.71,
-      "projected_usage": 19.71,
-      "games": 4
+      "historical_usage": 23.04,
+      "projected_usage": 23.04,
+      "games": 3
     },
     {
       "name": "Moussa Diabate",
-      "historical_usage": 11.74,
-      "projected_usage": 11.74,
-      "games": 5
+      "historical_usage": 12.78,
+      "projected_usage": 12.78,
+      "games": 4
     },
     {
       "name": "Brandon Miller",
-      "historical_usage": 37.17,
-      "projected_usage": 37.17,
-      "games": 5
+      "historical_usage": 35.08,
+      "projected_usage": 35.08,
+      "games": 4
     },
     {
       "name": "Naz Reid",
-      "historical_usage": 27.64,
-      "projected_usage": 27.64,
-      "games": 5
+      "historical_usage": 29.76,
+      "projected_usage": 29.76,
+      "games": 4
     },
     {
       "name": "Dennis Schroder",
-      "historical_usage": 20.56,
-      "projected_usage": 20.56,
-      "games": 5
+      "historical_usage": 18.94,
+      "projected_usage": 18.94,
+      "games": 4
     },
     {
       "name": "Sion James",
-      "historical_usage": 11.58,
-      "projected_usage": 11.58,
-      "games": 5
+      "historical_usage": 12.87,
+      "projected_usage": 12.87,
+      "games": 4
     },
     {
       "name": "Royce O'Neale",
-      "historical_usage": 10.81,
-      "projected_usage": 10.81,
-      "games": 5
+      "historical_usage": 12.56,
+      "projected_usage": 12.56,
+      "games": 4
     },
     {
       "name": "Tidjane Salaun",
-      "historical_usage": 10.6,
-      "projected_usage": 10.6,
-      "games": 5
+      "historical_usage": 11.16,
+      "projected_usage": 11.16,
+      "games": 4
     },
     {
       "name": "Ryan Kalkbrenner",
-      "historical_usage": 8.62,
-      "projected_usage": 8.62,
-      "games": 5
+      "historical_usage": 9.01,
+      "projected_usage": 9.01,
+      "games": 4
     },
     {
       "name": "Grayson Allen",
-      "historical_usage": 21.89,
-      "projected_usage": 21.89,
-      "games": 5
+      "historical_usage": 22.39,
+      "projected_usage": 22.39,
+      "games": 4
     },
     {
       "name": "Christian Anderson",
-      "historical_usage": 23.87,
-      "projected_usage": 23.87,
-      "games": 5
+      "historical_usage": 19.4,
+      "projected_usage": 19.4,
+      "games": 4
     },
     {
       "name": "Onyeka Okongwu",
-      "historical_usage": 18.29,
-      "projected_usage": 18.29,
-      "games": 5
+      "historical_usage": 18.48,
+      "projected_usage": 18.48,
+      "games": 4
     },
     {
       "name": "Jalen Johnson",
-      "historical_usage": 23.9,
-      "projected_usage": 23.9,
-      "games": 5
+      "historical_usage": 23.07,
+      "projected_usage": 23.07,
+      "games": 4
     },
     {
       "name": "CJ McCollum",
-      "historical_usage": 21.07,
-      "projected_usage": 21.07,
-      "games": 5
+      "historical_usage": 20.8,
+      "projected_usage": 20.8,
+      "games": 4
     },
     {
       "name": "Nickeil Alexander-Walker",
-      "historical_usage": 24.49,
-      "projected_usage": 24.49,
-      "games": 5
+      "historical_usage": 25.06,
+      "projected_usage": 25.06,
+      "games": 4
     },
     {
       "name": "Dyson Daniels",
-      "historical_usage": 13.36,
-      "projected_usage": 13.36,
-      "games": 5
+      "historical_usage": 12.17,
+      "projected_usage": 12.17,
+      "games": 4
     },
     {
       "name": "Luguentz Dort",
-      "historical_usage": 16.62,
-      "projected_usage": 16.62,
-      "games": 5
+      "historical_usage": 18.12,
+      "projected_usage": 18.12,
+      "games": 4
     },
     {
       "name": "Aaron Wiggins",
-      "historical_usage": 21.06,
-      "projected_usage": 21.06,
-      "games": 5
+      "historical_usage": 21.76,
+      "projected_usage": 21.76,
+      "games": 4
     },
     {
       "name": "Kingston Flemings",
-      "historical_usage": 17.53,
-      "projected_usage": 17.53,
-      "games": 5
+      "historical_usage": 17.84,
+      "projected_usage": 17.84,
+      "games": 4
     },
     {
       "name": "Herbert Jones",
-      "historical_usage": 16.88,
-      "projected_usage": 16.88,
-      "games": 4
+      "historical_usage": 18.26,
+      "projected_usage": 18.26,
+      "games": 3
     },
     {
       "name": "Zion Williamson",
-      "historical_usage": 21.52,
-      "projected_usage": 21.52,
-      "games": 4
+      "historical_usage": 22.04,
+      "projected_usage": 22.04,
+      "games": 3
     },
     {
       "name": "Trey Murphy III",
-      "historical_usage": 19.63,
-      "projected_usage": 19.63,
-      "games": 4
+      "historical_usage": 18.14,
+      "projected_usage": 18.14,
+      "games": 3
     },
     {
       "name": "Karlo Matkovic",
-      "historical_usage": 14.15,
-      "projected_usage": 14.15,
-      "games": 4
+      "historical_usage": 15.47,
+      "projected_usage": 15.47,
+      "games": 3
     },
     {
       "name": "Jeremiah Fears",
-      "historical_usage": 27.17,
-      "projected_usage": 27.17,
-      "games": 4
+      "historical_usage": 26.86,
+      "projected_usage": 26.86,
+      "games": 3
     },
     {
       "name": "Saddiq Bey",
-      "historical_usage": 21.67,
-      "projected_usage": 21.67,
-      "games": 4
+      "historical_usage": 21.56,
+      "projected_usage": 21.56,
+      "games": 3
     },
     {
       "name": "Derik Queen",
-      "historical_usage": 20.64,
-      "projected_usage": 20.64,
-      "games": 4
+      "historical_usage": 20.9,
+      "projected_usage": 20.9,
+      "games": 3
     },
     {
       "name": "Bennedict Mathurin",
-      "historical_usage": 19.86,
-      "projected_usage": 19.86,
-      "games": 4
+      "historical_usage": 20.38,
+      "projected_usage": 20.38,
+      "games": 3
     },
     {
       "name": "Domantas Sabonis",
@@ -1532,51 +2088,51 @@
     },
     {
       "name": "Jarrett Allen",
-      "historical_usage": 18.83,
-      "projected_usage": 18.83,
-      "games": 5
+      "historical_usage": 18.13,
+      "projected_usage": 18.13,
+      "games": 4
     },
     {
       "name": "Evan Mobley",
-      "historical_usage": 20.34,
-      "projected_usage": 20.34,
-      "games": 5
+      "historical_usage": 20.81,
+      "projected_usage": 20.81,
+      "games": 4
     },
     {
       "name": "James Harden",
-      "historical_usage": 22.56,
-      "projected_usage": 22.56,
-      "games": 5
+      "historical_usage": 23.07,
+      "projected_usage": 23.07,
+      "games": 4
     },
     {
       "name": "Donovan Mitchell",
-      "historical_usage": 25.43,
-      "projected_usage": 25.43,
-      "games": 5
+      "historical_usage": 25.56,
+      "projected_usage": 25.56,
+      "games": 4
     },
     {
       "name": "Peyton Watson",
-      "historical_usage": 21.05,
-      "projected_usage": 21.05,
-      "games": 5
+      "historical_usage": 21.81,
+      "projected_usage": 21.81,
+      "games": 4
     },
     {
       "name": "Mario Hezonja",
-      "historical_usage": 15.99,
-      "projected_usage": 15.99,
-      "games": 5
+      "historical_usage": 15.01,
+      "projected_usage": 15.01,
+      "games": 4
     },
     {
       "name": "Sam Merrill",
-      "historical_usage": 13.95,
-      "projected_usage": 13.95,
-      "games": 5
+      "historical_usage": 15.09,
+      "projected_usage": 15.09,
+      "games": 4
     },
     {
       "name": "Tyrese Proctor",
-      "historical_usage": 13.22,
-      "projected_usage": 13.22,
-      "games": 4
+      "historical_usage": 12.74,
+      "projected_usage": 12.74,
+      "games": 3
     },
     {
       "name": "Meleek Thomas",
@@ -1586,63 +2142,63 @@
     },
     {
       "name": "Kyle Kuzma",
-      "historical_usage": 18.52,
-      "projected_usage": 18.52,
-      "games": 4
+      "historical_usage": 19.24,
+      "projected_usage": 19.24,
+      "games": 3
     },
     {
       "name": "Jaime Jaquez Jr.",
-      "historical_usage": 22.18,
-      "projected_usage": 22.18,
-      "games": 4
+      "historical_usage": 20.99,
+      "projected_usage": 20.99,
+      "games": 3
     },
     {
       "name": "Myles Turner",
-      "historical_usage": 16.09,
-      "projected_usage": 16.09,
-      "games": 4
+      "historical_usage": 16.97,
+      "projected_usage": 16.97,
+      "games": 3
     },
     {
       "name": "Tyler Herro",
-      "historical_usage": 25.26,
-      "projected_usage": 25.26,
-      "games": 4
+      "historical_usage": 26.66,
+      "projected_usage": 26.66,
+      "games": 3
     },
     {
       "name": "Ryan Rollins",
-      "historical_usage": 25.18,
-      "projected_usage": 25.18,
-      "games": 4
+      "historical_usage": 24.91,
+      "projected_usage": 24.91,
+      "games": 3
     },
     {
       "name": "Nate Ament",
-      "historical_usage": 19.43,
-      "projected_usage": 19.43,
-      "games": 4
+      "historical_usage": 21.53,
+      "projected_usage": 21.53,
+      "games": 3
     },
     {
       "name": "Kel'el Ware",
-      "historical_usage": 28.69,
-      "projected_usage": 28.69,
-      "games": 4
+      "historical_usage": 31.1,
+      "projected_usage": 31.1,
+      "games": 3
     },
     {
       "name": "AJ Green",
-      "historical_usage": 11.65,
-      "projected_usage": 11.65,
-      "games": 4
+      "historical_usage": 9.46,
+      "projected_usage": 9.46,
+      "games": 3
     },
     {
       "name": "Brayden Burries",
-      "historical_usage": 19.56,
-      "projected_usage": 19.56,
-      "games": 4
+      "historical_usage": 19.47,
+      "projected_usage": 19.47,
+      "games": 3
     },
     {
       "name": "Kasparas Jakucionis",
-      "historical_usage": 16.75,
-      "projected_usage": 16.75,
-      "games": 4
+      "historical_usage": 15.79,
+      "projected_usage": 15.79,
+      "games": 3
     },
     {
       "name": "Jaden McDaniels",
@@ -1700,57 +2256,57 @@
     },
     {
       "name": "Victor Wembanyama",
-      "historical_usage": 36.22,
-      "projected_usage": 36.22,
-      "games": 4
+      "historical_usage": 38.09,
+      "projected_usage": 38.09,
+      "games": 3
     },
     {
       "name": "De'Aaron Fox",
-      "historical_usage": 19.96,
-      "projected_usage": 19.96,
-      "games": 4
+      "historical_usage": 18.96,
+      "projected_usage": 18.96,
+      "games": 3
     },
     {
       "name": "Devin Vassell",
-      "historical_usage": 17.73,
-      "projected_usage": 17.73,
-      "games": 4
+      "historical_usage": 19.47,
+      "projected_usage": 19.47,
+      "games": 3
     },
     {
       "name": "Stephon Castle",
-      "historical_usage": 21.95,
-      "projected_usage": 21.95,
-      "games": 4
+      "historical_usage": 19.27,
+      "projected_usage": 19.27,
+      "games": 3
     },
     {
       "name": "Dylan Harper",
-      "historical_usage": 22.37,
-      "projected_usage": 22.37,
-      "games": 4
+      "historical_usage": 20.1,
+      "projected_usage": 20.1,
+      "games": 3
     },
     {
       "name": "Keldon Johnson",
-      "historical_usage": 14.25,
-      "projected_usage": 14.25,
-      "games": 4
+      "historical_usage": 15.99,
+      "projected_usage": 15.99,
+      "games": 3
     },
     {
       "name": "Julian Champagnie",
-      "historical_usage": 14.46,
-      "projected_usage": 14.46,
-      "games": 4
+      "historical_usage": 15.26,
+      "projected_usage": 15.26,
+      "games": 3
     },
     {
       "name": "Carter Bryant",
-      "historical_usage": 14.9,
-      "projected_usage": 14.9,
-      "games": 4
+      "historical_usage": 14.54,
+      "projected_usage": 14.54,
+      "games": 3
     },
     {
       "name": "Luke Kornet",
-      "historical_usage": 9.12,
-      "projected_usage": 9.12,
-      "games": 4
+      "historical_usage": 8.36,
+      "projected_usage": 8.36,
+      "games": 3
     },
     {
       "name": "Isaiah Hartenstein",
@@ -1808,33 +2364,27 @@
     },
     {
       "name": "Kevin Durant",
-      "historical_usage": 24.51,
-      "projected_usage": 24.51,
-      "games": 5
+      "historical_usage": 25.38,
+      "projected_usage": 25.38,
+      "games": 4
     },
     {
       "name": "Jabari Smith Jr.",
-      "historical_usage": 20.56,
-      "projected_usage": 20.56,
-      "games": 5
-    },
-    {
-      "name": "Alperen Sengun",
-      "historical_usage": 26.22,
-      "projected_usage": 26.22,
-      "games": 3
+      "historical_usage": 21.56,
+      "projected_usage": 21.56,
+      "games": 4
     },
     {
       "name": "Amen Thompson",
-      "historical_usage": 19.37,
-      "projected_usage": 19.37,
-      "games": 5
+      "historical_usage": 19.33,
+      "projected_usage": 19.33,
+      "games": 4
     },
     {
       "name": "Tari Eason",
-      "historical_usage": 18.22,
-      "projected_usage": 18.22,
-      "games": 5
+      "historical_usage": 16.85,
+      "projected_usage": 16.85,
+      "games": 4
     },
     {
       "name": "Isaiah Crawford",
@@ -1844,9 +2394,9 @@
     },
     {
       "name": "Clint Capela",
-      "historical_usage": 9.46,
-      "projected_usage": 9.46,
-      "games": 5
+      "historical_usage": 9.9,
+      "projected_usage": 9.9,
+      "games": 4
     },
     {
       "name": "Oscar Tshiebwe",
@@ -1856,39 +2406,33 @@
     },
     {
       "name": "Bogdan Bogdanovic",
-      "historical_usage": 19.26,
-      "projected_usage": 19.26,
-      "games": 5
-    },
-    {
-      "name": "Bruce Thornton",
-      "historical_usage": 26.51,
-      "projected_usage": 26.51,
-      "games": 3
+      "historical_usage": 19.3,
+      "projected_usage": 19.3,
+      "games": 4
     },
     {
       "name": "Anthony Davis",
-      "historical_usage": 30.27,
-      "projected_usage": 30.27,
-      "games": 4
+      "historical_usage": 29.03,
+      "projected_usage": 29.03,
+      "games": 3
     },
     {
       "name": "Kyshawn George",
-      "historical_usage": 21.66,
-      "projected_usage": 21.66,
-      "games": 4
+      "historical_usage": 20.12,
+      "projected_usage": 20.12,
+      "games": 3
     },
     {
       "name": "Alex Sarr",
-      "historical_usage": 17.59,
-      "projected_usage": 17.59,
-      "games": 4
+      "historical_usage": 18.21,
+      "projected_usage": 18.21,
+      "games": 3
     },
     {
       "name": "Trae Young",
-      "historical_usage": 25.12,
-      "projected_usage": 25.12,
-      "games": 4
+      "historical_usage": 26.02,
+      "projected_usage": 26.02,
+      "games": 3
     },
     {
       "name": "Khris Middleton",
@@ -1898,81 +2442,63 @@
     },
     {
       "name": "Deandre Ayton",
-      "historical_usage": 14.18,
-      "projected_usage": 14.18,
-      "games": 4
-    },
-    {
-      "name": "Bub Carrington",
-      "historical_usage": 12.8,
-      "projected_usage": 12.8,
-      "games": 4
-    },
-    {
-      "name": "Bilal Coulibaly",
-      "historical_usage": 11.67,
-      "projected_usage": 11.67,
-      "games": 4
-    },
-    {
-      "name": "Will Riley",
-      "historical_usage": 32.41,
-      "projected_usage": 32.41,
+      "historical_usage": 14.71,
+      "projected_usage": 14.71,
       "games": 3
     },
     {
-      "name": "Tre Johnson",
-      "historical_usage": 21.3,
-      "projected_usage": 21.3,
+      "name": "Bub Carrington",
+      "historical_usage": 12.6,
+      "projected_usage": 12.6,
+      "games": 3
+    },
+    {
+      "name": "Bilal Coulibaly",
+      "historical_usage": 11.04,
+      "projected_usage": 11.04,
       "games": 3
     },
     {
       "name": "Jalen Smith",
-      "historical_usage": 18.65,
-      "projected_usage": 18.65,
-      "games": 4
+      "historical_usage": 17.04,
+      "projected_usage": 17.04,
+      "games": 3
     },
     {
       "name": "Matas Buzelis",
-      "historical_usage": 22.43,
-      "projected_usage": 22.43,
-      "games": 4
+      "historical_usage": 22.87,
+      "projected_usage": 22.87,
+      "games": 3
     },
     {
       "name": "Caleb Wilson",
-      "historical_usage": 25.49,
-      "projected_usage": 25.49,
-      "games": 4
+      "historical_usage": 23.71,
+      "projected_usage": 23.71,
+      "games": 3
     },
     {
       "name": "Norman Powell",
-      "historical_usage": 23.37,
-      "projected_usage": 23.37,
-      "games": 4
+      "historical_usage": 23.33,
+      "projected_usage": 23.33,
+      "games": 3
     },
     {
       "name": "Josh Giddey",
-      "historical_usage": 15.79,
-      "projected_usage": 15.79,
-      "games": 4
-    },
-    {
-      "name": "Zach Collins",
-      "historical_usage": 27.34,
-      "projected_usage": 27.34,
+      "historical_usage": 17.5,
+      "projected_usage": 17.5,
       "games": 3
     },
     {
       "name": "Isaac Okoro",
-      "historical_usage": 11.26,
-      "projected_usage": 11.26,
-      "games": 4
+      "historical_usage": 13.08,
+      "projected_usage": 13.08,
+      "games": 3
     },
     {
       "name": "Leonard Miller",
-      "historical_usage": 19.68,
-      "projected_usage": 19.68,
-      "games": 4
+      "historical_usage": 21.09,
+      "projected_usage": 21.09,
+      "games": 3
     },
     {
       "name": "Noa Essengue",
@@ -1982,80 +2508,20 @@
     },
     {
       "name": "Buddy Hield",
-      "historical_usage": 14.17,
-      "projected_usage": 14.17,
-      "games": 4
-    },
-    {
-      "name": "Tre Jones",
-      "historical_usage": 22.64,
-      "projected_usage": 22.64,
-      "games": 4
-    },
-    {
-      "name": "Paul George",
-      "historical_usage": 27.14,
-      "projected_usage": 27.14,
+      "historical_usage": 12.12,
+      "projected_usage": 12.12,
       "games": 3
     },
     {
-      "name": "Jayson Tatum",
-      "historical_usage": 31.97,
-      "projected_usage": 31.97,
+      "name": "Tre Jones",
+      "historical_usage": 23.17,
+      "projected_usage": 23.17,
       "games": 3
     },
     {
       "name": "Mitchell Robinson",
       "historical_usage": 12.22,
       "projected_usage": 12.22,
-      "games": 3
-    },
-    {
-      "name": "Derrick White",
-      "historical_usage": 19.37,
-      "projected_usage": 19.37,
-      "games": 3
-    },
-    {
-      "name": "Jordan Walsh",
-      "historical_usage": 14.6,
-      "projected_usage": 14.6,
-      "games": 3
-    },
-    {
-      "name": "Sam Hauser",
-      "historical_usage": 12.58,
-      "projected_usage": 12.58,
-      "games": 3
-    },
-    {
-      "name": "Luka Garza",
-      "historical_usage": 23.28,
-      "projected_usage": 23.28,
-      "games": 3
-    },
-    {
-      "name": "Neemias Queta",
-      "historical_usage": 16.75,
-      "projected_usage": 16.75,
-      "games": 3
-    },
-    {
-      "name": "Payton Pritchard",
-      "historical_usage": 25.38,
-      "projected_usage": 25.38,
-      "games": 3
-    },
-    {
-      "name": "Baylor Scheierman",
-      "historical_usage": 10.03,
-      "projected_usage": 10.03,
-      "games": 3
-    },
-    {
-      "name": "Hugo Gonzalez",
-      "historical_usage": 12.49,
-      "projected_usage": 12.49,
       "games": 3
     },
     {
@@ -2125,66 +2591,6 @@
       "games": 3
     },
     {
-      "name": "Julius Randle",
-      "historical_usage": 27.67,
-      "projected_usage": 27.67,
-      "games": 4
-    },
-    {
-      "name": "Michael Porter Jr.",
-      "historical_usage": 23.92,
-      "projected_usage": 23.92,
-      "games": 4
-    },
-    {
-      "name": "Chaney Johnson",
-      "historical_usage": 15.49,
-      "projected_usage": 15.49,
-      "games": 4
-    },
-    {
-      "name": "Day'Ron Sharpe",
-      "historical_usage": 17.38,
-      "projected_usage": 17.38,
-      "games": 4
-    },
-    {
-      "name": "Nolan Traore",
-      "historical_usage": 25.44,
-      "projected_usage": 25.44,
-      "games": 4
-    },
-    {
-      "name": "Josh Minott",
-      "historical_usage": 25.51,
-      "projected_usage": 25.51,
-      "games": 3
-    },
-    {
-      "name": "Noah Clowney",
-      "historical_usage": 12.91,
-      "projected_usage": 12.91,
-      "games": 4
-    },
-    {
-      "name": "Moritz Wagner",
-      "historical_usage": 23.52,
-      "projected_usage": 23.52,
-      "games": 4
-    },
-    {
-      "name": "Keon Ellis",
-      "historical_usage": 11.3,
-      "projected_usage": 11.3,
-      "games": 4
-    },
-    {
-      "name": "Mikel Brown Jr.",
-      "historical_usage": 27.07,
-      "projected_usage": 27.07,
-      "games": 3
-    },
-    {
       "name": "OG Anunoby",
       "historical_usage": 20.24,
       "projected_usage": 20.24,
@@ -2251,214 +2657,52 @@
       "games": 3
     },
     {
-      "name": "Joel Embiid",
-      "historical_usage": 27.89,
-      "projected_usage": 27.89,
-      "games": 3
-    },
-    {
-      "name": "Franz Wagner",
-      "historical_usage": 30.48,
-      "projected_usage": 30.48,
-      "games": 3
-    },
-    {
-      "name": "Wendell Carter Jr.",
-      "historical_usage": 14.75,
-      "projected_usage": 14.75,
-      "games": 3
-    },
-    {
-      "name": "Desmond Bane",
-      "historical_usage": 24.81,
-      "projected_usage": 24.81,
-      "games": 3
-    },
-    {
-      "name": "Anthony Black",
-      "historical_usage": 20.89,
-      "projected_usage": 20.89,
-      "games": 3
-    },
-    {
-      "name": "Jase Richardson",
-      "historical_usage": 17.7,
-      "projected_usage": 17.7,
-      "games": 3
-    },
-    {
-      "name": "Jamal Cain",
-      "historical_usage": 17.12,
-      "projected_usage": 17.12,
-      "games": 3
-    },
-    {
-      "name": "Tristan da Silva",
-      "historical_usage": 16.2,
-      "projected_usage": 16.2,
-      "games": 3
-    },
-    {
-      "name": "Nikola Vucevic",
-      "historical_usage": 15.4,
-      "projected_usage": 15.4,
-      "games": 3
-    },
-    {
-      "name": "RJ Barrett",
-      "historical_usage": 26.44,
-      "projected_usage": 26.44,
-      "games": 3
-    },
-    {
-      "name": "Scottie Barnes",
-      "historical_usage": 31.93,
-      "projected_usage": 31.93,
-      "games": 3
-    },
-    {
       "name": "Jakob Poeltl",
       "historical_usage": 13.14,
       "projected_usage": 13.14,
       "games": 3
     },
     {
-      "name": "Immanuel Quickley",
-      "historical_usage": 23.02,
-      "projected_usage": 23.02,
-      "games": 3
-    },
-    {
-      "name": "Ja'Kobe Walter",
-      "historical_usage": 13.54,
-      "projected_usage": 13.54,
-      "games": 3
-    },
-    {
-      "name": "Jamison Battle",
-      "historical_usage": 15.21,
-      "projected_usage": 15.21,
-      "games": 3
-    },
-    {
-      "name": "Collin Murray-Boyles",
-      "historical_usage": 19.53,
-      "projected_usage": 19.53,
-      "games": 3
-    },
-    {
-      "name": "Allen Graves",
-      "historical_usage": 14.28,
-      "projected_usage": 14.28,
-      "games": 3
-    },
-    {
-      "name": "Jamal Shead",
-      "historical_usage": 16.73,
-      "projected_usage": 16.73,
-      "games": 3
-    },
-    {
-      "name": "Pascal Siakam",
-      "historical_usage": 28.82,
-      "projected_usage": 28.82,
-      "games": 4
-    },
-    {
-      "name": "Jay Huff",
-      "historical_usage": 14.61,
-      "projected_usage": 14.61,
-      "games": 4
-    },
-    {
-      "name": "Kelly Oubre Jr.",
-      "historical_usage": 18.92,
-      "projected_usage": 18.92,
-      "games": 4
-    },
-    {
-      "name": "Andrew Nembhard",
-      "historical_usage": 23.1,
-      "projected_usage": 23.1,
-      "games": 3
-    },
-    {
-      "name": "Aaron Nesmith",
-      "historical_usage": 24.17,
-      "projected_usage": 24.17,
-      "games": 4
-    },
-    {
-      "name": "Larry Nance Jr.",
-      "historical_usage": 11.47,
-      "projected_usage": 11.47,
-      "games": 4
-    },
-    {
-      "name": "Jalen Slawson",
-      "historical_usage": 12.8,
-      "projected_usage": 12.8,
-      "games": 4
-    },
-    {
-      "name": "Jarace Walker",
-      "historical_usage": 18.23,
-      "projected_usage": 18.23,
-      "games": 4
-    },
-    {
-      "name": "Quenton Jackson",
-      "historical_usage": 17.97,
-      "projected_usage": 17.97,
-      "games": 4
-    },
-    {
       "name": "Giannis Antetokounmpo",
-      "historical_usage": 30.39,
-      "projected_usage": 30.39,
-      "games": 4
+      "historical_usage": 30.33,
+      "projected_usage": 30.33,
+      "games": 3
     },
     {
       "name": "Andrew Wiggins",
-      "historical_usage": 14.58,
-      "projected_usage": 14.58,
-      "games": 4
+      "historical_usage": 15.4,
+      "projected_usage": 15.4,
+      "games": 3
     },
     {
       "name": "Bam Adebayo",
-      "historical_usage": 23.29,
-      "projected_usage": 23.29,
-      "games": 4
+      "historical_usage": 22.56,
+      "projected_usage": 22.56,
+      "games": 3
     },
     {
       "name": "Klay Thompson",
-      "historical_usage": 19.31,
-      "projected_usage": 19.31,
-      "games": 4
+      "historical_usage": 18.74,
+      "projected_usage": 18.74,
+      "games": 3
     },
     {
       "name": "Davion Mitchell",
-      "historical_usage": 20.61,
-      "projected_usage": 20.61,
-      "games": 4
+      "historical_usage": 21.07,
+      "projected_usage": 21.07,
+      "games": 3
     },
     {
       "name": "Bobby Portis",
-      "historical_usage": 21.33,
-      "projected_usage": 21.33,
-      "games": 4
-    },
-    {
-      "name": "Nikola Jovic",
-      "historical_usage": 8.77,
-      "projected_usage": 8.77,
+      "historical_usage": 21.8,
+      "projected_usage": 21.8,
       "games": 3
     },
     {
       "name": "Tim Hardaway Jr.",
-      "historical_usage": 15.58,
-      "projected_usage": 15.58,
-      "games": 4
+      "historical_usage": 15.7,
+      "projected_usage": 15.7,
+      "games": 3
     },
     {
       "name": "Dru Smith",
@@ -2468,9 +2712,9 @@
     },
     {
       "name": "Pelle Larsson",
-      "historical_usage": 15.59,
-      "projected_usage": 15.59,
-      "games": 4
+      "historical_usage": 15.63,
+      "projected_usage": 15.63,
+      "games": 3
     },
     {
       "name": "Fred VanVleet",
@@ -2480,15 +2724,15 @@
     },
     {
       "name": "Daniel Gafford",
-      "historical_usage": 15.85,
-      "projected_usage": 15.85,
-      "games": 4
+      "historical_usage": 13.44,
+      "projected_usage": 13.44,
+      "games": 3
     },
     {
       "name": "P.J. Washington",
-      "historical_usage": 18.89,
-      "projected_usage": 18.89,
-      "games": 4
+      "historical_usage": 20.09,
+      "projected_usage": 20.09,
+      "games": 3
     },
     {
       "name": "Cooper Flagg",
@@ -2504,80 +2748,32 @@
     },
     {
       "name": "Max Christie",
-      "historical_usage": 15.7,
-      "projected_usage": 15.7,
-      "games": 4
+      "historical_usage": 15.27,
+      "projected_usage": 15.27,
+      "games": 3
     },
     {
       "name": "Morez Johnson Jr.",
-      "historical_usage": 21.45,
-      "projected_usage": 21.45,
-      "games": 4
+      "historical_usage": 15.23,
+      "projected_usage": 15.23,
+      "games": 3
     },
     {
       "name": "Zaccharie Risacher",
-      "historical_usage": 15.82,
-      "projected_usage": 15.82,
-      "games": 4
+      "historical_usage": 16.54,
+      "projected_usage": 16.54,
+      "games": 3
     },
     {
       "name": "Marcus Sasser",
-      "historical_usage": 18.23,
-      "projected_usage": 18.23,
-      "games": 4
+      "historical_usage": 18.3,
+      "projected_usage": 18.3,
+      "games": 3
     },
     {
       "name": "Walter Clayton Jr.",
-      "historical_usage": 19.3,
-      "projected_usage": 19.3,
-      "games": 4
-    },
-    {
-      "name": "Derrick Jones Jr.",
-      "historical_usage": 12.85,
-      "projected_usage": 12.85,
-      "games": 3
-    },
-    {
-      "name": "Isaiah Jackson",
-      "historical_usage": 18.54,
-      "projected_usage": 18.54,
-      "games": 3
-    },
-    {
-      "name": "Kris Dunn",
-      "historical_usage": 11.66,
-      "projected_usage": 11.66,
-      "games": 3
-    },
-    {
-      "name": "Darius Garland",
-      "historical_usage": 32.21,
-      "projected_usage": 32.21,
-      "games": 3
-    },
-    {
-      "name": "Brook Lopez",
-      "historical_usage": 19.66,
-      "projected_usage": 19.66,
-      "games": 3
-    },
-    {
-      "name": "Kobe Sanders",
-      "historical_usage": 16.93,
-      "projected_usage": 16.93,
-      "games": 3
-    },
-    {
-      "name": "Gradey Dick",
-      "historical_usage": 13.15,
-      "projected_usage": 13.15,
-      "games": 3
-    },
-    {
-      "name": "Keaton Wagler",
-      "historical_usage": 28.97,
-      "projected_usage": 28.97,
+      "historical_usage": 23.77,
+      "projected_usage": 23.77,
       "games": 3
     },
     {
@@ -2587,70 +2783,10 @@
       "games": 4
     },
     {
-      "name": "Jake LaRavia",
-      "historical_usage": 9.04,
-      "projected_usage": 9.04,
-      "games": 4
-    },
-    {
-      "name": "Walker Kessler",
-      "historical_usage": 13.11,
-      "projected_usage": 13.11,
-      "games": 4
-    },
-    {
-      "name": "Matisse Thybulle",
-      "historical_usage": 14.29,
-      "projected_usage": 14.29,
-      "games": 4
-    },
-    {
-      "name": "Luka Doncic",
-      "historical_usage": 39.73,
-      "projected_usage": 39.73,
-      "games": 3
-    },
-    {
-      "name": "Austin Reaves",
-      "historical_usage": 27.74,
-      "projected_usage": 27.74,
-      "games": 4
-    },
-    {
-      "name": "Sandro Mamukelashvili",
-      "historical_usage": 18.41,
-      "projected_usage": 18.41,
-      "games": 4
-    },
-    {
-      "name": "Collin Sexton",
-      "historical_usage": 31.96,
-      "projected_usage": 31.96,
-      "games": 4
-    },
-    {
-      "name": "Quentin Grimes",
-      "historical_usage": 12.89,
-      "projected_usage": 12.89,
-      "games": 4
-    },
-    {
       "name": "Draymond Green",
       "historical_usage": 8.39,
       "projected_usage": 8.39,
       "games": 3
-    },
-    {
-      "name": "Gui Santos",
-      "historical_usage": 13.81,
-      "projected_usage": 13.81,
-      "games": 3
-    },
-    {
-      "name": "Yaxel Lendeborg",
-      "historical_usage": 27.94,
-      "projected_usage": 27.94,
-      "games": 4
     },
     {
       "name": "Stephen Curry",
@@ -2659,160 +2795,52 @@
       "games": 3
     },
     {
-      "name": "Brandin Podziemski",
-      "historical_usage": 18.43,
-      "projected_usage": 18.43,
-      "games": 3
-    },
-    {
-      "name": "Georges Niang",
-      "historical_usage": 16.38,
-      "projected_usage": 16.38,
-      "games": 4
-    },
-    {
-      "name": "Al Horford",
-      "historical_usage": 12.66,
-      "projected_usage": 12.66,
-      "games": 3
-    },
-    {
-      "name": "Charles Bassey",
-      "historical_usage": 23.03,
-      "projected_usage": 23.03,
-      "games": 3
-    },
-    {
-      "name": "Gary Payton II",
-      "historical_usage": 16.8,
-      "projected_usage": 16.8,
-      "games": 4
-    },
-    {
-      "name": "De'Anthony Melton",
-      "historical_usage": 20.54,
-      "projected_usage": 20.54,
-      "games": 4
-    },
-    {
-      "name": "Brandon Williams",
-      "historical_usage": 29.62,
-      "projected_usage": 29.62,
-      "games": 4
-    },
-    {
-      "name": "Will Richard",
-      "historical_usage": 11.32,
-      "projected_usage": 11.32,
-      "games": 3
-    },
-    {
       "name": "Aaron Gordon",
-      "historical_usage": 19.26,
-      "projected_usage": 19.26,
-      "games": 4
+      "historical_usage": 21.26,
+      "projected_usage": 21.26,
+      "games": 3
     },
     {
       "name": "Nikola Jokic",
-      "historical_usage": 27.36,
-      "projected_usage": 27.36,
-      "games": 4
+      "historical_usage": 26.22,
+      "projected_usage": 26.22,
+      "games": 3
     },
     {
       "name": "Jamal Murray",
-      "historical_usage": 27.2,
-      "projected_usage": 27.2,
-      "games": 4
+      "historical_usage": 26.34,
+      "projected_usage": 26.34,
+      "games": 3
     },
     {
       "name": "Christian Braun",
-      "historical_usage": 17.39,
-      "projected_usage": 17.39,
-      "games": 4
+      "historical_usage": 18.72,
+      "projected_usage": 18.72,
+      "games": 3
     },
     {
       "name": "Trevon Brazile",
-      "historical_usage": 13.6,
-      "projected_usage": 13.6,
-      "games": 4
+      "historical_usage": 10.81,
+      "projected_usage": 10.81,
+      "games": 3
     },
     {
       "name": "DeMar DeRozan",
-      "historical_usage": 19.73,
-      "projected_usage": 19.73,
-      "games": 4
-    },
-    {
-      "name": "Tyus Jones",
-      "historical_usage": 14.75,
-      "projected_usage": 14.75,
-      "games": 3
-    },
-    {
-      "name": "Dillon Brooks",
-      "historical_usage": 23.31,
-      "projected_usage": 23.31,
-      "games": 3
-    },
-    {
-      "name": "Miles Bridges",
-      "historical_usage": 22.0,
-      "projected_usage": 22.0,
-      "games": 3
-    },
-    {
-      "name": "Khaman Maluach",
-      "historical_usage": 19.03,
-      "projected_usage": 19.03,
-      "games": 3
-    },
-    {
-      "name": "Devin Booker",
-      "historical_usage": 25.06,
-      "projected_usage": 25.06,
-      "games": 3
-    },
-    {
-      "name": "Jalen Green",
-      "historical_usage": 19.15,
-      "projected_usage": 19.15,
-      "games": 3
-    },
-    {
-      "name": "Ryan Dunn",
-      "historical_usage": 15.51,
-      "projected_usage": 15.51,
-      "games": 3
-    },
-    {
-      "name": "Luke Kennard",
-      "historical_usage": 16.0,
-      "projected_usage": 16.0,
-      "games": 3
-    },
-    {
-      "name": "Jordan Goodwin",
-      "historical_usage": 19.62,
-      "projected_usage": 19.62,
-      "games": 3
-    },
-    {
-      "name": "Collin Gillespie",
-      "historical_usage": 17.63,
-      "projected_usage": 17.63,
+      "historical_usage": 18.92,
+      "projected_usage": 18.92,
       "games": 3
     },
     {
       "name": "Jaylon Tyson",
-      "historical_usage": 19.79,
-      "projected_usage": 19.79,
-      "games": 4
+      "historical_usage": 17.44,
+      "projected_usage": 17.44,
+      "games": 3
     },
     {
       "name": "Jock Landale",
-      "historical_usage": 21.54,
-      "projected_usage": 21.54,
-      "games": 4
+      "historical_usage": 21.57,
+      "projected_usage": 21.57,
+      "games": 3
     },
     {
       "name": "Ty Jerome",
@@ -2837,34 +2865,10 @@
       "historical_usage": 22.33,
       "projected_usage": 22.33,
       "games": 3
-    },
-    {
-      "name": "Reed Sheppard",
-      "historical_usage": 21.54,
-      "projected_usage": 21.54,
-      "games": 3
-    },
-    {
-      "name": "Marvin Bagley III",
-      "historical_usage": 17.44,
-      "projected_usage": 17.44,
-      "games": 3
-    },
-    {
-      "name": "Bryce Hopkins",
-      "historical_usage": 9.64,
-      "projected_usage": 9.64,
-      "games": 3
-    },
-    {
-      "name": "Egor Demin",
-      "historical_usage": 17.89,
-      "projected_usage": 17.89,
-      "games": 3
     }
   ],
   "source_dates": {
-    "schedule": "20261101",
+    "schedule": "20261102",
     "historical_coverage": "complete"
   },
   "errors": []
