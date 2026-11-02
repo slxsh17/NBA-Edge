@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T16:44:50.438091+00:00",
+  "updated_at": "2026-11-02T17:41:04.660617+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -320,6 +320,11 @@
     {
       "name": "Nikola Topic",
       "team": "OKC",
+      "status": "OUT"
+    },
+    {
+      "name": "Anthony Black",
+      "team": "ORL",
       "status": "OUT"
     },
     {
