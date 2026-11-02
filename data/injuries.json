@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-02T22:41:50.938678+00:00",
+  "updated_at": "2026-11-02T23:24:15.790644+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
       "name": "Jalen Johnson",
       "team": "ATL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jock Landale",
@@ -53,16 +53,6 @@
       "status": "OUT"
     },
     {
-      "name": "Jalen Smith",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Tobe Awaka",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
@@ -80,7 +70,12 @@
     {
       "name": "Kyrie Irving",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Santi Aldama",
+      "team": "DAL",
+      "status": "OUT"
     },
     {
       "name": "Tarik Biberovic",
@@ -89,11 +84,6 @@
     },
     {
       "name": "Dereck Lively II",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Santi Aldama",
       "team": "DAL",
       "status": "OUT"
     },
@@ -173,6 +163,16 @@
       "status": "OUT"
     },
     {
+      "name": "Larry Nance Jr.",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
+      "name": "Obi Toppin",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
       "name": "T.J. McConnell",
       "team": "IND",
       "status": "OUT"
@@ -181,16 +181,6 @@
       "name": "Ivica Zubac",
       "team": "IND",
       "status": "OUT"
-    },
-    {
-      "name": "Larry Nance Jr.",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Obi Toppin",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Aaron Nesmith",
@@ -303,11 +293,6 @@
       "status": "OUT"
     },
     {
-      "name": "Jose Alvarado",
-      "team": "NYK",
-      "status": "OUT"
-    },
-    {
       "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
@@ -368,14 +353,14 @@
       "status": "OUT"
     },
     {
-      "name": "Joel Embiid",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Dominick Barlow",
       "team": "PHI",
       "status": "OUT"
+    },
+    {
+      "name": "Joel Embiid",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Ariel Hukporti",
