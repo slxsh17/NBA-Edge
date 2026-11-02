@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T00:51:00.298897+00:00",
+  "updated_at": "2026-11-02T01:57:34.079288+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -208,17 +208,17 @@
       "status": "OUT"
     },
     {
+      "name": "Max Strus",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
       "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
     },
     {
       "name": "Brandon Ingram",
-      "team": "LAC",
-      "status": "OUT"
-    },
-    {
-      "name": "Max Strus",
       "team": "LAC",
       "status": "OUT"
     },
@@ -288,6 +288,11 @@
       "status": "OUT"
     },
     {
+      "name": "Thomas Sorber",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
       "name": "Cason Wallace",
       "team": "OKC",
       "status": "OUT"
@@ -304,11 +309,6 @@
     },
     {
       "name": "Alex Caruso",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
     },
