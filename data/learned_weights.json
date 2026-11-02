@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated_at": "2026-11-01T18:44:07+00:00",
- "samples": 1379,
- "days": 10,
+ "updated_at": "2026-11-02T13:38:05+00:00",
+ "samples": 1443,
+ "days": 11,
  "weights": {
   "vegas": 1.015,
   "matchup": 1.015,
@@ -13,6 +13,8 @@
   "scale": 0.95,
   "outside": 0.68,
   "travel": 0.01,
+  "darko": 0.0,
+  "darko_min": 0.0,
   "minutes_mult": {
    "current_only": 1.125,
    "prior_only": 0.768,
@@ -30,6 +32,8 @@
   "scale": 0.95,
   "outside": 0.68,
   "travel": 0.01,
+  "darko": 0.0,
+  "darko_min": 0.0,
   "minutes_mult": {
    "current_only": 1.125,
    "prior_only": 0.768,
@@ -39,19 +43,19 @@
  },
  "validation": {
   "test_days": [
-   "2026-10-30",
-   "2026-10-31"
+   "2026-10-31",
+   "2026-11-01"
   ],
-  "test_rows": 296,
-  "default_mae": 7.815,
-  "current_mae": 7.284,
-  "fitted_mae": 7.28
+  "test_rows": 183,
+  "default_mae": 7.872,
+  "current_mae": 7.392,
+  "fitted_mae": 7.38
  },
  "in_sample_mae": {
-  "default": 8.237,
-  "learned": 7.442
+  "default": 8.193,
+  "learned": 7.43
  },
- "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (7.28 vs 7.28).",
+ "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (7.38 vs 7.39).",
  "log": [
   {
    "date": "2026-10-27",
@@ -148,6 +152,12 @@
    "adopted": false,
    "changes": [],
    "heldout_gain": 0.003
+  },
+  {
+   "date": "2026-11-02",
+   "adopted": false,
+   "changes": [],
+   "heldout_gain": 0.012
   }
  ],
  "method": "Coordinate search minimizing average miss with a pull toward 1.0; adopted only if it beats current weights on the most recent days held out from fitting; moves halfway."
