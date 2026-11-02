@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T21:16:13.681206+00:00",
+  "updated_at": "2026-11-02T21:59:19.321890+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -128,19 +128,19 @@
       "status": "OUT"
     },
     {
-      "name": "Gui Santos",
+      "name": "Brandon Williams",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Al Horford",
       "team": "GSW",
       "status": "OUT"
     },
     {
-      "name": "Draymond Green",
+      "name": "Gui Santos",
       "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Stephen Curry",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Kristaps Porzingis",
@@ -223,6 +223,16 @@
       "status": "OUT"
     },
     {
+      "name": "Rui Hachimura",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Derrick Jones Jr.",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
       "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
@@ -233,16 +243,6 @@
       "status": "OUT"
     },
     {
-      "name": "Max Strus",
-      "team": "LAC",
-      "status": "OUT"
-    },
-    {
-      "name": "Derrick Jones Jr.",
-      "team": "LAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Bradley Beal",
       "team": "LAC",
       "status": "OUT"
@@ -250,11 +250,6 @@
     {
       "name": "Jordan Miller",
       "team": "LAC",
-      "status": "OUT"
-    },
-    {
-      "name": "Ziaire Williams",
-      "team": "LAL",
       "status": "OUT"
     },
     {
@@ -436,6 +431,11 @@
       "name": "Jayden Quaintance",
       "team": "SAS",
       "status": "OUT"
+    },
+    {
+      "name": "Scottie Barnes",
+      "team": "TOR",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jakob Poeltl",
