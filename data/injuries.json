@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T15:41:17.739315+00:00",
+  "updated_at": "2026-11-02T16:44:50.438091+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -208,16 +208,6 @@
       "status": "OUT"
     },
     {
-      "name": "Derrick Jones Jr.",
-      "team": "LAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Max Strus",
-      "team": "LAC",
-      "status": "OUT"
-    },
-    {
       "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
@@ -226,6 +216,16 @@
       "name": "Brandon Ingram",
       "team": "LAC",
       "status": "OUT"
+    },
+    {
+      "name": "Max Strus",
+      "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Derrick Jones Jr.",
+      "team": "LAC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Bradley Beal",
