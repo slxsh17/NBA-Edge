@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T18:38:07.283828+00:00",
+  "updated_at": "2026-11-02T19:37:17.299781+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -23,9 +23,9 @@
       "status": "OUT"
     },
     {
-      "name": "Mitchell Robinson",
+      "name": "Paul George",
       "team": "BOS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Devin Carter",
@@ -78,6 +78,11 @@
       "status": "OUT"
     },
     {
+      "name": "Kyrie Irving",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Tarik Biberovic",
       "team": "DAL",
       "status": "OUT"
@@ -86,11 +91,6 @@
       "name": "Dereck Lively II",
       "team": "DAL",
       "status": "OUT"
-    },
-    {
-      "name": "Kyrie Irving",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Santi Aldama",
@@ -160,7 +160,7 @@
     {
       "name": "Clint Capela",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Reed Sheppard",
@@ -273,8 +273,13 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Tim Hardaway Jr.",
-      "team": "MIA",
+      "name": "Terrence Shannon Jr.",
+      "team": "MIN",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "LaMelo Ball",
+      "team": "MIN",
       "status": "DAY-TO-DAY"
     },
     {
@@ -288,7 +293,7 @@
       "status": "OUT"
     },
     {
-      "name": "Trey Murphy III",
+      "name": "Dejounte Murray",
       "team": "NOP",
       "status": "DAY-TO-DAY"
     },
