@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T13:42:43.186011+00:00",
+  "updated_at": "2026-11-02T14:43:03.063790+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -25,7 +25,7 @@
     {
       "name": "Mitchell Robinson",
       "team": "BOS",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Devin Carter",
@@ -71,11 +71,6 @@
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
-    },
-    {
-      "name": "Dailyn Swain",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Peyton Watson",
@@ -140,17 +135,17 @@
     {
       "name": "Gui Santos",
       "team": "GSW",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Draymond Green",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Stephen Curry",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kristaps Porzingis",
