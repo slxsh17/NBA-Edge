@@ -177,6 +177,40 @@ def past_pool(day):
     return pool if len(pool) >= 30 else None
 
 
+CASUAL_T = {'top50': 0.50, 'top22': 0.78, 'top10': 0.90}
+
+
+def casual_check(day, pool, r):
+    """NBA EDGE's lineups against the softer (casual) field on a past night: what the simulator
+    said before tip-off (our score minus the top-50/22/10% line on each simulated night) and what
+    really happened (same field, actual points)."""
+    key = {(p['name'], p['team']): i for i, p in enumerate(pool)}
+    casual = build_field(pool, n=800, seed=sum(map(ord, day)) + 1, opt_share=0.65, noise=0.18)
+    act = np.array([p['actual'] for p in pool])
+    fs = np.sort(np.array([act[list(lu)].sum() for lu in casual]))
+    corr = {**(read(DATA / 'model_params.json').get('corr') or {}), 'sd_scale': (read(DATA / 'lineup_results.json').get('calibration') or {}).get('sd_scale', 1.0)}
+    O = outcomes(pool, corr, nights=NIGHTS, seed=2)
+    fsim = np.sort(O[:, np.array(casual)].sum(axis=2), axis=1)
+    obs = OBSERVED.get(day) or {}
+    out = {}
+    for g in r.get('lineups', []):
+        ids = [key.get((x['name'], canon(x['team']))) for x in g.get('players', [])]
+        if None in ids or g.get('actual') is None:
+            continue
+        mine = O[:, ids].sum(axis=1)
+        diffs, hit = {}, {}
+        for t, q in CASUAL_T.items():
+            k = min(fsim.shape[1] - 1, int(q * fsim.shape[1]))
+            diffs[t] = [int(round(float(x))) for x in mine - fsim[:, k]]
+            line = float(fs[min(len(fs) - 1, int(q * len(fs)))])
+            if t == 'top22' and obs.get('block_se_cash'):
+                line = obs['block_se_cash']        # the real single-entry cash line that night
+            hit[t] = bool(g['actual'] >= line)
+        out[g['strategy']] = {'actual': g['actual'], 'field_percentile': round(float((fs < g['actual']).mean() * 100), 1),
+                              'diffs': diffs, 'hit': hit}
+    return {'lineups': out}
+
+
 def history():
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
     lr = {(r['date'], r['slate']): r for r in read(DATA / 'lineup_results.json').get('slates', [])}
@@ -187,7 +221,11 @@ def history():
         if day >= today or (day, 'main') not in lr:
             continue
         if day in prev and prev[day].get('version') == 3:
-            nights.append(prev[day])
+            n = prev[day]
+            if 'casual_check' not in n:
+                pool = past_pool(day)
+                n['casual_check'] = casual_check(day, pool, lr[(day, 'main')]) if pool else None
+            nights.append(n)
             continue
         pool = past_pool(day)
         if not pool:
@@ -211,7 +249,7 @@ def history():
             fsim = O[:, np.array(field)].sum(axis=2)
             line = np.sort(fsim, axis=1)[:, int(LINES['double_up'] * fsim.shape[1])]
             diffs = [round(float(x), 1) for x in O[:, ids].sum(axis=1) - line]
-        res = {'date': day, 'version': 3, 'cash_vs_line_sim': diffs, 'sim_lines': L, 'observed_lines': OBSERVED.get(day),
+        res = {'date': day, 'version': 3, 'cash_vs_line_sim': diffs, 'casual_check': casual_check(day, pool, r), 'sim_lines': L, 'observed_lines': OBSERVED.get(day),
                'hindsight_best': (r.get('hindsight_best') or {}).get('score'),
                'nba_edge': {k: {'score': v, 'beats_double_up': v >= L['double_up'], 'beats_gpp_cash': v >= L['gpp_cash'],
                                 'field_percentile': round(float((fs < v).mean() * 100), 1)} for k, v in mine.items()}}
@@ -237,7 +275,37 @@ def history():
     if len(cal) >= 5:
         best = min((sum((float((d + 9 * sh >= 0).mean()) - y) ** 2 for d, y in cal), sh) for sh in np.arange(-6.0, 0.01, 0.1))
         odds_shift = round(float(best[1]), 1)
-    summ = {'odds_shift_per_player': odds_shift, 'odds_calibration_nights': len(cal), 'soft_shift_per_player': lineup_shift()}
+    # Softer-field calibration (single-entry, small and 20-max tournaments): the shift that makes the
+    # simulator's pre-tip chances of finishing in the top 50%, 22% and 10% of the casual field match
+    # how often NBA EDGE's lineups really did (field rebuilt from pre-tip data, scored with actual
+    # points; real cash lines from your screenshots override). Our own projections are the truth
+    # inside the simulator, which flatters us against a field built on public projections; this
+    # charges that back. Falls back to the lineups' recent gap to projection with under 5 nights.
+    soft_cal = []
+    for n in nights:
+        for v in ((n.get('casual_check') or {}).get('lineups') or {}).values():
+            for t, d in v['diffs'].items():
+                soft_cal.append((np.array(d), v['hit'][t]))
+    soft_nights = sum(1 for n in nights if (n.get('casual_check') or {}).get('lineups'))
+    if soft_nights >= 5:
+        best = min((sum((float((d + 9 * sh >= 0).mean()) - y) ** 2 for d, y in soft_cal), sh) for sh in np.arange(-8.0, 0.01, 0.1))
+        soft_shift = round(float(best[1]), 1)
+    else:
+        soft_shift = lineup_shift()
+    summ = {'odds_shift_per_player': odds_shift, 'odds_calibration_nights': len(cal), 'soft_shift_per_player': soft_shift,
+            'soft_calibration_nights': soft_nights, 'lineup_gap_per_player': lineup_shift()}
+    if soft_nights:
+        pred = {t: [] for t in CASUAL_T}
+        real = {t: [] for t in CASUAL_T}
+        for n in nights:
+            for v in ((n.get('casual_check') or {}).get('lineups') or {}).values():
+                for t in CASUAL_T:
+                    pred[t].append(float((np.array(v['diffs'][t]) >= 0).mean()))
+                    real[t].append(v['hit'][t])
+        summ['casual_check'] = {t: {'predicted_raw': round(statistics.mean(pred[t]), 3), 'actual': round(statistics.mean(real[t]), 3),
+                                    'predicted_calibrated': round(statistics.mean(float((np.array(v['diffs'][t]) + 9 * soft_shift >= 0).mean())
+                                                                                  for n in nights for v in ((n.get('casual_check') or {}).get('lineups') or {}).values()), 3)}
+                                for t in CASUAL_T}
     for strat in ('cash', 'tournament', 'sim_winner'):  # noqa
         xs = [n['nba_edge'][strat] for n in nights if strat in n['nba_edge']]
         if xs:
@@ -364,6 +432,145 @@ def lineup_shift(hl=3.0):
     return round(min(0.0, num / den), 1) if den else None
 
 
+# ---------- tonight's plan: how many lineups, in which contests, with which settings ----------
+# Not tied to whatever lineups you built: every strategy the site can build is built here the same
+# way the Build button would (same scoring, exposure cap, 2-players-different rule), and every
+# contest type is simulated for 1, 5, 20 (and 50/150 portfolio) lineups. The site turns the
+# expected return and spread into stakes with your bankroll (quarter Kelly).
+PLAN_COUNTS = [1, 5, 20]
+PLAN_BIG = [50, 150]
+PLAN_EXPOSURE = 60
+PLAN_MIN_UNIQUE = 2
+
+
+def plan_strategies():
+    t = (read(DATA / 'strategy.json').get('tournament') or {}).get('best') or {}
+    t = {k: float(t.get(k, d)) for k, d in (('ceilW', 0.45), ('levW', 0.15), ('ownFade', 0.03))}
+    return {
+        'cash': {'label': 'Cash', 'mode': 'cash', 'sim': False, 'settings': {},
+                 'desc': 'Highest projection, no upside or leverage.'},
+        'sim': {'label': 'Tournament · simulated winners', 'mode': 'gpp', 'sim': True, 'settings': t,
+                'desc': 'Lineups that won most often across simulated nights; 50+ lineups use the LeVertical portfolio.'},
+        'gpp': {'label': 'Tournament · learned settings', 'mode': 'gpp', 'sim': False, 'settings': t,
+                'desc': 'The tournament settings that did best replaying past slates.'},
+        'upside': {'label': 'Tournament · max upside', 'mode': 'gpp', 'sim': False,
+                   'settings': {'ceilW': 0.8, 'levW': 0.3, 'ownFade': 0.08},
+                   'desc': 'Ceilings and players the field under-owns: fewer cashes, bigger wins.'},
+    }
+
+
+def site_score(p, s):
+    """The site's player score (index.html score())."""
+    if s['mode'] != 'gpp':
+        return p['proj']
+    c = s['settings']
+    return ((1 - c['ceilW']) * p['proj'] + c['ceilW'] * (p.get('ceiling') or p['proj'])
+            - c['ownFade'] * (p.get('own') or 0) + c['levW'] * (p.get('lev') or 0))
+
+
+def plan_build(pool, s, count, seeds=(), fill=True):
+    """The site's Build button: seed lineups first (simulated winners or portfolio) that pass the
+    exposure cap, 4-per-team, cap and 2-different checks, then the best lineups by score."""
+    cap = max(1, math.ceil(count * PLAN_EXPOSURE / 100)) if count > 1 else 1
+    made, uses = [], {}
+
+    def ok(ids):
+        if any(uses.get(i, 0) >= cap for i in ids):
+            return False
+        st = set(ids)
+        return all(len(st & set(m)) <= 9 - PLAN_MIN_UNIQUE for m in made)
+
+    def add(ids):
+        made.append(sorted(ids))
+        for i in ids:
+            uses[i] = uses.get(i, 0) + 1
+    for ids in seeds:
+        if len(made) >= count:
+            break
+        if len(set(ids)) != 9 or sum(pool[i]['salary'] for i in ids) > 60000:
+            continue
+        tc = {}
+        for i in ids:
+            tc[pool[i]['team']] = tc.get(pool[i]['team'], 0) + 1
+        if max(tc.values()) > 4 or not ok(ids):
+            continue
+        add(ids)
+    if fill and len(made) < count:
+        solver = FS.Solver(pool, 'classic', 60000)
+        h = solver.h
+        for m in made:
+            h.addRow(0, 9 - PLAN_MIN_UNIQUE, 9, m, [1.0] * 9)
+        sc = [site_score(p, s) for p in pool]
+        while len(made) < count:
+            for i, c in uses.items():
+                if c >= cap:
+                    h.changeColBounds(i, 0.0, 0.0)
+            lu = solver.best(sc)
+            if not lu:
+                break
+            ids = [i for i, _ in lu]
+            add(ids)
+            h.addRow(0, 9 - PLAN_MIN_UNIQUE, 9, sorted(ids), [1.0] * 9)
+    return made
+
+
+def payout_vec(c, q):
+    q = np.asarray(q, dtype=float)
+    if c['kind'] == 'double':
+        return np.where(q <= c['share'], c['mult'], 0.0)
+    b = 1 - 2 * c['share'] / (1 - c['rake'])
+    return np.where(q <= c['share'], 2.0 * (np.maximum(q, 1.0 / c['entries']) / c['share']) ** -b, 0.0)
+
+
+def daily_plan(pool, O, quants, shift, soft, portfolio, today):
+    """Per contest type and strategy: expected return per $1, its spread and the chance at least one
+    entry cashes, for each lineup count the contest allows."""
+    S = plan_strategies()
+    key = {(norm(p['name']), p['team']): i for i, p in enumerate(pool)}
+    sims = []
+    for lu in today.get('sim_lineups') or []:
+        ids = [key.get((norm(x['name']), canon(x['team']))) for x in lu.get('players', [])]
+        if None not in ids:
+            sims.append(ids)
+    port = []
+    for lu in (portfolio or {}).get('lineups', []):
+        ids = [key.get(tuple(k.split('|', 1))) for k, _ in lu['p']]
+        if None not in ids:
+            port.append(ids)
+    sets = {}
+    for sk, s in S.items():
+        seeds = sims if s['sim'] else []
+        for n in PLAN_COUNTS:
+            sets[(sk, n)] = plan_build(pool, s, n, seeds) if n > 1 or not sets.get((sk, 5)) else sets[(sk, 5)][:1]
+        if s['sim'] and port:
+            for n in PLAN_BIG:
+                built = plan_build(pool, s, n, port, fill=False)
+                if len(built) >= n * 0.9:
+                    sets[(sk, n)] = built
+    out = []
+    shifts = {'sharp': 9 * (shift or 0.0), 'casual': 9 * (shift if soft is None else soft or 0.0)}
+    for c in CATALOG:
+        Q = quants[c['field']]
+        opts = []
+        for (sk, n), lus in sets.items():
+            if n > c['max'] or len(lus) < n:
+                continue
+            sc = np.stack([O[:, ids].sum(axis=1) for ids in lus[:n]], axis=1) + shifts[c['field']]   # nights x n
+            pct = np.stack([np.interp(sc[k], Q[k], QS, left=0.0, right=99.99) for k in range(len(sc))])
+            P = payout_vec(c, np.maximum(1e-6, 1 - pct / 100))
+            per = P.sum(axis=1) / n
+            # se: how far the 300-night estimate itself could be off; the site stakes on ev - se so
+            # the option that merely got lucky in the simulation isn't the one that gets the money
+            opts.append({'s': sk, 'n': n, 'ev': round(float(per.mean()), 3), 'sd': round(float(per.std()), 3),
+                         'se': round(float(per.std() / math.sqrt(len(per))), 3),
+                         'cash': round(float((P > 0).any(axis=1).mean()), 3),
+                         'proj': round(float(np.mean([sum(pool[i]['proj'] for i in ids) for ids in lus[:n]])), 1)})
+        opts.sort(key=lambda o: -o['ev'])
+        out.append({'id': c['id'], 'options': opts})
+    return {'version': 1, 'exposure': PLAN_EXPOSURE, 'min_unique': PLAN_MIN_UNIQUE, 'strategies': S,
+            'contests': out, 'sim_lineups': len(sims), 'portfolio': len(port)}
+
+
 def live(corr, odds_shift=None, soft_shift=None):
     today = read(DATA / 'today.json')
     if not today.get('players'):
@@ -372,7 +579,7 @@ def live(corr, odds_shift=None, soft_shift=None):
     if len(pool) < 30:
         return None
     import hashlib
-    sig = hashlib.sha1(json.dumps(['portfolio-v2', today['date'], corr, odds_shift, soft_shift] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), round(p.get('own') or 0)] for p in pool]).encode()).hexdigest()
+    sig = hashlib.sha1(json.dumps(['portfolio-v2', 'plan-v1', plan_strategies(), today['date'], corr, odds_shift, soft_shift] + [[p['name'], p['team'], p['salary'], round(p['proj'], 1), round(p.get('own') or 0)] for p in pool]).encode()).hexdigest()
     if read(DATA / 'contest_sims.json').get('sig') == sig:
         return 'same'
     field = build_field(pool)
@@ -400,6 +607,8 @@ def live(corr, odds_shift=None, soft_shift=None):
         soft = shift if soft_shift is None else soft_shift
         evals[lu['strategy']] = contest_ev({'sharp': sc + 9 * shift, 'casual': sc + 9 * soft}, quants)
     keep = [i for i, p in enumerate(pool) if p['proj'] >= 6]
+    portfolio = build_portfolio(pool, corr, field, O, shift=odds_shift or 0.0)
+    plan = daily_plan(pool, O, quants, odds_shift, soft_shift, portfolio, today)
     corr_own = float(np.corrcoef(own_sim, [p.get('own') or 0 for p in pool])[0, 1])
     return {'sig': sig, 'odds_shift_per_player': odds_shift, 'odds_shift_soft_per_player': soft_shift, 'date': today['date'], 'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
             'nights': NIGHTS, 'field_size': len(field), 'field_own_vs_model_corr': round(corr_own, 2),
@@ -409,7 +618,7 @@ def live(corr, odds_shift=None, soft_shift=None):
             'catalog': CATALOG, 'qs': QS,
             'quants': {f: [[int(round(float(x))) for x in row] for row in Q] for f, Q in quants.items()},
             'nba_edge_contest_ev': evals,
-            'portfolio': build_portfolio(pool, corr, field, O, shift=odds_shift or 0.0),
+            'portfolio': portfolio, 'plan': plan,
             'players': [norm(pool[i]['name']) + '|' + pool[i]['team'] for i in keep],
             'scores': [[int(round(float(O[n, i]))) for i in keep] for n in range(NIGHTS)]}
 

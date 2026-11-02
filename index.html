@@ -114,14 +114,20 @@ input[type=range]{width:100%;accent-color:var(--orange)}
 .odds{font-size:12.5px;padding:6px 14px;border-bottom:1px solid var(--soft);color:var(--muted)}
 .odds b{color:var(--ink)}
 .odds .fit{color:var(--orange);font-weight:600}
-.plan-top{font-size:13.5px;line-height:1.45;padding:9px 12px;margin:10px 0;border:1px solid var(--line);border-radius:10px;background:var(--orange-soft)}
-.plan-top a{color:var(--orange);font-weight:600}
+.dplan{font-size:13.5px;line-height:1.45;padding:10px 12px;margin:4px 0 14px;border:1px solid var(--line);border-radius:10px;background:var(--orange-soft)}
+.dplan-in{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 2px;font-size:13px}
+.dplan-in input{width:80px;font:inherit;font-size:15px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.dplan-in #riskpct{width:52px}
+.pitem{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-top:8px}
+.pitem-top{display:flex;justify-content:space-between;gap:10px}
+.pitem .amt{font:600 16px var(--num);white-space:nowrap}
+.pitem-set{font-size:13px;margin:4px 0 2px}
+.pitem .btn{margin-top:6px}
 #where{margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
 #where h3{font:600 18px var(--num);margin:0 0 6px}
 #where table{width:100%;font-size:13.5px;margin:6px 0}
 #where td{padding:5px 4px;vertical-align:top;border-top:1px solid var(--soft)}
 #where .amt{font:600 15px var(--num);white-space:nowrap;text-align:right}
-#bankroll{width:96px;font:inherit;font-size:15px;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
 .ent-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
 .ent-head h3{font:600 18px var(--num);margin:0;flex:1}
 .ent-form{border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:12px}
@@ -260,6 +266,7 @@ details summary{cursor:pointer}
   <div class="stack">
     <section class="panel show" data-view="build" aria-labelledby="h-build">
       <div class="h2row"><h2 id="h-build">Build lineups</h2><button class="btn small" id="settings-btn" type="button" aria-expanded="false" aria-controls="settings">Model settings</button></div>
+      <div id="day-plan"></div>
       <div id="entries"></div>
       <div class="ctl">
         <span>Lineups</span>
@@ -273,7 +280,6 @@ details summary{cursor:pointer}
       <label class="check" id="review-wrap" hidden><input type="checkbox" id="review"><span>Include games that already started, to see what the lineup would have been. You can’t enter these on FanDuel.</span></label>
       <button class="btn primary" id="build" type="button">Build lineups</button>
       <div id="build-status" role="status"></div>
-      <div id="plan-top"></div>
       <div id="lineups"></div>
       <div id="fd-export" hidden><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="fd-export-btn" type="button">Download for FanDuel</button><button class="btn" id="enter-all" type="button">I entered all of these</button></div><div class="muted" id="fd-export-msg"></div></div>
       <div id="exposure-summary"></div>
@@ -1042,46 +1048,83 @@ function contestPanel(picks){
   <div class="muted" style="font-size:12px">Expected profit per $1 over 300 simulated nights against each contest's own field. Stakes: see “Where to enter tonight”.</div></div>`}
 function bankroll(){const v=Number(store.get('bankroll',400));return v>0?v:400}
 function riskPct(){const v=Number(store.get('riskPct',5));return v>0&&v<=50?v:5}
-function feeSplit(amount,fees){const out=[];let left=amount;for(const f of [...fees].sort((a,b)=>b-a)){while(left>=f-1e-9&&out.length<12){out.push(f);left-=f}}return out}
+// ---------- tonight's plan ----------
+// data/contest_sims.json plan (pipeline): every way the Build button can build (Cash, Tournament with
+// the learned settings, Tournament max upside, simulated winners / LeVertical portfolio) is built in
+// the pipeline exactly like the button would, then simulated in every contest type for 1, 5 and 20
+// lineups (50/150 for the portfolio). Independent of whatever lineups you've built.
+// Stakes: quarter Kelly on a conservative return (the estimate minus its own error), one option per
+// contest type, within your bankroll x risk %.
+function feeSets(fees){const f=[...fees].sort((a,b)=>a-b),out=[];for(let m=1;m<1<<f.length;m++){const s=f.filter((_,i)=>m>>i&1);if(s.length<=3)out.push(s)}return out}
+function planPicks(){
+  const c=S.cs;if(!csReady()||!c.plan||!c.catalog)return null;
+  const B=bankroll(),budget=B*riskPct()/100,cat=new Map(c.catalog.map(k=>[k.id,k]));
+  const tops=[],bestOf=[];
+  for(const row of c.plan.contests){const k=cat.get(row.id);if(!k||!row.options.length)continue;let top=null;
+    bestOf.push({k,o:row.options[0]});
+    for(const o of row.options){const mu=o.ev-1-(o.se||0);if(mu<=0)continue;
+      const stakes=k.max===1?feeSets(k.fees).map(fs=>({fees:fs,stake:fs.reduce((a,b)=>a+b,0)})):k.fees.map(f=>({fees:[f],stake:o.n*f}));
+      for(const st of stakes){if(st.stake>budget+1e-9)continue;const x=st.stake/B,g=x*mu-2*x*x*o.sd*o.sd;if(g>0&&(!top||g>top.g))top={k,o,mu,g,...st}}}
+    if(top)tops.push(top)}
+  tops.sort((a,b)=>b.g-a.g);const items=[];let left=budget;
+  for(const t of tops)if(t.stake<=left+1e-9){items.push(t);left-=t.stake}
+  bestOf.sort((a,b)=>b.o.ev-a.o.ev);
+  return {items,B,budget,spent:budget-left,bestOf};
+}
+const signPct=v=>(v>=0?'+':'')+Math.round(v*100)+'%';
+function stratText(st){if(!st)return '';if(st.mode!=='gpp')return 'Cash mode (highest projection)';const t=st.settings||{};
+  return `Tournament mode · upside ${Math.round((t.ceilW||0)*100)}%, leverage ${(t.levW||0).toFixed(2)}, fade ${(t.ownFade||0).toFixed(2)} · simulated winners ${st.sim?'on':'off'}`}
+function renderPlan(){
+  const box=$('day-plan');if(!box)return;S.planItems=[];
+  if(S.format!=='classic'){box.innerHTML='<div class="dplan"><b>Tonight’s plan</b> covers the main slate. Single-game contests aren’t simulated yet: skip them, or keep it to $1–2.</div>';return}
+  const P=planPicks();
+  if(!P){box.innerHTML=S.cs&&S.cs.date&&S.today&&S.cs.date!==S.today.date?'<div class="dplan muted">Tonight’s plan appears once the pipeline has simulated today’s slate.</div>':'';return}
+  S.planItems=P.items;const ST=S.cs.plan.strategies,exp=S.cs.plan.exposure||60;
+  const when=S.cs.built_at?new Date(S.cs.built_at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'';
+  const inputs=`<div class="dplan-in"><label>Bankroll $<input id="bankroll" type="number" min="10" step="10" inputmode="decimal" value="${P.B}"></label><label>Max risk tonight <input id="riskpct" type="number" min="1" max="25" step="1" inputmode="decimal" value="${riskPct()}">%</label></div>`;
+  const what=it=>it.k.max===1?(it.fees.length>1?`1 entry in each of ${it.fees.length} different contests (${it.fees.map(f=>'$'+f).join(', ')}), same lineup`:`1 entry in a $${it.fees[0]} contest`)
+    :`${it.o.n} entr${it.o.n>1?'ies':'y'} × $${it.fees[0]}`;
+  const seen=new Map();
+  const rows=P.items.map((it,i)=>{const st=ST[it.o.s],same=seen.get(it.o.s+'|'+it.o.n);if(same==null)seen.set(it.o.s+'|'+it.o.n,i);return `<div class="pitem"><div class="pitem-top"><div><b>${esc(it.k.name)}</b>: ${what(it)}<div class="muted" style="font-size:12px">${esc(it.k.examples)}</div></div><div class="amt">${money(Math.round(it.stake*100)/100)}</div></div>
+    <div class="pitem-set">Build <b>${it.o.n} lineup${it.o.n>1?'s':''}</b> · ${esc(stratText(st))}${it.o.n>1?` · max per player ${exp}%`:''}</div>
+    <div class="muted" style="font-size:12.5px">Expected return ${signPct(it.o.ev-1)} per $1 (cautious: ${signPct(it.mu)}) · ${it.o.n>1?'at least one cashes':'cashes'} ${pct(it.o.cash)} of simulated nights</div>
+    ${same!=null?`<div class="pitem-set"><b>Same lineup${it.o.n>1?'s':''} as ${esc(P.items[same].k.name)}</b>: no need to build again.</div>`:`<button class="btn small" data-plan="${i}" type="button">Build ${it.o.n>1?'these '+it.o.n:'this lineup'}</button>`}</div>`}).join('');
+  const used=new Set(P.items.map(it=>it.k.id));
+  const skip=P.bestOf.filter(x=>!used.has(x.k.id)).map(x=>`${esc(x.k.name)} (${signPct(x.o.ev-1)}${x.o.ev>1?', too uncertain':''})`);
+  const b=P.bestOf[0];
+  const head=P.items.length?`<b>Tonight’s plan: ${money(Math.round(P.spent*100)/100)}</b> <span class="muted">(${(P.spent/P.B*100).toFixed(1)}% of bankroll; your limit ${money(Math.round(P.budget))})</span>`
+    :`<b>Tonight’s plan: sit out.</b> <span class="muted">Best option: ${b?`${esc(b.k.name)} with ${esc((ST[b.o.s]||{}).label||'')}, ${signPct(b.o.ev-1)} per $1`:'none'}${b&&b.o.ev>1?', but not by enough to trust after allowing for how uncertain the estimate is':''}. If you play anyway, keep it to $1–2.</span>`;
+  const sh=S.cs.odds_shift_per_player,ss=S.cs.odds_shift_soft_per_player;
+  box.innerHTML=`<div class="dplan">${head}${inputs}${rows}
+    ${skip.length?`<div class="muted" style="font-size:12.5px;margin-top:6px">Skipping: ${skip.join(', ')}.</div>`:''}
+    <details style="font-size:12.5px;margin-top:6px"><summary>How this plan is made</summary><p class="muted" style="margin:4px 0 0">Not based on the lineups you’ve built. The pipeline builds each strategy the way the Build button does (Cash; Tournament with the learned settings; Tournament max upside; simulated winners, or the LeVertical portfolio for 50+), plays tonight’s slate out 300 times, and scores 1, 5 and 20 lineups (50/150 for the portfolio) in every contest type against its own simulated field. Calibrated on past nights: ${sh!=null?(sh*9).toFixed(0):'?'} pts per lineup in Double Ups and big tournaments, ${ss!=null?(ss*9).toFixed(0):'?'} pts in smaller tournaments (what it takes for the simulator’s chances to match how NBA EDGE’s lineups really finished). Stakes are quarter Kelly on the return minus its own estimation error, so a lucky simulation doesn’t get the money. Recomputed with each projection update${when?' (last '+when+')':''}. Estimates from a small sample; not financial advice.</p></details></div>`;
+  $('bankroll').onchange=e=>{const v=Math.max(10,Number(e.target.value)||400);store.set('bankroll',v);renderPlan()};
+  $('riskpct').onchange=e=>{const v=Math.max(1,Math.min(25,Number(e.target.value)||5));store.set('riskPct',v);renderPlan()};
+}
+async function buildFromPlan(i){
+  const it=(S.planItems||[])[i];if(!it)return;const st=S.cs.plan.strategies[it.o.s];if(!st)return;
+  S.mode=st.mode;S.useSim=!!st.sim;S.count=it.o.n;S.exposure=S.cs.plan.exposure||60;
+  const ex=$('exposure');if(ex){ex.value=S.exposure;$('exposure-out').textContent=S.exposure+'%'}
+  paintMode&&paintMode();paintCount&&paintCount();syncExposure();syncSim();saveDayState();
+  await withSettings({mode:st.mode,...(st.settings||{}),minUnique:S.cs.plan.min_unique||2,maxTeam:4,minSalary:0},build);
+  const status=$('build-status');if(S.lineups.length)status.textContent+=` For tonight’s plan: ${it.k.name}, ${it.k.max===1?(it.fees.length>1?'1 entry each in the '+it.fees.map(f=>'$'+f).join(', ')+' contests':'one $'+it.fees[0]+' entry'):it.o.n+' × $'+it.fees[0]}.`;
+  $('build-status').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+$('day-plan').addEventListener('click',e=>{const b=e.target.closest('[data-plan]');if(b)buildFromPlan(+b.dataset.plan)});
+// How the lineups you built (or entered) score in each contest type; stakes come from the plan.
 function renderWhere(){
-  const box=$('where');if(!box)return;const top=$('plan-top');if(top)top.innerHTML='';
+  renderPlan();
+  const box=$('where');if(!box)return;
   const src=(S.entries||[]).length?S.entries:S.lineups;
   if(!src.length){box.innerHTML='';return}
   if(!csReady()||!S.cs.catalog){box.innerHTML=S.format==='single'?'<p class="muted" style="font-size:13px">Contest odds are for the main slate for now.</p>':'';return}
-  const B=bankroll(),R=riskPct(),budget=B*R/100,c=S.cs,cat=c.catalog;
   const evs=src.slice(0,150).map((l,i)=>({i,l,e:contestEV(l.picks)}));
-  // per contest: the lineups to use (single-entry: the best one; multi-entry: the best N)
-  const plan=cat.map(k=>{const ranked=[...evs].sort((a,b)=>b.e[k.id].ev-a.e[k.id].ev),use=ranked.slice(0,k.max);
-    const ev=use.reduce((a,x)=>a+x.e[k.id].ev,0)/use.length,sd=use.reduce((a,x)=>a+x.e[k.id].sd,0)/use.length,cash=use.reduce((a,x)=>a+x.e[k.id].cash,0)/use.length;
-    // quarter-Kelly stake per entry, as a share of bankroll: (EV-1)/variance / 4
-    const kel=ev>1?Math.max(0,(ev-1)/Math.max(sd*sd,0.05))/4:0;
-    const cap=use.length*Math.max(...k.fees)*(k.max>1?1:3);  // single-entry: up to 3 separate contests
-    return {k,use,ev,sd,cash,kelly:Math.min(kel*B*(k.max>1?Math.sqrt(use.length):1),cap),cap}});
-  const pos=plan.filter(x=>x.ev>1.0),kellyTotal=pos.reduce((a,x)=>a+x.kelly,0);
-  let alloc=new Map();
-  if(pos.length){let left=budget;const w=pos.reduce((a,x)=>a+x.kelly,0)||1;
-    for(const x of pos)alloc.set(x.k.id,Math.min(x.cap,budget*x.kelly/w));
-    left=budget-[...alloc.values()].reduce((a,b)=>a+b,0);
-    for(const x of [...pos].sort((a,b)=>b.ev-a.ev)){if(left<0.5)break;const room=x.cap-alloc.get(x.k.id);const add=Math.min(room,left);alloc.set(x.k.id,alloc.get(x.k.id)+add);left-=add}}
-  const rows=[];
-  for(const x of [...pos].sort((a,b)=>b.ev-a.ev)){const amt=alloc.get(x.k.id)||0;if(amt<0.05)continue;let what;
-    if(x.k.max===1){const fees=feeSplit(amt,x.k.fees);if(!fees.length)continue;what=`${fees.length>1?fees.length+' different contests ('+fees.map(f=>'$'+f).join(', ')+')':'one $'+fees[0]+' contest'} with lineup ${x.use[0].i+1}`;rows.push([x,what,fees.reduce((a,b)=>a+b,0)])}
-    else{const fee=x.k.fees.find(f=>f*Math.min(x.use.length,x.k.max)<=amt+1e-9)||Math.min(...x.k.fees);const n=Math.max(1,Math.min(x.use.length,Math.floor(amt/fee+1e-9)));if(n*fee>amt+1e-9&&n===1&&fee>amt)continue;what=`${n} entr${n>1?'ies':'y'} × $${fee} with your top ${n} lineup${n>1?'s':''}`;rows.push([x,what,n*fee])}}
-  const spent=rows.reduce((a,r)=>a+r[2],0);
-  // Same plan, one line, above the lineups, so it's the first thing seen before entering.
-  if(top){const weak=evs.map(x=>({x,o:contestOdds(x.l.picks)})).filter(y=>y.o&&y.o.du<0.5).slice(0,3);
-    const skip=weak.length?` Skip Double Ups and 50/50s with ${weak.map(y=>`${src===S.entries?'entry':'lineup'} ${y.x.i+1} (wins ${pct(y.o.du)}, needs 50%)`).join(', ')}.`:'';
-    top.innerHTML=`<div class="plan-top">${rows.length?`<b>Tonight’s plan: ${money(Math.round(spent*100)/100)} total</b> (${(spent/B*100).toFixed(1)}% of bankroll) in ${rows.map(r=>esc(r[0].k.name)).join(', ')}.`:`<b>Tonight’s plan: sit out, or $1–2 for fun.</b> No contest type has a positive expected return for these lineups.`}${skip} <a href="#where">Details</a></div>`}
-  const all=[...plan].sort((a,b)=>b.ev-a.ev).map(x=>`<tr><td>${esc(x.k.name)}<div class="muted" style="font-size:12px">${esc(x.k.examples)} · ${x.k.field==='sharp'?'sharp field':'softer field'}</div></td><td class="n">${x.ev>=1?'+':''}${Math.round((x.ev-1)*100)}%</td><td class="n">${pct(x.cash)}</td></tr>`).join('');
-  box.innerHTML=`<h3>Where to enter tonight</h3>
-  <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:13.5px"><label>Bankroll $<input id="bankroll" type="number" min="10" step="10" inputmode="decimal" value="${B}"></label><label>Risk tonight <input id="riskpct" type="number" min="1" max="25" step="1" inputmode="decimal" value="${R}" style="width:56px;font:inherit;font-size:15px;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)">%</label></div>
-  <table><tbody>${rows.length?rows.map(r=>`<tr><td><b>${esc(r[0].k.name)}</b>: ${r[1]}<div class="muted" style="font-size:12.5px">Expected return ${r[0].ev>=1?'+':''}${Math.round((r[0].ev-1)*100)}% per $1, cashes ${pct(r[0].cash)} of nights (${esc(r[0].k.examples)}).</div></td><td class="amt">${money(Math.round(r[2]*100)/100)}</td></tr>`).join(''):`<tr><td colspan="2"><b>No contest type has a positive expected return for your lineups tonight.</b> Skip, or keep it to a dollar or two for fun.</td></tr>`}
-  <tr><td><b>Total</b> <span class="muted" style="font-size:12.5px">(${(spent/B*100).toFixed(1)}% of bankroll)</span></td><td class="amt">${money(Math.round(spent*100)/100)}</td></tr></tbody></table>
-  <p style="font-size:13px;margin:4px 0">You set ${R}% (${money(Math.round(budget))}).${spent<budget-1?` Only ${money(Math.round(spent*100)/100)} fits contests with a positive expected return at sensible entry counts; putting the rest in negative-return contests only adds risk.`:''}${pos.length?` For tonight's edge, the betting math (quarter Kelly) would stake about ${money(Math.max(1,Math.round(kellyTotal)))}; more than that raises the swings faster than the expected profit.`:''}</p>
-  <details style="font-size:13.5px"><summary>Every contest type, simulated</summary><table><thead><tr><th style="text-align:left">Contest</th><th class="n">Return</th><th class="n">Cashes</th></tr></thead><tbody>${all}</tbody></table>
-  <p class="muted" style="font-size:12px;margin:4px 0 0">Return = expected profit per $1 for your best lineup(s), after FanDuel's cut, over 300 simulated nights. Double Ups and big tournaments are scored against a sharp field fitted to the real Oct 29 Double Up line (368.3), with a penalty fitted to how often NBA EDGE's cash lineup has really beaten Double Up lines (${S.cs.odds_shift_per_player!=null?(S.cs.odds_shift_per_player*9).toFixed(0)+' pts per lineup':'none yet'}). Small single-entry contests are scored against a softer field fitted to their real cash lines (340–362 on Oct 29), charged only NBA EDGE's recent gap to projection (${S.cs.odds_shift_soft_per_player!=null?(S.cs.odds_shift_soft_per_player*9).toFixed(0)+' pts':'same penalty'}). Tournament prizes use a standard payout curve sized to each prize pool; real big tournaments pay their top few spots even more, which 300 simulated nights can't see, so big-tournament returns here are on the low side. These are estimates from a few nights of data.</p></details>`;
-  $('bankroll').onchange=e=>{const v=Math.max(10,Number(e.target.value)||400);store.set('bankroll',v);renderWhere()};
-  $('riskpct').onchange=e=>{const v=Math.max(1,Math.min(25,Number(e.target.value)||5));store.set('riskPct',v);renderWhere()};
+  const rows=S.cs.catalog.map(k=>{const r=[...evs].sort((a,b)=>b.e[k.id].ev-a.e[k.id].ev),use=r.slice(0,k.max);
+    return {k,ev:use.reduce((a,x)=>a+x.e[k.id].ev,0)/use.length,cash:use.reduce((a,x)=>a+x.e[k.id].cash,0)/use.length,first:use[0].i}}).sort((a,b)=>b.ev-a.ev);
+  const who=src===S.entries?'entries':'lineups';
+  box.innerHTML=`<h3>How your ${who} score in each contest</h3>
+  <table><thead><tr><th style="text-align:left">Contest</th><th class="n">Return</th><th class="n">Cashes</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${esc(x.k.name)}<div class="muted" style="font-size:12px">${esc(x.k.examples)} · ${x.k.max>1?'your best '+Math.min(x.k.max,src.length):(who==='entries'?'entry ':'lineup ')+(x.first+1)}</div></td><td class="n" style="color:${x.ev>1?'var(--good)':'var(--muted)'}">${signPct(x.ev-1)}</td><td class="n">${pct(x.cash)}</td></tr>`).join('')}</tbody></table>
+  <p class="muted" style="font-size:12px;margin:4px 0 0">Expected profit per $1 over 300 simulated nights, same calibration as the plan. How much to enter: see Tonight’s plan at the top.</p>`;
 }
 
 // ---------- lineups ----------
