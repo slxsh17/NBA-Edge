@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-02",
-  "checked_at": "2026-11-02T11:20:12.145274+00:00",
+  "checked_at": "2026-11-02T12:15:49.004322+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,22 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Isaiah Joe (hip) questionable Monday vs. Charlotte - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQa0l1b1NGVFM0YUl5VTZVc25xWklWU21MZUJhNDJ1U3dnOU1YbEZacTNHRVExbnFfb0ZONmxPSlhvc3NqV0tKQkJGQnEzU0dTM3liaGdBWlR5N2o4X0dSVy1FLUZZbXZreXlNdVBJQzdiVHlkMFNxZFJTazZ6QjU0YkZlT2dCQmtEQUxkM2huQjFUeU03ZkRrd244cmVGdmhLelJ2alBlY1RuWm50T20zMjJGMmVEZw?oc=5",
+      "published_at": "2026-11-02T09:15:30+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Vitor Pereira on shock Forest exit, Gibbs-White and what next: ‘I’m waiting for the rain, to start work’ - The Athletic - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMEdLNXBRMzdpQU9DRGxxeFZzUDJLaXNtSlNiNS1CU2FKRkVfakloNGJRN1YtT2dsTG5jZXFPVy1EYVJOQnkzd2lSdWF0c3hlNkxkbzU3Z0R0SlhkZmg3TGZvNTVmZUNvNGVma1F3Sng4U2lBVjFOamg1cW9UekVNOFVqcUtjUUVfODRaWUlGMVhSNTVhbndEZXJMRmFucWxKRDhKa1hkZw?oc=5",
+      "published_at": "2026-11-02T09:11:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
     {
       "headline": "Collin Sexton emerging as a valuable piece of the Lakers' rotation - SportsGrid",
       "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZ0Q1cHAzeHlDWjhWekdNV3MtZ0xTWW01T1VGb2hqalpmbHN5MVJSNDh0RnIyaUVzV3hlUXlUWWNGVTU2SWdZaW1ZM1B1bzFfaE5UR0l2bGM2MzAzemRKUnluS1Jycl9ENVp5VFRnQXF6Y0VnaDJ1QnVDdHFOZi11MVVjclA2bnZtN1dwaU5KcVFUYmx0VHFBQ2p2RnBNTzUyTFV2a0N2M3JDQQ?oc=5",
@@ -49,14 +65,6 @@
       "headline": "Philadelphia 76ers Announce Joel Embiid Injury Update Before Bulls Game - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcWNYaEkwVXZ2VnFoUWRuTndMVE9ySElGVHVWWkdfVGtEdE9YX0k1UXdGUW50ZVhtajlmTHMzdUxsOGxaRVRmbGpnNFN2NDFrQy1WN09BRExJZ0wtWFhwV0RWRjlJS3ZlU2dwZUVrUDFRVXZIX2FCZkd3MTNVY1l2dXJsWjg3Qms?oc=5",
       "published_at": "2026-11-02T05:29:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Vitor Pereira on shock Forest exit, Gibbs-White and what next: ‘I’m waiting for the rain, to start work’ - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMEdLNXBRMzdpQU9DRGxxeFZzUDJLaXNtSlNiNS1CU2FKRkVfakloNGJRN1YtT2dsTG5jZXFPVy1EYVJOQnkzd2lSdWF0c3hlNkxkbzU3Z0R0SlhkZmg3TGZvNTVmZUNvNGVma1F3Sng4U2lBVjFOamg1cW9UekVNOFVqcUtjUUVfODRaWUlGMVhSNTVhbndEZXJMRmFucWxKRDhKa1hkZw?oc=5",
-      "published_at": "2026-11-02T05:12:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -270,14 +278,6 @@
       "scope_date": "2026-11-02"
     },
     {
-      "headline": "Ziaire Williams (foot) ruled out Sunday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNjNLN1d3RVJqUzl4WmZveDY4aTVQZzJaX3lwOGw4dFBpZFhSVUpzYXJleWxpM1hDODJEb1Q1NDJiQWxFcWdoczU4cE9zUFRVdC0zdlczOUh5bzBOX2djME16Wmt5cThveUZMRXpLRDlSOV9PSmxZVGFiczhCLVY1MzRPYy1LcFFrSlJHX1RR0gGTAUFVX3lxTFBKbEpXRU5zNXZCbW9SRGRYODg2MF8xN291MmJhVEpEVkJkbjhwRmt1b3hHdmctcHA3QVJwUWIzdTBTTVhLa3QySXpKdkFOQmxqM09zemdybGlDZHVUcTRyN3VGSmNuV204ZVRjZmhPcnpEb3BYSmwzbjNtbUlEQXhVUHZuU2JPZDdhR2FubFNvUjQ3Yw?oc=5",
-      "published_at": "2026-11-01T21:48:43+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
       "headline": "Alex Sarr Injury: Questionable for Monday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaDRNVTBvYjQzUUZFb1YzMHJnNUIzWlRRNDJ4Ui1WS1BjTWp3ck9YMU9ndFRnYzlkajRfR1ZXZFZnRjdwX2hMZEgwNzhZbWF3SXJ0ZVJYdkNzQk0wQXRVSWpmc1JfM0lheG1xWEM4N09QSVV5NmxtUFJGYm5hdFJHM1ZBdWJtNzFSb2JDTWZYU0NadDYxbjROWQ?oc=5",
       "published_at": "2026-11-01T21:45:07+00:00",
@@ -433,14 +433,6 @@
       "headline": "Gui Santos Expected to Play Sunday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQc29YMXlXZmZZY2VSaDkxYnBzYkExbUNyQnFJb0tPMU5wSjFWSnBoZnB1MVdPTU9Cc1hiNGJOamZpQ1JVT3lyOEVRZ2J1X0UwYlg1bzhmLU1qNFhTMHVnQ3A0TWFZY3IxaEdrTEkyZV9iVE0tbFFHVXRsSFZBTkFIbFZNQVI5Qkdm?oc=5",
       "published_at": "2026-11-01T12:52:13+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "How will return of Nick Suzuki, Ivan Demidov affect the red-hot Canadiens? - The Athletic - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbTJoX2cwOUhxREItYVlvdlFGb1lXaUtJbEtUbVFjekQ1QXRoYkM5Ym9GUThCdzB5dkQtNmxYaGpmLWtYZ25CNW5WcGdQYms0LTg3VkxiLVpBdE1LQzRHYUlWcXpPc0xGTjBLLS1GVkY3TjdWdTRYQk5mcGowNy10S2tsZkl0aWkyVjE0Y0k4MUVrSVBsTGFxQ1hlTUdHOERBZGxz?oc=5",
-      "published_at": "2026-11-01T11:33:20+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
