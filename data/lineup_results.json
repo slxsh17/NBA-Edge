@@ -1,42 +1,42 @@
 {
 "schema": 1,
-"updated_at": "2026-11-01T18:44:09+00:00",
+"updated_at": "2026-11-02T06:16:52+00:00",
 "calibration": {
-"sd_scale": 1.042,
-"shift_classic": -2.79,
+"sd_scale": 1.041,
+"shift_classic": -2.47,
 "shift_single": 0.55
 },
-"calibration_players": 1304,
+"calibration_players": 1361,
 "summary": [
 {
 "format": "classic",
 "strategy": "cash",
-"slates": 10,
-"avg_actual": 294.4,
-"avg_proj": 328.1,
-"avg_pct_of_best": 67.5,
-"within_sim_range": 60,
-"below_range": 30,
-"above_range": 10
+"slates": 11,
+"avg_actual": 296.3,
+"avg_proj": 325.0,
+"avg_pct_of_best": 68.5,
+"within_sim_range": 64,
+"below_range": 27,
+"above_range": 9
 },
 {
 "format": "classic",
 "strategy": "sim_winner",
-"slates": 10,
-"avg_actual": 290.2,
-"avg_proj": 314.1,
-"avg_pct_of_best": 66.5,
-"within_sim_range": 70,
-"below_range": 20,
-"above_range": 10
+"slates": 11,
+"avg_actual": 289.8,
+"avg_proj": 311.7,
+"avg_pct_of_best": 66.9,
+"within_sim_range": 73,
+"below_range": 18,
+"above_range": 9
 },
 {
 "format": "classic",
 "strategy": "tournament",
-"slates": 10,
-"avg_actual": 293.5,
-"avg_proj": 311.3,
-"avg_pct_of_best": 67.1,
+"slates": 11,
+"avg_actual": 292.5,
+"avg_proj": 308.6,
+"avg_pct_of_best": 67.4,
 "within_sim_range": 100,
 "below_range": 0,
 "above_range": 0
@@ -7121,6 +7121,369 @@
 "slot": "UTIL",
 "proj": 25.52,
 "actual": 24.1
+}
+]
+}
+]
+},
+{
+"date": "2026-11-01",
+"slate": "main",
+"label": "Main slate",
+"format": "classic",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 403.3,
+"players": [
+{
+"name": "Luka Doncic",
+"team": "LAL",
+"slot": "G/F"
+},
+{
+"name": "Scottie Barnes",
+"team": "TOR",
+"slot": "PF"
+},
+{
+"name": "Walker Kessler",
+"team": "LAL",
+"slot": "F/C"
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "SF"
+},
+{
+"name": "Brandin Podziemski",
+"team": "GSW",
+"slot": "SG"
+},
+{
+"name": "Kris Dunn",
+"team": "LAC",
+"slot": "PG"
+},
+{
+"name": "Day'Ron Sharpe",
+"team": "BKN",
+"slot": "C"
+},
+{
+"name": "De'Anthony Melton",
+"team": "GSW",
+"slot": "UTIL"
+},
+{
+"name": "Charles Bassey",
+"team": "GSW",
+"slot": "UTIL"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 294.2,
+"actual": 315.5,
+"sim": {
+"p10": 215.1,
+"p50": 269.8,
+"p90": 323.0,
+"mean": 269.0
+},
+"band": "within range",
+"busts": [
+{
+"name": "Darius Garland",
+"proj": 34.77,
+"actual": 25.5
+},
+{
+"name": "Pascal Siakam",
+"proj": 39.24,
+"actual": 30.5
+}
+],
+"boosts": [
+{
+"name": "Yaxel Lendeborg",
+"proj": 35.97,
+"actual": 51.8
+},
+{
+"name": "De'Anthony Melton",
+"proj": 23.47,
+"actual": 37.7
+}
+],
+"players": [
+{
+"name": "Darius Garland",
+"team": "LAC",
+"slot": "PG",
+"proj": 34.77,
+"actual": 25.5
+},
+{
+"name": "Andrew Nembhard",
+"team": "IND",
+"slot": "SG",
+"proj": 33.86,
+"actual": 32.6
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "SF",
+"proj": 35.97,
+"actual": 51.8
+},
+{
+"name": "Pascal Siakam",
+"team": "IND",
+"slot": "PF",
+"proj": 39.24,
+"actual": 30.5
+},
+{
+"name": "Isaiah Jackson",
+"team": "LAC",
+"slot": "C",
+"proj": 24.96,
+"actual": 16.6
+},
+{
+"name": "Brandin Podziemski",
+"team": "GSW",
+"slot": "G/F",
+"proj": 29.63,
+"actual": 37.6
+},
+{
+"name": "Scottie Barnes",
+"team": "TOR",
+"slot": "F/C",
+"proj": 40.21,
+"actual": 44.7
+},
+{
+"name": "De'Anthony Melton",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 23.47,
+"actual": 37.7
+},
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 32.12,
+"actual": 38.5
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 281.6,
+"actual": 283.0,
+"sim": {
+"p10": 201.3,
+"p50": 257.3,
+"p90": 311.6,
+"mean": 256.3
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jay Huff",
+"proj": 20.76,
+"actual": 6.6
+},
+{
+"name": "Gui Santos",
+"proj": 21.16,
+"actual": 11.1
+}
+],
+"boosts": [
+{
+"name": "Luka Doncic",
+"proj": 48.71,
+"actual": 83.0
+},
+{
+"name": "Yaxel Lendeborg",
+"proj": 35.97,
+"actual": 51.8
+}
+],
+"players": [
+{
+"name": "Luka Doncic",
+"team": "LAL",
+"slot": "PG",
+"proj": 48.71,
+"actual": 83.0
+},
+{
+"name": "Keaton Wagler",
+"team": "LAC",
+"slot": "SG",
+"proj": 25.63,
+"actual": 16.8
+},
+{
+"name": "Aaron Nesmith",
+"team": "IND",
+"slot": "SF",
+"proj": 21.39,
+"actual": 20.6
+},
+{
+"name": "Pascal Siakam",
+"team": "IND",
+"slot": "PF",
+"proj": 39.24,
+"actual": 30.5
+},
+{
+"name": "Jay Huff",
+"team": "IND",
+"slot": "C",
+"proj": 20.76,
+"actual": 6.6
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "G/F",
+"proj": 35.97,
+"actual": 51.8
+},
+{
+"name": "Julius Randle",
+"team": "BKN",
+"slot": "F/C",
+"proj": 34.27,
+"actual": 37.0
+},
+{
+"name": "Gui Santos",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 21.16,
+"actual": 11.1
+},
+{
+"name": "Austin Reaves",
+"team": "LAL",
+"slot": "UTIL",
+"proj": 34.48,
+"actual": 25.6
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 287.1,
+"actual": 285.9,
+"sim": {
+"p10": 207.8,
+"p50": 262.3,
+"p90": 314.4,
+"mean": 261.2
+},
+"band": "within range",
+"busts": [
+{
+"name": "Darius Garland",
+"proj": 34.77,
+"actual": 25.5
+},
+{
+"name": "Pascal Siakam",
+"proj": 39.24,
+"actual": 30.5
+}
+],
+"boosts": [
+{
+"name": "Nolan Traore",
+"proj": 21.16,
+"actual": 29.4
+},
+{
+"name": "Brandin Podziemski",
+"proj": 29.63,
+"actual": 37.6
+}
+],
+"players": [
+{
+"name": "Nolan Traore",
+"team": "BKN",
+"slot": "PG",
+"proj": 21.16,
+"actual": 29.4
+},
+{
+"name": "Andrew Nembhard",
+"team": "IND",
+"slot": "SG",
+"proj": 33.86,
+"actual": 32.6
+},
+{
+"name": "Michael Porter",
+"team": "BKN",
+"slot": "SF",
+"proj": 33.69,
+"actual": 37.3
+},
+{
+"name": "Pascal Siakam",
+"team": "IND",
+"slot": "PF",
+"proj": 39.24,
+"actual": 30.5
+},
+{
+"name": "Isaiah Jackson",
+"team": "LAC",
+"slot": "C",
+"proj": 24.96,
+"actual": 16.6
+},
+{
+"name": "Darius Garland",
+"team": "LAC",
+"slot": "G/F",
+"proj": 34.77,
+"actual": 25.5
+},
+{
+"name": "Scottie Barnes",
+"team": "TOR",
+"slot": "F/C",
+"proj": 40.21,
+"actual": 44.7
+},
+{
+"name": "Brandin Podziemski",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 29.63,
+"actual": 37.6
+},
+{
+"name": "Immanuel Quickley",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 29.59,
+"actual": 31.7
 }
 ]
 }
