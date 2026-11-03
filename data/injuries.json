@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-11-03T05:31:50.422111+00:00",
+  "updated_at": "2026-11-03T06:34:35.012795+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
-      "name": "Jalen Johnson",
-      "team": "ATL",
-      "status": "OUT"
-    },
-    {
       "name": "Jock Landale",
       "team": "ATL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mouhamed Gueye",
@@ -25,7 +25,7 @@
     {
       "name": "Paul George",
       "team": "BOS",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Devin Carter",
@@ -60,22 +60,22 @@
     {
       "name": "Peyton Watson",
       "team": "CLE",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaylon Tyson",
       "team": "CLE",
-      "status": "OUT"
-    },
-    {
-      "name": "Max Christie",
-      "team": "DAL",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Kyrie Irving",
       "team": "DAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Max Christie",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Santi Aldama",
@@ -120,17 +120,17 @@
     {
       "name": "Brandon Williams",
       "team": "GSW",
-      "status": "OUT"
-    },
-    {
-      "name": "Al Horford",
-      "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Gui Santos",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Al Horford",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kristaps Porzingis",
@@ -158,14 +158,29 @@
       "status": "OUT"
     },
     {
+      "name": "Pascal Siakam",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Andrew Nembhard",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Kelly Oubre Jr.",
       "team": "IND",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Larry Nance Jr.",
       "team": "IND",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Obi Toppin",
@@ -179,21 +194,6 @@
     },
     {
       "name": "Ivica Zubac",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Aaron Nesmith",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Andrew Nembhard",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Pascal Siakam",
       "team": "IND",
       "status": "OUT"
     },
@@ -213,14 +213,14 @@
       "status": "OUT"
     },
     {
-      "name": "Rui Hachimura",
-      "team": "LAC",
-      "status": "OUT"
-    },
-    {
       "name": "Derrick Jones Jr.",
       "team": "LAC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Rui Hachimura",
+      "team": "LAC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Yanic Konan Niederhauser",
@@ -248,19 +248,19 @@
       "status": "OUT"
     },
     {
-      "name": "Scotty Pippen Jr.",
-      "team": "MEM",
-      "status": "OUT"
-    },
-    {
       "name": "Quinten Post",
       "team": "MEM",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Scotty Pippen Jr.",
+      "team": "MEM",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Terrence Shannon Jr.",
       "team": "MIN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Edwards",
@@ -320,7 +320,7 @@
     {
       "name": "Anthony Black",
       "team": "ORL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jonathan Isaac",
@@ -410,7 +410,7 @@
     {
       "name": "Jakob Poeltl",
       "team": "TOR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nate Bittle",
@@ -438,17 +438,17 @@
       "status": "OUT"
     },
     {
-      "name": "Reece Beekman",
+      "name": "Alex Sarr",
       "team": "WAS",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Gill",
       "team": "WAS",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Alex Sarr",
+      "name": "Reece Beekman",
       "team": "WAS",
       "status": "OUT"
     },
