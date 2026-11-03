@@ -1,6 +1,6 @@
 {
   "date": "20261102",
-  "updated_at": "2026-11-02T22:37:47.269410-05:00",
+  "updated_at": "2026-11-02T23:39:01.215789-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -49,7 +49,7 @@
       "away": "New Orleans Pelicans",
       "home": "Memphis Grizzlies",
       "time": "2026-11-03T01:00Z",
-      "status": "End of Period"
+      "status": "Final"
     },
     {
       "away": "Milwaukee Bucks",
@@ -61,19 +61,19 @@
       "away": "Boston Celtics",
       "home": "Houston Rockets",
       "time": "2026-11-03T01:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Utah Jazz",
       "home": "San Antonio Spurs",
       "time": "2026-11-03T01:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Portland Trail Blazers",
       "home": "Denver Nuggets",
       "time": "2026-11-03T02:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Phoenix Suns",
