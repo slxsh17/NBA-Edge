@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T14:52:51.028311+00:00",
+  "updated_at": "2026-11-03T15:44:33.802387+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -150,7 +150,7 @@
     {
       "name": "Clint Capela",
       "team": "HOU",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Steven Adams",
