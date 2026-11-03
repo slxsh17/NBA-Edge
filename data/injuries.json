@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T03:46:06.961850+00:00",
+  "updated_at": "2026-11-03T04:36:06.393834+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -356,6 +356,11 @@
       "name": "Ariel Hukporti",
       "team": "PHI",
       "status": "OUT"
+    },
+    {
+      "name": "Jordan Goodwin",
+      "team": "PHX",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mark Williams",
