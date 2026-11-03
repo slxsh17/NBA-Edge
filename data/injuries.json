@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-03T22:04:38.267187+00:00",
+  "updated_at": "2026-11-03T22:49:33.026409+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
       "name": "Jock Landale",
       "team": "ATL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jalen Johnson",
@@ -48,12 +48,17 @@
       "status": "OUT"
     },
     {
-      "name": "Grant Williams",
+      "name": "Kon Knueppel",
       "team": "CHA",
       "status": "OUT"
     },
     {
-      "name": "Kon Knueppel",
+      "name": "Coby White",
+      "team": "CHA",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Grant Williams",
       "team": "CHA",
       "status": "OUT"
     },
@@ -68,24 +73,19 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Peyton Watson",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Jaylon Tyson",
       "team": "CLE",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Kyrie Irving",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "name": "Peyton Watson",
+      "team": "CLE",
+      "status": "OUT"
     },
     {
       "name": "Max Christie",
       "team": "DAL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Santi Aldama",
@@ -303,6 +303,11 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Jaylin Williams",
+      "team": "OKC",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
@@ -319,11 +324,6 @@
     },
     {
       "name": "Jalen Williams",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Alex Caruso",
       "team": "OKC",
       "status": "OUT"
     },
