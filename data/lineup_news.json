@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "slate_date": "2026-11-02",
-  "checked_at": "2026-11-02T23:55:29.283668+00:00",
+  "checked_at": "2026-11-03T00:28:56.828963+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
     {
       "team": "NYK",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "Jalen Brunson",
         "Mikal Bridges",
@@ -50,8 +50,16 @@
   ],
   "headlines": [
     {
-      "headline": "3 stats show how dominant Pistons' defense has been to start season - Sporting News",
-      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRUhJV0RDQ3h1NjNQNG9iRWR0ZW9mMWo2RGpFV0FOaW1mMVViLWJqYlZITkU4VmYxbkRKWlVORjRfdTUzTzh4enNWekloLUU0Vi1ZS3FQNEFNdDE0cXpkUzJwUGNfbjlXcjctUmdPbTlEWnlwR3cyNEVnZmZqMU0zNGowQXpLa2FYSEtGZ3FzVXkyVEszbklSRGFHZjNxT2w2Y1NwbldKRlRyblVEbW9lanpB?oc=5",
+      "headline": "Updated Atlanta Hawks Starting Lineup vs. Indiana: Who is Replacing Jalen Johnson? - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNy1NMXgwYmpVUTNob0tQVDhwQy1INE14YTlpZ1VNVmxndUdYUzBidHl4X294dGFvV0p6TEZWR25zd3l2ZkNLZkowamZ0djZ1TEMzSDJ5NzVpQ0ZtM19UV3I2TkNUVGN4OGJzTk03bDY4MHJ1elFSbU9zNU1DZEl1NWdwX1FvdVNHNktuNGNSMW1abFp5WS13N0NTSHVJOG9VNk5uaWk2WDNKbnVnVURtemQtNl9XeVNmcjhNRHNVQmJ4VklM?oc=5",
+      "published_at": "2026-11-03T00:11:27+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "3 stats show how dominant Pistons' defense has been to start season - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREtIcWcxMTk3dENPcmJOd1hJSkNUQTFGZ3hmQmxuV01OTHY3UjVTclppRFNfY19sRDlXUHB3aDZma25id2doVndtN0dNRnBkRGx6M280dVVsRkc5c1BoUGxhcEFybjdOSjdCVEc0Rl83azg2SGVHVGVaMUNjWEJSeDZybUc?oc=5",
       "published_at": "2026-11-02T23:51:38+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -157,6 +165,14 @@
       "headline": "Minnesota Timberwolves Announce LaMelo Ball Injury Before Bucks Game - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPajQ5WW1IMW14cXhpMmFXTzQ4VExSQzcwWE5xR1JoRVU2VmtLY0RzSW9QeFN0YVZTWG83ZWVQUUVER1hhclJSd2wzSjdmSXlCYVVNbTk4cFlJM250RzlZSWE0QTNkSGlhMDdzczNHeklmWUo3V3VNdEprcEpMOWVnRHlySQ?oc=5",
       "published_at": "2026-11-02T22:22:28+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Rangers outfielder Carter has hip surgery, likely won’t be ready to start of next season - TSN",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb0w5NlB1T0FhbUx3MThITkhQZlc0M1lsbG1CUTRaRy11MTZsU0g4cG1xZ3VWTVVkQkRsNDVvWVktV01oRk9QcHBCeUktcDNoc0lvem1LX0hZUFhUV2FGUnF4dmNDUUtRWk9WeTNxdEV4RTNEam04NWxiYmN6Wms3ZFRZUXVYSTdXMGVheFBhM20wYk9vZlEza1ZxRWxtcmhDTHBkclpGVUU4RTlyQUJ4MWE2REJyMUs3VUE?oc=5",
+      "published_at": "2026-11-02T21:50:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -290,6 +306,14 @@
       "scope_date": "2026-11-02"
     },
     {
+      "headline": "4 takeaways as Celtics defeat Magic, feature new starting lineup - MassLive",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSlVabDBYckZSYmdLYWdfOHQteTZIMzB6Q2ZzbTN1T0MtRi1yNml4N1djbDl1ajlibHJ0UkNiT3FLVVl4SUZfUE44b2JxY0xFeDJfMjQ1SU5OclJPOG8xUUJrck5xYnNNZk1BNWczaGVxaGs5djBKZEJRUXdVdTVrQmt5aVB5Tmd2RXoyV21FX3ZZTFVKb0JKQjRaMk1McGRsUE5RQ29vVFN2TnltdHc?oc=5",
+      "published_at": "2026-11-02T17:48:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
       "headline": "Kings vs. Mavericks injury report: Kyrie Irving, Zach LaVine pop up as Sacramento tries for first win - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQk8tc2ZqLXhxemZ3Yk5NcjloZGI0Q0RDTUk0dmZmaXhoM0lZQ085OHJiT2lmZF9RdVJoYnVXSUxLN2JiMVlVSGMwMHduTDBmRnpaTjZNU3JyM3RUb1dQRnkyMHgwN3ZtalUyUGtWYXdpTXhkbGF4YWJJajdyeVF5LU9yVWVJenU2?oc=5",
       "published_at": "2026-11-02T17:13:51+00:00",
@@ -338,14 +362,6 @@
       "scope_date": "2026-11-02"
     },
     {
-      "headline": "How to watch Sixers vs. Bulls on Nov. 2: Game preview, line ups, injury reports and more - The Times of India",
-      "source_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPbXh3WmZEUlFmQU5jS3UyX3I2VEduZjhJa1VFT0lGVlVNVl9DVzRBbVpCX3k4YVZMUGdYWTc5NXVzVlY1UTZLcHh6cE9IWVdlMzZKNjlfdFZHZHB2SExmaUJQblBmSG5PckQ4cGU1VnVPZzNGYm9BdGFLbUhJNk9kaHlVN0wzX0o0aktVZjlnNWJoT2gzY2wtZ1V2NFFjV2tqcUlCbU1ZWnlCMGwyRVlYNHNRZVJ0Y2lvdDZoUTV6QWVya3l3aE1nY29hWmVmS2RQdEtTS25tbFdXajFFM202WnN4TVczcHNIMjIxdkR3SXFPNUdsVGVhVnRlYl85OVdKblHSAYICQVVfeXFMT214d1pmRFJRZkFOY0t1Ml9yNlRHbmY4SWtVRU9JRlZVTVZfQ1c0QW1aQl95OGFWTFBnWFk3OTV1c1ZWNVE2S3B4enBPSFlXZTM2SjY5X3RWR2RwdkhMZmlCUG5QZkhuT3JEOHBlNVZ1T2czRmJvQXRhS21ISTZPZGh5VTdMM19KNGpLVWY5ZzViaE9oM2NsLWdVdjRRY1dranFJQm1NWVp5QjBsMkVZWDRzUWVSdGNpb3Q2aFE1ekFlcmt5d2hNZ2NvYVplZktkUHRLU0tubWxXV2oxRTNtNlpzeE1XM3BzSDIyMXZEd0lxTzVHbFRlYVZ0ZWJfOTlXSm5R?oc=5",
-      "published_at": "2026-11-02T14:30:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
       "headline": "With Joel Embiid questionable, Sixers host Bulls in one-game homestand - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVkl4VlYyUzlZbGZxUEo1NTZlZFpYQkRKVUxPajRZVEZVY2VkYXlvTmtKbjFRWVFPRnh1RDJ4WFZ0SzNDR3JVMzlrZ2pZRnVjcVA1ZExPSU1heXg1OHRGTDFDRmV0YXNIUzJVZUF4RFd5TFNQNktDcHc4XzFWZWd1ZjV4a1drVjR5Vm9VVFd3?oc=5",
       "published_at": "2026-11-02T14:18:13+00:00",
@@ -373,6 +389,14 @@
       "headline": "Cavs vs. Thunder: How to watch, odds, and injury report - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQmlPdXdLbmg1cDQ1SmpwTktIZTlmUzZURWg2RkxZLW91WWlhanFmRHdXNkhHc0RBQmVGQVc5enk1SHN4bXhiV1pTdTUwLXZEaUlYZTRmaDcxXzFXZzAzY213VG9jWFVZdWhyYTVTZGpPRGdfZjlITDJ1OERqQTdnYQ?oc=5",
       "published_at": "2026-11-02T12:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Vitor Pereira on shock Forest exit, Gibbs-White and what next: ‘I’m waiting for the rain, to start work’ - The Athletic - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMEdLNXBRMzdpQU9DRGxxeFZzUDJLaXNtSlNiNS1CU2FKRkVfakloNGJRN1YtT2dsTG5jZXFPVy1EYVJOQnkzd2lSdWF0c3hlNkxkbzU3Z0R0SlhkZmg3TGZvNTVmZUNvNGVma1F3Sng4U2lBVjFOamg1cW9UekVNOFVqcUtjUUVfODRaWUlGMVhSNTVhbndEZXJMRmFucWxKRDhKa1hkZw?oc=5",
+      "published_at": "2026-11-02T09:11:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -434,24 +458,8 @@
       "scope_date": "2026-11-02"
     },
     {
-      "headline": "Warriors' Georges Niang: Will start Sunday - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUVVT1Y0Rnl3bXd6Z3pyN1JVSHdud0RyQWE3eFpsWUdIeFdoMndfZ2xrSU9rM2hjNlp3OVhXSGV3ck5QRE10SS1DQW15aERlTTZEbXBMTTVQc0gzVUtRWUNaVVVWLTNROHJSWFhhSHBZNmVKSjVURkdHR21YaURVT2lqUTNIWS1wVzJxYXE2WUtyaGpMcEE?oc=5",
-      "published_at": "2026-11-02T01:24:53+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
       "headline": "Charles Bassey News: Enters starting lineup Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcDk3cXN0VTF5eUs1c2EtYkRCbFV5b3N6SmtpQURMZUJVT1FRQUVxOWxyVVZOQ2tWcFlLOXduRGtmUmdJblMtU3dsRmZzbFdJUTY1UDlzdU94WmtfdkU3YXlsaFpNc3lFSzZMbzh5S0VhLW1mdkplNU9MNm5sdVdJZzFSRjFUTUdzelZLUllGeFBBSTlBLUhSNG5VTU42VENXTlpLLQ?oc=5",
-      "published_at": "2026-11-02T01:20:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Warriors' Charles Bassey: Enters starting lineup Sunday - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVjBuS1RHM2VNTGVhNlRHMXlMbFVKcUFYcGNlUVlRZVNSa1VWRWI2Smx1b0FDQjBDbDM4WndQUVduWkc5N2VPMmYyNlZNUzVpdDFaY3dtWXNvRE5NNjJyamZsWkVQY1JCOFVOeTlVTVhTX0VZYi1ob3RHUXF0NkZlbm9yRG9QaF9SZURIYXVHQ25HcTZpc0VTVHI0dl95Q3U4dFBDQmNOUQ?oc=5",
       "published_at": "2026-11-02T01:20:07+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -477,14 +485,6 @@
       "headline": "The Heat ruled out Tre Donaldson (G League) and Vlad … - HoopsHype",
       "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZjBKZGpCbTRtNEtaTmdtWF8ySUxMVGN0dTd4UkZ0M1B3d0VZNFJvWC1wQUQyOHFEV1N5cnpLUjJfUk1NR2dsQXhfRWhabkY3OHRackw4aHB0MnhlS3BLU1l0VGRtMWhJdTJKbzlFcU9jTi1YblVMRjBLeENrcm9mVFFTMFhmX0pTUVYyZmpCTXlRNElVaWN0N19fRW9Hd2hCZ2FrQWNiR052Z25wcUd0RjdmUzFhRVZMV0IyNXNjLTh0QQ?oc=5",
       "published_at": "2026-11-02T00:47:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Hornets’ Coby White is back, Kon Knueppel close to injury return - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPT1JoX2lhelkyc0JHM0U1NXdzaFFpeVZnVDJQaFhoZ3ZkcF8zSXpBN2k1dkRRRUhFU1dSV2VqMVE5VVNlNnFuM045S3NsUlF6ckdPVWFQYm1zNEpSemJZb21oVmxLVUF1TEt2dzdMYnlzYmV4bTdXYW1ib3ZjWEx2YW13?oc=5",
-      "published_at": "2026-11-02T00:10:50+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
