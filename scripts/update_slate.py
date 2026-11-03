@@ -348,6 +348,14 @@ def main():
                 players, note = evening_only(players, day)
                 print(f'::warning::{e2}. {note}')
     except Exception as e:  # keep whatever is already published; never write a partial slate
+        # No NBA games today (ESPN's schedule in data/games.json is empty, e.g. Election Day): not an error.
+        try:
+            sched = json.loads((DATA / 'games.json').read_text(encoding='utf-8'))
+            if sched.get('date') == day.replace('-', '') and not sched.get('games'):
+                print(f'No NBA games on {day} (ESPN schedule is empty); nothing to publish')
+                return 0
+        except (OSError, ValueError):
+            pass
         # Fail the workflow (red X in GitHub Actions) so a broken source is visible.
         print(f'::error::No slate published for {day}: {e}')
         return 1
