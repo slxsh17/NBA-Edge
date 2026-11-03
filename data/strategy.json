@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-03T19:58:04+00:00",
+ "updated_at": "2026-11-03T20:23:49+00:00",
  "nights": 12,
  "days": [
   "2026-10-21",
@@ -26,11 +26,11 @@
   "best_avg": 298.5,
   "in_sample_top": {
    "ceilW": 0.0,
-   "levW": 0.0,
-   "ownFade": 0.08
+   "levW": 0.15,
+   "ownFade": 0.03
   },
   "leave_one_out": {
-   "learned": 300.5,
+   "learned": 296.3,
    "projection_only": 298.5
   },
   "projection_only_avg": 298.5
@@ -41,18 +41,18 @@
    "levW": 0.15,
    "ownFade": 0.03
   },
-  "best_avg_best_of_5": 321.5,
+  "best_avg_best_of_5": 319.6,
   "in_sample_top": {
    "ceilW": 0.45,
    "levW": 0.0,
    "ownFade": 0.0
   },
   "leave_one_out": {
-   "learned": 310.4,
-   "defaults": 321.5
+   "learned": 312.2,
+   "defaults": 319.6
   },
-  "site_default_avg_best_of_5": 321.5,
-  "sim_winners_avg_best_of_5": 340.4,
+  "site_default_avg_best_of_5": 319.6,
+  "sim_winners_avg_best_of_5": 339.9,
   "top5": [
    {
     "ceilW": 0.45,
@@ -74,15 +74,15 @@
    },
    {
     "ceilW": 0.25,
-    "levW": 0.15,
+    "levW": 0.3,
     "ownFade": 0.0,
-    "avg_best_of_5": 325.4
+    "avg_best_of_5": 325.3
    },
    {
-    "ceilW": 0.65,
-    "levW": 0.0,
-    "ownFade": 0.0,
-    "avg_best_of_5": 324.9
+    "ceilW": 0.0,
+    "levW": 0.15,
+    "ownFade": 0.08,
+    "avg_best_of_5": 325.2
    }
   ],
   "stack": {
@@ -90,14 +90,14 @@
    "bringback": true,
    "nights": 12,
    "avg_of_5": {
-    "0": 303.8,
-    "3": 303.4,
-    "4": 306.9
+    "0": 302.3,
+    "3": 305.1,
+    "4": 306.4
    },
    "best_of_5": {
-    "0": 321.5,
-    "3": 324.3,
-    "4": 330.4
+    "0": 319.6,
+    "3": 323.1,
+    "4": 325.8
    },
    "nights_better_than_none": {
     "3": 3,
@@ -224,6 +224,34 @@
    "cash": {
     "ceilW": 0.0,
     "levW": 0.15,
+    "ownFade": 0.0
+   }
+  },
+  {
+   "date": "2026-11-03",
+   "nights": 12,
+   "gpp": {
+    "ceilW": 0.45,
+    "levW": 0.15,
+    "ownFade": 0.03
+   },
+   "cash": {
+    "ceilW": 0.0,
+    "levW": 0.0,
+    "ownFade": 0.0
+   }
+  },
+  {
+   "date": "2026-11-03",
+   "nights": 12,
+   "gpp": {
+    "ceilW": 0.45,
+    "levW": 0.15,
+    "ownFade": 0.03
+   },
+   "cash": {
+    "ceilW": 0.0,
+    "levW": 0.0,
     "ownFade": 0.0
    }
   },

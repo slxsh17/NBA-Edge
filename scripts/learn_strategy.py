@@ -27,6 +27,8 @@ from build_slate import canon, norm  # noqa: E402
 
 DATA = ROOT / 'data'
 OUT = DATA / 'strategy.json'
+CACHE = DATA / 'strategy_cache.json'
+CACHE_V = 1          # bump when the grid, scoring or lineup rules change
 CEIL = [0.0, 0.25, 0.45, 0.65, 0.85]
 LEV = [0.0, 0.15, 0.3, 0.5]
 FADE = [0.0, 0.03, 0.08, 0.15]
@@ -88,13 +90,27 @@ def main():
     if ready == prev.get('days') and '--force' not in sys.argv:
         print('No newly graded nights; keeping strategy results')
         return
+    # Past nights don't change once graded, so their replays are cached (data/strategy_cache.json);
+    # only new nights are built (a full replay took 13 minutes for 12 nights on GitHub's runners).
+    cache = read(CACHE)
+    if cache.get('v') != CACHE_V:
+        cache = {'v': CACHE_V, 'nights': {}}
     nights, pools = [], {}
+
+    def pool_for(day):
+        if day not in pools:
+            pool = day_pool(day)
+            rate, top = FS.optimal_rate(pool, 'classic', 60000, sims=200, corr=corr, keep_top=40)
+            for p in pool:
+                p['lev'] = rate.get(id(p), 0.0) - p['own']
+            pools[day] = (pool, top)
+        return pools[day]
     for day in ready:
-        pool = day_pool(day)
-        pools[day] = pool
-        rate, top = FS.optimal_rate(pool, 'classic', 60000, sims=200, corr=corr, keep_top=40)
-        for p in pool:
-            p['lev'] = rate.get(id(p), 0.0) - p['own']
+        cn = cache['nights'].get(day)
+        if cn:
+            nights.append({**cn, 'grid': {tuple(float(x) for x in k.split('|')): v for k, v in cn['grid'].items()}})
+            continue
+        pool, top = pool_for(day)
         by_name = {(p['name'], p['team']): i for i, p in enumerate(pool)}
         hind = build(pool, [p['actual'] for p in pool], 1)
         best_possible = actual(pool, hind[0]) if hind else None
@@ -118,7 +134,8 @@ def main():
             if len(sim5) == N_GPP:
                 break
         nights.append({'day': day, 'players': len(pool), 'best_possible': best_possible, 'cash': actual(pool, cash[0]) if cash else None,
-                       'grid': res, 'sim_best5': max(actual(pool, x) for x in sim5) if len(sim5) == N_GPP else None})
+                       'grid': res, 'sim_best5': max(actual(pool, x) for x in sim5) if len(sim5) == N_GPP else None, 'stack': {}})
+        cache['nights'][day] = {**nights[-1], 'grid': {'|'.join(str(x) for x in k): v for k, v in res.items()}}
         print(day, 'pool', len(pool), 'hindsight best', round(best_possible or 0, 1), 'cash lineup', round(nights[-1]['cash'] or 0, 1))
     if not nights:
         print('No graded nights yet')
@@ -155,16 +172,20 @@ def main():
     # with the chosen tournament settings: kept only if they beat no stack on the average of the five
     # lineups and on at least half the nights.
     c, lv, f = gpp_pick
+    skey = '|'.join(str(x) for x in gpp_pick)
     stack_res = {k: [] for k in STACKS}
     for n in nights:
-        pool = pools[n['day']]
-        sc = [(1 - c) * p['proj'] + c * p['ceiling'] - f * p['own'] + lv * p['lev'] for p in pool]
-        got = {k: build(pool, sc, N_GPP, stack=k) for k in STACKS}
-        if any(len(v) < N_GPP for v in got.values()):
-            continue
-        for k, lus in got.items():
-            a = [actual(pool, x) for x in lus]
-            stack_res[k].append({'day': n['day'], 'best5': max(a), 'mean5': statistics.mean(a)})
+        cn = cache['nights'][n['day']].setdefault('stack', {})
+        if skey not in cn:
+            pool, _top = pool_for(n['day'])
+            sc = [(1 - c) * p['proj'] + c * p['ceiling'] - f * p['own'] + lv * p['lev'] for p in pool]
+            got = {k: build(pool, sc, N_GPP, stack=k) for k in STACKS}
+            cn[skey] = None if any(len(v) < N_GPP for v in got.values()) else {
+                str(k): {'best5': max(actual(pool, x) for x in lus), 'mean5': statistics.mean(actual(pool, x) for x in lus)} for k, lus in got.items()}
+        if cn[skey]:
+            for k in STACKS:
+                stack_res[k].append({'day': n['day'], **cn[skey][str(k)]})
+    CACHE.write_text(json.dumps(cache, separators=(',', ':')) + '\n', encoding='utf-8')
     stack = {'size': 0, 'bringback': True, 'nights': len(stack_res[0])}
     if stack_res[0]:
         m = {k: statistics.mean(x['mean5'] for x in v) for k, v in stack_res.items()}
