@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:11:01.500940+00:00",
+  "updated_at": "2026-11-03T22:04:38.267187+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -23,7 +23,12 @@
       "status": "OUT"
     },
     {
-      "name": "Paul George",
+      "name": "Payton Pritchard",
+      "team": "BOS",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jayson Tatum",
       "team": "BOS",
       "status": "DAY-TO-DAY"
     },
@@ -53,14 +58,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jalen Smith",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
+    },
+    {
+      "name": "Jalen Smith",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Peyton Watson",
@@ -293,6 +298,11 @@
       "status": "OUT"
     },
     {
+      "name": "Josh Hart",
+      "team": "NYK",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
@@ -443,12 +453,12 @@
       "status": "OUT"
     },
     {
-      "name": "Alex Sarr",
+      "name": "Anthony Gill",
       "team": "WAS",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Anthony Gill",
+      "name": "Alex Sarr",
       "team": "WAS",
       "status": "DAY-TO-DAY"
     },
