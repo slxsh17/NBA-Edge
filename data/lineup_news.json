@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-02",
-  "checked_at": "2026-11-03T03:37:01.359954+00:00",
+  "checked_at": "2026-11-03T04:38:24.533754+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -109,6 +109,14 @@
       "headline": "Updated Atlanta Hawks Starting Lineup vs. Indiana: Who is Replacing Jalen Johnson? - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNy1NMXgwYmpVUTNob0tQVDhwQy1INE14YTlpZ1VNVmxndUdYUzBidHl4X294dGFvV0p6TEZWR25zd3l2ZkNLZkowamZ0djZ1TEMzSDJ5NzVpQ0ZtM19UV3I2TkNUVGN4OGJzTk03bDY4MHJ1elFSbU9zNU1DZEl1NWdwX1FvdVNHNktuNGNSMW1abFp5WS13N0NTSHVJOG9VNk5uaWk2WDNKbnVnVURtemQtNl9XeVNmcjhNRHNVQmJ4VklM?oc=5",
       "published_at": "2026-11-03T00:11:27+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-02"
+    },
+    {
+      "headline": "Coby White set to return for Hornets, Kon Knueppel 'right around the corner' - kens5.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQWEZQSEFJNk9icUEzRm1rcHRKbzk1T25SLVhEaFYzR281ODJHV3RJNUNhRl9fVXl0VXhSYXhyd2sxTkt6NTBQdi1ucXQ0RDhVbnZTcUNFS1pWNmJ0UGlEZXNKaVlUeFZEWWRUeFJfTzJNNFhRbXdvR1E3ZnN4RXJFZ0JqNkxGNHNiZTVLbHA5ZFZlMl82aFV2ckVGOVU1ZU5GeDQ3ektBVXo0cUFvYkh6WDB2N0NMZEg2bzNpYzUwVDlKUUhOQXgyaDliNTRyMVhIYWhiMmdoNGlqbUhBSkFDRTF5MV9jTS1OVmtJUWEyamdjSDI3UWhKLXF0MVVya0h1aUE?oc=5",
+      "published_at": "2026-11-03T00:08:19+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
@@ -322,25 +330,9 @@
       "scope_date": "2026-11-02"
     },
     {
-      "headline": "Ranking NBA injuries so far: Why Anthony Edwards' absence is a bigger blow than any single OKC injury - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeTNuWml0OENYRTM1eTRkcjZ4YnViS2hIV0FMa1B1OEdjeXdONFpPMnZzdTZ0T3ZFam9wOFItVkpCRlBhREVScktXdHhMNDRvQXB1ZldwRjdOZXhFek9wM0R6Sm5STERzNUkzb2dibWl4OEliZkVZNmp3UEVOQVFPc29NMV9Gcy02N3NYbUdPb3pqRldfMVJpLW9lR1JIX25JSklWMEZxeFBfS3NyakEzZVpxb3ZVU1VsM3pnT2kzSTM2YjVYM2dkYg?oc=5",
-      "published_at": "2026-11-02T14:36:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
       "headline": "Nic Claxton Doubtful for Bulls Debut on Monday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTVdkWHFYTUhTZGNobU5qb0Q3M0FuS1d2MEVmMXItR2dHbG5vdWEzcFRCcUx3Rk5hd3FNeUIzN0dTelltTjZDSl84X2lRQ3pZU2JIaVNneGhPR2o5bGtGbnYxZE1FWGRSd1RXaXRldkd5VV9Kd2ItUlRQVkNaU0RVM1VQZUo2LWxIZG9GcDJ6NmZWUnhXVlk5UQ?oc=5",
       "published_at": "2026-11-02T13:03:09+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-02"
-    },
-    {
-      "headline": "Collin Sexton emerging as a valuable piece of the Lakers' rotation - SportsGrid",
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZ0Q1cHAzeHlDWjhWekdNV3MtZ0xTWW01T1VGb2hqalpmbHN5MVJSNDh0RnIyaUVzV3hlUXlUWWNGVTU2SWdZaW1ZM1B1bzFfaE5UR0l2bGM2MzAzemRKUnluS1Jycl9ENVp5VFRnQXF6Y0VnaDJ1QnVDdHFOZi11MVVjclA2bnZtN1dwaU5KcVFUYmx0VHFBQ2p2RnBNTzUyTFV2a0N2M3JDQQ?oc=5",
-      "published_at": "2026-11-02T06:40:17+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-02"
