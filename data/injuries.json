@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T23:24:15.790644+00:00",
+  "updated_at": "2026-11-03T00:02:41.695628+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -60,7 +60,7 @@
     {
       "name": "Peyton Watson",
       "team": "CLE",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jaylon Tyson",
@@ -260,7 +260,7 @@
     {
       "name": "Terrence Shannon Jr.",
       "team": "MIN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "LaMelo Ball",
