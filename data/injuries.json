@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T01:04:19.141369+00:00",
+  "updated_at": "2026-11-03T02:04:29.754543+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -98,11 +98,6 @@
       "status": "OUT"
     },
     {
-      "name": "Alpha Diallo",
-      "team": "DEN",
-      "status": "OUT"
-    },
-    {
       "name": "Julian Strawther",
       "team": "DEN",
       "status": "OUT"
@@ -120,7 +115,7 @@
     {
       "name": "Brandon Williams",
       "team": "GSW",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Al Horford",
