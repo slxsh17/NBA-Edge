@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "updated_at": "2026-11-02T06:23:47+00:00",
- "nights": 11,
+ "updated_at": "2026-11-03T06:06:38+00:00",
+ "nights": 12,
  "days": [
   "2026-10-21",
   "2026-10-22",
@@ -13,26 +13,27 @@
   "2026-10-29",
   "2026-10-30",
   "2026-10-31",
-  "2026-11-01"
+  "2026-11-01",
+  "2026-11-02"
  ],
- "avg_hindsight_best": 434.0,
+ "avg_hindsight_best": 437.5,
  "cash": {
   "best": {
    "ceilW": 0.0,
-   "levW": 0.0,
+   "levW": 0.15,
    "ownFade": 0.0
   },
-  "best_avg": 292.9,
+  "best_avg": 312.9,
   "in_sample_top": {
-   "ceilW": 0.65,
+   "ceilW": 0.0,
    "levW": 0.15,
-   "ownFade": 0.03
+   "ownFade": 0.0
   },
   "leave_one_out": {
-   "learned": 289.3,
-   "projection_only": 292.9
+   "learned": 305.3,
+   "projection_only": 298.5
   },
-  "projection_only_avg": 292.9
+  "projection_only_avg": 298.5
  },
  "tournament": {
   "best": {
@@ -40,48 +41,48 @@
    "levW": 0.15,
    "ownFade": 0.03
   },
-  "best_avg_best_of_5": 321.8,
+  "best_avg_best_of_5": 329.0,
   "in_sample_top": {
-   "ceilW": 0.45,
+   "ceilW": 0.25,
    "levW": 0.15,
    "ownFade": 0.0
   },
   "leave_one_out": {
-   "learned": 311.7,
-   "defaults": 321.8
+   "learned": 328.8,
+   "defaults": 329.0
   },
-  "site_default_avg_best_of_5": 321.8,
-  "sim_winners_avg_best_of_5": 324.1,
+  "site_default_avg_best_of_5": 329.0,
+  "sim_winners_avg_best_of_5": 335.0,
   "top5": [
+   {
+    "ceilW": 0.25,
+    "levW": 0.15,
+    "ownFade": 0.0,
+    "avg_best_of_5": 331.8
+   },
+   {
+    "ceilW": 0.0,
+    "levW": 0.15,
+    "ownFade": 0.08,
+    "avg_best_of_5": 329.4
+   },
+   {
+    "ceilW": 0.25,
+    "levW": 0.15,
+    "ownFade": 0.03,
+    "avg_best_of_5": 329.1
+   },
    {
     "ceilW": 0.45,
     "levW": 0.15,
-    "ownFade": 0.0,
-    "avg_best_of_5": 324.2
-   },
-   {
-    "ceilW": 0.25,
-    "levW": 0.3,
     "ownFade": 0.03,
-    "avg_best_of_5": 323.9
-   },
-   {
-    "ceilW": 0.0,
-    "levW": 0.3,
-    "ownFade": 0.0,
-    "avg_best_of_5": 323.7
+    "avg_best_of_5": 329.0
    },
    {
     "ceilW": 0.0,
     "levW": 0.15,
-    "ownFade": 0.08,
-    "avg_best_of_5": 322.6
-   },
-   {
-    "ceilW": 0.25,
-    "levW": 0.3,
-    "ownFade": 0.08,
-    "avg_best_of_5": 322.5
+    "ownFade": 0.03,
+    "avg_best_of_5": 327.7
    }
   ]
  },
@@ -190,6 +191,20 @@
    "cash": {
     "ceilW": 0.0,
     "levW": 0.0,
+    "ownFade": 0.0
+   }
+  },
+  {
+   "date": "2026-11-03",
+   "nights": 12,
+   "gpp": {
+    "ceilW": 0.45,
+    "levW": 0.15,
+    "ownFade": 0.03
+   },
+   "cash": {
+    "ceilW": 0.0,
+    "levW": 0.15,
     "ownFade": 0.0
    }
   }

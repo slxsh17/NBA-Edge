@@ -219,31 +219,53 @@
     "penny_roi": -0.355,
     "shot_roi": -0.374
    }
+  },
+  {
+   "date": "2026-11-02",
+   "backtest": false,
+   "portfolio": {
+    "lineups": 150,
+    "best": 408.0,
+    "median": 300.4,
+    "cashes": 5,
+    "top1": 1,
+    "penny_roi": -0.859,
+    "shot_roi": -0.863
+   },
+   "previous_method": {
+    "lineups": 150,
+    "best": 349.7,
+    "median": 285.4,
+    "cashes": 0,
+    "top1": 0,
+    "penny_roi": -1.0,
+    "shot_roi": -1.0
+   }
   }
  ],
- "updated_at": "2026-11-03T05:52:43+00:00",
+ "updated_at": "2026-11-03T06:10:43+00:00",
  "summary": {
   "all": {
-   "nights": 10,
-   "portfolio_best": 365.53,
-   "portfolio_cashes": 22.1,
-   "portfolio_top1": 1.5,
-   "portfolio_penny_roi": -0.06,
-   "previous_method_best": 355.9,
-   "previous_method_cashes": 16,
-   "previous_method_top1": 0.9,
-   "previous_method_penny_roi": -0.6
+   "nights": 11,
+   "portfolio_best": 369.39,
+   "portfolio_cashes": 20.55,
+   "portfolio_top1": 1.45,
+   "portfolio_penny_roi": -0.14,
+   "previous_method_best": 355.34,
+   "previous_method_cashes": 14.55,
+   "previous_method_top1": 0.82,
+   "previous_method_penny_roi": -0.64
   },
   "live": {
-   "nights": 2,
-   "portfolio_best": 361.0,
-   "portfolio_cashes": 21,
-   "portfolio_top1": 2,
-   "portfolio_penny_roi": 0.48,
-   "previous_method_best": 358.9,
-   "previous_method_cashes": 19.5,
-   "previous_method_top1": 1.5,
-   "previous_method_penny_roi": -0.49
+   "nights": 3,
+   "portfolio_best": 376.67,
+   "portfolio_cashes": 15.67,
+   "portfolio_top1": 1.67,
+   "portfolio_penny_roi": 0.03,
+   "previous_method_best": 355.83,
+   "previous_method_cashes": 13,
+   "previous_method_top1": 1,
+   "previous_method_penny_roi": -0.66
   }
  },
  "status": "keep",

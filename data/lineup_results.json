@@ -1,45 +1,45 @@
 {
 "schema": 1,
-"updated_at": "2026-11-02T06:16:52+00:00",
+"updated_at": "2026-11-03T05:53:18+00:00",
 "calibration": {
-"sd_scale": 1.041,
-"shift_classic": -2.47,
+"sd_scale": 1.032,
+"shift_classic": -2.08,
 "shift_single": 0.55
 },
-"calibration_players": 1361,
+"calibration_players": 1575,
 "summary": [
 {
 "format": "classic",
 "strategy": "cash",
-"slates": 11,
-"avg_actual": 296.3,
-"avg_proj": 325.0,
-"avg_pct_of_best": 68.5,
-"within_sim_range": 64,
-"below_range": 27,
-"above_range": 9
+"slates": 12,
+"avg_actual": 301.6,
+"avg_proj": 325.7,
+"avg_pct_of_best": 69.1,
+"within_sim_range": 67,
+"below_range": 25,
+"above_range": 8
 },
 {
 "format": "classic",
 "strategy": "sim_winner",
-"slates": 11,
-"avg_actual": 289.8,
-"avg_proj": 311.7,
-"avg_pct_of_best": 66.9,
-"within_sim_range": 73,
-"below_range": 18,
-"above_range": 9
+"slates": 12,
+"avg_actual": 291.2,
+"avg_proj": 311.9,
+"avg_pct_of_best": 66.7,
+"within_sim_range": 75,
+"below_range": 17,
+"above_range": 8
 },
 {
 "format": "classic",
 "strategy": "tournament",
-"slates": 11,
-"avg_actual": 292.5,
-"avg_proj": 308.6,
-"avg_pct_of_best": 67.4,
-"within_sim_range": 100,
+"slates": 12,
+"avg_actual": 298.7,
+"avg_proj": 310.0,
+"avg_pct_of_best": 68.2,
+"within_sim_range": 92,
 "below_range": 0,
-"above_range": 0
+"above_range": 8
 },
 {
 "format": "single",
@@ -7484,6 +7484,369 @@
 "slot": "UTIL",
 "proj": 29.59,
 "actual": 31.7
+}
+]
+}
+]
+},
+{
+"date": "2026-11-02",
+"slate": "main",
+"label": "Main slate",
+"format": "classic",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 475.4,
+"players": [
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "G/F"
+},
+{
+"name": "Cade Cunningham",
+"team": "DET",
+"slot": "PG"
+},
+{
+"name": "Alperen \u015eengun",
+"team": "HOU",
+"slot": "F/C"
+},
+{
+"name": "Caleb Wilson",
+"team": "CHI",
+"slot": "PF"
+},
+{
+"name": "Nickeil Alexander-Walker",
+"team": "ATL",
+"slot": "SG"
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"slot": "C"
+},
+{
+"name": "Quenton Jackson",
+"team": "IND",
+"slot": "UTIL"
+},
+{
+"name": "Jalen Slawson",
+"team": "IND",
+"slot": "SF"
+},
+{
+"name": "Braden Smith",
+"team": "IND",
+"slot": "UTIL"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 332.8,
+"actual": 359.9,
+"sim": {
+"p10": 251.9,
+"p50": 308.5,
+"p90": 368.2,
+"mean": 308.9
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jayson Tatum",
+"proj": 46.49,
+"actual": 37.7
+},
+{
+"name": "Franz Wagner",
+"proj": 40.06,
+"actual": 36.6
+}
+],
+"boosts": [
+{
+"name": "Quenton Jackson",
+"proj": 28.94,
+"actual": 45.9
+},
+{
+"name": "Jalen Slawson",
+"proj": 25.79,
+"actual": 40.9
+}
+],
+"players": [
+{
+"name": "Darius Acuff",
+"team": "SAC",
+"slot": "PG",
+"proj": 40.44,
+"actual": 38.0
+},
+{
+"name": "Quenton Jackson",
+"team": "IND",
+"slot": "SG",
+"proj": 28.94,
+"actual": 45.9
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "SF",
+"proj": 40.06,
+"actual": 36.6
+},
+{
+"name": "Jarace Walker",
+"team": "IND",
+"slot": "PF",
+"proj": 32.78,
+"actual": 32.9
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C",
+"proj": 32.73,
+"actual": 29.5
+},
+{
+"name": "Jalen Slawson",
+"team": "IND",
+"slot": "G/F",
+"proj": 25.79,
+"actual": 40.9
+},
+{
+"name": "Jay Huff",
+"team": "IND",
+"slot": "F/C",
+"proj": 29.18,
+"actual": 36.6
+},
+{
+"name": "Jayson Tatum",
+"team": "BOS",
+"slot": "UTIL",
+"proj": 46.49,
+"actual": 37.7
+},
+{
+"name": "Nikola Jokic",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 56.43,
+"actual": 61.8
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 325.9,
+"actual": 366.2,
+"sim": {
+"p10": 243.8,
+"p50": 302.2,
+"p90": 358.6,
+"mean": 302.0
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Joel Embiid",
+"proj": 39.75,
+"actual": 26.1
+},
+{
+"name": "Jarrett Allen",
+"proj": 31.77,
+"actual": 28.7
+}
+],
+"boosts": [
+{
+"name": "Nickeil Alexander-Walker",
+"proj": 32.9,
+"actual": 52.8
+},
+{
+"name": "Jalen Slawson",
+"proj": 25.79,
+"actual": 40.9
+}
+],
+"players": [
+{
+"name": "Darius Acuff",
+"team": "SAC",
+"slot": "PG",
+"proj": 40.44,
+"actual": 38.0
+},
+{
+"name": "Nickeil Alexander-Walker",
+"team": "ATL",
+"slot": "SG",
+"proj": 32.9,
+"actual": 52.8
+},
+{
+"name": "Jalen Slawson",
+"team": "IND",
+"slot": "SF",
+"proj": 25.79,
+"actual": 40.9
+},
+{
+"name": "Jarrett Allen",
+"team": "CLE",
+"slot": "PF",
+"proj": 31.77,
+"actual": 28.7
+},
+{
+"name": "Joel Embiid",
+"team": "PHI",
+"slot": "C",
+"proj": 39.75,
+"actual": 26.1
+},
+{
+"name": "Caleb Wilson",
+"team": "CHI",
+"slot": "G/F",
+"proj": 36.85,
+"actual": 48.4
+},
+{
+"name": "Jarace Walker",
+"team": "IND",
+"slot": "F/C",
+"proj": 32.78,
+"actual": 32.9
+},
+{
+"name": "Jay Huff",
+"team": "IND",
+"slot": "UTIL",
+"proj": 29.18,
+"actual": 36.6
+},
+{
+"name": "Nikola Jokic",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 56.43,
+"actual": 61.8
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 314.7,
+"actual": 305.9,
+"sim": {
+"p10": 235.7,
+"p50": 292.4,
+"p90": 347.7,
+"mean": 292.2
+},
+"band": "within range",
+"busts": [
+{
+"name": "Wendell Carter",
+"proj": 27.53,
+"actual": 18.8
+},
+{
+"name": "Desmond Bane",
+"proj": 32.19,
+"actual": 27.1
+}
+],
+"boosts": [
+{
+"name": "Jay Huff",
+"proj": 29.18,
+"actual": 36.6
+},
+{
+"name": "Nikola Jokic",
+"proj": 56.43,
+"actual": 61.8
+}
+],
+"players": [
+{
+"name": "Jeremiah Fears",
+"team": "NOP",
+"slot": "PG",
+"proj": 27.59,
+"actual": 23.3
+},
+{
+"name": "Desmond Bane",
+"team": "ORL",
+"slot": "SG",
+"proj": 32.19,
+"actual": 27.1
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "SF",
+"proj": 40.06,
+"actual": 36.6
+},
+{
+"name": "Jarace Walker",
+"team": "IND",
+"slot": "PF",
+"proj": 32.78,
+"actual": 32.9
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C",
+"proj": 32.73,
+"actual": 29.5
+},
+{
+"name": "Cameron Boozer",
+"team": "MEM",
+"slot": "G/F",
+"proj": 36.2,
+"actual": 39.3
+},
+{
+"name": "Jay Huff",
+"team": "IND",
+"slot": "F/C",
+"proj": 29.18,
+"actual": 36.6
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 27.53,
+"actual": 18.8
+},
+{
+"name": "Nikola Jokic",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 56.43,
+"actual": 61.8
 }
 ]
 }
