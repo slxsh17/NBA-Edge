@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-03",
-  "checked_at": "2026-11-03T15:32:42.873696+00:00",
+  "checked_at": "2026-11-03T16:39:10.941715+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -271,14 +271,6 @@
       "scope_date": "2026-11-03"
     },
     {
-      "headline": "Derrick Jones Injury: Ruled out Monday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEpVb2xkbzRnUkxhLXNkd2xNOXV2VEFfbUtMVi1PU09BYVp2NE52anZpTzVNckc2RHF1WVhoM3RTVjU2Q3ZialYtdzRHcDAyVEhkTVBBVVc5S1l3M0xjTDJsRm4wRmU0NUI2ZkJqSXFSMHZqTUd5SzFubDczQ185Z1ZWb0dIYmMybnRQaFlMYUtTNGR2?oc=5",
-      "published_at": "2026-11-02T21:12:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
       "headline": "Dylan Cardwell Injury: Downgraded to questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOX3k1TFN3c1pvZGlCdXJucllFVF9GeXpCbGFqTEk5UlBuYloteXlTdHRJcWpmVHFWYVlFb1pjMGlrLW81cWJDWDA1eWtRb3hTU0t0aUNTWGtDMF9rMHhJNjgyX2wwOGE5X3BMNVFXb2JpamVBWDlaOGc3OWxRNXp0LW9DaDNmRjJNOEowcTM1dXE2Vjc2Mm9rV1NmYVRBT1RCdDlr?oc=5",
       "published_at": "2026-11-02T20:34:38+00:00",
@@ -314,6 +306,14 @@
       "headline": "Paul George ruled out for Celtics-Rockets matchup - Boston Herald",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUVlac25NM0JFTDNLSXBnYThiS1ZSYXVTcjB5WmdIbjVtdnlrYUkwTkJMZkROUFlUYWVQNUdsZkF2RFZHYzg4RHNBdjRzZmQ1NW0tRjZNZW1LVHBfdUJ0Ql8yMEpRajQzSk1Qbzd6OHVnQXRnRWh2MmM5bmZ2aktQOVY5elFhVlZpaWtvWTFaTkhYOTV4?oc=5",
       "published_at": "2026-11-02T19:38:17+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-03"
+    },
+    {
+      "headline": "\"That's not even a question\" - Donte DiVincenzo's doctor says the Wolves guard will return this season - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNU05taEFYREZnejlidDlybW5DU3NUM1NDcW0ya0VRRUQzOWFUUTl4amdjU0VveDVWNG9udExlOHI2ZUhxalFReGtQQ0V6dWVHZDRtWWVqMC1QNGRzaUdrVWZLTEpQQkhZWk9iSHNHeWgtMm12VzZPZXV5eE90aU1XRFBXV1VISmt6?oc=5",
+      "published_at": "2026-11-02T19:37:52+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-03"
@@ -402,22 +402,6 @@
       "headline": "Kyle Whittingham says Michigan will start Tommy Carr at QB for ‘foreseeable future’ - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYl9JQXQtR09RMmx2VlNPa19jVVNlQmw4Y1NuYmdnRDJqQ3BjSHcxOEE0YUI3bDBGZkhJOERPRU9JZzZnMHJiNWtGTG8tV0pYWlk3cV8zREhrbXNObF9seUNEcmVXMDI1OFFEbldWQnRETlVCUGxNV3JwOTJ6d1dBdjl2WHRNX3o4NnIzMC1WdXpsZnNMVGZfN0I5cWttYmF0MGc?oc=5",
       "published_at": "2026-11-02T16:49:44+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
-      "headline": "\"That's not even a question\" - Donte DiVincenzo's doctor says the Wolves guard will return this season - Basketball Network",
-      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdWxsX252VUFkaUx0M3Z6SXpKbmd6NWU1RXFWUVVyYmhMRDktam42TUpoUnlxbVVfbnItcnZyTWI0eW54MXpzVGlSMWZFdjNqZ2tqeUduWlpRMUpqSi1TMkJFTkt5bTVPT0dNWkVSQlRtcVp0WGgxUEpWSjlqZlVmNjRIMXdQWlRYU2Q4cURKVV9vR3lXa05Qdy1TYWJBamlkcDlnb2kwei1wWW9kcnlCdmZ6TXJ5THM?oc=5",
-      "published_at": "2026-11-02T16:20:58+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
-      "headline": "NBA injury report: Embiid, Irving listed on Monday, November 2 - TalkBasket.net",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY0R4bWRaaU5Oc3VVVGpYYzdYM2c5Q2JkaHRmeXgtSkFtektfWlRKTUZFalp6TkRpV0xjSVc1bXdpaTB0MkZEMWp2YXBDVjRXVFM3dTRHYjdNdW9oM3dQR1B4SmdsWTRKaVk4LWZndXNLTk1HYVkyeGJ4TWxwQ1N6VWdTQUhRdXRVMWVZOXhIaG1hcEVNX3p5Mg?oc=5",
-      "published_at": "2026-11-02T15:39:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-03"
