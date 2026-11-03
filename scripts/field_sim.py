@@ -104,6 +104,35 @@ class Solver:
         return assign_slots(chosen, self.pool)
 
 
+def add_game_stack(solver, k, bringback=True):
+    """Classic tournament stacking rule: the lineup must include k+ players from one game, with at
+    least one from each team when bringback (a shootout lifts both sides). Adds a binary per game.
+    Replayed on 12 graded main slates (Oct 21-Nov 2) with the learned tournament settings, 4 with a
+    bring-back scored +5.5 per lineup (better on 9 of 12 nights) at the same projection."""
+    if solver.fmt != 'classic' or not k or k < 2:
+        return solver
+    h, pool = solver.h, solver.pool
+    games = {}
+    for i, p in enumerate(pool):
+        games.setdefault(tuple(sorted((p['team'], p.get('opp') or p['team']))), []).append(i)
+    games = {g: v for g, v in games.items() if len(v) >= k}
+    if not games:
+        return solver
+    start = h.getNumCol()
+    for _ in games:
+        h.addCol(0.0, 0.0, 1.0, 0, [], [])
+    h.changeColsIntegrality(len(games), list(range(start, start + len(games))), [highspy.HighsVarType.kInteger] * len(games))
+    for j, (g, idx) in enumerate(games.items()):
+        y = start + j
+        h.addRow(0.0, highspy.kHighsInf, len(idx) + 1, idx + [y], [1.0] * len(idx) + [-float(k)])
+        if bringback:
+            for t in set(g):
+                ti = [i for i in idx if pool[i]['team'] == t]
+                h.addRow(0.0, highspy.kHighsInf, len(ti) + 1, ti + [y], [1.0] * len(ti) + [-1.0])
+    h.addRow(1.0, highspy.kHighsInf, len(games), list(range(start, start + len(games))), [1.0] * len(games))
+    return solver
+
+
 def assign_slots(chosen, pool):
     """Match chosen players to classic slots (augmenting paths); UTIL takes the rest."""
     slots = ['PG', 'SG', 'SF', 'PF', 'C', 'G/F', 'F/C']

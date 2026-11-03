@@ -444,8 +444,11 @@ PLAN_MIN_UNIQUE = 2
 
 
 def plan_strategies():
-    t = (read(DATA / 'strategy.json').get('tournament') or {}).get('best') or {}
+    st = read(DATA / 'strategy.json').get('tournament') or {}
+    t = st.get('best') or {}
     t = {k: float(t.get(k, d)) for k, d in (('ceilW', 0.45), ('levW', 0.15), ('ownFade', 0.03))}
+    sz = (st.get('stack') or {}).get('size')
+    t['stack'] = 4 if sz is None else int(sz)       # game stack with a bring-back (learn_strategy)
     return {
         'cash': {'label': 'Cash', 'mode': 'cash', 'sim': False, 'settings': {},
                  'desc': 'Highest projection, no upside or leverage.'},
@@ -454,7 +457,7 @@ def plan_strategies():
         'gpp': {'label': 'Tournament · learned settings', 'mode': 'gpp', 'sim': False, 'settings': t,
                 'desc': 'The tournament settings that did best replaying past slates.'},
         'upside': {'label': 'Tournament · max upside', 'mode': 'gpp', 'sim': False,
-                   'settings': {'ceilW': 0.8, 'levW': 0.3, 'ownFade': 0.08},
+                   'settings': {'ceilW': 0.8, 'levW': 0.3, 'ownFade': 0.08, 'stack': t['stack']},
                    'desc': 'Ceilings and players the field under-owns: fewer cashes, bigger wins.'},
     }
 
@@ -497,6 +500,8 @@ def plan_build(pool, s, count, seeds=(), fill=True):
         add(ids)
     if fill and len(made) < count:
         solver = FS.Solver(pool, 'classic', 60000)
+        if s['mode'] == 'gpp' and (s['settings'].get('stack') or 0) >= 2:
+            FS.add_game_stack(solver, int(s['settings']['stack']))
         h = solver.h
         for m in made:
             h.addRow(0, 9 - PLAN_MIN_UNIQUE, 9, m, [1.0] * 9)

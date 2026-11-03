@@ -32,6 +32,7 @@ LEV = [0.0, 0.15, 0.3, 0.5]
 FADE = [0.0, 0.03, 0.08, 0.15]
 SITE_DEFAULT = {'ceilW': 0.45, 'levW': 0.15, 'ownFade': 0.03}
 N_GPP = 5
+STACKS = [0, 3, 4]
 
 
 def read(p, default=None):
@@ -59,8 +60,10 @@ def day_pool(day):
     return pool if len(pool) >= 30 else None
 
 
-def build(pool, scores, n, min_unique=2):
+def build(pool, scores, n, min_unique=2, stack=0):
     solver = FS.Solver(pool, 'classic', 60000)
+    if stack:
+        FS.add_game_stack(solver, stack)
     out = []
     for _ in range(n):
         lu = solver.best(scores)
@@ -85,9 +88,10 @@ def main():
     if ready == prev.get('days') and '--force' not in sys.argv:
         print('No newly graded nights; keeping strategy results')
         return
-    nights = []
+    nights, pools = [], {}
     for day in ready:
         pool = day_pool(day)
+        pools[day] = pool
         rate, top = FS.optimal_rate(pool, 'classic', 60000, sims=200, corr=corr, keep_top=40)
         for p in pool:
             p['lev'] = rate.get(id(p), 0.0) - p['own']
@@ -147,6 +151,29 @@ def main():
     cash0 = (0.0, 0.0, 0.0)
     loo_c, loo_cd = loo('one', cash0) if cash0 in keys else (None, None)
     cash_pick = rank_cash[0] if (loo_c is not None and loo_c > loo_cd + 3) else (cash0 if cash0 in keys else rank_cash[0])
+    # Game stacks for tournaments (k+ players from one game, at least one from each team), tested
+    # with the chosen tournament settings: kept only if they beat no stack on the average of the five
+    # lineups and on at least half the nights.
+    c, lv, f = gpp_pick
+    stack_res = {k: [] for k in STACKS}
+    for n in nights:
+        pool = pools[n['day']]
+        sc = [(1 - c) * p['proj'] + c * p['ceiling'] - f * p['own'] + lv * p['lev'] for p in pool]
+        got = {k: build(pool, sc, N_GPP, stack=k) for k in STACKS}
+        if any(len(v) < N_GPP for v in got.values()):
+            continue
+        for k, lus in got.items():
+            a = [actual(pool, x) for x in lus]
+            stack_res[k].append({'day': n['day'], 'best5': max(a), 'mean5': statistics.mean(a)})
+    stack = {'size': 0, 'bringback': True, 'nights': len(stack_res[0])}
+    if stack_res[0]:
+        m = {k: statistics.mean(x['mean5'] for x in v) for k, v in stack_res.items()}
+        b = {k: statistics.mean(x['best5'] for x in v) for k, v in stack_res.items()}
+        better = {k: sum(x['mean5'] > y['mean5'] for x, y in zip(v, stack_res[0])) for k, v in stack_res.items()}
+        ok = [k for k in STACKS if k and m[k] > m[0] and better[k] * 2 >= len(stack_res[0])]
+        stack.update({'size': max(ok, key=lambda k: m[k]) if ok else 0, 'avg_of_5': {str(k): round(v, 1) for k, v in m.items()},
+                      'best_of_5': {str(k): round(v, 1) for k, v in b.items()}, 'nights_better_than_none': {str(k): v for k, v in better.items() if k}})
+    print('game stacks', stack)
     sims = [n['sim_best5'] for n in nights if n['sim_best5'] is not None]
     mine = read(DATA / 'my_results.json').get('days', [])
     entries = [c for d in mine for c in d.get('contests', [])]
@@ -161,7 +188,8 @@ def main():
                        'leave_one_out': {'learned': round(loo_g, 1) if loo_g else None, 'defaults': round(loo_gd, 1) if loo_gd else None},
                        'site_default_avg_best_of_5': round(avg(dflt, 'best5'), 1) if dflt in keys else None,
                        'sim_winners_avg_best_of_5': round(statistics.mean(sims), 1) if len(sims) == len(nights) else None,
-                       'top5': [{**as_dict(k), 'avg_best_of_5': round(avg(k, 'best5'), 1)} for k in rank_gpp[:5]]},
+                       'top5': [{**as_dict(k), 'avg_best_of_5': round(avg(k, 'best5'), 1)} for k in rank_gpp[:5]],
+                       'stack': stack},
         'your_results': {'nights': len(mine), 'entries': len(entries), 'cashed': sum(1 for c in entries if (c.get('won') or 0) > 0),
                          'fees': sum(c.get('fee') or 0 for c in entries), 'won': sum(c.get('won') or 0 for c in entries)},
         'caution': ('Small sample: settings are a guide, not a rule, until there are 20+ nights.' if len(nights) < 20 else ''),

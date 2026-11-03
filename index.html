@@ -361,10 +361,10 @@ const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(
   locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null,format:'classic',sgId:null};
 const F=()=>FMT[S.format];const multOf=slot=>F().mult[slot]||1;
 const fmtKey=()=>S.format==='single'?'sg:'+S.sgId:'main';
-const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,outside:0,darko:0,darko_min:0,levW:.15,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.03,sgCap:60000};
+const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,outside:0,darko:0,darko_min:0,levW:.15,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.03,stack:4,sgCap:60000};
 const LEARNABLE=['vegas','matchup','injury','usage','starter','blowout','outside','darko','darko_min'];
 S.user=store.get('cfgUser',{});S.learned={scale:1,minutes_mult:{}};
-function learnedDefaults(){const o={...DEFAULTS};for(const k of LEARNABLE)if(typeof S.learned[k]==='number')o[k]=+S.learned[k].toFixed(2);return o}
+function learnedDefaults(){const o={...DEFAULTS};for(const k of LEARNABLE)if(typeof S.learned[k]==='number')o[k]=+S.learned[k].toFixed(2);const st=S.st&&S.st.tournament&&S.st.tournament.stack;if(st&&typeof st.size==='number')o.stack=st.size;return o}
 function rebuildCfg(){S.cfg={...learnedDefaults(),...S.user}}
 rebuildCfg();
 const SETTINGS=[
@@ -386,11 +386,12 @@ const SETTINGS=[
  {h:'Tournament mode'},
  {k:'ceilW',label:'Upside weight',min:0,max:1,step:.05,fmt:'%',help:'How much a player\u2019s ceiling counts versus his projection.'},
  {k:'levW',label:'Leverage weight',min:0,max:.5,step:.01,fmt:'pt',help:'Points added per point of leverage (winning-lineup rate minus ownership). This is the LeVertical idea: favor plays the optimizer-driven field is under-owning.'},
- {k:'ownFade',label:'Fade popular players',min:0,max:.3,step:.01,fmt:'pt',help:'Points subtracted per 1% of estimated ownership.'}];
-const fmtSet=(d,v)=>d.fmt==='x'?Number(v).toFixed(2)+'x':d.fmt==='$'?(v?'$'+Number(v).toLocaleString():'Off'):d.fmt==='%'?Math.round(v*100)+'%':d.fmt==='pt'?Number(v).toFixed(2):v+(d.fmt||'');
+ {k:'ownFade',label:'Fade popular players',min:0,max:.3,step:.01,fmt:'pt',help:'Points subtracted per 1% of estimated ownership.'},
+ {k:'stack',label:'Game stack',min:0,max:5,step:1,fmt:'stk',help:'Each tournament lineup includes at least this many players from one game, with at least one from each team (when a game shoots out, both sides score). Off = no rule. Replayed on 12 past main slates, 4-player stacks scored 5.5 more points per lineup (better on 9 of 12 nights) at the same projection; the nightly strategy replay keeps checking it.'}];
+const fmtSet=(d,v)=>d.fmt==='stk'?(+v>=2?v+' players':'Off'):d.fmt==='x'?Number(v).toFixed(2)+'x':d.fmt==='$'?(v?'$'+Number(v).toLocaleString():'Off'):d.fmt==='%'?Math.round(v*100)+'%':d.fmt==='pt'?Number(v).toFixed(2):v+(d.fmt||'');
 function renderSettings(){
   const box=$('settings');
-  box.innerHTML=SETTINGS.map(d=>d.h?`<h3>${d.h}</h3>`:`<div class="set"><label for="cfg-${d.k}">${d.label}</label><output id="cfg-${d.k}-out">${fmtSet(d,S.cfg[d.k])}</output><input type="range" id="cfg-${d.k}" data-k="${d.k}" min="${d.min}" max="${d.max}" step="${d.step}" value="${S.cfg[d.k]}"><small>${d.help}${LEARNABLE.includes(d.k)?` Learned value: <b>${fmtSet(d,learnedDefaults()[d.k])}</b>${d.k in S.user?' (you changed this)':''}.`:''}</small></div>`).join('')+
+  box.innerHTML=SETTINGS.map(d=>d.h?`<h3>${d.h}</h3>`:`<div class="set"><label for="cfg-${d.k}">${d.label}</label><output id="cfg-${d.k}-out">${fmtSet(d,S.cfg[d.k])}</output><input type="range" id="cfg-${d.k}" data-k="${d.k}" min="${d.min}" max="${d.max}" step="${d.step}" value="${S.cfg[d.k]}"><small>${d.help}${LEARNABLE.includes(d.k)||d.k==='stack'?` ${d.k==='stack'?'Tested best':'Learned value'}: <b>${fmtSet(d,learnedDefaults()[d.k])}</b>${d.k in S.user?' (you changed this)':''}.`:''}</small></div>`).join('')+
   `<div style="display:flex;gap:8px;align-items:center;margin-top:12px"><button class="btn small" id="cfg-reset" type="button">Reset to learned values</button><span class="muted" style="font-size:12px">Saved on this device. The model relearns these every morning from its results; the accuracy report grades the learned values.</span></div>`;
 }
 function setCfg(k,v){S.user[k]=v;store.set('cfgUser',S.user);rebuildCfg();recompute();renderPlayers();renderLineups()}
@@ -737,7 +738,8 @@ function simNight(pool){
     const sd=sc*Math.max(1,((p.ceiling||p.proj*1.4)-p.proj)/1.28),z=rg*G[gk(p)]+rt*T[p.team]+ri*gauss();
     return [pkey(p),Math.round(Math.max(0,p.proj+sd*z)/Math.max(p.proj,1)*1000)/1000]}));
 }
-async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],minUnique=2,noise=null}){
+async function solveOne(glpk,pool,opts={}){
+  const {fixed=[],excludeKeys=new Set(),previous=[],minUnique=2,noise=null,stack=null}=opts;
   const vars=[],bySlot={},byP={},byTeam={};
   const need=F().need,size=F().size;
   for(const s in need)bySlot[s]=[];
@@ -755,12 +757,20 @@ async function solveOne(glpk,pool,{fixed=[],excludeKeys=new Set(),previous=[],mi
   fixed.forEach((f,j)=>{const vs=vars.filter(v=>pkey(v.p)===pkey(f.p)&&v.s===f.slot);if(vs.length)rows.push(c('fix'+j,vs,()=>1,glpk.GLP_FX,1,1))});
   // Classic: lineups differ by minUnique players. Single game: by at least one player-or-slot change.
   previous.forEach((keys,j)=>{const single=S.format==='single';const vs=vars.filter(v=>keys.has(single?pkey(v.p)+'|'+v.s:pkey(v.p)));if(vs.length)rows.push(c('div'+j,vs,()=>1,glpk.GLP_UP,0,single?size-1:size-minUnique))});
-  const lp={name:'edge',objective:{direction:glpk.GLP_MAX,name:'z',vars:vars.map(v=>({name:v.name,coef:score(v.p)*(noise?noise.get(pkey(v.p))||1:1)*multOf(v.s)+(S.format==='classic'?flexBonus(v.p,v.s):0)}))},subjectTo:rows,binaries:vars.map(v=>v.name)};
+  // Tournament game stack: k+ players from one game, at least one from each team (learn_strategy tests it nightly).
+  const stackK=stack!=null?stack:(S.mode==='gpp'&&S.format==='classic'?(S.cfg.stack||0):0),ys=[];
+  if(stackK>=2){const byGame={};vars.forEach(v=>{(byGame[[v.p.team,v.p.opp||v.p.team].sort().join('_')]??=[]).push(v)});
+    for(const [g,vs] of Object.entries(byGame)){if(new Set(vs.map(v=>v.i)).size<stackK)continue;const y='y_'+g.replace(/\W/g,'');ys.push(y);
+      rows.push({name:'stk_'+y,vars:[...vs.map(v=>({name:v.name,coef:1})),{name:y,coef:-stackK}],bnds:{type:glpk.GLP_LO,lb:0,ub:0}});
+      for(const t of new Set(vs.map(v=>v.p.team)))rows.push({name:'bb_'+y+'_'+t,vars:[...vs.filter(v=>v.p.team===t).map(v=>({name:v.name,coef:1})),{name:y,coef:-1}],bnds:{type:glpk.GLP_LO,lb:0,ub:0}})}
+    if(ys.length)rows.push({name:'stack',vars:ys.map(y=>({name:y,coef:1})),bnds:{type:glpk.GLP_LO,lb:1,ub:0}})}
+  const lp={name:'edge',objective:{direction:glpk.GLP_MAX,name:'z',vars:vars.map(v=>({name:v.name,coef:score(v.p)*(noise?noise.get(pkey(v.p))||1:1)*multOf(v.s)+(S.format==='classic'?flexBonus(v.p,v.s):0)}))},subjectTo:rows,binaries:[...vars.map(v=>v.name),...ys]};
   // Big batches: accept a lineup within 0.3% of optimal and cap each solve, so 150 lineups finish in a minute or two.
   const big=S.count>20;
   const res=await glpk.solve(lp,{msglev:glpk.GLP_MSG_OFF,presol:true,tmlim:big?4:20,mipgap:big?0.003:0.0001});
-  if(![glpk.GLP_OPT,glpk.GLP_FEAS].includes(res?.result?.status))return null;
-  const chosen=vars.filter(v=>res.result.vars[v.name]>.5);if(chosen.length!==size)return null;
+  const again=()=>ys.length?solveOne(glpk,pool,{...opts,stack:0}):null;   // no stack fits (late swap, locks): plain best
+  if(![glpk.GLP_OPT,glpk.GLP_FEAS].includes(res?.result?.status))return again();
+  const chosen=vars.filter(v=>res.result.vars[v.name]>.5);if(chosen.length!==size)return again();
   const order=F().order;chosen.sort((a,b)=>order.indexOf(a.s)-order.indexOf(b.s));
   return chosen.map(v=>({p:v.p,slot:v.s}));
 }
@@ -859,13 +869,13 @@ async function build(){
 }
 // Each lineup remembers the settings it was built with, so late swap re-optimizes it the same way
 // (a cash lineup stays a cash lineup even if you've since switched the page to Tournament).
-const SETKEYS=['ceilW','levW','ownFade','maxTeam','minSalary','minUnique'];
+const SETKEYS=['ceilW','levW','ownFade','maxTeam','minSalary','minUnique','stack'];
 function currentSettings(){const o={mode:S.mode,sim:S.mode==='gpp'&&!!S.useSim,at:Date.now()};for(const k of SETKEYS)o[k]=S.cfg[k];return o}
 async function withSettings(set,fn){if(!set)return fn();const m=S.mode,c=S.cfg;S.mode=set.mode;S.cfg={...c};for(const k of SETKEYS)if(set[k]!=null)S.cfg[k]=set[k];
   try{return await fn()}finally{S.mode=m;S.cfg=c}}
 function settingsLabel(set,l){if(!set)return '';const t=set.at?new Date(set.at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'';
   const kind=set.mode==='gpp'?(set.port||(l&&l.port!=null)?'Tournament · LeVertical portfolio':l&&l.sim!=null?'Tournament · simulated winner':'Tournament'):'Cash';
-  const extra=set.mode==='gpp'?` · upside ${Math.round((set.ceilW||0)*100)}%, leverage ${(set.levW||0).toFixed(2)}, fade ${(set.ownFade||0).toFixed(2)}`:'';
+  const extra=set.mode==='gpp'?` · upside ${Math.round((set.ceilW||0)*100)}%, leverage ${(set.levW||0).toFixed(2)}, fade ${(set.ownFade||0).toFixed(2)}${(set.stack||0)>=2?`, ${set.stack}-player game stack`:''}`:'';
   return `<div class="set-badge">Built as ${kind}${extra}${t?' · '+t:''}. Late swap uses these settings.</div>`}
 async function lateSwap(i){
   const l=S.lineups[i],status=$('build-status');
@@ -1097,7 +1107,7 @@ function planPicks(){
 }
 const signPct=v=>(v>=0?'+':'')+Math.round(v*100)+'%';
 function stratText(st){if(!st)return '';if(st.mode!=='gpp')return 'Cash mode (highest projection)';const t=st.settings||{};
-  return `Tournament mode · upside ${Math.round((t.ceilW||0)*100)}%, leverage ${(t.levW||0).toFixed(2)}, fade ${(t.ownFade||0).toFixed(2)} · simulated winners ${st.sim?'on':'off'}`}
+  return `Tournament mode · upside ${Math.round((t.ceilW||0)*100)}%, leverage ${(t.levW||0).toFixed(2)}, fade ${(t.ownFade||0).toFixed(2)}${(t.stack||0)>=2?`, ${t.stack}-player game stack`:''} · simulated winners ${st.sim?'on':'off'}`}
 function renderPlan(){
   const box=$('day-plan');if(!box)return;S.planItems=[];
   if(S.format!=='classic'){box.innerHTML='<div class="dplan"><b>Tonight’s plan</b> covers the main slate. Single-game contests aren’t simulated yet: skip them, or keep it to $1–2.</div>';return}

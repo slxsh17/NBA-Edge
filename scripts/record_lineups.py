@@ -66,11 +66,14 @@ def simulate(lineup, corr, seed=5, shift=0.0):
     return {'p10': q(0.1), 'p50': q(0.5), 'p90': q(0.9), 'mean': round(sum(tot) / len(tot), 1)}
 
 
-def build(pool, fmt, scores):
+def build(pool, fmt, scores, stack=0):
     pool = [p for p in pool if p['proj'] > 0]
     if len(pool) < FS.FORMATS[fmt]['size']:
         return None
-    lu = FS.Solver(pool, fmt, 60000).best(scores(pool))
+    sc = scores(pool)
+    lu = FS.add_game_stack(FS.Solver(pool, fmt, 60000), stack).best(sc) if stack else None
+    if not lu:      # no stack possible (or off): plain best lineup
+        lu = FS.Solver(pool, fmt, 60000).best(sc)
     return [(pool[i], slot) for i, slot in lu] if lu else None
 
 
@@ -122,13 +125,20 @@ def pack(picks, fmt, strategy, corr, extra=None):
     return {**out, **(extra or {})}
 
 
+def stack_size(st):
+    """Game-stack size for tournament lineups, from learn_strategy's replay (default 4)."""
+    v = ((st.get('tournament') or {}).get('stack') or {}).get('size')
+    return 4 if v is None else int(v)
+
+
 def lineups_for(pool, fmt, sim_top, tset, corr):
     c, lv, f = tset['ceilW'], tset['levW'], tset['ownFade']
     res = []
     cash = build(pool, fmt, lambda ps: [p['proj'] for p in ps])
     if cash:
         res.append(pack(cash, fmt, 'cash', corr))
-    gpp = build(pool, fmt, lambda ps: [(1 - c) * p['proj'] + c * (p.get('ceiling') or p['proj']) - f * (p.get('own') or 0) + lv * (p.get('lev') or 0) for p in ps])
+    stack = int(tset.get('stack') or 0) if fmt == 'classic' else 0
+    gpp = build(pool, fmt, lambda ps: [(1 - c) * p['proj'] + c * (p.get('ceiling') or p['proj']) - f * (p.get('own') or 0) + lv * (p.get('lev') or 0) for p in ps], stack)
     if gpp:
         res.append(pack(gpp, fmt, 'tournament', corr, {'settings': tset}))
     if sim_top:
@@ -151,7 +161,8 @@ def main():
     rec = read(path, {'date': day, 'slates': {}})
     corr = {**(read(DATA / 'model_params.json').get('corr') or {}), **(read(DATA / 'lineup_results.json').get('calibration') or {})}
     st = read(DATA / 'strategy.json')
-    tset = (st.get('tournament') or {}).get('best') or {'ceilW': 0.45, 'levW': 0.15, 'ownFade': 0.03}
+    tset = dict((st.get('tournament') or {}).get('best') or {'ceilW': 0.45, 'levW': 0.15, 'ownFade': 0.03})
+    tset['stack'] = stack_size(st)
     players = today['players']
     changed = False
 
