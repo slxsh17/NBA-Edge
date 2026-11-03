@@ -357,7 +357,7 @@ const store={get(k,d){try{const v=localStorage.getItem('edge27.'+k);return v==nu
 const canFill=(p,slot)=>{if(S.format==='single')return true;const a=p.position.split('/');if(slot==='UTIL')return true;if(slot==='G/F')return a.some(x=>['PG','SG','SF','PF'].includes(x));if(slot==='F/C')return a.some(x=>['SF','PF','C'].includes(x));return a.includes(slot)};
 
 const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(),source:'auto',
-  count:1,mode:'cash',exposure:60,useSim:true,posf:'',search:'',sort:'proj',dir:-1,open:null,
+  count:1,mode:'cash',exposure:60,useSim:false,posf:'',search:'',sort:'proj',dir:-1,open:null,
   locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null,format:'classic',sgId:null};
 const F=()=>FMT[S.format];const multOf=slot=>F().mult[slot]||1;
 const fmtKey=()=>S.format==='single'?'sg:'+S.sgId:'main';
@@ -467,6 +467,8 @@ function restoreDayState(){
   const st=store.get('day:'+fmtKey(),null);
   if(st&&st.day===S.day){S.over=st.over||{};S.locks=new Set(st.locks);S.bans=new Set(st.bans);S.gamesOff=new Set(st.gamesOff);S.lineups=(st.lineups||[]).map(l=>({...l,picks:l.picks.map(rehydrate).filter(Boolean)})).filter(l=>l.picks.length===F().size)}
   const set=store.get('settings:'+S.format,null);if(set){S.count=set.count||1;S.mode=set.mode||'cash';S.exposure=set.exposure||60;S.useSim=set.useSim!==false}else{S.count=1;S.mode='cash';S.exposure=S.format==='single'?100:60}
+  // Simulated winners have finished worst of NBA EDGE's lineup types on graded nights: off by default (once).
+  if(!store.get('simOffV1',false)){S.useSim=false;store.set('simOffV1',true)}
   const ex=$('exposure');if(ex){ex.value=S.exposure;$('exposure-out').textContent=S.exposure+'%'}
   loadEntries();
 }
@@ -694,7 +696,8 @@ function wireControls(){
 function simList(){if(S.source==='csv'||!S.today||S.today.date!==S.day)return [];if(S.format==='single'){const sg=singles().find(x=>x.id===S.sgId);return (sg&&sg.sim_lineups)||[]}return S.today.sim_lineups||[]}
 function syncSim(){const w=$('sim-wrap');if(!w)return;const big=S.count>20&&csReady()&&S.cs.portfolio&&!(S.pr&&S.pr.status==='pull')&&(S.cs.portfolio.lineups||[]).length;
   w.hidden=!(S.mode==='gpp'&&(simList().length||big));$('use-sim').checked=S.useSim;
-  w.querySelector('span').textContent=big?`Use NBA EDGE’s LeVertical portfolio: ${S.cs.portfolio.lineups.length} lineups picked for how often they beat 99% of the simulated FanDuel field, with each player’s exposure held near how often he’s in winning lineups.`:'Start from simulated winners: lineups that finished in the top 5% most often across thousands of simulated nights (teammates and opponents rise and fall together).'}
+  w.querySelector('span').textContent=big?`Use NBA EDGE’s LeVertical portfolio: ${S.cs.portfolio.lineups.length} lineups picked for how often they beat 99% of the simulated FanDuel field, with each player’s exposure held near how often he’s in winning lineups.`:'Start from simulated winners: lineups that finished in the top 5% most often across thousands of simulated nights (teammates and opponents rise and fall together).'+simRecord()}
+function simRecord(){const m=S.ch&&S.ch.summary;if(!m||!m.sim_winner||!m.tournament)return '';return ` So far they’ve finished, on average, ahead of ${Math.round(m.sim_winner.avg_field_percentile)}% of the field vs ${Math.round(m.tournament.avg_field_percentile)}% for the regular tournament lineup (${m.sim_winner.nights} nights).`}
 function syncExposure(){const on=S.count>1;$('exposure').disabled=!on;$('exposure').closest('.range-row').style.opacity=on?1:.4}
 
 // ---------- optimizer ----------
@@ -1287,7 +1290,7 @@ function propsHTML(){
   return `<h3 style="font:600 18px var(--num);margin:16px 0 4px">Player props (paper only)</h3>
   <p style="margin:0 0 6px;font-size:14px">${r.status&&r.status!=='ok'?esc(r.status)+' ':''}No bets are placed. NBA EDGE compares its chance of each FanDuel points, rebounds and assists line hitting with FanDuel\u2019s price and grades every line after the games.</p>
   ${k.n?`<div class="acc-big"><div>Paper picks<b>${k.wins}-${k.losses}${k.pushes?'-'+k.pushes:''}</b></div><div class="base">Hit rate<b>${pc(k.hit_rate)}</b></div><div class="base">Needed<b>${pc(k.avg_breakeven)}</b></div><div class="base">Units<b>${sgn(k.units)}</b></div></div>`:'<p class="muted" style="font-size:13px;margin:0 0 6px">No graded picks yet.</p>'}
-  ${better?`<p style="margin:0 0 6px;font-size:14px">On ${r.lines_graded} graded lines, NBA EDGE\u2019s probabilities were <b>${better}</b> than FanDuel\u2019s own (Brier ${r.brier.nba_edge} vs ${r.brier.fanduel_no_vig}; lower is better). ${better==='better'?'That is what an edge looks like, if it holds over hundreds of lines.':'Until this flips, there is no edge to bet.'}</p>`:''}
+  ${better?`<p style="margin:0 0 6px;font-size:14px">On ${r.lines_graded} graded lines, NBA EDGE\u2019s probabilities were <b>${better}</b> than FanDuel\u2019s own (Brier ${r.brier.nba_edge} vs ${r.brier.fanduel_no_vig}; lower is better)${r.brier.blend!=null?`; blended 50/50 with FanDuel’s, which is what picks use: ${r.brier.blend}`:''}. ${better==='better'?'That is what an edge looks like, if it holds over hundreds of lines.':'Until this flips, there is no edge to bet.'}</p>`:''}
   ${tonight.length?`<details style="font-size:13.5px"><summary>Tonight\u2019s paper picks (${tonight.length})</summary><table style="margin-top:6px;width:100%"><tbody>${tonight.slice(0,25).map(x=>`<tr><td style="text-align:left">${esc(x.player)} ${x.pick.side} ${x.line} ${lbl[x.stat]||x.stat}<div class="muted" style="font-size:12px">proj ${x.proj} · ${x.pick.price>0?'+':''}${x.pick.price}</div></td><td class="n">${pc(x.pick.prob)}</td><td class="n">${pc(x.pick.breakeven)}</td></tr>`).join('')}</tbody></table><p class="muted" style="font-size:12px;margin:4px 0 0">Columns: NBA EDGE\u2019s chance, FanDuel break-even.</p></details>`:''}`;
 }
 function strategyHTML(){

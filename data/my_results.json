@@ -264,6 +264,34 @@
      "won": 0
     }
    ]
+  },
+  {
+   "date": "2026-11-02",
+   "slate": "Main",
+   "entry": "NBA EDGE cash lineup",
+   "players": [
+    "Darius Acuff",
+    "Quenton Jackson",
+    "Jalen Slawson",
+    "Jarace Walker",
+    "Jay Huff",
+    "Franz Wagner",
+    "Onyeka Okongwu",
+    "Jayson Tatum",
+    "Nikola Jokic"
+   ],
+   "projected": 332.8,
+   "score": 359.9,
+   "final": true,
+   "note": "From the results screenshot (contest names not shown). Same lineup as NBA EDGE's frozen cash lineup.",
+   "contests": [
+    {
+     "name": "4 contests (names not shown)",
+     "entries": 4,
+     "fee": 26.22,
+     "won": 29
+    }
+   ]
   }
  ]
 }

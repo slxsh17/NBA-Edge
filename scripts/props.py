@@ -46,6 +46,7 @@ MARKETS = ['player_points', 'player_assists', 'player_rebounds']      # priority
 STAT = {'player_points': 'pts', 'player_rebounds': 'reb', 'player_assists': 'ast'}
 PHI = {'pts': 4.0, 'reb': 1.2, 'ast': 1.4}
 EDGE = 0.05
+BLEND_MIN_LINES = 300
 MIN_MINUTES = 15
 WINDOW = (40, 150)          # single pull (free plan): minutes before each game's tip
 OPEN, CLOSE = 240, 10       # refreshing pulls (paid plan): from 4 hours to 10 minutes before tip
@@ -265,8 +266,21 @@ def rescore(rows, proj, now):
     return out
 
 
+def blend_w():
+    """Weight on NBA EDGE's probability when blending with FanDuel's no-vig one (log-odds). 0.5 until
+    300+ graded lines, then the weight that scored best (Brier) on every graded line."""
+    b = read(RESULTS).get('blend') or {}
+    return b['w'] if b.get('lines', 0) >= BLEND_MIN_LINES and b.get('w') is not None else 0.5
+
+
+def mix(p, q, w):
+    lg = lambda x: math.log(min(max(x, 1e-4), 1 - 1e-4) / (1 - min(max(x, 1e-4), 1 - 1e-4)))
+    return 1 / (1 + math.exp(-(w * lg(p) + (1 - w) * lg(q))))
+
+
 def analyze(props, proj):
     rows = []
+    w = blend_w()
     for pr in props:
         p = proj.get(norm(pr['player']))
         st = STAT[pr['market']]
@@ -275,11 +289,17 @@ def analyze(props, proj):
             mu = p[st]
             ov, push, un = probs(pr['line'], mu, PHI[st])
             mo, mu_ = implied(pr['over']), implied(pr['under'])
+            mkt = mo / (mo + mu_)
+            # Picks use our probability blended with FanDuel's: two forecasters that each know things
+            # the other doesn't beat either alone (Nov 2: Brier 0.2516 blended vs 0.2549 ours, 0.2546
+            # FanDuel), and the blend only clears the bar when we disagree with the line by a lot.
+            bo = mix(ov / max(1e-9, ov + un), mkt, w) * (1 - push)
+            bu = (1 - push) - bo
             row.update({'team': p['team'], 'minutes': round(p['minutes'], 1), 'proj': round(mu, 2),
                         'p_over': round(ov, 4), 'p_under': round(un, 4), 'p_push': round(push, 4),
-                        'market_p_over': round(mo / (mo + mu_), 4)})
+                        'market_p_over': round(mkt, 4), 'blend_p_over': round(bo, 4), 'blend_w': w})
             if not p['out'] and not p.get('shaky') and p['minutes'] >= MIN_MINUTES:
-                for side, pw, price in (('over', ov, pr['over']), ('under', un, pr['under'])):
+                for side, pw, price in (('over', bo, pr['over']), ('under', bu, pr['under'])):
                     be = implied(price)
                     if pw - be >= EDGE:
                         row['pick'] = {'side': side, 'prob': round(pw, 4), 'breakeven': round(be, 4), 'price': price,
@@ -322,7 +342,7 @@ def grade(today_iso):
 
 
 def summarize(status):
-    picks, cal, brier = [], [], {'ours': [], 'market': []}
+    picks, cal, brier, pairs = [], [], {'ours': [], 'market': []}, []
     nights = 0
     for f in sorted(OUT.glob('*.json')) if OUT.exists() else []:
         doc = read(f)
@@ -335,6 +355,7 @@ def summarize(status):
             if r['result'] != 'push':
                 y = 1 if r['result'] == 'over' else 0
                 cal.append((r['p_over'], y))
+                pairs.append((r['p_over'] / max(1e-9, r['p_over'] + r.get('p_under', 1 - r['p_over'])), r['market_p_over'], y))
                 brier['ours'].append((r['p_over'] - y) ** 2)
                 brier['market'].append((r['market_p_over'] - y) ** 2)
             pk = r.get('pick')
@@ -353,6 +374,13 @@ def summarize(status):
             bins.append({'range': f'{lo_:.1f}-{min(hi_, 1):.1f}', 'n': len(xs), 'predicted': round(sum(p for p, _ in xs) / len(xs), 3),
                          'actual': round(sum(y for _, y in xs) / len(xs), 3)})
     mean = lambda xs: round(sum(xs) / len(xs), 4) if xs else None
+    blend = None
+    if pairs:
+        def bs(w):
+            return sum((mix(p, q, w) - y) ** 2 for p, q, y in pairs) / len(pairs)
+        bw = min((bs(w / 20), w / 20) for w in range(21))
+        blend = {'w': round(bw[1], 2), 'brier': round(bw[0], 4), 'brier_at_0.5': round(bs(0.5), 4), 'lines': len(pairs),
+                 'in_use': bw[1] if len(pairs) >= BLEND_MIN_LINES else 0.5}
     out = {'schema': 1, 'updated_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'status': status,
            'paper_only': True, 'nights': nights, 'lines_graded': len(cal),
            'picks': {'n': len(picks), 'wins': w, 'losses': lo, 'pushes': sum(p['result'] == 'push' for p in picks),
@@ -360,10 +388,13 @@ def summarize(status):
                      'roi': round(sum(p['units'] for p in picks) / max(1, w + lo), 4) if picks else None,
                      'hit_rate': round(w / (w + lo), 4) if w + lo else None,
                      'avg_breakeven': mean([p['breakeven'] for p in picks])},
-           'brier': {'nba_edge': mean(brier['ours']), 'fanduel_no_vig': mean(brier['market'])},
+           'brier': {'nba_edge': mean(brier['ours']), 'fanduel_no_vig': mean(brier['market']),
+                     'blend': blend['brier_at_0.5'] if blend else None},
+           'blend': blend,
            'calibration': bins, 'recent_picks': picks[-40:],
            'method': 'Paper only. Mean = projected minutes x DARKO per-minute rate; negative binomial spread; '
-                     f'pick when our probability beats FanDuel break-even by {int(EDGE * 100)}+ points. '
+                     f'blended 50/50 (log-odds) with FanDuel no-vig until {BLEND_MIN_LINES}+ graded lines, then the best-scoring weight; '
+                     f'pick when the blend beats FanDuel break-even by {int(EDGE * 100)}+ points. '
                      'Lower Brier = better probabilities; an edge needs NBA EDGE below FanDuel no-vig.'}
     RESULTS.write_text(json.dumps(out, indent=1) + '\n', encoding='utf-8')
     return out
