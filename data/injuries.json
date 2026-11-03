@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T02:04:29.754543+00:00",
+  "updated_at": "2026-11-03T02:55:23.667978+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -66,6 +66,11 @@
       "name": "Jaylon Tyson",
       "team": "CLE",
       "status": "OUT"
+    },
+    {
+      "name": "Max Christie",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kyrie Irving",
@@ -398,14 +403,9 @@
       "status": "OUT"
     },
     {
-      "name": "Scottie Barnes",
-      "team": "TOR",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Jakob Poeltl",
       "team": "TOR",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Nate Bittle",
