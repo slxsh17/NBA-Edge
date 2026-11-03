@@ -117,13 +117,19 @@ def get(url):
 
 
 # ---------- tonight ----------
+HONEST_MINUTES = str(read(DATA / 'learned_weights.json').get('method_version') or '').startswith('two-stage')
+
+
 def prop_minutes(p):
-    """Expected minutes for props: halfway between NBA EDGE's base minutes and DARKO's, plus
-    injury-freed minutes. Not today.json's `minutes`: that one carries a learned shrink that the
-    FanDuel projection undoes with its scale and outside blend, so it runs 3-5 minutes low for
-    starters (Oct 27-Nov 1). This version: bias -0.1 min, miss 4.4 min on 817 player-games."""
+    """Expected minutes for props. Since Nov 3 the learner fits minutes to actual minutes
+    (two-stage), so today.json's `minutes` is used directly (miss 4.48, bias -0.04 on 1,152
+    player-games of 15+ minutes). Before that `minutes` carried a learned shrink (3-5 minutes low
+    for starters), and props used halfway between base and DARKO minutes plus injury minutes
+    (miss 4.56), which remains the fallback."""
     if p.get('out'):
         return 0.0
+    if HONEST_MINUTES and p.get('minutes'):
+        return p['minutes']
     b = p.get('base_minutes') or 0.0
     m = (b + p['darko_min']) / 2 if p.get('darko_min') and b > 0 else b
     return m + (p.get('adj') or {}).get('injury_min', 0.0) if m > 0 else 0.0

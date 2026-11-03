@@ -10,6 +10,16 @@ how much each part should count:
   scale    overall calibration                                in [0.85, 1.15]
   minutes_mult  correction per minutes rule (e.g. role-drop)  in [0.75, 1.25]
 
+Two stages (since Nov 3 2026), so minutes stay honest:
+  1. Minutes: the minutes parts (minutes_mult per rule, injury and starter minutes, blowout cut,
+     DARKO minutes blend) are fit to ACTUAL MINUTES.
+  2. Points: the rest (Vegas, matchup, usage, scale, outside blend, travel, DARKO rate) are fit to
+     actual FanDuel points with those minutes fixed.
+  Both minimize root-mean-square error, so projections aim at the average outcome (what lineup
+  totals add up), not the median. Before, everything was fit jointly to points by average miss:
+  that shrank minutes ~3.5 below reality (sample_blend x0.82) and patched points back with the
+  scale and the outside blend, so the minutes on the site and in props were wrong.
+
 Guardrails (so it can't learn noise):
   * Penalty for moving away from 1.0 that shrinks as data grows.
   * Walk-forward check: fit on older days, test on the most recent days. New
@@ -37,6 +47,9 @@ MIN_ROWS = 300          # don't learn anything below this
 MIN_METHOD_ROWS = 40    # minutes correction needs this many rows for that rule
 HOLDOUT_DAYS = 2
 BLEND = 0.5
+METHOD = 'two-stage-v1'
+MIN_KEYS = ['injury', 'starter', 'blowout', 'darko_min']
+FP_KEYS = ['vegas', 'matchup', 'usage', 'scale', 'outside', 'travel', 'darko']
 
 
 def load_rows():
@@ -56,28 +69,55 @@ def mae(rows, W):
     return statistics.mean(abs(r['actual'] - final_projection(r, W)[1]) for r in rows)
 
 
-def objective(rows, W, lam):
-    pen = sum((W.get(k, PRIOR.get(k, 1.0)) - PRIOR.get(k, 1.0)) ** 2 for k in BOUNDS)
-    pen += sum((v - 1.0) ** 2 for v in W['minutes_mult'].values())
-    return mae(rows, W) + lam * pen
+def errors(rows, W):
+    """(minutes errors, points errors), actual minus projected."""
+    me, fe = [], []
+    for r in rows:
+        m, proj = final_projection(r, W)
+        me.append(r['actual_min'] - m)
+        fe.append(r['actual'] - proj)
+    return me, fe
 
 
-def fit(rows, start):
-    """Coordinate search on a shrinking grid. Pure Python, no dependencies."""
+def rmse(xs):
+    return (sum(x * x for x in xs) / len(xs)) ** 0.5
+
+
+def scores(rows, W):
+    me, fe = errors(rows, W)
+    return {'minutes_rmse': round(rmse(me), 3), 'minutes_mae': round(statistics.mean(abs(x) for x in me), 3),
+            'minutes_bias': round(statistics.mean(me), 2), 'fp_rmse': round(rmse(fe), 3),
+            'fp_mae': round(statistics.mean(abs(x) for x in fe), 3), 'fp_bias': round(statistics.mean(fe), 2)}
+
+
+def fit_stage(rows, start, keys, learn_mm, target):
+    """Coordinate search on a shrinking grid over `keys` (and minutes rules when learn_mm),
+    minimizing RMSE of minutes or points plus a pull toward each weight's prior."""
     lam = 60.0 / max(len(rows), 1)
     W = json.loads(json.dumps(start))
-    methods = {}
-    for r in rows:
-        methods[r.get('method') or 'other'] = methods.get(r.get('method') or 'other', 0) + 1
-    learn_mm = [m for m, n in methods.items() if n >= MIN_METHOD_ROWS]
-    for m in learn_mm:
-        W['minutes_mult'].setdefault(m, 1.0)
-    best = objective(rows, W, lam)
+    mms = []
+    if learn_mm:
+        methods = {}
+        for r in rows:
+            methods[r.get('method') or 'other'] = methods.get(r.get('method') or 'other', 0) + 1
+        mms = [m for m, n in methods.items() if n >= MIN_METHOD_ROWS]
+        for m in mms:
+            W['minutes_mult'].setdefault(m, 1.0)
+
+    def obj(W):
+        if target == 'min':
+            e = [r['actual_min'] - final_projection(r, W)[0] for r in rows]
+        else:
+            e = [r['actual'] - final_projection(r, W)[1] for r in rows]
+        pen = sum((W.get(k, PRIOR.get(k, 1.0)) - PRIOR.get(k, 1.0)) ** 2 for k in keys)
+        pen += sum((W['minutes_mult'][m] - 1.0) ** 2 for m in mms)
+        return rmse(e) + lam * pen
+    best = obj(W)
     for step in (0.2, 0.1, 0.05, 0.02):
         improved = True
         while improved:
             improved = False
-            for k in list(BOUNDS) + ['mm:' + m for m in learn_mm]:
+            for k in keys + ['mm:' + m for m in mms]:
                 for d in (step, -step):
                     trial = json.loads(json.dumps(W))
                     if k.startswith('mm:'):
@@ -86,10 +126,16 @@ def fit(rows, start):
                     else:
                         lo, hi = BOUNDS[k]
                         trial[k] = round(min(hi, max(lo, trial[k] + d)), 3)
-                    val = objective(rows, trial, lam)
+                    val = obj(trial)
                     if val < best - 1e-6:
                         W, best, improved = trial, val, True
     return W
+
+
+def fit(rows, start):
+    """Stage 1: minutes parts on actual minutes. Stage 2: points parts on actual points."""
+    W = fit_stage(rows, start, MIN_KEYS, True, 'min')
+    return fit_stage(rows, W, FP_KEYS, False, 'fp')
 
 
 def blend(cur, new, a):
@@ -149,28 +195,42 @@ def main():
     test_days = set(days[-HOLDOUT_DAYS:])
     train = [r for r in rows if r['date'] not in test_days]
     test = [r for r in rows if r['date'] in test_days]
-    fitted = fit(train, cur)
     base = {**DEFAULT_WEIGHTS, 'minutes_mult': {}}
-    v_def, v_cur, v_fit = mae(test, base), mae(test, cur), mae(test, fitted)
-    validation = {'test_days': sorted(test_days), 'test_rows': len(test), 'default_mae': round(v_def, 3),
-                  'current_mae': round(v_cur, 3), 'fitted_mae': round(v_fit, 3)}
+    for k in BOUNDS:
+        base.setdefault(k, PRIOR.get(k, 1.0))
+    switch = prev.get('method_version') != METHOD
+    start = base if switch else cur          # new method: start clean, not from the old shrink
+    fitted = fit(train, start)
+    s_def, s_cur, s_fit = scores(test, base), scores(test, cur), scores(test, fitted)
+    validation = {'test_days': sorted(test_days), 'test_rows': len(test), 'default': s_def, 'current': s_cur,
+                  'fitted': s_fit, 'default_mae': s_def['fp_mae'], 'current_mae': s_cur['fp_mae'], 'fitted_mae': s_fit['fp_mae']}
     log = prev.get('log', [])
-    if v_fit < v_cur - 0.02:
-        full = fit(rows, cur)                    # refit on everything, then move halfway
-        new = blend(cur, full, BLEND)
+    # Adopt when held-out points improve, or minutes improve clearly while points stay level.
+    better_fp = s_fit['fp_rmse'] < s_cur['fp_rmse'] - 0.02
+    better_min = s_fit['minutes_rmse'] < s_cur['minutes_rmse'] - 0.1 and s_fit['fp_rmse'] <= s_cur['fp_rmse'] + 0.05
+    if better_fp or better_min:
+        full = fit(rows, start)                  # refit on everything
+        new = full if switch else blend(cur, full, BLEND)   # move halfway, except when switching method
         changes = describe(cur, new)
-        decision = (f'Adopted: on {len(test)} held-out player-games the refit missed by {v_fit:.2f} '
-                    f'vs {v_cur:.2f} with current weights.')
-        log.append({'date': now[:10], 'adopted': True, 'changes': changes, 'heldout_gain': round(v_cur - v_fit, 3)})
+        decision = (f"Adopted: on {len(test)} held-out player-games the refit missed minutes by {s_fit['minutes_mae']:.2f} "
+                    f"(was {s_cur['minutes_mae']:.2f}) and points by {s_fit['fp_mae']:.2f} (was {s_cur['fp_mae']:.2f}).")
+        if switch:
+            decision += ' Switched to two-stage learning (minutes fit to actual minutes).'
+        log.append({'date': now[:10], 'adopted': True, 'changes': changes, 'heldout_gain': round(s_cur['fp_mae'] - s_fit['fp_mae'], 3),
+                    'heldout_minutes_gain': round(s_cur['minutes_mae'] - s_fit['minutes_mae'], 3)})
+        version = METHOD
     else:
         new = cur
-        decision = (f'Kept current weights: the refit didn’t beat them on held-out days '
-                    f'({v_fit:.2f} vs {v_cur:.2f}).')
-        log.append({'date': now[:10], 'adopted': False, 'changes': [], 'heldout_gain': round(v_cur - v_fit, 3)})
+        decision = (f"Kept current weights: the refit didn’t beat them on held-out days (minutes {s_fit['minutes_mae']:.2f} vs "
+                    f"{s_cur['minutes_mae']:.2f}, points {s_fit['fp_mae']:.2f} vs {s_cur['fp_mae']:.2f}).")
+        log.append({'date': now[:10], 'adopted': False, 'changes': [], 'heldout_gain': round(s_cur['fp_mae'] - s_fit['fp_mae'], 3)})
+        version = prev.get('method_version')
     all_mae = {'default': round(mae(rows, base), 3), 'learned': round(mae(rows, new), 3)}
-    out = {'schema': 1, **status, 'weights': new, 'previous': cur, 'validation': validation,
+    out = {'schema': 1, **status, 'method_version': version, 'weights': new, 'previous': cur, 'validation': validation,
            'in_sample_mae': all_mae, 'decision': decision, 'log': log[-30:],
-           'method': 'Coordinate search minimizing average miss with a pull toward 1.0; adopted only if it beats current weights on the most recent days held out from fitting; moves halfway.'}
+           'in_sample': scores(rows, new),
+           'method': 'Two stages: minutes parts fit to actual minutes, then points parts to actual points (root-mean-square error, '
+                     'pull toward priors); adopted if held-out points improve, or minutes improve while points hold; moves halfway.'}
     OUT.write_text(json.dumps(out, indent=1) + '\n', encoding='utf-8')
     print(decision)
     for c in describe(cur, new):
