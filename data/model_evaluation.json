@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-02T14:31:58.752913+00:00",
+  "generated_at": "2026-11-03T14:28:14.563790+00:00",
   "source": "Walk-forward evaluation of observed ESPN box-score history",
-  "training_games": 18563,
-  "holdout_games": 6188,
-  "holdout_mae": 8.284,
-  "uncalibrated_holdout_mae": 8.329,
+  "training_games": 18645,
+  "holdout_games": 6216,
+  "holdout_mae": 8.282,
+  "uncalibrated_holdout_mae": 8.33,
   "calibration_factor": 0.97,
   "calibration_active": true,
   "warning": "Applies only a bounded baseline scaling factor; does not train injury, usage, DvP, or ownership effects."
