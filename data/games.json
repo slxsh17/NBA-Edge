@@ -1,6 +1,6 @@
 {
   "date": "20261102",
-  "updated_at": "2026-11-02T21:37:30.072691-05:00",
+  "updated_at": "2026-11-02T22:37:47.269410-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -13,49 +13,49 @@
       "away": "Detroit Pistons",
       "home": "Charlotte Hornets",
       "time": "2026-11-03T00:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Atlanta Hawks",
       "home": "Indiana Pacers",
       "time": "2026-11-03T00:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Brooklyn Nets",
       "home": "New York Knicks",
       "time": "2026-11-03T00:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Washington Wizards",
       "home": "Orlando Magic",
       "time": "2026-11-03T00:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Chicago Bulls",
       "home": "Philadelphia 76ers",
       "time": "2026-11-03T00:30Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Sacramento Kings",
       "home": "Dallas Mavericks",
       "time": "2026-11-03T01:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "New Orleans Pelicans",
       "home": "Memphis Grizzlies",
       "time": "2026-11-03T01:00Z",
-      "status": "In Progress"
+      "status": "End of Period"
     },
     {
       "away": "Milwaukee Bucks",
       "home": "Minnesota Timberwolves",
       "time": "2026-11-03T01:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Boston Celtics",
@@ -73,25 +73,25 @@
       "away": "Portland Trail Blazers",
       "home": "Denver Nuggets",
       "time": "2026-11-03T02:00Z",
-      "status": "End of Period"
+      "status": "In Progress"
     },
     {
       "away": "Phoenix Suns",
       "home": "Golden State Warriors",
       "time": "2026-11-03T03:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Toronto Raptors",
       "home": "LA Clippers",
       "time": "2026-11-03T03:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Miami Heat",
       "home": "Los Angeles Lakers",
       "time": "2026-11-03T03:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     }
   ]
 }
