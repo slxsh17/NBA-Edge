@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T22:49:33.026409+00:00",
+  "updated_at": "2026-11-03T23:27:41.377214+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -258,12 +258,12 @@
       "status": "OUT"
     },
     {
-      "name": "Quinten Post",
+      "name": "Scotty Pippen Jr.",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Scotty Pippen Jr.",
+      "name": "Quinten Post",
       "team": "MEM",
       "status": "DAY-TO-DAY"
     },
@@ -283,14 +283,14 @@
       "status": "OUT"
     },
     {
-      "name": "Dejounte Murray",
+      "name": "Jordan Poole",
       "team": "NOP",
       "status": "OUT"
     },
     {
-      "name": "Jordan Poole",
+      "name": "Trey Murphy III",
       "team": "NOP",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Yves Missi",
@@ -303,14 +303,19 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Jaylin Williams",
+      "name": "Nikola Topic",
       "team": "OKC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
+    },
+    {
+      "name": "Jaylin Williams",
+      "team": "OKC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cason Wallace",
@@ -324,11 +329,6 @@
     },
     {
       "name": "Jalen Williams",
-      "team": "OKC",
-      "status": "OUT"
-    },
-    {
-      "name": "Nikola Topic",
       "team": "OKC",
       "status": "OUT"
     },
@@ -438,17 +438,22 @@
       "status": "OUT"
     },
     {
+      "name": "Jusuf Nurkic",
+      "team": "UTA",
+      "status": "OUT"
+    },
+    {
+      "name": "Mo Bamba",
+      "team": "UTA",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jaren Jackson Jr.",
       "team": "UTA",
       "status": "OUT"
     },
     {
       "name": "Trey Alexander",
-      "team": "UTA",
-      "status": "OUT"
-    },
-    {
-      "name": "Jusuf Nurkic",
       "team": "UTA",
       "status": "OUT"
     },
