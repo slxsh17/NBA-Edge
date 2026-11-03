@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-03T06:23:53+00:00",
+ "updated_at": "2026-11-03T13:53:08+00:00",
  "samples": 1699,
  "days": 12,
  "method_version": "two-stage-v1",
@@ -25,22 +25,23 @@
   }
  },
  "previous": {
-  "vegas": 1.015,
-  "matchup": 1.015,
-  "injury": 1.005,
-  "usage": 1.03,
-  "starter": 1.0,
-  "blowout": 0.985,
-  "scale": 0.95,
+  "vegas": 1.05,
+  "matchup": 0.96,
+  "injury": 0.7,
+  "usage": 1.05,
+  "starter": 0.98,
+  "blowout": 0.89,
+  "scale": 0.92,
   "outside": 0.68,
-  "travel": 0.01,
-  "darko": 0.0,
-  "darko_min": 0.0,
+  "travel": -0.03,
+  "darko": 0.1,
+  "darko_min": 0.34,
   "minutes_mult": {
-   "current_only": 1.125,
-   "prior_only": 0.768,
-   "team_change": 1.07,
-   "sample_blend": 0.822
+   "prior_only": 0.9,
+   "team_change": 0.98,
+   "sample_blend": 1.03,
+   "current_only": 1.18,
+   "recent_minutes_decline": 1.1
   }
  },
  "validation": {
@@ -58,30 +59,30 @@
    "fp_bias": -0.19
   },
   "current": {
-   "minutes_rmse": 7.78,
-   "minutes_mae": 6.21,
-   "minutes_bias": 3.97,
-   "fp_rmse": 8.988,
-   "fp_mae": 7.069,
-   "fp_bias": 1.01
+   "minutes_rmse": 6.37,
+   "minutes_mae": 4.754,
+   "minutes_bias": 1.68,
+   "fp_rmse": 8.976,
+   "fp_mae": 7.067,
+   "fp_bias": 0.69
   },
   "fitted": {
-   "minutes_rmse": 6.436,
-   "minutes_mae": 4.817,
-   "minutes_bias": 1.93,
-   "fp_rmse": 8.987,
-   "fp_mae": 7.064,
-   "fp_bias": 0.81
+   "minutes_rmse": 6.457,
+   "minutes_mae": 4.848,
+   "minutes_bias": 2.02,
+   "fp_rmse": 8.982,
+   "fp_mae": 7.06,
+   "fp_bias": 0.71
   },
   "default_mae": 7.429,
-  "current_mae": 7.069,
-  "fitted_mae": 7.064
+  "current_mae": 7.067,
+  "fitted_mae": 7.06
  },
  "in_sample_mae": {
   "default": 8.084,
   "learned": 7.399
  },
- "decision": "Adopted: on 320 held-out player-games the refit missed minutes by 4.82 (was 6.21) and points by 7.06 (was 7.07). Switched to two-stage learning (minutes fit to actual minutes).",
+ "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (minutes 4.85 vs 4.75, points 7.06 vs 7.07).",
  "log": [
   {
    "date": "2026-10-27",
@@ -207,6 +208,12 @@
    ],
    "heldout_gain": 0.005,
    "heldout_minutes_gain": 1.393
+  },
+  {
+   "date": "2026-11-03",
+   "adopted": false,
+   "changes": [],
+   "heldout_gain": 0.007
   }
  ],
  "in_sample": {
