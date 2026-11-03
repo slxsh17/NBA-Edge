@@ -1,53 +1,10 @@
 {
   "schema": 1,
   "slate_date": "2026-11-03",
-  "checked_at": "2026-11-03T07:58:12.368206+00:00",
+  "checked_at": "2026-11-03T08:50:29.005734+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
-  "lineups": [
-    {
-      "team": "NYK",
-      "status": "confirmed",
-      "players": [
-        "Jalen Brunson",
-        "Mikal Bridges",
-        "Josh Hart",
-        "OG Anunoby",
-        "K. Towns"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-03"
-    },
-    {
-      "team": "MIL",
-      "status": "confirmed",
-      "players": [
-        "B. Burries",
-        "Tyler Herro",
-        "Jaime Jaquez",
-        "Kyle Kuzma",
-        "Myles Turner"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-03"
-    },
-    {
-      "team": "MIA",
-      "status": "confirmed",
-      "players": [
-        "D. Mitchell",
-        "Klay Thompson",
-        "A. Wiggins",
-        "G. Antetokounmpo",
-        "Bam Adebayo"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-03"
-    }
-  ],
+  "lineups": [],
   "headlines": [
     {
       "headline": "Collin Murray-Boyles Joins Starting Lineup Monday - NBA News | Fantasy Basketball - RotoBaller",
