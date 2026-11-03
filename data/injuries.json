@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T00:02:41.695628+00:00",
+  "updated_at": "2026-11-03T01:04:19.141369+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -153,13 +153,13 @@
       "status": "OUT"
     },
     {
-      "name": "Reed Sheppard",
-      "team": "HOU",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Steven Adams",
       "team": "HOU",
+      "status": "OUT"
+    },
+    {
+      "name": "Kelly Oubre Jr.",
+      "team": "IND",
       "status": "OUT"
     },
     {
@@ -250,22 +250,17 @@
     {
       "name": "Scotty Pippen Jr.",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Quinten Post",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Terrence Shannon Jr.",
       "team": "MIN",
       "status": "OUT"
-    },
-    {
-      "name": "LaMelo Ball",
-      "team": "MIN",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Edwards",
@@ -358,11 +353,6 @@
       "status": "OUT"
     },
     {
-      "name": "Joel Embiid",
-      "team": "PHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Ariel Hukporti",
       "team": "PHI",
       "status": "OUT"
@@ -386,11 +376,6 @@
       "name": "Dylan Cardwell",
       "team": "SAC",
       "status": "OUT"
-    },
-    {
-      "name": "Zach LaVine",
-      "team": "SAC",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Maxime Raynaud",
