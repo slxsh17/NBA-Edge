@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-11-03T06:06:38+00:00",
+ "updated_at": "2026-11-03T06:35:10+00:00",
  "status": "ok",
  "paper_only": true,
  "nights": 1,
@@ -17,7 +17,15 @@
  },
  "brier": {
   "nba_edge": 0.2549,
-  "fanduel_no_vig": 0.2546
+  "fanduel_no_vig": 0.2546,
+  "blend": 0.2516
+ },
+ "blend": {
+  "w": 0.45,
+  "brier": 0.2516,
+  "brier_at_0.5": 0.2516,
+  "lines": 151,
+  "in_use": 0.5
  },
  "calibration": [
   {
@@ -579,5 +587,5 @@
    "units": -1.0
   }
  ],
- "method": "Paper only. Mean = projected minutes x DARKO per-minute rate; negative binomial spread; pick when our probability beats FanDuel break-even by 5+ points. Lower Brier = better probabilities; an edge needs NBA EDGE below FanDuel no-vig."
+ "method": "Paper only. Mean = projected minutes x DARKO per-minute rate; negative binomial spread; blended 50/50 (log-odds) with FanDuel no-vig until 300+ graded lines, then the best-scoring weight; pick when the blend beats FanDuel break-even by 5+ points. Lower Brier = better probabilities; an edge needs NBA EDGE below FanDuel no-vig."
 }
