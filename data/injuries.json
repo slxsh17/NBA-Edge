@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T00:10:07.438704+00:00",
+  "updated_at": "2026-11-04T01:27:56.778031+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -213,16 +213,6 @@
       "status": "OUT"
     },
     {
-      "name": "Derrick Jones Jr.",
-      "team": "LAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Rui Hachimura",
-      "team": "LAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
@@ -256,6 +246,16 @@
       "name": "Scotty Pippen Jr.",
       "team": "MEM",
       "status": "OUT"
+    },
+    {
+      "name": "Myron Gardner",
+      "team": "MIA",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Giannis Antetokounmpo",
+      "team": "MIA",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Terrence Shannon Jr.",
@@ -368,6 +368,11 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Rasheer Fleming",
+      "team": "PHX",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Mark Williams",
       "team": "PHX",
       "status": "OUT"
@@ -383,9 +388,9 @@
       "status": "OUT"
     },
     {
-      "name": "Dylan Cardwell",
+      "name": "Precious Achiuwa",
       "team": "SAC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Maxime Raynaud",
@@ -413,17 +418,17 @@
       "status": "OUT"
     },
     {
+      "name": "Kawhi Leonard",
+      "team": "TOR",
+      "status": "OUT"
+    },
+    {
       "name": "Jakob Poeltl",
       "team": "TOR",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Nate Bittle",
-      "team": "TOR",
-      "status": "OUT"
-    },
-    {
-      "name": "Kawhi Leonard",
       "team": "TOR",
       "status": "OUT"
     },
