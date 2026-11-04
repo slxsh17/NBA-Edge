@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-04",
-  "checked_at": "2026-11-04T19:44:50.691325+00:00",
+  "checked_at": "2026-11-04T20:38:24.654932+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,38 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Report: Joe Milton To Start For the Eagles Over Tanner McKee Stream of National Football League - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVzEtdF9ENjVXUTVTaDBPYXRqTGxvaW5oQUxfdTM3WklwQy1uTTlpQVNBLTY2d0hwcVo5NmJZb21HS2hLbXpNMjJRZUZVMWFIbm8yNVVZMGhxYmVsMk9rc3dDMVhUSHplOHBiaDJRcTNnY1dDbzdHaUxYbmxraDN0bUthbF82TEZQZHppZGdLampPQW43TkE2N0Z4Q25ySEkxU2ZHR1Vza18?oc=5",
+      "published_at": "2026-11-04T19:55:11+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Drew Lock to Start as Sam Darnold Has Been Ruled Out Stream of National Football League - CBS Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPS2pHdEZhbl9vSmxHc2dhZ2ExbVdFQjZVbFRfUFhzYzVpQVhISkJCNmpCQ3pMNVB0bERUZUZvNEx4WGF1MElUZXhZWDVuc2FlRFVLSEptb2FZMzctdDVMbTJWdVhSTFl2LTZmT2RtNEpVQWVfcWVwS1pJaGVpRDYtWTJNU1ZPY2djSGlfaEM1MVo1OFVrbkVRbzJNZDZIcjA?oc=5",
+      "published_at": "2026-11-04T19:55:10+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Joe Milton to start at quarterback for Eagles, Tanner McKee moves to bench vs. Giants: Source - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZVJsR3FOTjBGU19sdDFsaVZwWklVUl9mdldoa01uc0cwS1ZadDUxR3RXcEphbTJZUTFPd2otaFE1VnlkRFR0aUxESWxpT3h1cmE0N3RqNElyYjZmbE9MWlpZQ2xZczYwZUVpZzloMXN3NG16XzFscVJpWWJ3cXVxV2FxekNVX253WTB1Mk93LUdtUlRZbUpWOXg4VQ?oc=5",
+      "published_at": "2026-11-04T19:40:28+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Bilal Coulibaly (illness) now questionable Wednesday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVE5IMDVZc1QtTDFqNVc2b0RyRFUtTTkwdHIxMWxvNG96UHU2eThHUnVPd3ROMlNrNWgwTGNCY29xdXpqV3hBMWRad0RjSW5YYnJDVVR6bzBlLTltQVE3SVM1cExNM2ZkNy1zUEFKeUc5X3l6aXJCVDJ1UHQ1dS0zcG82VElBVHRIMjAzSS0zU3B3bTBpQkZwdG1LX2lXYzDSAaQBQVVfeXFMT2JLWFgyOGFkX1N5a2FuU3ZOVy0wcUxpNlBYNFNWS2FmR3BCSjduUGlaOHRZdXllMGJESFQ3bW80TTVuc3RGREoxUWpzdWRwMHBkaEdzWFUxOHU1VjhNLWR2YV9kYXpjM25zY3VldS1ZZUNDU0l0b1R3N1NJc2xiSWJSMXdIWUVTc0xud3JyaDFGYVRLQXNzNk45cVB6azdhT284X0c?oc=5",
+      "published_at": "2026-11-04T19:28:42+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
     {
       "headline": "Terrence Shannon Jr. (hip) ruled out Wednesday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPU3E5Z1V4SWdGNnR5TDRNMElORUZPV3B1cFhnajNoM29CZ0NXazhncmpXSFluQm9mTFNDUkRlYTVKX3NPOS16blA1YXNYbnNzZnhfeTl0SUp2d2NKQ1JWb1ltNXExd3dWWHN5T3ExWnlodHhnalZMV21fOHFhUmxMbGtpZTA4c3N4SDJGdkRaQ1V6eTVWYWfSAZsBQVVfeXFMUGswWG1YSlhOOUQzcER2TTZmUjZmaUY3ai1NRW8tUFJVbm1jYUtRUmlfejRqeG1xMHRVTVUzQVFYT0JxRGR0WWE5QXZTYTFxekFhVlZwQVl2VlJVaDlNZUVJekUwVVg2RzAyZWI5bi1abmNZVjk5RHJBR00xQ0h2MFoxOHZGalhHN0RISC1TU2RkcUVLdmJSdUVjSkk?oc=5",
@@ -62,6 +94,14 @@
       "scope_date": "2026-11-04"
     },
     {
+      "headline": "Ziaire Williams not sure what caused foot soreness, hopeful injury is behind him - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTkZwQ2pZLTBFVGhQRDNmME4wT3NUTzZmSG1jRHlBakdGMGtRT1U4X01CbVp3VVpxZzZrU19MVXZfVmZfZU1DWW9VZDVtcFhDbXdtX0tLdVd0TGd4VE9GR0hpbTNfcFo0MkhQLTZHWXlGRHBWWHNnUDFmWTJ0TC02bmlfaFdtdHc?oc=5",
+      "published_at": "2026-11-04T16:45:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
       "headline": "Predicting Knicks' Starting Lineup vs. Bulls If Josh Hart Is Ruled Out - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMUJkZW5Ra3N6STV0SEhlY0JoNlJvUDgwdkhXT25WbUg2a1VtTXctRENzZjFYWDhudS1fV0V6ZUU5dlNxRTlBNlc2VlNNaGcwa0lwRFY5ZTk1V0hEOHd6M2ZqNWdKYkpNYjR1YmZUNjBhTXVRZkpqUmZqcE45ZkladlFLVlc0YkNGd2dFODBJTlRSMjFvcDA5a1J4VldOUEk3a2FxQk9SUzhkdEhuV2dB?oc=5",
       "published_at": "2026-11-04T16:24:24+00:00",
@@ -86,22 +126,6 @@
       "scope_date": "2026-11-04"
     },
     {
-      "headline": "Ravens QB Joe Fagnano to Start vs. Jaguars Stream of National Football League - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMkxic2pWdjBRT0RQRFpldFhLZ2Rpd2ZialhlT1FUdkllWWdTNkZid1VXcVZSdzlVSHJVUEFiRGNYejBtQi0xekVDYTlzejBKekd3VC1iRnZ2eTl6LWpBbVVaR0dOMTlrS1A3Wmo0OWItWGhNNTI1dmQ4Q3BIY2hsQXVtd3pacURKVmtN?oc=5",
-      "published_at": "2026-11-04T15:49:02+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "How To Watch Miami Heat At Los Angeles Clippers, Injury Report, Lineups, Betting Lines - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMWN2eFhVR2oxVnBtU0dkSm9RQmFacEFSdFlvdllkTzdQVElRREFYSTRqQWRDZldWRV9CUy1RQ1VNcGRvUEx4UmlNZEdIOFZ0a2ZQa0k0Q05TS2lnd0pFd2ZCOVFSc01mRm5zV05hTVo1LXRtVUFTSWFvZ1Q5OU5IZ2gwdw?oc=5",
-      "published_at": "2026-11-04T14:57:38+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
       "headline": "Kevin Durant names his all-time greatest NBA starting five - HITC",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRDN0blhGTFpiYXZaY1NmQ3JwMUJYeEJhTXRFblFPd0VGcjdHRlZnVWppME5hYVpUMVBwYUNnSVBXVHhtTVFpWEhSMWFMLVp6TGJRRHhKUGJCdHRqX0FHU1Z5S3ZsSm1YV19uVjJfd0RKdS1BVmVidFlzLUpjVG5VdW1kSkJVeDA?oc=5",
       "published_at": "2026-11-04T14:20:48+00:00",
@@ -113,6 +137,14 @@
       "headline": "Cameron Johnson Expected to Play Wednesday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRWdmclZIMjkzNlZzX0I3OWczZ0ZpZXhlTWxLSklXXzJoZlY0RXh0bzVRRGVFZWx4WXc0UF9OYmIzSkpCUFNIeTQ4b2RFV0czTlAtZTk0SXlfcjc1ZHUyS1JTZ1pFdmRmUm9zXzNZTWZGWnV5SURsMmVKS2hjcXZ4cGt6Sk5QMzhuYVpfUVpQTHFJMFE?oc=5",
       "published_at": "2026-11-04T13:46:45+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Jaguars vs. Ravens Odds Continue to Shift Towards Jacksonville With Joe Fagnano Set to Start in NFL Week 9 - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbnJTNEpFYVVJa3Jkb2tEaGxlVDY5dFNzQ0ZkM2djdjBPM25IbXdLMHVqY2JtLVpDSVh3VWZnWGNOOHBhODV2Q3AyV3RqUG5EYkUxalNXM3c3UlV2N1BIbDFoaHVVaVF1b05OekQ2dDVNT1BkU2kwUWFoY3IwR3N2QkNIT1JTU3BrQ1VKWW1MaTFMTllnblgtOUNyclFFcmo4Vnkxa3BQLTcyNjI3WC1ub3JraHZyQ2h2WmFBZTRJUjBrdUNGR1U2RmdscEo?oc=5",
+      "published_at": "2026-11-04T13:33:20+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -166,14 +198,6 @@
       "scope_date": "2026-11-04"
     },
     {
-      "headline": "Obi Toppin (back) listed questionable Wednesday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcXFMRmx0Q2FOZk1TdVFQR2tVQnBiUkdJbHVIQjdmRjF0bXltdTFwSmRoN0JRa0kwV1p3N3FVUXk5M0RwOVE2S3ZIODliU0hsd3c3X0FFTWRxV0xZWk85dkIxVmota2xNQU11WE5FYWZuUTh2NDdlZktJejZSYjNpUzFXQW8xTkpnLS1uekQwNXM2UTRQOFE5U9IBngFBVV95cUxPVUt0U0VCTzJQOGQzbkhQUFVabWsxLU1uRVdBNzhPVU5TWEUxc1BTcTVLcklpdUwzbVozZVQ2dzR0X3FSVHZpNHpBU3NSZG9KSFBpeU9OQmh2U3M3SkFOVVJudW5VVDNEYkZHVTBkR3ozajZwejBNOE5sUGNDcGdwTWxDR3VacXQ2cnhXRW5yZTlhMXFDZFU5dU9XOFpZQQ?oc=5",
-      "published_at": "2026-11-04T01:31:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
       "headline": "Kawhi to start 'return to play' process after completing knee treatment - theScore",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ1Vrc3pwNTZaa2lScjF3TFFBRGxDU3F2dDRxdlV2LWtNd3ZuTTlkUllzd21hZWJEZXEwb0xDQkdRMTJkOEd4enFYOWExQV9sc2tPZ3d4SFFRdUs2a0FBZWxZa05EaXVub00wbm5NUUZJWkFVRGItdWpESkl0emRSLVdZWXhwZDZuR1gzUTQ0OEpyR25HRzhncms3RzZ6NjU3M1RyeEZqT0JCY0YtUHpSbw?oc=5",
       "published_at": "2026-11-04T01:20:57+00:00",
@@ -214,9 +238,9 @@
       "scope_date": "2026-11-04"
     },
     {
-      "headline": "Fourth-Year Guard May Be Odd Man Out In Cleveland Cavaliers Rotation - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1CNkx0U1U0eVJPMDFKREVuUC1IQUliRTJiYVFzRlpfbTBXM3hnakhXT2t5UlBRSlZkRl9DSV9ET3E5MmdZYTBaTHBRUmcxLWFkNTRib0JheU1QMHgwOXZJa2dMRDdaeFpLQjZYckRZMi0ySzlDNlZkNlVQTXFYUQ?oc=5",
-      "published_at": "2026-11-03T23:30:02+00:00",
+      "headline": "Fourth-Year Guard May Be Odd Man Out In Cleveland Cavaliers Rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY2E1b0dLT2ViblJfUjhnVFNsR0tCcUtxdHU3ZnRGT2M1U0c3RENLekpOSkJPdlNGQkhqSjRwXzB3YTF3M2JPZEYySGVJakphcy1BZUJZMmhySG5YUkhsV3RPOEZDTGE0UjVBSkdfUjk5clFHTEpsbUV3RVNwaUJoR0M5VlYzdzBhanliSUExcWFJWUthQWpQZ29vOVdORVRfYlBlUG95WXpycXVyQ1pnXzlVM2N4ay0zd1hN?oc=5",
+      "published_at": "2026-11-03T23:30:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -233,22 +257,6 @@
       "headline": "Santi Aldama Injury: Questionable for Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNazlTMExZN1VNYUUtYTZ1RXc1SFZKQjk3OWw5WThWWm5BWGxMV3ZzMXFPTE5iam51VGtia0hPZWlRcXZkcm9pa242dVhyaDBvSjdjM0J1SnhvaEtJNncyWXN6WVd6aGNWYWlhZmR4MUZnaklHMkppSzc3c1N2dzFlYzRCRnJOTklrTWppaGFBRGNKWW1XbHMyYWc3QWdUWk5k?oc=5",
       "published_at": "2026-11-03T22:20:10+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "Kon Knueppel Injury: Expected to play Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUURGVHQzQkgzeUJ5cnNMbmdybDdzVHdmdUxNM0V1OHJSeXJoejlzMFM0R05RNEtWSWpPZXBYN3RxaUFBdm5ocXdGNjBVdmNyZ3M3cGRPYk1ySG9EM0dIa0U3V21lRDk0QWhNN05sYlpPUUpDelpKWnUzY3JRcnhJN0Z4NGVXczVOemRmdzFDN1dwZXRQTmZQSW1pMnRsZ05x?oc=5",
-      "published_at": "2026-11-03T22:13:11+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "Jalen Johnson Injury: Questionable for Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVFZhUjVQOVlRQTFOdHV4MTdMY25sWUpOV1pwaTFYdjZ3YnN5N1FSWU10dXN3MHhoTnVGX2dfOG5WMGRaWWo1R1puWUR1czVaUC1jZ2xmRHEzZVBaaVlwb2t2VlVqS1ZBNFYybWNYVktmVllpc21PdGs3Qm5Vc0tRZTlXd2IweGFIaE9VcUJLbjRYTnItRktLUzZSVUd4ZEh5U3c?oc=5",
-      "published_at": "2026-11-03T22:06:52+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -281,14 +289,6 @@
       "headline": "Nic Claxton upgraded to questionable against Knicks - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNlljcnhzczJ5UGx1Z0lNcVpVZmRMVHdDRFQ0R3cyMTFUZFNiYkhCSi1iNFZycWI2d2hfQUZZUkw1aG1KcVpVakx4OUpQNEtIUUpFdjROYUFRU2U4VnRLWEFtcUszMHpSVHVzdmIyQ3ZkUlRlZl9ZYnV4RUktWTZudXVNYW1GVzNVV3pibHRlZFJRR2N6?oc=5",
       "published_at": "2026-11-03T21:38:55+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "Mikal Bridges gives the Knicks a rotation question after benching - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQM3ZoNzBKNnQ3VDkzcXlrdFBDazJtWWlRMDljY09Ta1N3cmNXdGpMWjJ1MG5tOW1yTWZDUWVEa0wxMnNnX0V3aHJRQ2pfWEhyVmNUOG0yQzh3ZzJURjN5Q2xRX2ZEYnBwVDdrUS1rVWNEbDk1UkxHclJuNG9YSTR2RWUzUWw5S2JKQzd3Ug?oc=5",
-      "published_at": "2026-11-03T19:50:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
