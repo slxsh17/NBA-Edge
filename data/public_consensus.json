@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-11-04",
-"updated_at": "2026-11-04T15:54:19+00:00",
+"updated_at": "2026-11-04T16:54:41+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -11,29 +11,34 @@
 "players": 16,
 "single_slates": 4
 },
-"dknetwork_articles": []
+"dknetwork_articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+]
 },
 "source_errors": [],
 "players": [
 {
 "name": "Cade Cunningham",
 "team": "DET",
-"fta_own": 60.0,
+"fta_own": 60.2,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 60.0,
+"consensus_own": 60.2,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Paul Reed",
 "team": "DET",
-"fta_own": 52.3,
-"linestar_own": 38.1,
+"fta_own": 52.5,
+"linestar_own": 42.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 45.2,
+"consensus_own": 47.4,
 "source_count": 2,
 "mention_count": 0
 },
@@ -51,11 +56,11 @@
 {
 "name": "Onyeka Okongwu",
 "team": "ATL",
-"fta_own": 35.1,
+"fta_own": 35.5,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 35.1,
+"consensus_own": 35.5,
 "source_count": 1,
 "mention_count": 0
 },
@@ -73,22 +78,22 @@
 {
 "name": "Ausar Thompson",
 "team": "DET",
-"fta_own": 56.4,
-"linestar_own": 7.8,
+"fta_own": 56.5,
+"linestar_own": 7.4,
 "mentions": 0,
 "articles": [],
-"consensus_own": 32.1,
+"consensus_own": 31.9,
 "source_count": 2,
 "mention_count": 0
 },
 {
 "name": "Anthony Davis",
 "team": "WAS",
-"fta_own": 26.9,
+"fta_own": 27.0,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 26.9,
+"consensus_own": 27.0,
 "source_count": 1,
 "mention_count": 0
 },
@@ -96,7 +101,7 @@
 "name": "Neemias Queta",
 "team": "BOS",
 "fta_own": 30.7,
-"linestar_own": 23.0,
+"linestar_own": 23.1,
 "mentions": 0,
 "articles": [],
 "consensus_own": 26.9,
@@ -106,22 +111,11 @@
 {
 "name": "Derrick White",
 "team": "BOS",
-"fta_own": 26.0,
+"fta_own": 25.8,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 26.0,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Josh Hart",
-"team": "NYK",
-"fta_own": null,
-"linestar_own": 25.5,
-"mentions": 0,
-"articles": [],
-"consensus_own": 25.5,
+"consensus_own": 25.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -139,22 +133,33 @@
 {
 "name": "OG Anunoby",
 "team": "NYK",
-"fta_own": 24.5,
+"fta_own": 24.4,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 24.5,
+"consensus_own": 24.4,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Josh Hart",
+"team": "NYK",
+"fta_own": null,
+"linestar_own": 22.1,
+"mentions": 0,
+"articles": [],
+"consensus_own": 22.1,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Nickeil Alexander-Walker",
 "team": "ATL",
-"fta_own": 18.9,
+"fta_own": 19.0,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 18.9,
+"consensus_own": 19.0,
 "source_count": 1,
 "mention_count": 0
 },
@@ -162,10 +167,10 @@
 "name": "Jalen Brunson",
 "team": "NYK",
 "fta_own": null,
-"linestar_own": 18.2,
+"linestar_own": 18.5,
 "mentions": 0,
 "articles": [],
-"consensus_own": 18.2,
+"consensus_own": 18.5,
 "source_count": 1,
 "mention_count": 0
 },
@@ -181,24 +186,24 @@
 "mention_count": 0
 },
 {
-"name": "Jarrett Allen",
-"team": "CLE",
+"name": "Isaiah Hartenstein",
+"team": "OKC",
 "fta_own": null,
-"linestar_own": 15.4,
+"linestar_own": 13.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 15.4,
+"consensus_own": 13.7,
 "source_count": 1,
 "mention_count": 0
 },
 {
-"name": "Isaiah Hartenstein",
-"team": "OKC",
+"name": "Jarrett Allen",
+"team": "CLE",
 "fta_own": null,
-"linestar_own": 12.6,
+"linestar_own": 13.6,
 "mentions": 0,
 "articles": [],
-"consensus_own": 12.6,
+"consensus_own": 13.6,
 "source_count": 1,
 "mention_count": 0
 },
@@ -206,10 +211,10 @@
 "name": "Chaney Johnson",
 "team": "BKN",
 "fta_own": null,
-"linestar_own": 11.3,
+"linestar_own": 8.0,
 "mentions": 0,
 "articles": [],
-"consensus_own": 11.3,
+"consensus_own": 8.0,
 "source_count": 1,
 "mention_count": 0
 },
@@ -228,21 +233,197 @@
 "name": "Duncan Robinson",
 "team": "DET",
 "fta_own": null,
-"linestar_own": 5.2,
+"linestar_own": 5.3,
 "mentions": 0,
 "articles": [],
-"consensus_own": 5.2,
+"consensus_own": 5.3,
 "source_count": 1,
 "mention_count": 0
+},
+{
+"name": "Tyrese Haliburton",
+"team": "IND",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Trey Murphy",
+"team": "NOP",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Quenton Jackson",
+"team": "IND",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Kelly Oubre",
+"team": "IND",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Yves Missi",
+"team": "NOP",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Karlo Matkovic",
+"team": "NOP",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Jusuf Nurkic",
+"team": "UTA",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Jordan Poole",
+"team": "NOP",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "T.J. McConnell",
+"team": "IND",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Mo Bamba",
+"team": "UTA",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
+},
+{
+"name": "Jaren Jackson",
+"team": "UTA",
+"fta_own": null,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Fantasy Basketball Value Picks: Top DraftKings NBA DFS Bargain Plays for Wednesday 11/4/26",
+"url": "https://dknetwork.draftkings.com/2026/11/04/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-wednesday-11-4-26/"
+}
+],
+"consensus_own": null,
+"source_count": 1,
+"mention_count": 1
 },
 {
 "name": "Nolan Traore",
 "team": "BKN",
 "fta_own": null,
-"linestar_own": 4.6,
+"linestar_own": 4.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 4.6,
+"consensus_own": 4.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -250,10 +431,10 @@
 "name": "Mario Hezonja",
 "team": "CLE",
 "fta_own": null,
-"linestar_own": 4.5,
+"linestar_own": 4.4,
 "mentions": 0,
 "articles": [],
-"consensus_own": 4.5,
+"consensus_own": 4.4,
 "source_count": 1,
 "mention_count": 0
 },
@@ -261,10 +442,10 @@
 "name": "Jaylen Wells",
 "team": "MEM",
 "fta_own": null,
-"linestar_own": 3.8,
+"linestar_own": 3.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 3.8,
+"consensus_own": 3.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -283,10 +464,10 @@
 "name": "Meleek Thomas",
 "team": "CLE",
 "fta_own": null,
-"linestar_own": 2.2,
+"linestar_own": 2.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 2.2,
+"consensus_own": 2.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -294,10 +475,10 @@
 "name": "Kenrich Williams",
 "team": "OKC",
 "fta_own": null,
-"linestar_own": 1.4,
+"linestar_own": 1.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 1.4,
+"consensus_own": 1.7,
 "source_count": 1,
 "mention_count": 0
 }
@@ -312,7 +493,7 @@
 {
 "name": "Ausar Thompson",
 "team": "DET",
-"own": 36.6
+"own": 36.7
 },
 {
 "name": "VJ Edgecombe",
@@ -327,24 +508,24 @@
 {
 "name": "Jaylen Brown",
 "team": "PHI",
-"own": 33.1
+"own": 32.5
 }
 ],
 "CLE@OKC": [
 {
 "name": "Isaiah Hartenstein",
 "team": "OKC",
-"own": 42.4
+"own": 43.3
 },
 {
 "name": "Jarrett Allen",
 "team": "CLE",
-"own": 34.8
+"own": 34.7
 },
 {
 "name": "Mario Hezonja",
 "team": "CLE",
-"own": 30.4
+"own": 29.9
 },
 {
 "name": "Meleek Thomas",
@@ -354,61 +535,61 @@
 {
 "name": "Kenrich Williams",
 "team": "OKC",
-"own": 10.6
+"own": 11.2
 }
 ],
 "DEN@TOR": [
 {
 "name": "Jamal Murray",
 "team": "DEN",
-"own": 58.9
+"own": 58.3
 },
 {
 "name": "Jakob Poeltl",
 "team": "TOR",
-"own": 47.7
-},
-{
-"name": "Christian Braun",
-"team": "DEN",
-"own": 34.4
+"own": 45.1
 },
 {
 "name": "Cameron Johnson",
 "team": "DEN",
-"own": 34.4
+"own": 34.6
+},
+{
+"name": "Christian Braun",
+"team": "DEN",
+"own": 33.9
 },
 {
 "name": "Aaron Gordon",
 "team": "DEN",
-"own": 26.4
+"own": 26.5
 }
 ],
 "LAC@MIA": [
 {
 "name": "Rui Hachimura",
 "team": "LAC",
-"own": 49.4
-},
-{
-"name": "Max Strus",
-"team": "LAC",
-"own": 35.6
+"own": 47.8
 },
 {
 "name": "Derrick Jones",
 "team": "LAC",
-"own": 30.2
+"own": 30.0
+},
+{
+"name": "Max Strus",
+"team": "LAC",
+"own": 27.3
 },
 {
 "name": "Isaiah Jackson",
 "team": "LAC",
-"own": 25.8
+"own": 26.2
 },
 {
 "name": "Klay Thompson",
 "team": "MIA",
-"own": 22.3
+"own": 24.5
 }
 ]
 },
