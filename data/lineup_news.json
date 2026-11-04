@@ -1,11 +1,58 @@
 {
   "schema": 1,
   "slate_date": "2026-11-04",
-  "checked_at": "2026-11-04T18:39:38.295827+00:00",
+  "checked_at": "2026-11-04T19:44:50.691325+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
-  "lineups": [],
+  "lineups": [
+    {
+      "team": "MIA",
+      "status": "projected",
+      "players": [
+        "D. Mitchell",
+        "Klay Thompson",
+        "A. Wiggins",
+        "G. Antetokounmpo",
+        "Bam Adebayo"
+      ],
+      "source": "RotoWire NBA Daily Lineups",
+      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
+      "date": "2026-11-04"
+    }
+  ],
   "headlines": [
+    {
+      "headline": "Terrence Shannon Jr. (hip) ruled out Wednesday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPU3E5Z1V4SWdGNnR5TDRNMElORUZPV3B1cFhnajNoM29CZ0NXazhncmpXSFluQm9mTFNDUkRlYTVKX3NPOS16blA1YXNYbnNzZnhfeTl0SUp2d2NKQ1JWb1ltNXExd3dWWHN5T3ExWnlodHhnalZMV21fOHFhUmxMbGtpZTA4c3N4SDJGdkRaQ1V6eTVWYWfSAZsBQVVfeXFMUGswWG1YSlhOOUQzcER2TTZmUjZmaUY3ai1NRW8tUFJVbm1jYUtRUmlfejRqeG1xMHRVTVUzQVFYT0JxRGR0WWE5QXZTYTFxekFhVlZwQVl2VlJVaDlNZUVJekUwVVg2RzAyZWI5bi1abmNZVjk5RHJBR00xQ0h2MFoxOHZGalhHN0RISC1TU2RkcUVLdmJSdUVjSkk?oc=5",
+      "published_at": "2026-11-04T19:23:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Trey Murphy III (knee) now questionable Wednesday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRk1QYU5HUWFUZkVVU0hUUUdHajB0Y3QtX1NNNXdxaUlxaGZFN3QyV2RpUXE2UHRhZl9YazNmTFBXbVNoTHQzdkg3RDV6MnJ1ZE02UEZONXNMZ2djeEluQUJyaWNMOWhuaGhQZHZfN2lCMFdaaDN1Vm1WVzBPY243cnZEcDI4b0lfb1dkMWo3LUhYQVRmOEVZTl91c9IBoAFBVV95cUxQMjgyZUUtSUZweElzWlFvZXZCSFBpRm5CdEZiZGV5OGw3aXAwQlI5ck16WkN4QTdaOUlIYUNGSVFwb0Z3czc1QWRaTHBBVzU0UFZDR3lNVE81S3BFV2JOMkI5REtRZkpudV9JOGUzSjR0R3pGb0YxcVEtNk1iNHhOWFN1TGNyMmZIdnRFQUt1Z1I2azNZazdDVHJPOGJHQ183?oc=5",
+      "published_at": "2026-11-04T19:22:32+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Seahawks QB Sam Darnold out vs. Cardinals with quad injury; Drew Lock likely to start - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQnpJNVk5MTBMQ3VuS2R1bUJqejlFelpYdWNqZWp2WG84YkdPcjZnb1Q5NFRHME00R1lESUNlLW5UQXF6LXdSbU9EVUdqZDM3SnBNd2V5UEJTWEhubk1MY1lFaTh1ZGNnd3h5amEySU9fYW1OREdjekxwN3hXVUZxdGpCeEpPamVhQ0paOThuMUpVNEhj?oc=5",
+      "published_at": "2026-11-04T19:07:51+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Santi Aldama Injury: Downgraded to doubtful - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVDhqZmsydnhUc1hHSHJNek96TXFiNWk1XzEweXJTeUhmVmlNU25KUndBQW5IanVqTUwtU1lBSkhNd0FwaGdyNmNkYlhxQ05IbjYtVXpXdVdITnRxSkd0TmtuN3JOR0hxM01FMi1ZYXRLejhwc1pGaFQxZ3JXeGlDczh4a2d4b3hBMGVMTE5ESjhsVkQ3QWpZU1V0SQ?oc=5",
+      "published_at": "2026-11-04T18:56:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
     {
       "headline": "Bilal Coulibaly Injury: Downgraded to questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTUxDTWw5QUdmWFMwa0dEWGw1RjkwR21od2EzWV9ScWg5Z2lyU0tKcnphaHhvUGJ1c0RZcHlaQWJiNEh1cWU4bHBfNzB0d21SOWIxT3lSYnZwZk1GSjVSXzE1QjV1enViRjZId190QU1GWUdESFJCS0JhbmZtem4tbVRaZnZpazJ2cHVlS1J2d0FXUmo4V1JNazNmWmhDVVE1dTVQMg?oc=5",
@@ -143,14 +190,6 @@
       "scope_date": "2026-11-04"
     },
     {
-      "headline": "Myron Gardner Injury: Questionable against Clippers - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWmJmbjhLNU9XZlF3WXpxU2pRMFNxZGVXQTFrSmlBcGozXzZSRndRa1BtclZPeF9yYVZtMUQ1cGFyV0VKb0dnaFVsdVl5WmliTW1fcEtsUy1MUU1uUldrempHS1c5Q2I1NkMxZkhFbEN6SjhTOTd2OUJ5dXFLNFh0TVhLMjVkaXYyeXpmdEpMekJyc1BRUmt6cnR6Tm9JeE9GOGRuekln?oc=5",
-      "published_at": "2026-11-04T01:08:15+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
       "headline": "Rasheer Fleming Injury: Questionable for Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUUhRaW5zVWUyQS0wZ1pHdnJjV3FvNG5VRnl2aTlEZnhBWU81RkZKNWxFejNVRGJWQm9zM1g3ZjZrWkFVdldBNy1kSmVtR2QyUjNKVmJ5cm9fN2M0X3h4TGZWZjRfUzY3VkltUl9fQ0pjZ1NVUjU5aEZSODNqMk9HZWRLMlRHemVDX1VELTJiZEx0RlZFRWNRSjl5QklRWm5iNWxWNg?oc=5",
       "published_at": "2026-11-04T00:19:15+00:00",
@@ -247,25 +286,9 @@
       "scope_date": "2026-11-04"
     },
     {
-      "headline": "Nic Claxton Injury: Upgraded to questionable - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX2JDLVdFM085UnRNdkVzWldEVnBIeFpqOGFma1NJSlpNM0N6d0JydG5teFphSUw2alh2aTQ1RWFMa2ljaktySWVWazdSR2p2ZUU1bHVyTXJFdUxnWnpZRG9Ya1A5Z3kyNlFZcy0tN0tGUjh3eEVveDRIMmtwdVNEWThuNC01SHUtemdiaGh5cmVGQjUxd0UtTXVoTlI?oc=5",
-      "published_at": "2026-11-03T21:04:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
       "headline": "Mikal Bridges gives the Knicks a rotation question after benching - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQM3ZoNzBKNnQ3VDkzcXlrdFBDazJtWWlRMDljY09Ta1N3cmNXdGpMWjJ1MG5tOW1yTWZDUWVEa0wxMnNnX0V3aHJRQ2pfWEhyVmNUOG0yQzh3ZzJURjN5Q2xRX2ZEYnBwVDdrUS1rVWNEbDk1UkxHclJuNG9YSTR2RWUzUWw5S2JKQzd3Ug?oc=5",
       "published_at": "2026-11-03T19:50:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "Matisse Thybulle News: Continues to start - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMFNjWlROLVM5dEEtZkVTRWdmQnBKck5lVXo2aFlBZTEwcFNDbTFiTU9jbS1CemprOURfTElZdnpNQUF6eHQtZWV1Q0hHTEdrZ0Q0QU9FbE9oMHdMcndYRFdneUhjZ2VvVTVrQkE4X09IWU9BdnJMbXJaNEhlaWdxTWNhYVdOZlh3YlRrYjZ3XzktQU9jMVBaRQ?oc=5",
-      "published_at": "2026-11-03T18:39:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
