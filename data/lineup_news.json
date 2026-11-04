@@ -1,40 +1,35 @@
 {
   "schema": 1,
   "slate_date": "2026-11-04",
-  "checked_at": "2026-11-04T17:39:42.766823+00:00",
+  "checked_at": "2026-11-04T18:39:38.295827+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
-  "lineups": [
+  "lineups": [],
+  "headlines": [
     {
-      "team": "MIL",
-      "status": "projected",
-      "players": [
-        "B. Burries",
-        "Tyler Herro",
-        "Jaime Jaquez",
-        "Kyle Kuzma",
-        "Myles Turner"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-04"
+      "headline": "Bilal Coulibaly Injury: Downgraded to questionable - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTUxDTWw5QUdmWFMwa0dEWGw1RjkwR21od2EzWV9ScWg5Z2lyU0tKcnphaHhvUGJ1c0RZcHlaQWJiNEh1cWU4bHBfNzB0d21SOWIxT3lSYnZwZk1GSjVSXzE1QjV1enViRjZId190QU1GWUdESFJCS0JhbmZtem4tbVRaZnZpazJ2cHVlS1J2d0FXUmo4V1JNazNmWmhDVVE1dTVQMg?oc=5",
+      "published_at": "2026-11-04T17:38:48+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
     },
     {
-      "team": "NYK",
-      "status": "projected",
-      "players": [
-        "Jalen Brunson",
-        "Mikal Bridges",
-        "J. Hart",
-        "OG Anunoby",
-        "K. Towns"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-04"
-    }
-  ],
-  "headlines": [
+      "headline": "Predicting Knicks' Starting Lineup vs. Bulls If Josh Hart Is Ruled Out - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMUJkZW5Ra3N6STV0SEhlY0JoNlJvUDgwdkhXT25WbUg2a1VtTXctRENzZjFYWDhudS1fV0V6ZUU5dlNxRTlBNlc2VlNNaGcwa0lwRFY5ZTk1V0hEOHd6M2ZqNWdKYkpNYjR1YmZUNjBhTXVRZkpqUmZqcE45ZkladlFLVlc0YkNGd2dFODBJTlRSMjFvcDA5a1J4VldOUEk3a2FxQk9SUzhkdEhuV2dB?oc=5",
+      "published_at": "2026-11-04T16:24:24+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Why Heat’s Ryan Conwell is already due for larger role in rotation - Hot Hot Hoops",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTm1aeGE2Q08taWViMkNUZmtvdk53Mkt3MWZGRFhzN3BIRHNtY0FPaXBpTEtuRW92Y2VzTUpKYld3UzlMVGI5S2JqU2d0LVd2S1ZDNmJyUGZVcENGUENJQUhkcVdvaF9QSVVYV2hTX3pfSWhjREVkOXcwb3lsRXVIMWdLMTJMQlZiVnhOOG92S2tiUQ?oc=5",
+      "published_at": "2026-11-04T16:23:19+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
     {
       "headline": "Nikola Jokic's Trade Status Discussed by NBA Exec Amid Nuggets' Struggles to Start 2026 Season - Bleacher Report",
       "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUGh5ZGFVQWlRdEs3QS1UVDNROTVGcEdnbFdfUy0tdkpCU0JVX1poTmItdVI3dHR1cjdFd1VFUjFNWFF0WDR4dFZoeUU2dngyOEQwbk1OOTkzalJMNWhuNE9JN19sTXowcDlXNER1WkRPRE4zYUJwUExBSVNCbko5MmxQNEVqc3ZDcHduY0xTbTdTRDBWcnpUbHZjRU96SHNnOE1zSUI1VjNTSF9JVmlCZFU3NFItYnpIRnNwOHFkZFpOellUX1NRWThtSQ?oc=5",
@@ -47,6 +42,14 @@
       "headline": "Ravens QB Joe Fagnano to Start vs. Jaguars Stream of National Football League - CBS Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMkxic2pWdjBRT0RQRFpldFhLZ2Rpd2ZialhlT1FUdkllWWdTNkZid1VXcVZSdzlVSHJVUEFiRGNYejBtQi0xekVDYTlzejBKekd3VC1iRnZ2eTl6LWpBbVVaR0dOMTlrS1A3Wmo0OWItWGhNNTI1dmQ4Q3BIY2hsQXVtd3pacURKVmtN?oc=5",
       "published_at": "2026-11-04T15:49:02+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "How To Watch Miami Heat At Los Angeles Clippers, Injury Report, Lineups, Betting Lines - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMWN2eFhVR2oxVnBtU0dkSm9RQmFacEFSdFlvdllkTzdQVElRREFYSTRqQWRDZldWRV9CUy1RQ1VNcGRvUEx4UmlNZEdIOFZ0a2ZQa0k0Q05TS2lnd0pFd2ZCOVFSc01mRm5zV05hTVo1LXRtVUFTSWFvZ1Q5OU5IZ2gwdw?oc=5",
+      "published_at": "2026-11-04T14:57:38+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -167,14 +170,6 @@
       "headline": "Scotty Pippen Jr. (back) ruled out Wednesday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaEVtYkloOS00V2RfbkNfNk5PN2xBVUF5bjRQbUdyMWYwVVpoR0FmTnNNRmFsNzE3ZVQwN0xid0dsdWdJeFRhYUVHeDM4dUl1ZUJ0M1JXcWJRLTJ5NFN2dElCTDgtSTM1cFFnMVVHbHkxMXlKeTlYcUxTX0xQUWVnWmZ4MXpZZ3dValdGNl9EdF9fUlXSAZgBQVVfeXFMT3c0TmttTE1GeHl0MWRNSkRFOVp2SGUweFRNaW5BQW5LcGFENXhMc0prdFJzbThpMDJIcmRCMGpVdTdaYWtEUkRvTWpIdUZtZ1ppS1NXSGVRTmtxb3hHQ0E3ZnltNlNGMGdSMEdTSzRGbUQ3S0JUaWtCalVBNXJUT0dMNzJPRF9PeWExeUw2dHFUOGlJVmtoeGQ?oc=5",
       "published_at": "2026-11-03T23:36:53+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "Obi Toppin Injury: Questionable for Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYlFzYURHTlBuV1pCd1lraHBIMm9rdm1GWFNYZ25UbzF4MVZaVDhZTGhhME51ckNkT1psdTk3anBnMjRJMEM0enFFbFhXQmFna1J6M2xEQlVNVnlBMHBwY2FaV0ZCTHBMelY1ZlA3Vno5RWZHb3plcE5NUDJJWGFad0NFaWxKWER4a1RtT001ZGZYOFVPdVNWM0FfMjktZw?oc=5",
-      "published_at": "2026-11-03T23:35:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
