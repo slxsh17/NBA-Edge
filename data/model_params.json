@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated_at": "2026-10-28T16:47:26+00:00",
+ "updated_at": "2026-11-04T00:00:15+00:00",
  "params": {
   "role_ratio": 0.5875,
   "role_bump": 1.8125,
@@ -31,26 +31,26 @@
   "default": {
    "test_fp": 8.757,
    "test_min": 6.299,
-   "real_fp": 8.173,
-   "real_min": 5.162
+   "real_fp": 7.922,
+   "real_min": 4.955
   },
   "current": {
    "test_fp": 8.461,
    "test_min": 5.865,
-   "real_fp": 8.221,
-   "real_min": 5.209
+   "real_fp": 7.95,
+   "real_min": 4.988
   },
   "tuned": {
    "test_fp": 8.468,
    "test_min": 5.873,
-   "real_fp": 8.231,
-   "real_min": 5.212
+   "real_fp": 7.95,
+   "real_min": 4.986
   }
  },
  "rows": {
   "train": 5330,
   "test": 1785,
-  "real": 1122
+  "real": 2176
  },
  "log": [
   {
@@ -81,6 +81,11 @@
   },
   {
    "date": "2026-10-28",
+   "adopted": false,
+   "changes": []
+  },
+  {
+   "date": "2026-11-04",
    "adopted": false,
    "changes": []
   }
