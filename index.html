@@ -1275,7 +1275,9 @@ function renderProps(){
   const nxt=pending.length?`Lines for ${pending.length} more game${pending.length>1?'s':''} arrive about ${lead/60} hours before tip${live.length?'':`, the first around ${clock(Math.max(now,pending[0]-lead*60000))}`}.`:'';
   const r=S.ppr&&S.ppr.picks,pc=x=>Math.round(x*100)+'%';
   const rec=r&&r.n?`Paper record <b>${r.wins}-${r.losses}${r.pushes?'-'+r.pushes:''}</b> (hit ${pc(r.hit_rate||0)}, needed ${pc(r.avg_breakeven||0)}): $1 on every pick would be <b>${(r.units||0)>=0?'+':'−'}$${Math.abs(r.units||0).toFixed(2)}</b>.`:'No graded props yet, so this model hasn’t shown it can beat FanDuel’s odds.';
-  const head=`<p class="props-note">${live.length?`<b>${live.length} live pick${live.length>1?'s':''}</b>, best first. `:''}${nxt} ${rec}</p>`;
+  const head=`<p class="props-note">${live.length?`<b>${live.length} live pick${live.length>1?'s':''}</b>, best first. `:''}${nxt} ${rec}</p>`
+    +(live.length?`<button class="btn small" id="props-copy" type="button" style="margin:0 0 6px">Copy ${live.length} pick${live.length>1?'s':''}</button>`:'');
+  S.propsLive=live;
   if(!live.length){box.innerHTML=head+`<p class="muted" style="font-size:13px">${rows.length?'No line beats FanDuel’s price by 5+ points right now.':'No lines yet tonight.'} This page checks every 2 minutes.</p>`;return}
   const show=S.propsAll?live:live.slice(0,20);
   box.innerHTML=head+show.map(x=>{const isNew=x.pick.since&&now-Date.parse(x.pick.since)<30*60000;
@@ -1286,7 +1288,16 @@ function renderProps(){
     +(live.length>20?`<button class="btn small" id="props-all" type="button" style="margin-top:8px">${S.propsAll?'Show top 20':'Show all '+live.length}</button>`:'')
     +`<p class="muted" style="font-size:12px;margin:8px 0 0">Paper picks: NBA EDGE’s chance vs FanDuel’s break-even (vig included). ${(()=>{const mk=d.markets?` (${d.markets.map(m=>({player_points:'points',player_rebounds:'rebounds',player_assists:'assists'})[m]||m).join(', ')} tonight)`:'';return d.refresh_min?`FanDuel’s lines${mk}, refreshed about every ${d.refresh_min} minutes from 4 hours before each game; a pick pauses if news moves our projection a lot before the next refresh`:`Lines are FanDuel’s from about 2 hours before each game${mk}; they aren’t refreshed after that, so a pick pauses when news moves our projection a lot`})()}${moved?` (${moved} paused now)`:''}. ${locked?locked+' picks locked in games that started. ':''}Big edges more often mean the model is missing something than a gift.</p>`;
 }
-$('props-live').addEventListener('click',e=>{if(e.target.id==='props-all'){S.propsAll=!S.propsAll;renderProps()}});
+function propsText(live){
+  const d=S.pl||{},day=new Date((liveDay()||'')+'T12:00:00').toLocaleDateString([], {weekday:'short',month:'short',day:'numeric'});
+  return `NBA EDGE props, ${day} (paper picks, not yet proven)\n`+live.map((x,i)=>`${i+1}. ${x.player} ${x.pick.side.toUpperCase()} ${x.line} ${({pts:'points',reb:'rebounds',ast:'assists'})[x.stat]||x.stat} (${x.pick.price>0?'+':''}${x.pick.price}) · ${x.game} ${clock(Date.parse((d.games||{})[x.game]||x.tip))} · ours ${Math.round(x.pick.prob*100)}% vs ${Math.round(x.pick.breakeven*100)}% needed`).join('\n');
+}
+async function copyText(t){
+  try{await navigator.clipboard.writeText(t);return true}catch(e){}
+  try{const a=document.createElement('textarea');a.value=t;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();const ok=document.execCommand('copy');a.remove();return ok}catch(e){return false}
+}
+$('props-live').addEventListener('click',async e=>{if(e.target.id==='props-all'){S.propsAll=!S.propsAll;renderProps()}
+  if(e.target.id==='props-copy'){const live=S.propsLive||[];const ok=await copyText(propsText(live));toast(ok?`Copied ${live.length} pick${live.length>1?'s':''}. Paste them into Notes or a text.`:'Couldn’t copy on this device.')}});
 setInterval(()=>{if(!document.hidden)pollProps()},2*60*1000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)pollProps()});
 // Player props: paper trading only (scripts/props.py). Tonight's picks load on first view.
