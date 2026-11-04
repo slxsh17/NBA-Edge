@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T17:15:24.295634+00:00",
+  "updated_at": "2026-11-04T18:09:08.433897+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -23,12 +23,12 @@
       "status": "OUT"
     },
     {
-      "name": "Payton Pritchard",
+      "name": "Jayson Tatum",
       "team": "BOS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
-      "name": "Jayson Tatum",
+      "name": "Payton Pritchard",
       "team": "BOS",
       "status": "DAY-TO-DAY"
     },
@@ -48,7 +48,7 @@
       "status": "OUT"
     },
     {
-      "name": "Kon Knueppel",
+      "name": "Grant Williams",
       "team": "CHA",
       "status": "OUT"
     },
@@ -56,11 +56,6 @@
       "name": "Coby White",
       "team": "CHA",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Grant Williams",
-      "team": "CHA",
-      "status": "OUT"
     },
     {
       "name": "Nic Claxton",
@@ -258,6 +253,11 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Kam Jones",
+      "team": "MIL",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Terrence Shannon Jr.",
       "team": "MIN",
       "status": "DAY-TO-DAY"
@@ -451,6 +451,11 @@
       "name": "Trey Alexander",
       "team": "UTA",
       "status": "OUT"
+    },
+    {
+      "name": "Bilal Coulibaly",
+      "team": "WAS",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Gill",
