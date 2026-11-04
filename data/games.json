@@ -1,6 +1,91 @@
 {
-  "date": "20261103",
-  "updated_at": "2026-11-03T23:41:04.624807-05:00",
+  "date": "20261104",
+  "updated_at": "2026-11-04T00:44:39.811405-05:00",
   "source": "ESPN unofficial scoreboard",
-  "games": []
+  "games": [
+    {
+      "away": "Philadelphia 76ers",
+      "home": "Detroit Pistons",
+      "time": "2026-11-05T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Atlanta Hawks",
+      "home": "Washington Wizards",
+      "time": "2026-11-05T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Milwaukee Bucks",
+      "home": "Boston Celtics",
+      "time": "2026-11-05T00:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Charlotte Hornets",
+      "home": "Brooklyn Nets",
+      "time": "2026-11-05T00:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Chicago Bulls",
+      "home": "New York Knicks",
+      "time": "2026-11-05T00:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Indiana Pacers",
+      "home": "Memphis Grizzlies",
+      "time": "2026-11-05T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Utah Jazz",
+      "home": "New Orleans Pelicans",
+      "time": "2026-11-05T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Cleveland Cavaliers",
+      "home": "Oklahoma City Thunder",
+      "time": "2026-11-05T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Minnesota Timberwolves",
+      "home": "Houston Rockets",
+      "time": "2026-11-05T01:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Toronto Raptors",
+      "home": "Denver Nuggets",
+      "time": "2026-11-05T02:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Portland Trail Blazers",
+      "home": "Phoenix Suns",
+      "time": "2026-11-05T02:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Dallas Mavericks",
+      "home": "San Antonio Spurs",
+      "time": "2026-11-05T02:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Los Angeles Lakers",
+      "home": "Sacramento Kings",
+      "time": "2026-11-05T03:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Miami Heat",
+      "home": "LA Clippers",
+      "time": "2026-11-05T03:30Z",
+      "status": "Scheduled"
+    }
+  ]
 }
