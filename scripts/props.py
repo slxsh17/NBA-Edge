@@ -222,7 +222,7 @@ def fetch_lines(key, events, want, markets, left=None):
             continue
         try:
             d, h = get(f"{API}/events/{e['id']}/odds?apiKey={urllib.parse.quote(key)}&regions=us&bookmakers=fanduel"
-                       f"&oddsFormat=american&markets={','.join(markets)}")
+                       f"&oddsFormat=american&markets={','.join(markets)}&includeLinks=true")
             left = h.get('x-requests-remaining', left)
         except Exception as ex:
             print(f"::warning::props {game}: {ex}")
@@ -235,17 +235,23 @@ def fetch_lines(key, events, want, markets, left=None):
             for m in b.get('markets', []):
                 if m.get('key') not in STAT:
                     continue
-                by = {}
+                by, links = {}, {}
                 for o in m.get('outcomes', []):
-                    by.setdefault((o.get('description'), o.get('point')), {})[o.get('name')] = o.get('price')
+                    k = (o.get('description'), o.get('point'))
+                    by.setdefault(k, {})[o.get('name')] = o.get('price')
+                    if o.get('link'):        # FanDuel add-to-bet-slip link for this side
+                        links.setdefault(k, {})[o.get('name')] = o['link']
                 for (player, line), sides in by.items():
                     if player and line is not None and 'Over' in sides and 'Under' in sides:
+                        lk = links.get((player, line), {})
                         props.append({'player': player, 'game': game, 'tip': t.isoformat(), 'market': m['key'],
-                                      'line': line, 'over': sides['Over'], 'under': sides['Under'], 'line_at': at})
+                                      'line': line, 'over': sides['Over'], 'under': sides['Under'], 'line_at': at,
+                                      **({'link_over': lk['Over']} if lk.get('Over') else {}),
+                                      **({'link_under': lk['Under']} if lk.get('Under') else {})})
     return props, left, done
 
 
-BASE = ('player', 'game', 'tip', 'market', 'line', 'over', 'under', 'line_at', 'line0', 'line0_at')
+BASE = ('player', 'game', 'tip', 'market', 'line', 'over', 'under', 'line_at', 'line0', 'line0_at', 'link_over', 'link_under')
 
 
 def rescore(rows, proj, now):
