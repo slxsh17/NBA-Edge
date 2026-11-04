@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T16:14:12.957585+00:00",
+  "updated_at": "2026-11-04T17:15:24.295634+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -83,12 +83,12 @@
       "status": "OUT"
     },
     {
-      "name": "Max Christie",
+      "name": "Santi Aldama",
       "team": "DAL",
       "status": "OUT"
     },
     {
-      "name": "Santi Aldama",
+      "name": "Max Christie",
       "team": "DAL",
       "status": "OUT"
     },
@@ -138,6 +138,11 @@
       "status": "OUT"
     },
     {
+      "name": "Kristaps Porzingis",
+      "team": "GSW",
+      "status": "OUT"
+    },
+    {
       "name": "Brandon Williams",
       "team": "GSW",
       "status": "DAY-TO-DAY"
@@ -151,11 +156,6 @@
       "name": "Al Horford",
       "team": "GSW",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Kristaps Porzingis",
-      "team": "GSW",
-      "status": "OUT"
     },
     {
       "name": "Moses Moody",
