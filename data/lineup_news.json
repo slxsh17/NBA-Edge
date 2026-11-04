@@ -1,11 +1,43 @@
 {
   "schema": 1,
   "slate_date": "2026-11-03",
-  "checked_at": "2026-11-04T00:39:26.839654+00:00",
+  "checked_at": "2026-11-04T01:47:23.746069+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Jalen Johnson Questionable for Wednesday Against the Wizards - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOS3I1Z2dFcUczUlB5Rmp3X2ZaeUpNczlQOXlYdkRKTUZBYThNd08zVVRELXRHYTZfSjBvMHpZTGc1dWdOUVprNkpKODk2bk9Tdjd2dmZ4MUhiRy1KbndQUF9oOU5ERDVFbTlNVDdtdVE2NkpJdzEtZWtBcVZURDdlZTI4VHZIMHlzY0RjR3NHZy13Z3E2SDBpN3lNeDVVVU5lSWxhdDVMMEJpQjg?oc=5",
+      "published_at": "2026-11-04T01:37:21+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-03"
+    },
+    {
+      "headline": "Coby White Opens Up About Minutes Restriction After Hornets Season Debut - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPa1VPcHBHNHJzTExlN0U3czkwLTAtcWJCcEttclRBNmJUYVBaa3doTjdiS3ZiUHlZRkoxZlZmdFNfVlVkN3Jta0pNQk1zTmhBaEt5Zjl1VnpYVVEzUmxYMmlWLWVNLVpJTmExbXFEVjNfTUVpMllab3Fxcl95WDRZelF1ZW1yczluZlRNSF81Qy1IMS1MUjRtZ2JLQW1UeE5LTjliTEhhWEdhalAzLWdXWDB6MG1udVNuTWc?oc=5",
+      "published_at": "2026-11-04T01:20:11+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-03"
+    },
+    {
+      "headline": "Myron Gardner Injury: Questionable against Clippers - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWmJmbjhLNU9XZlF3WXpxU2pRMFNxZGVXQTFrSmlBcGozXzZSRndRa1BtclZPeF9yYVZtMUQ1cGFyV0VKb0dnaFVsdVl5WmliTW1fcEtsUy1MUU1uUldrempHS1c5Q2I1NkMxZkhFbEN6SjhTOTd2OUJ5dXFLNFh0TVhLMjVkaXYyeXpmdEpMekJyc1BRUmt6cnR6Tm9JeE9GOGRuekln?oc=5",
+      "published_at": "2026-11-04T01:08:15+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-03"
+    },
+    {
+      "headline": "Kawhi to start 'return to play' process after completing knee treatment - theScore",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ1Vrc3pwNTZaa2lScjF3TFFBRGxDU3F2dDRxdlV2LWtNd3ZuTTlkUllzd21hZWJEZXEwb0xDQkdRMTJkOEd4enFYOWExQV9sc2tPZ3d4SFFRdUs2a0FBZWxZa05EaXVub00wbm5NUUZJWkFVRGItdWpESkl0emRSLVdZWXhwZDZuR1gzUTQ0OEpyR25HRzhncms3RzZ6NjU3M1RyeEZqT0JCY0YtUHpSbw?oc=5",
+      "published_at": "2026-11-04T01:02:43+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-03"
+    },
     {
       "headline": "Jordan Goodwin Injury: Questionable for Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVElpMGxleG1OcHgtVXN0MWJKWTBSdDdzcHY1R1ZLTThvbVJkLThuZHYxUEVtdmxyRmZocmE4XzA0RHJBcXFJamFUVDNjNjlmZ1AzOWxueE1pdGVaRnBndDB0V0lDNnd0NnJselZTc21yejY0ZXY0N2stMk1Tcm1Lbnl2RjJ0RlhDTnpEdXFHRENWdDJRRUx1Ynl4VHN4NlZOUjZV?oc=5",
@@ -31,6 +63,14 @@
       "scope_date": "2026-11-03"
     },
     {
+      "headline": "Scotty Pippen Jr. (back) ruled out Wednesday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaEVtYkloOS00V2RfbkNfNk5PN2xBVUF5bjRQbUdyMWYwVVpoR0FmTnNNRmFsNzE3ZVQwN0xid0dsdWdJeFRhYUVHeDM4dUl1ZUJ0M1JXcWJRLTJ5NFN2dElCTDgtSTM1cFFnMVVHbHkxMXlKeTlYcUxTX0xQUWVnWmZ4MXpZZ3dValdGNl9EdF9fUlXSAZgBQVVfeXFMT3c0TmttTE1GeHl0MWRNSkRFOVp2SGUweFRNaW5BQW5LcGFENXhMc0prdFJzbThpMDJIcmRCMGpVdTdaYWtEUkRvTWpIdUZtZ1ppS1NXSGVRTmtxb3hHQ0E3ZnltNlNGMGdSMEdTSzRGbUQ3S0JUaWtCalVBNXJUT0dMNzJPRF9PeWExeUw2dHFUOGlJVmtoeGQ?oc=5",
+      "published_at": "2026-11-03T23:36:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-03"
+    },
+    {
       "headline": "Obi Toppin Injury: Questionable for Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYlFzYURHTlBuV1pCd1lraHBIMm9rdm1GWFNYZ25UbzF4MVZaVDhZTGhhME51ckNkT1psdTk3anBnMjRJMEM0enFFbFhXQmFna1J6M2xEQlVNVnlBMHBwY2FaV0ZCTHBMelY1ZlA3Vno5RWZHb3plcE5NUDJJWGFad0NFaWxKWER4a1RtT001ZGZYOFVPdVNWM0FfMjktZw?oc=5",
       "published_at": "2026-11-03T23:35:03+00:00",
@@ -39,9 +79,9 @@
       "scope_date": "2026-11-03"
     },
     {
-      "headline": "Clint Capela (ankle) listed questionable Wednesday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTXdXc1BTdUlETFZXVnB0Zmt4b2d5Yllxenp0eE4zOHVZb0hOVFdDaDdzTzlOS3BfLVBqdnpwTHRoRGR6QmZxZ3ZxQXVtbEg3T09mNkJaOEd3V0JrbktoTjg4cEVBWFFtTVBXbjN2WTdFMnFsaDlLZmFrbTZ5MktGLUNSM3lLQVduRXNOWGVPWlZoV293Y0ZhY1F5N3jSAaIBQVVfeXFMTmNYeW40ZnR0emdzTWRTeHdPVTBRUS1oOHpzRGNtMEx4d0dUaWdwMmRlY0lXaV9KRm5RMi15NlRJXzlKYW80X09tbmNnREl4TUlBb0VONHJhOE9VanJmcXQ2bXkwMnZSb0V2eHVYeDhLY3NjU0RwV0V5eU82UHA4VzNqbGJ2NTJaVTVVQkprR25XRTBXT3Z2LWVuOWxTNlN3VTR3?oc=5",
-      "published_at": "2026-11-03T23:33:38+00:00",
+      "headline": "Jaylin Williams (back) listed questionable Wednesday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTlBhMDVYcFBSckl2RjRCNUhvcVVqeHY5cS04VWt4VXVtU1Q2R1FwQ3dMOVh0cUdjMFBFV2QzWEpISGZscGhLYXlmemtJb0VLR3R0MkVjeDFTMk1fMUR3SFlTSTdFYVZ4YVdlSS13a1VJMWk3aDNJVHFyZzZBUEdhOTUwUklrbzB5RTlNNXNlb2RRX20zdmNyME10eGFKUEHSAaQBQVVfeXFMTU1DVVc3aTdYWDlYS2kxTGk0WEJSUHRoZE5kTVJaa3pYLVAxUURzZVl3czhITmlid1N0cjM0b0RQWGc1UkRwQnktc3JuMldvZjhCSXU2TGR4RXZ6UFRmWXZPZnEwYzNvMmotN0I4Mm8zTzlKYUlXRGZKdkZhU1VCN0JRS1pLT3YtWGVYU0E0UjdKMjMyajlhVm55X2hPeVVFc3Uyb1o?oc=5",
+      "published_at": "2026-11-03T23:31:11+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-03"
@@ -71,25 +111,9 @@
       "scope_date": "2026-11-03"
     },
     {
-      "headline": "Jaylin Williams Injury: Questionable against Cleveland - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa2hvOExldDdmSG9EcEZFUzZPaDdoTmE2YWdrUm91VXdCM0VTOThXQ2NGRnA4bUJJLThpZ0lWaFd0bEhWNUNyRVotaVFWRjF0d2RaNE9tME0yMXAtZFQ0OXk2dkZMQU00TG9OUEJTRFI1VUEyeXdZdVB2OWgxbWZwMEZOZ3RqSmNNcnZDSnRqU2RBcVNHQU9NOEFKMDdQOE1nQjFZbk1zWlhjQQ?oc=5",
-      "published_at": "2026-11-03T22:41:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
       "headline": "Even Luka Dončić’s teammates are amazed by the scoring run he’s on to start the season - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdF9TRXpEdDBnSERtdzlWTUdIQXQyZFJfRnNrT1F3QXdZd1hldGozRmxLSWVrLWVoZHI3V2w2X2VkdWQwRVdmY09sdlRQOFVwMXBTZS1nM2ZnMW0wc296cnlKYVl1OE03Q2tPcUZTR0xLUTlMY0NsUHZaVUtKZTBMYXdSeXVpUQ?oc=5",
       "published_at": "2026-11-03T22:25:43+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
-      "headline": "Max Christie Injury: Ruled out for Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZHgtNHNoWDFyMzdqSzhDVDdDQ1lZRWtKaHU0c1BPXy1kSk9MNmlPR0xTemd3WVhhdHo5SjVqR1ZvNWZtS1kzZ1VmYzEza0dEUFdiZ3BoTGN1Mk80bFRBQV83MU5jc2JZTzRnWk5uLW9yU2gyV2FaeHprT0tRTnV6a2ZvVkp6bFVRTGwtMTduWmpoRHpWTTRzUExSc28?oc=5",
-      "published_at": "2026-11-03T22:25:15+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-03"
@@ -106,22 +130,6 @@
       "headline": "Clint Capela Injury: Questionable against Minnesota - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLWdIdjdGS0gtcGZpX0FIbENLU0NudzZFa0ktQUF2SVNCZWtOcVFJVmZXcFJHOEdLMm5DcHpTakczcWtZZEJIcGRtV1hrVlpMbkZJQ1h5b1pMMjBzSzFtM0hxR2xVcndCbEhqZjVVSzZBODQ1dDMycTBmVmI2aWhGMUJoN3hkaDlvTEp6UVR3VkIzdUpKeF95Y1p0cVFDMUpZc0hKVXdn?oc=5",
       "published_at": "2026-11-03T22:19:54+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
-      "headline": "Kon Knueppel Injury: Expected to play Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUURGVHQzQkgzeUJ5cnNMbmdybDdzVHdmdUxNM0V1OHJSeXJoejlzMFM0R05RNEtWSWpPZXBYN3RxaUFBdm5ocXdGNjBVdmNyZ3M3cGRPYk1ySG9EM0dIa0U3V21lRDk0QWhNN05sYlpPUUpDelpKWnUzY3JRcnhJN0Z4NGVXczVOemRmdzFDN1dwZXRQTmZQSW1pMnRsZ05x?oc=5",
-      "published_at": "2026-11-03T22:13:11+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
-      "headline": "Jock Landale Injury: Ruled out for Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS2MzZWF5dGNYcW02MGYxY3RUci1Fbm9sX2FNLU41Sl9iVnlPTlpNTVdaME53ODRRcFFOMVVGT0s1Y0VheTR4NFhvSzgtUGU4RmplcjhYRlM4Z3FpZ2RJNGwzSWJzbXVJRjNKTGVnVVhkdDhYcDZpNkVxTlVJRk5McFhFWWpRT3BiSVVlTFRCRU9yYzhDUF91M09pMEE?oc=5",
-      "published_at": "2026-11-03T22:08:13+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-03"
@@ -279,6 +287,14 @@
       "scope_date": "2026-11-03"
     },
     {
+      "headline": "LeBron’s wild courtside moment as NBA injury crisis sparks scenes rarely seen in 78 years – Wrap - Fox Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPU0c0b3ZaYkNtbkZwY1pjbVpmR1JWSFlNRXhiajB0bTBJS1pRaE1VU1J6bnR2MjBLUVBrUWhfeDFrSlBOY3ZnWTllamdvc29GQ2pUM1BKckdRV3hVMWpMSEpBMmk2RmhmUld0ZGtza2RUbERfdmlfVkZOaUdpR2hWSjVjN09DU3hRTWd5UnUwdkZvOGVjT2tRM0VCbDBKMlhzeW42dXRKMkZ3X3VVSjZzWC1UZWkyVU1MbGgxWHV4UEMtMWlLWXUtN1I2am1YNlljeF93Nl9XZVhwU3Vsd240cDFJME5SRkJ2U3dQekVFbW5odmRpcGV1alpYMUFLNTNJSGstRWtUVW9mM0FpSFJnYkZrczlwejZaYVVIcVpxWkFidnA1bHZLcGEwYkk5UVZOSDRCTXRPajVXdXV60gG8AkFVX3lxTE9TRzRvdlpiQ21uRnBjWmNtWmZHUlZIWU1FeGJqMHRtMElLWlFoTVVTUnpudHYyMEtRUGtRaF94MWtKUE5jdmdZOWVqZ29zb0ZDalQzUEpyR1FXeFUxakxISkEyaTZGaGZSV3Rka3NrZFRsRF92aV9WRk5pR2lHaFZKNWM3T0NTeFFNZ3lSdTB2Rm84ZWNPa1EzRUJsMEoyWHN5bjZ1dEoyRndfdVVKNnNYLVRlaTJVTUxsaDFYdXhQQy0xaUtZdS03UjZqbVg2WWN4X3c2X1dlWHBTdWx3bjRwMUkwTlJGQnZTd1B6RUVtbmh2ZGlwZXVqWlgxQUs1M0lIay1Fa1RVb2YzQWlIUmdiRmtzOXB6NlphVUhxWnFaQWJ2cDVsdktwYTBiSTlRVk5INEJNdE9qNVd1dXo?oc=5",
+      "published_at": "2026-11-03T04:33:32+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-03"
+    },
+    {
       "headline": "Collin Murray-Boyles Joins Starting Lineup Monday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMkEzaWUxU29lNGlpcHZDbEJsUnlFemM0Z2RibFpOczBwTzhiVGFlemg3UkJaWmNLendwSmpyaFUtN1dFeXFDWDJkU0NGLXkxbEtRRHpVSU9VNDhsM2hhQzJnbzJKR0VlbTlISTBUdHBlWm9tbUR2eVozVHpubXBMRU5nci16aDRIV1dKaFAzLWk5bkl4a2h6ZXRhTFo?oc=5",
       "published_at": "2026-11-03T02:47:26+00:00",
@@ -295,25 +311,9 @@
       "scope_date": "2026-11-03"
     },
     {
-      "headline": "Suns Reveal Starting Lineup vs Star-Studded Warriors - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX250S2dyR1hqNTFMNzlnMDNfRm9mR2pDT1Vad0gyY2lZM2ozRk5KbjIzNE5yTkYxbWtVWi1UT21ETlpobnFoTVhJRVRqQjEtcVRvVF91dVJaanRvNDVhbE55S0xLX0gwaHZsMldROS04VncxaGt4YW5EazhjTWFvSk5uOXE4TWVYTkJzRU5YQkowREVXbXFieU5VX1hWMTg2bjFKbUFB?oc=5",
-      "published_at": "2026-11-03T02:33:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
       "headline": "Jakob Poeltl Injury: Downgraded to doubtful Monday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZC1xVmZqN2U3cVN2T2dzX09kci1qZVZKNFhwWVRCZm9seF9BMWJUQ2ZHdnJJOUdhcHRfMzBGc3A5SGo2R0hzM0Q1anFJRTFOT0VYZXY3dlV1S2Q3SE10VjhWdFdTSUwyaHctNkc1dFp5SGZIbnhBdnBnM0lWY01QRTdSdkNYLXMzQjJPTERKTlo2MW1pVjlvdjVJY0kzRXpCWm1hUA?oc=5",
       "published_at": "2026-11-03T02:22:02+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-03"
-    },
-    {
-      "headline": "Reed Sheppard Returns Monday Without Minutes Restriction - NBA News | Fantasy Basketball - RotoBaller",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNLTRCbzFXeHJBUUlfTkd4MWxPanZiTElKNDBzTDRUbHNvSmxPTFNBY3ZTUzdKSFpfVlhBd2hXRXYzcDdSUV9BOXFCaTl0RGRBR1JqR1hBck1rc0NiYUluTXk2MVd0RFEtTnY5NElGTmZiUnVodXRWbHY1RE1LUzgxZmtDdkhzMjBDYU9JdmhnWldqOXJfcVNJekgxLXo2bkRJX1NweFN3?oc=5",
-      "published_at": "2026-11-03T01:25:10+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-03"
