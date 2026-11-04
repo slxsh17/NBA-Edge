@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-04",
-  "checked_at": "2026-11-04T10:29:27.502368+00:00",
+  "checked_at": "2026-11-04T11:29:49.895723+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -35,6 +35,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Labaron Philon Jr. relies on ‘stay ready’ mindset while on the outskirts of Sixers’ star-studded rotation - Inquirer.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSzJHZExncmt1NXdTc0V4VHl4cjhpRnZWSE90SENOY1J4SHZ4MGRGOVJqLVQ2YzdnUGxOLXI5aUJaN19wM1dXZVA1LWpmYng2VHk4SVVaYVQ5ZDN4eUVVRmVwZDFPM281cDZwTkRkbDM1N3dVRXVSZWc0Nk9tVGV3ODRwVmNGZUpBN19DQm1xWS1JMVVNY0hFbVNGNTFLZ1lPS05WSG4wTjBHNlE?oc=5",
+      "published_at": "2026-11-04T10:01:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
     {
       "headline": "NBA injury report: Tatum, Antetokounmpo listed on Wednesday, November 4 - TalkBasket.net",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVUUwNHg5Tnl3Mm5GZ3V4S2FVdlAxb1E4TDlsZmJLbGpQdDdCOHlBODdwZU1FQm9Tc01PSU0zQVhLR1Jtdzd1V1FBQndoQi1fc095eE9tXy1Ld2JEemR1cFJFcnk4SEhWR2lDMk9TQUdkQm10aXB2MkQybE5mbkszMDhrT1RXaElDRllaYXNDSGtnc2VJNFlNU2JyXy1IdEFIRHhNTQ?oc=5",
@@ -95,6 +103,14 @@
       "headline": "Myron Gardner Injury: Questionable against Clippers - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWmJmbjhLNU9XZlF3WXpxU2pRMFNxZGVXQTFrSmlBcGozXzZSRndRa1BtclZPeF9yYVZtMUQ1cGFyV0VKb0dnaFVsdVl5WmliTW1fcEtsUy1MUU1uUldrempHS1c5Q2I1NkMxZkhFbEN6SjhTOTd2OUJ5dXFLNFh0TVhLMjVkaXYyeXpmdEpMekJyc1BRUmt6cnR6Tm9JeE9GOGRuekln?oc=5",
       "published_at": "2026-11-04T01:08:15+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Jordan Goodwin Injury: Questionable for Wednesday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVElpMGxleG1OcHgtVXN0MWJKWTBSdDdzcHY1R1ZLTThvbVJkLThuZHYxUEVtdmxyRmZocmE4XzA0RHJBcXFJamFUVDNjNjlmZ1AzOWxueE1pdGVaRnBndDB0V0lDNnd0NnJselZTc21yejY0ZXY0N2stMk1Tcm1Lbnl2RjJ0RlhDTnpEdXFHRENWdDJRRUx1Ynl4VHN4NlZOUjZV?oc=5",
+      "published_at": "2026-11-04T00:26:10+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
