@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T20:58:44.471622+00:00",
+  "updated_at": "2026-11-04T21:48:29.674928+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -383,9 +383,9 @@
       "status": "OUT"
     },
     {
-      "name": "Precious Achiuwa",
+      "name": "Daeqwon Plowden",
       "team": "SAC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Maxime Raynaud",
@@ -449,11 +449,6 @@
     },
     {
       "name": "Bilal Coulibaly",
-      "team": "WAS",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Anthony Gill",
       "team": "WAS",
       "status": "DAY-TO-DAY"
     },
