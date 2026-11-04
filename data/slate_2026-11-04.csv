@@ -1,7 +1,7 @@
 name,team,position,salary,minutes,fp_per_min,ownership,matchup_factor,usage_factor,foul_lost_min,blowout_lost_min,ceiling_sd,status
 Jayson Tatum,BOS,PF/SF,10200,0,0,,1,1,0,0,8,OUT
 Shai Gilgeous-Alexander,OKC,PG,9900,0,0,,1,1,0,0,8,ACTIVE
-Jalen Johnson,ATL,PF,9700,0,0,,1,1,0,0,8,QUESTIONABLE
+Jalen Johnson,ATL,PF,9700,0,0,,1,1,0,0,8,OUT
 Cade Cunningham,DET,PG,9500,0,0,,1,1,0,0,8,ACTIVE
 Tyrese Maxey,PHI,PG,9300,0,0,,1,1,0,0,8,ACTIVE
 Anthony Davis,WAS,PF/C,9200,0,0,,1,1,0,0,8,ACTIVE
@@ -28,7 +28,7 @@ Michael Porter,BKN,SF,7300,0,0,,1,1,0,0,8,ACTIVE
 Keyonte George,UTA,PG,7200,0,0,,1,1,0,0,8,ACTIVE
 James Harden,CLE,PG,7100,0,0,,1,1,0,0,8,ACTIVE
 Andrew Nembhard,IND,SG/PG,7000,0,0,,1,1,0,0,8,ACTIVE
-Trey Murphy,NOP,SG/SF,6900,0,0,,1,1,0,0,8,QUESTIONABLE
+Trey Murphy,NOP,SG/SF,6900,0,0,,1,1,0,0,8,OUT
 Lauri Markkanen,UTA,PF/SF,6800,0,0,,1,1,0,0,8,ACTIVE
 Dyson Daniels,ATL,SF/SG,6700,0,0,,1,1,0,0,8,ACTIVE
 Naz Reid,CHA,PF/C,6600,0,0,,1,1,0,0,8,ACTIVE
@@ -96,11 +96,11 @@ Tre Jones,CHI,PG/SG,4300,0,0,,1,1,0,0,8,ACTIVE
 Neemias Queta,BOS,C,4200,0,0,,1,1,0,0,8,ACTIVE
 Mikel Brown,BKN,PG,4200,0,0,,1,1,0,0,8,ACTIVE
 Aday Mara,OKC,C,4200,0,0,,1,1,0,0,8,ACTIVE
-Jaylin Williams,OKC,C/PF,4200,0,0,,1,1,0,0,8,QUESTIONABLE
 Karlo Matkovic,NOP,C,4200,0,0,,1,1,0,0,8,ACTIVE
 Isaiah Collier,UTA,PG,4200,0,0,,1,1,0,0,8,ACTIVE
 Anfernee Simons,PHI,SG,4200,0,0,,1,1,0,0,8,ACTIVE
 Adem Bona,PHI,C,4200,0,0,,1,1,0,0,8,ACTIVE
+Jaylin Williams,OKC,C/PF,4200,0,0,,1,1,0,0,8,OUT
 Jaylen Wells,MEM,SF,4100,0,0,,1,1,0,0,8,ACTIVE
 Brayden Burries,MIL,SG,4100,0,0,,1,1,0,0,8,ACTIVE
 Dennis Schroder,CHA,PG,4100,0,0,,1,1,0,0,8,ACTIVE
