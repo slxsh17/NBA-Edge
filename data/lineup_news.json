@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-04",
-  "checked_at": "2026-11-04T16:40:39.806724+00:00",
+  "checked_at": "2026-11-04T17:39:42.766823+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -38,7 +38,7 @@
     {
       "headline": "Nikola Jokic's Trade Status Discussed by NBA Exec Amid Nuggets' Struggles to Start 2026 Season - Bleacher Report",
       "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUGh5ZGFVQWlRdEs3QS1UVDNROTVGcEdnbFdfUy0tdkpCU0JVX1poTmItdVI3dHR1cjdFd1VFUjFNWFF0WDR4dFZoeUU2dngyOEQwbk1OOTkzalJMNWhuNE9JN19sTXowcDlXNER1WkRPRE4zYUJwUExBSVNCbko5MmxQNEVqc3ZDcHduY0xTbTdTRDBWcnpUbHZjRU96SHNnOE1zSUI1VjNTSF9JVmlCZFU3NFItYnpIRnNwOHFkZFpOellUX1NRWThtSQ?oc=5",
-      "published_at": "2026-11-04T16:07:30+00:00",
+      "published_at": "2026-11-04T16:16:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -164,6 +164,14 @@
       "scope_date": "2026-11-04"
     },
     {
+      "headline": "Scotty Pippen Jr. (back) ruled out Wednesday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaEVtYkloOS00V2RfbkNfNk5PN2xBVUF5bjRQbUdyMWYwVVpoR0FmTnNNRmFsNzE3ZVQwN0xid0dsdWdJeFRhYUVHeDM4dUl1ZUJ0M1JXcWJRLTJ5NFN2dElCTDgtSTM1cFFnMVVHbHkxMXlKeTlYcUxTX0xQUWVnWmZ4MXpZZ3dValdGNl9EdF9fUlXSAZgBQVVfeXFMT3c0TmttTE1GeHl0MWRNSkRFOVp2SGUweFRNaW5BQW5LcGFENXhMc0prdFJzbThpMDJIcmRCMGpVdTdaYWtEUkRvTWpIdUZtZ1ppS1NXSGVRTmtxb3hHQ0E3ZnltNlNGMGdSMEdTSzRGbUQ3S0JUaWtCalVBNXJUT0dMNzJPRF9PeWExeUw2dHFUOGlJVmtoeGQ?oc=5",
+      "published_at": "2026-11-03T23:36:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
       "headline": "Obi Toppin Injury: Questionable for Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYlFzYURHTlBuV1pCd1lraHBIMm9rdm1GWFNYZ25UbzF4MVZaVDhZTGhhME51ckNkT1psdTk3anBnMjRJMEM0enFFbFhXQmFna1J6M2xEQlVNVnlBMHBwY2FaV0ZCTHBMelY1ZlA3Vno5RWZHb3plcE5NUDJJWGFad0NFaWxKWER4a1RtT001ZGZYOFVPdVNWM0FfMjktZw?oc=5",
       "published_at": "2026-11-03T23:35:03+00:00",
@@ -175,14 +183,6 @@
       "headline": "Fourth-Year Guard May Be Odd Man Out In Cleveland Cavaliers Rotation - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1CNkx0U1U0eVJPMDFKREVuUC1IQUliRTJiYVFzRlpfbTBXM3hnakhXT2t5UlBRSlZkRl9DSV9ET3E5MmdZYTBaTHBRUmcxLWFkNTRib0JheU1QMHgwOXZJa2dMRDdaeFpLQjZYckRZMi0ySzlDNlZkNlVQTXFYUQ?oc=5",
       "published_at": "2026-11-03T23:30:02+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "Mo Bamba Injury: Questionable for Wednesday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUE1IbjVEU1d6VkcyY014dmVwZnNkT2pRdkV2WDdmem56QTJtbG9EZXZZcFpUOENBY0lvaGtUSG41Yk9lNFgzakVseE1yeFFCRVdaT2NrWVl1eW94VGtsVmJNNXMyQ0FmNzZMbUoyTTgyNVJWbzVoVzdmMHo4ODZJQ0RkM05zVzl0bndBR0ZMOXhtVjhfaWF2RFdTcw?oc=5",
-      "published_at": "2026-11-03T23:04:44+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -271,14 +271,6 @@
       "headline": "Matisse Thybulle News: Continues to start - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMFNjWlROLVM5dEEtZkVTRWdmQnBKck5lVXo2aFlBZTEwcFNDbTFiTU9jbS1CemprOURfTElZdnpNQUF6eHQtZWV1Q0hHTEdrZ0Q0QU9FbE9oMHdMcndYRFdneUhjZ2VvVTVrQkE4X09IWU9BdnJMbXJaNEhlaWdxTWNhYVdOZlh3YlRrYjZ3XzktQU9jMVBaRQ?oc=5",
       "published_at": "2026-11-03T18:39:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "Pacers Injury Crunch Rotation - Total Apex Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tWWVPZ2tabEtSUjdPX1hyaVhBN2p4eTVMVjdxdjNvdTBhNVNwQ1pNQ0gxS045YUFXOFhBR2lKSEpHWGJKenJYUHEwWXc0Rld2N2xQTnFxSE5FZUN3LURmbWp1aUxsVW1NWHc?oc=5",
-      "published_at": "2026-11-03T17:36:58+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
