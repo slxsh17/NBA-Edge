@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T23:27:41.377214+00:00",
+  "updated_at": "2026-11-04T00:10:07.438704+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -108,6 +108,16 @@
       "status": "OUT"
     },
     {
+      "name": "Cameron Johnson",
+      "team": "DEN",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Alpha Diallo",
+      "team": "DEN",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Spencer Jones",
       "team": "DEN",
       "status": "OUT"
@@ -168,27 +178,12 @@
       "status": "OUT"
     },
     {
-      "name": "Pascal Siakam",
+      "name": "Ivica Zubac",
       "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Aaron Nesmith",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Andrew Nembhard",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Kelly Oubre Jr.",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Larry Nance Jr.",
       "team": "IND",
       "status": "DAY-TO-DAY"
     },
@@ -199,11 +194,6 @@
     },
     {
       "name": "T.J. McConnell",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Ivica Zubac",
       "team": "IND",
       "status": "OUT"
     },
@@ -258,14 +248,14 @@
       "status": "OUT"
     },
     {
-      "name": "Scotty Pippen Jr.",
-      "team": "MEM",
-      "status": "OUT"
-    },
-    {
       "name": "Quinten Post",
       "team": "MEM",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Scotty Pippen Jr.",
+      "team": "MEM",
+      "status": "OUT"
     },
     {
       "name": "Terrence Shannon Jr.",
