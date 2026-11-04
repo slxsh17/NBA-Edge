@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T18:09:08.433897+00:00",
+  "updated_at": "2026-11-04T19:10:01.649142+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -165,7 +165,7 @@
     {
       "name": "Clint Capela",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Steven Adams",
@@ -260,7 +260,7 @@
     {
       "name": "Terrence Shannon Jr.",
       "team": "MIN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Anthony Edwards",
@@ -273,14 +273,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jordan Poole",
-      "team": "NOP",
-      "status": "OUT"
-    },
-    {
       "name": "Trey Murphy III",
       "team": "NOP",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jordan Poole",
+      "team": "NOP",
+      "status": "OUT"
     },
     {
       "name": "Yves Missi",
@@ -290,7 +290,7 @@
     {
       "name": "Josh Hart",
       "team": "NYK",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Nikola Topic",
@@ -321,11 +321,6 @@
       "name": "Jalen Williams",
       "team": "OKC",
       "status": "OUT"
-    },
-    {
-      "name": "Anthony Black",
-      "team": "ORL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jonathan Isaac",
@@ -433,14 +428,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jusuf Nurkic",
-      "team": "UTA",
-      "status": "OUT"
-    },
-    {
       "name": "Mo Bamba",
       "team": "UTA",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jusuf Nurkic",
+      "team": "UTA",
+      "status": "OUT"
     },
     {
       "name": "Jaren Jackson Jr.",
