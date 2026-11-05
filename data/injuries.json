@@ -1,7 +1,12 @@
 {
-  "updated_at": "2026-11-05T00:09:17.444017+00:00",
+  "updated_at": "2026-11-05T01:19:30.002164+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
+    {
+      "name": "Asa Newell",
+      "team": "ATL",
+      "status": "DAY-TO-DAY"
+    },
     {
       "name": "Jalen Johnson",
       "team": "ATL",
@@ -23,12 +28,12 @@
       "status": "OUT"
     },
     {
-      "name": "Jayson Tatum",
+      "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
     },
     {
-      "name": "Devin Carter",
+      "name": "Jayson Tatum",
       "team": "BOS",
       "status": "OUT"
     },
@@ -40,6 +45,11 @@
     {
       "name": "Tyler Bilodeau",
       "team": "BKN",
+      "status": "OUT"
+    },
+    {
+      "name": "Kon Knueppel",
+      "team": "CHA",
       "status": "OUT"
     },
     {
@@ -118,24 +128,14 @@
       "status": "OUT"
     },
     {
-      "name": "Kristaps Porzingis",
+      "name": "Gui Santos",
       "team": "GSW",
       "status": "OUT"
     },
     {
-      "name": "Brandon Williams",
+      "name": "Kristaps Porzingis",
       "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Gui Santos",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Al Horford",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Moses Moody",
@@ -148,27 +148,17 @@
       "status": "OUT"
     },
     {
-      "name": "Clint Capela",
-      "team": "HOU",
-      "status": "OUT"
-    },
-    {
       "name": "Steven Adams",
       "team": "HOU",
       "status": "OUT"
     },
     {
-      "name": "Ivica Zubac",
-      "team": "IND",
+      "name": "Clint Capela",
+      "team": "HOU",
       "status": "OUT"
     },
     {
       "name": "Kelly Oubre Jr.",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Obi Toppin",
       "team": "IND",
       "status": "OUT"
     },
@@ -223,11 +213,6 @@
       "status": "OUT"
     },
     {
-      "name": "Quinten Post",
-      "team": "MEM",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Scotty Pippen Jr.",
       "team": "MEM",
       "status": "OUT"
@@ -240,7 +225,7 @@
     {
       "name": "Kam Jones",
       "team": "MIL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Terrence Shannon Jr.",
@@ -259,11 +244,6 @@
     },
     {
       "name": "Trey Murphy III",
-      "team": "NOP",
-      "status": "OUT"
-    },
-    {
-      "name": "Jordan Poole",
       "team": "NOP",
       "status": "OUT"
     },
@@ -343,14 +323,14 @@
       "status": "OUT"
     },
     {
-      "name": "Rasheer Fleming",
+      "name": "Jordan Goodwin",
       "team": "PHX",
       "status": "OUT"
     },
     {
-      "name": "Jordan Goodwin",
+      "name": "Rasheer Fleming",
       "team": "PHX",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Mark Williams",
@@ -411,11 +391,6 @@
       "name": "Nate Bittle",
       "team": "TOR",
       "status": "OUT"
-    },
-    {
-      "name": "Mo Bamba",
-      "team": "UTA",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jusuf Nurkic",
