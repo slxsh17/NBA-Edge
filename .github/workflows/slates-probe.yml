@@ -1,0 +1,39 @@
+name: Slates probe (temporary)
+on:
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan DFF slate IDs for today
+        run: |
+          python3 - <<'PY'
+          import sys, re, time, datetime as dt
+          from zoneinfo import ZoneInfo
+          sys.path.insert(0, 'scripts')
+          import update_slate as U
+          day = dt.datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+          page = U.fetch(f'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/')
+          start = U.page_var(page, 'url')
+          links = sorted(set(re.findall(r'[?&]slate=([0-9A-Za-z]{4,8})', page)))
+          print('::warning::default ' + ' '.join(f"{k}={U.page_var(page, k)}" for k in ('url', 'slate', 'url_start_date', 'team_count')) + ' links ' + ','.join(links))
+          vars_found = sorted(set(re.findall(r"window\.([a-z_]+)\s*=", page)))
+          print('::warning::window vars ' + ','.join(vars_found))
+          out = []
+          sid = start
+          for _ in range(10):
+              sid = U.prev_id(sid)
+          for i in range(45):
+              for kind, url in (('C', U.MAIN_URL), ('S', U.SG_URL)):
+                  try:
+                      pg = U.fetch(url.format(day=day, sid=sid))
+                      rows = len(U.ROW.findall(pg))
+                      out.append(f"{kind}{sid}:{U.page_var(pg, 'slate')}/{U.page_var(pg, 'url_start_date')}/t{U.page_var(pg, 'team_count')}/r{rows}")
+                  except Exception as e:
+                      out.append(f"{kind}{sid}:ERR {str(e)[:40]}")
+                  time.sleep(0.6)
+              sid = U.next_id(sid)
+          for j in range(0, len(out), 30):
+              print('::warning::' + ' | '.join(out[j:j + 30]).replace('::', ' '))
+          PY
