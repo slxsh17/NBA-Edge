@@ -1106,11 +1106,17 @@ function riskPct(){const v=Number(store.get('riskPct',5));return v>0&&v<=50?v:5}
 // Stakes: quarter Kelly on a conservative return (the estimate minus its own error), one option per
 // contest type, within your bankroll x risk %.
 function feeSets(fees){const f=[...fees].sort((a,b)=>a-b),out=[];for(let m=1;m<1<<f.length;m++){const s=f.filter((_,i)=>m>>i&1);if(s.length<=3)out.push(s)}return out}
+// The plan for the slate on screen: Main (contest_sims plan) or any other slate (contest_sims plans[key]).
+function curPlan(){
+  const c=S.cs;if(!c||S.source==='csv')return null;
+  if(onMain())return csReady()&&c.plan&&c.catalog?{...c.plan,catalog:c.catalog,label:'Main',built_at:c.built_at}:null;
+  return c.plans_date===S.day&&c.plans?c.plans[fmtKey()]||null:null;
+}
 function planPicks(){
-  const c=S.cs;if(!csReady()||!c.plan||!c.catalog)return null;
-  const B=bankroll(),budget=B*riskPct()/100,cat=new Map(c.catalog.map(k=>[k.id,k]));
+  const pl=curPlan();if(!pl)return null;
+  const B=bankroll(),budget=B*riskPct()/100,cat=new Map(pl.catalog.map(k=>[k.id,k]));
   const tops=[],bestOf=[];
-  for(const row of c.plan.contests){const k=cat.get(row.id);if(!k||!row.options.length)continue;let top=null;
+  for(const row of pl.contests){const k=cat.get(row.id);if(!k||!row.options.length)continue;let top=null;
     bestOf.push({k,o:row.options[0]});
     for(const o of row.options){const mu=o.ev-1-(o.se||0);if(mu<=0)continue;
       const stakes=k.max===1?feeSets(k.fees).map(fs=>({fees:fs,stake:fs.reduce((a,b)=>a+b,0)})):k.fees.map(f=>({fees:[f],stake:o.n*f}));
@@ -1126,11 +1132,11 @@ function stratText(st){if(!st)return '';if(st.mode!=='gpp')return 'Cash mode (hi
   return `Tournament mode · upside ${Math.round((t.ceilW||0)*100)}%, leverage ${(t.levW||0).toFixed(2)}, fade ${(t.ownFade||0).toFixed(2)}${(t.stack||0)>=2?`, ${t.stack}-player game stack`:''} · simulated winners ${st.sim?'on':'off'}`}
 function renderPlan(){
   const box=$('day-plan');if(!box)return;S.planItems=[];
-  if(!onMain()){box.innerHTML=`<div class="dplan"><b>Tonight’s plan</b> covers the Main slate. ${S.format==='single'?'Single-game':'This slate’s'} contests aren’t simulated yet: skip them, or keep it to $1–2.</div>`;return}
-  const P=planPicks();
-  if(!P){box.innerHTML=S.cs&&S.cs.date&&S.today&&S.cs.date!==S.today.date?'<div class="dplan muted">Tonight’s plan appears once the pipeline has simulated today’s slate.</div>':'';return}
-  S.planItems=P.items;const ST=S.cs.plan.strategies,exp=S.cs.plan.exposure||60;
-  const when=S.cs.built_at?new Date(S.cs.built_at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'';
+  const P=planPicks(),pl=curPlan();
+  if(!P){box.innerHTML=S.source==='csv'?'':`<div class="dplan muted">The plan for ${onMain()?'today’s slate':'this slate'} appears once the pipeline has simulated it (every slate and single game gets one).</div>`;return}
+  S.planItems=P.items;const ST=pl.strategies,exp=pl.exposure||60;
+  const when=pl.built_at?new Date(pl.built_at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'';
+  const slateName=onMain()?'Main slate':S.format==='single'?((singles().find(x=>x.id===S.sgId)||{}).label||'single game'):((sides().find(x=>x.id===S.cslate)||{}).label||'this slate');
   const inputs=`<div class="dplan-in"><label>Bankroll $<input id="bankroll" type="number" min="10" step="10" inputmode="decimal" value="${P.B}"></label><label>Max risk tonight <input id="riskpct" type="number" min="1" max="25" step="1" inputmode="decimal" value="${riskPct()}">%</label></div>`;
   const what=it=>it.k.max===1?(it.fees.length>1?`1 entry in each of ${it.fees.length} different contests (${it.fees.map(f=>'$'+f).join(', ')}), same lineup`:`1 entry in a $${it.fees[0]} contest`)
     :`${it.o.n} entr${it.o.n>1?'ies':'y'} × $${it.fees[0]}`;
@@ -1142,21 +1148,21 @@ function renderPlan(){
   const used=new Set(P.items.map(it=>it.k.id));
   const skip=P.bestOf.filter(x=>!used.has(x.k.id)).map(x=>`${esc(x.k.name)} (${signPct(x.o.ev-1)}${x.o.ev>1?', too uncertain':''})`);
   const b=P.bestOf[0];
-  const head=P.items.length?`<b>Tonight’s plan: ${money(Math.round(P.spent*100)/100)}</b> <span class="muted">(${(P.spent/P.B*100).toFixed(1)}% of bankroll; your limit ${money(Math.round(P.budget))})</span>`
-    :`<b>Tonight’s plan: sit out.</b> <span class="muted">Best option: ${b?`${esc(b.k.name)} with ${esc((ST[b.o.s]||{}).label||'')}, ${signPct(b.o.ev-1)} per $1`:'none'}${b&&b.o.ev>1?', but not by enough to trust after allowing for how uncertain the estimate is':''}. If you play anyway, keep it to $1–2.</span>`;
+  const head=P.items.length?`<b>Tonight’s plan, ${esc(slateName)}: ${money(Math.round(P.spent*100)/100)}</b> <span class="muted">(${(P.spent/P.B*100).toFixed(1)}% of bankroll; your limit ${money(Math.round(P.budget))})</span>`
+    :`<b>Tonight’s plan, ${esc(slateName)}: sit out.</b> <span class="muted">Best option: ${b?`${esc(b.k.name)} with ${esc((ST[b.o.s]||{}).label||'')}, ${signPct(b.o.ev-1)} per $1`:'none'}${b&&b.o.ev>1?', but not by enough to trust after allowing for how uncertain the estimate is':''}. If you play anyway, keep it to $1–2.</span>`;
   const sh=S.cs.odds_shift_per_player,ss=S.cs.odds_shift_soft_per_player;
   box.innerHTML=`<div class="dplan">${head}${inputs}${rows}
     ${skip.length?`<div class="muted" style="font-size:12.5px;margin-top:6px">Skipping: ${skip.join(', ')}.</div>`:''}
-    <details style="font-size:12.5px;margin-top:6px"><summary>How this plan is made</summary><p class="muted" style="margin:4px 0 0">Not based on the lineups you’ve built. The pipeline builds each strategy the way the Build button does (Cash; Tournament with the learned settings; Tournament max upside; simulated winners, or the LeVertical portfolio for 50+), plays tonight’s slate out 300 times, and scores 1, 5 and 20 lineups (50/150 for the portfolio) in every contest type against its own simulated field. Calibrated on past nights: ${sh!=null?(sh*9).toFixed(0):'?'} pts per lineup in Double Ups and big tournaments, ${ss!=null?(ss*9).toFixed(0):'?'} pts in smaller tournaments (what it takes for the simulator’s chances to match how NBA EDGE’s lineups really finished). Stakes are quarter Kelly on the return minus its own estimation error, so a lucky simulation doesn’t get the money. Recomputed with each projection update${when?' (last '+when+')':''}. Estimates from a small sample; not financial advice.</p></details></div>`;
+    <details style="font-size:12.5px;margin-top:6px"><summary>How this plan is made</summary><p class="muted" style="margin:4px 0 0">Not based on the lineups you’ve built. The pipeline builds each strategy the way the Build button does (Cash; Tournament with the learned settings; Tournament max upside; simulated winners, or the LeVertical portfolio for 50+), plays tonight’s slate out 300 times, and scores 1, 5 and 20 lineups (50/150 for the portfolio) in every contest type against its own simulated field. Calibrated on past nights: ${sh!=null?(sh*9).toFixed(0):'?'} pts per lineup in Double Ups and big tournaments, ${ss!=null?(ss*9).toFixed(0):'?'} pts in smaller tournaments (what it takes for the simulator’s chances to match how NBA EDGE’s lineups really finished).${onMain()?'':` For this slate: Cash, Tournament and Max upside only (no simulated winners or portfolio), against 600-lineup simulated fields${S.format==='single'?'; single-game contest sizes and fees are estimates, and the Main slate’s calibration is applied per lineup spot, charged by how rarely the field has that player (a player everyone rosters can’t cost you ground), until single-game results are tracked':''}.`} Stakes are quarter Kelly on the return minus its own estimation error, so a lucky simulation doesn’t get the money. Recomputed with each projection update${when?' (last '+when+')':''}. Estimates from a small sample; not financial advice.</p></details></div>`;
   $('bankroll').onchange=e=>{const v=Math.max(10,Number(e.target.value)||400);store.set('bankroll',v);renderPlan()};
   $('riskpct').onchange=e=>{const v=Math.max(1,Math.min(25,Number(e.target.value)||5));store.set('riskPct',v);renderPlan()};
 }
 async function buildFromPlan(i){
-  const it=(S.planItems||[])[i];if(!it)return;const st=S.cs.plan.strategies[it.o.s];if(!st)return;
-  S.mode=st.mode;S.useSim=!!st.sim;S.count=it.o.n;S.exposure=S.cs.plan.exposure||60;
+  const pl=curPlan(),it=(S.planItems||[])[i];if(!it||!pl)return;const st=pl.strategies[it.o.s];if(!st)return;
+  S.mode=st.mode;S.useSim=!!st.sim;S.count=it.o.n;S.exposure=pl.exposure||60;
   const ex=$('exposure');if(ex){ex.value=S.exposure;$('exposure-out').textContent=S.exposure+'%'}
   paintMode&&paintMode();paintCount&&paintCount();syncExposure();syncSim();saveDayState();
-  await withSettings({mode:st.mode,...(st.settings||{}),minUnique:S.cs.plan.min_unique||2,maxTeam:4,minSalary:0},build);
+  await withSettings({mode:st.mode,...(st.settings||{}),minUnique:pl.min_unique||2,maxTeam:4,minSalary:0},build);
   const status=$('build-status');if(S.lineups.length)status.textContent+=` For tonight’s plan: ${it.k.name}, ${it.k.max===1?(it.fees.length>1?'1 entry each in the '+it.fees.map(f=>'$'+f).join(', ')+' contests':'one $'+it.fees[0]+' entry'):it.o.n+' × $'+it.fees[0]}.`;
   $('build-status').scrollIntoView({behavior:'smooth',block:'nearest'});
 }

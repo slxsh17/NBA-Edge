@@ -576,6 +576,181 @@ def daily_plan(pool, O, quants, shift, soft, portfolio, today):
             'contests': out, 'sim_lineups': len(sims), 'portfolio': len(port)}
 
 
+# ---------- plans for every other slate (After Hours, Express..., single games) ----------
+SIDE_EXAMPLES = {'double_up': 'Double Ups on this slate', 'fifty': '50/50s on this slate', 'se': 'single-entry tournaments on this slate',
+                 'small': 'small-field tournaments on this slate', 'me20': '20-max tournaments on this slate', 'shot': '150-max tournaments on this slate'}
+SIDE_CATALOG = [dict(c, examples=SIDE_EXAMPLES[c['id']], entries=max(50, c['entries'] // 4)) for c in CATALOG if c['id'] != 'penny']
+# FanDuel single-game contests: same payout shapes; field sizes and fees are rough (no tracked data yet).
+SINGLE_CATALOG = [
+    {'id': 'double_up', 'name': 'Single-game Double Up', 'examples': 'single-game Double Ups', 'fees': [2, 5, 10], 'field': 'sharp',
+     'kind': 'double', 'share': 0.435, 'mult': 2.0, 'max': 1, 'entries': 300},
+    {'id': 'fifty', 'name': 'Single-game 50/50', 'examples': 'single-game 50/50s', 'fees': [1, 2, 5], 'field': 'sharp', 'kind': 'double',
+     'share': 0.5, 'mult': 1.74, 'max': 1, 'entries': 100},
+    {'id': 'se', 'name': 'Single-entry single-game tournament', 'examples': 'single-entry single-game tournaments', 'fees': [1, 2, 5],
+     'field': 'casual', 'kind': 'gpp', 'share': 0.2, 'rake': 0.156, 'max': 1, 'entries': 500},
+    {'id': 'me20', 'name': 'Single-game tournament (20 max)', 'examples': 'multi-entry single-game tournaments', 'fees': [1, 3],
+     'field': 'casual', 'kind': 'gpp', 'share': 0.22, 'rake': 0.156, 'max': 20, 'entries': 3000},
+    {'id': 'shot', 'name': 'Big single-game tournament (150 max)', 'examples': 'large single-game tournaments', 'fees': [0.25, 1],
+     'field': 'sharp', 'kind': 'gpp', 'share': 0.22, 'rake': 0.15, 'max': 150, 'entries': 20000},
+]
+SIDE_FIELD = 600
+
+
+def slate_pools(today):
+    """[(key, label, fmt, pool, games)] for every slate besides Main, with that slate's salaries and
+    ownership (single games also carry their optimal-rate leverage)."""
+    by = {norm(p['name']) + '|' + p['team']: p for p in today.get('players', [])}
+    out = []
+    for cs in today.get('classic_slates', []):
+        pool = []
+        for r in cs['players']:
+            b = by.get(r['k'])
+            if b and not b.get('out') and b['proj'] > 0 and r.get('status') not in ('OUT', 'DOUBTFUL') and r.get('salary'):
+                pool.append({**b, 'salary': r['salary'], 'own': r.get('own') or 0.0, 'lev': 0.0})
+        out.append(('cl:' + cs['id'], cs['label'], 'classic', pool, cs['games']))
+    for sg in today.get('single_games', []):
+        pool = []
+        for r in sg['players']:
+            b = by.get(r['k'])
+            if b and not b.get('out') and b['proj'] > 0 and r.get('status') not in ('OUT', 'DOUBTFUL') and r.get('salary'):
+                pool.append({**b, 'salary': r['salary'], 'own': r.get('own') or 0.0, 'lev': r.get('lev') or 0.0})
+        out.append(('sg:' + sg['id'], sg['label'], 'single', pool, [{'away': sg['away'], 'home': sg['home'], 'time': sg['time']}]))
+    return out
+
+
+def build_field_any(pool, fmt, n, seed, opt_share, noise):
+    """A contest field as lineups of (player index, points multiplier)."""
+    if fmt == 'classic':
+        return [[(i, 1.0) for i in lu] for lu in build_field(pool, n=n, seed=seed, opt_share=opt_share, noise=noise)]
+    rng = random.Random(seed)
+    solver = FS.Solver(pool, 'single', 60000)
+    base = [(p.get('ext') if p.get('ext') else p['proj']) * 0.5 + p['proj'] * 0.5 for p in pool]
+    out = []
+    for _ in range(n):
+        lu = solver.best([b * math.exp(noise * rng.gauss(0, 1)) for b in base])
+        if lu:
+            out.append([(i, 1.5 if sl == 'MVP' else 1.0) for i, sl in lu])
+    return out
+
+
+def lu_scores(O, lus):
+    """nights x lineups"""
+    idx = np.array([[i for i, _ in lu] for lu in lus])
+    w = np.array([[x for _, x in lu] for lu in lus])
+    return (O[:, idx] * w[None, :, :]).sum(axis=2)
+
+
+def plan_build_any(pool, fmt, s, count):
+    """The site's Build button for any format: best lineups by the strategy's score, exposure cap,
+    2+ players different, game stack in classic tournaments."""
+    size = FS.FORMATS[fmt]['size']
+    cap = max(1, math.ceil(count * PLAN_EXPOSURE / 100)) if count > 1 else 1
+    solver = FS.Solver(pool, fmt, 60000)
+    if fmt == 'classic' and s['mode'] == 'gpp' and (s['settings'].get('stack') or 0) >= 2:
+        FS.add_game_stack(solver, int(s['settings']['stack']))
+    h, n = solver.h, len(pool)
+    cols = (lambda ids: list(ids)) if fmt == 'classic' else (lambda ids: list(ids) + [n + i for i in ids])
+    sc = [site_score(p, s) for p in pool]
+    made, uses = [], {}
+    while len(made) < count:
+        for i, c in uses.items():
+            if c >= cap:
+                for col in cols([i]):
+                    h.changeColBounds(col, 0.0, 0.0)
+        lu = solver.best(sc)
+        if not lu:
+            break
+        made.append(lu)
+        ids = [i for i, _ in lu]
+        cc = cols(ids)
+        h.addRow(0, size - PLAN_MIN_UNIQUE, len(cc), cc, [1.0] * len(cc))
+        for i in ids:
+            uses[i] = uses.get(i, 0) + 1
+    return [[(i, 1.5 if sl == 'MVP' else 1.0) for i, sl in lu] for lu in made]
+
+
+def slate_plan(key, label, fmt, pool, corr, shift, soft):
+    """Tonight's plan for one non-Main slate: Cash, Tournament (learned settings) and Max upside,
+    built like the site builds them, simulated in that format's contest types."""
+    cat = SINGLE_CATALOG if fmt == 'single' else SIDE_CATALOG
+    O = outcomes(pool, corr)
+    sharp = build_field_any(pool, fmt, SIDE_FIELD, 7, 0.92, 0.065 if fmt == 'classic' else 0.08)
+    casual = build_field_any(pool, fmt, SIDE_FIELD, 9, 0.65 if fmt == 'classic' else 1.0, 0.18 if fmt == 'classic' else 0.3)
+    quants = {'sharp': np.percentile(lu_scores(O, sharp), QS, axis=1).T, 'casual': np.percentile(lu_scores(O, casual), QS, axis=1).T}
+    S = {k: v for k, v in plan_strategies().items() if k != 'sim'}
+    if fmt == 'single':
+        S = {k: {**v, 'settings': {kk: vv for kk, vv in v['settings'].items() if kk != 'stack'}} for k, v in S.items()}
+    # Calibration shift (fitted on the Main slate, per player): what our lineups give back against the
+    # field because we pick players we like more than the public does. Classic slates: per slot, as on
+    # Main. Single games: the field rosters mostly the same players, and a player both sides roster
+    # can't cost us ground, so each slot is charged in proportion to how rarely the field has him.
+    per_pp = {'sharp': shift or 0.0, 'casual': (shift if soft is None else soft) or 0.0}
+    own_f = {}
+    for f, fl in (('sharp', sharp), ('casual', casual)):
+        cnt = np.zeros(len(pool))
+        for lu in fl:
+            for i, _ in lu:
+                cnt[i] += 1
+        own_f[f] = cnt / max(1, len(fl))
+
+    def lineup_shift(lus, f):
+        if fmt == 'classic':
+            return np.full(len(lus), 9.0 * per_pp[f])
+        return np.array([per_pp[f] * sum(w * (1 - own_f[f][i]) for i, w in lu) for lu in lus])
+    sets = {}
+    for sk, st in S.items():
+        big = plan_build_any(pool, fmt, st, 20)
+        sets[(sk, 20)] = big
+        sets[(sk, 5)] = plan_build_any(pool, fmt, st, 5)
+        sets[(sk, 1)] = big[:1]
+    out = []
+    for c in cat:
+        Q = quants[c['field']]
+        opts = []
+        for (sk, n), lus in sets.items():
+            if n > c['max'] or len(lus) < n:
+                continue
+            sc = lu_scores(O, lus[:n]) + lineup_shift(lus[:n], c['field'])[None, :]
+            pct = np.stack([np.interp(sc[k], Q[k], QS, left=0.0, right=99.99) for k in range(len(sc))])
+            P = payout_vec(c, np.maximum(1e-6, 1 - pct / 100))
+            pr = P.sum(axis=1) / n
+            opts.append({'s': sk, 'n': n, 'ev': round(float(pr.mean()), 3), 'sd': round(float(pr.std()), 3),
+                         'se': round(float(pr.std() / math.sqrt(len(pr))), 3), 'cash': round(float((P > 0).any(axis=1).mean()), 3),
+                         'proj': round(float(np.mean([sum(pool[i]['proj'] * w for i, w in lu) for lu in lus[:n]])), 1)})
+        opts.sort(key=lambda o: -o['ev'])
+        out.append({'id': c['id'], 'options': opts})
+    return {'version': 1, 'key': key, 'label': label, 'fmt': fmt, 'catalog': cat, 'exposure': PLAN_EXPOSURE,
+            'min_unique': PLAN_MIN_UNIQUE, 'strategies': S, 'contests': out, 'players': len(pool),
+            'approx': fmt == 'single', 'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}
+
+
+def other_plans(today, corr, shift, soft, prev):
+    """Plans for every non-Main slate; one whose inputs haven't changed is reused, and one whose
+    games have started keeps its last plan."""
+    import hashlib
+    now = dt.datetime.now(dt.timezone.utc)
+    plans = {}
+    for key, label, fmt, pool, games in slate_pools(today):
+        need = 20 if fmt == 'classic' else 10
+        if len(pool) < need:
+            continue
+        tips = [dt.datetime.fromisoformat(g['time'].replace('Z', '+00:00')) for g in games if g.get('time')]
+        if tips and min(tips) <= now and key in prev:
+            plans[key] = prev[key]
+            continue
+        sig = hashlib.sha1(json.dumps(['slate-plan-v2', key, fmt, corr, shift, soft, plan_strategies()] +
+                                      [[p['name'], p['team'], p['salary'], round(p['proj'], 1), round(p.get('own') or 0)] for p in pool]).encode()).hexdigest()
+        if prev.get(key, {}).get('sig') == sig:
+            plans[key] = prev[key]
+            continue
+        try:
+            plans[key] = {**slate_plan(key, label, fmt, pool, corr, shift, soft), 'sig': sig}
+            print(f'plan {label} ({fmt}): built')
+        except Exception as e:
+            print(f'::warning::plan for {label} failed: {e}')
+    return plans
+
+
 def live(corr, odds_shift=None, soft_shift=None):
     today = read(DATA / 'today.json')
     if not today.get('players'):
@@ -741,12 +916,23 @@ def main():
             (DATA / 'portfolios' / f"{lv['date']}.json").write_text(json.dumps(
                 {'date': lv['date'], 'frozen_at': lv['built_at'], 'lineups': lv['portfolio']['lineups']},
                 separators=(',', ':')) + '\n', encoding='utf-8')
+    old = read(DATA / 'contest_sims.json')
     if lv == 'same':
-        print('live: projections unchanged; keeping contest_sims.json')
+        print('live: projections unchanged; keeping the Main slate simulation')
+        doc = old
     elif lv:
-        old = read(DATA / 'contest_sims.json')
-        (DATA / 'contest_sims.json').write_text(json.dumps(lv, separators=(',', ':')) + '\n', encoding='utf-8')
+        doc = lv
         print('live', lv['date'], 'lines (median):', lv['lines_median'], 'field own corr', lv['field_own_vs_model_corr'])
+    else:
+        doc = old
+    # every other slate gets its own plan
+    today = read(DATA / 'today.json')
+    if today.get('date'):
+        prev = old.get('plans', {}) if old.get('plans_date') == today['date'] else {}
+        plans = other_plans(today, corr, summ.get('odds_shift_per_player'), summ.get('soft_shift_per_player'), prev)
+        doc = {**doc, 'plans': plans, 'plans_date': today['date']}
+    if doc != old:
+        (DATA / 'contest_sims.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
 
 
 if __name__ == '__main__':
