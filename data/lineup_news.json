@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T08:07:02.409856+00:00",
+  "checked_at": "2026-11-05T09:24:46.733984+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,6 +22,14 @@
   ],
   "headlines": [
     {
+      "headline": "Clippers’ Tyronn Lue explains why Keaton Wagler saw limited minutes in crushing Heat loss - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUGxRR1ZsalhHdThDbFNDeDhQbFBReDA5ajU4MGdlNEFTcDlqdHoxOS1PQ043cUFScEc0emdxNVI4VUxMTlRPcE9FV1dEMmx3ekp0Z3JvRUJqTm5IRW1GalpsWFhrcHE2dV95dndhYkNNQW81b19pd194Q0M5cmIyOGJ4TVhQWGdO?oc=5",
+      "published_at": "2026-11-05T08:08:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "Jarrett Allen (knee) doubtful to return Wednesday - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObk5jam05dHJob09DZXN2NVdMNnlzRXVjU1QtUUQ2c2hYOUpiQnRUMGRDall1MkM0LXpJOHZHUS0tRUNsb2t6bklibWw5aVRQZnpDWFBjbjgxajZUZzk4NnJqQ0JmUXJUMlJtQnVUdDdQZW1Qb3N5S2NtNnFNWjJ6RWNDQ0Z3b2pWN2VHNTdZQ0k0Y3pycEVtaDhNc21jRkJ4VmJWREs5THJSYzZ5RmRNLTR3TVhwUQ?oc=5",
       "published_at": "2026-11-05T07:36:44+00:00",
@@ -30,9 +38,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Clippers’ Tyronn Lue explains why Keaton Wagler saw limited minutes in crushing Heat loss - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRWxDcDFTZ3NYQnNQOG9VYjRra2xCLXctRU1fcXBNVG80MzV1V04zM3NRTU5BemRWT0tvTEc4bThQbE9QNEp6c21sOGdwUDFWQ0JLdC1aUFpJa19POWtvb3JzR2RkRW9UNl9PdWsxTnhpZGg0by1ob3E1cElpWl84cHpqbFRqd2JvdzNGTThyeDlWZlRhNVhnRWtRTGpJakdjelVRcTRFMDNCVjVOYXk2dGNwVGJSVW9oRmNnNWFhdEY?oc=5",
-      "published_at": "2026-11-05T07:08:57+00:00",
+      "headline": "Dejounte Murray to start Wednesday vs. Utah - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaVJxN3N3ZHFsNXF6b3NLYkVCd3FSSXE0MnN6SUdjRzFDNkpkTTBMY2tLTVk3cm0wTDdLMUpmNFYxazRwZUhBTmJndGkzTzlQYkxDTXhQcExmcmx2TC1YZDNiUWUwWE43NGpmRUgtVUNZbHRlZm1KdGpUUFpwWnhDU3BKMlgwUzh4N2NueVN1SG1sd1RsMkVGSTR4NHB6UHp0c3NYTElFcGdWQnJVTjQw?oc=5",
+      "published_at": "2026-11-05T06:50:46+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -78,17 +86,17 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Asa Newell Ruled Out During Hawks-Wizards Game Due to Injury - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREVUV3E1NGF4Qmg2WWlTZ1pRT2ZsekJwTHl5QmswdTI3bFdRV0t6WFdTbWFCN2ZXZzAxTlNZZ1lKRHM2dDJFODA3NnVDYTFIcHRJcWNpYUFmb0lyNDc1VkMtVkFhNjNhcGJ1Z0FUamozU3hJYkJ0VXJCMG9jMnR0U093NEo?oc=5",
-      "published_at": "2026-11-05T01:34:00+00:00",
+      "headline": "Suns Reveal Starting Lineup vs Blazers - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPelpTdFdsT0RNMUhEWkV1Q3U0M1FURm1YamQ3V0w4UUFYNllSTk1KZ3htYlUzTm9nRE13dzZkSE5nUkNOTDR1YndpTGRWT3dWQnI5M0x5Q1VPaF8wQzhfd0ZjZzVqSGlIOWNWV3NsZ2wzdVFyczZEWFpFRW8tZGNpM3F0MDE2WWc3ek95YXpSWmZlQU9Hb1Z2a1RzRUR0Z2U5?oc=5",
+      "published_at": "2026-11-05T01:34:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Dejounte Murray to start Wednesday vs. Utah - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaVJxN3N3ZHFsNXF6b3NLYkVCd3FSSXE0MnN6SUdjRzFDNkpkTTBMY2tLTVk3cm0wTDdLMUpmNFYxazRwZUhBTmJndGkzTzlQYkxDTXhQcExmcmx2TC1YZDNiUWUwWE43NGpmRUgtVUNZbHRlZm1KdGpUUFpwWnhDU3BKMlgwUzh4N2NueVN1SG1sd1RsMkVGSTR4NHB6UHp0c3NYTElFcGdWQnJVTjQw?oc=5",
-      "published_at": "2026-11-05T00:57:11+00:00",
+      "headline": "Asa Newell Ruled Out During Hawks-Wizards Game Due to Injury - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREVUV3E1NGF4Qmg2WWlTZ1pRT2ZsekJwTHl5QmswdTI3bFdRV0t6WFdTbWFCN2ZXZzAxTlNZZ1lKRHM2dDJFODA3NnVDYTFIcHRJcWNpYUFmb0lyNDc1VkMtVkFhNjNhcGJ1Z0FUamozU3hJYkJ0VXJCMG9jMnR0U093NEo?oc=5",
+      "published_at": "2026-11-05T01:34:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -337,14 +345,6 @@
       "headline": "In 1980, Dave Bing used $80,000 of his own savings to start Bing Steel in Detroit; 22 years later, the Bing Group's revenue reached $344 million - Athlon Sports",
       "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMklLWkRSRG1EV0c3YVRCVnFabWo4ZjJEb0FVcDRGRTJRQlRUOEtGVjQ1eElfVTFWU2VPZGhoVDkzV1prMHJ3TXp5S0pyOXZhTHk4czRyRlpqelZQWmNCZnhPZ19nbHhndzZuV2NiOW5JeFJWOFFVamJWMUtNS0FFNzBXVS00RGw5dnFYZjdKVnViOWkya0k0T0Rn?oc=5",
       "published_at": "2026-11-04T13:13:21+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "NBA injury report: Tatum, Antetokounmpo listed on Wednesday, November 4 - TalkBasket.net",
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVUUwNHg5Tnl3Mm5GZ3V4S2FVdlAxb1E4TDlsZmJLbGpQdDdCOHlBODdwZU1FQm9Tc01PSU0zQVhLR1Jtdzd1V1FBQndoQi1fc095eE9tXy1Ld2JEemR1cFJFcnk4SEhWR2lDMk9TQUdkQm10aXB2MkQybE5mbkszMDhrT1RXaElDRllaYXNDSGtnc2VJNFlNU2JyXy1IdEFIRHhNTQ?oc=5",
-      "published_at": "2026-11-04T09:12:43+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
