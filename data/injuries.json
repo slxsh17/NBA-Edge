@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T20:17:58.581692+00:00",
+  "updated_at": "2026-11-05T21:10:47.159847+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -268,14 +268,14 @@
       "status": "OUT"
     },
     {
-      "name": "Trey Murphy III",
-      "team": "NOP",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Yves Missi",
       "team": "NOP",
       "status": "OUT"
+    },
+    {
+      "name": "Trey Murphy III",
+      "team": "NOP",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Josh Hart",
@@ -353,14 +353,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jordan Goodwin",
-      "team": "PHX",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Rasheer Fleming",
       "team": "PHX",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
+    },
+    {
+      "name": "Jordan Goodwin",
+      "team": "PHX",
+      "status": "OUT"
     },
     {
       "name": "Mark Williams",
