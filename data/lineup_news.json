@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T16:52:32.835910+00:00",
+  "checked_at": "2026-11-05T17:45:22.720116+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -57,14 +57,6 @@
       "headline": "Former NBA Star Predicts Giannis Antetokounmpo Will Return to Bucks - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMXVBeTVpejYwZV9ZTFZNMlFseS1UeFNFaFFVcEpYV192SEFTVENQenRMYnhpN1FHNnFsb2d1a25uUU1Rb2tSRWcyYklmODdBY01pajlXcGt6VzhTYWlDa3BLMUhoeVUzT05jUVl4U09tekR6cXZkaEtscm01cDhUNUE4Q1UwLWVKOWpjR01BNmZBbGlFak5fU2d2X0NUY3VmWTY1ODNHM0hxanItcUlmTA?oc=5",
       "published_at": "2026-11-05T12:02:25+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Anaheim Ducks’ Hometown Remix jersey is a sellout smash. Will it join the full-time rotation? - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObWRyTjVyZzNUV2pNQ3lRNVNIS05XWU0tdTRFRmpjWXJTM2t3dUdHUDVNSW9sZ054NnZSb1dPLWx6c2FEem9nMXBraGg0cFNJTnQ1ZEFpRVgwbzM2dHhLQ3dkN3VyY21tU3pvaUZ6YkdDcjdGUVNiNEF4VGxkYzdlTDJqcHBPdXdnTmVudE9EVm9idnlGNEluOFR2UFJZZw?oc=5",
-      "published_at": "2026-11-05T11:00:36+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -137,6 +129,14 @@
       "headline": "Jarrett Allen Injury: Doubtful to return Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOM2x5VjZyUkQyTWc3NzBpSFFnSGtac21SeWpIbENvTTNOUXF1MjVqRTB1cUlfdHZ6WmtnWjlWWndkR1lNYjZTYkdmbElQXzdyTzg0UkhhWXRTRmpsR0EtRGJja0dzb0R2UHVZUTBDblVRVWxpbzR3cVppRElkUGxsaktjcC1RMGFGUzhMMEJ6Rmh0T3FmN3AxQWZiY1dra2pybVc3eg?oc=5",
       "published_at": "2026-11-05T01:54:39+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Suns Reveal Starting Lineup vs Blazers - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPelpTdFdsT0RNMUhEWkV1Q3U0M1FURm1YamQ3V0w4UUFYNllSTk1KZ3htYlUzTm9nRE13dzZkSE5nUkNOTDR1YndpTGRWT3dWQnI5M0x5Q1VPaF8wQzhfd0ZjZzVqSGlIOWNWV3NsZ2wzdVFyczZEWFpFRW8tZGNpM3F0MDE2WWc3ek95YXpSWmZlQU9Hb1Z2a1RzRUR0Z2U5?oc=5",
+      "published_at": "2026-11-05T01:34:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
