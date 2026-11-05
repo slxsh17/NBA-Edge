@@ -292,6 +292,21 @@
      "won": 29
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "slate": "Main",
+   "entry": "not given",
+   "final": true,
+   "note": "User said \"I lost 12$ tonight\" (contests, lineup and score not given); logged as $12 in, $0 back.",
+   "contests": [
+    {
+     "name": "entries (details not given)",
+     "entries": null,
+     "fee": 12.0,
+     "won": 0.0
+    }
+   ]
   }
  ]
 }
