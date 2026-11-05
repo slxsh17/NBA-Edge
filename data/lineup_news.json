@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T11:23:29.222416+00:00",
+  "checked_at": "2026-11-05T12:16:05.440943+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,22 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Grading Every NBA Team's Starting Lineup So Far - Bleacher Report",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQVNnUWdsc3otRk14Y1JLM3pfcE91ZjZyc1dQSGdCRmtLZ21jXzM0V0ZIa253ZkZ3TVFxUHlpZnpGbjRibUZqQW1MYkFCQjVQNWNYRUMwX0FpQzM1NjdDeXgxeG1yZVo2SWtIMWJGUWN2dUp2S1hBdDlVWmRfYkZGaW5RRUFaZ0piYjk3Y0Y0M3hld0p5bUE?oc=5",
+      "published_at": "2026-11-05T12:03:50+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Former NBA Star Predicts Giannis Antetokounmpo Will Return to Bucks - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMXVBeTVpejYwZV9ZTFZNMlFseS1UeFNFaFFVcEpYV192SEFTVENQenRMYnhpN1FHNnFsb2d1a25uUU1Rb2tSRWcyYklmODdBY01pajlXcGt6VzhTYWlDa3BLMUhoeVUzT05jUVl4U09tekR6cXZkaEtscm01cDhUNUE4Q1UwLWVKOWpjR01BNmZBbGlFak5fU2d2X0NUY3VmWTY1ODNHM0hxanItcUlmTA?oc=5",
+      "published_at": "2026-11-05T12:02:25+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
     {
       "headline": "Clippers’ Tyronn Lue explains why Keaton Wagler saw limited minutes in crushing Heat loss - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUGxRR1ZsalhHdThDbFNDeDhQbFBReDA5ajU4MGdlNEFTcDlqdHoxOS1PQ043cUFScEc0emdxNVI4VUxMTlRPcE9FV1dEMmx3ekp0Z3JvRUJqTm5IRW1GalpsWFhrcHE2dV95dndhYkNNQW81b19pd194Q0M5cmIyOGJ4TVhQWGdO?oc=5",
@@ -70,25 +86,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Dusty May Delivers Exciting Update On Morez Johnson Jr.'s Minutes Restriction - Yardbarker",
-      "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVWJEdUhmaXJBdGxnTnNUZGlVcjFhdWVtX0J6NjZWME1NSEhLMVA0MllLQ21vS0c4X2EzaGtHMUt2LTcwaG1WR0VrWWVOb2psUklMQ2NtdXF4cEtOTGJvWVhQd3ZVYzJqamliOE83dTRmR0wzR0JEU1oyME1rb1cwaWxnVXpsdV9jeVE4WHpTQWUweXI0ZFhhZzBsUGprZ2R2c1lPZFY5NzFzcFh5UlNzLTZYeFl2cm5BVUJmcERuNHNTWnVycUpKUnpBV1VwWElJM0J0RkNaMUhnWHZF?oc=5",
-      "published_at": "2026-11-05T02:01:17+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
       "headline": "Jarrett Allen Injury: Doubtful to return Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOM2x5VjZyUkQyTWc3NzBpSFFnSGtac21SeWpIbENvTTNOUXF1MjVqRTB1cUlfdHZ6WmtnWjlWWndkR1lNYjZTYkdmbElQXzdyTzg0UkhhWXRTRmpsR0EtRGJja0dzb0R2UHVZUTBDblVRVWxpbzR3cVppRElkUGxsaktjcC1RMGFGUzhMMEJ6Rmh0T3FmN3AxQWZiY1dra2pybVc3eg?oc=5",
       "published_at": "2026-11-05T01:54:39+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Suns Reveal Starting Lineup vs Blazers - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPelpTdFdsT0RNMUhEWkV1Q3U0M1FURm1YamQ3V0w4UUFYNllSTk1KZ3htYlUzTm9nRE13dzZkSE5nUkNOTDR1YndpTGRWT3dWQnI5M0x5Q1VPaF8wQzhfd0ZjZzVqSGlIOWNWV3NsZ2wzdVFyczZEWFpFRW8tZGNpM3F0MDE2WWc3ek95YXpSWmZlQU9Hb1Z2a1RzRUR0Z2U5?oc=5",
-      "published_at": "2026-11-05T01:34:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -105,6 +105,14 @@
       "headline": "Gui Santos Injury: Ruled out for Thursday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd3pDVW9jbXY0dE9SZjVqMUQxNFJmek5JWG5UYkp3WGFLZGRvTkJiV01wNmRKSE9oMDhkNEtxakw4RTNTel9EQ3I5MFppcmZZRnE2aTZhdERjUHMwRlVBS0dqUGRzcXFwNUhqSE9KejJYQzJLeXEtM3h4OHRPTVVqNy1ac0FKaTRIYVI5bkpFcXlUd3VXdmIxWQ?oc=5",
       "published_at": "2026-11-05T00:52:55+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Dusty May: Morez Johnson Jr. Nearing End Of Minutes Limit - Dallas Hoops Journal",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdHpzSHk1S3RBRlZMMjlPazduTHRlV1FhTFhZLU9oY2NTX3V6UGhSaDFwb3RDelhSXzNQTm9WRFBrdS1qODFNNTN1eUV5cE5uWHhHNGZYOUUxbmw0T2p6czVfR3ZYbGk0SzFia3ZYalFFd0oyRF8weFphN2xrQWwwdUlWRFMyZnprUFZxanl0ZTVLUVZJUkthb2RRSQ?oc=5",
+      "published_at": "2026-11-05T00:50:10+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -166,9 +174,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Updated Hawks Starting Lineup vs. Wizards: Kingston Flemings Earns First Career Start - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdC1pODNKeFNGVDlsTUdydG9VODd3UGNrVm9oQVdpMFdQcmxmYXNTUko5SDdvVm9aSGF4NjMzUUloOWpDcml3MzFjYTV0U3hzRDlQcXJXZlFMcWlwYmdSdDREMTZWYk9vWVpuZUQzQzR6T0hETzBweW96Q2I4bTkzV29HV1psUDVI?oc=5",
-      "published_at": "2026-11-04T23:47:03+00:00",
+      "headline": "Updated Hawks Starting Lineup vs. Wizards: Kingston Flemings Earns First Career Start - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNXzN2QXRydjM5Tm93ZE91Z19rZE13TUNYQ0NsLTVEdjc5VHJhSXBMZHBlckw5ZlJ1cDhnS21JUXhieWlSVUxJYm1LVGJ0dkVDY3FKMGpSVFFDd2JfRDlNNE1DWWZURzhmcFhhM2R3ZlE2MDJTMnB1WmY1WGxIZS1GYzMwZnJBNWFmdi1BU0VPalhOakVjVUN2TGg1d0dNUldTc0JUWjE2TDQwLXZjRXFKVmQyWDhhcHZDbVB6WDBDMV9nV2ZLMkp4Y3FB?oc=5",
+      "published_at": "2026-11-04T23:47:02+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
