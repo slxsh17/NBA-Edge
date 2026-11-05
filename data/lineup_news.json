@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T12:16:05.440943+00:00",
+  "checked_at": "2026-11-05T13:40:30.782657+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -24,7 +24,7 @@
     {
       "headline": "Grading Every NBA Team's Starting Lineup So Far - Bleacher Report",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQVNnUWdsc3otRk14Y1JLM3pfcE91ZjZyc1dQSGdCRmtLZ21jXzM0V0ZIa253ZkZ3TVFxUHlpZnpGbjRibUZqQW1MYkFCQjVQNWNYRUMwX0FpQzM1NjdDeXgxeG1yZVo2SWtIMWJGUWN2dUp2S1hBdDlVWmRfYkZGaW5RRUFaZ0piYjk3Y0Y0M3hld0p5bUE?oc=5",
-      "published_at": "2026-11-05T12:03:50+00:00",
+      "published_at": "2026-11-05T12:18:12+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -33,6 +33,14 @@
       "headline": "Former NBA Star Predicts Giannis Antetokounmpo Will Return to Bucks - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMXVBeTVpejYwZV9ZTFZNMlFseS1UeFNFaFFVcEpYV192SEFTVENQenRMYnhpN1FHNnFsb2d1a25uUU1Rb2tSRWcyYklmODdBY01pajlXcGt6VzhTYWlDa3BLMUhoeVUzT05jUVl4U09tekR6cXZkaEtscm01cDhUNUE4Q1UwLWVKOWpjR01BNmZBbGlFak5fU2d2X0NUY3VmWTY1ODNHM0hxanItcUlmTA?oc=5",
       "published_at": "2026-11-05T12:02:25+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Anaheim Ducks’ Hometown Remix jersey is a sellout smash. Will it join the full-time rotation? - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObWRyTjVyZzNUV2pNQ3lRNVNIS05XWU0tdTRFRmpjWXJTM2t3dUdHUDVNSW9sZ054NnZSb1dPLWx6c2FEem9nMXBraGg0cFNJTnQ1ZEFpRVgwbzM2dHhLQ3dkN3VyY21tU3pvaUZ6YkdDcjdGUVNiNEF4VGxkYzdlTDJqcHBPdXdnTmVudE9EVm9idnlGNEluOFR2UFJZZw?oc=5",
+      "published_at": "2026-11-05T11:00:36+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -94,9 +102,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Asa Newell Ruled Out During Hawks-Wizards Game Due to Injury - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREVUV3E1NGF4Qmg2WWlTZ1pRT2ZsekJwTHl5QmswdTI3bFdRV0t6WFdTbWFCN2ZXZzAxTlNZZ1lKRHM2dDJFODA3NnVDYTFIcHRJcWNpYUFmb0lyNDc1VkMtVkFhNjNhcGJ1Z0FUamozU3hJYkJ0VXJCMG9jMnR0U093NEo?oc=5",
-      "published_at": "2026-11-05T01:34:00+00:00",
+      "headline": "Suns Reveal Starting Lineup vs Blazers - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPelpTdFdsT0RNMUhEWkV1Q3U0M1FURm1YamQ3V0w4UUFYNllSTk1KZ3htYlUzTm9nRE13dzZkSE5nUkNOTDR1YndpTGRWT3dWQnI5M0x5Q1VPaF8wQzhfd0ZjZzVqSGlIOWNWV3NsZ2wzdVFyczZEWFpFRW8tZGNpM3F0MDE2WWc3ek95YXpSWmZlQU9Hb1Z2a1RzRUR0Z2U5?oc=5",
+      "published_at": "2026-11-05T01:34:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -345,14 +353,6 @@
       "headline": "Cameron Johnson Expected to Play Wednesday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRWdmclZIMjkzNlZzX0I3OWczZ0ZpZXhlTWxLSklXXzJoZlY0RXh0bzVRRGVFZWx4WXc0UF9OYmIzSkpCUFNIeTQ4b2RFV0czTlAtZTk0SXlfcjc1ZHUyS1JTZ1pFdmRmUm9zXzNZTWZGWnV5SURsMmVKS2hjcXZ4cGt6Sk5QMzhuYVpfUVpQTHFJMFE?oc=5",
       "published_at": "2026-11-04T13:46:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "In 1980, Dave Bing used $80,000 of his own savings to start Bing Steel in Detroit; 22 years later, the Bing Group's revenue reached $344 million - Athlon Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMklLWkRSRG1EV0c3YVRCVnFabWo4ZjJEb0FVcDRGRTJRQlRUOEtGVjQ1eElfVTFWU2VPZGhoVDkzV1prMHJ3TXp5S0pyOXZhTHk4czRyRlpqelZQWmNCZnhPZ19nbHhndzZuV2NiOW5JeFJWOFFVamJWMUtNS0FFNzBXVS00RGw5dnFYZjdKVnViOWkya0k0T0Rn?oc=5",
-      "published_at": "2026-11-04T13:13:21+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
