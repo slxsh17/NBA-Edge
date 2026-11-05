@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T01:19:30.002164+00:00",
+  "updated_at": "2026-11-05T02:25:21.154420+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -38,6 +38,11 @@
       "status": "OUT"
     },
     {
+      "name": "Noah Clowney",
+      "team": "BKN",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Egor Demin",
       "team": "BKN",
       "status": "OUT"
@@ -58,9 +63,19 @@
       "status": "OUT"
     },
     {
+      "name": "Jalen Smith",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Nic Claxton",
       "team": "CHI",
       "status": "OUT"
+    },
+    {
+      "name": "Jarrett Allen",
+      "team": "CLE",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaylon Tyson",
@@ -98,14 +113,9 @@
       "status": "OUT"
     },
     {
-      "name": "Cameron Johnson",
+      "name": "DeMar DeRozan",
       "team": "DEN",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Alpha Diallo",
-      "team": "DEN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Spencer Jones",
@@ -183,11 +193,6 @@
       "status": "OUT"
     },
     {
-      "name": "Isaiah Jackson",
-      "team": "LAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
@@ -216,11 +221,6 @@
       "name": "Scotty Pippen Jr.",
       "team": "MEM",
       "status": "OUT"
-    },
-    {
-      "name": "Giannis Antetokounmpo",
-      "team": "MIA",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kam Jones",
@@ -381,11 +381,6 @@
       "name": "Kawhi Leonard",
       "team": "TOR",
       "status": "OUT"
-    },
-    {
-      "name": "Jakob Poeltl",
-      "team": "TOR",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nate Bittle",
