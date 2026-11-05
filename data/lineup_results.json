@@ -1,42 +1,42 @@
 {
 "schema": 1,
-"updated_at": "2026-11-03T05:53:18+00:00",
+"updated_at": "2026-11-05T06:14:59+00:00",
 "calibration": {
-"sd_scale": 1.032,
-"shift_classic": -2.08,
+"sd_scale": 1.026,
+"shift_classic": -1.89,
 "shift_single": 0.55
 },
-"calibration_players": 1575,
+"calibration_players": 1722,
 "summary": [
 {
 "format": "classic",
 "strategy": "cash",
-"slates": 12,
-"avg_actual": 301.6,
-"avg_proj": 325.7,
-"avg_pct_of_best": 69.1,
-"within_sim_range": 67,
-"below_range": 25,
+"slates": 13,
+"avg_actual": 303.6,
+"avg_proj": 325.3,
+"avg_pct_of_best": 69.5,
+"within_sim_range": 69,
+"below_range": 23,
 "above_range": 8
 },
 {
 "format": "classic",
 "strategy": "sim_winner",
-"slates": 12,
-"avg_actual": 291.2,
-"avg_proj": 311.9,
-"avg_pct_of_best": 66.7,
-"within_sim_range": 75,
-"below_range": 17,
+"slates": 13,
+"avg_actual": 293.1,
+"avg_proj": 311.7,
+"avg_pct_of_best": 67.1,
+"within_sim_range": 77,
+"below_range": 15,
 "above_range": 8
 },
 {
 "format": "classic",
 "strategy": "tournament",
-"slates": 12,
-"avg_actual": 298.7,
-"avg_proj": 310.0,
-"avg_pct_of_best": 68.2,
+"slates": 13,
+"avg_actual": 299.8,
+"avg_proj": 310.5,
+"avg_pct_of_best": 68.4,
 "within_sim_range": 92,
 "below_range": 0,
 "above_range": 8
@@ -7847,6 +7847,369 @@
 "slot": "UTIL",
 "proj": 56.43,
 "actual": 61.8
+}
+]
+}
+]
+},
+{
+"date": "2026-11-04",
+"slate": "main",
+"label": "Main slate",
+"format": "classic",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 438.9,
+"players": [
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "G/F"
+},
+{
+"name": "Cade Cunningham",
+"team": "DET",
+"slot": "PG"
+},
+{
+"name": "Keyonte George",
+"team": "UTA",
+"slot": "UTIL"
+},
+{
+"name": "Cedric Coward",
+"team": "MEM",
+"slot": "SF"
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "F/C"
+},
+{
+"name": "Derrick White",
+"team": "BOS",
+"slot": "UTIL"
+},
+{
+"name": "Derik Queen",
+"team": "NOP",
+"slot": "PF"
+},
+{
+"name": "Myles Turner",
+"team": "MIL",
+"slot": "C"
+},
+{
+"name": "Grayson Allen",
+"team": "CHA",
+"slot": "SG"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 320.4,
+"actual": 326.9,
+"sim": {
+"p10": 243.1,
+"p50": 300.9,
+"p90": 355.4,
+"mean": 300.4
+},
+"band": "within range",
+"busts": [
+{
+"name": "Darryn Peterson",
+"proj": 29.22,
+"actual": 17.9
+},
+{
+"name": "Karl-Anthony Towns",
+"proj": 44.74,
+"actual": 34.9
+}
+],
+"boosts": [
+{
+"name": "Cade Cunningham",
+"proj": 45.4,
+"actual": 55.9
+},
+{
+"name": "Onyeka Okongwu",
+"proj": 35.27,
+"actual": 45.2
+}
+],
+"players": [
+{
+"name": "Cade Cunningham",
+"team": "DET",
+"slot": "PG",
+"proj": 45.4,
+"actual": 55.9
+},
+{
+"name": "Nickeil Alexander-Walker",
+"team": "ATL",
+"slot": "SG",
+"proj": 33.99,
+"actual": 30.8
+},
+{
+"name": "Saddiq Bey",
+"team": "NOP",
+"slot": "SF",
+"proj": 27.42,
+"actual": 33.3
+},
+{
+"name": "OG Anunoby",
+"team": "NYK",
+"slot": "PF",
+"proj": 32.51,
+"actual": 34.0
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C",
+"proj": 35.27,
+"actual": 45.2
+},
+{
+"name": "CJ McCollum",
+"team": "ATL",
+"slot": "G/F",
+"proj": 31.43,
+"actual": 33.5
+},
+{
+"name": "Karl-Anthony Towns",
+"team": "NYK",
+"slot": "F/C",
+"proj": 44.74,
+"actual": 34.9
+},
+{
+"name": "Jalen Brunson",
+"team": "NYK",
+"slot": "UTIL",
+"proj": 40.46,
+"actual": 41.4
+},
+{
+"name": "Darryn Peterson",
+"team": "UTA",
+"slot": "UTIL",
+"proj": 29.22,
+"actual": 17.9
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 316.9,
+"actual": 313.8,
+"sim": {
+"p10": 241.3,
+"p50": 297.3,
+"p90": 354.5,
+"mean": 297.2
+},
+"band": "within range",
+"busts": [
+{
+"name": "Josh Giddey",
+"proj": 32.85,
+"actual": 17.2
+},
+{
+"name": "Karl-Anthony Towns",
+"proj": 44.74,
+"actual": 34.9
+}
+],
+"boosts": [
+{
+"name": "Onyeka Okongwu",
+"proj": 35.27,
+"actual": 45.2
+},
+{
+"name": "Kyshawn George",
+"proj": 29.09,
+"actual": 36.3
+}
+],
+"players": [
+{
+"name": "Jalen Brunson",
+"team": "NYK",
+"slot": "PG",
+"proj": 40.46,
+"actual": 41.4
+},
+{
+"name": "Nickeil Alexander-Walker",
+"team": "ATL",
+"slot": "SG",
+"proj": 33.99,
+"actual": 30.8
+},
+{
+"name": "OG Anunoby",
+"team": "NYK",
+"slot": "SF",
+"proj": 32.51,
+"actual": 34.0
+},
+{
+"name": "Zion Williamson",
+"team": "NOP",
+"slot": "PF",
+"proj": 36.86,
+"actual": 40.8
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C",
+"proj": 35.27,
+"actual": 45.2
+},
+{
+"name": "Kyshawn George",
+"team": "WAS",
+"slot": "G/F",
+"proj": 29.09,
+"actual": 36.3
+},
+{
+"name": "Karl-Anthony Towns",
+"team": "NYK",
+"slot": "F/C",
+"proj": 44.74,
+"actual": 34.9
+},
+{
+"name": "Josh Giddey",
+"team": "CHI",
+"slot": "UTIL",
+"proj": 32.85,
+"actual": 17.2
+},
+{
+"name": "Jeremiah Fears",
+"team": "NOP",
+"slot": "UTIL",
+"proj": 31.13,
+"actual": 33.2
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 308.7,
+"actual": 317.0,
+"sim": {
+"p10": 234.9,
+"p50": 289.6,
+"p90": 343.8,
+"mean": 289.0
+},
+"band": "within range",
+"busts": [
+{
+"name": "Josh Giddey",
+"proj": 32.85,
+"actual": 17.2
+},
+{
+"name": "Darryn Peterson",
+"proj": 29.22,
+"actual": 17.9
+}
+],
+"boosts": [
+{
+"name": "Shai Gilgeous-Alexander",
+"proj": 46.92,
+"actual": 57.8
+},
+{
+"name": "Neemias Queta",
+"proj": 23.72,
+"actual": 33.9
+}
+],
+"players": [
+{
+"name": "Josh Giddey",
+"team": "CHI",
+"slot": "PG",
+"proj": 32.85,
+"actual": 17.2
+},
+{
+"name": "Payton Pritchard",
+"team": "BOS",
+"slot": "SG",
+"proj": 28.78,
+"actual": 18.7
+},
+{
+"name": "OG Anunoby",
+"team": "NYK",
+"slot": "SF",
+"proj": 32.51,
+"actual": 34.0
+},
+{
+"name": "Anthony Davis",
+"team": "WAS",
+"slot": "PF",
+"proj": 42.57,
+"actual": 51.5
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C",
+"proj": 35.27,
+"actual": 45.2
+},
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "G/F",
+"proj": 46.92,
+"actual": 57.8
+},
+{
+"name": "Neemias Queta",
+"team": "BOS",
+"slot": "F/C",
+"proj": 23.72,
+"actual": 33.9
+},
+{
+"name": "Zion Williamson",
+"team": "NOP",
+"slot": "UTIL",
+"proj": 36.86,
+"actual": 40.8
+},
+{
+"name": "Darryn Peterson",
+"team": "UTA",
+"slot": "UTIL",
+"proj": 29.22,
+"actual": 17.9
 }
 ]
 }
