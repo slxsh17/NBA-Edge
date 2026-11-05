@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T15:44:18.470621+00:00",
+  "checked_at": "2026-11-05T16:52:32.835910+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -94,6 +94,14 @@
       "scope_date": "2026-11-05"
     },
     {
+      "headline": "Landry Shamet to start Wednesday vs. Chicago - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ3hkbUtlR2poZkFNVEZ6Szg1SUw0YVNJcjN4VTFTbVQtNjAtRFY4VXJiNEFJUC1MN1ZPbE1SMGlPdzQ0WnlBWUZLR2w5N0pEMDFQYkxuemhxR1lFeFU1TUlnWVBzUndzZklpQlZXNDdKNDlDZlNFbmRNOXpsc2hIUHV6SnhiUlNKVGp4c2s1V3ROcTdhWTFZZENyT2VaRHZlUzdkWnUtRkNFTUFrQ0lTLQ?oc=5",
+      "published_at": "2026-11-05T06:21:07+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "Kings' Loss to Lakers Raises New Rotation Questions - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVFFuWTdLNmRWQVZmZ0I3SU1zTDl1YzhVWG5rNHF0YTJXWlRhLUFhN2tCSmJWY2N4TDdRMFlheW9JXzZqdFZRQkNrUnRiXzB1cmJRcWRrc0t3QjZnT0NPdHRKa2lpbUE3alZoNkZobDU4UmlUdjJQUlg5YWUyWGJRbkpUS1pTYWdiTUJFdA?oc=5",
       "published_at": "2026-11-05T06:07:40+00:00",
@@ -118,6 +126,14 @@
       "scope_date": "2026-11-05"
     },
     {
+      "headline": "Dusty May Delivers Exciting Update On Morez Johnson Jr.'s Minutes Restriction - Yardbarker",
+      "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVWJEdUhmaXJBdGxnTnNUZGlVcjFhdWVtX0J6NjZWME1NSEhLMVA0MllLQ21vS0c4X2EzaGtHMUt2LTcwaG1WR0VrWWVOb2psUklMQ2NtdXF4cEtOTGJvWVhQd3ZVYzJqamliOE83dTRmR0wzR0JEU1oyME1rb1cwaWxnVXpsdV9jeVE4WHpTQWUweXI0ZFhhZzBsUGprZ2R2c1lPZFY5NzFzcFh5UlNzLTZYeFl2cm5BVUJmcERuNHNTWnVycUpKUnpBV1VwWElJM0J0RkNaMUhnWHZF?oc=5",
+      "published_at": "2026-11-05T02:01:17+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "Jarrett Allen Injury: Doubtful to return Wednesday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOM2x5VjZyUkQyTWc3NzBpSFFnSGtac21SeWpIbENvTTNOUXF1MjVqRTB1cUlfdHZ6WmtnWjlWWndkR1lNYjZTYkdmbElQXzdyTzg0UkhhWXRTRmpsR0EtRGJja0dzb0R2UHVZUTBDblVRVWxpbzR3cVppRElkUGxsaktjcC1RMGFGUzhMMEJ6Rmh0T3FmN3AxQWZiY1dra2pybVc3eg?oc=5",
       "published_at": "2026-11-05T01:54:39+00:00",
@@ -137,14 +153,6 @@
       "headline": "Gui Santos Injury: Ruled out for Thursday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd3pDVW9jbXY0dE9SZjVqMUQxNFJmek5JWG5UYkp3WGFLZGRvTkJiV01wNmRKSE9oMDhkNEtxakw4RTNTel9EQ3I5MFppcmZZRnE2aTZhdERjUHMwRlVBS0dqUGRzcXFwNUhqSE9KejJYQzJLeXEtM3h4OHRPTVVqNy1ac0FKaTRIYVI5bkpFcXlUd3VXdmIxWQ?oc=5",
       "published_at": "2026-11-05T00:52:55+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Dusty May: Morez Johnson Jr. Nearing End Of Minutes Limit - Dallas Hoops Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdHpzSHk1S3RBRlZMMjlPazduTHRlV1FhTFhZLU9oY2NTX3V6UGhSaDFwb3RDelhSXzNQTm9WRFBrdS1qODFNNTN1eUV5cE5uWHhHNGZYOUUxbmw0T2p6czVfR3ZYbGk0SzFia3ZYalFFd0oyRF8weFphN2xrQWwwdUlWRFMyZnprUFZxanl0ZTVLUVZJUkthb2RRSQ?oc=5",
-      "published_at": "2026-11-05T00:50:10+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -337,30 +345,6 @@
       "headline": "Boston Celtics Injury News: Jayson Tatum Ruled Out vs. Bucks - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRUdWYXVKV0wwV1lPM1kyY2FYT2hQYUQ0XzZISVJPenJyTmxBbGoxV2w5TzY0SHNsRzZ3LW1meVMtLUNVclZ5U0oxZjhIWDJLWG91RF9va25Wd1Y0U3BORGppc19mQ2NtUER5MGhhVk1pNWw0VzRKT3pWdndranE2M05sdTZDRjN0VVE?oc=5",
       "published_at": "2026-11-04T18:06:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Olivier Rioux becomes tallest player to start a Division I basketball game, dunks from behind basket - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPaGN4YUVEUm9pT1V3aHc3cmp1MFNQWHNpQWVNTFYwNnFFMzdkb2ljSUc1RTlZUlctR2xNREJGb3R0RXV4UlhBUXh4UG1YNWwzZl9OVFV1cWowSjZ3ZXN4YjlzZ1RLTDdjSkdRU2x5RzdFTXhrN3ZQQndjZ3FFTzZxdHpXQ1NCcVBjVDNqdm5famJFZGltVlRHQnUtd2dSNXJCc296MGdyX0xlR212eHBkR2VzQlA2ZXF2M0NRSnYtQlRlNVo1UGRFUXhKWkp0WEJaZ28zMVJJMG5NNW5La0VzVkhlLWtSNERqNWhKOXNkWFNWakEtb2paUmlOSjFBVDU0?oc=5",
-      "published_at": "2026-11-04T16:38:28+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Predicting Knicks' Starting Lineup vs. Bulls With Josh Hart Out - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMUJkZW5Ra3N6STV0SEhlY0JoNlJvUDgwdkhXT25WbUg2a1VtTXctRENzZjFYWDhudS1fV0V6ZUU5dlNxRTlBNlc2VlNNaGcwa0lwRFY5ZTk1V0hEOHd6M2ZqNWdKYkpNYjR1YmZUNjBhTXVRZkpqUmZqcE45ZkladlFLVlc0YkNGd2dFODBJTlRSMjFvcDA5a1J4VldOUEk3a2FxQk9SUzhkdEhuV2dB?oc=5",
-      "published_at": "2026-11-04T16:24:24+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Nikola Jokic's Trade Status Discussed by NBA Exec Amid Nuggets' Struggles to Start 2026 Season - Bleacher Report",
-      "source_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUGh5ZGFVQWlRdEs3QS1UVDNROTVGcEdnbFdfUy0tdkpCU0JVX1poTmItdVI3dHR1cjdFd1VFUjFNWFF0WDR4dFZoeUU2dngyOEQwbk1OOTkzalJMNWhuNE9JN19sTXowcDlXNER1WkRPRE4zYUJwUExBSVNCbko5MmxQNEVqc3ZDcHduY0xTbTdTRDBWcnpUbHZjRU96SHNnOE1zSUI1VjNTSF9JVmlCZFU3NFItYnpIRnNwOHFkZFpOellUX1NRWThtSQ?oc=5",
-      "published_at": "2026-11-04T16:16:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
