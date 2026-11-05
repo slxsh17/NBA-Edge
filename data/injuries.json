@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T23:23:59.396249+00:00",
+  "updated_at": "2026-11-05T00:09:17.444017+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -46,11 +46,6 @@
       "name": "Grant Williams",
       "team": "CHA",
       "status": "OUT"
-    },
-    {
-      "name": "Coby White",
-      "team": "CHA",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nic Claxton",
@@ -283,6 +278,11 @@
       "status": "OUT"
     },
     {
+      "name": "Jaylin Williams",
+      "team": "OKC",
+      "status": "OUT"
+    },
+    {
       "name": "Nikola Topic",
       "team": "OKC",
       "status": "OUT"
@@ -291,11 +291,6 @@
       "name": "Thomas Sorber",
       "team": "OKC",
       "status": "OUT"
-    },
-    {
-      "name": "Jaylin Williams",
-      "team": "OKC",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Cason Wallace",
