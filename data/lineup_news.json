@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T21:30:22.028852+00:00",
+  "checked_at": "2026-11-05T22:34:27.344250+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -21,6 +21,70 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Bulls’ Jalen Smith Has Hand Injury, Hopes to Play Sunday - Lineups",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOanhiWjBpQ3RRZ3ZhejhMN2lBRldSdHZOVnVFTTdBRnJOTHR4TlRYU1JVdjZTLThaMmhhV2Z2RDQ5cjhsLXdQLWRHcklIQmJldVNpajR3Z0FEMkZtaG9leXZNZk1TVEg5NTJuaVYtMGJwcE1IaHlkUUFpMmxUOFVRTVdLaVUzRzlvai1kRkIxSTMzd3p4YlhUOEdNYzY0QTBJa0E?oc=5",
+      "published_at": "2026-11-05T22:20:32+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Peyton Watson Injury: Listed questionable for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNzhFTlMtcGNISHF1QzJrWHIxNjJVa1dWcl8zaGZQNE9XMzJfSm5HLU9iU0pFeGNKMWRCM2Fua2V0aFZDa0NJZmpwSm9YTmlSWWQ4T0VlQ1BiZURiYnVic3YxSjI2V3JXN3JFczZWWkN0bFo4OGFBaWNVdjJTQXpOUVhDa2dUdFpENjZfM1lVcGpqY2x2YVc3d282M1c3Yl95NkExQmNvYw?oc=5",
+      "published_at": "2026-11-05T22:15:50+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Jarrett Allen Injury: Questionable for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLUhrcVMzeDNNeTdCYVJvM2l0QnB6MGMzX3UxeVByN01VZXhmY3NmTG5VSVpMa1NaODhibW92TDVwaGZpQ3NJemswX1N2ODdTTm1OWnJkRktheS1CZXdqdElmMzZ6Q0NyWXlfX2NEamJIQWE2cENDbkhVWEFsZGthNzRoTUVNVDYwNktOZ0hKZnA5S0FPT2pvZ0JyeGsxUQ?oc=5",
+      "published_at": "2026-11-05T22:13:10+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Bronny James assigned to G League's Coachella Valley Lakers after playing limited minutes early in third NBA season - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOQWVoZkhpREk1RlBPTmYtUDluRFlJYkdnS1g2MktIeHlnd3FYVG9HNThkREZtSWFyU1hwM3duNGNpLXBmN3BRTEZDZnVvS2FlSmo1TDkzMjFTejF1NHRRSkVqaGFWd09aeTZPel9pUFFwS2taUWZyMkNrRkkwdjlYQmpUZnpfYkZkVXFFNmZEb1MyclU1bzYwZ1BfZmJqbllfMjhSQUhIMzVWRDg3M0d4Wkg5dUpuTVhRNVdSMlpNWEwyQkt1Nld3YUpBbGJVRTZTcWpNZDdaMTl0d3gzU0lWMWN3MjdZbTdnbWlDcVA5ajFQTGFxSXp5SFJn?oc=5",
+      "published_at": "2026-11-05T22:12:50+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Jalen Johnson Injury: Remains Questionable Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRWhUeDV2RTA1blliejhCM2d5RXo5TU9naDNXNXVDYUVhLXFOYWhIck16VFNZeGhSb2FSNWpBYVNIR1A3TzJ4WVR5Z1I4MHdYMTlMRm9OX2JxS0pOMVg0dkxjZ05KSnpHRDNHd2d0RnpUR01YMWh1elVEdmNBUlhUVXBIYTlkeW03TEdEUHFaUk5YWFBlc1NnQXlMNFpRT1RIYTVB?oc=5",
+      "published_at": "2026-11-05T22:08:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Moussa Diabate Injury: Questionable for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU2ZWS3lJYUNMR1pERzFhb2VRX1BQWUlLZkxMVzZfZXNDbGFBczRDWUJXaS1Ec1VxelhwRTcxQXoxVGV6OFhoLXIwbHl2bG45bnNjZllUUVM5SDZpXy1ZaktJZmRHRDF4NEg2Y2hRM0J2M0ppWDZ4VnROSUZrTE5FSHZnbHJXbTJxZndEWmFBU2p1RFp3TXNSRlJRcmp5Mms?oc=5",
+      "published_at": "2026-11-05T22:08:12+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Payton Pritchard is officially QUESTIONABLE for … - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRjBQamFZMXBUT3VvRFIyTEY4OWtGeldfcllQcUNqaUQ0YlpVYV9xR1V4ZnZVZ1VmLWtRcS0yZ0pzODlfNF9PdWlnYllGMlFFd2xIVUZrYmJ4MXVrVmh5d3VUakt6NnQxYTBxNmhlV1p4NWQyd2VldVIzYlZFN1lGcmlaSi0wZ2hNRFJHSFluUHhXVm8?oc=5",
+      "published_at": "2026-11-05T21:44:55+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Jalen Green Injury Update: Phoenix Suns Guard Expected to Play Against Orlando Magic Despite Hamstring Concerns - NDTV Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNTURvM1A0NXhLejE2M2V0ZEdCTGZhaDR2NHRIeHo4UTVuRm9KbnBrWXo0bTVMNzNWanJDZFgwVzZORjYtNzF4bXRoTlUtRDQzdTYwZ0RVWDVhbzVISUI0bmR2RHdIQ3oybUpfQ3JNZWdzMEVHUXQ3N004anBLSDdUWnNjc012MEFtQXMtS3JURDJkdl9LOGRFWlh1LWZ0NGduZXRXc0RPMVI4cVM4bTJmc1lyLTFxcm92aFBkS2plVHo3SlF0MEg3ajQwVUJ5SHM4OWVlcjFVYUF2bFU1Tm1JZHQycjU?oc=5",
+      "published_at": "2026-11-05T21:31:18+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
     {
       "headline": "Payton Pritchard Injury: Listed as questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaFl5bkRKMUpkNEp6c08xdmR5bTctYk9FVm1HZlRLLTBpSUN0b3ZBb2JQVXlZRlk2OWNwaERUMjV5eExSaExUT3BkY1YzTEllZXdnMURWdkh1dmd3Wjg1QU9vaUpwNGc5RDNqTEdqbzlJWkc4Y2JTSUJyRVJWdDJUblVfY3hCMmVaOV96WU81cXdqSm9VQ0xTQ2ZJSnh4VWZp?oc=5",
@@ -86,17 +150,17 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Anaheim Ducks’ Hometown Remix jersey is a sellout smash. Will it join the full-time rotation? - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObWRyTjVyZzNUV2pNQ3lRNVNIS05XWU0tdTRFRmpjWXJTM2t3dUdHUDVNSW9sZ054NnZSb1dPLWx6c2FEem9nMXBraGg0cFNJTnQ1ZEFpRVgwbzM2dHhLQ3dkN3VyY21tU3pvaUZ6YkdDcjdGUVNiNEF4VGxkYzdlTDJqcHBPdXdnTmVudE9EVm9idnlGNEluOFR2UFJZZw?oc=5",
-      "published_at": "2026-11-05T15:25:33+00:00",
+      "headline": "Danny Wolf’s 19-minute statement leaves Nets with a rotation question - New York Daily News",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQmpWZldqRGN1YnBRb2pQLVpVMEg3NXFmSDlvUXRnQmN5enNWUU5lQUxkWmVxd3kwSndtWXV3emR5aks4YktyNlRaZ0l6N1BvV0d5bURyZkxRbnVoUDM4ZDRndFBFTEZTUDh1OXowZ0N1Y1RmandiYUEtTFJEMllNY25xNzBKSEpwZ1E?oc=5",
+      "published_at": "2026-11-05T14:18:29+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Danny Wolf’s 19-minute statement leaves Nets with a rotation question - New York Daily News",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQmpWZldqRGN1YnBRb2pQLVpVMEg3NXFmSDlvUXRnQmN5enNWUU5lQUxkWmVxd3kwSndtWXV3emR5aks4YktyNlRaZ0l6N1BvV0d5bURyZkxRbnVoUDM4ZDRndFBFTEZTUDh1OXowZ0N1Y1RmandiYUEtTFJEMllNY25xNzBKSEpwZ1E?oc=5",
-      "published_at": "2026-11-05T14:18:29+00:00",
+      "headline": "No. 25 Florida to start QB Tramell Jones against Oklahoma in the Swamp, AP source says - KSL",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV2FTOERtNjBFVDdZVHItNTVneHFCNkhvQmZWY2U2eGdWZVlmWDFWNHFSNVIzRDRZTktCTHJmU2JnZTdNb2w4eUVEcVAwMk53ZElRNmJyVkpaSUxUcVV4cjNzM0R4NzFKRmxxbkhnSWx3eXpXWU55SGIzcE9NUlJjWlhLUGlNZnR2SUljX1hLQkxZMUUzVThXNUtRRlEwT21RVlZkOW9SbHJZUXZHRWFES1M1RkdvOXNBbFlGcFNR?oc=5",
+      "published_at": "2026-11-05T14:10:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -121,14 +185,6 @@
       "headline": "Should the NBA shorten games to 40 minutes? Pros and cons of move as league battles early season injury crisis - CBS Sports",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSUsyZ3dfX1JZT0x4RDdZbmNfQU92T0RnRi1CbUhlQ1F6SmFRcmJOMFBNNWFkSlc4aGpBZlZ0S2pZd2NFMFRMYzAzZFV0OUNLbE5FUGp1RFV1SUR1NkUyX3pObFVQSXBtSTJsM2ZzMkl2UmNXc3R2UTc4eUNWTTV4czZHWkR6dzRCTks3NGdsbmFxaktHX0FWU3Rsa2Z3aXM?oc=5",
       "published_at": "2026-11-05T13:46:30+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Kyrie Irving on getting off his minutes restriction - Dallas Hoops Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQjRYaXoxN0ltblBRclp0RzVvNWgtT29WdWlna3p5Q0ZnTzFHOGZ2aGhkU09LMFA1U2FickVYZUVWMV9fdEZiXzZpNm93TnZ4UGJsdnRRYUk4RzhUYXpYT19pbGZIeWl1WDRoNnVxdkRmd2xIR0xkSHo4RFBjdlNqamlUR19vMkFuMFcyLWt3YmdhZVZo?oc=5",
-      "published_at": "2026-11-05T13:22:57+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -174,14 +230,6 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Josh Hart (ankle) ruled out vs. Chicago - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMmtyU3R4X1VSRmFWcGNtNHJXWVZjRFhXVzVrZlY3VnZobi1mRnhodGJwTVloSFlkaWI1eHVpazBfRnNMMGwzY0t1a09lWkJEZkNWVjYwY2JRTUZxaHNROW94OXVoa2dqMVpObzFUWmVxMWJ4YmZ5Y0dkNnZBVjFhRHdPekRhYWpqX0wzUnJfTS1kd29jRHJOSVlPMVR1LXo1SHFwWktaNA?oc=5",
-      "published_at": "2026-11-05T06:21:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
       "headline": "Kings' Loss to Lakers Raises New Rotation Questions - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVFFuWTdLNmRWQVZmZ0I3SU1zTDl1YzhVWG5rNHF0YTJXWlRhLUFhN2tCSmJWY2N4TDdRMFlheW9JXzZqdFZRQkNrUnRiXzB1cmJRcWRrc0t3QjZnT0NPdHRKa2lpbUE3alZoNkZobDU4UmlUdjJQUlg5YWUyWGJRbkpUS1pTYWdiTUJFdA?oc=5",
       "published_at": "2026-11-05T06:07:40+00:00",
@@ -190,17 +238,17 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Terrence Shannon Jr. (hip) ruled out vs. Houston - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQjlMSmZQSjkwU3RxZFI1SE03ZDlYdFkwSmh0WTVRYnp4TUZVWHVXbWxXZ0FYM2F4VGZ5RDA2UW5BQ0F0d3Q4X1IzZ00tZ29JZk9wVjJxQngwbUJwLUJZTkZISFdaWDgtdlA4bEt2dV8tdmJ3T1NKWkFsWUFKek1MdDAtOVl3UVE1OEZNb3RsTUZzWmRhWjVQejNtNFNDMWpBOEdGZXdocDBNVC1tb0c0NHRB?oc=5",
-      "published_at": "2026-11-05T02:37:44+00:00",
+      "headline": "Isaiah Stewart Injury: Doubtful to return - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVjlYZ0JWdHVCVGRtWGxCMVk5M0kwYzFSX1pCZDNmT0NUamM3TE03bGR1LXpXSklIbGQwLXNTbm9rVklrX2FIN0xLakZxcXNBT0hMc0ZDTjlmMk41NE5nN1NrWkFoQ2h4OERyNWtJem1EWXBjbjJNM1JCWEdFREZSRjZsalBLZ2xlTTFjU2hqQU52aVZqREJKQg?oc=5",
+      "published_at": "2026-11-05T02:30:59+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Isaiah Stewart Injury: Doubtful to return - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVjlYZ0JWdHVCVGRtWGxCMVk5M0kwYzFSX1pCZDNmT0NUamM3TE03bGR1LXpXSklIbGQwLXNTbm9rVklrX2FIN0xLakZxcXNBT0hMc0ZDTjlmMk41NE5nN1NrWkFoQ2h4OERyNWtJem1EWXBjbjJNM1JCWEdFREZSRjZsalBLZ2xlTTFjU2hqQU52aVZqREJKQg?oc=5",
-      "published_at": "2026-11-05T02:30:59+00:00",
+      "headline": "Cavs' Jarrett Allen suffers right knee injury early in loss to Thunder - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZl9EZnNjdUxoVFdKRFlyUzFvdU5wd0NoR0ZCR09FNXBrbHdiS2p1Nk5qbDdXWnp0ZWJRdVA4Z3k4THgwbGhZdHpaN2IxUkdpMGo4WVVXd1dGQ2wtNTJ6Mi1pU0Rnel9td1lZOW1kQ0pUR1NPeHBmMTlTYjZVTUZtZjRCTkNJM3BWZGpVQzVVa0hjelR1V0tkTkRueXhvVXgwcklmbk9xLWRIOEd3dDVEeXNfbnFWX01oWUJseFdCUnhKZjJPUEtSX0Itb3phYXE1?oc=5",
+      "published_at": "2026-11-05T02:14:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -222,25 +270,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "‘Going to Be the Downfall of the Sixers,’ ‘It’s Over’ — NBA World Sounds Alarm Over Joel Embiid’s Latest ‘Painful’ Injury Admission - AOL.com",
-      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wa2hYUW5SYlEzNnduSHVqSXhrcVFhNWhxWERyaG1fbzlKZHo3bEs3T3c1cmFDa1FXUTVOYnFJd0VxMklVbGFvbXEwRnNhNDZmbXJiT0JfTm9IRnZBd2pwZERib1NDOVpucFd4WDE3WGRvTHN2VGFYdEJkMmhWQkE?oc=5",
-      "published_at": "2026-11-05T01:37:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
       "headline": "Asa Newell Ruled Out During Hawks-Wizards Game Due to Injury - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPREVUV3E1NGF4Qmg2WWlTZ1pRT2ZsekJwTHl5QmswdTI3bFdRV0t6WFdTbWFCN2ZXZzAxTlNZZ1lKRHM2dDJFODA3NnVDYTFIcHRJcWNpYUFmb0lyNDc1VkMtVkFhNjNhcGJ1Z0FUamozU3hJYkJ0VXJCMG9jMnR0U093NEo?oc=5",
       "published_at": "2026-11-05T01:34:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Trey Murphy (knee) now questionable vs. Utah - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ0tQQlZMRGNFaWRjVjhsbTV4NTF2X2xXczQzaXBJTC1LQm0wVXBDSWUyalhVT25xV1hJNFpWNEFveVdZb0pnVklhTEtRbmlNaWcyaDREUjdnUzBuT0pMaklWMG1KRnh2UzgyZjU0bWNUeF9JMTVBa2E2V2plUV9BclRWVm1pUjZ6UHl6V0JpeVE0Q2dLY2FYUHU5LURZZmZIRGJJVHc5U2thalVaNmc?oc=5",
-      "published_at": "2026-11-05T00:57:11+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -326,14 +358,6 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Ex Aggies Standout Alex Caruso's NBA Return Provides Much-Needed Boost for Injury-Plagued Thunder - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYzNKRm9Namw1TzRyeTh5Wm1tbzJOeUVDMk94S1N3ZW9yZVVyOGE2TXVXaWM3T3hqSzYybVhKWEpvdFZBQlBQYzZtQkR3Q0JxWFMweEpSeUJJNlBBaDY0aW5rU05fU1pKenRibTF2Y0dENFZvTXVyU1IwX0RTbEE5aDluSlFXMGM?oc=5",
-      "published_at": "2026-11-04T23:00:34+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
       "headline": "Ferguson remains ‘optimistic’ Sonics will return ahead of meeting with NBA commissioner - The Spokesman-Review",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQczIybzlvakszR1pUc0EybHBJXzZRNnd1ZnVxcVJhenB6eHZaaV9vcGJrOXNEQUhJRDFwN1JwRDBMa2xHYmxTNDRPU1BRYmhwRHg0OEptZ1djTFNXNEJXV252a1ozU0NJekVUYVpNNGF6aTZyQ29pc0xobWlERnR2SnRzcHVvTnZ6c1Zfc3kxX3dvSnRfdnNkUTVnbGpGQQ?oc=5",
       "published_at": "2026-11-04T22:59:00+00:00",
@@ -345,30 +369,6 @@
       "headline": "Bilal Coulibaly Questionable Nov. 4 Against Hawks (Illness) - FanDuel",
       "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaFFTVWIzRkJzTnd6OVpIenpaVWR4SWlTSzNCVzlCVGpVMC01VFJlLWMzbGxyUENBTUZkUUlYc2Y2ZG9qWDFqVzhZeGU5WUxrMTNHVVVubUoyT1dTS0kyTkExT195ZGhFa19abVNDTXdkaUNuWFBCcVpaYzM5UlBRQkNoMXkzYUpqOUNIa2hSZHBIaGl5aERodFN3T0pKSEFVbjhXZmg3U0JPdXk3MUhfMzZHQi1mU3JTdTdnNTVTSVUyZw?oc=5",
       "published_at": "2026-11-04T22:45:56+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Knicks vs. Bulls Injury Report: Josh Hart Ruled Out With Ankle Soreness - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeXhkU0kzUVJUZmNzZFRnMGM5MVhpVmpLb29vUGduNkpXcUdaeDV5RndocnRkMzVCdE5EdzFyWHE1cktJTXp2dXYtSU9GSndjZ0ludUN2SjBkMjRRQno3N3RrTEEwM2VQUTR3eldOam9qeTJBS3NCNzFxcExibkVWNGhsZ2M?oc=5",
-      "published_at": "2026-11-04T22:32:39+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Wizards' AJ Dybantsa: Minutes restriction lifted - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPc3pRSUNmRmVTUlFzX1hjTDVTNVIyZW9lS2JZWXVSdUJFMFQ2N3A4cmRuVkRxREhaZS1DTHVzcXlkR0xWanI2WkdaSkMtSm1Tb1hRSWh4ek1mc2d2ZU5pVGphbnRCZXl1NEtUTlBpNUVXcU1od1NtZHFJRmNxSXRCZGY5X0JCNmVOVjJZVExnSU9fdjFWamR0VGRUT0k4UQ?oc=5",
-      "published_at": "2026-11-04T22:27:23+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Jakob Poeltl (shoulder) downgraded to doubtful - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVVpiTmJVMXNqSVdaeTVncVNMdlVRTTlvaTNlZ0RzNWVDUDFzdXRoTkZsQWpjX1A5T19DeXB0eEpNY0NwV2ZRQl9Ua2ZiQTlFeUZNMkFtZGJuc2VYNkMwYjRtZG5iSkVzekkteHZKVUdod0RVeHZkcEJNVjVtWDFIckFHQnprTFpTNkZJcEpUcTVOYkllUnRCRGxoV0JoUUoyTzFVcjdNckpWZ0VIR2Mxa3RB?oc=5",
-      "published_at": "2026-11-04T21:34:54+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
