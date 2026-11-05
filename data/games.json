@@ -1,91 +1,19 @@
 {
-  "date": "20261104",
-  "updated_at": "2026-11-04T23:44:51.893592-05:00",
+  "date": "20261105",
+  "updated_at": "2026-11-05T00:46:40.311675-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
-      "away": "Philadelphia 76ers",
-      "home": "Detroit Pistons",
-      "time": "2026-11-05T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Atlanta Hawks",
-      "home": "Washington Wizards",
-      "time": "2026-11-05T00:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Milwaukee Bucks",
-      "home": "Boston Celtics",
-      "time": "2026-11-05T00:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Charlotte Hornets",
-      "home": "Brooklyn Nets",
-      "time": "2026-11-05T00:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Chicago Bulls",
-      "home": "New York Knicks",
-      "time": "2026-11-05T00:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Indiana Pacers",
-      "home": "Memphis Grizzlies",
-      "time": "2026-11-05T01:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Utah Jazz",
-      "home": "New Orleans Pelicans",
-      "time": "2026-11-05T01:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Cleveland Cavaliers",
-      "home": "Oklahoma City Thunder",
-      "time": "2026-11-05T01:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Minnesota Timberwolves",
-      "home": "Houston Rockets",
-      "time": "2026-11-05T01:30Z",
-      "status": "Final"
-    },
-    {
-      "away": "Toronto Raptors",
-      "home": "Denver Nuggets",
-      "time": "2026-11-05T02:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Portland Trail Blazers",
+      "away": "Orlando Magic",
       "home": "Phoenix Suns",
-      "time": "2026-11-05T02:00Z",
-      "status": "Final"
-    },
-    {
-      "away": "Dallas Mavericks",
-      "home": "San Antonio Spurs",
-      "time": "2026-11-05T02:30Z",
-      "status": "In Progress"
-    },
-    {
-      "away": "Los Angeles Lakers",
-      "home": "Sacramento Kings",
-      "time": "2026-11-05T03:00Z",
-      "status": "In Progress"
+      "time": "2026-11-06T02:00Z",
+      "status": "Scheduled"
     },
     {
       "away": "Miami Heat",
-      "home": "LA Clippers",
-      "time": "2026-11-05T03:30Z",
-      "status": "Halftime"
+      "home": "Golden State Warriors",
+      "time": "2026-11-06T03:00Z",
+      "status": "Scheduled"
     }
   ]
 }
