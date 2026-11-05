@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated_at": "2026-11-04T13:37:58+00:00",
- "samples": 1699,
- "days": 12,
+ "updated_at": "2026-11-05T13:41:02+00:00",
+ "samples": 1862,
+ "days": 13,
  "method_version": "two-stage-v1",
  "weights": {
   "vegas": 1.05,
@@ -28,7 +28,7 @@
   "vegas": 1.05,
   "matchup": 0.96,
   "injury": 0.7,
-  "usage": 1.05,
+  "usage": 0.8,
   "starter": 0.98,
   "blowout": 0.89,
   "scale": 0.92,
@@ -46,43 +46,43 @@
  },
  "validation": {
   "test_days": [
-   "2026-11-01",
-   "2026-11-02"
+   "2026-11-02",
+   "2026-11-04"
   ],
-  "test_rows": 320,
+  "test_rows": 419,
   "default": {
-   "minutes_rmse": 6.434,
-   "minutes_mae": 4.832,
-   "minutes_bias": 1.23,
-   "fp_rmse": 9.394,
-   "fp_mae": 7.429,
-   "fp_bias": -0.19
+   "minutes_rmse": 6.649,
+   "minutes_mae": 5.102,
+   "minutes_bias": 0.99,
+   "fp_rmse": 9.485,
+   "fp_mae": 7.422,
+   "fp_bias": -0.39
   },
   "current": {
-   "minutes_rmse": 6.37,
-   "minutes_mae": 4.754,
-   "minutes_bias": 1.68,
-   "fp_rmse": 8.976,
-   "fp_mae": 7.067,
-   "fp_bias": 0.69
+   "minutes_rmse": 6.596,
+   "minutes_mae": 5.021,
+   "minutes_bias": 1.31,
+   "fp_rmse": 9.185,
+   "fp_mae": 7.172,
+   "fp_bias": 0.52
   },
   "fitted": {
-   "minutes_rmse": 6.457,
-   "minutes_mae": 4.848,
-   "minutes_bias": 2.02,
-   "fp_rmse": 8.982,
-   "fp_mae": 7.06,
-   "fp_bias": 0.71
+   "minutes_rmse": 6.629,
+   "minutes_mae": 5.043,
+   "minutes_bias": 1.44,
+   "fp_rmse": 9.192,
+   "fp_mae": 7.175,
+   "fp_bias": 0.54
   },
-  "default_mae": 7.429,
-  "current_mae": 7.067,
-  "fitted_mae": 7.06
+  "default_mae": 7.422,
+  "current_mae": 7.172,
+  "fitted_mae": 7.175
  },
  "in_sample_mae": {
-  "default": 8.084,
-  "learned": 7.399
+  "default": 8.031,
+  "learned": 7.395
  },
- "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (minutes 4.85 vs 4.75, points 7.06 vs 7.07). Usage switched to possession redistribution (Nov 4); usage weight set to 0.80 from a refit on all graded nights.",
+ "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (minutes 5.04 vs 5.02, points 7.17 vs 7.17).",
  "log": [
   {
    "date": "2026-10-27",
@@ -228,15 +228,21 @@
     "usage 1.05 -> 0.80 (new usage-redistribution formula; refit on 1,700 graded player-games)"
    ],
    "heldout_gain": 0.0
+  },
+  {
+   "date": "2026-11-05",
+   "adopted": false,
+   "changes": [],
+   "heldout_gain": -0.003
   }
  ],
  "in_sample": {
-  "minutes_rmse": 6.184,
-  "minutes_mae": 4.753,
-  "minutes_bias": 0.3,
-  "fp_rmse": 9.337,
-  "fp_mae": 7.399,
-  "fp_bias": 0.18
+  "minutes_rmse": 6.224,
+  "minutes_mae": 4.791,
+  "minutes_bias": 0.33,
+  "fp_rmse": 9.351,
+  "fp_mae": 7.395,
+  "fp_bias": 0.2
  },
  "method": "Two stages: minutes parts fit to actual minutes, then points parts to actual points (root-mean-square error, pull toward priors); adopted if held-out points improve, or minutes improve while points hold; moves halfway."
 }
