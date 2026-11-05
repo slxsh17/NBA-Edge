@@ -1,7 +1,12 @@
 {
-  "updated_at": "2026-11-05T22:52:16.968541+00:00",
+  "updated_at": "2026-11-05T23:39:58.987903+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
+    {
+      "name": "Keshon Gilbert",
+      "team": "ATL",
+      "status": "OUT"
+    },
     {
       "name": "Asa Newell",
       "team": "ATL",
@@ -245,7 +250,7 @@
     {
       "name": "Isaiah Stewart",
       "team": "MEM",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Scotty Pippen Jr.",
@@ -255,7 +260,7 @@
     {
       "name": "Kam Jones",
       "team": "MIL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Terrence Shannon Jr.",
@@ -290,7 +295,7 @@
     {
       "name": "Jaylin Williams",
       "team": "OKC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Nikola Topic",
@@ -441,6 +446,11 @@
       "name": "Trey Alexander",
       "team": "UTA",
       "status": "OUT"
+    },
+    {
+      "name": "Anthony Davis",
+      "team": "WAS",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Reece Beekman",
