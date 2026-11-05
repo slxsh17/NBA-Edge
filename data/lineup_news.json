@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T06:51:49.483366+00:00",
+  "checked_at": "2026-11-05T08:07:02.409856+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
     {
       "team": "MIA",
-      "status": "confirmed",
+      "status": "projected",
       "players": [
         "D. Mitchell",
         "Klay Thompson",
@@ -22,17 +22,25 @@
   ],
   "headlines": [
     {
-      "headline": "Kings' Loss to Lakers Raises New Rotation Questions - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVFFuWTdLNmRWQVZmZ0I3SU1zTDl1YzhVWG5rNHF0YTJXWlRhLUFhN2tCSmJWY2N4TDdRMFlheW9JXzZqdFZRQkNrUnRiXzB1cmJRcWRrc0t3QjZnT0NPdHRKa2lpbUE3alZoNkZobDU4UmlUdjJQUlg5YWUyWGJRbkpUS1pTYWdiTUJFdA?oc=5",
-      "published_at": "2026-11-05T06:07:40+00:00",
+      "headline": "Jarrett Allen (knee) doubtful to return Wednesday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObk5jam05dHJob09DZXN2NVdMNnlzRXVjU1QtUUQ2c2hYOUpiQnRUMGRDall1MkM0LXpJOHZHUS0tRUNsb2t6bklibWw5aVRQZnpDWFBjbjgxajZUZzk4NnJqQ0JmUXJUMlJtQnVUdDdQZW1Qb3N5S2NtNnFNWjJ6RWNDQ0Z3b2pWN2VHNTdZQ0k0Y3pycEVtaDhNc21jRkJ4VmJWREs5THJSYzZ5RmRNLTR3TVhwUQ?oc=5",
+      "published_at": "2026-11-05T07:36:44+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Jarrett Allen (knee) doubtful to return Wednesday - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObk5jam05dHJob09DZXN2NVdMNnlzRXVjU1QtUUQ2c2hYOUpiQnRUMGRDall1MkM0LXpJOHZHUS0tRUNsb2t6bklibWw5aVRQZnpDWFBjbjgxajZUZzk4NnJqQ0JmUXJUMlJtQnVUdDdQZW1Qb3N5S2NtNnFNWjJ6RWNDQ0Z3b2pWN2VHNTdZQ0k0Y3pycEVtaDhNc21jRkJ4VmJWREs5THJSYzZ5RmRNLTR3TVhwUQ?oc=5",
-      "published_at": "2026-11-05T03:31:05+00:00",
+      "headline": "Clippers’ Tyronn Lue explains why Keaton Wagler saw limited minutes in crushing Heat loss - ClutchPoints",
+      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRWxDcDFTZ3NYQnNQOG9VYjRra2xCLXctRU1fcXBNVG80MzV1V04zM3NRTU5BemRWT0tvTEc4bThQbE9QNEp6c21sOGdwUDFWQ0JLdC1aUFpJa19POWtvb3JzR2RkRW9UNl9PdWsxTnhpZGg0by1ob3E1cElpWl84cHpqbFRqd2JvdzNGTThyeDlWZlRhNVhnRWtRTGpJakdjelVRcTRFMDNCVjVOYXk2dGNwVGJSVW9oRmNnNWFhdEY?oc=5",
+      "published_at": "2026-11-05T07:08:57+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Kings' Loss to Lakers Raises New Rotation Questions - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVFFuWTdLNmRWQVZmZ0I3SU1zTDl1YzhVWG5rNHF0YTJXWlRhLUFhN2tCSmJWY2N4TDdRMFlheW9JXzZqdFZRQkNrUnRiXzB1cmJRcWRrc0t3QjZnT0NPdHRKa2lpbUE3alZoNkZobDU4UmlUdjJQUlg5YWUyWGJRbkpUS1pTYWdiTUJFdA?oc=5",
+      "published_at": "2026-11-05T06:07:40+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -318,17 +326,17 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "In 1980, Dave Bing used $80,000 of his own savings to start Bing Steel in Detroit; 22 years later, the Bing Group's revenue reached $344 million - Athlon Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMklLWkRSRG1EV0c3YVRCVnFabWo4ZjJEb0FVcDRGRTJRQlRUOEtGVjQ1eElfVTFWU2VPZGhoVDkzV1prMHJ3TXp5S0pyOXZhTHk4czRyRlpqelZQWmNCZnhPZ19nbHhndzZuV2NiOW5JeFJWOFFVamJWMUtNS0FFNzBXVS00RGw5dnFYZjdKVnViOWkya0k0T0Rn?oc=5",
-      "published_at": "2026-11-04T13:13:21+00:00",
+      "headline": "Cameron Johnson Expected to Play Wednesday - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRWdmclZIMjkzNlZzX0I3OWczZ0ZpZXhlTWxLSklXXzJoZlY0RXh0bzVRRGVFZWx4WXc0UF9OYmIzSkpCUFNIeTQ4b2RFV0czTlAtZTk0SXlfcjc1ZHUyS1JTZ1pFdmRmUm9zXzNZTWZGWnV5SURsMmVKS2hjcXZ4cGt6Sk5QMzhuYVpfUVpQTHFJMFE?oc=5",
+      "published_at": "2026-11-04T13:46:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "3 overlooked Knicks trade targets who could upgrade the center rotation - Daily Knicks",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZXduOTIxMS12QmJ0YjN1alZTN3RFTjVta2xQbFFwZUZsRmtWYl8yVXFKcmYzSEVxeGE1bE5IVl9rUDVXUkNCZEFQb0d5WlZqcV82cXBHRC1oMkNuMi1vUXAtUTVHRGFlSVF1eWhFVmtkTzVZelQyMnVyeUxsVFlQY25ybnhwekJC?oc=5",
-      "published_at": "2026-11-04T13:00:03+00:00",
+      "headline": "In 1980, Dave Bing used $80,000 of his own savings to start Bing Steel in Detroit; 22 years later, the Bing Group's revenue reached $344 million - Athlon Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMklLWkRSRG1EV0c3YVRCVnFabWo4ZjJEb0FVcDRGRTJRQlRUOEtGVjQ1eElfVTFWU2VPZGhoVDkzV1prMHJ3TXp5S0pyOXZhTHk4czRyRlpqelZQWmNCZnhPZ19nbHhndzZuV2NiOW5JeFJWOFFVamJWMUtNS0FFNzBXVS00RGw5dnFYZjdKVnViOWkya0k0T0Rn?oc=5",
+      "published_at": "2026-11-04T13:13:21+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
