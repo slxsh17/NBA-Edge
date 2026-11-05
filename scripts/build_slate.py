@@ -279,6 +279,42 @@ _DARKO = None
 _DARKO_FILE = 'darko.json'
 
 
+def usage_of(dk):
+    """(usage %, share of FanDuel points that comes from scoring/creating) from a DARKO row:
+    usage = (FGA + 0.44 FTA + TOV) per 100 possessions; scoring share = (points + half the assist
+    points) / FanDuel points, the part of a player's output that grows when he uses more trips."""
+    if not dk or dk.get('fga_100') is None:
+        return USG_DEFAULT
+    fd = dk['pts_100'] + 1.2 * dk['reb_100'] + 1.5 * dk['ast_100'] + 3 * dk['stl_100'] + 3 * dk['blk_100'] - dk['tov_100']
+    return (dk['fga_100'] + 0.44 * dk['fta_100'] + dk['tov_100'],
+            min(1.0, (dk['pts_100'] + 0.75 * dk['ast_100']) / max(fd, 1.0)))
+
+
+USG_DEFAULT = (20.0, 0.6)
+
+
+def usage_bumps(team_out, avail, cap=1.25):
+    """Usage redistribution when regulars are out. The trips the absent players would have used
+    (usage x minutes) minus what their replacements' extra minutes already absorb (their usage x
+    injury minutes) are spread over the teammates by minutes, so everyone on the floor uses a few
+    more possessions; each player's FanDuel rate rises with his new usage on the scoring part of
+    his output. Replaced a flat +0.15% per out-player fantasy point (Nov 4): on 45 team-nights
+    with a regular out it cut our own model's miss for those teammates 7.72 -> 7.67; pushing the
+    extra usage to the high-usage players instead (the usual usage tree) scored worse. The
+    learned `usage` weight scales the effect (0.6 fitted)."""
+    gap = sum(o.get('_usg', USG_DEFAULT[0]) * o['minutes'] for o in team_out)
+    gap -= sum(p.get('_usg', USG_DEFAULT[0]) * p['adj'].get('injury_min', 0) for p in avail)
+    tot = sum(p['minutes'] for p in avail)
+    if gap <= 0 or tot <= 0:
+        return {}
+    out = {}
+    for p in avail:
+        u, sh = p.get('_usg', USG_DEFAULT[0]), p.get('_score', USG_DEFAULT[1])
+        r = gap / (tot * max(u, 5.0))                 # relative usage increase
+        out[id(p)] = min(cap, 1 + r * sh)
+    return out
+
+
 def darko_lookup(name, team):
     """DARKO row (data/darko.json; a backtest uses that day's archived copy) by name + team,
     or by name alone if unique."""
@@ -410,6 +446,7 @@ def build(day=None, backtest=False, weights=None):
             dk = darko_lookup(sp['name'], team)
             if dk and dk.get('fd_per_min'):
                 p['darko_rate'], p['darko_min'] = dk['fd_per_min'], dk['min']
+                p['_usg'], p['_score'] = usage_of(dk)
             p['base_minutes'] = round(m, 2)  # before injury/starter/team/blowout adjustments (site re-weights these)
             p['method'] = 'team_change' if moved else row.get('minutes_method')
             p['_recent'] = row.get('team_recent_minutes') or []
@@ -453,11 +490,15 @@ def build(day=None, backtest=False, weights=None):
                     p['minutes'] += g
                     p['adj']['injury_min'] = round(p['adj'].get('injury_min', 0) + g, 1)
                     p['flags'].append(f"+{g:.1f} min with {o['name']} out ({method})")
-            # usage bump: missing high-volume players raise teammates' per-minute output
-            o_fp = o['minutes'] * o['rate']
-            if o_fp >= 20:
-                for p in avail:
-                    p['adj']['usage'] = round(min(1.06, p['adj'].get('usage', 1.0) * (1 + 0.0015 * o_fp)), 3)
+        # usage: the absent regulars' possessions go to the teammates on the floor
+        if new_out:
+            bumps = usage_bumps(new_out, avail)
+            for p in avail:
+                b = bumps.get(id(p))
+                if b and b >= 1.005:
+                    p['adj']['usage'] = round(b, 3)
+                    if (b - 1) * W['usage'] >= 0.01:
+                        p['flags'].append(f"+{(b - 1) * W['usage'] * 100:.0f}% scoring rate from usage with {', '.join(o['name'] for o in new_out)} out")
 
         # 3. confirmed starters
         lu = lineups.get(team)
@@ -551,6 +592,8 @@ def build(day=None, backtest=False, weights=None):
         attach_news(players, heads)
     for p in players:
         p.pop('_recent', None)
+        p.pop('_usg', None)
+        p.pop('_score', None)
     out_singles = single_game_slates(singles, players)
     out_sides = side_slates(sides, players, avg_tt)
     if not backtest:

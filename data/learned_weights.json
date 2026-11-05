@@ -8,7 +8,7 @@
   "vegas": 1.05,
   "matchup": 0.96,
   "injury": 0.7,
-  "usage": 1.05,
+  "usage": 0.8,
   "starter": 0.98,
   "blowout": 0.89,
   "scale": 0.92,
@@ -82,7 +82,7 @@
   "default": 8.084,
   "learned": 7.399
  },
- "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (minutes 4.85 vs 4.75, points 7.06 vs 7.07).",
+ "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (minutes 4.85 vs 4.75, points 7.06 vs 7.07). Usage switched to possession redistribution (Nov 4); usage weight set to 0.80 from a refit on all graded nights.",
  "log": [
   {
    "date": "2026-10-27",
@@ -220,6 +220,14 @@
    "adopted": false,
    "changes": [],
    "heldout_gain": 0.007
+  },
+  {
+   "date": "2026-11-05",
+   "adopted": true,
+   "changes": [
+    "usage 1.05 -> 0.80 (new usage-redistribution formula; refit on 1,700 graded player-games)"
+   ],
+   "heldout_gain": 0.0
   }
  ],
  "in_sample": {
