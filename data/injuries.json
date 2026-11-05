@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-05T22:04:49.949790+00:00",
+  "updated_at": "2026-11-05T22:52:16.968541+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
+      "name": "Asa Newell",
+      "team": "ATL",
+      "status": "OUT"
+    },
+    {
       "name": "Jock Landale",
       "team": "ATL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jalen Johnson",
-      "team": "ATL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Asa Newell",
       "team": "ATL",
       "status": "DAY-TO-DAY"
     },
@@ -58,9 +58,19 @@
       "status": "OUT"
     },
     {
-      "name": "Kon Knueppel",
+      "name": "Dennis Schroder",
       "team": "CHA",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Moussa Diabate",
+      "team": "CHA",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Kon Knueppel",
+      "team": "CHA",
+      "status": "OUT"
     },
     {
       "name": "Grant Williams",
@@ -83,16 +93,6 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Peyton Watson",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jarrett Allen",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Tyrese Proctor",
       "team": "CLE",
       "status": "DAY-TO-DAY"
@@ -103,14 +103,29 @@
       "status": "OUT"
     },
     {
-      "name": "Max Christie",
-      "team": "DAL",
+      "name": "Peyton Watson",
+      "team": "CLE",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jarrett Allen",
+      "team": "CLE",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Sergio de Larrea",
+      "team": "DAL",
+      "status": "OUT"
     },
     {
       "name": "Santi Aldama",
       "team": "DAL",
       "status": "OUT"
+    },
+    {
+      "name": "Max Christie",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tarik Biberovic",
@@ -119,11 +134,6 @@
     },
     {
       "name": "Dereck Lively II",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Sergio de Larrea",
       "team": "DAL",
       "status": "OUT"
     },
