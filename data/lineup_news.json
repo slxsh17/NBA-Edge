@@ -1,13 +1,13 @@
 {
   "schema": 1,
   "slate_date": "2026-11-04",
-  "checked_at": "2026-11-05T02:42:51.503063+00:00",
+  "checked_at": "2026-11-05T03:40:15.870669+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
     {
       "team": "MIA",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "D. Mitchell",
         "Klay Thompson",
@@ -22,17 +22,17 @@
   ],
   "headlines": [
     {
-      "headline": "Isaiah Stewart Injury: Doubtful to return - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVjlYZ0JWdHVCVGRtWGxCMVk5M0kwYzFSX1pCZDNmT0NUamM3TE03bGR1LXpXSklIbGQwLXNTbm9rVklrX2FIN0xLakZxcXNBT0hMc0ZDTjlmMk41NE5nN1NrWkFoQ2h4OERyNWtJem1EWXBjbjJNM1JCWEdFREZSRjZsalBLZ2xlTTFjU2hqQU52aVZqREJKQg?oc=5",
-      "published_at": "2026-11-05T02:30:59+00:00",
+      "headline": "Jarrett Allen (knee) doubtful to return Wednesday - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObk5jam05dHJob09DZXN2NVdMNnlzRXVjU1QtUUQ2c2hYOUpiQnRUMGRDall1MkM0LXpJOHZHUS0tRUNsb2t6bklibWw5aVRQZnpDWFBjbjgxajZUZzk4NnJqQ0JmUXJUMlJtQnVUdDdQZW1Qb3N5S2NtNnFNWjJ6RWNDQ0Z3b2pWN2VHNTdZQ0k0Y3pycEVtaDhNc21jRkJ4VmJWREs5THJSYzZ5RmRNLTR3TVhwUQ?oc=5",
+      "published_at": "2026-11-05T02:37:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
     },
     {
-      "headline": "Jarrett Allen (knee) doubtful to return Wednesday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQakNtOEx1U1FScS05Y1ZPZnJwRDJoQzliSWlhR3JrMTI1OEMzdk1KTF9FbXctbld2d3ltTms0STZKblB4RGNOaHNjaWktcnhPeUlDTkdmczJjQmUwNVFNeVZSaklOYUdiZzl6UmdwMWhLMHpfYV9LR1d2QnRRZXpwRDR3b1c5S0lkcFJLa1VsMjRDRXRBVDIxaGhtc9IBoAFBVV95cUxOYnIwc1BVWnF6UFp1UGM2bVc1R0RsSGh4Y1pwUi14NXpTMlBQNEt5YUNlTEk4TnFsdmlPNUJhRHpRbUNreTFWZEQyNl9JdkI0V0l0ZFRkQVFnTkthdFNVcHNLN2pneUJLczZ2OU1MVVlCampya1A3SFgyRWJHc2ZwQUx4V3VXSHJUa3VMM2xjY0p5aFdBQXpCaldvdGxMZTJk?oc=5",
-      "published_at": "2026-11-05T02:14:00+00:00",
+      "headline": "Isaiah Stewart Injury: Doubtful to return - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVjlYZ0JWdHVCVGRtWGxCMVk5M0kwYzFSX1pCZDNmT0NUamM3TE03bGR1LXpXSklIbGQwLXNTbm9rVklrX2FIN0xLakZxcXNBT0hMc0ZDTjlmMk41NE5nN1NrWkFoQ2h4OERyNWtJem1EWXBjbjJNM1JCWEdFREZSRjZsalBLZ2xlTTFjU2hqQU52aVZqREJKQg?oc=5",
+      "published_at": "2026-11-05T02:30:59+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -46,9 +46,9 @@
       "scope_date": "2026-11-04"
     },
     {
-      "headline": "Jarrett Allen (knee) doubtful to return Wednesday - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObk5jam05dHJob09DZXN2NVdMNnlzRXVjU1QtUUQ2c2hYOUpiQnRUMGRDall1MkM0LXpJOHZHUS0tRUNsb2t6bklibWw5aVRQZnpDWFBjbjgxajZUZzk4NnJqQ0JmUXJUMlJtQnVUdDdQZW1Qb3N5S2NtNnFNWjJ6RWNDQ0Z3b2pWN2VHNTdZQ0k0Y3pycEVtaDhNc21jRkJ4VmJWREs5THJSYzZ5RmRNLTR3TVhwUQ?oc=5",
-      "published_at": "2026-11-05T02:02:33+00:00",
+      "headline": "Dusty May Delivers Exciting Update On Morez Johnson Jr.'s Minutes Restriction - Yardbarker",
+      "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVWJEdUhmaXJBdGxnTnNUZGlVcjFhdWVtX0J6NjZWME1NSEhLMVA0MllLQ21vS0c4X2EzaGtHMUt2LTcwaG1WR0VrWWVOb2psUklMQ2NtdXF4cEtOTGJvWVhQd3ZVYzJqamliOE83dTRmR0wzR0JEU1oyME1rb1cwaWxnVXpsdV9jeVE4WHpTQWUweXI0ZFhhZzBsUGprZ2R2c1lPZFY5NzFzcFh5UlNzLTZYeFl2cm5BVUJmcERuNHNTWnVycUpKUnpBV1VwWElJM0J0RkNaMUhnWHZF?oc=5",
+      "published_at": "2026-11-05T02:01:17+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -174,6 +174,14 @@
       "scope_date": "2026-11-04"
     },
     {
+      "headline": "Nic Claxton (hamstring) ruled out Wednesday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOelN6ME01d2t3XzUxcXVHVVV3TjdTdXhXU1dERGV0eTY3REZEdk5qVGVWa1FJWXRaLUVEcHh5QkdYdV83UDhGTDRZRFQ4c3NDcHRFaVRsaGh3bGY0bTNqeVBnWDQ0emlSQzlYdi1PQ0lTVHdweGJNRnpBc0pfcXJFa2J6Mkh5bldrWWh3c2hrVHRyTDjSAZgBQVVfeXFMT0ZsdUYtVUI1QkVBNFU1NncxbDY2LTZKS3RURjd0SWtxdGtTS3dLOWxtTWtzODFWUzZiTncwWVhZaVRYWjVRUnZOcjM5NDVFZzNNclFPdGE0dXVXSzRBZUdCai0zLVlGVDBBTFpTSHprZndDZ0tfUkhzZGRYbVNvc0hsWGRPT0pUekFySmZXYk5kcFRqYzB5UWo?oc=5",
+      "published_at": "2026-11-04T22:46:22+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
       "headline": "Knicks vs. Bulls Injury Report: Josh Hart Ruled Out With Ankle Soreness - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeXhkU0kzUVJUZmNzZFRnMGM5MVhpVmpLb29vUGduNkpXcUdaeDV5RndocnRkMzVCdE5EdzFyWHE1cktJTXp2dXYtSU9GSndjZ0ludUN2SjBkMjRRQno3N3RrTEEwM2VQUTR3eldOam9qeTJBS3NCNzFxcExibkVWNGhsZ2M?oc=5",
       "published_at": "2026-11-04T22:32:39+00:00",
@@ -193,6 +201,14 @@
       "headline": "3 emergency Thunder trades to address their injury ravaged rotation - FanSided",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdUJPdGw3alk4cnVTaDZ6VnZHQjNZSTdhMmR2OHZnb2p3cHl1UnZOTFdSc09uSXozSFJQMF9oeFpWbzhQRm5ObXViblFETW9WVVBCT0NkSVdxMlhWUGhqQXM0LVJRaGNVaHVvYkdmNUk1dEIzeWRubzY4b2dtU2E3Z1NxT2FIdlRRdUgtUW8tbWh5SHNGMGhV?oc=5",
       "published_at": "2026-11-04T22:22:55+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-04"
+    },
+    {
+      "headline": "Injury Report: Detroit Pistons Vs. Philadelphia 76ers - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTWR6QlMwcGFnVThtNDJQdzFZZXJrMVdQZkM5c21faGQzdVYyTEh4VDV4OHpvdGN4Z25oblNBR2pmMVhUSlRsWTdLZmFOcU1fYjh2TGtZRTRjT3dfQzk2WlFVaENYM1diNjVLVHFkS292TmVMRzhEcnc3Z2hpZlZoZGRWTEhnYUw0?oc=5",
+      "published_at": "2026-11-04T21:00:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
@@ -297,14 +313,6 @@
       "headline": "Max Christie Ruled Out for Wednesday Against Spurs - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOEpTMmhUT1doVHVST2pBZXhwb0hGSUxjaFBSYzY5dzhrZTRUVk9oWDNEM2RZeUZMYW5vMlZVMnJjNVNITlI4SVpuRHFiVGs3MndNUHg1bTlSMHU2YzVwSDVJbVFIeG8wQlVYd2V6RkFGWWh4QUhMOFFBOEI2cUhwQ0pmNWFhRW5lTVZ3YTA3dkJudkRFQnJORnRPbmxvQQ?oc=5",
       "published_at": "2026-11-04T14:18:12+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-04"
-    },
-    {
-      "headline": "Cameron Johnson Expected to Play Wednesday - NBA News | Fantasy Basketball - RotoBaller",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRWdmclZIMjkzNlZzX0I3OWczZ0ZpZXhlTWxLSklXXzJoZlY0RXh0bzVRRGVFZWx4WXc0UF9OYmIzSkpCUFNIeTQ4b2RFV0czTlAtZTk0SXlfcjc1ZHUyS1JTZ1pFdmRmUm9zXzNZTWZGWnV5SURsMmVKS2hjcXZ4cGt6Sk5QMzhuYVpfUVpQTHFJMFE?oc=5",
-      "published_at": "2026-11-04T13:46:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-04"
