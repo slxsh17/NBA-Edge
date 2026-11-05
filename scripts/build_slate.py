@@ -345,25 +345,41 @@ def build(day=None, backtest=False, weights=None):
     naive = naive_fppg(last.get('players', []), logs_cur)
 
     games = slate.get('games', [])
-    # Single-game slates: project their players too (games not on the main slate get added).
+    # Other classic slates (After Hours, Express, Turbo...) and single-game slates: project their
+    # players too. Classic salaries are the same on every FanDuel classic slate, so side-slate
+    # players carry their classic salary; single-game-only players carry a placeholder that the
+    # single-game rows override.
+    sides = [] if backtest else read(f'sides_{day}.json').get('slates', []) if read(f'sides_{day}.json').get('date') == day else []
     singles = (read(f'archive/single_{day}.json') if backtest else read(f'single_{day}.json')).get('slates', []) if not backtest else []
     on_main = {(norm(p['name']), canon(p['team'])) for p in slate['players']}
-    slate_players = [dict(p, main=True) for p in slate['players']]
+    slate_players = [dict(p, main=True, classic=True) for p in slate['players']]
+    for sd in sides:
+        for sp in sd['players']:
+            k = (norm(sp['name']), canon(sp['team']))
+            if k not in on_main:
+                on_main.add(k)
+                slate_players.append(dict(sp, main=False, classic=True))
+    side_games, seen_g = [], {(g['away'], g['home']) for g in games}
+    for sd in sides:
+        for g in sd['games']:
+            if (g['away'], g['home']) not in seen_g:
+                seen_g.add((g['away'], g['home']))
+                side_games.append(g)
     for sg in singles:
         for sp in sg['players']:
             k = (norm(sp['name']), canon(sp['team']))
             if k not in on_main:
                 on_main.add(k)
                 slate_players.append(dict(sp, main=False))
-    main_teams = {g['home'] for g in games} | {g['away'] for g in games}
+    main_teams = {g['home'] for g in games + side_games} | {g['away'] for g in games + side_games}
     totals = {}
-    for g in games + [sg for sg in singles if sg['home'] not in main_teams]:
+    for g in games + side_games + [sg for sg in singles if sg['home'] not in main_teams]:
         if g.get('total') and g.get('home_spread') is not None:
             t, s = g['total'], g['home_spread']
             totals[g['home']] = (t / 2 - s / 2, s)
             totals[g['away']] = (t / 2 + s / 2, -s)
     avg_tt = statistics.mean(v[0] for v in totals.values()) if totals else None
-    travel = travel_km(day, games + [sg for sg in singles if sg['home'] not in main_teams])
+    travel = travel_km(day, games + side_games + [sg for sg in singles if sg['home'] not in main_teams])
 
     players = []
     for sp in slate_players:
@@ -372,7 +388,7 @@ def build(day=None, backtest=False, weights=None):
         moved = False
         if row is None and len(by_name.get(key, [])) == 1:
             row, moved = by_name[key][0], True
-        p = {'main': sp.get('main', True), 'ext': sp.get('ext_proj'), 'name': sp['name'], 'team': team, 'opp': canon(sp.get('opp')), 'home': sp.get('home'),
+        p = {'main': sp.get('main', True), 'classic': sp.get('classic', False), 'ext': sp.get('ext_proj'), 'name': sp['name'], 'team': team, 'opp': canon(sp.get('opp')), 'home': sp.get('home'),
              'position': sp['position'], 'salary': sp['salary'], 'status': sp.get('status', 'ACTIVE'),
              'flags': [], 'adj': {}, 'minutes': 0.0, 'rate': 0.0, 'proj': 0.0,
              'naive': round(naive.get(key, 0.0), 2)}
@@ -536,6 +552,7 @@ def build(day=None, backtest=False, weights=None):
     for p in players:
         p.pop('_recent', None)
     out_singles = single_game_slates(singles, players)
+    out_sides = side_slates(sides, players, avg_tt)
     if not backtest:
         SIM_DAY[0] = day
         simulate(players, out_singles, read('today.json'))
@@ -544,7 +561,7 @@ def build(day=None, backtest=False, weights=None):
            'avg_team_total': round(avg_tt, 1) if avg_tt else None, 'games': games,
            'sources': {'slate': slate.get('source'), 'injuries_updated': read('injuries.json').get('updated_at'),
                        'stats_updated': cur.get('updated_at'), 'lineups_checked': read('lineup_news.json').get('checked_at')},
-           'single_games': out_singles, 'sim_sig': SIM_SIG[0], 'own_model': own_params(), 'sim_lineups': SIM_LINEUPS[0],
+           'single_games': out_singles, 'classic_slates': out_sides, 'sim_sig': SIM_SIG[0], 'own_model': own_params(), 'sim_lineups': SIM_LINEUPS[0],
            'players': sorted(players, key=lambda p: -p['proj'])}
     return out
 
@@ -711,6 +728,47 @@ def single_heur(pairs):
         for i in free:
             own[i] += over * own[i] / fw
     return own
+
+
+def heur_own(elig, avg_tt, total=900.0, cap=60.0):
+    """Ownership heuristic (value + raw points + game environment + news), normalized to `total`
+    with a cap; excess redistributed. Same as the main slate's heuristic."""
+    if not elig:
+        return []
+    ws = []
+    for p in elig:
+        tt_term = ((p.get('team_total') or avg_tt or 112) - (avg_tt or 112)) * 0.03
+        news = 0.35 if p['adj'].get('injury_min', 0) >= 4 else 0
+        ws.append(math.exp(0.75 * (p['value'] - 5) + 0.06 * (p['proj'] - 25) + tt_term + news))
+    own = [total * w / sum(ws) for w in ws]
+    for _ in range(20):
+        over = sum(max(0, o - cap) for o in own)
+        if over < 0.01:
+            break
+        free = [i for i, o in enumerate(own) if o < cap]
+        fw = sum(own[i] for i in free)
+        own = [min(o, cap) for o in own]
+        for i in free:
+            own[i] += over * own[i] / fw
+    return [round(min(cap, o), 1) for o in own]
+
+
+def side_slates(sides, players, avg_tt):
+    """Other classic slates: which games, and per player the classic salary and an ownership
+    estimate within that slate (the heuristic; the field simulation runs on the Main slate)."""
+    by_key = {norm(p['name']) + '|' + p['team']: p for p in players}
+    out = []
+    for sd in sides:
+        rows = []
+        for sp in sd['players']:
+            k = norm(sp['name']) + '|' + canon(sp['team'])
+            if k in by_key:
+                rows.append({'k': k, 'salary': sp['salary'], 'status': sp.get('status', 'ACTIVE')})
+        elig = [(r, by_key[r['k']]) for r in rows if by_key[r['k']]['proj'] > 0 and by_key[r['k']].get('salary')]
+        for (r, _), o in zip(elig, heur_own([p for _, p in elig], avg_tt)):
+            r['own'] = o
+        out.append({'id': sd['id'], 'label': sd['label'], 'games': sd['games'], 'players': rows})
+    return out
 
 
 def single_game_slates(singles, players):

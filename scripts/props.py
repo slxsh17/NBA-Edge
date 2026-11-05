@@ -165,6 +165,17 @@ def first_tip(today):
     return min(tips) if tips else None
 
 
+def all_games(today):
+    """Every game NBA EDGE projects tonight: Main slate, other classic slates, single games."""
+    out, seen = [], set()
+    for g in today.get('games', []) + [g for cs in today.get('classic_slates', []) for g in cs.get('games', [])] + today.get('single_games', []):
+        k = (g.get('away'), g.get('home'))
+        if g.get('time') and k not in seen:
+            seen.add(k)
+            out.append(g)
+    return out
+
+
 def game_key(away, home):
     return f'{away} @ {home}'
 
@@ -187,9 +198,7 @@ def due_games(today, fetched, now, refresh):
     """Games whose FanDuel lines should be pulled now. Single pull: tip 40-150 minutes away and not
     pulled yet. Refreshing: tip 10-240 minutes away and last pull at least `refresh` minutes ago."""
     out = []
-    for g in today.get('games', []):
-        if not g.get('time'):
-            continue
+    for g in all_games(today):
         tip = dt.datetime.fromisoformat(g['time'].replace('Z', '+00:00'))
         mins = (tip - now).total_seconds() / 60
         k = game_key(g.get('away'), g.get('home'))
@@ -426,13 +435,13 @@ def main():
     if today.get('date') != day:
         today = {}
     proj = projections(today)
-    soon = [g for g in today.get('games', []) if g.get('time') and 0 < (dt.datetime.fromisoformat(g['time'].replace('Z', '+00:00')) - now).total_seconds() / 60 <= OPEN]
+    soon = [g for g in all_games(today) if 0 < (dt.datetime.fromisoformat(g['time'].replace('Z', '+00:00')) - now).total_seconds() / 60 <= OPEN]
     if key and soon:
         try:
             events, left = tonight_events(key, day)
             if 'refresh_min' not in doc:
                 nxt = (dt.datetime.now(ET).replace(day=1) + dt.timedelta(days=32)).replace(day=1)
-                doc['markets'], doc['refresh_min'] = plan_night(left, (nxt.date() - dt.datetime.now(ET).date()).days, len(today.get('games', [])))
+                doc['markets'], doc['refresh_min'] = plan_night(left, (nxt.date() - dt.datetime.now(ET).date()).days, len(all_games(today)))
                 doc['credits_at_start'] = left
                 print(f"props: tonight {', '.join(STAT[m] for m in doc['markets']) or 'no markets'}, "
                       f"{'refresh every ' + str(doc['refresh_min']) + ' min' if doc['refresh_min'] else 'one pull per game'} ({left} credits left)")
@@ -458,7 +467,7 @@ def main():
     if doc['props'] and not doc.get('graded') and proj:
         doc['props'] = rescore(doc['props'], proj, now)
         doc['updated_at'] = now.isoformat(timespec='seconds')
-        doc['games'] = {game_key(g.get('away'), g.get('home')): g.get('time') for g in today.get('games', []) if g.get('time')}
+        doc['games'] = {game_key(g.get('away'), g.get('home')): g.get('time') for g in all_games(today)}
         path.write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
         n_p = sum(1 for r in doc['props'] if r.get('pick') and dt.datetime.fromisoformat(r['tip'].replace('Z', '+00:00')) > now)
         print(f"props: {len(doc['props'])} lines, {n_p} live paper picks")

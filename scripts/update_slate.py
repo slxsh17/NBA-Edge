@@ -252,6 +252,75 @@ def single_games(day, main_page):
     return sorted(found, key=lambda x: (x['time'] or '9', x['label']))
 
 
+def scan_slates(day, main_page, before=3, after=45, stop_after=15):
+    """Every FanDuel slate DFF lists for the day. DFF numbers a day's slates near the Main slate's
+    ID (Nov 4: Main 21423, Express II 21428, After Hours 21429, Express 21431), with gaps, so scan a
+    window around it and stop after `stop_after` empty IDs past the last hit. Returns (single-game
+    slates, other classic slates such as After Hours / Express / Turbo / Early)."""
+    import time
+    start = page_var(main_page, 'url')
+    if not start:
+        return [], []
+    sid = start
+    for _ in range(before):
+        sid = prev_id(sid)
+    singles, sides, misses, seen_main = [], [], 0, False
+    for _ in range(before + after + 1):
+        if sid == start:
+            seen_main = True
+        if sid != start:
+            try:
+                page = fetch(MAIN_URL.format(day=day, sid=sid))
+            except Exception:
+                page = ''
+            time.sleep(0.7)
+            hit = page_var(page, 'url_start_date') == day and ROW.search(page)
+            if not hit:
+                misses += 1
+                if seen_main and misses >= stop_after:
+                    break
+            else:
+                misses = 0
+                label, teams = page_var(page, 'slate') or '?', page_var(page, 'team_count')
+                try:
+                    if teams == '2':
+                        players = parse(fetch(SG_URL.format(day=day, sid=sid)), day, strict_main=False, min_players=8, min_salary=500)
+                        games = build_games(players, day)
+                        if len(games) == 1:
+                            g = games[0]
+                            singles.append({'id': sid, 'label': f"{g['away']} @ {g['home']}", **g,
+                                            'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
+                                                         'position': p['position'], 'salary': p['salary'], 'status': p['status'],
+                                                         'ext_proj': p['_ext']} for p in players]})
+                    elif label != 'Main':
+                        players = parse(page, day, strict_main=False, min_players=8)
+                        games = build_games(players, day)
+                        sides.append({'id': sid, 'label': label, 'games': games,
+                                      'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
+                                                   'position': p['position'], 'salary': p['salary'], 'status': p['status'],
+                                                   'ext_proj': p['_ext']} for p in players]})
+                except Exception as e:
+                    print(f'::warning::slate {sid} ({label}): {e}')
+        sid = next_id(sid)
+    first = lambda g: min((x.get('time') or '9') for x in g) if g else '9'
+    return (sorted(singles, key=lambda x: (x['time'] or '9', x['label'])),
+            sorted(sides, key=lambda x: (first(x['games']), x['label'])))
+
+
+def write_sides(day, sides):
+    """Other classic slates (After Hours, Express, Turbo...): data/sides_DAY.json + archive copy."""
+    import json
+    doc = {'schema': 1, 'date': day, 'source': 'DailyFantasyFuel public FanDuel classic slate pages',
+           'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'slates': sides}
+    (DATA / f'sides_{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
+    arch = DATA / 'archive'
+    arch.mkdir(parents=True, exist_ok=True)
+    doc.pop('fetched_at')
+    (arch / f'sides_{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
+    for old in sorted(DATA.glob('sides_*.json'))[:-7]:
+        old.unlink()
+
+
 def write_singles(day, singles):
     import json
     doc = {'schema': 1, 'date': day, 'source': 'DailyFantasyFuel public FanDuel single-game pages',
@@ -317,11 +386,7 @@ def main():
     try:
         prev = json.loads((DATA / f'slate_{day}.json').read_text(encoding='utf-8'))
         age = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(prev['fetched_at'])
-        try:
-            have_singles = bool(json.loads((DATA / f'single_{day}.json').read_text(encoding='utf-8')).get('slates'))
-        except (OSError, ValueError):
-            have_singles = False
-        if age < dt.timedelta(minutes=50) and have_singles and '--force' not in sys.argv:
+        if age < dt.timedelta(minutes=50) and (DATA / f'sides_{day}.json').exists() and '--force' not in sys.argv:
             print(f'Slate fetched {int(age.total_seconds() // 60)} min ago; skipping')
             return 0
     except (OSError, ValueError, KeyError):
@@ -375,11 +440,15 @@ def main():
         for old in sorted(DATA.glob(pattern))[:-7]:
             old.unlink()
     try:
-        singles = single_games(day, main_page)
+        singles, sides = scan_slates(day, main_page)
         write_singles(day, singles)
+        write_sides(day, sides)
         print(f'Single-game slates: {", ".join(x["label"] for x in singles) or "none"}')
+        print(f'Other classic slates: {", ".join(x["label"] + " (" + str(len(x["games"])) + " games)" for x in sides) or "none"}')
+        if not singles:
+            print('::notice::DFF lists no FanDuel single-game slates today; use "Use my CSV" with FanDuel\'s player list for single games')
     except Exception as e:
-        print(f'::warning::single-game discovery failed: {e}')
+        print(f'::warning::slate discovery failed: {e}')
     outs = sum(p['status'] == 'OUT' for p in players)
     print(f'Published {out.name}: {len(players)} players, {len({p["team"] for p in players})} teams, {outs} OUT')
     return 0

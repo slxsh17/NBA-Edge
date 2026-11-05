@@ -155,7 +155,7 @@ def main():
     if state.get('date') != day:
         state = {'date': day, 'players': {}, 'alerts': [], 'late_news': []}
     tips = {}
-    for g in today.get('games', []) + today.get('single_games', []):
+    for g in today.get('games', []) + [g for cs in today.get('classic_slates', []) for g in cs.get('games', [])] + today.get('single_games', []):
         if g.get('time'):
             t = dt.datetime.fromisoformat(g['time'].replace('Z', '+00:00'))
             tips[g['home']] = tips[g['away']] = (t, f"{g['away']} @ {g['home']}")

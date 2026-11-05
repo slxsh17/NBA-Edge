@@ -358,9 +358,9 @@ const canFill=(p,slot)=>{if(S.format==='single')return true;const a=p.position.s
 
 const S={today:null,base:null,acc:null,inj:null,players:[],games:[],day:eastDay(),source:'auto',
   count:1,mode:'cash',exposure:60,useSim:false,posf:'',search:'',sort:'proj',dir:-1,open:null,
-  locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null,format:'classic',sgId:null};
+  locks:new Set(),bans:new Set(),gamesOff:new Set(),lineups:[],etag:'',review:false,over:{},cfg:null,format:'classic',sgId:null,cslate:'main'};
 const F=()=>FMT[S.format];const multOf=slot=>F().mult[slot]||1;
-const fmtKey=()=>S.format==='single'?'sg:'+S.sgId:'main';
+const fmtKey=()=>S.format==='single'?'sg:'+S.sgId:(S.cslate&&S.cslate!=='main'?'cl:'+S.cslate:'main');
 const DEFAULTS={vegas:1,matchup:1,injury:1,usage:1,starter:1,blowout:1,outside:0,darko:0,darko_min:0,levW:.15,maxTeam:4,minSalary:0,minUnique:2,ceilW:.45,ownFade:.03,stack:4,sgCap:60000};
 const LEARNABLE=['vegas','matchup','injury','usage','starter','blowout','outside','darko','darko_min'];
 S.user=store.get('cfgUser',{});S.learned={scale:1,minutes_mult:{}};
@@ -431,7 +431,7 @@ async function load(){
   S.learned={scale:1,minutes_mult:{},...((today.status==='fulfilled'&&today.value.weights)||{})};rebuildCfg();
   const saved=store.get('csv',null);
   if(saved&&saved.day===S.day){S.source='csv';await applyCSV(saved.text,false)}
-  else if(S.today&&S.today.date===S.day){S.source='auto';const f=store.get('format',null);if(f&&f.day===S.day){S.format=f.format;S.sgId=f.sgId}applyFormat()}
+  else if(S.today&&S.today.date===S.day){S.source='auto';const f=store.get('format',null);if(f&&f.day===S.day){S.format=f.format;S.sgId=f.sgId;S.cslate=f.cslate||'main'}applyFormat()}
   else{S.players=[];S.games=[]}
   applyLiveInjuries();
   restoreDayState();
@@ -439,6 +439,10 @@ async function load(){
   renderAll();
 }
 function singles(){return (S.today&&S.today.date===S.day&&S.today.single_games)||[]}
+// Other FanDuel classic slates the pipeline found (After Hours, Express, Turbo...): same model, the
+// slate's games, classic salaries, ownership estimated within the slate.
+function sides(){return (S.today&&S.today.date===S.day&&S.today.classic_slates)||[]}
+const onMain=()=>S.format==='classic'&&(!S.cslate||S.cslate==='main');
 function applyFormat(){
   if(S.source==='csv')return;
   const sgs=singles();
@@ -450,14 +454,23 @@ function applyFormat(){
     S.players=sg.players.map(r=>{const b=by.get(r.k);if(!b)return null;const out=!!b.out||['OUT','DOUBTFUL'].includes(r.status);
       return {...b,salary:r.salary,own:r.own??null,opt:r.opt??null,lev:r.lev??null,pivots:null,out,status:b.out?b.status:(out?r.status:b.status),proj:out?0:b.proj,_o:undefined}}).filter(Boolean);
     S.games=[{away:sg.away,home:sg.home,time:sg.time,total:sg.total,home_spread:sg.home_spread}];
-  }else{S.players=S.today.players.filter(p=>p.main!==false).map(p=>({...p}));S.games=S.today.games||[]}
+  }else{
+    const cs=S.cslate&&S.cslate!=='main'?sides().find(x=>x.id===S.cslate):null;
+    if(S.cslate&&S.cslate!=='main'&&!cs)S.cslate='main';
+    if(cs){const by=new Map(S.today.players.map(p=>[pkey(p),p]));
+      S.players=cs.players.map(r=>{const b=by.get(r.k);if(!b)return null;const out=!!b.out||['OUT','DOUBTFUL'].includes(r.status);
+        return {...b,salary:r.salary,own:r.own??null,opt:null,lev:null,pivots:null,out,status:b.out?b.status:(out?r.status:b.status),proj:out?0:b.proj,value:+((out?0:b.proj)*1000/r.salary).toFixed(2)}}).filter(Boolean);
+      S.games=cs.games;
+    }else{S.players=S.today.players.filter(p=>p.main!==false).map(p=>({...p}));S.games=S.today.games||[]}
+  }
 }
-function switchFormat(fmt,sgId){
-  S.format=fmt;if(sgId)S.sgId=sgId;store.set('format',{day:S.day,format:S.format,sgId:S.sgId});
+function switchFormat(fmt,sgId,cs){
+  S.format=fmt;if(sgId)S.sgId=sgId;if(fmt==='classic')S.cslate=cs||'main';store.set('format',{day:S.day,format:S.format,sgId:S.sgId,cslate:S.cslate});
   S.locks=new Set();S.bans=new Set();S.gamesOff=new Set();S.lineups=[];S.over={};S.open=null;S.review=false;
   applyFormat();applyLiveInjuries();restoreDayState();syncEntries();renderAll();$('build-status').textContent='';
 }
-$('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.dataset.v===S.format)return;switchFormat(b.dataset.v)});
+$('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const cs=b.dataset.cs||'main';
+  if(b.dataset.v===S.format&&(S.format==='single'||cs===(S.cslate||'main')))return;switchFormat(b.dataset.v,null,cs)});
 function applyLiveInjuries(){
   if(!S.inj||!Array.isArray(S.inj.injuries))return;
   const out=new Map(S.inj.injuries.map(r=>[key(r.name)+'|'+canon(r.team),String(r.status||'').toUpperCase()]));
@@ -476,7 +489,7 @@ function restoreDayState(){
 // Entries sent from chat (data/my_entries.json, e.g. lineups read from your FanDuel screenshots).
 // A newer file replaces this device's saved entries for that slate once.
 function syncEntries(){
-  const m=S.me;if(!m||m.date!==S.day||S.format!=='classic'||S.source==='csv'||!(m.entries||[]).length)return;
+  const m=S.me;if(!m||m.date!==S.day||!onMain()||S.source==='csv'||!(m.entries||[]).length)return;
   const stampKey='entriesSync:'+S.day;if(store.get(stampKey,'')>=m.updated_at)return;
   const by=new Map(S.players.map(p=>[pnorm(p.name)+'|'+p.team,p]));
   const es=m.entries.map(e=>({label:e.label||'',settings:e.settings||null,sim:null,noise:null,gap0:0,
@@ -576,9 +589,12 @@ function slateGroups(){
 }
 function renderGames(){
   const box=$('games');
-  const sgs=singles();$('fmt-row').hidden=!sgs.length&&S.format==='classic';
-  $('fmt').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===S.format)));
-  $('fmt-note').textContent=S.format==='single'?'1 MVP + 5 UTIL. MVP scores 1.5x and costs 1.5x salary. Players from both teams.':(sgs.length?sgs.length+' single-game slate'+(sgs.length>1?'s':'')+' today':'');
+  const sgs=singles(),sds=sides();$('fmt-row').hidden=!sgs.length&&!sds.length&&S.format==='classic';
+  $('fmt').innerHTML=[`<button data-v="classic" data-cs="main" aria-pressed="${onMain()}">Main</button>`,
+    ...sds.map(x=>`<button data-v="classic" data-cs="${esc(x.id)}" aria-pressed="${S.format==='classic'&&S.cslate===x.id}">${esc(x.label)}</button>`),
+    ...(sgs.length?[`<button data-v="single" aria-pressed="${S.format==='single'}">Single game</button>`]:[])].join('');
+  const curSide=sds.find(x=>x.id===S.cslate);
+  $('fmt-note').textContent=S.format==='single'?'1 MVP + 5 UTIL. MVP scores 1.5x and costs 1.5x salary. Players from both teams.':(curSide?`${curSide.games.length} games. Same model; contest odds and the plan cover the Main slate.`:(sgs.length?sgs.length+' single-game slate'+(sgs.length>1?'s':'')+' today':''));
   if(S.format==='single'&&S.source!=='csv'){
     $('slate-pick').hidden=true;
     box.innerHTML=sgs.map(g=>{const st=started(g);const fav=g.home_spread==null?'':g.home_spread<0?`${g.home} −${Math.abs(g.home_spread)}`:g.home_spread>0?`${g.away} −${g.home_spread}`:'Pick';
@@ -604,7 +620,7 @@ function renderHeader(){
   const n=S.players.filter(p=>p.proj>0).length;
   const d=new Date(S.day+'T12:00:00').toLocaleDateString([], {weekday:'short',month:'short',day:'numeric'});
   if(!S.players.length){$('slate-meta').textContent=d+': no slate yet';return}
-  $('slate-meta').innerHTML=S.source==='csv'?`${esc(d)}, your CSV (${S.players.length} players) <button class="linkish" id="use-auto">Switch to automatic slate</button>`:(S.format==='single'?`${esc(d)}, single game ${esc(S.games[0]?S.games[0].away+' @ '+S.games[0].home:'')}, ${n} projected players, updated ${esc(ago(S.today.built_at))}`:`${esc(d)}, FanDuel main slate, ${n} projected players, updated ${esc(ago(S.today.built_at))}`);
+  $('slate-meta').innerHTML=S.source==='csv'?`${esc(d)}, your CSV (${S.players.length} players) <button class="linkish" id="use-auto">Switch to automatic slate</button>`:(S.format==='single'?`${esc(d)}, single game ${esc(S.games[0]?S.games[0].away+' @ '+S.games[0].home:'')}, ${n} projected players, updated ${esc(ago(S.today.built_at))}`:`${esc(d)}, FanDuel ${esc((sides().find(x=>x.id===S.cslate)||{}).label||'main')} slate, ${n} projected players, updated ${esc(ago(S.today.built_at))}`);
   const ua=$('use-auto');if(ua)ua.onclick=()=>{store.set('csv',null);S.locks.clear();S.bans.clear();S.lineups=[];load()};
 }
 function renderNotices(){
@@ -694,7 +710,7 @@ function wireControls(){
   const ex=$('exposure');ex.value=S.exposure;ex.oninput=()=>{S.exposure=+ex.value;$('exposure-out').textContent=ex.value+'%';saveDayState()};$('exposure-out').textContent=S.exposure+'%';
   syncExposure();
 }
-function simList(){if(S.source==='csv'||!S.today||S.today.date!==S.day)return [];if(S.format==='single'){const sg=singles().find(x=>x.id===S.sgId);return (sg&&sg.sim_lineups)||[]}return S.today.sim_lineups||[]}
+function simList(){if(S.source==='csv'||!S.today||S.today.date!==S.day||(S.format==='classic'&&!onMain()))return [];if(S.format==='single'){const sg=singles().find(x=>x.id===S.sgId);return (sg&&sg.sim_lineups)||[]}return S.today.sim_lineups||[]}
 function syncSim(){const w=$('sim-wrap');if(!w)return;const big=S.count>20&&csReady()&&S.cs.portfolio&&!(S.pr&&S.pr.status==='pull')&&(S.cs.portfolio.lineups||[]).length;
   w.hidden=!(S.mode==='gpp'&&(simList().length||big));$('use-sim').checked=S.useSim;
   w.querySelector('span').textContent=big?`Use NBA EDGE’s LeVertical portfolio: ${S.cs.portfolio.lineups.length} lineups picked for how often they beat 99% of the simulated FanDuel field, with each player’s exposure held near how often he’s in winning lineups.`:'Start from simulated winners: lineups that finished in the top 5% most often across thousands of simulated nights (teammates and opponents rise and fall together).'+simRecord()}
@@ -1033,7 +1049,7 @@ $('entries').addEventListener('change',e=>{const s=e.target.closest('[data-di]')
 // win a Double Up (top 43.5%), a 50/50, cash a tournament (top ~22%) and reach the top 1%, from a
 // simulated field of ~1,200 lineups calibrated to a real FanDuel Double Up line.
 const pnorm=s=>String(s||'').normalize('NFKD').toLowerCase().trim().replace(/[\s,]+(jr|sr|ii|iii|iv|v)\.?$/,'').replace(/[^a-z0-9]/g,'');
-function csReady(){const c=S.cs;return !!(c&&c.date===S.day&&S.format==='classic'&&S.source!=='csv'&&c.players&&c.scores)}
+function csReady(){const c=S.cs;return !!(c&&c.date===S.day&&onMain()&&S.source!=='csv'&&c.players&&c.scores)}
 function contestOdds(picks){
   if(!csReady())return null;const c=S.cs;
   if(!S.csIdx)S.csIdx=new Map(c.players.map((k,i)=>[k,i]));
@@ -1110,7 +1126,7 @@ function stratText(st){if(!st)return '';if(st.mode!=='gpp')return 'Cash mode (hi
   return `Tournament mode · upside ${Math.round((t.ceilW||0)*100)}%, leverage ${(t.levW||0).toFixed(2)}, fade ${(t.ownFade||0).toFixed(2)}${(t.stack||0)>=2?`, ${t.stack}-player game stack`:''} · simulated winners ${st.sim?'on':'off'}`}
 function renderPlan(){
   const box=$('day-plan');if(!box)return;S.planItems=[];
-  if(S.format!=='classic'){box.innerHTML='<div class="dplan"><b>Tonight’s plan</b> covers the main slate. Single-game contests aren’t simulated yet: skip them, or keep it to $1–2.</div>';return}
+  if(!onMain()){box.innerHTML=`<div class="dplan"><b>Tonight’s plan</b> covers the Main slate. ${S.format==='single'?'Single-game':'This slate’s'} contests aren’t simulated yet: skip them, or keep it to $1–2.</div>`;return}
   const P=planPicks();
   if(!P){box.innerHTML=S.cs&&S.cs.date&&S.today&&S.cs.date!==S.today.date?'<div class="dplan muted">Tonight’s plan appears once the pipeline has simulated today’s slate.</div>':'';return}
   S.planItems=P.items;const ST=S.cs.plan.strategies,exp=S.cs.plan.exposure||60;
