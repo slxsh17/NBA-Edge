@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T02:25:21.154420+00:00",
+  "updated_at": "2026-11-05T03:18:55.442073+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -28,6 +28,11 @@
       "status": "OUT"
     },
     {
+      "name": "Payton Pritchard",
+      "team": "BOS",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
@@ -36,6 +41,11 @@
       "name": "Jayson Tatum",
       "team": "BOS",
       "status": "OUT"
+    },
+    {
+      "name": "Day'Ron Sharpe",
+      "team": "BKN",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Noah Clowney",
@@ -61,6 +71,11 @@
       "name": "Grant Williams",
       "team": "CHA",
       "status": "OUT"
+    },
+    {
+      "name": "Zach Collins",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jalen Smith",
@@ -218,6 +233,11 @@
       "status": "OUT"
     },
     {
+      "name": "Isaiah Stewart",
+      "team": "MEM",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Scotty Pippen Jr.",
       "team": "MEM",
       "status": "OUT"
@@ -311,6 +331,11 @@
       "name": "Izaiyah Nelson",
       "team": "ORL",
       "status": "OUT"
+    },
+    {
+      "name": "Adem Bona",
+      "team": "PHI",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dominick Barlow",
