@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T17:45:22.720116+00:00",
+  "checked_at": "2026-11-05T18:36:37.200534+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,9 +22,33 @@
   ],
   "headlines": [
     {
+      "headline": "Devin Booker Injury Update: Phoenix Suns Star Expected to Play Against Orlando Magic After Head Collision - NDTV Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNZDdLd1g5UzFDRFZqSEZOVmc3eFE1am9oa0lnamJtekc4a2pGczVLbnA2cnhNcnFLcnNudXlDMHBSaGIzS1BhN0Jfd3BYZE5YRVRyVEdCVEltYlFINy13R0hnalpxNjJ5UkNSYWNCckhGS0dtUkJjZFEzdzhwYVZOa0lWdEFyQWgyOTRmTEprVG1PaXpNNXo4dWFQTGxvUTRXMVpzS09md2o1b0hldjl3RWxibFpDaDktSnZ1QmdRWlh1QUVIblZudnB6a2VTOTVrU2x0MzQ3Slg2OFA1LUVralUtT21OcVJXd1h2RnJsOVp2Q3JNRS00U0FNZWwxRno4ckZYMENxMA?oc=5",
+      "published_at": "2026-11-05T18:18:36+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Why Nate Ament should join Brayden Burries in Bucks starting lineup - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLWtXVDNoWmRFNkNqY1gwOHVJS3RQMU01U2dkUDl0RGFOb1V0d2xqMTdXZExldmMxNlRmLW5wazF3UHdrZEcxU2Nrc0FrSGhvV282MTdCM2ZkZTdwUEdCUF9zVlRFWjJuNjJEeWI4bVMyeWFqYnRQNWdFekxOSnlmU2I1OTA0NFBMVDhIbXR4SHVaZjFCTkVVTUJOZVFFQmpvQjRKVzM2OHU5bVNCVFNjcHVQVDY?oc=5",
+      "published_at": "2026-11-05T17:51:46+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "Danny Wolf’s 19-minute statement leaves Nets with a rotation question - New York Daily News",
       "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQmpWZldqRGN1YnBRb2pQLVpVMEg3NXFmSDlvUXRnQmN5enNWUU5lQUxkWmVxd3kwSndtWXV3emR5aks4YktyNlRaZ0l6N1BvV0d5bURyZkxRbnVoUDM4ZDRndFBFTEZTUDh1OXowZ0N1Y1RmandiYUEtTFJEMllNY25xNzBKSEpwZ1E?oc=5",
       "published_at": "2026-11-05T14:18:29+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "What Vit Krejci Injury Means for the Blazers Rotation: Winners and Losers - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPd3RtblpOZzF1N0t1d3FxT08xSVRFYUF4bUwwYzRzdFh3WWtBT3NzZk0xdDFYZGdZM2RBUkpNQjVaZjk2LU9NelQzUzVoUUNNSHZUSl9saXYxQTkwV3E0ZS1kNXJNaVpoVDNxa1hrLUNIaTNVWTBrSWdGMmMzcmxZZW9fVW9EZVU?oc=5",
+      "published_at": "2026-11-05T14:00:09+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -86,14 +110,6 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Landry Shamet to start Wednesday vs. Chicago - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ3hkbUtlR2poZkFNVEZ6Szg1SUw0YVNJcjN4VTFTbVQtNjAtRFY4VXJiNEFJUC1MN1ZPbE1SMGlPdzQ0WnlBWUZLR2w5N0pEMDFQYkxuemhxR1lFeFU1TUlnWVBzUndzZklpQlZXNDdKNDlDZlNFbmRNOXpsc2hIUHV6SnhiUlNKVGp4c2s1V3ROcTdhWTFZZENyT2VaRHZlUzdkWnUtRkNFTUFrQ0lTLQ?oc=5",
-      "published_at": "2026-11-05T06:21:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
       "headline": "Kings' Loss to Lakers Raises New Rotation Questions - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVFFuWTdLNmRWQVZmZ0I3SU1zTDl1YzhVWG5rNHF0YTJXWlRhLUFhN2tCSmJWY2N4TDdRMFlheW9JXzZqdFZRQkNrUnRiXzB1cmJRcWRrc0t3QjZnT0NPdHRKa2lpbUE3alZoNkZobDU4UmlUdjJQUlg5YWUyWGJRbkpUS1pTYWdiTUJFdA?oc=5",
       "published_at": "2026-11-05T06:07:40+00:00",
@@ -134,9 +150,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Suns Reveal Starting Lineup vs Blazers - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPelpTdFdsT0RNMUhEWkV1Q3U0M1FURm1YamQ3V0w4UUFYNllSTk1KZ3htYlUzTm9nRE13dzZkSE5nUkNOTDR1YndpTGRWT3dWQnI5M0x5Q1VPaF8wQzhfd0ZjZzVqSGlIOWNWV3NsZ2wzdVFyczZEWFpFRW8tZGNpM3F0MDE2WWc3ek95YXpSWmZlQU9Hb1Z2a1RzRUR0Z2U5?oc=5",
-      "published_at": "2026-11-05T01:34:35+00:00",
+      "headline": "‘Going to Be the Downfall of the Sixers,’ ‘It’s Over’ — NBA World Sounds Alarm Over Joel Embiid’s Latest ‘Painful’ Injury Admission - AOL.com",
+      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wa2hYUW5SYlEzNnduSHVqSXhrcVFhNWhxWERyaG1fbzlKZHo3bEs3T3c1cmFDa1FXUTVOYnFJd0VxMklVbGFvbXEwRnNhNDZmbXJiT0JfTm9IRnZBd2pwZERib1NDOVpucFd4WDE3WGRvTHN2VGFYdEJkMmhWQkE?oc=5",
+      "published_at": "2026-11-05T01:37:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -166,9 +182,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "OKC Thunder Announce Altered Starting Lineup vs. Cleveland - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObmJXa0hYeWxUSjFVbm1QaV9lemR4LTJQMHE0MGI2QmhzQm1rcUg0T2lnRFZGNWhCWU9vR1VLQjRqRVluNEtWdmNjNDRtZXZ5azRQOVktNjNBajFUdGJiSDdKRDhnWGNXNVl3enNObVRMTjFLeUxRc3NqLTVTWmpQU0NPUzRvQzBXRWdHNW1iVjZjbHRXVjZDR3BZOHRzMjRMV2R1VzU4NVhadw?oc=5",
-      "published_at": "2026-11-05T00:36:16+00:00",
+      "headline": "OKC Thunder Announce Altered Starting Lineup vs. Cleveland - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOa1RiNGFSYzVBX2pFMTRUV1Q5dkxQTWxKdnFiWGFBT2x0Q1d6SDQwTmNGal9pajA1a3FiTktpenBfZmJVWF95M1B5N013RkVzanQ3bzhWVHBmZVhzTlBPV2xIVW50cjA4SzBWMjNvM1FEWl9LWmFKU09id0JoQmc1R1pvOGNQbm9GZWF1WGk1TQ?oc=5",
+      "published_at": "2026-11-05T00:36:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -278,6 +294,14 @@
       "scope_date": "2026-11-05"
     },
     {
+      "headline": "Injury Report: Detroit Pistons Vs. Philadelphia 76ers - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTWR6QlMwcGFnVThtNDJQdzFZZXJrMVdQZkM5c21faGQzdVYyTEh4VDV4OHpvdGN4Z25oblNBR2pmMVhUSlRsWTdLZmFOcU1fYjh2TGtZRTRjT3dfQzk2WlFVaENYM1diNjVLVHFkS292TmVMRzhEcnc3Z2hpZlZoZGRWTEhnYUw0?oc=5",
+      "published_at": "2026-11-04T21:00:35+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "The Milwaukee Bucks have an elite starting lineup, but what does that really mean? - Dairyland Express",
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaEhSdUtPTUl1MTFjQmR1ME5xOTRBYTFONm9BYnV2YnVQX284RUxvYldKak9KRVRUNlFnOWtLWXVRandVVEFMLVVHbWpoY25LZ2xaOGJQckVwNUJqMkRhYWxNQzNmM2VQTXdjb25KamRqWDVLb0hTQ0dqRERvYW0wVHByWXlCbTU0a3ZNY3ZjenU3X2hSZm5MTm4wNk1YN2pNa0lVQ2dvYV9qdEtDWFk4amEyV2hLT3N4M1pxdkdMRQ?oc=5",
       "published_at": "2026-11-04T21:00:02+00:00",
@@ -329,22 +353,6 @@
       "headline": "Santi Aldama Injury: Downgraded to doubtful - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVDhqZmsydnhUc1hHSHJNek96TXFiNWk1XzEweXJTeUhmVmlNU25KUndBQW5IanVqTUwtU1lBSkhNd0FwaGdyNmNkYlhxQ05IbjYtVXpXdVdITnRxSkd0TmtuN3JOR0hxM01FMi1ZYXRLejhwc1pGaFQxZ3JXeGlDczh4a2d4b3hBMGVMTE5ESjhsVkQ3QWpZU1V0SQ?oc=5",
       "published_at": "2026-11-04T18:56:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Charlotte Hornets Announce Kon Knueppel Will Return to the Lineup on Wednesday Night - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbUxjM3FTc254UmVPcEJRRklEaWpVUWtzNkg1RkVCSTBycFdsT1prdGZxZi12djZLN2ZKM1Zsck9RVFVMc3BCTG5Uc1lHRkhpdDFvU1hVYUlRMEF1UzUwRk04SzZQRWw1dHp2N0N6THV5U3k3cXRhQlplTGVQb1hJMnlyeWZ5UEdzUER0M0o1WlFvZw?oc=5",
-      "published_at": "2026-11-04T18:28:09+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Boston Celtics Injury News: Jayson Tatum Ruled Out vs. Bucks - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRUdWYXVKV0wwV1lPM1kyY2FYT2hQYUQ0XzZISVJPenJyTmxBbGoxV2w5TzY0SHNsRzZ3LW1meVMtLUNVclZ5U0oxZjhIWDJLWG91RF9va25Wd1Y0U3BORGppc19mQ2NtUER5MGhhVk1pNWw0VzRKT3pWdndranE2M05sdTZDRjN0VVE?oc=5",
-      "published_at": "2026-11-04T18:06:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
