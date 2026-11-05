@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T20:33:59.882574+00:00",
+  "checked_at": "2026-11-05T21:30:22.028852+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,6 +22,22 @@
   ],
   "headlines": [
     {
+      "headline": "Payton Pritchard Injury: Listed as questionable - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaFl5bkRKMUpkNEp6c08xdmR5bTctYk9FVm1HZlRLLTBpSUN0b3ZBb2JQVXlZRlk2OWNwaERUMjV5eExSaExUT3BkY1YzTEllZXdnMURWdkh1dmd3Wjg1QU9vaUpwNGc5RDNqTEdqbzlJWkc4Y2JTSUJyRVJWdDJUblVfY3hCMmVaOV96WU81cXdqSm9VQ0xTQ2ZJSnh4VWZp?oc=5",
+      "published_at": "2026-11-05T21:09:56+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Rasheer Fleming (ankle) ruled out Thursday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOEc4QzJ0QWhBTFVyU0E1WlhtR0hfZzhMTE9keHNLQnBubEtHcW54bnNOZThiYUo2Vjc5dDE4Um8wLWNMM0dDSDhud1VNbDU5bGlwb09GRTQ0aHM2Xy1HZGlxUTllbkhRS2kzMzliRlN0VndIUi1PZ1lVX1hMVUxLbld2THFGVnNvVTJBcE9UbmxGZ9IBlwFBVV95cUxQcWU2SFRoaG1tRWZYcjVQSTJvM1l0U2Jtc0JtQjYxYlFReHVQcFBZVUE4ZHlNR184SE5SN09mQTlZbkplRFUxSnBCbUNBdjdHSGotUklwbVByY0FMOTVmZF9GSnZObmNVUDNodHN0dDBZYnZubXQ3OWJiT21xR1RuYUtfNmFneV8zWWxtb1Z5RndVcDNyU2dn?oc=5",
+      "published_at": "2026-11-05T20:56:50+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "Trey Murphy Injury: Expected to play Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeExoSmltZm10YjZiRkNMM0FZS0hPMG1HNWd0aktGRFFVX1B5blBZempqV1lHVFVqaUhSUjFuNEpKMkk5Yk15dWxfMFBEOHNBZFVkaTJUYXpnNHpMcDdTUjVEcUc1a3ROZ0pUMU1FOE9oY0ZOQ3lfbVJEWnE4SHhQYnVDZmlUZWV4YWRJVzlETUU4VV9aOEpuYVoxUQ?oc=5",
       "published_at": "2026-11-05T20:19:35+00:00",
@@ -40,6 +56,14 @@
     {
       "headline": "Pacers' Starting Lineup Earns B Grade Despite Small Sample Size - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakpGN2dRak5nOGVLUDZWSnhLQWI4dklaNERFbEMzQkVnM0ZXS3NLajgteWhidTF0bHk2VmtSd1VMeFJjTlE1MFRSUnVQck91bEdHd2lPUDhIQ2hVNlVjOEZXYjVYVjdYUXdaVEc1Rm5xTkVMN2tjYlNya1NyUXlqX2ptaGhXUQ?oc=5",
+      "published_at": "2026-11-05T18:52:02+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Video - Pacers' Starting Lineup Earns B Grade Despite Small Sample Size - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSlAzQzNrRjg2WG9oVkJFLUMxRVF3WXhncVljVkpZNFdWdHFsWWFnckllU192VFFSUlZRV0pVLXpmT1d5d25EMm5KUWJUejdaV3Q4SXA4SmZacEtNZXBtNWVpYUxGLUdzSllNYmlCRFI5cEJFVHR5TlRFQ185aFNpMXdSeW1LZkdmQ3NLbnY5RlVTaXowelBkQTZrNVM2S21OcGJTVUV3M3JmSmE1?oc=5",
       "published_at": "2026-11-05T18:52:02+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -161,14 +185,6 @@
       "headline": "Kings' Loss to Lakers Raises New Rotation Questions - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVFFuWTdLNmRWQVZmZ0I3SU1zTDl1YzhVWG5rNHF0YTJXWlRhLUFhN2tCSmJWY2N4TDdRMFlheW9JXzZqdFZRQkNrUnRiXzB1cmJRcWRrc0t3QjZnT0NPdHRKa2lpbUE3alZoNkZobDU4UmlUdjJQUlg5YWUyWGJRbkpUS1pTYWdiTUJFdA?oc=5",
       "published_at": "2026-11-05T06:07:40+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Kelly Oubre will not play against Grizzlies - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQzVnWERmajBnSzRKTHBRZlViT0s4SnVmWWFCZHh1SE00aVFuNGZJU01MNzhwQjZrYnlXRXZNaDNOMUtfbXBNU0tieWNfeWoyaWZQeWZ0cHRmcHNVeE92MlVpN0JyeVlKOUtYTng5V2l5djZ5Y1NXbFU5Umlnbi1tOUpNLW9JOGZiZC1wRm92bEJxNE0wSEhIOVcwRkRYWTBQaU5UV0I4N04zOU9MMEhkRQ?oc=5",
-      "published_at": "2026-11-05T05:07:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -326,14 +342,6 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Nic Claxton (hamstring) ruled out Wednesday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOelN6ME01d2t3XzUxcXVHVVV3TjdTdXhXU1dERGV0eTY3REZEdk5qVGVWa1FJWXRaLUVEcHh5QkdYdV83UDhGTDRZRFQ4c3NDcHRFaVRsaGh3bGY0bTNqeVBnWDQ0emlSQzlYdi1PQ0lTVHdweGJNRnpBc0pfcXJFa2J6Mkh5bldrWWh3c2hrVHRyTDjSAZgBQVVfeXFMT0ZsdUYtVUI1QkVBNFU1NncxbDY2LTZKS3RURjd0SWtxdGtTS3dLOWxtTWtzODFWUzZiTncwWVhZaVRYWjVRUnZOcjM5NDVFZzNNclFPdGE0dXVXSzRBZUdCai0zLVlGVDBBTFpTSHprZndDZ0tfUkhzZGRYbVNvc0hsWGRPT0pUekFySmZXYk5kcFRqYzB5UWo?oc=5",
-      "published_at": "2026-11-04T22:46:22+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
       "headline": "Bilal Coulibaly Questionable Nov. 4 Against Hawks (Illness) - FanDuel",
       "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaFFTVWIzRkJzTnd6OVpIenpaVWR4SWlTSzNCVzlCVGpVMC01VFJlLWMzbGxyUENBTUZkUUlYc2Y2ZG9qWDFqVzhZeGU5WUxrMTNHVVVubUoyT1dTS0kyTkExT195ZGhFa19abVNDTXdkaUNuWFBCcVpaYzM5UlBRQkNoMXkzYUpqOUNIa2hSZHBIaGl5aERodFN3T0pKSEFVbjhXZmg3U0JPdXk3MUhfMzZHQi1mU3JTdTdnNTVTSVUyZw?oc=5",
       "published_at": "2026-11-04T22:45:56+00:00",
@@ -361,14 +369,6 @@
       "headline": "Jakob Poeltl (shoulder) downgraded to doubtful - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVVpiTmJVMXNqSVdaeTVncVNMdlVRTTlvaTNlZ0RzNWVDUDFzdXRoTkZsQWpjX1A5T19DeXB0eEpNY0NwV2ZRQl9Ua2ZiQTlFeUZNMkFtZGJuc2VYNkMwYjRtZG5iSkVzekkteHZKVUdod0RVeHZkcEJNVjVtWDFIckFHQnprTFpTNkZJcEpUcTVOYkllUnRCRGxoV0JoUUoyTzFVcjdNckpWZ0VIR2Mxa3RB?oc=5",
       "published_at": "2026-11-04T21:34:54+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Injury Report: Detroit Pistons Vs. Philadelphia 76ers - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTWR6QlMwcGFnVThtNDJQdzFZZXJrMVdQZkM5c21faGQzdVYyTEh4VDV4OHpvdGN4Z25oblNBR2pmMVhUSlRsWTdLZmFOcU1fYjh2TGtZRTRjT3dfQzk2WlFVaENYM1diNjVLVHFkS292TmVMRzhEcnc3Z2hpZlZoZGRWTEhnYUw0?oc=5",
-      "published_at": "2026-11-04T21:00:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
