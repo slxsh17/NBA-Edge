@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-11-05T14:19:50.431715+00:00",
+  "updated_at": "2026-11-05T15:21:39.544308+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
-      "name": "Asa Newell",
+      "name": "Jock Landale",
       "team": "ATL",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Jalen Johnson",
       "team": "ATL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Jock Landale",
+      "name": "Asa Newell",
       "team": "ATL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mouhamed Gueye",
@@ -28,17 +28,17 @@
       "status": "OUT"
     },
     {
+      "name": "Jayson Tatum",
+      "team": "BOS",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Payton Pritchard",
       "team": "BOS",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Devin Carter",
-      "team": "BOS",
-      "status": "OUT"
-    },
-    {
-      "name": "Jayson Tatum",
       "team": "BOS",
       "status": "OUT"
     },
@@ -88,6 +88,11 @@
       "status": "OUT"
     },
     {
+      "name": "Peyton Watson",
+      "team": "CLE",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jarrett Allen",
       "team": "CLE",
       "status": "DAY-TO-DAY"
@@ -103,17 +108,12 @@
       "status": "OUT"
     },
     {
-      "name": "Peyton Watson",
-      "team": "CLE",
-      "status": "OUT"
+      "name": "Max Christie",
+      "team": "DAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Santi Aldama",
-      "team": "DAL",
-      "status": "OUT"
-    },
-    {
-      "name": "Max Christie",
       "team": "DAL",
       "status": "OUT"
     },
@@ -135,7 +135,7 @@
     {
       "name": "DeMar DeRozan",
       "team": "DEN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Spencer Jones",
@@ -178,19 +178,19 @@
       "status": "OUT"
     },
     {
-      "name": "Steven Adams",
+      "name": "Clint Capela",
       "team": "HOU",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
-      "name": "Clint Capela",
+      "name": "Steven Adams",
       "team": "HOU",
       "status": "OUT"
     },
     {
       "name": "Kelly Oubre Jr.",
       "team": "IND",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "T.J. McConnell",
@@ -250,12 +250,12 @@
     {
       "name": "Kam Jones",
       "team": "MIL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Terrence Shannon Jr.",
       "team": "MIN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Edwards",
@@ -270,7 +270,7 @@
     {
       "name": "Trey Murphy III",
       "team": "NOP",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Yves Missi",
@@ -280,12 +280,12 @@
     {
       "name": "Josh Hart",
       "team": "NYK",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaylin Williams",
       "team": "OKC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nikola Topic",
@@ -355,12 +355,12 @@
     {
       "name": "Jordan Goodwin",
       "team": "PHX",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Rasheer Fleming",
       "team": "PHX",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mark Williams",
@@ -385,7 +385,7 @@
     {
       "name": "Daeqwon Plowden",
       "team": "SAC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Maxime Raynaud",
