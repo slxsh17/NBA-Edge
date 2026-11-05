@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T04:20:45.761435+00:00",
+  "updated_at": "2026-11-05T05:28:27.880993+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -365,6 +365,11 @@
     {
       "name": "Mark Williams",
       "team": "PHX",
+      "status": "OUT"
+    },
+    {
+      "name": "Vit Krejci",
+      "team": "POR",
       "status": "OUT"
     },
     {
