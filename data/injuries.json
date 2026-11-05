@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T16:33:39.776966+00:00",
+  "updated_at": "2026-11-05T17:37:14.140841+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -65,11 +65,16 @@
     {
       "name": "Kon Knueppel",
       "team": "CHA",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Grant Williams",
       "team": "CHA",
+      "status": "OUT"
+    },
+    {
+      "name": "Nic Claxton",
+      "team": "CHI",
       "status": "OUT"
     },
     {
@@ -81,11 +86,6 @@
       "name": "Jalen Smith",
       "team": "CHI",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Nic Claxton",
-      "team": "CHI",
-      "status": "OUT"
     },
     {
       "name": "Peyton Watson",
