@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-05T19:40:36.313636+00:00",
+  "checked_at": "2026-11-05T20:33:59.882574+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,6 +22,22 @@
   ],
   "headlines": [
     {
+      "headline": "Trey Murphy Injury: Expected to play Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeExoSmltZm10YjZiRkNMM0FZS0hPMG1HNWd0aktGRFFVX1B5blBZempqV1lHVFVqaUhSUjFuNEpKMkk5Yk15dWxfMFBEOHNBZFVkaTJUYXpnNHpMcDdTUjVEcUc1a3ROZ0pUMU1FOE9oY0ZOQ3lfbVJEWnE4SHhQYnVDZmlUZWV4YWRJVzlETUU4VV9aOEpuYVoxUQ?oc=5",
+      "published_at": "2026-11-05T20:19:35+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Vikings’ Kyler Murray to miss MNF vs. Bills with hamstring strain, Carson Wentz to start - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQXZDZXJqOUF3ankxYl9Udmh3dTExb0tqbHJJSFNmV2pGR3JjTzd0aTdCY0F3OWpQN1JfMGxheUhoQlV1NGN3MWJZUmQ1bUZMWElzNXBiNXVzYmZWNm1lME5abUZuU0E3U3RYb2EwRzdxVENRcUFGTWxicVYyQVI3aXNoQWVRb2hqQW9ORWJDbnpyZEV6cFVnYWV3RmJCS1QweEhJc2dR?oc=5",
+      "published_at": "2026-11-05T18:55:04+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "Pacers' Starting Lineup Earns B Grade Despite Small Sample Size - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakpGN2dRak5nOGVLUDZWSnhLQWI4dklaNERFbEMzQkVnM0ZXS3NLajgteWhidTF0bHk2VmtSd1VMeFJjTlE1MFRSUnVQck91bEdHd2lPUDhIQ2hVNlVjOEZXYjVYVjdYUXdaVEc1Rm5xTkVMN2tjYlNya1NyUXlqX2ptaGhXUQ?oc=5",
       "published_at": "2026-11-05T18:52:02+00:00",
@@ -30,9 +46,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Vikings’ Kyler Murray to miss MNF vs. Bills with hamstring strain, Carson Wentz to start - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQXZDZXJqOUF3ankxYl9Udmh3dTExb0tqbHJJSFNmV2pGR3JjTzd0aTdCY0F3OWpQN1JfMGxheUhoQlV1NGN3MWJZUmQ1bUZMWElzNXBiNXVzYmZWNm1lME5abUZuU0E3U3RYb2EwRzdxVENRcUFGTWxicVYyQVI3aXNoQWVRb2hqQW9ORWJDbnpyZEV6cFVnYWV3RmJCS1QweEhJc2dR?oc=5",
-      "published_at": "2026-11-05T18:38:03+00:00",
+      "headline": "Why Nate Ament should join Brayden Burries in Bucks starting lineup - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLWtXVDNoWmRFNkNqY1gwOHVJS3RQMU01U2dkUDl0RGFOb1V0d2xqMTdXZExldmMxNlRmLW5wazF3UHdrZEcxU2Nrc0FrSGhvV282MTdCM2ZkZTdwUEdCUF9zVlRFWjJuNjJEeWI4bVMyeWFqYnRQNWdFekxOSnlmU2I1OTA0NFBMVDhIbXR4SHVaZjFCTkVVTUJOZVFFQmpvQjRKVzM2OHU5bVNCVFNjcHVQVDY?oc=5",
+      "published_at": "2026-11-05T17:51:46+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -40,15 +56,7 @@
     {
       "headline": "Devin Booker Injury Update: Phoenix Suns Star Expected to Play Against Orlando Magic After Head Collision - NDTV Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNZDdLd1g5UzFDRFZqSEZOVmc3eFE1am9oa0lnamJtekc4a2pGczVLbnA2cnhNcnFLcnNudXlDMHBSaGIzS1BhN0Jfd3BYZE5YRVRyVEdCVEltYlFINy13R0hnalpxNjJ5UkNSYWNCckhGS0dtUkJjZFEzdzhwYVZOa0lWdEFyQWgyOTRmTEprVG1PaXpNNXo4dWFQTGxvUTRXMVpzS09md2o1b0hldjl3RWxibFpDaDktSnZ1QmdRWlh1QUVIblZudnB6a2VTOTVrU2x0MzQ3Slg2OFA1LUVralUtT21OcVJXd1h2RnJsOVp2Q3JNRS00U0FNZWwxRno4ckZYMENxMA?oc=5",
-      "published_at": "2026-11-05T18:18:36+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Why Nate Ament should join Brayden Burries in Bucks starting lineup - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLWtXVDNoWmRFNkNqY1gwOHVJS3RQMU01U2dkUDl0RGFOb1V0d2xqMTdXZExldmMxNlRmLW5wazF3UHdrZEcxU2Nrc0FrSGhvV282MTdCM2ZkZTdwUEdCUF9zVlRFWjJuNjJEeWI4bVMyeWFqYnRQNWdFekxOSnlmU2I1OTA0NFBMVDhIbXR4SHVaZjFCTkVVTUJOZVFFQmpvQjRKVzM2OHU5bVNCVFNjcHVQVDY?oc=5",
-      "published_at": "2026-11-05T17:51:46+00:00",
+      "published_at": "2026-11-05T16:32:09+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -158,6 +166,14 @@
       "scope_date": "2026-11-05"
     },
     {
+      "headline": "Kelly Oubre will not play against Grizzlies - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQzVnWERmajBnSzRKTHBRZlViT0s4SnVmWWFCZHh1SE00aVFuNGZJU01MNzhwQjZrYnlXRXZNaDNOMUtfbXBNU0tieWNfeWoyaWZQeWZ0cHRmcHNVeE92MlVpN0JyeVlKOUtYTng5V2l5djZ5Y1NXbFU5Umlnbi1tOUpNLW9JOGZiZC1wRm92bEJxNE0wSEhIOVcwRkRYWTBQaU5UV0I4N04zOU9MMEhkRQ?oc=5",
+      "published_at": "2026-11-05T05:07:35+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "Terrence Shannon Jr. (hip) ruled out vs. Houston - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQjlMSmZQSjkwU3RxZFI1SE03ZDlYdFkwSmh0WTVRYnp4TUZVWHVXbWxXZ0FYM2F4VGZ5RDA2UW5BQ0F0d3Q4X1IzZ00tZ29JZk9wVjJxQngwbUJwLUJZTkZISFdaWDgtdlA4bEt2dV8tdmJ3T1NKWkFsWUFKek1MdDAtOVl3UVE1OEZNb3RsTUZzWmRhWjVQejNtNFNDMWpBOEdGZXdocDBNVC1tb0c0NHRB?oc=5",
       "published_at": "2026-11-05T02:37:44+00:00",
@@ -209,14 +225,6 @@
       "headline": "Trey Murphy (knee) now questionable vs. Utah - NBC Sports",
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ0tQQlZMRGNFaWRjVjhsbTV4NTF2X2xXczQzaXBJTC1LQm0wVXBDSWUyalhVT25xV1hJNFpWNEFveVdZb0pnVklhTEtRbmlNaWcyaDREUjdnUzBuT0pMaklWMG1KRnh2UzgyZjU0bWNUeF9JMTVBa2E2V2plUV9BclRWVm1pUjZ6UHl6V0JpeVE0Q2dLY2FYUHU5LURZZmZIRGJJVHc5U2thalVaNmc?oc=5",
       "published_at": "2026-11-05T00:57:11+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Gui Santos Injury: Ruled out for Thursday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd3pDVW9jbXY0dE9SZjVqMUQxNFJmek5JWG5UYkp3WGFLZGRvTkJiV01wNmRKSE9oMDhkNEtxakw4RTNTel9EQ3I5MFppcmZZRnE2aTZhdERjUHMwRlVBS0dqUGRzcXFwNUhqSE9KejJYQzJLeXEtM3h4OHRPTVVqNy1ac0FKaTRIYVI5bkpFcXlUd3VXdmIxWQ?oc=5",
-      "published_at": "2026-11-05T00:52:55+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -302,6 +310,14 @@
       "scope_date": "2026-11-05"
     },
     {
+      "headline": "Ex Aggies Standout Alex Caruso's NBA Return Provides Much-Needed Boost for Injury-Plagued Thunder - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYzNKRm9Namw1TzRyeTh5Wm1tbzJOeUVDMk94S1N3ZW9yZVVyOGE2TXVXaWM3T3hqSzYybVhKWEpvdFZBQlBQYzZtQkR3Q0JxWFMweEpSeUJJNlBBaDY0aW5rU05fU1pKenRibTF2Y0dENFZvTXVyU1IwX0RTbEE5aDluSlFXMGM?oc=5",
+      "published_at": "2026-11-04T23:00:34+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
       "headline": "Ferguson remains ‘optimistic’ Sonics will return ahead of meeting with NBA commissioner - The Spokesman-Review",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQczIybzlvakszR1pUc0EybHBJXzZRNnd1ZnVxcVJhenB6eHZaaV9vcGJrOXNEQUhJRDFwN1JwRDBMa2xHYmxTNDRPU1BRYmhwRHg0OEptZ1djTFNXNEJXV252a1ozU0NJekVUYVpNNGF6aTZyQ29pc0xobWlERnR2SnRzcHVvTnZ6c1Zfc3kxX3dvSnRfdnNkUTVnbGpGQQ?oc=5",
       "published_at": "2026-11-04T22:59:00+00:00",
@@ -353,22 +369,6 @@
       "headline": "Injury Report: Detroit Pistons Vs. Philadelphia 76ers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTWR6QlMwcGFnVThtNDJQdzFZZXJrMVdQZkM5c21faGQzdVYyTEh4VDV4OHpvdGN4Z25oblNBR2pmMVhUSlRsWTdLZmFOcU1fYjh2TGtZRTRjT3dfQzk2WlFVaENYM1diNjVLVHFkS292TmVMRzhEcnc3Z2hpZlZoZGRWTEhnYUw0?oc=5",
       "published_at": "2026-11-04T21:00:35+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "The Milwaukee Bucks have an elite starting lineup, but what does that really mean? - Dairyland Express",
-      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaEhSdUtPTUl1MTFjQmR1ME5xOTRBYTFONm9BYnV2YnVQX284RUxvYldKak9KRVRUNlFnOWtLWXVRandVVEFMLVVHbWpoY25LZ2xaOGJQckVwNUJqMkRhYWxNQzNmM2VQTXdjb25KamRqWDVLb0hTQ0dqRERvYW0wVHByWXlCbTU0a3ZNY3ZjenU3X2hSZm5MTm4wNk1YN2pNa0lVQ2dvYV9qdEtDWFk4amEyV2hLT3N4M1pxdkdMRQ?oc=5",
-      "published_at": "2026-11-04T21:00:02+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Raptors vs. Nuggets Injury Report: Five Players Out, Jakob Poeltl Questionable - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ2VZVExnZW5seHFPYVd6N1A3YmJtLUs5SWZ0TzNBTGtrM2wtdjgtZUJrWWlPb2dtNjZvazdtTEdOQUc1akFFR0drTUxXb1c2S3RkLXdTUWw5M1lrR3hTMWVUTnZERmJvejFnLVVJUXIxZXc3SzMtRnhpN1F4eHNscVVPN2tTblYz?oc=5",
-      "published_at": "2026-11-04T19:56:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
