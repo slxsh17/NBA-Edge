@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-06T12:11:14.801857+00:00",
+  "checked_at": "2026-11-06T13:34:40.252623+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -46,8 +46,8 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "A key Lakers rotation player could miss Friday's game - Lakers Wire",
-      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcWc2T0V2WDFyN1NoRUg4ZjBJWlBkcWkxTlRYWk9KWnRWR2lrMWN3ajJMVDJxVVo5aUR6Nk9UdmNUdTU4TDY4SjJLXzZYMUtxakNNWVRNYlRqR2ctOWlHd3hDRklJVmxNVDhlZDRFOF9mY1VQZUF2MkhGX0hjR3ROVGxpdUxCbTNjSE5ndEhfRGZpVUd4V3pVdzJqRndTelJmb1dGdl8weUpXMjhpaEIxeWZXMHdkY3h6dVNmRzBPV1U5WFVmaVZoYl9QRnQ?oc=5",
+      "headline": "A key Lakers rotation player could miss Friday's game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPempMWlZnTXRTY3VnNlZIQ1pCMFZGUHp3NmtSa2cwNHRNYnBLdGlLcGMtZkVnXzVFZUlSYkNPd09SOTBNTHhIc0JoYV9xUU9wRGVhS21weE5aTTJtblJyM2J1ZmxSTmJRSXZacGNwVmxObVlid2ZQN1E4eVZ6bUh3bFowUUFvMDF4?oc=5",
       "published_at": "2026-11-06T04:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -97,6 +97,14 @@
       "headline": "Lakers release full injury report ahead of Friday’s NBA Cup game vs. Blazers - Lakers Daily",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZHNPRlFicG43R0NSOFFsSUJhZXFubmNZelVRSzNFRW1Sc29KNmp3M05GTHpNalBpUkZCc0Z5YVBJVDBBTEJkb3AyN1ZYX2lXakVEb25LX0hLQWNQSnNNVGhpSDRGVnVwcmdERHNhUGZPTnhnbHFRVEJvVDZfV1QxcVJWQ2FrWUd6QW81NmtTdmNkUDlXcGxobW5KaWhCMzJk?oc=5",
       "published_at": "2026-11-06T02:07:06+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Dennis Schroder (thigh soreness) questionable for Friday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUWE3d3ZxdVFnQVl1d1dFSWZvb3ZfZmVNZDFpYmVldEd3WFA4YTJFUXlTdzd5TDh0WW5vT25uZlZfX0Z3TWNVOEJENWNCTzhuS183NmEyMDZaUkFxaTBWbzRmZmZSbEl4QzM1QmdXX1FzOEFMQ05DZlp6TlJGQ2JKOVlxMkdiZU4xQ3hsenZJRFc1R1Vaa1c2a0R0SW5HcWfSAaQBQVVfeXFMTXRqUEgzaU5WclBMY2plUDFXX3NfQkNKdkxqN1FHRW8tSWx2SVhEa2VTTDdCeENDOFJEOTdDdHNRS0w4NF9uMmswdm1tTUY3RjVGOVhJVGFwLWdqdmVKdWlVYUR3REdQT2hGUjJEX0xkS2k3b3F6MW53QnlNUE1pZFItMkhxM1hXc0F0bGdUNkh5akU1SnFockY4c05yQ0ZQTjh5Sks?oc=5",
+      "published_at": "2026-11-06T01:49:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -254,8 +262,8 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Adem Bona Injury: Downgraded to doubtful for Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV0NFTEdTNGF6bm9fajJtY2dsUDdCREhOdkpxR1JSeUNXSlFlbEk5OFcyZWc2ZmQ3aHp2UnR2dWRMZXlNZ3J6amY5M0VhLXdBWHpwcjJxY3QxbVhnMDk3U3hsclVSM2lITUZZQ0JpdDFHV0NzUVBIM05tYjA4ZzVwMTBDN3ZmRzhIZThRUXp2cXpsOGV0ZnFUSHFVa205cG1sMVRLYmNR?oc=5",
+      "headline": "Adem Bona Injury: Doubtful for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd3FhN1RnQzJCM2o0NUowVzFTWXR4eWV2QlRQNjFlVzE4NTI5eWZlM3JtTlpjMFNfdTBrV3NFUzE0VjlpQkYxcndZR09hNlc1UGc1X3hFVDUwQ0w5TXVJeHdhcnZVTndIZzJBUDhWdVprdk5yNF9jdTB4ZVpRYmo4ZHl0Zk9WZmQwS0RfR0V3YXhRbnM?oc=5",
       "published_at": "2026-11-05T22:18:20+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -318,14 +326,6 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Jalen Green Injury Update: Phoenix Suns Guard Expected to Play Against Orlando Magic Despite Hamstring Concerns - NDTV Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNTURvM1A0NXhLejE2M2V0ZEdCTGZhaDR2NHRIeHo4UTVuRm9KbnBrWXo0bTVMNzNWanJDZFgwVzZORjYtNzF4bXRoTlUtRDQzdTYwZ0RVWDVhbzVISUI0bmR2RHdIQ3oybUpfQ3JNZWdzMEVHUXQ3N004anBLSDdUWnNjc012MEFtQXMtS3JURDJkdl9LOGRFWlh1LWZ0NGduZXRXc0RPMVI4cVM4bTJmc1lyLTFxcm92aFBkS2plVHo3SlF0MEg3ajQwVUJ5SHM4OWVlcjFVYUF2bFU1Tm1JZHQycjU?oc=5",
-      "published_at": "2026-11-05T19:24:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
       "headline": "Pacers' Starting Lineup Earns B Grade Despite Small Sample Size - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakpGN2dRak5nOGVLUDZWSnhLQWI4dklaNERFbEMzQkVnM0ZXS3NLajgteWhidTF0bHk2VmtSd1VMeFJjTlE1MFRSUnVQck91bEdHd2lPUDhIQ2hVNlVjOEZXYjVYVjdYUXdaVEc1Rm5xTkVMN2tjYlNya1NyUXlqX2ptaGhXUQ?oc=5",
       "published_at": "2026-11-05T18:52:02+00:00",
@@ -366,6 +366,14 @@
       "scope_date": "2026-11-06"
     },
     {
+      "headline": "No. 25 Florida to start QB Tramell Jones against Oklahoma in the Swamp, AP source says - KSL News",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV2FTOERtNjBFVDdZVHItNTVneHFCNkhvQmZWY2U2eGdWZVlmWDFWNHFSNVIzRDRZTktCTHJmU2JnZTdNb2w4eUVEcVAwMk53ZElRNmJyVkpaSUxUcVV4cjNzM0R4NzFKRmxxbkhnSWx3eXpXWU55SGIzcE9NUlJjWlhLUGlNZnR2SUljX1hLQkxZMUUzVThXNUtRRlEwT21RVlZkOW9SbHJZUXZHRWFES1M1RkdvOXNBbFlGcFNR?oc=5",
+      "published_at": "2026-11-05T14:10:04+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
       "headline": "What Vit Krejci Injury Means for the Blazers Rotation: Winners and Losers - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQN1hCTjlmSjktX3dBWDc4WU5oeG9JMnAtODVFVkt5WEotODI2TUpkSlNnTUd1ZUd3VmdjVHhtMXJSQ2pUQlZzU1l1c2JiNk5hWGtNc1ZKS0tkYjllWGM4dURuZTlkTWNqaG5vbDc3bTlJSVZpQjFzYnE5SDRiSXFnVzk1eTd3TzRkREdrYW8zLTdPVHY3bko1MkVxZTdLWVpsdlE?oc=5",
       "published_at": "2026-11-05T14:00:05+00:00",
@@ -385,22 +393,6 @@
       "headline": "Should the NBA shorten games to 40 minutes? Pros and cons of move as league battles early season injury crisis - CBS Sports",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSUsyZ3dfX1JZT0x4RDdZbmNfQU92T0RnRi1CbUhlQ1F6SmFRcmJOMFBNNWFkSlc4aGpBZlZ0S2pZd2NFMFRMYzAzZFV0OUNLbE5FUGp1RFV1SUR1NkUyX3pObFVQSXBtSTJsM2ZzMkl2UmNXc3R2UTc4eUNWTTV4czZHWkR6dzRCTks3NGdsbmFxaktHX0FWU3Rsa2Z3aXM?oc=5",
       "published_at": "2026-11-05T13:46:30+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Kyrie Irving on getting off his minutes restriction - Dallas Hoops Journal",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQjRYaXoxN0ltblBRclp0RzVvNWgtT29WdWlna3p5Q0ZnTzFHOGZ2aGhkU09LMFA1U2FickVYZUVWMV9fdEZiXzZpNm93TnZ4UGJsdnRRYUk4RzhUYXpYT19pbGZIeWl1WDRoNnVxdkRmd2xIR0xkSHo4RFBjdlNqamlUR19vMkFuMFcyLWt3YmdhZVZo?oc=5",
-      "published_at": "2026-11-05T13:22:57+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Grading Every NBA Team's Starting Lineup So Far - Bleacher Report",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQVNnUWdsc3otRk14Y1JLM3pfcE91ZjZyc1dQSGdCRmtLZ21jXzM0V0ZIa253ZkZ3TVFxUHlpZnpGbjRibUZqQW1MYkFCQjVQNWNYRUMwX0FpQzM1NjdDeXgxeG1yZVo2SWtIMWJGUWN2dUp2S1hBdDlVWmRfYkZGaW5RRUFaZ0piYjk3Y0Y0M3hld0p5bUE?oc=5",
-      "published_at": "2026-11-05T12:18:12+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
