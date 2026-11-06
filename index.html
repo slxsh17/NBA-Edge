@@ -886,27 +886,57 @@ async function build(){
 // Each lineup remembers the settings it was built with, so late swap re-optimizes it the same way
 // (a cash lineup stays a cash lineup even if you've since switched the page to Tournament).
 const SETKEYS=['ceilW','levW','ownFade','maxTeam','minSalary','minUnique','stack'];
-function currentSettings(){const o={mode:S.mode,sim:S.mode==='gpp'&&!!S.useSim,at:Date.now()};for(const k of SETKEYS)o[k]=S.cfg[k];return o}
+function currentSettings(){const o={mode:S.mode,sim:S.mode==='gpp'&&!!S.useSim,exp:S.exposure,at:Date.now()};for(const k of SETKEYS)o[k]=S.cfg[k];return o}
 async function withSettings(set,fn){if(!set)return fn();const m=S.mode,c=S.cfg;S.mode=set.mode;S.cfg={...c};for(const k of SETKEYS)if(set[k]!=null)S.cfg[k]=set[k];
   try{return await fn()}finally{S.mode=m;S.cfg=c}}
 function settingsLabel(set,l){if(!set)return '';const t=set.at?new Date(set.at).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}):'';
   const kind=set.mode==='gpp'?(set.port||(l&&l.port!=null)?'Tournament · LeVertical portfolio':l&&l.sim!=null?'Tournament · simulated winner':'Tournament'):'Cash';
   const extra=set.mode==='gpp'?` · upside ${Math.round((set.ceilW||0)*100)}%, leverage ${(set.levW||0).toFixed(2)}, fade ${(set.ownFade||0).toFixed(2)}${(set.stack||0)>=2?`, ${set.stack}-player game stack`:''}`:'';
   return `<div class="set-badge">Built as ${kind}${extra}${t?' · '+t:''}. Late swap uses these settings.</div>`}
-async function lateSwap(i){
+// Late swaps keep a set of lineups spread out the way it was built: each one stays at least
+// "differ by" players away from the others and under the max-per-player share. Without this,
+// every lineup re-optimizes on its own to the same best lineup once projections move.
+const spreadKey=x=>S.format==='single'?pkey(x.p)+'|'+x.slot:pkey(x.p);
+function spreadRules(others,fixed,set,n){
+  const mu=(set&&set.minUnique)||S.cfg.minUnique||2,exp=(set&&set.exp)||S.exposure||60;
+  const cap=n>1&&exp<100?Math.max(1,Math.ceil(n*exp/100)):Infinity,uses=new Map(),fx=new Set(fixed.map(f=>pkey(f.p)));
+  others.forEach(ps=>ps.forEach(x=>uses.set(pkey(x.p),(uses.get(pkey(x.p))||0)+1)));
+  return {prev:others.map(ps=>new Set(ps.map(spreadKey))),over:new Set([...uses].filter(([k,c])=>c>=cap&&!fx.has(k)).map(([k])=>k)),mu};
+}
+// How badly a lineup breaks the spread: lineups it's too close to, plus over-used players.
+function spreadMiss(picks,r){const size=F().size,lim=S.format==='single'?size-1:size-r.mu,ks=new Set(picks.map(spreadKey));
+  return r.prev.filter(st=>{let n=0;for(const k of st)if(ks.has(k))n++;return n>lim}).length+picks.filter(x=>r.over.has(pkey(x.p))).length}
+// Strictest first; relax only when locked players make the full spread impossible.
+async function spreadSolve(glpk,pool,base,r){
+  const tries=[];
+  if(r.prev.length||r.over.size){tries.push({previous:r.prev,minUnique:r.mu,excludeKeys:r.over});
+    if(r.over.size)tries.push({previous:r.prev,minUnique:r.mu});
+    for(let m=r.mu-1;m>=1;m--)tries.push({previous:r.prev,minUnique:m})}
+  tries.push({});
+  for(const t of tries){const p=await solveOne(glpk,pool,{...base,...t});if(p)return p}
+  return null;
+}
+async function lateSwap(i,others=null,quiet=false){
   const l=S.lineups[i],status=$('build-status');
   const fixed=l.picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)});
   const pool=S.players.filter(p=>p.proj>0&&!p.out&&!S.bans.has(pkey(p))&&(fixed.some(f=>f.p===p)||inPlay(p)));
-  status.textContent='Re-optimizing players in games that haven’t started…';
+  if(!quiet)status.textContent='Re-optimizing players in games that haven’t started…';
   try{const glpk=await loadGLPK();
+    const r=spreadRules((others||S.lineups.filter((_,j)=>j!==i)).map(o=>o.picks),fixed,l.settings,S.lineups.length);
     const saveLocks=S.locks;S.locks=new Set([...S.locks].filter(k=>pool.some(p=>pkey(p)===k)));
-    let picks=await withSettings(l.settings,()=>solveOne(glpk,pool,{fixed,noise:l.noise?new Map(Object.entries(l.noise)):null}));S.locks=saveLocks;
+    let picks;try{picks=await withSettings(l.settings,()=>spreadSolve(glpk,pool,{fixed,noise:l.noise?new Map(Object.entries(l.noise)):null},r))}finally{S.locks=saveLocks}
     if(picks)picks=lateFlex(picks,new Set(fixed.map(f=>pkey(f.p))));
-    if(!picks){status.textContent='No better swap fits under the cap.';return}
-    const before=total(l);S.lineups[i]={...l,picks,built:Date.now(),review:false};S.lineups[i].proj0=total(S.lineups[i]);saveDayState();renderLineups();
-    const gain=total(S.lineups[i])-before;status.textContent=gain>0.05?`Late swap added ${gain.toFixed(1)} projected points.`:'Your lineup is already the best option for the games left.';
-  }catch(e){status.textContent=e.message}
+    if(!picks){if(!quiet)status.textContent='No better swap fits under the cap.';return 0}
+    const before=total(l);S.lineups[i]={...l,picks,built:Date.now(),review:false};S.lineups[i].proj0=total(S.lineups[i]);
+    const gain=total(S.lineups[i])-before;
+    if(!quiet){saveDayState();renderLineups();status.textContent=gain>0.05?`Late swap added ${gain.toFixed(1)} projected points.`:gain<-0.05?`Late swap: ${gain.toFixed(1)} projected, to keep this lineup different from your others.`:'Your lineup is already the best option for the games left.'}
+    return gain;
+  }catch(e){status.textContent=e.message;return 0}
 }
+// All lineups in order: each one only has to stay apart from the ones already swapped, like a fresh build.
+async function lateSwapAll(){const status=$('build-status');status.textContent='Late-swapping every lineup…';let g=0;
+  for(let i=0;i<S.lineups.length;i++)g+=await lateSwap(i,S.lineups.slice(0,i),true);
+  saveDayState();renderLineups();status.textContent=`Late-swapped ${S.lineups.length} lineups (${g>=0?'+':''}${g.toFixed(1)} projected in all), still spread out.`}
 
 // ---------- my entries: lineups you actually entered, re-optimized as games lock ----------
 const slotList=()=>F().order.flatMap(s=>Array(F().need[s]).fill(s));
@@ -977,7 +1007,7 @@ function renderEntries(){
   const order=es.map((e,i)=>i).sort((a,b)=>(!!(es[b].suggest&&es[b].suggest.picks))-(!!(es[a].suggest&&es[a].suggest.picks))),SHOWE=5,vis=S.entShowAll?order:order.slice(0,SHOWE);
   h+=vis.map(i=>[es[i],i]).map(([e,i])=>{const pts=e.picks.reduce((t,x)=>t+(x.p.out?0:x.p.proj*multOf(x.slot)),0),sal=e.picks.reduce((t,x)=>t+salOf(x),0),lk=e.picks.filter(isStarted).length;
     const sg=e.suggest;let sw='';
-    if(sg&&sg.picks){const ch=swapChanges(e.picks,sg.picks);sw=`<div class="swap"><div><b>Late swap: ${sg.gain>=0.05?`<b class="gain">+${sg.gain.toFixed(1)}</b> projected`:`${sg.gain.toFixed(1)} projected, more upside and leverage`}</b> (${esc(sg.mode)} settings)</div><ul>${ch.map(c=>`<li>${c}</li>`).join('')}</ul><button class="btn small" data-eapply="${i}" type="button">I made these swaps</button> <button class="btn small" data-eshow="${i}" type="button">${sg.open?'Hide':'Show'} new lineup</button></div>${sg.open?`<div style="border-top:1px solid var(--line)">${entryRows(sg.picks,new Set(sg.picks.filter(y=>!e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot)).map(y=>pkey(y.p))))}</div>`:''}`}
+    if(sg&&sg.picks){const ch=swapChanges(e.picks,sg.picks);sw=`<div class="swap"><div><b>Late swap: ${sg.gain>=0.05?`<b class="gain">+${sg.gain.toFixed(1)}</b> projected`:`${sg.gain.toFixed(1)} projected, ${sg.spread?'keeps it different from your other entries':'more upside and leverage'}`}</b> (${esc(sg.mode)} settings)</div><ul>${ch.map(c=>`<li>${c}</li>`).join('')}</ul><button class="btn small" data-eapply="${i}" type="button">I made these swaps</button> <button class="btn small" data-eshow="${i}" type="button">${sg.open?'Hide':'Show'} new lineup</button></div>${sg.open?`<div style="border-top:1px solid var(--line)">${entryRows(sg.picks,new Set(sg.picks.filter(y=>!e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot)).map(y=>pkey(y.p))))}</div>`:''}`}
     else if(sg&&sg.msg)sw=`<div class="lu-note">${esc(sg.msg)}</div>`;
     return `<article class="lineup"><div class="lu-head"><div class="lu-score num">${pts.toFixed(1)}<small>projected</small></div><div class="lu-stat">Salary<b>${money(sal)}</b></div><div class="lu-stat">Locked<b>${lk}/${e.picks.length}</b></div>
       <div class="lu-actions"><button class="btn small" data-econtests="${i}" type="button">Contests</button><button class="btn small" data-eswap="${i}" type="button">Late swap</button><button class="btn small" data-edel="${i}" type="button" aria-label="Remove entry ${i+1}">Remove</button></div></div>
@@ -1000,28 +1030,34 @@ function keepSlots(picks,old,fixed){
   const order=F().order;
   return [...picks.filter(x=>fx.has(pkey(x.p))),...movers.map((x,i)=>({p:x.p,slot:res[i]}))].sort((a,b)=>order.indexOf(a.slot)-order.indexOf(b.slot));
 }
-async function entrySwap(i,quiet=false){
+async function entrySwap(i,quiet=false,upto=null){
   const e=S.entries[i];if(!e)return;const size=F().size;
   const fixed=e.picks.filter(isStarted);
+  // Stay apart from your other entries of the same kind (tournament vs cash). In a batch only the
+  // ones already checked count, so the first keeps the best lineup and the rest spread out from it.
+  const modeOf=o=>(o.settings&&o.settings.mode)||S.mode,mates=S.entries.filter(o=>modeOf(o)===modeOf(e));
+  const others=(upto==null?S.entries.filter((_,j)=>j!==i):S.entries.slice(0,upto)).filter(o=>modeOf(o)===modeOf(e)).map(o=>(o.suggest&&o.suggest.picks)||o.picks);
+  const r=spreadRules(others,fixed,e.settings,mates.length);
   if(fixed.length===size){e.suggest={msg:'Every player is locked. Nothing left to swap.'};renderEntries();return}
   const pool=S.players.filter(p=>p.proj>0&&!p.out&&!S.bans.has(pkey(p))&&(fixed.some(f=>f.p===p)||(gameOf(p)&&!isStarted(p))));
   try{const glpk=await loadGLPK();const saveLocks=S.locks;S.locks=new Set();
     const nz=e.noise?new Map(Object.entries(e.noise)):null;
-    let picks;try{picks=await withSettings(e.settings,()=>solveOne(glpk,pool,{fixed,noise:nz}))}finally{S.locks=saveLocks}
+    let picks;try{picks=await withSettings(e.settings,()=>spreadSolve(glpk,pool,{fixed,noise:nz},r))}finally{S.locks=saveLocks}
     if(!picks){e.suggest={msg:'No lineup fits under the cap with the locked players.'};renderEntries();return}
     const before=e.picks.reduce((t,x)=>t+(x.p.out?0:x.p.proj*multOf(x.slot)),0),after=picks.reduce((t,x)=>t+x.p.proj*multOf(x.slot),0);
     picks=keepSlots(picks,e.picks,fixed);
     const same=picks.every(y=>e.picks.some(x=>pkey(x.p)===pkey(y.p)&&x.slot===y.slot));
     const scoreOf=ps=>ps.reduce((t,x)=>t+(x.p.out?0:score(x.p)*(nz?nz.get(pkey(x.p))||1:1)*multOf(x.slot)),0);
     const [scNew,scOld]=await withSettings(e.settings,async()=>[scoreOf(picks),scoreOf(e.picks)]);const better=scNew-scOld,sc=ps=>ps===picks?scNew:scOld;
-    e.suggest=same||better<(nz?Math.max(0.3,0.006*sc(e.picks)):0.3)+(e.gap0||0)?{msg:quiet?'':'No better swap right now. This is already the best lineup for the games left.'}:{picks,gain:after-before,better,mode:((e.settings&&e.settings.mode)||S.mode)==='gpp'?'tournament':'cash',open:false};
+    const spread=!same&&spreadMiss(picks,r)<spreadMiss(e.picks,r);
+    e.suggest=same||(!spread&&better<(nz?Math.max(0.3,0.006*sc(e.picks)):0.3)+(e.gap0||0))?{msg:quiet?'':'No better swap right now. This is already the best lineup for the games left.'}:{picks,gain:after-before,better,spread,mode:((e.settings&&e.settings.mode)||S.mode)==='gpp'?'tournament':'cash',open:false};
     if(quiet&&e.suggest.msg==='')e.suggest=null;
   }catch(err){e.suggest={msg:err.message}}
   renderEntries();
 }
 async function autoSwaps(){const n=S.games.filter(started).length;if(!(S.entries||[]).length||n===S.entStarted||S.entChecking)return;S.entStarted=n;
   const many=S.entries.length>5;S.entChecking=many;if(many)renderEntries();
-  for(let i=0;i<S.entries.length;i++){S.entBatch=many;await entrySwap(i,true);S.entBatch=false;if(many&&i%25===24)renderEntries()}
+  for(let i=0;i<S.entries.length;i++){S.entBatch=many;await entrySwap(i,true,i);S.entBatch=false;if(many&&i%25===24)renderEntries()}
   S.entChecking=false;renderEntries()}
 $('entries').addEventListener('click',async e=>{const t=e.target.closest('button');if(!t)return;
   if(t.id==='ent-add'){S.entForm=true;S.entDraft=null;S.entText='';S.entLabel='';renderEntries();$('ent-text').focus();return}
@@ -1190,7 +1226,8 @@ function renderLineups(fresh=false){
   renderExport();
   if(!S.lineups.length){box.innerHTML='';$('exposure-summary').innerHTML='';return}
   const SHOW=10,shown=S.showAll?S.lineups:S.lineups.slice(0,SHOW);
-  box.innerHTML=shown.map((l,i)=>{
+  const swapAll=S.format==='classic'&&!S.review&&S.lineups.length>1&&S.lineups.some(l=>{const n=l.picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).length;return n>0&&n<l.picks.length});
+  box.innerHTML=(swapAll?`<div style="margin:0 0 8px"><button class="btn small" id="swap-all" type="button">Late swap all ${S.lineups.length}</button> <span class="muted" style="font-size:12.5px">Keeps them different from each other.</span></div>`:'')+shown.map((l,i)=>{
     const sal=l.picks.reduce((s,x)=>s+salOf(x),0),pts=total(l),own=l.picks.reduce((s,x)=>s+(x.p.own||0),0)/l.picks.length;
     const live=l.picks.filter(x=>{const g=gameOf(x.p);return g&&started(g)}).length;
     const canSwap=S.format==='classic'&&!S.review&&live>0&&live<l.picks.length;const reviewOnly=l.review;const gone=l.picks.filter(x=>x.p.out);const drift=pts-(l.proj0??pts);
@@ -1216,6 +1253,7 @@ function renderLineups(fresh=false){
   renderWhere();
 }
 $('lineups').addEventListener('click',async e=>{if(e.target.id==='show-all'){S.showAll=!S.showAll;renderLineups();return}
+  if(e.target.id==='swap-all'){e.target.disabled=true;await lateSwapAll();return}
   const cb=e.target.closest('[data-contests]');if(cb){const k='l'+cb.dataset.contests;S.openC=S.openC===k?null:k;renderLineups();return}const s=e.target.closest('[data-swap]'),c=e.target.closest('[data-copy]'),en=e.target.closest('[data-enter]');
   if(en){const l=S.lineups[+en.dataset.enter];const k=l.picks.map(x=>pkey(x.p)+x.slot).sort().join();if(!(S.entries||[]).some(x=>x.picks.map(y=>pkey(y.p)+y.slot).sort().join()===k)){(S.entries??=[]).push({label:'',noise:l.noise||null,gap0:l.gap0||0,settings:l.settings||currentSettings(),sim:l.sim??null,picks:l.picks.map(x=>({...x}))});saveEntries()}en.textContent='Saved to My entries';renderEntries();setTimeout(()=>en.textContent='I entered this',1500)}
   if(s)lateSwap(+s.dataset.swap);
