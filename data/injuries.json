@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:22:36.749137+00:00",
+  "updated_at": "2026-11-06T20:16:05.308107+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -78,14 +78,14 @@
       "status": "OUT"
     },
     {
-      "name": "Nic Claxton",
-      "team": "CHI",
-      "status": "OUT"
-    },
-    {
       "name": "Zach Collins",
       "team": "CHI",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Nic Claxton",
+      "team": "CHI",
+      "status": "OUT"
     },
     {
       "name": "Jalen Smith",
