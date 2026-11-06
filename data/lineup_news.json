@@ -1,19 +1,19 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-06T06:50:52.419051+00:00",
+  "checked_at": "2026-11-06T08:01:52.391096+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
     {
-      "team": "MIA",
-      "status": "confirmed",
+      "team": "MIL",
+      "status": "projected",
       "players": [
-        "D. Mitchell",
-        "Klay Thompson",
-        "A. Wiggins",
-        "G. Antetokounmpo",
-        "Bam Adebayo"
+        "B. Burries",
+        "Tyler Herro",
+        "Jaime Jaquez",
+        "Kyle Kuzma",
+        "Myles Turner"
       ],
       "source": "RotoWire NBA Daily Lineups",
       "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
@@ -286,6 +286,14 @@
       "scope_date": "2026-11-06"
     },
     {
+      "headline": "Moussa Diabate Injury: Questionable for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU2ZWS3lJYUNMR1pERzFhb2VRX1BQWUlLZkxMVzZfZXNDbGFBczRDWUJXaS1Ec1VxelhwRTcxQXoxVGV6OFhoLXIwbHl2bG45bnNjZllUUVM5SDZpXy1ZaktJZmRHRDF4NEg2Y2hRM0J2M0ppWDZ4VnROSUZrTE5FSHZnbHJXbTJxZndEWmFBU2p1RFp3TXNSRlJRcmp5Mms?oc=5",
+      "published_at": "2026-11-05T22:08:12+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
       "headline": "Does Luka Garza Deserve More Minutes in Celtics Rotation? - CLNS Media",
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMUo5TUpYS0FUa2U0bEFPM2dGaks3cFVOcnFPbERSTHVDY2tZaGJwbWtrZGRsYm5rWHlCcFhCRk9vNzNkbjRySVZCck5iRU1jamNWUmVNWjdZSFhYVUgwQjVhZmkwTnhEbXFuTHZ5RjEtS0RiUGJwQnpRRkt0Z0I0UzJfNE9CeldTYzBXSEJJUVPSAZABQVVfeXFMTTFKOU1KWEtBVGtlNGxBTzNnRmpLN3BVTnJxT2xEUkx1Q2NrWWhicG1ra2RkbGJua1h5QnBYQkZPbzczZG40cklWQnJOYkVNY2pjVlJlTVo3WUhYWFVIMEI1YWZpME54RG1xbkx2eUYxLUtEYlBicEJ6UUZLdGdCNFMyXzRPQnpXU2MwV0hCSVFT?oc=5",
       "published_at": "2026-11-05T21:30:53+00:00",
@@ -409,14 +417,6 @@
       "headline": "Clippers’ Tyronn Lue explains why Keaton Wagler saw limited minutes in crushing Heat loss - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUGxRR1ZsalhHdThDbFNDeDhQbFBReDA5ajU4MGdlNEFTcDlqdHoxOS1PQ043cUFScEc0emdxNVI4VUxMTlRPcE9FV1dEMmx3ekp0Z3JvRUJqTm5IRW1GalpsWFhrcHE2dV95dndhYkNNQW81b19pd194Q0M5cmIyOGJ4TVhQWGdO?oc=5",
       "published_at": "2026-11-05T08:08:01+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Jarrett Allen (knee) doubtful to return Wednesday - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObk5jam05dHJob09DZXN2NVdMNnlzRXVjU1QtUUQ2c2hYOUpiQnRUMGRDall1MkM0LXpJOHZHUS0tRUNsb2t6bklibWw5aVRQZnpDWFBjbjgxajZUZzk4NnJqQ0JmUXJUMlJtQnVUdDdQZW1Qb3N5S2NtNnFNWjJ6RWNDQ0Z3b2pWN2VHNTdZQ0k0Y3pycEVtaDhNc21jRkJ4VmJWREs5THJSYzZ5RmRNLTR3TVhwUQ?oc=5",
-      "published_at": "2026-11-05T07:36:44+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
