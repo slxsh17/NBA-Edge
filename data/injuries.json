@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T21:04:09.043101+00:00",
+  "updated_at": "2026-11-06T21:44:53.279400+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -36,11 +36,6 @@
       "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
-    },
-    {
-      "name": "Noah Clowney",
-      "team": "BKN",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Day'Ron Sharpe",
@@ -243,11 +238,6 @@
       "status": "OUT"
     },
     {
-      "name": "Sandro Mamukelashvili",
-      "team": "LAL",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Isaiah Stewart",
       "team": "MEM",
       "status": "OUT"
@@ -386,6 +376,11 @@
       "name": "Shaedon Sharpe",
       "team": "POR",
       "status": "OUT"
+    },
+    {
+      "name": "De'Andre Hunter",
+      "team": "SAC",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Maxime Raynaud",
