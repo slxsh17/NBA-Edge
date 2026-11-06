@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-06T15:33:41.905523+00:00",
+  "checked_at": "2026-11-06T16:37:29.127832+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -25,6 +25,14 @@
       "headline": "NBA injury report: Davis, Knueppel listed on Friday, November 6 - TalkBasket.net",
       "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRm8yTEJVVWhXRl9MVjNtOS1OQmdBcENqQnlsYVZYaGVOcVJ6aXlEWGQta2JTMVY1ejdjc1hSTm55blMxWjRWYkxqMzFGc29ZZ2tjUlVUVEM1RGM1cFZuWHBVbFFzcWhUVmgxeFZiMDZzS0trcF9DWkJOWXllYUJiM1JHVXVGV2RWekhyUjdwTUZIXzN5RlFj?oc=5",
       "published_at": "2026-11-06T15:06:17+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Multiple Cavaliers Starters Questionable for Clash Against 76ers - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQa2pwczMwT0pqWGZCemtaY09oZHRvaU9pdkdrb3NSeW1jR3lMc2N3SzJqXzZsYjdnWVNkVGp3b1VIb2xLZk1WYktRRll3VVVpejlfa09UeDVrNFJMTDFXU1FZc0p3NGZ5YkRwcm9Yd3FKTWZMM19ZUWRKR2tvcHVNUkhqUDMwRmR1enIzQmk2Y1FMNFVKOUZqX25TY2VJbEUxUXFBZkxTWE8yYkhQ?oc=5",
+      "published_at": "2026-11-06T14:47:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -62,9 +70,17 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "CV Lakers To Make Debut Friday Night with Bronny James Expected to Start - MyNewsLA.com",
+      "headline": "How Isaiah Stewart and Scotty Pippen Jr. injuries change Memphis Grizzlies rotation - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZ2FoNl9JaUJFakdmSXhvTGhBeTcxYnBHd3ZwejdRaTg5SUlFeVNtSHBwWjRqMjduXy1QVVVTWVlpazczZi1uWVZHbzlJOVVObk8wbU5HZGY5RFQ1WnNHMkRtNXVLRDJLejZqaExoeGJESmVlb2dKRDQ5Yk9kR2E0YUx4MWtMQUloRExWLXBNckFaMEVRSTI4bTktTmhDQTV0OHlmeFlRNDViNFQ3MnM2VUNmeUxJM3lpT1lxdGswRGFEOVZhd1JEc3d0WlJmUQ?oc=5",
+      "published_at": "2026-11-06T12:00:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Coachella Lakers To Debut Friday; Bronny James Expected to Start - MyNewsLA.com",
       "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWDJZbXlDTEk4VF9xcjdOR1cweXpJcjZGRXRWM1FwZUo4cFRYRG9XRTVRMHFsTFRTZTRBelF4QmFMbGNfX1NRUmdIWFUwTE15ZXdqVi04N0U5ZGhiTVpMNVhFaWtrRkZWQmdTa3NucHZ1c2NkZXdiV2ZQSVJuQ1QwSlBqaVVIbWtEV0ZrZVVmVWxIcDgtSUpIUDRhc1RaVzJ3bHd0VE11bmhzSEtRbUkyeE5mRjQ5OW1s?oc=5",
-      "published_at": "2026-11-06T07:42:15+00:00",
+      "published_at": "2026-11-06T07:59:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -102,7 +118,7 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Vikings’ Kyler Murray to miss MNF vs. Bills with hamstring strain, Carson Wentz to start - The New York Times",
+      "headline": "Vikings’ Kyler Murray to miss MNF vs. Bills with hamstring strain, Carson Wentz to start - The Athletic - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQXZDZXJqOUF3ankxYl9Udmh3dTExb0tqbHJJSFNmV2pGR3JjTzd0aTdCY0F3OWpQN1JfMGxheUhoQlV1NGN3MWJZUmQ1bUZMWElzNXBiNXVzYmZWNm1lME5abUZuU0E3U3RYb2EwRzdxVENRcUFGTWxicVYyQVI3aXNoQWVRb2hqQW9ORWJDbnpyZEV6cFVnYWV3RmJCS1QweEhJc2dR?oc=5",
       "published_at": "2026-11-06T02:47:24+00:00",
       "type": "headline_only",
@@ -318,9 +334,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Rasheer Fleming (ankle) ruled out Thursday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOEc4QzJ0QWhBTFVyU0E1WlhtR0hfZzhMTE9keHNLQnBubEtHcW54bnNOZThiYUo2Vjc5dDE4Um8wLWNMM0dDSDhud1VNbDU5bGlwb09GRTQ0aHM2Xy1HZGlxUTllbkhRS2kzMzliRlN0VndIUi1PZ1lVX1hMVUxLbld2THFGVnNvVTJBcE9UbmxGZ9IBlwFBVV95cUxQcWU2SFRoaG1tRWZYcjVQSTJvM1l0U2Jtc0JtQjYxYlFReHVQcFBZVUE4ZHlNR184SE5SN09mQTlZbkplRFUxSnBCbUNBdjdHSGotUklwbVByY0FMOTVmZF9GSnZObmNVUDNodHN0dDBZYnZubXQ3OWJiT21xR1RuYUtfNmFneV8zWWxtb1Z5RndVcDNyU2dn?oc=5",
-      "published_at": "2026-11-05T20:56:50+00:00",
+      "headline": "Payton Pritchard Injury: Listed as questionable - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaFl5bkRKMUpkNEp6c08xdmR5bTctYk9FVm1HZlRLLTBpSUN0b3ZBb2JQVXlZRlk2OWNwaERUMjV5eExSaExUT3BkY1YzTEllZXdnMURWdkh1dmd3Wjg1QU9vaUpwNGc5RDNqTEdqbzlJWkc4Y2JTSUJyRVJWdDJUblVfY3hCMmVaOV96WU81cXdqSm9VQ0xTQ2ZJSnh4VWZp?oc=5",
+      "published_at": "2026-11-05T21:09:56+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -334,25 +350,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Bills vs. Vikings Odds Shift With Carson Wentz Set to Start for Injured Kyler Murray on Monday - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRDdiY3RTeVZETm9kTndtOUNCTF9vZHRNTlFORFB4dEdCSkVpNkM5eW50eG1WNHgtTjNhN0NZS1o5bUJBeXMwT2JlZ0xzSkU1UzFsc3BvT1JMZzlWbEhIY0tVXzZtMzZMTWZneWhpX3lyLV9HT0hHQ1U5czdiMGRGUzlraHpZSmU0QmxLcndkdUN2bXc1UWllWFNBb1I1SXVQdDJ4Z081WjFkTVRqc1JabTZoWlJ1VE9PSGZ6Mw?oc=5",
-      "published_at": "2026-11-05T18:37:30+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
       "headline": "Why Nate Ament should join Brayden Burries in Bucks starting lineup - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLWtXVDNoWmRFNkNqY1gwOHVJS3RQMU01U2dkUDl0RGFOb1V0d2xqMTdXZExldmMxNlRmLW5wazF3UHdrZEcxU2Nrc0FrSGhvV282MTdCM2ZkZTdwUEdCUF9zVlRFWjJuNjJEeWI4bVMyeWFqYnRQNWdFekxOSnlmU2I1OTA0NFBMVDhIbXR4SHVaZjFCTkVVTUJOZVFFQmpvQjRKVzM2OHU5bVNCVFNjcHVQVDY?oc=5",
       "published_at": "2026-11-05T17:51:46+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Devin Booker Injury Update: Phoenix Suns Star Expected to Play Against Orlando Magic After Head Collision - NDTV Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNZDdLd1g5UzFDRFZqSEZOVmc3eFE1am9oa0lnamJtekc4a2pGczVLbnA2cnhNcnFLcnNudXlDMHBSaGIzS1BhN0Jfd3BYZE5YRVRyVEdCVEltYlFINy13R0hnalpxNjJ5UkNSYWNCckhGS0dtUkJjZFEzdzhwYVZOa0lWdEFyQWgyOTRmTEprVG1PaXpNNXo4dWFQTGxvUTRXMVpzS09md2o1b0hldjl3RWxibFpDaDktSnZ1QmdRWlh1QUVIblZudnB6a2VTOTVrU2x0MzQ3Slg2OFA1LUVralUtT21OcVJXd1h2RnJsOVp2Q3JNRS00U0FNZWwxRno4ckZYMENxMA?oc=5",
-      "published_at": "2026-11-05T16:32:09+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
