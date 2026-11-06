@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-06T09:19:17.186323+00:00",
+  "checked_at": "2026-11-06T10:24:42.240926+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -46,8 +46,8 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "A key Lakers rotation player could miss Friday's game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPempMWlZnTXRTY3VnNlZIQ1pCMFZGUHp3NmtSa2cwNHRNYnBLdGlLcGMtZkVnXzVFZUlSYkNPd09SOTBNTHhIc0JoYV9xUU9wRGVhS21weE5aTTJtblJyM2J1ZmxSTmJRSXZacGNwVmxObVlid2ZQN1E4eVZ6bUh3bFowUUFvMDF4?oc=5",
+      "headline": "A key Lakers rotation player could miss Friday's game - Lakers Wire",
+      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcWc2T0V2WDFyN1NoRUg4ZjBJWlBkcWkxTlRYWk9KWnRWR2lrMWN3ajJMVDJxVVo5aUR6Nk9UdmNUdTU4TDY4SjJLXzZYMUtxakNNWVRNYlRqR2ctOWlHd3hDRklJVmxNVDhlZDRFOF9mY1VQZUF2MkhGX0hjR3ROVGxpdUxCbTNjSE5ndEhfRGZpVUd4V3pVdzJqRndTelJmb1dGdl8weUpXMjhpaEIxeWZXMHdkY3h6dVNmRzBPV1U5WFVmaVZoYl9QRnQ?oc=5",
       "published_at": "2026-11-06T04:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -110,9 +110,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Suns Make Big Starting Lineup Change vs Orlando Magic - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeXFXdE94T0JiZHpuWThhSnJxWEFmcEo0X1NJYXB4Q2JqS2tqQ2M3bTBJbkJMYjlRRlg3N1RHRkFOdWZNc2NMLUJFOWlyai0wNW9aYUo5SW9FcHJBXzV0MEx1UXRDWnU0Mzhhek9sdUk1OWVpTnBRemxyV2t2aGpOWERhX1BsN2xpNE5SMU51LTRnRVFlcmc?oc=5",
-      "published_at": "2026-11-06T01:34:27+00:00",
+      "headline": "Suns Make Big Starting Lineup Change vs Orlando Magic - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMzUzNlNPUDhkYVlxYlFGajVhZElhSTJsRTBtczBZMjIwREk0MlNfaU0zVFUyUmcteE42SlhNLWJLMEd6dFlTZlZmQVY2azhPNWhDQVFDRnB2NG1IcXBHQzN6Y2ZoVS1DN2RRME9vR3IyNGxMWTRTYTNIQ05aSFEwYlh3OEJPcE0?oc=5",
+      "published_at": "2026-11-06T01:34:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -246,8 +246,8 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Adem Bona Injury: Doubtful for Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd3FhN1RnQzJCM2o0NUowVzFTWXR4eWV2QlRQNjFlVzE4NTI5eWZlM3JtTlpjMFNfdTBrV3NFUzE0VjlpQkYxcndZR09hNlc1UGc1X3hFVDUwQ0w5TXVJeHdhcnZVTndIZzJBUDhWdVprdk5yNF9jdTB4ZVpRYmo4ZHl0Zk9WZmQwS0RfR0V3YXhRbnM?oc=5",
+      "headline": "Adem Bona Injury: Downgraded to doubtful for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV0NFTEdTNGF6bm9fajJtY2dsUDdCREhOdkpxR1JSeUNXSlFlbEk5OFcyZWc2ZmQ3aHp2UnR2dWRMZXlNZ3J6amY5M0VhLXdBWHpwcjJxY3QxbVhnMDk3U3hsclVSM2lITUZZQ0JpdDFHV0NzUVBIM05tYjA4ZzVwMTBDN3ZmRzhIZThRUXp2cXpsOGV0ZnFUSHFVa205cG1sMVRLYmNR?oc=5",
       "published_at": "2026-11-05T22:18:20+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -313,14 +313,6 @@
       "headline": "Pacers' Starting Lineup Earns B Grade Despite Small Sample Size - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakpGN2dRak5nOGVLUDZWSnhLQWI4dklaNERFbEMzQkVnM0ZXS3NLajgteWhidTF0bHk2VmtSd1VMeFJjTlE1MFRSUnVQck91bEdHd2lPUDhIQ2hVNlVjOEZXYjVYVjdYUXdaVEc1Rm5xTkVMN2tjYlNya1NyUXlqX2ptaGhXUQ?oc=5",
       "published_at": "2026-11-05T18:52:02+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Carson Wentz Will Start for Vikings vs. Bills Amid Latest Kyler Murray Injury Timeline Update - Bleacher Report",
-      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTlZwUl9QOXZDY2hJY0xtc2lzcC1iX0VBZDlZWnhGYVIwR3FzVW9VM2ZxTXUybUJCRmljb2xqYWY4TFJWVTBEUlNFRzFqbmN5alV6YzM4d1l5OGtFeWdsckJYdFNKRlBka19nbG9pSWtueGZjRHRBTmtQOGRGY3g0LWZwZEg5dUx2bTdVZWRHSHZ5NElJUFlnU3ZpSWYtWHZ4Q3YyVE1sNUZSUllSRW5tU2RXWVBRLTJXMFpPU3M4b1dXS1lHc0xlbFFYeHdEZw?oc=5",
-      "published_at": "2026-11-05T18:33:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
