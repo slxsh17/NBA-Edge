@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T00:45:45.935224-05:00",
+  "updated_at": "2026-11-06T01:52:23.317758-05:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 52,
@@ -2486,6 +2486,16 @@
       "avg_points": 6.0
     },
     {
+      "id": "3213",
+      "name": "Al Horford",
+      "team": "GS",
+      "games": 3,
+      "avg_minutes": 19.0,
+      "avg_fantasy_points": 12.6,
+      "fantasy_points_per_minute": 0.665,
+      "avg_points": 6.7
+    },
+    {
       "id": "4873201",
       "name": "Asa Newell",
       "team": "ATL",
@@ -2534,16 +2544,6 @@
       "avg_fantasy_points": 12.3,
       "fantasy_points_per_minute": 0.544,
       "avg_points": 4.3
-    },
-    {
-      "id": "3213",
-      "name": "Al Horford",
-      "team": "GS",
-      "games": 3,
-      "avg_minutes": 19.0,
-      "avg_fantasy_points": 12.2,
-      "fantasy_points_per_minute": 0.644,
-      "avg_points": 6.7
     },
     {
       "id": "2596112",
@@ -2606,16 +2606,6 @@
       "avg_points": 2.3
     },
     {
-      "id": "4897262",
-      "name": "Will Richard",
-      "team": "GS",
-      "games": 4,
-      "avg_minutes": 19.8,
-      "avg_fantasy_points": 11.8,
-      "fantasy_points_per_minute": 0.599,
-      "avg_points": 5.5
-    },
-    {
       "id": "5106058",
       "name": "Emanuel Sharp",
       "team": "SAC",
@@ -2644,6 +2634,16 @@
       "avg_fantasy_points": 11.6,
       "fantasy_points_per_minute": 0.928,
       "avg_points": 5.2
+    },
+    {
+      "id": "4897262",
+      "name": "Will Richard",
+      "team": "GS",
+      "games": 4,
+      "avg_minutes": 19.8,
+      "avg_fantasy_points": 11.5,
+      "fantasy_points_per_minute": 0.584,
+      "avg_points": 5.5
     },
     {
       "id": "4397014",
@@ -4150,12 +4150,12 @@
       "event_id": "401909937",
       "minutes": 16.0,
       "pts": 10.0,
-      "reb": 1.0,
+      "reb": 0.0,
       "ast": 2.0,
       "stl": 0.0,
       "blk": 1.0,
       "tov": 1.0,
-      "fantasy_points": 16.2
+      "fantasy_points": 15.0
     },
     {
       "id": "4277847",
@@ -4900,12 +4900,12 @@
       "event_id": "401909937",
       "minutes": 18.0,
       "pts": 8.0,
-      "reb": 4.0,
+      "reb": 5.0,
       "ast": 1.0,
       "stl": 0.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 14.3
+      "fantasy_points": 15.5
     },
     {
       "id": "5106262",
