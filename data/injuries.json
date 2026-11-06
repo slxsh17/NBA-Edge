@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T20:16:05.308107+00:00",
+  "updated_at": "2026-11-06T21:04:09.043101+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -190,7 +190,7 @@
     {
       "name": "Clint Capela",
       "team": "HOU",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Steven Adams",
@@ -223,12 +223,12 @@
       "status": "OUT"
     },
     {
-      "name": "Yanic Konan Niederhauser",
+      "name": "Brandon Ingram",
       "team": "LAC",
       "status": "OUT"
     },
     {
-      "name": "Brandon Ingram",
+      "name": "Yanic Konan Niederhauser",
       "team": "LAC",
       "status": "OUT"
     },
