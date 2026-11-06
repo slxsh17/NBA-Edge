@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-06T18:36:33.824833+00:00",
+  "checked_at": "2026-11-06T19:40:35.076518+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -36,6 +36,22 @@
   ],
   "headlines": [
     {
+      "headline": "Suns Reveal Why They Changed Starting Lineup - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOelcwbi1IdlRKLVFrN2NtSUFiRkhKZl9hRXFMVHN6eFRRRFFLZk50MEs1UGljRm42cHVUc09QSi1tbGpWRXNhN1NlM1hkRy1GemZXemp0SUJ1empnOWtZYVBZZmxSYjZzRDZyQ3daallQaTVGQ3dBSTJjTTQxVGxUX0k0cFMtSGNfajJrNlFB?oc=5",
+      "published_at": "2026-11-06T19:09:09+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Shedeur Sanders to start vs. Saints; Deshaun Watson to be listed as questionable - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSWp4dEFsVnJYemNHT20xcGVRZlVOMEYxWUlidjBZZkk2UGg4WmRaRWZRQ3hQM1BReXNpN21yWVF4MzNQSnJmMmhNYzNOcHlaWGJzeVNGd3owQUVWUDRvOERUMGo2V0hWT2xnRnN0a0hUNjZBQ1l5SkZnZjJOQkxBY2RZOVA3UThFaF9LN0x2WGRQZw?oc=5",
+      "published_at": "2026-11-06T18:29:02+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
       "headline": "Raptors' Immanuel Quickley, Scottie Barnes questionable vs. Bucks - Sportsnet.ca",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRW4yZHgzeGdYS3lyMjlNN3Rqb2VvVEVjYUJhRFhxSllHc0c2ZnlSN3RIcDlHcnl4ZjdscEsxMU5VVEtVWU1UOVAwOGlrSnFXRFdPQlp4VWJ0VEpJVmZXV0U2Qm5NM3N2RzVDSUdyQ0kxd0pSLXlReDE4OTlLV0xabHBlZHVyUXgtNlhQTDhUdURsZ0JaVHgyemQ0YzhfOWdLc3c?oc=5",
       "published_at": "2026-11-06T18:03:00+00:00",
@@ -55,6 +71,14 @@
       "headline": "Kyle Anderson (illness) listed questionable Friday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSlM2VjFPeHdIWUtUWWpkUnRPaTFiZEZyekpjMENKdzBxODdyX2IycWRRVUFSSU9ER28wSGVKSlJ5dnZUNUVVaXF0SGV3NWVVWlhYWXVxTlVZOEx0OUM5VzVmN2oxaGw5R0wxN1Z2ZFJnUTloM3NwdDBxOXNCaGdxZkZqWVFQSi1ES2ItYnNWQzR4Zy1wNGtrcl9ZdTXSAaIBQVVfeXFMTkR6QThpNHo4Q01rR3dZd2h1bTZ3OWJSYjd6aDNhZDN3MWpWcHlWU3VjeklvTFYyQkFKMXQ5WGFnNGFLYkVpb0V1U0p3THN6M1kzX082WUdvLVN2X1pYVXN3cXdTMEJNeHZHbUN5N2wxTHE2XzRYa0JKX01fZzU5bkVHREJvOUFSNzVXM3hMM2FKZGNLdy1tZ0JCTmtGVGd0cHZR?oc=5",
       "published_at": "2026-11-06T17:49:30+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Isaiah Stewart (knee) ruled out for Friday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMTlSWHg4ZXFzYkNsaU9vemFoVGJrdDF6R0NwN3JWX1pKblJ6eWJmUnJ4dWJJLWtuRVZvMDhhLU1GNnFROEFwaTdNVThLakpKOXFLdzYyN0Y0SnNMb2JRVnpzbnpZQWw1SHg1YlNDSV9rbDZUMkR3bFl1eGY4WWlHTVEzOHdoMEVtS1RrZtIBkgFBVV95cUxPOEJYTGp6b3pjTkhOeDZjdUtSSjZvWG8tZmFjUlBNNzZ0eGpPdHY2SlNPMERXVE80OWUtVDNVWHlmSGdPTG9CckxCMlhicDRFc0I3MDZSQ1dsOElzc1BFSHZjdkFXamZQNjVxcFFwejdkd1NoVWVXXzRQUUJ3UGdwekd2aTJjX0FSaXVmUXBHZGtFZw?oc=5",
+      "published_at": "2026-11-06T17:46:25+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -292,9 +316,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Tyrese Proctor (ankle) listed questionable for Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb2FTT01GRURueG5wcVNQd3pUUUdqamp4dkNnc2lnS1N0eHIzOG80RzgxeXlidURNQ3N4Z1ZwUjR1TFBGRnIxOGhLWi1ZaF9GTmo3aldGaTItWGRGTDg4Ynk3UklMTDAyaS0wWmZqaUhjY0FPUFNabm5HV3loZ1lTUUI4eTlOMDMtUG9mUTBUN1ZLOFUzQWNIQlNERdIBoAFBVV95cUxQc29nbnVLMFFON0dmaGhXR2I5cEg5RUhLZHczNUdjUXdiT21nTExrb3ZxWm1tQVA4RElHdHRfeEhNVmNzT0I3SFFEcFV3cWVXRkxrQlV2c29PaXNFWXd0RXEzUGh5VE42MW9jdlJoajZ5UWdxRkR3ZGJSZ2g1TjIyUzZDUWMtcTROdHNjT0xoYUszcHF1ZG44UnJXallEazk1?oc=5",
-      "published_at": "2026-11-05T22:33:32+00:00",
+      "headline": "Jarrett Allen (knee) questionable to play Friday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTEFFd3R4djNGNDkyNVdMaVJZWFZBaWVnT0ZRd2xPcnVjZlRtb19tcUFOZEU5aXFlRjNMSTNSQzNkZEJZS1pvZDNJb25JR1AtS0RueDhTRk8zdFJ5bWtZRjhDNmYtX0JNTHFpY2J5WDBvZlNrQUZfZ0NNZUdqWHlqdkNHSElhY3NrSlgxaGdaVjdLTl9ZV2JyMndR0gGfAUFVX3lxTFAxQi1UeEM2T2VqNjV6VzYtTF82T0ZhcUd1ZlBncE85eU5oNmJfMzltZjhWQ0NxZkhSNGdwYnAyUTZOV1lyeUFqQVFSNGxwNzE2TnB3eVh1OFd1bFA0Z3psZ1JLbnFJbFRVcEFhMnZESE1tQ0szZDB3cXA1WEo2aTBzOTlRNkwzQlVEb1o4MGVCU04yRHY1U2NYRTZza1h2dw?oc=5",
+      "published_at": "2026-11-05T22:28:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -351,14 +375,6 @@
       "headline": "Does Luka Garza Deserve More Minutes in Celtics Rotation? - CLNS Media",
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMUo5TUpYS0FUa2U0bEFPM2dGaks3cFVOcnFPbERSTHVDY2tZaGJwbWtrZGRsYm5rWHlCcFhCRk9vNzNkbjRySVZCck5iRU1jamNWUmVNWjdZSFhYVUgwQjVhZmkwTnhEbXFuTHZ5RjEtS0RiUGJwQnpRRkt0Z0I0UzJfNE9CeldTYzBXSEJJUVPSAZABQVVfeXFMTTFKOU1KWEtBVGtlNGxBTzNnRmpLN3BVTnJxT2xEUkx1Q2NrWWhicG1ra2RkbGJua1h5QnBYQkZPbzczZG40cklWQnJOYkVNY2pjVlJlTVo3WUhYWFVIMEI1YWZpME54RG1xbkx2eUYxLUtEYlBicEJ6UUZLdGdCNFMyXzRPQnpXU2MwV0hCSVFT?oc=5",
       "published_at": "2026-11-05T21:30:53+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Pacers' Starting Lineup Earns B Grade Despite Small Sample Size - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOakpGN2dRak5nOGVLUDZWSnhLQWI4dklaNERFbEMzQkVnM0ZXS3NLajgteWhidTF0bHk2VmtSd1VMeFJjTlE1MFRSUnVQck91bEdHd2lPUDhIQ2hVNlVjOEZXYjVYVjdYUXdaVEc1Rm5xTkVMN2tjYlNya1NyUXlqX2ptaGhXUQ?oc=5",
-      "published_at": "2026-11-05T18:52:02+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
