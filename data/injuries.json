@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T17:29:00.113893+00:00",
+  "updated_at": "2026-11-06T18:19:54.710049+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -33,11 +33,6 @@
       "status": "OUT"
     },
     {
-      "name": "Payton Pritchard",
-      "team": "BOS",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
@@ -65,12 +60,12 @@
     {
       "name": "Dennis Schroder",
       "team": "CHA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Moussa Diabate",
       "team": "CHA",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Kon Knueppel",
@@ -265,7 +260,7 @@
     {
       "name": "Terrence Shannon Jr.",
       "team": "MIN",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Anthony Edwards",
@@ -281,11 +276,6 @@
       "name": "Yves Missi",
       "team": "NOP",
       "status": "OUT"
-    },
-    {
-      "name": "Trey Murphy III",
-      "team": "NOP",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Josh Hart",
@@ -418,12 +408,22 @@
       "status": "OUT"
     },
     {
-      "name": "Kyle Anderson",
+      "name": "Jakob Poeltl",
+      "team": "TOR",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Immanuel Quickley",
       "team": "TOR",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Scottie Barnes",
+      "team": "TOR",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Kyle Anderson",
       "team": "TOR",
       "status": "DAY-TO-DAY"
     },
