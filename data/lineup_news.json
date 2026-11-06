@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-05",
-  "checked_at": "2026-11-06T02:41:43.528528+00:00",
+  "checked_at": "2026-11-06T03:39:16.603626+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,9 +22,17 @@
   ],
   "headlines": [
     {
-      "headline": "Lakers release full injury report ahead of Friday’s NBA Cup game vs. Blazers - Lakers Daily",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZHNPRlFicG43R0NSOFFsSUJhZXFubmNZelVRSzNFRW1Sc29KNmp3M05GTHpNalBpUkZCc0Z5YVBJVDBBTEJkb3AyN1ZYX2lXakVEb25LX0hLQWNQSnNNVGhpSDRGVnVwcmdERHNhUGZPTnhnbHFRVEJvVDZfV1QxcVJWQ2FrWUd6QW81NmtTdmNkUDlXcGxobW5KaWhCMzJk?oc=5",
-      "published_at": "2026-11-06T02:07:06+00:00",
+      "headline": "Raptors' Scottie Barnes questionable vs. Bucks - Sportsnet.ca",
+      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMXBNd24wOWdrZzQ1dTVEeTl6S2V2andhRlJOdFpoX19mNDAwQlh6dGVBb1RCUlhWdDYzeElrVWZwOEFkcEhaSk9adWhxajY4dkR1N1B3amZ5QXJjY005QlpqcmFNaENmV0pvbzhtY29JYjVmZ0RLNFBBSFpJMXh6WDUtaVBjUUxVOVE?oc=5",
+      "published_at": "2026-11-06T02:47:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-05"
+    },
+    {
+      "headline": "Kon Knueppel Ruled Out Friday Against Boston - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWktySnlxMjlTb080TG83cFZ1TlVud19vNm92RWlzS0ZIUXE4VWRTYUFkaGdaR2dySFBaeG5IMTVaZGJFdWFnYWJGd1g1ams5Qk5HLVVFRXFkS01xdWJHd245S3c3MWxDVW5hTlNtU0s5MXFlMHZtY1ZhbU51QTNqcXJ3TzgwMGYyYm1yejdDRVRQVVY0emc?oc=5",
+      "published_at": "2026-11-06T02:40:09+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -32,15 +40,15 @@
     {
       "headline": "Phoenix Suns make change in starting lineup after 1-5 start - azcentral.com and The Arizona Republic",
       "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTnYybW0wdFlGMUFPa2puVUR6enVrQl9yMmdsTjRmOHRZZ2JUY3pnNkZOTC0zLW41SUIyRF9ranlha01BbFN2Z21YeFAxLTUxNGhVaVE2Q3VwU0F4MlkyUHlaQnBjNmRBcl9XVXVwXzJXSVJjTUVUV09ET0MwYURrNWVRMmYzb1VJaGcwUTZiT2VuamNJVm5KRmx2WGhhSUtJQVdhTmpSVkM0UkdacEJmM3k4Vzk4bnNrdEJQbF9nZGZWeEc4aDZBdDRKR00?oc=5",
-      "published_at": "2026-11-06T02:04:00+00:00",
+      "published_at": "2026-11-06T02:11:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Anthony Davis Questionable for Friday's Rematch with the Hawks - NBA News | Fantasy Basketball - RotoBaller",
-      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZmNjWTRUZ1pmSm1hWkVvaVExY3pKYzRxTmlmQkxwbV9YZ2hNRmFGbl9nUEtmZy1NS2lPQzdaU1Q4NWtaN3ZabzBzSHRkaHVwRHZad2ZvR01UYWFVN0tVYXRkU2draHlDRWduSTdiU1FxZC1QQ1JaQ1g2TXg4cEE5ODZFcEZ0QU11N3NKQW9BbUdtWHR6ZFJWR3J5MnhQOGdoTzBPMmhGSW82MUpu?oc=5",
-      "published_at": "2026-11-06T02:00:21+00:00",
+      "headline": "Lakers release full injury report ahead of Friday’s NBA Cup game vs. Blazers - Lakers Daily",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZHNPRlFicG43R0NSOFFsSUJhZXFubmNZelVRSzNFRW1Sc29KNmp3M05GTHpNalBpUkZCc0Z5YVBJVDBBTEJkb3AyN1ZYX2lXakVEb25LX0hLQWNQSnNNVGhpSDRGVnVwcmdERHNhUGZPTnhnbHFRVEJvVDZfV1QxcVJWQ2FrWUd6QW81NmtTdmNkUDlXcGxobW5KaWhCMzJk?oc=5",
+      "published_at": "2026-11-06T02:07:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -126,14 +134,6 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Adem Bona doubtful for Sixers Cup matchup vs. Cavs - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQd2l0ZEFjbXNmekFHUFRZd1hhU0NCMWh3TWJ4M1dtNF9RUWxTWkdfNHpGRDVpZmtIWVRuOTdBREh1ZmNSdkdOMUp4WXY2dDdta2hCb2ZhQUFOVnN6QW9QNVVvSmNHYmJncjcxdzVnOFRHUjQ3cUQ4YmpUby01cXpTQXJQUEc?oc=5",
-      "published_at": "2026-11-05T22:36:46+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
       "headline": "Max Christie (hip) expected to play Friday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOc2J1SDVqZnlBOXFTdEFvVjhrRF9ZUDFPVXpmOHZoVFc2ZkVmdm9EQ05LRmJjczhwZGFqTTFoRmZTU29wd2oydU9odTl4RTJrZGYxUGx0V3BDRVhETjRDRkxTdjdQYTVNNkFKakpMMkE5SGh0SUFxcVNzMHZMUTBNeFlQeUJPOVFMZFdodTZDNGNUd9IBlwFBVV95cUxORTJsbVlJWGlvcUtpcjdPV3YzQXhGcGkyUTVfNl9lcmhBd09fdVZlR0lBV1NVcmNnTU9sS2FFcUNtOHgxS2hJeXkxMnNIWDlUX2xaRGkwdHJZYWVBNWdoNU5lWGU5Vm9FLWhmV2JCUWIyZ3JDbjVKWXdMWDNtak9MWm15THRuYnpqcTVqVFdva2VPVHd4dThF?oc=5",
       "published_at": "2026-11-05T22:36:28+00:00",
@@ -198,8 +198,8 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Adem Bona Injury: Downgraded to doubtful for Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV0NFTEdTNGF6bm9fajJtY2dsUDdCREhOdkpxR1JSeUNXSlFlbEk5OFcyZWc2ZmQ3aHp2UnR2dWRMZXlNZ3J6amY5M0VhLXdBWHpwcjJxY3QxbVhnMDk3U3hsclVSM2lITUZZQ0JpdDFHV0NzUVBIM05tYjA4ZzVwMTBDN3ZmRzhIZThRUXp2cXpsOGV0ZnFUSHFVa205cG1sMVRLYmNR?oc=5",
+      "headline": "Adem Bona Injury: Doubtful for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNd3FhN1RnQzJCM2o0NUowVzFTWXR4eWV2QlRQNjFlVzE4NTI5eWZlM3JtTlpjMFNfdTBrV3NFUzE0VjlpQkYxcndZR09hNlc1UGc1X3hFVDUwQ0w5TXVJeHdhcnZVTndIZzJBUDhWdVprdk5yNF9jdTB4ZVpRYmo4ZHl0Zk9WZmQwS0RfR0V3YXhRbnM?oc=5",
       "published_at": "2026-11-05T22:18:20+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -246,25 +246,9 @@
       "scope_date": "2026-11-05"
     },
     {
-      "headline": "Payton Pritchard is officially QUESTIONABLE for … - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRjBQamFZMXBUT3VvRFIyTEY4OWtGeldfcllQcUNqaUQ0YlpVYV9xR1V4ZnZVZ1VmLWtRcS0yZ0pzODlfNF9PdWlnYllGMlFFd2xIVUZrYmJ4MXVrVmh5d3VUakt6NnQxYTBxNmhlV1p4NWQyd2VldVIzYlZFN1lGcmlaSi0wZ2hNRFJHSFluUHhXVm8?oc=5",
-      "published_at": "2026-11-05T21:44:55+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
       "headline": "Payton Pritchard Injury: Listed as questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaFl5bkRKMUpkNEp6c08xdmR5bTctYk9FVm1HZlRLLTBpSUN0b3ZBb2JQVXlZRlk2OWNwaERUMjV5eExSaExUT3BkY1YzTEllZXdnMURWdkh1dmd3Wjg1QU9vaUpwNGc5RDNqTEdqbzlJWkc4Y2JTSUJyRVJWdDJUblVfY3hCMmVaOV96WU81cXdqSm9VQ0xTQ2ZJSnh4VWZp?oc=5",
       "published_at": "2026-11-05T21:09:56+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Week 9 Fantasy Football: WRs To Start Stream of Fantasy Football - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNV05KOG56X1VkTWROc050eXNwNmREdXNhVlJMRFh5LWFrMEVVcFJZeGhoaVNSYWx1eFBIUnlmQWNORUc4ajFiN1hqT1pRLURHYUxId3BBMTVhREJzcjEyNlZ6akJuaW5pN2F1ZGh0SVI4VWNXMGRkcnc5UmVYUnBjTC1PcVQxMmFUQ1E?oc=5",
-      "published_at": "2026-11-05T19:51:10+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
@@ -409,14 +393,6 @@
       "headline": "Kings' Loss to Lakers Raises New Rotation Questions - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVFFuWTdLNmRWQVZmZ0I3SU1zTDl1YzhVWG5rNHF0YTJXWlRhLUFhN2tCSmJWY2N4TDdRMFlheW9JXzZqdFZRQkNrUnRiXzB1cmJRcWRrc0t3QjZnT0NPdHRKa2lpbUE3alZoNkZobDU4UmlUdjJQUlg5YWUyWGJRbkpUS1pTYWdiTUJFdA?oc=5",
       "published_at": "2026-11-05T06:07:40+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-05"
-    },
-    {
-      "headline": "Hornets’ Anticipated Starting Lineup Following Knueppel, White Injury News - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNWdYVTlYX25QeHA5U3ZIQ0tWUzBud1hBMHhsTDhxUlBZTE1Cc0hZQlp6ZExUc3AxWmk1YVVsSmxqc1ozOHZyS1FZNmFjbUhIZ2NndFpSN0tFM3doNkhZNmpxcFBvX3JUYXBXSm1hMjNWY3ZlZFFWVWNfVUpBdlpnakVXWkdSUkVvS25UZkhtMlVSM0RoblpjVlhB?oc=5",
-      "published_at": "2026-11-05T03:17:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-05"
