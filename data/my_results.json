@@ -307,6 +307,26 @@
      "won": 0.0
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "slate": "Single game ORL @ PHX",
+   "entry": "143 lineups (best: Wagner, Bridges, Brooks, Green, Carter, Gillespie)",
+   "score": 242.95,
+   "final": true,
+   "note": "From the results screenshot: $200 Thu NBA Piggy Bank Shot (single game ORL @ PHX), best lineup 242.95 placed 359th of 4,207; minimum cash 228.75.",
+   "contests": [
+    {
+     "name": "$200 Thu NBA Piggy Bank Shot (single game ORL @ PHX)",
+     "entries": 143,
+     "fee": 7.15,
+     "won": 17.16,
+     "field_entries": 4207,
+     "best_place": 359,
+     "min_cash": 228.75,
+     "prize_pool": 200
+    }
+   ]
   }
  ]
 }

@@ -592,7 +592,14 @@ SINGLE_CATALOG = [
      'field': 'casual', 'kind': 'gpp', 'share': 0.22, 'rake': 0.156, 'max': 20, 'entries': 3000},
     {'id': 'shot', 'name': 'Big single-game tournament (150 max)', 'examples': 'large single-game tournaments', 'fees': [0.25, 1],
      'field': 'sharp', 'kind': 'gpp', 'share': 0.22, 'rake': 0.15, 'max': 150, 'entries': 20000},
+    # Seen Nov 5 (ORL @ PHX): $200 prize pool, 4,207 entries x $0.05 = $210.35 collected, so FanDuel's
+    # cut was ~5%; minimum cash 228.75.
+    {'id': 'penny', 'name': 'Single-game Piggy Bank Shot', 'examples': '$0.05, 150 max (~4,200 entries, $200 prizes)', 'fees': [0.05],
+     'field': 'sharp', 'kind': 'gpp', 'share': 0.22, 'rake': 0.05, 'max': 150, 'entries': 4200},
 ]
+# Single-game results you've sent, for calibrating single-game odds once there are enough.
+SINGLE_OBSERVED = {'2026-11-05 ORL @ PHX': {'contest': 'Piggy Bank Shot', 'entries': 4207, 'min_cash': 228.75,
+                                            'nba_edge_best': 242.95, 'best_place': 359, 'lineups': 143, 'fees': 7.15, 'won': 17.16}}
 SIDE_FIELD = 600
 
 
@@ -738,7 +745,7 @@ def other_plans(today, corr, shift, soft, prev):
         if tips and min(tips) <= now and key in prev:
             plans[key] = prev[key]
             continue
-        sig = hashlib.sha1(json.dumps(['slate-plan-v2', key, fmt, corr, shift, soft, plan_strategies()] +
+        sig = hashlib.sha1(json.dumps(['slate-plan-v3', key, fmt, corr, shift, soft, plan_strategies()] +
                                       [[p['name'], p['team'], p['salary'], round(p['proj'], 1), round(p.get('own') or 0)] for p in pool]).encode()).hexdigest()
         if prev.get(key, {}).get('sig') == sig:
             plans[key] = prev[key]
