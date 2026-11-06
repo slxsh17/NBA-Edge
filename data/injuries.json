@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T00:22:56.570414+00:00",
+  "updated_at": "2026-11-06T01:44:39.918034+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -243,9 +243,9 @@
       "status": "OUT"
     },
     {
-      "name": "Adou Thiero",
+      "name": "Sandro Mamukelashvili",
       "team": "LAL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Isaiah Stewart",
@@ -393,11 +393,6 @@
       "status": "OUT"
     },
     {
-      "name": "Daeqwon Plowden",
-      "team": "SAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Maxime Raynaud",
       "team": "SAC",
       "status": "OUT"
@@ -421,6 +416,11 @@
       "name": "Jayden Quaintance",
       "team": "SAS",
       "status": "OUT"
+    },
+    {
+      "name": "Scottie Barnes",
+      "team": "TOR",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kawhi Leonard",
