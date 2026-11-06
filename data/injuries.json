@@ -1,7 +1,12 @@
 {
-  "updated_at": "2026-11-06T21:44:53.279400+00:00",
+  "updated_at": "2026-11-06T22:25:21.352022+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
+    {
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "status": "OUT"
+    },
     {
       "name": "Keshon Gilbert",
       "team": "ATL",
@@ -16,11 +21,6 @@
       "name": "Jock Landale",
       "team": "ATL",
       "status": "OUT"
-    },
-    {
-      "name": "Jalen Johnson",
-      "team": "ATL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mouhamed Gueye",
@@ -163,14 +163,14 @@
       "status": "OUT"
     },
     {
-      "name": "Gui Santos",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Kristaps Porzingis",
       "team": "GSW",
       "status": "OUT"
+    },
+    {
+      "name": "Gui Santos",
+      "team": "GSW",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Moses Moody",
@@ -275,7 +275,7 @@
     {
       "name": "Josh Hart",
       "team": "NYK",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jaylin Williams",
