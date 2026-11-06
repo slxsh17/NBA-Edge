@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T09:42:14.477045-05:00",
+  "updated_at": "2026-11-06T10:34:32.694052-05:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 52,
@@ -86,16 +86,6 @@
       "avg_points": 32.0
     },
     {
-      "id": "4433134",
-      "name": "Scottie Barnes",
-      "team": "TOR",
-      "games": 4,
-      "avg_minutes": 36.2,
-      "avg_fantasy_points": 48.4,
-      "fantasy_points_per_minute": 1.334,
-      "avg_points": 27.2
-    },
-    {
       "id": "6583",
       "name": "Anthony Davis",
       "team": "WSH",
@@ -104,6 +94,16 @@
       "avg_fantasy_points": 48.3,
       "fantasy_points_per_minute": 1.479,
       "avg_points": 26.0
+    },
+    {
+      "id": "4433134",
+      "name": "Scottie Barnes",
+      "team": "TOR",
+      "games": 4,
+      "avg_minutes": 36.2,
+      "avg_fantasy_points": 48.1,
+      "fantasy_points_per_minute": 1.327,
+      "avg_points": 27.2
     },
     {
       "id": "3936299",
@@ -166,6 +166,16 @@
       "avg_points": 28.3
     },
     {
+      "id": "4065733",
+      "name": "Ty Jerome",
+      "team": "MEM",
+      "games": 2,
+      "avg_minutes": 33.0,
+      "avg_fantasy_points": 43.9,
+      "fantasy_points_per_minute": 1.33,
+      "avg_points": 31.5
+    },
+    {
       "id": "4433136",
       "name": "Walker Kessler",
       "team": "LAL",
@@ -204,16 +214,6 @@
       "avg_fantasy_points": 43.4,
       "fantasy_points_per_minute": 1.119,
       "avg_points": 19.8
-    },
-    {
-      "id": "4065733",
-      "name": "Ty Jerome",
-      "team": "MEM",
-      "games": 2,
-      "avg_minutes": 33.0,
-      "avg_fantasy_points": 43.4,
-      "fantasy_points_per_minute": 1.315,
-      "avg_points": 31.5
     },
     {
       "id": "4065648",
@@ -676,6 +676,16 @@
       "avg_points": 19.0
     },
     {
+      "id": "3149673",
+      "name": "Pascal Siakam",
+      "team": "IND",
+      "games": 3,
+      "avg_minutes": 31.7,
+      "avg_fantasy_points": 32.2,
+      "fantasy_points_per_minute": 1.016,
+      "avg_points": 16.7
+    },
+    {
       "id": "5174563",
       "name": "Kyshawn George",
       "team": "WSH",
@@ -714,16 +724,6 @@
       "avg_fantasy_points": 32.0,
       "fantasy_points_per_minute": 0.928,
       "avg_points": 16.5
-    },
-    {
-      "id": "3149673",
-      "name": "Pascal Siakam",
-      "team": "IND",
-      "games": 3,
-      "avg_minutes": 31.7,
-      "avg_fantasy_points": 31.8,
-      "fantasy_points_per_minute": 1.003,
-      "avg_points": 16.7
     },
     {
       "id": "4869342",
@@ -5219,8 +5219,8 @@
       "ast": 3.0,
       "stl": 0.0,
       "blk": 1.0,
-      "tov": 4.0,
-      "fantasy_points": 31.3
+      "tov": 3.0,
+      "fantasy_points": 32.3
     },
     {
       "id": "4431734",
@@ -5564,8 +5564,8 @@
       "ast": 6.0,
       "stl": 3.0,
       "blk": 0.0,
-      "tov": 5.0,
-      "fantasy_points": 37.2
+      "tov": 6.0,
+      "fantasy_points": 36.2
     },
     {
       "id": "4683678",
@@ -5980,12 +5980,12 @@
       "event_id": "401909927",
       "minutes": 30.0,
       "pts": 20.0,
-      "reb": 4.0,
+      "reb": 5.0,
       "ast": 2.0,
       "stl": 2.0,
       "blk": 1.0,
       "tov": 0.0,
-      "fantasy_points": 36.8
+      "fantasy_points": 38.0
     },
     {
       "id": "5211983",
