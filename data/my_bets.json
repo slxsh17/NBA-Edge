@@ -1,0 +1,22 @@
+{
+ "schema": 1,
+ "note": "Real bets the user reports (not the paper props tracker).",
+ "bets": [
+  {
+   "date": "2026-11-05",
+   "platform": "Kalshi",
+   "type": "combo (2 markets)",
+   "legs": [
+    "NBA ORL @ PHX: No, Jase Richardson 10+ points (finished with 10)",
+    "NFL JAX vs BAL: Trevor Lawrence 200+ passing yards (had 242)"
+   ],
+   "cost": 14.99,
+   "max_payout": 33.76,
+   "result": "cashed out",
+   "returned": 23.79,
+   "profit": 8.8,
+   "note": "Cashed out at 10:40 left in the 4th (Richardson at 5 pts); he finished with exactly 10, so holding would have lost."
+  }
+ ],
+ "total_profit": 8.8
+}
