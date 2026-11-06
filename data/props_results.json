@@ -1,62 +1,62 @@
 {
  "schema": 1,
- "updated_at": "2026-11-06T06:06:31+00:00",
+ "updated_at": "2026-11-06T06:39:08+00:00",
  "status": "ok",
  "paper_only": true,
- "nights": 2,
- "lines_graded": 287,
+ "nights": 3,
+ "lines_graded": 359,
  "picks": {
-  "n": 69,
+  "n": 73,
   "wins": 37,
-  "losses": 32,
+  "losses": 36,
   "pushes": 0,
-  "units": 0.92,
-  "roi": 0.0133,
-  "hit_rate": 0.5362,
-  "avg_breakeven": 0.5315
+  "units": -3.08,
+  "roi": -0.0422,
+  "hit_rate": 0.5068,
+  "avg_breakeven": 0.5312
  },
  "brier": {
-  "nba_edge": 0.2587,
-  "fanduel_no_vig": 0.2514,
-  "blend": 0.2519
+  "nba_edge": 0.2606,
+  "fanduel_no_vig": 0.2502,
+  "blend": 0.2526
  },
  "blend": {
-  "w": 0.2,
-  "brier": 0.2507,
-  "brier_at_0.5": 0.2519,
-  "lines": 287,
-  "in_use": 0.5
+  "w": 0.05,
+  "brier": 0.2502,
+  "brier_at_0.5": 0.2526,
+  "lines": 359,
+  "in_use": 0.05
  },
  "calibration": [
   {
    "range": "0.0-0.3",
-   "n": 19,
-   "predicted": 0.239,
-   "actual": 0.526
+   "n": 21,
+   "predicted": 0.244,
+   "actual": 0.571
   },
   {
    "range": "0.3-0.4",
-   "n": 66,
-   "predicted": 0.355,
-   "actual": 0.409
+   "n": 85,
+   "predicted": 0.357,
+   "actual": 0.447
   },
   {
    "range": "0.4-0.5",
-   "n": 123,
-   "predicted": 0.45,
-   "actual": 0.463
+   "n": 156,
+   "predicted": 0.451,
+   "actual": 0.462
   },
   {
    "range": "0.5-0.6",
-   "n": 57,
-   "predicted": 0.546,
-   "actual": 0.404
+   "n": 74,
+   "predicted": 0.543,
+   "actual": 0.392
   },
   {
    "range": "0.6-0.7",
-   "n": 21,
+   "n": 22,
    "predicted": 0.626,
-   "actual": 0.333
+   "actual": 0.364
   },
   {
    "range": "0.7-1.0",
@@ -66,58 +66,6 @@
   }
  ],
  "recent_picks": [
-  {
-   "date": "2026-11-02",
-   "player": "P.J. Washington",
-   "stat": "pts",
-   "line": 14.5,
-   "side": "under",
-   "price": -104,
-   "prob": 0.576,
-   "breakeven": 0.5098,
-   "actual": 12.0,
-   "result": "win",
-   "units": 0.962
-  },
-  {
-   "date": "2026-11-02",
-   "player": "De'Andre Hunter",
-   "stat": "pts",
-   "line": 14.5,
-   "side": "under",
-   "price": -120,
-   "prob": 0.6365,
-   "breakeven": 0.5455,
-   "actual": 6.0,
-   "result": "win",
-   "units": 0.833
-  },
-  {
-   "date": "2026-11-02",
-   "player": "Max Christie",
-   "stat": "pts",
-   "line": 9.5,
-   "side": "over",
-   "price": -115,
-   "prob": 0.6874,
-   "breakeven": 0.5349,
-   "actual": 0.0,
-   "result": "loss",
-   "units": -1.0
-  },
-  {
-   "date": "2026-11-02",
-   "player": "Zaccharie Risacher",
-   "stat": "pts",
-   "line": 10.5,
-   "side": "over",
-   "price": 100,
-   "prob": 0.6258,
-   "breakeven": 0.5,
-   "actual": 0.0,
-   "result": "loss",
-   "units": -1.0
-  },
   {
    "date": "2026-11-02",
    "player": "Marcus Sasser",
@@ -583,6 +531,58 @@
    "prob": 0.5848,
    "breakeven": 0.5261,
    "actual": 21.0,
+   "result": "loss",
+   "units": -1.0
+  },
+  {
+   "date": "2026-11-05",
+   "player": "Jase Richardson",
+   "stat": "pts",
+   "line": 8.5,
+   "side": "under",
+   "price": -113,
+   "prob": 0.6126,
+   "breakeven": 0.5305,
+   "actual": 10.0,
+   "result": "loss",
+   "units": -1.0
+  },
+  {
+   "date": "2026-11-05",
+   "player": "Wendell Carter Jr",
+   "stat": "reb",
+   "line": 9.5,
+   "side": "under",
+   "price": -128,
+   "prob": 0.6201,
+   "breakeven": 0.5614,
+   "actual": 13.0,
+   "result": "loss",
+   "units": -1.0
+  },
+  {
+   "date": "2026-11-05",
+   "player": "Anthony Black",
+   "stat": "reb",
+   "line": 4.5,
+   "side": "under",
+   "price": -104,
+   "prob": 0.5647,
+   "breakeven": 0.5098,
+   "actual": 7.0,
+   "result": "loss",
+   "units": -1.0
+  },
+  {
+   "date": "2026-11-05",
+   "player": "Will Richard",
+   "stat": "pts",
+   "line": 5.5,
+   "side": "under",
+   "price": -102,
+   "prob": 0.5568,
+   "breakeven": 0.505,
+   "actual": 10.0,
    "result": "loss",
    "units": -1.0
   }

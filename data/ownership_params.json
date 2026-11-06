@@ -1,15 +1,15 @@
 {
  "schema": 1,
- "updated_at": "2026-11-05T06:01:36+00:00",
+ "updated_at": "2026-11-06T06:20:59+00:00",
  "params": {
   "field_noise": 0.1,
   "consensus_w": 1.0,
   "field_mix": 0.8,
   "chalk_power": 0.8,
   "external_w": 0.5,
-  "mention_w": 0.0
+  "mention_w": 0.1
  },
- "decision": "Kept current settings: refit didn't beat them on 2026-11-04 (2.8 vs 2.7).",
+ "decision": "Adopted: on 2026-11-05 (held out) ownership missed by 3.1 points vs 3.5 before.",
  "days_used": [
   "2026-10-20",
   "2026-10-21",
@@ -25,7 +25,8 @@
   "2026-10-31",
   "2026-11-01",
   "2026-11-02",
-  "2026-11-04"
+  "2026-11-04",
+  "2026-11-05"
  ],
  "single_params": {
   "field_noise": 0.32,
@@ -44,25 +45,25 @@
   }
  },
  "single_eval": {
-  "decision": "Kept single-game settings: refit didn't beat them on 2026-11-04 (10.6 vs 10.6).",
-  "slates": 27,
-  "full_pool_slates": 9,
-  "heldout_day": "2026-11-04",
-  "heldout_current": 10.55,
-  "heldout_fitted": 10.55,
-  "heldout_main_settings": 21.63,
-  "linestar_heldout": 9.51,
-  "avg_miss_all": 7.47,
-  "heldout_without_linestar": 13.49
+  "decision": "Kept single-game settings: refit didn't beat them on 2026-11-05 (6.7 vs 6.6).",
+  "slates": 29,
+  "full_pool_slates": 11,
+  "heldout_day": "2026-11-05",
+  "heldout_current": 6.63,
+  "heldout_fitted": 6.73,
+  "heldout_main_settings": 7.67,
+  "linestar_heldout": 8.5,
+  "avg_miss_all": 7.41,
+  "heldout_without_linestar": 9.53
  },
  "evaluation": {
-  "days": 13,
-  "players": 1432,
+  "days": 14,
+  "players": 1466,
   "avg_miss_all_days": 2.94,
-  "heldout_day": "2026-11-04",
-  "heldout_current": 2.71,
-  "heldout_fitted": 2.82,
-  "linestar_heldout": 3.13
+  "heldout_day": "2026-11-05",
+  "heldout_current": 3.48,
+  "heldout_fitted": 3.1,
+  "linestar_heldout": 4.37
  },
  "log": [
   {
@@ -191,6 +192,18 @@
     "chalk_power": 0.8,
     "external_w": 0.5,
     "mention_w": 0.0
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "adopted": true,
+   "params": {
+    "field_noise": 0.1,
+    "consensus_w": 1.0,
+    "field_mix": 0.8,
+    "chalk_power": 0.8,
+    "external_w": 0.5,
+    "mention_w": 0.1
    }
   }
  ],

@@ -1,78 +1,78 @@
 {
 "schema": 1,
-"updated_at": "2026-11-05T06:14:59+00:00",
+"updated_at": "2026-11-06T06:38:06+00:00",
 "calibration": {
-"sd_scale": 1.026,
-"shift_classic": -1.89,
-"shift_single": 0.55
+"sd_scale": 1.023,
+"shift_classic": -1.38,
+"shift_single": 0.8
 },
-"calibration_players": 1722,
+"calibration_players": 1759,
 "summary": [
 {
 "format": "classic",
 "strategy": "cash",
-"slates": 13,
-"avg_actual": 303.6,
-"avg_proj": 325.3,
-"avg_pct_of_best": 69.5,
-"within_sim_range": 69,
-"below_range": 23,
-"above_range": 8
+"slates": 14,
+"avg_actual": 304.9,
+"avg_proj": 323.4,
+"avg_pct_of_best": 70.6,
+"within_sim_range": 71,
+"below_range": 21,
+"above_range": 7
 },
 {
 "format": "classic",
 "strategy": "sim_winner",
-"slates": 13,
-"avg_actual": 293.1,
-"avg_proj": 311.7,
-"avg_pct_of_best": 67.1,
-"within_sim_range": 77,
-"below_range": 15,
-"above_range": 8
+"slates": 14,
+"avg_actual": 298.4,
+"avg_proj": 310.7,
+"avg_pct_of_best": 69.2,
+"within_sim_range": 71,
+"below_range": 14,
+"above_range": 14
 },
 {
 "format": "classic",
 "strategy": "tournament",
-"slates": 13,
-"avg_actual": 299.8,
-"avg_proj": 310.5,
-"avg_pct_of_best": 68.4,
-"within_sim_range": 92,
+"slates": 14,
+"avg_actual": 302.9,
+"avg_proj": 309.4,
+"avg_pct_of_best": 70.0,
+"within_sim_range": 86,
 "below_range": 0,
-"above_range": 8
+"above_range": 14
 },
 {
 "format": "single",
 "strategy": "cash",
-"slates": 12,
-"avg_actual": 204.5,
-"avg_proj": 207.1,
-"avg_pct_of_best": 81.8,
-"within_sim_range": 92,
+"slates": 14,
+"avg_actual": 204.9,
+"avg_proj": 206.5,
+"avg_pct_of_best": 81.6,
+"within_sim_range": 93,
 "below_range": 0,
-"above_range": 8
+"above_range": 7
 },
 {
 "format": "single",
 "strategy": "sim_winner",
-"slates": 12,
-"avg_actual": 209.2,
-"avg_proj": 205.7,
-"avg_pct_of_best": 83.7,
-"within_sim_range": 92,
+"slates": 14,
+"avg_actual": 211.4,
+"avg_proj": 205.2,
+"avg_pct_of_best": 84.2,
+"within_sim_range": 93,
 "below_range": 0,
-"above_range": 8
+"above_range": 7
 },
 {
 "format": "single",
 "strategy": "tournament",
-"slates": 12,
-"avg_actual": 207.8,
-"avg_proj": 205.6,
-"avg_pct_of_best": 83.1,
-"within_sim_range": 92,
+"slates": 14,
+"avg_actual": 209.7,
+"avg_proj": 205.2,
+"avg_pct_of_best": 83.6,
+"within_sim_range": 93,
 "below_range": 0,
-"above_range": 8
+"above_range": 7
 }
 ],
 "slates": [
@@ -8210,6 +8210,939 @@
 "slot": "UTIL",
 "proj": 29.22,
 "actual": 17.9
+}
+]
+}
+]
+},
+{
+"date": "2026-11-05",
+"slate": "main",
+"label": "Main slate",
+"format": "classic",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 378.7,
+"players": [
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "SF"
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "G/F"
+},
+{
+"name": "Bam Adebayo",
+"team": "MIA",
+"slot": "C"
+},
+{
+"name": "Devin Booker",
+"team": "PHX",
+"slot": "PG"
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "F/C"
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"slot": "PF"
+},
+{
+"name": "Dillon Brooks",
+"team": "PHX",
+"slot": "UTIL"
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "UTIL"
+},
+{
+"name": "Ryan Conwell",
+"team": "MIA",
+"slot": "SG"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 299.1,
+"actual": 322.1,
+"sim": {
+"p10": 224.7,
+"p50": 280.6,
+"p90": 339.6,
+"mean": 281.1
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jalen Green",
+"proj": 28.58,
+"actual": 14.5
+},
+{
+"name": "Brandin Podziemski",
+"proj": 31.85,
+"actual": 25.7
+}
+],
+"boosts": [
+{
+"name": "Miles Bridges",
+"proj": 31.51,
+"actual": 46.1
+},
+{
+"name": "Franz Wagner",
+"proj": 40.12,
+"actual": 53.1
+}
+],
+"players": [
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "PG",
+"proj": 40.84,
+"actual": 39.2
+},
+{
+"name": "Jalen Green",
+"team": "PHX",
+"slot": "SG",
+"proj": 28.58,
+"actual": 14.5
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "SF",
+"proj": 40.12,
+"actual": 53.1
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"slot": "PF",
+"proj": 31.51,
+"actual": 46.1
+},
+{
+"name": "Bam Adebayo",
+"team": "MIA",
+"slot": "C",
+"proj": 38.42,
+"actual": 36.0
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "G/F",
+"proj": 36.19,
+"actual": 45.6
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "F/C",
+"proj": 23.33,
+"actual": 27.5
+},
+{
+"name": "Brandin Podziemski",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 31.85,
+"actual": 25.7
+},
+{
+"name": "Davion Mitchell",
+"team": "MIA",
+"slot": "UTIL",
+"proj": 28.26,
+"actual": 34.4
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 294.9,
+"actual": 343.3,
+"sim": {
+"p10": 222.1,
+"p50": 276.3,
+"p90": 335.2,
+"mean": 277.3
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Bam Adebayo",
+"proj": 38.42,
+"actual": 36.0
+},
+{
+"name": "Klay Thompson",
+"proj": 20.27,
+"actual": 18.5
+}
+],
+"boosts": [
+{
+"name": "Miles Bridges",
+"proj": 31.51,
+"actual": 46.1
+},
+{
+"name": "Franz Wagner",
+"proj": 40.12,
+"actual": 53.1
+}
+],
+"players": [
+{
+"name": "Devin Booker",
+"team": "PHX",
+"slot": "PG",
+"proj": 36.8,
+"actual": 49.2
+},
+{
+"name": "De'Anthony Melton",
+"team": "GSW",
+"slot": "SG",
+"proj": 22.52,
+"actual": 21.2
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "SF",
+"proj": 40.12,
+"actual": 53.1
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"slot": "PF",
+"proj": 31.51,
+"actual": 46.1
+},
+{
+"name": "Bam Adebayo",
+"team": "MIA",
+"slot": "C",
+"proj": 38.42,
+"actual": 36.0
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "G/F",
+"proj": 40.84,
+"actual": 39.2
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "F/C",
+"proj": 36.19,
+"actual": 45.6
+},
+{
+"name": "Davion Mitchell",
+"team": "MIA",
+"slot": "UTIL",
+"proj": 28.26,
+"actual": 34.4
+},
+{
+"name": "Klay Thompson",
+"team": "MIA",
+"slot": "UTIL",
+"proj": 20.27,
+"actual": 18.5
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 297.4,
+"actual": 366.5,
+"sim": {
+"p10": 224.2,
+"p50": 280.0,
+"p90": 335.8,
+"mean": 279.7
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Bam Adebayo",
+"proj": 38.42,
+"actual": 36.0
+},
+{
+"name": "Stephen Curry",
+"proj": 40.84,
+"actual": 39.2
+}
+],
+"boosts": [
+{
+"name": "Wendell Carter",
+"proj": 27.64,
+"actual": 48.6
+},
+{
+"name": "Miles Bridges",
+"proj": 31.51,
+"actual": 46.1
+}
+],
+"players": [
+{
+"name": "Devin Booker",
+"team": "PHX",
+"slot": "PG",
+"proj": 36.8,
+"actual": 49.2
+},
+{
+"name": "De'Anthony Melton",
+"team": "GSW",
+"slot": "SG",
+"proj": 22.52,
+"actual": 21.2
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "SF",
+"proj": 40.12,
+"actual": 53.1
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"slot": "PF",
+"proj": 31.51,
+"actual": 46.1
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "C",
+"proj": 27.64,
+"actual": 48.6
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "G/F",
+"proj": 40.84,
+"actual": 39.2
+},
+{
+"name": "Bam Adebayo",
+"team": "MIA",
+"slot": "F/C",
+"proj": 38.42,
+"actual": 36.0
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 36.19,
+"actual": 45.6
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 23.33,
+"actual": 27.5
+}
+]
+}
+]
+},
+{
+"date": "2026-11-05",
+"slate": "single:GSW@MIA",
+"label": "MIA @ GSW",
+"format": "single",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 231.7,
+"players": [
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "UTIL"
+},
+{
+"name": "Bam Adebayo",
+"team": "MIA",
+"slot": "UTIL"
+},
+{
+"name": "Davion Mitchell",
+"team": "MIA",
+"slot": "UTIL"
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL"
+},
+{
+"name": "Ryan Conwell",
+"team": "MIA",
+"slot": "UTIL"
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 208.4,
+"actual": 183.4,
+"sim": {
+"p10": 157.8,
+"p50": 210.7,
+"p90": 264.6,
+"mean": 210.9
+},
+"band": "within range",
+"busts": [
+{
+"name": "Giannis Antetokounmpo",
+"proj": 50.77,
+"actual": 38.8
+},
+{
+"name": "Brandin Podziemski",
+"proj": 31.85,
+"actual": 25.7
+}
+],
+"boosts": [
+{
+"name": "Draymond Green",
+"proj": 23.33,
+"actual": 27.5
+},
+{
+"name": "Al Horford",
+"proj": 15.46,
+"actual": 14.3
+}
+],
+"players": [
+{
+"name": "Giannis Antetokounmpo",
+"team": "MIA",
+"slot": "MVP",
+"proj": 50.77,
+"actual": 38.8
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 40.84,
+"actual": 39.2
+},
+{
+"name": "Brandin Podziemski",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 31.85,
+"actual": 25.7
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 23.33,
+"actual": 27.5
+},
+{
+"name": "Klay Thompson",
+"team": "MIA",
+"slot": "UTIL",
+"proj": 20.79,
+"actual": 18.5
+},
+{
+"name": "Al Horford",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 15.46,
+"actual": 14.3
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 207.6,
+"actual": 201.7,
+"sim": {
+"p10": 157.9,
+"p50": 209.4,
+"p90": 262.1,
+"mean": 210.2
+},
+"band": "within range",
+"busts": [
+{
+"name": "Giannis Antetokounmpo",
+"proj": 50.77,
+"actual": 38.8
+},
+{
+"name": "Brandin Podziemski",
+"proj": 31.85,
+"actual": 25.7
+}
+],
+"boosts": [
+{
+"name": "Yaxel Lendeborg",
+"proj": 36.19,
+"actual": 45.6
+},
+{
+"name": "Draymond Green",
+"proj": 23.33,
+"actual": 27.5
+}
+],
+"players": [
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "MVP",
+"proj": 23.33,
+"actual": 27.5
+},
+{
+"name": "Giannis Antetokounmpo",
+"team": "MIA",
+"slot": "UTIL",
+"proj": 50.77,
+"actual": 38.8
+},
+{
+"name": "Bam Adebayo",
+"team": "MIA",
+"slot": "UTIL",
+"proj": 38.31,
+"actual": 36.0
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 36.19,
+"actual": 45.6
+},
+{
+"name": "Brandin Podziemski",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 31.85,
+"actual": 25.7
+},
+{
+"name": "Al Horford",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 15.46,
+"actual": 14.3
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 207.2,
+"actual": 205.3,
+"sim": {
+"p10": 158.8,
+"p50": 209.7,
+"p90": 261.4,
+"mean": 209.8
+},
+"band": "within range",
+"busts": [
+{
+"name": "Brandin Podziemski",
+"proj": 31.85,
+"actual": 25.7
+},
+{
+"name": "Bam Adebayo",
+"proj": 38.31,
+"actual": 36.0
+}
+],
+"boosts": [
+{
+"name": "Yaxel Lendeborg",
+"proj": 36.19,
+"actual": 45.6
+},
+{
+"name": "Draymond Green",
+"proj": 23.33,
+"actual": 27.5
+}
+],
+"players": [
+{
+"name": "Brandin Podziemski",
+"team": "GSW",
+"slot": "MVP",
+"proj": 31.85,
+"actual": 25.7
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 40.84,
+"actual": 39.2
+},
+{
+"name": "Bam Adebayo",
+"team": "MIA",
+"slot": "UTIL",
+"proj": 38.31,
+"actual": 36.0
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 36.19,
+"actual": 45.6
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 23.33,
+"actual": 27.5
+},
+{
+"name": "Klay Thompson",
+"team": "MIA",
+"slot": "UTIL",
+"proj": 20.79,
+"actual": 18.5
+}
+]
+}
+]
+},
+{
+"date": "2026-11-05",
+"slate": "single:ORL@PHX",
+"label": "ORL @ PHX",
+"format": "single",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 281.9,
+"players": [
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "UTIL"
+},
+{
+"name": "Devin Booker",
+"team": "PHX",
+"slot": "UTIL"
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"slot": "UTIL"
+},
+{
+"name": "Dillon Brooks",
+"team": "PHX",
+"slot": "UTIL"
+},
+{
+"name": "Jase Richardson",
+"team": "ORL",
+"slot": "UTIL"
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 198.0,
+"actual": 230.2,
+"sim": {
+"p10": 150.7,
+"p50": 200.0,
+"p90": 250.8,
+"mean": 200.5
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jalen Green",
+"proj": 28.58,
+"actual": 14.5
+},
+{
+"name": "Collin Gillespie",
+"proj": 22.75,
+"actual": 19.4
+}
+],
+"boosts": [
+{
+"name": "Wendell Carter",
+"proj": 27.64,
+"actual": 48.6
+},
+{
+"name": "Franz Wagner",
+"proj": 40.12,
+"actual": 53.1
+}
+],
+"players": [
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "MVP",
+"proj": 40.12,
+"actual": 53.1
+},
+{
+"name": "Devin Booker",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 36.8,
+"actual": 49.2
+},
+{
+"name": "Jalen Green",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 28.58,
+"actual": 14.5
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 27.64,
+"actual": 48.6
+},
+{
+"name": "Collin Gillespie",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 22.75,
+"actual": 19.4
+},
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 22.03,
+"actual": 18.9
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 197.7,
+"actual": 239.8,
+"sim": {
+"p10": 151.0,
+"p50": 198.9,
+"p90": 249.5,
+"mean": 200.3
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jalen Green",
+"proj": 28.58,
+"actual": 14.5
+},
+{
+"name": "Tristan da Silva",
+"proj": 22.03,
+"actual": 18.9
+}
+],
+"boosts": [
+{
+"name": "Wendell Carter",
+"proj": 27.64,
+"actual": 48.6
+},
+{
+"name": "Miles Bridges",
+"proj": 31.51,
+"actual": 46.1
+}
+],
+"players": [
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "MVP",
+"proj": 22.03,
+"actual": 18.9
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 40.12,
+"actual": 53.1
+},
+{
+"name": "Devin Booker",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 36.8,
+"actual": 49.2
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 31.51,
+"actual": 46.1
+},
+{
+"name": "Jalen Green",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 28.58,
+"actual": 14.5
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 27.64,
+"actual": 48.6
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 197.2,
+"actual": 243.0,
+"sim": {
+"p10": 150.4,
+"p50": 199.2,
+"p90": 249.2,
+"mean": 199.8
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jalen Green",
+"proj": 28.58,
+"actual": 14.5
+},
+{
+"name": "Collin Gillespie",
+"proj": 22.75,
+"actual": 19.4
+}
+],
+"boosts": [
+{
+"name": "Wendell Carter",
+"proj": 27.64,
+"actual": 48.6
+},
+{
+"name": "Franz Wagner",
+"proj": 40.12,
+"actual": 53.1
+}
+],
+"players": [
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "MVP",
+"proj": 40.12,
+"actual": 53.1
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 31.51,
+"actual": 46.1
+},
+{
+"name": "Dillon Brooks",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 26.58,
+"actual": 34.7
+},
+{
+"name": "Jalen Green",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 28.58,
+"actual": 14.5
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 27.64,
+"actual": 48.6
+},
+{
+"name": "Collin Gillespie",
+"team": "PHX",
+"slot": "UTIL",
+"proj": 22.75,
+"actual": 19.4
 }
 ]
 }
