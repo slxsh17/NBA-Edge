@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T05:39:07.205527+00:00",
+  "updated_at": "2026-11-06T06:44:36.970893+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -170,7 +170,7 @@
     {
       "name": "Gui Santos",
       "team": "GSW",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kristaps Porzingis",
