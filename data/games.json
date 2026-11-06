@@ -1,19 +1,61 @@
 {
-  "date": "20261105",
-  "updated_at": "2026-11-05T23:43:44.663368-05:00",
+  "date": "20261106",
+  "updated_at": "2026-11-06T00:45:45.395735-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
-      "away": "Orlando Magic",
-      "home": "Phoenix Suns",
-      "time": "2026-11-06T02:00Z",
-      "status": "Final"
+      "away": "Washington Wizards",
+      "home": "Atlanta Hawks",
+      "time": "2026-11-07T00:00Z",
+      "status": "Scheduled"
     },
     {
-      "away": "Miami Heat",
-      "home": "Golden State Warriors",
-      "time": "2026-11-06T03:00Z",
-      "status": "In Progress"
+      "away": "Boston Celtics",
+      "home": "Charlotte Hornets",
+      "time": "2026-11-07T00:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Philadelphia 76ers",
+      "home": "Cleveland Cavaliers",
+      "time": "2026-11-07T00:30Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Utah Jazz",
+      "home": "Dallas Mavericks",
+      "time": "2026-11-07T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Oklahoma City Thunder",
+      "home": "Memphis Grizzlies",
+      "time": "2026-11-07T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Toronto Raptors",
+      "home": "Milwaukee Bucks",
+      "time": "2026-11-07T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Minnesota Timberwolves",
+      "home": "New Orleans Pelicans",
+      "time": "2026-11-07T01:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "Portland Trail Blazers",
+      "home": "Los Angeles Lakers",
+      "time": "2026-11-07T03:00Z",
+      "status": "Scheduled"
+    },
+    {
+      "away": "San Antonio Spurs",
+      "home": "Sacramento Kings",
+      "time": "2026-11-07T03:00Z",
+      "status": "Scheduled"
     }
   ]
 }
