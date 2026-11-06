@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T04:37:11.832898+00:00",
+  "updated_at": "2026-11-06T05:39:07.205527+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -363,14 +363,14 @@
       "status": "OUT"
     },
     {
-      "name": "Rasheer Fleming",
-      "team": "PHX",
-      "status": "OUT"
-    },
-    {
       "name": "Jordan Goodwin",
       "team": "PHX",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Rasheer Fleming",
+      "team": "PHX",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Mark Williams",
