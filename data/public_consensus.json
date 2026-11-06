@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-11-06",
-"updated_at": "2026-11-06T22:38:38+00:00",
+"updated_at": "2026-11-06T23:36:26+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 18,
@@ -31,7 +31,7 @@
 {
 "name": "Paul George",
 "team": "BOS",
-"fta_own": 58.0,
+"fta_own": 58.1,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -40,14 +40,25 @@
 "url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 58.0,
+"consensus_own": 58.1,
 "source_count": 2,
 "mention_count": 1
 },
 {
+"name": "Brandon Miller",
+"team": "CHA",
+"fta_own": 59.5,
+"linestar_own": null,
+"mentions": 0,
+"articles": [],
+"consensus_own": 59.5,
+"source_count": 1,
+"mention_count": 0
+},
+{
 "name": "Shai Gilgeous-Alexander",
 "team": "OKC",
-"fta_own": 37.0,
+"fta_own": 37.1,
 "linestar_own": null,
 "mentions": 2,
 "articles": [
@@ -60,31 +71,15 @@
 "url": "https://dknetwork.draftkings.com/2026/11/06/three-must-start-nba-dfs-picks-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 37.0,
+"consensus_own": 37.1,
 "source_count": 2,
 "mention_count": 2
-},
-{
-"name": "Collin Murray-Boyles",
-"team": "TOR",
-"fta_own": 39.3,
-"linestar_own": null,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
-}
-],
-"consensus_own": 39.3,
-"source_count": 2,
-"mention_count": 1
 },
 {
 "name": "Naz Reid",
 "team": "CHA",
 "fta_own": 60.1,
-"linestar_own": 12.7,
+"linestar_own": 15.2,
 "mentions": 1,
 "articles": [
 {
@@ -92,14 +87,30 @@
 "url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 36.4,
+"consensus_own": 37.6,
 "source_count": 3,
+"mention_count": 1
+},
+{
+"name": "Collin Murray-Boyles",
+"team": "TOR",
+"fta_own": 37.0,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
+}
+],
+"consensus_own": 37.0,
+"source_count": 2,
 "mention_count": 1
 },
 {
 "name": "LaMelo Ball",
 "team": "MIN",
-"fta_own": 34.6,
+"fta_own": 33.9,
 "linestar_own": null,
 "mentions": 1,
 "articles": [
@@ -108,34 +119,14 @@
 "url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 34.6,
+"consensus_own": 33.9,
 "source_count": 2,
 "mention_count": 1
 },
 {
-"name": "Immanuel Quickley",
-"team": "TOR",
-"fta_own": 29.3,
-"linestar_own": null,
-"mentions": 2,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
-},
-{
-"title": "Three must-start NBA DFS picks for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/06/three-must-start-nba-dfs-picks-for-friday-11-6-26/"
-}
-],
-"consensus_own": 29.3,
-"source_count": 2,
-"mention_count": 2
-},
-{
 "name": "Scottie Barnes",
 "team": "TOR",
-"fta_own": 24.1,
+"fta_own": 23.9,
 "linestar_own": null,
 "mentions": 3,
 "articles": [
@@ -152,57 +143,14 @@
 "url": "https://dknetwork.draftkings.com/2026/11/06/three-must-start-nba-dfs-picks-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 24.1,
+"consensus_own": 23.9,
 "source_count": 2,
 "mention_count": 3
 },
 {
-"name": "Jaden McDaniels",
-"team": "MIN",
-"fta_own": 28.4,
-"linestar_own": null,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
-}
-],
-"consensus_own": 28.4,
-"source_count": 2,
-"mention_count": 1
-},
-{
-"name": "Brandon Miller",
-"team": "CHA",
-"fta_own": 59.5,
-"linestar_own": 5.7,
-"mentions": 0,
-"articles": [],
-"consensus_own": 32.6,
-"source_count": 2,
-"mention_count": 0
-},
-{
-"name": "Cooper Flagg",
-"team": "DAL",
-"fta_own": 27.3,
-"linestar_own": null,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
-}
-],
-"consensus_own": 27.3,
-"source_count": 2,
-"mention_count": 1
-},
-{
-"name": "RJ Barrett",
+"name": "Immanuel Quickley",
 "team": "TOR",
-"fta_own": 21.4,
+"fta_own": 28.3,
 "linestar_own": null,
 "mentions": 2,
 "articles": [
@@ -215,46 +163,14 @@
 "url": "https://dknetwork.draftkings.com/2026/11/06/three-must-start-nba-dfs-picks-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 21.4,
+"consensus_own": 28.3,
 "source_count": 2,
 "mention_count": 2
 },
 {
-"name": "Aday Mara",
-"team": "OKC",
-"fta_own": 28.2,
-"linestar_own": 24.5,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
-}
-],
-"consensus_own": 26.4,
-"source_count": 3,
-"mention_count": 1
-},
-{
-"name": "Rudy Gobert",
-"team": "MIN",
-"fta_own": 25.1,
-"linestar_own": null,
-"mentions": 1,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
-}
-],
-"consensus_own": 25.1,
-"source_count": 2,
-"mention_count": 1
-},
-{
 "name": "Kyshawn George",
 "team": "WAS",
-"fta_own": 18.7,
+"fta_own": 24.4,
 "linestar_own": null,
 "mentions": 2,
 "articles": [
@@ -267,18 +183,102 @@
 "url": "https://dknetwork.draftkings.com/2026/11/06/fantasy-basketball-value-picks-top-draftkings-nba-dfs-bargain-plays-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 18.7,
+"consensus_own": 24.4,
 "source_count": 2,
 "mention_count": 2
 },
 {
+"name": "Cooper Flagg",
+"team": "DAL",
+"fta_own": 28.7,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
+}
+],
+"consensus_own": 28.7,
+"source_count": 2,
+"mention_count": 1
+},
+{
+"name": "Jaden McDaniels",
+"team": "MIN",
+"fta_own": 27.2,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
+}
+],
+"consensus_own": 27.2,
+"source_count": 2,
+"mention_count": 1
+},
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"fta_own": 21.6,
+"linestar_own": null,
+"mentions": 2,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
+},
+{
+"title": "Three must-start NBA DFS picks for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/06/three-must-start-nba-dfs-picks-for-friday-11-6-26/"
+}
+],
+"consensus_own": 21.6,
+"source_count": 2,
+"mention_count": 2
+},
+{
+"name": "Rudy Gobert",
+"team": "MIN",
+"fta_own": 24.9,
+"linestar_own": null,
+"mentions": 1,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
+}
+],
+"consensus_own": 24.9,
+"source_count": 2,
+"mention_count": 1
+},
+{
+"name": "Aday Mara",
+"team": "OKC",
+"fta_own": 25.4,
+"linestar_own": 24.0,
+"mentions": 1,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
+}
+],
+"consensus_own": 24.7,
+"source_count": 3,
+"mention_count": 1
+},
+{
 "name": "Dyson Daniels",
 "team": "ATL",
-"fta_own": 23.0,
+"fta_own": 21.8,
 "linestar_own": null,
 "mentions": 0,
 "articles": [],
-"consensus_own": 23.0,
+"consensus_own": 21.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -299,10 +299,30 @@
 "mention_count": 1
 },
 {
+"name": "Grayson Allen",
+"team": "CHA",
+"fta_own": null,
+"linestar_own": 3.7,
+"mentions": 2,
+"articles": [
+{
+"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
+},
+{
+"title": "Three must-start NBA DFS picks for Friday 11/6/26",
+"url": "https://dknetwork.draftkings.com/2026/11/06/three-must-start-nba-dfs-picks-for-friday-11-6-26/"
+}
+],
+"consensus_own": 3.7,
+"source_count": 2,
+"mention_count": 2
+},
+{
 "name": "Kenrich Williams",
 "team": "OKC",
 "fta_own": null,
-"linestar_own": 7.4,
+"linestar_own": 7.6,
 "mentions": 1,
 "articles": [
 {
@@ -310,7 +330,7 @@
 "url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 7.4,
+"consensus_own": 7.6,
 "source_count": 2,
 "mention_count": 1
 },
@@ -356,26 +376,6 @@
 },
 {
 "name": "Coby White",
-"team": "CHA",
-"fta_own": null,
-"linestar_own": null,
-"mentions": 2,
-"articles": [
-{
-"title": "Top DraftKings NBA DFS Targets, Values for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
-},
-{
-"title": "Three must-start NBA DFS picks for Friday 11/6/26",
-"url": "https://dknetwork.draftkings.com/2026/11/06/three-must-start-nba-dfs-picks-for-friday-11-6-26/"
-}
-],
-"consensus_own": null,
-"source_count": 1,
-"mention_count": 2
-},
-{
-"name": "Grayson Allen",
 "team": "CHA",
 "fta_own": null,
 "linestar_own": null,
@@ -478,7 +478,7 @@
 "name": "Zach Edey",
 "team": "MEM",
 "fta_own": null,
-"linestar_own": 4.1,
+"linestar_own": 3.4,
 "mentions": 1,
 "articles": [
 {
@@ -486,7 +486,7 @@
 "url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 4.1,
+"consensus_own": 3.4,
 "source_count": 2,
 "mention_count": 1
 },
@@ -494,7 +494,7 @@
 "name": "Brayden Burries",
 "team": "MIL",
 "fta_own": null,
-"linestar_own": 1.9,
+"linestar_own": 2.2,
 "mentions": 1,
 "articles": [
 {
@@ -502,7 +502,7 @@
 "url": "https://dknetwork.draftkings.com/2026/11/05/fantasy-basketball-picks-top-draftkings-nba-dfs-targets-values-for-friday-11-6-26/"
 }
 ],
-"consensus_own": 1.9,
+"consensus_own": 2.2,
 "source_count": 2,
 "mention_count": 1
 },
@@ -510,10 +510,10 @@
 "name": "Ace Bailey",
 "team": "UTA",
 "fta_own": null,
-"linestar_own": 6.3,
+"linestar_own": 5.8,
 "mentions": 0,
 "articles": [],
-"consensus_own": 6.3,
+"consensus_own": 5.8,
 "source_count": 1,
 "mention_count": 0
 },
@@ -1017,10 +1017,10 @@
 "name": "Jaxson Hayes",
 "team": "UTA",
 "fta_own": null,
-"linestar_own": 4.6,
+"linestar_own": 4.3,
 "mentions": 0,
 "articles": [],
-"consensus_own": 4.6,
+"consensus_own": 4.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -1028,10 +1028,10 @@
 "name": "Luguentz Dort",
 "team": "ATL",
 "fta_own": null,
-"linestar_own": 2.8,
+"linestar_own": 2.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 2.8,
+"consensus_own": 2.9,
 "source_count": 1,
 "mention_count": 0
 },
@@ -1039,10 +1039,10 @@
 "name": "Ryan Kalkbrenner",
 "team": "CHA",
 "fta_own": null,
-"linestar_own": 2.1,
+"linestar_own": 2.6,
 "mentions": 0,
 "articles": [],
-"consensus_own": 2.1,
+"consensus_own": 2.6,
 "source_count": 1,
 "mention_count": 0
 },
@@ -1061,10 +1061,10 @@
 "name": "Jaylen Wells",
 "team": "MEM",
 "fta_own": null,
-"linestar_own": 1.2,
+"linestar_own": 1.3,
 "mentions": 0,
 "articles": [],
-"consensus_own": 1.2,
+"consensus_own": 1.3,
 "source_count": 1,
 "mention_count": 0
 },
@@ -1072,10 +1072,10 @@
 "name": "Sion James",
 "team": "CHA",
 "fta_own": null,
-"linestar_own": 0.6,
+"linestar_own": 0.5,
 "mentions": 0,
 "articles": [],
-"consensus_own": 0.6,
+"consensus_own": 0.5,
 "source_count": 1,
 "mention_count": 0
 }
@@ -1085,54 +1085,54 @@
 {
 "name": "Naz Reid",
 "team": "CHA",
-"own": 34.6
-},
-{
-"name": "Brandon Miller",
-"team": "CHA",
-"own": 32.2
+"own": 36.1
 },
 {
 "name": "Neemias Queta",
 "team": "BOS",
-"own": 31.6
+"own": 33.1
+},
+{
+"name": "Grayson Allen",
+"team": "CHA",
+"own": 26.3
 },
 {
 "name": "Ryan Kalkbrenner",
 "team": "CHA",
-"own": 17.9
+"own": 16.6
 },
 {
 "name": "Sion James",
 "team": "CHA",
-"own": 13.7
+"own": 12.6
 }
 ],
 "MEM@OKC": [
 {
 "name": "Aday Mara",
 "team": "OKC",
-"own": 39.9
+"own": 41.0
 },
 {
 "name": "Kenrich Williams",
 "team": "OKC",
-"own": 32.1
+"own": 31.8
 },
 {
 "name": "Zach Edey",
 "team": "MEM",
-"own": 29.5
+"own": 29.2
 },
 {
 "name": "Cam Spencer",
 "team": "MEM",
-"own": 23.9
+"own": 24.0
 },
 {
 "name": "Jaylen Wells",
 "team": "MEM",
-"own": 9.2
+"own": 10.0
 }
 ],
 "LAL@POR": [
@@ -1154,7 +1154,7 @@
 {
 "name": "Matisse Thybulle",
 "team": "LAL",
-"own": 23.3
+"own": 22.4
 },
 {
 "name": "Ziaire Williams",
