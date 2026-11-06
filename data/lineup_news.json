@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-06T13:34:40.252623+00:00",
+  "checked_at": "2026-11-06T14:42:12.953924+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -22,9 +22,25 @@
   ],
   "headlines": [
     {
-      "headline": "From limited minutes to leading the way: UC Davis guard Connor Sevilla’s journey - FOX40",
-      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdWtwOURVTFExUXRCOHNQcS1aSzliV2tqOFZNZGJCOXVkb0lmRGVOa0lPd1pyODVGdHRnUV9fQ0dpRDdjQXI3MURJbzJEV01MdXdmYmFpYTdneXM4WVZMc0h1dE9qNnNSdXJaOGN0Yk80VUIxWjNqRkNQRmNKLUs1R1RDdnNVSzJvSm16YnVOc0w3eE5jbXYxS25Zd2Z4M1hhc0tCdHdWVW5kRjVUdExTYzV6WjVVNkE4UXZHTdIBwgFBVV95cUxNOEgwVmwzSW1YVTR0eUVxd3pLWGRCVGdqWnRvNkd1Nl9vcDNDeGxVU3JQNGo3Wk1zYndJRzRlc0lpZnAwT3VxZmNXYnVaX3cxbmJZUTlNQXpESWNQZ1ZHbUFsanBLWjdoRnQtX2Y1SlhhU3ktZ281UWJRT29obXM2ZnJCVjBjelhXd3hMYXdfSnpCSW44VnkzTUxxVFc3YmRhLVdISzRHVC1SR2gxVFdCdi1XeFc2dzU1aUpqOC1QT1VBQQ?oc=5",
-      "published_at": "2026-11-06T04:50:08+00:00",
+      "headline": "Projecting the Hawks Starting Lineup and Rotation If Jalen Johnson Misses Tonight's Game vs the Wizards - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdHU3N19FeE1NRTlSc2I0THNHbEtWb2FxSkgyS1p6M3RoNW1WM0VTRlZjbkdodG9xXzdQYTZqcnFTT0VEeGVCeTRxYUp6NE9YTkRLYmpzNTdGb2FhS1BlTTJvWmx0a0s5ZkxBeDRZYjd0VTU0LVVmbVByQWJIaWdldVFKU0xIUkZKSGMwRTgyNWtCeFN2N21xd2NsQ2p6dWxlQmJtUzMxbzkzcWZQU00zdkx4MWdqSEdGNjl0LXVuZGlVQkwyLWlIb2xLOFAyeTM1VnRoaFJTeWFaN3NoV0gtYkNpNFY?oc=5",
+      "published_at": "2026-11-06T14:00:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "CV Lakers To Make Debut Friday Night with Bronny James Expected to Start - MyNewsLA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWDJZbXlDTEk4VF9xcjdOR1cweXpJcjZGRXRWM1FwZUo4cFRYRG9XRTVRMHFsTFRTZTRBelF4QmFMbGNfX1NRUmdIWFUwTE15ZXdqVi04N0U5ZGhiTVpMNVhFaWtrRkZWQmdTa3NucHZ1c2NkZXdiV2ZQSVJuQ1QwSlBqaVVIbWtEV0ZrZVVmVWxIcDgtSUpIUDRhc1RaVzJ3bHd0VE11bmhzSEtRbUkyeE5mRjQ5OW1s?oc=5",
+      "published_at": "2026-11-06T07:42:15+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "From limited minutes to leading the way: UC Davis guard Connor Sevilla’s journey - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOaXFSN1hUYS1TUzhiSnNVY2xJTHZ5dkJIYWl3a0E1cWYzRXNsZWlMY3FQVjA1MDV0aXZZZUlVLUQyekRpcHpWaGgtblE5Nk9lMGRYZXlrQ0VQSzB1VDBiN3FlR3hweVMyZFN5WXljQjN0WnZhNDFJZElJSjh1T0w4aDQzNTdEdw?oc=5",
+      "published_at": "2026-11-06T04:50:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -46,17 +62,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "A key Lakers rotation player could miss Friday's game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPempMWlZnTXRTY3VnNlZIQ1pCMFZGUHp3NmtSa2cwNHRNYnBLdGlLcGMtZkVnXzVFZUlSYkNPd09SOTBNTHhIc0JoYV9xUU9wRGVhS21weE5aTTJtblJyM2J1ZmxSTmJRSXZacGNwVmxObVlid2ZQN1E4eVZ6bUh3bFowUUFvMDF4?oc=5",
+      "headline": "A key Lakers rotation player could miss Friday's game - Lakers Wire",
+      "source_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcWc2T0V2WDFyN1NoRUg4ZjBJWlBkcWkxTlRYWk9KWnRWR2lrMWN3ajJMVDJxVVo5aUR6Nk9UdmNUdTU4TDY4SjJLXzZYMUtxakNNWVRNYlRqR2ctOWlHd3hDRklJVmxNVDhlZDRFOF9mY1VQZUF2MkhGX0hjR3ROVGxpdUxCbTNjSE5ndEhfRGZpVUd4V3pVdzJqRndTelJmb1dGdl8weUpXMjhpaEIxeWZXMHdkY3h6dVNmRzBPV1U5WFVmaVZoYl9QRnQ?oc=5",
       "published_at": "2026-11-06T04:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "CV Lakers To Make Debut Friday Night with Bronny James Expected to Start - MyNewsLA.com",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNenQzZVAzSVhsdEpMMHhMVDJoNmtoeEh1ZEJCb0tUOEQ2cnJsLXdNcFBSS2YxTHhfc1FvOWFfTDNFT0FKaTBDS200MklmLVFCVFlFd1hudjl5clktWkpnczZreWRzRVdjRkRBczhRa3VVRW1wTWg3YWE0ZHZ6cXZ1dXJYMXFzallDVFpUbS1OZHRWNkF2X2Y1NDhBeFo5bGktRWxObXg5Q3FHZ3pva1JlR3A2eXVSQQ?oc=5",
-      "published_at": "2026-11-06T03:42:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -161,6 +169,14 @@
       "headline": "Isaiah Stewart Injury: Ruled out for Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMmVmc0FQYWJLZV9EYmdSQVlBeXRxVlgwSUdfaGhKSUpBQlBZM2Vjd2d0dHdKYTFHUHRDTVlETm1wUzlBd05oOUVYU3VTZ1R5Rkd5QzVIeEY3MDFwWjgwRGRlX0JSNm16TWZEeGZSaTAwTTRZT1g1bnpWTktkV3g0V1lyQjZmSld0amFhdXQxNWxDRFY5VzczWHJpRQ?oc=5",
       "published_at": "2026-11-05T23:04:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Hornets to start White, Kon, Miller, Reid, Diabaté - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNzZBZk5LRUtLUlVjVldJenkzTk51b0FHWHd0WWgxS3lwdzBhTVlQQ3NZR3BIcGhieEEtN3R1RzN2b2tPRWZlb0dvMGs3QnhGVERHUGdYY1JoR1NWSTJQZDN1ZWJESmhCTDN1UzZfd2FHZUtFT0owQl90TndJQmtCQ3N3dnVzc2lEaXIzXzRZazh3OXU3VVE0cXd3eFFubFNGSHVBdnd4UzMzMUNBWDF1UXZodDE?oc=5",
+      "published_at": "2026-11-05T23:03:35+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -353,46 +369,6 @@
       "headline": "Anaheim Ducks’ Hometown Remix jersey is a sellout smash. Will it join the full-time rotation? - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObWRyTjVyZzNUV2pNQ3lRNVNIS05XWU0tdTRFRmpjWXJTM2t3dUdHUDVNSW9sZ054NnZSb1dPLWx6c2FEem9nMXBraGg0cFNJTnQ1ZEFpRVgwbzM2dHhLQ3dkN3VyY21tU3pvaUZ6YkdDcjdGUVNiNEF4VGxkYzdlTDJqcHBPdXdnTmVudE9EVm9idnlGNEluOFR2UFJZZw?oc=5",
       "published_at": "2026-11-05T15:25:33+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Danny Wolf’s 19-minute statement leaves Nets with a rotation question - New York Daily News",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQmpWZldqRGN1YnBRb2pQLVpVMEg3NXFmSDlvUXRnQmN5enNWUU5lQUxkWmVxd3kwSndtWXV3emR5aks4YktyNlRaZ0l6N1BvV0d5bURyZkxRbnVoUDM4ZDRndFBFTEZTUDh1OXowZ0N1Y1RmandiYUEtTFJEMllNY25xNzBKSEpwZ1E?oc=5",
-      "published_at": "2026-11-05T14:18:29+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "No. 25 Florida to start QB Tramell Jones against Oklahoma in the Swamp, AP source says - KSL News",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV2FTOERtNjBFVDdZVHItNTVneHFCNkhvQmZWY2U2eGdWZVlmWDFWNHFSNVIzRDRZTktCTHJmU2JnZTdNb2w4eUVEcVAwMk53ZElRNmJyVkpaSUxUcVV4cjNzM0R4NzFKRmxxbkhnSWx3eXpXWU55SGIzcE9NUlJjWlhLUGlNZnR2SUljX1hLQkxZMUUzVThXNUtRRlEwT21RVlZkOW9SbHJZUXZHRWFES1M1RkdvOXNBbFlGcFNR?oc=5",
-      "published_at": "2026-11-05T14:10:04+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "What Vit Krejci Injury Means for the Blazers Rotation: Winners and Losers - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQN1hCTjlmSjktX3dBWDc4WU5oeG9JMnAtODVFVkt5WEotODI2TUpkSlNnTUd1ZUd3VmdjVHhtMXJSQ2pUQlZzU1l1c2JiNk5hWGtNc1ZKS0tkYjllWGM4dURuZTlkTWNqaG5vbDc3bTlJSVZpQjFzYnE5SDRiSXFnVzk1eTd3TzRkREdrYW8zLTdPVHY3bko1MkVxZTdLWVpsdlE?oc=5",
-      "published_at": "2026-11-05T14:00:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "The NBA’s All-Disappointment First and Second Teams to start the 2026-27 season - Basketball Network",
-      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNWRRd3p4dGE5cGVaU3g5bEN0dGtybnE3blNkclQzZmVsWnJ3UmN5UHdhcVE5Zkh0WngwRzQ0MUs4MF81cVdUWDNHSUxkRjBXemIyOWZlTlp4TnRuOEJlYnJ2Mi1WVVZzU0hJUDZpaXBPMkhfZURWT2RTQWtSTWhQdG5KM3lZU1Y1OW1ZYXBQNm5RTDdVTUFYSjM0bzlUTnJGbVFvcjM2a1RUZE1FM29FRkMwRkd2djRlVHZ4di1yUGxwUQ?oc=5",
-      "published_at": "2026-11-05T13:48:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Should the NBA shorten games to 40 minutes? Pros and cons of move as league battles early season injury crisis - CBS Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSUsyZ3dfX1JZT0x4RDdZbmNfQU92T0RnRi1CbUhlQ1F6SmFRcmJOMFBNNWFkSlc4aGpBZlZ0S2pZd2NFMFRMYzAzZFV0OUNLbE5FUGp1RFV1SUR1NkUyX3pObFVQSXBtSTJsM2ZzMkl2UmNXc3R2UTc4eUNWTTV4czZHWkR6dzRCTks3NGdsbmFxaktHX0FWU3Rsa2Z3aXM?oc=5",
-      "published_at": "2026-11-05T13:46:30+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
