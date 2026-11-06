@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T23:12:13.039180+00:00",
+  "updated_at": "2026-11-06T23:54:05.217228+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -88,11 +88,6 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Tyrese Proctor",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Jaylon Tyson",
       "team": "CLE",
       "status": "OUT"
@@ -111,11 +106,6 @@
       "name": "Sergio de Larrea",
       "team": "DAL",
       "status": "OUT"
-    },
-    {
-      "name": "Max Christie",
-      "team": "DAL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Tarik Biberovic",
@@ -193,14 +183,14 @@
       "status": "OUT"
     },
     {
-      "name": "Kelly Oubre Jr.",
-      "team": "IND",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "T.J. McConnell",
       "team": "IND",
       "status": "OUT"
+    },
+    {
+      "name": "Kelly Oubre Jr.",
+      "team": "IND",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Johnny Furphy",
@@ -335,7 +325,7 @@
     {
       "name": "Adem Bona",
       "team": "PHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Dominick Barlow",
