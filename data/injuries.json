@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T00:09:11.192433+00:00",
+  "updated_at": "2026-11-07T00:10:11.075187+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -88,14 +88,14 @@
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Jaylon Tyson",
+      "name": "Jarrett Allen",
       "team": "CLE",
       "status": "OUT"
     },
     {
-      "name": "Jarrett Allen",
+      "name": "Jaylon Tyson",
       "team": "CLE",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Sergio de Larrea",
@@ -116,11 +116,6 @@
       "name": "DeMar DeRozan",
       "team": "DEN",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Spencer Jones",
-      "team": "DEN",
-      "status": "OUT"
     },
     {
       "name": "Julian Strawther",
