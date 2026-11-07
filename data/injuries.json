@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T01:53:18.938791+00:00",
+  "updated_at": "2026-11-07T02:43:28.102430+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -91,6 +91,11 @@
       "name": "Jalen Smith",
       "team": "CHI",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Sam Merrill",
+      "team": "CLE",
+      "status": "OUT"
     },
     {
       "name": "Jarrett Allen",
