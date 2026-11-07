@@ -62,6 +62,9 @@ def tips(today):
 
 
 def publish(why):
+    # Only when the projections changed: every push is a Pages deploy (GitHub allows ~10 an hour).
+    if sh('git', 'diff', '--quiet', '--', 'data/today.json').returncode == 0:
+        return True
     paths = [p for p in COMMIT if (ROOT / p).exists()]
     sh('git', 'add', '--', *paths)
     if sh('git', 'diff', '--cached', '--quiet').returncode == 0:
@@ -111,9 +114,10 @@ def main():
                 py('build_slate.py')
                 py('alerts.py', timeout=300)
                 tried = sig
+                changed = sh('git', 'diff', '--quiet', '--', 'data/today.json').returncode != 0
                 ok = publish('news changed')
                 print(f'{now:%H:%M:%S}Z news changed ({pub} -> {sig}); rebuilt in {time.time() - t0:.0f}s, '
-                      f"{'pushed' if ok else 'push failed, retrying next loop'}")
+                      f"{('pushed' if ok else 'push failed, retrying next loop') if changed else 'projections unchanged'}")
                 if not ok:
                     tried = None
         except Exception as e:  # keep watching; one bad loop shouldn't end the night
