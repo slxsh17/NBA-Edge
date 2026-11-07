@@ -1,16 +1,11 @@
 {
-  "updated_at": "2026-11-07T18:08:31.082991+00:00",
+  "updated_at": "2026-11-07T18:21:31.098335+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
-      "name": "Keshon Gilbert",
+      "name": "Jock Landale",
       "team": "ATL",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Asa Newell",
-      "team": "ATL",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jalen Johnson",
@@ -18,7 +13,12 @@
       "status": "OUT"
     },
     {
-      "name": "Jock Landale",
+      "name": "Asa Newell",
+      "team": "ATL",
+      "status": "OUT"
+    },
+    {
+      "name": "Keshon Gilbert",
       "team": "ATL",
       "status": "OUT"
     },
@@ -230,6 +230,11 @@
     {
       "name": "Jordan Miller",
       "team": "LAC",
+      "status": "OUT"
+    },
+    {
+      "name": "Richie Saunders",
+      "team": "MEM",
       "status": "OUT"
     },
     {
