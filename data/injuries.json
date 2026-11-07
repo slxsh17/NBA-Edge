@@ -1,14 +1,9 @@
 {
-  "updated_at": "2026-11-07T18:21:31.098335+00:00",
+  "updated_at": "2026-11-07T18:36:05.956190+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
-      "name": "Jock Landale",
-      "team": "ATL",
-      "status": "OUT"
-    },
-    {
-      "name": "Jalen Johnson",
+      "name": "Keshon Gilbert",
       "team": "ATL",
       "status": "OUT"
     },
@@ -18,7 +13,12 @@
       "status": "OUT"
     },
     {
-      "name": "Keshon Gilbert",
+      "name": "Jock Landale",
+      "team": "ATL",
+      "status": "OUT"
+    },
+    {
+      "name": "Jalen Johnson",
       "team": "ATL",
       "status": "OUT"
     },
@@ -98,17 +98,17 @@
       "status": "DAY-TO-DAY"
     },
     {
+      "name": "Jaylon Tyson",
+      "team": "CLE",
+      "status": "OUT"
+    },
+    {
       "name": "Sam Merrill",
       "team": "CLE",
       "status": "OUT"
     },
     {
       "name": "Jarrett Allen",
-      "team": "CLE",
-      "status": "OUT"
-    },
-    {
-      "name": "Jaylon Tyson",
       "team": "CLE",
       "status": "OUT"
     },
