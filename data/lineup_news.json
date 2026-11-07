@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-07T00:12:06.422989+00:00",
+  "checked_at": "2026-11-07T00:37:30.246078+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -50,9 +50,33 @@
   ],
   "headlines": [
     {
-      "headline": "Cavs to start James, Mitchell, Sam, Watson, Mobley - NBC Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPc09Ma1ZuYW5FMU5lYjFsQ1YxV19pblZJMjZBaGxqQklJLWJWMUszV2tiZGJPeVBGeHo3THBXZW1aeXhVQjEweTdZM3ZWMTAzOHJUdjZfUTJiMHNOeV84M3hhZXVtcnRpbmpaNTFCUGxyQmhkVHMzckljLUtONEk1QktWNkd3bHNxV3Yyb3pmaDg4bFlyeW9TMUQ5M1dvYTdSakVUVGwyeWJCQmtEc0R2MmNDQnA?oc=5",
-      "published_at": "2026-11-07T00:07:33+00:00",
+      "headline": "Cavs news: Jarrett Allen ruled out for NBA Cup showdown with LeBron James' 76ers - ClutchPoints",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWlYxYXpMMjlManp6TzNmSUd0RloxYWw0RDVqb3VqMmhXT1dZWWdxNko2NUVWTElYcmlRZkVLNWVGNUt2RGNLR2laY3ByUUg1WS1zblZwQWhzMzlfNXgyMW1GZkhqVDFialR2R0x1eTlWaTlCYmIya3EzWVZxOXh5NTRIT05kSmF4Rkd4SkUyNndhWVBmR3dxV0pIQmVtYmtFdXo2c3duZWVzRXk2Ql9NWE4wMW1Ucm9ISXc?oc=5",
+      "published_at": "2026-11-07T00:33:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Rasheer Fleming Injury: Carrying questionable tag - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNM29KTktvNGVLTHI2NTM2a0xhUlg0cXpGQWI5NGFDUEZISGgySGdiMWlQcWFUTVZ6dWFaZWxTSG5zMlh0cjFlNWdySHRDLXV6Y0pyYy05dEk0Nks3TjktU2dnSzlacUVQVVhqMHFNQmlEQUlpbUdXR0lqWFVqNkRTYUtEc3Axck1rUHhDV3dRYUszWTVFYlZKbE5JMXRBOTlpc3FZ?oc=5",
+      "published_at": "2026-11-07T00:20:43+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Jordan Goodwin Injury: Doubtful for Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdndNOWNBeXBXZXgtcEVaRFNrMVhDLU5KS0lPR0Yxek4tQ1VQZzN0TnVBZnpaUG56alNnVlNVeW5MRmR5QTV3b00tVk1KV1BvTW9hQUNlaTcwcmNETmhmclBtaDljYlVjRElPRHlWLVdLd0lKcmRVS29nWk44YmdHZmJyc3N3allULW9ITHpqQ25xZDhGT3JEOHJsZHg?oc=5",
+      "published_at": "2026-11-07T00:20:03+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Tyler Herro Knows What Bucks Have to Do to Start Winning After 1-7 Start - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdTBpc0ptZlFGR3hzbTFxTkxMU0JGNUxlZkxvSlNqclRndnYydDVaQ0hlc21OMXhHRzZJUlg5NTYwSmp6dWdjZzFsdVg0MndqM1NXMXd4MVNZTHhsRTlDSG42MjFIRjVudWJSNjVBUEtReGJmSlQteERTOFozdUNRREI4ZHhKNkNUM1d0ekF1SlpqVXdoMjU0d2JvbjlycVFFMGdReUJGajVMTHJpUXNxRVE0R0Qxc0k?oc=5",
+      "published_at": "2026-11-07T00:11:32+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -66,25 +90,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Immanuel Quickley Injury: Ruled out for Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWGk3MFpIaWxvTThieFctZHlzUFpkNW92eVZzTDduWVg4SXpQa2FES3hIbDkzcktCZ0RLVXJxX1lLbkRMZG9aZ3VYRU1XZFc5UHRPaFotY3paWXV2dmxLWjZabHBnZkZVSlZrLVdYOTJoN0Q0RmRtaGcwZGpWTmtFdm5ibUJCcFFrZEdoWmdENlZLYXo2MlJtLXJoaHhrS1k?oc=5",
-      "published_at": "2026-11-06T23:41:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
       "headline": "T.J. McConnell Injury: Questionable for Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNTFCSm1DcUJ0M2Z4NjFoQW8wYjVOMXE4SWctaTlMV0dOYUZ5OFQwMFhWUkoyWTBoZEN6WXMwd2tmVEtuczRpc05jUFNPeXNfMVVlOVI1UTJpSF9OREwyd2l3U0tGaEVkSjJpQ1I2MmIyMUZ0RW5vS21ZRUdIZGFNWmlfajgtX3p5Rmp6Q2UyMS1YVWs1QTk5bFlxY0FlUUk?oc=5",
       "published_at": "2026-11-06T23:06:34+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "DeMar DeRozan Injury: Expected to play Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPel91cDlsOFVnZHZMOGJRME43R0ZoTWdlUkhNcWh5U0F1XzM0MTJnNFNUeEVxd0plSS1Rdm5LNHZ4SWlWZlBZRDl1cFctTW9xalp4TVAycjI0SGFqRVBpOHFjZ3h6c3BMbjZsZVREN3dxWXVXVkFDVmRJQTY4bGpCX2Z5NnZscWs3Y2VxWENGUjN6QlM4ZGFZbnFDbFExand5?oc=5",
-      "published_at": "2026-11-06T22:48:59+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -114,6 +122,14 @@
       "scope_date": "2026-11-06"
     },
     {
+      "headline": "Gary Payton Injury: Questionable for Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUURWWlJfSXVtUkdnWTBXSDFzUDZhcV91MFRIRzdGY29pWExNWEN0WnQxcWVaNnRvaUtlbVRUbUFRbk9odExvQ1hsS2FZQ2VoVEdfRlBtSi10UmdUQzQtRWxTeEYwa3lpVUVCc25uUGtfMFllMWRrRWw2cGhaQy0yTDU1bXNMU0k0b3Mwc0ZucTI4Q05nbWFSSlM5S09KZw?oc=5",
+      "published_at": "2026-11-06T22:21:07+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
       "headline": "Should Nets rookie Mikel Brown Jr. be in the starting lineup now? - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeGRfVVlFdi1nbmEzS016eGlDTjFadEViRG5QWmZMaUkzTFZaZThhMzBGSkp5OGstdVp0ZC0wMmNKZGh3bWg1bmk2ckdQRUphM3BvS25WbWd0VlUyd0ZNb3doOUVSV21hR05LQVQyUTR5UUZzZl9SSk5LMVdKMm5GaQ?oc=5",
       "published_at": "2026-11-06T22:19:20+00:00",
@@ -122,23 +138,7 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Jalen Johnson Injury: Ruled out for Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdVA3My1TLU9DMXFzVVdOYXg3UnBFdHZncVp1N3NWZWtkSUEzNGFCMU9LanZfYzY0TGZLbFlZMEpqSDdNNml2Qjk4UHNlZ3U2empfUThoQVlJbHlVWkhLSkRsV2FhVFh0SktJNTdScVFnZ0JRUHVGZTUtUHp2VVFuR2xuODlIaWNleUd3ZHJpd3gzamFsTFZKb3ZR?oc=5",
-      "published_at": "2026-11-06T22:06:08+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Gui Santos Injury: Questionable for Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOWpoWDgtd3RnbVFTZU5OLXZzT1Jmc0ZROTBoMk9iTWdjX0gxT2JOMGpCSlEzSFVhaTJNeGpSSDl3Qk1RWlFEckN0bVdHQ3lrelRmZ1FCajFPZ1VBREdmbDc0WnZHaVMxUUsxLVZFQkwwWHczQ1gyUXFmZGgwVFVjMWQtY2ZkbUZGRnZMZnphYnRkdWZEQWQ4REhKamE?oc=5",
-      "published_at": "2026-11-06T20:49:56+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Shedeur Sanders to start vs. Saints; Deshaun Watson listed as questionable - The New York Times",
+      "headline": "Shedeur Sanders to start vs. Saints; Deshaun Watson listed as questionable - The Athletic - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSWp4dEFsVnJYemNHT20xcGVRZlVOMEYxWUlidjBZZkk2UGg4WmRaRWZRQ3hQM1BReXNpN21yWVF4MzNQSnJmMmhNYzNOcHlaWGJzeVNGd3owQUVWUDRvOERUMGo2V0hWT2xnRnN0a0hUNjZBQ1l5SkZnZjJOQkxBY2RZOVA3UThFaF9LN0x2WGRQZw?oc=5",
       "published_at": "2026-11-06T20:23:06+00:00",
       "type": "headline_only",
@@ -146,9 +146,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "How 76ers' Starting Lineup Matches Up vs. Cavaliers on Friday Night - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcGRWeU9PUFBfTEhlemZJdE9tZVlIVkhZdS1XSl9qdDRpXzZ6em9ISEgwZm1ob1F6S0FaT1ZnVndZeTQ1ekxkUGhhLUMxdzhRLWNjbVRmc3RMbkpJZm5YOVc2bkZTMmM1N0dRUkkwZ3d0bkloMExSU1dKd2ZjRGNFbWczZVhCMmpWdVhEd0hOMzZGQ2RuNWxSSzZfdXUwaTNoelJkN1M3NVBkMV8xOVE?oc=5",
-      "published_at": "2026-11-06T20:00:03+00:00",
+      "headline": "How 76ers' Starting Lineup Matches Up vs. Cavaliers on Friday Night - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOFg4OXIxRFVFcXV1WHlhTEM3a0dkMmFjTGs0eVJKVk0zYTE4SllwSWMtNFo1a3I0Ql9yZEdYdHhmRWdEUkdpNmlBT1BJZmhTM29ENnBIdE43TUtlTXBCZEtiLUZvb3BUbG9FRXNWUTgzaDBCX1NSVE1RclliekIyalhlcUdoUWdv?oc=5",
+      "published_at": "2026-11-06T20:00:04+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -165,14 +165,6 @@
       "headline": "Raptors’ Poeltl (shoulder) probable vs. Bucks; Quickley (hamstring) questionable to play - TSN",
       "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV3BEb0E1eVZqSnd1bVU4Qi1aTGRpRFVaQkRsRDJYMU8yUHVOQ19CNHZLUXBfSkQ5LW40R0xGTURnVmc2dHdqLTlERUtpazVYQW41TmhzLUVrTnY0d0ozTDRKd2U2SDl6cDBJd3Y0N2pLb19PYkp3bVpPdGZrREpURXhNb2RGcEotZlJxRUVOVW5UVzY0NHU5YUh6WFp5bHpjc3NZR3E0c3dvX1ZJRml5SGl4bw?oc=5",
       "published_at": "2026-11-06T18:30:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Raptors' Immanuel Quickley, Scottie Barnes questionable vs. Bucks - Sportsnet.ca",
-      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRW4yZHgzeGdYS3lyMjlNN3Rqb2VvVEVjYUJhRFhxSllHc0c2ZnlSN3RIcDlHcnl4ZjdscEsxMU5VVEtVWU1UOVAwOGlrSnFXRFdPQlp4VWJ0VEpJVmZXV0U2Qm5NM3N2RzVDSUdyQ0kxd0pSLXlReDE4OTlLV0xabHBlZHVyUXgtNlhQTDhUdURsZ0JaVHgyemQ0YzhfOWdLc3c?oc=5",
-      "published_at": "2026-11-06T18:03:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -389,14 +381,6 @@
       "headline": "Kevin Durant Snubs Stephen Curry From All-Time Starting Lineup - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOS2dXbTBsejYwS3JFa2g0WFQyT1hKZ1NCVU9sU183MWNZNkFhRFpQd3dZRXEtMElMcVZGdGVNY29TOF93WkhLUUl5YmFVb3E2dTRSNDhpS1hRYVQ1aWVMRlktM2loVUE4ZlltTzV6NXllTDRzUzRNbUxabHN3cjhBc1BnSjVOSUFndHI1WC1xWkdyVjZ2eVE?oc=5",
       "published_at": "2026-11-06T01:20:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Kam Jones Injury: Ruled out for Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZG1RRHhLcnNIVTV1M3lWOUo3dDQwTzJlV001T2czQjFvMC1HSmxZRjBkTC1wY2t0aVh6czZEY3B1NHBTZFFjbTd1RlVyd2UxY1hmYUZHdE5zU2V3SFFLM3c0aFRlQkI4RUpxMVV3aGxNX2h4SHU4UURNWGN4cnNuTVU4UDExbUZxSkJiSG8tYVhmc1N4?oc=5",
-      "published_at": "2026-11-06T00:26:27+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
