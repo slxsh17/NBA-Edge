@@ -1,11 +1,27 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T22:58:28.112221+00:00",
+  "checked_at": "2026-11-07T23:26:39.417305+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Luka Doncic Listed as Questionable Against Detroit - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOTllZmJIcF9adEJ3V19fRFNXRVJnVXNUMkNWRWZsLUN6NThTRHpOOUJta21hR2JZbzg0cWhKdXNXLUhFUDBMVzRtbXEyWUtpbFNTY09DMkdONklnZ21Zb2ROZGVycExNNzExZHd2M3ROYVFNQkZ1SW5LUHMwU3YxVnRabU01VHhJVkVPSFRWRkRFVFFTeU1yMjR6dDZ6eDQ?oc=5",
+      "published_at": "2026-11-07T23:18:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Lauri Markkanen Injury: Questionable for Sunday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ3h4b2s0V3N1V01yeTZKcF84NFMyUnRfMkV5ZG44YjgwdEdQSlVPQUhfV3RWYkpham10SzVJV1lyN3l3Z1h3Njlhb2RUckRwbU5VRlhCMnBXQ0tPSUYwSll2MnJsenNBLURmbmFLa2RoY2pqTGJCMXV3TVJLMmhjbWQ2Wld3TF9vY09vZnRVVUliQ09PWW1IOS03bTFReDBn?oc=5",
+      "published_at": "2026-11-07T23:14:44+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Bulls’ Starting Lineup Struggles With No Easy Fix in Sight - BVM Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOV0syRERkWEFSZ3NnSUZUTUtFcUhSaU9lcHJQcUJCMjhaUDFsY2NPWWJoQ182MGpjTFFZRUtsbGUtZHlhczlDdG1qQWtBd3VsMFkzV084M2NhZ044NmhzS3JMRVAxbDNnYlgwVUpYRWlhdTBjZ0tveVY1OVNuQk9jeFJmbEdxaUdUR1RxbHA4eVExREtpTkE?oc=5",
@@ -98,14 +114,6 @@
       "headline": "Why Kingston Flemings Should Stay in Hawks’ Starting Lineup Over CJ McCollum - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcXZNdEJ2bVhnQmVTTTQwSkFldE9RS2Q2SjZxRWhGazc2LWZzWTlKcEI1ZGV6VlVodkJrYnN5S3I1OGh2djBQeEdMUVE5djVKOTVtNXJCeUp0UDh0YjZaR19MTklsTVRXSXQzQ3dIaUFiSEViYUtoc2g1WlQwSXVvRHh3cV9nWG5FcTdOdm40VmdhdUo4c1ZaZDhCS1QzN0N1QkZ1aHluNmhncko5c2w2UDkyX1c1bW9LMFhSLTIyRQ?oc=5",
       "published_at": "2026-11-07T18:33:23+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Jalen Johnson Injury: Expected to play Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTXBpd1V6MEhrSDNWUGdqbnVtckdSUVFGWHBUbTRtVE1fODk0TnB2LXNmYjdfdjJWY2U4Y0dDQjRlcEJNdy1McHk3OFVKQ3ZaeVNwYUY1UFV5bDBQZno4RkhEQndhSHk1RWlHcFRwdFRLS1VabjJlTk1rQXV6OGw0UHRqMXR1NEJycllQRXZzdXBSWEV4NDhrbnVBT0IzeTgy?oc=5",
-      "published_at": "2026-11-07T18:10:48+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -207,6 +215,14 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Kerr: Thompson expected to play in Game 4 - NBA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SQVdjX3pRdEUxX2sxeGZRQ0xKSEJjUnIxOG1PZGc4MVIxYl8wZG8wOWg4ZUtsM0dCckx5eFhaSXFUWWRtTlB3aXVXd2tMNFBiUkl3Mmo0alV5Vk5pU1RkVVlHd0hDWExLUjlsYUt4NkUtZw?oc=5",
+      "published_at": "2026-11-07T04:11:49+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Why Josh Hart has already been ruled out for Knicks-Cavs game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNLVhJQWhHUS05UkE3SlV4c3JiRWpZdE5xbkdpTmdKOTJRa00yWXhvWGJHN3lucW92S0tpb01LVFFDTlpqQkVCNlRDOFRnVW5LOVR0bE1FOW92b0dBQjVEenRSeFY0WlNCaDZyajlCck9jRXZVYUNZUVlvMGFUdXdaSmpn?oc=5",
       "published_at": "2026-11-07T02:49:00+00:00",
@@ -295,14 +311,6 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "Cleveland Cavaliers Make Jarrett Allen Injury Announcement Before 76ers Game - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb1RoU21Jc2tvQlBBREtIZnFGcGtHaTJjY2VZQjFHOGtRd1FlNmJjNFZPQlVnSDZ5TjBMbWpzMlBNd3lPakVOOHdIbUdGajMxTmM3bklmb1lZRE5rZ2FDR0d0T052Y1ZjeXFwcURfeUl4ZXRLcUtXcHA0Z21JOUV5bFNaYTFBUUpmbk1j?oc=5",
-      "published_at": "2026-11-07T00:11:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
       "headline": "Tyler Herro Knows What Bucks Have to Do to Start Winning After 1-7 Start - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaHFtbGZFVkRDeHJHLUZTbG94ZEhjTmR6NTV2Z1djTE1HQlJYS0FkLWNuTFZCaWs4dWstbkh5US1WVDRlU0xlZXJRYTJCUkhCSUdZUUZVSlNoS2ZVUm5KNE90dVVRemJEYmhkdkhOdjh0QTh1U0d3clpJS1lXVUpNbFlHZ1U?oc=5",
       "published_at": "2026-11-07T00:10:00+00:00",
@@ -338,30 +346,6 @@
       "headline": "Immanuel Quickley Injury: Ruled out for Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWGk3MFpIaWxvTThieFctZHlzUFpkNW92eVZzTDduWVg4SXpQa2FES3hIbDkzcktCZ0RLVXJxX1lLbkRMZG9aZ3VYRU1XZFc5UHRPaFotY3paWXV2dmxLWjZabHBnZkZVSlZrLVdYOTJoN0Q0RmRtaGcwZGpWTmtFdm5ibUJCcFFrZEdoWmdENlZLYXo2MlJtLXJoaHhrS1k?oc=5",
       "published_at": "2026-11-06T23:41:06+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Adem Bona OUT for Sixers Cup matchup vs. Cavs - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQd2l0ZEFjbXNmekFHUFRZd1hhU0NCMWh3TWJ4M1dtNF9RUWxTWkdfNHpGRDVpZmtIWVRuOTdBREh1ZmNSdkdOMUp4WXY2dDdta2hCb2ZhQUFOVnN6QW9QNVVvSmNHYmJncjcxdzVnOFRHUjQ3cUQ4YmpUby01cXpTQXJQUEc?oc=5",
-      "published_at": "2026-11-06T23:17:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "T.J. McConnell Injury: Questionable for Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNTFCSm1DcUJ0M2Z4NjFoQW8wYjVOMXE4SWctaTlMV0dOYUZ5OFQwMFhWUkoyWTBoZEN6WXMwd2tmVEtuczRpc05jUFNPeXNfMVVlOVI1UTJpSF9OREwyd2l3U0tGaEVkSjJpQ1I2MmIyMUZ0RW5vS21ZRUdIZGFNWmlfajgtX3p5Rmp6Q2UyMS1YVWs1QTk5bFlxY0FlUUk?oc=5",
-      "published_at": "2026-11-06T23:06:34+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Why Heat’s Erik Spoelstra ‘feels’ for Tim Hardaway Jr. amid limited minutes - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbUxvdGhsRWZjWWFLcDdyaVJ4UENzRjBfVmREb2NDVTF6Q0N5QjkzOUlkanNwV3Nva3dDNU8xb2xCaUx5ZU91TEFqeUw0NlhoUVF3cHNJZWhxWlpjaGh5VGZPdXhLRHV4Tl92blVaOWtxWHZzT0xocUxsMVp4UnRSTmh2bDYzS2I4eVhLdFNET0c5bHczVnNtUDJJSHNlWEx2dmhPeC1sWDh1QjNSQ0E5VlpjeFhWdw?oc=5",
-      "published_at": "2026-11-06T23:00:34+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
