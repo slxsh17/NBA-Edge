@@ -1,8 +1,8 @@
 {
  "schema": 1,
- "updated_at": "2026-11-06T13:35:02+00:00",
- "samples": 1905,
- "days": 14,
+ "updated_at": "2026-11-07T13:20:09+00:00",
+ "samples": 2045,
+ "days": 15,
  "method_version": "two-stage-v1",
  "weights": {
   "vegas": 1.05,
@@ -46,43 +46,43 @@
  },
  "validation": {
   "test_days": [
-   "2026-11-04",
-   "2026-11-05"
+   "2026-11-05",
+   "2026-11-06"
   ],
-  "test_rows": 206,
+  "test_rows": 183,
   "default": {
-   "minutes_rmse": 6.642,
-   "minutes_mae": 5.187,
-   "minutes_bias": 0.32,
-   "fp_rmse": 9.566,
-   "fp_mae": 7.524,
-   "fp_bias": -0.57
+   "minutes_rmse": 6.534,
+   "minutes_mae": 5.068,
+   "minutes_bias": 0.39,
+   "fp_rmse": 10.397,
+   "fp_mae": 8.206,
+   "fp_bias": -0.29
   },
   "current": {
-   "minutes_rmse": 6.506,
-   "minutes_mae": 5.003,
-   "minutes_bias": 0.53,
-   "fp_rmse": 9.306,
-   "fp_mae": 7.282,
-   "fp_bias": 0.34
+   "minutes_rmse": 6.367,
+   "minutes_mae": 4.93,
+   "minutes_bias": 0.79,
+   "fp_rmse": 9.89,
+   "fp_mae": 7.946,
+   "fp_bias": 0.68
   },
   "fitted": {
-   "minutes_rmse": 6.506,
-   "minutes_mae": 5.003,
-   "minutes_bias": 0.53,
-   "fp_rmse": 9.304,
-   "fp_mae": 7.281,
-   "fp_bias": 0.34
+   "minutes_rmse": 6.389,
+   "minutes_mae": 4.946,
+   "minutes_bias": 0.79,
+   "fp_rmse": 9.872,
+   "fp_mae": 7.941,
+   "fp_bias": 0.57
   },
-  "default_mae": 7.524,
-  "current_mae": 7.282,
-  "fitted_mae": 7.281
+  "default_mae": 8.206,
+  "current_mae": 7.946,
+  "fitted_mae": 7.941
  },
  "in_sample_mae": {
-  "default": 8.028,
-  "learned": 7.386
+  "default": 8.046,
+  "learned": 7.439
  },
- "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (minutes 5.00 vs 5.00, points 7.28 vs 7.28).",
+ "decision": "Kept current weights: the refit didn\u2019t beat them on held-out days (minutes 4.95 vs 4.93, points 7.94 vs 7.95).",
  "log": [
   {
    "date": "2026-10-27",
@@ -240,15 +240,21 @@
    "adopted": false,
    "changes": [],
    "heldout_gain": 0.001
+  },
+  {
+   "date": "2026-11-07",
+   "adopted": false,
+   "changes": [],
+   "heldout_gain": 0.005
   }
  ],
  "in_sample": {
-  "minutes_rmse": 6.219,
-  "minutes_mae": 4.78,
-  "minutes_bias": 0.32,
-  "fp_rmse": 9.334,
-  "fp_mae": 7.386,
-  "fp_bias": 0.21
+  "minutes_rmse": 6.237,
+  "minutes_mae": 4.803,
+  "minutes_bias": 0.37,
+  "fp_rmse": 9.4,
+  "fp_mae": 7.439,
+  "fp_bias": 0.24
  },
  "method": "Two stages: minutes parts fit to actual minutes, then points parts to actual points (root-mean-square error, pull toward priors); adopted if held-out points improve, or minutes improve while points hold; moves halfway."
 }
