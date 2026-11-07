@@ -1,0 +1,38 @@
+name: NBA EDGE Game-Night Injury Watch
+
+# GitHub runs scheduled jobs late (the 10-minute injury job really runs every 40-60 minutes),
+# so this job stays up instead: injuries every minute, starters/headlines every 5, and a rebuild
+# + push (+ phone alerts) the moment the news changes. Each run lasts up to 5h40m; the later
+# schedules queue behind it so the watch covers ~11am ET through the last tip. A run on a day
+# with no games exits right away.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 16 * * *'    # ~11am ET
+    - cron: '35 21 * * *'   # ~4:30pm ET (queues until the earlier run ends)
+    - cron: '5 2 * * *'     # ~9pm ET backup for late West Coast tips
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-edge-injury-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install solver and HTML parser
+        run: pip install --quiet highspy 'beautifulsoup4>=4.12,<5'
+      - name: Watch injuries and rebuild on news
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || 'nbaedge' }}
+        run: python scripts/injury_watch.py

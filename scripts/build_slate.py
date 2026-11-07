@@ -122,6 +122,22 @@ NEWS_KINDS = [
 ]
 
 
+def news_sig(day, teams):
+    """Fingerprint of the injury and lineup news a build used. The game-night watcher
+    (injury_watch.py) rebuilds the moment the live news no longer matches the published one."""
+    import hashlib
+    teams = {canon(t) for t in teams}
+    inj = sorted((norm(r.get('name')), canon(r.get('team')), str(r.get('status') or '').upper())
+                 for r in read('injuries.json', {}).get('injuries', []) if canon(r.get('team')) in teams)
+    hs = sorted((k, v) for k, v in headline_status(day).items() if k != '_why')
+    lu = sorted((canon(l.get('team')), sorted(norm(x if isinstance(x, str) else x.get('name')) for x in l.get('players', [])))
+                for l in read('lineup_news.json', {}).get('lineups', [])
+                if l.get('date') == day and l.get('status') == 'confirmed' and canon(l.get('team')) in teams)
+    ms = sorted((norm(r.get('name')), canon(r.get('team')), r.get('status'))
+                for r in read('manual_status.json', {}).get('players', []) if r.get('date') == day)
+    return hashlib.sha1(json.dumps([inj, hs, lu, ms]).encode()).hexdigest()[:12]
+
+
 def headline_status(day):
     """Downgrades the official ESPN feed hasn't caught up with yet, from today's headlines
     ("Jaylen Brown (knee) downgraded to doubtful"). Only the newest status headline per player
@@ -603,7 +619,8 @@ def build(day=None, backtest=False, weights=None):
            'built_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
            'avg_team_total': round(avg_tt, 1) if avg_tt else None, 'games': games,
            'sources': {'slate': slate.get('source'), 'injuries_updated': read('injuries.json').get('updated_at'),
-                       'stats_updated': cur.get('updated_at'), 'lineups_checked': read('lineup_news.json').get('checked_at')},
+                       'stats_updated': cur.get('updated_at'), 'lineups_checked': read('lineup_news.json').get('checked_at'),
+                       'news_sig': news_sig(day, {p['team'] for p in players})},
            'single_games': out_singles, 'classic_slates': out_sides, 'sim_sig': SIM_SIG[0], 'own_model': own_params(), 'sim_lineups': SIM_LINEUPS[0],
            'players': sorted(players, key=lambda p: -p['proj'])}
     return out

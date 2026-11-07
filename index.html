@@ -471,11 +471,35 @@ function switchFormat(fmt,sgId,cs){
 }
 $('fmt').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const cs=b.dataset.cs||'main';
   if(b.dataset.v===S.format&&(S.format==='single'||cs===(S.cslate||'main')))return;switchFormat(b.dataset.v,null,cs)});
+// Injury statuses on top of the built projections: the newest of the repo's injuries.json and ESPN's
+// feed read straight from this browser (espnInjuries). Returns players newly marked out. A player only
+// this marked out comes back if the feed clears him; outs from the build itself are never undone here.
+const nkey=s=>key(String(s||'').replace(/[\s,]+(jr|sr|ii|iii|iv|v)\.?$/i,''));
 function applyLiveInjuries(){
-  if(!S.inj||!Array.isArray(S.inj.injuries))return;
-  const out=new Map(S.inj.injuries.map(r=>[key(r.name)+'|'+canon(r.team),String(r.status||'').toUpperCase()]));
-  for(const p of S.players){const st=out.get(pkey(p));
-    if(['OUT','INACTIVE','DOUBTFUL'].includes(st)&&!p.out){p.out=true;p.status=st==='INACTIVE'?'OUT':st;p.flags=[...(p.flags||[]),'Ruled '+p.status.toLowerCase()+' in the latest injury report']}}
+  const recs=(S.injLive&&S.injLive.length?S.injLive:(S.inj&&Array.isArray(S.inj.injuries)?S.inj.injuries:null));if(!recs)return [];
+  const st=new Map();for(const r of recs){const s=String(r.status||'').toUpperCase(),t=canon(r.team);st.set(key(r.name)+'|'+t,s);st.set('~'+nkey(r.name)+'|'+t,s)}
+  const fresh=[];
+  for(const p of S.players){const s=st.get(pkey(p))||st.get('~'+nkey(p.name)+'|'+canon(p.team)),isOut=['OUT','INACTIVE','DOUBTFUL'].includes(s);
+    if(isOut&&!p.out){p._injOut={status:p.status,flags:p.flags};p.out=true;p.status=s==='INACTIVE'?'OUT':s;p.flags=[...(p.flags||[]),'Ruled '+p.status.toLowerCase()+' in the latest injury report'];fresh.push(p)}
+    else if(!isOut&&p._injOut&&S.injLive){p.out=false;p.status=p._injOut.status;p.flags=p._injOut.flags;delete p._injOut}}
+  return fresh;
+}
+// ESPN's injury feed straight from the browser every minute while games are left, so a player ruled
+// out is marked out here within a minute, before the rebuilt projections (teammates' bumps) deploy.
+const TEAMN={'atlanta hawks':'ATL','boston celtics':'BOS','brooklyn nets':'BKN','charlotte hornets':'CHA','chicago bulls':'CHI','cleveland cavaliers':'CLE','dallas mavericks':'DAL','denver nuggets':'DEN','detroit pistons':'DET','golden state warriors':'GSW','houston rockets':'HOU','indiana pacers':'IND','la clippers':'LAC','los angeles clippers':'LAC','los angeles lakers':'LAL','memphis grizzlies':'MEM','miami heat':'MIA','milwaukee bucks':'MIL','minnesota timberwolves':'MIN','new orleans pelicans':'NOP','new york knicks':'NYK','oklahoma city thunder':'OKC','orlando magic':'ORL','philadelphia 76ers':'PHI','phoenix suns':'PHX','portland trail blazers':'POR','sacramento kings':'SAC','san antonio spurs':'SAS','toronto raptors':'TOR','utah jazz':'UTA','washington wizards':'WAS'};
+function injStatus(v){if(v&&typeof v==='object'){for(const k of ['name','description','status','type','displayName'])if(k in v){const s=injStatus(v[k]);if(s)return s}return ''}
+  const s=String(v||'').trim().toLowerCase();return s==='out'||s==='inactive'||s.includes('ruled out')?'OUT':s.includes('doubt')?'DOUBTFUL':s.includes('question')?'QUESTIONABLE':s.includes('probab')?'PROBABLE':s.includes('day-to-day')||s.includes('day to day')?'DAY-TO-DAY':''}
+async function espnInjuries(){
+  if(document.hidden||S.source==='csv'||S.review||!S.players.length||!S.games.length||S.games.every(started))return;
+  try{const r=await fetch('https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries',{cache:'no-store'});if(!r.ok)return;const d=await r.json(),recs=[];
+    for(const g of d.injuries||[]){const gt=canon(g.abbreviation||(g.team&&g.team.abbreviation)||'')||TEAMN[String(g.displayName||'').toLowerCase()]||'';
+      for(const e of g.injuries||g.athletes||[]){const a=e.athlete||e.player||e,name=a.displayName||a.fullName||'',t=canon(a.team&&a.team.abbreviation||'')||gt,st=injStatus(e.status||e.type);if(name&&t&&st)recs.push({name,team:t,status:st})}}
+    if(recs.length<5)return;S.injLive=recs;
+    const fresh=applyLiveInjuries();if(!fresh.length)return;
+    const mine=new Set([...(S.entries||[]),...S.lineups].flatMap(l=>l.picks.map(x=>pkey(x.p))));
+    toast(`<b>Ruled out:</b> ${fresh.map(p=>esc(p.name)+' ('+esc(p.team)+')').join(', ')}. Marked out here${fresh.some(p=>mine.has(pkey(p)))?'. One of your lineups has him: check the late swap':''}. Teammates' projections update in a couple of minutes.`);
+    S.entStarted=-1;renderAll();
+  }catch(e){}
 }
 function restoreDayState(){
   const st=store.get('day:'+fmtKey(),null);
@@ -1437,7 +1461,7 @@ document.querySelector('.tabs').addEventListener('click',e=>{const b=e.target.cl
 
 // Background: only reload when the published projections actually changed. Lineups are kept.
 async function check(){if(document.hidden)return;try{const r=await fetch('data/today.json?h='+Date.now(),{method:'HEAD',cache:'no-store'});const tag=(r.headers.get('etag')||'')+(r.headers.get('last-modified')||'');if(tag&&S.etag&&tag!==S.etag)await load();S.etag=tag||S.etag}catch(e){}}
-setInterval(check,4*60*1000);document.addEventListener('visibilitychange',check);
+setInterval(check,60*1000);setInterval(espnInjuries,60*1000);setTimeout(espnInjuries,5000);document.addEventListener('visibilitychange',check);
 setInterval(()=>{if(!document.hidden){renderGames();renderLineups();autoSwaps()}},60*1000);
 
 wireControls();
