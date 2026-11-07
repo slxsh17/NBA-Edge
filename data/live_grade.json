@@ -1,0 +1,1350 @@
+{
+ "date": "2026-11-06",
+ "updated_at": "2026-11-07T03:24:03+00:00",
+ "games": [
+  {
+   "teams": [
+    "ATL",
+    "WAS"
+   ],
+   "state": "final",
+   "detail": "Final",
+   "score": {
+    "ATL": "139",
+    "WAS": "132"
+   }
+  },
+  {
+   "teams": [
+    "CHA",
+    "BOS"
+   ],
+   "state": "final",
+   "detail": "Final",
+   "score": {
+    "CHA": "80",
+    "BOS": "119"
+   }
+  },
+  {
+   "teams": [
+    "CLE",
+    "PHI"
+   ],
+   "state": "final",
+   "detail": "Final",
+   "score": {
+    "CLE": "119",
+    "PHI": "95"
+   }
+  },
+  {
+   "teams": [
+    "DAL",
+    "UTA"
+   ],
+   "state": "final",
+   "detail": "Final",
+   "score": {
+    "DAL": "112",
+    "UTA": "100"
+   }
+  },
+  {
+   "teams": [
+    "MEM",
+    "OKC"
+   ],
+   "state": "live",
+   "detail": "1:56 - 4th",
+   "score": {
+    "MEM": "91",
+    "OKC": "126"
+   }
+  },
+  {
+   "teams": [
+    "MIL",
+    "TOR"
+   ],
+   "state": "live",
+   "detail": "3:51 - 4th",
+   "score": {
+    "MIL": "99",
+    "TOR": "107"
+   }
+  },
+  {
+   "teams": [
+    "NOP",
+    "MIN"
+   ],
+   "state": "live",
+   "detail": "6:14 - 4th",
+   "score": {
+    "NOP": "89",
+    "MIN": "95"
+   }
+  },
+  {
+   "teams": [
+    "LAL",
+    "POR"
+   ],
+   "state": "live",
+   "detail": "7:02 - 1st",
+   "score": {
+    "LAL": "4",
+    "POR": "10"
+   }
+  },
+  {
+   "teams": [
+    "SAC",
+    "SAS"
+   ],
+   "state": "pre",
+   "detail": "11/6 - 10:00 PM EST",
+   "score": {
+    "SAC": "0",
+    "SAS": "0"
+   }
+  }
+ ],
+ "slates": {
+  "main": {
+   "label": "Main slate",
+   "format": "classic",
+   "lineups": [
+    {
+     "strategy": "cash",
+     "proj": 327.7,
+     "actual": 337.0,
+     "final_players": 4,
+     "players": [
+      {
+       "name": "Trae Young",
+       "team": "WAS",
+       "slot": "PG",
+       "proj": 38.4,
+       "actual": 35.4,
+       "state": "final",
+       "min": 37.0,
+       "own": 20.6
+      },
+      {
+       "name": "Nickeil Alexander-Walker",
+       "team": "ATL",
+       "slot": "SG",
+       "proj": 35.5,
+       "actual": 36.4,
+       "state": "final",
+       "min": 33.0,
+       "own": 26.9
+      },
+      {
+       "name": "RJ Barrett",
+       "team": "TOR",
+       "slot": "SF",
+       "proj": 41.6,
+       "actual": 35.7,
+       "state": "live",
+       "min": 33.0,
+       "own": 42.3
+      },
+      {
+       "name": "Alex Sarr",
+       "team": "WAS",
+       "slot": "PF",
+       "proj": 31.1,
+       "actual": 37.1,
+       "state": "final",
+       "min": 30.0,
+       "own": 8.5
+      },
+      {
+       "name": "Onyeka Okongwu",
+       "team": "ATL",
+       "slot": "C",
+       "proj": 37.2,
+       "actual": 46.5,
+       "state": "final",
+       "min": 33.0,
+       "own": 32.3
+      },
+      {
+       "name": "Shai Gilgeous-Alexander",
+       "team": "OKC",
+       "slot": "G/F",
+       "proj": 50.1,
+       "actual": 39.6,
+       "state": "live",
+       "min": 30.0,
+       "own": 39.5
+      },
+      {
+       "name": "Collin Murray-Boyles",
+       "team": "TOR",
+       "slot": "F/C",
+       "proj": 28.5,
+       "actual": 34.8,
+       "state": "live",
+       "min": 30.0,
+       "own": 44.6
+      },
+      {
+       "name": "LaMelo Ball",
+       "team": "MIN",
+       "slot": "UTIL",
+       "proj": 38.0,
+       "actual": 30.4,
+       "state": "live",
+       "min": 29.0,
+       "own": 30.0
+      },
+      {
+       "name": "Jamal Shead",
+       "team": "TOR",
+       "slot": "UTIL",
+       "proj": 27.2,
+       "actual": 41.1,
+       "state": "live",
+       "min": 30.0,
+       "own": 38.7
+      }
+     ]
+    },
+    {
+     "strategy": "tournament",
+     "proj": 319.2,
+     "actual": 331.9,
+     "final_players": 7,
+     "players": [
+      {
+       "name": "Trae Young",
+       "team": "WAS",
+       "slot": "PG",
+       "proj": 38.4,
+       "actual": 35.4,
+       "state": "final",
+       "min": 37.0,
+       "own": 20.6
+      },
+      {
+       "name": "Dyson Daniels",
+       "team": "ATL",
+       "slot": "SG",
+       "proj": 35.5,
+       "actual": 45.8,
+       "state": "final",
+       "min": 35.0,
+       "own": 20.6
+      },
+      {
+       "name": "AJ Dybantsa",
+       "team": "WAS",
+       "slot": "SF",
+       "proj": 32.1,
+       "actual": 36.3,
+       "state": "final",
+       "min": 36.0,
+       "own": 9.7
+      },
+      {
+       "name": "Alex Sarr",
+       "team": "WAS",
+       "slot": "PF",
+       "proj": 31.1,
+       "actual": 37.1,
+       "state": "final",
+       "min": 30.0,
+       "own": 8.5
+      },
+      {
+       "name": "Onyeka Okongwu",
+       "team": "ATL",
+       "slot": "C",
+       "proj": 37.2,
+       "actual": 46.5,
+       "state": "final",
+       "min": 33.0,
+       "own": 32.3
+      },
+      {
+       "name": "Donovan Mitchell",
+       "team": "CLE",
+       "slot": "G/F",
+       "proj": 39.8,
+       "actual": 48.4,
+       "state": "final",
+       "min": 33.0,
+       "own": 20.2
+      },
+      {
+       "name": "RJ Barrett",
+       "team": "TOR",
+       "slot": "F/C",
+       "proj": 41.6,
+       "actual": 35.7,
+       "state": "live",
+       "min": 33.0,
+       "own": 42.3
+      },
+      {
+       "name": "James Harden",
+       "team": "CLE",
+       "slot": "UTIL",
+       "proj": 35.1,
+       "actual": 25.7,
+       "state": "final",
+       "min": 30.0,
+       "own": 9.8
+      },
+      {
+       "name": "Ja'Kobe Walter",
+       "team": "TOR",
+       "slot": "UTIL",
+       "proj": 28.3,
+       "actual": 21.0,
+       "state": "live",
+       "min": 27.0,
+       "own": 18.7
+      }
+     ]
+    },
+    {
+     "strategy": "sim_winner",
+     "proj": 317.6,
+     "actual": 331.7,
+     "final_players": 4,
+     "players": [
+      {
+       "name": "Shai Gilgeous-Alexander",
+       "team": "OKC",
+       "slot": "PG",
+       "proj": 50.1,
+       "actual": 39.6,
+       "state": "live",
+       "min": 30.0,
+       "own": 39.5
+      },
+      {
+       "name": "Nickeil Alexander-Walker",
+       "team": "ATL",
+       "slot": "SG",
+       "proj": 35.5,
+       "actual": 36.4,
+       "state": "final",
+       "min": 33.0,
+       "own": 26.9
+      },
+      {
+       "name": "AJ Dybantsa",
+       "team": "WAS",
+       "slot": "SF",
+       "proj": 32.1,
+       "actual": 36.3,
+       "state": "final",
+       "min": 36.0,
+       "own": 9.7
+      },
+      {
+       "name": "Cameron Boozer",
+       "team": "MEM",
+       "slot": "PF",
+       "proj": 35.2,
+       "actual": 26.4,
+       "state": "live",
+       "min": 31.0,
+       "own": 6.4
+      },
+      {
+       "name": "Onyeka Okongwu",
+       "team": "ATL",
+       "slot": "C",
+       "proj": 37.2,
+       "actual": 46.5,
+       "state": "final",
+       "min": 33.0,
+       "own": 32.3
+      },
+      {
+       "name": "Kyshawn George",
+       "team": "WAS",
+       "slot": "G/F",
+       "proj": 31.8,
+       "actual": 55.3,
+       "state": "final",
+       "min": 39.0,
+       "own": 25.4
+      },
+      {
+       "name": "RJ Barrett",
+       "team": "TOR",
+       "slot": "F/C",
+       "proj": 41.6,
+       "actual": 35.7,
+       "state": "live",
+       "min": 33.0,
+       "own": 42.3
+      },
+      {
+       "name": "Collin Murray-Boyles",
+       "team": "TOR",
+       "slot": "UTIL",
+       "proj": 28.5,
+       "actual": 34.8,
+       "state": "live",
+       "min": 30.0,
+       "own": 44.6
+      },
+      {
+       "name": "Zach Edey",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 25.5,
+       "actual": 20.7,
+       "state": "live",
+       "min": 20.0,
+       "own": 3.2
+      }
+     ]
+    }
+   ]
+  },
+  "single:BOS@CHA": {
+   "label": "BOS @ CHA",
+   "format": "single",
+   "lineups": [
+    {
+     "strategy": "cash",
+     "proj": 188.4,
+     "actual": 156.3,
+     "final_players": 6,
+     "players": [
+      {
+       "name": "Jayson Tatum",
+       "team": "BOS",
+       "slot": "MVP",
+       "proj": 60.1,
+       "actual": 88.7,
+       "state": "final",
+       "min": 29.0,
+       "own": 74.5
+      },
+      {
+       "name": "Brandon Miller",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 33.6,
+       "actual": 17.9,
+       "state": "final",
+       "min": 14.0,
+       "own": 58.6
+      },
+      {
+       "name": "Naz Reid",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 30.1,
+       "actual": 25.2,
+       "state": "final",
+       "min": 26.0,
+       "own": 45.7
+      },
+      {
+       "name": "Grayson Allen",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 24.1,
+       "actual": 9.9,
+       "state": "final",
+       "min": 22.0,
+       "own": 34.9
+      },
+      {
+       "name": "Coby White",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 21.1,
+       "actual": 6.7,
+       "state": "final",
+       "min": 16.0,
+       "own": 39.6
+      },
+      {
+       "name": "Ryan Kalkbrenner",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 19.4,
+       "actual": 8.0,
+       "state": "final",
+       "min": 21.0,
+       "own": 25.6
+      }
+     ]
+    },
+    {
+     "strategy": "tournament",
+     "proj": 186.6,
+     "actual": 156.3,
+     "final_players": 6,
+     "players": [
+      {
+       "name": "Grayson Allen",
+       "team": "CHA",
+       "slot": "MVP",
+       "proj": 36.1,
+       "actual": 14.9,
+       "state": "final",
+       "min": 22.0,
+       "own": 34.9
+      },
+      {
+       "name": "Jayson Tatum",
+       "team": "BOS",
+       "slot": "UTIL",
+       "proj": 40.1,
+       "actual": 59.1,
+       "state": "final",
+       "min": 29.0,
+       "own": 74.5
+      },
+      {
+       "name": "Brandon Miller",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 33.6,
+       "actual": 17.9,
+       "state": "final",
+       "min": 14.0,
+       "own": 58.6
+      },
+      {
+       "name": "Naz Reid",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 30.1,
+       "actual": 25.2,
+       "state": "final",
+       "min": 26.0,
+       "own": 45.7
+      },
+      {
+       "name": "Derrick White",
+       "team": "BOS",
+       "slot": "UTIL",
+       "proj": 27.4,
+       "actual": 31.3,
+       "state": "final",
+       "min": 25.0,
+       "own": 44.4
+      },
+      {
+       "name": "Ryan Kalkbrenner",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 19.4,
+       "actual": 8.0,
+       "state": "final",
+       "min": 21.0,
+       "own": 25.6
+      }
+     ]
+    },
+    {
+     "strategy": "sim_winner",
+     "proj": 188.4,
+     "actual": 156.3,
+     "final_players": 6,
+     "players": [
+      {
+       "name": "Jayson Tatum",
+       "team": "BOS",
+       "slot": "MVP",
+       "proj": 60.1,
+       "actual": 88.7,
+       "state": "final",
+       "min": 29.0,
+       "own": 74.5
+      },
+      {
+       "name": "Brandon Miller",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 33.6,
+       "actual": 17.9,
+       "state": "final",
+       "min": 14.0,
+       "own": 58.6
+      },
+      {
+       "name": "Naz Reid",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 30.1,
+       "actual": 25.2,
+       "state": "final",
+       "min": 26.0,
+       "own": 45.7
+      },
+      {
+       "name": "Grayson Allen",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 24.1,
+       "actual": 9.9,
+       "state": "final",
+       "min": 22.0,
+       "own": 34.9
+      },
+      {
+       "name": "Coby White",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 21.1,
+       "actual": 6.7,
+       "state": "final",
+       "min": 16.0,
+       "own": 39.6
+      },
+      {
+       "name": "Ryan Kalkbrenner",
+       "team": "CHA",
+       "slot": "UTIL",
+       "proj": 19.4,
+       "actual": 8.0,
+       "state": "final",
+       "min": 21.0,
+       "own": 25.6
+      }
+     ]
+    }
+   ]
+  },
+  "single:MEM@OKC": {
+   "label": "OKC @ MEM",
+   "format": "single",
+   "lineups": [
+    {
+     "strategy": "cash",
+     "proj": 202.7,
+     "actual": 156.9,
+     "final_players": 0,
+     "players": [
+      {
+       "name": "Shai Gilgeous-Alexander",
+       "team": "OKC",
+       "slot": "MVP",
+       "proj": 73.3,
+       "actual": 59.4,
+       "state": "live",
+       "min": 30.0,
+       "own": 71.5
+      },
+      {
+       "name": "Cameron Boozer",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 36.6,
+       "actual": 26.4,
+       "state": "live",
+       "min": 31.0,
+       "own": 49.8
+      },
+      {
+       "name": "Isaiah Hartenstein",
+       "team": "OKC",
+       "slot": "UTIL",
+       "proj": 28.8,
+       "actual": 22.7,
+       "state": "live",
+       "min": 26.0,
+       "own": 41.6
+      },
+      {
+       "name": "Zach Edey",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 24.9,
+       "actual": 20.7,
+       "state": "live",
+       "min": 20.0,
+       "own": 31.2
+      },
+      {
+       "name": "Jerami Grant",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 19.7,
+       "actual": 12.0,
+       "state": "live",
+       "min": 22.0,
+       "own": 33.6
+      },
+      {
+       "name": "Kenrich Williams",
+       "team": "OKC",
+       "slot": "UTIL",
+       "proj": 19.2,
+       "actual": 15.7,
+       "state": "live",
+       "min": 19.0,
+       "own": 34.9
+      }
+     ]
+    },
+    {
+     "strategy": "tournament",
+     "proj": 199.6,
+     "actual": 159.4,
+     "final_players": 0,
+     "players": [
+      {
+       "name": "Shai Gilgeous-Alexander",
+       "team": "OKC",
+       "slot": "MVP",
+       "proj": 73.3,
+       "actual": 59.4,
+       "state": "live",
+       "min": 30.0,
+       "own": 71.5
+      },
+      {
+       "name": "Cameron Boozer",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 36.6,
+       "actual": 26.4,
+       "state": "live",
+       "min": 31.0,
+       "own": 49.8
+      },
+      {
+       "name": "Isaiah Hartenstein",
+       "team": "OKC",
+       "slot": "UTIL",
+       "proj": 28.8,
+       "actual": 22.7,
+       "state": "live",
+       "min": 26.0,
+       "own": 41.6
+      },
+      {
+       "name": "Zach Edey",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 24.9,
+       "actual": 20.7,
+       "state": "live",
+       "min": 20.0,
+       "own": 31.2
+      },
+      {
+       "name": "Jaylen Wells",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 19.9,
+       "actual": 8.0,
+       "state": "live",
+       "min": 25.0,
+       "own": 15.2
+      },
+      {
+       "name": "Bennett Stirtz",
+       "team": "OKC",
+       "slot": "UTIL",
+       "proj": 16.0,
+       "actual": 22.2,
+       "state": "live",
+       "min": 22.0,
+       "own": 25.0
+      }
+     ]
+    },
+    {
+     "strategy": "sim_winner",
+     "proj": 202.7,
+     "actual": 156.9,
+     "final_players": 0,
+     "players": [
+      {
+       "name": "Shai Gilgeous-Alexander",
+       "team": "OKC",
+       "slot": "MVP",
+       "proj": 73.3,
+       "actual": 59.4,
+       "state": "live",
+       "min": 30.0,
+       "own": 71.5
+      },
+      {
+       "name": "Cameron Boozer",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 36.6,
+       "actual": 26.4,
+       "state": "live",
+       "min": 31.0,
+       "own": 49.8
+      },
+      {
+       "name": "Isaiah Hartenstein",
+       "team": "OKC",
+       "slot": "UTIL",
+       "proj": 28.8,
+       "actual": 22.7,
+       "state": "live",
+       "min": 26.0,
+       "own": 41.6
+      },
+      {
+       "name": "Zach Edey",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 24.9,
+       "actual": 20.7,
+       "state": "live",
+       "min": 20.0,
+       "own": 31.2
+      },
+      {
+       "name": "Jerami Grant",
+       "team": "MEM",
+       "slot": "UTIL",
+       "proj": 19.7,
+       "actual": 12.0,
+       "state": "live",
+       "min": 22.0,
+       "own": 33.6
+      },
+      {
+       "name": "Kenrich Williams",
+       "team": "OKC",
+       "slot": "UTIL",
+       "proj": 19.2,
+       "actual": 15.7,
+       "state": "live",
+       "min": 19.0,
+       "own": 34.9
+      }
+     ]
+    }
+   ]
+  },
+  "single:LAL@POR": {
+   "label": "POR @ LAL",
+   "format": "single",
+   "lineups": [
+    {
+     "strategy": "cash",
+     "proj": 219.0,
+     "actual": 18.0,
+     "final_players": 0,
+     "players": [
+      {
+       "name": "Deni Avdija",
+       "team": "POR",
+       "slot": "MVP",
+       "proj": 60.3,
+       "actual": 9.3,
+       "state": "live",
+       "min": 5.0,
+       "own": 56.8
+      },
+      {
+       "name": "Luka Doncic",
+       "team": "LAL",
+       "slot": "UTIL",
+       "proj": 54.8,
+       "actual": 4.0,
+       "state": "live",
+       "min": 5.0,
+       "own": 69.6
+      },
+      {
+       "name": "Damian Lillard",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 34.7,
+       "actual": 2.0,
+       "state": "live",
+       "min": 5.0,
+       "own": 53.5
+      },
+      {
+       "name": "Jrue Holiday",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 26.7,
+       "actual": null,
+       "state": "live",
+       "min": null,
+       "own": 41.9
+      },
+      {
+       "name": "Toumani Camara",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 22.6,
+       "actual": 3.5,
+       "state": "live",
+       "min": 5.0,
+       "own": 37.5
+      },
+      {
+       "name": "Scoot Henderson",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 19.9,
+       "actual": -0.8,
+       "state": "live",
+       "min": 5.0,
+       "own": 35.7
+      }
+     ]
+    },
+    {
+     "strategy": "tournament",
+     "proj": 218.7,
+     "actual": 23.7,
+     "final_players": 0,
+     "players": [
+      {
+       "name": "Luka Doncic",
+       "team": "LAL",
+       "slot": "MVP",
+       "proj": 82.3,
+       "actual": 6.0,
+       "state": "live",
+       "min": 5.0,
+       "own": 69.6
+      },
+      {
+       "name": "Damian Lillard",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 34.7,
+       "actual": 2.0,
+       "state": "live",
+       "min": 5.0,
+       "own": 53.5
+      },
+      {
+       "name": "Donovan Clingan",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 32.5,
+       "actual": 12.2,
+       "state": "live",
+       "min": 5.0,
+       "own": 42.9
+      },
+      {
+       "name": "Jrue Holiday",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 26.7,
+       "actual": null,
+       "state": "live",
+       "min": null,
+       "own": 41.9
+      },
+      {
+       "name": "Sandro Mamukelashvili",
+       "team": "LAL",
+       "slot": "UTIL",
+       "proj": 20.0,
+       "actual": null,
+       "state": "live",
+       "min": null,
+       "own": 26.5
+      },
+      {
+       "name": "Toumani Camara",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 22.6,
+       "actual": 3.5,
+       "state": "live",
+       "min": 5.0,
+       "own": 37.5
+      }
+     ]
+    },
+    {
+     "strategy": "sim_winner",
+     "proj": 218.9,
+     "actual": 19.9,
+     "final_players": 0,
+     "players": [
+      {
+       "name": "Luka Doncic",
+       "team": "LAL",
+       "slot": "MVP",
+       "proj": 82.3,
+       "actual": 6.0,
+       "state": "live",
+       "min": 5.0,
+       "own": 69.6
+      },
+      {
+       "name": "Austin Reaves",
+       "team": "LAL",
+       "slot": "UTIL",
+       "proj": 35.1,
+       "actual": -1.0,
+       "state": "live",
+       "min": 5.0,
+       "own": 50.4
+      },
+      {
+       "name": "Donovan Clingan",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 32.5,
+       "actual": 12.2,
+       "state": "live",
+       "min": 5.0,
+       "own": 42.9
+      },
+      {
+       "name": "Jrue Holiday",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 26.7,
+       "actual": null,
+       "state": "live",
+       "min": null,
+       "own": 41.9
+      },
+      {
+       "name": "Toumani Camara",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 22.6,
+       "actual": 3.5,
+       "state": "live",
+       "min": 5.0,
+       "own": 37.5
+      },
+      {
+       "name": "Scoot Henderson",
+       "team": "POR",
+       "slot": "UTIL",
+       "proj": 19.9,
+       "actual": -0.8,
+       "state": "live",
+       "min": 5.0,
+       "own": 35.7
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "projections": {
+  "players": 84,
+  "mae": 7.9,
+  "bias": 0.74,
+  "minutes_bias": 0.23,
+  "worst_busts": [
+   {
+    "name": "Joel Embiid",
+    "team": "PHI",
+    "salary": 8600,
+    "proj": 40.34,
+    "actual": 19.9,
+    "miss": -20.4,
+    "own": 13.0,
+    "min_proj": 31.9,
+    "min": 25.0
+   },
+   {
+    "name": "CJ McCollum",
+    "team": "ATL",
+    "salary": 5600,
+    "proj": 30.29,
+    "actual": 13.6,
+    "miss": -16.7,
+    "own": 22.4,
+    "min_proj": 28.2,
+    "min": 23.0
+   },
+   {
+    "name": "Mo Bamba",
+    "team": "UTA",
+    "salary": 3900,
+    "proj": 15.62,
+    "actual": 0.0,
+    "miss": -15.6,
+    "own": 0.8,
+    "min_proj": 13.3,
+    "min": null
+   },
+   {
+    "name": "Brandon Miller",
+    "team": "CHA",
+    "salary": 7800,
+    "proj": 32.85,
+    "actual": 17.9,
+    "miss": -15.0,
+    "own": 15.7,
+    "min_proj": 32.9,
+    "min": 14.0
+   },
+   {
+    "name": "Coby White",
+    "team": "CHA",
+    "salary": 4700,
+    "proj": 21.08,
+    "actual": 6.7,
+    "miss": -14.4,
+    "own": 1.4,
+    "min_proj": 24.6,
+    "min": 16.0
+   },
+   {
+    "name": "Grayson Allen",
+    "team": "CHA",
+    "salary": 4600,
+    "proj": 23.87,
+    "actual": 9.9,
+    "miss": -14.0,
+    "own": 8.5,
+    "min_proj": 28.9,
+    "min": 22.0
+   },
+   {
+    "name": "LeBron James",
+    "team": "PHI",
+    "salary": 8100,
+    "proj": 37.83,
+    "actual": 23.9,
+    "miss": -13.9,
+    "own": 15.7,
+    "min_proj": 31.0,
+    "min": 32.0
+   },
+   {
+    "name": "Neemias Queta",
+    "team": "BOS",
+    "salary": 4600,
+    "proj": 24.0,
+    "actual": 11.1,
+    "miss": -12.9,
+    "own": 9.6,
+    "min_proj": 22.8,
+    "min": 15.0
+   }
+  ],
+  "best_smashes": [
+   {
+    "name": "Luguentz Dort",
+    "team": "ATL",
+    "salary": 3900,
+    "proj": 18.77,
+    "actual": 44.4,
+    "miss": 25.6,
+    "own": 2.2,
+    "min_proj": 25.8,
+    "min": 32.0
+   },
+   {
+    "name": "Morez Johnson",
+    "team": "DAL",
+    "salary": 3800,
+    "proj": 13.97,
+    "actual": 39.4,
+    "miss": 25.4,
+    "own": 0.6,
+    "min_proj": 14.4,
+    "min": 24.0
+   },
+   {
+    "name": "Kyshawn George",
+    "team": "WAS",
+    "salary": 5800,
+    "proj": 31.78,
+    "actual": 55.3,
+    "miss": 23.5,
+    "own": 24.2,
+    "min_proj": 31.7,
+    "min": 39.0
+   },
+   {
+    "name": "Jayson Tatum",
+    "team": "BOS",
+    "salary": 9900,
+    "proj": 38.95,
+    "actual": 59.1,
+    "miss": 20.1,
+    "own": 7.7,
+    "min_proj": 29.0,
+    "min": 29.0
+   },
+   {
+    "name": "Hannes Steinbach",
+    "team": "CHA",
+    "salary": 3500,
+    "proj": 7.21,
+    "actual": 26.7,
+    "miss": 19.5,
+    "own": 0.1,
+    "min_proj": 7.2,
+    "min": 27.0
+   },
+   {
+    "name": "Luka Garza",
+    "team": "BOS",
+    "salary": 3700,
+    "proj": 9.17,
+    "actual": 24.4,
+    "miss": 15.2,
+    "own": 0.2,
+    "min_proj": 13.6,
+    "min": 19.0
+   },
+   {
+    "name": "Zuby Ejiofor",
+    "team": "ATL",
+    "salary": 3700,
+    "proj": 11.61,
+    "actual": 25.5,
+    "miss": 13.9,
+    "own": 0.4,
+    "min_proj": 9.8,
+    "min": 15.0
+   },
+   {
+    "name": "Darryn Peterson",
+    "team": "UTA",
+    "salary": 5500,
+    "proj": 30.24,
+    "actual": 43.9,
+    "miss": 13.7,
+    "own": 20.3,
+    "min_proj": 31.6,
+    "min": 30.0
+   }
+  ]
+ },
+ "best_values": [
+  {
+   "name": "Luguentz Dort",
+   "team": "ATL",
+   "salary": 3900,
+   "proj": 18.77,
+   "actual": 44.4,
+   "miss": 25.6,
+   "own": 2.2,
+   "min_proj": 25.8,
+   "min": 32.0
+  },
+  {
+   "name": "Morez Johnson",
+   "team": "DAL",
+   "salary": 3800,
+   "proj": 13.97,
+   "actual": 39.4,
+   "miss": 25.4,
+   "own": 0.6,
+   "min_proj": 14.4,
+   "min": 24.0
+  },
+  {
+   "name": "Kyshawn George",
+   "team": "WAS",
+   "salary": 5800,
+   "proj": 31.78,
+   "actual": 55.3,
+   "miss": 23.5,
+   "own": 24.2,
+   "min_proj": 31.7,
+   "min": 39.0
+  },
+  {
+   "name": "Darryn Peterson",
+   "team": "UTA",
+   "salary": 5500,
+   "proj": 30.24,
+   "actual": 43.9,
+   "miss": 13.7,
+   "own": 20.3,
+   "min_proj": 31.6,
+   "min": 30.0
+  },
+  {
+   "name": "Hannes Steinbach",
+   "team": "CHA",
+   "salary": 3500,
+   "proj": 7.21,
+   "actual": 26.7,
+   "miss": 19.5,
+   "own": 0.1,
+   "min_proj": 7.2,
+   "min": 27.0
+  },
+  {
+   "name": "Deandre Ayton",
+   "team": "WAS",
+   "salary": 4000,
+   "proj": 18.83,
+   "actual": 28.7,
+   "miss": 9.9,
+   "own": 1.3,
+   "min_proj": 22.0,
+   "min": 23.0
+  },
+  {
+   "name": "Mario Hezonja",
+   "team": "CLE",
+   "salary": 4100,
+   "proj": 19.61,
+   "actual": 28.5,
+   "miss": 8.9,
+   "own": 1.7,
+   "min_proj": 21.1,
+   "min": 27.0
+  },
+  {
+   "name": "Tre Johnson",
+   "team": "WAS",
+   "salary": 3700,
+   "proj": 14.86,
+   "actual": 25.7,
+   "miss": 10.8,
+   "own": 0.7,
+   "min_proj": 16.7,
+   "min": 27.0
+  },
+  {
+   "name": "P.J. Washington",
+   "team": "DAL",
+   "salary": 5900,
+   "proj": 29.44,
+   "actual": 40.7,
+   "miss": 11.3,
+   "own": 11.9,
+   "min_proj": 28.4,
+   "min": 33.0
+  },
+  {
+   "name": "Zuby Ejiofor",
+   "team": "ATL",
+   "salary": 3700,
+   "proj": 11.61,
+   "actual": 25.5,
+   "miss": 13.9,
+   "own": 0.4,
+   "min_proj": 9.8,
+   "min": 15.0
+  }
+ ],
+ "reference_lines": {
+  "double_up": 328.5,
+  "fifty": 324.0,
+  "gpp_cash": 346.3,
+  "top1": 387.6
+ }
+}
