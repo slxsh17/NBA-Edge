@@ -1,11 +1,19 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T17:07:39.056516+00:00",
+  "checked_at": "2026-11-07T17:55:49.157772+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Noah Clowney Injury: Questionable for Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYl93Nkp5SG1kVXpwS2dxTHd4RXhWUV9KaEdDc0hsSmZMLV9DWmhWU1lHUXhXcEdrTHJFWlNKRVhEZ3UwcnMzS1V2a2phOFNGcGxYUjF6T3JwcHY0OGhhcUxfajBmaG44S1J2MUFxZDN2RG1RTllLS2hvRHJ4aTUxYmIwRXp5cUozQ0VpRk52NzlnZXBtRXVZcDlsNzRyWXc?oc=5",
+      "published_at": "2026-11-07T15:19:26+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Luka Doncic speaks on how he's having fun amid his historic streak to start the season - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNWxXdUxHWTF4WDZoYmZMWFBWTEQ2amdtRnVfdGVSNUVKTzNhVmZSaWhJcFNpOGtJYmpIdlFTN0VHbE9ZSllIYVVNZ0RweDBKT25WV1ZyTVl1dEthbTRxNl80Z0hVUl9XUGw2WWVpSE1WME5kZXFvN3dYX3lteWdyZ1dpbnM?oc=5",
@@ -42,6 +50,14 @@
       "headline": "Doug Christie On The Difficulties Of Figuring Out A Rotation Amid Injuries, Kings Fouls Vs. Spurs - Sactown Sports 1140 AM",
       "source_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNeFNvY1BxOXVzRkw4NEtkbkhhcnBnNUJWekFuQkpTREdQd2dqU1FtMGRUUWRQSkxjZWxMTXhzb3laSFk1eldtaFYwM2hNbXBCNDlwVlZVamROeERnTC1HUWY2ejJKbnJEOU5Dd2J4X210djJRMG9UclpkWGNIaWh2VkFocHNQVm5OaUxUU0o0VHNPajdFaHo2bl8xVU9Kdzlkdml1ZDFqX1ZTV0JiM2RWNk1pQnJpZzlCVERHMmFLZVdHSUZMM1pLd2o2Wk52V0NnNWtOcGJEajA1REplakVBRC1rXzJnMEhZUVRLdjZweDhFQWMtaXhV?oc=5",
       "published_at": "2026-11-07T06:45:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Raptors to start Shead, Walter, RJ, Collin, Poeltl - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQVVmbEEtcS1sTUFkQkNOZkpMYTZheWVZMk1LNDdKZ0t2czZscERzME5PUVZDS2xzc2lnbnNWT1RMaGFzeDhTRmFhR2djLVhCMndSeGZBOHZ0Q3pYN3dnSU1wZ1JXYXk4UXllTkRJT3dVZXh5QWFWQWlWY3RCRkZzTnhoTHl3eWpLR2FieHFqcXJDVHdSZERUSUJ1c05HaTV6UVYzbVZNOFhDWTNZcm9jZldBd1M?oc=5",
+      "published_at": "2026-11-07T06:30:53+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -295,33 +311,9 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "Scottie Barnes (adductor/groin) questionable to play Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZGMxSDBKdGQ1NndqVWFUS1dQUUZKTE12NU5DaE1vUjBMU2plb0s1bDNJcXpNalZVenhudDNLSmpRRWRael82TEEzLW11dTFZYXNRTVJmbVFCbWFtYWVPNjNTWm9iLVRqVzJlUUp4WjZsdDVXbHBsblZNd2FDd1RlQVFOQVFOdUh1ZVFURUtwSndBM2dLMGRxdWxBNXNraFFuU3Mxc1kwONIBrAFBVV95cUxNWHlOb3hzbGtkWC1OckNXSEpFdEFLX2xlVTB2VGJtSnQwczVTT0ZneWFPSjEybzhZeWV3M2NiOEROOXB3cmlfbzJ5czJmQUxaSGlyRDRoWXZtYmxyVjI5ZFJlaE9wS3hrZlI3cmhhY1VNMGU3a2pJU3FtLTh6OGJYZHh6eWhyNFkzeUVLMVFKMTVpR05uYXhuMmZLYmpLcTFCWHZiLVRONi1MNllt?oc=5",
-      "published_at": "2026-11-06T17:51:53+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Kyle Anderson (illness) listed questionable Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSlM2VjFPeHdIWUtUWWpkUnRPaTFiZEZyekpjMENKdzBxODdyX2IycWRRVUFSSU9ER28wSGVKSlJ5dnZUNUVVaXF0SGV3NWVVWlhYWXVxTlVZOEx0OUM5VzVmN2oxaGw5R0wxN1Z2ZFJnUTloM3NwdDBxOXNCaGdxZkZqWVFQSi1ES2ItYnNWQzR4Zy1wNGtrcl9ZdTXSAaIBQVVfeXFMTkR6QThpNHo4Q01rR3dZd2h1bTZ3OWJSYjd6aDNhZDN3MWpWcHlWU3VjeklvTFYyQkFKMXQ5WGFnNGFLYkVpb0V1U0p3THN6M1kzX082WUdvLVN2X1pYVXN3cXdTMEJNeHZHbUN5N2wxTHE2XzRYa0JKX01fZzU5bkVHREJvOUFSNzVXM3hMM2FKZGNLdy1tZ0JCTmtGVGd0cHZR?oc=5",
-      "published_at": "2026-11-06T17:49:30+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Isaiah Stewart (knee) ruled out for Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMTlSWHg4ZXFzYkNsaU9vemFoVGJrdDF6R0NwN3JWX1pKblJ6eWJmUnJ4dWJJLWtuRVZvMDhhLU1GNnFROEFwaTdNVThLakpKOXFLdzYyN0Y0SnNMb2JRVnpzbnpZQWw1SHg1YlNDSV9rbDZUMkR3bFl1eGY4WWlHTVEzOHdoMEVtS1RrZtIBkgFBVV95cUxPOEJYTGp6b3pjTkhOeDZjdUtSSjZvWG8tZmFjUlBNNzZ0eGpPdHY2SlNPMERXVE80OWUtVDNVWHlmSGdPTG9CckxCMlhicDRFc0I3MDZSQ1dsOElzc1BFSHZjdkFXamZQNjVxcFFwejdkd1NoVWVXXzRQUUJ3UGdwekd2aTJjX0FSaXVmUXBHZGtFZw?oc=5",
-      "published_at": "2026-11-06T17:46:25+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Adem Bona (neck) doubtful to play Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaXdyUjR1d3VWb3E0ZWxoVEx3Qk43VWR4cVRlendBa2IycDVqZTQxRmpIZS1GTXlNR1A4cUhLZlZDWERHTTFENm1mMmxhMl9TeVdFRFoyM0RiRDljQ1N2dVhpNXZrUVBzdHVROTJnQ1ZsTDlDdktzWklZazk3eDFqRlR4emNRQ1cycDN1bF9hTdIBlAFBVV95cUxOLXBzZmotZC1Ud3FsRnNNUWhWSG0yb0d4eVJYcUVKWkl0Zm82TlBsSm0tQkJuTWtzOTVNajd0Q0JZLTJJakNMWGhTQ1BLZmJ3S09sVUhINlhTcDlKaTNScHFlZ21VUlpCTFJvWGxzX3kwcTN6c2J2dDN3SUtNZ2pMNzFjQ2FkeXpndzZCWFlfUFVtNzd4?oc=5",
-      "published_at": "2026-11-06T17:31:09+00:00",
+      "headline": "Moussa Diabate Injury: Ruled out for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVlZ3eXFsUTlqeDJlZm5SWTEyUng4eU5zMm5Ha2plclJlS2dXdWlfdm51WGsyNTR6V2tmcWJQazdaMDB4cGhZTloycHoxaElUd0pjNVo5RUhUQzhMZVFtOXpFLWdYR1ZtTFhpVTdfd3NialNJaWJHdFI0T2dOMEVNRFhXaUJYTHRjTFFmLXhqZ1cxSmdxZENsTTZTcw?oc=5",
+      "published_at": "2026-11-06T17:57:15+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
