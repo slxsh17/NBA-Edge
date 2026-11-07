@@ -48,7 +48,11 @@ OBSERVED = {'2026-10-29': {'double_up': 368.3, 'layup_20max_cash': 362.4, 'block
             '2026-10-27': {'your_302_percentile_small_rebound': 81.6, 'your_302_percentile_assist_se': 83.0},
             # Oct 30: NBA EDGE's cash lineup (309.0) went 0 for 3 in your cash contests, so the real
             # line was above 309 even though the simulated Double Up line was 301.7.
-            '2026-10-30': {'cash_line_above': 309.0}}
+            '2026-10-30': {'cash_line_above': 309.0},
+            # Nov 6: tournament min-cash lines (simulated gpp_cash median 346.3). The user's 378.8
+            # placed 23rd of 595 and 209th of 5,362 (both top 4%).
+            '2026-11-06': {'assist_se_cash': 354.5, 'pick_n_roll_25max_cash': 352.0,
+                           'user_378_8_place_assist_se': 23 / 595, 'user_378_8_place_pnr_25max': 209 / 5362}}
 
 
 def read(p, default=None):

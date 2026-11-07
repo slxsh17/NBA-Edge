@@ -327,6 +327,54 @@
      "prize_pool": 200
     }
    ]
+  },
+  {
+   "date": "2026-11-06",
+   "slate": "Main",
+   "final": true,
+   "entry": "Gilgeous-Alexander, Barrett, Dybantsa, Murray-Boyles, Okongwu, Alexander-Walker, Daniels, George, Edgecombe",
+   "score": 378.8,
+   "note": "From the 11:33pm screenshot: one lineup (378.8) in 5 Main contests, $11.22 in, $43 back. NBA EDGE's frozen lineups scored ~332-340 that night.",
+   "contests": [
+    {
+     "name": "$2.5K Fri NBA Assist (Single Entry)",
+     "entries": 1,
+     "fee": 5.0,
+     "won": 20.0,
+     "field_entries": 595,
+     "best_place": 23,
+     "min_cash": 354.5
+    },
+    {
+     "name": "$10K Fri NBA Pick 'N Roll (25 Entries Max)",
+     "entries": 1,
+     "fee": 2.22,
+     "won": 6.0,
+     "field_entries": 5362,
+     "best_place": 209,
+     "min_cash": 352.0
+    },
+    {
+     "name": "$1.5K Fri NBA Dribbler (Single Entry) + 2 more (cut off in screenshot)",
+     "entries": 3,
+     "fee": 4.0,
+     "won": 17.0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "slate": "Other slates (not shown)",
+   "final": false,
+   "note": "Screenshot total was $22.10 in, $48 winning; Main accounts for $11.22/$43, so other slates are $10.88 in, $5 winning as of 11:33pm (late games may still be going).",
+   "contests": [
+    {
+     "name": "other slates (details not given)",
+     "entries": null,
+     "fee": 10.88,
+     "won": 5.0
+    }
+   ]
   }
  ]
 }
