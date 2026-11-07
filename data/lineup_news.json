@@ -1,11 +1,19 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T21:03:49.458088+00:00",
+  "checked_at": "2026-11-07T21:24:31.302145+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Desmond Bane ruled out as Magic down another starter at Warriors - Orlando Sentinel",
+      "source_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNeFJLNHdLTElsRUJYdHJURWE5RTdZenBDMV9rZDY1NF9kbjFtcDRzNTJ2RHo0d0RNYWozaVphS2tNeWRweDM4cEtWZ0JlS084R1lXTXlmSW1wVk96SWptNXlrWmJjaXV6OVYxaUsybkxNak9Fd2w5LVJPNi1WVWxlbUxKdWJMb0IwMDRHdkZvSW1xc1kyeDJ4Vi1ZZTNlV0NRTHhab1hIQnJMSE93S3YxRnhNU0c3eTNYOUJkTlNiYzdFdG1yLUZ5X2NiLXg2WEFIdFRYVlNncjh6ZTVjSl9lM0pjRE5rY1ZYbHlTeA?oc=5",
+      "published_at": "2026-11-07T21:17:17+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Desmond Bane Injury: Ruled out Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLWltVDVMclV6WXowbGJqclNRSGFzejZndWV6S3hZZmplUmNfeEY0aFR4c3VkVzkyVmxaOFBjeDFwZjFuZklKekNwbW1lMks4eXdDNjBoRDZTdWhmZElKZVBULXlnbVkzUEhKVnhPel8zZ1lLMXB3RFhFZGJhR0FnYWlaVWcyTlNaQXVia091dnhQQjVTc3c?oc=5",
@@ -314,14 +322,6 @@
       "headline": "Cavs release full injury report ahead of NBA Cup match vs. 76ers - Cavaliers Nation",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPanRrejU4QzNQUGhJNkhveVowSDh4Wk5VRnVKYWZvNmpLQk8ydlVzMVcxU0dsOERseURKbWRERnhiTjhCVmJXSk12T2V6THhSMXlUZnpjb3EySlpYRHp2T1lfTTh5VkdxNlRzR3I2NS1wV1VSRDUwdFh5M0JfSy1wSXBiNDNBUTlhVjNSLXlEdWRPY3E2WnJnTVFlRVRaSV9ueVA2QS13?oc=5",
       "published_at": "2026-11-06T22:34:32+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Draymond Green Injury: Questionable versus Orlando - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRTQ5Z294OFFiYzhVTjUySkNLSUQ3ZW8zajlEWE1HOGdsLWtGWVhrZkFxTl90cFk0c2RwaUMyWU9qT241SUdONmphX2U5NW9YN0ZWSU5VblBaX1VIb19mYzlGZFFuZDF1bG5yby1leThTMkVKcmdEWE1lYm1TV1FMUE9XQnAtY0VGcjA2ZVFEZURDN295dGdxUU5wTlVIcEtnN0dKSw?oc=5",
-      "published_at": "2026-11-06T22:21:30+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
