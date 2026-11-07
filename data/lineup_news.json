@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-07T02:34:16.744630+00:00",
+  "checked_at": "2026-11-07T03:34:23.941539+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -35,12 +35,12 @@
     },
     {
       "team": "LAL",
-      "status": "projected",
+      "status": "confirmed",
       "players": [
         "Luka Doncic",
         "Austin Reaves",
-        "Z. Williams",
         "M. Thybulle",
+        "Jake LaRavia",
         "W. Kessler"
       ],
       "source": "RotoWire NBA Daily Lineups",
@@ -50,9 +50,25 @@
   ],
   "headlines": [
     {
+      "headline": "Sam Merrill Ruled Out With Elbow Injury vs. 76ers - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQam9JSkZuMy00TzNmME9Lb0hzNFRrRWVQdkpyODRFZXI5SUNCRDdPalhlTkFQdjJzVjIzS0lQaVlfdDhlX3RYTlh0dk9JRXdjbWk5UTNoaVkxZWVTNXBtRUp5ZWMxU3poUG1PVGFBWTJmZmFuVE1nQ1NySDZJNnZmNFp3MlhfUQ?oc=5",
+      "published_at": "2026-11-07T02:46:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
       "headline": "Cavs’ Jarrett Allen ruled out for NBA Cup showdown with LeBron James’ 76ers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYjVpOURnWW9tUE56bmhuLWxCcEw3a0NxLUNlY01UYUNDUElnS1VMREJLU2p2LUhHZlVCeGtXSndDZm5sS0VHNGxRZWhYR2dkNTRFTG5PWTNnalhlR3NxM19JRVNHMXVLSjE1a2EyU3pvNTNNRlk1QVRZZV9pdmNucklWRQ?oc=5",
       "published_at": "2026-11-07T01:28:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Jalen Johnson Ruled Out Again for Hawks vs. Wizards - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNHg5VXQ4MzlHRllVLXhYb3ZaMlg2WUhjOTk0ajhwZDNzWHNIX2Q0WUJsZ05YTGhGanZNYTlCUXpOOVNublIwaTJrUmE3RkNMRG5DQ1VYWmVKRXVUVHhhSTdNLVdHRWM1UHBoUndmR2EtRXdnd3pOR1g4M2ZNcldrdk96RnV0Z1E?oc=5",
+      "published_at": "2026-11-07T00:56:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -266,6 +282,14 @@
       "scope_date": "2026-11-06"
     },
     {
+      "headline": "Bona doubtful, no Sixers starters on injury report for Cavs game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVG5qd2JsTTh4dFFkSmJDRkNPaS1NdTNxb3ZJSk9tQUZJWG9SSzJCMlRWeEJVak92cHpjcFhlQlVtSS04V3F1MHRJZEtWT21DRlJaSFBOTVJTbTZwTkRwRVRDTXM4Z3Q5ZEpaOTBFLW51dk5xR3owTnRNN3NoTWd6RTJ5Y1VOcDFz?oc=5",
+      "published_at": "2026-11-06T17:06:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
       "headline": "How Timberwolves’ Starting Lineup Matches Up vs. Pelicans on Friday Night - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRjhzU0lheE91b3JjMk9HWG9BcGlsMTd1RUNZRXdlbklzR3FkdlA2VnE0NmsycGEzU1B2NEFvcXFvQkFnLXNNcGNJRHRXRXF0a3hHWEw5X1pidkdUQllTZUZvYXBXZHQ4c0lIb1lwSEV6Tmh2V25Ccl9ZMkdKemphdTZJNlhicFZ2SmdvZ1NJeGlFTk42ZFpnNmhjdWFzNmtRcm4xWFhsbDJIVFlpNXk1ZVpjMFYtV25HVXJSOG10UQ?oc=5",
       "published_at": "2026-11-06T17:00:01+00:00",
@@ -322,30 +346,6 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Coachella Lakers To Debut Friday; Bronny James Expected to Start - MyNewsLA.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWDJZbXlDTEk4VF9xcjdOR1cweXpJcjZGRXRWM1FwZUo4cFRYRG9XRTVRMHFsTFRTZTRBelF4QmFMbGNfX1NRUmdIWFUwTE15ZXdqVi04N0U5ZGhiTVpMNVhFaWtrRkZWQmdTa3NucHZ1c2NkZXdiV2ZQSVJuQ1QwSlBqaVVIbWtEV0ZrZVVmVWxIcDgtSUpIUDRhc1RaVzJ3bHd0VE11bmhzSEtRbUkyeE5mRjQ5OW1s?oc=5",
-      "published_at": "2026-11-06T07:59:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Bona doubtful, no Sixers starters on injury report for Cavs game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVG5qd2JsTTh4dFFkSmJDRkNPaS1NdTNxb3ZJSk9tQUZJWG9SSzJCMlRWeEJVak92cHpjcFhlQlVtSS04V3F1MHRJZEtWT21DRlJaSFBOTVJTbTZwTkRwRVRDTXM4Z3Q5ZEpaOTBFLW51dk5xR3owTnRNN3NoTWd6RTJ5Y1VOcDFz?oc=5",
-      "published_at": "2026-11-06T07:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "From limited minutes to leading the way: UC Davis guard Connor Sevilla’s journey - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOaXFSN1hUYS1TUzhiSnNVY2xJTHZ5dkJIYWl3a0E1cWYzRXNsZWlMY3FQVjA1MDV0aXZZZUlVLUQyekRpcHpWaGgtblE5Nk9lMGRYZXlrQ0VQSzB1VDBiN3FlR3hweVMyZFN5WXljQjN0WnZhNDFJZElJSjh1T0w4aDQzNTdEdw?oc=5",
-      "published_at": "2026-11-06T04:50:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
       "headline": "Jalen Johnson (ankle) questionable to play Friday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWUFHckxWYjIwQUE3b3VfTC1NTTk5UWhXOU55aHlvZ3hsTkI4NlJfM2dVcW9RQlR1VG9nNW9DaFd3Z1Z6RlJiRnZCRVZHVzRpVVByejlkRERQeEdOb2hDRkM0SHBOSUpVS0dYMDZJY2FUY3JBcGEzZmtYUldoM1JnR2VXdk1HOEZBRlZxdzI4NzZfUzl4UW9nT0tUTdIBoAFBVV95cUxNc0xNdzhRY1BIQUxuR1ozUm5tWDAwcExKWU1jamMwZXhKRlNkM1ZqTWZuQ0ZnYUtKclRFRnM5MUJ2RHFWcVJha2JkZjNSUDVwelMxcTBQTkozbU90b1lWWkI5MGhoUXR4V1lqVUpEZ0R0VktPcE9DMW91V0xCYU1zaGg2T3MzVnhiVzRZUmRKY2VYR1FPbUQxVThHZ3k4aTlF?oc=5",
       "published_at": "2026-11-06T04:33:00+00:00",
@@ -386,17 +386,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Raptors' Scottie Barnes questionable vs. Bucks - Sportsnet.ca",
-      "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMXBNd24wOWdrZzQ1dTVEeTl6S2V2andhRlJOdFpoX19mNDAwQlh6dGVBb1RCUlhWdDYzeElrVWZwOEFkcEhaSk9adWhxajY4dkR1N1B3amZ5QXJjY005QlpqcmFNaENmV0pvbzhtY29JYjVmZ0RLNFBBSFpJMXh6WDUtaVBjUUxVOVE?oc=5",
-      "published_at": "2026-11-06T02:47:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Kon Knueppel Ruled Out Friday Against Boston - NBA News | Fantasy Basketball - RotoBaller",
-      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWktySnlxMjlTb080TG83cFZ1TlVud19vNm92RWlzS0ZIUXE4VWRTYUFkaGdaR2dySFBaeG5IMTVaZGJFdWFnYWJGd1g1ams5Qk5HLVVFRXFkS01xdWJHd245S3c3MWxDVW5hTlNtU0s5MXFlMHZtY1ZhbU51QTNqcXJ3TzgwMGYyYm1yejdDRVRQVVY0emc?oc=5",
-      "published_at": "2026-11-06T02:40:09+00:00",
+      "headline": "CV Lakers To Make Debut Friday Night with Bronny James Expected to Start - MyNewsLA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNenQzZVAzSVhsdEpMMHhMVDJoNmtoeEh1ZEJCb0tUOEQ2cnJsLXdNcFBSS2YxTHhfc1FvOWFfTDNFT0FKaTBDS200MklmLVFCVFlFd1hudjl5clktWkpnczZreWRzRVdjRkRBczhRa3VVRW1wTWg3YWE0ZHZ6cXZ1dXJYMXFzallDVFpUbS1OZHRWNkF2X2Y1NDhBeFo5bGktRWxObXg5Q3FHZ3pva1JlR3A2eXVSQQ?oc=5",
+      "published_at": "2026-11-06T03:42:18+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
