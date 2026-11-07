@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T17:15:43.705239+00:00",
+  "updated_at": "2026-11-07T17:52:30.374735+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -330,7 +330,7 @@
     {
       "name": "Adem Bona",
       "team": "PHI",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Dominick Barlow",
@@ -405,12 +405,12 @@
     {
       "name": "Scottie Barnes",
       "team": "TOR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Immanuel Quickley",
       "team": "TOR",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Kawhi Leonard",
