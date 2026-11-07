@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T23:31:42.280788+00:00",
+  "updated_at": "2026-11-07T23:46:42.134382+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -435,7 +435,7 @@
     {
       "name": "Anthony Davis",
       "team": "WAS",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Reece Beekman",
