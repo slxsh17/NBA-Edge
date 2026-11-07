@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T00:10:11.075187+00:00",
+  "updated_at": "2026-11-07T00:12:06.276103+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -116,6 +116,11 @@
       "name": "DeMar DeRozan",
       "team": "DEN",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Spencer Jones",
+      "team": "DEN",
+      "status": "OUT"
     },
     {
       "name": "Julian Strawther",
