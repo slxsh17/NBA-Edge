@@ -1,54 +1,27 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T07:46:18.062073+00:00",
+  "checked_at": "2026-11-07T08:36:51.342183+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
-  "lineups": [
-    {
-      "team": "BOS",
-      "status": "confirmed",
-      "players": [
-        "Derrick White",
-        "Jordan Walsh",
-        "Paul George",
-        "Jayson Tatum",
-        "Neemias Queta"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-07"
-    },
-    {
-      "team": "MIL",
-      "status": "confirmed",
-      "players": [
-        "B. Burries",
-        "Tyler Herro",
-        "Jaime Jaquez",
-        "Kyle Kuzma",
-        "Myles Turner"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-07"
-    },
-    {
-      "team": "LAL",
-      "status": "confirmed",
-      "players": [
-        "Luka Doncic",
-        "Austin Reaves",
-        "M. Thybulle",
-        "Jake LaRavia",
-        "W. Kessler"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-07"
-    }
-  ],
+  "lineups": [],
   "headlines": [
+    {
+      "headline": "Javon Small News: Back in rotation Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN1ZhTEw1SHpuUi1qYzh5YVZhNjJ4LW1ENDRLN2ZWenVWMFo1cWxkM0xlaGJ5dWU2bnRDb2hsdjBlMG0yTk9yUFhjUnA3NGNCZDd1MmtIV2pLYlhsZUVfVWlSbnBVRkYwaFd2YnNQN3ltSlZoTU12SFRBZGE2WjFrVE1EX1pyRHRxNU1oTy1SUXYzT3Nkb3hYTQ?oc=5",
+      "published_at": "2026-11-07T08:13:45+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Luka Dončić's best buckets to start the 2026-27 season - NBA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN01SeWx6ZmdJdl9GRkZpd2VQdjhtYkpYYlFXOUxObDF6d2lZdC1CNWVnQ1FodlVCVFY3VTdlZkJvM0JUMENMeXpyQThSTUxtX0tIMUtKUHJ3OFZreEVwZ3BSUExMeUdSNjRNZUJFZkkzSE12OS1TemxPOWJoVTVHZEd6S0pCaUxtMEg0cUl0ekNxQjhLaTRZMWVXeWFVT1VNMllScFN1ZGltcnJuQTRBQUxJdmZRR21Ta2tIM3c5RHRnQQ?oc=5",
+      "published_at": "2026-11-07T08:07:13+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Doug Christie On The Difficulties Of Figuring Out A Rotation Amid Injuries, Kings Fouls Vs. Spurs - Sactown Sports 1140 AM",
       "source_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNeFNvY1BxOXVzRkw4NEtkbkhhcnBnNUJWekFuQkpTREdQd2dqU1FtMGRUUWRQSkxjZWxMTXhzb3laSFk1eldtaFYwM2hNbXBCNDlwVlZVamROeERnTC1HUWY2ejJKbnJEOU5Dd2J4X210djJRMG9UclpkWGNIaWh2VkFocHNQVm5OaUxUU0o0VHNPajdFaHo2bl8xVU9Kdzlkdml1ZDFqX1ZTV0JiM2RWNk1pQnJpZzlCVERHMmFLZVdHSUZMM1pLd2o2Wk52V0NnNWtOcGJEajA1REplakVBRC1rXzJnMEhZUVRLdjZweDhFQWMtaXhV?oc=5",
@@ -226,14 +199,6 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "Gary Payton Injury: Questionable for Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUURWWlJfSXVtUkdnWTBXSDFzUDZhcV91MFRIRzdGY29pWExNWEN0WnQxcWVaNnRvaUtlbVRUbUFRbk9odExvQ1hsS2FZQ2VoVEdfRlBtSi10UmdUQzQtRWxTeEYwa3lpVUVCc25uUGtfMFllMWRrRWw2cGhaQy0yTDU1bXNMU0k0b3Mwc0ZucTI4Q05nbWFSSlM5S09KZw?oc=5",
-      "published_at": "2026-11-06T22:21:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
       "headline": "Should Nets rookie Mikel Brown Jr. be in the starting lineup now? - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeGRfVVlFdi1nbmEzS016eGlDTjFadEViRG5QWmZMaUkzTFZaZThhMzBGSkp5OGstdVp0ZC0wMmNKZGh3bWg1bmk2ckdQRUphM3BvS25WbWd0VlUyd0ZNb3doOUVSV21hR05LQVQyUTR5UUZzZl9SSk5LMVdKMm5GaQ?oc=5",
       "published_at": "2026-11-06T22:19:20+00:00",
@@ -365,14 +330,6 @@
       "headline": "Projecting the Hawks Starting Lineup and Rotation If Jalen Johnson Misses Tonight's Game vs the Wizards - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdHU3N19FeE1NRTlSc2I0THNHbEtWb2FxSkgyS1p6M3RoNW1WM0VTRlZjbkdodG9xXzdQYTZqcnFTT0VEeGVCeTRxYUp6NE9YTkRLYmpzNTdGb2FhS1BlTTJvWmx0a0s5ZkxBeDRZYjd0VTU0LVVmbVByQWJIaWdldVFKU0xIUkZKSGMwRTgyNWtCeFN2N21xd2NsQ2p6dWxlQmJtUzMxbzkzcWZQU00zdkx4MWdqSEdGNjl0LXVuZGlVQkwyLWlIb2xLOFAyeTM1VnRoaFJTeWFaN3NoV0gtYkNpNFY?oc=5",
       "published_at": "2026-11-06T14:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Coachella Lakers To Debut Friday; Bronny James Expected to Start - MyNewsLA.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWDJZbXlDTEk4VF9xcjdOR1cweXpJcjZGRXRWM1FwZUo4cFRYRG9XRTVRMHFsTFRTZTRBelF4QmFMbGNfX1NRUmdIWFUwTE15ZXdqVi04N0U5ZGhiTVpMNVhFaWtrRkZWQmdTa3NucHZ1c2NkZXdiV2ZQSVJuQ1QwSlBqaVVIbWtEV0ZrZVVmVWxIcDgtSUpIUDRhc1RaVzJ3bHd0VE11bmhzSEtRbUkyeE5mRjQ5OW1s?oc=5",
-      "published_at": "2026-11-06T07:59:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
