@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T20:49:31.390256+00:00",
+  "updated_at": "2026-11-07T21:09:31.184668+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -118,11 +118,6 @@
       "status": "OUT"
     },
     {
-      "name": "DeMar DeRozan",
-      "team": "DEN",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Julian Strawther",
       "team": "DEN",
       "status": "OUT"
@@ -178,17 +173,17 @@
       "status": "OUT"
     },
     {
+      "name": "Tyrese Haliburton",
+      "team": "IND",
+      "status": "OUT"
+    },
+    {
       "name": "Johnny Furphy",
       "team": "IND",
       "status": "OUT"
     },
     {
       "name": "Ben Sheppard",
-      "team": "IND",
-      "status": "OUT"
-    },
-    {
-      "name": "Tyrese Haliburton",
       "team": "IND",
       "status": "OUT"
     },
@@ -340,6 +335,11 @@
     {
       "name": "Mark Williams",
       "team": "PHX",
+      "status": "OUT"
+    },
+    {
+      "name": "Robert Williams III",
+      "team": "POR",
       "status": "OUT"
     },
     {
