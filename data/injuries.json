@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T00:42:06.481094+00:00",
+  "updated_at": "2026-11-07T00:50:27.368177+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -360,7 +360,7 @@
     {
       "name": "De'Andre Hunter",
       "team": "SAC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Maxime Raynaud",
