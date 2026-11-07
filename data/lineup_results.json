@@ -1,10 +1,10 @@
 {
 "schema": 1,
-"updated_at": "2026-11-07T06:17:10+00:00",
+"updated_at": "2026-11-07T06:37:10+00:00",
 "calibration": {
 "sd_scale": 1.026,
 "shift_classic": -1.12,
-"shift_single": -0.08
+"shift_single": -0.07
 },
 "calibration_players": 1888,
 "summary": [
@@ -44,10 +44,10 @@
 {
 "format": "single",
 "strategy": "cash",
-"slates": 16,
-"avg_actual": 198.8,
-"avg_proj": 205.1,
-"avg_pct_of_best": 80.3,
+"slates": 17,
+"avg_actual": 199.7,
+"avg_proj": 205.9,
+"avg_pct_of_best": 80.5,
 "within_sim_range": 94,
 "below_range": 0,
 "above_range": 6
@@ -55,10 +55,10 @@
 {
 "format": "single",
 "strategy": "sim_winner",
-"slates": 16,
-"avg_actual": 204.5,
-"avg_proj": 204.0,
-"avg_pct_of_best": 82.6,
+"slates": 17,
+"avg_actual": 205.9,
+"avg_proj": 204.9,
+"avg_pct_of_best": 83.0,
 "within_sim_range": 94,
 "below_range": 0,
 "above_range": 6
@@ -66,10 +66,10 @@
 {
 "format": "single",
 "strategy": "tournament",
-"slates": 16,
-"avg_actual": 203.2,
-"avg_proj": 203.7,
-"avg_pct_of_best": 82.1,
+"slates": 17,
+"avg_actual": 204.9,
+"avg_proj": 204.5,
+"avg_pct_of_best": 82.6,
 "within_sim_range": 94,
 "below_range": 0,
 "above_range": 6
@@ -9791,6 +9791,291 @@
 "slot": "UTIL",
 "proj": 19.41,
 "actual": 8.0
+}
+]
+}
+]
+},
+{
+"date": "2026-11-06",
+"slate": "single:LAL@POR",
+"label": "POR @ LAL",
+"format": "single",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 256.9,
+"players": [
+{
+"name": "Austin Reaves",
+"team": "LAL",
+"slot": "UTIL"
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"slot": "UTIL"
+},
+{
+"name": "Robert Williams",
+"team": "POR",
+"slot": "UTIL"
+},
+{
+"name": "Toumani Camara",
+"team": "POR",
+"slot": "UTIL"
+},
+{
+"name": "Jake LaRavia",
+"team": "LAL",
+"slot": "UTIL"
+},
+{
+"name": "Luka Doncic",
+"team": "LAL",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 219.0,
+"actual": 213.2,
+"sim": {
+"p10": 167.5,
+"p50": 222.6,
+"p90": 277.9,
+"mean": 223.0
+},
+"band": "within range",
+"busts": [
+{
+"name": "Scoot Henderson",
+"proj": 19.86,
+"actual": -0.6
+},
+{
+"name": "Damian Lillard",
+"proj": 34.71,
+"actual": 27.0
+}
+],
+"boosts": [
+{
+"name": "Luka Doncic",
+"proj": 54.84,
+"actual": 66.5
+},
+{
+"name": "Deni Avdija",
+"proj": 40.23,
+"actual": 47.3
+}
+],
+"players": [
+{
+"name": "Deni Avdija",
+"team": "POR",
+"slot": "MVP",
+"proj": 40.23,
+"actual": 47.3
+},
+{
+"name": "Luka Doncic",
+"team": "LAL",
+"slot": "UTIL",
+"proj": 54.84,
+"actual": 66.5
+},
+{
+"name": "Damian Lillard",
+"team": "POR",
+"slot": "UTIL",
+"proj": 34.71,
+"actual": 27.0
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"slot": "UTIL",
+"proj": 26.7,
+"actual": 23.7
+},
+{
+"name": "Toumani Camara",
+"team": "POR",
+"slot": "UTIL",
+"proj": 22.56,
+"actual": 25.7
+},
+{
+"name": "Scoot Henderson",
+"team": "POR",
+"slot": "UTIL",
+"proj": 19.86,
+"actual": -0.6
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 218.7,
+"actual": 231.9,
+"sim": {
+"p10": 166.1,
+"p50": 221.8,
+"p90": 279.7,
+"mean": 222.8
+},
+"band": "within range",
+"busts": [
+{
+"name": "Damian Lillard",
+"proj": 34.71,
+"actual": 27.0
+},
+{
+"name": "Jrue Holiday",
+"proj": 26.7,
+"actual": 23.7
+}
+],
+"boosts": [
+{
+"name": "Luka Doncic",
+"proj": 54.84,
+"actual": 66.5
+},
+{
+"name": "Donovan Clingan",
+"proj": 32.47,
+"actual": 37.7
+}
+],
+"players": [
+{
+"name": "Luka Doncic",
+"team": "LAL",
+"slot": "MVP",
+"proj": 54.84,
+"actual": 66.5
+},
+{
+"name": "Damian Lillard",
+"team": "POR",
+"slot": "UTIL",
+"proj": 34.71,
+"actual": 27.0
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"slot": "UTIL",
+"proj": 32.47,
+"actual": 37.7
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"slot": "UTIL",
+"proj": 26.7,
+"actual": 23.7
+},
+{
+"name": "Sandro Mamukelashvili",
+"team": "LAL",
+"slot": "UTIL",
+"proj": 19.99,
+"actual": 18.1
+},
+{
+"name": "Toumani Camara",
+"team": "POR",
+"slot": "UTIL",
+"proj": 22.56,
+"actual": 25.7
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 218.9,
+"actual": 227.8,
+"sim": {
+"p10": 167.4,
+"p50": 222.3,
+"p90": 278.6,
+"mean": 222.9
+},
+"band": "within range",
+"busts": [
+{
+"name": "Scoot Henderson",
+"proj": 19.86,
+"actual": -0.6
+},
+{
+"name": "Jrue Holiday",
+"proj": 26.7,
+"actual": 23.7
+}
+],
+"boosts": [
+{
+"name": "Luka Doncic",
+"proj": 54.84,
+"actual": 66.5
+},
+{
+"name": "Austin Reaves",
+"proj": 35.07,
+"actual": 41.6
+}
+],
+"players": [
+{
+"name": "Luka Doncic",
+"team": "LAL",
+"slot": "MVP",
+"proj": 54.84,
+"actual": 66.5
+},
+{
+"name": "Austin Reaves",
+"team": "LAL",
+"slot": "UTIL",
+"proj": 35.07,
+"actual": 41.6
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"slot": "UTIL",
+"proj": 32.47,
+"actual": 37.7
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"slot": "UTIL",
+"proj": 26.7,
+"actual": 23.7
+},
+{
+"name": "Toumani Camara",
+"team": "POR",
+"slot": "UTIL",
+"proj": 22.56,
+"actual": 25.7
+},
+{
+"name": "Scoot Henderson",
+"team": "POR",
+"slot": "UTIL",
+"proj": 19.86,
+"actual": -0.6
 }
 ]
 }
