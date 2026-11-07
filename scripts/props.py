@@ -48,6 +48,7 @@ PHI = {'pts': 4.0, 'reb': 1.2, 'ast': 1.4}
 EDGE = 0.05
 BLEND_MIN_LINES = 300
 MIN_MINUTES = 15
+LEANS = 5           # nightly 'model leans': our biggest disagreements with FanDuel (not picks)
 WINDOW = (40, 150)          # single pull (free plan): minutes before each game's tip
 OPEN, CLOSE = 240, 10       # refreshing pulls (paid plan): from 4 hours to 10 minutes before tip
 REFRESH = [15, 20, 30, 45, 60, 90, 120]
@@ -319,13 +320,58 @@ def analyze(props, proj):
             row.update({'team': p['team'], 'minutes': round(p['minutes'], 1), 'proj': round(mu, 2),
                         'p_over': round(ov, 4), 'p_under': round(un, 4), 'p_push': round(push, 4),
                         'market_p_over': round(mkt, 4), 'blend_p_over': round(bo, 4), 'blend_w': w})
-            if not p['out'] and not p.get('shaky') and p['minutes'] >= MIN_MINUTES:
+            row['eligible'] = bool(not p['out'] and not p.get('shaky') and p['minutes'] >= MIN_MINUTES)
+            if row['eligible']:
                 for side, pw, price in (('over', bo, pr['over']), ('under', bu, pr['under'])):
                     be = implied(price)
                     if pw - be >= EDGE:
                         row['pick'] = {'side': side, 'prob': round(pw, 4), 'breakeven': round(be, 4), 'price': price,
                                        'ev': round(pw * profit(price) - (1 - pw - push), 4)}
         rows.append(row)
+    return rows
+
+
+# ---------- model leans ----------
+# Since the blend learned to trust FanDuel (weight 0.05 on ours at 359 lines, Nov 6) almost no line
+# clears the pick bar. Leans keep a visible, separately graded record of where NBA EDGE alone
+# disagrees most with FanDuel's price: five a night, one per player, frozen at each game's tip.
+def lean_candidates(rows):
+    out = []
+    for r in rows:
+        if r.get('moved') or r.get('p_over') is None or r.get('over') is None or r.get('under') is None:
+            continue
+        if not r.get('eligible', (r.get('minutes') or 0) >= MIN_MINUTES):
+            continue
+        e, side = max((r['p_' + sd] - implied(r[sd]), sd) for sd in ('over', 'under'))
+        if e > 0:
+            out.append((e, side, r))
+    return sorted(out, key=lambda t: -t[0])
+
+
+def lean_of(r, side, e):
+    return {'side': side, 'prob': round(r['p_' + side], 4), 'breakeven': round(implied(r[side]), 4),
+            'price': r[side], 'edge': round(e, 4)}
+
+
+def choose_leans(rows, kept=()):
+    kept, used = list(kept), {r['player'] for r in kept}
+    for e, side, r in lean_candidates(rows):
+        if len(kept) >= LEANS:
+            break
+        if r['player'] not in used:
+            r['lean'] = lean_of(r, side, e)
+            kept.append(r)
+            used.add(r['player'])
+    return kept
+
+
+def set_leans(rows, now):
+    tipped = lambda r: dt.datetime.fromisoformat(r['tip'].replace('Z', '+00:00')) <= now
+    kept = [r for r in rows if r.get('lean') and tipped(r)]
+    for r in rows:
+        if not tipped(r):
+            r.pop('lean', None)
+    choose_leans([r for r in rows if not tipped(r)], kept)
     return rows
 
 
@@ -362,9 +408,18 @@ def grade(today_iso):
             f.write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
 
 
+def record(xs):
+    w = sum(x['result'] == 'win' for x in xs)
+    lo = sum(x['result'] == 'loss' for x in xs)
+    return {'n': len(xs), 'wins': w, 'losses': lo, 'pushes': sum(x['result'] == 'push' for x in xs),
+            'units': round(sum(x['units'] for x in xs), 2), 'roi': round(sum(x['units'] for x in xs) / max(1, w + lo), 4) if xs else None,
+            'hit_rate': round(w / (w + lo), 4) if w + lo else None,
+            'avg_breakeven': round(sum(x['breakeven'] for x in xs) / len(xs), 4) if xs else None}
+
+
 def summarize(status):
     picks, cal, brier, pairs = [], [], {'ours': [], 'market': []}, []
-    nights = 0
+    nights, leans, backfilled = 0, [], 0
     for f in sorted(OUT.glob('*.json')) if OUT.exists() else []:
         doc = read(f)
         if not doc.get('graded'):
@@ -386,6 +441,19 @@ def summarize(status):
                 picks.append({'date': f.stem, 'player': r['player'], 'stat': r['stat'], 'line': r['line'], 'side': pk['side'],
                               'price': pk['price'], 'prob': pk['prob'], 'breakeven': pk['breakeven'], 'actual': r.get('actual'),
                               'result': 'push' if r['result'] == 'push' else ('win' if won else 'loss'), 'units': round(units, 3)})
+        L = [(r, r['lean']) for r in doc['props'] if r.get('lean')]
+        if not L and not doc.get('leans_v'):
+            # Nights before leans existed: the same rule on the frozen pre-tip numbers.
+            L = [(r, r.pop('lean')) for r in choose_leans([dict(x) for x in doc['props']])]
+            backfilled += bool(L)
+        for r, ln in L:
+            if r.get('result') in (None, 'void'):
+                continue
+            won = r['result'] == ln['side']
+            units = 0.0 if r['result'] == 'push' else (profit(ln['price']) if won else -1.0)
+            leans.append({'date': f.stem, 'player': r['player'], 'stat': r['stat'], 'line': r['line'], 'side': ln['side'],
+                          'price': ln['price'], 'prob': ln['prob'], 'breakeven': ln['breakeven'], 'actual': r.get('actual'),
+                          'result': 'push' if r['result'] == 'push' else ('win' if won else 'loss'), 'units': round(units, 3)})
     w = sum(p['result'] == 'win' for p in picks)
     lo = sum(p['result'] == 'loss' for p in picks)
     bins = []
@@ -412,6 +480,7 @@ def summarize(status):
            'brier': {'nba_edge': mean(brier['ours']), 'fanduel_no_vig': mean(brier['market']),
                      'blend': blend['brier_at_0.5'] if blend else None},
            'blend': blend,
+           'leans': record(leans) | {'backfilled_nights': backfilled}, 'recent_leans': leans[-30:],
            'calibration': bins, 'recent_picks': picks[-40:],
            'method': 'Paper only. Mean = projected minutes x DARKO per-minute rate; negative binomial spread; '
                      f'blended 50/50 (log-odds) with FanDuel no-vig until {BLEND_MIN_LINES}+ graded lines, then the best-scoring weight; '
@@ -465,12 +534,13 @@ def main():
             print(f'::warning::props fetch failed: {e}')
             status = f'Last fetch failed: {e}'[:200]
     if doc['props'] and not doc.get('graded') and proj:
-        doc['props'] = rescore(doc['props'], proj, now)
+        doc['props'] = set_leans(rescore(doc['props'], proj, now), now)
+        doc['leans_v'] = 1
         doc['updated_at'] = now.isoformat(timespec='seconds')
         doc['games'] = {game_key(g.get('away'), g.get('home')): g.get('time') for g in all_games(today)}
         path.write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
         n_p = sum(1 for r in doc['props'] if r.get('pick') and dt.datetime.fromisoformat(r['tip'].replace('Z', '+00:00')) > now)
-        print(f"props: {len(doc['props'])} lines, {n_p} live paper picks")
+        print(f"props: {len(doc['props'])} lines, {n_p} live paper picks, {sum(1 for r in doc['props'] if r.get('lean'))} leans")
     s = summarize(status)
     print('props record:', s['picks'], 'brier', s['brier'])
 

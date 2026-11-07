@@ -217,6 +217,7 @@ details summary{cursor:pointer}
 .prop .new{font-size:10.5px;font-weight:700;color:#fff;background:var(--orange);border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:1px}
 .prop .pct{text-align:right;font:600 17px var(--num);white-space:nowrap}
 .props-note{font-size:13px;margin:4px 0 8px}
+.leans-h{font:600 15px var(--num);margin:18px 0 2px}.prop.lean .bet{opacity:.8}
 .toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);width:max-content;max-width:min(92vw,440px);background:var(--ink);color:var(--paper);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.4;box-shadow:0 6px 24px rgba(0,0,0,.25);z-index:50;cursor:pointer}
 .toast[hidden]{display:none}
 
@@ -1362,7 +1363,7 @@ function renderProps(){
   const head=`<p class="props-note">${live.length?`<b>${live.length} live pick${live.length>1?'s':''}</b>, best first. `:''}${nxt} ${rec}</p>`
     +(live.length?`<div style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 6px">${slipLink(live)?`<a class="btn small" id="props-slip" href="${esc(slipLink(live))}" target="_blank" rel="noopener">Add ${live.filter(x=>x['link_'+x.pick.side]).length} to FanDuel bet slip</a>`:''}<button class="btn small" id="props-copy" type="button">Copy ${live.length} pick${live.length>1?'s':''}</button></div>${slipLink(live)?'<p class="muted" style="font-size:12px;margin:0 0 6px">Opens FanDuel with the picks in your bet slip. Choose singles (straight bets), not a parlay, set the stake, then place them yourself. If only one shows up, use the FanDuel link on each pick.</p>':''}`:'');
   S.propsLive=live;
-  if(!live.length){box.innerHTML=head+`<p class="muted" style="font-size:13px">${rows.length?'No line beats FanDuel’s price by 5+ points right now.':'No lines yet tonight.'} This page checks every 2 minutes.</p>`;return}
+  if(!live.length){box.innerHTML=head+`<p class="muted" style="font-size:13px">${rows.length?'No line beats FanDuel’s price by 5+ points right now.':'No lines yet tonight.'} This page checks every 2 minutes.</p>`+leansHTML(d);return}
   const show=S.propsAll?live:live.slice(0,20);
   box.innerHTML=head+show.map(x=>{const isNew=x.pick.since&&now-Date.parse(x.pick.since)<30*60000;
     return `<div class="prop"><div><div><b>${esc(x.player)}</b> <span class="muted">${esc(x.team||'')}</span>${isNew?'<span class="new">NEW</span>':''}</div>
@@ -1370,7 +1371,20 @@ function renderProps(){
     <div class="sub">${esc(x.game)} · ${clock(Date.parse((d.games||{})[x.game]||x.tip))} · proj ${Number(x.proj).toFixed(1)} in ${Math.round(x.minutes)} min${x.line0!=null&&x.line0!==x.line?` · opened ${x.line0}`:''}${x['link_'+x.pick.side]?` · <a href="${esc(x['link_'+x.pick.side])}" target="_blank" rel="noopener">FanDuel</a>`:''}</div></div>
     <div class="pct">${pc(x.pick.prob)}<div class="sub">needs ${pc(x.pick.breakeven)}</div></div></div>`}).join('')
     +(live.length>20?`<button class="btn small" id="props-all" type="button" style="margin-top:8px">${S.propsAll?'Show top 20':'Show all '+live.length}</button>`:'')
-    +`<p class="muted" style="font-size:12px;margin:8px 0 0">Paper picks: NBA EDGE’s chance vs FanDuel’s break-even (vig included). ${(()=>{const mk=d.markets?` (${d.markets.map(m=>({player_points:'points',player_rebounds:'rebounds',player_assists:'assists'})[m]||m).join(', ')} tonight)`:'';return d.refresh_min?`FanDuel’s lines${mk}, refreshed about every ${d.refresh_min} minutes from 4 hours before each game; a pick pauses if news moves our projection a lot before the next refresh`:`Lines are FanDuel’s from about 2 hours before each game${mk}; they aren’t refreshed after that, so a pick pauses when news moves our projection a lot`})()}${moved?` (${moved} paused now)`:''}. ${locked?locked+' picks locked in games that started. ':''}Big edges more often mean the model is missing something than a gift.</p>`;
+    +`<p class="muted" style="font-size:12px;margin:8px 0 0">Paper picks: NBA EDGE’s chance vs FanDuel’s break-even (vig included). ${(()=>{const mk=d.markets?` (${d.markets.map(m=>({player_points:'points',player_rebounds:'rebounds',player_assists:'assists'})[m]||m).join(', ')} tonight)`:'';return d.refresh_min?`FanDuel’s lines${mk}, refreshed about every ${d.refresh_min} minutes from 4 hours before each game; a pick pauses if news moves our projection a lot before the next refresh`:`Lines are FanDuel’s from about 2 hours before each game${mk}; they aren’t refreshed after that, so a pick pauses when news moves our projection a lot`})()}${moved?` (${moved} paused now)`:''}. ${locked?locked+' picks locked in games that started. ':''}Big edges more often mean the model is missing something than a gift.</p>`+leansHTML(d);
+}
+// Model leans: NBA EDGE alone vs FanDuel's price, 5 a night, frozen at tip, graded separately.
+// Shown for tracking; FanDuel's odds have been the better forecast, so these aren't picks.
+function leansHTML(d){
+  const now=Date.now(),L=(d.props||[]).filter(x=>x.lean).sort((a,b)=>b.lean.edge-a.lean.edge),r=S.ppr&&S.ppr.leans,pc=x=>Math.round(x*100)+'%';
+  if(!L.length&&!(r&&r.n))return '';
+  const rec=r&&r.n?` So far <b>${r.wins}-${r.losses}${r.pushes?'-'+r.pushes:''}</b>: $1 on each would be <b>${(r.units||0)>=0?'+':'−'}$${Math.abs(r.units||0).toFixed(2)}</b>${r.backfilled_nights?` (the first ${r.backfilled_nights} nights worked out afterwards from the pre-tip numbers)`:''}.`:'';
+  return `<h3 class="leans-h">Model leans <span class="muted" style="font-weight:500">· not picks</span></h3>
+  <p class="props-note">Where NBA EDGE alone disagrees most with FanDuel, 5 a night, locked at tip. FanDuel’s odds have been more accurate than ours, so these are for tracking, not betting.${rec}</p>`
+  +(L.length?L.map(x=>`<div class="prop lean"><div><div><b>${esc(x.player)}</b> <span class="muted">${esc(x.team||'')}</span>${Date.parse(x.tip)<=now?' <span class="muted" style="font-size:12px">locked</span>':''}</div>
+    <div class="bet">${x.lean.side.toUpperCase()} ${x.line} ${STATL[x.stat]||x.stat} <span class="muted" style="font-weight:500">${x.lean.price>0?'+':''}${x.lean.price}</span></div>
+    <div class="sub">${esc(x.game)} · ${clock(Date.parse((d.games||{})[x.game]||x.tip))} · proj ${Number(x.proj).toFixed(1)} in ${Math.round(x.minutes)} min</div></div>
+    <div class="pct">${pc(x.lean.prob)}<div class="sub">needs ${pc(x.lean.breakeven)}</div></div></div>`).join(''):'<p class="muted" style="font-size:13px">No leans yet tonight.</p>');
 }
 // FanDuel add-to-bet-slip links (The Odds API includeLinks): one per pick, and one combined link
 // with every pick (marketId[i] / selectionId[i]).
@@ -1402,6 +1416,7 @@ function propsHTML(){
   return `<h3 style="font:600 18px var(--num);margin:16px 0 4px">Player props (paper only)</h3>
   <p style="margin:0 0 6px;font-size:14px">${r.status&&r.status!=='ok'?esc(r.status)+' ':''}No bets are placed. NBA EDGE compares its chance of each FanDuel points, rebounds and assists line hitting with FanDuel\u2019s price and grades every line after the games.</p>
   ${k.n?`<div class="acc-big"><div>Paper picks<b>${k.wins}-${k.losses}${k.pushes?'-'+k.pushes:''}</b></div><div class="base">Hit rate<b>${pc(k.hit_rate)}</b></div><div class="base">Needed<b>${pc(k.avg_breakeven)}</b></div><div class="base">$1 on every pick<b>${k.units>=0?'+':'−'}$${Math.abs(k.units).toFixed(2)}</b></div></div>`:'<p class="muted" style="font-size:13px;margin:0 0 6px">No graded picks yet.</p>'}
+  ${r.leans&&r.leans.n?`<p style="margin:0 0 6px;font-size:14px">Model leans (NBA EDGE alone, 5 a night, not picks): <b>${r.leans.wins}-${r.leans.losses}${r.leans.pushes?'-'+r.leans.pushes:''}</b>, $1 on each ${sgn(r.leans.units||0)}.</p>`:''}
   ${better?`<p style="margin:0 0 6px;font-size:14px">On ${r.lines_graded} graded lines, NBA EDGE\u2019s probabilities were <b>${better}</b> than FanDuel\u2019s own (Brier ${r.brier.nba_edge} vs ${r.brier.fanduel_no_vig}; lower is better)${r.brier.blend!=null?`; blended 50/50 with FanDuel’s, which is what picks use: ${r.brier.blend}`:''}. ${better==='better'?'That is what an edge looks like, if it holds over hundreds of lines.':'Until this flips, there is no edge to bet.'}</p>`:''}
   ${tonight.length?`<details style="font-size:13.5px"><summary>Tonight\u2019s paper picks (${tonight.length})</summary><table style="margin-top:6px;width:100%"><tbody>${tonight.slice(0,25).map(x=>`<tr><td style="text-align:left">${esc(x.player)} ${x.pick.side} ${x.line} ${lbl[x.stat]||x.stat}<div class="muted" style="font-size:12px">proj ${x.proj} · ${x.pick.price>0?'+':''}${x.pick.price}</div></td><td class="n">${pc(x.pick.prob)}</td><td class="n">${pc(x.pick.breakeven)}</td></tr>`).join('')}</tbody></table><p class="muted" style="font-size:12px;margin:4px 0 0">Columns: NBA EDGE\u2019s chance, FanDuel break-even.</p></details>`:''}`;
 }
