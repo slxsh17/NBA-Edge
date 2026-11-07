@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T17:52:30.374735+00:00",
+  "updated_at": "2026-11-07T18:08:31.082991+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -58,17 +58,17 @@
       "status": "OUT"
     },
     {
+      "name": "Moussa Diabate",
+      "team": "CHA",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Brandon Miller",
       "team": "CHA",
       "status": "DAY-TO-DAY"
     },
     {
       "name": "Dennis Schroder",
-      "team": "CHA",
-      "status": "OUT"
-    },
-    {
-      "name": "Moussa Diabate",
       "team": "CHA",
       "status": "OUT"
     },
@@ -100,12 +100,12 @@
     {
       "name": "Sam Merrill",
       "team": "CLE",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jarrett Allen",
       "team": "CLE",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jaylon Tyson",
