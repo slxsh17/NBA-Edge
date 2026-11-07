@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T05:34:24.093705+00:00",
+  "checked_at": "2026-11-07T06:35:36.299348+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -82,6 +82,14 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Hornets star Brandon Miller ruled out for game with groin soreness as team's struggles continue - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNN1phbERCUzdVYmplYzY3TVl4NXN1bHNEYUdfdTZaSS1lSkx5RndHVDY1NzNkQzUxRkN1YTRpNmlxeDYzX2gxMGtEUGk4c0V5bTdZaktxbF9EQmFjT0kzNDlYcHdvVjhKLWE5dXYwZ3dGaW1MSmdHNjJxTHdwYXNRckVfMko5eXYzMHpOT09JSG9pdHU5UzRfb2tMSHRacWJKZ3lYUkFmRUwzTHU5Vzd1eUtfYjhaYTFNTVFhWDhQNXJXU2lJQThSb0didmJlSnNKeFF1LWU4MkRPU2dnLVFn?oc=5",
+      "published_at": "2026-11-07T01:28:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Cavs’ Jarrett Allen ruled out for NBA Cup showdown with LeBron James’ 76ers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYjVpOURnWW9tUE56bmhuLWxCcEw3a0NxLUNlY01UYUNDUElnS1VMREJLU2p2LUhHZlVCeGtXSndDZm5sS0VHNGxRZWhYR2dkNTRFTG5PWTNnalhlR3NxM19JRVNHMXVLSjE1a2EyU3pvNTNNRlk1QVRZZV9pdmNucklWRQ?oc=5",
       "published_at": "2026-11-07T01:28:00+00:00",
@@ -138,14 +146,6 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "Cavs news: Jarrett Allen ruled out for NBA Cup showdown with LeBron James' 76ers - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWlYxYXpMMjlManp6TzNmSUd0RloxYWw0RDVqb3VqMmhXT1dZWWdxNko2NUVWTElYcmlRZkVLNWVGNUt2RGNLR2laY3ByUUg1WS1zblZwQWhzMzlfNXgyMW1GZkhqVDFialR2R0x1eTlWaTlCYmIya3EzWVZxOXh5NTRIT05kSmF4Rkd4SkUyNndhWVBmR3dxV0pIQmVtYmtFdXo2c3duZWVzRXk2Ql9NWE4wMW1Ucm9ISXc?oc=5",
-      "published_at": "2026-11-07T00:33:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
       "headline": "Rasheer Fleming Injury: Carrying questionable tag - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNM29KTktvNGVLTHI2NTM2a0xhUlg0cXpGQWI5NGFDUEZISGgySGdiMWlQcWFUTVZ6dWFaZWxTSG5zMlh0cjFlNWdySHRDLXV6Y0pyYy05dEk0Nks3TjktU2dnSzlacUVQVVhqMHFNQmlEQUlpbUdXR0lqWFVqNkRTYUtEc3Axck1rUHhDV3dRYUszWTVFYlZKbE5JMXRBOTlpc3FZ?oc=5",
       "published_at": "2026-11-07T00:20:43+00:00",
@@ -181,22 +181,6 @@
       "headline": "Celtics make another starting lineup shakeup against the Hornets - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWnVNVVJ4R1dLdk5GYUNrVzdrVldVN0FSU3hoWXFpWFlvZkFyMmtFeWF4V2xJZlJoUjBla0QxREh0S1dMWHdkaHFZNUpUS2ZqNWJBWEt3SjdxbVZ5QU91a2dpNHJlbzk1VzFIb0RHUVlIRU9lXzhXN0tVVVdMZ2RkMW5NanpxWEtSbXZhcGFmd2xVZw?oc=5",
       "published_at": "2026-11-06T23:45:23+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "76ers news: Adem Bona ruled out for NBA Cup clash with Cavs - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSklKdnI2NTR3WFVOaUhtcmJEYTUxanp1MS0wREttcUtwWkdHOG5XZXlkQ2lYSUJySWZBX21UT3JKWVBtZTBCdWRsWlpmamx3eUJwTTR2aDNyYlRJbXZnZzNFbVdsREpMTy1waE9lZHM3dVZ2NVRDdmdPQUpkaHRxX0c0TWR3SzFjVGtQZG9HNFgzc3l2Ty1SZkNGeUpXdw?oc=5",
-      "published_at": "2026-11-06T23:44:51+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Adem Bona OUT for Sixers Cup matchup vs. Cavs - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQd2l0ZEFjbXNmekFHUFRZd1hhU0NCMWh3TWJ4M1dtNF9RUWxTWkdfNHpGRDVpZmtIWVRuOTdBREh1ZmNSdkdOMUp4WXY2dDdta2hCb2ZhQUFOVnN6QW9QNVVvSmNHYmJncjcxdzVnOFRHUjQ3cUQ4YmpUby01cXpTQXJQUEc?oc=5",
-      "published_at": "2026-11-06T23:17:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
