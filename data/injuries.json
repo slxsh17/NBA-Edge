@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T18:36:05.956190+00:00",
+  "updated_at": "2026-11-07T18:51:31.147560+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -49,11 +49,6 @@
     },
     {
       "name": "Egor Demin",
-      "team": "BKN",
-      "status": "OUT"
-    },
-    {
-      "name": "Tyler Bilodeau",
       "team": "BKN",
       "status": "OUT"
     },
