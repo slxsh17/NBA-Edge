@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T22:06:43.281379+00:00",
+  "updated_at": "2026-11-07T22:39:42.118051+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -14,11 +14,6 @@
     },
     {
       "name": "Jock Landale",
-      "team": "ATL",
-      "status": "OUT"
-    },
-    {
-      "name": "Jalen Johnson",
       "team": "ATL",
       "status": "OUT"
     },
@@ -133,6 +128,16 @@
       "status": "OUT"
     },
     {
+      "name": "Isaac Jones",
+      "team": "DET",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Elijah Harkless",
+      "team": "DET",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Jalen Duren",
       "team": "DET",
       "status": "OUT"
@@ -211,6 +216,11 @@
       "name": "Jordan Miller",
       "team": "LAC",
       "status": "OUT"
+    },
+    {
+      "name": "Luka Doncic",
+      "team": "LAL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Richie Saunders",
