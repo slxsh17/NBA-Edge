@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updated_at": "2026-11-07T03:24:03+00:00",
+ "updated_at": "2026-11-07T04:33:32+00:00",
  "games": [
   {
    "teams": [
@@ -55,11 +55,11 @@
     "MEM",
     "OKC"
    ],
-   "state": "live",
-   "detail": "1:56 - 4th",
+   "state": "final",
+   "detail": "Final",
    "score": {
-    "MEM": "91",
-    "OKC": "126"
+    "MEM": "97",
+    "OKC": "128"
    }
   },
   {
@@ -67,11 +67,11 @@
     "MIL",
     "TOR"
    ],
-   "state": "live",
-   "detail": "3:51 - 4th",
+   "state": "final",
+   "detail": "Final",
    "score": {
-    "MIL": "99",
-    "TOR": "107"
+    "MIL": "107",
+    "TOR": "121"
    }
   },
   {
@@ -79,11 +79,11 @@
     "NOP",
     "MIN"
    ],
-   "state": "live",
-   "detail": "6:14 - 4th",
+   "state": "final",
+   "detail": "Final",
    "score": {
-    "NOP": "89",
-    "MIN": "95"
+    "NOP": "109",
+    "MIN": "115"
    }
   },
   {
@@ -92,10 +92,10 @@
     "POR"
    ],
    "state": "live",
-   "detail": "7:02 - 1st",
+   "detail": "Halftime",
    "score": {
-    "LAL": "4",
-    "POR": "10"
+    "LAL": "53",
+    "POR": "60"
    }
   },
   {
@@ -103,11 +103,11 @@
     "SAC",
     "SAS"
    ],
-   "state": "pre",
-   "detail": "11/6 - 10:00 PM EST",
+   "state": "live",
+   "detail": "Halftime",
    "score": {
-    "SAC": "0",
-    "SAS": "0"
+    "SAC": "56",
+    "SAS": "75"
    }
   }
  ],
@@ -119,8 +119,8 @@
     {
      "strategy": "cash",
      "proj": 327.7,
-     "actual": 337.0,
-     "final_players": 4,
+     "actual": 352.3,
+     "final_players": 9,
      "players": [
       {
        "name": "Trae Young",
@@ -147,9 +147,9 @@
        "team": "TOR",
        "slot": "SF",
        "proj": 41.6,
-       "actual": 35.7,
-       "state": "live",
-       "min": 33.0,
+       "actual": 38.9,
+       "state": "final",
+       "min": 37.0,
        "own": 42.3
       },
       {
@@ -178,7 +178,7 @@
        "slot": "G/F",
        "proj": 50.1,
        "actual": 39.6,
-       "state": "live",
+       "state": "final",
        "min": 30.0,
        "own": 39.5
       },
@@ -187,9 +187,9 @@
        "team": "TOR",
        "slot": "F/C",
        "proj": 28.5,
-       "actual": 34.8,
-       "state": "live",
-       "min": 30.0,
+       "actual": 42.4,
+       "state": "final",
+       "min": 34.0,
        "own": 44.6
       },
       {
@@ -197,9 +197,9 @@
        "team": "MIN",
        "slot": "UTIL",
        "proj": 38.0,
-       "actual": 30.4,
-       "state": "live",
-       "min": 29.0,
+       "actual": 33.4,
+       "state": "final",
+       "min": 35.0,
        "own": 30.0
       },
       {
@@ -207,9 +207,9 @@
        "team": "TOR",
        "slot": "UTIL",
        "proj": 27.2,
-       "actual": 41.1,
-       "state": "live",
-       "min": 30.0,
+       "actual": 42.6,
+       "state": "final",
+       "min": 34.0,
        "own": 38.7
       }
      ]
@@ -217,8 +217,8 @@
     {
      "strategy": "tournament",
      "proj": 319.2,
-     "actual": 331.9,
-     "final_players": 7,
+     "actual": 336.3,
+     "final_players": 9,
      "players": [
       {
        "name": "Trae Young",
@@ -285,9 +285,9 @@
        "team": "TOR",
        "slot": "F/C",
        "proj": 41.6,
-       "actual": 35.7,
-       "state": "live",
-       "min": 33.0,
+       "actual": 38.9,
+       "state": "final",
+       "min": 37.0,
        "own": 42.3
       },
       {
@@ -305,9 +305,9 @@
        "team": "TOR",
        "slot": "UTIL",
        "proj": 28.3,
-       "actual": 21.0,
-       "state": "live",
-       "min": 27.0,
+       "actual": 22.2,
+       "state": "final",
+       "min": 29.0,
        "own": 18.7
       }
      ]
@@ -315,8 +315,8 @@
     {
      "strategy": "sim_winner",
      "proj": 317.6,
-     "actual": 331.7,
-     "final_players": 4,
+     "actual": 342.5,
+     "final_players": 9,
      "players": [
       {
        "name": "Shai Gilgeous-Alexander",
@@ -324,7 +324,7 @@
        "slot": "PG",
        "proj": 50.1,
        "actual": 39.6,
-       "state": "live",
+       "state": "final",
        "min": 30.0,
        "own": 39.5
       },
@@ -354,7 +354,7 @@
        "slot": "PF",
        "proj": 35.2,
        "actual": 26.4,
-       "state": "live",
+       "state": "final",
        "min": 31.0,
        "own": 6.4
       },
@@ -383,9 +383,9 @@
        "team": "TOR",
        "slot": "F/C",
        "proj": 41.6,
-       "actual": 35.7,
-       "state": "live",
-       "min": 33.0,
+       "actual": 38.9,
+       "state": "final",
+       "min": 37.0,
        "own": 42.3
       },
       {
@@ -393,9 +393,9 @@
        "team": "TOR",
        "slot": "UTIL",
        "proj": 28.5,
-       "actual": 34.8,
-       "state": "live",
-       "min": 30.0,
+       "actual": 42.4,
+       "state": "final",
+       "min": 34.0,
        "own": 44.6
       },
       {
@@ -404,7 +404,7 @@
        "slot": "UTIL",
        "proj": 25.5,
        "actual": 20.7,
-       "state": "live",
+       "state": "final",
        "min": 20.0,
        "own": 3.2
       }
@@ -630,7 +630,7 @@
      "strategy": "cash",
      "proj": 202.7,
      "actual": 156.9,
-     "final_players": 0,
+     "final_players": 6,
      "players": [
       {
        "name": "Shai Gilgeous-Alexander",
@@ -638,7 +638,7 @@
        "slot": "MVP",
        "proj": 73.3,
        "actual": 59.4,
-       "state": "live",
+       "state": "final",
        "min": 30.0,
        "own": 71.5
       },
@@ -648,7 +648,7 @@
        "slot": "UTIL",
        "proj": 36.6,
        "actual": 26.4,
-       "state": "live",
+       "state": "final",
        "min": 31.0,
        "own": 49.8
       },
@@ -658,7 +658,7 @@
        "slot": "UTIL",
        "proj": 28.8,
        "actual": 22.7,
-       "state": "live",
+       "state": "final",
        "min": 26.0,
        "own": 41.6
       },
@@ -668,7 +668,7 @@
        "slot": "UTIL",
        "proj": 24.9,
        "actual": 20.7,
-       "state": "live",
+       "state": "final",
        "min": 20.0,
        "own": 31.2
       },
@@ -678,7 +678,7 @@
        "slot": "UTIL",
        "proj": 19.7,
        "actual": 12.0,
-       "state": "live",
+       "state": "final",
        "min": 22.0,
        "own": 33.6
       },
@@ -688,7 +688,7 @@
        "slot": "UTIL",
        "proj": 19.2,
        "actual": 15.7,
-       "state": "live",
+       "state": "final",
        "min": 19.0,
        "own": 34.9
       }
@@ -698,7 +698,7 @@
      "strategy": "tournament",
      "proj": 199.6,
      "actual": 159.4,
-     "final_players": 0,
+     "final_players": 6,
      "players": [
       {
        "name": "Shai Gilgeous-Alexander",
@@ -706,7 +706,7 @@
        "slot": "MVP",
        "proj": 73.3,
        "actual": 59.4,
-       "state": "live",
+       "state": "final",
        "min": 30.0,
        "own": 71.5
       },
@@ -716,7 +716,7 @@
        "slot": "UTIL",
        "proj": 36.6,
        "actual": 26.4,
-       "state": "live",
+       "state": "final",
        "min": 31.0,
        "own": 49.8
       },
@@ -726,7 +726,7 @@
        "slot": "UTIL",
        "proj": 28.8,
        "actual": 22.7,
-       "state": "live",
+       "state": "final",
        "min": 26.0,
        "own": 41.6
       },
@@ -736,7 +736,7 @@
        "slot": "UTIL",
        "proj": 24.9,
        "actual": 20.7,
-       "state": "live",
+       "state": "final",
        "min": 20.0,
        "own": 31.2
       },
@@ -746,7 +746,7 @@
        "slot": "UTIL",
        "proj": 19.9,
        "actual": 8.0,
-       "state": "live",
+       "state": "final",
        "min": 25.0,
        "own": 15.2
       },
@@ -756,8 +756,8 @@
        "slot": "UTIL",
        "proj": 16.0,
        "actual": 22.2,
-       "state": "live",
-       "min": 22.0,
+       "state": "final",
+       "min": 24.0,
        "own": 25.0
       }
      ]
@@ -766,7 +766,7 @@
      "strategy": "sim_winner",
      "proj": 202.7,
      "actual": 156.9,
-     "final_players": 0,
+     "final_players": 6,
      "players": [
       {
        "name": "Shai Gilgeous-Alexander",
@@ -774,7 +774,7 @@
        "slot": "MVP",
        "proj": 73.3,
        "actual": 59.4,
-       "state": "live",
+       "state": "final",
        "min": 30.0,
        "own": 71.5
       },
@@ -784,7 +784,7 @@
        "slot": "UTIL",
        "proj": 36.6,
        "actual": 26.4,
-       "state": "live",
+       "state": "final",
        "min": 31.0,
        "own": 49.8
       },
@@ -794,7 +794,7 @@
        "slot": "UTIL",
        "proj": 28.8,
        "actual": 22.7,
-       "state": "live",
+       "state": "final",
        "min": 26.0,
        "own": 41.6
       },
@@ -804,7 +804,7 @@
        "slot": "UTIL",
        "proj": 24.9,
        "actual": 20.7,
-       "state": "live",
+       "state": "final",
        "min": 20.0,
        "own": 31.2
       },
@@ -814,7 +814,7 @@
        "slot": "UTIL",
        "proj": 19.7,
        "actual": 12.0,
-       "state": "live",
+       "state": "final",
        "min": 22.0,
        "own": 33.6
       },
@@ -824,7 +824,7 @@
        "slot": "UTIL",
        "proj": 19.2,
        "actual": 15.7,
-       "state": "live",
+       "state": "final",
        "min": 19.0,
        "own": 34.9
       }
@@ -839,7 +839,7 @@
     {
      "strategy": "cash",
      "proj": 219.0,
-     "actual": 18.0,
+     "actual": 106.1,
      "final_players": 0,
      "players": [
       {
@@ -847,9 +847,9 @@
        "team": "POR",
        "slot": "MVP",
        "proj": 60.3,
-       "actual": 9.3,
+       "actual": 47.4,
        "state": "live",
-       "min": 5.0,
+       "min": 18.0,
        "own": 56.8
       },
       {
@@ -857,9 +857,9 @@
        "team": "LAL",
        "slot": "UTIL",
        "proj": 54.8,
-       "actual": 4.0,
+       "actual": 28.4,
        "state": "live",
-       "min": 5.0,
+       "min": 19.0,
        "own": 69.6
       },
       {
@@ -867,9 +867,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 34.7,
-       "actual": 2.0,
+       "actual": 15.0,
        "state": "live",
-       "min": 5.0,
+       "min": 16.0,
        "own": 53.5
       },
       {
@@ -877,9 +877,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 26.7,
-       "actual": null,
+       "actual": 8.2,
        "state": "live",
-       "min": null,
+       "min": 13.0,
        "own": 41.9
       },
       {
@@ -887,9 +887,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 22.6,
-       "actual": 3.5,
+       "actual": 8.9,
        "state": "live",
-       "min": 5.0,
+       "min": 13.0,
        "own": 37.5
       },
       {
@@ -897,9 +897,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 19.9,
-       "actual": -0.8,
+       "actual": -1.8,
        "state": "live",
-       "min": 5.0,
+       "min": 15.0,
        "own": 35.7
       }
      ]
@@ -907,7 +907,7 @@
     {
      "strategy": "tournament",
      "proj": 218.7,
-     "actual": 23.7,
+     "actual": 101.3,
      "final_players": 0,
      "players": [
       {
@@ -915,9 +915,9 @@
        "team": "LAL",
        "slot": "MVP",
        "proj": 82.3,
-       "actual": 6.0,
+       "actual": 42.6,
        "state": "live",
-       "min": 5.0,
+       "min": 19.0,
        "own": 69.6
       },
       {
@@ -925,9 +925,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 34.7,
-       "actual": 2.0,
+       "actual": 15.0,
        "state": "live",
-       "min": 5.0,
+       "min": 16.0,
        "own": 53.5
       },
       {
@@ -935,9 +935,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 32.5,
-       "actual": 12.2,
+       "actual": 14.2,
        "state": "live",
-       "min": 5.0,
+       "min": 10.0,
        "own": 42.9
       },
       {
@@ -945,9 +945,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 26.7,
-       "actual": null,
+       "actual": 8.2,
        "state": "live",
-       "min": null,
+       "min": 13.0,
        "own": 41.9
       },
       {
@@ -955,9 +955,9 @@
        "team": "LAL",
        "slot": "UTIL",
        "proj": 20.0,
-       "actual": null,
+       "actual": 12.4,
        "state": "live",
-       "min": null,
+       "min": 14.0,
        "own": 26.5
       },
       {
@@ -965,9 +965,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 22.6,
-       "actual": 3.5,
+       "actual": 8.9,
        "state": "live",
-       "min": 5.0,
+       "min": 13.0,
        "own": 37.5
       }
      ]
@@ -975,7 +975,7 @@
     {
      "strategy": "sim_winner",
      "proj": 218.9,
-     "actual": 19.9,
+     "actual": 83.8,
      "final_players": 0,
      "players": [
       {
@@ -983,9 +983,9 @@
        "team": "LAL",
        "slot": "MVP",
        "proj": 82.3,
-       "actual": 6.0,
+       "actual": 42.6,
        "state": "live",
-       "min": 5.0,
+       "min": 19.0,
        "own": 69.6
       },
       {
@@ -993,9 +993,9 @@
        "team": "LAL",
        "slot": "UTIL",
        "proj": 35.1,
-       "actual": -1.0,
+       "actual": 11.7,
        "state": "live",
-       "min": 5.0,
+       "min": 19.0,
        "own": 50.4
       },
       {
@@ -1003,9 +1003,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 32.5,
-       "actual": 12.2,
+       "actual": 14.2,
        "state": "live",
-       "min": 5.0,
+       "min": 10.0,
        "own": 42.9
       },
       {
@@ -1013,9 +1013,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 26.7,
-       "actual": null,
+       "actual": 8.2,
        "state": "live",
-       "min": null,
+       "min": 13.0,
        "own": 41.9
       },
       {
@@ -1023,9 +1023,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 22.6,
-       "actual": 3.5,
+       "actual": 8.9,
        "state": "live",
-       "min": 5.0,
+       "min": 13.0,
        "own": 37.5
       },
       {
@@ -1033,9 +1033,9 @@
        "team": "POR",
        "slot": "UTIL",
        "proj": 19.9,
-       "actual": -0.8,
+       "actual": -1.8,
        "state": "live",
-       "min": 5.0,
+       "min": 15.0,
        "own": 35.7
       }
      ]
@@ -1044,10 +1044,10 @@
   }
  },
  "projections": {
-  "players": 84,
-  "mae": 7.9,
-  "bias": 0.74,
-  "minutes_bias": 0.23,
+  "players": 147,
+  "mae": 8.2,
+  "bias": 0.25,
+  "minutes_bias": 0.54,
   "worst_busts": [
    {
     "name": "Joel Embiid",
@@ -1061,6 +1061,17 @@
     "min": 25.0
    },
    {
+    "name": "Derik Queen",
+    "team": "NOP",
+    "salary": 5800,
+    "proj": 26.59,
+    "actual": 8.3,
+    "miss": -18.3,
+    "own": 3.6,
+    "min_proj": 22.2,
+    "min": 10.0
+   },
+   {
     "name": "CJ McCollum",
     "team": "ATL",
     "salary": 5600,
@@ -1070,6 +1081,17 @@
     "own": 22.4,
     "min_proj": 28.2,
     "min": 23.0
+   },
+   {
+    "name": "Dejounte Murray",
+    "team": "NOP",
+    "salary": 7800,
+    "proj": 35.44,
+    "actual": 19.4,
+    "miss": -16.0,
+    "own": 7.4,
+    "min_proj": 30.4,
+    "min": 35.0
    },
    {
     "name": "Mo Bamba",
@@ -1114,31 +1136,31 @@
     "own": 8.5,
     "min_proj": 28.9,
     "min": 22.0
-   },
-   {
-    "name": "LeBron James",
-    "team": "PHI",
-    "salary": 8100,
-    "proj": 37.83,
-    "actual": 23.9,
-    "miss": -13.9,
-    "own": 15.7,
-    "min_proj": 31.0,
-    "min": 32.0
-   },
-   {
-    "name": "Neemias Queta",
-    "team": "BOS",
-    "salary": 4600,
-    "proj": 24.0,
-    "actual": 11.1,
-    "miss": -12.9,
-    "own": 9.6,
-    "min_proj": 22.8,
-    "min": 15.0
    }
   ],
   "best_smashes": [
+   {
+    "name": "Alijah Martin",
+    "team": "TOR",
+    "salary": 3500,
+    "proj": 10.54,
+    "actual": 38.3,
+    "miss": 27.8,
+    "own": 0.3,
+    "min_proj": 6.6,
+    "min": 31.0
+   },
+   {
+    "name": "Brayden Burries",
+    "team": "MIL",
+    "salary": 4100,
+    "proj": 19.55,
+    "actual": 45.2,
+    "miss": 25.7,
+    "own": 1.2,
+    "min_proj": 23.8,
+    "min": 38.0
+   },
    {
     "name": "Luguentz Dort",
     "team": "ATL",
@@ -1173,6 +1195,28 @@
     "min": 39.0
    },
    {
+    "name": "Jakob Poeltl",
+    "team": "TOR",
+    "salary": 4000,
+    "proj": 21.24,
+    "actual": 43.7,
+    "miss": 22.5,
+    "own": 2.3,
+    "min_proj": 20.8,
+    "min": 31.0
+   },
+   {
+    "name": "Jared McCain",
+    "team": "OKC",
+    "salary": 4000,
+    "proj": 18.92,
+    "actual": 41.0,
+    "miss": 22.1,
+    "own": 1.9,
+    "min_proj": 22.6,
+    "min": 29.0
+   },
+   {
     "name": "Jayson Tatum",
     "team": "BOS",
     "salary": 9900,
@@ -1182,50 +1226,6 @@
     "own": 7.7,
     "min_proj": 29.0,
     "min": 29.0
-   },
-   {
-    "name": "Hannes Steinbach",
-    "team": "CHA",
-    "salary": 3500,
-    "proj": 7.21,
-    "actual": 26.7,
-    "miss": 19.5,
-    "own": 0.1,
-    "min_proj": 7.2,
-    "min": 27.0
-   },
-   {
-    "name": "Luka Garza",
-    "team": "BOS",
-    "salary": 3700,
-    "proj": 9.17,
-    "actual": 24.4,
-    "miss": 15.2,
-    "own": 0.2,
-    "min_proj": 13.6,
-    "min": 19.0
-   },
-   {
-    "name": "Zuby Ejiofor",
-    "team": "ATL",
-    "salary": 3700,
-    "proj": 11.61,
-    "actual": 25.5,
-    "miss": 13.9,
-    "own": 0.4,
-    "min_proj": 9.8,
-    "min": 15.0
-   },
-   {
-    "name": "Darryn Peterson",
-    "team": "UTA",
-    "salary": 5500,
-    "proj": 30.24,
-    "actual": 43.9,
-    "miss": 13.7,
-    "own": 20.3,
-    "min_proj": 31.6,
-    "min": 30.0
    }
   ]
  },
@@ -1242,6 +1242,50 @@
    "min": 32.0
   },
   {
+   "name": "Brayden Burries",
+   "team": "MIL",
+   "salary": 4100,
+   "proj": 19.55,
+   "actual": 45.2,
+   "miss": 25.7,
+   "own": 1.2,
+   "min_proj": 23.8,
+   "min": 38.0
+  },
+  {
+   "name": "Alijah Martin",
+   "team": "TOR",
+   "salary": 3500,
+   "proj": 10.54,
+   "actual": 38.3,
+   "miss": 27.8,
+   "own": 0.3,
+   "min_proj": 6.6,
+   "min": 31.0
+  },
+  {
+   "name": "Jakob Poeltl",
+   "team": "TOR",
+   "salary": 4000,
+   "proj": 21.24,
+   "actual": 43.7,
+   "miss": 22.5,
+   "own": 2.3,
+   "min_proj": 20.8,
+   "min": 31.0
+  },
+  {
+   "name": "Jamal Shead",
+   "team": "TOR",
+   "salary": 4000,
+   "proj": 27.26,
+   "actual": 42.6,
+   "miss": 15.3,
+   "own": 23.2,
+   "min_proj": 28.0,
+   "min": 34.0
+  },
+  {
    "name": "Morez Johnson",
    "team": "DAL",
    "salary": 3800,
@@ -1251,6 +1295,28 @@
    "own": 0.6,
    "min_proj": 14.4,
    "min": 24.0
+  },
+  {
+   "name": "Jared McCain",
+   "team": "OKC",
+   "salary": 4000,
+   "proj": 18.92,
+   "actual": 41.0,
+   "miss": 22.1,
+   "own": 1.9,
+   "min_proj": 22.6,
+   "min": 29.0
+  },
+  {
+   "name": "Collin Murray-Boyles",
+   "team": "TOR",
+   "salary": 4200,
+   "proj": 28.48,
+   "actual": 42.4,
+   "miss": 13.9,
+   "own": 37.9,
+   "min_proj": 23.5,
+   "min": 34.0
   },
   {
    "name": "Kyshawn George",
@@ -1264,87 +1330,21 @@
    "min": 39.0
   },
   {
-   "name": "Darryn Peterson",
-   "team": "UTA",
-   "salary": 5500,
-   "proj": 30.24,
-   "actual": 43.9,
-   "miss": 13.7,
-   "own": 20.3,
-   "min_proj": 31.6,
-   "min": 30.0
-  },
-  {
-   "name": "Hannes Steinbach",
-   "team": "CHA",
-   "salary": 3500,
-   "proj": 7.21,
-   "actual": 26.7,
-   "miss": 19.5,
-   "own": 0.1,
-   "min_proj": 7.2,
-   "min": 27.0
-  },
-  {
-   "name": "Deandre Ayton",
-   "team": "WAS",
-   "salary": 4000,
-   "proj": 18.83,
-   "actual": 28.7,
-   "miss": 9.9,
-   "own": 1.3,
-   "min_proj": 22.0,
-   "min": 23.0
-  },
-  {
-   "name": "Mario Hezonja",
-   "team": "CLE",
-   "salary": 4100,
-   "proj": 19.61,
-   "actual": 28.5,
-   "miss": 8.9,
-   "own": 1.7,
-   "min_proj": 21.1,
-   "min": 27.0
-  },
-  {
-   "name": "Tre Johnson",
-   "team": "WAS",
+   "name": "Trey Lyles",
+   "team": "MIN",
    "salary": 3700,
-   "proj": 14.86,
-   "actual": 25.7,
-   "miss": 10.8,
-   "own": 0.7,
-   "min_proj": 16.7,
-   "min": 27.0
-  },
-  {
-   "name": "P.J. Washington",
-   "team": "DAL",
-   "salary": 5900,
-   "proj": 29.44,
-   "actual": 40.7,
-   "miss": 11.3,
-   "own": 11.9,
-   "min_proj": 28.4,
-   "min": 33.0
-  },
-  {
-   "name": "Zuby Ejiofor",
-   "team": "ATL",
-   "salary": 3700,
-   "proj": 11.61,
-   "actual": 25.5,
-   "miss": 13.9,
-   "own": 0.4,
-   "min_proj": 9.8,
-   "min": 15.0
+   "proj": 15.75,
+   "actual": 34.6,
+   "miss": 18.9,
+   "own": 1.0,
+   "min_proj": 19.4,
+   "min": 29.0
   }
  ],
  "reference_lines": {
-  "double_up": 328.5,
-  "fifty": 324.0,
-  "gpp_cash": 346.3,
-  "top1": 387.6
+  "double_up": 324.2,
+  "fifty": 318.9,
+  "gpp_cash": 342.0,
+  "top1": 381.6
  }
 }
