@@ -1,11 +1,27 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T22:25:39.253306+00:00",
+  "checked_at": "2026-11-07T22:58:28.112221+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Bulls’ Starting Lineup Struggles With No Easy Fix in Sight - BVM Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOV0syRERkWEFSZ3NnSUZUTUtFcUhSaU9lcHJQcUJCMjhaUDFsY2NPWWJoQ182MGpjTFFZRUtsbGUtZHlhczlDdG1qQWtBd3VsMFkzV084M2NhZ044NmhzS3JMRVAxbDNnYlgwVUpYRWlhdTBjZ0tveVY1OVNuQk9jeFJmbEdxaUdUR1RxbHA4eVExREtpTkE?oc=5",
+      "published_at": "2026-11-07T22:40:46+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Luka Doncic (back) questionable Sunday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbnAyTGhsOElfLWZwS3JlNWlIWEtQOGV1akFzdTQ2V3VZQjdoUlluaTVrbEQwaEhKR2R4T0lKMXFuTTRseXRBclRHWVVBMG9DTlBHanpXUjY3ZDBDcUlIQWR1cDA1OThZOHQ5VGM2a3R0VnU3dTBILUUtNi1ZNFVmb2U4a2J1dS1HNVJkctIBkgFBVV95cUxNWm9kNFVuNVp4eU5sbGFTcFhPU0s4M3lpeW95bGZrMS10NGJSalgyQ1BZeGd3QzZvNG5ORkZTalN0MndNbTFwejFybEZuLW5oN01ydHJvMnZDWW5vNjBkS2Mzcy00MlFuQVBXdmdUdGxoUFU1TE16V2tBUkJBTmFEajRyWU0ybnJobnhCa1JSVElSQQ?oc=5",
+      "published_at": "2026-11-07T22:14:04+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Luka Doncic Injury: Questionable for Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc3k5Q1NmTmMyaWtiUW1VZzNoRE9fNDljRGszblB5RUR2Wjh6NVZkZC1xNzYwTFJ5czhJREZQMmY5dWdiOG1ySXR3eFJuSjhZOXdVNlkzcWszdTFtWWpSNE51UkVKSl8tTHpxWWt5Z2xSYTh5SzlRY1pwTVhLaGpnU3pvTnFfQndtWkJJMWtHcEhtOUxQQW9WZURCSQ?oc=5",
@@ -95,9 +111,9 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "Predicting the Nuggets' Full Rotation Before Spencer Jones' Season Debut - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZWdvekUyYVEzN25yRjdiRkpER0NFUjZuR3dkY2JBa3V0SXU2ZjRKLXk1cm9od0xQNUt0djRmY3lJY2gxd1FQa0NUOUVSRm9HUHBtMUdIbmxaQUFrSDRkdnRWbWpfZnBwTFVLVGJXdmRETzRBTzVpZ3VHdXc4OGxyckFjWkc3S2VsRUxqN2V3NldNV28?oc=5",
-      "published_at": "2026-11-07T18:00:03+00:00",
+      "headline": "Predicting the Nuggets' Full Rotation Before Spencer Jones' Season Debut - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPby1wLTlidjczN0VyUE5xbFZGOEhJRUVrZ0JqQUFfaG9QZjNaQ0ZtOU5USTRsd2JWMDgwcmFlYzEtNHprQ196VHo0anRXMmZ3WFF1Z28wWkM0Q2FGZ0tYbUtXcnBOemc0Ym5ubU5uVTJGbkNrV2dXRENZMllPcWFDcTFnZDlXNU9OSU50a0xaQkZRU2lGdkJrVWNpUXhTTTVCblpKcWNtaE11UQ?oc=5",
+      "published_at": "2026-11-07T18:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -279,6 +295,14 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Cleveland Cavaliers Make Jarrett Allen Injury Announcement Before 76ers Game - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOb1RoU21Jc2tvQlBBREtIZnFGcGtHaTJjY2VZQjFHOGtRd1FlNmJjNFZPQlVnSDZ5TjBMbWpzMlBNd3lPakVOOHdIbUdGajMxTmM3bklmb1lZRE5rZ2FDR0d0T052Y1ZjeXFwcURfeUl4ZXRLcUtXcHA0Z21JOUV5bFNaYTFBUUpmbk1j?oc=5",
+      "published_at": "2026-11-07T00:11:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Tyler Herro Knows What Bucks Have to Do to Start Winning After 1-7 Start - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaHFtbGZFVkRDeHJHLUZTbG94ZEhjTmR6NTV2Z1djTE1HQlJYS0FkLWNuTFZCaWs4dWstbkh5US1WVDRlU0xlZXJRYTJCUkhCSUdZUUZVSlNoS2ZVUm5KNE90dVVRemJEYmhkdkhOdjh0QTh1U0d3clpJS1lXVUpNbFlHZ1U?oc=5",
       "published_at": "2026-11-07T00:10:00+00:00",
@@ -338,22 +362,6 @@
       "headline": "Why Heat’s Erik Spoelstra ‘feels’ for Tim Hardaway Jr. amid limited minutes - ClutchPoints",
       "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbUxvdGhsRWZjWWFLcDdyaVJ4UENzRjBfVmREb2NDVTF6Q0N5QjkzOUlkanNwV3Nva3dDNU8xb2xCaUx5ZU91TEFqeUw0NlhoUVF3cHNJZWhxWlpjaGh5VGZPdXhLRHV4Tl92blVaOWtxWHZzT0xocUxsMVp4UnRSTmh2bDYzS2I4eVhLdFNET0c5bHczVnNtUDJJSHNlWEx2dmhPeC1sWDh1QjNSQ0E5VlpjeFhWdw?oc=5",
       "published_at": "2026-11-06T23:00:34+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Anthony Davis Injury: Ruled out Friday night - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZ1kyZ0p3aDB3LXVxYU9qOWxXT0hJbTJVM1VqZHdTckVwYmswcU9GUUtQenJGZnRBNjl5VER3cXZtSEc5U3VMOXpEYlFFUDZ1V2dVdXRoNVNlb1lfZWNXSW9PMFdveXEyQkV4c1NZVHJENkY4Y09mZ213T3ZlNW10aGo3b2RrTV80Ymd4MktWc3pwNjU2UEdGeDFKMGc?oc=5",
-      "published_at": "2026-11-06T22:37:05+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Cavs release full injury report ahead of NBA Cup match vs. 76ers - Cavaliers Nation",
-      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPanRrejU4QzNQUGhJNkhveVowSDh4Wk5VRnVKYWZvNmpLQk8ydlVzMVcxU0dsOERseURKbWRERnhiTjhCVmJXSk12T2V6THhSMXlUZnpjb3EySlpYRHp2T1lfTTh5VkdxNlRzR3I2NS1wV1VSRDUwdFh5M0JfSy1wSXBiNDNBUTlhVjNSLXlEdWRPY3E2WnJnTVFlRVRaSV9ueVA2QS13?oc=5",
-      "published_at": "2026-11-06T22:34:32+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
