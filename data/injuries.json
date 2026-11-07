@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T00:12:06.276103+00:00",
+  "updated_at": "2026-11-07T00:42:06.481094+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -116,11 +116,6 @@
       "name": "DeMar DeRozan",
       "team": "DEN",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Spencer Jones",
-      "team": "DEN",
-      "status": "OUT"
     },
     {
       "name": "Julian Strawther",
@@ -333,12 +328,12 @@
       "status": "OUT"
     },
     {
-      "name": "Jordan Goodwin",
+      "name": "Rasheer Fleming",
       "team": "PHX",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Rasheer Fleming",
+      "name": "Jordan Goodwin",
       "team": "PHX",
       "status": "DAY-TO-DAY"
     },
