@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T10:59:29.446943-05:00",
+  "updated_at": "2026-11-07T11:30:26.712983-05:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 51,
@@ -816,6 +816,16 @@
       "avg_points": 15.7
     },
     {
+      "id": "3134908",
+      "name": "Jakob Poeltl",
+      "team": "TOR",
+      "games": 2,
+      "avg_minutes": 25.0,
+      "avg_fantasy_points": 30.4,
+      "fantasy_points_per_minute": 1.214,
+      "avg_points": 13.5
+    },
+    {
       "id": "3032976",
       "name": "Rudy Gobert",
       "team": "MIN",
@@ -854,16 +864,6 @@
       "avg_fantasy_points": 29.7,
       "fantasy_points_per_minute": 1.061,
       "avg_points": 14.5
-    },
-    {
-      "id": "3134908",
-      "name": "Jakob Poeltl",
-      "team": "TOR",
-      "games": 2,
-      "avg_minutes": 25.0,
-      "avg_fantasy_points": 29.6,
-      "fantasy_points_per_minute": 1.184,
-      "avg_points": 13.5
     },
     {
       "id": "3155526",
@@ -1316,6 +1316,16 @@
       "avg_points": 9.0
     },
     {
+      "id": "4277951",
+      "name": "Luka Garza",
+      "team": "BOS",
+      "games": 4,
+      "avg_minutes": 19.0,
+      "avg_fantasy_points": 24.1,
+      "fantasy_points_per_minute": 1.268,
+      "avg_points": 10.8
+    },
+    {
       "id": "4397040",
       "name": "Brandon Williams",
       "team": "GS",
@@ -1366,14 +1376,14 @@
       "avg_points": 10.0
     },
     {
-      "id": "4277951",
-      "name": "Luka Garza",
-      "team": "BOS",
-      "games": 4,
+      "id": "5107173",
+      "name": "Danny Wolf",
+      "team": "BKN",
+      "games": 1,
       "avg_minutes": 19.0,
-      "avg_fantasy_points": 23.8,
-      "fantasy_points_per_minute": 1.253,
-      "avg_points": 10.8
+      "avg_fantasy_points": 23.5,
+      "fantasy_points_per_minute": 1.237,
+      "avg_points": 13.0
     },
     {
       "id": "3064440",
@@ -1494,16 +1504,6 @@
       "avg_fantasy_points": 22.7,
       "fantasy_points_per_minute": 0.825,
       "avg_points": 11.0
-    },
-    {
-      "id": "5107173",
-      "name": "Danny Wolf",
-      "team": "BKN",
-      "games": 1,
-      "avg_minutes": 19.0,
-      "avg_fantasy_points": 22.5,
-      "fantasy_points_per_minute": 1.184,
-      "avg_points": 12.0
     },
     {
       "id": "2990992",
@@ -1906,16 +1906,6 @@
       "avg_points": 9.5
     },
     {
-      "id": "4593841",
-      "name": "Baylor Scheierman",
-      "team": "BOS",
-      "games": 4,
-      "avg_minutes": 22.8,
-      "avg_fantasy_points": 18.4,
-      "fantasy_points_per_minute": 0.807,
-      "avg_points": 8.8
-    },
-    {
       "id": "4593125",
       "name": "Santi Aldama",
       "team": "DAL",
@@ -1954,6 +1944,16 @@
       "avg_fantasy_points": 18.2,
       "fantasy_points_per_minute": 0.869,
       "avg_points": 12.0
+    },
+    {
+      "id": "4593841",
+      "name": "Baylor Scheierman",
+      "team": "BOS",
+      "games": 4,
+      "avg_minutes": 22.8,
+      "avg_fantasy_points": 18.1,
+      "fantasy_points_per_minute": 0.793,
+      "avg_points": 8.8
     },
     {
       "id": "3914044",
@@ -2716,16 +2716,6 @@
       "avg_points": 3.0
     },
     {
-      "id": "4845374",
-      "name": "Bub Carrington",
-      "team": "WSH",
-      "games": 3,
-      "avg_minutes": 17.7,
-      "avg_fantasy_points": 11.2,
-      "fantasy_points_per_minute": 0.636,
-      "avg_points": 2.7
-    },
-    {
       "id": "4397014",
       "name": "Quentin Grimes",
       "team": "LAL",
@@ -2844,6 +2834,16 @@
       "avg_fantasy_points": 10.8,
       "fantasy_points_per_minute": 0.835,
       "avg_points": 8.5
+    },
+    {
+      "id": "4845374",
+      "name": "Bub Carrington",
+      "team": "WSH",
+      "games": 3,
+      "avg_minutes": 17.7,
+      "avg_fantasy_points": 10.7,
+      "fantasy_points_per_minute": 0.608,
+      "avg_points": 2.7
     },
     {
       "id": "3978",
@@ -3316,6 +3316,16 @@
       "avg_points": 0.5
     },
     {
+      "id": "5149115",
+      "name": "Allen Graves",
+      "team": "TOR",
+      "games": 4,
+      "avg_minutes": 11.8,
+      "avg_fantasy_points": 5.8,
+      "fantasy_points_per_minute": 0.496,
+      "avg_points": 2.8
+    },
+    {
       "id": "4278077",
       "name": "Jarred Vanderbilt",
       "team": "LAL",
@@ -3354,16 +3364,6 @@
       "avg_fantasy_points": 5.6,
       "fantasy_points_per_minute": 0.352,
       "avg_points": 3.2
-    },
-    {
-      "id": "5149115",
-      "name": "Allen Graves",
-      "team": "TOR",
-      "games": 4,
-      "avg_minutes": 11.8,
-      "avg_fantasy_points": 5.5,
-      "fantasy_points_per_minute": 0.47,
-      "avg_points": 2.8
     },
     {
       "id": "4593016",
@@ -5275,12 +5275,12 @@
       "event_id": "401909288",
       "minutes": 19.0,
       "pts": 6.0,
-      "reb": 7.0,
+      "reb": 8.0,
       "ast": 4.0,
       "stl": 0.0,
       "blk": 2.0,
       "tov": 2.0,
-      "fantasy_points": 24.4
+      "fantasy_points": 25.6
     },
     {
       "id": "3945274",
@@ -5996,11 +5996,11 @@
       "minutes": 31.0,
       "pts": 19.0,
       "reb": 11.0,
-      "ast": 1.0,
+      "ast": 2.0,
       "stl": 3.0,
       "blk": 1.0,
       "tov": 2.0,
-      "fantasy_points": 43.7
+      "fantasy_points": 45.2
     },
     {
       "id": "4592691",
@@ -6761,11 +6761,11 @@
       "minutes": 15.0,
       "pts": 5.0,
       "reb": 1.0,
-      "ast": 1.0,
+      "ast": 0.0,
       "stl": 1.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 10.7
+      "fantasy_points": 9.2
     },
     {
       "id": "4684208",
@@ -6895,12 +6895,12 @@
       "event_id": "401909288",
       "minutes": 15.0,
       "pts": 5.0,
-      "reb": 4.0,
+      "reb": 3.0,
       "ast": 2.0,
       "stl": 0.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 12.8
+      "fantasy_points": 11.6
     },
     {
       "id": "4397002",
@@ -11574,13 +11574,13 @@
       "date": "20261104",
       "event_id": "401909925",
       "minutes": 19.0,
-      "pts": 12.0,
+      "pts": 13.0,
       "reb": 5.0,
       "ast": 3.0,
       "stl": 0.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 22.5
+      "fantasy_points": 23.5
     },
     {
       "id": "5107199",
@@ -12430,12 +12430,12 @@
       "event_id": "401909931",
       "minutes": 14.0,
       "pts": 5.0,
-      "reb": 1.0,
+      "reb": 2.0,
       "ast": 1.0,
       "stl": 0.0,
       "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 7.7
+      "fantasy_points": 8.9
     },
     {
       "id": "4702656",
