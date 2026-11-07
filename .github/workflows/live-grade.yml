@@ -1,0 +1,40 @@
+name: NBA EDGE Live Grade
+
+# Tonight's lineups and projections against ESPN box scores (finished and in-progress games)
+# -> data/live_grade.json. On demand, plus late each night; the full grading still runs in the
+# morning pipeline.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 3 * * *'   # ~10:50pm ET
+    - cron: '40 5 * * *'   # ~12:40am ET, after West Coast games
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-edge-live-grade
+  cancel-in-progress: true
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Grade tonight so far
+        run: python scripts/live_grade.py
+      - name: Publish
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/live_grade.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Live grade"
+            for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done
+          fi
