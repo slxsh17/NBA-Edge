@@ -1,15 +1,39 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T18:25:26.090191+00:00",
+  "checked_at": "2026-11-07T19:13:23.010669+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
     {
-      "headline": "Jalen Johnson Injury: Expected to play Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTXBpd1V6MEhrSDNWUGdqbnVtckdSUVFGWHBUbTRtVE1fODk0TnB2LXNmYjdfdjJWY2U4Y0dDQjRlcEJNdy1McHk3OFVKQ3ZaeVNwYUY1UFV5bDBQZno4RkhEQndhSHk1RWlHcFRwdFRLS1VabjJlTk1rQXV6OGw0UHRqMXR1NEJycllQRXZzdXBSWEV4NDhrbnVBT0IzeTgy?oc=5",
-      "published_at": "2026-11-07T18:10:48+00:00",
+      "headline": "Noah Clowney (illness) questionable to play Saturday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWjFqbVA0bVR1OElRTWdHR1pEU1VVMGFNbEVUX3VvTXVOU2kyM1JQOWFjUThGdEJMU2E5M2ZCQ2dtVEdadzlOWWc3U0ZtT19STWRRQl8zekVyRFVlOTRGenJSbm1qa1RGRktsQkJPdjZ4SXVEYkttQ1JHZGNJbFF0a2N2NmVoNVFNSUJuand2NERiRUFTN2dkaFlXNEt6dFnSAaQBQVVfeXFMTUhCTG1raC1YSWFIS0dyclBQZ0F6VWY1V1lEeDE5UWp3UGpVN3dLWHVqM2VubnRHYXVtRU55OE03LWJJdXF6aGdVX21scEJIVkN2cWNEWVUzcE51R2xtbWhnS1JTUHBYc19ObDVGU2RuNmtZYWpZMEdFeEJWZFd6TWtiX1doZWFra0s3UXdaY0t6MnlCT2NCTVBmNVg3Rnl3UEtCc1Y?oc=5",
+      "published_at": "2026-11-07T19:01:26+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Jalen Johnson (ankle) expected to play Saturday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdmZ0blY2QkwyNVBKUFhQNWZfUXVScjB6UkQyOWFEc09MUTROdnFzbXprQU5SNmFpQU1qNFNfSmpsZEpCY1NTaXB6OWFsRVVnTGt6c1FKaVR1WjFObTRHY2dJVmVBQ0RVS0hRVFpYLWZBa3ZWalFfcFgwR1N6Y1Z1ejVsZC1Zbl8tMnF0ZVFaUVVfODNQR3RhX9IBngFBVV95cUxORU1fYWVTWk9sREp0Y3ZCZkVCRDAyeVh4NUFRMnphV3ROSVJ2V2dUYXFDbDNoNkFIdnRmOTZRSjhKRkdNbEdtdHZKLXQ1WXFydVNfWm5lWmJ4U2djWXk0U2dRS3l4RDNyOXJzdTJ1QXFyYm5MeER5MmRyYTJrcjA1TzAyTXVmejNaNmFtbEhqUmZQM3djemUyeUdyc1Nwdw?oc=5",
+      "published_at": "2026-11-07T18:48:15+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Why Kingston Flemings Should Stay in Hawks’ Starting Lineup Over CJ McCollum - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcXZNdEJ2bVhnQmVTTTQwSkFldE9RS2Q2SjZxRWhGazc2LWZzWTlKcEI1ZGV6VlVodkJrYnN5S3I1OGh2djBQeEdMUVE5djVKOTVtNXJCeUp0UDh0YjZaR19MTklsTVRXSXQzQ3dIaUFiSEViYUtoc2g1WlQwSXVvRHh3cV9nWG5FcTdOdm40VmdhdUo4c1ZaZDhCS1QzN0N1QkZ1aHluNmhncko5c2w2UDkyX1c1bW9LMFhSLTIyRQ?oc=5",
+      "published_at": "2026-11-07T18:33:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Predicting the Nuggets' Full Rotation Before Spencer Jones' Season Debut - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPby1wLTlidjczN0VyUE5xbFZGOEhJRUVrZ0JqQUFfaG9QZjNaQ0ZtOU5USTRsd2JWMDgwcmFlYzEtNHprQ196VHo0anRXMmZ3WFF1Z28wWkM0Q2FGZ0tYbUtXcnBOemc0Ym5ubU5uVTJGbkNrV2dXRENZMllPcWFDcTFnZDlXNU9OSU50a0xaQkZRU2lGdkJrVWNpUXhTTTVCblpKcWNtaE11UQ?oc=5",
+      "published_at": "2026-11-07T18:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -306,22 +330,6 @@
       "headline": "How 76ers' Starting Lineup Matches Up vs. Cavaliers on Friday Night - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcGRWeU9PUFBfTEhlemZJdE9tZVlIVkhZdS1XSl9qdDRpXzZ6em9ISEgwZm1ob1F6S0FaT1ZnVndZeTQ1ekxkUGhhLUMxdzhRLWNjbVRmc3RMbkpJZm5YOVc2bkZTMmM1N0dRUkkwZ3d0bkloMExSU1dKd2ZjRGNFbWczZVhCMmpWdVhEd0hOMzZGQ2RuNWxSSzZfdXUwaTNoelJkN1M3NVBkMV8xOVE?oc=5",
       "published_at": "2026-11-06T20:00:03+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Suns Reveal Why They Changed Starting Lineup - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOelcwbi1IdlRKLVFrN2NtSUFiRkhKZl9hRXFMVHN6eFRRRFFLZk50MEs1UGljRm42cHVUc09QSi1tbGpWRXNhN1NlM1hkRy1GemZXemp0SUJ1empnOWtZYVBZZmxSYjZzRDZyQ3daallQaTVGQ3dBSTJjTTQxVGxUX0k0cFMtSGNfajJrNlFB?oc=5",
-      "published_at": "2026-11-06T19:09:09+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Raptors’ Poeltl (shoulder) probable vs. Bucks; Quickley (hamstring) questionable to play - TSN",
-      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV3BEb0E1eVZqSnd1bVU4Qi1aTGRpRFVaQkRsRDJYMU8yUHVOQ19CNHZLUXBfSkQ5LW40R0xGTURnVmc2dHdqLTlERUtpazVYQW41TmhzLUVrTnY0d0ozTDRKd2U2SDl6cDBJd3Y0N2pLb19PYkp3bVpPdGZrREpURXhNb2RGcEotZlJxRUVOVW5UVzY0NHU5YUh6WFp5bHpjc3NZR3E0c3dvX1ZJRml5SGl4bw?oc=5",
-      "published_at": "2026-11-06T18:30:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
