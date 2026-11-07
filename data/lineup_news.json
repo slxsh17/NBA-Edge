@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T20:18:31.235380+00:00",
+  "checked_at": "2026-11-07T20:27:54.194349+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -26,6 +26,14 @@
       "headline": "Noah Clowney (illness) questionable to play Saturday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWjFqbVA0bVR1OElRTWdHR1pEU1VVMGFNbEVUX3VvTXVOU2kyM1JQOWFjUThGdEJMU2E5M2ZCQ2dtVEdadzlOWWc3U0ZtT19STWRRQl8zekVyRFVlOTRGenJSbm1qa1RGRktsQkJPdjZ4SXVEYkttQ1JHZGNJbFF0a2N2NmVoNVFNSUJuand2NERiRUFTN2dkaFlXNEt6dFnSAaQBQVVfeXFMTUhCTG1raC1YSWFIS0dyclBQZ0F6VWY1V1lEeDE5UWp3UGpVN3dLWHVqM2VubnRHYXVtRU55OE03LWJJdXF6aGdVX21scEJIVkN2cWNEWVUzcE51R2xtbWhnS1JTUHBYc19ObDVGU2RuNmtZYWpZMEdFeEJWZFd6TWtiX1doZWFra0s3UXdaY0t6MnlCT2NCTVBmNVg3Rnl3UEtCc1Y?oc=5",
       "published_at": "2026-11-07T19:01:26+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Sam Merrill (elbow) ruled out Saturday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYTRtWkNBaXd0OHhrY2l3OUZjdkswWHRublFacE1EN1g5YUxhbUNDcEdyQjlDRHNjVXVhU20yWHJPXzV5a0hRdkRta3RGMjFYV1lCTlpMVGVBNzRVYUtwekVjTTROQ2ZjOWtxNGc0WUlveDNfLUJiNGcxT2FDWmZxME9DNFhoZU81Vks2NdIBkgFBVV95cUxNN3FraDBTSWRoSUlqdlVyTTdLVFZjU29vRUlNN2Y5QmdOV3lib3ZZN2hhc3dkWEM0QUlMNU5XYVlHaC1pckh4ekdBb2tIOWdQbXdYczIzdlBrODVxcm5aWkFFMVVPOEtxQVpLNmEyYkxJWHBON0FhaUlkV012cXRndktldVRZQ1l0bmNPU2NLdTNVdw?oc=5",
+      "published_at": "2026-11-07T18:59:02+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -330,14 +338,6 @@
       "headline": "Jalen Johnson Injury: Ruled out for Friday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdVA3My1TLU9DMXFzVVdOYXg3UnBFdHZncVp1N3NWZWtkSUEzNGFCMU9LanZfYzY0TGZLbFlZMEpqSDdNNml2Qjk4UHNlZ3U2empfUThoQVlJbHlVWkhLSkRsV2FhVFh0SktJNTdScVFnZ0JRUHVGZTUtUHp2VVFuR2xuODlIaWNleUd3ZHJpd3gzamFsTFZKb3ZR?oc=5",
       "published_at": "2026-11-06T22:06:08+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Shedeur Sanders to start vs. Saints; Deshaun Watson listed as questionable - The Athletic - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSWp4dEFsVnJYemNHT20xcGVRZlVOMEYxWUlidjBZZkk2UGg4WmRaRWZRQ3hQM1BReXNpN21yWVF4MzNQSnJmMmhNYzNOcHlaWGJzeVNGd3owQUVWUDRvOERUMGo2V0hWT2xnRnN0a0hUNjZBQ1l5SkZnZjJOQkxBY2RZOVA3UThFaF9LN0x2WGRQZw?oc=5",
-      "published_at": "2026-11-06T20:23:06+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
