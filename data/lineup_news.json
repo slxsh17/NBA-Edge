@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T11:08:18.959928+00:00",
+  "checked_at": "2026-11-07T11:59:26.666103+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -143,9 +143,9 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "Tyler Herro Knows What Bucks Have to Do to Start Winning After 1-7 Start - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaHFtbGZFVkRDeHJHLUZTbG94ZEhjTmR6NTV2Z1djTE1HQlJYS0FkLWNuTFZCaWs4dWstbkh5US1WVDRlU0xlZXJRYTJCUkhCSUdZUUZVSlNoS2ZVUm5KNE90dVVRemJEYmhkdkhOdjh0QTh1U0d3clpJS1lXVUpNbFlHZ1U?oc=5",
-      "published_at": "2026-11-07T00:10:00+00:00",
+      "headline": "Tyler Herro Knows What Bucks Have to Do to Start Winning After 1-7 Start - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdTBpc0ptZlFGR3hzbTFxTkxMU0JGNUxlZkxvSlNqclRndnYydDVaQ0hlc21OMXhHRzZJUlg5NTYwSmp6dWdjZzFsdVg0MndqM1NXMXd4MVNZTHhsRTlDSG42MjFIRjVudWJSNjVBUEtReGJmSlQteERTOFozdUNRREI4ZHhKNkNUM1d0ekF1SlpqVXdoMjU0d2JvbjlycVFFMGdReUJGajVMTHJpUXNxRVE0R0Qxc0k?oc=5",
+      "published_at": "2026-11-07T00:11:32+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -162,6 +162,14 @@
       "headline": "Celtics make another starting lineup shakeup against the Hornets - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWnVNVVJ4R1dLdk5GYUNrVzdrVldVN0FSU3hoWXFpWFlvZkFyMmtFeWF4V2xJZlJoUjBla0QxREh0S1dMWHdkaHFZNUpUS2ZqNWJBWEt3SjdxbVZ5QU91a2dpNHJlbzk1VzFIb0RHUVlIRU9lXzhXN0tVVVdMZ2RkMW5NanpxWEtSbXZhcGFmd2xVZw?oc=5",
       "published_at": "2026-11-06T23:45:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Scottie Barnes Injury: Ruled out Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYzVaYkxLMzVSaDlIS3lta1ZjR1J1cUlwRmZjcnhYTGdIVEk5bFhtVF9GQ0YwSjdCU1R5Mmw0b0Q0LUR6QlVkOW42RkgybjVEWDIwQzRSRXZreFZuUzJOdDB1SGNMdUt2TFcydElqeHdtMTNHeEZHOTVoVEhVdG5taUVVcGFuVThDTUF1T0J5bHkwS0hheUE?oc=5",
+      "published_at": "2026-11-06T23:44:25+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -250,14 +258,6 @@
       "headline": "Kyle Anderson (illness) listed questionable Friday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSlM2VjFPeHdIWUtUWWpkUnRPaTFiZEZyekpjMENKdzBxODdyX2IycWRRVUFSSU9ER28wSGVKSlJ5dnZUNUVVaXF0SGV3NWVVWlhYWXVxTlVZOEx0OUM5VzVmN2oxaGw5R0wxN1Z2ZFJnUTloM3NwdDBxOXNCaGdxZkZqWVFQSi1ES2ItYnNWQzR4Zy1wNGtrcl9ZdTXSAaIBQVVfeXFMTkR6QThpNHo4Q01rR3dZd2h1bTZ3OWJSYjd6aDNhZDN3MWpWcHlWU3VjeklvTFYyQkFKMXQ5WGFnNGFLYkVpb0V1U0p3THN6M1kzX082WUdvLVN2X1pYVXN3cXdTMEJNeHZHbUN5N2wxTHE2XzRYa0JKX01fZzU5bkVHREJvOUFSNzVXM3hMM2FKZGNLdy1tZ0JCTmtGVGd0cHZR?oc=5",
       "published_at": "2026-11-06T17:49:30+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Isaiah Stewart (knee) ruled out for Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMTlSWHg4ZXFzYkNsaU9vemFoVGJrdDF6R0NwN3JWX1pKblJ6eWJmUnJ4dWJJLWtuRVZvMDhhLU1GNnFROEFwaTdNVThLakpKOXFLdzYyN0Y0SnNMb2JRVnpzbnpZQWw1SHg1YlNDSV9rbDZUMkR3bFl1eGY4WWlHTVEzOHdoMEVtS1RrZtIBkgFBVV95cUxPOEJYTGp6b3pjTkhOeDZjdUtSSjZvWG8tZmFjUlBNNzZ0eGpPdHY2SlNPMERXVE80OWUtVDNVWHlmSGdPTG9CckxCMlhicDRFc0I3MDZSQ1dsOElzc1BFSHZjdkFXamZQNjVxcFFwejdkd1NoVWVXXzRQUUJ3UGdwekd2aTJjX0FSaXVmUXBHZGtFZw?oc=5",
-      "published_at": "2026-11-06T17:46:25+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
