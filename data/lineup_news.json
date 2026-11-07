@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-07T03:34:23.941539+00:00",
+  "checked_at": "2026-11-07T04:36:53.631389+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -49,6 +49,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Why Josh Hart has already been ruled out for Knicks-Cavs game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNLVhJQWhHUS05UkE3SlV4c3JiRWpZdE5xbkdpTmdKOTJRa00yWXhvWGJHN3lucW92S0tpb01LVFFDTlpqQkVCNlRDOFRnVW5LOVR0bE1FOW92b0dBQjVEenRSeFY0WlNCaDZyajlCck9jRXZVYUNZUVlvMGFUdXdaSmpn?oc=5",
+      "published_at": "2026-11-07T02:49:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
     {
       "headline": "Sam Merrill Ruled Out With Elbow Injury vs. 76ers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQam9JSkZuMy00TzNmME9Lb0hzNFRrRWVQdkpyODRFZXI5SUNCRDdPalhlTkFQdjJzVjIzS0lQaVlfdDhlX3RYTlh0dk9JRXdjbWk5UTNoaVkxZWVTNXBtRUp5ZWMxU3poUG1PVGFBWTJmZmFuVE1nQ1NySDZJNnZmNFp3MlhfUQ?oc=5",
@@ -210,6 +218,14 @@
       "scope_date": "2026-11-06"
     },
     {
+      "headline": "Jalen Johnson Injury: Ruled out for Friday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdVA3My1TLU9DMXFzVVdOYXg3UnBFdHZncVp1N3NWZWtkSUEzNGFCMU9LanZfYzY0TGZLbFlZMEpqSDdNNml2Qjk4UHNlZ3U2empfUThoQVlJbHlVWkhLSkRsV2FhVFh0SktJNTdScVFnZ0JRUHVGZTUtUHp2VVFuR2xuODlIaWNleUd3ZHJpd3gzamFsTFZKb3ZR?oc=5",
+      "published_at": "2026-11-06T22:06:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
       "headline": "Shedeur Sanders to start vs. Saints; Deshaun Watson listed as questionable - The Athletic - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSWp4dEFsVnJYemNHT20xcGVRZlVOMEYxWUlidjBZZkk2UGg4WmRaRWZRQ3hQM1BReXNpN21yWVF4MzNQSnJmMmhNYzNOcHlaWGJzeVNGd3owQUVWUDRvOERUMGo2V0hWT2xnRnN0a0hUNjZBQ1l5SkZnZjJOQkxBY2RZOVA3UThFaF9LN0x2WGRQZw?oc=5",
       "published_at": "2026-11-06T20:23:06+00:00",
@@ -346,49 +362,9 @@
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Jalen Johnson (ankle) questionable to play Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWUFHckxWYjIwQUE3b3VfTC1NTTk5UWhXOU55aHlvZ3hsTkI4NlJfM2dVcW9RQlR1VG9nNW9DaFd3Z1Z6RlJiRnZCRVZHVzRpVVByejlkRERQeEdOb2hDRkM0SHBOSUpVS0dYMDZJY2FUY3JBcGEzZmtYUldoM1JnR2VXdk1HOEZBRlZxdzI4NzZfUzl4UW9nT0tUTdIBoAFBVV95cUxNc0xNdzhRY1BIQUxuR1ozUm5tWDAwcExKWU1jamMwZXhKRlNkM1ZqTWZuQ0ZnYUtKclRFRnM5MUJ2RHFWcVJha2JkZjNSUDVwelMxcTBQTkozbU90b1lWWkI5MGhoUXR4V1lqVUpEZ0R0VktPcE9DMW91V0xCYU1zaGg2T3MzVnhiVzRZUmRKY2VYR1FPbUQxVThHZ3k4aTlF?oc=5",
-      "published_at": "2026-11-06T04:33:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Anthony Davis (ankle) questionable to play Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeVo1QW10N1llZ0Nkd0R0Wk9EakNLdlZJRVB6SlpaQXRJUlNpaVlNVDVSa1VLRlpuWTJaNWU5SnJoWC1xbnRwRGNfUWRuMXMwaUVybnZ3a2FrbWdZWWdxQW9jVC1BLXN2U0RfTnVISjhvZTU4bnY2UWFuelRwaHN5aUZadlJyTjJzU1pCTFY1OUJvZ0tud3BrMDVRd9IBoAFBVV95cUxOTDNrR2xNbEs3NWN6WUNRRTZFZUhjeDhKSnBXZXpybVo3SnRBUXdULWpXUDg2VHV5dDIzT1drOU9mMTluc19jczlCTlVad2UxeXNMWVFVSEtOc3pidFJZU0o3Rm9JYkNzcXNfRTJtUnVNcWhWNkxzVFVNUFEyT0EwSG45aWhXUElxVEVzYVgwWXJ2MXlqX2RxdGtzM043M0VX?oc=5",
-      "published_at": "2026-11-06T04:24:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Payton Pritchard (eye) questionable for Friday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQlU3YkdqOTBReF9zTHplOEFGUzlTTy1fclF3YnRHVFhJTnVKRzlzWDhuXzZ3WHdLVlNNajN3aXEza1VaeW1wQmYtUXNfeTlJMWp4UEhRdjB4cmRFSkZVVTZ4QTZzZ0ZyR2ZGN2NqYjNud3NfTWJQd1lxVVVPZHBKLVBSTEhKMjA3dUZLY296T1JSZ9IBlwFBVV95cUxPdjU4MTJqM2FaNTRoUHhWejdLRWhZeWduMHFObEJkTXhYNTg4QVNUYThYZWRPN3M0RlNTamk2cm9uT0J0NzRNQS16RlotN3luN1E3emRXQXY5TFo4S0FHMUdEM2VFajZpZjFSakZBb0IybHY3SVBTZktUbWEtYXJ5bGNENFFZVkU5NnMxR3FzTlA0bWtLQ2Vv?oc=5",
-      "published_at": "2026-11-06T04:20:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "Kevin Durant Snubs Stephen Curry From All-Time Starting Lineup - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZFNmZGhLUU1XbGw5VGtMU2o4MUdUdk1yWDIyZThYbk5WSU8xNU5fM041NHBhQ19xb0FHOHVtOFhMSTNRQ2RjYS1lckNSXzF5Z1VsQ0x2ODl0SzlHb3lnb2EwTzFtaGkzVVp5bnVIa254YkkzX3U5NC1Pb2wyM0h0amZWV3FEeUt4?oc=5",
-      "published_at": "2026-11-06T04:16:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "A key Lakers rotation player could miss Friday's game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPempMWlZnTXRTY3VnNlZIQ1pCMFZGUHp3NmtSa2cwNHRNYnBLdGlLcGMtZkVnXzVFZUlSYkNPd09SOTBNTHhIc0JoYV9xUU9wRGVhS21weE5aTTJtblJyM2J1ZmxSTmJRSXZacGNwVmxObVlid2ZQN1E4eVZ6bUh3bFowUUFvMDF4?oc=5",
-      "published_at": "2026-11-06T04:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-06"
-    },
-    {
-      "headline": "CV Lakers To Make Debut Friday Night with Bronny James Expected to Start - MyNewsLA.com",
-      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNenQzZVAzSVhsdEpMMHhMVDJoNmtoeEh1ZEJCb0tUOEQ2cnJsLXdNcFBSS2YxTHhfc1FvOWFfTDNFT0FKaTBDS200MklmLVFCVFlFd1hudjl5clktWkpnczZreWRzRVdjRkRBczhRa3VVRW1wTWg3YWE0ZHZ6cXZ1dXJYMXFzallDVFpUbS1OZHRWNkF2X2Y1NDhBeFo5bGktRWxObXg5Q3FHZ3pva1JlR3A2eXVSQQ?oc=5",
-      "published_at": "2026-11-06T03:42:18+00:00",
+      "headline": "Coachella Lakers To Debut Friday; Bronny James Expected to Start - MyNewsLA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWDJZbXlDTEk4VF9xcjdOR1cweXpJcjZGRXRWM1FwZUo4cFRYRG9XRTVRMHFsTFRTZTRBelF4QmFMbGNfX1NRUmdIWFUwTE15ZXdqVi04N0U5ZGhiTVpMNVhFaWtrRkZWQmdTa3NucHZ1c2NkZXdiV2ZQSVJuQ1QwSlBqaVVIbWtEV0ZrZVVmVWxIcDgtSUpIUDRhc1RaVzJ3bHd0VE11bmhzSEtRbUkyeE5mRjQ5OW1s?oc=5",
+      "published_at": "2026-11-06T07:59:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
