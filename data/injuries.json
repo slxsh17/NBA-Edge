@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T21:24:31.179261+00:00",
+  "updated_at": "2026-11-07T22:06:43.281379+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -73,7 +73,12 @@
       "status": "OUT"
     },
     {
-      "name": "Zach Collins",
+      "name": "Tobe Awaka",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jalen Smith",
       "team": "CHI",
       "status": "DAY-TO-DAY"
     },
@@ -83,9 +88,9 @@
       "status": "OUT"
     },
     {
-      "name": "Jalen Smith",
+      "name": "Zach Collins",
       "team": "CHI",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Jaylon Tyson",
