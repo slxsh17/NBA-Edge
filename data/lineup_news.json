@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-06",
-  "checked_at": "2026-11-06T23:57:36.647683+00:00",
+  "checked_at": "2026-11-07T00:09:11.288518+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -50,17 +50,17 @@
   ],
   "headlines": [
     {
-      "headline": "76ers news: Adem Bona ruled out for NBA Cup clash with Cavs - ClutchPoints",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSklKdnI2NTR3WFVOaUhtcmJEYTUxanp1MS0wREttcUtwWkdHOG5XZXlkQ2lYSUJySWZBX21UT3JKWVBtZTBCdWRsWlpmamx3eUJwTTR2aDNyYlRJbXZnZzNFbVdsREpMTy1waE9lZHM3dVZ2NVRDdmdPQUpkaHRxX0c0TWR3SzFjVGtQZG9HNFgzc3l2Ty1SZkNGeUpXdw?oc=5",
-      "published_at": "2026-11-06T23:44:51+00:00",
+      "headline": "Cavs to start James, Mitchell, Sam, Watson, Mobley - NBC Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPc09Ma1ZuYW5FMU5lYjFsQ1YxV19pblZJMjZBaGxqQklJLWJWMUszV2tiZGJPeVBGeHo3THBXZW1aeXhVQjEweTdZM3ZWMTAzOHJUdjZfUTJiMHNOeV84M3hhZXVtcnRpbmpaNTFCUGxyQmhkVHMzckljLUtONEk1QktWNkd3bHNxV3Yyb3pmaDg4bFlyeW9TMUQ5M1dvYTdSakVUVGwyeWJCQmtEc0R2MmNDQnA?oc=5",
+      "published_at": "2026-11-07T00:07:33+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
     },
     {
-      "headline": "Immanuel Quickley Injury: Ruled out for Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWGk3MFpIaWxvTThieFctZHlzUFpkNW92eVZzTDduWVg4SXpQa2FES3hIbDkzcktCZ0RLVXJxX1lLbkRMZG9aZ3VYRU1XZFc5UHRPaFotY3paWXV2dmxLWjZabHBnZkZVSlZrLVdYOTJoN0Q0RmRtaGcwZGpWTmtFdm5ibUJCcFFrZEdoWmdENlZLYXo2MlJtLXJoaHhrS1k?oc=5",
-      "published_at": "2026-11-06T23:41:06+00:00",
+      "headline": "76ers news: Adem Bona ruled out for NBA Cup clash with Cavs - ClutchPoints",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSklKdnI2NTR3WFVOaUhtcmJEYTUxanp1MS0wREttcUtwWkdHOG5XZXlkQ2lYSUJySWZBX21UT3JKWVBtZTBCdWRsWlpmamx3eUJwTTR2aDNyYlRJbXZnZzNFbVdsREpMTy1waE9lZHM3dVZ2NVRDdmdPQUpkaHRxX0c0TWR3SzFjVGtQZG9HNFgzc3l2Ty1SZkNGeUpXdw?oc=5",
+      "published_at": "2026-11-06T23:44:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"
@@ -101,6 +101,14 @@
       "headline": "Shedeur Sanders to Start at Saints for Browns Stream of National Football League - CBS Sports",
       "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRzBUU28wNnY1SEdCaEw1TkdtV0U1Qkc3MDNsVXBjSWJPQk1JU3hpYTVTT2JrQ3JGSWpmb3BEbmVydHJia2Z5QXRnNllOcHJZZEF6bTl3b1JBQ044SGxGTUktTG9STjllNS1BczhiVUkwRjQ5SHVYZ0FWNGE5aEdUcTNqZHNzSGVsS2lMeXNZRVU?oc=5",
       "published_at": "2026-11-06T22:28:13+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-06"
+    },
+    {
+      "headline": "Gary Payton Injury: Questionable for Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUURWWlJfSXVtUkdnWTBXSDFzUDZhcV91MFRIRzdGY29pWExNWEN0WnQxcWVaNnRvaUtlbVRUbUFRbk9odExvQ1hsS2FZQ2VoVEdfRlBtSi10UmdUQzQtRWxTeEYwa3lpVUVCc25uUGtfMFllMWRrRWw2cGhaQy0yTDU1bXNMU0k0b3Mwc0ZucTI4Q05nbWFSSlM5S09KZw?oc=5",
+      "published_at": "2026-11-06T22:21:07+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-06"

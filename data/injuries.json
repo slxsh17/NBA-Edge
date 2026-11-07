@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T23:54:05.217228+00:00",
+  "updated_at": "2026-11-07T00:09:11.192433+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -91,11 +91,6 @@
       "name": "Jaylon Tyson",
       "team": "CLE",
       "status": "OUT"
-    },
-    {
-      "name": "Peyton Watson",
-      "team": "CLE",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jarrett Allen",
@@ -398,24 +393,14 @@
       "status": "OUT"
     },
     {
-      "name": "Jakob Poeltl",
+      "name": "Scottie Barnes",
       "team": "TOR",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Immanuel Quickley",
       "team": "TOR",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Scottie Barnes",
-      "team": "TOR",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Kyle Anderson",
-      "team": "TOR",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Kawhi Leonard",
