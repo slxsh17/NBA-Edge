@@ -1,15 +1,39 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T19:13:23.010669+00:00",
+  "checked_at": "2026-11-07T19:58:54.941910+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
     {
+      "headline": "Desmond Bane Injury: Ruled out Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLWltVDVMclV6WXowbGJqclNRSGFzejZndWV6S3hZZmplUmNfeEY0aFR4c3VkVzkyVmxaOFBjeDFwZjFuZklKekNwbW1lMks4eXdDNjBoRDZTdWhmZElKZVBULXlnbVkzUEhKVnhPel8zZ1lLMXB3RFhFZGJhR0FnYWlaVWcyTlNaQXVia091dnhQQjVTc3c?oc=5",
+      "published_at": "2026-11-07T19:36:42+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Anthony Davis Injury: Questionable to play Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQUd6MXEyeDlKTkc2NDE3MEsxR1I2SmY2SmJnYTAyVEJ0dEtkWXM0ZXVFcDRnQ1lDVldXMnZ3T3haVW9GREFmWWZzZkJlcnhJYUVEejZIeGRWVWwyWGVhamdwRHUxemJGUEJrZHhuUlYyTVlTRXBVVVBOZjBEaEhhSXpLR0JFUUZNeG1iRHh4ZEZLZnpzTk1HX1JXZFhmN2x1ZHI0VTBB?oc=5",
+      "published_at": "2026-11-07T19:13:27+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Noah Clowney (illness) questionable to play Saturday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWjFqbVA0bVR1OElRTWdHR1pEU1VVMGFNbEVUX3VvTXVOU2kyM1JQOWFjUThGdEJMU2E5M2ZCQ2dtVEdadzlOWWc3U0ZtT19STWRRQl8zekVyRFVlOTRGenJSbm1qa1RGRktsQkJPdjZ4SXVEYkttQ1JHZGNJbFF0a2N2NmVoNVFNSUJuand2NERiRUFTN2dkaFlXNEt6dFnSAaQBQVVfeXFMTUhCTG1raC1YSWFIS0dyclBQZ0F6VWY1V1lEeDE5UWp3UGpVN3dLWHVqM2VubnRHYXVtRU55OE03LWJJdXF6aGdVX21scEJIVkN2cWNEWVUzcE51R2xtbWhnS1JTUHBYc19ObDVGU2RuNmtZYWpZMEdFeEJWZFd6TWtiX1doZWFra0s3UXdaY0t6MnlCT2NCTVBmNVg3Rnl3UEtCc1Y?oc=5",
       "published_at": "2026-11-07T19:01:26+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Sam Merrill (elbow) ruled out Saturday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYTRtWkNBaXd0OHhrY2l3OUZjdkswWHRublFacE1EN1g5YUxhbUNDcEdyQjlDRHNjVXVhU20yWHJPXzV5a0hRdkRta3RGMjFYV1lCTlpMVGVBNzRVYUtwekVjTTROQ2ZjOWtxNGc0WUlveDNfLUJiNGcxT2FDWmZxME9DNFhoZU81Vks2NdIBkgFBVV95cUxNN3FraDBTSWRoSUlqdlVyTTdLVFZjU29vRUlNN2Y5QmdOV3lib3ZZN2hhc3dkWEM0QUlMNU5XYVlHaC1pckh4ekdBb2tIOWdQbXdYczIzdlBrODVxcm5aWkFFMVVPOEtxQVpLNmEyYkxJWHBON0FhaUlkV012cXRndktldVRZQ1l0bmNPU2NLdTNVdw?oc=5",
+      "published_at": "2026-11-07T18:59:02+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -26,14 +50,6 @@
       "headline": "Why Kingston Flemings Should Stay in Hawks’ Starting Lineup Over CJ McCollum - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcXZNdEJ2bVhnQmVTTTQwSkFldE9RS2Q2SjZxRWhGazc2LWZzWTlKcEI1ZGV6VlVodkJrYnN5S3I1OGh2djBQeEdMUVE5djVKOTVtNXJCeUp0UDh0YjZaR19MTklsTVRXSXQzQ3dIaUFiSEViYUtoc2g1WlQwSXVvRHh3cV9nWG5FcTdOdm40VmdhdUo4c1ZaZDhCS1QzN0N1QkZ1aHluNmhncko5c2w2UDkyX1c1bW9LMFhSLTIyRQ?oc=5",
       "published_at": "2026-11-07T18:33:23+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Predicting the Nuggets' Full Rotation Before Spencer Jones' Season Debut - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPby1wLTlidjczN0VyUE5xbFZGOEhJRUVrZ0JqQUFfaG9QZjNaQ0ZtOU5USTRsd2JWMDgwcmFlYzEtNHprQ196VHo0anRXMmZ3WFF1Z28wWkM0Q2FGZ0tYbUtXcnBOemc0Ym5ubU5uVTJGbkNrV2dXRENZMllPcWFDcTFnZDlXNU9OSU50a0xaQkZRU2lGdkJrVWNpUXhTTTVCblpKcWNtaE11UQ?oc=5",
-      "published_at": "2026-11-07T18:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -271,25 +287,9 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "DeMar DeRozan Injury: Expected to play Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPel91cDlsOFVnZHZMOGJRME43R0ZoTWdlUkhNcWh5U0F1XzM0MTJnNFNUeEVxd0plSS1Rdm5LNHZ4SWlWZlBZRDl1cFctTW9xalp4TVAycjI0SGFqRVBpOHFjZ3h6c3BMbjZsZVREN3dxWXVXVkFDVmRJQTY4bGpCX2Z5NnZscWs3Y2VxWENGUjN6QlM4ZGFZbnFDbFExand5?oc=5",
-      "published_at": "2026-11-06T22:48:59+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
       "headline": "Cavs release full injury report ahead of NBA Cup match vs. 76ers - Cavaliers Nation",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPanRrejU4QzNQUGhJNkhveVowSDh4Wk5VRnVKYWZvNmpLQk8ydlVzMVcxU0dsOERseURKbWRERnhiTjhCVmJXSk12T2V6THhSMXlUZnpjb3EySlpYRHp2T1lfTTh5VkdxNlRzR3I2NS1wV1VSRDUwdFh5M0JfSy1wSXBiNDNBUTlhVjNSLXlEdWRPY3E2WnJnTVFlRVRaSV9ueVA2QS13?oc=5",
       "published_at": "2026-11-06T22:34:32+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Draymond Green Injury: Questionable versus Orlando - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRTQ5Z294OFFiYzhVTjUySkNLSUQ3ZW8zajlEWE1HOGdsLWtGWVhrZkFxTl90cFk0c2RwaUMyWU9qT241SUdONmphX2U5NW9YN0ZWSU5VblBaX1VIb19mYzlGZFFuZDF1bG5yby1leThTMkVKcmdEWE1lYm1TV1FMUE9XQnAtY0VGcjA2ZVFEZURDN295dGdxUU5wTlVIcEtnN0dKSw?oc=5",
-      "published_at": "2026-11-06T22:21:30+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
