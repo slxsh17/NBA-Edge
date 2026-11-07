@@ -1,78 +1,78 @@
 {
 "schema": 1,
-"updated_at": "2026-11-06T16:38:49+00:00",
+"updated_at": "2026-11-07T06:17:10+00:00",
 "calibration": {
-"sd_scale": 1.022,
-"shift_classic": -1.38,
-"shift_single": 0.8
+"sd_scale": 1.026,
+"shift_classic": -1.12,
+"shift_single": -0.08
 },
-"calibration_players": 1759,
+"calibration_players": 1888,
 "summary": [
 {
 "format": "classic",
 "strategy": "cash",
-"slates": 14,
-"avg_actual": 304.9,
-"avg_proj": 323.4,
-"avg_pct_of_best": 70.6,
-"within_sim_range": 71,
-"below_range": 21,
+"slates": 15,
+"avg_actual": 308.0,
+"avg_proj": 323.7,
+"avg_pct_of_best": 71.3,
+"within_sim_range": 73,
+"below_range": 20,
 "above_range": 7
 },
 {
 "format": "classic",
 "strategy": "sim_winner",
-"slates": 14,
-"avg_actual": 298.4,
-"avg_proj": 310.7,
-"avg_pct_of_best": 69.2,
-"within_sim_range": 71,
-"below_range": 14,
-"above_range": 14
+"slates": 15,
+"avg_actual": 301.3,
+"avg_proj": 311.1,
+"avg_pct_of_best": 69.8,
+"within_sim_range": 73,
+"below_range": 13,
+"above_range": 13
 },
 {
 "format": "classic",
 "strategy": "tournament",
-"slates": 14,
-"avg_actual": 302.9,
-"avg_proj": 309.4,
-"avg_pct_of_best": 70.0,
-"within_sim_range": 86,
+"slates": 15,
+"avg_actual": 305.2,
+"avg_proj": 310.1,
+"avg_pct_of_best": 70.4,
+"within_sim_range": 87,
 "below_range": 0,
-"above_range": 14
+"above_range": 13
 },
 {
 "format": "single",
 "strategy": "cash",
-"slates": 14,
-"avg_actual": 204.9,
-"avg_proj": 206.5,
-"avg_pct_of_best": 81.6,
-"within_sim_range": 93,
+"slates": 16,
+"avg_actual": 198.8,
+"avg_proj": 205.1,
+"avg_pct_of_best": 80.3,
+"within_sim_range": 94,
 "below_range": 0,
-"above_range": 7
+"above_range": 6
 },
 {
 "format": "single",
 "strategy": "sim_winner",
-"slates": 14,
-"avg_actual": 211.4,
-"avg_proj": 205.2,
-"avg_pct_of_best": 84.2,
-"within_sim_range": 93,
+"slates": 16,
+"avg_actual": 204.5,
+"avg_proj": 204.0,
+"avg_pct_of_best": 82.6,
+"within_sim_range": 94,
 "below_range": 0,
-"above_range": 7
+"above_range": 6
 },
 {
 "format": "single",
 "strategy": "tournament",
-"slates": 14,
-"avg_actual": 209.7,
-"avg_proj": 205.2,
-"avg_pct_of_best": 83.6,
-"within_sim_range": 93,
+"slates": 16,
+"avg_actual": 203.2,
+"avg_proj": 203.7,
+"avg_pct_of_best": 82.1,
+"within_sim_range": 94,
 "below_range": 0,
-"above_range": 7
+"above_range": 6
 }
 ],
 "slates": [
@@ -9143,6 +9143,939 @@
 "slot": "UTIL",
 "proj": 22.75,
 "actual": 19.4
+}
+]
+}
+]
+},
+{
+"date": "2026-11-06",
+"slate": "main",
+"label": "Main slate",
+"format": "classic",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 439.8,
+"players": [
+{
+"name": "Jayson Tatum",
+"team": "BOS",
+"slot": "PF"
+},
+{
+"name": "Cooper Flagg",
+"team": "DAL",
+"slot": "F/C"
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"slot": "G/F"
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C"
+},
+{
+"name": "Dyson Daniels",
+"team": "ATL",
+"slot": "SF"
+},
+{
+"name": "Kyshawn George",
+"team": "WAS",
+"slot": "SG"
+},
+{
+"name": "Brayden Burries",
+"team": "MIL",
+"slot": "UTIL"
+},
+{
+"name": "Jamal Shead",
+"team": "TOR",
+"slot": "PG"
+},
+{
+"name": "Luguentz Dort",
+"team": "ATL",
+"slot": "UTIL"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 327.7,
+"actual": 352.3,
+"sim": {
+"p10": 257.3,
+"p50": 314.9,
+"p90": 368.6,
+"mean": 314.0
+},
+"band": "within range",
+"busts": [
+{
+"name": "Shai Gilgeous-Alexander",
+"proj": 50.07,
+"actual": 39.6
+},
+{
+"name": "LaMelo Ball",
+"proj": 38.01,
+"actual": 33.4
+}
+],
+"boosts": [
+{
+"name": "Jamal Shead",
+"proj": 27.24,
+"actual": 42.6
+},
+{
+"name": "Collin Murray-Boyles",
+"proj": 28.48,
+"actual": 42.4
+}
+],
+"players": [
+{
+"name": "Trae Young",
+"team": "WAS",
+"slot": "PG",
+"proj": 38.41,
+"actual": 35.4
+},
+{
+"name": "Nickeil Alexander-Walker",
+"team": "ATL",
+"slot": "SG",
+"proj": 35.53,
+"actual": 36.4
+},
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"slot": "SF",
+"proj": 41.65,
+"actual": 38.9
+},
+{
+"name": "Alex Sarr",
+"team": "WAS",
+"slot": "PF",
+"proj": 31.06,
+"actual": 37.1
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C",
+"proj": 37.22,
+"actual": 46.5
+},
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "G/F",
+"proj": 50.07,
+"actual": 39.6
+},
+{
+"name": "Collin Murray-Boyles",
+"team": "TOR",
+"slot": "F/C",
+"proj": 28.48,
+"actual": 42.4
+},
+{
+"name": "LaMelo Ball",
+"team": "MIN",
+"slot": "UTIL",
+"proj": 38.01,
+"actual": 33.4
+},
+{
+"name": "Jamal Shead",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 27.24,
+"actual": 42.6
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 319.2,
+"actual": 336.3,
+"sim": {
+"p10": 249.9,
+"p50": 308.0,
+"p90": 363.0,
+"mean": 306.7
+},
+"band": "within range",
+"busts": [
+{
+"name": "James Harden",
+"proj": 35.14,
+"actual": 25.7
+},
+{
+"name": "Ja'Kobe Walter",
+"proj": 28.3,
+"actual": 22.2
+}
+],
+"boosts": [
+{
+"name": "Dyson Daniels",
+"proj": 35.5,
+"actual": 45.8
+},
+{
+"name": "Onyeka Okongwu",
+"proj": 37.22,
+"actual": 46.5
+}
+],
+"players": [
+{
+"name": "Trae Young",
+"team": "WAS",
+"slot": "PG",
+"proj": 38.41,
+"actual": 35.4
+},
+{
+"name": "Dyson Daniels",
+"team": "ATL",
+"slot": "SG",
+"proj": 35.5,
+"actual": 45.8
+},
+{
+"name": "AJ Dybantsa",
+"team": "WAS",
+"slot": "SF",
+"proj": 32.11,
+"actual": 36.3
+},
+{
+"name": "Alex Sarr",
+"team": "WAS",
+"slot": "PF",
+"proj": 31.06,
+"actual": 37.1
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C",
+"proj": 37.22,
+"actual": 46.5
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"slot": "G/F",
+"proj": 39.77,
+"actual": 48.4
+},
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"slot": "F/C",
+"proj": 41.65,
+"actual": 38.9
+},
+{
+"name": "James Harden",
+"team": "CLE",
+"slot": "UTIL",
+"proj": 35.14,
+"actual": 25.7
+},
+{
+"name": "Ja'Kobe Walter",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 28.3,
+"actual": 22.2
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 317.6,
+"actual": 342.5,
+"sim": {
+"p10": 248.0,
+"p50": 304.6,
+"p90": 361.1,
+"mean": 304.1
+},
+"band": "within range",
+"busts": [
+{
+"name": "Shai Gilgeous-Alexander",
+"proj": 50.07,
+"actual": 39.6
+},
+{
+"name": "Cameron Boozer",
+"proj": 35.24,
+"actual": 26.4
+}
+],
+"boosts": [
+{
+"name": "Kyshawn George",
+"proj": 31.78,
+"actual": 55.3
+},
+{
+"name": "Collin Murray-Boyles",
+"proj": 28.48,
+"actual": 42.4
+}
+],
+"players": [
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "PG",
+"proj": 50.07,
+"actual": 39.6
+},
+{
+"name": "Nickeil Alexander-Walker",
+"team": "ATL",
+"slot": "SG",
+"proj": 35.53,
+"actual": 36.4
+},
+{
+"name": "AJ Dybantsa",
+"team": "WAS",
+"slot": "SF",
+"proj": 32.11,
+"actual": 36.3
+},
+{
+"name": "Cameron Boozer",
+"team": "MEM",
+"slot": "PF",
+"proj": 35.24,
+"actual": 26.4
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"slot": "C",
+"proj": 37.22,
+"actual": 46.5
+},
+{
+"name": "Kyshawn George",
+"team": "WAS",
+"slot": "G/F",
+"proj": 31.78,
+"actual": 55.3
+},
+{
+"name": "RJ Barrett",
+"team": "TOR",
+"slot": "F/C",
+"proj": 41.65,
+"actual": 38.9
+},
+{
+"name": "Collin Murray-Boyles",
+"team": "TOR",
+"slot": "UTIL",
+"proj": 28.48,
+"actual": 42.4
+},
+{
+"name": "Zach Edey",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 25.49,
+"actual": 20.7
+}
+]
+}
+]
+},
+{
+"date": "2026-11-06",
+"slate": "single:BOS@CHA",
+"label": "BOS @ CHA",
+"format": "single",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 223.9,
+"players": [
+{
+"name": "Naz Reid",
+"team": "CHA",
+"slot": "UTIL"
+},
+{
+"name": "Derrick White",
+"team": "BOS",
+"slot": "UTIL"
+},
+{
+"name": "Payton Pritchard",
+"team": "BOS",
+"slot": "UTIL"
+},
+{
+"name": "Luka Garza",
+"team": "BOS",
+"slot": "UTIL"
+},
+{
+"name": "Hannes Steinbach",
+"team": "CHA",
+"slot": "UTIL"
+},
+{
+"name": "Jayson Tatum",
+"team": "BOS",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 188.4,
+"actual": 156.3,
+"sim": {
+"p10": 144.5,
+"p50": 191.6,
+"p90": 241.4,
+"mean": 192.5
+},
+"band": "within range",
+"busts": [
+{
+"name": "Brandon Miller",
+"proj": 33.57,
+"actual": 17.9
+},
+{
+"name": "Coby White",
+"proj": 21.08,
+"actual": 6.7
+}
+],
+"boosts": [
+{
+"name": "Jayson Tatum",
+"proj": 40.09,
+"actual": 59.1
+},
+{
+"name": "Naz Reid",
+"proj": 30.09,
+"actual": 25.2
+}
+],
+"players": [
+{
+"name": "Jayson Tatum",
+"team": "BOS",
+"slot": "MVP",
+"proj": 40.09,
+"actual": 59.1
+},
+{
+"name": "Brandon Miller",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 33.57,
+"actual": 17.9
+},
+{
+"name": "Naz Reid",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 30.09,
+"actual": 25.2
+},
+{
+"name": "Grayson Allen",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 24.07,
+"actual": 9.9
+},
+{
+"name": "Coby White",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 21.08,
+"actual": 6.7
+},
+{
+"name": "Ryan Kalkbrenner",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 19.41,
+"actual": 8.0
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 186.6,
+"actual": 156.3,
+"sim": {
+"p10": 143.1,
+"p50": 189.6,
+"p90": 238.1,
+"mean": 190.9
+},
+"band": "within range",
+"busts": [
+{
+"name": "Grayson Allen",
+"proj": 24.07,
+"actual": 9.9
+},
+{
+"name": "Brandon Miller",
+"proj": 33.57,
+"actual": 17.9
+}
+],
+"boosts": [
+{
+"name": "Jayson Tatum",
+"proj": 40.09,
+"actual": 59.1
+},
+{
+"name": "Derrick White",
+"proj": 27.38,
+"actual": 31.3
+}
+],
+"players": [
+{
+"name": "Grayson Allen",
+"team": "CHA",
+"slot": "MVP",
+"proj": 24.07,
+"actual": 9.9
+},
+{
+"name": "Jayson Tatum",
+"team": "BOS",
+"slot": "UTIL",
+"proj": 40.09,
+"actual": 59.1
+},
+{
+"name": "Brandon Miller",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 33.57,
+"actual": 17.9
+},
+{
+"name": "Naz Reid",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 30.09,
+"actual": 25.2
+},
+{
+"name": "Derrick White",
+"team": "BOS",
+"slot": "UTIL",
+"proj": 27.38,
+"actual": 31.3
+},
+{
+"name": "Ryan Kalkbrenner",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 19.41,
+"actual": 8.0
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 188.4,
+"actual": 156.3,
+"sim": {
+"p10": 144.5,
+"p50": 191.6,
+"p90": 241.4,
+"mean": 192.5
+},
+"band": "within range",
+"busts": [
+{
+"name": "Brandon Miller",
+"proj": 33.57,
+"actual": 17.9
+},
+{
+"name": "Coby White",
+"proj": 21.08,
+"actual": 6.7
+}
+],
+"boosts": [
+{
+"name": "Jayson Tatum",
+"proj": 40.09,
+"actual": 59.1
+},
+{
+"name": "Naz Reid",
+"proj": 30.09,
+"actual": 25.2
+}
+],
+"players": [
+{
+"name": "Jayson Tatum",
+"team": "BOS",
+"slot": "MVP",
+"proj": 40.09,
+"actual": 59.1
+},
+{
+"name": "Brandon Miller",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 33.57,
+"actual": 17.9
+},
+{
+"name": "Naz Reid",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 30.09,
+"actual": 25.2
+},
+{
+"name": "Grayson Allen",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 24.07,
+"actual": 9.9
+},
+{
+"name": "Coby White",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 21.08,
+"actual": 6.7
+},
+{
+"name": "Ryan Kalkbrenner",
+"team": "CHA",
+"slot": "UTIL",
+"proj": 19.41,
+"actual": 8.0
+}
+]
+}
+]
+},
+{
+"date": "2026-11-06",
+"slate": "single:MEM@OKC",
+"label": "OKC @ MEM",
+"format": "single",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 215.7,
+"players": [
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "UTIL"
+},
+{
+"name": "Ty Jerome",
+"team": "MEM",
+"slot": "UTIL"
+},
+{
+"name": "Ajay Mitchell",
+"team": "OKC",
+"slot": "UTIL"
+},
+{
+"name": "Cedric Coward",
+"team": "MEM",
+"slot": "UTIL"
+},
+{
+"name": "Bennett Stirtz",
+"team": "OKC",
+"slot": "UTIL"
+},
+{
+"name": "Jared McCain",
+"team": "OKC",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 202.7,
+"actual": 156.9,
+"sim": {
+"p10": 154.5,
+"p50": 206.2,
+"p90": 259.3,
+"mean": 206.7
+},
+"band": "within range",
+"busts": [
+{
+"name": "Shai Gilgeous-Alexander",
+"proj": 48.89,
+"actual": 39.6
+},
+{
+"name": "Cameron Boozer",
+"proj": 36.64,
+"actual": 26.4
+}
+],
+"boosts": [
+{
+"name": "Kenrich Williams",
+"proj": 19.25,
+"actual": 15.7
+},
+{
+"name": "Zach Edey",
+"proj": 24.93,
+"actual": 20.7
+}
+],
+"players": [
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "MVP",
+"proj": 48.89,
+"actual": 39.6
+},
+{
+"name": "Cameron Boozer",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 36.64,
+"actual": 26.4
+},
+{
+"name": "Isaiah Hartenstein",
+"team": "OKC",
+"slot": "UTIL",
+"proj": 28.82,
+"actual": 22.7
+},
+{
+"name": "Zach Edey",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 24.93,
+"actual": 20.7
+},
+{
+"name": "Jerami Grant",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 19.68,
+"actual": 12.0
+},
+{
+"name": "Kenrich Williams",
+"team": "OKC",
+"slot": "UTIL",
+"proj": 19.25,
+"actual": 15.7
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 199.6,
+"actual": 159.4,
+"sim": {
+"p10": 151.3,
+"p50": 203.5,
+"p90": 257.2,
+"mean": 203.9
+},
+"band": "within range",
+"busts": [
+{
+"name": "Shai Gilgeous-Alexander",
+"proj": 48.89,
+"actual": 39.6
+},
+{
+"name": "Jaylen Wells",
+"proj": 19.88,
+"actual": 8.0
+}
+],
+"boosts": [
+{
+"name": "Bennett Stirtz",
+"proj": 15.96,
+"actual": 22.2
+},
+{
+"name": "Zach Edey",
+"proj": 24.93,
+"actual": 20.7
+}
+],
+"players": [
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "MVP",
+"proj": 48.89,
+"actual": 39.6
+},
+{
+"name": "Cameron Boozer",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 36.64,
+"actual": 26.4
+},
+{
+"name": "Isaiah Hartenstein",
+"team": "OKC",
+"slot": "UTIL",
+"proj": 28.82,
+"actual": 22.7
+},
+{
+"name": "Zach Edey",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 24.93,
+"actual": 20.7
+},
+{
+"name": "Jaylen Wells",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 19.88,
+"actual": 8.0
+},
+{
+"name": "Bennett Stirtz",
+"team": "OKC",
+"slot": "UTIL",
+"proj": 15.96,
+"actual": 22.2
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 202.7,
+"actual": 156.9,
+"sim": {
+"p10": 154.5,
+"p50": 206.2,
+"p90": 259.3,
+"mean": 206.7
+},
+"band": "within range",
+"busts": [
+{
+"name": "Shai Gilgeous-Alexander",
+"proj": 48.89,
+"actual": 39.6
+},
+{
+"name": "Cameron Boozer",
+"proj": 36.64,
+"actual": 26.4
+}
+],
+"boosts": [
+{
+"name": "Kenrich Williams",
+"proj": 19.25,
+"actual": 15.7
+},
+{
+"name": "Zach Edey",
+"proj": 24.93,
+"actual": 20.7
+}
+],
+"players": [
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"slot": "MVP",
+"proj": 48.89,
+"actual": 39.6
+},
+{
+"name": "Cameron Boozer",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 36.64,
+"actual": 26.4
+},
+{
+"name": "Isaiah Hartenstein",
+"team": "OKC",
+"slot": "UTIL",
+"proj": 28.82,
+"actual": 22.7
+},
+{
+"name": "Zach Edey",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 24.93,
+"actual": 20.7
+},
+{
+"name": "Jerami Grant",
+"team": "MEM",
+"slot": "UTIL",
+"proj": 19.68,
+"actual": 12.0
+},
+{
+"name": "Kenrich Williams",
+"team": "OKC",
+"slot": "UTIL",
+"proj": 19.25,
+"actual": 15.7
 }
 ]
 }
