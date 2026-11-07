@@ -1,6 +1,6 @@
 {
   "date": "20261106",
-  "updated_at": "2026-11-06T22:35:28.681246-05:00",
+  "updated_at": "2026-11-06T23:37:58.038890-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -37,25 +37,25 @@
       "away": "Toronto Raptors",
       "home": "Milwaukee Bucks",
       "time": "2026-11-07T01:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Minnesota Timberwolves",
       "home": "New Orleans Pelicans",
       "time": "2026-11-07T01:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Portland Trail Blazers",
       "home": "Los Angeles Lakers",
       "time": "2026-11-07T03:00Z",
-      "status": "In Progress"
+      "status": "Halftime"
     },
     {
       "away": "San Antonio Spurs",
       "home": "Sacramento Kings",
       "time": "2026-11-07T03:00Z",
-      "status": "In Progress"
+      "status": "Halftime"
     }
   ]
 }
