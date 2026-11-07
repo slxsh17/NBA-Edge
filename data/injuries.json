@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T23:46:42.134382+00:00",
+  "updated_at": "2026-11-07T23:51:42.127159+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -139,11 +139,6 @@
     },
     {
       "name": "Draymond Green",
-      "team": "GSW",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Gary Payton II",
       "team": "GSW",
       "status": "DAY-TO-DAY"
     },
