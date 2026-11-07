@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T22:43:37.960082+00:00",
+  "updated_at": "2026-11-07T23:19:31.313405+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -323,9 +323,14 @@
       "status": "OUT"
     },
     {
-      "name": "Adem Bona",
+      "name": "Joel Embiid",
       "team": "PHI",
       "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Adem Bona",
+      "team": "PHI",
+      "status": "OUT"
     },
     {
       "name": "Dominick Barlow",
@@ -421,6 +426,11 @@
       "name": "Nate Bittle",
       "team": "TOR",
       "status": "OUT"
+    },
+    {
+      "name": "Lauri Markkanen",
+      "team": "UTA",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jusuf Nurkic",
