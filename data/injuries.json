@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T19:23:31.162394+00:00",
+  "updated_at": "2026-11-07T19:23:57.828487+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -236,11 +236,6 @@
       "name": "Scotty Pippen Jr.",
       "team": "MEM",
       "status": "OUT"
-    },
-    {
-      "name": "Kam Jones",
-      "team": "MIL",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Joan Beringer",
