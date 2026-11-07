@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T18:51:31.147560+00:00",
+  "updated_at": "2026-11-07T19:23:31.162394+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -30,11 +30,6 @@
     {
       "name": "Henri Veesaar",
       "team": "ATL",
-      "status": "OUT"
-    },
-    {
-      "name": "Devin Carter",
-      "team": "BOS",
       "status": "OUT"
     },
     {
@@ -280,7 +275,7 @@
     {
       "name": "Jaylin Williams",
       "team": "OKC",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Thomas Sorber",
