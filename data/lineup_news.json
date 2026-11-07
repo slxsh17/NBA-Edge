@@ -1,11 +1,19 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-07T21:57:36.165281+00:00",
+  "checked_at": "2026-11-07T22:25:39.253306+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Luka Doncic Injury: Questionable for Sunday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc3k5Q1NmTmMyaWtiUW1VZzNoRE9fNDljRGszblB5RUR2Wjh6NVZkZC1xNzYwTFJ5czhJREZQMmY5dWdiOG1ySXR3eFJuSjhZOXdVNlkzcWszdTFtWWpSNE51UkVKSl8tTHpxWWt5Z2xSYTh5SzlRY1pwTVhLaGpnU3pvTnFfQndtWkJJMWtHcEhtOUxQQW9WZURCSQ?oc=5",
+      "published_at": "2026-11-07T22:11:34+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Nic Claxton Injury: Downgraded to questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdzJmTDZ3SlZVM1BqOVZ6TzZCeDR6NklKb3lQMTBOQUE2dThVa2UyMkdWN0VXV0Rjd0RKZ2F2RXBkMG5FNEhrQkR0dVE1RFJHTDRmcVNPOElPTzZWTVZ2SVlTZXY4SmgtNXJuZkFKRnY1WDMwN0dUbkZYeXpQNVVaU0gwRTVSZkNDRm5uVmVPMGk1SWUwSW95LU9nZWVMTlU?oc=5",
@@ -79,9 +87,17 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "Predicting the Nuggets' Full Rotation Before Spencer Jones' Season Debut - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPby1wLTlidjczN0VyUE5xbFZGOEhJRUVrZ0JqQUFfaG9QZjNaQ0ZtOU5USTRsd2JWMDgwcmFlYzEtNHprQ196VHo0anRXMmZ3WFF1Z28wWkM0Q2FGZ0tYbUtXcnBOemc0Ym5ubU5uVTJGbkNrV2dXRENZMllPcWFDcTFnZDlXNU9OSU50a0xaQkZRU2lGdkJrVWNpUXhTTTVCblpKcWNtaE11UQ?oc=5",
-      "published_at": "2026-11-07T18:00:00+00:00",
+      "headline": "Jalen Johnson Injury: Expected to play Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTXBpd1V6MEhrSDNWUGdqbnVtckdSUVFGWHBUbTRtVE1fODk0TnB2LXNmYjdfdjJWY2U4Y0dDQjRlcEJNdy1McHk3OFVKQ3ZaeVNwYUY1UFV5bDBQZno4RkhEQndhSHk1RWlHcFRwdFRLS1VabjJlTk1rQXV6OGw0UHRqMXR1NEJycllQRXZzdXBSWEV4NDhrbnVBT0IzeTgy?oc=5",
+      "published_at": "2026-11-07T18:10:48+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Predicting the Nuggets' Full Rotation Before Spencer Jones' Season Debut - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZWdvekUyYVEzN25yRjdiRkpER0NFUjZuR3dkY2JBa3V0SXU2ZjRKLXk1cm9od0xQNUt0djRmY3lJY2gxd1FQa0NUOUVSRm9HUHBtMUdIbmxaQUFrSDRkdnRWbWpfZnBwTFVLVGJXdmRETzRBTzVpZ3VHdXc4OGxyckFjWkc3S2VsRUxqN2V3NldNV28?oc=5",
+      "published_at": "2026-11-07T18:00:03+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -223,14 +239,6 @@
       "scope_date": "2026-11-07"
     },
     {
-      "headline": "Jarrett Allen Ruled Out as Cavaliers Get 2 Key Returns vs. 76ers - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMU1Wc2lVRUpoN2dGQ2FaWU9qYXFXbXpXU2llSjVGblZPWlREc1p6VVpKLThSa0Q1cHVxM2ZORFFuZTdzY29qQUdrRmctZEppUHh2V2J5WUFpb095aThoRjVKVUdaejl6WUtqYnBJcEV0QVBjVXBaek1wWnhacGRtNjBUaWluMF9YbkVpNjU2Y0dxVFpyU1V6RFJ4ZGVMQ21fQkg1SGw5ZF9GemlSQzkxZkZUTkJLVFJXai1ZSUxB?oc=5",
-      "published_at": "2026-11-07T00:53:45+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
       "headline": "Raptors Make Surprise Starting Lineup Decision After Losing 3 Stars vs. Bucks - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR3A3RElMVk5VMmtFeWw5cXItSVdDbHg5QTZOUUNhQ1Q1ckVwbGxfMTJvQ1p1RzFva1doMTJrZGpDS1h0anVwOWtZYkczeFVUdXgyZlZsMVY1d3lqQVVubEkxZVpBX3l6YVh6UnMzRndyT21FMmJwSHdKZzE4Q1NlNnZ3OWFYaWZQNGdOWkZ1TjBKYWdsbWtjYlp5Q2ROeTZV?oc=5",
       "published_at": "2026-11-07T00:49:00+00:00",
@@ -335,33 +343,17 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Anthony Davis Injury: Ruled out Friday night - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZ1kyZ0p3aDB3LXVxYU9qOWxXT0hJbTJVM1VqZHdTckVwYmswcU9GUUtQenJGZnRBNjl5VER3cXZtSEc5U3VMOXpEYlFFUDZ1V2dVdXRoNVNlb1lfZWNXSW9PMFdveXEyQkV4c1NZVHJENkY4Y09mZ213T3ZlNW10aGo3b2RrTV80Ymd4MktWc3pwNjU2UEdGeDFKMGc?oc=5",
+      "published_at": "2026-11-06T22:37:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Cavs release full injury report ahead of NBA Cup match vs. 76ers - Cavaliers Nation",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPanRrejU4QzNQUGhJNkhveVowSDh4Wk5VRnVKYWZvNmpLQk8ydlVzMVcxU0dsOERseURKbWRERnhiTjhCVmJXSk12T2V6THhSMXlUZnpjb3EySlpYRHp2T1lfTTh5VkdxNlRzR3I2NS1wV1VSRDUwdFh5M0JfSy1wSXBiNDNBUTlhVjNSLXlEdWRPY3E2WnJnTVFlRVRaSV9ueVA2QS13?oc=5",
       "published_at": "2026-11-06T22:34:32+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Gary Payton Injury: Questionable for Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUURWWlJfSXVtUkdnWTBXSDFzUDZhcV91MFRIRzdGY29pWExNWEN0WnQxcWVaNnRvaUtlbVRUbUFRbk9odExvQ1hsS2FZQ2VoVEdfRlBtSi10UmdUQzQtRWxTeEYwa3lpVUVCc25uUGtfMFllMWRrRWw2cGhaQy0yTDU1bXNMU0k0b3Mwc0ZucTI4Q05nbWFSSlM5S09KZw?oc=5",
-      "published_at": "2026-11-06T22:21:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Should Nets rookie Mikel Brown Jr. be in the starting lineup now? - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeGRfVVlFdi1nbmEzS016eGlDTjFadEViRG5QWmZMaUkzTFZaZThhMzBGSkp5OGstdVp0ZC0wMmNKZGh3bWg1bmk2ckdQRUphM3BvS25WbWd0VlUyd0ZNb3doOUVSV21hR05LQVQyUTR5UUZzZl9SSk5LMVdKMm5GaQ?oc=5",
-      "published_at": "2026-11-06T22:19:20+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Jalen Johnson Injury: Ruled out for Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdVA3My1TLU9DMXFzVVdOYXg3UnBFdHZncVp1N3NWZWtkSUEzNGFCMU9LanZfYzY0TGZLbFlZMEpqSDdNNml2Qjk4UHNlZ3U2empfUThoQVlJbHlVWkhLSkRsV2FhVFh0SktJNTdScVFnZ0JRUHVGZTUtUHp2VVFuR2xuODlIaWNleUd3ZHJpd3gzamFsTFZKb3ZR?oc=5",
-      "published_at": "2026-11-06T22:06:08+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
