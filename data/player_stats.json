@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T10:01:46.124765-05:00",
+  "updated_at": "2026-11-07T10:59:29.446943-05:00",
   "source": "ESPN public unofficial game box scores",
   "description": "Observed player stats from completed games in the previous 7 days, not projections, salaries or ownership",
   "games_processed": 51,
@@ -141,8 +141,8 @@
       "team": "WSH",
       "games": 3,
       "avg_minutes": 37.0,
-      "avg_fantasy_points": 43.6,
-      "fantasy_points_per_minute": 1.179,
+      "avg_fantasy_points": 44.1,
+      "fantasy_points_per_minute": 1.193,
       "avg_points": 26.7
     },
     {
@@ -286,16 +286,6 @@
       "avg_points": 28.0
     },
     {
-      "id": "4395625",
-      "name": "RJ Barrett",
-      "team": "TOR",
-      "games": 4,
-      "avg_minutes": 34.8,
-      "avg_fantasy_points": 37.9,
-      "fantasy_points_per_minute": 1.091,
-      "avg_points": 24.2
-    },
-    {
       "id": "4395628",
       "name": "Zion Williamson",
       "team": "NO",
@@ -314,6 +304,16 @@
       "avg_fantasy_points": 37.6,
       "fantasy_points_per_minute": 1.177,
       "avg_points": 21.5
+    },
+    {
+      "id": "4395625",
+      "name": "RJ Barrett",
+      "team": "TOR",
+      "games": 4,
+      "avg_minutes": 34.8,
+      "avg_fantasy_points": 37.5,
+      "fantasy_points_per_minute": 1.08,
+      "avg_points": 24.2
     },
     {
       "id": "4066648",
@@ -536,16 +536,6 @@
       "avg_points": 14.5
     },
     {
-      "id": "4277905",
-      "name": "Trae Young",
-      "team": "WSH",
-      "games": 3,
-      "avg_minutes": 35.0,
-      "avg_fantasy_points": 34.0,
-      "fantasy_points_per_minute": 0.97,
-      "avg_points": 18.7
-    },
-    {
       "id": "4278039",
       "name": "Nickeil Alexander-Walker",
       "team": "ATL",
@@ -574,6 +564,16 @@
       "avg_fantasy_points": 33.7,
       "fantasy_points_per_minute": 1.036,
       "avg_points": 20.5
+    },
+    {
+      "id": "4277905",
+      "name": "Trae Young",
+      "team": "WSH",
+      "games": 3,
+      "avg_minutes": 35.0,
+      "avg_fantasy_points": 33.6,
+      "fantasy_points_per_minute": 0.961,
+      "avg_points": 18.7
     },
     {
       "id": "1966",
@@ -996,16 +996,6 @@
       "avg_points": 5.0
     },
     {
-      "id": "4432194",
-      "name": "Day'Ron Sharpe",
-      "team": "BKN",
-      "games": 3,
-      "avg_minutes": 25.0,
-      "avg_fantasy_points": 27.4,
-      "fantasy_points_per_minute": 1.097,
-      "avg_points": 8.3
-    },
-    {
       "id": "5093267",
       "name": "Collin Murray-Boyles",
       "team": "TOR",
@@ -1014,6 +1004,16 @@
       "avg_fantasy_points": 27.1,
       "fantasy_points_per_minute": 1.033,
       "avg_points": 13.5
+    },
+    {
+      "id": "4432194",
+      "name": "Day'Ron Sharpe",
+      "team": "BKN",
+      "games": 3,
+      "avg_minutes": 25.0,
+      "avg_fantasy_points": 27.1,
+      "fantasy_points_per_minute": 1.084,
+      "avg_points": 8.0
     },
     {
       "id": "6475",
@@ -1266,16 +1266,6 @@
       "avg_points": 13.0
     },
     {
-      "id": "4433287",
-      "name": "Brandon Miller",
-      "team": "CHA",
-      "games": 4,
-      "avg_minutes": 26.0,
-      "avg_fantasy_points": 24.7,
-      "fantasy_points_per_minute": 0.951,
-      "avg_points": 14.8
-    },
-    {
       "id": "2991230",
       "name": "Fred VanVleet",
       "team": "HOU",
@@ -1344,6 +1334,16 @@
       "avg_fantasy_points": 24.1,
       "fantasy_points_per_minute": 0.742,
       "avg_points": 12.5
+    },
+    {
+      "id": "4433287",
+      "name": "Brandon Miller",
+      "team": "CHA",
+      "games": 4,
+      "avg_minutes": 26.0,
+      "avg_fantasy_points": 24.0,
+      "fantasy_points_per_minute": 0.922,
+      "avg_points": 14.8
     },
     {
       "id": "4896372",
@@ -1826,6 +1826,16 @@
       "avg_points": 8.7
     },
     {
+      "id": "5104155",
+      "name": "Bilal Coulibaly",
+      "team": "WSH",
+      "games": 3,
+      "avg_minutes": 26.7,
+      "avg_fantasy_points": 18.9,
+      "fantasy_points_per_minute": 0.707,
+      "avg_points": 7.3
+    },
+    {
       "id": "4398207",
       "name": "Jalen Slawson",
       "team": "IND",
@@ -1894,16 +1904,6 @@
       "avg_fantasy_points": 18.6,
       "fantasy_points_per_minute": 0.581,
       "avg_points": 9.5
-    },
-    {
-      "id": "5104155",
-      "name": "Bilal Coulibaly",
-      "team": "WSH",
-      "games": 3,
-      "avg_minutes": 26.7,
-      "avg_fantasy_points": 18.5,
-      "fantasy_points_per_minute": 0.695,
-      "avg_points": 7.3
     },
     {
       "id": "4593841",
@@ -4454,8 +4454,8 @@
       "ast": 10.0,
       "stl": 1.0,
       "blk": 0.0,
-      "tov": 8.0,
-      "fantasy_points": 35.4
+      "tov": 9.0,
+      "fantasy_points": 34.4
     },
     {
       "id": "4431736",
@@ -4841,11 +4841,11 @@
       "minutes": 37.0,
       "pts": 27.0,
       "reb": 7.0,
-      "ast": 5.0,
+      "ast": 4.0,
       "stl": 0.0,
       "blk": 0.0,
       "tov": 4.0,
-      "fantasy_points": 38.9
+      "fantasy_points": 37.4
     },
     {
       "id": "4593016",
@@ -5411,11 +5411,11 @@
       "minutes": 39.0,
       "pts": 33.0,
       "reb": 4.0,
-      "ast": 7.0,
+      "ast": 8.0,
       "stl": 1.0,
       "blk": 2.0,
       "tov": 2.0,
-      "fantasy_points": 55.3
+      "fantasy_points": 56.8
     },
     {
       "id": "6442",
@@ -6823,9 +6823,9 @@
       "reb": 2.0,
       "ast": 1.0,
       "stl": 1.0,
-      "blk": 1.0,
+      "blk": 0.0,
       "tov": 0.0,
-      "fantasy_points": 17.9
+      "fantasy_points": 14.9
     },
     {
       "id": "4592492",
@@ -6854,8 +6854,8 @@
       "ast": 0.0,
       "stl": 0.0,
       "blk": 0.0,
-      "tov": 2.0,
-      "fantasy_points": 13.0
+      "tov": 1.0,
+      "fantasy_points": 14.0
     },
     {
       "id": "5241364",
@@ -11499,13 +11499,13 @@
       "date": "20261104",
       "event_id": "401909925",
       "minutes": 27.0,
-      "pts": 6.0,
+      "pts": 5.0,
       "reb": 5.0,
       "ast": 8.0,
       "stl": 1.0,
       "blk": 2.0,
       "tov": 1.0,
-      "fantasy_points": 32.0
+      "fantasy_points": 31.0
     },
     {
       "id": "4278053",
