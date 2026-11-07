@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T14:29:09.399652+00:00",
+  "updated_at": "2026-11-07T15:14:28.508224+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -95,12 +95,12 @@
     {
       "name": "Sam Merrill",
       "team": "CLE",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jarrett Allen",
       "team": "CLE",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jaylon Tyson",
@@ -275,7 +275,7 @@
     {
       "name": "Jaylin Williams",
       "team": "OKC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Nikola Topic",
@@ -440,7 +440,7 @@
     {
       "name": "Anthony Davis",
       "team": "WAS",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Reece Beekman",
