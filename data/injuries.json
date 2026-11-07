@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T23:19:31.313405+00:00",
+  "updated_at": "2026-11-07T23:31:42.280788+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -26,11 +26,6 @@
       "name": "Henri Veesaar",
       "team": "ATL",
       "status": "OUT"
-    },
-    {
-      "name": "Noah Clowney",
-      "team": "BKN",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Day'Ron Sharpe",
@@ -241,11 +236,6 @@
       "name": "Joan Beringer",
       "team": "MIN",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Terrence Shannon Jr.",
-      "team": "MIN",
-      "status": "OUT"
     },
     {
       "name": "Anthony Edwards",
