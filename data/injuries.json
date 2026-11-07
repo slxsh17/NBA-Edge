@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-07T15:14:28.508224+00:00",
+  "updated_at": "2026-11-07T15:56:35.569856+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
-      "name": "Jalen Johnson",
-      "team": "ATL",
-      "status": "OUT"
-    },
-    {
       "name": "Keshon Gilbert",
       "team": "ATL",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Asa Newell",
+      "team": "ATL",
+      "status": "DAY-TO-DAY"
+    },
+    {
+      "name": "Jalen Johnson",
       "team": "ATL",
       "status": "OUT"
     },
@@ -36,6 +36,11 @@
       "name": "Devin Carter",
       "team": "BOS",
       "status": "OUT"
+    },
+    {
+      "name": "Noah Clowney",
+      "team": "BKN",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Day'Ron Sharpe",
@@ -245,7 +250,7 @@
     {
       "name": "Joan Beringer",
       "team": "MIN",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Terrence Shannon Jr.",
@@ -276,11 +281,6 @@
       "name": "Jaylin Williams",
       "team": "OKC",
       "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Nikola Topic",
-      "team": "OKC",
-      "status": "OUT"
     },
     {
       "name": "Thomas Sorber",
@@ -375,7 +375,7 @@
     {
       "name": "De'Andre Hunter",
       "team": "SAC",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Maxime Raynaud",
