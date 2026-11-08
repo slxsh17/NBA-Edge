@@ -1,78 +1,78 @@
 {
 "schema": 1,
-"updated_at": "2026-11-07T16:02:54+00:00",
+"updated_at": "2026-11-08T06:27:13+00:00",
 "calibration": {
-"sd_scale": 1.028,
-"shift_classic": -1.12,
-"shift_single": -0.07
+"sd_scale": 1.021,
+"shift_classic": -0.78,
+"shift_single": 0.17
 },
-"calibration_players": 1888,
+"calibration_players": 2015,
 "summary": [
 {
 "format": "classic",
 "strategy": "cash",
-"slates": 15,
-"avg_actual": 308.0,
-"avg_proj": 323.7,
-"avg_pct_of_best": 71.3,
-"within_sim_range": 73,
-"below_range": 20,
-"above_range": 7
+"slates": 16,
+"avg_actual": 311.5,
+"avg_proj": 323.0,
+"avg_pct_of_best": 72.0,
+"within_sim_range": 69,
+"below_range": 19,
+"above_range": 12
 },
 {
 "format": "classic",
 "strategy": "sim_winner",
-"slates": 15,
-"avg_actual": 301.3,
-"avg_proj": 311.1,
-"avg_pct_of_best": 69.8,
-"within_sim_range": 73,
-"below_range": 13,
-"above_range": 13
+"slates": 16,
+"avg_actual": 302.3,
+"avg_proj": 310.2,
+"avg_pct_of_best": 69.9,
+"within_sim_range": 75,
+"below_range": 12,
+"above_range": 12
 },
 {
 "format": "classic",
 "strategy": "tournament",
-"slates": 15,
-"avg_actual": 305.2,
-"avg_proj": 310.1,
-"avg_pct_of_best": 70.4,
-"within_sim_range": 87,
+"slates": 16,
+"avg_actual": 307.8,
+"avg_proj": 309.5,
+"avg_pct_of_best": 70.9,
+"within_sim_range": 88,
 "below_range": 0,
-"above_range": 13
+"above_range": 12
 },
 {
 "format": "single",
 "strategy": "cash",
-"slates": 17,
-"avg_actual": 199.7,
-"avg_proj": 205.9,
-"avg_pct_of_best": 80.5,
-"within_sim_range": 94,
+"slates": 20,
+"avg_actual": 202.5,
+"avg_proj": 206.8,
+"avg_pct_of_best": 81.9,
+"within_sim_range": 90,
 "below_range": 0,
-"above_range": 6
+"above_range": 10
 },
 {
 "format": "single",
 "strategy": "sim_winner",
-"slates": 17,
-"avg_actual": 205.9,
-"avg_proj": 204.9,
-"avg_pct_of_best": 83.0,
-"within_sim_range": 94,
+"slates": 20,
+"avg_actual": 208.0,
+"avg_proj": 205.7,
+"avg_pct_of_best": 84.3,
+"within_sim_range": 90,
 "below_range": 0,
-"above_range": 6
+"above_range": 10
 },
 {
 "format": "single",
 "strategy": "tournament",
-"slates": 17,
-"avg_actual": 204.9,
-"avg_proj": 204.5,
-"avg_pct_of_best": 82.6,
-"within_sim_range": 94,
+"slates": 20,
+"avg_actual": 206.9,
+"avg_proj": 205.6,
+"avg_pct_of_best": 83.7,
+"within_sim_range": 90,
 "below_range": 0,
-"above_range": 6
+"above_range": 10
 }
 ],
 "slates": [
@@ -10361,6 +10361,1224 @@
 "slot": "UTIL",
 "proj": 19.25,
 "actual": 15.7
+}
+]
+}
+]
+},
+{
+"date": "2026-11-07",
+"slate": "main",
+"label": "Main slate",
+"format": "classic",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 441.4,
+"players": [
+{
+"name": "Karl-Anthony Towns",
+"team": "NYK",
+"slot": "F/C"
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "PF"
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "G/F"
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"slot": "SG"
+},
+{
+"name": "Dyson Daniels",
+"team": "ATL",
+"slot": "SF"
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "PG"
+},
+{
+"name": "Day'Ron Sharpe",
+"team": "BKN",
+"slot": "C"
+},
+{
+"name": "Aday Mara",
+"team": "OKC",
+"slot": "UTIL"
+},
+{
+"name": "Jamal Cain",
+"team": "ORL",
+"slot": "UTIL"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 312.2,
+"actual": 363.8,
+"sim": {
+"p10": 244.2,
+"p50": 301.5,
+"p90": 356.5,
+"mean": 301.0
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Mario Hezonja",
+"proj": 23.07,
+"actual": 7.5
+},
+{
+"name": "Jamal Murray",
+"proj": 39.8,
+"actual": 34.2
+}
+],
+"boosts": [
+{
+"name": "Anthony Black",
+"proj": 33.91,
+"actual": 55.6
+},
+{
+"name": "Donovan Mitchell",
+"proj": 38.76,
+"actual": 51.8
+}
+],
+"players": [
+{
+"name": "Jamal Murray",
+"team": "DEN",
+"slot": "PG",
+"proj": 39.8,
+"actual": 34.2
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"slot": "SG",
+"proj": 38.76,
+"actual": 51.8
+},
+{
+"name": "Michael Porter",
+"team": "BKN",
+"slot": "SF",
+"proj": 36.02,
+"actual": 37.3
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "PF",
+"proj": 42.91,
+"actual": 53.7
+},
+{
+"name": "Karl-Anthony Towns",
+"team": "NYK",
+"slot": "C",
+"proj": 42.61,
+"actual": 55.1
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "G/F",
+"proj": 33.91,
+"actual": 55.6
+},
+{
+"name": "Mario Hezonja",
+"team": "CLE",
+"slot": "F/C",
+"proj": 23.07,
+"actual": 7.5
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 29.92,
+"actual": 36.2
+},
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 25.16,
+"actual": 32.4
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 300.7,
+"actual": 347.0,
+"sim": {
+"p10": 230.8,
+"p50": 290.9,
+"p90": 349.7,
+"mean": 290.4
+},
+"band": "within range",
+"busts": [
+{
+"name": "James Harden",
+"proj": 34.25,
+"actual": 20.9
+},
+{
+"name": "Evan Mobley",
+"proj": 37.65,
+"actual": 27.3
+}
+],
+"boosts": [
+{
+"name": "Anthony Black",
+"proj": 33.91,
+"actual": 55.6
+},
+{
+"name": "Draymond Green",
+"proj": 22.79,
+"actual": 36.7
+}
+],
+"players": [
+{
+"name": "Jalen Brunson",
+"team": "NYK",
+"slot": "PG",
+"proj": 39.13,
+"actual": 50.7
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"slot": "SG",
+"proj": 38.76,
+"actual": 51.8
+},
+{
+"name": "DeMar DeRozan",
+"team": "DEN",
+"slot": "SF",
+"proj": 20.71,
+"actual": 19.7
+},
+{
+"name": "Evan Mobley",
+"team": "CLE",
+"slot": "PF",
+"proj": 37.65,
+"actual": 27.3
+},
+{
+"name": "Karl-Anthony Towns",
+"team": "NYK",
+"slot": "C",
+"proj": 42.61,
+"actual": 55.1
+},
+{
+"name": "James Harden",
+"team": "CLE",
+"slot": "G/F",
+"proj": 34.25,
+"actual": 20.9
+},
+{
+"name": "OG Anunoby",
+"team": "NYK",
+"slot": "F/C",
+"proj": 30.87,
+"actual": 29.2
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 33.91,
+"actual": 55.6
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 22.79,
+"actual": 36.7
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 296.5,
+"actual": 316.8,
+"sim": {
+"p10": 232.9,
+"p50": 285.4,
+"p90": 338.0,
+"mean": 285.1
+},
+"band": "within range",
+"busts": [
+{
+"name": "Donovan Clingan",
+"proj": 33.78,
+"actual": 12.0
+},
+{
+"name": "Victor Wembanyama",
+"proj": 54.27,
+"actual": 45.9
+}
+],
+"boosts": [
+{
+"name": "Anthony Black",
+"proj": 33.91,
+"actual": 55.6
+},
+{
+"name": "Aday Mara",
+"proj": 23.25,
+"actual": 40.1
+}
+],
+"players": [
+{
+"name": "Jamal Murray",
+"team": "DEN",
+"slot": "PG",
+"proj": 39.8,
+"actual": 34.2
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "SG",
+"proj": 33.91,
+"actual": 55.6
+},
+{
+"name": "Cameron Johnson",
+"team": "DEN",
+"slot": "SF",
+"proj": 22.84,
+"actual": 26.3
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "PF",
+"proj": 42.91,
+"actual": 53.7
+},
+{
+"name": "Aday Mara",
+"team": "OKC",
+"slot": "C",
+"proj": 23.25,
+"actual": 40.1
+},
+{
+"name": "Collin Gillespie",
+"team": "PHX",
+"slot": "G/F",
+"proj": 20.57,
+"actual": 16.6
+},
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "F/C",
+"proj": 25.16,
+"actual": 32.4
+},
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 54.27,
+"actual": 45.9
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"slot": "UTIL",
+"proj": 33.78,
+"actual": 12.0
+}
+]
+}
+]
+},
+{
+"date": "2026-11-07",
+"slate": "single:DEN@IND",
+"label": "DEN @ IND",
+"format": "single",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 215.0,
+"players": [
+{
+"name": "Jamal Murray",
+"team": "DEN",
+"slot": "UTIL"
+},
+{
+"name": "Ivica Zubac",
+"team": "IND",
+"slot": "UTIL"
+},
+{
+"name": "Cameron Johnson",
+"team": "DEN",
+"slot": "UTIL"
+},
+{
+"name": "Jarace Walker",
+"team": "IND",
+"slot": "UTIL"
+},
+{
+"name": "Spencer Jones",
+"team": "DEN",
+"slot": "UTIL"
+},
+{
+"name": "Nikola Jokic",
+"team": "DEN",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 215.4,
+"actual": 202.8,
+"sim": {
+"p10": 155.9,
+"p50": 213.7,
+"p90": 272.5,
+"mean": 214.1
+},
+"band": "within range",
+"busts": [
+{
+"name": "Christian Braun",
+"proj": 24.31,
+"actual": 15.3
+},
+{
+"name": "Nikola Jokic",
+"proj": 56.34,
+"actual": 51.6
+}
+],
+"boosts": [
+{
+"name": "Ivica Zubac",
+"proj": 23.28,
+"actual": 29.9
+},
+{
+"name": "Cameron Johnson",
+"proj": 22.84,
+"actual": 26.3
+}
+],
+"players": [
+{
+"name": "Nikola Jokic",
+"team": "DEN",
+"slot": "MVP",
+"proj": 56.34,
+"actual": 51.6
+},
+{
+"name": "Jamal Murray",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 39.8,
+"actual": 34.2
+},
+{
+"name": "Ivica Zubac",
+"team": "IND",
+"slot": "UTIL",
+"proj": 23.28,
+"actual": 29.9
+},
+{
+"name": "Christian Braun",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 24.31,
+"actual": 15.3
+},
+{
+"name": "Cameron Johnson",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 22.84,
+"actual": 26.3
+},
+{
+"name": "DeMar DeRozan",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 20.71,
+"actual": 19.7
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 215.4,
+"actual": 202.8,
+"sim": {
+"p10": 155.9,
+"p50": 213.7,
+"p90": 272.5,
+"mean": 214.1
+},
+"band": "within range",
+"busts": [
+{
+"name": "Christian Braun",
+"proj": 24.31,
+"actual": 15.3
+},
+{
+"name": "Nikola Jokic",
+"proj": 56.34,
+"actual": 51.6
+}
+],
+"boosts": [
+{
+"name": "Ivica Zubac",
+"proj": 23.28,
+"actual": 29.9
+},
+{
+"name": "Cameron Johnson",
+"proj": 22.84,
+"actual": 26.3
+}
+],
+"players": [
+{
+"name": "Nikola Jokic",
+"team": "DEN",
+"slot": "MVP",
+"proj": 56.34,
+"actual": 51.6
+},
+{
+"name": "Jamal Murray",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 39.8,
+"actual": 34.2
+},
+{
+"name": "Ivica Zubac",
+"team": "IND",
+"slot": "UTIL",
+"proj": 23.28,
+"actual": 29.9
+},
+{
+"name": "Christian Braun",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 24.31,
+"actual": 15.3
+},
+{
+"name": "Cameron Johnson",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 22.84,
+"actual": 26.3
+},
+{
+"name": "DeMar DeRozan",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 20.71,
+"actual": 19.7
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 215.4,
+"actual": 202.8,
+"sim": {
+"p10": 155.9,
+"p50": 213.7,
+"p90": 272.5,
+"mean": 214.1
+},
+"band": "within range",
+"busts": [
+{
+"name": "Christian Braun",
+"proj": 24.31,
+"actual": 15.3
+},
+{
+"name": "Nikola Jokic",
+"proj": 56.34,
+"actual": 51.6
+}
+],
+"boosts": [
+{
+"name": "Ivica Zubac",
+"proj": 23.28,
+"actual": 29.9
+},
+{
+"name": "Cameron Johnson",
+"proj": 22.84,
+"actual": 26.3
+}
+],
+"players": [
+{
+"name": "Nikola Jokic",
+"team": "DEN",
+"slot": "MVP",
+"proj": 56.34,
+"actual": 51.6
+},
+{
+"name": "Jamal Murray",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 39.8,
+"actual": 34.2
+},
+{
+"name": "Ivica Zubac",
+"team": "IND",
+"slot": "UTIL",
+"proj": 23.28,
+"actual": 29.9
+},
+{
+"name": "Christian Braun",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 24.31,
+"actual": 15.3
+},
+{
+"name": "Cameron Johnson",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 22.84,
+"actual": 26.3
+},
+{
+"name": "DeMar DeRozan",
+"team": "DEN",
+"slot": "UTIL",
+"proj": 20.71,
+"actual": 19.7
+}
+]
+}
+]
+},
+{
+"date": "2026-11-07",
+"slate": "single:GSW@ORL",
+"label": "ORL @ GSW",
+"format": "single",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 298.3,
+"players": [
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "UTIL"
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "UTIL"
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL"
+},
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "UTIL"
+},
+{
+"name": "Jamal Cain",
+"team": "ORL",
+"slot": "UTIL"
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 203.4,
+"actual": 285.0,
+"sim": {
+"p10": 149.6,
+"p50": 200.5,
+"p90": 254.3,
+"mean": 202.1
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Wendell Carter",
+"proj": 29.8,
+"actual": 36.2
+},
+{
+"name": "Tristan da Silva",
+"proj": 25.08,
+"actual": 32.4
+}
+],
+"boosts": [
+{
+"name": "Anthony Black",
+"proj": 33.77,
+"actual": 55.6
+},
+{
+"name": "Stephen Curry",
+"proj": 37.75,
+"actual": 54.2
+}
+],
+"players": [
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "MVP",
+"proj": 25.08,
+"actual": 32.4
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 41.29,
+"actual": 53.7
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 37.75,
+"actual": 54.2
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 33.77,
+"actual": 55.6
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 29.8,
+"actual": 36.2
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 23.17,
+"actual": 36.7
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 203.4,
+"actual": 285.0,
+"sim": {
+"p10": 149.6,
+"p50": 200.5,
+"p90": 254.3,
+"mean": 202.1
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Wendell Carter",
+"proj": 29.8,
+"actual": 36.2
+},
+{
+"name": "Tristan da Silva",
+"proj": 25.08,
+"actual": 32.4
+}
+],
+"boosts": [
+{
+"name": "Anthony Black",
+"proj": 33.77,
+"actual": 55.6
+},
+{
+"name": "Stephen Curry",
+"proj": 37.75,
+"actual": 54.2
+}
+],
+"players": [
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "MVP",
+"proj": 25.08,
+"actual": 32.4
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 41.29,
+"actual": 53.7
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 37.75,
+"actual": 54.2
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 33.77,
+"actual": 55.6
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 29.8,
+"actual": 36.2
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 23.17,
+"actual": 36.7
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 203.1,
+"actual": 272.8,
+"sim": {
+"p10": 149.5,
+"p50": 200.0,
+"p90": 254.0,
+"mean": 201.7
+},
+"band": "above 90th pct",
+"busts": [
+{
+"name": "Yaxel Lendeborg",
+"proj": 35.08,
+"actual": 40.1
+},
+{
+"name": "Tristan da Silva",
+"proj": 25.08,
+"actual": 32.4
+}
+],
+"boosts": [
+{
+"name": "Anthony Black",
+"proj": 33.77,
+"actual": 55.6
+},
+{
+"name": "Draymond Green",
+"proj": 23.17,
+"actual": 36.7
+}
+],
+"players": [
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"slot": "MVP",
+"proj": 29.8,
+"actual": 36.2
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 41.29,
+"actual": 53.7
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 35.08,
+"actual": 40.1
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 33.77,
+"actual": 55.6
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"slot": "UTIL",
+"proj": 23.17,
+"actual": 36.7
+},
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"slot": "UTIL",
+"proj": 25.08,
+"actual": 32.4
+}
+]
+}
+]
+},
+{
+"date": "2026-11-07",
+"slate": "single:POR@SAS",
+"label": "SAS @ POR",
+"format": "single",
+"rebuilt": false,
+"final": true,
+"hindsight_best": {
+"score": 206.8,
+"players": [
+{
+"name": "Dylan Harper",
+"team": "SAS",
+"slot": "UTIL"
+},
+{
+"name": "Stephon Castle",
+"team": "SAS",
+"slot": "UTIL"
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"slot": "UTIL"
+},
+{
+"name": "Keldon Johnson",
+"team": "SAS",
+"slot": "UTIL"
+},
+{
+"name": "Chris Youngblood",
+"team": "POR",
+"slot": "UTIL"
+},
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "MVP"
+}
+]
+},
+"lineups": [
+{
+"strategy": "cash",
+"proj": 215.7,
+"actual": 167.2,
+"sim": {
+"p10": 158.5,
+"p50": 213.4,
+"p90": 269.1,
+"mean": 214.0
+},
+"band": "within range",
+"busts": [
+{
+"name": "Donovan Clingan",
+"proj": 33.92,
+"actual": 12.0
+},
+{
+"name": "Jrue Holiday",
+"proj": 26.79,
+"actual": 11.0
+}
+],
+"boosts": [
+{
+"name": "Devin Vassell",
+"proj": 24.27,
+"actual": 27.9
+},
+{
+"name": "Scoot Henderson",
+"proj": 19.91,
+"actual": 21.9
+}
+],
+"players": [
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "MVP",
+"proj": 54.47,
+"actual": 45.9
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"slot": "UTIL",
+"proj": 33.92,
+"actual": 12.0
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 29.06,
+"actual": 25.6
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"slot": "UTIL",
+"proj": 26.79,
+"actual": 11.0
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 24.27,
+"actual": 27.9
+},
+{
+"name": "Scoot Henderson",
+"team": "POR",
+"slot": "UTIL",
+"proj": 19.91,
+"actual": 21.9
+}
+]
+},
+{
+"strategy": "tournament",
+"proj": 215.7,
+"actual": 167.2,
+"sim": {
+"p10": 158.5,
+"p50": 213.4,
+"p90": 269.1,
+"mean": 214.0
+},
+"band": "within range",
+"busts": [
+{
+"name": "Donovan Clingan",
+"proj": 33.92,
+"actual": 12.0
+},
+{
+"name": "Jrue Holiday",
+"proj": 26.79,
+"actual": 11.0
+}
+],
+"boosts": [
+{
+"name": "Devin Vassell",
+"proj": 24.27,
+"actual": 27.9
+},
+{
+"name": "Scoot Henderson",
+"proj": 19.91,
+"actual": 21.9
+}
+],
+"players": [
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "MVP",
+"proj": 54.47,
+"actual": 45.9
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"slot": "UTIL",
+"proj": 33.92,
+"actual": 12.0
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 29.06,
+"actual": 25.6
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"slot": "UTIL",
+"proj": 26.79,
+"actual": 11.0
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 24.27,
+"actual": 27.9
+},
+{
+"name": "Scoot Henderson",
+"team": "POR",
+"slot": "UTIL",
+"proj": 19.91,
+"actual": 21.9
+}
+]
+},
+{
+"strategy": "sim_winner",
+"proj": 212.2,
+"actual": 185.3,
+"sim": {
+"p10": 154.8,
+"p50": 209.5,
+"p90": 265.8,
+"mean": 210.5
+},
+"band": "within range",
+"busts": [
+{
+"name": "Jrue Holiday",
+"proj": 26.79,
+"actual": 11.0
+},
+{
+"name": "Victor Wembanyama",
+"proj": 54.47,
+"actual": 45.9
+}
+],
+"boosts": [
+{
+"name": "Devin Vassell",
+"proj": 24.27,
+"actual": 27.9
+},
+{
+"name": "Julian Champagnie",
+"proj": 18.49,
+"actual": 18.8
+}
+],
+"players": [
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"slot": "MVP",
+"proj": 54.47,
+"actual": 45.9
+},
+{
+"name": "Dylan Harper",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 30.19,
+"actual": 27.9
+},
+{
+"name": "Stephon Castle",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 30.79,
+"actual": 30.9
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"slot": "UTIL",
+"proj": 26.79,
+"actual": 11.0
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 24.27,
+"actual": 27.9
+},
+{
+"name": "Julian Champagnie",
+"team": "SAS",
+"slot": "UTIL",
+"proj": 18.49,
+"actual": 18.8
 }
 ]
 }

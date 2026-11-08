@@ -1,10 +1,10 @@
 {
  "schema": 1,
- "updated_at": "2026-11-08T05:54:47+00:00",
+ "updated_at": "2026-11-08T06:31:48+00:00",
  "status": "ok",
  "paper_only": true,
- "nights": 4,
- "lines_graded": 449,
+ "nights": 5,
+ "lines_graded": 536,
  "picks": {
   "n": 73,
   "wins": 37,
@@ -16,26 +16,26 @@
   "avg_breakeven": 0.5312
  },
  "brier": {
-  "nba_edge": 0.2602,
-  "fanduel_no_vig": 0.2498,
-  "blend": 0.2523
+  "nba_edge": 0.259,
+  "fanduel_no_vig": 0.2495,
+  "blend": 0.2516
  },
  "blend": {
   "w": 0.05,
-  "brier": 0.2497,
-  "brier_at_0.5": 0.2523,
-  "lines": 449,
+  "brier": 0.2494,
+  "brier_at_0.5": 0.2516,
+  "lines": 536,
   "in_use": 0.05
  },
  "leans": {
-  "n": 18,
-  "wins": 5,
-  "losses": 13,
+  "n": 23,
+  "wins": 8,
+  "losses": 15,
   "pushes": 0,
-  "units": -8.36,
-  "roi": -0.4642,
-  "hit_rate": 0.2778,
-  "avg_breakeven": 0.5241,
+  "units": -7.45,
+  "roi": -0.3237,
+  "hit_rate": 0.3478,
+  "avg_breakeven": 0.5215,
   "backfilled_nights": 4
  },
  "recent_leans": [
@@ -272,32 +272,97 @@
    "actual": 27.0,
    "result": "loss",
    "units": -1.0
+  },
+  {
+   "date": "2026-11-07",
+   "player": "Moritz Wagner",
+   "stat": "pts",
+   "line": 9.5,
+   "side": "under",
+   "price": 102,
+   "prob": 0.7184,
+   "breakeven": 0.495,
+   "actual": 9.0,
+   "result": "win",
+   "units": 1.02
+  },
+  {
+   "date": "2026-11-07",
+   "player": "Julius Randle",
+   "stat": "pts",
+   "line": 20.5,
+   "side": "under",
+   "price": -115,
+   "prob": 0.6534,
+   "breakeven": 0.5349,
+   "actual": 19.0,
+   "result": "win",
+   "units": 0.87
+  },
+  {
+   "date": "2026-11-07",
+   "player": "Ajay Mitchell",
+   "stat": "pts",
+   "line": 18.5,
+   "side": "under",
+   "price": 102,
+   "prob": 0.637,
+   "breakeven": 0.495,
+   "actual": 12.0,
+   "result": "win",
+   "units": 1.02
+  },
+  {
+   "date": "2026-11-07",
+   "player": "Stephen Curry",
+   "stat": "pts",
+   "line": 26.5,
+   "side": "under",
+   "price": -102,
+   "prob": 0.6415,
+   "breakeven": 0.505,
+   "actual": 41.0,
+   "result": "loss",
+   "units": -1.0
+  },
+  {
+   "date": "2026-11-07",
+   "player": "Franz Wagner",
+   "stat": "pts",
+   "line": 24.5,
+   "side": "under",
+   "price": -113,
+   "prob": 0.6525,
+   "breakeven": 0.5305,
+   "actual": 30.0,
+   "result": "loss",
+   "units": -1.0
   }
  ],
  "calibration": [
   {
    "range": "0.0-0.3",
-   "n": 25,
-   "predicted": 0.245,
-   "actual": 0.64
+   "n": 31,
+   "predicted": 0.252,
+   "actual": 0.548
   },
   {
    "range": "0.3-0.4",
-   "n": 106,
-   "predicted": 0.356,
-   "actual": 0.434
+   "n": 126,
+   "predicted": 0.358,
+   "actual": 0.46
   },
   {
    "range": "0.4-0.5",
-   "n": 197,
-   "predicted": 0.449,
-   "actual": 0.452
+   "n": 233,
+   "predicted": 0.45,
+   "actual": 0.446
   },
   {
    "range": "0.5-0.6",
-   "n": 95,
-   "predicted": 0.543,
-   "actual": 0.368
+   "n": 120,
+   "predicted": 0.542,
+   "actual": 0.358
   },
   {
    "range": "0.6-0.7",
