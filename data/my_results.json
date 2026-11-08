@@ -375,6 +375,39 @@
      "won": 5.0
     }
    ]
+  },
+  {
+   "date": "2026-11-07",
+   "slate": "Main",
+   "final": true,
+   "entry": "Black, Mitchell, Porter, Mobley, Towns, Anunoby, Hezonja, Wagner, da Silva",
+   "score": 349.9,
+   "note": "From the 12:51am screenshot (contest names collapsed). NBA EDGE frozen lineups: cash 363.8, tournament 347.0, sim 290.8.",
+   "contests": [
+    {
+     "name": "3 Main contests (names not shown)",
+     "entries": 3,
+     "fee": 11.0,
+     "won": 22.0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "slate": "Express (8:00pm)",
+   "final": true,
+   "entry": "Brunson, Mitchell, Anunoby, Mobley, Towns, McCain, da Silva, Wagner, Carter",
+   "score": 368.4,
+   "note": "368.4 cashed nothing in either contest, so their cash lines were above 368.4.",
+   "contests": [
+    {
+     "name": "2 Express contests (names not shown)",
+     "entries": 2,
+     "fee": 15.0,
+     "won": 0.0,
+     "cash_line_above": 368.4
+    }
+   ]
   }
  ]
 }
