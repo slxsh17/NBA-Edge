@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-08T02:42:42.356241+00:00",
+  "checked_at": "2026-11-08T03:38:45.394385+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
@@ -26,6 +26,14 @@
       "headline": "Keegan Murray Injury: Questionable for Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSEJoLUwwa3RDcTdvMkw1SDFoOXRIXzJNc1l2ZnBmSWpTQ0JteFVtUlBhNThpWkx5ZmZtWkJiVWo5VTdQNktWd2hXeFJkRkxEZFJFZDRTMS1EMEljelFVbXBEYTNVWlROWi00aXh0MGNNRWh2a29JVFdPdEctZUlNX21ReWZZV3Q0ejZvaG9YN25UcDBTM1VrSS1Xa3lvdw?oc=5",
       "published_at": "2026-11-08T01:30:40+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Frank Vogel details Warriors' defensive growth to start 2026-27 NBA season - NBC Sports Bay Area & California",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObF80azFRTjhXR2NTT253eWEzQ0dGUWItTUs4Y1VQNFhaNkEzUDBoaG5FMlpWOWZreEg1NTNRbVVMd095Ym5RRGdldGpIQm1LY2JaalNpdng2elQ5YTNlSzRZYm8ySUJUZFZzR0RKWmNZTFd1MktLWm9lUHBrOWtCdkFBV2hCSGJydjhkSGFQVWh2eDg4VS1kakMyS3pla3BmMnRDU1hCbUJpdVnSAasBQVVfeXFMTmxfNGsxUU44V0djU09ud3lhM0NHRlFiLU1LOGNVUDRYWjZBM1AwaGhuRTJaVjlma3hINTUzUW1VTHdPeWJuUURnZXRqSEJtS2NiWmpTaXZ4NnpUOWEzZUs0WWJvMklCVGRWc0dESlpjWUxXdTJLS1pvZVBwazlrQnZBQVdoQkhicnY4ZEhhUFVodng4OFUtZGpDMkt6ZWtwZjJ0Q1NYQm1CaXVZ?oc=5",
+      "published_at": "2026-11-08T01:16:33+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -98,6 +106,14 @@
       "headline": "Raptors Have One Rotation Adjustment to Consider After Bucks Win - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNE56RzdIdjlPQ19oQ0xYTVdTcERFeEF2bF9LdkdpYkhhTDBDOWEzNFVRRlQxWk1TTEowQmdkdTBEb0dCdjlDMV9JVm1INVhGZFFBdTBodWdnVlRmby1iVDlSZGVoa1FPR3pFQWJ5Y2VnM3ZlYmc3dzQ5Ymg3cW01Q3lpeVZtNW9WczVMR3VuVTJBXzUyZTNsbmJaNEw?oc=5",
       "published_at": "2026-11-07T23:00:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Luka Doncic Listed as Questionable Following Unreal Performance - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR09FbThpN01WTjlyakhXVkxoUnJlMVlHWjVodm9ld3dxdU9MNkR3MEJyNFY1YXE1dUJtZjNRbDA3cVlwZTZoc2IzTE1PSmJlTldaNXBWSi0wM0NYZ0NyOTNZODlDd2NHRWt3azQ0dDRtYXFKejAycjJfeThReVRGaEtheVVxLTJLS19JYktHbVAyZXFa?oc=5",
+      "published_at": "2026-11-07T23:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -335,25 +351,17 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Kerr: Thompson expected to play in Game 4 - NBA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SQVdjX3pRdEUxX2sxeGZRQ0xKSEJjUnIxOG1PZGc4MVIxYl8wZG8wOWg4ZUtsM0dCckx5eFhaSXFUWWRtTlB3aXVXd2tMNFBiUkl3Mmo0alV5Vk5pU1RkVVlHd0hDWExLUjlsYUt4NkUtZw?oc=5",
+      "published_at": "2026-11-07T04:11:49+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Raptors Make Surprise Starting Lineup Decision After Losing 3 Stars vs. Bucks - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNU3ZNdjF5RWo2Qnp3OFlpVlJ6M3BBd0xhdUNIc09JVFJISUdYZER5X1BPVVNlZ3h6Mk1ySXZtSUtQM1JNTXJ0QmtESkREWUtpSi1ZYU5SNFN5aEdpcl9uSWlfVnNOb3RHQmZwbWFfVmxkaUt1UzdiVzVGemViZkhFcVQ0YzlQN1IzR2YxMmh0ZklEa3Qz?oc=5",
       "published_at": "2026-11-07T03:46:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Why Josh Hart has already been ruled out for Knicks-Cavs game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNLVhJQWhHUS05UkE3SlV4c3JiRWpZdE5xbkdpTmdKOTJRa00yWXhvWGJHN3lucW92S0tpb01LVFFDTlpqQkVCNlRDOFRnVW5LOVR0bE1FOW92b0dBQjVEenRSeFY0WlNCaDZyajlCck9jRXZVYUNZUVlvMGFUdXdaSmpn?oc=5",
-      "published_at": "2026-11-07T02:49:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Sam Merrill Ruled Out With Elbow Injury vs. 76ers - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQam9JSkZuMy00TzNmME9Lb0hzNFRrRWVQdkpyODRFZXI5SUNCRDdPalhlTkFQdjJzVjIzS0lQaVlfdDhlX3RYTlh0dk9JRXdjbWk5UTNoaVkxZWVTNXBtRUp5ZWMxU3poUG1PVGFBWTJmZmFuVE1nQ1NySDZJNnZmNFp3MlhfUQ?oc=5",
-      "published_at": "2026-11-07T02:46:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
