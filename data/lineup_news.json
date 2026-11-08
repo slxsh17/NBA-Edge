@@ -1,11 +1,19 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-08T01:50:38.563260+00:00",
+  "checked_at": "2026-11-08T02:00:42.291300+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Jordan Goodwin (calf) ruled out Saturday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeTc1OTdpMXJVQmV0Zy1iMGRBU2dxTzM2WHM2NWZlR184VjI3VVVteENPZjZxSkNJVmtEaXJoSWZwZU9sNWxWbTRFemhLaDFMQTNNbG1XM1Jici1PX0xRNzBCbWxHdXpYVGstdkZESGFHaDdjYWJMWGJpbmM1Mk1OWVBLcUtCRnhwUWZsTVpLb9IBlAFBVV95cUxQR3QzYUJFb185TV9HZkFzMVFYN3BOay1nWDRkam1GTzNqT0J0NjlHWGFEdHFfb01KUDlDLTZCbHBpRkducEFyakxTVUk2RnY4Y3Z1T0JxYkN1NVZQMEd2alV4eEV6VmJZNGtGWXhxaFAtelRjRC1yQ0tHNEZBc3FsSkVHR1QwaVdTWVlOLWlXS1ZKdUtL?oc=5",
+      "published_at": "2026-11-08T01:36:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Suns Reveal Starting Lineup for Showdown vs Rockets - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPamNQdkVKcTFQYm9QNXRYZ1BfcHRtZWpBUXl3NV9za25wOFNnN2JBR3RzMXkzOUV6XzRXZHRTVjNKWHFmM2JiRmt3anN2WmhsUkU5UE5fQUFVcDU2SVhWcTlLTmJXMWtUMGVBNEtEUFlTSktQQzQ3WUdYcGlXNk1CY1BWSThwQU85SWd0eEk1cWpycmR2LW5IWg?oc=5",
@@ -322,14 +330,6 @@
       "headline": "CV Lakers Make Debut With Bronny James in Starting Lineup - MyNewsLA.com",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVTZialhyOU1sRkZkTTVfZEhsTFE5dlNPRkdDcFQtdWhTV3BaejZObmNCSjBvaDY5ZmNjTXZBWFZ1Zm4xQWxqNGVQZlFCQWRyN2tzSG11cERFaHVocHBEMC1xMGpLQ21uLWJCSnppanRtc2FQNE44NExTU1NhLVJ5MERQbTQ3dVJGMFUyOVUtM2dhR21kV1hhdFpCdDJuZlc4WXc?oc=5",
       "published_at": "2026-11-07T04:42:07+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Kerr: Thompson expected to play in Game 4 - NBA.com",
-      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SQVdjX3pRdEUxX2sxeGZRQ0xKSEJjUnIxOG1PZGc4MVIxYl8wZG8wOWg4ZUtsM0dCckx5eFhaSXFUWWRtTlB3aXVXd2tMNFBiUkl3Mmo0alV5Vk5pU1RkVVlHd0hDWExLUjlsYUt4NkUtZw?oc=5",
-      "published_at": "2026-11-07T04:11:49+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
