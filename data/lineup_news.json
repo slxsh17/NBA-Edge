@@ -1,19 +1,11 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-08T02:00:42.291300+00:00",
+  "checked_at": "2026-11-08T02:38:22.963864+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
-    {
-      "headline": "Jordan Goodwin (calf) ruled out Saturday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeTc1OTdpMXJVQmV0Zy1iMGRBU2dxTzM2WHM2NWZlR184VjI3VVVteENPZjZxSkNJVmtEaXJoSWZwZU9sNWxWbTRFemhLaDFMQTNNbG1XM1Jici1PX0xRNzBCbWxHdXpYVGstdkZESGFHaDdjYWJMWGJpbmM1Mk1OWVBLcUtCRnhwUWZsTVpLb9IBlAFBVV95cUxQR3QzYUJFb185TV9HZkFzMVFYN3BOay1nWDRkam1GTzNqT0J0NjlHWGFEdHFfb01KUDlDLTZCbHBpRkducEFyakxTVUk2RnY4Y3Z1T0JxYkN1NVZQMEd2alV4eEV6VmJZNGtGWXhxaFAtelRjRC1yQ0tHNEZBc3FsSkVHR1QwaVdTWVlOLWlXS1ZKdUtL?oc=5",
-      "published_at": "2026-11-08T01:36:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
     {
       "headline": "Suns Reveal Starting Lineup for Showdown vs Rockets - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPamNQdkVKcTFQYm9QNXRYZ1BfcHRtZWpBUXl3NV9za25wOFNnN2JBR3RzMXkzOUV6XzRXZHRTVjNKWHFmM2JiRmt3anN2WmhsUkU5UE5fQUFVcDU2SVhWcTlLTmJXMWtUMGVBNEtEUFlTSktQQzQ3WUdYcGlXNk1CY1BWSThwQU85SWd0eEk1cWpycmR2LW5IWg?oc=5",
@@ -98,6 +90,14 @@
       "headline": "Raptors Have One Rotation Adjustment to Consider After Bucks Win - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNE56RzdIdjlPQ19oQ0xYTVdTcERFeEF2bF9LdkdpYkhhTDBDOWEzNFVRRlQxWk1TTEowQmdkdTBEb0dCdjlDMV9JVm1INVhGZFFBdTBodWdnVlRmby1iVDlSZGVoa1FPR3pFQWJ5Y2VnM3ZlYmc3dzQ5Ymg3cW01Q3lpeVZtNW9WczVMR3VuVTJBXzUyZTNsbmJaNEw?oc=5",
       "published_at": "2026-11-07T23:00:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Luka Doncic Listed as Questionable Following Unreal Performance - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR09FbThpN01WTjlyakhXVkxoUnJlMVlHWjVodm9ld3dxdU9MNkR3MEJyNFY1YXE1dUJtZjNRbDA3cVlwZTZoc2IzTE1PSmJlTldaNXBWSi0wM0NYZ0NyOTNZODlDd2NHRWt3azQ0dDRtYXFKejAycjJfeThReVRGaEtheVVxLTJLS19JYktHbVAyZXFa?oc=5",
+      "published_at": "2026-11-07T23:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
