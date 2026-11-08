@@ -7,7 +7,6 @@ Does not touch any FanDuel file.
 """
 import datetime as dt
 import json
-import re
 import sys
 import time
 import urllib.request
@@ -37,27 +36,25 @@ def slate_list(day, sid=''):
 
 
 def find_main(day):
+    """DFF labels the DraftKings main slate 'Main' or leaves it blank; showdowns and the
+    Early/Turbo/Night slates have their own labels. Pick the main-type slate with the most games."""
     page = US.fetch(URL.format(day=day))
-    try:
-        return US.parse(page, day), URL.format(day=day)
-    except ValueError as first:
-        start = US.page_var(page, 'url')
-        print(f'Default DK page is the {US.page_var(page, "slate") or "?"} slate (id {start or "?"}); looking for Main')
-        cands = [x['url'] for x in slate_list(day, start) if x.get('slate_type') == 'Main' and not x.get('showdown_flag')]
-        cands += [s for s in re.findall(r'[?&]slate=([0-9A-Za-z]{4,8})', page) if s != start]
-        if start:
-            f = b = start
-            for _ in range(8):
-                f, b = US.next_id(f), US.prev_id(b)
-                cands += [f, b]
-        for sid in dict.fromkeys(cands):
-            try:
-                pg = US.fetch(SLATE_URL.format(day=day, sid=sid))
-                time.sleep(1)
-                return US.parse(pg, day), SLATE_URL.format(day=day, sid=sid)
-            except Exception:
-                continue
-        raise first
+    start = US.page_var(page, 'url')
+    listed = slate_list(day, start)
+    mains = sorted((x for x in listed if (x.get('slate_type') or '') in ('', 'Main') and not x.get('showdown_flag')),
+                   key=lambda x: -int(x.get('game_count') or 0))
+    if not listed and (US.page_var(page, 'slate') or '') in ('', 'Main'):
+        return US.parse(page, day, strict_main=False), URL.format(day=day)
+    for x in mains:
+        if x['url'] == start:
+            return US.parse(page, day, strict_main=False), URL.format(day=day)
+        try:
+            pg = US.fetch(SLATE_URL.format(day=day, sid=x['url']))
+            time.sleep(1)
+            return US.parse(pg, day, strict_main=False), SLATE_URL.format(day=day, sid=x['url'])
+        except Exception as e:
+            print(f"::warning::DK slate {x['url']}: {e}")
+    raise ValueError(f'no DraftKings main slate among {[(x.get("url"), x.get("slate_type")) for x in listed]}')
 
 
 def main():
