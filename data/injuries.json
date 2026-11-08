@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T18:24:08.552853+00:00",
+  "updated_at": "2026-11-08T18:30:08.718647+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -26,6 +26,11 @@
       "name": "Henri Veesaar",
       "team": "ATL",
       "status": "OUT"
+    },
+    {
+      "name": "Mitchell Robinson",
+      "team": "BOS",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Grant Nelson",
@@ -221,6 +226,11 @@
       "name": "Scotty Pippen Jr.",
       "team": "MEM",
       "status": "OUT"
+    },
+    {
+      "name": "Gary Trent Jr.",
+      "team": "MIL",
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Edwards",
