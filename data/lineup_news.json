@@ -1,52 +1,10 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T17:55:22.239839+00:00",
+  "checked_at": "2026-11-08T18:24:42.559224+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
-    {
-      "team": "LAL",
-      "status": "projected",
-      "players": [
-        "L. Doncic",
-        "Austin Reaves",
-        "Z. Williams",
-        "M. Thybulle",
-        "W. Kessler"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-08"
-    },
-    {
-      "team": "BOS",
-      "status": "projected",
-      "players": [
-        "Derrick White",
-        "Hugo Gonzalez",
-        "Jayson Tatum",
-        "Paul George",
-        "Neemias Queta"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-08"
-    },
-    {
-      "team": "MIL",
-      "status": "projected",
-      "players": [
-        "B. Burries",
-        "Tyler Herro",
-        "Jaime Jaquez",
-        "Kyle Kuzma",
-        "Myles Turner"
-      ],
-      "source": "RotoWire NBA Daily Lineups",
-      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
-      "date": "2026-11-08"
-    },
     {
       "team": "MIA",
       "status": "projected",
@@ -63,6 +21,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Luka Doncic Injury: Ruled out Sunday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUU1sTXNDYkM5ZGk1NDVwZHlmX2UzanRjZjVyX1BiOUlTV2JMVVFPT3BWUGRsaFNGNXR1cXo0VC1ZQzZUbkkxc0VNRG5Id2ladFJ4ZDdYdkpCYVpyengyaFcyOEhLWk5uMWM1cGxGSzBEeDNHSlFFUlRZRzFhVDdYUDFEYzZkNGlIYTF0bWxsbHlRUQ?oc=5",
+      "published_at": "2026-11-08T18:19:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
     {
       "headline": "One Key Knicks Player Has Quietly Faded Out of the Rotation - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPN19vZW1OWUNIZmFZdFh2aU1DT0hSQlVlNlI0MnVRZy1SR2NJMFMwX19yUkE1bGVEYkY2WmhqazhVR19wdE9YdGdyWWppVnJ3MThSZlVtX0xfMDB0SWZNdXBIbVBhZC1nQjVsa0dZTjRnSUpuSkpXbXJsd3JzZnFHUGRvT2xuSnJ0OHlUZmQ3S19OTm1WVnkwaDBzSG5mQzN1U19XNkhVOA?oc=5",
@@ -115,6 +81,14 @@
       "headline": "Keyonte George Injury: Questionable Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQamhQd1pEU3dRWkdXNmlBOTB6QnYyVkdET3ZSOV9ZODF0UmQ0Wm5ZYVhnYV9nNUo5U1B1Sk93TDh5OHRuWmVaU3lEWjN1Y3BrV0tnRm1rMk9VUm1mOUZkajlVRnRQeHF5YWFLSkNuN3g2UjZSREdVUENQaktsRnptZTQwc2hsbkU5WGlSSU53SDdwZUdmaWctQmpR?oc=5",
       "published_at": "2026-11-08T16:20:19+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "The Answer to the Boston Celtics Center Rotation, and Other Thoughts After 9 Games - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPVGpyLUFSSGVHU0VXc2xIbDJlcldremNsSXhLZWFqZHA2aWVNN3REX3R4MG96ckJNdDNoT3BoWng2NDB0YlNvdTlac0RoRUN3bnhMdF9RblB6aG9TOVNoT0VyV1ViU3VxVjQ2ZFBLZThoSVpWSTVSZmJjUnZMYktENzVHaVZrWEhFTkYtc00zYjNLc3Nqd2lKVEhhMFBsaktIUTgxUGF0d0d3Q1IzTFY1QTlnNTMyNGMzbnVkNmloY2RlWlhTTjctUmlB?oc=5",
+      "published_at": "2026-11-08T16:18:22+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -395,30 +369,6 @@
       "headline": "Why Kingston Flemings Should Stay in Hawks’ Starting Lineup Over CJ McCollum - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcXZNdEJ2bVhnQmVTTTQwSkFldE9RS2Q2SjZxRWhGazc2LWZzWTlKcEI1ZGV6VlVodkJrYnN5S3I1OGh2djBQeEdMUVE5djVKOTVtNXJCeUp0UDh0YjZaR19MTklsTVRXSXQzQ3dIaUFiSEViYUtoc2g1WlQwSXVvRHh3cV9nWG5FcTdOdm40VmdhdUo4c1ZaZDhCS1QzN0N1QkZ1aHluNmhncko5c2w2UDkyX1c1bW9LMFhSLTIyRQ?oc=5",
       "published_at": "2026-11-07T18:33:24+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Shedeur Sanders to start vs. Saints; Deshaun Watson listed as questionable - The Athletic - The New York Times",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSWp4dEFsVnJYemNHT20xcGVRZlVOMEYxWUlidjBZZkk2UGg4WmRaRWZRQ3hQM1BReXNpN21yWVF4MzNQSnJmMmhNYzNOcHlaWGJzeVNGd3owQUVWUDRvOERUMGo2V0hWT2xnRnN0a0hUNjZBQ1l5SkZnZjJOQkxBY2RZOVA3UThFaF9LN0x2WGRQZw?oc=5",
-      "published_at": "2026-11-07T18:16:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Jalen Johnson Injury: Expected to play Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTXBpd1V6MEhrSDNWUGdqbnVtckdSUVFGWHBUbTRtVE1fODk0TnB2LXNmYjdfdjJWY2U4Y0dDQjRlcEJNdy1McHk3OFVKQ3ZaeVNwYUY1UFV5bDBQZno4RkhEQndhSHk1RWlHcFRwdFRLS1VabjJlTk1rQXV6OGw0UHRqMXR1NEJycllQRXZzdXBSWEV4NDhrbnVBT0IzeTgy?oc=5",
-      "published_at": "2026-11-07T18:10:48+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Predicting the Nuggets' Full Rotation Before Spencer Jones' Season Debut - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPby1wLTlidjczN0VyUE5xbFZGOEhJRUVrZ0JqQUFfaG9QZjNaQ0ZtOU5USTRsd2JWMDgwcmFlYzEtNHprQ196VHo0anRXMmZ3WFF1Z28wWkM0Q2FGZ0tYbUtXcnBOemc0Ym5ubU5uVTJGbkNrV2dXRENZMllPcWFDcTFnZDlXNU9OSU50a0xaQkZRU2lGdkJrVWNpUXhTTTVCblpKcWNtaE11UQ?oc=5",
-      "published_at": "2026-11-07T18:00:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
