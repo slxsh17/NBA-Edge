@@ -167,6 +167,7 @@ def slate_list(day, sid=''):
 
 
 MAIN_URL = 'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/?slate={sid}'
+LISTED = False   # set when scan_slates read DFF's slate list
 
 
 def find_main(day, page):
@@ -275,6 +276,8 @@ def scan_slates(day, main_page, before=3, after=45, stop_after=15):
     if not start:
         return [], []
     listed = slate_list(day, start)
+    global LISTED
+    LISTED = bool(listed)
     if listed:
         singles, sides = [], []
         for x in listed:
@@ -344,7 +347,7 @@ def load_slate(day, sid, label, teams, page, singles, sides):
 def write_sides(day, sides):
     """Other classic slates (After Hours, Express, Turbo...): data/sides_DAY.json + archive copy."""
     import json
-    doc = {'schema': 1, 'date': day, 'source': 'DailyFantasyFuel public FanDuel classic slate pages',
+    doc = {'schema': 1, 'date': day, 'source': f"DailyFantasyFuel {'slate list + ' if LISTED else ''}public FanDuel classic slate pages",
            'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'slates': sides}
     (DATA / f'sides_{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
     arch = DATA / 'archive'
@@ -357,7 +360,7 @@ def write_sides(day, sides):
 
 def write_singles(day, singles):
     import json
-    doc = {'schema': 1, 'date': day, 'source': 'DailyFantasyFuel public FanDuel single-game pages',
+    doc = {'schema': 1, 'date': day, 'source': f"DailyFantasyFuel {'slate list + ' if LISTED else ''}public FanDuel single-game pages",
            'fetched_at': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'), 'slates': singles}
     (DATA / f'single_{day}.json').write_text(json.dumps(doc, separators=(',', ':')) + '\n', encoding='utf-8')
     arch = DATA / 'archive'
@@ -420,7 +423,10 @@ def main():
     try:
         prev = json.loads((DATA / f'slate_{day}.json').read_text(encoding='utf-8'))
         age = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(prev['fetched_at'])
-        if age < dt.timedelta(minutes=50) and (DATA / f'sides_{day}.json').exists() and '--force' not in sys.argv:
+        # Skip only when the side slates came from DFF's slate list (not the old ID scan, which
+        # missed letter IDs on Nov 8), so a fix or a failed listing never waits out the hour.
+        sides_src = json.loads((DATA / f'sides_{day}.json').read_text(encoding='utf-8')).get('source', '')
+        if age < dt.timedelta(minutes=50) and 'slate list' in sides_src and '--force' not in sys.argv:
             print(f'Slate fetched {int(age.total_seconds() // 60)} min ago; skipping')
             return 0
     except (OSError, ValueError, KeyError):
