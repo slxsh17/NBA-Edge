@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T17:20:56.312628+00:00",
+  "updated_at": "2026-11-08T17:26:08.627960+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -223,11 +223,6 @@
       "status": "OUT"
     },
     {
-      "name": "Joan Beringer",
-      "team": "MIN",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Anthony Edwards",
       "team": "MIN",
       "status": "OUT"
@@ -378,12 +373,12 @@
       "status": "OUT"
     },
     {
-      "name": "Scottie Barnes",
+      "name": "Immanuel Quickley",
       "team": "TOR",
       "status": "DAY-TO-DAY"
     },
     {
-      "name": "Immanuel Quickley",
+      "name": "Scottie Barnes",
       "team": "TOR",
       "status": "DAY-TO-DAY"
     },
