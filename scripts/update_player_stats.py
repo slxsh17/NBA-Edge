@@ -23,6 +23,15 @@ def minutes(value):
         return round(number(left)+number(right)/60,2)
     return number(text)
 
+def threes_made(vals):
+    """ESPN lists threes as made-attempted ('3-7') under 3PT (or 3PM/3P). None if absent."""
+    for k in ('3PT','3PM','3P','3FG','3PTM'):
+        if k in vals:
+            text=str(vals[k]).split('-')[0]
+            try: return float(text)
+            except ValueError: return None
+    return None
+
 def parse_summary(data, event_id, game_date):
     rows=[]
     for team in data.get('boxscore',{}).get('players',[]):
@@ -38,12 +47,15 @@ def parse_summary(data, event_id, game_date):
                 mins=minutes(vals.get('MIN',0))
                 if mins<=0:continue
                 pts=get('PTS'); reb=get('REB'); ast=get('AST'); stl=get('STL'); blk=get('BLK'); tov=get('TO','TOV')
+                fg3m=threes_made(vals)
                 # Standard FanDuel NBA scoring, not platform-specific historical bonus variations.
                 fantasy=pts+1.2*reb+1.5*ast+3*stl+3*blk-tov
-                rows.append({'id':str(athlete.get('id','')),'name':athlete.get('displayName','Unknown'),
+                row_out={'id':str(athlete.get('id','')),'name':athlete.get('displayName','Unknown'),
                     'team':team_name,'date':game_date,'event_id':str(event_id),
                     'minutes':round(mins,2),'pts':pts,'reb':reb,'ast':ast,'stl':stl,'blk':blk,
-                    'tov':tov,'fantasy_points':round(fantasy,2)})
+                    'tov':tov,'fantasy_points':round(fantasy,2)}
+                if fg3m is not None: row_out['fg3m']=fg3m   # for DraftKings scoring (+0.5 per three)
+                rows.append(row_out)
     return rows
 
 def main():

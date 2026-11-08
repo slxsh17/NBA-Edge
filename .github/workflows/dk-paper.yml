@@ -1,0 +1,56 @@
+name: NBA EDGE DraftKings Paper Mode
+
+# DraftKings lineups on paper only: build before lock, grade the next morning.
+# Touches only data/dk/. The FanDuel site and pipeline are unaffected.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 15 * * *'   # ~10:20am ET: grade last night, threes backfill, first build
+    - cron: '40 20 * * *'   # ~3:40pm ET
+    - cron: '40 22 * * *'   # ~5:40pm ET
+    - cron: '35 23 * * *'   # ~6:35pm ET, last build before a 7pm lock
+  push:
+    branches: [dk-paper]
+    paths: ['scripts/dk_*.py', '.github/workflows/dk-paper.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-edge-dk-paper
+  cancel-in-progress: false
+
+jobs:
+  dk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install lineup solver
+        run: pip install --quiet highspy
+      - name: Threes made for older box scores
+        run: python scripts/dk_backfill_threes.py
+        continue-on-error: true
+      - name: Grade past DK nights
+        run: python scripts/dk_grade.py
+        continue-on-error: true
+      - name: DK main slate
+        run: python scripts/dk_slate.py
+      - name: DK projections and lineups
+        run: python scripts/dk_build.py
+      - name: Publish
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          [ -d data/dk ] || exit 0
+          git add -A data/dk
+          git diff --cached --quiet && exit 0
+          git commit -m 'Update DraftKings paper lineups'
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          exit 1
