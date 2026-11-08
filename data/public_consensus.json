@@ -1,7 +1,7 @@
 {
 "schema": 2,
 "date": "2026-11-08",
-"updated_at": "2026-11-08T16:10:37+00:00",
+"updated_at": "2026-11-08T17:11:03+00:00",
 "sources": {
 "fantasyteamadvice": {
 "players": 0,
@@ -19,10 +19,10 @@
 "name": "Brook Lopez",
 "team": "LAC",
 "fta_own": null,
-"linestar_own": 39.8,
+"linestar_own": 39.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 39.8,
+"consensus_own": 39.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -30,27 +30,16 @@
 "name": "Bam Adebayo",
 "team": "MIA",
 "fta_own": null,
-"linestar_own": 29.9,
+"linestar_own": 25.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 29.9,
+"consensus_own": 25.7,
 "source_count": 1,
 "mention_count": 0
 },
 {
 "name": "Nolan Traore",
 "team": "BKN",
-"fta_own": null,
-"linestar_own": 24.6,
-"mentions": 0,
-"articles": [],
-"consensus_own": 24.6,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Josh Giddey",
-"team": "CHI",
 "fta_own": null,
 "linestar_own": 23.2,
 "mentions": 0,
@@ -60,13 +49,13 @@
 "mention_count": 0
 },
 {
-"name": "Domantas Sabonis",
-"team": "SAC",
+"name": "Josh Giddey",
+"team": "CHI",
 "fta_own": null,
-"linestar_own": 21.4,
+"linestar_own": 22.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 21.4,
+"consensus_own": 22.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -74,10 +63,21 @@
 "name": "Jaylen Brown",
 "team": "PHI",
 "fta_own": null,
-"linestar_own": 21.0,
+"linestar_own": 22.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 21.0,
+"consensus_own": 22.2,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Domantas Sabonis",
+"team": "SAC",
+"fta_own": null,
+"linestar_own": 20.0,
+"mentions": 0,
+"articles": [],
+"consensus_own": 20.0,
 "source_count": 1,
 "mention_count": 0
 },
@@ -85,21 +85,10 @@
 "name": "LeBron James",
 "team": "PHI",
 "fta_own": null,
-"linestar_own": 15.4,
+"linestar_own": 16.6,
 "mentions": 0,
 "articles": [],
-"consensus_own": 15.4,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Klay Thompson",
-"team": "MIA",
-"fta_own": null,
-"linestar_own": 14.6,
-"mentions": 0,
-"articles": [],
-"consensus_own": 14.6,
+"consensus_own": 16.6,
 "source_count": 1,
 "mention_count": 0
 },
@@ -107,10 +96,21 @@
 "name": "Davion Mitchell",
 "team": "MIA",
 "fta_own": null,
-"linestar_own": 14.6,
+"linestar_own": 14.3,
 "mentions": 0,
 "articles": [],
-"consensus_own": 14.6,
+"consensus_own": 14.3,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Klay Thompson",
+"team": "MIA",
+"fta_own": null,
+"linestar_own": 13.7,
+"mentions": 0,
+"articles": [],
+"consensus_own": 13.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -118,54 +118,10 @@
 "name": "VJ Edgecombe",
 "team": "PHI",
 "fta_own": null,
-"linestar_own": 11.3,
+"linestar_own": 11.7,
 "mentions": 0,
 "articles": [],
-"consensus_own": 11.3,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Paul George",
-"team": "BOS",
-"fta_own": null,
-"linestar_own": 8.9,
-"mentions": 0,
-"articles": [],
-"consensus_own": 8.9,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Matas Buzelis",
-"team": "CHI",
-"fta_own": null,
-"linestar_own": 8.4,
-"mentions": 0,
-"articles": [],
-"consensus_own": 8.4,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Brayden Burries",
-"team": "MIL",
-"fta_own": null,
-"linestar_own": 7.3,
-"mentions": 0,
-"articles": [],
-"consensus_own": 7.3,
-"source_count": 1,
-"mention_count": 0
-},
-{
-"name": "Jeremiah Fears",
-"team": "NOP",
-"fta_own": null,
-"linestar_own": 6.7,
-"mentions": 0,
-"articles": [],
-"consensus_own": 6.7,
+"consensus_own": 11.7,
 "source_count": 1,
 "mention_count": 0
 },
@@ -173,10 +129,54 @@
 "name": "Neemias Queta",
 "team": "BOS",
 "fta_own": null,
-"linestar_own": 5.9,
+"linestar_own": 10.4,
 "mentions": 0,
 "articles": [],
-"consensus_own": 5.9,
+"consensus_own": 10.4,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Paul George",
+"team": "BOS",
+"fta_own": null,
+"linestar_own": 9.3,
+"mentions": 0,
+"articles": [],
+"consensus_own": 9.3,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Jeremiah Fears",
+"team": "NOP",
+"fta_own": null,
+"linestar_own": 8.1,
+"mentions": 0,
+"articles": [],
+"consensus_own": 8.1,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Matas Buzelis",
+"team": "CHI",
+"fta_own": null,
+"linestar_own": 8.1,
+"mentions": 0,
+"articles": [],
+"consensus_own": 8.1,
+"source_count": 1,
+"mention_count": 0
+},
+{
+"name": "Brayden Burries",
+"team": "MIL",
+"fta_own": null,
+"linestar_own": 7.9,
+"mentions": 0,
+"articles": [],
+"consensus_own": 7.9,
 "source_count": 1,
 "mention_count": 0
 },
@@ -184,10 +184,10 @@
 "name": "Jaime Jaquez",
 "team": "MIL",
 "fta_own": null,
-"linestar_own": 4.8,
+"linestar_own": 4.4,
 "mentions": 0,
 "articles": [],
-"consensus_own": 4.8,
+"consensus_own": 4.4,
 "source_count": 1,
 "mention_count": 0
 },
@@ -195,10 +195,10 @@
 "name": "Ace Bailey",
 "team": "UTA",
 "fta_own": null,
-"linestar_own": 3.8,
+"linestar_own": 4.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 3.8,
+"consensus_own": 4.2,
 "source_count": 1,
 "mention_count": 0
 },
@@ -206,10 +206,10 @@
 "name": "De'Andre Hunter",
 "team": "SAC",
 "fta_own": null,
-"linestar_own": 3.8,
+"linestar_own": 4.2,
 "mentions": 0,
 "articles": [],
-"consensus_own": 3.8,
+"consensus_own": 4.2,
 "source_count": 1,
 "mention_count": 0
 },
@@ -217,10 +217,10 @@
 "name": "Kyle Kuzma",
 "team": "MIL",
 "fta_own": null,
-"linestar_own": 3.7,
+"linestar_own": 3.0,
 "mentions": 0,
 "articles": [],
-"consensus_own": 3.7,
+"consensus_own": 3.0,
 "source_count": 1,
 "mention_count": 0
 },
@@ -228,10 +228,10 @@
 "name": "Jaxson Hayes",
 "team": "UTA",
 "fta_own": null,
-"linestar_own": 2.8,
+"linestar_own": 2.9,
 "mentions": 0,
 "articles": [],
-"consensus_own": 2.8,
+"consensus_own": 2.9,
 "source_count": 1,
 "mention_count": 0
 }
@@ -241,7 +241,7 @@
 {
 "name": "Jaylen Brown",
 "team": "PHI",
-"own": 47.6
+"own": 47.4
 },
 {
 "name": "VJ Edgecombe",
@@ -251,17 +251,17 @@
 {
 "name": "LeBron James",
 "team": "PHI",
-"own": 39.4
+"own": 39.7
 },
 {
 "name": "Josh Giddey",
 "team": "CHI",
-"own": 32.8
+"own": 32.2
 },
 {
 "name": "Matas Buzelis",
 "team": "CHI",
-"own": 28.4
+"own": 28.1
 }
 ],
 "BOS@MIL": [
@@ -278,12 +278,12 @@
 {
 "name": "Neemias Queta",
 "team": "BOS",
-"own": 32.7
+"own": 33.3
 },
 {
 "name": "Kyle Kuzma",
 "team": "MIL",
-"own": 26.9
+"own": 26.4
 },
 {
 "name": "Jaime Jaquez",
@@ -295,17 +295,17 @@
 {
 "name": "Bam Adebayo",
 "team": "MIA",
-"own": 60.4
+"own": 60.6
 },
 {
 "name": "Domantas Sabonis",
 "team": "SAC",
-"own": 53.7
+"own": 53.3
 },
 {
 "name": "Davion Mitchell",
 "team": "MIA",
-"own": 42.3
+"own": 41.6
 },
 {
 "name": "Klay Thompson",
