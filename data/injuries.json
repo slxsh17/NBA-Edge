@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T14:45:07.909678+00:00",
+  "updated_at": "2026-11-08T15:20:54.146087+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -63,6 +63,11 @@
       "status": "OUT"
     },
     {
+      "name": "Norman Powell",
+      "team": "CHI",
+      "status": "DAY-TO-DAY"
+    },
+    {
       "name": "Tobe Awaka",
       "team": "CHI",
       "status": "DAY-TO-DAY"
@@ -121,16 +126,6 @@
       "name": "Isaiah Joe",
       "team": "DET",
       "status": "OUT"
-    },
-    {
-      "name": "Isaac Jones",
-      "team": "DET",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Elijah Harkless",
-      "team": "DET",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Jalen Duren",
@@ -415,7 +410,7 @@
     {
       "name": "Deandre Ayton",
       "team": "WAS",
-      "status": "OUT"
+      "status": "DAY-TO-DAY"
     },
     {
       "name": "Anthony Davis",
