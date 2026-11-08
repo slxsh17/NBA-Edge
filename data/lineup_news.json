@@ -1,11 +1,27 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-08T00:06:42.272630+00:00",
+  "checked_at": "2026-11-08T00:35:08.480911+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Lakers vs. Pistons Injury Report: Luka Doncic Is Questionable For Premium NBA Matchup - Fadeaway World",
+      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSFVJODdlNmJCRXV5cDJyLUJveHN0dWh4R19Zd3FObVZrNHNCTWF1YUcwMS14RERfZlRKOE04SkFWTlN3RWVCeF9Sem4xc0RNa0p3Ym9GSkZNYUlzTm1zMklGT29JMVA1WVRKVUxhbHB0U2dmWk9CUHY4MzlJYXVXRUl0UkRYVzNPeWVJQkVMNWFITzFZTHByUWl4SFF5ZUZ3bHdDT1ZaRzhmR2FoSGVsS29aYWFtNjRwVEFER0ZrdXFGMEh4b0hn?oc=5",
+      "published_at": "2026-11-08T00:21:11+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Anthony Davis Ruled Out Again on Saturday - NBA News | Fantasy Basketball - RotoBaller",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTWQ5TlNIWU1uZnNPSkd5SUkta0gySVBJZl9qcDZITlZfNldoaGZ5UFpPVC1ObFVwa2F5RDd5ODVrQlhyc3BZT0pVaXBraTV4SXhHcFV1TWZMUmowTjhIOE1pYlZBREFoeXR0ejhENU9uVEdmTHR5UTlrYS1xTExqcWhLUTNRMThSZ1FZYV8zbU1HQQ?oc=5",
+      "published_at": "2026-11-08T00:16:13+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Jarrett Allen Ruled Out Again Saturday Versus Knicks - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQX2tKVS1McVdBTkl1dkRLc2Y1ZC1TU2pxUVJWOEM2NjRxUGpvN0d3aVZ2aW5WNUdJQWdCaUdRVk85bnM3MXdvTDlLMWptT0xHY1RNODM4UjFvdjhMMTVuZjZtZUZTTzcyVXdRLUtlM2xUcFhXTjlqZUl2bjF4NThMVW1rT1ZkM25EX2ZJcUt0YS11SXZvM1Bqa2Z2UEJRWDRN?oc=5",
@@ -39,6 +55,14 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Joan Beringer Injury: Questionable for Sunday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOWdCeXZzVHJYMFA2dGk5MWNQN080c2gtalZfU01GOWxLZFdiOXZKNEJQZ0ljdEhVWFlHR1EyazRXeXBhakZWd0phU0xDRmxySE4tOW5JbXhjU3NsRTRyM3dUTVlNcnlzMmc0MGhLVElkRE5XdzU0YWVTNWdUSkVCd09TMkNxUXBPUFd0cVR0Yl9Nc2p6YVVuaDRDalVPQQ?oc=5",
+      "published_at": "2026-11-07T23:10:56+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Raptors Have One Rotation Adjustment to Consider After Bucks Win - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNE56RzdIdjlPQ19oQ0xYTVdTcERFeEF2bF9LdkdpYkhhTDBDOWEzNFVRRlQxWk1TTEowQmdkdTBEb0dCdjlDMV9JVm1INVhGZFFBdTBodWdnVlRmby1iVDlSZGVoa1FPR3pFQWJ5Y2VnM3ZlYmc3dzQ5Ymg3cW01Q3lpeVZtNW9WczVMR3VuVTJBXzUyZTNsbmJaNEw?oc=5",
       "published_at": "2026-11-07T23:00:01+00:00",
@@ -47,9 +71,25 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Luka Doncic listed as questionable against Pistons - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQnlHZ3FjU2xYSFpia3FFTzluelgycE1vLUFrT005REFNUFYzRkptdGJvcEc0dk1Nd0x2WEhsNTRYYTVwTjJRQmJ6dC1QOTVxVlpidVlGdTJyeTFEMlp6LUlZZHAzNFZDRFNZMjR4TkFEUDVYOVE4WGowN003VmpfbmY3X1NkQm85c3lROEp6bHVMZw?oc=5",
+      "published_at": "2026-11-07T22:47:59+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Bulls’ Starting Lineup Struggles With No Easy Fix in Sight - BVM Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOV0syRERkWEFSZ3NnSUZUTUtFcUhSaU9lcHJQcUJCMjhaUDFsY2NPWWJoQ182MGpjTFFZRUtsbGUtZHlhczlDdG1qQWtBd3VsMFkzV084M2NhZ044NmhzS3JMRVAxbDNnYlgwVUpYRWlhdTBjZ0tveVY1OVNuQk9jeFJmbEdxaUdUR1RxbHA4eVExREtpTkE?oc=5",
       "published_at": "2026-11-07T22:40:46+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Bulls Practice Notes: A Starting Lineup Change? Josh Giddey Talks Offense, More - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSlhFaWFkbk0tU0NqXy14dXpnOHFNanNxTVpuTXJuNWNSNmRZYURFUktlaHVLTVN1YVRYWjd3NHJMcUdINzBrN2tWWkhjUFpFakJpUkJ4MFpoeTBvUmV5bFFJMG5PUXpSendMSnBPOVE3d1VFbWtUcFBKb01wM3h3TWNKTmdUdW14ZDZ5OFlpMG5OV213QVhVRC00QVZXNU0zclo5SFV6QkVncHc?oc=5",
+      "published_at": "2026-11-07T22:30:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -314,38 +354,6 @@
       "headline": "De'Andre Hunter Injury: Ruled out versus Spurs - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWW5ydnZwakJGaVh4cmp6VDNSVFlfNU9hbTZTQzB5SmdzVkpjbm5wNVVJcDNER0FDdFF4LXJFcUZ3Z0E5Ym16ZWxoSUk1Rks5eVl3eXJTdzRFVU9KTXpDWHpIUF9yMXdZbkxmc0NhckxRSE5qZDBzc2lVMGJWR0ZkUm41VVBGV2tzbldGNkhkMUtEaHlQMElQWG9PYnBrUQ?oc=5",
       "published_at": "2026-11-07T00:36:41+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Rasheer Fleming Injury: Carrying questionable tag - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNM29KTktvNGVLTHI2NTM2a0xhUlg0cXpGQWI5NGFDUEZISGgySGdiMWlQcWFUTVZ6dWFaZWxTSG5zMlh0cjFlNWdySHRDLXV6Y0pyYy05dEk0Nks3TjktU2dnSzlacUVQVVhqMHFNQmlEQUlpbUdXR0lqWFVqNkRTYUtEc3Axck1rUHhDV3dRYUszWTVFYlZKbE5JMXRBOTlpc3FZ?oc=5",
-      "published_at": "2026-11-07T00:20:43+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Jordan Goodwin Injury: Doubtful for Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdndNOWNBeXBXZXgtcEVaRFNrMVhDLU5KS0lPR0Yxek4tQ1VQZzN0TnVBZnpaUG56alNnVlNVeW5MRmR5QTV3b00tVk1KV1BvTW9hQUNlaTcwcmNETmhmclBtaDljYlVjRElPRHlWLVdLd0lKcmRVS29nWk44YmdHZmJyc3N3allULW9ITHpqQ25xZDhGT3JEOHJsZHg?oc=5",
-      "published_at": "2026-11-07T00:20:03+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Tyler Herro Knows What Bucks Have to Do to Start Winning After 1-7 Start - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaHFtbGZFVkRDeHJHLUZTbG94ZEhjTmR6NTV2Z1djTE1HQlJYS0FkLWNuTFZCaWs4dWstbkh5US1WVDRlU0xlZXJRYTJCUkhCSUdZUUZVSlNoS2ZVUm5KNE90dVVRemJEYmhkdkhOdjh0QTh1U0d3clpJS1lXVUpNbFlHZ1U?oc=5",
-      "published_at": "2026-11-07T00:10:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Change Made: Charlotte Hornets Switch Up Starting Lineup vs. Celtics - Sports Illustrated",
-      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPME1oQ1ZfTVpTUTY5S2dobGRLUFhRSmt0YzJMNFNPejZwYThvcGFRa18xQ1dSM1ZvR3VhQmNfNTdlY1ZjSkNuaE5ndDVLMGlaVWRGRHRlMGtKVlZtTlRjdC1VdEN5TVIwUGJKNWp3UUVkS1BDa2tKVGxvbm1IYzZiel82Q0hUZUxqN21XWEJsNXBSS1dSOENn?oc=5",
-      "published_at": "2026-11-07T00:06:43+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
