@@ -10,6 +10,7 @@ import json
 import re
 import sys
 import time
+import urllib.request
 from zoneinfo import ZoneInfo
 
 import update_slate as US
@@ -19,13 +20,31 @@ URL = 'https://www.dailyfantasyfuel.com/nba/projections/draftkings/{day}/'
 SLATE_URL = 'https://www.dailyfantasyfuel.com/nba/projections/draftkings/{day}/?slate={sid}'
 
 
+def slate_list(day, sid=''):
+    """DraftKings slates DFF lists for the day (same feed its slate picker uses)."""
+    url = f'https://www.dailyfantasyfuel.com/data/slates/recent/nba/draftkings?date={day}' + (f'&url={sid}' if sid else '')
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) NBA-EDGE-personal',
+                                                   'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest'})
+        with urllib.request.urlopen(req, timeout=30) as res:
+            doc = json.loads(res.read().decode('utf-8', 'replace'))
+    except Exception as e:
+        print(f'::warning::DFF DraftKings slate list unavailable ({e})')
+        return []
+    out = [x for x in doc.get('slates') or [] if x.get('url')]
+    print('DK slates listed:', [(x.get('url'), x.get('slate_type'), x.get('game_count')) for x in out][:12])
+    return out
+
+
 def find_main(day):
     page = US.fetch(URL.format(day=day))
     try:
         return US.parse(page, day), URL.format(day=day)
     except ValueError as first:
         start = US.page_var(page, 'url')
-        cands = [s for s in re.findall(r'[?&]slate=([0-9A-Za-z]{4,8})', page) if s != start]
+        print(f'Default DK page is the {US.page_var(page, "slate") or "?"} slate (id {start or "?"}); looking for Main')
+        cands = [x['url'] for x in slate_list(day, start) if x.get('slate_type') == 'Main' and not x.get('showdown_flag')]
+        cands += [s for s in re.findall(r'[?&]slate=([0-9A-Za-z]{4,8})', page) if s != start]
         if start:
             f = b = start
             for _ in range(8):
