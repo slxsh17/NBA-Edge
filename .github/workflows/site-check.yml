@@ -1,0 +1,19 @@
+name: NBA EDGE live site check (temporary)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          curl -s "https://slxsh17.github.io/NBA-Edge/data/today.json?h=$RANDOM" -o t.json
+          python3 -c "
+          import json;t=json.load(open('t.json'))
+          print('LIVE date',t['date'],'built',t['built_at'])
+          print('LIVE games',[g['away']+'@'+g['home']+' '+g['time'] for g in t['games']])
+          print('LIVE LAL',[(p['name'],p.get('status'),p['proj']) for p in t['players'] if p['team']=='LAL'])
+          print('LIVE classic_slates',[c.get('label') for c in t.get('classic_slates',[])],'singles',[s.get('label') for s in t.get('single_games',[])])"
+          curl -s "https://slxsh17.github.io/NBA-Edge/service-worker.js?h=$RANDOM" | grep -o "nba-edge-v[0-9]*" | head -1
