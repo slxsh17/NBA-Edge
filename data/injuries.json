@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T02:00:42.166696+00:00",
+  "updated_at": "2026-11-08T02:38:42.546689+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -333,17 +333,17 @@
       "status": "OUT"
     },
     {
+      "name": "Ja Morant",
+      "team": "POR",
+      "status": "OUT"
+    },
+    {
       "name": "Robert Williams III",
       "team": "POR",
       "status": "OUT"
     },
     {
       "name": "Vit Krejci",
-      "team": "POR",
-      "status": "OUT"
-    },
-    {
-      "name": "Ja Morant",
       "team": "POR",
       "status": "OUT"
     },
