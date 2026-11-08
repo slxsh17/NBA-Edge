@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T12:38:08.449130+00:00",
+  "checked_at": "2026-11-08T13:38:28.527134+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -64,6 +64,14 @@
   ],
   "headlines": [
     {
+      "headline": "Steph Curry and Draymond Green stayed on the bench to start overtime. It paid off - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdDBscVE4RGhsdjl0UGJsVjhhZm9MZllvd0lCUWdpNE5uc0RpdHM2VFdxdU83ZFVxQTY0bWwtM295TlYxZmFzazdZYkZWR3lvakRQbGtYaldOM0xyUU95eTdmaE5uaHFRRWw3YVdlMTVobmg1aW9ldmdHMnJaNkdENUpIYnlsNEtJdGJfQ0tuQm9zWFQ3ZWtIa1pzT0ZuTEJES2c?oc=5",
+      "published_at": "2026-11-08T13:00:20+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
       "headline": "NBA injury report: Doncic, Embiid listed on Sunday, November 8 - TalkBasket.net",
       "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONUZRZDMtbW1SVldoLTJ2LXZuZUFITmUtVGZualUyZVFrRlF6ejFpaUM1Wkd1cElHcVlPQkhkYnZ5UWU4OUFJVnR1aTVNSTZXMmo1NWs3RWdXLS1xR1BUNEpkYWRBYmZJdGxxXzE2NUo1aU1jSjVkdWJpbjJzcWRzWVZZZERTMkFmS2RNcTJ2M3JOaHFzVDdJag?oc=5",
       "published_at": "2026-11-08T09:26:51+00:00",
@@ -123,14 +131,6 @@
       "headline": "Lakers vs. Pistons Injury Report: Luka Doncic Is Questionable For Premium NBA Matchup - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMTZsQW40OUFXMUVteTNkMGlJaDJOemlUQUR6WTNxcFAxNUhacmh4Mmk3SFF6SWt6ZlNfMUlMSW1lYktkZ2diVFBzYnRGTlpNSHZFbjFvN05RV3d5bVFHZXFiRl9SeUhnbG9FQWs4ZVBaTGgtYWJfdThvcTBVN1FNNHBuRDRDbGM?oc=5",
       "published_at": "2026-11-08T00:14:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Anthony Davis Injury: Ruled out for Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRDgwTHVhU1Y1TERzVTBVbWs2UVRzRE5QcmZyZjBiLUZXY3pyb1hkNWV3cDJmc2JIa090azV2TDhpN0dfNm83ODFqZGtQeUpsLVVXeGdtNWVxS1QyeVdVV0VGRjZDZERXRTJmckFDREF1T2RUREdjUXZsQUtmN3FZQ2d0WHdnRVR2UmR6a1hpRUlheHA1VjdmSzFjSDc?oc=5",
-      "published_at": "2026-11-07T23:33:38+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -248,6 +248,14 @@
       "scope_date": "2026-11-08"
     },
     {
+      "headline": "Bona doubtful, no Sixers starters on injury report for Cavs game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVG5qd2JsTTh4dFFkSmJDRkNPaS1NdTNxb3ZJSk9tQUZJWG9SSzJCMlRWeEJVak92cHpjcFhlQlVtSS04V3F1MHRJZEtWT21DRlJaSFBOTVJTbTZwTkRwRVRDTXM4Z3Q5ZEpaOTBFLW51dk5xR3owTnRNN3NoTWd6RTJ5Y1VOcDFz?oc=5",
+      "published_at": "2026-11-07T19:50:07+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
       "headline": "Desmond Bane Injury: Ruled out Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLWltVDVMclV6WXowbGJqclNRSGFzejZndWV6S3hZZmplUmNfeEY0aFR4c3VkVzkyVmxaOFBjeDFwZjFuZklKekNwbW1lMks4eXdDNjBoRDZTdWhmZElKZVBULXlnbVkzUEhKVnhPel8zZ1lLMXB3RFhFZGJhR0FnYWlaVWcyTlNaQXVia091dnhQQjVTc3c?oc=5",
       "published_at": "2026-11-07T19:36:42+00:00",
@@ -289,7 +297,7 @@
     },
     {
       "headline": "Why Kingston Flemings Should Stay in Hawks’ Starting Lineup Over CJ McCollum - roundtable.io",
-      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcXZNdEJ2bVhnQmVTTTQwSkFldE9RS2Q2SjZxRWhGazc2LWZzWTlKcEI1ZGV6VlVodkJrYnN5S3I1OGh2djBQeEdMUVE5djVKOTVtNXJCeUp0UDh0YjZaR19MTklsTVRXSXQzQ3dIaUFiSEViYUtoc2g1WlQwSXVvRHh3cV9nWG5FcTdOdm40VmdhdUo4c1ZaZDhCS1QzN0N1QkZ1aHluNmhncko5c2w2UDkyX1c1bW9LMFhSLTIyRQ?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc2ZVT3ZJcmF4QVVPM09LVktPbFIzc2FIOGRNRjQ3NHp5QlQzNlJXUUJvN0hqSEE1eXBHalVxamxyWDdwaDhHdnJTWGttTG5OY1E5REpEdG9rOE9IQV9OcVF2WWhMRzhmSkd0Y180MVV3MUpHeV9aNHprT3IyRFZSR1NhR0VqbWJSMEJlMHRSOXlPekh3UnJkR3lEVDBfTVJLZl9NTVZKazFLa1B2THNlX1hXSGg3d2x5RmFF?oc=5",
       "published_at": "2026-11-07T18:33:23+00:00",
       "type": "headline_only",
       "confirmed": false,
