@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-08T00:36:42.268970+00:00",
+  "checked_at": "2026-11-08T01:18:42.446053+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
     {
-      "headline": "Lakers vs. Pistons Injury Report: Luka Doncic Is Questionable For Premium NBA Matchup - Fadeaway World",
-      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSFVJODdlNmJCRXV5cDJyLUJveHN0dWh4R19Zd3FObVZrNHNCTWF1YUcwMS14RERfZlRKOE04SkFWTlN3RWVCeF9Sem4xc0RNa0p3Ym9GSkZNYUlzTm1zMklGT29JMVA1WVRKVUxhbHB0U2dmWk9CUHY4MzlJYXVXRUl0UkRYVzNPeWVJQkVMNWFITzFZTHByUWl4SFF5ZUZ3bHdDT1ZaRzhmR2FoSGVsS29aYWFtNjRwVEFER0ZrdXFGMEh4b0hn?oc=5",
-      "published_at": "2026-11-08T00:21:11+00:00",
+      "headline": "Isaiah Jackson Injury: Ruled out for Sunday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTDFzT2RYdV9MQndEdjBaUkpTbWgtWDUwLURRcE5FNnlfRW83dVFDcV82TkRGdmVQN3hxS2ZZZ2dXdkdleUFkOFBYRy1SY1pvN0pDNHRJLUdLOXRYQWZFWGxfS2kxSm5NWDJ6N0d0NFZ0NjNiUDlSRS00QVhiT1BlUjJMaHRoaXhGQ0hRTHEzUDBDTVE0Y1Fuemd2QQ?oc=5",
+      "published_at": "2026-11-08T01:03:39+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -18,6 +18,14 @@
       "headline": "Anthony Davis Ruled Out Again on Saturday - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTWQ5TlNIWU1uZnNPSkd5SUkta0gySVBJZl9qcDZITlZfNldoaGZ5UFpPVC1ObFVwa2F5RDd5ODVrQlhyc3BZT0pVaXBraTV4SXhHcFV1TWZMUmowTjhIOE1pYlZBREFoeXR0ejhENU9uVEdmTHR5UTlrYS1xTExqcWhLUTNRMThSZ1FZYV8zbU1HQQ?oc=5",
       "published_at": "2026-11-08T00:16:13+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Lakers vs. Pistons Injury Report: Luka Doncic Is Questionable For Premium NBA Matchup - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMTZsQW40OUFXMUVteTNkMGlJaDJOemlUQUR6WTNxcFAxNUhacmh4Mmk3SFF6SWt6ZlNfMUlMSW1lYktkZ2diVFBzYnRGTlpNSHZFbjFvN05RV3d5bVFHZXFiRl9SeUhnbG9FQWs4ZVBaTGgtYWJfdThvcTBVN1FNNHBuRDRDbGM?oc=5",
+      "published_at": "2026-11-08T00:14:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -79,9 +87,25 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Isaiah Joe has been ruled out tomorrow. - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MdmJoNEt6OHVDR2syRDNiOE9IMlFVRWNXZXdrR2xNNW1BUEROTTRUUzNOeHpiMlpMZDNYZ1FTeHJxenM1dVFWQTNCTnNVU1NKS2kwWm5qVDQ0ZXhjQUtOQXFweDRXcWVKVmNDTHJRbFM5eUpnUVVPQldYRTM5MVE?oc=5",
+      "published_at": "2026-11-07T22:47:55+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Bulls’ Starting Lineup Struggles With No Easy Fix in Sight - BVM Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOV0syRERkWEFSZ3NnSUZUTUtFcUhSaU9lcHJQcUJCMjhaUDFsY2NPWWJoQ182MGpjTFFZRUtsbGUtZHlhczlDdG1qQWtBd3VsMFkzV084M2NhZ044NmhzS3JMRVAxbDNnYlgwVUpYRWlhdTBjZ0tveVY1OVNuQk9jeFJmbEdxaUdUR1RxbHA4eVExREtpTkE?oc=5",
       "published_at": "2026-11-07T22:40:46+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Bulls Practice Notes: A Starting Lineup Change? Josh Giddey Talks Offense, More - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSlhFaWFkbk0tU0NqXy14dXpnOHFNanNxTVpuTXJuNWNSNmRZYURFUktlaHVLTVN1YVRYWjd3NHJMcUdINzBrN2tWWkhjUFpFakJpUkJ4MFpoeTBvUmV5bFFJMG5PUXpSendMSnBPOVE3d1VFbWtUcFBKb01wM3h3TWNKTmdUdW14ZDZ5OFlpMG5OV213QVhVRC00QVZXNU0zclo5SFV6QkVncHc?oc=5",
+      "published_at": "2026-11-07T22:30:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -287,6 +311,14 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Raptors Make Surprise Starting Lineup Decision After Losing 3 Stars vs. Bucks - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNU3ZNdjF5RWo2Qnp3OFlpVlJ6M3BBd0xhdUNIc09JVFJISUdYZER5X1BPVVNlZ3h6Mk1ySXZtSUtQM1JNTXJ0QmtESkREWUtpSi1ZYU5SNFN5aEdpcl9uSWlfVnNOb3RHQmZwbWFfVmxkaUt1UzdiVzVGemViZkhFcVQ0YzlQN1IzR2YxMmh0ZklEa3Qz?oc=5",
+      "published_at": "2026-11-07T03:46:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Why Josh Hart has already been ruled out for Knicks-Cavs game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNLVhJQWhHUS05UkE3SlV4c3JiRWpZdE5xbkdpTmdKOTJRa00yWXhvWGJHN3lucW92S0tpb01LVFFDTlpqQkVCNlRDOFRnVW5LOVR0bE1FOW92b0dBQjVEenRSeFY0WlNCaDZyajlCck9jRXZVYUNZUVlvMGFUdXdaSmpn?oc=5",
       "published_at": "2026-11-07T02:49:00+00:00",
@@ -314,38 +346,6 @@
       "headline": "Cavs’ Jarrett Allen ruled out for NBA Cup showdown with LeBron James’ 76ers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYjVpOURnWW9tUE56bmhuLWxCcEw3a0NxLUNlY01UYUNDUElnS1VMREJLU2p2LUhHZlVCeGtXSndDZm5sS0VHNGxRZWhYR2dkNTRFTG5PWTNnalhlR3NxM19JRVNHMXVLSjE1a2EyU3pvNTNNRlk1QVRZZV9pdmNucklWRQ?oc=5",
       "published_at": "2026-11-07T01:28:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Jalen Johnson Ruled Out Again for Hawks vs. Wizards - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNHg5VXQ4MzlHRllVLXhYb3ZaMlg2WUhjOTk0ajhwZDNzWHNIX2Q0WUJsZ05YTGhGanZNYTlCUXpOOVNublIwaTJrUmE3RkNMRG5DQ1VYWmVKRXVUVHhhSTdNLVdHRWM1UHBoUndmR2EtRXdnd3pOR1g4M2ZNcldrdk96RnV0Z1E?oc=5",
-      "published_at": "2026-11-07T00:56:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "#Cavs will have yet another different starting lineup … - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcVdIZWk4VVV6LXBoaWFzT1FPS3pfLURnemVaMFBVSmFPQUpIeUt5aEVGd2Y4Y0FwTlFYUUNoYzJCeWM0Mms3c3BndlpETmRrV19zOVgwZnI2djh3WkxUdW1BRG00RnRIS09HbkxGZThwdFNuZXhMaFRVcHJfTTExTnFqOGVwRUlQOFVFZg?oc=5",
-      "published_at": "2026-11-07T00:55:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Raptors Make Surprise Starting Lineup Decision After Losing 3 Stars vs. Bucks - Heavy.com",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR3A3RElMVk5VMmtFeWw5cXItSVdDbHg5QTZOUUNhQ1Q1ckVwbGxfMTJvQ1p1RzFva1doMTJrZGpDS1h0anVwOWtZYkczeFVUdXgyZlZsMVY1d3lqQVVubEkxZVpBX3l6YVh6UnMzRndyT21FMmJwSHdKZzE4Q1NlNnZ3OWFYaWZQNGdOWkZ1TjBKYWdsbWtjYlp5Q2ROeTZV?oc=5",
-      "published_at": "2026-11-07T00:49:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "76ers’ Adem Bona ruled out for NBA Cup clash with Cavs - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2XzVMRDBwM0dkYXI5dW1tRVp6bDBYdTdJRENOUDJfMkh1cHFfdDk0T20xbHdIT1g3VGlqWFdBUUV2TDlZSW1oSXFWVlluMHVZRDA3ZWdpb01Da0hqSzJpQVJ4Y3ZlVzhwVE1xbDU4TzZYQkFCdHFKTEc3S1BZdlk?oc=5",
-      "published_at": "2026-11-07T00:44:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
