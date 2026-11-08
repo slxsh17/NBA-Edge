@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T11:10:25.897622+00:00",
+  "checked_at": "2026-11-08T11:59:56.567491+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -88,14 +88,6 @@
       "scope_date": "2026-11-08"
     },
     {
-      "headline": "Jordan Goodwin (calf) ruled out Saturday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPeTc1OTdpMXJVQmV0Zy1iMGRBU2dxTzM2WHM2NWZlR184VjI3VVVteENPZjZxSkNJVmtEaXJoSWZwZU9sNWxWbTRFemhLaDFMQTNNbG1XM1Jici1PX0xRNzBCbWxHdXpYVGstdkZESGFHaDdjYWJMWGJpbmM1Mk1OWVBLcUtCRnhwUWZsTVpLb9IBlAFBVV95cUxQR3QzYUJFb185TV9HZkFzMVFYN3BOay1nWDRkam1GTzNqT0J0NjlHWGFEdHFfb01KUDlDLTZCbHBpRkducEFyakxTVUk2RnY4Y3Z1T0JxYkN1NVZQMEd2alV4eEV6VmJZNGtGWXhxaFAtelRjRC1yQ0tHNEZBc3FsSkVHR1QwaVdTWVlOLWlXS1ZKdUtL?oc=5",
-      "published_at": "2026-11-08T01:36:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
       "headline": "Suns Reveal Starting Lineup for Showdown vs Rockets - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOEotRjBNV3dVVXE2VHhwSDRDcUxqazh6SndCZ3dVUUZ6QmtPdmp3bXpXUW9jVndWb0paNlhHYnVJTFpidnpnMTMybFJqRzR1TmhOTWxKMXljbXNVOUNVYWNjd2FUUno0UGNvTzFiM0p0Sml2N1psRGdGeVhMdUhQU3k2aXZXa0lHcUJjRndR?oc=5",
       "published_at": "2026-11-08T01:33:00+00:00",
@@ -131,14 +123,6 @@
       "headline": "Lakers vs. Pistons Injury Report: Luka Doncic Is Questionable For Premium NBA Matchup - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMTZsQW40OUFXMUVteTNkMGlJaDJOemlUQUR6WTNxcFAxNUhacmh4Mmk3SFF6SWt6ZlNfMUlMSW1lYktkZ2diVFBzYnRGTlpNSHZFbjFvN05RV3d5bVFHZXFiRl9SeUhnbG9FQWs4ZVBaTGgtYWJfdThvcTBVN1FNNHBuRDRDbGM?oc=5",
       "published_at": "2026-11-08T00:14:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Jarrett Allen Ruled Out Again Saturday Versus Knicks - NBA News | Fantasy Basketball - RotoBaller",
-      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQX2tKVS1McVdBTkl1dkRLc2Y1ZC1TU2pxUVJWOEM2NjRxUGpvN0d3aVZ2aW5WNUdJQWdCaUdRVk85bnM3MXdvTDlLMWptT0xHY1RNODM4UjFvdjhMMTVuZjZtZUZTTzcyVXdRLUtlM2xUcFhXTjlqZUl2bjF4NThMVW1rT1ZkM25EX2ZJcUt0YS11SXZvM1Bqa2Z2UEJRWDRN?oc=5",
-      "published_at": "2026-11-07T23:53:16+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -315,6 +299,14 @@
       "headline": "Why Kingston Flemings Should Stay in Hawks’ Starting Lineup Over CJ McCollum - roundtable.io",
       "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcXZNdEJ2bVhnQmVTTTQwSkFldE9RS2Q2SjZxRWhGazc2LWZzWTlKcEI1ZGV6VlVodkJrYnN5S3I1OGh2djBQeEdMUVE5djVKOTVtNXJCeUp0UDh0YjZaR19MTklsTVRXSXQzQ3dIaUFiSEViYUtoc2g1WlQwSXVvRHh3cV9nWG5FcTdOdm40VmdhdUo4c1ZaZDhCS1QzN0N1QkZ1aHluNmhncko5c2w2UDkyX1c1bW9LMFhSLTIyRQ?oc=5",
       "published_at": "2026-11-07T18:33:23+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "Shedeur Sanders to start vs. Saints; Deshaun Watson listed as questionable - The Athletic - The New York Times",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSWp4dEFsVnJYemNHT20xcGVRZlVOMEYxWUlidjBZZkk2UGg4WmRaRWZRQ3hQM1BReXNpN21yWVF4MzNQSnJmMmhNYzNOcHlaWGJzeVNGd3owQUVWUDRvOERUMGo2V0hWT2xnRnN0a0hUNjZBQ1l5SkZnZjJOQkxBY2RZOVA3UThFaF9LN0x2WGRQZw?oc=5",
+      "published_at": "2026-11-07T18:16:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
