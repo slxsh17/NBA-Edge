@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "updated_at": "2026-11-08T19:21:41+00:00",
+ "status": "ok",
+ "paper_only": true,
+ "nights": 0,
+ "picks": {
+  "n": 0,
+  "wins": 0,
+  "losses": 0,
+  "units": 0,
+  "roi": null,
+  "avg_edge": null,
+  "avg_price": null
+ },
+ "brier": {
+  "fanduel_fair": null,
+  "kalshi_mid": null,
+  "nba_edge": null,
+  "contracts": 0
+ },
+ "recent_picks": [],
+ "method": "Paper only. Kalshi NBA player-points contracts vs FanDuel no-vig points lines (fair chance at Kalshi's strike from a negative binomial fitted to FanDuel's line). Pick = buy YES or NO at Kalshi's ask when fair chance - ask - taker fee >= 3 points; $1 risked per pick (fee included). An edge needs FanDuel fair to beat Kalshi mid on Brier and picks to win."
+}
