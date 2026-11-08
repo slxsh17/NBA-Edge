@@ -1,11 +1,76 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T07:46:43.149761+00:00",
+  "checked_at": "2026-11-08T08:37:11.555400+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
-  "lineups": [],
+  "lineups": [
+    {
+      "team": "LAL",
+      "status": "projected",
+      "players": [
+        "L. Doncic",
+        "Austin Reaves",
+        "Z. Williams",
+        "M. Thybulle",
+        "W. Kessler"
+      ],
+      "source": "RotoWire NBA Daily Lineups",
+      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
+      "date": "2026-11-08"
+    },
+    {
+      "team": "BOS",
+      "status": "projected",
+      "players": [
+        "Derrick White",
+        "Hugo Gonzalez",
+        "Jayson Tatum",
+        "Paul George",
+        "Neemias Queta"
+      ],
+      "source": "RotoWire NBA Daily Lineups",
+      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
+      "date": "2026-11-08"
+    },
+    {
+      "team": "MIL",
+      "status": "projected",
+      "players": [
+        "B. Burries",
+        "Tyler Herro",
+        "Jaime Jaquez",
+        "Kyle Kuzma",
+        "Myles Turner"
+      ],
+      "source": "RotoWire NBA Daily Lineups",
+      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
+      "date": "2026-11-08"
+    },
+    {
+      "team": "MIA",
+      "status": "projected",
+      "players": [
+        "D. Mitchell",
+        "Klay Thompson",
+        "A. Wiggins",
+        "G. Antetokounmpo",
+        "Bam Adebayo"
+      ],
+      "source": "RotoWire NBA Daily Lineups",
+      "source_url": "https://www.rotowire.com/basketball/nba-lineups.php",
+      "date": "2026-11-08"
+    }
+  ],
   "headlines": [
+    {
+      "headline": "Warriors Catch Break as Magic Starter Ruled Out Hours Before Game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVFRfQ1plWkV1dHJiT3A3YU9vM3RpSnBTVGhlUFV0QjVyT2hqUlhHMnVFWnBMYk5EWnYyTm5PaGg5a3licTROQk81ekJKWjVxUzktc3FwbDlKOTBUdE0yTG9GalQybmhKSWhZM0pCM0g2TGtuV1ZtWEN3QzhCMkJSSEgxdmxsR2NMMjNz?oc=5",
+      "published_at": "2026-11-08T06:11:03+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
     {
       "headline": "Mikel Brown Jr. Ruled Out Versus Mavericks - NBA News | Fantasy Basketball - RotoBaller",
       "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUWZfSHJQbkdIY3ktZG9Tb1lrTS1wUlpXcnplbFBNdlcxQnZLVGk4QTlmSS1maVc0OEZCNXMyc053MmdOdUpWY0h1WEhVM3JMdEFtUUJiZjZnVUFlMzhuVG1hdXBwRW80bVUzNExCNTNNSUYwcFJoMmlxbTZxOURiRUQ0NE55T05CWjFZWk9NTUVkRXNvbTBSbklKQzZpMHBBWUVzN0ZjWmJrWm02bjhwb2p6U28yOWFpS1FBMGZWRWFqdGs?oc=5",
@@ -58,14 +123,6 @@
       "headline": "Isaiah Jackson Injury: Ruled out for Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTDFzT2RYdV9MQndEdjBaUkpTbWgtWDUwLURRcE5FNnlfRW83dVFDcV82TkRGdmVQN3hxS2ZZZ2dXdkdleUFkOFBYRy1SY1pvN0pDNHRJLUdLOXRYQWZFWGxfS2kxSm5NWDJ6N0d0NFZ0NjNiUDlSRS00QVhiT1BlUjJMaHRoaXhGQ0hRTHEzUDBDTVE0Y1Fuemd2QQ?oc=5",
       "published_at": "2026-11-08T01:03:39+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Anthony Davis Ruled Out Again on Saturday - NBA News | Fantasy Basketball - RotoBaller",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTWQ5TlNIWU1uZnNPSkd5SUkta0gySVBJZl9qcDZITlZfNldoaGZ5UFpPVC1ObFVwa2F5RDd5ODVrQlhyc3BZT0pVaXBraTV4SXhHcFV1TWZMUmowTjhIOE1pYlZBREFoeXR0ejhENU9uVEdmTHR5UTlrYS1xTExqcWhLUTNRMThSZ1FZYV8zbU1HQQ?oc=5",
-      "published_at": "2026-11-08T00:16:13+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -314,14 +371,6 @@
       "headline": "Luka Dončić's best buckets to start the 2026-27 season - NBA.com",
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPamljekljQ2FCaU1JaFRPM3FwdXdKa2xKdWpLNU0yUkZHdjVxRno2WXZhbl9MZ3pjcFRaY0hGV1RidGNobmMxcW9rai14T3BfMGstUHpSUUNxa25ZOHdkUEp5NUZQWnFoN2Y0aGNybnhackFucWdaU1R0blhnRVR2TDFndkhubGZRd2tMMFM0YlRqNEVpR3JyZzVjcWIwMkVNUHlyckMxRlUwaWVsUGFwWXFhbG1wbldrQVE?oc=5",
       "published_at": "2026-11-07T09:09:30+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Javon Small News: Back in rotation Friday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN1ZhTEw1SHpuUi1qYzh5YVZhNjJ4LW1ENDRLN2ZWenVWMFo1cWxkM0xlaGJ5dWU2bnRDb2hsdjBlMG0yTk9yUFhjUnA3NGNCZDd1MmtIV2pLYlhsZUVfVWlSbnBVRkYwaFd2YnNQN3ltSlZoTU12SFRBZGE2WjFrVE1EX1pyRHRxNU1oTy1SUXYzT3Nkb3hYTQ?oc=5",
-      "published_at": "2026-11-07T08:13:45+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
