@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T19:00:08.714105+00:00",
+  "checked_at": "2026-11-08T19:13:08.148831+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -41,6 +41,14 @@
       "headline": "Gary Trent Injury: Downgraded to questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUHJXZTNxVElnY1YxQVBVQU90ZURfN1N2UlVRWHZXN2FFcXRBOTdKTkxZbnZFOHhOb2NzYzRiZXlma0RidVk5QmJWS0VmaWJlSHdGYi0xUUVrZndMTTVpTGNlMnFBTDZJdDNWUzlRVTlyQ0U5WU5keXBYNUpPMm05aThGTDBELUtER1g3QklFRmk1WnNjb0hOaWJmalBlQQ?oc=5",
       "published_at": "2026-11-08T18:23:16+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "Mitchell Robinson Injury: Questionable to play Sunday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQN2VudEdRdGs2ZU9KNzR2cGItV19lUVJMaU1Fd1F5MGF1Wl9yMTBEX0paZ2JkTFFVeE40QjdhMHlUeEtfeUlrY19VSUNwZFZObG9EMmdFSFc2RVR5ZXFNSWhjZlA2dUxVdndwMTE4VjdKdnBwRGhqVllDWUVPTHp5R05yOEZlNDhuNXcxTWx0Z0FnTGk5dGQ2OGhBem1OWTZhN21uSkhKa3Y?oc=5",
+      "published_at": "2026-11-08T18:21:13+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -121,6 +129,14 @@
       "headline": "Bulls Star Questionable, Joel Embiid Probable for 76ers' Game Against Chicago - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdGxKWU82TnE5ZFNGTVRzVmtjMnB6MUNZM0drbHJQYnpRMm5sWjl0S25hd0JkTmJJSENOSm9kcEJwRFI0SHRWZ0EtbGRTbWRHdlk1ejB3cDhsV3hiUkhQMTZhSm9OczNneWdXWWdhYWIzVGVQWllremZEaVRMUERFSTZkajJVNk9YVTJJMw?oc=5",
       "published_at": "2026-11-08T16:10:02+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "’13 years of trust’ – Why Steve Kerr sat Stephen Curry, Draymond Green to start OT in Warriors’ win over Magic - ClutchPoints",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNHRVQmdVLUF1cWNudVp3RjFUanAyb2x2dGpjRXkyYWJOWlc4TEtobFlxZFFOVlNYTVFyVHh6Z3A4SndaX0g5dy1ZLTZxRkNyeWxGMWxwSERBb3YwWmY1SU50MDFhSEZCV2pfb2NkVHFMWkM5Rk1XTFVMV0VoR184Yl9Qb2RVMkI0Wnk4bVhOV25BNm1aaVVDdC1RdndBVmMwNmhjdmREb3VTb1pVVnVTN3FmWVB1bEtFMFBzWg?oc=5",
+      "published_at": "2026-11-08T15:43:31+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -337,14 +353,6 @@
       "headline": "Anthony Davis Injury: Questionable to play Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQUd6MXEyeDlKTkc2NDE3MEsxR1I2SmY2SmJnYTAyVEJ0dEtkWXM0ZXVFcDRnQ1lDVldXMnZ3T3haVW9GREFmWWZzZkJlcnhJYUVEejZIeGRWVWwyWGVhamdwRHUxemJGUEJrZHhuUlYyTVlTRXBVVVBOZjBEaEhhSXpLR0JFUUZNeG1iRHh4ZEZLZnpzTk1HX1JXZFhmN2x1ZHI0VTBB?oc=5",
       "published_at": "2026-11-07T19:13:27+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Noah Clowney (illness) questionable to play Saturday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWjFqbVA0bVR1OElRTWdHR1pEU1VVMGFNbEVUX3VvTXVOU2kyM1JQOWFjUThGdEJMU2E5M2ZCQ2dtVEdadzlOWWc3U0ZtT19STWRRQl8zekVyRFVlOTRGenJSbm1qa1RGRktsQkJPdjZ4SXVEYkttQ1JHZGNJbFF0a2N2NmVoNVFNSUJuand2NERiRUFTN2dkaFlXNEt6dFnSAaQBQVVfeXFMTUhCTG1raC1YSWFIS0dyclBQZ0F6VWY1V1lEeDE5UWp3UGpVN3dLWHVqM2VubnRHYXVtRU55OE03LWJJdXF6aGdVX21scEJIVkN2cWNEWVUzcE51R2xtbWhnS1JTUHBYc19ObDVGU2RuNmtZYWpZMEdFeEJWZFd6TWtiX1doZWFra0s3UXdaY0t6MnlCT2NCTVBmNVg3Rnl3UEtCc1Y?oc=5",
-      "published_at": "2026-11-07T19:01:26+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
