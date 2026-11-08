@@ -1,11 +1,11 @@
 {
  "schema": 1,
- "updated_at": "2026-11-08T04:41:30+00:00",
+ "updated_at": "2026-11-08T05:54:48+00:00",
  "economics": {
   "Double Up": {
-   "contests": 15,
+   "contests": 16,
    "avg_rake_pct": 13.0,
-   "typical_entries": 1034,
+   "typical_entries": 976,
    "fees": [
     2.0
    ],
@@ -13,19 +13,20 @@
    "pays": "2x entry"
   },
   "Penny tournament (Piggy Bank)": {
-   "contests": 31,
-   "avg_rake_pct": 13.4,
+   "contests": 33,
+   "avg_rake_pct": 13.6,
    "typical_entries": 35928,
    "fees": [
     0.05
    ]
   },
   "Tournament": {
-   "contests": 83,
+   "contests": 87,
    "avg_rake_pct": 15.6,
    "typical_entries": 1984,
    "fees": [
     1.0,
+    3.0,
     6.0,
     9.0,
     15.0,

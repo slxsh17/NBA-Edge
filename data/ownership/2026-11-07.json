@@ -1,0 +1,1863 @@
+{
+"schema": 1,
+"date": "2026-11-07",
+"source": "LineStar public FanDuel NBA feed (logged-out view: named players only)",
+"fetched_at": "2026-11-08T05:29:07+00:00",
+"slates": [
+{
+"name": "Main",
+"type": "classic",
+"games": 6,
+"salary_cap": 60000,
+"start_utc": "2026-11-08T00:30:00",
+"contests": [
+{
+"name": "$111K Sat NBA Shot ($20K to 1st)",
+"entries": 14682,
+"fee": 9.0,
+"type": 4,
+"extra": {
+"PeriodId": 2626,
+"SlateId": 30544,
+"ContestType": 4,
+"Site": 2,
+"ContestId": 281443029,
+"GroupId": 136378,
+"Purse": 111000.0,
+"EntryFee": 9.0,
+"EntryCount": 14682,
+"ContestName": "$111K Sat NBA Shot ($20K to 1st)",
+"OwnershipTracked": 891.4000000000002,
+"Mode": 0,
+"Id": 192975
+}
+},
+{
+"name": "$1.5K Sat NBA Big $2 Double Up (Top 375 Win)",
+"entries": 862,
+"fee": 2.0,
+"type": 1,
+"extra": {
+"PeriodId": 2626,
+"SlateId": 30544,
+"ContestType": 1,
+"Site": 2,
+"ContestId": 281443064,
+"GroupId": 136378,
+"Purse": 1500.0,
+"EntryFee": 2.0,
+"EntryCount": 862,
+"ContestName": "$1.5K Sat NBA Big $2 Double Up (Top 375 Win)",
+"OwnershipTracked": 889.3000000000003,
+"Mode": 0,
+"Id": 192976
+}
+},
+{
+"name": "$3K Sat NBA Piggy Bank Shot (150 Entries Max)",
+"entries": 71856,
+"fee": 0.05,
+"type": 4,
+"extra": {
+"PeriodId": 2626,
+"SlateId": 30544,
+"ContestType": 4,
+"Site": 2,
+"ContestId": 281443004,
+"GroupId": 136378,
+"Purse": 3000.0,
+"EntryFee": 0.05,
+"EntryCount": 71856,
+"ContestName": "$3K Sat NBA Piggy Bank Shot (150 Entries Max)",
+"OwnershipTracked": 892.5000000000002,
+"Mode": 0,
+"Id": 192979
+}
+}
+],
+"players": [
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"salary": 12500,
+"position": "C",
+"actual_own": 20.96,
+"linestar_proj_own": 28.2
+},
+{
+"name": "Shai Gilgeous-Alexander",
+"team": "OKC",
+"salary": 10400,
+"position": "PG",
+"actual_own": 27.37,
+"linestar_proj_own": 42.2
+},
+{
+"name": "Jalen Johnson",
+"team": "ATL",
+"salary": 9300,
+"position": "PF",
+"actual_own": 7.83,
+"linestar_proj_own": 13.5
+},
+{
+"name": "Alperen Seng\u00fcn",
+"team": "HOU",
+"salary": 8800,
+"position": "C",
+"actual_own": 47.95,
+"linestar_proj_own": 35.5
+},
+{
+"name": "Deni Avdija",
+"team": "POR",
+"salary": 8600,
+"position": "PF/SF",
+"actual_own": 14.32,
+"linestar_proj_own": 13.9
+},
+{
+"name": "Karl-Anthony Towns",
+"team": "NYK",
+"salary": 8400,
+"position": "C",
+"actual_own": 28.79,
+"linestar_proj_own": 32.4
+},
+{
+"name": "Franz Wagner",
+"team": "ORL",
+"salary": 8300,
+"position": "SF/PF",
+"actual_own": 46.66,
+"linestar_proj_own": 56.4
+},
+{
+"name": "Stephen Curry",
+"team": "GSW",
+"salary": 8200,
+"position": "PG",
+"actual_own": 15.51,
+"linestar_proj_own": 19.9
+},
+{
+"name": "Jalen Brunson",
+"team": "NYK",
+"salary": 8100,
+"position": "PG",
+"actual_own": 19.7,
+"linestar_proj_own": 25.0
+},
+{
+"name": "Devin Booker",
+"team": "PHX",
+"salary": 7900,
+"position": "PG",
+"actual_own": 5.36,
+"linestar_proj_own": 11.6
+},
+{
+"name": "Donovan Mitchell",
+"team": "CLE",
+"salary": 7800,
+"position": "SG",
+"actual_own": 14.77,
+"linestar_proj_own": 26.2
+},
+{
+"name": "Evan Mobley",
+"team": "CLE",
+"salary": 7700,
+"position": "PF/C",
+"actual_own": 13.87,
+"linestar_proj_own": 15.9
+},
+{
+"name": "Trae Young",
+"team": "WAS",
+"salary": 7600,
+"position": "PG",
+"actual_own": 10.23,
+"linestar_proj_own": 10.2
+},
+{
+"name": "Yaxel Lendeborg",
+"team": "GSW",
+"salary": 7500,
+"position": "PF/SF",
+"actual_own": 21.68,
+"linestar_proj_own": 20.3
+},
+{
+"name": "Kevin Durant",
+"team": "HOU",
+"salary": 7400,
+"position": "SF",
+"actual_own": 8.21,
+"linestar_proj_own": 6.5
+},
+{
+"name": "Julius Randle",
+"team": "BKN",
+"salary": 7300,
+"position": "PF",
+"actual_own": 16.24,
+"linestar_proj_own": 14.2
+},
+{
+"name": "Amen Thompson",
+"team": "HOU",
+"salary": 7200,
+"position": "SG/PG",
+"actual_own": 2.92,
+"linestar_proj_own": 5.3
+},
+{
+"name": "Michael Porter",
+"team": "BKN",
+"salary": 7100,
+"position": "SF",
+"actual_own": 19.01,
+"linestar_proj_own": 16.9
+},
+{
+"name": "James Harden",
+"team": "CLE",
+"salary": 7100,
+"position": "PG",
+"actual_own": 3.83,
+"linestar_proj_own": 6.7
+},
+{
+"name": "Damian Lillard",
+"team": "POR",
+"salary": 7000,
+"position": "SG/PG",
+"actual_own": 8.19,
+"linestar_proj_own": 14.6
+},
+{
+"name": "Onyeka Okongwu",
+"team": "ATL",
+"salary": 6900,
+"position": "C",
+"actual_own": 9.27,
+"linestar_proj_own": 18.2
+},
+{
+"name": "Dyson Daniels",
+"team": "ATL",
+"salary": 6800,
+"position": "SF/SG",
+"actual_own": 9.4,
+"linestar_proj_own": 11.9
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"salary": 6800,
+"position": "C",
+"actual_own": 20.42,
+"linestar_proj_own": 22.9
+},
+{
+"name": "Nickeil Alexander-Walker",
+"team": "ATL",
+"salary": 6700,
+"position": "SG",
+"actual_own": 5.52,
+"linestar_proj_own": 11.4
+},
+{
+"name": "Ajay Mitchell",
+"team": "OKC",
+"salary": 6600,
+"position": "SG/PG",
+"actual_own": 25.01,
+"linestar_proj_own": 22.0
+},
+{
+"name": "Dylan Harper",
+"team": "SAS",
+"salary": 6600,
+"position": "SG/SF",
+"actual_own": 10.1,
+"linestar_proj_own": 11.2
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"salary": 6500,
+"position": "PF",
+"actual_own": 11.11,
+"linestar_proj_own": 13.4
+},
+{
+"name": "Stephon Castle",
+"team": "SAS",
+"salary": 6400,
+"position": "SG/PG",
+"actual_own": 22.73,
+"linestar_proj_own": 19.2
+},
+{
+"name": "Anthony Black",
+"team": "ORL",
+"salary": 6300,
+"position": "PG/SG",
+"actual_own": 41.25,
+"linestar_proj_own": 33.2
+},
+{
+"name": "Desmond Bane",
+"team": "ORL",
+"salary": 6200,
+"position": "SG",
+"actual_own": 0.6,
+"linestar_proj_own": null
+},
+{
+"name": "Isaiah Hartenstein",
+"team": "OKC",
+"salary": 6200,
+"position": "C/PF",
+"actual_own": 6.42,
+"linestar_proj_own": 7.6
+},
+{
+"name": "Brandin Podziemski",
+"team": "GSW",
+"salary": 6100,
+"position": "SG",
+"actual_own": 7.46,
+"linestar_proj_own": 13.9
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"salary": 6100,
+"position": "PG",
+"actual_own": 6.63,
+"linestar_proj_own": 10.7
+},
+{
+"name": "Jabari Smith",
+"team": "HOU",
+"salary": 6000,
+"position": "PF",
+"actual_own": 5.28,
+"linestar_proj_own": 5.8
+},
+{
+"name": "Kyshawn George",
+"team": "WAS",
+"salary": 6000,
+"position": "SG",
+"actual_own": 43.29,
+"linestar_proj_own": 22.9
+},
+{
+"name": "OG Anunoby",
+"team": "NYK",
+"salary": 6000,
+"position": "PF/SF",
+"actual_own": 27.24,
+"linestar_proj_own": 24.8
+},
+{
+"name": "AJ Dybantsa",
+"team": "WAS",
+"salary": 5900,
+"position": "SF",
+"actual_own": 19.76,
+"linestar_proj_own": 11.1
+},
+{
+"name": "Alex Sarr",
+"team": "WAS",
+"salary": 5900,
+"position": "C/PF",
+"actual_own": 13.93,
+"linestar_proj_own": 3.8
+},
+{
+"name": "Fred VanVleet",
+"team": "HOU",
+"salary": 5700,
+"position": "PG",
+"actual_own": 4.27,
+"linestar_proj_own": 6.6
+},
+{
+"name": "CJ McCollum",
+"team": "ATL",
+"salary": 5600,
+"position": "SG/PG",
+"actual_own": 1.86,
+"linestar_proj_own": 2.6
+},
+{
+"name": "Wendell Carter",
+"team": "ORL",
+"salary": 5600,
+"position": "C",
+"actual_own": 32.45,
+"linestar_proj_own": 39.3
+},
+{
+"name": "Dillon Brooks",
+"team": "PHX",
+"salary": 5500,
+"position": "SF",
+"actual_own": 7.56,
+"linestar_proj_own": 4.8
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"salary": 5500,
+"position": "SG/PG",
+"actual_own": 4.6,
+"linestar_proj_own": 5.1
+},
+{
+"name": "Jalen Green",
+"team": "PHX",
+"salary": 5400,
+"position": "SG",
+"actual_own": 4.03,
+"linestar_proj_own": 2.6
+},
+{
+"name": "Peyton Watson",
+"team": "CLE",
+"salary": 5300,
+"position": "SF/PF",
+"actual_own": 6.3,
+"linestar_proj_own": 4.1
+},
+{
+"name": "Tari Eason",
+"team": "HOU",
+"salary": 5200,
+"position": "PF/SF",
+"actual_own": 1.75,
+"linestar_proj_own": 2.8
+},
+{
+"name": "Day'Ron Sharpe",
+"team": "BKN",
+"salary": 5100,
+"position": "C",
+"actual_own": 9.82,
+"linestar_proj_own": 4.0
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"salary": 4900,
+"position": "SF",
+"actual_own": 6.0,
+"linestar_proj_own": 6.1
+},
+{
+"name": "Aaron Wiggins",
+"team": "ATL",
+"salary": 4800,
+"position": "SF",
+"actual_own": 2.22,
+"linestar_proj_own": 2.5
+},
+{
+"name": "De'Anthony Melton",
+"team": "GSW",
+"salary": 4700,
+"position": "PG/SG",
+"actual_own": 1.07,
+"linestar_proj_own": 1.0
+},
+{
+"name": "Nolan Traore",
+"team": "BKN",
+"salary": 4600,
+"position": "PG",
+"actual_own": 8.4,
+"linestar_proj_own": 4.1
+},
+{
+"name": "Aday Mara",
+"team": "OKC",
+"salary": 4500,
+"position": "C",
+"actual_own": 15.81,
+"linestar_proj_own": 4.4
+},
+{
+"name": "Draymond Green",
+"team": "GSW",
+"salary": 4500,
+"position": "C",
+"actual_own": 4.54,
+"linestar_proj_own": 9.6
+},
+{
+"name": "Alex Caruso",
+"team": "OKC",
+"salary": 4400,
+"position": "SF",
+"actual_own": 2.63,
+"linestar_proj_own": 1.6
+},
+{
+"name": "Toumani Camara",
+"team": "POR",
+"salary": 4300,
+"position": "SF/PF",
+"actual_own": 7.98,
+"linestar_proj_own": 7.0
+},
+{
+"name": "Khaman Maluach",
+"team": "PHX",
+"salary": 4300,
+"position": "C",
+"actual_own": 0.3,
+"linestar_proj_own": 0.6
+},
+{
+"name": "Reed Sheppard",
+"team": "HOU",
+"salary": 4300,
+"position": "SG",
+"actual_own": 0.62,
+"linestar_proj_own": 1.7
+},
+{
+"name": "Bilal Coulibaly",
+"team": "WAS",
+"salary": 4200,
+"position": "SF",
+"actual_own": 1.85,
+"linestar_proj_own": 1.0
+},
+{
+"name": "Julian Champagnie",
+"team": "SAS",
+"salary": 4200,
+"position": "SF/PF",
+"actual_own": null,
+"linestar_proj_own": 1.0
+},
+{
+"name": "Mikel Brown",
+"team": "BKN",
+"salary": 4200,
+"position": "PG",
+"actual_own": 5.02,
+"linestar_proj_own": 5.4
+},
+{
+"name": "Brandon Williams",
+"team": "GSW",
+"salary": 4200,
+"position": "PG",
+"actual_own": 0.3,
+"linestar_proj_own": 0.5
+},
+{
+"name": "Scoot Henderson",
+"team": "POR",
+"salary": 4100,
+"position": "PG",
+"actual_own": 1.42,
+"linestar_proj_own": 0.7
+},
+{
+"name": "Marcus Smart",
+"team": "HOU",
+"salary": 4100,
+"position": "PG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Mario Hezonja",
+"team": "CLE",
+"salary": 4100,
+"position": "SF",
+"actual_own": 16.51,
+"linestar_proj_own": 5.0
+},
+{
+"name": "Collin Gillespie",
+"team": "PHX",
+"salary": 4100,
+"position": "PG",
+"actual_own": 2.42,
+"linestar_proj_own": 4.8
+},
+{
+"name": "Mikal Bridges",
+"team": "NYK",
+"salary": 4100,
+"position": "SF/SG",
+"actual_own": 11.74,
+"linestar_proj_own": 7.0
+},
+{
+"name": "Jordan Goodwin",
+"team": "PHX",
+"salary": 4100,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Tristan da Silva",
+"team": "ORL",
+"salary": 4100,
+"position": "SF/PF",
+"actual_own": 40.68,
+"linestar_proj_own": 28.4
+},
+{
+"name": "Oso Ighodaro",
+"team": "PHX",
+"salary": 4000,
+"position": "C",
+"actual_own": 4.58,
+"linestar_proj_own": 7.1
+},
+{
+"name": "Kingston Flemings",
+"team": "ATL",
+"salary": 4000,
+"position": "PG",
+"actual_own": 6.17,
+"linestar_proj_own": 3.0
+},
+{
+"name": "Georges Niang",
+"team": "GSW",
+"salary": 4000,
+"position": "PF/SF",
+"actual_own": 0.85,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Charles Bassey",
+"team": "GSW",
+"salary": 4000,
+"position": "C",
+"actual_own": 0.78,
+"linestar_proj_own": 0.4
+},
+{
+"name": "Meleek Thomas",
+"team": "CLE",
+"salary": 4000,
+"position": "SG",
+"actual_own": 2.77,
+"linestar_proj_own": 1.8
+},
+{
+"name": "Deandre Ayton",
+"team": "WAS",
+"salary": 4000,
+"position": "C",
+"actual_own": 3.55,
+"linestar_proj_own": 3.0
+},
+{
+"name": "Andre Drummond",
+"team": "NYK",
+"salary": 4000,
+"position": "C",
+"actual_own": 0.4,
+"linestar_proj_own": 0.4
+},
+{
+"name": "Moritz Wagner",
+"team": "BKN",
+"salary": 4000,
+"position": "C",
+"actual_own": 0.4,
+"linestar_proj_own": 0.6
+},
+{
+"name": "Jase Richardson",
+"team": "ORL",
+"salary": 4000,
+"position": "PG",
+"actual_own": 7.2,
+"linestar_proj_own": 8.7
+},
+{
+"name": "Jared McCain",
+"team": "OKC",
+"salary": 4000,
+"position": "SG",
+"actual_own": 14.88,
+"linestar_proj_own": 12.1
+},
+{
+"name": "Chaney Johnson",
+"team": "BKN",
+"salary": 3900,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Keon Ellis",
+"team": "BKN",
+"salary": 3900,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Luguentz Dort",
+"team": "ATL",
+"salary": 3900,
+"position": "SF/SG",
+"actual_own": 2.5,
+"linestar_proj_own": 1.9
+},
+{
+"name": "Keldon Johnson",
+"team": "SAS",
+"salary": 3900,
+"position": "SF/PF",
+"actual_own": null,
+"linestar_proj_own": 0.8
+},
+{
+"name": "Gui Santos",
+"team": "GSW",
+"salary": 3900,
+"position": "SF",
+"actual_own": 0.3,
+"linestar_proj_own": 0.5
+},
+{
+"name": "Kenrich Williams",
+"team": "OKC",
+"salary": 3900,
+"position": "SF",
+"actual_own": 2.12,
+"linestar_proj_own": 1.9
+},
+{
+"name": "Luke Kennard",
+"team": "PHX",
+"salary": 3900,
+"position": "SG",
+"actual_own": 0.1,
+"linestar_proj_own": 0.2
+},
+{
+"name": "Noah Clowney",
+"team": "BKN",
+"salary": 3800,
+"position": "PF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Sidy Cissoko",
+"team": "POR",
+"salary": 3800,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Oscar Tshiebwe",
+"team": "HOU",
+"salary": 3800,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Luke Kornet",
+"team": "SAS",
+"salary": 3800,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Nikola Vucevic",
+"team": "ORL",
+"salary": 3800,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Al Horford",
+"team": "GSW",
+"salary": 3800,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Landry Shamet",
+"team": "NYK",
+"salary": 3800,
+"position": "SG",
+"actual_own": 1.9,
+"linestar_proj_own": 0.7
+},
+{
+"name": "Will Richard",
+"team": "GSW",
+"salary": 3800,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Zuby Ejiofor",
+"team": "ATL",
+"salary": 3700,
+"position": "C",
+"actual_own": 0.5,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Bennett Stirtz",
+"team": "OKC",
+"salary": 3700,
+"position": "PG",
+"actual_own": 0.3,
+"linestar_proj_own": 0.4
+},
+{
+"name": "Miles McBride",
+"team": "NYK",
+"salary": 3700,
+"position": "PG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Jose Alvarado",
+"team": "NYK",
+"salary": 3700,
+"position": "PG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Thomas Bryant",
+"team": "CLE",
+"salary": 3700,
+"position": "C",
+"actual_own": 0.38,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Danny Wolf",
+"team": "BKN",
+"salary": 3700,
+"position": "PF",
+"actual_own": 3.27,
+"linestar_proj_own": 0.6
+},
+{
+"name": "Bogdan Bogdanovic",
+"team": "HOU",
+"salary": 3700,
+"position": "SF/SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Tre Johnson",
+"team": "WAS",
+"salary": 3700,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.4
+},
+{
+"name": "Tyrese Proctor",
+"team": "CLE",
+"salary": 3700,
+"position": "PG",
+"actual_own": 0.1,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Jamal Cain",
+"team": "ORL",
+"salary": 3700,
+"position": "SF",
+"actual_own": 0.52,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Bub Carrington",
+"team": "WAS",
+"salary": 3700,
+"position": "PG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Ryan Dunn",
+"team": "PHX",
+"salary": 3700,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Tyler Kolek",
+"team": "NYK",
+"salary": 3600,
+"position": "PG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Harrison Barnes",
+"team": "SAS",
+"salary": 3600,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.2
+},
+{
+"name": "Corey Kispert",
+"team": "ATL",
+"salary": 3600,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Gary Payton",
+"team": "GSW",
+"salary": 3600,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Jordan Clarkson",
+"team": "NYK",
+"salary": 3600,
+"position": "SG",
+"actual_own": 0.1,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Jevon Carter",
+"team": "ORL",
+"salary": 3600,
+"position": "PG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Carter Bryant",
+"team": "SAS",
+"salary": 3600,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Craig Porter",
+"team": "CLE",
+"salary": 3500,
+"position": "PG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Branden Carlson",
+"team": "POR",
+"salary": 3500,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Colin Castleton",
+"team": "ORL",
+"salary": 3500,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Chris Youngblood",
+"team": "POR",
+"salary": 3500,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Josh Dix",
+"team": "OKC",
+"salary": 3500,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Terance Mann",
+"team": "BKN",
+"salary": 3500,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Goga Bitadze",
+"team": "ORL",
+"salary": 3500,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Will Riley",
+"team": "WAS",
+"salary": 3500,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Alex Morales",
+"team": "ORL",
+"salary": 3500,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.2
+},
+{
+"name": "Mohamed Diawara",
+"team": "NYK",
+"salary": 3500,
+"position": "PF",
+"actual_own": 0.1,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Micah Peavy",
+"team": "OKC",
+"salary": 3500,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "James Wiseman",
+"team": "NYK",
+"salary": 3500,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Dalton Knecht",
+"team": "NYK",
+"salary": 3500,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.4
+}
+]
+},
+{
+"name": "After Hours",
+"type": "classic",
+"games": 2,
+"salary_cap": 60000,
+"start_utc": "2026-11-08T02:00:00",
+"contests": [
+{
+"name": "$200 Sat NBA Piggy Bank Shot (142 Entries Max)",
+"entries": 4790,
+"fee": 0.05,
+"type": 4,
+"extra": {
+"PeriodId": 2626,
+"SlateId": 30558,
+"ContestType": 4,
+"Site": 2,
+"ContestId": 281443086,
+"GroupId": 136389,
+"Purse": 200.0,
+"EntryFee": 0.05,
+"EntryCount": 4790,
+"ContestName": "$200 Sat NBA Piggy Bank Shot (142 Entries Max)",
+"OwnershipTracked": 893.5999999999999,
+"Mode": 0,
+"Id": 193008
+}
+},
+{
+"name": "$12K Sat NBA Layup ($3K to 1st)",
+"entries": 4761,
+"fee": 3.0,
+"type": 4,
+"extra": {
+"PeriodId": 2626,
+"SlateId": 30558,
+"ContestType": 4,
+"Site": 2,
+"ContestId": 281443091,
+"GroupId": 136389,
+"Purse": 12000.0,
+"EntryFee": 3.0,
+"EntryCount": 4761,
+"ContestName": "$12K Sat NBA Layup ($3K to 1st)",
+"OwnershipTracked": 898.1,
+"Mode": 0,
+"Id": 193010
+}
+}
+],
+"players": [
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"salary": 12500,
+"position": "C",
+"actual_own": 47.1,
+"linestar_proj_own": 61.0
+},
+{
+"name": "Alperen Seng\u00fcn",
+"team": "HOU",
+"salary": 8800,
+"position": "C",
+"actual_own": 78.06,
+"linestar_proj_own": 76.1
+},
+{
+"name": "Deni Avdija",
+"team": "POR",
+"salary": 8600,
+"position": "PF/SF",
+"actual_own": 58.65,
+"linestar_proj_own": 58.0
+},
+{
+"name": "Devin Booker",
+"team": "PHX",
+"salary": 7900,
+"position": "PG",
+"actual_own": 42.56,
+"linestar_proj_own": 40.1
+},
+{
+"name": "Kevin Durant",
+"team": "HOU",
+"salary": 7400,
+"position": "SF",
+"actual_own": 38.19,
+"linestar_proj_own": 29.4
+},
+{
+"name": "Amen Thompson",
+"team": "HOU",
+"salary": 7200,
+"position": "SG/PG",
+"actual_own": 20.69,
+"linestar_proj_own": 26.1
+},
+{
+"name": "Damian Lillard",
+"team": "POR",
+"salary": 7000,
+"position": "SG/PG",
+"actual_own": 35.66,
+"linestar_proj_own": 44.1
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"salary": 6800,
+"position": "C",
+"actual_own": 56.26,
+"linestar_proj_own": 69.8
+},
+{
+"name": "Dylan Harper",
+"team": "SAS",
+"salary": 6600,
+"position": "SG/SF",
+"actual_own": 35.03,
+"linestar_proj_own": 32.4
+},
+{
+"name": "Miles Bridges",
+"team": "PHX",
+"salary": 6500,
+"position": "PF",
+"actual_own": 46.19,
+"linestar_proj_own": 57.2
+},
+{
+"name": "Stephon Castle",
+"team": "SAS",
+"salary": 6400,
+"position": "SG/PG",
+"actual_own": 53.56,
+"linestar_proj_own": 53.8
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"salary": 6100,
+"position": "PG",
+"actual_own": 32.36,
+"linestar_proj_own": 34.0
+},
+{
+"name": "Jabari Smith",
+"team": "HOU",
+"salary": 6000,
+"position": "PF",
+"actual_own": 29.65,
+"linestar_proj_own": 29.6
+},
+{
+"name": "Fred VanVleet",
+"team": "HOU",
+"salary": 5700,
+"position": "PG",
+"actual_own": 26.73,
+"linestar_proj_own": 23.7
+},
+{
+"name": "Dillon Brooks",
+"team": "PHX",
+"salary": 5500,
+"position": "SF",
+"actual_own": 38.7,
+"linestar_proj_own": 42.5
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"salary": 5500,
+"position": "SG/PG",
+"actual_own": 28.65,
+"linestar_proj_own": 16.4
+},
+{
+"name": "Jalen Green",
+"team": "PHX",
+"salary": 5400,
+"position": "SG",
+"actual_own": 27.35,
+"linestar_proj_own": 17.8
+},
+{
+"name": "Tari Eason",
+"team": "HOU",
+"salary": 5200,
+"position": "PF/SF",
+"actual_own": 12.04,
+"linestar_proj_own": 12.9
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"salary": 4900,
+"position": "SF",
+"actual_own": 34.95,
+"linestar_proj_own": 38.7
+},
+{
+"name": "Toumani Camara",
+"team": "POR",
+"salary": 4300,
+"position": "SF/PF",
+"actual_own": 47.11,
+"linestar_proj_own": 44.6
+},
+{
+"name": "Khaman Maluach",
+"team": "PHX",
+"salary": 4300,
+"position": "C",
+"actual_own": 3.7,
+"linestar_proj_own": 1.5
+},
+{
+"name": "Reed Sheppard",
+"team": "HOU",
+"salary": 4300,
+"position": "SG",
+"actual_own": 9.9,
+"linestar_proj_own": 3.0
+},
+{
+"name": "Julian Champagnie",
+"team": "SAS",
+"salary": 4200,
+"position": "SF/PF",
+"actual_own": 8.69,
+"linestar_proj_own": 9.8
+},
+{
+"name": "Scoot Henderson",
+"team": "POR",
+"salary": 4100,
+"position": "PG",
+"actual_own": 9.15,
+"linestar_proj_own": 6.1
+},
+{
+"name": "Marcus Smart",
+"team": "HOU",
+"salary": 4100,
+"position": "PG",
+"actual_own": 2.75,
+"linestar_proj_own": 0.5
+},
+{
+"name": "Collin Gillespie",
+"team": "PHX",
+"salary": 4100,
+"position": "PG",
+"actual_own": 24.87,
+"linestar_proj_own": 27.4
+},
+{
+"name": "Oso Ighodaro",
+"team": "PHX",
+"salary": 4000,
+"position": "C",
+"actual_own": 31.35,
+"linestar_proj_own": 30.5
+},
+{
+"name": "Keldon Johnson",
+"team": "SAS",
+"salary": 3900,
+"position": "SF/PF",
+"actual_own": 8.3,
+"linestar_proj_own": 8.4
+},
+{
+"name": "Luke Kennard",
+"team": "PHX",
+"salary": 3900,
+"position": "SG",
+"actual_own": 1.9,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Sidy Cissoko",
+"team": "POR",
+"salary": 3800,
+"position": "SF",
+"actual_own": 4.2,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Oscar Tshiebwe",
+"team": "HOU",
+"salary": 3800,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Luke Kornet",
+"team": "SAS",
+"salary": 3800,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Bogdan Bogdanovic",
+"team": "HOU",
+"salary": 3700,
+"position": "SF/SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Ryan Dunn",
+"team": "PHX",
+"salary": 3700,
+"position": "SF",
+"actual_own": 3.6,
+"linestar_proj_own": 1.8
+},
+{
+"name": "Harrison Barnes",
+"team": "SAS",
+"salary": 3600,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.2
+},
+{
+"name": "Carter Bryant",
+"team": "SAS",
+"salary": 3600,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Branden Carlson",
+"team": "POR",
+"salary": 3500,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Chris Youngblood",
+"team": "POR",
+"salary": 3500,
+"position": "SG",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Pat Spencer",
+"team": "PHX",
+"salary": 3500,
+"position": "PG",
+"actual_own": 0.1,
+"linestar_proj_own": null
+}
+]
+},
+{
+"name": "DEN @ IND",
+"type": "single",
+"games": 1,
+"salary_cap": 60000,
+"start_utc": "2026-11-07T22:00:00",
+"contests": [
+{
+"name": "$2.5K Sat NBA Shot ($500 to 1st)",
+"entries": 330,
+"fee": 9.0,
+"type": 4,
+"extra": {
+"PeriodId": 2626,
+"SlateId": 30554,
+"ContestType": 4,
+"Site": 2,
+"ContestId": 281443072,
+"GroupId": 136385,
+"Purse": 2500.0,
+"EntryFee": 9.0,
+"EntryCount": 330,
+"ContestName": "$2.5K Sat NBA Shot ($500 to 1st)",
+"OwnershipTracked": 585.1,
+"Mode": 4,
+"Id": 193006
+}
+}
+],
+"players": [
+{
+"name": "Nikola Jokic",
+"team": "DEN",
+"salary": 12000,
+"position": "C",
+"actual_own": 96.4,
+"linestar_proj_own": 91.9
+},
+{
+"name": "Jamal Murray",
+"team": "DEN",
+"salary": 8300,
+"position": "PG",
+"actual_own": 67.6,
+"linestar_proj_own": 65.5
+},
+{
+"name": "Pascal Siakam",
+"team": "IND",
+"salary": 7900,
+"position": "PF",
+"actual_own": 54.5,
+"linestar_proj_own": 49.6
+},
+{
+"name": "Andrew Nembhard",
+"team": "IND",
+"salary": 6900,
+"position": "SG/PG",
+"actual_own": 52.7,
+"linestar_proj_own": 41.7
+},
+{
+"name": "Aaron Gordon",
+"team": "DEN",
+"salary": 5400,
+"position": "PF",
+"actual_own": 29.9,
+"linestar_proj_own": 36.0
+},
+{
+"name": "Ivica Zubac",
+"team": "IND",
+"salary": 5200,
+"position": "C",
+"actual_own": 18.2,
+"linestar_proj_own": 22.6
+},
+{
+"name": "Christian Braun",
+"team": "DEN",
+"salary": 5000,
+"position": "SG/SF",
+"actual_own": 55.5,
+"linestar_proj_own": 43.2
+},
+{
+"name": "Aaron Nesmith",
+"team": "IND",
+"salary": 5000,
+"position": "SF",
+"actual_own": 36.4,
+"linestar_proj_own": 37.5
+},
+{
+"name": "Cameron Johnson",
+"team": "DEN",
+"salary": 4600,
+"position": "SF",
+"actual_own": 41.2,
+"linestar_proj_own": 40.8
+},
+{
+"name": "Obi Toppin",
+"team": "IND",
+"salary": 4600,
+"position": "PF/C",
+"actual_own": 15.2,
+"linestar_proj_own": 18.0
+},
+{
+"name": "Quenton Jackson",
+"team": "IND",
+"salary": 4500,
+"position": "SG",
+"actual_own": 16.5,
+"linestar_proj_own": 2.4
+},
+{
+"name": "Jarace Walker",
+"team": "IND",
+"salary": 4400,
+"position": "PF",
+"actual_own": 5.5,
+"linestar_proj_own": 8.3
+},
+{
+"name": "Jay Huff",
+"team": "IND",
+"salary": 4200,
+"position": "C",
+"actual_own": null,
+"linestar_proj_own": 1.8
+},
+{
+"name": "Kelly Oubre",
+"team": "IND",
+"salary": 4100,
+"position": "SF",
+"actual_own": 5.2,
+"linestar_proj_own": 9.0
+},
+{
+"name": "DeMar DeRozan",
+"team": "DEN",
+"salary": 4100,
+"position": "SF",
+"actual_own": 20.3,
+"linestar_proj_own": 14.5
+},
+{
+"name": "Trevon Brazile",
+"team": "DEN",
+"salary": 4000,
+"position": "PF/SF",
+"actual_own": 12.5,
+"linestar_proj_own": 16.4
+},
+{
+"name": "Jalen Slawson",
+"team": "IND",
+"salary": 3900,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.3
+},
+{
+"name": "Bryce Hopkins",
+"team": "DEN",
+"salary": 3900,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 1.7
+},
+{
+"name": "Braden Smith",
+"team": "IND",
+"salary": 3900,
+"position": "PG",
+"actual_own": 31.7,
+"linestar_proj_own": 5.1
+},
+{
+"name": "Marvin Bagley",
+"team": "DEN",
+"salary": 3800,
+"position": "C",
+"actual_own": 4.6,
+"linestar_proj_own": 2.4
+},
+{
+"name": "T.J. McConnell",
+"team": "IND",
+"salary": 3800,
+"position": "PG",
+"actual_own": 18.8,
+"linestar_proj_own": 9.3
+},
+{
+"name": "Larry Nance",
+"team": "IND",
+"salary": 3700,
+"position": "C",
+"actual_own": 1.5,
+"linestar_proj_own": 0.4
+},
+{
+"name": "Spencer Jones",
+"team": "DEN",
+"salary": 3700,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 1.9
+},
+{
+"name": "Tyus Jones",
+"team": "DEN",
+"salary": 3600,
+"position": "PG",
+"actual_own": 0.9,
+"linestar_proj_own": 0.6
+}
+]
+},
+{
+"name": "SA @ POR",
+"type": "single",
+"games": 1,
+"salary_cap": 60000,
+"start_utc": "2026-11-08T03:00:00",
+"contests": [
+{
+"name": "$20K Sat NBA Shot ($5K to 1st)",
+"entries": 2645,
+"fee": 9.0,
+"type": 4,
+"extra": {
+"PeriodId": 2626,
+"SlateId": 30556,
+"ContestType": 4,
+"Site": 2,
+"ContestId": 281443111,
+"GroupId": 136387,
+"Purse": 20000.0,
+"EntryFee": 9.0,
+"EntryCount": 2645,
+"ContestName": "$20K Sat NBA Shot ($5K to 1st)",
+"OwnershipTracked": 594.0999999999999,
+"Mode": 4,
+"Id": 193007
+}
+}
+],
+"players": [
+{
+"name": "Victor Wembanyama",
+"team": "SAS",
+"salary": 12500,
+"position": "C",
+"actual_own": 88.5,
+"linestar_proj_own": 91.2
+},
+{
+"name": "Deni Avdija",
+"team": "POR",
+"salary": 8600,
+"position": "PF/SF",
+"actual_own": 57.2,
+"linestar_proj_own": 70.2
+},
+{
+"name": "Damian Lillard",
+"team": "POR",
+"salary": 7000,
+"position": "SG/PG",
+"actual_own": 26.0,
+"linestar_proj_own": 46.8
+},
+{
+"name": "Donovan Clingan",
+"team": "POR",
+"salary": 6800,
+"position": "C",
+"actual_own": 38.3,
+"linestar_proj_own": 45.4
+},
+{
+"name": "Dylan Harper",
+"team": "SAS",
+"salary": 6600,
+"position": "SG/SF",
+"actual_own": 39.7,
+"linestar_proj_own": 32.8
+},
+{
+"name": "Stephon Castle",
+"team": "SAS",
+"salary": 6400,
+"position": "SG/PG",
+"actual_own": 56.8,
+"linestar_proj_own": 56.4
+},
+{
+"name": "De'Aaron Fox",
+"team": "SAS",
+"salary": 6100,
+"position": "PG",
+"actual_own": 42.1,
+"linestar_proj_own": 42.3
+},
+{
+"name": "Jrue Holiday",
+"team": "POR",
+"salary": 5500,
+"position": "SG/PG",
+"actual_own": 39.4,
+"linestar_proj_own": 38.9
+},
+{
+"name": "Devin Vassell",
+"team": "SAS",
+"salary": 4900,
+"position": "SF",
+"actual_own": 57.2,
+"linestar_proj_own": 46.5
+},
+{
+"name": "Toumani Camara",
+"team": "POR",
+"salary": 4300,
+"position": "SF/PF",
+"actual_own": 48.8,
+"linestar_proj_own": 47.4
+},
+{
+"name": "Julian Champagnie",
+"team": "SAS",
+"salary": 4200,
+"position": "SF/PF",
+"actual_own": 22.9,
+"linestar_proj_own": 19.6
+},
+{
+"name": "Scoot Henderson",
+"team": "POR",
+"salary": 4100,
+"position": "PG",
+"actual_own": 23.9,
+"linestar_proj_own": 15.4
+},
+{
+"name": "Keldon Johnson",
+"team": "SAS",
+"salary": 3900,
+"position": "SF/PF",
+"actual_own": 17.4,
+"linestar_proj_own": 29.8
+},
+{
+"name": "Sidy Cissoko",
+"team": "POR",
+"salary": 3800,
+"position": "SF",
+"actual_own": 17.5,
+"linestar_proj_own": 8.7
+},
+{
+"name": "Luke Kornet",
+"team": "SAS",
+"salary": 3800,
+"position": "C",
+"actual_own": 8.2,
+"linestar_proj_own": 5.8
+},
+{
+"name": "Harrison Barnes",
+"team": "SAS",
+"salary": 3600,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 1.0
+},
+{
+"name": "Carter Bryant",
+"team": "SAS",
+"salary": 3600,
+"position": "SF",
+"actual_own": null,
+"linestar_proj_own": 0.4
+},
+{
+"name": "Branden Carlson",
+"team": "POR",
+"salary": 3500,
+"position": "C",
+"actual_own": 3.3,
+"linestar_proj_own": null
+},
+{
+"name": "Chris Youngblood",
+"team": "POR",
+"salary": 3500,
+"position": "SG",
+"actual_own": 3.2,
+"linestar_proj_own": 0.6
+},
+{
+"name": "Yang Hansen",
+"team": "POR",
+"salary": 3500,
+"position": "C",
+"actual_own": 3.7,
+"linestar_proj_own": null
+}
+]
+}
+]
+}
