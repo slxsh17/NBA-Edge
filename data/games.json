@@ -1,37 +1,37 @@
 {
   "date": "20261107",
-  "updated_at": "2026-11-07T19:33:00.363019-05:00",
+  "updated_at": "2026-11-07T20:51:08.251067-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
       "away": "Denver Nuggets",
       "home": "Indiana Pacers",
       "time": "2026-11-07T22:00Z",
-      "status": "In Progress"
+      "status": "Final"
     },
     {
       "away": "Brooklyn Nets",
       "home": "Atlanta Hawks",
       "time": "2026-11-08T00:30Z",
-      "status": "Scheduled"
+      "status": "Halftime"
     },
     {
       "away": "New York Knicks",
       "home": "Cleveland Cavaliers",
       "time": "2026-11-08T01:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Washington Wizards",
       "home": "Oklahoma City Thunder",
       "time": "2026-11-08T01:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Orlando Magic",
       "home": "Golden State Warriors",
       "time": "2026-11-08T01:30Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "Houston Rockets",
