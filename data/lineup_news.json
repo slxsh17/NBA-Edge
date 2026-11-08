@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T13:38:28.527134+00:00",
+  "checked_at": "2026-11-08T14:28:15.515022+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -131,6 +131,14 @@
       "headline": "Lakers vs. Pistons Injury Report: Luka Doncic Is Questionable For Premium NBA Matchup - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMTZsQW40OUFXMUVteTNkMGlJaDJOemlUQUR6WTNxcFAxNUhacmh4Mmk3SFF6SWt6ZlNfMUlMSW1lYktkZ2diVFBzYnRGTlpNSHZFbjFvN05RV3d5bVFHZXFiRl9SeUhnbG9FQWs4ZVBaTGgtYWJfdThvcTBVN1FNNHBuRDRDbGM?oc=5",
       "published_at": "2026-11-08T00:14:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "Anthony Davis Injury: Ruled out for Saturday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRDgwTHVhU1Y1TERzVTBVbWs2UVRzRE5QcmZyZjBiLUZXY3pyb1hkNWV3cDJmc2JIa090azV2TDhpN0dfNm83ODFqZGtQeUpsLVVXeGdtNWVxS1QyeVdVV0VGRjZDZERXRTJmckFDREF1T2RUREdjUXZsQUtmN3FZQ2d0WHdnRVR2UmR6a1hpRUlheHA1VjdmSzFjSDc?oc=5",
+      "published_at": "2026-11-07T23:33:38+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -347,14 +355,6 @@
       "headline": "Luka Doncic speaks on how he's having fun amid his historic streak to start the season - Sporting News",
       "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObEhvSGh4eGxBSUtwMjFWU1V2QUNDYzgyZTNkUDJsaktYVmh5MkJuVkRTZTM3dUhGQ2c5blBlLW1RZzBGaG53V0JrS1kxUFZYckJwVmh6ZXdCV0diOVpiSE5rYTYwcWx6c21YVlVwZ2N3NGM2UWUxODVfaFFLclJGNW5zRWF4ckpLZTJSUjhvRUVoalJzeEN6WEZ3ZHBGSEhxeG5jdEYxeVU4Skd5T1hSazlrei1zbjg0ZndITHB2MjV3MkdNZlkwVHdYcTlrYm9LclBhZWdZR29zMFA3d3c?oc=5",
       "published_at": "2026-11-07T15:02:59+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "NBA injury report: Banchero, Haliburton out Saturday, November 7 - TalkBasket.net",
-      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSkFhR3RQcUQ0ZTl2R01XQlZ6RnpBOW53VFI5M2ZSTEY5VlJRMHQ1VFFGeDdkRGpNaDQxMWlyMFF4eURMdzNMYjU5RXVLOXFubTlHT2d4X2lJOWhfZUNtcGxad0pvV2JhbVVqSFd0QzB6UVU0T0dqZWYwTkxkOEpUN2pONmJjMXJqZ05tRTlZQzdlc1BaYm5lcU84QQ?oc=5",
-      "published_at": "2026-11-07T13:52:44+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
