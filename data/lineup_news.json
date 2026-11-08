@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T17:05:17.055807+00:00",
+  "checked_at": "2026-11-08T17:55:22.239839+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -63,6 +63,38 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "One Key Knicks Player Has Quietly Faded Out of the Rotation - roundtable.io",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPN19vZW1OWUNIZmFZdFh2aU1DT0hSQlVlNlI0MnVRZy1SR2NJMFMwX19yUkE1bGVEYkY2WmhqazhVR19wdE9YdGdyWWppVnJ3MThSZlVtX0xfMDB0SWZNdXBIbVBhZC1nQjVsa0dZTjRnSUpuSkpXbXJsd3JzZnFHUGRvT2xuSnJ0OHlUZmQ3S19OTm1WVnkwaDBzSG5mQzN1U19XNkhVOA?oc=5",
+      "published_at": "2026-11-08T17:53:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "Raptors' Scottie Barnes, Immanuel Quickley questionable vs. Grizzlies - Sportsnet.ca",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX3V6ZVBRcVdMbTNLbkY1TUcyek1WYVo2TjNvY2wzQnhEYUlKcXpQV3ZpV1Q2bW1lQW55UkFOR1YzMk1CbFViNEx3d0F6TnVMaGZtRm9fbmctcHhPSXQxQXFzSVg5S0IxV25JcGdfVFJmeG13UnVPbDZjWE9jRE1CQUdvdmwtcXRRLUNhN0VHd2NDWXhwaFQzV1BCZE1JcUx1TFVoSFJDRQ?oc=5",
+      "published_at": "2026-11-08T17:29:00+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "Immanuel Quickley Injury: Questionable for Monday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRExURlNGNzRqbTZ6TV9rdWVLZ3c3RkFBQ21ibXJzdTRKQlhXbFJEdThPUkdORTR3X05PRDJJOFBDNXJpWnpTekx6Y00zbFlyYkJrd0JBZjZaRkwzRF9wbFpzcEkwNVUyMWp6NGFXd3E5VXB0eVBGQWw0ZUdvUXQxck50TFZiS3NULVk3aDFGSXpfeTZiSzdsSXhyWkp5YWNDQjMw?oc=5",
+      "published_at": "2026-11-08T17:14:08+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "Scottie Barnes Injury: Questionable for Monday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcU1JSkExY3hQUGl4RHBWVXllZ1V6V19VdmtFcVRBR0dRclRTS0MwalBTZ3hmaDBvUnk3cFRISVpjallGNWYtSEZHNUMwdk90b3k2WmhDYVNnTnpMYU1jZ0pnY3h1QmlLSE5OSFZmZmN3ZW1KeHpnQ0FFYk9QSFMtbWpuVlJ1U0t6UU04TEd2YWdVR1A2YmxBcjVWRFRKSUk?oc=5",
+      "published_at": "2026-11-08T17:11:54+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
     {
       "headline": "Bulls Injury Update: Norman Powell News, Nic Claxton's Debut? Zach Collins Out - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZS00eWJxVE1GbEs2UEJOd2hwaE52WEtUQnI1MnlhWF9sdGZ2UFhobERaSFUyZ0dzcHdMZXBnMFpOVEx0Ymg3YmJLTlhEMDJvSDlMZ2Q0WDIyM3JyWEh3ZUZ3YUtLaHpmRVJfMUJ5UUJnSFJkUTVIbGg3QkpFNnl3ci15ZlhJaWFLOHl5Q19wTUFYZnByQ3RYc3FYT2pHRnFoTHdwVW1ycG53UEM3bVo4Mw?oc=5",
@@ -224,14 +256,6 @@
       "scope_date": "2026-11-08"
     },
     {
-      "headline": "Luka Doncic listed as questionable against Pistons - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQnlHZ3FjU2xYSFpia3FFTzluelgycE1vLUFrT005REFNUFYzRkptdGJvcEc0dk1Nd0x2WEhsNTRYYTVwTjJRQmJ6dC1QOTVxVlpidVlGdTJyeTFEMlp6LUlZZHAzNFZDRFNZMjR4TkFEUDVYOVE4WGowN003VmpfbmY3X1NkQm85c3lROEp6bHVMZw?oc=5",
-      "published_at": "2026-11-07T22:47:59+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
       "headline": "Isaiah Joe has been ruled out tomorrow. - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MdmJoNEt6OHVDR2syRDNiOE9IMlFVRWNXZXdrR2xNNW1BUEROTTRUUzNOeHpiMlpMZDNYZ1FTeHJxenM1dVFWQTNCTnNVU1NKS2kwWm5qVDQ0ZXhjQUtOQXFweDRXcWVKVmNDTHJRbFM5eUpnUVVPQldYRTM5MVE?oc=5",
       "published_at": "2026-11-07T22:47:55+00:00",
@@ -275,22 +299,6 @@
       "headline": "Luka Doncic Injury: Questionable for Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc3k5Q1NmTmMyaWtiUW1VZzNoRE9fNDljRGszblB5RUR2Wjh6NVZkZC1xNzYwTFJ5czhJREZQMmY5dWdiOG1ySXR3eFJuSjhZOXdVNlkzcWszdTFtWWpSNE51UkVKSl8tTHpxWWt5Z2xSYTh5SzlRY1pwTVhLaGpnU3pvTnFfQndtWkJJMWtHcEhtOUxQQW9WZURCSQ?oc=5",
       "published_at": "2026-11-07T22:11:34+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Sergio De Larrea (knee) ruled out Sunday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYnJUQWFsMjhTcTc3eEFSU0FQcndmU2tnWGFwekUtaU85YUFUSFgzUVhmWE9LNmE0VnRlZ0UtbmMzbUZ6eUxLWFFpMjBjWUdoN0tMWThfNVBvMGdjZDg4enhkSWhWRU9IV2RXY3pzX2xTb2JlRHZMUlJuVWJtZXdTcHFYdGJXZVl2REVZSUVyUdIBlAFBVV95cUxPUVZ0ZEdpT1hYdzJvcnByel9LcWpLRXpKSjUtSWIwZC1Fc1BpZUd6ODFySVB1N09EbFJDSm1ZdnIydFpwQXI2VjJScXNmVnppS3RCbGZUTDR5THc0YmZsNzVjdF9UOWlYSno1QS11c29MQkFpX3NwSWkycEVnT2ZQckVjSFRrLU9hc0hyTGNUOE5BRy05?oc=5",
-      "published_at": "2026-11-07T21:59:43+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Zach Collins (illness) ruled out Sunday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOc1Qwc0k0VWVxTHZTYXZTTm5JaWNJT05CRHVrSG1lLUs3VEdka1FDd1hfREdxWGRuejZzMVhnem8yMUJ3Tll2N05RRkE1X3IyRmw4VWtpbC1KWGJEX3ZNZ0o1VFZiWDl1ZExYdG1DZEZNMTNhX240R0JJenpQVG8zdVh3Q1dTS1lHTTVpeXRR0gGTAUFVX3lxTE5FeDhoOURFMlFFMlhvTXNfRndtMmNPaUoxLWZRMjV6b1g4N1UwXzJ0dzZMcHBqdDdULU01dzJRN0dlNVR4c0xaNWNHV2JCSFNCUmNYVnRLZkllY2pvWVNQNlVIV29IWTZHMjgzd0VyMzJxZWpxeGY4VmliN3I5Y1RRd2tCRC04RFNBdEJSR25xQUJpZw?oc=5",
-      "published_at": "2026-11-07T21:41:25+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
