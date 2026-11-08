@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T15:58:14.417565+00:00",
+  "checked_at": "2026-11-08T16:28:28.159298+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -63,6 +63,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "How Timberwolves' Starting Lineup Matches Up vs. Jazz on Sunday night - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd0NMUi1fREdFWmVUMWZGNjlSZW02U25UWTcyODdzTzFyNlc3NG5CZWwyTEdNS29mRF9vMHJyTXlvWkZLU1RNaVE3MHlHQ0xBUFlXVTE3S1Vya05nbXAxOU54dlZDenBvYVVhZWthZjRBWHAwUjgxTUNlVG15LXVLdzJtQ3FrczVGLWM2Qzc0MEtCTTNnSGRpN0MtUTNOSlBHcFhWUjZENHVpY3J2aUdfc1FJMngzMi15RlZaSXpn?oc=5",
+      "published_at": "2026-11-08T16:22:34+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
     {
       "headline": "Nets’ Egor Dëmin progressing but ruled out against Mavericks; Ben Saraf shines in G League - New York Daily News",
       "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOFBja3Z1Y3ZuUHdrX2NTYmFkMHRWN0llVm1OcjdBbEEzVWV6RVJrUHU5Q0tDRkVIQzV3eVNkTnFBRG1YT2RMVGR5ZG01STZnb3BPcTZIekZZTzctUlBfZm9YSFl2RkNrN1hscXVadmp5a1JMOWJXeEdJV2dXR3Bib1dTTGVfYWcyVFdJbl9ySnVqMnlzVmNEdXZGYVc4XzI1b2pVNVJfMWR6Y2M2dkI1X1BieDlyV1FiY3FxNm5CNkI4UEtqYjdJ?oc=5",
@@ -264,6 +272,14 @@
       "scope_date": "2026-11-08"
     },
     {
+      "headline": "Zach Collins (illness) ruled out Sunday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOc1Qwc0k0VWVxTHZTYXZTTm5JaWNJT05CRHVrSG1lLUs3VEdka1FDd1hfREdxWGRuejZzMVhnem8yMUJ3Tll2N05RRkE1X3IyRmw4VWtpbC1KWGJEX3ZNZ0o1VFZiWDl1ZExYdG1DZEZNMTNhX240R0JJenpQVG8zdVh3Q1dTS1lHTTVpeXRR0gGTAUFVX3lxTE5FeDhoOURFMlFFMlhvTXNfRndtMmNPaUoxLWZRMjV6b1g4N1UwXzJ0dzZMcHBqdDdULU01dzJRN0dlNVR4c0xaNWNHV2JCSFNCUmNYVnRLZkllY2pvWVNQNlVIV29IWTZHMjgzd0VyMzJxZWpxeGY4VmliN3I5Y1RRd2tCRC04RFNBdEJSR25xQUJpZw?oc=5",
+      "published_at": "2026-11-07T21:41:25+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
       "headline": "Warriors Catch Break as Magic Starter Ruled Out Hours Before Game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVFRfQ1plWkV1dHJiT3A3YU9vM3RpSnBTVGhlUFV0QjVyT2hqUlhHMnVFWnBMYk5EWnYyTm5PaGg5a3licTROQk81ekJKWjVxUzktc3FwbDlKOTBUdE0yTG9GalQybmhKSWhZM0pCM0g2TGtuV1ZtWEN3QzhCMkJSSEgxdmxsR2NMMjNz?oc=5",
       "published_at": "2026-11-07T21:40:22+00:00",
@@ -379,14 +395,6 @@
       "headline": "Predicting the Nuggets' Full Rotation Before Spencer Jones' Season Debut - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPby1wLTlidjczN0VyUE5xbFZGOEhJRUVrZ0JqQUFfaG9QZjNaQ0ZtOU5USTRsd2JWMDgwcmFlYzEtNHprQ196VHo0anRXMmZ3WFF1Z28wWkM0Q2FGZ0tYbUtXcnBOemc0Ym5ubU5uVTJGbkNrV2dXRENZMllPcWFDcTFnZDlXNU9OSU50a0xaQkZRU2lGdkJrVWNpUXhTTTVCblpKcWNtaE11UQ?oc=5",
       "published_at": "2026-11-07T18:00:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Why Alijah Martin can join Raptors rotation - Toronto Sun",
-      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMEdtcVR2M2czZ0Z2NmlSaGczMHVWZDhKZnVuT3RyZHdaTUNqVVRrdmtOcktUXzZ3WUVEU1ZrX1NOVFQ1LW94c0E4VkdJZDNvRG5fZGctYlgtZFJ6VVBVeS1rVDRCczZjT1VDOHhwS0VCQ3ktcC1YSG9LODZFSGRVUzR1bmQ4bFVUNEZxS1VMUl9ZRkFLazRYY01FcVJHYTN5MVN1d3Z2NA?oc=5",
-      "published_at": "2026-11-07T16:15:01+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
