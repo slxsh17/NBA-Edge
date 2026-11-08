@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T14:28:15.515022+00:00",
+  "checked_at": "2026-11-08T15:05:35.153443+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -63,6 +63,30 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Warriors’ Stephen Curry Addresses ‘Frustration’ Over Benching to Start Overtime vs. Magic - Heavy.com",
+      "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPV0xCU05WUUtiNWp1UDJqbHRIN0dqUDc1aE41RXA0eXVzdHpVZXcyYWVSczBiX2p0VEZtVC0yTGxiTWlKWE5Gbnp5c1lCWmVpMFVSZGxEUmd6cEJ6OFpVUzNPQWE2NVg2MU9rOEQyZ0MzaFAwQW9NRWtXdzNsRVpwNGxQYzBQTmt4ZXhwZDI5ZEUyRG9qaGZqRHE2WWRxX1lsZjUzcC01T05PV2pWZUNYQ0o5SEpLdEhjQVBlNnpxOHNoeWxobTBvRE1hLVNXYTBnR01F?oc=5",
+      "published_at": "2026-11-08T14:43:25+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "The One Rotation Change the Heat Needs to Make - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNmxJLS16bzh3X21nVnBqb0xENjJNR2hmOXR1a2RzekF5a09qRzJYa3plZEZ1SjBiZ2JEUFYyS3FsUHNlSEFDN2xHdkhCMUEyQTVsWlFUNDJOeFFOOEZBdEk3X2xHZ1lkZ0lRSm1xUWpYcjU2dy1ieFZkTDBvV0pwaTAwZ1NTbWplWXUzVi16VUpKMG9rQ3pv?oc=5",
+      "published_at": "2026-11-08T14:41:49+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "Frank Vogel details Warriors' defensive growth to start 2026-27 NBA season - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWUx4WFlmdEhxd0R5NFhJQ3V3RF8xNlk4d1dETUNWSU5LYkFCZmlTVDhZdDBDOWhscHh0al9xenZxOXQxUFE3YTRKMm1ReVhoWkNhX2x3YVBoRTFNRmhGX25QMU1TY0RSQUpQNm05UkNRcVdIT2FKMGltcWt5dzRxc0FJekQyQkI2R1FUVmZSZWI1MF9uY29iVl85cW5XU0E?oc=5",
+      "published_at": "2026-11-08T13:48:32+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
     {
       "headline": "Steph Curry and Draymond Green stayed on the bench to start overtime. It paid off - The New York Times",
       "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdDBscVE4RGhsdjl0UGJsVjhhZm9MZllvd0lCUWdpNE5uc0RpdHM2VFdxdU83ZFVxQTY0bWwtM295TlYxZmFzazdZYkZWR3lvakRQbGtYaldOM0xyUU95eTdmaE5uaHFRRWw3YVdlMTVobmg1aW9ldmdHMnJaNkdENUpIYnlsNEtJdGJfQ0tuQm9zWFQ3ZWtIa1pzT0ZuTEJES2c?oc=5",
@@ -163,6 +187,14 @@
       "headline": "Raptors Have One Rotation Adjustment to Consider After Bucks Win - Sports Illustrated",
       "source_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNE56RzdIdjlPQ19oQ0xYTVdTcERFeEF2bF9LdkdpYkhhTDBDOWEzNFVRRlQxWk1TTEowQmdkdTBEb0dCdjlDMV9JVm1INVhGZFFBdTBodWdnVlRmby1iVDlSZGVoa1FPR3pFQWJ5Y2VnM3ZlYmc3dzQ5Ymg3cW01Q3lpeVZtNW9WczVMR3VuVTJBXzUyZTNsbmJaNEw?oc=5",
       "published_at": "2026-11-07T23:00:01+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
+      "headline": "Luka Doncic listed as questionable against Pistons - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQnlHZ3FjU2xYSFpia3FFTzluelgycE1vLUFrT005REFNUFYzRkptdGJvcEc0dk1Nd0x2WEhsNTRYYTVwTjJRQmJ6dC1QOTVxVlpidVlGdTJyeTFEMlp6LUlZZHAzNFZDRFNZMjR4TkFEUDVYOVE4WGowN003VmpfbmY3X1NkQm85c3lROEp6bHVMZw?oc=5",
+      "published_at": "2026-11-07T22:47:59+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -347,14 +379,6 @@
       "headline": "Noah Clowney Injury: Questionable for Saturday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYl93Nkp5SG1kVXpwS2dxTHd4RXhWUV9KaEdDc0hsSmZMLV9DWmhWU1lHUXhXcEdrTHJFWlNKRVhEZ3UwcnMzS1V2a2phOFNGcGxYUjF6T3JwcHY0OGhhcUxfajBmaG44S1J2MUFxZDN2RG1RTllLS2hvRHJ4aTUxYmIwRXp5cUozQ0VpRk52NzlnZXBtRXVZcDlsNzRyWXc?oc=5",
       "published_at": "2026-11-07T15:19:26+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Luka Doncic speaks on how he's having fun amid his historic streak to start the season - Sporting News",
-      "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObEhvSGh4eGxBSUtwMjFWU1V2QUNDYzgyZTNkUDJsaktYVmh5MkJuVkRTZTM3dUhGQ2c5blBlLW1RZzBGaG53V0JrS1kxUFZYckJwVmh6ZXdCV0diOVpiSE5rYTYwcWx6c21YVlVwZ2N3NGM2UWUxODVfaFFLclJGNW5zRWF4ckpLZTJSUjhvRUVoalJzeEN6WEZ3ZHBGSEhxeG5jdEYxeVU4Skd5T1hSazlrei1zbjg0ZndITHB2MjV3MkdNZlkwVHdYcTlrYm9LclBhZWdZR29zMFA3d3c?oc=5",
-      "published_at": "2026-11-07T15:02:59+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
