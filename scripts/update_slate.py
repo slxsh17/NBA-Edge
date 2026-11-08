@@ -137,20 +137,33 @@ def b36(n):
 
 
 def next_id(sid):
-    """DFF slate IDs: the last character counts 0-9, then carries into the rest (base 36).
-    e.g. 212A3 -> 212A4, 21309 -> 21310."""
-    head, last = sid[:-1], sid[-1]
-    if last.isdigit() and last != '9':
-        return head + str(int(last) + 1)
-    return b36(int(head, 36) + 1) + '0'
+    """DFF slate IDs are base 36 all the way down: Nov 8 had 214D3, 214D5, 214DB-214DF. (Counting
+    the last character 0-9 skipped 214DA-214DZ and lost five slates.) Only the fallback scan uses this;
+    slate_list() reads DFF's own list."""
+    return b36(int(sid, 36) + 1).rjust(len(sid), '0')
 
 
 def prev_id(sid):
-    """Inverse of next_id: 21360 -> 21359, 212A4 -> 212A3."""
-    head, last = sid[:-1], sid[-1]
-    if last.isdigit() and last != '0':
-        return head + str(int(last) - 1)
-    return b36(int(head, 36) - 1) + '9'
+    return b36(int(sid, 36) - 1).rjust(len(sid), '0')
+
+
+def slate_list(day, sid=''):
+    """Every FanDuel slate DFF lists for the day, from the feed its own slate picker loads
+    (/data/slates/recent/...): [{'url': id, 'slate_type': 'Main'|'Express'|'PHI @ CHI'..., 'showdown_flag',
+    'game_count', 'team_count', 'start_hhmm'}]. Empty if the feed is unavailable."""
+    import json
+    url = f'https://www.dailyfantasyfuel.com/data/slates/recent/nba/fanduel?date={day}' + (f'&url={sid}' if sid else '')
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) NBA-EDGE-personal',
+                                                   'Accept': 'application/json', 'X-Requested-With': 'XMLHttpRequest'})
+        with urllib.request.urlopen(req, timeout=30) as res:
+            doc = json.loads(res.read().decode('utf-8', 'replace'))
+    except Exception as e:
+        print(f'::warning::DFF slate list unavailable ({e}); scanning slate IDs instead')
+        return []
+    days = {d.get('start_date') for d in doc.get('dates') or []}
+    out = [x for x in doc.get('slates') or [] if x.get('url')]
+    return out if day in days or not days else []
 
 
 MAIN_URL = 'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/?slate={sid}'
@@ -162,7 +175,7 @@ def find_main(day, page):
     the page links to, then neighbouring IDs (DFF numbers a day's slates consecutively)."""
     import time
     start = page_var(page, 'url')
-    cands = []
+    cands = [x['url'] for x in slate_list(day, start) if x.get('slate_type') == 'Main' and not x.get('showdown_flag')]
     for sid in re.findall(r'[?&]slate=([0-9A-Za-z]{4,8})', page):
         if sid != start and sid not in cands:
             cands.append(sid)
@@ -261,6 +274,23 @@ def scan_slates(day, main_page, before=3, after=45, stop_after=15):
     start = page_var(main_page, 'url')
     if not start:
         return [], []
+    listed = slate_list(day, start)
+    if listed:
+        singles, sides = [], []
+        for x in listed:
+            if x['url'] == start:
+                continue
+            try:
+                page = fetch(MAIN_URL.format(day=day, sid=x['url']))
+            except Exception as e:
+                print(f"::warning::slate {x['url']} ({x.get('slate_type')}): {e}")
+                continue
+            time.sleep(0.7)
+            load_slate(day, x['url'], x.get('slate_type') or page_var(page, 'slate') or '?',
+                       '2' if x.get('showdown_flag') else str(x.get('team_count') or page_var(page, 'team_count')),
+                       page, singles, sides)
+        print(f"DFF lists {len(listed)} FanDuel slates: " + ', '.join(f"{x.get('slate_type')} {x.get('start_hhmm')}" for x in listed))
+        return order(singles, sides)
     sid = start
     for _ in range(before):
         sid = prev_id(sid)
@@ -281,30 +311,34 @@ def scan_slates(day, main_page, before=3, after=45, stop_after=15):
                     break
             else:
                 misses = 0
-                label, teams = page_var(page, 'slate') or '?', page_var(page, 'team_count')
-                try:
-                    if teams == '2':
-                        players = parse(fetch(SG_URL.format(day=day, sid=sid)), day, strict_main=False, min_players=8, min_salary=500)
-                        games = build_games(players, day)
-                        if len(games) == 1:
-                            g = games[0]
-                            singles.append({'id': sid, 'label': f"{g['away']} @ {g['home']}", **g,
-                                            'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
-                                                         'position': p['position'], 'salary': p['salary'], 'status': p['status'],
-                                                         'ext_proj': p['_ext']} for p in players]})
-                    elif label != 'Main':
-                        players = parse(page, day, strict_main=False, min_players=8)
-                        games = build_games(players, day)
-                        sides.append({'id': sid, 'label': label, 'games': games,
-                                      'players': [{'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
-                                                   'position': p['position'], 'salary': p['salary'], 'status': p['status'],
-                                                   'ext_proj': p['_ext']} for p in players]})
-                except Exception as e:
-                    print(f'::warning::slate {sid} ({label}): {e}')
+                load_slate(day, sid, page_var(page, 'slate') or '?', page_var(page, 'team_count'), page, singles, sides)
         sid = next_id(sid)
+    return order(singles, sides)
+
+
+def order(singles, sides):
     first = lambda g: min((x.get('time') or '9') for x in g) if g else '9'
     return (sorted(singles, key=lambda x: (x['time'] or '9', x['label'])),
             sorted(sides, key=lambda x: (first(x['games']), x['label'])))
+
+
+def load_slate(day, sid, label, teams, page, singles, sides):
+    """One non-Main slate: a single game (2 teams; DFF's showdown page has its salaries) or another
+    classic slate (All Day, Express, After Hours, Turbo...)."""
+    row = lambda p: {'name': p['name'], 'team': p['team'], 'opp': p['_opp'], 'home': p['_home'],
+                     'position': p['position'], 'salary': p['salary'], 'status': p['status'], 'ext_proj': p['_ext']}
+    try:
+        if teams == '2':
+            players = parse(fetch(SG_URL.format(day=day, sid=sid)), day, strict_main=False, min_players=8, min_salary=500)
+            games = build_games(players, day)
+            if len(games) == 1:
+                g = games[0]
+                singles.append({'id': sid, 'label': f"{g['away']} @ {g['home']}", **g, 'players': [row(p) for p in players]})
+        elif label != 'Main':
+            players = parse(page, day, strict_main=False, min_players=8)
+            sides.append({'id': sid, 'label': label, 'games': build_games(players, day), 'players': [row(p) for p in players]})
+    except Exception as e:
+        print(f'::warning::slate {sid} ({label}): {e}')
 
 
 def write_sides(day, sides):
