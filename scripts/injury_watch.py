@@ -22,12 +22,17 @@ from zoneinfo import ZoneInfo
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 import build_slate as BS  # noqa: E402
+import health  # noqa: E402
 
 POLL = 60
 NEWS_EVERY = 300
 NEWS_FROM = 4 * 3600       # starters/headlines from 4 hours before the first tip
 MAX_RUN = 5 * 3600 + 40 * 60
 AFTER_LAST = 10 * 60
+HEALTH_EVERY = 600          # site/heartbeat checks every 10 minutes
+STALE_AFTER = 120 * 60      # the pipeline refreshes the slate at least hourly; 2 hours means it's stuck
+SITE_LAG = 12 * 60          # a deploy normally lands in 1-3 minutes
+REDEPLOY_EVERY = 45 * 60
 COMMIT = ['data/today.json', 'data/injuries.json', 'data/lineup_news.json', 'data/alerts.json']
 
 
@@ -78,8 +83,43 @@ def publish(why):
     return False
 
 
+def check_health(today, now, T, state):
+    """Stale data (pipeline stuck) and a live site stuck behind the repo (Pages deploy hung):
+    redeploy once with an empty commit, then push an alarm if it's still behind."""
+    day = today['date']
+    slate = BS.read(f'slate_{day}.json')
+    try:
+        age = (now - dt.datetime.fromisoformat(slate['fetched_at'])).total_seconds()
+    except (KeyError, ValueError, TypeError):
+        age = None
+    if age is not None and age > STALE_AFTER and now >= T[0] - dt.timedelta(hours=8):
+        health.alarm(day, 'stale', f'NBA EDGE data is {int(age // 60)} min old',
+                     'The pipeline has not refreshed the slate in over 2 hours, so salaries, news and projections may be out of date.', persist=False)
+    live = health.live_built_at()
+    repo = today.get('built_at')
+    if not (live and repo and live < repo):
+        return
+    r = sh('git', 'log', '-1', '--format=%cI', '--', 'data/today.json')
+    try:
+        committed = dt.datetime.fromisoformat(r.stdout.strip())
+    except ValueError:
+        return
+    behind = (now - committed).total_seconds()
+    if behind < SITE_LAG:
+        return
+    if time.time() - state.get('redeployed', 0) > REDEPLOY_EVERY:
+        sh('git', 'commit', '-q', '--allow-empty', '-m', f'Redeploy Pages (live site {int(behind // 60)} min behind)')
+        if sh('git', 'push', '-q', 'origin', 'HEAD:main').returncode == 0:
+            state['redeployed'] = time.time()
+            print(f'{now:%H:%M}Z live site {int(behind // 60)} min behind; pushed a redeploy')
+            return
+    health.alarm(day, 'pages', f'Live site is {int(behind // 60)} min behind',
+                 'GitHub Pages has not published the latest projections even after a redeploy. The app may show old injuries.', persist=False)
+
+
 def main():
     start = time.time()
+    hstate = {'last': 0.0}
     last_news = 0.0
     tried = None   # news fingerprint we last rebuilt for (a rebuild that changed nothing isn't retried)
     sh('git', 'config', 'user.name', 'github-actions[bot]')
@@ -106,6 +146,9 @@ def main():
             if time.time() - last_news >= NEWS_EVERY and now >= T[0] - dt.timedelta(seconds=NEWS_FROM):
                 py('update_lineup_news.py', timeout=150)
                 last_news = time.time()
+            if time.time() - hstate['last'] >= HEALTH_EVERY:
+                hstate['last'] = time.time()
+                check_health(today, now, T, hstate)
             teams = {p['team'] for p in today.get('players', [])}
             sig = BS.news_sig(today['date'], teams)
             pub = (today.get('sources') or {}).get('news_sig')

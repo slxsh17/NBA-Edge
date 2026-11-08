@@ -168,6 +168,7 @@ def slate_list(day, sid=''):
 
 MAIN_URL = 'https://www.dailyfantasyfuel.com/nba/projections/fanduel/{day}/?slate={sid}'
 LISTED = False   # set when scan_slates read DFF's slate list
+LISTED_SLATES = []
 
 
 def find_main(day, page):
@@ -276,8 +277,8 @@ def scan_slates(day, main_page, before=3, after=45, stop_after=15):
     if not start:
         return [], []
     listed = slate_list(day, start)
-    global LISTED
-    LISTED = bool(listed)
+    global LISTED, LISTED_SLATES
+    LISTED, LISTED_SLATES = bool(listed), listed
     if listed:
         singles, sides = [], []
         for x in listed:
@@ -461,8 +462,13 @@ def main():
                 return 0
         except (OSError, ValueError):
             pass
-        # Fail the workflow (red X in GitHub Actions) so a broken source is visible.
+        # Fail the workflow (red X in GitHub Actions) so a broken source is visible, and push.
         print(f'::error::No slate published for {day}: {e}')
+        try:
+            import health
+            health.alarm(day, 'main', 'No Main slate published', f'{e}'[:300] + ' The site is showing the last good slate.')
+        except Exception:
+            pass
         return 1
     games = build_games(players, day)
     buf = io.StringIO()
@@ -487,8 +493,16 @@ def main():
         print(f'Other classic slates: {", ".join(x["label"] + " (" + str(len(x["games"])) + " games)" for x in sides) or "none"}')
         if not singles:
             print('::notice::DFF lists no FanDuel single-game slates today; use "Use my CSV" with FanDuel\'s player list for single games')
+        import health
+        health.slate_coverage(day, LISTED_SLATES if LISTED else None, page_var(main_page, 'url'), singles, sides,
+                              [(g['away'], g['home']) for g in games], list(game_times(day)))
     except Exception as e:
         print(f'::warning::slate discovery failed: {e}')
+        try:
+            import health
+            health.alarm(day, 'discovery', 'Slate discovery failed', f'{e}'[:300] + ' Only Main is up; other slates and single games may be missing.')
+        except Exception:
+            pass
     outs = sum(p['status'] == 'OUT' for p in players)
     print(f'Published {out.name}: {len(players)} players, {len({p["team"] for p in players})} teams, {outs} OUT')
     return 0
