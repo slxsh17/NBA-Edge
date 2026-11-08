@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T15:05:35.153443+00:00",
+  "checked_at": "2026-11-08T15:58:14.417565+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -63,6 +63,14 @@
     }
   ],
   "headlines": [
+    {
+      "headline": "Nets’ Egor Dëmin progressing but ruled out against Mavericks; Ben Saraf shines in G League - New York Daily News",
+      "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOFBja3Z1Y3ZuUHdrX2NTYmFkMHRWN0llVm1OcjdBbEEzVWV6RVJrUHU5Q0tDRkVIQzV3eVNkTnFBRG1YT2RMVGR5ZG01STZnb3BPcTZIekZZTzctUlBfZm9YSFl2RkNrN1hscXVadmp5a1JMOWJXeEdJV2dXR3Bib1dTTGVfYWcyVFdJbl9ySnVqMnlzVmNEdXZGYVc4XzI1b2pVNVJfMWR6Y2M2dkI1X1BieDlyV1FiY3FxNm5CNkI4UEtqYjdJ?oc=5",
+      "published_at": "2026-11-08T15:25:28+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
     {
       "headline": "Warriors’ Stephen Curry Addresses ‘Frustration’ Over Benching to Start Overtime vs. Magic - Heavy.com",
       "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPV0xCU05WUUtiNWp1UDJqbHRIN0dqUDc1aE41RXA0eXVzdHpVZXcyYWVSczBiX2p0VEZtVC0yTGxiTWlKWE5Gbnp5c1lCWmVpMFVSZGxEUmd6cEJ6OFpVUzNPQWE2NVg2MU9rOEQyZ0MzaFAwQW9NRWtXdzNsRVpwNGxQYzBQTmt4ZXhwZDI5ZEUyRG9qaGZqRHE2WWRxX1lsZjUzcC01T05PV2pWZUNYQ0o5SEpLdEhjQVBlNnpxOHNoeWxobTBvRE1hLVNXYTBnR01F?oc=5",
@@ -248,6 +256,14 @@
       "scope_date": "2026-11-08"
     },
     {
+      "headline": "Sergio De Larrea (knee) ruled out Sunday - FantasyPros",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYnJUQWFsMjhTcTc3eEFSU0FQcndmU2tnWGFwekUtaU85YUFUSFgzUVhmWE9LNmE0VnRlZ0UtbmMzbUZ6eUxLWFFpMjBjWUdoN0tMWThfNVBvMGdjZDg4enhkSWhWRU9IV2RXY3pzX2xTb2JlRHZMUlJuVWJtZXdTcHFYdGJXZVl2REVZSUVyUdIBlAFBVV95cUxPUVZ0ZEdpT1hYdzJvcnByel9LcWpLRXpKSjUtSWIwZC1Fc1BpZUd6ODFySVB1N09EbFJDSm1ZdnIydFpwQXI2VjJScXNmVnppS3RCbGZUTDR5THc0YmZsNzVjdF9UOWlYSno1QS11c29MQkFpX3NwSWkycEVnT2ZQckVjSFRrLU9hc0hyTGNUOE5BRy05?oc=5",
+      "published_at": "2026-11-07T21:59:43+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
       "headline": "Warriors Catch Break as Magic Starter Ruled Out Hours Before Game - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVFRfQ1plWkV1dHJiT3A3YU9vM3RpSnBTVGhlUFV0QjVyT2hqUlhHMnVFWnBMYk5EWnYyTm5PaGg5a3licTROQk81ekJKWjVxUzktc3FwbDlKOTBUdE0yTG9GalQybmhKSWhZM0pCM0g2TGtuV1ZtWEN3QzhCMkJSSEgxdmxsR2NMMjNz?oc=5",
       "published_at": "2026-11-07T21:40:22+00:00",
@@ -371,14 +387,6 @@
       "headline": "Why Alijah Martin can join Raptors rotation - Toronto Sun",
       "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMEdtcVR2M2czZ0Z2NmlSaGczMHVWZDhKZnVuT3RyZHdaTUNqVVRrdmtOcktUXzZ3WUVEU1ZrX1NOVFQ1LW94c0E4VkdJZDNvRG5fZGctYlgtZFJ6VVBVeS1rVDRCczZjT1VDOHhwS0VCQ3ktcC1YSG9LODZFSGRVUzR1bmQ4bFVUNEZxS1VMUl9ZRkFLazRYY01FcVJHYTN5MVN1d3Z2NA?oc=5",
       "published_at": "2026-11-07T16:15:01+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Noah Clowney Injury: Questionable for Saturday - RotoWire",
-      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYl93Nkp5SG1kVXpwS2dxTHd4RXhWUV9KaEdDc0hsSmZMLV9DWmhWU1lHUXhXcEdrTHJFWlNKRVhEZ3UwcnMzS1V2a2phOFNGcGxYUjF6T3JwcHY0OGhhcUxfajBmaG44S1J2MUFxZDN2RG1RTllLS2hvRHJ4aTUxYmIwRXp5cUozQ0VpRk52NzlnZXBtRXVZcDlsNzRyWXc?oc=5",
-      "published_at": "2026-11-07T15:19:26+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
