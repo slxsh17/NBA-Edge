@@ -270,6 +270,7 @@ details summary{cursor:pointer}
   <button role="tab" aria-selected="false" data-tab="props">Props</button>
   <button role="tab" aria-selected="false" data-tab="players">Players</button>
   <button role="tab" aria-selected="false" data-tab="accuracy">Accuracy</button>
+  <button role="tab" aria-selected="false" data-tab="tracker">Tracker</button>
 </nav>
 
 <main>
@@ -305,6 +306,11 @@ details summary{cursor:pointer}
     <section class="panel" data-view="accuracy" aria-labelledby="h-acc">
       <h2 id="h-acc">How accurate is it?</h2>
       <div id="accuracy"><div class="empty">Loading the accuracy report…</div></div>
+    </section>
+
+    <section class="panel" data-view="tracker" aria-labelledby="h-tracker">
+      <h2 id="h-tracker">Your money</h2>
+      <div id="tracker"><div class="empty">Loading your results…</div></div>
     </section>
   </div>
 
@@ -423,8 +429,8 @@ async function getJSON(file){const r=await fetch('data/'+file+'?m='+Math.floor(D
 
 // ---------- data ----------
 async function load(){
-  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch,me,pr,ppr]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json'),getJSON('my_entries.json'),getJSON('portfolio_results.json'),getJSON('props_results.json')]);
-  S.ppr=ppr.status==='fulfilled'?ppr.value:null;S.pps=undefined;
+  const [today,acc,inj,lw,mp,op,mr,al,st,lr,cs,ch,me,pr,ppr,mb]=await Promise.allSettled([getJSON('today.json'),getJSON('accuracy.json'),getJSON('injuries.json'),getJSON('learned_weights.json'),getJSON('model_params.json'),getJSON('ownership_params.json'),getJSON('my_results.json'),getJSON('alerts.json'),getJSON('strategy.json'),getJSON('lineup_results.json'),getJSON('contest_sims.json'),getJSON('contest_history.json'),getJSON('my_entries.json'),getJSON('portfolio_results.json'),getJSON('props_results.json'),getJSON('my_bets.json')]);
+  S.ppr=ppr.status==='fulfilled'?ppr.value:null;S.mb=mb.status==='fulfilled'?mb.value:null;S.pps=undefined;
   S.lw=lw.status==='fulfilled'?lw.value:null;S.mp=mp.status==='fulfilled'?mp.value:null;S.op=op.status==='fulfilled'?op.value:null;S.mr=mr.status==='fulfilled'?mr.value:null;S.al=al.status==='fulfilled'?al.value:null;S.st=st.status==='fulfilled'?st.value:null;S.lr=lr.status==='fulfilled'?lr.value:null;S.cs=cs.status==='fulfilled'?cs.value:null;S.ch=ch.status==='fulfilled'?ch.value:null;S.me=me.status==='fulfilled'?me.value:null;S.pr=pr.status==='fulfilled'?pr.value:null;S.csIdx=null;
   S.today=today.status==='fulfilled'?today.value:null;
   S.acc=acc.status==='fulfilled'?acc.value:null;
@@ -1288,11 +1294,11 @@ $('build').onclick=build;
 // ---------- accuracy ----------
 function renderAccuracy(){
   const box=$('accuracy'),a=S.acc;
-  if(!a||!a.summary_7d){box.innerHTML=resultsHTML()+lineupsHTML()+portfolioHTML()+propsHTML()+strategyHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
+  if(!a||!a.summary_7d){box.innerHTML=lineupsHTML()+portfolioHTML()+propsHTML()+strategyHTML()+'<div class="empty">The first report card appears the morning after the first slate is graded.</div>';return}
   const s=a.summary_7d,beat=s.naive_mae&&s.mae<s.naive_mae;
   const days=a.days.slice(-7),maxv=Math.max(...days.map(d=>Math.max(d.mae,d.naive_mae||0)),1);
   const last=a.days[a.days.length-1];
-  box.innerHTML=resultsHTML()+lineupsHTML()+portfolioHTML()+propsHTML()+strategyHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
+  box.innerHTML=lineupsHTML()+portfolioHTML()+propsHTML()+strategyHTML()+`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Projections</h3><div class="acc-big"><div>Average miss<b>${s.mae.toFixed(1)}</b></div>${s.naive_mae?`<div class="base">Season average<b>${s.naive_mae.toFixed(1)}</b></div>`:''}</div>
   <p style="margin:0 0 6px;font-size:14px">${beat?`Over the last ${s.days} days the model missed by ${(s.naive_mae-s.mae).toFixed(1)} fewer fantasy points per player than just using each player’s season average.`:`Over the last ${s.days} days the model hasn’t beaten a plain season average yet.`} It ran ${s.bias>0?'low':'high'} by ${Math.abs(s.bias).toFixed(1)} points on average and missed minutes by ${s.minutes_mae.toFixed(1)}.</p>
   <div class="bars" role="img" aria-label="Daily average miss, model vs season average">${days.map(d=>`<div class="bar"><div class="pair"><i class="m" style="height:${d.mae/maxv*64}px" title="Model ${d.mae}"></i><i class="n" style="height:${(d.naive_mae||0)/maxv*64}px" title="Season average ${d.naive_mae}"></i></div>${new Date(d.date+'T12:00:00').toLocaleDateString([], {month:'numeric',day:'numeric'})}${d.backtest?'*':''}</div>`).join('')}</div>
   <div class="legend"><i style="background:var(--orange);margin-left:0"></i>Model<i style="background:var(--line)"></i>Season average</div>
@@ -1433,15 +1439,69 @@ function strategyHTML(){
 }
 $('accuracy').addEventListener('click',e=>{const b=e.target.closest('[data-strat]');if(!b||!S.st)return;const best=S.st[b.dataset.strat].best;
   for(const k of ['ceilW','levW','ownFade'])S.user[k]=best[k];store.set('cfgUser',S.user);rebuildCfg();recompute();renderPlayers();renderLineups();renderAccuracy();if(!$('settings').hidden)renderSettings()});
-function resultsHTML(){
-  const r=S.mr;if(!r||!(r.days||[]).length)return '';
-  const sum=(cs,k)=>cs.reduce((a,c)=>a+(c[k]||0),0),cs=r.days.flatMap(d=>d.contests||[]),fees=sum(cs,'fee'),won=sum(cs,'won'),profit=won-fees;
-  const nights=[...new Set(r.days.map(d=>d.date))],nightsCashed=nights.filter(n=>r.days.some(d=>d.date===n&&(d.contests||[]).some(c=>c.won>0))).length;
-  const luCashed=r.days.filter(d=>(d.contests||[]).some(c=>c.won>0)).length,money=v=>'$'+(Math.round(v*100)/100).toLocaleString(undefined,{maximumFractionDigits:2});
-  return `<h3 style="font:600 18px var(--num);margin:16px 0 4px">Your results</h3>
-  <div class="acc-big"><div>Nights cashed<b>${nightsCashed}/${nights.length}</b></div><div>Lineups cashed<b>${luCashed}/${r.days.length}</b></div><div>Profit<b style="color:${profit>=0?'var(--good)':'var(--bad)'}">${profit>=0?'+':'−'}${money(Math.abs(profit))}</b></div></div>
-  <p style="margin:0 0 6px;font-size:14px">${money(fees)} in entry fees, ${money(won)} won (${fees?((won/fees-1)*100).toFixed(0):0}% return).</p>
-  <details style="font-size:13.5px"><summary>Each lineup</summary><table style="margin-top:6px;width:100%"><tbody>${[...r.days].reverse().map(d=>{const f=sum(d.contests||[],'fee'),w=sum(d.contests||[],'won');return `<tr><td style="text-align:left">${new Date(d.date+'T12:00:00').toLocaleDateString([], {month:'numeric',day:'numeric'})} ${esc(d.slate==='Main'?(d.entry||'Main'):d.slate)}${d.late_swapped?' (swapped)':''}</td><td class="n">${d.score!=null?d.score+' pts':''}</td><td class="n" style="color:${w>f?'var(--good)':w<f?'var(--bad)':'inherit'}">${w-f>=0?'+':'−'}${money(Math.abs(w-f))}</td></tr>`}).join('')}</tbody></table></details>`;
+// ---------- tracker: every dollar in and out (DFS from my_results.json, real bets from my_bets.json) ----------
+function renderTracker(){
+  const box=$('tracker');if(!box)return;
+  const days=(S.mr&&S.mr.days)||[],bets=(S.mb&&S.mb.bets)||[];
+  if(!days.length&&!bets.length){box.innerHTML='<div class="empty">Nothing logged yet. Send Claude a screenshot of your FanDuel entries or a bet slip and it shows up here.</div>';return}
+  const sum=(a,f)=>a.reduce((t,x)=>t+(f(x)||0),0),money=v=>(v<0?'−':'')+'$'+Math.abs(Math.round(v*100)/100).toLocaleString(undefined,{minimumFractionDigits:Math.round(v*100)%100?2:0,maximumFractionDigits:2}),
+    signed=v=>(v>=0?'+':'')+money(v),col=v=>v>0?'var(--good)':v<0?'var(--bad)':'inherit',
+    pct=(w,f)=>f?((w/f-1)*100).toFixed(0)+'%':'—',md=d=>new Date(d+'T12:00:00').toLocaleDateString([],{month:'numeric',day:'numeric'});
+  const fee=d=>sum(d.contests||[],c=>c.fee),won=d=>sum(d.contests||[],c=>c.won);
+  const betCost=b=>b.cost||0,betBack=b=>b.returned!=null?b.returned:(b.profit!=null?(b.cost||0)+b.profit:0);
+  // money per night, DFS + bets together
+  const byDate={};
+  for(const d of days){const n=byDate[d.date]||(byDate[d.date]={in:0,out:0});n.in+=fee(d);n.out+=won(d)}
+  for(const b of bets){const n=byDate[b.date]||(byDate[b.date]={in:0,out:0});n.in+=betCost(b);n.out+=betBack(b)}
+  const dates=Object.keys(byDate).sort();let run=0;
+  const pts=dates.map(d=>{const p=byDate[d].out-byDate[d].in;run+=p;return {d,p,run}});
+  const spent=sum(dates,d=>byDate[d].in),back=sum(dates,d=>byDate[d].out),profit=back-spent,up=pts.filter(x=>x.p>0).length;
+  // by slate type
+  const isSingle=d=>/single/i.test((d.slate||'')+' '+(d.entry||''))||/ @ /.test(d.slate||''),kind=d=>isSingle(d)?'Single game':/^main$/i.test(d.slate||'')?'Main slate':'Other slates';
+  const groups={};for(const d of days){const g=groups[kind(d)]||(groups[kind(d)]={n:0,f:0,w:0});g.n++;g.f+=fee(d);g.w+=won(d)}
+  if(bets.length)groups['Real bets']={n:bets.length,f:sum(bets,betCost),w:sum(bets,betBack)};
+  const order=['Main slate','Single game','Other slates','Real bets'].filter(k=>groups[k]);
+  // lineups vs projection (classic only, where both are known)
+  const vp=days.filter(d=>d.projected!=null&&d.score!=null&&!isSingle(d));
+  const avgP=vp.length?sum(vp,d=>d.projected)/vp.length:0,avgA=vp.length?sum(vp,d=>d.score)/vp.length:0,beat=vp.filter(d=>d.score>=d.projected).length;
+  box.innerHTML=`<div class="acc-big"><div>Profit<b style="color:${col(profit)}">${signed(profit)}</b></div><div>Return<b>${pct(back,spent)}</b></div><div>Nights up<b>${up}/${pts.length}</b></div></div>
+  <p style="margin:0 0 10px;font-size:14px">${money(spent)} put in, ${money(back)} back, across ${days.length} DFS lineup${days.length===1?'':'s'}${bets.length?` and ${bets.length} real bet${bets.length===1?'':'s'}`:''}.</p>
+  ${pts.length>1?trackerChart(pts,money,md):''}
+  <h3 style="font:600 18px var(--num);margin:16px 0 4px">Where it comes from</h3>
+  <table style="width:100%;font-size:14px"><thead><tr><th style="text-align:left">Type</th><th class="n">Entries</th><th class="n">In</th><th class="n">Profit</th><th class="n">Return</th></tr></thead><tbody>${order.map(k=>{const g=groups[k];return `<tr><td style="text-align:left">${k}</td><td class="n">${g.n}</td><td class="n">${money(g.f)}</td><td class="n" style="color:${col(g.w-g.f)}">${signed(g.w-g.f)}</td><td class="n">${pct(g.w,g.f)}</td></tr>`}).join('')}</tbody></table>
+  ${vp.length?`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Your lineups vs. the projection</h3><p style="margin:0 0 6px;font-size:14px">Your classic lineups averaged ${avgA.toFixed(1)} points against ${avgP.toFixed(1)} projected (${avgA>=avgP?'+':''}${(avgA-avgP).toFixed(1)}). ${beat} of ${vp.length} beat their projection.</p>`:''}
+  ${bets.length?`<h3 style="font:600 18px var(--num);margin:16px 0 4px">Real bets</h3>${[...bets].reverse().map(b=>{const p=betBack(b)-betCost(b);return `<div style="border-top:1px solid var(--line);padding:8px 0;font-size:14px"><div style="display:flex;justify-content:space-between;gap:8px"><span>${md(b.date)} · ${esc(b.platform||'')} ${esc(b.type||'')}</span><b style="color:${col(p)}">${signed(p)}</b></div><div class="muted" style="font-size:13px">${money(betCost(b))} stake, ${money(betBack(b))} back${b.result?' · '+esc(b.result):''}</div>${(b.legs||[]).length?`<ul style="margin:4px 0 0;padding-left:18px;font-size:13px">${b.legs.map(l=>`<li>${esc(l)}</li>`).join('')}</ul>`:''}${b.note?`<p class="muted" style="margin:4px 0 0;font-size:12.5px">${esc(b.note)}</p>`:''}</div>`}).join('')}`:''}
+  <details style="font-size:13.5px;margin-top:12px"><summary>Each night</summary><table style="margin-top:6px;width:100%"><thead><tr><th style="text-align:left">Night</th><th class="n">In</th><th class="n">Back</th><th class="n">Profit</th><th class="n">Running</th></tr></thead><tbody>${[...pts].reverse().map(x=>`<tr><td style="text-align:left">${md(x.d)}</td><td class="n">${money(byDate[x.d].in)}</td><td class="n">${money(byDate[x.d].out)}</td><td class="n" style="color:${col(x.p)}">${signed(x.p)}</td><td class="n">${signed(x.run)}</td></tr>`).join('')}</tbody></table></details>
+  ${days.length?`<details style="font-size:13.5px;margin-top:6px"><summary>Each lineup</summary><table style="margin-top:6px;width:100%"><tbody>${[...days].reverse().map(d=>{const f=fee(d),w=won(d);return `<tr><td style="text-align:left">${md(d.date)} ${esc(d.slate==='Main'?(d.entry&&d.entry.length<30?d.entry:'Main'):d.slate)}${d.late_swapped?' (swapped)':''}</td><td class="n">${d.score!=null?d.score+' pts':''}</td><td class="n" style="color:${col(w-f)}">${signed(w-f)}</td></tr>`}).join('')}</tbody></table></details>`:''}
+  <p class="muted" style="font-size:12.5px;margin:10px 0 0">To add results, send Claude a screenshot of your FanDuel entries or bet slip. Past results don’t guarantee future ones; only bet what you can afford to lose.</p>`;
+  const ch=box.querySelector('.trk-chart');if(ch)trackerHover(ch,pts,money,md);
+}
+// Running profit line: one series, zero baseline, tap/hover crosshair with the night's numbers.
+function trackerChart(pts,money,md){
+  const W=360,H=170,L=50,R=8,T=10,B=22,vals=pts.map(p=>p.run),lo=Math.min(0,...vals),hi=Math.max(0,...vals),span=(hi-lo)||1,
+    x=i=>L+(pts.length===1?0:i*(W-L-R)/(pts.length-1)),y=v=>T+(hi-v)*(H-T-B)/span,
+    path=pts.map((p,i)=>`${i?'L':'M'}${x(i).toFixed(1)},${y(p.run).toFixed(1)}`).join(''),last=pts[pts.length-1],
+    ticks=[...new Set([hi,0,lo])];
+  return `<figure class="trk-chart" style="margin:0;position:relative"><svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Running profit by night, now ${money(last.run)}" style="display:block;overflow:visible;touch-action:pan-y">
+  ${ticks.map(v=>`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-width="1" ${v===0?'':'stroke-dasharray="3 4"'}/><text x="${L-6}" y="${y(v)+4}" text-anchor="end" font-size="10.5" fill="var(--muted)">${money(v)}</text>`).join('')}
+  <text x="${x(0)}" y="${H-6}" font-size="10.5" fill="var(--muted)">${md(pts[0].d)}</text><text x="${x(pts.length-1)}" y="${H-6}" text-anchor="end" font-size="10.5" fill="var(--muted)">${md(last.d)}</text>
+  <path d="${path}" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="${x(pts.length-1)}" cy="${y(last.run)}" r="4" fill="var(--orange)" stroke="var(--surface)" stroke-width="2"/>
+  <g class="trk-hover" style="display:none"><line y1="${T}" y2="${H-B}" stroke="var(--muted)" stroke-width="1"/><circle r="4" fill="var(--orange)" stroke="var(--surface)" stroke-width="2"/></g>
+  <rect x="${L}" y="0" width="${W-L-R}" height="${H}" fill="transparent"/></svg>
+  <div class="trk-tip" style="display:none;position:absolute;top:0;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:4px 8px;font-size:12.5px;white-space:nowrap"></div>
+  <figcaption class="muted" style="font-size:12.5px">Running profit, all money in and out. Tap the line for a night.</figcaption></figure>`;
+}
+function trackerHover(fig,pts,money,md){
+  const svg=fig.querySelector('svg'),g=fig.querySelector('.trk-hover'),tip=fig.querySelector('.trk-tip'),W=360,L=50,R=8,
+    lo=Math.min(0,...pts.map(p=>p.run)),hi=Math.max(0,...pts.map(p=>p.run)),span=(hi-lo)||1,y=v=>10+(hi-v)*(170-10-22)/span;
+  const show=e=>{const r=svg.getBoundingClientRect(),sx=(e.clientX-r.left)*W/r.width,i=Math.max(0,Math.min(pts.length-1,Math.round((sx-L)/((W-L-R)/Math.max(1,pts.length-1))))),
+      px=L+i*(W-L-R)/Math.max(1,pts.length-1),p=pts[i];
+    g.style.display='';g.querySelector('line').setAttribute('x1',px);g.querySelector('line').setAttribute('x2',px);g.querySelector('circle').setAttribute('cx',px);g.querySelector('circle').setAttribute('cy',y(p.run));
+    tip.style.display='';tip.innerHTML=`<b>${md(p.d)}</b> ${p.p>=0?'+':''}${money(p.p)} · total ${p.run>=0?'+':''}${money(p.run)}`;
+    const left=px*r.width/W;tip.style.top='-6px';tip.style.left=Math.max(0,Math.min(r.width-tip.offsetWidth,left-tip.offsetWidth/2))+'px'};
+  svg.addEventListener('pointermove',show);svg.addEventListener('pointerdown',show);
+  svg.addEventListener('pointerleave',()=>{g.style.display='none';tip.style.display='none'});
 }
 function learnedHTML(){
   const l=S.lw;if(!l||!l.weights)return '';
@@ -1466,7 +1526,7 @@ function renderSources(){
   const t=S.today,src=t&&t.sources||{};
   $('sources').innerHTML=`<p>Slate and Vegas lines: ${esc(src.slate||'not loaded')}${t?', projections built '+esc(ago(t.built_at)):''}.</p><p>Injuries: ESPN report, updated ${esc(ago(S.inj&&S.inj.updated_at))}. Starting lineups: RotoWire, checked ${esc(ago(src.lineups_checked))}. Box scores: ESPN, updated ${esc(ago(src.stats_updated))}.</p><p>Projection = expected minutes × fantasy points per minute, adjusted for Vegas team totals, opponent matchup, injuries and confirmed starters. How much each adjustment counts is relearned every morning from graded results. Every adjustment is shown when you tap a player.</p>`;
 }
-function renderAll(){recompute();const any=S.games.some(started);$('review-wrap').hidden=!any;if(!any)S.review=false;$('review').checked=S.review;renderHeader();renderNotices();renderGames();renderPlayers();renderLineups();renderAccuracy();renderSources();paintCount&&paintCount();paintMode&&paintMode();syncExposure();syncSim();autoSwaps()}
+function renderAll(){recompute();const any=S.games.some(started);$('review-wrap').hidden=!any;if(!any)S.review=false;$('review').checked=S.review;renderHeader();renderNotices();renderGames();renderPlayers();renderLineups();renderAccuracy();renderTracker();renderSources();paintCount&&paintCount();paintMode&&paintMode();syncExposure();syncSim();autoSwaps()}
 
 // ---------- upload, refresh, tabs ----------
 $('upload-btn').onclick=()=>$('csv').click();
