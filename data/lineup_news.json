@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "slate_date": "2026-11-08",
-  "checked_at": "2026-11-08T08:37:11.555400+00:00",
+  "checked_at": "2026-11-08T09:31:33.125530+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [
@@ -64,9 +64,9 @@
   ],
   "headlines": [
     {
-      "headline": "Warriors Catch Break as Magic Starter Ruled Out Hours Before Game - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVFRfQ1plWkV1dHJiT3A3YU9vM3RpSnBTVGhlUFV0QjVyT2hqUlhHMnVFWnBMYk5EWnYyTm5PaGg5a3licTROQk81ekJKWjVxUzktc3FwbDlKOTBUdE0yTG9GalQybmhKSWhZM0pCM0g2TGtuV1ZtWEN3QzhCMkJSSEgxdmxsR2NMMjNz?oc=5",
-      "published_at": "2026-11-08T06:11:03+00:00",
+      "headline": "NBA injury report: Doncic, Embiid listed on Sunday, November 8 - TalkBasket.net",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONUZRZDMtbW1SVldoLTJ2LXZuZUFITmUtVGZualUyZVFrRlF6ejFpaUM1Wkd1cElHcVlPQkhkYnZ5UWU4OUFJVnR1aTVNSTZXMmo1NWs3RWdXLS1xR1BUNEpkYWRBYmZJdGxxXzE2NUo1aU1jSjVkdWJpbjJzcWRzWVZZZERTMkFmS2RNcTJ2M3JOaHFzVDdJag?oc=5",
+      "published_at": "2026-11-08T09:26:51+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
@@ -240,6 +240,14 @@
       "scope_date": "2026-11-08"
     },
     {
+      "headline": "Warriors Catch Break as Magic Starter Ruled Out Hours Before Game - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVFRfQ1plWkV1dHJiT3A3YU9vM3RpSnBTVGhlUFV0QjVyT2hqUlhHMnVFWnBMYk5EWnYyTm5PaGg5a3licTROQk81ekJKWjVxUzktc3FwbDlKOTBUdE0yTG9GalQybmhKSWhZM0pCM0g2TGtuV1ZtWEN3QzhCMkJSSEgxdmxsR2NMMjNz?oc=5",
+      "published_at": "2026-11-07T21:40:22+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-08"
+    },
+    {
       "headline": "Nic Claxton Injury: Downgraded to questionable - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdzJmTDZ3SlZVM1BqOVZ6TzZCeDR6NklKb3lQMTBOQUE2dThVa2UyMkdWN0VXV0Rjd0RKZ2F2RXBkMG5FNEhrQkR0dVE1RFJHTDRmcVNPOElPTzZWTVZ2SVlTZXY4SmgtNXJuZkFKRnY1WDMwN0dUbkZYeXpQNVVaU0gwRTVSZkNDRm5uVmVPMGk1SWUwSW95LU9nZWVMTlU?oc=5",
       "published_at": "2026-11-07T21:25:59+00:00",
@@ -363,14 +371,6 @@
       "headline": "NBA injury report: Banchero, Haliburton out Saturday, November 7 - TalkBasket.net",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSkFhR3RQcUQ0ZTl2R01XQlZ6RnpBOW53VFI5M2ZSTEY5VlJRMHQ1VFFGeDdkRGpNaDQxMWlyMFF4eURMdzNMYjU5RXVLOXFubTlHT2d4X2lJOWhfZUNtcGxad0pvV2JhbVVqSFd0QzB6UVU0T0dqZWYwTkxkOEpUN2pONmJjMXJqZ05tRTlZQzdlc1BaYm5lcU84QQ?oc=5",
       "published_at": "2026-11-07T13:52:44+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-08"
-    },
-    {
-      "headline": "Luka Dončić's best buckets to start the 2026-27 season - NBA.com",
-      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPamljekljQ2FCaU1JaFRPM3FwdXdKa2xKdWpLNU0yUkZHdjVxRno2WXZhbl9MZ3pjcFRaY0hGV1RidGNobmMxcW9rai14T3BfMGstUHpSUUNxa25ZOHdkUEp5NUZQWnFoN2Y0aGNybnhackFucWdaU1R0blhnRVR2TDFndkhubGZRd2tMMFM0YlRqNEVpR3JyZzVjcWIwMkVNUHlyckMxRlUwaWVsUGFwWXFhbG1wbldrQVE?oc=5",
-      "published_at": "2026-11-07T09:09:30+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-08"
