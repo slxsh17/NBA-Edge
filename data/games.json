@@ -1,6 +1,6 @@
 {
   "date": "20261107",
-  "updated_at": "2026-11-07T20:51:08.251067-05:00",
+  "updated_at": "2026-11-07T21:38:23.882613-05:00",
   "source": "ESPN unofficial scoreboard",
   "games": [
     {
@@ -13,7 +13,7 @@
       "away": "Brooklyn Nets",
       "home": "Atlanta Hawks",
       "time": "2026-11-08T00:30Z",
-      "status": "Halftime"
+      "status": "In Progress"
     },
     {
       "away": "New York Knicks",
@@ -31,13 +31,13 @@
       "away": "Orlando Magic",
       "home": "Golden State Warriors",
       "time": "2026-11-08T01:30Z",
-      "status": "In Progress"
+      "status": "Halftime"
     },
     {
       "away": "Houston Rockets",
       "home": "Phoenix Suns",
       "time": "2026-11-08T02:00Z",
-      "status": "Scheduled"
+      "status": "In Progress"
     },
     {
       "away": "San Antonio Spurs",
