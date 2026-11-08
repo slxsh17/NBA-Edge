@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T02:48:45.484825+00:00",
+  "updated_at": "2026-11-08T03:02:42.246477+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -410,6 +410,11 @@
     {
       "name": "Jaren Jackson Jr.",
       "team": "UTA",
+      "status": "OUT"
+    },
+    {
+      "name": "Deandre Ayton",
+      "team": "WAS",
       "status": "OUT"
     },
     {
