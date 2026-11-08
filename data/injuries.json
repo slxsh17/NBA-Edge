@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T19:27:49.602740+00:00",
+  "updated_at": "2026-11-08T19:43:23.427680+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -76,16 +76,6 @@
       "name": "Norman Powell",
       "team": "CHI",
       "status": "OUT"
-    },
-    {
-      "name": "Tobe Awaka",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Jalen Smith",
-      "team": "CHI",
-      "status": "DAY-TO-DAY"
     },
     {
       "name": "Zach Collins",
