@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T01:18:42.328595+00:00",
+  "updated_at": "2026-11-08T01:42:42.131836+00:00",
   "source": "ESPN unofficial NBA injury endpoint; statuses must be independently verified",
   "injuries": [
     {
@@ -178,12 +178,12 @@
       "status": "OUT"
     },
     {
-      "name": "Isaiah Jackson",
+      "name": "Brandon Ingram",
       "team": "LAC",
       "status": "OUT"
     },
     {
-      "name": "Brandon Ingram",
+      "name": "Isaiah Jackson",
       "team": "LAC",
       "status": "OUT"
     },
@@ -323,14 +323,9 @@
       "status": "OUT"
     },
     {
-      "name": "Rasheer Fleming",
-      "team": "PHX",
-      "status": "DAY-TO-DAY"
-    },
-    {
       "name": "Jordan Goodwin",
       "team": "PHX",
-      "status": "DAY-TO-DAY"
+      "status": "OUT"
     },
     {
       "name": "Mark Williams",
@@ -358,17 +353,12 @@
       "status": "OUT"
     },
     {
-      "name": "De'Andre Hunter",
-      "team": "SAC",
-      "status": "DAY-TO-DAY"
-    },
-    {
-      "name": "Maxime Raynaud",
+      "name": "Keegan Murray",
       "team": "SAC",
       "status": "OUT"
     },
     {
-      "name": "Keegan Murray",
+      "name": "Maxime Raynaud",
       "team": "SAC",
       "status": "OUT"
     },

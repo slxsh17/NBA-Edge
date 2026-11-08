@@ -1,11 +1,27 @@
 {
   "schema": 1,
   "slate_date": "2026-11-07",
-  "checked_at": "2026-11-08T01:18:42.446053+00:00",
+  "checked_at": "2026-11-08T01:42:42.249701+00:00",
   "lineup_provider": "RotoWire public lineup page",
   "headlines_provider": "Google News public RSS (not a direct X feed)",
   "lineups": [],
   "headlines": [
+    {
+      "headline": "Suns Reveal Starting Lineup for Showdown vs Rockets - Sports Illustrated",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPamNQdkVKcTFQYm9QNXRYZ1BfcHRtZWpBUXl3NV9za25wOFNnN2JBR3RzMXkzOUV6XzRXZHRTVjNKWHFmM2JiRmt3anN2WmhsUkU5UE5fQUFVcDU2SVhWcTlLTmJXMWtUMGVBNEtEUFlTSktQQzQ3WUdYcGlXNk1CY1BWSThwQU85SWd0eEk1cWpycmR2LW5IWg?oc=5",
+      "published_at": "2026-11-08T01:33:05+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
+      "headline": "Keegan Murray Injury: Questionable for Sunday - RotoWire",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSEJoLUwwa3RDcTdvMkw1SDFoOXRIXzJNc1l2ZnBmSWpTQ0JteFVtUlBhNThpWkx5ZmZtWkJiVWo5VTdQNktWd2hXeFJkRkxEZFJFZDRTMS1EMEljelFVbXBEYTNVWlROWi00aXh0MGNNRWh2a29JVFdPdEctZUlNX21ReWZZV3Q0ejZvaG9YN25UcDBTM1VrSS1Xa3lvdw?oc=5",
+      "published_at": "2026-11-08T01:30:40+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
     {
       "headline": "Isaiah Jackson Injury: Ruled out for Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTDFzT2RYdV9MQndEdjBaUkpTbWgtWDUwLURRcE5FNnlfRW83dVFDcV82TkRGdmVQN3hxS2ZZZ2dXdkdleUFkOFBYRy1SY1pvN0pDNHRJLUdLOXRYQWZFWGxfS2kxSm5NWDJ6N0d0NFZ0NjNiUDlSRS00QVhiT1BlUjJMaHRoaXhGQ0hRTHEzUDBDTVE0Y1Fuemd2QQ?oc=5",
@@ -111,6 +127,14 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Lakers Star Luka Doncic Questionable for Pistons Game With Lower Back Tightness - Yahoo Sports",
+      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNd2dseERLbnA2cVhfdmRHaGJqSmtHTU9NTXlDcU41NlZCeHdtdVVZcFpUSzlrN3hCTVpJZjNQR1c5SUFZZGZwb1R6NERGT3FZWjJkN0NCMXdRU0RTb2MxTzVobG5CZklNU1lhS1UtYmlTLUdEa2p5Qm0waUNJRnB5U2E2QjRHOXNiMmxLTGlR?oc=5",
+      "published_at": "2026-11-07T22:23:53+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Luka Doncic (back) questionable Sunday - FantasyPros",
       "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbnAyTGhsOElfLWZwS3JlNWlIWEtQOGV1akFzdTQ2V3VZQjdoUlluaTVrbEQwaEhKR2R4T0lKMXFuTTRseXRBclRHWVVBMG9DTlBHanpXUjY3ZDBDcUlIQWR1cDA1OThZOHQ5VGM2a3R0VnU3dTBILUUtNi1ZNFVmb2U4a2J1dS1HNVJkctIBkgFBVV95cUxNWm9kNFVuNVp4eU5sbGFTcFhPU0s4M3lpeW95bGZrMS10NGJSalgyQ1BZeGd3QzZvNG5ORkZTalN0MndNbTFwejFybEZuLW5oN01ydHJvMnZDWW5vNjBkS2Mzcy00MlFuQVBXdmdUdGxoUFU1TE16V2tBUkJBTmFEajRyWU0ybnJobnhCa1JSVElSQQ?oc=5",
       "published_at": "2026-11-07T22:14:04+00:00",
@@ -122,14 +146,6 @@
       "headline": "Luka Doncic Injury: Questionable for Sunday - RotoWire",
       "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc3k5Q1NmTmMyaWtiUW1VZzNoRE9fNDljRGszblB5RUR2Wjh6NVZkZC1xNzYwTFJ5czhJREZQMmY5dWdiOG1ySXR3eFJuSjhZOXdVNlkzcWszdTFtWWpSNE51UkVKSl8tTHpxWWt5Z2xSYTh5SzlRY1pwTVhLaGpnU3pvTnFfQndtWkJJMWtHcEhtOUxQQW9WZURCSQ?oc=5",
       "published_at": "2026-11-07T22:11:34+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Zach Collins (illness) ruled out Sunday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOc1Qwc0k0VWVxTHZTYXZTTm5JaWNJT05CRHVrSG1lLUs3VEdka1FDd1hfREdxWGRuejZzMVhnem8yMUJ3Tll2N05RRkE1X3IyRmw4VWtpbC1KWGJEX3ZNZ0o1VFZiWDl1ZExYdG1DZEZNMTNhX240R0JJenpQVG8zdVh3Q1dTS1lHTTVpeXRR0gGTAUFVX3lxTE5FeDhoOURFMlFFMlhvTXNfRndtMmNPaUoxLWZRMjV6b1g4N1UwXzJ0dzZMcHBqdDdULU01dzJRN0dlNVR4c0xaNWNHV2JCSFNCUmNYVnRLZkllY2pvWVNQNlVIV29IWTZHMjgzd0VyMzJxZWpxeGY4VmliN3I5Y1RRd2tCRC04RFNBdEJSR25xQUJpZw?oc=5",
-      "published_at": "2026-11-07T21:41:25+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
@@ -192,7 +208,7 @@
     },
     {
       "headline": "Jalen Johnson (ankle) expected to play Saturday - FantasyPros",
-      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdmZ0blY2QkwyNVBKUFhQNWZfUXVScjB6UkQyOWFEc09MUTROdnFzbXprQU5SNmFpQU1qNFNfSmpsZEpCY1NTaXB6OWFsRVVnTGt6c1FKaVR1WjFObTRHY2dJVmVBQ0RVS0hRVFpYLWZBa3ZWalFfcFgwR1N6Y1Z1ejVsZC1Zbl8tMnF0ZVFaUVVfODNQR3RhX9IBngFBVV95cUxORU1fYWVTWk9sREp0Y3ZCZkVCRDAyeVh4NUFRMnphV3ROSVJ2V2dUYXFDbDNoNkFIdnRmOTZRSjhKRkdNbEdtdHZKLXQ1WXFydVNfWm5lWmJ4U2djWXk0U2dRS3l4RDNyOXJzdTJ1QXFyYm5MeER5MmRyYTJrcjA1TzAyTXVmejNaNmFtbEhqUmZQM3djemUyeUdyc1Nwdw?oc=5",
+      "source_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdmZ0blY2QkwyNVBKUFhQNWZfUXVScjB6UkQyOWFEc09MUTROdnFzbXprQU5SNmFpQU1qNFNfSmpsZEpCY1NTaXB6OWFsRVVnTGt6c1FKaVR1WjFObTRHY2dJVmVBQ0RVS0hRVFpYLWZBa3ZWalFfcFgwR1N6Y1Z1ejVsZC1Zbl8tMnF0ZVFaUVVfODNQR3RhXw?oc=5",
       "published_at": "2026-11-07T18:48:15+00:00",
       "type": "headline_only",
       "confirmed": false,
@@ -311,6 +327,14 @@
       "scope_date": "2026-11-07"
     },
     {
+      "headline": "Kerr: Thompson expected to play in Game 4 - NBA.com",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SQVdjX3pRdEUxX2sxeGZRQ0xKSEJjUnIxOG1PZGc4MVIxYl8wZG8wOWg4ZUtsM0dCckx5eFhaSXFUWWRtTlB3aXVXd2tMNFBiUkl3Mmo0alV5Vk5pU1RkVVlHd0hDWExLUjlsYUt4NkUtZw?oc=5",
+      "published_at": "2026-11-07T04:11:49+00:00",
+      "type": "headline_only",
+      "confirmed": false,
+      "scope_date": "2026-11-07"
+    },
+    {
       "headline": "Raptors Make Surprise Starting Lineup Decision After Losing 3 Stars vs. Bucks - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNU3ZNdjF5RWo2Qnp3OFlpVlJ6M3BBd0xhdUNIc09JVFJISUdYZER5X1BPVVNlZ3h6Mk1ySXZtSUtQM1JNTXJ0QmtESkREWUtpSi1ZYU5SNFN5aEdpcl9uSWlfVnNOb3RHQmZwbWFfVmxkaUt1UzdiVzVGemViZkhFcVQ0YzlQN1IzR2YxMmh0ZklEa3Qz?oc=5",
       "published_at": "2026-11-07T03:46:00+00:00",
@@ -330,22 +354,6 @@
       "headline": "Sam Merrill Ruled Out With Elbow Injury vs. 76ers - Yahoo Sports",
       "source_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQam9JSkZuMy00TzNmME9Lb0hzNFRrRWVQdkpyODRFZXI5SUNCRDdPalhlTkFQdjJzVjIzS0lQaVlfdDhlX3RYTlh0dk9JRXdjbWk5UTNoaVkxZWVTNXBtRUp5ZWMxU3poUG1PVGFBWTJmZmFuVE1nQ1NySDZJNnZmNFp3MlhfUQ?oc=5",
       "published_at": "2026-11-07T02:46:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Hornets star Brandon Miller ruled out for game with groin soreness as team's struggles continue - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNN1phbERCUzdVYmplYzY3TVl4NXN1bHNEYUdfdTZaSS1lSkx5RndHVDY1NzNkQzUxRkN1YTRpNmlxeDYzX2gxMGtEUGk4c0V5bTdZaktxbF9EQmFjT0kzNDlYcHdvVjhKLWE5dXYwZ3dGaW1MSmdHNjJxTHdwYXNRckVfMko5eXYzMHpOT09JSG9pdHU5UzRfb2tMSHRacWJKZ3lYUkFmRUwzTHU5Vzd1eUtfYjhaYTFNTVFhWDhQNXJXU2lJQThSb0didmJlSnNKeFF1LWU4MkRPU2dnLVFn?oc=5",
-      "published_at": "2026-11-07T01:28:00+00:00",
-      "type": "headline_only",
-      "confirmed": false,
-      "scope_date": "2026-11-07"
-    },
-    {
-      "headline": "Cavs’ Jarrett Allen ruled out for NBA Cup showdown with LeBron James’ 76ers - Yahoo Sports",
-      "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYjVpOURnWW9tUE56bmhuLWxCcEw3a0NxLUNlY01UYUNDUElnS1VMREJLU2p2LUhHZlVCeGtXSndDZm5sS0VHNGxRZWhYR2dkNTRFTG5PWTNnalhlR3NxM19JRVNHMXVLSjE1a2EyU3pvNTNNRlk1QVRZZV9pdmNucklWRQ?oc=5",
-      "published_at": "2026-11-07T01:28:00+00:00",
       "type": "headline_only",
       "confirmed": false,
       "scope_date": "2026-11-07"
